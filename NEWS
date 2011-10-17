@@ -1,3 +1,10 @@
+0.2.1 - "Paper Cut"
+===================
+
+- Quote the file path before passing it out to unoconv
+- Remember window state and size across app restarts
+- Fix some UI flickering and useless refreshs
+
 0.2.0 - "Dropping Out"
 ======================
 
