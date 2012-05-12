@@ -430,11 +430,15 @@ OrganizeCollectionModel.prototype = {
         }
     },
 
-    forgetPlaceholder: function() {
-        let path = this._placeholderRef.get_path();
-        this._placeholderRef = null;
+    getPlaceholder: function(forget) {
+        let ret = null;
 
-        return path;
+        if (this._placeholderRef)
+            ret = this._placeholderRef.get_path();
+        if (forget)
+            this._placeholderRef = null;
+
+        return ret;
     },
 
     destroy: function() {
@@ -456,6 +460,8 @@ function OrganizeCollectionView() {
 
 OrganizeCollectionView.prototype = {
     _init: function() {
+        this._choiceConfirmed = false;
+
         this._model = new OrganizeCollectionModel();
         this.widget = new Gtk.TreeView({ headers_visible: false,
                                          vexpand: true,
@@ -515,7 +521,7 @@ OrganizeCollectionView.prototype = {
             return;
         }
 
-        let path = this._model.forgetPlaceholder();
+        let path = this._model.getPlaceholder(true);
         if (!path)
             return;
 
@@ -526,7 +532,7 @@ OrganizeCollectionView.prototype = {
         job.run(null);
     },
 
-    _onTextEdited: function(cell, pathStr, newText) {
+    _onTextEditedReal: function(cell, path, newText) {
         cell.editable = false;
 
         if (!newText || newText == '') {
@@ -536,17 +542,30 @@ OrganizeCollectionView.prototype = {
         }
 
         // update the new name immediately
-        let path = Gtk.TreePath.new_from_string(pathStr);
         let iter = this._model.model.get_iter(path)[1];
         this._model.model.set_value(iter, OrganizeModelColumns.NAME, newText);
 
         // actually create the new collection
         let job = new CreateCollectionJob(newText);
-        job.run(Lang.bind(this, this._onNewCollectionCreated, path));
+        job.run(Lang.bind(this, this._onNewCollectionCreated));
     },
 
-    _onTextEditCanceled: function() {
-        this._model.removePlaceholder();
+    _onTextEdited: function(cell, pathStr, newText) {
+        this._onTextEditedReal(cell, Gtk.TreePath.new_from_string(pathStr), newText);
+    },
+
+    _onTextEditCanceled: function(cell) {
+        if (this._choiceConfirmed) {
+            this._choiceConfirmed = false;
+
+            let entry = this._viewCol.cell_area.get_edit_widget();
+            let path = this._model.getPlaceholder(false);
+
+            if (entry && path)
+                this._onTextEditedReal(cell, path, entry.get_text());
+        } else {
+            this._model.removePlaceholder();
+        }
     },
 
     _checkCellFunc: function(col, cell, model, iter) {
@@ -579,6 +598,10 @@ OrganizeCollectionView.prototype = {
 
         this._rendererText.editable = true;
         this.widget.set_cursor_on_cell(path, this._viewCol, this._rendererText, true);
+    },
+
+    confirmedChoice: function() {
+        this._choiceConfirmed = true;
     }
 };
 
@@ -599,7 +622,7 @@ OrganizeCollectionDialog.prototype = {
                                        default_height: 250 });
 
         this.widget.add_button('gtk-add', OrganizeCollectionDialogResponse.ADD);
-        this.widget.add_button('gtk-ok', Gtk.ResponseType.OK);
+        let okButton = this.widget.add_button('gtk-ok', Gtk.ResponseType.OK);
         this.widget.set_default_response(Gtk.ResponseType.OK);
 
         let contentArea = this.widget.get_content_area();
@@ -611,6 +634,20 @@ OrganizeCollectionDialog.prototype = {
 
         sw.add(collView.widget);
         contentArea.add(sw);
+
+        // HACK:
+        // - We want clicking on "OK" to add the typed-in collection if we're editing.
+        // - Unfortunately, since we focus out of the editable entry in order to
+        //   click the button, we'll get an editing-canceled signal on the renderer
+        //   from GTK. As this handler will run before focus-out, we here signal the
+        //   view to ignore the next editing-canceled signal and add the collection in
+        //   that case instead.
+        //
+        okButton.connect('button-press-event', Lang.bind(this,
+            function() {
+                collView.confirmedChoice();
+                return false;
+            }));
 
         this.widget.connect('response', Lang.bind(this,
             function(widget, response) {
