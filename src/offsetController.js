@@ -30,11 +30,12 @@ const GLib = imports.gi.GLib;
 
 const _OFFSET_STEP = 50;
 
-function OffsetController() {
-    this._init();
-};
 
-OffsetController.prototype = {
+
+const OffsetController = new Lang.Class({
+    Name: 'OffsetController',
+
+
     _init: function() {
         this._offset = 0;
         this._itemCount = 0;
@@ -91,5 +92,5 @@ OffsetController.prototype = {
     getOffset: function() {
         return this._offset;
     }
-};
+});
 Signals.addSignalMethods(OffsetController.prototype);

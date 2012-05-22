@@ -38,11 +38,11 @@ const Searchbar = imports.searchbar;
 const Tweener = imports.util.tweener;
 const WindowMode = imports.windowMode;
 
-function MainToolbar() {
-    this._init();
-}
 
-MainToolbar.prototype = {
+const MainToolbar = new Lang.Class({
+    Name: 'MainToolbar',
+
+
     _init: function() {
         this._model = null;
 
@@ -291,17 +291,18 @@ MainToolbar.prototype = {
 
         this._setToolbarTitle();
     }
-};
+});
 
-function PreviewToolbar() {
-    this._init();
-};
+;
 
-PreviewToolbar.prototype = {
-    __proto__: MainToolbar.prototype,
+const PreviewToolbar = new Lang.Class({
+    Name: 'PreviewToolbar',
+    Extends: MainToolbar,
+
+
 
     _init: function() {
-        MainToolbar.prototype._init.call(this);
+        this.parent();
 
         this.actor.y = -(this.widget.get_preferred_height()[1]);
     },
@@ -319,17 +320,17 @@ PreviewToolbar.prototype = {
                            time: 0.20,
                            transition: 'easeOutQuad' });
     }
-};
+});
 
-function OverviewToolbar() {
-    this._init();
-};
 
-OverviewToolbar.prototype = {
-    __proto__: MainToolbar.prototype,
+
+const OverviewToolbar = new Lang.Class({
+    Name: 'OverviewToolbar',
+    Extends: MainToolbar,
+
 
     _init: function() {
-        MainToolbar.prototype._init.call(this);
+        this.parent();
 
         this.searchbar = new Searchbar.Searchbar();
         this.layout.pack_start = true;
@@ -338,7 +339,7 @@ OverviewToolbar.prototype = {
     },
 
     _onWindowModeChanged: function() {
-        MainToolbar.prototype._onWindowModeChanged.call(this);
+        this.parent();
 
         let mode = Global.modeController.getWindowMode();
 
@@ -348,4 +349,4 @@ OverviewToolbar.prototype = {
                    Global.searchController.getString() != '')
             this.searchbar.show();
     }
-};
+});

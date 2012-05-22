@@ -20,6 +20,7 @@
  */
 
 const DBus = imports.dbus;
+const Lang = imports.lang;
 
 const GDataMinerIface = {
     name: 'org.gnome.Documents.GDataMiner',
@@ -27,15 +28,14 @@ const GDataMinerIface = {
                 inSignature: '' }]
 };
 
-const GDataMiner = function() {
-    this._init();
-};
 
-GDataMiner.prototype = {
+const GDataMiner = new Lang.Class({
+    Name: 'GDataMiner',
+
     _init: function() {
         DBus.session.proxifyObject(this,
                                    'org.gnome.Documents.GDataMiner',
                                    '/org/gnome/Documents/GDataMiner');
     }
-};
+});
 DBus.proxifyPrototype(GDataMiner.prototype, GDataMinerIface);

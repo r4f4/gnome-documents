@@ -24,11 +24,10 @@ const Signals = imports.signals;
 
 const _ = imports.gettext.gettext;
 
-function ErrorHandler() {
-    this._init();
-}
 
-ErrorHandler.prototype = {
+const ErrorHandler = new Lang.Class({
+    Name: 'ErrorHandler',
+
     _init: function() {
     },
 
@@ -54,5 +53,5 @@ ErrorHandler.prototype = {
 
         this.emit('query-error', message, exception);
     }
-};
+});
 Signals.addSignalMethods(ErrorHandler.prototype);

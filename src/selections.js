@@ -41,11 +41,9 @@ const Signals = imports.signals;
 const _COLLECTION_PLACEHOLDER_ID = 'collection-placeholder';
 
 // fetch all the collections a given item is part of
-function FetchCollectionsJob(urn) {
-    this._init(urn);
-}
+const FetchCollectionsJob = new Lang.Class({
+    Name: 'FetchCollectionsJob',
 
-FetchCollectionsJob.prototype = {
     _init: function(urn) {
         this._urn = urn;
         this._collections = [];
@@ -95,7 +93,7 @@ FetchCollectionsJob.prototype = {
         if (this._callback)
             this._callback(this._collections);
     }
-};
+});
 
 // fetch the state of every collection applicable to the selected items
 const OrganizeCollectionState = {
@@ -105,11 +103,11 @@ const OrganizeCollectionState = {
     HIDDEN: 1 << 2
 };
 
-function FetchCollectionStateForSelectionJob() {
-    this._init();
-}
 
-FetchCollectionStateForSelectionJob.prototype = {
+
+const FetchCollectionStateForSelectionJob = new Lang.Class({
+    Name: 'FetchCollectionStateForSelectionJob',
+
     _init: function() {
         this._collectionsForItems = {};
         this._runningJobs = 0;
@@ -192,14 +190,12 @@ FetchCollectionStateForSelectionJob.prototype = {
         if (this._callback)
             this._callback(collectionState);
     }
-};
+});
 
 // updates the mtime for the given resource to the current system time
-function UpdateMtimeJob(urn) {
-    this._init(urn);
-}
+const UpdateMtimeJob = new Lang.Class({
+    Name: 'UpdateMtimeJob',
 
-UpdateMtimeJob.prototype = {
     _init: function(urn) {
         this._urn = urn;
     },
@@ -220,14 +216,12 @@ UpdateMtimeJob.prototype = {
                     this._callback();
             }));
     }
-};
+});
 
 // adds or removes the selected items to the given collection
-function SetCollectionForSelectionJob(collectionUrn, setting) {
-    this._init(collectionUrn, setting);
-}
+const SetCollectionForSelectionJob = new Lang.Class({
+    Name: 'SetCollectionForSelectionJob',
 
-SetCollectionForSelectionJob.prototype = {
     _init: function(collectionUrn, setting) {
         this._collectionUrn = collectionUrn;
         this._setting = setting;
@@ -274,14 +268,12 @@ SetCollectionForSelectionJob.prototype = {
                 }));
         }
     }
-};
+});
 
 // creates an (empty) collection with the given name
-function CreateCollectionJob(name) {
-    this._init(name);
-}
+const CreateCollectionJob = new Lang.Class({
+    Name: 'CreateCollectionJob',
 
-CreateCollectionJob.prototype = {
     _init: function(name) {
         this._name = name;
         this._createdUrn = null;
@@ -314,7 +306,7 @@ CreateCollectionJob.prototype = {
                     this._callback(this._createdUrn);
             }));
     }
-};
+});
 
 const OrganizeModelColumns = {
     ID: 0,
@@ -322,11 +314,10 @@ const OrganizeModelColumns = {
     STATE: 2
 };
 
-function OrganizeCollectionModel() {
-    this._init();
-}
 
-OrganizeCollectionModel.prototype = {
+const OrganizeCollectionModel = new Lang.Class({
+    Name: 'OrganizeCollectionModel',
+
     _init: function() {
         this.model = Gd.create_organize_store();
         this._placeholderRef = null;
@@ -452,13 +443,12 @@ OrganizeCollectionModel.prototype = {
             this._collRemovedId = 0;
         }
     }
-};
+});
 
-function OrganizeCollectionView() {
-    this._init();
-}
 
-OrganizeCollectionView.prototype = {
+const OrganizeCollectionView = new Lang.Class({
+    Name: 'OrganizeCollectionView',
+
     _init: function() {
         this._choiceConfirmed = false;
 
@@ -603,17 +593,17 @@ OrganizeCollectionView.prototype = {
     confirmedChoice: function() {
         this._choiceConfirmed = true;
     }
-};
+});
 
 const OrganizeCollectionDialogResponse = {
     ADD: 1
 };
 
-function OrganizeCollectionDialog(toplevel) {
-    this._init(toplevel);
-};
 
-OrganizeCollectionDialog.prototype = {
+const OrganizeCollectionDialog = new Lang.Class({
+    Name: 'OrganizeCollectionDialog',
+
+
     _init: function(toplevel) {
         this.widget = new Gtk.Dialog({ transient_for: toplevel,
                                        modal: true,
@@ -657,13 +647,12 @@ OrganizeCollectionDialog.prototype = {
 
         this.widget.show_all();
     }
-};
+});
 
-function SelectionController() {
-    this._init();
-};
 
-SelectionController.prototype = {
+const SelectionController = new Lang.Class({
+    Name: 'SelectionController',
+
     _init: function() {
         this._selection = [];
         this._selectionMode = false;
@@ -722,14 +711,13 @@ SelectionController.prototype = {
     getSelectionMode: function() {
         return this._selectionMode;
     }
-};
+});
 Signals.addSignalMethods(SelectionController.prototype);
 
-function SelectionToolbar() {
-    this._init();
-}
 
-SelectionToolbar.prototype = {
+const SelectionToolbar = new Lang.Class({
+    Name: 'SelectionToolbar',
+	
     _init: function() {
         this._itemListeners = {};
         this._insideRefresh = false;
@@ -993,4 +981,4 @@ SelectionToolbar.prototype = {
               },
               onCompleteScope: this });
     }
-};
+});

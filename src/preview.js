@@ -36,11 +36,11 @@ const View = imports.view;
 
 const _FULLSCREEN_TOOLBAR_TIMEOUT = 2; // seconds
 
-function PreviewView(model) {
-    this._init(model);
-}
 
-PreviewView.prototype = {
+
+const PreviewView = new Lang.Class({
+    Name: 'PreviewView',
+
     _init: function(model) {
         this._model = model;
 
@@ -97,13 +97,12 @@ PreviewView.prototype = {
     destroy: function() {
         this.widget.destroy();
     }
-};
+});
 
-function PreviewThumbnails(model) {
-    this._init(model);
-}
 
-PreviewThumbnails.prototype = {
+const PreviewThumbnails = new Lang.Class({
+    Name: 'PreviewThumbnails',
+
     _init: function(model) {
         this.view = new Gd.SidebarThumbnails({ model: model });
         this.widget = new Gd.ThumbNav({ thumbview: this.view });
@@ -132,13 +131,13 @@ PreviewThumbnails.prototype = {
               },
               onCompleteScope: this });
     }
-};
+});
 
-function PreviewEmbed(model, layout, parentActor, scrolledWindow) {
-    this._init(model, layout, parentActor, scrolledWindow);
-}
 
-PreviewEmbed.prototype = {
+
+const PreviewEmbed = new Lang.Class({
+    Name: 'PreviewEmbed',
+
     _init: function(model, layout, parentActor, scrolledWindow) {
         this._layout = layout;
         this._parentActor = parentActor;
@@ -250,4 +249,4 @@ PreviewEmbed.prototype = {
                     return false;
             }));
     }
-};
+});
