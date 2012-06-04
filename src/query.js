@@ -24,7 +24,6 @@ const Global = imports.global;
 const Gd = imports.gi.Gd;
 const Gio = imports.gi.Gio;
 const GLib = imports.gi.GLib;
-const Lang = imports.lang;
 
 const QueryColumns = {
     URN: 0,
@@ -48,20 +47,22 @@ const QueryFlags = {
 
 const LOCAL_COLLECTIONS_IDENTIFIER = 'gd:collection:local:';
 
-const Query = new Lang.Class({
-    Name: 'Query',
-	
+function Query(sparql) {
+    this._init(sparql);
+}
+
+Query.prototype = {
     _init: function(sparql) {
         this.sparql = sparql;
         this.activeSource = Global.sourceManager.getActiveItem();
     }
-});
+};
 
+function QueryBuilder() {
+    this._init();
+}
 
-
-const QueryBuilder = new Lang.Class({
-    Name: 'QueryBuilder',
-	
+QueryBuilder.prototype = {
     _init: function() {
     },
 
@@ -261,4 +262,4 @@ const QueryBuilder = new Lang.Class({
 
         return new Query(sparql);
     }
-});
+};

@@ -41,10 +41,11 @@ const Searchbar = imports.searchbar;
 const TrackerUtils = imports.trackerUtils;
 const Utils = imports.utils;
 
+function SingleItemJob(doc) {
+    this._init(doc);
+}
 
-const SingleItemJob = new Lang.Class({
-    Name: 'SingleItemJob',
-
+SingleItemJob.prototype = {
     _init: function(urn) {
         this._urn = urn;
         this._cursor = null;
@@ -90,13 +91,14 @@ const SingleItemJob = new Lang.Class({
     _emitCallback: function() {
         this._callback(this._cursor);
     }
-});
+};
 
+function DeleteItemJob(urn) {
+    this._init(urn);
+}
 
-const DeleteItemJob = new Lang.Class({
-    Name: 'DeleteItemJob',
-	
 // deletes the given resource
+DeleteItemJob.prototype = {
     _init: function(urn) {
         this._urn = urn;
     },
@@ -117,12 +119,13 @@ const DeleteItemJob = new Lang.Class({
                     this._callback();
             }));
     }
-});
+};
 
+function CollectionIconWatcher(collection) {
+    this._init(collection);
+}
 
-const CollectionIconWatcher = new Lang.Class({
-    Name: 'CollectionIconWatcher',
-
+CollectionIconWatcher.prototype = {
     _init: function(collection) {
         this._collection = collection;
         this._pixbuf = null;
@@ -262,13 +265,14 @@ const CollectionIconWatcher = new Lang.Class({
         this.destroy();
         this._start();
     }
-});
+};
 Signals.addSignalMethods(CollectionIconWatcher.prototype);
 
+function DocCommon(cursor) {
+    this._init(cursor);
+}
 
-const DocCommon = new Lang.Class({
-    Name: 'DocCommon',
-
+DocCommon.prototype = {
     _init: function(cursor) {
         this.id = null;
         this.uri = null;
@@ -600,20 +604,21 @@ const DocCommon = new Lang.Class({
 
         return retval;
     }
-});
+};
 Signals.addSignalMethods(DocCommon.prototype);
 
+function LocalDocument(cursor) {
+    this._init(cursor);
+}
 
-const LocalDocument = new Lang.Class({
-    Name: 'LocalDocument',
-    Extends: DocCommon,
-
+LocalDocument.prototype = {
+    __proto__: DocCommon.prototype,
 
     _init: function(cursor) {
         this._failedThumbnailing = false;
         this._triedThumbnailing = false;
 
-        this.parent(cursor);
+        DocCommon.prototype._init.call(this, cursor);
 
         this.sourceName = _("Local");
 
@@ -652,22 +657,23 @@ const LocalDocument = new Lang.Class({
             job.run(null);
         }
     }
-});
+};
 
 const _GOOGLE_DOCS_SCHEME_LABELS = "http://schemas.google.com/g/2005/labels";
 const _GOOGLE_DOCS_TERM_STARRED = "http://schemas.google.com/g/2005/labels#starred";
 
+function GoogleDocument(cursor) {
+    this._init(cursor);
+}
 
-const GoogleDocument = new Lang.Class({
-    Name: 'GoogleDocument',
-    Extends: DocCommon,
-	
+GoogleDocument.prototype = {
+    __proto__: DocCommon.prototype,
 
     _init: function(cursor) {
         this._triedThumbnailing = true;
         this._failedThumbnailing = true;
 
-        this.parent(cursor);
+        DocCommon.prototype._init.call(this, cursor);
 
         // overridden
         this.defaultAppName = _("Google Docs");
@@ -754,11 +760,11 @@ const GoogleDocument = new Lang.Class({
     populateFromCursor: function(cursor) {
         this.shared = cursor.get_boolean(Query.QueryColumns.SHARED);
 
-        this.parent(cursor);
+        DocCommon.prototype.populateFromCursor.call(this, cursor);
     },
 
     setFavorite: function(favorite) {
-        this.parent(favorite);
+        DocCommon.prototype.setFavorite.call(this, favorite);
 
         this._createGDataEntry(null, Lang.bind(this,
             function(entry, service, exception) {
@@ -800,17 +806,17 @@ const GoogleDocument = new Lang.Class({
     canTrash: function() {
         return false;
     }
-});
+};
 
+function DocumentManager() {
+    this._init();
+}
 
-
-const DocumentManager = new Lang.Class({
-    Name: 'DocumentManager',
-    Extends: Manager.BaseManager,
-
+DocumentManager.prototype = {
+    __proto__: Manager.BaseManager.prototype,
 
     _init: function() {
-        this.parent();
+        Manager.BaseManager.prototype._init.call(this);
 
         this._model = new DocumentModel();
 
@@ -890,12 +896,12 @@ const DocumentManager = new Lang.Class({
             items[idx].destroy();
         };
 
-        this.parent();
+        Manager.BaseManager.prototype.clear.call(this);
         this._model.clear();
     },
 
     setActiveItem: function(doc) {
-        if (this.parent(doc)) {
+        if (Manager.BaseManager.prototype.setActiveItem.call(this, doc)) {
 
             if (doc && !doc.collection) {
                 let recentManager = Gtk.RecentManager.get_default();
@@ -907,13 +913,13 @@ const DocumentManager = new Lang.Class({
     getModel: function() {
         return this._model;
     }
-});
+};
 
+function DocumentModel() {
+    this._init();
+}
 
-const DocumentModel = new Lang.Class({
-    Name: 'DocumentModel',
-	
-
+DocumentModel.prototype = {
     _init: function() {
         this.model = Gd.create_list_store();
         this.model.set_sort_column_id(Gd.MainColumns.MTIME,
@@ -963,4 +969,4 @@ const DocumentModel = new Lang.Class({
                 return false;
             }));
     }
-});
+};

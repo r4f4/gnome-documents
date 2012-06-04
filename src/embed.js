@@ -43,10 +43,11 @@ const GtkClutter = imports.gi.GtkClutter;
 
 const _PDF_LOADER_TIMEOUT = 400;
 
+function ViewEmbed() {
+    this._init();
+}
 
-const ViewEmbed = new Lang.Class({
-    Name: 'ViewEmbed',
-
+ViewEmbed.prototype  = {
     _init: function() {
         this._adjustmentValueId = 0;
         this._adjustmentChangedId = 0;
@@ -380,4 +381,4 @@ const ViewEmbed = new Lang.Class({
         let errorBox = new ErrorBox.ErrorBox(message, exception.message);
         this._scrolledWinPreview.add_with_viewport(errorBox.widget);
     }
-});
+};

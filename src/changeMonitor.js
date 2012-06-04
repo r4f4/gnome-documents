@@ -31,17 +31,17 @@ const TrackerResourcesServiceIface = {
                 inSignature: 'sa(iiii)a(iiii)' }]
 };
 
+function TrackerResourcesService() {
+    this._init();
+}
 
-const TrackerResourcesService = new Lang.Class({
-    Name: 'TrackerResourcesService',
-	
-
+TrackerResourcesService.prototype = {
     _init: function() {
         DBus.session.proxifyObject(this,
                                    'org.freedesktop.Tracker1',
                                    '/org/freedesktop/Tracker1/Resources');
     }
-});
+};
 DBus.proxifyPrototype(TrackerResourcesService.prototype, TrackerResourcesServiceIface);
 
 const ChangeEventType = {
@@ -52,10 +52,11 @@ const ChangeEventType = {
 
 const _RDF_TYPE = "http://www.w3.org/1999/02/22-rdf-syntax-ns#type";
 
+function ChangeEvent(urn, predicate, isDelete) {
+    this._init(urn, predicate, isDelete);
+}
 
-const ChangeEvent = new Lang.Class({
-    Name: 'ChangeEvent',
-
+ChangeEvent.prototype = {
     _init: function(urn, predicate, isDelete) {
         this.urn = urn;
 
@@ -76,14 +77,13 @@ const ChangeEvent = new Lang.Class({
             this.type = event.type;
         }
     }
-});
+};
 
+function TrackerChangeMonitor() {
+    this._init();
+}
 
-
-const TrackerChangeMonitor = new Lang.Class({
-    Name: 'TrackerChangeMonitor',
-	
-	
+TrackerChangeMonitor.prototype = {
     _init: function() {
         this._outstandingOps = 0;
         this._pendingChanges = [];
@@ -153,5 +153,5 @@ const TrackerChangeMonitor = new Lang.Class({
             this._pendingChanges = {};
         }
     }
-});
+};
 Signals.addSignalMethods(TrackerChangeMonitor.prototype);

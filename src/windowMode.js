@@ -20,7 +20,6 @@
  */
 
 const Signals = imports.signals;
-const Lang = imports.lang;
 
 const WindowMode = {
     NONE: 0,
@@ -28,11 +27,11 @@ const WindowMode = {
     PREVIEW: 2
 };
 
+function ModeController() {
+    this._init();
+};
 
-
-const ModeController = new Lang.Class({
-    Name: 'ModeController',
-
+ModeController.prototype = {
     _init: function() {
         this._mode = WindowMode.NONE;
         this._fullscreen = false;
@@ -90,5 +89,5 @@ const ModeController = new Lang.Class({
     getCanFullscreen: function() {
         return this._canFullscreen;
     }
-});
+};
 Signals.addSignalMethods(ModeController.prototype);

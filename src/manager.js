@@ -27,11 +27,11 @@ const Pango = imports.gi.Pango;
 const Lang = imports.lang;
 const Signals = imports.signals;
 
+function BaseManager(title) {
+    this._init(title);
+};
 
-
-const BaseManager = new Lang.Class({
-    Name: 'BaseManager',
-
+BaseManager.prototype = {
     _init: function(title) {
         this._items = {};
         this._activeItem = null;
@@ -164,7 +164,7 @@ const BaseManager = new Lang.Class({
 
         // TODO: merge existing item properties with new values
     }
-});
+};
 Signals.addSignalMethods(BaseManager.prototype);
 
 // GTK+ implementations
@@ -175,11 +175,11 @@ const BaseModelColumns = {
     HEADING_TEXT: 2
 };
 
+function BaseModel(manager) {
+    this._init(manager);
+}
 
-
-const BaseModel = new Lang.Class({
-    Name: 'BaseModel',
-
+BaseModel.prototype = {
     _init: function(manager) {
         this.model = Gd.create_item_store();
         this._manager = manager;
@@ -209,12 +209,13 @@ const BaseModel = new Lang.Class({
                               item.id, item.name, '');
         }
     }
-});
+};
 
+function BaseView(manager) {
+    this._init(manager);
+}
 
-const BaseView = new Lang.Class({
-    Name: 'BaseView',
-	
+BaseView.prototype = {
     _init: function(manager) {
         this._model = new BaseModel(manager);
         this._manager = manager;
@@ -285,5 +286,5 @@ const BaseView = new Lang.Class({
         if (additionalFunc)
             additionalFunc(col, cell, model, iter);
     }
-});
+};
 Signals.addSignalMethods(BaseView.prototype);

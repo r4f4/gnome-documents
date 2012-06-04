@@ -41,9 +41,11 @@ const Signals = imports.signals;
 const _COLLECTION_PLACEHOLDER_ID = 'collection-placeholder';
 
 // fetch all the collections a given item is part of
-const FetchCollectionsJob = new Lang.Class({
-    Name: 'FetchCollectionsJob',
+function FetchCollectionsJob(urn) {
+    this._init(urn);
+}
 
+FetchCollectionsJob.prototype = {
     _init: function(urn) {
         this._urn = urn;
         this._collections = [];
@@ -93,7 +95,7 @@ const FetchCollectionsJob = new Lang.Class({
         if (this._callback)
             this._callback(this._collections);
     }
-});
+};
 
 // fetch the state of every collection applicable to the selected items
 const OrganizeCollectionState = {
@@ -103,11 +105,11 @@ const OrganizeCollectionState = {
     HIDDEN: 1 << 2
 };
 
+function FetchCollectionStateForSelectionJob() {
+    this._init();
+}
 
-
-const FetchCollectionStateForSelectionJob = new Lang.Class({
-    Name: 'FetchCollectionStateForSelectionJob',
-
+FetchCollectionStateForSelectionJob.prototype = {
     _init: function() {
         this._collectionsForItems = {};
         this._runningJobs = 0;
@@ -190,12 +192,14 @@ const FetchCollectionStateForSelectionJob = new Lang.Class({
         if (this._callback)
             this._callback(collectionState);
     }
-});
+};
 
 // updates the mtime for the given resource to the current system time
-const UpdateMtimeJob = new Lang.Class({
-    Name: 'UpdateMtimeJob',
+function UpdateMtimeJob(urn) {
+    this._init(urn);
+}
 
+UpdateMtimeJob.prototype = {
     _init: function(urn) {
         this._urn = urn;
     },
@@ -216,12 +220,14 @@ const UpdateMtimeJob = new Lang.Class({
                     this._callback();
             }));
     }
-});
+};
 
 // adds or removes the selected items to the given collection
-const SetCollectionForSelectionJob = new Lang.Class({
-    Name: 'SetCollectionForSelectionJob',
+function SetCollectionForSelectionJob(collectionUrn, setting) {
+    this._init(collectionUrn, setting);
+}
 
+SetCollectionForSelectionJob.prototype = {
     _init: function(collectionUrn, setting) {
         this._collectionUrn = collectionUrn;
         this._setting = setting;
@@ -268,12 +274,14 @@ const SetCollectionForSelectionJob = new Lang.Class({
                 }));
         }
     }
-});
+};
 
 // creates an (empty) collection with the given name
-const CreateCollectionJob = new Lang.Class({
-    Name: 'CreateCollectionJob',
+function CreateCollectionJob(name) {
+    this._init(name);
+}
 
+CreateCollectionJob.prototype = {
     _init: function(name) {
         this._name = name;
         this._createdUrn = null;
@@ -306,7 +314,7 @@ const CreateCollectionJob = new Lang.Class({
                     this._callback(this._createdUrn);
             }));
     }
-});
+};
 
 const OrganizeModelColumns = {
     ID: 0,
@@ -314,10 +322,11 @@ const OrganizeModelColumns = {
     STATE: 2
 };
 
+function OrganizeCollectionModel() {
+    this._init();
+}
 
-const OrganizeCollectionModel = new Lang.Class({
-    Name: 'OrganizeCollectionModel',
-
+OrganizeCollectionModel.prototype = {
     _init: function() {
         this.model = Gd.create_organize_store();
         this._placeholderRef = null;
@@ -443,12 +452,13 @@ const OrganizeCollectionModel = new Lang.Class({
             this._collRemovedId = 0;
         }
     }
-});
+};
 
+function OrganizeCollectionView() {
+    this._init();
+}
 
-const OrganizeCollectionView = new Lang.Class({
-    Name: 'OrganizeCollectionView',
-
+OrganizeCollectionView.prototype = {
     _init: function() {
         this._choiceConfirmed = false;
 
@@ -593,17 +603,17 @@ const OrganizeCollectionView = new Lang.Class({
     confirmedChoice: function() {
         this._choiceConfirmed = true;
     }
-});
+};
 
 const OrganizeCollectionDialogResponse = {
     ADD: 1
 };
 
+function OrganizeCollectionDialog(toplevel) {
+    this._init(toplevel);
+};
 
-const OrganizeCollectionDialog = new Lang.Class({
-    Name: 'OrganizeCollectionDialog',
-
-
+OrganizeCollectionDialog.prototype = {
     _init: function(toplevel) {
         this.widget = new Gtk.Dialog({ transient_for: toplevel,
                                        modal: true,
@@ -647,12 +657,13 @@ const OrganizeCollectionDialog = new Lang.Class({
 
         this.widget.show_all();
     }
-});
+};
 
+function SelectionController() {
+    this._init();
+};
 
-const SelectionController = new Lang.Class({
-    Name: 'SelectionController',
-
+SelectionController.prototype = {
     _init: function() {
         this._selection = [];
         this._selectionMode = false;
@@ -711,13 +722,14 @@ const SelectionController = new Lang.Class({
     getSelectionMode: function() {
         return this._selectionMode;
     }
-});
+};
 Signals.addSignalMethods(SelectionController.prototype);
 
+function SelectionToolbar() {
+    this._init();
+}
 
-const SelectionToolbar = new Lang.Class({
-    Name: 'SelectionToolbar',
-	
+SelectionToolbar.prototype = {
     _init: function() {
         this._itemListeners = {};
         this._insideRefresh = false;
@@ -981,4 +993,4 @@ const SelectionToolbar = new Lang.Class({
               },
               onCompleteScope: this });
     }
-});
+};

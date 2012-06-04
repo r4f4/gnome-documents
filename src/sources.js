@@ -31,11 +31,13 @@ const Manager = imports.manager;
 const SourceStock = {
     ALL: 'all',
     LOCAL: 'local'
+}
+
+function Source(params) {
+    this._init(params);
 };
 
-const Source = new Lang.Class({
-    Name: 'Source',
-
+Source.prototype = {
     _init: function(params) {
         this.id = null;
         this.name = null;
@@ -75,15 +77,17 @@ const Source = new Lang.Class({
 
         return filter;
     }
-});
+};
 
+function SourceManager() {
+    this._init();
+};
 
-const SourceManager = new Lang.Class({
-    Name: 'SourceManager',
-    Extends: Manager.BaseManager,
+SourceManager.prototype = {
+    __proto__: Manager.BaseManager.prototype,
 
     _init: function() {
-        this.parent(_("Sources"));
+        Manager.BaseManager.prototype._init.call(this, _("Sources"));
 
         // Translators: this refers to documents
         let source = new Source({ id: SourceStock.ALL,
@@ -123,4 +127,4 @@ const SourceManager = new Lang.Class({
 
         this.processNewItems(newItems);
     }
-});
+};
