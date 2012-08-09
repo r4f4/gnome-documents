@@ -73,7 +73,7 @@ msgstr "তালিকা"
 
 #: ../src/application.js:134
 msgid "Fullscreen"
-msgstr "সম্পূৰ্ণ পৰ্দা"
+msgstr "পূৰ্ণপৰ্দা"
 
 #: ../src/application.js:137
 msgid "About Documents"
