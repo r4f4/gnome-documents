@@ -5,10 +5,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-documents 3.5.x\n"
+"Project-Id-Version: gnome-documents 3.6.x\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-01 10:48+0200\n"
-"PO-Revision-Date: 2012-09-01 10:49+0200\n"
+"POT-Creation-Date: 2012-10-13 12:40+0200\n"
+"PO-Revision-Date: 2012-10-13 12:40+0200\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian bokmål <i18n-nb@lister.ping.uio.no>\n"
 "Language: \n"
@@ -98,24 +98,29 @@ msgid "Skydrive"
 msgstr "Skydrive"
 
 #. Translators: %s is the title of a document
-#: ../src/documents.js:972
+#: ../src/documents.js:976
 #, c-format
 msgid "Unable to load \"%s\" for preview"
 msgstr "Kan ikke laste «%s» for forhåndsvisning"
 
-#: ../src/embed.js:74
+#: ../src/embed.js:73
 msgid "Loading..."
 msgstr "Laster …"
 
-#: ../src/embed.js:220
+#: ../src/embed.js:223
 msgid "No Documents Found"
 msgstr "Ingen dokumenter funnet"
 
-#: ../src/embed.js:226
-msgid "You can add your online accounts in"
-msgstr "Du kan legge til dine kontoer på nettet i"
+#. Translators: %s here is "System Settings", which is in a separate string
+#. due to markup, and should be translated only in the context of this sentence
+#: ../src/embed.js:246
+#, c-format
+msgid "You can add your online accounts in %s"
+msgstr "Du kan legge til dine kontoer på nettet i %s"
 
-#: ../src/embed.js:227
+#. Translators: this should be translated in the context of the
+#. "You can add your online accounts in System Settings" sentence above
+#: ../src/embed.js:250
 msgid "System Settings"
 msgstr "Systeminnstillinger"
 
@@ -159,7 +164,7 @@ msgid_plural "%d selected"
 msgstr[0] "%d valgt"
 msgstr[1] "%d valgt"
 
-#: ../src/mainToolbar.js:208 ../src/properties.js:58
+#: ../src/mainToolbar.js:208 ../src/properties.js:59
 msgid "Done"
 msgstr "Ferdig"
 
@@ -167,7 +172,7 @@ msgstr "Ferdig"
 msgid "Back"
 msgstr "Tilbake"
 
-#: ../src/mainToolbar.js:244
+#: ../src/mainToolbar.js:248
 msgid "Select Items"
 msgstr "Velg oppføringer"
 
@@ -184,44 +189,44 @@ msgstr "Et program for å håndtere dokumenter"
 msgid "Printing \"%s\": %s"
 msgstr "Skriver ut «%s»: %s"
 
-#: ../src/notifications.js:151
+#: ../src/notifications.js:152
 msgid "Your documents are being indexed"
 msgstr "Dokumentene dine blir indeksert"
 
-#: ../src/notifications.js:155
+#: ../src/notifications.js:156
 msgid "Some documents might not be available during this process"
-msgstr "Noen dokumenter vil kanskje ikke være tilgjengelig under denne prosessen"
+msgstr ""
+"Noen dokumenter vil kanskje ikke være tilgjengelig under denne prosessen"
 
-#. Properties dialog heading
-#: ../src/properties.js:73 ../src/selections.js:792
+#: ../src/properties.js:57 ../src/selections.js:793
 msgid "Properties"
 msgstr "Egenskaper"
 
 #. Title item
-#: ../src/properties.js:81 ../src/searchbar.js:225
+#: ../src/properties.js:74 ../src/searchbar.js:225
 msgid "Title"
 msgstr "Tittel"
 
-#: ../src/properties.js:88 ../src/searchbar.js:227
+#: ../src/properties.js:81 ../src/searchbar.js:227
 msgid "Author"
 msgstr "Forfatter"
 
 #. Source item
-#: ../src/properties.js:95
+#: ../src/properties.js:88
 msgid "Source"
 msgstr "Kilde"
 
 #. Date Modified item
-#: ../src/properties.js:101
+#: ../src/properties.js:94
 msgid "Date Modified"
 msgstr "Endringsdato"
 
-#: ../src/properties.js:108
+#: ../src/properties.js:101
 msgid "Date Created"
 msgstr "Opprettelsesdato"
 
 #. Document type item
-#: ../src/properties.js:115 ../src/searchbar.js:135
+#: ../src/properties.js:108 ../src/searchbar.js:135
 msgid "Type"
 msgstr "Skriv"
 
@@ -268,26 +273,26 @@ msgstr "Tekstdokumenter"
 msgid "Match"
 msgstr "Treff"
 
-#: ../src/selections.js:761
-msgid "Print"
-msgstr "Skriv ut"
-
-#: ../src/selections.js:768
-msgid "Delete"
-msgstr "Slett"
-
-#: ../src/selections.js:784
+#: ../src/selections.js:616 ../src/selections.js:785
 msgid "Organize"
 msgstr "Organiser"
 
+#: ../src/selections.js:762
+msgid "Print"
+msgstr "Skriv ut"
+
+#: ../src/selections.js:769
+msgid "Delete"
+msgstr "Slett"
+
 #. Translators: this is the Open action in a context menu
-#: ../src/selections.js:873
+#: ../src/selections.js:874
 #, c-format
 msgid "Open with %s"
 msgstr "Åpne med %s"
 
 #. Translators: this is the Open action in a context menu
-#: ../src/selections.js:876 ../src/resources/preview-menu.ui.h:1
+#: ../src/selections.js:877 ../src/resources/preview-menu.ui.h:1
 msgid "Open"
 msgstr "Åpne"
 
@@ -367,6 +372,10 @@ msgid "About Documents"
 msgstr "Om dokumenter"
 
 #: ../src/resources/app-menu.ui.h:6
+msgid "Help"
+msgstr "Hjelp"
+
+#: ../src/resources/app-menu.ui.h:7
 msgid "Quit"
 msgstr "Avslutt"
 
