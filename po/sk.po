@@ -2,14 +2,15 @@
 # Copyright (C) 2011 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-documents package.
 # Stanislav Petrek <stanislav.petrek@gmail.com>, 2011.
+# Dušan Kazik <prescott66@gmail.com>, 2012.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-documents\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-10-01 13:36+0000\n"
-"PO-Revision-Date: 2012-10-06 12:54+0100\n"
+"POT-Creation-Date: 2012-10-13 17:01+0000\n"
+"PO-Revision-Date: 2012-10-13 22:22+0100\n"
 "Last-Translator: Dušan Kazik <prescott66@gmail.com>\n"
 "Language-Team: Slovak <gnome-sk-list@gnome.org>\n"
 "Language: sk\n"
@@ -17,6 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 1 : (n>=2 && n<=4) ? 2 : 0;\n"
+"X-Generator: Poedit 1.5.4\n"
 
 #: ../data/gnome-documents.desktop.in.in.h:1 ../src/mainWindow.js:51
 #: ../src/mainWindow.js:205
@@ -59,7 +61,7 @@ msgstr "Súradnice polohy okna (x a y)."
 
 #: ../data/org.gnome.documents.gschema.xml.in.h:7
 msgid "Window maximized"
-msgstr "Okno maximalizované"
+msgstr "Maximalizované okno"
 
 #: ../data/org.gnome.documents.gschema.xml.in.h:8
 msgid "Window maximized state"
@@ -136,8 +138,8 @@ msgstr "Nepodarilo sa načítať dokument"
 #: ../src/lib/gd-pdf-loader.c:673
 msgid "Cannot find \"unoconv\", please check your LibreOffice installation"
 msgstr ""
-"Nepodarilo sa nájsť nástroj „unoconv“, prosím, skontrolujte vašu "
-"inštaláciu programu LibreOffice"
+"Nepodarilo sa nájsť nástroj „unoconv“, prosím, skontrolujte vašu inštaláciu "
+"programu LibreOffice"
 
 #: ../src/mainToolbar.js:73
 msgid "Search"
@@ -148,10 +150,11 @@ msgid "New and Recent"
 msgstr "Nové a nedávne"
 
 # PM: čo môže byť miesto %s?
+# DK: skusal som tuto aplikaciu a su to vysledky pre hladany vyraz
 #: ../src/mainToolbar.js:165
-#, fuzzy, c-format
+#, c-format
 msgid "Results for \"%s\""
-msgstr "Výsledky pre „%s“"
+msgstr "Výsledky pre výraz „%s“"
 
 #: ../src/mainToolbar.js:167
 msgid "filtered by title"
@@ -181,9 +184,10 @@ msgstr "Hotovo"
 msgid "Back"
 msgstr "Späť"
 
+# DK: ide o tooltip nad tlacidlom
 #: ../src/mainToolbar.js:248
 msgid "Select Items"
-msgstr "Vyberte položky"
+msgstr "Umožní výber položiek"
 
 #: ../src/mainWindow.js:204
 msgid "translator-credits"
@@ -210,41 +214,34 @@ msgstr "Niektoré dokumenty nemusia byť počas tohto procesu dostupné"
 msgid "Properties"
 msgstr "Vlastnosti"
 
-# PM: prečo je tu názvu a nie názov?
-# PM: je to na dvoch miestach sedí to pre obe miesta?
+# *https://bugzilla.gnome.org/show_bug.cgi?id=685753
 #. Title item
 #: ../src/properties.js:74 ../src/searchbar.js:225
-#, fuzzy
 msgid "Title"
 msgstr "Názvu"
 
-# PM: prečo je tu autora a nie autor?
-# PM: je to na dvoch miestach sedí to pre obe miesta?
+# *https://bugzilla.gnome.org/show_bug.cgi?id=685753
 #: ../src/properties.js:81 ../src/searchbar.js:227
-#, fuzzy
 msgid "Author"
 msgstr "Autora"
 
 #. Source item
 #: ../src/properties.js:88
-#, fuzzy
 msgid "Source"
 msgstr "Zdroj"
 
 #. Date Modified item
 #: ../src/properties.js:94
-#, fuzzy
 msgid "Date Modified"
 msgstr "Dátum zmeny"
 
 #: ../src/properties.js:101
-#, fuzzy
 msgid "Date Created"
 msgstr "Dátum vytvorenia"
 
+# *https://bugzilla.gnome.org/show_bug.cgi?id=685753
 #. Document type item
 #: ../src/properties.js:108 ../src/searchbar.js:135
-#, fuzzy
 msgid "Type"
 msgstr "Typ"
 
@@ -301,7 +298,7 @@ msgstr "Tlačiť"
 
 #: ../src/selections.js:769
 msgid "Delete"
-msgstr "Vymazať"
+msgstr "Odstrániť"
 
 #. Translators: this is the Open action in a context menu
 #: ../src/selections.js:874
