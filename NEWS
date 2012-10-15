@@ -1,3 +1,12 @@
+3.6.1 - "It's on"
+=================
+
+- Add support for keyboard navigation and item activation
+- Performance improvements when new files are added to the store
+- Performance improvements when refreshing remote documents provider sources
+- Fix detail label not ellipsizing in the main toolbar
+- Fix window titles for Organize and Properties dialogs
+
 3.6.0 - "Talk to Me"
 ====================
 
