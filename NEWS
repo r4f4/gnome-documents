@@ -1,3 +1,10 @@
+3.6.2 - "Nightmares"
+====================
+
+- Don't flicker overview when launching a preview from the search provider
+- Don't start GOA miners for account types we don't have
+- Add keyboard accelerators for help, print and the gear menu (Jeremy Bicha)
+
 3.6.1 - "It's on"
 =================
 
