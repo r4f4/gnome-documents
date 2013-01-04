@@ -7,16 +7,18 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-documents\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-02-16 21:16+0000\n"
+"POT-Creation-Date: 2012-09-26 16:18+0000\n"
 "PO-Revision-Date: 2012-02-18 21:16+0000\n"
 "Last-Translator: Gheyret T.Kenji <gheyret@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../data/gnome-documents.desktop.in.in.h:1 ../src/mainWindow.js:53
+#: ../data/gnome-documents.desktop.in.in.h:1 ../src/mainWindow.js:51
+#: ../src/mainWindow.js:205
 msgid "Documents"
 msgstr "پۈتۈكلەر"
 
@@ -24,222 +26,408 @@ msgstr "پۈتۈكلەر"
 msgid "Access, manage and share documents"
 msgstr "پۈتۈكلەرنى زىيارەت قىلىدۇ، باشقۇرىدۇ ۋە ھەمبەھىر قىلىدۇ"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:1 ../src/application.js:125
+#: ../data/gnome-documents.desktop.in.in.h:3
+#| msgid "PDF Documents"
+msgid "Docs;PDF;Document;"
+msgstr "Docs;PDF;پۈتۈكلەر;"
+
+#: ../data/org.gnome.documents.gschema.xml.in.h:1
+#: ../src/resources/app-menu.ui.h:1
 msgid "View as"
-msgstr ""
+msgstr "كۆرۈنۈشى"
 
 #: ../data/org.gnome.documents.gschema.xml.in.h:2
 msgid "View as type"
-msgstr ""
+msgstr "تىپ كۆرۈنۈشىدە"
 
 #: ../data/org.gnome.documents.gschema.xml.in.h:3
-msgid "The active source filter"
-msgstr "ئاكتىپ مەنبە سۈزگۈچ"
-
-#: ../data/org.gnome.documents.gschema.xml.in.h:4
-msgid "The last active source filter"
-msgstr "ئەڭ ئاخىرقى ئاكتىپ مەنبە سۈزگۈچ"
-
-#: ../data/org.gnome.documents.gschema.xml.in.h:5
 msgid "Window size"
 msgstr "كۆزنەك چوڭلۇقى"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:6
+#: ../data/org.gnome.documents.gschema.xml.in.h:4
 msgid "Window size (width and height)."
-msgstr ""
+msgstr "كۆزنەك چوڭلۇقى(كەڭلىك ۋە ئېگىزلىك)"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:7
+#: ../data/org.gnome.documents.gschema.xml.in.h:5
 msgid "Window position"
 msgstr "كۆزنەك ئورنى"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:8
+#: ../data/org.gnome.documents.gschema.xml.in.h:6
 msgid "Window position (x and y)."
-msgstr ""
+msgstr "كۆزنەك ئورنى (x ۋە y)"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:9
+#: ../data/org.gnome.documents.gschema.xml.in.h:7
 msgid "Window maximized"
 msgstr "كۆزنەك چوڭايتىلغاندا"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:10
+#: ../data/org.gnome.documents.gschema.xml.in.h:8
 msgid "Window maximized state"
-msgstr ""
+msgstr "كۆزنەك ئەڭ چوڭ ھالەتتە"
 
-#: ../src/application.js:119
-msgid "Fullscreen"
-msgstr "پۈتۈن ئېكران"
-
-#: ../src/application.js:120
-msgid "Quit"
-msgstr "چېكىن"
-
-#: ../src/application.js:123
-msgid "Grid"
-msgstr "تورسىمان قاپقاق"
-
-#: ../src/application.js:124
-msgid "List"
-msgstr "تىزىم"
-
-#: ../src/documents.js:618 ../src/sources.js:100
+#: ../src/documents.js:640 ../src/sources.js:95
 msgid "Local"
 msgstr "يەرلىك"
 
 #. overridden
-#: ../src/documents.js:681
+#: ../src/documents.js:693
 msgid "Google Docs"
-msgstr "گۇگىل Docs"
+msgstr "گۇگىل پۈتۈكلىرى"
 
-#: ../src/documents.js:682
+#: ../src/documents.js:694
 msgid "Google"
-msgstr "Google"
+msgstr "گۇگىل(Google)"
 
-#: ../src/documents.js:751
+#: ../src/documents.js:758 ../src/documents.js:857
 msgid "Spreadsheet"
 msgstr "ئېلېكترونلۇق جەدۋەل"
 
-#: ../src/documents.js:753
+#: ../src/documents.js:760 ../src/documents.js:859
 msgid "Presentation"
-msgstr "كۆرسەتمە"
+msgstr "سۇنۇلما"
 
-#: ../src/documents.js:755
+#: ../src/documents.js:762 ../src/documents.js:861
 msgid "Collection"
 msgstr "توپلام"
 
-#: ../src/documents.js:757
+#: ../src/documents.js:764 ../src/documents.js:863
 msgid "Document"
 msgstr "پۈتۈك"
 
+#. overridden
+#: ../src/documents.js:791 ../src/documents.js:792
+msgid "Skydrive"
+msgstr "Skydrive"
+
 #. Translators: %s is the title of a document
-#: ../src/error.js:37
+#: ../src/documents.js:976
 #, c-format
 msgid "Unable to load \"%s\" for preview"
 msgstr "%s نى ئالدىن كۆرىدىغانغا ئاچالمىدى"
 
-#: ../src/error.js:49
-msgid "Unable to fetch the list of documents"
-msgstr "پۈتۈكلەر تىزمىنى ئالغىلى بولمىدى"
+#: ../src/embed.js:73
+msgid "Loading..."
+msgstr "ئوقۇۋاتىدۇ…"
 
-#. right section
-#: ../src/lib/gd-main-toolbar.c:210
-msgid "Done"
-msgstr "تامام"
+#: ../src/embed.js:223
+#| msgid "Documents"
+msgid "No Documents Found"
+msgstr "پۈتۈك تېپىلمىدى"
 
-#: ../src/lib/gd-pdf-loader.c:207
+#. Translators: %s here is "System Settings", which is in a separate string
+#. due to markup, and should be translated only in the context of this sentence
+#: ../src/embed.js:246
+#, c-format
+msgid "You can add your online accounts in %s"
+msgstr "توردىكى ھېساباتلىرىڭىزنى %s دە قوشالايسىز"
+
+#. Translators: this should be translated in the context of the
+#. "You can add your online accounts in System Settings" sentence above
+#: ../src/embed.js:250
+msgid "System Settings"
+msgstr "سىستېما تەڭشىكى"
+
+#: ../src/lib/gd-pdf-loader.c:224
 msgid "Unable to load the document"
-msgstr ""
+msgstr "پۈتۈكنى ئوقۇيالمىدى"
 
-#: ../src/lib/gd-pdf-loader.c:488
+#: ../src/lib/gd-pdf-loader.c:673
 msgid "Cannot find \"unoconv\", please check your LibreOffice installation"
-msgstr ""
+msgstr "«unoconv» نى تاپالمىدى، LibreOffice نىڭ ئورنىتىلىشىنى تەكشۈرۈپ كۆرۈڭ"
 
-#: ../src/loadMore.js:70
-#, c-format
-msgid "Load %d more document"
-msgid_plural "Load %d more documents"
-msgstr[0] "يەنە %d پۈتۈك ئوقۇش"
+#: ../src/mainToolbar.js:73
+msgid "Search"
+msgstr "ئىزدە"
 
-#: ../src/mainToolbar.js:118
-msgid "Click on items to select them"
-msgstr ""
-
-#: ../src/mainToolbar.js:120
-#, c-format
-msgid "%d selected"
-msgstr "%d تاللاندى"
-
-#: ../src/mainToolbar.js:165
+#: ../src/mainToolbar.js:158
 msgid "New and Recent"
 msgstr "يېڭى ۋە يېقىنقى"
 
-#: ../src/mainToolbar.js:187
+#: ../src/mainToolbar.js:165
 #, c-format
-msgid "(%d of %d)"
-msgstr "(%d / %d)"
+msgid "Results for \"%s\""
+msgstr "«%s» نىڭ نەتىجىسى"
 
-#: ../src/searchbar.js:86
-msgid "Category"
-msgstr "كاتېگورىيە"
+#: ../src/mainToolbar.js:167
+msgid "filtered by title"
+msgstr "ماۋزۇ بويىچە تەرتىپلەنگەن"
 
-#: ../src/searchbar.js:91 ../src/searchbar.js:141 ../src/searchbar.js:208
-#: ../src/sources.js:94
-msgid "All"
-msgstr "ھەممىسى"
+#: ../src/mainToolbar.js:169
+msgid "filtered by author"
+msgstr "ئاپتور بويىچە تەرتىپلەنگەن"
 
-#: ../src/searchbar.js:97
-msgid "Favorites"
-msgstr "يىغقۇچ"
+#: ../src/mainToolbar.js:176
+msgid "Click on items to select them"
+msgstr "تاللاش ئۈچۈن تۈرنى چېكىڭ"
 
-#: ../src/searchbar.js:102
-msgid "Shared with you"
-msgstr "سىز بىلەن ھەمبەھىرلىگەن"
+#: ../src/mainToolbar.js:178
+#, c-format
+#| msgid "%d selected"
+msgid "%d selected"
+msgid_plural "%d selected"
+msgstr[0] "%d تاللاندى"
 
-#: ../src/searchbar.js:138
-msgid "Type"
-msgstr "تىپى"
+#: ../src/mainToolbar.js:208 ../src/properties.js:59
+msgid "Done"
+msgstr "تامام"
 
-#: ../src/searchbar.js:143
-msgid "Collections"
-msgstr "توپلاملار"
+#: ../src/mainToolbar.js:226
+msgid "Back"
+msgstr "كەينى"
 
-#: ../src/searchbar.js:147
-msgid "PDF Documents"
-msgstr "PDF پۈتۈكى"
+#: ../src/mainToolbar.js:248
+msgid "Select Items"
+msgstr "تۈرلەرنى تاللاش"
 
-#: ../src/searchbar.js:150
-msgid "Presentations"
-msgstr "سۇنۇلمىلار"
+#: ../src/mainWindow.js:204
+msgid "translator-credits"
+msgstr "Gheyret Kenji <gheyret@gmail.com>\n"
+"Sahran<sahran@live.com>\n"
+"Muhemmed Erdem <misran_erdem@hotmail.com>\n"
+"\n"
+"Launchpad Contributions:\n"
+"  Abdumomin.Kadir https://launchpad.net/~abdumomin-kadir\n"
+"  Gheyret T.Kenji https://launchpad.net/~gheyret\n"
+"  Gheyret T.Kenji https://launchpad.net/~gheyretkenji\n"
+"  Sahran https://launchpad.net/~sahran"
 
-#: ../src/searchbar.js:153
-msgid "Spreadsheets"
-msgstr ""
+#: ../src/mainWindow.js:206
+msgid "A document manager application"
+msgstr "پۈتۈل باشقۇرۇش پروگراممىسى"
 
-#: ../src/searchbar.js:156
-msgid "Text Documents"
-msgstr ""
+#: ../src/notifications.js:86
+#, c-format
+msgid "Printing \"%s\": %s"
+msgstr "بېسىۋاتقىنى «%s»: %s"
 
-#: ../src/searchbar.js:205
-msgid "Match"
-msgstr "مۇۋاپىق"
+#: ../src/notifications.js:151
+msgid "Your documents are being indexed"
+msgstr "پۈتۈكلەر ئىندېكىسلىنىۋاتىدۇ"
 
-#: ../src/searchbar.js:210
+#: ../src/notifications.js:155
+msgid "Some documents might not be available during this process"
+msgstr "بۇ مەشغۇلاتنى قىلىۋاتقاندا، بەزى پۈتۈكلەرنى ئىشلەتكىلى بولماسلىقى مۇمكىن"
+
+#: ../src/properties.js:57 ../src/selections.js:793
+msgid "Properties"
+msgstr "خاسلىق"
+
+#. Title item
+#: ../src/properties.js:74 ../src/searchbar.js:225
 msgid "Title"
 msgstr "ماۋزۇ"
 
-#: ../src/searchbar.js:212
+#: ../src/properties.js:81 ../src/searchbar.js:227
 msgid "Author"
-msgstr "يازغۇچى"
+msgstr "ئاپتور"
 
-#: ../src/selections.js:663
+#. Source item
+#: ../src/properties.js:88
+#| msgid "Sources"
+msgid "Source"
+msgstr "مەنبە"
+
+#. Date Modified item
+#: ../src/properties.js:94
+msgid "Date Modified"
+msgstr "ئۆزگەرتكەن چېسلا"
+
+#: ../src/properties.js:101
+msgid "Date Created"
+msgstr "قۇرۇلغان چېسلا"
+
+#. Document type item
+#: ../src/properties.js:108 ../src/searchbar.js:135
+msgid "Type"
+msgstr "تىپى"
+
+#: ../src/searchbar.js:83
+msgid "Category"
+msgstr "كاتېگورىيە"
+
+#: ../src/searchbar.js:88 ../src/searchbar.js:138 ../src/searchbar.js:223
+#: ../src/sources.js:89
+msgid "All"
+msgstr "ھەممىسى"
+
+#: ../src/searchbar.js:94
+msgid "Favorites"
+msgstr "يىغقۇچ"
+
+#: ../src/searchbar.js:99
+msgid "Shared with you"
+msgstr "سىز بىلەن ھەمبەھىرلىگەن"
+
+#: ../src/searchbar.js:140
+msgid "Collections"
+msgstr "توپلاملار"
+
+#: ../src/searchbar.js:144
+msgid "PDF Documents"
+msgstr "PDF پۈتۈكى"
+
+#: ../src/searchbar.js:148
+msgid "Presentations"
+msgstr "سۇنۇلمىلار"
+
+#: ../src/searchbar.js:151
+msgid "Spreadsheets"
+msgstr "ئېلېكترونلۇق جەدۋەل"
+
+#: ../src/searchbar.js:154
+msgid "Text Documents"
+msgstr "تېكىست پۈتۈكلىرى"
+
+#. Translators: this is a verb that refers to "All", "Title" and "Author",
+#. as in "Match All", "Match Title" and "Match Author"
+#: ../src/searchbar.js:220
+msgid "Match"
+msgstr "مۇۋاپىق"
+
+#: ../src/selections.js:616 ../src/selections.js:785
 msgid "Organize"
 msgstr "باشقۇر"
 
-#: ../src/selections.js:670
+#: ../src/selections.js:762
+msgid "Print"
+msgstr "بېسىپ چىقار"
+
+#: ../src/selections.js:769
 msgid "Delete"
 msgstr "ئۆچۈر"
 
 #. Translators: this is the Open action in a context menu
-#: ../src/selections.js:761 ../src/view.js:67
+#: ../src/selections.js:874
 #, c-format
 msgid "Open with %s"
 msgstr "%s دا ئاچ"
 
 #. Translators: this is the Open action in a context menu
-#: ../src/selections.js:764 ../src/view.js:70
+#: ../src/selections.js:877 ../src/resources/preview-menu.ui.h:1
 msgid "Open"
 msgstr "ئاچ"
 
-#: ../src/selections.js:777 ../src/view.js:80
-msgid "Remove from favorites"
-msgstr "يىغقۇچتىن چىقىرىۋەت"
+#: ../src/shellSearchProvider.js:281
+#| msgid "Document"
+msgid "Untitled Document"
+msgstr "ماۋزۇسىز ھۆججەت"
 
-#: ../src/selections.js:781 ../src/view.js:80
-msgid "Add to favorites"
-msgstr "يىغقۇچقا قوش"
-
-#: ../src/sources.js:90
+#: ../src/sources.js:85
 msgid "Sources"
 msgstr "مەنبەلەر"
 
-#: ../src/spinnerBox.js:58
-msgid "Loading..."
-msgstr "يۈكلەۋاتىدۇ…"
+#: ../src/view.js:79
+#, c-format
+msgid "Load %d more document"
+msgid_plural "Load %d more documents"
+msgstr[0] "يەنە %d پۈتۈك ئوقۇش"
+
+#: ../src/view.js:283
+msgid "Yesterday"
+msgstr "تۈنۈگۈن"
+
+#: ../src/view.js:285
+#, c-format
+msgid "%d day ago"
+msgid_plural "%d days ago"
+msgstr[0] "%d كۈن ئىلگىرى"
+
+#: ../src/view.js:289
+msgid "Last week"
+msgstr "ئالدىنقى ھەپتە"
+
+#: ../src/view.js:291
+#, c-format
+msgid "%d week ago"
+msgid_plural "%d weeks ago"
+msgstr[0] "%d ھەپتە ئىلگىرى"
+
+#: ../src/view.js:295
+msgid "Last month"
+msgstr "ئوتكەن ئاي"
+
+#: ../src/view.js:297
+#, c-format
+msgid "%d month ago"
+msgid_plural "%d months ago"
+msgstr[0] "%d ئاي ئىلگىرى"
+
+#: ../src/view.js:301
+msgid "Last year"
+msgstr "ئۆتكەن يىلدىكىسى"
+
+#: ../src/view.js:303
+#, c-format
+msgid "%d year ago"
+msgid_plural "%d years ago"
+msgstr[0] "%d ئاي بۇرۇن"
+
+#: ../src/resources/app-menu.ui.h:2
+msgid "Grid"
+msgstr "سېتكا"
+
+#: ../src/resources/app-menu.ui.h:3
+msgid "List"
+msgstr "تىزىم"
+
+#: ../src/resources/app-menu.ui.h:4
+msgid "Fullscreen"
+msgstr "پۈتۈن ئېكران"
+
+#: ../src/resources/app-menu.ui.h:5
+#| msgid "Documents"
+msgid "About Documents"
+msgstr "پۈتۈكلەر ھەققىدە"
+
+#: ../src/resources/app-menu.ui.h:6
+msgid "Help"
+msgstr "ياردەم"
+
+#: ../src/resources/app-menu.ui.h:7
+msgid "Quit"
+msgstr "ئاخىرلاشتۇر"
+
+#: ../src/resources/preview-menu.ui.h:2
+msgid "Print..."
+msgstr "باس…"
+
+#: ../src/resources/preview-menu.ui.h:3
+msgid "Zoom In"
+msgstr "چوڭايت"
+
+#: ../src/resources/preview-menu.ui.h:4
+msgid "Zoom Out"
+msgstr "كىچىكلىتىش"
+
+#: ../src/resources/preview-menu.ui.h:5
+msgid "Rotate Left"
+msgstr "سولغا ئايلاندۇر"
+
+#: ../src/resources/preview-menu.ui.h:6
+msgid "Rotate Right"
+msgstr "ئوڭغا ئايلاندۇر"
+
+#: ../src/resources/selection-menu.ui.h:1
+msgid "Select All"
+msgstr "ھەممىنى تاللا"
+
+#: ../src/resources/selection-menu.ui.h:2
+msgid "Select None"
+msgstr "ھەممىنى تاللىما"
+
+#~ msgid "The active source filter"
+#~ msgstr "ئاكتىپ مەنبە سۈزگۈچ"
+
+#~ msgid "The last active source filter"
+#~ msgstr "ئەڭ ئاخىرقى ئاكتىپ مەنبە سۈزگۈچ"
+
+#~ msgid "Unable to fetch the list of documents"
+#~ msgstr "پۈتۈكلەر تىزمىنى ئالغىلى بولمىدى"
+
+#~ msgid "(%d of %d)"
+#~ msgstr "(%d / %d)"
+
+#~ msgid "Remove from favorites"
+#~ msgstr "يىغقۇچتىن چىقىرىۋەت"
+
+#~ msgid "Add to favorites"
+#~ msgstr "يىغقۇچقا قوش"
