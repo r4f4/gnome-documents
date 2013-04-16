@@ -1,3 +1,14 @@
+3.8.1 - "Duster"
+================
+
+- Support rubberband selection in views (Alexander Larsson)
+- Fix default response in Properties (Debarshi Ray)
+- Fix prev/next page buttons not working in dual mode
+- Fix bugs when launched from a search provider result
+- Fix PDF from Google Drive not using the right document type
+- Fix icon for Google Drawings
+- Fix a crash when closing the preview soon after show
+
 3.8.0 - "Talkin' in My Sleep"
 =============================
 
