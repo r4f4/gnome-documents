@@ -272,6 +272,7 @@ const OverviewSearchbar = new Lang.Class({
 
     _init: function(dropdown) {
         this._dropdown = dropdown;
+        this._selectAll = Application.application.lookup_action('select-all');
 
         this.parent();
 
@@ -415,8 +416,14 @@ const OverviewSearchbar = new Lang.Class({
         this.parent();
     },
 
+    show: function() {
+        this._selectAll.enabled = false;
+        this.parent();
+    },
+
     hide: function() {
         this._dropdownButton.set_active(false);
+        this._selectAll.enabled = true;
 
         Application.searchTypeManager.setActiveItemById('all');
         Application.searchMatchManager.setActiveItemById('all');
