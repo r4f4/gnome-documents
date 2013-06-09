@@ -1,3 +1,20 @@
+3.8.3 - "The Bridge"
+====================
+
+- Show thumbnails for Google Documents (Debarshi Ray)
+- Add a manual page (Debarshi Ray)
+- Don't forward key events to search bar on error (Debarshi Ray)
+- Fix crash when trying to load links on a document that does not 
+  support them (Debarshi Ray)
+- Fix crash when trying to search into a document that does not support
+  it (Debarshi Ray)
+- Fix hang when going back to overview after disabling a GOA
+  account while previewing or editing (Debarshi Ray)
+- Fix stray unoconv process when loading is cancelled in-flight (Debarshi Ray)
+- Fix <Primary>a not working in overview (Debarshi Ray)
+- Fix user input being incorrectly overwritten with the lowercase version
+  used internally (Debarshi Ray)
+
 3.8.2.1
 =======
 
