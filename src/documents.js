@@ -617,8 +617,14 @@ const LocalDocument = new Lang.Class({
     },
 
     updateTypeDescription: function() {
-        if (this.mimeType)
-            this.typeDescription = Gio.content_type_get_description(this.mimeType);
+        let description = '';
+
+        if (this.collection)
+            description = _("Collection");
+        else if (this.mimeType)
+            description = Gio.content_type_get_description(this.mimeType);
+
+        this.typeDescription = description;
     },
 
     load: function(cancellable, callback) {
