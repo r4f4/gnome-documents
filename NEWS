@@ -1,3 +1,11 @@
+3.8.4 - "Just Do It"
+====================
+
+- Fix the properties dialog for local collections (Debarshi Ray)
+- Ellipsize the source label in the properties dialog to deal with long paths
+  (Debarshi Ray)
+- Wrap the secondary error label to deal with long messages (Debarshi Ray)
+
 3.8.3.1 - "Nostalgia"
 =====================
 
