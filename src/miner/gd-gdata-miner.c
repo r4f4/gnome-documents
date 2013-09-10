@@ -158,7 +158,7 @@ account_miner_job_process_entry (GdAccountMinerJob *job,
 
       parent_resource_urn = gd_miner_tracker_sparql_connection_ensure_resource
         (job->connection, job->cancellable, error,
-         NULL, parent_resource_id,
+         NULL, NULL, parent_resource_id,
          "nfo:RemoteDataObject", "nfo:DataContainer", NULL);
       g_free (parent_resource_id);
 
