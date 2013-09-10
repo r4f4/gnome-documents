@@ -95,7 +95,7 @@ account_miner_job_process_entry (GdAccountMinerJob *job,
     (job->connection,
      job->cancellable, error,
      &resource_exists,
-     resource_url, identifier,
+     job->datasource_urn, identifier,
      "nfo:RemoteDataObject", class, NULL);
 
   if (*error != NULL)
@@ -129,7 +129,7 @@ account_miner_job_process_entry (GdAccountMinerJob *job,
   gd_miner_tracker_sparql_connection_insert_or_replace_triple
     (job->connection,
      job->cancellable, error,
-     identifier, resource,
+     job->datasource_urn, resource,
      "nie:url", alternate_uri);
 
   if (*error != NULL)
@@ -144,7 +144,7 @@ account_miner_job_process_entry (GdAccountMinerJob *job,
   gd_miner_tracker_sparql_connection_insert_or_replace_triple
     (job->connection,
      job->cancellable, error,
-     identifier, resource,
+     job->datasource_urn, resource,
      "nie:mimeType", mimetype_override);
 
   if (*error != NULL)
@@ -161,7 +161,8 @@ account_miner_job_process_entry (GdAccountMinerJob *job,
 
       parent_resource_urn = gd_miner_tracker_sparql_connection_ensure_resource
         (job->connection, job->cancellable, error,
-         NULL, NULL, parent_resource_id,
+         NULL,
+         job->datasource_urn, parent_resource_id,
          "nfo:RemoteDataObject", "nfo:DataContainer", NULL);
       g_free (parent_resource_id);
 
@@ -171,7 +172,7 @@ account_miner_job_process_entry (GdAccountMinerJob *job,
       gd_miner_tracker_sparql_connection_insert_or_replace_triple
         (job->connection,
          job->cancellable, error,
-         identifier, resource,
+         job->datasource_urn, resource,
          "nie:isPartOf", parent_resource_urn);
       g_free (parent_resource_urn);
 
@@ -201,7 +202,7 @@ account_miner_job_process_entry (GdAccountMinerJob *job,
   gd_miner_tracker_sparql_connection_insert_or_replace_triple
     (job->connection,
      job->cancellable, error,
-     identifier, resource,
+     job->datasource_urn, resource,
      "nie:description", gdata_entry_get_summary (entry));
 
   if (*error != NULL)
@@ -210,7 +211,7 @@ account_miner_job_process_entry (GdAccountMinerJob *job,
   gd_miner_tracker_sparql_connection_insert_or_replace_triple
     (job->connection,
      job->cancellable, error,
-     identifier, resource,
+     job->datasource_urn, resource,
      "nie:title", gdata_entry_get_title (entry));
 
   if (*error != NULL)
@@ -234,7 +235,7 @@ account_miner_job_process_entry (GdAccountMinerJob *job,
       gd_miner_tracker_sparql_connection_insert_or_replace_triple
         (job->connection,
          job->cancellable, error,
-         identifier, resource,
+         job->datasource_urn, resource,
          "nco:creator", contact_resource);
 
       if (*error != NULL)
@@ -276,7 +277,7 @@ account_miner_job_process_entry (GdAccountMinerJob *job,
       gd_miner_tracker_sparql_connection_insert_or_replace_triple
         (job->connection,
          job->cancellable, error,
-         identifier, resource,
+         job->datasource_urn, resource,
          "nco:contributor", contact_resource);
 
       g_free (contact_resource);
@@ -289,7 +290,7 @@ account_miner_job_process_entry (GdAccountMinerJob *job,
   gd_miner_tracker_sparql_connection_insert_or_replace_triple
     (job->connection,
      job->cancellable, error,
-     identifier, resource,
+     job->datasource_urn, resource,
      "nie:contentCreated", date);
   g_free (date);
 
