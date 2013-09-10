@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2011 Red Hat, Inc.
+ * Copyright (c) 2011, 2013 Red Hat, Inc.
  *
  * Gnome Documents is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by the
@@ -373,7 +373,7 @@ gd_gdata_miner_class_init (GdGDataMinerClass *klass)
 
   miner_class->goa_provider_type = "google";
   miner_class->miner_identifier = MINER_IDENTIFIER;
-  miner_class->version = 2;
+  miner_class->version = 3;
 
   miner_class->create_service = create_service;
   miner_class->query = query_gdata;
