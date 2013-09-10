@@ -58,7 +58,10 @@ account_miner_job_process_entry (GdAccountMinerJob *job,
 
   if (GDATA_IS_DOCUMENTS_FOLDER (doc_entry))
     {
-      identifier = g_strdup_printf ("gd:collection:%s", gdata_entry_get_id (entry));
+      GDataLink *link;
+
+      link = gdata_entry_look_up_link (entry, GDATA_LINK_SELF);
+      identifier = g_strdup_printf ("gd:collection:%s", gdata_link_get_uri (link));
       resource_url = NULL;
     }
   else
