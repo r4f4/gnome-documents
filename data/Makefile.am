@@ -4,6 +4,8 @@ appdatadir = $(datadir)/appdata
 appdata_DATA = $(appdata_in_files:.xml.in=.xml)
 appdata_in_files = gnome-documents.appdata.xml.in
 
+@INTLTOOL_XML_RULE@
+
 desktopdir = $(datadir)/applications
 desktop_DATA = $(desktop_in_files:.desktop.in=.desktop)
 desktop_in_files = gnome-documents.desktop.in
@@ -20,11 +22,9 @@ gsettings_ENUM_NAMESPACE = org.gnome.Documents
 gsettings_ENUM_FILES = \
     $(top_srcdir)/libgd/libgd/gd-main-view.h
 
-gsettingsschema_in_files = org.gnome.documents.gschema.xml.in
-gsettings_SCHEMAS = $(gsettingsschema_in_files:.xml.in=.xml)
+gsettings_SCHEMAS = org.gnome.documents.gschema.xml
 .PRECIOUS: $(gsettings_SCHEMAS)
 
-@INTLTOOL_XML_NOMERGE_RULE@
 @GSETTINGS_RULES@
 
 EXTRA_DIST= \
@@ -32,9 +32,8 @@ EXTRA_DIST= \
     $(appdata_in_files) \
     $(desktop_in_files) \
     $(searchprovider_DATA) \
-    $(gsettingsschema_in_files)
+    $(gsettings_SCHEMAS)
 
 CLEANFILES = \
     $(appdata_DATA) \
-    $(desktop_DATA) \
-    $(gsettings_SCHEMAS)
+    $(desktop_DATA)

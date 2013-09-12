@@ -22,7 +22,6 @@ data/gnome-documents.desktop
 data/gnome-documents.desktop.in
 data/org.gnome.Documents.enums.xml
 data/org.gnome.documents.gschema.valid
-data/org.gnome.documents.gschema.xml
 intltool-extract.in
 intltool-merge.in
 intltool-update.in
