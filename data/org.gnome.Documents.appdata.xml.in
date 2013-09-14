@@ -14,16 +14,16 @@
       offered through GNOME Online Accounts.
     </_p>
     <_p>It lets you:</_p>
-    <_ul>
-      <li>View recent local and online documents</li>
-      <li>Access your Google, ownCloud or OneDrive content</li>
-      <li>Search through documents</li>
-      <li>See new documents shared by friends</li>
-      <li>View documents fullscreen</li>
-      <li>Print documents</li>
-      <li>Select favorites</li>
-      <li>Allow opening full featured editor for non-trivial changes</li>
-    </_ul>
+    <ul>
+      <_li>View recent local and online documents</_li>
+      <_li>Access your Google, ownCloud or OneDrive content</_li>
+      <_li>Search through documents</_li>
+      <_li>See new documents shared by friends</_li>
+      <_li>View documents fullscreen</_li>
+      <_li>Print documents</_li>
+      <_li>Select favorites</_li>
+      <_li>Allow opening full featured editor for non-trivial changes</_li>
+    </ul>
   </description>
   <url type="homepage">https://wiki.gnome.org/Apps/Documents</url>
   <updatecontact>debarshir_at_gnome.org</updatecontact>
