@@ -1,646 +1,602 @@
-# French translation for gnome-documents.
-# Copyright (C) 2012 gnome-documents's COPYRIGHT HOLDER
-# This file is distributed under the same license as the gnome-documents package.
+# French translation of Cheese
+# Copyright (C) 2007-2012 Listed translators
+# This file is distributed under the same license as cheese
 #
-# guillemin <luc.guillemin@gmail.com>, 2011.
-# Alexandre Franke <alexandre.franke@gmail.com>, 2011.
-# Andre Matuch <andre.matuch@videotron.ca>, 2012.
-# Bruno Brouard <annoa.b@gmail.com>, 2011-12, 2012, 2013.
-# Mickael Albertus <mickael.albertus@gmail.com>, 2012.
-# Alain Lojewski <allomervan@gmail.com>, 2012.
+# Pierre Slamich <pierre.slamich@gmail.com>, 2007.
+# Robert-André Mauchin <zebob.m@pengzone.org>, 2007-2008.
+# Stéphane Raimbault <stephane.raimbault@gmail.com>, 2008.
+# Bruno Brouard <annoa.b@gmail.com>, 2008,2011-12.
+# Jonathan Ernst <jonathan@ernstfamily.ch>, 2009.
+# Pablo Martin-Gomez <pablo.martin-gomez@laposte.net>, 2010.
+# Nicolas Repentin <nicolas@shivaserv.fr>, 2009-2010.
+# Alain Lojewski <allomervan@gmail.com>, 2012-2013.
+# Essodjolo Kahanam <k.essodjolo@gmail.com>, 2012.
+# Alexandre Franke <alexandre.franke@gmail.com>, 2012.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-documents master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-03-28 14:14+0000\n"
-"PO-Revision-Date: 2013-03-28 17:23+0100\n"
-"Last-Translator: Bruno Brouard <annoa.b@gmail.com>\n"
+"Project-Id-Version: cheese HEAD\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=cheese&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2013-09-14 19:57+0000\n"
+"PO-Revision-Date: 2013-09-15 16:05+0100\n"
+"Last-Translator: Alain Lojewski <allomervan@gmail.com>\n"
 "Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
-"Language: fr\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=2; plural=n>1;\n"
 
-#: ../data/gnome-documents.desktop.in.in.h:1 ../src/application.js:101
-#: ../src/mainWindow.js:53 ../src/mainWindow.js:274
-msgid "Documents"
-msgstr "Documents"
+#: ../data/cheese-main-window.ui.h:1
+msgid "Photo mode"
+msgstr "Mode photo"
 
-#: ../data/gnome-documents.desktop.in.in.h:2
-msgid "Access, manage and share documents"
-msgstr "Accéder, gérer et partager ses documents"
+#: ../data/cheese-main-window.ui.h:2
+msgid "Video mode"
+msgstr "Mode vidéo"
 
-#: ../data/gnome-documents.desktop.in.in.h:3
-msgid "Docs;PDF;Document;"
-msgstr "Doc;Documents;PDF;"
+#: ../data/cheese-main-window.ui.h:3
+msgid "Photo burst mode"
+msgstr "Mode rafale"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:1
-#: ../src/resources/app-menu.ui.h:1
-msgid "View as"
-msgstr "Afficher comme"
+#: ../data/cheese-main-window.ui.h:4 ../src/cheese-window.vala:1307
+msgid "Take a photo using a webcam"
+msgstr "Prend une photo avec une webcam"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:2
-msgid "View as type"
-msgstr "Afficher comme type"
+#: ../data/cheese-main-window.ui.h:5 ../libcheese/cheese-avatar-chooser.c:283
+#: ../src/cheese-window.vala:1306
+msgid "_Take a Photo"
+msgstr "P_rendre une photo"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:3
-msgid "Window size"
-msgstr "Taille de la fenêtre"
+#: ../data/cheese-main-window.ui.h:6
+msgid "Navigate to the previous page of effects"
+msgstr "Naviguer vers la page d'effets précédente"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:4
-msgid "Window size (width and height)."
-msgstr "Taille de la fenêtre (largeur et hauteur)."
+#: ../data/cheese-main-window.ui.h:7
+msgid "Effects"
+msgstr "Effets"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:5
-msgid "Window position"
-msgstr "Position de la fenêtre"
+#: ../data/cheese-main-window.ui.h:8 ../src/cheese-application.vala:136
+msgid "_Effects"
+msgstr "_Effets"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:6
-msgid "Window position (x and y)."
-msgstr "Position de la fenêtre (x et y)."
+#: ../data/cheese-main-window.ui.h:9
+msgid "Navigate to the next page of effects"
+msgstr "Naviguer vers la page d'effets suivante"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:7
-msgid "Window maximized"
-msgstr "Fenêtre maximisée"
+#: ../data/cheese-main-window.ui.h:10
+msgid "Leave fullscreen mode and go back to windowed mode"
+msgstr "Quitter le mode plein écran et retourner au mode fenêtré"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:8
-msgid "Window maximized state"
-msgstr "État maximisé de la fenêtre"
+#: ../data/cheese-main-window.ui.h:11
+msgid "_Leave Fullscreen"
+msgstr "_Quitter le mode plein écran"
 
-#. Translators: this refers to local documents
-#: ../src/documents.js:590 ../src/search.js:417
-msgid "Local"
-msgstr "Local"
+#: ../data/cheese-prefs.ui.h:1
+msgid "Preferences"
+msgstr "Préférences"
 
-#. Translators: Documents ships a "Getting Started with Documents"
-#. tutorial PDF. The "GNOME" string below is displayed as the author name
-#. of that document, and doesn't normally need to be translated.
-#: ../src/documents.js:611
-msgid "GNOME"
-msgstr "GNOME"
+#: ../data/cheese-prefs.ui.h:2
+msgid "Device"
+msgstr "Périphérique"
 
-#: ../src/documents.js:612
-msgid "Getting Started with Documents"
-msgstr "Premiers pas avec Documents"
+#: ../data/cheese-prefs.ui.h:3
+msgid "Photo resolution"
+msgstr "Définition photo"
 
-#. overridden
-#: ../src/documents.js:659
-msgid "Google Docs"
-msgstr "Documents Google"
+#: ../data/cheese-prefs.ui.h:4
+msgid "Video resolution"
+msgstr "Définition vidéo"
 
-#: ../src/documents.js:660
-msgid "Google"
-msgstr "Google"
+#: ../data/cheese-prefs.ui.h:5
+msgid "Webcam"
+msgstr "Webcam"
 
-#: ../src/documents.js:724 ../src/documents.js:823
-msgid "Spreadsheet"
-msgstr "Tableur"
+#: ../data/cheese-prefs.ui.h:6
+msgid "Brightness"
+msgstr "Luminosité"
 
-#: ../src/documents.js:726 ../src/documents.js:825 ../src/presentation.js:48
-msgid "Presentation"
-msgstr "Présentation"
+#: ../data/cheese-prefs.ui.h:7
+msgid "Saturation"
+msgstr "Saturation"
 
-#: ../src/documents.js:728 ../src/documents.js:827
-msgid "Collection"
-msgstr "Collection"
+#: ../data/cheese-prefs.ui.h:8
+msgid "Hue"
+msgstr "Teinte"
 
-#: ../src/documents.js:730 ../src/documents.js:829
-msgid "Document"
-msgstr "Document"
+#: ../data/cheese-prefs.ui.h:9
+msgid "Contrast"
+msgstr "Contraste"
 
-#. overridden
-#: ../src/documents.js:757 ../src/documents.js:758
-msgid "Skydrive"
-msgstr "Skydrive"
+#: ../data/cheese-prefs.ui.h:10
+msgid "Image"
+msgstr "Image"
 
-#: ../src/documents.js:942
-msgid "Please check the network connection."
-msgstr "Veuillez vérifier la connexion réseau."
+#: ../data/cheese-prefs.ui.h:11
+msgid "Shutter"
+msgstr "Déclenchement"
 
-#: ../src/documents.js:945
-msgid "Please check the network proxy settings."
-msgstr "Veuillez vérifier les paramètres du serveur mandataire du réseau."
+#: ../data/cheese-prefs.ui.h:12
+msgid "_Countdown"
+msgstr "_Retardateur"
 
-#: ../src/documents.js:948
-msgid "Unable to sign in to the document service."
-msgstr "Impossible de s'inscrire au service de document."
+#: ../data/cheese-prefs.ui.h:13
+msgid "Fire _flash"
+msgstr "Déclencher le _flash"
 
-#: ../src/documents.js:951
-msgid "Unable to locate this document."
-msgstr "Impossible de trouver ce document."
+#: ../data/cheese-prefs.ui.h:14
+msgid "Burst mode"
+msgstr "Mode rafale"
 
-#: ../src/documents.js:954
+#: ../data/cheese-prefs.ui.h:15
+msgid "Number of photos"
+msgstr "Nombre de photos"
+
+#: ../data/cheese-prefs.ui.h:16
+msgid "Delay between photos (seconds)"
+msgstr "Délai entre les photos (sec.)"
+
+#: ../data/cheese-prefs.ui.h:17
+msgid "Capture"
+msgstr "Capture"
+
+#: ../data/cheese.desktop.in.in.h:1 ../src/cheese-application.vala:112
+#: ../src/cheese-application.vala:611
+msgid "Cheese"
+msgstr "Cheese"
+
+#: ../data/cheese.desktop.in.in.h:2
+msgid "Cheese Webcam Booth"
+msgstr "Studio webcam Cheese"
+
+#: ../data/cheese.desktop.in.in.h:3 ../src/cheese-application.vala:606
+msgid "Take photos and videos with your webcam, with fun graphical effects"
+msgstr ""
+"Prise de photos et enregistrement de vidéos grâce à votre webcam avec effets "
+"graphiques rigolos"
+
+#: ../data/cheese.desktop.in.in.h:4
+msgid "photo;video;webcam;"
+msgstr "photo;vidéo;webcam;"
+
+#: ../data/org.gnome.Cheese.gschema.xml.h:1
+msgid "Use a countdown"
+msgstr "Utiliser un retardateur"
+
+#: ../data/org.gnome.Cheese.gschema.xml.h:2
+msgid "Set to true to show a countdown before taking a photo"
+msgstr "Définir à vrai pour afficher un retardateur avant la prise d'une photo"
+
+#: ../data/org.gnome.Cheese.gschema.xml.h:3
+msgid "Countdown length"
+msgstr "Délai du retardateur"
+
+#: ../data/org.gnome.Cheese.gschema.xml.h:4
+msgid "The duration of the countdown before taking a photo, in seconds"
+msgstr "Le délai du retardateur avant la prise d'une photo, en secondes"
+
+#: ../data/org.gnome.Cheese.gschema.xml.h:5
+msgid "Fire flash before taking a photo"
+msgstr "Déclenche le flash avant la prise d'une photo"
+
+#: ../data/org.gnome.Cheese.gschema.xml.h:6
+msgid "Set to true to fire a flash before taking a photo"
+msgstr "Définir à vrai pour déclencher le flash avant la prise d'une photo"
+
+#: ../data/org.gnome.Cheese.gschema.xml.h:7
+msgid "Camera device string indicator"
+msgstr "Indicateur de chaîne du périphérique appareil photo"
+
+#: ../data/org.gnome.Cheese.gschema.xml.h:8
+msgid ""
+"The path to the device node which points to the camera, for example /dev/"
+"video0"
+msgstr ""
+"Le chemin vers le nœud du périphérique qui pointe sur l'appareil photo, par "
+"exemple /dev/video0"
+
+#: ../data/org.gnome.Cheese.gschema.xml.h:9
+msgid "Last selected effect"
+msgstr "Dernier effet sélectionné"
+
+#: ../data/org.gnome.Cheese.gschema.xml.h:10
+msgid "Name of the installed effect that was selected last"
+msgstr "Nom du dernier effet installé qui a été sélectionné"
+
+#: ../data/org.gnome.Cheese.gschema.xml.h:11
+msgid "Photo width"
+msgstr "Largeur de la photo"
+
+#: ../data/org.gnome.Cheese.gschema.xml.h:12
+msgid "The width of the image captured from the camera, in pixels"
+msgstr "La largeur de la photo prise avec l'appareil photo, en pixels"
+
+#: ../data/org.gnome.Cheese.gschema.xml.h:13
+msgid "Photo height"
+msgstr "Hauteur de la photo"
+
+#: ../data/org.gnome.Cheese.gschema.xml.h:14
+msgid "The height of the image captured from the camera, in pixels"
+msgstr "La hauteur de la photo prise avec l'appareil photo, en pixels"
+
+#: ../data/org.gnome.Cheese.gschema.xml.h:15
+msgid "Video width"
+msgstr "Largeur de la vidéo"
+
+#: ../data/org.gnome.Cheese.gschema.xml.h:16
+msgid "The width of the video captured from the camera, in pixels"
+msgstr "La largeur de la vidéo prise avec l'appareil photo, en pixels"
+
+#: ../data/org.gnome.Cheese.gschema.xml.h:17
+msgid "Video height"
+msgstr "Hauteur de la vidéo"
+
+#: ../data/org.gnome.Cheese.gschema.xml.h:18
+msgid "The height of the video captured from the camera, in pixels"
+msgstr "La hauteur de la vidéo prise avec l'appareil photo, en pixels"
+
+#: ../data/org.gnome.Cheese.gschema.xml.h:19
+msgid "Image brightness"
+msgstr "Luminosité de l'image"
+
+#: ../data/org.gnome.Cheese.gschema.xml.h:20
+msgid "Adjusts the brightness of the image coming from the camera"
+msgstr "Ajuste la luminosité de l'image provenant de l'appareil photo"
+
+#: ../data/org.gnome.Cheese.gschema.xml.h:21
+msgid "Image contrast"
+msgstr "Contraste de l'image"
+
+#: ../data/org.gnome.Cheese.gschema.xml.h:22
+msgid "Adjusts the contrast of the image coming from the camera"
+msgstr "Ajuste le contraste de l'image provenant de l'appareil photo"
+
+#: ../data/org.gnome.Cheese.gschema.xml.h:23
+msgid "Image saturation"
+msgstr "Saturation de l'image"
+
+#: ../data/org.gnome.Cheese.gschema.xml.h:24
+msgid "Adjusts the saturation of the image coming from the camera"
+msgstr "Ajuste la saturation de l'image provenant de l'appareil photo"
+
+#: ../data/org.gnome.Cheese.gschema.xml.h:25
+msgid "Image hue"
+msgstr "Teinte de l'image"
+
+#: ../data/org.gnome.Cheese.gschema.xml.h:26
+msgid "Adjusts the hue (color tint) of the image coming from the camera"
+msgstr ""
+"Ajuste la teinte (couleur dominante) de l'image provenant de l'appareil photo"
+
+#: ../data/org.gnome.Cheese.gschema.xml.h:27
+msgid "Video path"
+msgstr "Chemin de la vidéo"
+
+#: ../data/org.gnome.Cheese.gschema.xml.h:28
+msgid ""
+"Defines the path where the videos are stored. If empty, \"XDG_VIDEO/Webcam\" "
+"will be used."
+msgstr ""
+"Définit le chemin vers l'emplacement de stockage des vidéos. Si non "
+"renseigné, « XDG_VIDEO/Webcam » sera utilisé."
+
+#: ../data/org.gnome.Cheese.gschema.xml.h:29
+msgid "Photo path"
+msgstr "Chemin de la photo"
+
+#: ../data/org.gnome.Cheese.gschema.xml.h:30
+msgid ""
+"Defines the path where the photos are stored. If empty, \"XDG_PHOTO/Webcam\" "
+"will be used."
+msgstr ""
+"Définit le chemin vers l'emplacement de stockage des photos. Si non "
+"renseigné, « XDG_PHOTO/Webcam » sera utilisé."
+
+#: ../data/org.gnome.Cheese.gschema.xml.h:31
+msgid "Time between photos in burst mode"
+msgstr "Délai entre les photos en mode rafale"
+
+#: ../data/org.gnome.Cheese.gschema.xml.h:32
+msgid ""
+"The length of time, in milliseconds, to delay between taking each photo in a "
+"burst sequence of photos. If the burst delay is less than the countdown "
+"duration, the countdown duration will be used instead."
+msgstr ""
+"Le délai, en millisecondes, du temps d'attente entre la prise de chaque "
+"cliché en mode rafale. Si ce délai est inférieur au délai du retardateur, la "
+"durée fixée par ce dernier sera utilisée à la place."
+
+#: ../data/org.gnome.Cheese.gschema.xml.h:33
+msgid "Number of photos in burst mode"
+msgstr "Nombre de photos en mode rafale"
+
+#: ../data/org.gnome.Cheese.gschema.xml.h:34
+msgid "The number of photos to take in a single burst."
+msgstr "Le nombre de photos à prendre pendant une seule rafale."
+
+#: ../libcheese/cheese-avatar-chooser.c:140 ../src/cheese-window.vala:662
+msgid "Shutter sound"
+msgstr "Bruit de l'obturateur"
+
+#: ../libcheese/cheese-avatar-chooser.c:262
+msgid "Select"
+msgstr "Choisir"
+
+#: ../libcheese/cheese-avatar-chooser.c:265
+msgid "Take a Photo"
+msgstr "Prendre une photo"
+
+#: ../libcheese/cheese-avatar-chooser.c:296
+msgid "_Discard photo"
+msgstr "_Rejeter la photo"
+
+#: ../libcheese/cheese-camera.c:446 ../libcheese/cheese-camera.c:1617
+msgid "One or more needed GStreamer elements are missing: "
+msgstr "Un ou plusieurs éléments GStreamer sont manquants : "
+
+#: ../libcheese/cheese-camera.c:1576
 #, c-format
-msgid "Hmm, something is fishy (%d)."
-msgstr "Quelque chose ne va pas (%d)."
+msgid "No device found"
+msgstr "Aucun périphérique détecté"
 
-#. Translators: %s is the title of a document
-#: ../src/documents.js:967
-#, c-format
-msgid "Oops! Unable to load “%s”"
-msgstr "Impossible de charger « %s »"
-
-#: ../src/edit.js:191
-msgid "View"
-msgstr "Affichage"
-
-#: ../src/embed.js:63 ../src/lib/gd-places-bookmarks.c:382
-#: ../src/lib/gd-places-links.c:257 ../src/view.js:71
-msgid "Loading…"
-msgstr "Chargement en cours..."
-
-#: ../src/embed.js:145
-msgid "No Documents Found"
-msgstr "Aucun document trouvé"
-
-#. Translators: %s here is "System Settings", which is in a separate string
-#. due to markup, and should be translated only in the context of this sentence
-#: ../src/embed.js:166
-#, c-format
-msgid "You can add your online accounts in %s"
-msgstr "Vous pouvez ajouter vos comptes en ligne dans %s"
-
-#. Translators: this should be translated in the context of the
-#. "You can add your online accounts in System Settings" sentence above
-#: ../src/embed.js:170
-msgid "System Settings"
-msgstr "Paramètres système"
-
-#: ../src/lib/gd-nav-bar.c:235
-#, c-format
-msgid "Page %u of %u"
-msgstr "Page %u sur %u"
-
-#: ../src/lib/gd-pdf-loader.c:226
-msgid "Unable to load the document"
-msgstr "Impossible de charger le document"
-
-#: ../src/lib/gd-pdf-loader.c:676
-msgid "LibreOffice is required to view this document"
-msgstr "LibreOffice est requis pour afficher ce document"
-
-#. Translators: %s is the number of the page, already formatted
-#. * as a string, for example "Page 5".
+#. Translators: This is a time format, like "09:05:02" for 9
+#. * hours, 5 minutes, and 2 seconds. You may change ":" to
+#. * the separator that your locale uses or use "%Id" instead
+#. * of "%d" if your locale uses localized digits.
 #.
-#: ../src/lib/gd-places-bookmarks.c:312
+#: ../libcheese/cheese-camera.c:1852
 #, c-format
-msgid "Page %s"
-msgstr "Page %s"
+msgctxt "time format"
+msgid "%02i:%02i:%02i"
+msgstr "%02i:%02i:%02i"
 
-#: ../src/lib/gd-places-bookmarks.c:375
-msgid "No bookmarks"
-msgstr "Pas de signet"
+#: ../libcheese/cheese-camera-device.c:560
+msgid "Device capabilities not supported"
+msgstr "Capacités du périphérique non prises en charge"
 
-#: ../src/lib/gd-places-bookmarks.c:647
-msgid "Bookmarks"
-msgstr "Signets"
-
-#: ../src/lib/gd-places-links.c:342
-msgid "No table of contents"
-msgstr "Pas de sommaire"
-
-#: ../src/lib/gd-places-links.c:518
-msgid "Contents"
-msgstr "Sommaire"
-
-#: ../src/mainToolbar.js:62
-msgid "Search"
-msgstr "Rechercher"
-
-#: ../src/mainToolbar.js:73
-msgid "Back"
-msgstr "Précédent"
-
-#: ../src/mainToolbar.js:153
+#: ../libcheese/cheese-camera-device.c:589
 #, c-format
-msgid "Results for “%s”"
-msgstr "Résultats pour « %s »"
+msgid "Failed to initialize device %s for capability probing"
+msgstr ""
+"Impossible d'initialiser le périphérique %s pour tester ses possibilités"
 
-#: ../src/mainToolbar.js:161
-msgid "Click on items to select them"
-msgstr "Cliquer sur les éléments pour les sélectionner"
+#: ../libcheese/cheese-camera-device.c:778
+msgid "Unknown device"
+msgstr "Périphérique inconnu"
 
-#: ../src/mainToolbar.js:163
+#: ../libcheese/cheese-camera-device.c:801
+msgid "Cancellable initialization not supported"
+msgstr "Initialisation annulable non prise en charge"
+
+#: ../src/cheese-application.vala:55
+msgid "Start in wide mode"
+msgstr "Démarre en mode large"
+
+#: ../src/cheese-application.vala:58
+msgid "Device to use as a camera"
+msgstr "Périphérique à utiliser comme caméra"
+
+#: ../src/cheese-application.vala:58
+msgid "DEVICE"
+msgstr "PÉRIPHÉRIQUE"
+
+#: ../src/cheese-application.vala:60
+msgid "Output version information and exit"
+msgstr "Affiche les informations de version et quitte"
+
+#: ../src/cheese-application.vala:62
+msgid "Start in fullscreen mode"
+msgstr "Démarre en mode plein écran"
+
+#: ../src/cheese-application.vala:121
+msgid "_Shoot"
+msgstr "_Prendre une photo"
+
+#: ../src/cheese-application.vala:125
+msgid "Mode:"
+msgstr "Mode :"
+
+#: ../src/cheese-application.vala:126
+msgid "_Photo"
+msgstr "_Photo"
+
+#: ../src/cheese-application.vala:127
+msgid "_Video"
+msgstr "_Vidéo"
+
+#: ../src/cheese-application.vala:128
+msgid "_Burst"
+msgstr "_Rafale"
+
+#: ../src/cheese-application.vala:131
+msgid "_Fullscreen"
+msgstr "_Plein écran"
+
+#: ../src/cheese-application.vala:139
+msgid "P_references"
+msgstr "_Préférences"
+
+#: ../src/cheese-application.vala:142
+msgid "_Help"
+msgstr "Aid_e"
+
+#: ../src/cheese-application.vala:145
+msgid "_About"
+msgstr "À _propos"
+
+#: ../src/cheese-application.vala:146
+msgid "_Quit"
+msgstr "_Quitter"
+
+#: ../src/cheese-application.vala:219
+msgid "- Take photos and videos from your webcam"
+msgstr "- Prise de photos et enregistrement de vidéos grâce à votre webcam"
+
+#: ../src/cheese-application.vala:228
 #, c-format
-msgid "%d selected"
-msgid_plural "%d selected"
-msgstr[0] "%d sélectionné"
-msgstr[1] "%d sélectionnés"
+msgid "Run '%s --help' to see a full list of available command line options."
+msgstr ""
+"Exécutez « %s --help » pour afficher la liste des options disponibles en "
+"ligne de commande."
 
-#. Label for Done button in Sharing dialog
-#: ../src/mainToolbar.js:192 ../src/properties.js:60 ../src/sharing.js:93
-msgid "Done"
-msgstr "Terminé"
-
-#: ../src/mainToolbar.js:233
-msgid "Select Items"
-msgstr "Sélectionner les éléments"
-
-#: ../src/mainWindow.js:273
+#: ../src/cheese-application.vala:612
 msgid "translator-credits"
 msgstr ""
-"guillemin <luc.guillemin@gmail.com>\n"
-"Alexandre Franke <alexandre.franke@gmail.com>\n"
-"Bruno Brouard <annoa.b@gmail.com>\n"
-"Andre Matuch <andre.matuch@videotron.ca>\n"
-"Mickael Albertus <mickael.albertus@gmail.com>\n"
-"Alain Lojewski <allomervan@gmail.com>"
+"Pierre Slamich <pierre.slamich@gmail.com>, 2007.\n"
+"Robert-André Mauchin <zebob.m@pengzone.org>, 2007-2008.\n"
+"Stéphane Raimbault <stephane.raimbault@gmail.com>, 2008.\n"
+"Bruno Brouard <annoa.b@gmail.com>, 2008.\n"
+"Jonathan Ernst <jonathan@ernstfamily.ch>, 2009.\n"
+"Pablo Martin-Gomez <pablo.martin-gomez@laposte.net>, 2010.\n"
+"Alain Lojewski <allomervan@gmail.com>, 2012-2013.\n"
+"Essodjolo Kahanam <k.essodjolo@gmail.com>, 2012."
 
-#: ../src/mainWindow.js:275
-msgid "A document manager application"
-msgstr "Une application de gestion de documents"
+#: ../src/cheese-application.vala:614
+msgid "Cheese Website"
+msgstr "Site Web de Cheese"
 
-#: ../src/notifications.js:87
+#. Translators: a description of an effect (to be applied to images
+#. *              from the webcam) which does nothing.
+#: ../src/cheese-effects-manager.vala:51
+msgid "No Effect"
+msgstr "Aucun effet"
+
+#: ../src/cheese-window.vala:192
 #, c-format
-msgid "Printing “%s”: %s"
-msgstr "Impression de « %s » : %s"
+msgid "Could not open %s"
+msgstr "Impossible d'ouvrir %s"
 
-#: ../src/notifications.js:143
-msgid "Your documents are being indexed"
-msgstr "Vos documents sont en cours d'indexation"
-
-#: ../src/notifications.js:144
-msgid "Some documents might not be available during this process"
-msgstr ""
-"Certains documents peuvent ne pas être disponibles au cours de ce processus"
-
-#. Translators: %s refers to an online account provider, e.g.
-#. "Google", or "Windows Live".
-#: ../src/notifications.js:166
+#: ../src/cheese-window.vala:217
 #, c-format
-msgid "Fetching documents from %s"
-msgstr "Récupération des documents à partir de %s"
+msgid "Are you sure you want to permanently delete the file?"
+msgid_plural "Are you sure you want to permanently delete %d files?"
+msgstr[0] "Voulez-vous vraiment supprimer définitivement le fichier %d ?"
+msgstr[1] "Voulez-vous vraiment supprimer définitivement les fichiers %d ?"
 
-#: ../src/notifications.js:168
-msgid "Fetching documents from online accounts"
-msgstr "Récupération des documents à partir de comptes en ligne"
+#: ../src/cheese-window.vala:223
+msgid "If you delete an item, it will be permanently lost"
+msgid_plural "If you delete the items, they will be permanently lost"
+msgstr[0] "Si vous supprimez cet élément, il sera définitivement perdu"
+msgstr[1] "Si vous supprimez ces éléments, ils seront définitivement perdus"
 
-#: ../src/presentation.js:105
-msgid "Running in presentation mode"
-msgstr "Actuellement en mode présentation"
+#: ../src/cheese-window.vala:296
+#, c-format
+msgid "Could not move %s to trash"
+msgstr "Impossible de mettre %s à la corbeille"
 
-#: ../src/presentation.js:158
-msgid "Present On"
-msgstr "Présentation en cours"
+#. Nothing selected.
+#: ../src/cheese-window.vala:321
+msgid "Save File"
+msgstr "Enregistrer un fichier"
 
-#: ../src/properties.js:58 ../src/resources/preview-menu.ui.h:9
-#: ../src/selections.js:782
-msgid "Properties"
-msgstr "Propriétés"
+#: ../src/cheese-window.vala:355
+#, c-format
+msgid "Could not save %s"
+msgstr "Impossible d'enregistrer %s"
 
-#. Title item
-#. Translators: "Title" is the label next to the document title
-#. in the properties dialog
-#: ../src/properties.js:80
-msgctxt "Document Title"
-msgid "Title"
-msgstr "Titre"
+#: ../src/cheese-window.vala:772
+msgid "Stop _Recording"
+msgstr "_Arrêter l'enregistrement"
 
-#. Translators: "Author" is the label next to the document author
-#. in the properties dialog
-#: ../src/properties.js:89
-msgctxt "Document Author"
-msgid "Author"
-msgstr "Auteur"
+#: ../src/cheese-window.vala:773
+msgid "Stop recording"
+msgstr "Arrêter l'enregistrement"
 
-#. Source item
-#: ../src/properties.js:96
-msgid "Source"
-msgstr "Sources"
+#: ../src/cheese-window.vala:788 ../src/cheese-window.vala:1311
+msgid "_Record a Video"
+msgstr "En_registrer une vidéo"
 
-#. Date Modified item
-#: ../src/properties.js:102
-msgid "Date Modified"
-msgstr "Date de modification"
+#: ../src/cheese-window.vala:789
+msgid "Record a video"
+msgstr "Enregistre une vidéo"
 
-#: ../src/properties.js:109
-msgid "Date Created"
-msgstr "Date de création"
+#. FIXME: Set the effects action to be inactive.
+#: ../src/cheese-window.vala:824
+msgid "Stop _Taking Pictures"
+msgstr "Arrê_ter la prise de photos"
 
-#. Document type item
-#. Translators: "Type" is the label next to the document type
-#. (PDF, spreadsheet, ...) in the properties dialog
-#: ../src/properties.js:118
-msgctxt "Document Type"
-msgid "Type"
-msgstr "Type"
+#: ../src/cheese-window.vala:825
+msgid "Stop taking pictures"
+msgstr "Arrête la prise de photos"
 
-#: ../src/resources/app-menu.ui.h:2
-msgid "Grid"
-msgstr "Grille"
+#: ../src/cheese-window.vala:848
+msgid "Take Multiple Photos"
+msgstr "Prendre plusieurs photos"
 
-#: ../src/resources/app-menu.ui.h:3
-msgid "List"
-msgstr "Liste"
+#: ../src/cheese-window.vala:849
+msgid "Take multiple photos"
+msgstr "Prend plusieurs photos"
 
-#: ../src/resources/app-menu.ui.h:4
-msgid "Fullscreen"
-msgstr "Plein écran"
+#: ../src/cheese-window.vala:1033
+msgid "No effects found"
+msgstr "Aucun effet trouvé"
 
-#: ../src/resources/app-menu.ui.h:5
-msgid "About Documents"
-msgstr "À propos de Documents"
+#: ../src/cheese-window.vala:1152
+msgid "There was an error playing video from the webcam"
+msgstr "Une erreur est intervenue pendant la lecture de la vidéo de la webcam"
 
-#: ../src/resources/app-menu.ui.h:6
-msgid "Help"
-msgstr "Aide"
-
-#: ../src/resources/app-menu.ui.h:7
-msgid "Quit"
-msgstr "Quitter"
-
-#. Translators: this is the Open action in a context menu
-#: ../src/resources/preview-menu.ui.h:1 ../src/selections.js:878
+#: ../src/cheese-window.vala:1170
 msgid "Open"
 msgstr "Ouvrir"
 
-#: ../src/resources/preview-menu.ui.h:2
-msgid "Edit"
-msgstr "Édition"
+#: ../src/cheese-window.vala:1173
+msgid "Save _As…"
+msgstr "Enregistrer _sous…"
 
-#: ../src/resources/preview-menu.ui.h:3
-msgid "Print…"
-msgstr "Impression..."
+#: ../src/cheese-window.vala:1176
+msgid "Move to _Trash"
+msgstr "_Mettre à la corbeille"
 
-#: ../src/resources/preview-menu.ui.h:4
-msgid "Present"
-msgstr "Présentation"
-
-#: ../src/resources/preview-menu.ui.h:5
-msgid "Zoom In"
-msgstr "Zoom avant"
-
-#: ../src/resources/preview-menu.ui.h:6
-msgid "Zoom Out"
-msgstr "Zoom arrière"
-
-#: ../src/resources/preview-menu.ui.h:7
-msgid "Rotate ↶"
-msgstr "Pivoter ↶"
-
-#: ../src/resources/preview-menu.ui.h:8
-msgid "Rotate ↷"
-msgstr "Pivoter ↷"
-
-#: ../src/resources/selection-menu.ui.h:1
-msgid "Select All"
-msgstr "Tout sélectionner"
-
-#: ../src/resources/selection-menu.ui.h:2
-msgid "Select None"
-msgstr "Tout désélectionner"
-
-#: ../src/search.js:113
-msgid "Category"
-msgstr "Catégorie"
-
-#. Translators: this refers to new and recent documents
-#. Translators: this refers to documents
-#: ../src/search.js:118 ../src/search.js:170 ../src/search.js:255
-#: ../src/search.js:411
-msgid "All"
-msgstr "Tous"
-
-#. Translators: this refers to favorite documents
-#: ../src/search.js:124
-msgid "Favorites"
-msgstr "Favoris"
-
-#. Translators: this refers to shared documents
-#: ../src/search.js:129
-msgid "Shared with you"
-msgstr "Partagés avec vous"
-
-#. Translators: "Type" refers to a search filter on the document type
-#. (PDF, spreadsheet, ...)
-#: ../src/search.js:167
-msgctxt "Search Filter"
-msgid "Type"
-msgstr "Type"
-
-#: ../src/search.js:172
-msgid "Collections"
-msgstr "Collections"
-
-#: ../src/search.js:176
-msgid "PDF Documents"
-msgstr "Documents PDF"
-
-#: ../src/search.js:180
-msgid "Presentations"
-msgstr "Présentations"
-
-#: ../src/search.js:183
-msgid "Spreadsheets"
-msgstr "Tableurs"
-
-#: ../src/search.js:186
-msgid "Text Documents"
-msgstr "Documents Texte"
-
-#. Translators: this is a verb that refers to "All", "Title" and "Author",
-#. as in "Match All", "Match Title" and "Match Author"
-#: ../src/search.js:252
-msgid "Match"
-msgstr "Correspond à"
-
-#. Translators: "Title" refers to "Match Title" when searching
-#: ../src/search.js:258
-msgctxt "Search Filter"
-msgid "Title"
-msgstr "Titre"
-
-#. Translators: "Author" refers to "Match Author" when searching
-#: ../src/search.js:261
-msgctxt "Search Filter"
-msgid "Author"
-msgstr "Auteur"
-
-#: ../src/search.js:407
-msgid "Sources"
-msgstr "Sources"
-
-#. Translators: "Organize" refers to documents in this context
-#: ../src/selections.js:615
-msgctxt "Dialog Title"
-msgid "Organize"
-msgstr "Organisation"
-
-#: ../src/selections.js:750
-msgid "Print"
-msgstr "Imprimer"
-
-#: ../src/selections.js:757
+#: ../src/cheese-window.vala:1179
 msgid "Delete"
 msgstr "Supprimer"
 
-#. Translators: "Organize" refers to documents in this context
-#: ../src/selections.js:774
-msgctxt "Toolbar button tooltip"
-msgid "Organize"
-msgstr "Organiser"
+#: ../src/cheese-window.vala:1312
+msgid "Record a video using a webcam"
+msgstr "Enregistre une vidéo avec une webcam"
 
-#: ../src/selections.js:789
-msgid "Share"
-msgstr "Partager"
+#: ../src/cheese-window.vala:1318
+msgid "Take _Multiple Photos"
+msgstr "P_rendre plusieurs photos"
 
-#. Translators: this is the Open action in a context menu
-#: ../src/selections.js:875
-#, c-format
-msgid "Open with %s"
-msgstr "Ouvrir avec %s"
+#: ../src/cheese-window.vala:1319
+msgid "Take multiple photos using a webcam"
+msgstr "Prend plusieurs photos avec une webcam"
 
-#: ../src/sharing.js:89
-msgid "Sharing Settings"
-msgstr "Paramètres de partage"
+#~ msgid "Share…"
+#~ msgstr "Partager…"
 
-#. Label for widget group for changing document permissions
-#: ../src/sharing.js:126
-msgid "Document permissions"
-msgstr "Permissions du document"
+#~ msgid "Move _All to Trash"
+#~ msgstr "_Tout mettre à la corbeille"
 
-#. Label for permission change in Sharing dialog
-#: ../src/sharing.js:133 ../src/sharing.js:311
-msgid "Change"
-msgstr "Modification"
+#~ msgid "_Wide Mode"
+#~ msgstr "Mode _large"
 
-#. Label for radiobutton that sets doc permission to private
-#: ../src/sharing.js:157 ../src/sharing.js:286
-msgid "Private"
-msgstr "Privé"
+#~ msgid "P_revious Effects"
+#~ msgstr "Effets p_récédents"
 
-#: ../src/sharing.js:167 ../src/sharing.js:279
-msgid "Public"
-msgstr "Public"
+#~ msgid "Ne_xt Effects"
+#~ msgstr "Effets sui_vants"
 
-#. Label for checkbutton that sets doc permission to Can edit
-#: ../src/sharing.js:171 ../src/sharing.js:281
-msgid "Everyone can edit"
-msgstr "Tout le monde peut modifier"
+#~ msgid "Picture hue"
+#~ msgstr "Teinte de la photo"
 
-#. Label for widget group used for adding new contacts
-#: ../src/sharing.js:178
-msgid "Add people"
-msgstr "Ajouter des personnes"
+#~ msgid "Whether to start in wide mode"
+#~ msgstr "Indique s'il faut démarrer en mode large"
 
-#. Editable text in entry field
-#: ../src/sharing.js:185
-msgid "Enter an email address"
-msgstr "Saisissez une adresse électronique"
-
-#: ../src/sharing.js:200 ../src/sharing.js:367
-msgid "Can edit"
-msgstr "Peut modifier"
-
-#: ../src/sharing.js:200 ../src/sharing.js:370
-msgid "Can view"
-msgstr "Peut lire"
-
-#: ../src/sharing.js:207
-msgid "Add"
-msgstr "Ajouter"
-
-#: ../src/sharing.js:283
-msgid "Everyone can read"
-msgstr "Tout le monde peut lire"
-
-#: ../src/sharing.js:298
-msgid "Save"
-msgstr "Enregistrer"
-
-#: ../src/sharing.js:364
-msgid "Owner"
-msgstr "Propriétaire"
-
-#: ../src/sharing.js:433
-#, c-format
-msgid "You can ask %s for access"
-msgstr "Vous pouvez demander à %s pour y accéder"
-
-#: ../src/sharing.js:470 ../src/sharing.js:506 ../src/sharing.js:563
-#: ../src/sharing.js:580 ../src/sharing.js:599
-msgid "The document was not updated"
-msgstr "Le document n'a pas été mis à jour"
-
-#: ../src/shellSearchProvider.js:293
-msgid "Untitled Document"
-msgstr "Document sans nom"
-
-#. Translators: "more" refers to documents in this context
-#: ../src/view.js:62 ../src/view.js:93
-msgid "Load More"
-msgstr "Charger plus"
-
-#: ../src/view.js:294
-msgid "Yesterday"
-msgstr "Hier"
-
-#: ../src/view.js:296
-#, c-format
-msgid "%d day ago"
-msgid_plural "%d days ago"
-msgstr[0] "Il y a %d jour"
-msgstr[1] "Il y a %d jours"
-
-#: ../src/view.js:300
-msgid "Last week"
-msgstr "La semaine dernière"
-
-#: ../src/view.js:302
-#, c-format
-msgid "%d week ago"
-msgid_plural "%d weeks ago"
-msgstr[0] "Il y a %d semaine"
-msgstr[1] "Il y a %d semaines"
-
-#: ../src/view.js:306
-msgid "Last month"
-msgstr "Le mois dernier"
-
-#: ../src/view.js:308
-#, c-format
-msgid "%d month ago"
-msgid_plural "%d months ago"
-msgstr[0] "Il y a %d mois"
-msgstr[1] "Il y a %d mois"
-
-#: ../src/view.js:312
-msgid "Last year"
-msgstr "L'année dernière"
-
-#: ../src/view.js:314
-#, c-format
-msgid "%d year ago"
-msgid_plural "%d years ago"
-msgstr[0] "Il y a %d an"
-msgstr[1] "Il y a %d ans"
-
-#~ msgid "Unable to load \"%s\" for preview"
-#~ msgstr "Impossible de charger « %s » pour l'aperçu"
-
-#~ msgid "Cannot find \"unoconv\", please check your LibreOffice installation"
+#~ msgid ""
+#~ "If set to true, Cheese will start up in wide mode, with the image "
+#~ "collection placed on the right-hand side. Useful with small screens."
 #~ msgstr ""
-#~ "Impossible de trouver « unoconv », vérifiez votre installation de "
-#~ "LibreOffice"
+#~ "Si défini à « vrai », Cheese démarre en mode large, avec la collection "
+#~ "d'images placée à droite. Une disposition utile pour de petits écrans."
 
-#~ msgid "New and Recent"
-#~ msgstr "Nouveau et récent"
+#~ msgid "Whether to start in fullscreen"
+#~ msgstr "Indique s'il faut démarrer en mode plein écran"
 
-#~ msgid "filtered by title"
-#~ msgstr "filtré par titre"
+#~ msgid "If set to true, Cheese will start up in fullscreen mode."
+#~ msgstr "Si défini à « vrai », Cheese démarre en mode plein écran."
 
-#~ msgid "filtered by author"
-#~ msgstr "filtré par auteur"
-
-#~ msgid "Load %d more document"
-#~ msgid_plural "Load %d more documents"
-#~ msgstr[0] "Charger %d document supplémentaire"
-#~ msgstr[1] "Charger %d documents supplémentaires"
-
-#~ msgid "Print..."
-#~ msgstr "Imprimer..."
-
-#~ msgid "Rotate Right"
-#~ msgstr "Faire pivoter à droite"
+#~ msgid "Another instance of Cheese is currently running\n"
+#~ msgstr "Une autre instance de Cheese est déjà lancée\n"
