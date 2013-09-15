@@ -45,6 +45,7 @@ const MainToolbar = new Lang.Class({
         this.widget.show();
 
         this.toolbar = new Gtk.HeaderBar();
+        this.toolbar.get_style_context().add_class('titlebar');
         this.widget.add(this.toolbar);
         this.toolbar.show();
 
