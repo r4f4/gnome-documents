@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-documents master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-08-22 15:45+0000\n"
-"PO-Revision-Date: 2013-08-25 03:19+0900\n"
+"POT-Creation-Date: 2013-09-11 19:10+0000\n"
+"PO-Revision-Date: 2013-09-16 18:06+0900\n"
 "Last-Translator: Jiro Matsuzawa <jmatsuzawa@gnome.org>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
 "Language: ja\n"
@@ -20,6 +20,18 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-DamnedLies-Scope: partial\n"
+
+#: ../data/gnome-documents.appdata.xml.in.h:1
+msgid "A simple application to access, organize and share your documents on GNOME. It is meant to be a simple and elegant replacement for using a file manager to deal with documents. Seamless cloud integration is offered through GNOME Online Accounts."
+msgstr "GNOME 上で、ドキュメントの参照、整理、共有を行うシンプルなアプリケーションです。ファイルマネージャーを使う必要はなく、無駄のない洗練されたドキュメント管理ができます。GNOME オンラインアカウントを通じて、クラウドとシームレスに連携して利用できます。"
+
+#: ../data/gnome-documents.appdata.xml.in.h:2
+msgid "It lets you:"
+msgstr "機能:"
+
+#: ../data/gnome-documents.appdata.xml.in.h:3
+msgid "<li>View recent local and online documents</li> <li>Access your Google, ownCloud or SkyDrive content</li> <li>Search through documents</li> <li>See new documents shared by friends</li> <li>View documents fullscreen</li> <li>Print documents</li> <li>Select favorites</li> <li>Allow opening full featured editor for non-trivial changes</li>"
+msgstr "<li>最近使ったローカルおよびオンラインのドキュメントを参照</li><li>Googleや、ownCloud、SkyDrive に保存したコンテンツへアクセス</li><li>ドキュメントの検索</li><li>友達があなたと共有した新規ドキュメントの参照</li><li>ドキュメントのフルスクリーン表示</li> <li>ドキュメントの印刷</li><li>お気に入りの選択</li><li>大掛かりな編集もフル機能搭載のエディターから可能</li>"
 
 #: ../data/gnome-documents.desktop.in.in.h:1 ../src/application.js:103
 #: ../src/mainWindow.js:52 ../src/mainWindow.js:273
@@ -236,7 +248,7 @@ msgstr[0] "%d 件選択"
 msgid "Cancel"
 msgstr "キャンセル"
 
-#: ../src/mainToolbar.js:250
+#: ../src/mainToolbar.js:249
 msgid "Select Items"
 msgstr "アイテムを選択"
 
