@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: gnome-documents master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-08-20 14:22+0000\n"
-"PO-Revision-Date: 2013-08-25 19:05-0500\n"
+"POT-Creation-Date: 2013-09-11 19:10+0000\n"
+"PO-Revision-Date: 2013-09-17 22:28-0500\n"
 "Last-Translator: A S Alam <aalam@users.sf.net>\n"
 "Language-Team: Punjabi/Panjabi <punjabi-users@lists.sf.net>\n"
 "Language: pa\n"
@@ -18,6 +18,39 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Lokalize 1.5\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: ../data/gnome-documents.appdata.xml.in.h:1
+msgid ""
+"A simple application to access, organize and share your documents on GNOME. "
+"It is meant to be a simple and elegant replacement for using a file manager "
+"to deal with documents. Seamless cloud integration is offered through GNOME "
+"Online Accounts."
+msgstr ""
+"ਗਨੋਮ ਵਿੱਚ ਤੁਹਾਡੇ ਦਸਤਾਵੇਜ਼ (ਡੌਕੂਮੈਂਟ) ਨੂੰ ਵਰਤਣ, ਉਹਨਾਂ ਦਾ ਪਰਬੰਧ ਕਰਨ ਤੇ ਸਾਂਝਾ ਕਰਨ "
+"ਲਈ ਸੌਖੀ ਜੇਹੀ ਐਪਲੀਕੇਸ਼ਨ ਹੈ। "
+"ਇਸ ਨੂੰ ਦਸਤਾਵੇਜ਼ ਦਾ ਪਰਬੰਧ ਕਰਨ ਲਈ ਫਾਇਲ ਮੈਨੇਜਰ ਦੀ ਬਜਾਏ ਸੌਖਾ ਤੇ ਸਧਾਰਨ ਰੂਪ ਵਿੱਚ "
+"ਤਿਆਰ ਕੀਤਾ ਗਿਆ ਹੈ। "
+"ਗਨੋਮ ਆਨਲਾਈਨ ਖਾਤਿਆਂ ਰਾਹੀਂ ਕਲਾਉਡ ਜੋੜ ਨੂੰ ਵੀ ਸੌਖਾ ਬਣਾਇਆ ਗਿਆ ਹੈ।"
+
+#: ../data/gnome-documents.appdata.xml.in.h:2
+msgid "It lets you:"
+msgstr "ਇਹ ਤੁਹਾਡੇ ਲਈ ਹੈ:"
+
+#: ../data/gnome-documents.appdata.xml.in.h:3
+msgid ""
+"<li>View recent local and online documents</li> <li>Access your Google, "
+"ownCloud or SkyDrive content</li> <li>Search through documents</li> <li>See "
+"new documents shared by friends</li> <li>View documents fullscreen</li> "
+"<li>Print documents</li> <li>Select favorites</li> <li>Allow opening full "
+"featured editor for non-trivial changes</li>"
+msgstr ""
+"<li>ਲੋਕਲ ਅਤੇ ਆਨਲਾਈਨ ਡੌਕੂਮੈਂਟ ਵੇਖਾਉਣ ਲਈ</li> <li>ਤੁਹਾਡੇ ਗੂਗਲ, ਓਵਨਕਲਾਊਡ ਜਾਂ "
+"ਸਕਾਈਡਰਾਇਵ ਸਮੱਗਰੀ ਵਰਤਣ ਲਈ</li> <li>ਡੌਕੂਮੈਂਟ (ਦਸਤਾਵੇਜ਼) ਵਿੱਚ ਲੱਭਣ ਲਈ</li> "
+"<li>ਦੋਸਤਾਂ ਵਲੋਂ ਸਾਂਝੇ ਕੀਤੇ ਨਵੇਂ ਦਸਤਾਵੇਜ਼ ਵੇਖਾਉਣ ਲਈ</li><li>ਦਸਤਾਵੇਜ਼ ਪੂਰੀ ਸਕਰੀਨ "
+"ਉੱਤੇ "
+"ਵੇਖਾਉਣ ਲਈ</li><li>ਦਸਤਾਵੇਜ਼ ਪਰਿੰਟ ਕਰਨ ਲਈ</li><li>ਪਸੰਦ ਚੁਣਨ ਲਈ</li><li>"
+"ਗੈਰ-ਮਾਮੂਲੀ "
+"ਬਦਲਾਅ ਲਈ ਪੂਰੇ ਫੀਚਰ ਭਰਪੂਰ ਐਡੀਟਰ ਨਾਲ ਖੋਲ੍ਹਣ ਦੇਣ ਲਈ</li>"
 
 #: ../data/gnome-documents.desktop.in.in.h:1 ../src/application.js:103
 #: ../src/mainWindow.js:52 ../src/mainWindow.js:273
@@ -235,7 +268,7 @@ msgstr[1] "%d ਚੁਣੇ"
 msgid "Cancel"
 msgstr "ਰੱਦ ਕਰੋ"
 
-#: ../src/mainToolbar.js:250
+#: ../src/mainToolbar.js:249
 msgid "Select Items"
 msgstr "ਆਈਟਮਾਂ ਚੁਣੋ"
 
@@ -304,7 +337,6 @@ msgid "Present On"
 msgstr "ਪਰਿਜੈਂਟ ਚਾਲੂ"
 
 #: ../src/preview.js:603
-#| msgid "Bookmarks"
 msgid "Bookmark this page"
 msgstr "ਇਹ ਸਫ਼ਾ ਬੁੱਕਮਾਰਕ ਕਰੋ"
 
@@ -337,7 +369,6 @@ msgstr "ਮੁਕੰਮਲ"
 #. Translators: "Title" is the label next to the document title
 #. in the properties dialog
 #: ../src/properties.js:82
-#| msgid "Title"
 msgctxt "Document Title"
 msgid "Title"
 msgstr "ਟਾਈਟਲ"
@@ -345,7 +376,6 @@ msgstr "ਟਾਈਟਲ"
 #. Translators: "Author" is the label next to the document author
 #. in the properties dialog
 #: ../src/properties.js:91
-#| msgid "Author"
 msgctxt "Document Author"
 msgid "Author"
 msgstr "ਲੇਖਕ"
@@ -368,7 +398,6 @@ msgstr "ਬਣਾਉਣ ਮਿਤੀ"
 #. Translators: "Type" is the label next to the document type
 #. (PDF, spreadsheet, ...) in the properties dialog
 #: ../src/properties.js:120
-#| msgid "Type"
 msgctxt "Document Type"
 msgid "Type"
 msgstr "ਕਿਸਮ"
@@ -468,7 +497,6 @@ msgstr "ਤੁਹਾਡੇ ਨਾਲ ਸਾਂਝਾ ਕੀਤਾ"
 #. Translators: "Type" refers to a search filter on the document type
 #. (PDF, spreadsheet, ...)
 #: ../src/search.js:167
-#| msgid "Type"
 msgctxt "Search Filter"
 msgid "Type"
 msgstr "ਕਿਸਮ"
@@ -501,14 +529,12 @@ msgstr "ਮਿਲਦਾ"
 
 #. Translators: "Title" refers to "Match Title" when searching
 #: ../src/search.js:258
-#| msgid "Title"
 msgctxt "Search Filter"
 msgid "Title"
 msgstr "ਟਾਈਟਲ"
 
 #. Translators: "Author" refers to "Match Author" when searching
 #: ../src/search.js:261
-#| msgid "Author"
 msgctxt "Search Filter"
 msgid "Author"
 msgstr "ਲੇਖਕ"
@@ -522,13 +548,11 @@ msgid "You don't have any collections yet. Enter a new collection name above."
 msgstr "ਤੁਹਾਡੇ ਕੋਲ ਕੋਈ ਵੀ ਭੰਡਾਰ ਨਹੀਂ ਹੈ। ਉੱਤੇ ਨਵੇਂ ਭੰਡਾਰ ਲਈ ਨਾਂ ਦਿਉ।"
 
 #: ../src/selections.js:604
-#| msgid "Collection"
 msgid "Create new collection"
 msgstr "ਨਵਾਂ ਭੰਡਾਰ ਬਣਾਓ"
 
 #. Translators: "Collections" refers to documents in this context
 #: ../src/selections.js:639
-#| msgid "Collections"
 msgctxt "Dialog Title"
 msgid "Collections"
 msgstr "ਭੰਡਾਰ"
@@ -545,7 +569,6 @@ msgstr "ਹਟਾਓ"
 
 #. organize button
 #: ../src/selections.js:761
-#| msgid "Collection"
 msgid "Add to Collection"
 msgstr "ਭੰਡਾਰ ਵਿੱਚ ਸ਼ਾਮਲ"
 
