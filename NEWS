@@ -1,3 +1,11 @@
+3.9.92 - "Glue is Cheap"
+========================
+
+- Don't fullscreen the window against the user's wish (Adel Gadllah)
+- Fix crash when window is closed (Carl-Anton Ingmarsson)
+- Rounded corners for the titlebar
+- Utilize intltool 0.50 gsettings support (Michael Catanzaro)
+
 3.9.91 - "One Drink"
 ====================
 
