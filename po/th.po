@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: gnome-documents master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-09-04 08:56+0000\n"
-"PO-Revision-Date: 2013-09-05 21:34+0700\n"
+"POT-Creation-Date: 2013-09-16 19:38+0000\n"
+"PO-Revision-Date: 2013-09-18 23:58+0700\n"
 "Last-Translator: Akom Chotiphantawanon <knight2000@gmail.com>\n"
 "Language-Team: Thai <thai-l10n@googlegroups.com>\n"
 "Language: th\n"
@@ -18,6 +18,34 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../data/gnome-documents.appdata.xml.in.h:1
+msgid ""
+"A simple application to access, organize and share your documents on GNOME. "
+"It is meant to be a simple and elegant replacement for using a file manager "
+"to deal with documents. Seamless cloud integration is offered through GNOME "
+"Online Accounts."
+msgstr ""
+"โปรแกรมอย่างง่ายสำหรับเข้าถึง จัดระเบียบ และแบ่งปันเอกสารของคุณใน GNOME "
+"เป็นโปรแกรมที่เรียบง่ายและงดงามที่ใช้แทนเครื่องมือจัดการแฟ้มในการจัดการกับเอกสาร "
+"มีการเชื่อมรวมกับคลาวด์อย่างแนบเนียนผ่านโปรแกรมบัญชีออนไลน์ของ GNOME"
+
+#: ../data/gnome-documents.appdata.xml.in.h:2
+msgid "It lets you:"
+msgstr "ช่วยให้คุณ:"
+
+#: ../data/gnome-documents.appdata.xml.in.h:3
+msgid ""
+"<li>View recent local and online documents</li> <li>Access your Google, "
+"ownCloud or SkyDrive content</li> <li>Search through documents</li> <li>See "
+"new documents shared by friends</li> <li>View documents fullscreen</li> "
+"<li>Print documents</li> <li>Select favorites</li> <li>Allow opening full "
+"featured editor for non-trivial changes</li>"
+msgstr ""
+"<li>ดูเอกสารล่าสุดในเครื่องและออนไลน์</li> <li>เข้าถึงเนื้อหา Google, ownCloud หรือ "
+"SkyDrive ของคุณ</li> <li>ค้นข้อมูลในเอกสาร</li> <li>ดูเอกสารใหม่ที่เพื่อนๆ แบ่งปัน</li> "
+"<li>ดูเอกสารแบบเต็มจอ</li> <li>พิมพ์เอกสาร</li> <li>เลือกรายการโปรด</li> "
+"<li>สามารถเปิดเครื่องมือแก้ไขที่เต็มรูปแบบสำหรับการเปลี่ยนแปลงที่เป็นกิจจะลักษณะ</li>"
 
 #: ../data/gnome-documents.desktop.in.in.h:1 ../src/application.js:103
 #: ../src/mainWindow.js:52 ../src/mainWindow.js:273
@@ -32,36 +60,36 @@ msgstr "เข้าถึง จัดการ และแบ่งปัน�
 msgid "Docs;PDF;Document;"
 msgstr "Docs;PDF;เอกสาร;"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:1
+#: ../data/org.gnome.documents.gschema.xml.h:1
 #: ../src/resources/app-menu.ui.h:1
 msgid "View as"
 msgstr "มุมมอง"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:2
+#: ../data/org.gnome.documents.gschema.xml.h:2
 msgid "View as type"
 msgstr "ชนิดของมุมมอง"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:3
+#: ../data/org.gnome.documents.gschema.xml.h:3
 msgid "Window size"
 msgstr "ขนาดหน้าต่าง"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:4
+#: ../data/org.gnome.documents.gschema.xml.h:4
 msgid "Window size (width and height)."
 msgstr "ขนาดของหน้าต่าง (ความกว้างและความสูง)"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:5
+#: ../data/org.gnome.documents.gschema.xml.h:5
 msgid "Window position"
 msgstr "ตำแหน่งหน้าต่าง"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:6
+#: ../data/org.gnome.documents.gschema.xml.h:6
 msgid "Window position (x and y)."
 msgstr "ตำแหน่งของหน้าต่าง (x และ y)"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:7
+#: ../data/org.gnome.documents.gschema.xml.h:7
 msgid "Window maximized"
 msgstr "หน้าต่างขยายแผ่อยู่"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:8
+#: ../data/org.gnome.documents.gschema.xml.h:8
 msgid "Window maximized state"
 msgstr "สถานะการขยายแผ่หน้าต่าง"
 
@@ -207,34 +235,34 @@ msgstr "ไม่มีสารบัญ"
 msgid "Contents"
 msgstr "เนื้อหา"
 
-#: ../src/mainToolbar.js:78
+#: ../src/mainToolbar.js:79
 msgid "Search"
 msgstr "ค้นหา"
 
-#: ../src/mainToolbar.js:89
+#: ../src/mainToolbar.js:90
 msgid "Back"
 msgstr "ถอยกลับ"
 
-#: ../src/mainToolbar.js:169
+#: ../src/mainToolbar.js:170
 #, c-format
 msgid "Results for “%s”"
 msgstr "ผลการค้นหาสำหรับ “%s”"
 
-#: ../src/mainToolbar.js:177
+#: ../src/mainToolbar.js:178
 msgid "Click on items to select them"
 msgstr "คลิกที่รายการเพื่อเลือก"
 
-#: ../src/mainToolbar.js:179
+#: ../src/mainToolbar.js:180
 #, c-format
 msgid "%d selected"
 msgid_plural "%d selected"
 msgstr[0] "เลือกอยู่ %d รายการ"
 
-#: ../src/mainToolbar.js:208
+#: ../src/mainToolbar.js:209
 msgid "Cancel"
 msgstr "ยกเลิก"
 
-#: ../src/mainToolbar.js:249
+#: ../src/mainToolbar.js:250
 msgid "Select Items"
 msgstr "เลือกรายการ"
 
