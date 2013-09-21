@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: gnome-documents\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-08-27 20:09+0000\n"
-"PO-Revision-Date: 2013-08-27 23:02+0200\n"
+"POT-Creation-Date: 2013-09-18 20:27+0000\n"
+"PO-Revision-Date: 2013-09-20 16:46+0100\n"
 "Last-Translator: Dušan Kazik <prescott66@gmail.com>\n"
 "Language-Team: Slovak <gnome-sk-list@gnome.org>\n"
 "Language: sk\n"
@@ -19,6 +19,38 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 1 : (n>=2 && n<=4) ? 2 : 0;\n"
 "X-Generator: Poedit 1.5.4\n"
+
+#: ../data/gnome-documents.appdata.xml.in.h:1
+msgid ""
+"A simple application to access, organize and share your documents on GNOME. "
+"It is meant to be a simple and elegant replacement for using a file manager "
+"to deal with documents. Seamless cloud integration is offered through GNOME "
+"Online Accounts."
+msgstr ""
+"Jednoduchá aplikácia prostredia GNOME na prístup k vašim dokumentom, ich "
+"organizáciu a zdieľanie. Mala by byť jednoduchou a pohodlnou náhradou "
+"pôvodného prehliadania dokumentov za pomoci správcu súborov. Prepojenie "
+"s cloudom je zabezpečené pomocou Účtov služieb prostredia GNOME "
+"(GOA)."
+
+#: ../data/gnome-documents.appdata.xml.in.h:2
+msgid "It lets you:"
+msgstr "Umožňuje vám:"
+
+#: ../data/gnome-documents.appdata.xml.in.h:3
+msgid ""
+"<li>View recent local and online documents</li> <li>Access your Google, "
+"ownCloud or SkyDrive content</li> <li>Search through documents</li> <li>See "
+"new documents shared by friends</li> <li>View documents fullscreen</li> "
+"<li>Print documents</li> <li>Select favorites</li> <li>Allow opening full "
+"featured editor for non-trivial changes</li>"
+msgstr ""
+"<li>Prezerať nedávne miestne a online dokumenty</li> <li>Prístup k vášmu "
+"obsahu na službách Google, ownCloud alebo SkyDrive</li> <li>Vyhľadávať v "
+"dokumentoch</li> <li>Vidieť nové dokumenty zdieľané vašimi priateľmi</li> "
+"<li>Prezerať dokumenty na celú obrazovku</li> <li>Tlačiť dokumenty</li> "
+"<li>Vybrať obľúbené dokumenty</li> <li>>Povoliť otvorenie vo vyspelom "
+"editore, ktorý umožňuje pokročilejšie úpravy</li>"
 
 # desktop entry name
 #: ../data/gnome-documents.desktop.in.in.h:1 ../src/application.js:103
@@ -39,43 +71,43 @@ msgid "Docs;PDF;Document;"
 msgstr "Dokumenty;PDF;Dokument;"
 
 # gsettings summary; menu item
-#: ../data/org.gnome.documents.gschema.xml.in.h:1
+#: ../data/org.gnome.documents.gschema.xml.h:1
 #: ../src/resources/app-menu.ui.h:1
 msgid "View as"
 msgstr "Zobraziť ako"
 
 # gsettings description
-#: ../data/org.gnome.documents.gschema.xml.in.h:2
+#: ../data/org.gnome.documents.gschema.xml.h:2
 msgid "View as type"
 msgstr "Typ zobrazenia"
 
 # gsettings summary
-#: ../data/org.gnome.documents.gschema.xml.in.h:3
+#: ../data/org.gnome.documents.gschema.xml.h:3
 msgid "Window size"
 msgstr "Veľkosť okna"
 
 # gsettings description
-#: ../data/org.gnome.documents.gschema.xml.in.h:4
+#: ../data/org.gnome.documents.gschema.xml.h:4
 msgid "Window size (width and height)."
 msgstr "Rozmery okna (šírka a výška)."
 
 # gsettings summary
-#: ../data/org.gnome.documents.gschema.xml.in.h:5
+#: ../data/org.gnome.documents.gschema.xml.h:5
 msgid "Window position"
 msgstr "Poloha okna"
 
 # gsettings description
-#: ../data/org.gnome.documents.gschema.xml.in.h:6
+#: ../data/org.gnome.documents.gschema.xml.h:6
 msgid "Window position (x and y)."
 msgstr "Súradnice polohy okna (x a y)."
 
 # gsettings summary
-#: ../data/org.gnome.documents.gschema.xml.in.h:7
+#: ../data/org.gnome.documents.gschema.xml.h:7
 msgid "Window maximized"
 msgstr "Maximalizované okno"
 
 # gsettings description
-#: ../data/org.gnome.documents.gschema.xml.in.h:8
+#: ../data/org.gnome.documents.gschema.xml.h:8
 msgid "Window maximized state"
 msgstr "Maximalizovaný stav okna"
 
@@ -183,7 +215,7 @@ msgstr "Neboli nájdené žiadne dokumenty"
 #: ../src/embed.js:167
 #, c-format
 msgid "You can add your online accounts in %s"
-msgstr "Vaše online účty môžete pridať v %s"
+msgstr "Vaše účty služieb môžete pridať v %s"
 
 # gramaticky apeluje na predoslu frazu "Mozete pridat Vase online ucty v %s"
 #. Translators: this should be translated in the context of the
@@ -233,26 +265,26 @@ msgid "Contents"
 msgstr "Obsah"
 
 # tooltip
-#: ../src/mainToolbar.js:78
+#: ../src/mainToolbar.js:79
 msgid "Search"
 msgstr "Vyhľadá"
 
-#: ../src/mainToolbar.js:89
+#: ../src/mainToolbar.js:90
 msgid "Back"
 msgstr "Späť"
 
 # PM: čo môže byť miesto %s?
 # DK: skusal som tuto aplikaciu a su to vysledky pre hladany vyraz
-#: ../src/mainToolbar.js:169
+#: ../src/mainToolbar.js:170
 #, c-format
 msgid "Results for “%s”"
 msgstr "Výsledky pre výraz „%s“"
 
-#: ../src/mainToolbar.js:177
+#: ../src/mainToolbar.js:178
 msgid "Click on items to select them"
 msgstr "Kliknutím na položky ich vyberiete"
 
-#: ../src/mainToolbar.js:179
+#: ../src/mainToolbar.js:180
 #, c-format
 msgid "%d selected"
 msgid_plural "%d selected"
@@ -260,7 +292,7 @@ msgstr[0] "%d vybraných"
 msgstr[1] "%d vybraná"
 msgstr[2] "%d vybrané"
 
-#: ../src/mainToolbar.js:208
+#: ../src/mainToolbar.js:209
 msgid "Cancel"
 msgstr "Zrušiť"
 
@@ -300,7 +332,7 @@ msgstr "Získavajú sa dokumenty od poskytovateľa %s"
 
 #: ../src/notifications.js:168
 msgid "Fetching documents from online accounts"
-msgstr "Získavajú sa dokumenty z online účtov"
+msgstr "Získavajú sa dokumenty z účtov služieb"
 
 # dialog title
 #: ../src/password.js:45
