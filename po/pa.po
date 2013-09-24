@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: gnome-documents master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-09-11 19:10+0000\n"
-"PO-Revision-Date: 2013-09-17 22:28-0500\n"
+"POT-Creation-Date: 2013-09-24 11:57+0000\n"
+"PO-Revision-Date: 2013-09-24 07:54-0500\n"
 "Last-Translator: A S Alam <aalam@users.sf.net>\n"
 "Language-Team: Punjabi/Panjabi <punjabi-users@lists.sf.net>\n"
 "Language: pa\n"
@@ -20,6 +20,17 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #: ../data/gnome-documents.appdata.xml.in.h:1
+#: ../data/gnome-documents.desktop.in.in.h:1 ../src/application.js:103
+#: ../src/mainWindow.js:52 ../src/mainWindow.js:273
+msgid "Documents"
+msgstr "ਡੌਕੂਮੈਂਟ"
+
+#: ../data/gnome-documents.appdata.xml.in.h:2
+#| msgid "A document manager application"
+msgid "A document manager application for GNOME"
+msgstr "ਗਨੋਮ ਲਈ ਡੌਕੂਮੈਂਟ ਮੈਨੇਜਰ ਐਪਲੀਕੇਸ਼ਨ"
+
+#: ../data/gnome-documents.appdata.xml.in.h:3
 msgid ""
 "A simple application to access, organize and share your documents on GNOME. "
 "It is meant to be a simple and elegant replacement for using a file manager "
@@ -27,16 +38,16 @@ msgid ""
 "Online Accounts."
 msgstr ""
 "ਗਨੋਮ ਵਿੱਚ ਤੁਹਾਡੇ ਦਸਤਾਵੇਜ਼ (ਡੌਕੂਮੈਂਟ) ਨੂੰ ਵਰਤਣ, ਉਹਨਾਂ ਦਾ ਪਰਬੰਧ ਕਰਨ ਤੇ ਸਾਂਝਾ ਕਰਨ "
-"ਲਈ ਸੌਖੀ ਜੇਹੀ ਐਪਲੀਕੇਸ਼ਨ ਹੈ। "
-"ਇਸ ਨੂੰ ਦਸਤਾਵੇਜ਼ ਦਾ ਪਰਬੰਧ ਕਰਨ ਲਈ ਫਾਇਲ ਮੈਨੇਜਰ ਦੀ ਬਜਾਏ ਸੌਖਾ ਤੇ ਸਧਾਰਨ ਰੂਪ ਵਿੱਚ "
-"ਤਿਆਰ ਕੀਤਾ ਗਿਆ ਹੈ। "
-"ਗਨੋਮ ਆਨਲਾਈਨ ਖਾਤਿਆਂ ਰਾਹੀਂ ਕਲਾਉਡ ਜੋੜ ਨੂੰ ਵੀ ਸੌਖਾ ਬਣਾਇਆ ਗਿਆ ਹੈ।"
+"ਲਈ ਸੌਖੀ ਜੇਹੀ "
+"ਐਪਲੀਕੇਸ਼ਨ ਹੈ। ਇਸ ਨੂੰ ਦਸਤਾਵੇਜ਼ ਦਾ ਪਰਬੰਧ ਕਰਨ ਲਈ ਫਾਇਲ ਮੈਨੇਜਰ ਦੀ ਬਜਾਏ ਸੌਖਾ ਤੇ ਸਧਾਰਨ "
+"ਰੂਪ ਵਿੱਚ "
+"ਤਿਆਰ ਕੀਤਾ ਗਿਆ ਹੈ। ਗਨੋਮ ਆਨਲਾਈਨ ਖਾਤਿਆਂ ਰਾਹੀਂ ਕਲਾਉਡ ਜੋੜ ਨੂੰ ਵੀ ਸੌਖਾ ਬਣਾਇਆ ਗਿਆ ਹੈ।"
 
-#: ../data/gnome-documents.appdata.xml.in.h:2
+#: ../data/gnome-documents.appdata.xml.in.h:4
 msgid "It lets you:"
 msgstr "ਇਹ ਤੁਹਾਡੇ ਲਈ ਹੈ:"
 
-#: ../data/gnome-documents.appdata.xml.in.h:3
+#: ../data/gnome-documents.appdata.xml.in.h:5
 msgid ""
 "<li>View recent local and online documents</li> <li>Access your Google, "
 "ownCloud or SkyDrive content</li> <li>Search through documents</li> <li>See "
@@ -45,17 +56,14 @@ msgid ""
 "featured editor for non-trivial changes</li>"
 msgstr ""
 "<li>ਲੋਕਲ ਅਤੇ ਆਨਲਾਈਨ ਡੌਕੂਮੈਂਟ ਵੇਖਾਉਣ ਲਈ</li> <li>ਤੁਹਾਡੇ ਗੂਗਲ, ਓਵਨਕਲਾਊਡ ਜਾਂ "
-"ਸਕਾਈਡਰਾਇਵ ਸਮੱਗਰੀ ਵਰਤਣ ਲਈ</li> <li>ਡੌਕੂਮੈਂਟ (ਦਸਤਾਵੇਜ਼) ਵਿੱਚ ਲੱਭਣ ਲਈ</li> "
-"<li>ਦੋਸਤਾਂ ਵਲੋਂ ਸਾਂਝੇ ਕੀਤੇ ਨਵੇਂ ਦਸਤਾਵੇਜ਼ ਵੇਖਾਉਣ ਲਈ</li><li>ਦਸਤਾਵੇਜ਼ ਪੂਰੀ ਸਕਰੀਨ "
-"ਉੱਤੇ "
-"ਵੇਖਾਉਣ ਲਈ</li><li>ਦਸਤਾਵੇਜ਼ ਪਰਿੰਟ ਕਰਨ ਲਈ</li><li>ਪਸੰਦ ਚੁਣਨ ਲਈ</li><li>"
-"ਗੈਰ-ਮਾਮੂਲੀ "
-"ਬਦਲਾਅ ਲਈ ਪੂਰੇ ਫੀਚਰ ਭਰਪੂਰ ਐਡੀਟਰ ਨਾਲ ਖੋਲ੍ਹਣ ਦੇਣ ਲਈ</li>"
-
-#: ../data/gnome-documents.desktop.in.in.h:1 ../src/application.js:103
-#: ../src/mainWindow.js:52 ../src/mainWindow.js:273
-msgid "Documents"
-msgstr "ਡੌਕੂਮੈਂਟ"
+"ਸਕਾਈਡਰਾਇਵ "
+"ਸਮੱਗਰੀ ਵਰਤਣ ਲਈ</li> <li>ਡੌਕੂਮੈਂਟ (ਦਸਤਾਵੇਜ਼) ਵਿੱਚ ਲੱਭਣ ਲਈ</li> <li>ਦੋਸਤਾਂ ਵਲੋਂ "
+"ਸਾਂਝੇ ਕੀਤੇ ਨਵੇਂ "
+"ਦਸਤਾਵੇਜ਼ ਵੇਖਾਉਣ ਲਈ</li><li>ਦਸਤਾਵੇਜ਼ ਪੂਰੀ ਸਕਰੀਨ ਉੱਤੇ ਵੇਖਾਉਣ ਲਈ</li><li>ਦਸਤਾਵੇਜ਼ "
+"ਪਰਿੰਟ ਕਰਨ "
+"ਲਈ</li><li>ਪਸੰਦ ਚੁਣਨ ਲਈ</li><li>ਗੈਰ-ਮਾਮੂਲੀ ਬਦਲਾਅ ਲਈ ਪੂਰੇ ਫੀਚਰ ਭਰਪੂਰ ਐਡੀਟਰ ਨਾਲ "
+"ਖੋਲ੍ਹਣ "
+"ਦੇਣ ਲਈ</li>"
 
 #: ../data/gnome-documents.desktop.in.in.h:2
 msgid "Access, manage and share documents"
@@ -65,36 +73,36 @@ msgstr "ਡੌਕੂਮੈਂਟ ਵਰਤੋਂ, ਪਰਬੰਧ ਕਰੋ ਅ�
 msgid "Docs;PDF;Document;"
 msgstr "ਡੌਕੂਮੈਂਟ;PDF,ਦਸਤਾਵੇਜ਼;"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:1
+#: ../data/org.gnome.documents.gschema.xml.h:1
 #: ../src/resources/app-menu.ui.h:1
 msgid "View as"
 msgstr "ਵੇਖੋ"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:2
+#: ../data/org.gnome.documents.gschema.xml.h:2
 msgid "View as type"
 msgstr "ਕਿਸਮਾਂ ਵਾਂਗ ਵੇਖੋ"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:3
+#: ../data/org.gnome.documents.gschema.xml.h:3
 msgid "Window size"
 msgstr "ਵਿੰਡੋ ਆਕਾਰ"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:4
+#: ../data/org.gnome.documents.gschema.xml.h:4
 msgid "Window size (width and height)."
 msgstr "ਵਿੰਡੋ ਆਕਾਰ (ਚੌੜਾਈ ਅਤੇ ਉਚਾਈ)"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:5
+#: ../data/org.gnome.documents.gschema.xml.h:5
 msgid "Window position"
 msgstr "ਵਿੰਡੋ ਸਥਿਤੀ"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:6
+#: ../data/org.gnome.documents.gschema.xml.h:6
 msgid "Window position (x and y)."
 msgstr "ਵਿੰਡੋ ਸਥਿਤੀ (x ਅਤੇ y)"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:7
+#: ../data/org.gnome.documents.gschema.xml.h:7
 msgid "Window maximized"
 msgstr "ਵਿੰਡੋ ਵੱਧੋ-ਵੱਧ ਕਰਨੀ"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:8
+#: ../data/org.gnome.documents.gschema.xml.h:8
 msgid "Window maximized state"
 msgstr "ਵਿੰਡੋ ਵੱਧੋ-ਵੱਧ ਆਕਾਰ ਸਥਿਤੀ"
 
@@ -240,35 +248,35 @@ msgstr "ਕੋਈ ਤਤਕਰਾ ਨਹੀਂ"
 msgid "Contents"
 msgstr "ਸਮੱਗਰੀ"
 
-#: ../src/mainToolbar.js:78
+#: ../src/mainToolbar.js:79
 msgid "Search"
 msgstr "ਖੋਜ"
 
-#: ../src/mainToolbar.js:89
+#: ../src/mainToolbar.js:90
 msgid "Back"
 msgstr "ਪਿੱਛੇ"
 
-#: ../src/mainToolbar.js:169
+#: ../src/mainToolbar.js:170
 #, c-format
 msgid "Results for “%s”"
 msgstr "“%s” ਲਈ ਨਤੀਜੇ"
 
-#: ../src/mainToolbar.js:177
+#: ../src/mainToolbar.js:178
 msgid "Click on items to select them"
 msgstr "ਆਈਟਮਾਂ ਨੂੰ ਚੁਣਨ ਲਈ ਉਹਨਾਂ ਉੱਤੇ ਕਲਿੱਕ ਕਰੋ"
 
-#: ../src/mainToolbar.js:179
+#: ../src/mainToolbar.js:180
 #, c-format
 msgid "%d selected"
 msgid_plural "%d selected"
 msgstr[0] "%d ਚੁਣਿਆ"
 msgstr[1] "%d ਚੁਣੇ"
 
-#: ../src/mainToolbar.js:208
+#: ../src/mainToolbar.js:209
 msgid "Cancel"
 msgstr "ਰੱਦ ਕਰੋ"
 
-#: ../src/mainToolbar.js:249
+#: ../src/mainToolbar.js:250
 msgid "Select Items"
 msgstr "ਆਈਟਮਾਂ ਚੁਣੋ"
 
