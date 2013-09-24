@@ -2,8 +2,8 @@
 <application>
   <id type="desktop">gnome-documents.desktop</id>
   <licence>CC0</licence>
-  <name>Documents</name>
-  <summary>A document manager application for GNOME</summary>
+  <_name>Documents</_name>
+  <_summary>A document manager application for GNOME</_summary>
   <description>
     <_p>
       A simple application to access, organize and share your documents on
