@@ -11,9 +11,9 @@ msgstr ""
 "Project-Id-Version: gnome-documents master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-09-16 19:38+0000\n"
-"PO-Revision-Date: 2013-09-15 20:37+0200\n"
-"Last-Translator: Josep Sànchez <papapep@gmx.com>\n"
+"POT-Creation-Date: 2013-09-24 11:57+0000\n"
+"PO-Revision-Date: 2013-09-25 00:35+0200\n"
+"Last-Translator: Gil Forcada <gilforcada@guifi.net>\n"
 "Language-Team: Catalan <tradgnome@softcatala.org>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
@@ -23,6 +23,16 @@ msgstr ""
 "X-Generator: Gtranslator 2.91.6\n"
 
 #: ../data/gnome-documents.appdata.xml.in.h:1
+#: ../data/gnome-documents.desktop.in.in.h:1 ../src/application.js:103
+#: ../src/mainWindow.js:52 ../src/mainWindow.js:273
+msgid "Documents"
+msgstr "Documents"
+
+#: ../data/gnome-documents.appdata.xml.in.h:2
+msgid "A document manager application for GNOME"
+msgstr "Una aplicació per gestionar documents pel GNOME"
+
+#: ../data/gnome-documents.appdata.xml.in.h:3
 msgid ""
 "A simple application to access, organize and share your documents on GNOME. "
 "It is meant to be a simple and elegant replacement for using a file manager "
@@ -34,11 +44,11 @@ msgstr ""
 "fitxers per gestionar els documents. S'integra transparentment amb el núvol "
 "mitjançant els comptes en línia del GNOME."
 
-#: ../data/gnome-documents.appdata.xml.in.h:2
+#: ../data/gnome-documents.appdata.xml.in.h:4
 msgid "It lets you:"
 msgstr "Us permet:"
 
-#: ../data/gnome-documents.appdata.xml.in.h:3
+#: ../data/gnome-documents.appdata.xml.in.h:5
 msgid ""
 "<li>View recent local and online documents</li> <li>Access your Google, "
 "ownCloud or SkyDrive content</li> <li>Search through documents</li> <li>See "
@@ -46,17 +56,13 @@ msgid ""
 "<li>Print documents</li> <li>Select favorites</li> <li>Allow opening full "
 "featured editor for non-trivial changes</li>"
 msgstr ""
-"<li>Mostra els documents utilitzats recentment, tant locals com en línia</li> "
-"<li>Accediu als vostres documents del Google, de l'ownCloud o de l'SkyDrive</li> "
-"<li>Cerqueu als documents</li> <li>Visualitzeu els documents nous compartits "
-"per les vostres amistats</li> <li>Visualitzeu els documents a pantalla "
-"completa</li> <li>Imprimiu els documents</li> <li>Seleccioneu els preferits</"
-"li> <li>Permet obrir amb un editor complet per fer canvis avançats</li>"
-
-#: ../data/gnome-documents.desktop.in.in.h:1 ../src/application.js:103
-#: ../src/mainWindow.js:52 ../src/mainWindow.js:273
-msgid "Documents"
-msgstr "Documents"
+"<li>Mostra els documents utilitzats recentment, tant locals com en línia</"
+"li> <li>Accediu als vostres documents del Google, de l'ownCloud o de "
+"l'SkyDrive</li> <li>Cerqueu als documents</li> <li>Visualitzeu els documents "
+"nous compartits per les vostres amistats</li> <li>Visualitzeu els documents "
+"a pantalla completa</li> <li>Imprimiu els documents</li> <li>Seleccioneu els "
+"preferits</li> <li>Permet obrir amb un editor complet per fer canvis "
+"avançats</li>"
 
 #: ../data/gnome-documents.desktop.in.in.h:2
 msgid "Access, manage and share documents"
