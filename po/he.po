@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Gnome-Documents\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-21 13:13+0300\n"
-"PO-Revision-Date: 2013-08-21 13:13+0200\n"
+"POT-Creation-Date: 2013-09-25 14:29+0300\n"
+"PO-Revision-Date: 2013-09-25 14:34+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <sh.yaron@gmail.com>\n"
 "Language: he\n"
@@ -19,10 +19,44 @@ msgstr ""
 "X-Poedit-SourceCharset: utf-8\n"
 "X-Generator: Poedit 1.5.4\n"
 
+#: ../data/gnome-documents.appdata.xml.in.h:1
 #: ../data/gnome-documents.desktop.in.in.h:1 ../src/application.js:103
 #: ../src/mainWindow.js:52 ../src/mainWindow.js:273
 msgid "Documents"
 msgstr "מסמכים"
+
+#: ../data/gnome-documents.appdata.xml.in.h:2
+msgid "A document manager application for GNOME"
+msgstr "יישום לניהול מסמכים עבור GNOME"
+
+#: ../data/gnome-documents.appdata.xml.in.h:3
+msgid ""
+"A simple application to access, organize and share your documents on GNOME. "
+"It is meant to be a simple and elegant replacement for using a file manager "
+"to deal with documents. Seamless cloud integration is offered through GNOME "
+"Online Accounts."
+msgstr ""
+"יישום פשוט למטרות גישה, ארגון ושיתוף המסמכים שלך עם GNOME. היישום משמש "
+"כחלופה פשוטה ואלגנטית למנהל הקבצים לצורך טיפול במסמכים. שילוב שקוף בשירותי "
+"ענן מוצע באמצעות חשבונות מקוונים ב־GNOME."
+
+#: ../data/gnome-documents.appdata.xml.in.h:4
+msgid "It lets you:"
+msgstr "היישום מאפשר לך:"
+
+#: ../data/gnome-documents.appdata.xml.in.h:5
+msgid ""
+"<li>View recent local and online documents</li> <li>Access your Google, "
+"ownCloud or SkyDrive content</li> <li>Search through documents</li> <li>See "
+"new documents shared by friends</li> <li>View documents fullscreen</li> "
+"<li>Print documents</li> <li>Select favorites</li> <li>Allow opening full "
+"featured editor for non-trivial changes</li>"
+msgstr ""
+"<li>לצפות במסמכים מקומיים ומקוונים</li> <li>לגשת לתוכן שלך ב־Google, "
+"ownCloud או SkyDrive</li> <li>לחפש בין מסמכים</li> <li>לצפות במסמכים חדשים "
+"ששותפו על ידי חברים</li> <li>לצפות במסמכים במסך מלא</li> <li>להדפיס מסמכים</"
+"li> <li>לבחור מועדפים</li> <li>לאפשר פתיחה של עורך עשיר בתכונות לצורך עריכות "
+"שאינן משניות</li>"
 
 #: ../data/gnome-documents.desktop.in.in.h:2
 msgid "Access, manage and share documents"
@@ -32,36 +66,36 @@ msgstr "גישה, ניהול ושיתוף של מסמכים"
 msgid "Docs;PDF;Document;"
 msgstr "מסמכים;PDF;מסמך;"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:1
+#: ../data/org.gnome.documents.gschema.xml.h:1
 #: ../src/resources/app-menu.ui.h:1
 msgid "View as"
 msgstr "צפייה בתור"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:2
+#: ../data/org.gnome.documents.gschema.xml.h:2
 msgid "View as type"
 msgstr "צפייה כסוג"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:3
+#: ../data/org.gnome.documents.gschema.xml.h:3
 msgid "Window size"
 msgstr "Window size"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:4
+#: ../data/org.gnome.documents.gschema.xml.h:4
 msgid "Window size (width and height)."
 msgstr "Window size (width and height)."
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:5
+#: ../data/org.gnome.documents.gschema.xml.h:5
 msgid "Window position"
 msgstr "Window position"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:6
+#: ../data/org.gnome.documents.gschema.xml.h:6
 msgid "Window position (x and y)."
 msgstr "Window position (x and y)."
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:7
+#: ../data/org.gnome.documents.gschema.xml.h:7
 msgid "Window maximized"
 msgstr "Window maximized"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:8
+#: ../data/org.gnome.documents.gschema.xml.h:8
 msgid "Window maximized state"
 msgstr "Window maximized state"
 
@@ -207,24 +241,24 @@ msgstr "אין טבלת תכנים"
 msgid "Contents"
 msgstr "תכנים"
 
-#: ../src/mainToolbar.js:78
+#: ../src/mainToolbar.js:79
 msgid "Search"
 msgstr "חיפוש"
 
-#: ../src/mainToolbar.js:89
+#: ../src/mainToolbar.js:90
 msgid "Back"
 msgstr "חזרה"
 
-#: ../src/mainToolbar.js:169
+#: ../src/mainToolbar.js:170
 #, c-format
 msgid "Results for “%s”"
 msgstr "תוצאות עבור „%s“"
 
-#: ../src/mainToolbar.js:177
+#: ../src/mainToolbar.js:178
 msgid "Click on items to select them"
 msgstr "יש ללחוץ על פריטים כדי לבחור אותם"
 
-#: ../src/mainToolbar.js:179
+#: ../src/mainToolbar.js:180
 #, c-format
 msgid "%d selected"
 msgid_plural "%d selected"
@@ -232,7 +266,7 @@ msgstr[0] "נבחר אחד"
 msgstr[1] "נבחרו %d"
 msgstr[2] "נבחרו 2"
 
-#: ../src/mainToolbar.js:208
+#: ../src/mainToolbar.js:209
 msgid "Cancel"
 msgstr "ביטול"
 
