@@ -4,13 +4,13 @@
 #
 # Julen Ruiz Aizpuru <julenx@gmail.com>, 2011.
 # Iñaki Larrañaga Murgoitio <dooteo@zundan.com>, 2012, 2013.
-#
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-documents master\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-18 22:19+0200\n"
-"PO-Revision-Date: 2013-09-18 22:25+0200\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"documents&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2013-09-24 11:57+0000\n"
+"PO-Revision-Date: 2013-09-25 11:38+0200\n"
 "Last-Translator: Iñaki Larrañaga Murgoitio <dooteo@zundan.com>\n"
 "Language-Team: Basque <librezale@librezale.org>\n"
 "Language: eu\n"
@@ -22,24 +22,33 @@ msgstr ""
 "X-Project-Style: gnome\n"
 
 #: ../data/gnome-documents.appdata.xml.in.h:1
+#: ../data/gnome-documents.desktop.in.in.h:1 ../src/application.js:103
+#: ../src/mainWindow.js:52 ../src/mainWindow.js:273
+msgid "Documents"
+msgstr "Dokumentuak"
+
+#: ../data/gnome-documents.appdata.xml.in.h:2
+#| msgid "A document manager application"
+msgid "A document manager application for GNOME"
+msgstr "GNOMEren aplikazioa dokumentuak kudeatzeko"
+
+#: ../data/gnome-documents.appdata.xml.in.h:3
 msgid ""
 "A simple application to access, organize and share your documents on GNOME. "
 "It is meant to be a simple and elegant replacement for using a file manager "
 "to deal with documents. Seamless cloud integration is offered through GNOME "
 "Online Accounts."
 msgstr ""
-"Zure dokumentuak GNOMEn atzitu, antolatu eta partekatzeko aplikazio xume bat: "
-"hau da, dokumentuekin aritzeko fitxategi-kudeatzaile baten ordezko xume eta "
-"dotore "
-"bat GNOMEren lineako kontuen (GNOME Online Accounts) bidez lainoarekin "
-"sinestezineko "
-"bateragarritasuna du."
+"Zure dokumentuak GNOMEn atzitu, antolatu eta partekatzeko aplikazio xume "
+"bat: hau da, dokumentuekin aritzeko fitxategi-kudeatzaile baten ordezko xume "
+"eta dotore bat GNOMEren lineako kontuen (GNOME Online Accounts) bidez "
+"lainoarekin sinestezineko bateragarritasuna du."
 
-#: ../data/gnome-documents.appdata.xml.in.h:2
+#: ../data/gnome-documents.appdata.xml.in.h:4
 msgid "It lets you:"
 msgstr "Honakoak eskaintzen dizkizu:"
 
-#: ../data/gnome-documents.appdata.xml.in.h:3
+#: ../data/gnome-documents.appdata.xml.in.h:5
 msgid ""
 "<li>View recent local and online documents</li> <li>Access your Google, "
 "ownCloud or SkyDrive content</li> <li>Search through documents</li> <li>See "
@@ -47,19 +56,12 @@ msgid ""
 "<li>Print documents</li> <li>Select favorites</li> <li>Allow opening full "
 "featured editor for non-trivial changes</li>"
 msgstr ""
-"<li>Lokaleko eta lineako dokumentu berrienak ikustea</li> "
-"<li>Zure Google-ko, ownCloud-eko edo SkyDrive-eko edukia atzitzea</li> "
-"<li>Dokumentuetan zehar bilaketak egitea</li>"
-"<li>Lagunek partekatutako dokumentu berriak ikustea</li> "
-"<li>Dokumentuak pantaila osoan ikustea</li> "
-"<li>Dokumentuak inprimatzea</li> "
-"<li>Gogokoak hautatzea</li> "
-"<li>Eginbide osoko editore bat irekitzea aldaketa aurreratuagoak lantzeko</li>"
-
-#: ../data/gnome-documents.desktop.in.in.h:1 ../src/application.js:103
-#: ../src/mainWindow.js:52 ../src/mainWindow.js:273
-msgid "Documents"
-msgstr "Dokumentuak"
+"<li>Lokaleko eta lineako dokumentu berrienak ikustea</li> <li>Zure Google-"
+"ko, ownCloud-eko edo SkyDrive-eko edukia atzitzea</li> <li>Dokumentuetan "
+"zehar bilaketak egitea</li><li>Lagunek partekatutako dokumentu berriak "
+"ikustea</li> <li>Dokumentuak pantaila osoan ikustea</li> <li>Dokumentuak "
+"inprimatzea</li> <li>Gogokoak hautatzea</li> <li>Eginbide osoko editore bat "
+"irekitzea aldaketa aurreratuagoak lantzeko</li>"
 
 #: ../data/gnome-documents.desktop.in.in.h:2
 msgid "Access, manage and share documents"
@@ -102,10 +104,14 @@ msgstr "Leihoa maximizatuta"
 msgid "Window maximized state"
 msgstr "Leiho maximizatuaren egoera"
 
+#. Translators: this refers to local documents
 #: ../src/documents.js:599 ../src/search.js:417
 msgid "Local"
 msgstr "Lokala"
 
+#. Translators: Documents ships a "Getting Started with Documents"
+#. tutorial PDF. The "GNOME" string below is displayed as the author name
+#. of that document, and doesn't normally need to be translated.
 #: ../src/documents.js:620
 msgid "GNOME"
 msgstr "GNOME"
@@ -119,6 +125,7 @@ msgstr "Dokumentuen oinarrizko erabileraren xehetasunak"
 msgid "Collection"
 msgstr "Bilduma"
 
+#. overridden
 #: ../src/documents.js:681
 msgid "Google Docs"
 msgstr "Google Docs"
@@ -139,10 +146,12 @@ msgstr "Aurkezpena"
 msgid "Document"
 msgstr "Dokumentua"
 
+#. overridden
 #: ../src/documents.js:832
 msgid "ownCloud"
 msgstr "ownCloud"
 
+#. overridden
 #: ../src/documents.js:888 ../src/documents.js:889
 msgid "Skydrive"
 msgstr "Skydrive"
@@ -164,12 +173,13 @@ msgid "Unable to locate this document."
 msgstr "Ezin da dokumentu hau aurkitu."
 
 #: ../src/documents.js:1092
-#, javascript-format
+#, c-format
 msgid "Hmm, something is fishy (%d)."
 msgstr "Mmmm... Zerbait susmagarria dago (%d)."
 
+#. Translators: %s is the title of a document
 #: ../src/documents.js:1110
-#, javascript-format
+#, c-format
 msgid "Oops! Unable to load “%s”"
 msgstr "Ezin da '%s' kargatu"
 
@@ -186,11 +196,15 @@ msgstr "Kargatzen…"
 msgid "No Documents Found"
 msgstr "Ez da dokumenturik aurkitu"
 
+#. Translators: %s here is "System Settings", which is in a separate string
+#. due to markup, and should be translated only in the context of this sentence
 #: ../src/embed.js:167
-#, javascript-format
+#, c-format
 msgid "You can add your online accounts in %s"
 msgstr "Zure lineako kontuak gehi ditzakezu %s(e)n"
 
+#. Translators: this should be translated in the context of the
+#. "You can add your online accounts in System Settings" sentence above
 #: ../src/embed.js:171
 msgid "System Settings"
 msgstr "Sistemaren ezarpenak"
@@ -241,7 +255,7 @@ msgid "Back"
 msgstr "Atzera"
 
 #: ../src/mainToolbar.js:170
-#, javascript-format
+#, c-format
 msgid "Results for “%s”"
 msgstr "'%s'(r)en emaitzak"
 
@@ -250,7 +264,7 @@ msgid "Click on items to select them"
 msgstr "Egin klik elementuetan hautatzeko"
 
 #: ../src/mainToolbar.js:180
-#, javascript-format
+#, c-format
 msgid "%d selected"
 msgid_plural "%d selected"
 msgstr[0] "%d hautatuta"
@@ -273,7 +287,7 @@ msgid "A document manager application"
 msgstr "Dokumentuak kudeatzeko aplikazio bat"
 
 #: ../src/notifications.js:87
-#, javascript-format
+#, c-format
 msgid "Printing “%s”: %s"
 msgstr "'%s' inprimatzen: %s"
 
@@ -286,8 +300,10 @@ msgid "Some documents might not be available during this process"
 msgstr ""
 "Dokumentu batzuk ez dira erabilgarri egongo prozesuak irauten duen bitartean"
 
+#. Translators: %s refers to an online account provider, e.g.
+#. "Google", or "Windows Live".
 #: ../src/notifications.js:166
-#, javascript-format
+#, c-format
 msgid "Fetching documents from %s"
 msgstr "%s(e)ndik dokumentuak eskuratzen"
 
@@ -304,7 +320,7 @@ msgid "_Unlock"
 msgstr "_Desblokeatu"
 
 #: ../src/password.js:64
-#, javascript-format
+#, c-format
 msgid "Document %s is locked and requires a password to be opened."
 msgstr "'%s' dokumentua blokeatuta dago eta pasahitza behar da irekitzeko."
 
@@ -328,8 +344,9 @@ msgstr "Aurkezpena aktibatuta"
 msgid "Bookmark this page"
 msgstr "Ezarri laster-marka orrialde honi"
 
+#. Translators: this is the Open action in a context menu
 #: ../src/preview.js:892 ../src/selections.js:856
-#, javascript-format
+#, c-format
 msgid "Open with %s"
 msgstr "Ireki '%s'(r)ekin"
 
@@ -341,29 +358,38 @@ msgstr "Bilatu aurrekoa"
 msgid "Find Next"
 msgstr "Bilatu hurrengoa"
 
+#. properties button
 #: ../src/properties.js:60 ../src/resources/preview-menu.ui.h:9
 #: ../src/selections.js:766
 msgid "Properties"
 msgstr "Propietateak"
 
+#. Label for Done button in Sharing dialog
 #: ../src/properties.js:62 ../src/sharing.js:101
 msgid "Done"
 msgstr "Eginda"
 
+#. Title item
+#. Translators: "Title" is the label next to the document title
+#. in the properties dialog
 #: ../src/properties.js:82
 msgctxt "Document Title"
 msgid "Title"
 msgstr "Titulua"
 
+#. Translators: "Author" is the label next to the document author
+#. in the properties dialog
 #: ../src/properties.js:91
 msgctxt "Document Author"
 msgid "Author"
 msgstr "Egilea"
 
+#. Source item
 #: ../src/properties.js:98
 msgid "Source"
 msgstr "Iturburua"
 
+#. Date Modified item
 #: ../src/properties.js:104
 msgid "Date Modified"
 msgstr "Data aldatuta"
@@ -372,6 +398,9 @@ msgstr "Data aldatuta"
 msgid "Date Created"
 msgstr "Data sortuta"
 
+#. Document type item
+#. Translators: "Type" is the label next to the document type
+#. (PDF, spreadsheet, ...) in the properties dialog
 #: ../src/properties.js:120
 msgctxt "Document Type"
 msgid "Type"
@@ -405,6 +434,8 @@ msgstr "Irten"
 msgid "_Copy"
 msgstr "_Kopiatu"
 
+#. open button
+#. Translators: this is the Open action in a context menu
 #: ../src/resources/preview-menu.ui.h:1 ../src/selections.js:746
 #: ../src/selections.js:859
 msgid "Open"
@@ -450,19 +481,25 @@ msgstr "Bat ere ez hautatu"
 msgid "Category"
 msgstr "Kategoria"
 
+#. Translators: this refers to new and recent documents
+#. Translators: this refers to documents
 #: ../src/search.js:118 ../src/search.js:170 ../src/search.js:255
 #: ../src/search.js:411
 msgid "All"
 msgstr "Denak"
 
+#. Translators: this refers to favorite documents
 #: ../src/search.js:124
 msgid "Favorites"
 msgstr "Gogokoak"
 
+#. Translators: this refers to shared documents
 #: ../src/search.js:129
 msgid "Shared with you"
 msgstr "Zurekin partekatuak"
 
+#. Translators: "Type" refers to a search filter on the document type
+#. (PDF, spreadsheet, ...)
 #: ../src/search.js:167
 msgctxt "Search Filter"
 msgid "Type"
@@ -488,15 +525,19 @@ msgstr "Kalkulu-orriak"
 msgid "Text Documents"
 msgstr "Testu-dokumentuak"
 
+#. Translators: this is a verb that refers to "All", "Title" and "Author",
+#. as in "Match All", "Match Title" and "Match Author"
 #: ../src/search.js:252
 msgid "Match"
 msgstr "Bat etorri"
 
+#. Translators: "Title" refers to "Match Title" when searching
 #: ../src/search.js:258
 msgctxt "Search Filter"
 msgid "Title"
 msgstr "Titulua"
 
+#. Translators: "Author" refers to "Match Author" when searching
 #: ../src/search.js:261
 msgctxt "Search Filter"
 msgid "Author"
@@ -514,23 +555,28 @@ msgstr "Oraindik ez daukazu bildumarik. Sartu bilduma berriaren izena goian."
 msgid "Create new collection"
 msgstr "Sortu bilduma berria"
 
+#. Translators: "Collections" refers to documents in this context
 #: ../src/selections.js:639
 msgctxt "Dialog Title"
 msgid "Collections"
 msgstr "Bildumak"
 
+#. print button
 #: ../src/selections.js:751
 msgid "Print"
 msgstr "Inprimatu"
 
+#. trash button
 #: ../src/selections.js:756
 msgid "Delete"
 msgstr "Ezabatu"
 
+#. organize button
 #: ../src/selections.js:761
 msgid "Add to Collection"
 msgstr "Gehitu bildumari"
 
+#. share button
 #: ../src/selections.js:771
 msgid "Share"
 msgstr "Partekatu"
@@ -539,14 +585,17 @@ msgstr "Partekatu"
 msgid "Sharing Settings"
 msgstr "Partekatzearen ezarpenak"
 
+#. Label for widget group for changing document permissions
 #: ../src/sharing.js:134
 msgid "Document permissions"
 msgstr "Dokumentuaren baimenak"
 
+#. Label for permission change in Sharing dialog
 #: ../src/sharing.js:141 ../src/sharing.js:319
 msgid "Change"
 msgstr "Aldatu"
 
+#. Label for radiobutton that sets doc permission to private
 #: ../src/sharing.js:165 ../src/sharing.js:294
 msgid "Private"
 msgstr "Pribatua"
@@ -555,14 +604,17 @@ msgstr "Pribatua"
 msgid "Public"
 msgstr "Publikoa"
 
+#. Label for checkbutton that sets doc permission to Can edit
 #: ../src/sharing.js:179 ../src/sharing.js:289
 msgid "Everyone can edit"
 msgstr "Edonork edita dezake"
 
+#. Label for widget group used for adding new contacts
 #: ../src/sharing.js:186
 msgid "Add people"
 msgstr "Gehitu jendea"
 
+#. Editable text in entry field
 #: ../src/sharing.js:193
 msgid "Enter an email address"
 msgstr "Sartu helbide elektronikoa"
@@ -592,7 +644,7 @@ msgid "Owner"
 msgstr "Jabea"
 
 #: ../src/sharing.js:441
-#, javascript-format
+#, c-format
 msgid "You can ask %s for access"
 msgstr "Eskatu '%s'(r)i sarbidetza"
 
@@ -609,6 +661,7 @@ msgstr "Izenik gabeko dokumentua"
 msgid "Unable to fetch the list of documents"
 msgstr "Ezin da dokumentuen zerrenda eskuratu"
 
+#. Translators: "more" refers to documents in this context
 #: ../src/view.js:62 ../src/view.js:93
 msgid "Load More"
 msgstr "Kargatu gehiago"
@@ -618,7 +671,7 @@ msgid "Yesterday"
 msgstr "Atzo"
 
 #: ../src/view.js:297
-#, javascript-format
+#, c-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
 msgstr[0] "duela egun %d"
@@ -629,7 +682,7 @@ msgid "Last week"
 msgstr "Azken astea"
 
 #: ../src/view.js:303
-#, javascript-format
+#, c-format
 msgid "%d week ago"
 msgid_plural "%d weeks ago"
 msgstr[0] "duela aste %d"
@@ -640,7 +693,7 @@ msgid "Last month"
 msgstr "Azken hilabetea"
 
 #: ../src/view.js:309
-#, javascript-format
+#, c-format
 msgid "%d month ago"
 msgid_plural "%d months ago"
 msgstr[0] "duela hilabete %d"
@@ -651,7 +704,7 @@ msgid "Last year"
 msgstr "Azken urtea"
 
 #: ../src/view.js:315
-#, javascript-format
+#, c-format
 msgid "%d year ago"
 msgid_plural "%d years ago"
 msgstr[0] "duela urte %d"
