@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: gnome-documents\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-09-18 20:27+0000\n"
-"PO-Revision-Date: 2013-09-20 16:46+0100\n"
+"POT-Creation-Date: 2013-09-25 11:34+0000\n"
+"PO-Revision-Date: 2013-09-27 17:48+0100\n"
 "Last-Translator: Dušan Kazik <prescott66@gmail.com>\n"
 "Language-Team: Slovak <gnome-sk-list@gnome.org>\n"
 "Language: sk\n"
@@ -20,7 +20,18 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 1 : (n>=2 && n<=4) ? 2 : 0;\n"
 "X-Generator: Poedit 1.5.4\n"
 
+# desktop entry name
 #: ../data/gnome-documents.appdata.xml.in.h:1
+#: ../data/gnome-documents.desktop.in.in.h:1 ../src/application.js:103
+#: ../src/mainWindow.js:52 ../src/mainWindow.js:273
+msgid "Documents"
+msgstr "Dokumenty"
+
+#: ../data/gnome-documents.appdata.xml.in.h:2
+msgid "A document manager application for GNOME"
+msgstr "Aplikácia prostredia GNOME na správu dokumentov"
+
+#: ../data/gnome-documents.appdata.xml.in.h:3
 msgid ""
 "A simple application to access, organize and share your documents on GNOME. "
 "It is meant to be a simple and elegant replacement for using a file manager "
@@ -29,15 +40,14 @@ msgid ""
 msgstr ""
 "Jednoduchá aplikácia prostredia GNOME na prístup k vašim dokumentom, ich "
 "organizáciu a zdieľanie. Mala by byť jednoduchou a pohodlnou náhradou "
-"pôvodného prehliadania dokumentov za pomoci správcu súborov. Prepojenie "
-"s cloudom je zabezpečené pomocou Účtov služieb prostredia GNOME "
-"(GOA)."
+"pôvodného prehliadania dokumentov za pomoci správcu súborov. Prepojenie s "
+"cloudom je zabezpečené pomocou Účtov služieb prostredia GNOME (GOA)."
 
-#: ../data/gnome-documents.appdata.xml.in.h:2
+#: ../data/gnome-documents.appdata.xml.in.h:4
 msgid "It lets you:"
 msgstr "Umožňuje vám:"
 
-#: ../data/gnome-documents.appdata.xml.in.h:3
+#: ../data/gnome-documents.appdata.xml.in.h:5
 msgid ""
 "<li>View recent local and online documents</li> <li>Access your Google, "
 "ownCloud or SkyDrive content</li> <li>Search through documents</li> <li>See "
@@ -51,12 +61,6 @@ msgstr ""
 "<li>Prezerať dokumenty na celú obrazovku</li> <li>Tlačiť dokumenty</li> "
 "<li>Vybrať obľúbené dokumenty</li> <li>>Povoliť otvorenie vo vyspelom "
 "editore, ktorý umožňuje pokročilejšie úpravy</li>"
-
-# desktop entry name
-#: ../data/gnome-documents.desktop.in.in.h:1 ../src/application.js:103
-#: ../src/mainWindow.js:52 ../src/mainWindow.js:273
-msgid "Documents"
-msgstr "Dokumenty"
 
 # desktop entry comment
 #: ../data/gnome-documents.desktop.in.in.h:2
@@ -758,40 +762,3 @@ msgid_plural "%d years ago"
 msgstr[0] "Pred %d rokmi"
 msgstr[1] "Pred %d rokom"
 msgstr[2] "Pred %d rokmi"
-
-#~ msgctxt "Toolbar button tooltip"
-#~ msgid "Organize"
-#~ msgstr "Usporiada dokumenty"
-
-#~ msgctxt "Dialog Title"
-#~ msgid "Organize"
-#~ msgstr "Usporiadanie"
-
-#~ msgid "filtered by title"
-#~ msgstr "vyfiltrované podľa názvu"
-
-#~ msgid "filtered by author"
-#~ msgstr "vyfiltrované podľa autora"
-
-#~ msgid "Unable to load \"%s\" for preview"
-#~ msgstr "Nepodarilo sa načítať „%s“ pre náhľad"
-
-#~ msgid "Cannot find \"unoconv\", please check your LibreOffice installation"
-#~ msgstr ""
-#~ "Nepodarilo sa nájsť nástroj „unoconv“, prosím, skontrolujte vašu "
-#~ "inštaláciu programu LibreOffice"
-
-#~ msgid "New and Recent"
-#~ msgstr "Nové a nedávne"
-
-#~ msgid "Load %d more document"
-#~ msgid_plural "Load %d more documents"
-#~ msgstr[0] "Načítať %d ďalších dokumentov"
-#~ msgstr[1] "Načítať %d ďalší dokument"
-#~ msgstr[2] "Načítať %d ďalšie dokumenty"
-
-#~ msgid "Print..."
-#~ msgstr "Tlačiť..."
-
-#~ msgid "Rotate Right"
-#~ msgstr "Otočiť doprava"
