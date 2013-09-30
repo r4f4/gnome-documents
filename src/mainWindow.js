@@ -276,7 +276,7 @@ const MainWindow = new Lang.Class({
         aboutDialog.license_type = Gtk.License.GPL_2_0;
         aboutDialog.logo_icon_name = 'gnome-documents';
         aboutDialog.version = Config.PACKAGE_VERSION;
-        aboutDialog.website = 'http://live.gnome.org/GnomeDocuments';
+        aboutDialog.website = 'https://wiki.gnome.org/Apps/Documents';
         aboutDialog.wrap_license = true;
 
         aboutDialog.modal = true;
