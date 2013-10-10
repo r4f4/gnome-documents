@@ -1,5 +1,5 @@
 # Hungarian translation for gnome-documents.
-# Copyright (C) 2011, 2012. Free Software Foundation, Inc.
+# Copyright (C) 2011, 2012, 2013. Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-documents package.
 #
 # Gabor Kelemen <kelemeng at gnome dot hu>, 2011, 2012, 2013.
@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: gnome-documents master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-09-11 19:10+0000\n"
-"PO-Revision-Date: 2013-09-13 11:07+0200\n"
+"POT-Creation-Date: 2013-09-24 11:57+0000\n"
+"PO-Revision-Date: 2013-10-10 13:36+0200\n"
 "Last-Translator: Gabor Kelemen <kelemeng at gnome dot hu>\n"
 "Language-Team: Hungarian <openscope at googlegroups dot com>\n"
 "Language: hu\n"
@@ -21,6 +21,17 @@ msgstr ""
 "X-Generator: Lokalize 1.5\n"
 
 #: ../data/gnome-documents.appdata.xml.in.h:1
+#: ../data/gnome-documents.desktop.in.in.h:1 ../src/application.js:103
+#: ../src/mainWindow.js:52 ../src/mainWindow.js:273
+msgid "Documents"
+msgstr "Dokumentumok"
+
+#: ../data/gnome-documents.appdata.xml.in.h:2
+#| msgid "A document manager application"
+msgid "A document manager application for GNOME"
+msgstr "Dokumentumkezelő alkalmazás a GNOME-hoz"
+
+#: ../data/gnome-documents.appdata.xml.in.h:3
 msgid ""
 "A simple application to access, organize and share your documents on GNOME. "
 "It is meant to be a simple and elegant replacement for using a file manager "
@@ -28,16 +39,15 @@ msgid ""
 "Online Accounts."
 msgstr ""
 "Egyszerű alkalmazás dokumentumok eléréséhez, rendszerezéséhez és "
-"megosztásához GNOME alatt. "
-"A fájlkezelő dokumentumok kezelésére való használatának egyszerű és elegáns "
-"helyettesítésére "
-"tervezték. A GNOME Online fiókok használatával sima felhőintegráció érhető el."
+"megosztásához GNOME alatt. A fájlkezelő dokumentumok kezelésére való "
+"használatának egyszerű és elegáns helyettesítésére tervezték. A GNOME Online "
+"fiókok használatával sima felhőintegráció érhető el."
 
-#: ../data/gnome-documents.appdata.xml.in.h:2
+#: ../data/gnome-documents.appdata.xml.in.h:4
 msgid "It lets you:"
 msgstr "Lehetővé teszi:"
 
-#: ../data/gnome-documents.appdata.xml.in.h:3
+#: ../data/gnome-documents.appdata.xml.in.h:5
 msgid ""
 "<li>View recent local and online documents</li> <li>Access your Google, "
 "ownCloud or SkyDrive content</li> <li>Search through documents</li> <li>See "
@@ -46,16 +56,11 @@ msgid ""
 "featured editor for non-trivial changes</li>"
 msgstr ""
 "<li>Legutóbbi helyi és online dokumentumok megjelenítése</li> <li>Google, "
-"ownCloud vagy SkyDrive tartalom elérése</li> <li>Keresés a dokumentumokban<"
-"/li> <li>Ismerősei által megosztott új dokumentumok megjelenítése</li> <li>"
-"Dokumentumok megjelenítése teljes képernyőn</li> <li>Dokumentumok nyomtatása<"
-"/li> <li>Kedvencek kiválasztása</li> <li>A teljes felszereltségű szerkesztő "
-"megnyitása nem triviális változtatásokhoz</li>"
-
-#: ../data/gnome-documents.desktop.in.in.h:1 ../src/application.js:103
-#: ../src/mainWindow.js:52 ../src/mainWindow.js:273
-msgid "Documents"
-msgstr "Dokumentumok"
+"ownCloud vagy SkyDrive tartalom elérése</li> <li>Keresés a dokumentumokban</"
+"li> <li>Ismerősei által megosztott új dokumentumok megjelenítése</li> "
+"<li>Dokumentumok megjelenítése teljes képernyőn</li> <li>Dokumentumok "
+"nyomtatása</li> <li>Kedvencek kiválasztása</li> <li>A teljes felszereltségű "
+"szerkesztő megnyitása nem triviális változtatásokhoz</li>"
 
 #: ../data/gnome-documents.desktop.in.in.h:2
 msgid "Access, manage and share documents"
@@ -65,36 +70,36 @@ msgstr "Dokumentumok elérése, kezelése és megosztása"
 msgid "Docs;PDF;Document;"
 msgstr "Dokumentum;PDF;Doksi;"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:1
+#: ../data/org.gnome.documents.gschema.xml.h:1
 #: ../src/resources/app-menu.ui.h:1
 msgid "View as"
 msgstr "Megjelenítés mint"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:2
+#: ../data/org.gnome.documents.gschema.xml.h:2
 msgid "View as type"
 msgstr "Megjelenítés típusként"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:3
+#: ../data/org.gnome.documents.gschema.xml.h:3
 msgid "Window size"
 msgstr "Ablakméret"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:4
+#: ../data/org.gnome.documents.gschema.xml.h:4
 msgid "Window size (width and height)."
 msgstr "Ablak mérete (szélesség és magasság)."
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:5
+#: ../data/org.gnome.documents.gschema.xml.h:5
 msgid "Window position"
 msgstr "Ablakpozíció"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:6
+#: ../data/org.gnome.documents.gschema.xml.h:6
 msgid "Window position (x and y)."
 msgstr "Ablakpozíció (x és y)."
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:7
+#: ../data/org.gnome.documents.gschema.xml.h:7
 msgid "Window maximized"
 msgstr "Ablak teljes méretű"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:8
+#: ../data/org.gnome.documents.gschema.xml.h:8
 msgid "Window maximized state"
 msgstr "Az ablak maximalizált állapota"
 
@@ -240,35 +245,35 @@ msgstr "Nincs tartalomjegyzék"
 msgid "Contents"
 msgstr "Tartalomjegyzék"
 
-#: ../src/mainToolbar.js:78
+#: ../src/mainToolbar.js:79
 msgid "Search"
 msgstr "Keresés"
 
-#: ../src/mainToolbar.js:89
+#: ../src/mainToolbar.js:90
 msgid "Back"
 msgstr "Vissza"
 
-#: ../src/mainToolbar.js:169
+#: ../src/mainToolbar.js:170
 #, c-format
 msgid "Results for “%s”"
 msgstr "Találatok erre: „%s”"
 
-#: ../src/mainToolbar.js:177
+#: ../src/mainToolbar.js:178
 msgid "Click on items to select them"
 msgstr "Kattintson az elemekre a kiválasztásukhoz"
 
-#: ../src/mainToolbar.js:179
+#: ../src/mainToolbar.js:180
 #, c-format
 msgid "%d selected"
 msgid_plural "%d selected"
 msgstr[0] "%d kiválasztva"
 msgstr[1] "%d kiválasztva"
 
-#: ../src/mainToolbar.js:208
+#: ../src/mainToolbar.js:209
 msgid "Cancel"
 msgstr "Mégse"
 
-#: ../src/mainToolbar.js:249
+#: ../src/mainToolbar.js:250
 msgid "Select Items"
 msgstr "Válasszon elemeket"
 
