@@ -4,27 +4,65 @@
 # Tom Tryfonidis <tomtryf@gmail.com>, 2012.
 # Kostas Papadimas <pkst@gnome.org>, 2012.
 # Dimitris Spingos (Δημήτρης Σπίγγος) <dmtrs32@gmail.com>, 2013.
+# Efstathios Iosifidis <iosifidis@opensuse.org>, 2013.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-documents master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-04-04 17:48+0000\n"
-"PO-Revision-Date: 2013-04-24 17:25+0300\n"
-"Last-Translator: Dimitris Spingos (Δημήτρης Σπίγγος) <dmtrs32@gmail.com>\n"
-"Language-Team: team@gnome.gr\n"
+"POT-Creation-Date: 2013-10-06 20:04+0000\n"
+"PO-Revision-Date: 2013-10-07 16:36+0300\n"
+"Last-Translator: Efstathios Iosifidis <iosifidis@opensuse.org>\n"
+"Language-Team: Greek, Modern (1453-) <opensuse-translation-el@opensuse.org>\n"
 "Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Virtaal 0.7.1\n"
+"X-Generator: Gtranslator 2.91.6\n"
 "X-Project-Style: gnome\n"
 
-#: ../data/gnome-documents.desktop.in.in.h:1 ../src/application.js:102
-#: ../src/mainWindow.js:53 ../src/mainWindow.js:274
+#: ../data/gnome-documents.appdata.xml.in.h:1
+#: ../data/gnome-documents.desktop.in.in.h:1 ../src/application.js:103
+#: ../src/mainWindow.js:52 ../src/mainWindow.js:273
 msgid "Documents"
 msgstr "Έγγραφα"
+
+#: ../data/gnome-documents.appdata.xml.in.h:2
+msgid "A document manager application for GNOME"
+msgstr "Εφαρμογή διαχείρισης εγγράφων για το GNOME"
+
+#: ../data/gnome-documents.appdata.xml.in.h:3
+msgid ""
+"A simple application to access, organize and share your documents on GNOME. "
+"It is meant to be a simple and elegant replacement for using a file manager "
+"to deal with documents. Seamless cloud integration is offered through GNOME "
+"Online Accounts."
+msgstr ""
+"Μια απλή εφαρμογή για να έχετε πρόσβαση, να οργανώσετε και να μοιραστείτε τα "
+"έγγραφα στο GNOME. Είναι απλή και κομψή με σκοπό να αντικαταστήσει την "
+"διαχείριση των εγγράφων σας από τον διαχειριστή αρχείων. Προσφέρεται και η "
+"ενσωμάτωση με το cloud μέσω των GNOME Online Accounts."
+
+#: ../data/gnome-documents.appdata.xml.in.h:4
+msgid "It lets you:"
+msgstr "Σας επιτρέπει:"
+
+#: ../data/gnome-documents.appdata.xml.in.h:5
+msgid ""
+"<li>View recent local and online documents</li> <li>Access your Google, "
+"ownCloud or SkyDrive content</li> <li>Search through documents</li> <li>See "
+"new documents shared by friends</li> <li>View documents fullscreen</li> "
+"<li>Print documents</li> <li>Select favorites</li> <li>Allow opening full "
+"featured editor for non-trivial changes</li>"
+msgstr ""
+"<li>Προβολή πρόσφατων τοπικών και online εγγράφων</li> <li>Πρόσβαση σε "
+"περιεχόμενο λογαριασμών σας Google, ownCloud ή SkyDrive</li> <li>Αναζήτηση "
+"μέσα στα έγγραφα</li> <li>Προβολή νέως εγγράφων που διαμοιράστηκαν από "
+"φίλους</li> <li>Προβολή εγγράφων σε πλήρη οθόνη</li> <li>Εκτύπωση εγγράφων</"
+"li> <li>Επιλογή αγαπημένων</li> <li>Να επιτρέπεται το άνοιγμα επεξεργαστή "
+"για ασήμαντες αλλαγές</li>"
 
 #: ../data/gnome-documents.desktop.in.in.h:2
 msgid "Access, manage and share documents"
@@ -34,135 +72,129 @@ msgstr "Προσεγγίστε, διαχειριστείτε και μοιρασ
 msgid "Docs;PDF;Document;"
 msgstr "Έγγραφα;PDF;Έγγραφο;Docs;Document;"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:1
+#: ../data/org.gnome.documents.gschema.xml.h:1
 #: ../src/resources/app-menu.ui.h:1
 msgid "View as"
 msgstr "Προβολή ως"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:2
+#: ../data/org.gnome.documents.gschema.xml.h:2
 msgid "View as type"
 msgstr "Προβολή ως τύπο"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:3
+#: ../data/org.gnome.documents.gschema.xml.h:3
 msgid "Window size"
 msgstr "Μεγέθος παραθύρου"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:4
+#: ../data/org.gnome.documents.gschema.xml.h:4
 msgid "Window size (width and height)."
 msgstr "Μέγεθος παραθύρου (πλάτος και ύψος)"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:5
+#: ../data/org.gnome.documents.gschema.xml.h:5
 msgid "Window position"
 msgstr "Θέση παραθύρου"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:6
+#: ../data/org.gnome.documents.gschema.xml.h:6
 msgid "Window position (x and y)."
 msgstr "Θέση παραθύρου (x και y)."
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:7
+#: ../data/org.gnome.documents.gschema.xml.h:7
 msgid "Window maximized"
 msgstr "Μεγιστοποιημένο παράθυρο"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:8
+#: ../data/org.gnome.documents.gschema.xml.h:8
 msgid "Window maximized state"
 msgstr "Κατάσταση μεγιστοποιημένου παραθύρου"
 
-#. Translators: this refers to local documents
-#: ../src/documents.js:590 ../src/search.js:417
+#: ../src/documents.js:599 ../src/search.js:417
 msgid "Local"
 msgstr "Τοπικά"
 
-#. Translators: Documents ships a "Getting Started with Documents"
-#. tutorial PDF. The "GNOME" string below is displayed as the author name
-#. of that document, and doesn't normally need to be translated.
-#: ../src/documents.js:611
+#: ../src/documents.js:620
 msgid "GNOME"
 msgstr "GNOME"
 
-#: ../src/documents.js:612
+#: ../src/documents.js:621
 msgid "Getting Started with Documents"
 msgstr "Ξεκινώντας με τα έγγραφα"
 
-#. overridden
-#: ../src/documents.js:659
-msgid "Google Docs"
-msgstr "Έγγραφα Google"
-
-#: ../src/documents.js:660
-msgid "Google"
-msgstr "Google"
-
-#: ../src/documents.js:724 ../src/documents.js:823
-msgid "Spreadsheet"
-msgstr "Λογιστικό φύλλο"
-
-#: ../src/documents.js:726 ../src/documents.js:825 ../src/presentation.js:48
-msgid "Presentation"
-msgstr "Παρουσίαση"
-
-#: ../src/documents.js:728 ../src/documents.js:827
+#: ../src/documents.js:637 ../src/documents.js:800 ../src/documents.js:854
+#: ../src/documents.js:954
 msgid "Collection"
 msgstr "Συλλογή"
 
-#: ../src/documents.js:730 ../src/documents.js:829
+#: ../src/documents.js:681
+msgid "Google Docs"
+msgstr "Έγγραφα Google"
+
+#: ../src/documents.js:682
+msgid "Google"
+msgstr "Google"
+
+#: ../src/documents.js:802 ../src/documents.js:956
+msgid "Spreadsheet"
+msgstr "Λογιστικό φύλλο"
+
+#: ../src/documents.js:804 ../src/documents.js:958 ../src/presentation.js:47
+msgid "Presentation"
+msgstr "Παρουσίαση"
+
+#: ../src/documents.js:806 ../src/documents.js:960
 msgid "Document"
 msgstr "Έγγραφo"
 
-#. overridden
-#: ../src/documents.js:757 ../src/documents.js:758
+#: ../src/documents.js:832
+msgid "ownCloud"
+msgstr "ownCloud"
+
+#: ../src/documents.js:888 ../src/documents.js:889
 msgid "Skydrive"
 msgstr "Skydrive"
 
-#: ../src/documents.js:942
+#: ../src/documents.js:1080
 msgid "Please check the network connection."
 msgstr "Παρακαλούμε ελέγξτε τις ρυθμίσεις δικτύου."
 
-#: ../src/documents.js:945
+#: ../src/documents.js:1083
 msgid "Please check the network proxy settings."
 msgstr "Παρακαλούμε ελέγξτε τις ρυθμίσεις του μεσολαβητή δικτύου. "
 
-#: ../src/documents.js:948
+#: ../src/documents.js:1086
 msgid "Unable to sign in to the document service."
 msgstr "Αδυναμία σύνδεσης στην υπηρεσία του εγγράφου."
 
-#: ../src/documents.js:951
+#: ../src/documents.js:1089
 msgid "Unable to locate this document."
 msgstr "Αδυναμία εύρεσης αυτού του εγγράφου."
 
-#: ../src/documents.js:954
-#, c-format
+#: ../src/documents.js:1092
+#, javascript-format
 msgid "Hmm, something is fishy (%d)."
 msgstr "Χμμ, κάτι είναι ύποπτο (%d)."
 
-#. Translators: %s is the title of a document
-#: ../src/documents.js:967
-#, c-format
+#: ../src/documents.js:1110
+#, javascript-format
 msgid "Oops! Unable to load “%s”"
 msgstr "Ωχ! Αδυναμία φόρτωσης του “%s”"
 
-#: ../src/edit.js:191
+#: ../src/edit.js:192
 msgid "View"
 msgstr "Προβολή"
 
-#: ../src/embed.js:63 ../src/lib/gd-places-bookmarks.c:382
+#: ../src/embed.js:63 ../src/lib/gd-places-bookmarks.c:383
 #: ../src/lib/gd-places-links.c:257 ../src/view.js:71
 msgid "Loading…"
 msgstr "Γίνεται φόρτωση…"
 
-#: ../src/embed.js:145
+#: ../src/embed.js:146
 msgid "No Documents Found"
 msgstr "Δε βρέθηκαν έγγραφα"
 
-#. Translators: %s here is "System Settings", which is in a separate string
-#. due to markup, and should be translated only in the context of this sentence
-#: ../src/embed.js:166
-#, c-format
+#: ../src/embed.js:167
+#, javascript-format
 msgid "You can add your online accounts in %s"
 msgstr "Μπορείτε να προσθέσετε διαδικτυακούς λογαριασμούς στις %s"
 
-#. Translators: this should be translated in the context of the
-#. "You can add your online accounts in System Settings" sentence above
-#: ../src/embed.js:170
+#: ../src/embed.js:171
 msgid "System Settings"
 msgstr "ρυθμίσεις συστήματος"
 
@@ -171,11 +203,11 @@ msgstr "ρυθμίσεις συστήματος"
 msgid "Page %u of %u"
 msgstr "Σελίδα %u από %u"
 
-#: ../src/lib/gd-pdf-loader.c:226
+#: ../src/lib/gd-pdf-loader.c:247
 msgid "Unable to load the document"
 msgstr "Αδυναμία ανοίγματος του εγγράφου"
 
-#: ../src/lib/gd-pdf-loader.c:676
+#: ../src/lib/gd-pdf-loader.c:715
 msgid "LibreOffice is required to view this document"
 msgstr "Απαιτείται το LibreOffice για να εμφανιστεί αυτό το έγγραφο"
 
@@ -191,7 +223,7 @@ msgstr "Σελίδα %s"
 msgid "No bookmarks"
 msgstr "Δεν υπάρχουν σελιδοδείκτες"
 
-#: ../src/lib/gd-places-bookmarks.c:647
+#: ../src/lib/gd-places-bookmarks.c:648 ../src/preview.js:594
 msgid "Bookmarks"
 msgstr "Σελιδοδείκτες"
 
@@ -203,40 +235,39 @@ msgstr "Χωρίς πίνακα περιεχομένων"
 msgid "Contents"
 msgstr "Περιεχόμενα"
 
-#: ../src/mainToolbar.js:62
+#: ../src/mainToolbar.js:79
 msgid "Search"
 msgstr "Αναζήτηση"
 
-#: ../src/mainToolbar.js:73
+#: ../src/mainToolbar.js:90
 msgid "Back"
 msgstr "Πίσω"
 
-#: ../src/mainToolbar.js:153
-#, c-format
+#: ../src/mainToolbar.js:170
+#, javascript-format
 msgid "Results for “%s”"
 msgstr "Αποτελέσματα για “%s”"
 
-#: ../src/mainToolbar.js:161
+#: ../src/mainToolbar.js:178
 msgid "Click on items to select them"
 msgstr "Κάντε κλικ στα αντικείμενα για να τα επιλέξετε"
 
-#: ../src/mainToolbar.js:163
-#, c-format
+#: ../src/mainToolbar.js:180
+#, javascript-format
 msgid "%d selected"
 msgid_plural "%d selected"
 msgstr[0] "Επιλέχθηκε %d"
 msgstr[1] "Επιλέχθηκαν %d"
 
-#. Label for Done button in Sharing dialog
-#: ../src/mainToolbar.js:192 ../src/properties.js:60 ../src/sharing.js:93
-msgid "Done"
-msgstr "Ολοκλήρωση"
+#: ../src/mainToolbar.js:209
+msgid "Cancel"
+msgstr "Άκυρο"
 
-#: ../src/mainToolbar.js:233
+#: ../src/mainToolbar.js:250
 msgid "Select Items"
 msgstr "Επιλογή αντικειμένων"
 
-#: ../src/mainWindow.js:273
+#: ../src/mainWindow.js:272
 msgid "translator-credits"
 msgstr ""
 "Ελληνική μεταφραστική ομάδα GNOME\n"
@@ -244,12 +275,12 @@ msgstr ""
 "\n"
 "Για περισσότερα δείτε http://www.gnome.gr/"
 
-#: ../src/mainWindow.js:275
+#: ../src/mainWindow.js:274
 msgid "A document manager application"
 msgstr "Εφαρμογή διαχείρισης εγγράφων"
 
 #: ../src/notifications.js:87
-#, c-format
+#, javascript-format
 msgid "Printing “%s”: %s"
 msgstr "Εκτύπωση του “%s”: %s"
 
@@ -262,10 +293,8 @@ msgid "Some documents might not be available during this process"
 msgstr ""
 "Μπορεί να μην είναι διαθέσιμα κάποια έγγραφα στη διάρκεια της διαδικασίας"
 
-#. Translators: %s refers to an online account provider, e.g.
-#. "Google", or "Windows Live".
 #: ../src/notifications.js:166
-#, c-format
+#, javascript-format
 msgid "Fetching documents from %s"
 msgstr "Λήψη εγγράφων από %s"
 
@@ -273,55 +302,85 @@ msgstr "Λήψη εγγράφων από %s"
 msgid "Fetching documents from online accounts"
 msgstr "Λήψη εγγράφων από διαδικτυακούς λογαριασμούς"
 
-#: ../src/presentation.js:105
+#: ../src/password.js:45
+msgid "Password Required"
+msgstr "Απαιτείται Συνθηματικό"
+
+#: ../src/password.js:48
+msgid "_Unlock"
+msgstr "_Ξεκλείδωμα"
+
+#: ../src/password.js:64
+#, javascript-format
+msgid "Document %s is locked and requires a password to be opened."
+msgstr ""
+"Το έγγραφο %s είναι κλειδωμένο και απαιτείται συνθηματικό ώστε να ανοίξει."
+
+#: ../src/password.js:78
+msgid "_Password"
+msgstr "_Συνθηματικό"
+
+#: ../src/places.js:59
+msgid "Close"
+msgstr "Κλείσιμο"
+
+#: ../src/presentation.js:104
 msgid "Running in presentation mode"
 msgstr "Εκτέλεση σε λειτουργία παρουσίασης"
 
-#: ../src/presentation.js:158
+#: ../src/presentation.js:157
 msgid "Present On"
 msgstr "Παρόν σε"
 
-#: ../src/properties.js:58 ../src/resources/preview-menu.ui.h:9
-#: ../src/selections.js:782
+#: ../src/preview.js:603
+msgid "Bookmark this page"
+msgstr "Προσθήκη αυτής της σελίδας στους σελιδοδείκτες"
+
+#: ../src/preview.js:892 ../src/selections.js:856
+#, javascript-format
+msgid "Open with %s"
+msgstr "Άνοιγμα με %s"
+
+#: ../src/preview.js:953
+msgid "Find Previous"
+msgstr "Εύρεση Προηγουμένου"
+
+#: ../src/preview.js:960
+msgid "Find Next"
+msgstr "Εύρεση Επομένου"
+
+#: ../src/properties.js:60 ../src/resources/preview-menu.ui.h:9
+#: ../src/selections.js:766
 msgid "Properties"
 msgstr "Ιδιότητες"
 
-#. Title item
-#. Translators: "Title" is the label next to the document title
-#. in the properties dialog
-#: ../src/properties.js:80
-#| msgid "Title"
+#: ../src/properties.js:62 ../src/sharing.js:101
+msgid "Done"
+msgstr "Ολοκλήρωση"
+
+#: ../src/properties.js:82
 msgctxt "Document Title"
 msgid "Title"
 msgstr "Τίτλος"
 
-#. Translators: "Author" is the label next to the document author
-#. in the properties dialog
-#: ../src/properties.js:89
-#| msgid "Author"
+#: ../src/properties.js:91
 msgctxt "Document Author"
 msgid "Author"
 msgstr "Συγγραφέας"
 
-#. Source item
-#: ../src/properties.js:96
+#: ../src/properties.js:98
 msgid "Source"
 msgstr "Πηγή"
 
-#. Date Modified item
-#: ../src/properties.js:102
+#: ../src/properties.js:104
 msgid "Date Modified"
 msgstr "Ημερομηνία τροποποίησης"
 
-#: ../src/properties.js:109
+#: ../src/properties.js:111
 msgid "Date Created"
 msgstr "Ημερομηνία δημιουργίας"
 
-#. Document type item
-#. Translators: "Type" is the label next to the document type
-#. (PDF, spreadsheet, ...) in the properties dialog
-#: ../src/properties.js:118
-#| msgid "Type"
+#: ../src/properties.js:120
 msgctxt "Document Type"
 msgid "Type"
 msgstr "Τύπος"
@@ -350,8 +409,12 @@ msgstr "Βοήθεια"
 msgid "Quit"
 msgstr "Έξοδος"
 
-#. Translators: this is the Open action in a context menu
-#: ../src/resources/preview-menu.ui.h:1 ../src/selections.js:878
+#: ../src/resources/preview-context-menu.ui.h:1
+msgid "_Copy"
+msgstr "_Αντιγραφή"
+
+#: ../src/resources/preview-menu.ui.h:1 ../src/selections.js:746
+#: ../src/selections.js:859
 msgid "Open"
 msgstr "Άνοιγμα"
 
@@ -391,35 +454,24 @@ msgstr "Επιλογή όλων"
 msgid "Select None"
 msgstr "Επιλογή κανενός"
 
-#: ../src/resources/preview-context-menu.ui.h:1
-msgid "_Copy"
-msgstr "_Αντιγραφή"
-
 #: ../src/search.js:113
 msgid "Category"
 msgstr "Κατηγορία"
 
-#. Translators: this refers to new and recent documents
-#. Translators: this refers to documents
 #: ../src/search.js:118 ../src/search.js:170 ../src/search.js:255
 #: ../src/search.js:411
 msgid "All"
 msgstr "Όλα"
 
-#. Translators: this refers to favorite documents
 #: ../src/search.js:124
 msgid "Favorites"
 msgstr "Αγαπημένα"
 
-#. Translators: this refers to shared documents
 #: ../src/search.js:129
 msgid "Shared with you"
 msgstr "Από κοινού με εσάς"
 
-#. Translators: "Type" refers to a search filter on the document type
-#. (PDF, spreadsheet, ...)
 #: ../src/search.js:167
-#| msgid "Type"
 msgctxt "Search Filter"
 msgid "Type"
 msgstr "Τύπος"
@@ -444,22 +496,16 @@ msgstr "Λογιστικά φύλλα"
 msgid "Text Documents"
 msgstr "Έγγραφα κειμένου"
 
-#. Translators: this is a verb that refers to "All", "Title" and "Author",
-#. as in "Match All", "Match Title" and "Match Author"
 #: ../src/search.js:252
 msgid "Match"
 msgstr "Ταίριασμα"
 
-#. Translators: "Title" refers to "Match Title" when searching
 #: ../src/search.js:258
-#| msgid "Title"
 msgctxt "Search Filter"
 msgid "Title"
 msgstr "Τίτλος"
 
-#. Translators: "Author" refers to "Match Author" when searching
 #: ../src/search.js:261
-#| msgid "Author"
 msgctxt "Search Filter"
 msgid "Author"
 msgstr "Συγγραφέας"
@@ -468,107 +514,98 @@ msgstr "Συγγραφέας"
 msgid "Sources"
 msgstr "Πηγές"
 
-#. Translators: "Organize" refers to documents in this context
-#: ../src/selections.js:615
-#| msgid "Organize"
-msgctxt "Dialog Title"
-msgid "Organize"
-msgstr "Οργάνωση"
+#: ../src/selections.js:461
+msgid "You don't have any collections yet. Enter a new collection name above."
+msgstr "Δεν έχετε καμία συλλογή ακόμα. Εισάγετε παραπάνω νέο όνομα συλλογής."
 
-#: ../src/selections.js:750
+#: ../src/selections.js:604
+msgid "Create new collection"
+msgstr "Δημιουργία νέας συλλογής"
+
+#: ../src/selections.js:639
+msgctxt "Dialog Title"
+msgid "Collections"
+msgstr "Συλλογές"
+
+#: ../src/selections.js:751
 msgid "Print"
 msgstr "Εκτύπωση"
 
-#: ../src/selections.js:757
+#: ../src/selections.js:756
 msgid "Delete"
 msgstr "Διαγραφή"
 
-#. Translators: "Organize" refers to documents in this context
-#: ../src/selections.js:774
-#| msgid "Organize"
-msgctxt "Toolbar button tooltip"
-msgid "Organize"
-msgstr "Οργάνωση"
+#: ../src/selections.js:761
+msgid "Add to Collection"
+msgstr "Προσθήκη στη Συλλογή"
 
-#: ../src/selections.js:789
+#: ../src/selections.js:771
 msgid "Share"
 msgstr "Κοινή χρήση"
 
-#. Translators: this is the Open action in a context menu
-#: ../src/selections.js:875
-#, c-format
-msgid "Open with %s"
-msgstr "Άνοιγμα με %s"
-
-#: ../src/sharing.js:89
+#: ../src/sharing.js:97
 msgid "Sharing Settings"
 msgstr "Ρυθμίσεις κοινής χρήσης"
 
-#. Label for widget group for changing document permissions
-#: ../src/sharing.js:126
+#: ../src/sharing.js:134
 msgid "Document permissions"
 msgstr "Δικαιώματα εγγράφου"
 
-#. Label for permission change in Sharing dialog
-#: ../src/sharing.js:133 ../src/sharing.js:311
+#: ../src/sharing.js:141 ../src/sharing.js:319
 msgid "Change"
 msgstr "Αλλαγή"
 
-#. Label for radiobutton that sets doc permission to private
-#: ../src/sharing.js:157 ../src/sharing.js:286
+#: ../src/sharing.js:165 ../src/sharing.js:294
 msgid "Private"
 msgstr "Ιδιωτικό"
 
-#: ../src/sharing.js:167 ../src/sharing.js:279
+#: ../src/sharing.js:175 ../src/sharing.js:287
 msgid "Public"
 msgstr "Δημόσιο"
 
-#. Label for checkbutton that sets doc permission to Can edit
-#: ../src/sharing.js:171 ../src/sharing.js:281
+#: ../src/sharing.js:179 ../src/sharing.js:289
 msgid "Everyone can edit"
 msgstr "Ο καθένας μπορεί να επεξεργαστεί"
 
-#. Label for widget group used for adding new contacts
-#: ../src/sharing.js:178
+#: ../src/sharing.js:186
 msgid "Add people"
 msgstr "Προσθήκη ατόμων"
 
-#. Editable text in entry field
-#: ../src/sharing.js:185
+#: ../src/sharing.js:193
 msgid "Enter an email address"
 msgstr "Προσθήκη διεύθυνσης αλληλογραφίας"
 
-#: ../src/sharing.js:200 ../src/sharing.js:367
+#: ../src/sharing.js:208 ../src/sharing.js:375
 msgid "Can edit"
 msgstr "Μπορεί να επεξεργαστεί"
 
-#: ../src/sharing.js:200 ../src/sharing.js:370
+#: ../src/sharing.js:208 ../src/sharing.js:378
 msgid "Can view"
 msgstr "Μπορεί να προβληθεί"
 
-#: ../src/sharing.js:207
+#: ../src/sharing.js:215
 msgid "Add"
 msgstr "Προσθήκη"
 
-#: ../src/sharing.js:283
+#: ../src/sharing.js:291
 msgid "Everyone can read"
 msgstr "Ο καθένας μπορεί να διαβάσει"
 
-#: ../src/sharing.js:298
+#: ../src/sharing.js:306
 msgid "Save"
 msgstr "Αποθήκευση"
 
-#: ../src/sharing.js:364
+#: ../src/sharing.js:372
 msgid "Owner"
 msgstr "Ιδιοκτήτης"
 
-#: ../src/sharing.js:433
-#, c-format
+#: ../src/sharing.js:441
+#, javascript-format
 msgid "You can ask %s for access"
 msgstr "Μπορείτε να ρωτήσετε τον %s για πρόσβαση"
 
-#: ../src/sharing.js:470 ../src/sharing.js:506 ../src/sharing.js:563
-#: ../src/sharing.js:580 ../src/sharing.js:599
+#: ../src/sharing.js:478 ../src/sharing.js:514 ../src/sharing.js:571
+#: ../src/sharing.js:588 ../src/sharing.js:607
 msgid "The document was not updated"
 msgstr "Το έγγραφο δεν ανανεώθηκε"
 
@@ -576,54 +613,67 @@ msgstr "Το έγγραφο δεν ανανεώθηκε"
 msgid "Untitled Document"
 msgstr "Ανώνυμο έγγραφο"
 
-#. Translators: "more" refers to documents in this context
+#: ../src/trackerController.js:170
+msgid "Unable to fetch the list of documents"
+msgstr "Αδυναμία λήψης λίστας εγγράφων"
+
 #: ../src/view.js:62 ../src/view.js:93
 msgid "Load More"
 msgstr "Φόρτωση περισσοτέρων"
 
-#: ../src/view.js:294
+#: ../src/view.js:295
 msgid "Yesterday"
 msgstr "Χθες"
 
-#: ../src/view.js:296
-#, c-format
+#: ../src/view.js:297
+#, javascript-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
 msgstr[0] "%d ημέρα πριν"
 msgstr[1] "%d ημέρες πριν"
 
-#: ../src/view.js:300
+#: ../src/view.js:301
 msgid "Last week"
 msgstr "Προηγούμενη εβδομάδα"
 
-#: ../src/view.js:302
-#, c-format
+#: ../src/view.js:303
+#, javascript-format
 msgid "%d week ago"
 msgid_plural "%d weeks ago"
 msgstr[0] "%d εβδομάδα πριν"
 msgstr[1] "%d εβδομάδες πριν"
 
-#: ../src/view.js:306
+#: ../src/view.js:307
 msgid "Last month"
 msgstr "Προηγούμενος μήνας"
 
-#: ../src/view.js:308
-#, c-format
+#: ../src/view.js:309
+#, javascript-format
 msgid "%d month ago"
 msgid_plural "%d months ago"
 msgstr[0] "%d μήνα πριν"
 msgstr[1] "%d μήνες πριν"
 
-#: ../src/view.js:312
+#: ../src/view.js:313
 msgid "Last year"
 msgstr "Προηγούμενο έτος"
 
-#: ../src/view.js:314
-#, c-format
+#: ../src/view.js:315
+#, javascript-format
 msgid "%d year ago"
 msgid_plural "%d years ago"
 msgstr[0] "%d έτος πριν"
 msgstr[1] "%d έτη πριν"
+
+#~| msgid "Organize"
+#~ msgctxt "Dialog Title"
+#~ msgid "Organize"
+#~ msgstr "Οργάνωση"
+
+#~| msgid "Organize"
+#~ msgctxt "Toolbar button tooltip"
+#~ msgid "Organize"
+#~ msgstr "Οργάνωση"
 
 #~ msgid "filtered by title"
 #~ msgstr "φιλτράρισμα βάσει τίτλου"
@@ -658,9 +708,6 @@ msgstr[1] "%d έτη πριν"
 
 #~ msgid "Add to favorites"
 #~ msgstr "Προσθήκη στα αγαπημένα"
-
-#~ msgid "Unable to fetch the list of documents"
-#~ msgstr "Αδυναμία λήψης λίστας εγγράφων"
 
 #~ msgid "%d of %d"
 #~ msgstr "%d από %d"
