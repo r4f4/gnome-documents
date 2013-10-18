@@ -58,7 +58,17 @@ TRACKER_MIN_VERSION=0.13.1
 ZAPOJIT_MIN_VERSION=0.0.2
 SOUP_MIN_VERSION=2.41.3
 
-AC_PATH_PROG([XSLTPROC], [xsltproc])
+AC_ARG_ENABLE(documentation,
+              AS_HELP_STRING([--enable-documentation],
+                             [build documentation]),,
+              enable_documentation=yes)
+if test x$enable_documentation = xyes; then
+   AC_PATH_PROG([XSLTPROC], [xsltproc])
+   if test x$XSLTPROC = x; then
+      AC_MSG_ERROR([xsltproc is required to build documentation])
+   fi
+fi
+AM_CONDITIONAL(BUILD_DOCUMENTATION, test x$enable_documentation = xyes)
 
 PKG_CHECK_MODULES(DOCUMENTS,
                   evince-document-3.0 >= $EVINCE_MIN_VERSION
