@@ -23,10 +23,12 @@
 const Gio = imports.gi.Gio;
 const GLib = imports.gi.GLib;
 
-const MinerIface = <interface name="org.gnome.OnlineMiners.Miner">
-    <method name="RefreshDB" />
-    <property name="DisplayName" type="s" access="read"/>
-</interface>;
+const MinerIface = '<node> \
+<interface name="org.gnome.OnlineMiners.Miner"> \
+    <method name="RefreshDB" /> \
+    <property name="DisplayName" type="s" access="read"/> \
+</interface> \
+</node>';
 
 var MinerProxy = Gio.DBusProxy.makeProxyWrapper(MinerIface);
 

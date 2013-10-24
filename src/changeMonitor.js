@@ -26,13 +26,15 @@ const Signals = imports.signals;
 
 const Application = imports.application;
 
-const TrackerResourcesServiceIface = <interface name='org.freedesktop.Tracker1.Resources'>
-    <signal name="GraphUpdated">
-        <arg name="className" type="s" />
-        <arg name="deleteEvents" type="a(iiii)" />
-        <arg name="insertEvents" type="a(iiii)" />
-    </signal>
-</interface>;
+const TrackerResourcesServiceIface = '<node> \
+<interface name="org.freedesktop.Tracker1.Resources"> \
+    <signal name="GraphUpdated"> \
+        <arg name="className" type="s" /> \
+        <arg name="deleteEvents" type="a(iiii)" /> \
+        <arg name="insertEvents" type="a(iiii)" /> \
+    </signal> \
+</interface> \
+</node>';
 
 var TrackerResourcesServiceProxy = Gio.DBusProxy.makeProxyWrapper(TrackerResourcesServiceIface);
 function TrackerResourcesService() {

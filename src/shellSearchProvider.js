@@ -53,30 +53,32 @@ const SEARCH_PROVIDER_PATH  = '/org/gnome/Documents/SearchProvider';
 
 const _SHELL_SEARCH_ICON_SIZE = 128;
 
-const SearchProviderIface = <interface name={SEARCH_PROVIDER_IFACE}>
-<method name="GetInitialResultSet">
-  <arg type="as" direction="in" />
-  <arg type="as" direction="out" />
-</method>
-<method name = "GetSubsearchResultSet">
-  <arg type="as" direction="in" />
-  <arg type="as" direction="in" />
-  <arg type="as" direction="out" />
-</method>
-<method name = "GetResultMetas">
-  <arg type="as" direction="in" />
-  <arg type="aa{sv}" direction="out" />
-</method>
-<method name = "ActivateResult">
-  <arg type="s" direction="in" />
-  <arg type="as" direction="in" />
-  <arg type="u" direction="in" />
-</method>
-<method name = "LaunchSearch">
-  <arg type="as" direction="in" />
-  <arg type="u" direction="in" />
-</method>
-</interface>;
+const SearchProviderIface = '<node> \
+<interface name={SEARCH_PROVIDER_IFACE}> \
+<method name="GetInitialResultSet"> \
+  <arg type="as" direction="in" /> \
+  <arg type="as" direction="out" /> \
+</method> \
+<method name = "GetSubsearchResultSet"> \
+  <arg type="as" direction="in" /> \
+  <arg type="as" direction="in" /> \
+  <arg type="as" direction="out" /> \
+</method> \
+<method name = "GetResultMetas"> \
+  <arg type="as" direction="in" /> \
+  <arg type="aa{sv}" direction="out" /> \
+</method> \
+<method name = "ActivateResult"> \
+  <arg type="s" direction="in" /> \
+  <arg type="as" direction="in" /> \
+  <arg type="u" direction="in" /> \
+</method> \
+<method name = "LaunchSearch"> \
+  <arg type="as" direction="in" /> \
+  <arg type="u" direction="in" /> \
+</method> \
+</interface> \
+</node>';
 
 function _createThumbnailIcon(uri) {
     let file = Gio.file_new_for_uri(uri);
