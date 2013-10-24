@@ -1,3 +1,10 @@
+3.8.5 - "Gala Weekend Ahead"
+============================
+
+- Link Google folders and their children correctly (Debarshi Ray)
+- Ensure that Google documents are thumbnailed for a freshly created user
+  without any local content (Debarshi Ray)
+
 3.8.4 - "Just Do It"
 ====================
 
