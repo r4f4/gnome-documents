@@ -216,7 +216,7 @@ msgid_plural "%d selected"
 msgstr[0] "%d izabran"
 msgstr[1] "%d izabrana"
 msgstr[2] "%d izabranih"
-msgstr[3] "Jedan izabran"
+msgstr[3] "%d izabran"
 
 #: ../src/mainToolbar.js:207 ../src/properties.js:61 ../src/sharing.js:93
 msgid "Done"
@@ -513,7 +513,7 @@ msgid_plural "%d days ago"
 msgstr[0] "Pre %d dan"
 msgstr[1] "Pre %d dana"
 msgstr[2] "Pre %d dana"
-msgstr[3] "Pre jednog dana"
+msgstr[3] "Pre %d dan"
 
 #: ../src/view.js:300
 msgid "Last week"
@@ -528,7 +528,7 @@ msgid_plural "%d weeks ago"
 msgstr[0] "Pre %d nedelje"
 msgstr[1] "Pre %d nedelje"
 msgstr[2] "Pre %d nedelja"
-msgstr[3] "Pre jedne nedelje"
+msgstr[3] "Pre %d nedelje"
 
 #: ../src/view.js:306
 msgid "Last month"
@@ -543,7 +543,7 @@ msgid_plural "%d months ago"
 msgstr[0] "Pre %d mesec"
 msgstr[1] "Pre %d meseca"
 msgstr[2] "Pre %d meseci"
-msgstr[3] "Pre jednog meseca"
+msgstr[3] "Pre %d mesec"
 
 #: ../src/view.js:312
 msgid "Last year"
@@ -558,4 +558,4 @@ msgid_plural "%d years ago"
 msgstr[0] "Pre %d godine"
 msgstr[1] "Pre %d godine"
 msgstr[2] "Pre %d godina"
-msgstr[3] "Pre jedne godine"
+msgstr[3] "Pre %d godine"
