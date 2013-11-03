@@ -54,7 +54,7 @@ const SEARCH_PROVIDER_PATH  = '/org/gnome/Documents/SearchProvider';
 const _SHELL_SEARCH_ICON_SIZE = 128;
 
 const SearchProviderIface = '<node> \
-<interface name={SEARCH_PROVIDER_IFACE}> \
+<interface name="org.gnome.Shell.SearchProvider2"> \
 <method name="GetInitialResultSet"> \
   <arg type="as" direction="in" /> \
   <arg type="as" direction="out" /> \
