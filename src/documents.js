@@ -761,7 +761,7 @@ const GoogleDocument = new Lang.Class({
                 let checksum = new GLib.Checksum(GLib.ChecksumType.MD5);
                 checksum.update(this.uri, -1);
                 let dirPath = GLib.build_filenamev([GLib.get_user_cache_dir(), "thumbnails", "normal"]);
-                GLib.mkdir_with_parents(dirPath, 0700);
+                GLib.mkdir_with_parents(dirPath, 448);
                 let basename = checksum.get_string() + '.png';
                 let path = GLib.build_filenamev([dirPath, basename])
 
