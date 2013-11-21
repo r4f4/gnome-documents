@@ -4,14 +4,16 @@
 #
 # Dr.T.Vasudevan <agnihot3@gmail.com>, 2011, 2012, 2013.
 # naveenkumar palaniswamy(நவீன் குமார் கெம்ளின்)  <naveenmtp@gmail.com>, 2011.
+# Shantha kumar <shkumar@redhat.com>, 2013.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-documents master\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-16 11:44+0530\n"
-"PO-Revision-Date: 2013-03-16 12:04+0530\n"
-"Last-Translator: Dr.T.Vasudevan <drtvasudevan@gmail.com>\n"
-"Language-Team: Tamil <<gnome-tamil-translation@googlegroups.com>>\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"documents&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2013-10-30 16:04+0000\n"
+"PO-Revision-Date: 2013-11-21 17:29+0530\n"
+"Last-Translator: Shantha kumar <shkumar@redhat.com>\n"
+"Language-Team: Tamil <>\n"
 "Language: ta\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,10 +21,50 @@ msgstr ""
 "X-Generator: Lokalize 1.5\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: ../data/gnome-documents.desktop.in.in.h:1 ../src/application.js:101
-#: ../src/mainWindow.js:53 ../src/mainWindow.js:274
+#: ../data/gnome-documents.appdata.xml.in.h:1
+#: ../data/gnome-documents.desktop.in.in.h:1 ../src/application.js:103
+#: ../src/mainWindow.js:52 ../src/mainWindow.js:273
 msgid "Documents"
 msgstr "ஆவணங்கள்"
+
+#: ../data/gnome-documents.appdata.xml.in.h:2
+#| msgid "A document manager application"
+msgid "A document manager application for GNOME"
+msgstr "GNOME க்கான ஆவண நிர்வாகப் பயன்பாடு"
+
+#: ../data/gnome-documents.appdata.xml.in.h:3
+msgid ""
+"A simple application to access, organize and share your documents on GNOME. "
+"It is meant to be a simple and elegant replacement for using a file manager "
+"to deal with documents. Seamless cloud integration is offered through GNOME "
+"Online Accounts."
+msgstr ""
+"GNOME இல் உங்கள் ஆவணங்களை அணுகவும் ஒழுங்கமைக்கவும் பகிரவும் உதவும் ஒரு எளிய "
+"பயன்பாடு. "
+"இது ஆவணங்களைக் கையாள கோப்பு நிர்வாகியைப் பயன்படுத்துவதற்கு பதிலாக "
+"உருவாக்கப்பட்ட ஒரு எளியதும் அற்புதமானதுமான ஒரு கருவி. GNOME "
+"ஆன்லைன் கணக்குகளுடன் சிக்கலற்ற ஒத்திசைவு வசதியையும் இது வழங்குகிறது."
+
+#: ../data/gnome-documents.appdata.xml.in.h:4
+msgid "It lets you:"
+msgstr "இதைக் கொண்டு நீங்கள் செய்யக்கூடியவை:"
+
+#: ../data/gnome-documents.appdata.xml.in.h:5
+msgid ""
+"<li>View recent local and online documents</li> <li>Access your Google, "
+"ownCloud or SkyDrive content</li> <li>Search through documents</li> <li>See "
+"new documents shared by friends</li> <li>View documents fullscreen</li> "
+"<li>Print documents</li> <li>Select favorites</li> <li>Allow opening full "
+"featured editor for non-trivial changes</li>"
+msgstr ""
+"<li>சமீபத்திய கணினிக்குள்ளான ஆவணங்களையும் ஆன்லைன் ஆவணங்களையும் காணலாம்</li> <"
+"li>உங்கள் Google, "
+"ownCloud அல்லது SkyDrive உள்ளடக்கங்களை அணுகலாம்</li> <li>ஆவணங்களைத் "
+"தேடியறியலாம்</li> <li>நண்பர்கள் பகிரும் புதிய ஆவணங்களைக் காணலாம்</li> <li>"
+"ஆவணங்களை முழுத்திரையில் காணலாம்</li> "
+"<li>ஆவணங்களை அச்சிடலாம்</li> <li>பிடித்தவற்றைத் தேர்ந்தெடுக்கலாம்</li> <li>"
+"மிக முக்கியத்துவம் வாய்ந்ததல்லாத மாற்றங்களைச் செய்ய முழு அம்சங்கள் நிறைந்த "
+"திருத்தியைத் திறக்கலாம்</li>"
 
 #: ../data/gnome-documents.desktop.in.in.h:2
 msgid "Access, manage and share documents"
@@ -32,131 +74,129 @@ msgstr "ஆவணங்களை அணுகு, மேலாளு, பகி�
 msgid "Docs;PDF;Document;"
 msgstr "டாக்ஸ்;பிடிஎஃப்;ஆவணங்கள்;"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:1
+#: ../data/org.gnome.documents.gschema.xml.h:1
 #: ../src/resources/app-menu.ui.h:1
 msgid "View as"
 msgstr "இப்படிப்பார்க்க "
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:2
+#: ../data/org.gnome.documents.gschema.xml.h:2
 msgid "View as type"
 msgstr "இந்த வகையாக பார்க்க"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:3
+#: ../data/org.gnome.documents.gschema.xml.h:3
 msgid "Window size"
 msgstr "சாளரத்தின் அளவு"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:4
+#: ../data/org.gnome.documents.gschema.xml.h:4
 msgid "Window size (width and height)."
 msgstr "சாளரத்தின் அளவு(அகலம் மற்றும் உயரம்)"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:5
+#: ../data/org.gnome.documents.gschema.xml.h:5
 msgid "Window position"
 msgstr "சாளரத்தின் நிலை"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:6
+#: ../data/org.gnome.documents.gschema.xml.h:6
 msgid "Window position (x and y)."
 msgstr "சாளரத்தின் நிலை(x மற்றும் y)"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:7
+#: ../data/org.gnome.documents.gschema.xml.h:7
 msgid "Window maximized"
 msgstr "முழுமையாக்கிய சாளரம்"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:8
+#: ../data/org.gnome.documents.gschema.xml.h:8
 msgid "Window maximized state"
 msgstr "முழுமையாக்கிய சாளர நிலை"
 
-#: ../src/documents.js:590 ../src/search.js:416
+#: ../src/documents.js:599 ../src/search.js:417
 msgid "Local"
 msgstr "உள்ளமை"
 
-#: ../src/documents.js:608
+#: ../src/documents.js:620
 msgid "GNOME"
 msgstr "GNOME"
 
-#: ../src/documents.js:609
+#: ../src/documents.js:621
 msgid "Getting Started with Documents"
 msgstr "ஆவணங்களை துவக்கலாம்"
 
-#. overridden
-#: ../src/documents.js:656
-msgid "Google Docs"
-msgstr "கூகுள் டாக்ஸ்"
-
-#: ../src/documents.js:657
-msgid "Google"
-msgstr "கூகுள்"
-
-#: ../src/documents.js:721 ../src/documents.js:820
-msgid "Spreadsheet"
-msgstr "விரிதாள்"
-
-#: ../src/documents.js:723 ../src/documents.js:822 ../src/presentation.js:48
-msgid "Presentation"
-msgstr "முன்வைப்பு"
-
-#: ../src/documents.js:725 ../src/documents.js:824
+#: ../src/documents.js:637 ../src/documents.js:802 ../src/documents.js:856
+#: ../src/documents.js:956
 msgid "Collection"
 msgstr "சேகரம்"
 
-#: ../src/documents.js:727 ../src/documents.js:826
+#: ../src/documents.js:681
+msgid "Google Docs"
+msgstr "கூகுள் டாக்ஸ்"
+
+#: ../src/documents.js:682
+msgid "Google"
+msgstr "கூகுள்"
+
+#: ../src/documents.js:804 ../src/documents.js:958
+msgid "Spreadsheet"
+msgstr "விரிதாள்"
+
+#: ../src/documents.js:806 ../src/documents.js:960 ../src/presentation.js:47
+msgid "Presentation"
+msgstr "முன்வைப்பு"
+
+#: ../src/documents.js:808 ../src/documents.js:962
 msgid "Document"
 msgstr "ஆவணம்"
 
-#. overridden
-#: ../src/documents.js:754 ../src/documents.js:755
+#: ../src/documents.js:834
+msgid "ownCloud"
+msgstr "ownCloud"
+
+#: ../src/documents.js:890 ../src/documents.js:891
 msgid "Skydrive"
 msgstr "ஸ்கைட்ரைவ்"
 
-#: ../src/documents.js:939
+#: ../src/documents.js:1082
 msgid "Please check the network connection."
 msgstr "வலையமைப்பு இணைப்பை சரி பார்க்கவும்"
 
-#: ../src/documents.js:942
+#: ../src/documents.js:1085
 msgid "Please check the network proxy settings."
 msgstr "வலையமைப்பு பதிலாள் அமைப்புகளை சரி பார்க்கவும்"
 
-#: ../src/documents.js:945
+#: ../src/documents.js:1088
 msgid "Unable to sign in to the document service."
 msgstr "ஆவண சேவைக்கு உள் நுழைய முடியவில்லை"
 
-#: ../src/documents.js:948
+#: ../src/documents.js:1091
 msgid "Unable to locate this document."
 msgstr "இந்த ஆவணத்தின் இடம் காண முடியவில்லை"
 
-#: ../src/documents.js:951
-#, c-format
+#: ../src/documents.js:1094
+#, javascript-format
 msgid "Hmm, something is fishy (%d)."
 msgstr "ஹும்ம்ம்ம், ஏதோ சரியில்லை  (%d)."
 
-#. Translators: %s is the title of a document
-#: ../src/documents.js:964
-#, c-format
+#: ../src/documents.js:1112
+#, javascript-format
 msgid "Oops! Unable to load “%s”"
 msgstr "அடடா, “%s” ஐ ஏற்ற முடியவில்லை"
 
-#: ../src/edit.js:191
+#: ../src/edit.js:192
 msgid "View"
 msgstr "காட்சி"
 
-#: ../src/embed.js:63 ../src/lib/gd-places-bookmarks.c:379
-#: ../src/lib/gd-places-links.c:257 ../src/view.js:70
+#: ../src/embed.js:63 ../src/lib/gd-places-bookmarks.c:383
+#: ../src/lib/gd-places-links.c:257 ../src/view.js:71
 msgid "Loading…"
 msgstr "ஏற்றுகிறது..."
 
-#: ../src/embed.js:145
+#: ../src/embed.js:146
 msgid "No Documents Found"
 msgstr "ஆவணங்கள் ஏதும் காணப்படவில்லை"
 
-#. Translators: %s here is "System Settings", which is in a separate string
-#. due to markup, and should be translated only in the context of this sentence
-#: ../src/embed.js:166
-#, c-format
+#: ../src/embed.js:167
+#, javascript-format
 msgid "You can add your online accounts in %s"
 msgstr "நீங்கள் %s இல் உங்கள் இணைய கணக்குகளை சேர்க்கலாம் "
 
-#. Translators: this should be translated in the context of the
-#. "You can add your online accounts in System Settings" sentence above
-#: ../src/embed.js:170
+#: ../src/embed.js:171
 msgid "System Settings"
 msgstr "கணினி அமைப்புகள்"
 
@@ -165,24 +205,27 @@ msgstr "கணினி அமைப்புகள்"
 msgid "Page %u of %u"
 msgstr "பக்கம் %u,   %u இல்"
 
-#: ../src/lib/gd-pdf-loader.c:226
+#: ../src/lib/gd-pdf-loader.c:247
 msgid "Unable to load the document"
 msgstr "ஆவணத்தை ஏற்ற முடியவில்லை"
 
-#: ../src/lib/gd-pdf-loader.c:676
+#: ../src/lib/gd-pdf-loader.c:715
 msgid "LibreOffice is required to view this document"
 msgstr "இந்த ஆவணத்தை காண லிப்ரே ஆபீஸ் தேவை"
 
-#: ../src/lib/gd-places-bookmarks.c:309
+#. Translators: %s is the number of the page, already formatted
+#. * as a string, for example "Page 5".
+#.
+#: ../src/lib/gd-places-bookmarks.c:312
 #, c-format
 msgid "Page %s"
 msgstr "பக்கம் %s"
 
-#: ../src/lib/gd-places-bookmarks.c:372
+#: ../src/lib/gd-places-bookmarks.c:375
 msgid "No bookmarks"
 msgstr "புத்தக குறிகள் இல்லை"
 
-#: ../src/lib/gd-places-bookmarks.c:644
+#: ../src/lib/gd-places-bookmarks.c:648 ../src/preview.js:594
 msgid "Bookmarks"
 msgstr "புத்தகக்குறிகள்"
 
@@ -194,51 +237,50 @@ msgstr "உள்ளடக்க அட்டவணை இல்லை"
 msgid "Contents"
 msgstr "உள்ளடக்கங்கள்"
 
-#: ../src/mainToolbar.js:62
+#: ../src/mainToolbar.js:79
 msgid "Search"
 msgstr "தேடு"
 
-#: ../src/mainToolbar.js:73
+#: ../src/mainToolbar.js:90
 msgid "Back"
 msgstr "பின்"
 
-#: ../src/mainToolbar.js:153
-#, c-format
+#: ../src/mainToolbar.js:170
+#, javascript-format
 msgid "Results for “%s”"
 msgstr "\"%s\" க்கான விடைகள்"
 
-#: ../src/mainToolbar.js:161
+#: ../src/mainToolbar.js:178
 msgid "Click on items to select them"
 msgstr "உருப்படிகளை தேர்ந்தெடுக்க அதன் மீது சொடுக்கவும்"
 
-#: ../src/mainToolbar.js:163
-#, c-format
+#: ../src/mainToolbar.js:180
+#, javascript-format
 msgid "%d selected"
 msgid_plural "%d selected"
 msgstr[0] "%d தேர்வு செய்யப்பட்டது"
 msgstr[1] "%d தேர்வு செய்யப்பட்டது"
 
-#. Label for Done button in Sharing dialog
-#: ../src/mainToolbar.js:192 ../src/properties.js:59 ../src/sharing.js:93
-msgid "Done"
-msgstr "முடிந்தது"
+#: ../src/mainToolbar.js:209
+msgid "Cancel"
+msgstr "ரத்து"
 
-#: ../src/mainToolbar.js:233
+#: ../src/mainToolbar.js:250
 msgid "Select Items"
 msgstr "தேர்வு செய்த உருப்படிகள்"
 
-#: ../src/mainWindow.js:273
+#: ../src/mainWindow.js:272
 msgid "translator-credits"
 msgstr ""
 "Dr.T.Vasudevan <agnihot3@gmail.com>, 2011, 2012., naveenkumar palaniswamy "
 "<naveenmtp@gmail.com>, 2011."
 
-#: ../src/mainWindow.js:275
+#: ../src/mainWindow.js:274
 msgid "A document manager application"
 msgstr "ஒரு ஆவண மேலாண்மை பயன்பாடு"
 
 #: ../src/notifications.js:87
-#, c-format
+#, javascript-format
 msgid "Printing “%s”: %s"
 msgstr "\"%s\" ஐ அச்சிடுகிறது : %s"
 
@@ -250,63 +292,99 @@ msgstr "உங்கள் ஆவணங்கள் பட்டியலிட�
 msgid "Some documents might not be available during this process"
 msgstr "இந்த செயலின் போது சில ஆவனங்கள் கிடைக்காமல் போகலாம்."
 
-#: ../src/notifications.js:164
-#, c-format
+#: ../src/notifications.js:166
+#, javascript-format
 msgid "Fetching documents from %s"
 msgstr "%s இல் இருந்து ஆவணங்களை கொண்டு வருகிறது"
 
-#: ../src/notifications.js:166
+#: ../src/notifications.js:168
 msgid "Fetching documents from online accounts"
 msgstr "வலை இணைப்பு கணக்குகளில் இருந்து ஆவணங்களை கொண்டு வருகிறது"
 
-#: ../src/presentation.js:105
+#: ../src/password.js:45
+msgid "Password Required"
+msgstr "கடவுச்சொல் தேவைப்படுகிறது"
+
+#: ../src/password.js:48
+msgid "_Unlock"
+msgstr "விடுவி (_U)"
+
+#: ../src/password.js:64
+#, javascript-format
+msgid "Document %s is locked and requires a password to be opened."
+msgstr ""
+"ஆவணம் %s பூட்டப்பட்டுள்ளது, அதனை திறப்பதற்கு கடவுச்சொல் தேவைப்படுகிறது."
+
+#: ../src/password.js:78
+msgid "_Password"
+msgstr "கடவுச்சொல் (_P)"
+
+#: ../src/places.js:59
+msgid "Close"
+msgstr "மூடு"
+
+#: ../src/presentation.js:104
 msgid "Running in presentation mode"
 msgstr "காட்சி அளிப்பு பாங்கில் இயங்குகிறது"
 
-#: ../src/presentation.js:158
+#: ../src/presentation.js:157
 msgid "Present On"
 msgstr "இந்த நாளில் முன்வை"
 
-#: ../src/properties.js:57 ../src/resources/preview-menu.ui.h:9
-#: ../src/selections.js:779
+#: ../src/preview.js:603
+#| msgid "Bookmarks"
+msgid "Bookmark this page"
+msgstr "இந்த பக்கத்தைப் புத்தகக்குறியில் சேர்"
+
+#: ../src/preview.js:892 ../src/selections.js:856
+#, javascript-format
+msgid "Open with %s"
+msgstr "%s ஆல் திற"
+
+#: ../src/preview.js:953
+msgid "Find Previous"
+msgstr "முந்தையதைக் கண்டுபிடி"
+
+#: ../src/preview.js:960
+msgid "Find Next"
+msgstr "அடுத்ததைக் கண்டுபிடி"
+
+#: ../src/properties.js:60 ../src/resources/preview-menu.ui.h:9
+#: ../src/selections.js:766
 msgid "Properties"
 msgstr "பண்புகள்"
 
-#. Title item
-#. Translators: "Title" is the label next to the document title
-#. in the properties dialog
-#. Translators: "Title" refers to "Match Title" when searching
-#: ../src/properties.js:78 ../src/search.js:257
+#: ../src/properties.js:62 ../src/sharing.js:101
+msgid "Done"
+msgstr "முடிந்தது"
+
+#: ../src/properties.js:82
+#| msgid "Title"
+msgctxt "Document Title"
 msgid "Title"
 msgstr "தலைப்பு"
 
-#. Translators: "Author" is the label next to the document author
-#. in the properties dialog
-#. Translators: "Author" refers to "Match Author" when searching
-#: ../src/properties.js:87 ../src/search.js:260
+#: ../src/properties.js:91
+#| msgid "Author"
+msgctxt "Document Author"
 msgid "Author"
-msgstr "ஆசிரியர்"
+msgstr "உருவாக்கியவர்"
 
-#. Source item
-#: ../src/properties.js:94
+#: ../src/properties.js:98
 msgid "Source"
 msgstr "மூலம்"
 
-#. Date Modified item
-#: ../src/properties.js:100
+#: ../src/properties.js:104
 msgid "Date Modified"
 msgstr "மாற்றப்பட்ட தேதி"
 
-#: ../src/properties.js:107
+#: ../src/properties.js:111
 msgid "Date Created"
 msgstr "உருவாக்கிய தேதி"
 
-#. Document type item
-#. Translators: "Type" is the label next to the document type
-#. (PDF, spreadsheet, ...) in the properties dialog
-#. Translators: "Type" refers to a search filter on the document type
-#. (PDF, spreadsheet, ...)
-#: ../src/properties.js:116 ../src/search.js:166
+#: ../src/properties.js:120
+#| msgid "Type"
+msgctxt "Document Type"
 msgid "Type"
 msgstr "வகை"
 
@@ -334,8 +412,12 @@ msgstr "உதவி"
 msgid "Quit"
 msgstr "வெளியேறு"
 
-#. Translators: this is the Open action in a context menu
-#: ../src/resources/preview-menu.ui.h:1 ../src/selections.js:875
+#: ../src/resources/preview-context-menu.ui.h:1
+msgid "_Copy"
+msgstr "நகலெடு (_C)"
+
+#: ../src/resources/preview-menu.ui.h:1 ../src/selections.js:746
+#: ../src/selections.js:859
 msgid "Open"
 msgstr "திற"
 
@@ -375,144 +457,166 @@ msgstr "அனைத்தையும் தேர்வு செய்"
 msgid "Select None"
 msgstr "எதையும் தேர்ந்தெடுக்காதே "
 
-#: ../src/search.js:112
+#: ../src/search.js:113
 msgid "Category"
 msgstr "வகை"
 
-#: ../src/search.js:117 ../src/search.js:169 ../src/search.js:254
-#: ../src/search.js:410
+#: ../src/search.js:118 ../src/search.js:170 ../src/search.js:255
+#: ../src/search.js:411
 msgid "All"
 msgstr "அனைத்தும் "
 
-#: ../src/search.js:123
+#: ../src/search.js:124
 msgid "Favorites"
 msgstr "விருப்பங்கள்"
 
-#: ../src/search.js:128
+#: ../src/search.js:129
 msgid "Shared with you"
 msgstr "உங்களுடன் பகிர்ந்த"
 
-#: ../src/search.js:171
+#: ../src/search.js:167
+#| msgid "Type"
+msgctxt "Search Filter"
+msgid "Type"
+msgstr "வகை"
+
+#: ../src/search.js:172
 msgid "Collections"
 msgstr "சேகரங்கள்"
 
-#: ../src/search.js:175
+#: ../src/search.js:176
 msgid "PDF Documents"
 msgstr "பிடிஎஃப் ஆவணங்கள்"
 
-#: ../src/search.js:179
+#: ../src/search.js:180
 msgid "Presentations"
 msgstr "முன்வைப்புகள்"
 
-#: ../src/search.js:182
+#: ../src/search.js:183
 msgid "Spreadsheets"
 msgstr "விரிதாட்கள்"
 
-#: ../src/search.js:185
+#: ../src/search.js:186
 msgid "Text Documents"
 msgstr "உரை ஆவணங்கள்"
 
-#. Translators: this is a verb that refers to "All", "Title" and "Author",
-#. as in "Match All", "Match Title" and "Match Author"
-#: ../src/search.js:251
+#: ../src/search.js:252
 msgid "Match"
 msgstr "ஒப்பிடு"
 
-#: ../src/search.js:406
+#: ../src/search.js:258
+#| msgid "Title"
+msgctxt "Search Filter"
+msgid "Title"
+msgstr "தலைப்பு"
+
+#: ../src/search.js:261
+#| msgid "Author"
+msgctxt "Search Filter"
+msgid "Author"
+msgstr "உருவாக்கியவர்"
+
+#: ../src/search.js:407
 msgid "Sources"
 msgstr "மூலங்கள் "
 
-#: ../src/selections.js:613 ../src/selections.js:771
-msgid "Organize"
-msgstr "ஒருங்கிணை"
+#: ../src/selections.js:461
+msgid "You don't have any collections yet. Enter a new collection name above."
+msgstr ""
+"உங்களிடம் தொகுப்புகள் எதுவும் இல்லை. மேலே ஒரு புதிய தொகுப்பின் பெயரை "
+"உள்ளிடவும்."
 
-#: ../src/selections.js:748
+#: ../src/selections.js:604
+#| msgid "Collection"
+msgid "Create new collection"
+msgstr "ஒரு புதிய தொகுப்பை உருவாக்கு"
+
+#: ../src/selections.js:639
+#| msgid "Collections"
+msgctxt "Dialog Title"
+msgid "Collections"
+msgstr "தொகுப்புகள்"
+
+#: ../src/selections.js:751
 msgid "Print"
 msgstr "அச்சிடு"
 
-#: ../src/selections.js:755
+#: ../src/selections.js:756
 msgid "Delete"
 msgstr "நீக்கு"
 
-#: ../src/selections.js:786
+#: ../src/selections.js:761
+#| msgid "Collection"
+msgid "Add to Collection"
+msgstr "தொகுப்பில் சேர்"
+
+#: ../src/selections.js:771
 msgid "Share"
 msgstr "பகிர்"
 
-#. Translators: this is the Open action in a context menu
-#: ../src/selections.js:872
-#, c-format
-msgid "Open with %s"
-msgstr "%s ஆல் திற"
-
-#: ../src/sharing.js:89
+#: ../src/sharing.js:97
 msgid "Sharing Settings"
 msgstr " அமைப்புகளை பகிர்கிறது"
 
-#. Label for widget group for changing document permissions
-#: ../src/sharing.js:126
+#: ../src/sharing.js:134
 msgid "Document permissions"
 msgstr "ஆவணங்கள் அனுமதிகள்"
 
-#. Label for permission change in Sharing dialog
-#: ../src/sharing.js:133 ../src/sharing.js:311
+#: ../src/sharing.js:141 ../src/sharing.js:319
 msgid "Change"
 msgstr "மாற்று"
 
-#. Label for radiobutton that sets doc permission to private
-#: ../src/sharing.js:157 ../src/sharing.js:286
+#: ../src/sharing.js:165 ../src/sharing.js:294
 msgid "Private"
 msgstr "அந்தரங்க"
 
-#: ../src/sharing.js:167 ../src/sharing.js:279
+#: ../src/sharing.js:175 ../src/sharing.js:287
 msgid "Public"
 msgstr "பொது"
 
-#. Label for checkbutton that sets doc permission to Can edit
-#: ../src/sharing.js:171 ../src/sharing.js:281
+#: ../src/sharing.js:179 ../src/sharing.js:289
 msgid "Everyone can edit"
 msgstr "யாரும் திருத்தலாம்"
 
-#. Label for widget group used for adding new contacts
-#: ../src/sharing.js:178
+#: ../src/sharing.js:186
 msgid "Add people"
 msgstr "மக்களை சேர்"
 
-#. Editable text in entry field
-#: ../src/sharing.js:185
+#: ../src/sharing.js:193
 msgid "Enter an email address"
 msgstr "ஒரு மின்னஞ்சல் முகவரியை உள்ளிடுக"
 
-#: ../src/sharing.js:200 ../src/sharing.js:367
+#: ../src/sharing.js:208 ../src/sharing.js:375
 msgid "Can edit"
 msgstr "திருத்தலாம்"
 
-#: ../src/sharing.js:200 ../src/sharing.js:370
+#: ../src/sharing.js:208 ../src/sharing.js:378
 msgid "Can view"
 msgstr "காணலாம்"
 
-#: ../src/sharing.js:207
+#: ../src/sharing.js:215
 msgid "Add"
 msgstr "சேர்க்க"
 
-#: ../src/sharing.js:283
+#: ../src/sharing.js:291
 msgid "Everyone can read"
 msgstr "யாரும் படிக்கலாம்"
 
-#: ../src/sharing.js:298
+#: ../src/sharing.js:306
 msgid "Save"
 msgstr "சேமி"
 
-#: ../src/sharing.js:364
+#: ../src/sharing.js:372
 msgid "Owner"
 msgstr "உரிமையாளர்"
 
-#: ../src/sharing.js:433
-#, c-format
+#: ../src/sharing.js:441
+#, javascript-format
 msgid "You can ask %s for access"
 msgstr "நீங்கள்  %s ஐ அணுகலுக்கு கேட்கலாம். "
 
-#: ../src/sharing.js:470 ../src/sharing.js:506 ../src/sharing.js:563
-#: ../src/sharing.js:580 ../src/sharing.js:599
+#: ../src/sharing.js:478 ../src/sharing.js:514 ../src/sharing.js:571
+#: ../src/sharing.js:588 ../src/sharing.js:607
 msgid "The document was not updated"
 msgstr "ஆவணம் இற்றைப்படுத்தப்படவில்லை."
 
@@ -520,53 +624,60 @@ msgstr "ஆவணம் இற்றைப்படுத்தப்படவ�
 msgid "Untitled Document"
 msgstr "தலைப்பில்லா ஆவணம்"
 
-#: ../src/view.js:61 ../src/view.js:91
+#: ../src/trackerController.js:170
+msgid "Unable to fetch the list of documents"
+msgstr "ஆவணங்கள் பட்டியலை கொண்டுவர முடியவில்லை"
+
+#: ../src/view.js:62 ../src/view.js:93
 msgid "Load More"
 msgstr "மேலும் ஏற்றுக"
 
-#: ../src/view.js:292
+#: ../src/view.js:295
 msgid "Yesterday"
 msgstr "நேற்று"
 
-#: ../src/view.js:294
-#, c-format
+#: ../src/view.js:297
+#, javascript-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
 msgstr[0] "%d நாள் முன்"
 msgstr[1] "%d நாட்களுக்கு முன்"
 
-#: ../src/view.js:298
+#: ../src/view.js:301
 msgid "Last week"
 msgstr "போன வாரம்"
 
-#: ../src/view.js:300
-#, c-format
+#: ../src/view.js:303
+#, javascript-format
 msgid "%d week ago"
 msgid_plural "%d weeks ago"
 msgstr[0] "%d வாரம் முன்"
 msgstr[1] "%d வாரங்கள் முன்"
 
-#: ../src/view.js:304
+#: ../src/view.js:307
 msgid "Last month"
 msgstr "போன மாதம்"
 
-#: ../src/view.js:306
-#, c-format
+#: ../src/view.js:309
+#, javascript-format
 msgid "%d month ago"
 msgid_plural "%d months ago"
 msgstr[0] "%d மாதம் முன்"
 msgstr[1] "%d மாதங்களுக்கு முன்"
 
-#: ../src/view.js:310
+#: ../src/view.js:313
 msgid "Last year"
 msgstr "போன வருடம்"
 
-#: ../src/view.js:312
-#, c-format
+#: ../src/view.js:315
+#, javascript-format
 msgid "%d year ago"
 msgid_plural "%d years ago"
 msgstr[0] "%d வருடத்திற்கு முன்"
 msgstr[1] "%d வருடங்களுக்கு முன்"
+
+#~ msgid "Organize"
+#~ msgstr "ஒருங்கிணை"
 
 #~ msgid "Unable to load \"%s\" for preview"
 #~ msgstr " \"%s\"  ஐ முன்பார்வைக்கு ஏற்ற முடியவில்லை"
@@ -597,9 +708,6 @@ msgstr[1] "%d வருடங்களுக்கு முன்"
 
 #~ msgid "The last active source filter"
 #~ msgstr "கடைசியாக செயலில் இருந்த மூல வடிப்பி"
-
-#~ msgid "Unable to fetch the list of documents"
-#~ msgstr "ஆவணங்கள் பட்டியலை கொண்டுவர முடியவில்லை"
 
 #~ msgid "(%d of %d)"
 #~ msgstr "(%d  %dஇல் )"
