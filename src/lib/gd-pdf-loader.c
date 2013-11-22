@@ -1175,20 +1175,21 @@ pdf_load_job_from_remote_file (PdfLoadJob *job)
 static void
 pdf_load_job_start (PdfLoadJob *job)
 {
-  GFile *file;
+  GFile *file = NULL;
 
-  file = g_file_new_for_uri (job->uri);
+  if (job->uri != NULL)
+    file = g_file_new_for_uri (job->uri);
 
   if (job->gdata_entry != NULL)
     pdf_load_job_from_google_documents (job);
   else if (job->zpj_entry != NULL)
     pdf_load_job_from_skydrive (job);
-  else if (!g_file_is_native (file))
+  else if (file != NULL && !g_file_is_native (file))
     pdf_load_job_from_remote_file (job);
   else
     pdf_load_job_from_regular_file (job);
 
-  g_object_unref (file);
+  g_clear_object (&file);
 }
 
 /**
