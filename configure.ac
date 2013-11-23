@@ -80,8 +80,8 @@ PKG_CHECK_MODULES(DOCUMENTS,
                   gtk+-3.0 >= $GTK_MIN_VERSION
                   libsoup-2.4 >= $SOUP_MIN_VERSION
                   gnome-desktop-3.0
-                  tracker-miner-0.16 >= $TRACKER_MIN_VERSION
-                  tracker-sparql-0.16 >= $TRACKER_MIN_VERSION
+                  tracker-miner-0.18 >= $TRACKER_MIN_VERSION
+                  tracker-sparql-0.18 >= $TRACKER_MIN_VERSION
                   goa-1.0 >= $GOA_MIN_VERSION
                   libgdata >= $GDATA_MIN_VERSION
                   zapojit-0.0 >= $ZAPOJIT_MIN_VERSION)
