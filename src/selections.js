@@ -65,7 +65,7 @@ const FetchCollectionsJob = new Lang.Class({
                     cursor = object.query_finish(res);
                     cursor.next_async(null, Lang.bind(this, this._onCursorNext));
                 } catch (e) {
-                    log(e);
+                    log('Unable to run FetchCollectionsJob: ' + e.message);
                     this._emitCallback();
                 }
             }));
@@ -77,7 +77,7 @@ const FetchCollectionsJob = new Lang.Class({
         try {
             valid = cursor.next_finish(res);
         } catch (e) {
-            log(e);
+            log('Unable to read results of FetchCollectionsJob: ' + e.message);
         }
 
         if (!valid) {
@@ -211,7 +211,7 @@ const UpdateMtimeJob = new Lang.Class({
                 try {
                     object.update_finish(res);
                 } catch (e) {
-                    log(e);
+                    log('Unable to run UpdateMtimeJob: ' + e.message);
                 }
 
                 if (this._callback)
@@ -249,7 +249,7 @@ const SetCollectionForSelectionJob = new Lang.Class({
                         try {
                             object.update_finish(res);
                         } catch (e) {
-                            log(e);
+                            log('Unable to run SetCollectionForSelectionJob: ' + e.message);
                         }
 
                         this._jobCollector();
@@ -291,7 +291,7 @@ const CreateCollectionJob = new Lang.Class({
                 try {
                     variant = object.update_blank_finish(res); // variant is aaa{ss}
                 } catch (e) {
-                    log(e);
+                    log('Unable to run CreateCollectionJob: ' + e.message);
                 }
 
                 variant = variant.get_child_value(0); // variant is now aa{ss}
