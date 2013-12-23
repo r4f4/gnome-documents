@@ -796,14 +796,12 @@ const PreviewNavButtons = new Lang.Class({
 
     show: function() {
         this._visible = true;
-        this._fadeInButton(this.prev_widget);
-        this._fadeInButton(this.next_widget);
+        this._updateVisibility();
     },
 
     hide: function() {
         this._visible = false;
-        this._fadeOutButton(this.prev_widget);
-        this._fadeOutButton(this.next_widget);
+        this._updateVisibility();
     }
 });
 
