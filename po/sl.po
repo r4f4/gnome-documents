@@ -9,9 +9,9 @@ msgstr ""
 "Project-Id-Version: gnome-documents master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-09-25 11:34+0000\n"
-"PO-Revision-Date: 2013-09-27 02:11+0300\n"
-"Last-Translator: Yosef Or Boczko <yoseforb@gmail.com>\n"
+"POT-Creation-Date: 2013-12-19 13:59+0000\n"
+"PO-Revision-Date: 2013-12-23 19:58+0100\n"
+"Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "Language: Slovenian\n"
 "MIME-Version: 1.0\n"
@@ -69,7 +69,7 @@ msgstr "Upravljanje, dostop in souporaba dokumentov"
 
 #: ../data/gnome-documents.desktop.in.in.h:3
 msgid "Docs;PDF;Document;"
-msgstr "Doc;PDF;Dokumenti;Word;"
+msgstr "Doc;PDF;Dokumenti;Word"
 
 #: ../data/org.gnome.documents.gschema.xml.h:1
 #: ../src/resources/app-menu.ui.h:1
@@ -120,8 +120,8 @@ msgstr "GNOME"
 msgid "Getting Started with Documents"
 msgstr "Kako začeti s programom"
 
-#: ../src/documents.js:637 ../src/documents.js:800 ../src/documents.js:854
-#: ../src/documents.js:954
+#: ../src/documents.js:637 ../src/documents.js:802 ../src/documents.js:856
+#: ../src/documents.js:956
 msgid "Collection"
 msgstr "Zbirka"
 
@@ -134,51 +134,51 @@ msgstr "Google dokumenti"
 msgid "Google"
 msgstr "Google"
 
-#: ../src/documents.js:802 ../src/documents.js:956
+#: ../src/documents.js:804 ../src/documents.js:958
 msgid "Spreadsheet"
 msgstr "Preglednica"
 
-#: ../src/documents.js:804 ../src/documents.js:958 ../src/presentation.js:47
+#: ../src/documents.js:806 ../src/documents.js:960 ../src/presentation.js:47
 msgid "Presentation"
 msgstr "Predstavitev"
 
-#: ../src/documents.js:806 ../src/documents.js:960
+#: ../src/documents.js:808 ../src/documents.js:962
 msgid "Document"
 msgstr "Dokument"
 
 #. overridden
-#: ../src/documents.js:832
+#: ../src/documents.js:834
 msgid "ownCloud"
 msgstr "ownCloud"
 
 #. overridden
-#: ../src/documents.js:888 ../src/documents.js:889
+#: ../src/documents.js:890 ../src/documents.js:891
 msgid "Skydrive"
 msgstr "Skydrive"
 
-#: ../src/documents.js:1080
+#: ../src/documents.js:1082
 msgid "Please check the network connection."
 msgstr "Preveriti je treba nastavitve omrežne povezave."
 
-#: ../src/documents.js:1083
+#: ../src/documents.js:1085
 msgid "Please check the network proxy settings."
 msgstr "Preveriti je treba nastavitve posredniškega strežnika."
 
-#: ../src/documents.js:1086
+#: ../src/documents.js:1088
 msgid "Unable to sign in to the document service."
 msgstr "Ni se mogoče povezati s storitvijo dokumenta"
 
-#: ../src/documents.js:1089
+#: ../src/documents.js:1091
 msgid "Unable to locate this document."
 msgstr "Dokumenta ni mogoče najti"
 
-#: ../src/documents.js:1092
+#: ../src/documents.js:1094
 #, c-format
 msgid "Hmm, something is fishy (%d)."
 msgstr "Zaznana je nepravilnost (%d)."
 
 #. Translators: %s is the title of a document
-#: ../src/documents.js:1110
+#: ../src/documents.js:1112
 #, c-format
 msgid "Oops! Unable to load “%s”"
 msgstr "Napaka! Ni mogoče naložiti dokumenta “%s”."
@@ -420,12 +420,12 @@ msgid "Fullscreen"
 msgstr "Celozaslonski način"
 
 #: ../src/resources/app-menu.ui.h:5
-msgid "About Documents"
-msgstr "O programu"
-
-#: ../src/resources/app-menu.ui.h:6
 msgid "Help"
 msgstr "Pomoč"
+
+#: ../src/resources/app-menu.ui.h:6
+msgid "About"
+msgstr "O programu"
 
 #: ../src/resources/app-menu.ui.h:7
 msgid "Quit"
@@ -654,7 +654,7 @@ msgstr "Za dostop je treba vprašati %s"
 msgid "The document was not updated"
 msgstr "Dokument ni posodobljen"
 
-#: ../src/shellSearchProvider.js:293
+#: ../src/shellSearchProvider.js:295
 msgid "Untitled Document"
 msgstr "Neimenovan dokument"
 
@@ -718,6 +718,9 @@ msgstr[0] "%d let nazaj"
 msgstr[1] "%d leto nazaj"
 msgstr[2] "%d leti nazaj"
 msgstr[3] "%d leta nazaj"
+
+#~ msgid "About Documents"
+#~ msgstr "O programu"
 
 #~ msgctxt "Toolbar button tooltip"
 #~ msgid "Organize"
