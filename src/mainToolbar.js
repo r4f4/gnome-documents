@@ -103,6 +103,9 @@ const OverviewToolbar = new Lang.Class({
         this._collectionId = 0;
         this._selectionChangedId = 0;
         this._selectionMenu = null;
+        this._viewGridButton = null;
+        this._viewListButton = null;
+        this._viewSettingsId = 0;
 
         this.parent();
 
@@ -148,6 +151,36 @@ const OverviewToolbar = new Lang.Class({
                     this._searchSourceId = 0;
                 }
             }));
+    },
+
+    _addViewAsButtons: function() {
+        let viewAsBox = new Gtk.Box({ orientation: Gtk.Orientation.HORIZONTAL,
+                                      spacing: 0 });
+        viewAsBox.get_style_context().add_class('linked');
+        this.toolbar.pack_end(viewAsBox);
+
+        this._viewListButton = new Gd.HeaderSimpleButton({ symbolic_icon_name: 'view-list-symbolic',
+                                                           label: _("View items as a list"),
+                                                           no_show_all: true,
+                                                           action_name: 'app.view-as',
+                                                           action_target: GLib.Variant.new('s', 'list') });
+        viewAsBox.add(this._viewListButton);
+        this._viewGridButton = new Gd.HeaderSimpleButton({ symbolic_icon_name: 'view-grid-symbolic',
+                                                           label: _("View items as a grid of icons"),
+                                                           no_show_all: true,
+                                                           action_name: 'app.view-as',
+                                                           action_target: GLib.Variant.new('s', 'icon') });
+        viewAsBox.add(this._viewGridButton);
+
+        this._viewSettingsId = Application.settings.connect('changed::view-as',
+            Lang.bind(this, this._updateViewAsButtons));
+        this._updateViewAsButtons();
+    },
+
+    _updateViewAsButtons: function() {
+        let viewType = Application.settings.get_enum('view-as');
+        this._viewGridButton.visible = (viewType != Gd.MainViewType.ICON);
+        this._viewListButton.visible = (viewType != Gd.MainViewType.LIST);
     },
 
     _setToolbarTitle: function() {
@@ -253,6 +286,7 @@ const OverviewToolbar = new Lang.Class({
                 Application.selectionController.setSelectionMode(true);
             }));
 
+        this._addViewAsButtons();
         this.addSearchButton();
 
         // connect to active collection changes while in this mode
@@ -264,6 +298,8 @@ const OverviewToolbar = new Lang.Class({
     _clearStateData: function() {
         this._collBackButton = null;
         this._selectionMenu = null;
+        this._viewGridButton = null;
+        this._viewListButton = null;
         this.toolbar.set_custom_title(null);
 
         if (this._collectionId != 0) {
@@ -274,6 +310,11 @@ const OverviewToolbar = new Lang.Class({
         if (this._selectionChangedId != 0) {
             Application.selectionController.disconnect(this._selectionChangedId);
             this._selectionChangedId = 0;
+        }
+
+        if (this._viewSettingsId != 0) {
+            Application.settings.disconnect(this._viewSettingsId);
+            this._viewSettingsId = 0;
         }
     },
 
