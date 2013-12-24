@@ -447,6 +447,8 @@ const DocCommon = new Lang.Class({
                                 } catch (e) {
                                     log('Unable to create pixbuf from ' + thumbFile.get_uri() + ': ' + e.toString());
                                     this._failedThumbnailing = true;
+                                    this._thumbPath = null;
+                                    thumbFile.delete_async(GLib.PRIORITY_DEFAULT, null, null);
                                 }
 
                                 // close the underlying stream immediately
@@ -455,6 +457,8 @@ const DocCommon = new Lang.Class({
                 } catch (e) {
                     log('Unable to read file at ' + thumbFile.get_uri() + ': ' + e.toString());
                     this._failedThumbnailing = true;
+                    this._thumbPath = null;
+                    thumbFile.delete_async(GLib.PRIORITY_DEFAULT, null, null);
                 }
             }));
     },
