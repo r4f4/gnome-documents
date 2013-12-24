@@ -448,6 +448,7 @@ const DocCommon = new Lang.Class({
                                     this.thumbnailed = true;
                                     this._setOrigPixbuf(pixbuf);
                                 } catch (e) {
+                                    log('Unable to create pixbuf from ' + thumbFile.get_uri() + ': ' + e.toString());
                                     this._failedThumbnailing = true;
                                 }
 
@@ -455,6 +456,7 @@ const DocCommon = new Lang.Class({
                                 stream.close_async(0, null, null);
                             }));
                 } catch (e) {
+                    log('Unable to read file at ' + thumbFile.get_uri() + ': ' + e.toString());
                     this._failedThumbnailing = true;
                 }
             }));
