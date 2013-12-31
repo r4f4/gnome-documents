@@ -162,13 +162,13 @@ const EmptyResultsBox = new Lang.Class({
 
     _addSystemSettingsLabel: function() {
         let detailsStr =
-            // Translators: %s here is "System Settings", which is in a separate string
-            // due to markup, and should be translated only in the context of this sentence
+            // Translators: %s here is "Settings", which is in a separate string due to
+            // markup, and should be translated only in the context of this sentence
             _("You can add your online accounts in %s").format(
             " <a href=\"system-settings\">" +
             // Translators: this should be translated in the context of the
-            // "You can add your online accounts in System Settings" sentence above
-            _("System Settings") +
+            // "You can add your online accounts in Settings" sentence above
+            _("Settings") +
             "</a>");
         let details = new Gtk.Label({ label: detailsStr,
                                       use_markup: true,
