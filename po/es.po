@@ -2,15 +2,15 @@
 # Copyright (C) 2011 gnome-documents's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-documents package.
 # Jorge González <jorgegonz@svn.gnome.org>, 2011.
-# Daniel Mustieles <daniel.mustieles@gmail.com>, 2011, 2012, 2013.
+# Daniel Mustieles <daniel.mustieles@gmail.com>, 2011, 2012, 2013, 2014.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-documents master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-12-10 16:40+0000\n"
-"PO-Revision-Date: 2013-12-10 18:18+0100\n"
+"POT-Creation-Date: 2013-12-31 16:04+0000\n"
+"PO-Revision-Date: 2014-01-02 10:01+0100\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "Language: \n"
@@ -188,8 +188,9 @@ msgid "You can add your online accounts in %s"
 msgstr "Puede añadir sus cuentas en línea en %s"
 
 #: ../src/embed.js:171
-msgid "System Settings"
-msgstr "Configuración del sistema"
+#| msgid "System Settings"
+msgid "Settings"
+msgstr "Configuración"
 
 #: ../src/lib/gd-nav-bar.c:235
 #, c-format
@@ -319,15 +320,15 @@ msgstr "Presentación activada"
 msgid "Bookmark this page"
 msgstr "añadir esta página a marcadores"
 
-#: ../src/preview.js:892 ../src/selections.js:856
+#: ../src/preview.js:890 ../src/selections.js:856
 msgid "Open with %s"
 msgstr "Abrir con %s"
 
-#: ../src/preview.js:953
+#: ../src/preview.js:951
 msgid "Find Previous"
 msgstr "Buscar anterior"
 
-#: ../src/preview.js:960
+#: ../src/preview.js:958
 msgid "Find Next"
 msgstr "Buscar siguiente"
 
