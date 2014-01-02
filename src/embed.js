@@ -425,6 +425,8 @@ const Embed = new Lang.Class({
             this._preview.setModel(null);
         if (this._edit)
             this._edit.setUri(null);
+        if (this._toolbar)
+            this._toolbar.widget.destroy();
 
         // pack the toolbar
         this._toolbar = new MainToolbar.OverviewToolbar(this._stackOverlay);
@@ -438,6 +440,8 @@ const Embed = new Lang.Class({
     _prepareForPreview: function() {
         if (this._edit)
             this._edit.setUri(null);
+        if (this._toolbar)
+            this._toolbar.widget.destroy();
 
         // pack the toolbar
         this._toolbar = new Preview.PreviewToolbar(this._preview);
@@ -448,6 +452,8 @@ const Embed = new Lang.Class({
     _prepareForEdit: function() {
         if (this._preview)
             this._preview.setModel(null);
+        if (this._toolbar)
+            this._toolbar.widget.destroy();
 
         // pack the toolbar
         this._toolbar = new Edit.EditToolbar(this._preview);
