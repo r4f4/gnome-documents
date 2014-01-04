@@ -14,9 +14,9 @@ msgstr ""
 "Project-Id-Version: gnome-documents master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-12-24 11:56+0000\n"
-"PO-Revision-Date: 2013-12-28 01:07+0800\n"
-"Last-Translator: Tong Hui <tonghuix@gmail.com>\n"
+"POT-Creation-Date: 2014-01-02 09:13+0000\n"
+"PO-Revision-Date: 2014-01-04 18:24+0800\n"
+"Last-Translator: tuhaihe <1132321739qq@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
@@ -73,7 +73,7 @@ msgstr "Docs;PDF;Document;文件;文档;"
 #: ../data/org.gnome.documents.gschema.xml.h:1
 #: ../src/resources/app-menu.ui.h:1
 msgid "View as"
-msgstr "查看为"
+msgstr "查看方式"
 
 #: ../data/org.gnome.documents.gschema.xml.h:2
 msgid "View as type"
@@ -103,28 +103,23 @@ msgstr "窗口已最大化"
 msgid "Window maximized state"
 msgstr "窗口最大化状态"
 
-#. Translators: this refers to local documents
 #: ../src/documents.js:599 ../src/search.js:417
 msgid "Local"
 msgstr "本地"
 
-#. Translators: Documents ships a "Getting Started with Documents"
-#. tutorial PDF. The "GNOME" string below is displayed as the author name
-#. of that document, and doesn't normally need to be translated.
 #: ../src/documents.js:620
 msgid "GNOME"
 msgstr "GNOME"
 
 #: ../src/documents.js:621
 msgid "Getting Started with Documents"
-msgstr "开始使用“文档”"
+msgstr "“文档”使用入门"
 
 #: ../src/documents.js:637 ../src/documents.js:802 ../src/documents.js:856
 #: ../src/documents.js:956
 msgid "Collection"
 msgstr "合集"
 
-#. overridden
 #: ../src/documents.js:681
 msgid "Google Docs"
 msgstr "谷歌文档"
@@ -145,12 +140,10 @@ msgstr "演示文档"
 msgid "Document"
 msgstr "文档"
 
-#. overridden
 #: ../src/documents.js:834
 msgid "ownCloud"
 msgstr "ownCloud"
 
-#. overridden
 #: ../src/documents.js:890 ../src/documents.js:891
 msgid "Skydrive"
 msgstr "Skydrive"
@@ -172,13 +165,12 @@ msgid "Unable to locate this document."
 msgstr "无法定位文档。"
 
 #: ../src/documents.js:1094
-#, c-format
+#, javascript-format
 msgid "Hmm, something is fishy (%d)."
 msgstr "有些东西不太对劲(%d)。"
 
-#. Translators: %s is the title of a document
 #: ../src/documents.js:1112
-#, c-format
+#, javascript-format
 msgid "Oops! Unable to load “%s”"
 msgstr "糟糕！无法载入“%s”"
 
@@ -195,18 +187,14 @@ msgstr "正在加载…"
 msgid "No Documents Found"
 msgstr "未发现文档"
 
-#. Translators: %s here is "System Settings", which is in a separate string
-#. due to markup, and should be translated only in the context of this sentence
 #: ../src/embed.js:167
-#, c-format
+#, javascript-format
 msgid "You can add your online accounts in %s"
 msgstr "您可以在 %s 中添加您的在线帐号"
 
-#. Translators: this should be translated in the context of the
-#. "You can add your online accounts in System Settings" sentence above
 #: ../src/embed.js:171
-msgid "System Settings"
-msgstr "系统设置"
+msgid "Settings"
+msgstr "设置"
 
 #: ../src/lib/gd-nav-bar.c:235
 #, c-format
@@ -254,7 +242,7 @@ msgid "Back"
 msgstr "返回"
 
 #: ../src/mainToolbar.js:170
-#, c-format
+#, javascript-format
 msgid "Results for “%s”"
 msgstr "“%s”的结果"
 
@@ -263,7 +251,7 @@ msgid "Click on items to select them"
 msgstr "点击项目来选择它们"
 
 #: ../src/mainToolbar.js:180
-#, c-format
+#, javascript-format
 msgid "%d selected"
 msgid_plural "%d selected"
 msgstr[0] "已选 %d 项"
@@ -280,17 +268,17 @@ msgstr "选择项目"
 msgid "translator-credits"
 msgstr ""
 "甘 露 <rhythm.gan@gmail.com>, 2011\n"
-"YunQiang Su <wzssyqa@gmail.com>, 2011， 2013\n"
+"YunQiang Su <wzssyqa@gmail.com>, 2011, 2013\n"
 "Wylmer Wang <wantinghard@gmail.com>, 2011\n"
 "EL8LatSPQ <el8latspq@hotmail.com>, 2012\n"
-"tuhaihe <1132321739qq@gmail.com>, 2012，2013"
+"tuhaihe <1132321739qq@gmail.com>, 2012~2014"
 
 #: ../src/mainWindow.js:274
 msgid "A document manager application"
 msgstr "一个文档管理程序"
 
 #: ../src/notifications.js:87
-#, c-format
+#, javascript-format
 msgid "Printing “%s”: %s"
 msgstr "正在打印“%s”：%s"
 
@@ -302,10 +290,8 @@ msgstr "您的文档正被索引"
 msgid "Some documents might not be available during this process"
 msgstr "在该过程中部分文档可能不可用"
 
-#. Translators: %s refers to an online account provider, e.g.
-#. "Google", or "Windows Live".
 #: ../src/notifications.js:166
-#, c-format
+#, javascript-format
 msgid "Fetching documents from %s"
 msgstr "从 %s 获取文档"
 
@@ -322,7 +308,7 @@ msgid "_Unlock"
 msgstr "解锁(_U)"
 
 #: ../src/password.js:64
-#, c-format
+#, javascript-format
 msgid "Document %s is locked and requires a password to be opened."
 msgstr "文档 %s 已被锁定，打开需要密码。"
 
@@ -346,52 +332,43 @@ msgstr "演示时间"
 msgid "Bookmark this page"
 msgstr "添加该页至书签"
 
-#. Translators: this is the Open action in a context menu
 #: ../src/preview.js:890 ../src/selections.js:856
-#, c-format
+#, javascript-format
 msgid "Open with %s"
 msgstr "使用 %s 打开"
 
 #: ../src/preview.js:951
 msgid "Find Previous"
-msgstr "查找前一个"
+msgstr "查找上一个"
 
+# 后一个，怪怪的
 #: ../src/preview.js:958
 msgid "Find Next"
-msgstr "查找后一个"
+msgstr "查找下一个"
 
-#. properties button
 #: ../src/properties.js:60 ../src/resources/preview-menu.ui.h:9
 #: ../src/selections.js:766
 msgid "Properties"
 msgstr "属性"
 
-#. Label for Done button in Sharing dialog
 #: ../src/properties.js:62 ../src/sharing.js:101
 msgid "Done"
 msgstr "完成"
 
-#. Title item
-#. Translators: "Title" is the label next to the document title
-#. in the properties dialog
 #: ../src/properties.js:82
 msgctxt "Document Title"
 msgid "Title"
 msgstr "标题"
 
-#. Translators: "Author" is the label next to the document author
-#. in the properties dialog
 #: ../src/properties.js:91
 msgctxt "Document Author"
 msgid "Author"
 msgstr "作者"
 
-#. Source item
 #: ../src/properties.js:98
 msgid "Source"
 msgstr "源"
 
-#. Date Modified item
 #: ../src/properties.js:104
 msgid "Date Modified"
 msgstr "修改日期"
@@ -400,9 +377,6 @@ msgstr "修改日期"
 msgid "Date Created"
 msgstr "创建日期"
 
-#. Document type item
-#. Translators: "Type" is the label next to the document type
-#. (PDF, spreadsheet, ...) in the properties dialog
 #: ../src/properties.js:120
 msgctxt "Document Type"
 msgid "Type"
@@ -436,8 +410,6 @@ msgstr "退出"
 msgid "_Copy"
 msgstr "复制(_C)"
 
-#. open button
-#. Translators: this is the Open action in a context menu
 #: ../src/resources/preview-menu.ui.h:1 ../src/selections.js:746
 #: ../src/selections.js:859
 msgid "Open"
@@ -483,25 +455,19 @@ msgstr "不选"
 msgid "Category"
 msgstr "类别"
 
-#. Translators: this refers to new and recent documents
-#. Translators: this refers to documents
 #: ../src/search.js:118 ../src/search.js:170 ../src/search.js:255
 #: ../src/search.js:411
 msgid "All"
 msgstr "全部"
 
-#. Translators: this refers to favorite documents
 #: ../src/search.js:124
 msgid "Favorites"
 msgstr "收藏"
 
-#. Translators: this refers to shared documents
 #: ../src/search.js:129
 msgid "Shared with you"
 msgstr "分享给您的"
 
-#. Translators: "Type" refers to a search filter on the document type
-#. (PDF, spreadsheet, ...)
 #: ../src/search.js:167
 msgctxt "Search Filter"
 msgid "Type"
@@ -527,19 +493,15 @@ msgstr "电子表格"
 msgid "Text Documents"
 msgstr "文本文档"
 
-#. Translators: this is a verb that refers to "All", "Title" and "Author",
-#. as in "Match All", "Match Title" and "Match Author"
 #: ../src/search.js:252
 msgid "Match"
 msgstr "匹配"
 
-#. Translators: "Title" refers to "Match Title" when searching
 #: ../src/search.js:258
 msgctxt "Search Filter"
 msgid "Title"
 msgstr "标题"
 
-#. Translators: "Author" refers to "Match Author" when searching
 #: ../src/search.js:261
 msgctxt "Search Filter"
 msgid "Author"
@@ -557,28 +519,23 @@ msgstr "您尚未有合集。请在上面输入新合集名。"
 msgid "Create new collection"
 msgstr "创建新合集"
 
-#. Translators: "Collections" refers to documents in this context
 #: ../src/selections.js:639
 msgctxt "Dialog Title"
 msgid "Collections"
 msgstr "合集"
 
-#. print button
 #: ../src/selections.js:751
 msgid "Print"
 msgstr "打印"
 
-#. trash button
 #: ../src/selections.js:756
 msgid "Delete"
 msgstr "删除"
 
-#. organize button
 #: ../src/selections.js:761
 msgid "Add to Collection"
 msgstr "添加到合集"
 
-#. share button
 #: ../src/selections.js:771
 msgid "Share"
 msgstr "分享"
@@ -587,17 +544,14 @@ msgstr "分享"
 msgid "Sharing Settings"
 msgstr "分享设置"
 
-#. Label for widget group for changing document permissions
 #: ../src/sharing.js:134
 msgid "Document permissions"
 msgstr "文档权限"
 
-#. Label for permission change in Sharing dialog
 #: ../src/sharing.js:141 ../src/sharing.js:319
 msgid "Change"
 msgstr "更改"
 
-#. Label for radiobutton that sets doc permission to private
 #: ../src/sharing.js:165 ../src/sharing.js:294
 msgid "Private"
 msgstr "私有"
@@ -606,17 +560,14 @@ msgstr "私有"
 msgid "Public"
 msgstr "公开"
 
-#. Label for checkbutton that sets doc permission to Can edit
 #: ../src/sharing.js:179 ../src/sharing.js:289
 msgid "Everyone can edit"
 msgstr "任何人都可以编辑"
 
-#. Label for widget group used for adding new contacts
 #: ../src/sharing.js:186
 msgid "Add people"
 msgstr "添加联系人"
 
-#. Editable text in entry field
 #: ../src/sharing.js:193
 msgid "Enter an email address"
 msgstr "输入一个电子邮件地址"
@@ -646,7 +597,7 @@ msgid "Owner"
 msgstr "所有者"
 
 #: ../src/sharing.js:441
-#, c-format
+#, javascript-format
 msgid "You can ask %s for access"
 msgstr "您可以向 %s 请求访问权限"
 
@@ -661,9 +612,8 @@ msgstr "无标题文档"
 
 #: ../src/trackerController.js:170
 msgid "Unable to fetch the list of documents"
-msgstr "无法获取文档清单"
+msgstr "无法获取文档列表"
 
-#. Translators: "more" refers to documents in this context
 #: ../src/view.js:62 ../src/view.js:93
 msgid "Load More"
 msgstr "载入更多"
@@ -673,7 +623,7 @@ msgid "Yesterday"
 msgstr "昨天"
 
 #: ../src/view.js:297
-#, c-format
+#, javascript-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
 msgstr[0] "%d 天前"
@@ -683,7 +633,7 @@ msgid "Last week"
 msgstr "上周"
 
 #: ../src/view.js:303
-#, c-format
+#, javascript-format
 msgid "%d week ago"
 msgid_plural "%d weeks ago"
 msgstr[0] "%d 周前"
@@ -693,7 +643,7 @@ msgid "Last month"
 msgstr "上个月"
 
 #: ../src/view.js:309
-#, c-format
+#, javascript-format
 msgid "%d month ago"
 msgid_plural "%d months ago"
 msgstr[0] "%d 个月前"
@@ -703,7 +653,7 @@ msgid "Last year"
 msgstr "去年"
 
 #: ../src/view.js:315
-#, c-format
+#, javascript-format
 msgid "%d year ago"
 msgid_plural "%d years ago"
 msgstr[0] "%d 年前"
