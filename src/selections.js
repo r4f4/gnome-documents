@@ -739,7 +739,7 @@ const SelectionToolbar = new Lang.Class({
 
         this.widget = new Gtk.Revealer({ transition_type: Gtk.RevealerTransitionType.SLIDE_UP });
 
-        let toolbar = new Gtk.HeaderBar();
+        let toolbar = new Gtk.ActionBar();
         this.widget.add(toolbar);
 
         // open button
