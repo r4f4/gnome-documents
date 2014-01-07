@@ -826,15 +826,15 @@ const PreviewToolbar = new Lang.Class({
                 this._searchAction.enabled = true;
             }));
 
-        // search button, on the right of the toolbar
-        this.addSearchButton();
-
         // menu button, on the right of the toolbar
         let previewMenu = this._getPreviewMenu();
         let menuButton = new Gd.HeaderMenuButton({ menu_model: previewMenu,
                                                    action_name: 'app.gear-menu',
                                                    symbolic_icon_name: 'emblem-system-symbolic' });
         this.toolbar.pack_end(menuButton);
+
+        // search button, on the right of the toolbar
+        this.addSearchButton();
 
         this._setToolbarTitle();
         this.toolbar.show_all();

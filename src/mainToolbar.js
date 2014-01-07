@@ -196,8 +196,6 @@ const OverviewToolbar = new Lang.Class({
     _populateForSelectionMode: function() {
         this.toolbar.get_style_context().add_class('selection-mode');
 
-        this.addSearchButton();
-
         let builder = new Gtk.Builder();
         builder.add_from_resource('/org/gnome/documents/selection-menu.ui');
         let selectionMenu = builder.get_object('selection-menu');
@@ -217,6 +215,8 @@ const OverviewToolbar = new Lang.Class({
         this._selectionChangedId =
             Application.selectionController.connect('selection-changed',
                                                Lang.bind(this, this._setToolbarTitle));
+
+        this.addSearchButton();
     },
 
     _checkCollectionBackButton: function() {
@@ -244,7 +244,6 @@ const OverviewToolbar = new Lang.Class({
     _populateForOverview: function() {
         this.toolbar.set_show_close_button(true);
         this._checkCollectionBackButton();
-        this.addSearchButton();
 
         let selectionButton = new Gd.HeaderSimpleButton({ symbolic_icon_name: 'object-select-symbolic',
                                                           label: _("Select Items") });
@@ -253,6 +252,8 @@ const OverviewToolbar = new Lang.Class({
             function() {
                 Application.selectionController.setSelectionMode(true);
             }));
+
+        this.addSearchButton();
 
         // connect to active collection changes while in this mode
         this._collectionId =
