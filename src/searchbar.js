@@ -121,7 +121,6 @@ const Searchbar = new Lang.Class({
             keyval == Gdk.KEY_KP_Tab ||
             keyval == Gdk.KEY_Up ||
             keyval == Gdk.KEY_KP_Up ||
-            keyval == Gdk.KEY_Up ||
             keyval == Gdk.KEY_Down ||
             keyval == Gdk.KEY_KP_Down ||
             keyval == Gdk.KEY_Left ||
