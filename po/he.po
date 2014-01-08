@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Gnome-Documents\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-20 00:57+0300\n"
-"PO-Revision-Date: 2013-10-20 01:02+0300\n"
+"POT-Creation-Date: 2014-01-08 19:42+0200\n"
+"PO-Revision-Date: 2014-01-08 19:45+0200\n"
 "Last-Translator: Yosef Or Boczko <yoseforb@gmail.com>\n"
 "Language-Team: עברית <>\n"
 "Language: he\n"
@@ -68,7 +68,6 @@ msgid "Docs;PDF;Document;"
 msgstr "מסמכים;PDF;מסמך;"
 
 #: ../data/org.gnome.documents.gschema.xml.h:1
-#: ../src/resources/app-menu.ui.h:1
 msgid "View as"
 msgstr "צפייה בתור"
 
@@ -112,8 +111,8 @@ msgstr "GNOME"
 msgid "Getting Started with Documents"
 msgstr "צעדים ראשונים עם מסמכים"
 
-#: ../src/documents.js:637 ../src/documents.js:800 ../src/documents.js:854
-#: ../src/documents.js:954
+#: ../src/documents.js:637 ../src/documents.js:802 ../src/documents.js:856
+#: ../src/documents.js:956
 msgid "Collection"
 msgstr "אוסף"
 
@@ -125,48 +124,48 @@ msgstr "Google Docs"
 msgid "Google"
 msgstr "Google"
 
-#: ../src/documents.js:802 ../src/documents.js:956
+#: ../src/documents.js:804 ../src/documents.js:958
 msgid "Spreadsheet"
 msgstr "גיליון אלקטרוני"
 
-#: ../src/documents.js:804 ../src/documents.js:958 ../src/presentation.js:47
+#: ../src/documents.js:806 ../src/documents.js:960 ../src/presentation.js:47
 msgid "Presentation"
 msgstr "מצגת"
 
-#: ../src/documents.js:806 ../src/documents.js:960
+#: ../src/documents.js:808 ../src/documents.js:962
 msgid "Document"
 msgstr "מסמך"
 
-#: ../src/documents.js:832
+#: ../src/documents.js:834
 msgid "ownCloud"
 msgstr "ownCloud"
 
-#: ../src/documents.js:888 ../src/documents.js:889
+#: ../src/documents.js:890 ../src/documents.js:891
 msgid "Skydrive"
 msgstr "Skydrive"
 
-#: ../src/documents.js:1080
+#: ../src/documents.js:1082
 msgid "Please check the network connection."
 msgstr "נא לבדוק את החיבור לרשת."
 
-#: ../src/documents.js:1083
+#: ../src/documents.js:1085
 msgid "Please check the network proxy settings."
 msgstr "נא לבדוק את הגדרות המתווך של הרשת."
 
-#: ../src/documents.js:1086
+#: ../src/documents.js:1088
 msgid "Unable to sign in to the document service."
 msgstr "לא ניתן להיכנס לשירות המסמכים."
 
-#: ../src/documents.js:1089
+#: ../src/documents.js:1091
 msgid "Unable to locate this document."
 msgstr "לא ניתן לאתר מסמך זה."
 
-#: ../src/documents.js:1092
+#: ../src/documents.js:1094
 #, javascript-format
 msgid "Hmm, something is fishy (%d)."
 msgstr "המממ, משהו פה מסריח (%d)."
 
-#: ../src/documents.js:1110
+#: ../src/documents.js:1112
 #, javascript-format
 msgid "Oops! Unable to load “%s”"
 msgstr "אופס! לא ניתן לטעון את „%s“"
@@ -190,8 +189,8 @@ msgid "You can add your online accounts in %s"
 msgstr "ניתן להוסיף את החשבונות המקוונים שלך תחת %s"
 
 #: ../src/embed.js:171
-msgid "System Settings"
-msgstr "הגדרות מערכת"
+msgid "Settings"
+msgstr "הגדרות"
 
 #: ../src/lib/gd-nav-bar.c:235
 #, c-format
@@ -238,16 +237,24 @@ msgstr "חיפוש"
 msgid "Back"
 msgstr "חזרה"
 
-#: ../src/mainToolbar.js:170
+#: ../src/mainToolbar.js:163
+msgid "View items as a list"
+msgstr "צפייה בפירטים כרשימה"
+
+#: ../src/mainToolbar.js:169
+msgid "View items as a grid of icons"
+msgstr "צפייה בפריטים כרשת של סמלים"
+
+#: ../src/mainToolbar.js:203
 #, javascript-format
 msgid "Results for “%s”"
 msgstr "תוצאות עבור „%s“"
 
-#: ../src/mainToolbar.js:178
+#: ../src/mainToolbar.js:211
 msgid "Click on items to select them"
 msgstr "יש ללחוץ על פריטים כדי לבחור אותם"
 
-#: ../src/mainToolbar.js:180
+#: ../src/mainToolbar.js:213
 #, c-format
 msgid "%d selected"
 msgid_plural "%d selected"
@@ -255,11 +262,11 @@ msgstr[0] "אחד נבחר"
 msgstr[1] "%d נבחרו"
 msgstr[2] "%d נבחרו"
 
-#: ../src/mainToolbar.js:209
+#: ../src/mainToolbar.js:240
 msgid "Cancel"
 msgstr "ביטול"
 
-#: ../src/mainToolbar.js:250
+#: ../src/mainToolbar.js:282
 msgid "Select Items"
 msgstr "בחירת פריטים"
 
@@ -328,16 +335,16 @@ msgstr "מצב מצגת מופעל"
 msgid "Bookmark this page"
 msgstr "סימון דף זה"
 
-#: ../src/preview.js:892 ../src/selections.js:856
+#: ../src/preview.js:890 ../src/selections.js:856
 #, javascript-format
 msgid "Open with %s"
 msgstr "פתיחה באמצעות %s"
 
-#: ../src/preview.js:953
+#: ../src/preview.js:951
 msgid "Find Previous"
 msgstr "חיפוש הקודם"
 
-#: ../src/preview.js:960
+#: ../src/preview.js:958
 msgid "Find Next"
 msgstr "חיפוש הבא"
 
@@ -377,27 +384,19 @@ msgctxt "Document Type"
 msgid "Type"
 msgstr "סוג"
 
-#: ../src/resources/app-menu.ui.h:2
-msgid "Grid"
-msgstr "רשת"
-
-#: ../src/resources/app-menu.ui.h:3
-msgid "List"
-msgstr "רשימה"
-
-#: ../src/resources/app-menu.ui.h:4
+#: ../src/resources/app-menu.ui.h:1
 msgid "Fullscreen"
 msgstr "מסך מלא"
 
-#: ../src/resources/app-menu.ui.h:5
-msgid "About Documents"
-msgstr "על אודות מסמכים"
-
-#: ../src/resources/app-menu.ui.h:6
+#: ../src/resources/app-menu.ui.h:2
 msgid "Help"
 msgstr "עזרה"
 
-#: ../src/resources/app-menu.ui.h:7
+#: ../src/resources/app-menu.ui.h:3
+msgid "About"
+msgstr "על אודות"
+
+#: ../src/resources/app-menu.ui.h:4
 msgid "Quit"
 msgstr "יציאה"
 
@@ -601,7 +600,7 @@ msgstr "ניתן לבקש גישה מ־%s"
 msgid "The document was not updated"
 msgstr "המסמך לא עודכן"
 
-#: ../src/shellSearchProvider.js:293
+#: ../src/shellSearchProvider.js:295
 msgid "Untitled Document"
 msgstr "מסמך ללא שם"
 
@@ -660,6 +659,15 @@ msgid_plural "%d years ago"
 msgstr[0] "לפני שנה"
 msgstr[1] "לפני %d שנים"
 msgstr[2] "לפני שנתיים"
+
+#~ msgid "Grid"
+#~ msgstr "רשת"
+
+#~ msgid "List"
+#~ msgstr "רשימה"
+
+#~ msgid "About Documents"
+#~ msgstr "על אודות מסמכים"
 
 #~ msgctxt "Toolbar button tooltip"
 #~ msgid "Organize"
