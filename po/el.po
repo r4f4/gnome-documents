@@ -3,29 +3,28 @@
 # This file is distributed under the same license as the gnome-documents package.
 # Tom Tryfonidis <tomtryf@gmail.com>, 2012.
 # Kostas Papadimas <pkst@gnome.org>, 2012.
-# Dimitris Spingos (Δημήτρης Σπίγγος) <dmtrs32@gmail.com>, 2013.
+# Dimitris Spingos (Δημήτρης Σπίγγος) <dmtrs32@gmail.com>, 2013, 2014.
 # Efstathios Iosifidis <iosifidis@opensuse.org>, 2013.
-#
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-documents master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-10-06 20:04+0000\n"
-"PO-Revision-Date: 2013-10-07 16:36+0300\n"
-"Last-Translator: Efstathios Iosifidis <iosifidis@opensuse.org>\n"
-"Language-Team: Greek, Modern (1453-) <opensuse-translation-el@opensuse.org>\n"
+"POT-Creation-Date: 2014-01-10 10:05+0000\n"
+"PO-Revision-Date: 2014-01-11 14:42+0300\n"
+"Last-Translator: Dimitris Spingos (Δημήτρης Σπίγγος) <dmtrs32@gmail.com>\n"
+"Language-Team: www.gnome.gr\n"
 "Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Gtranslator 2.91.6\n"
+"X-Generator: Virtaal 0.7.1\n"
 "X-Project-Style: gnome\n"
 
 #: ../data/gnome-documents.appdata.xml.in.h:1
 #: ../data/gnome-documents.desktop.in.in.h:1 ../src/application.js:103
-#: ../src/mainWindow.js:52 ../src/mainWindow.js:273
+#: ../src/mainWindow.js:52 ../src/mainWindow.js:274
 msgid "Documents"
 msgstr "Έγγραφα"
 
@@ -73,7 +72,6 @@ msgid "Docs;PDF;Document;"
 msgstr "Έγγραφα;PDF;Έγγραφο;Docs;Document;"
 
 #: ../data/org.gnome.documents.gschema.xml.h:1
-#: ../src/resources/app-menu.ui.h:1
 msgid "View as"
 msgstr "Προβολή ως"
 
@@ -117,8 +115,8 @@ msgstr "GNOME"
 msgid "Getting Started with Documents"
 msgstr "Ξεκινώντας με τα έγγραφα"
 
-#: ../src/documents.js:637 ../src/documents.js:800 ../src/documents.js:854
-#: ../src/documents.js:954
+#: ../src/documents.js:637 ../src/documents.js:802 ../src/documents.js:856
+#: ../src/documents.js:956
 msgid "Collection"
 msgstr "Συλλογή"
 
@@ -130,48 +128,48 @@ msgstr "Έγγραφα Google"
 msgid "Google"
 msgstr "Google"
 
-#: ../src/documents.js:802 ../src/documents.js:956
+#: ../src/documents.js:804 ../src/documents.js:958
 msgid "Spreadsheet"
 msgstr "Λογιστικό φύλλο"
 
-#: ../src/documents.js:804 ../src/documents.js:958 ../src/presentation.js:47
+#: ../src/documents.js:806 ../src/documents.js:960 ../src/presentation.js:47
 msgid "Presentation"
 msgstr "Παρουσίαση"
 
-#: ../src/documents.js:806 ../src/documents.js:960
+#: ../src/documents.js:808 ../src/documents.js:962
 msgid "Document"
 msgstr "Έγγραφo"
 
-#: ../src/documents.js:832
+#: ../src/documents.js:834
 msgid "ownCloud"
 msgstr "ownCloud"
 
-#: ../src/documents.js:888 ../src/documents.js:889
+#: ../src/documents.js:890 ../src/documents.js:891
 msgid "Skydrive"
 msgstr "Skydrive"
 
-#: ../src/documents.js:1080
+#: ../src/documents.js:1082
 msgid "Please check the network connection."
 msgstr "Παρακαλούμε ελέγξτε τις ρυθμίσεις δικτύου."
 
-#: ../src/documents.js:1083
+#: ../src/documents.js:1085
 msgid "Please check the network proxy settings."
 msgstr "Παρακαλούμε ελέγξτε τις ρυθμίσεις του μεσολαβητή δικτύου. "
 
-#: ../src/documents.js:1086
+#: ../src/documents.js:1088
 msgid "Unable to sign in to the document service."
 msgstr "Αδυναμία σύνδεσης στην υπηρεσία του εγγράφου."
 
-#: ../src/documents.js:1089
+#: ../src/documents.js:1091
 msgid "Unable to locate this document."
 msgstr "Αδυναμία εύρεσης αυτού του εγγράφου."
 
-#: ../src/documents.js:1092
+#: ../src/documents.js:1094
 #, javascript-format
 msgid "Hmm, something is fishy (%d)."
 msgstr "Χμμ, κάτι είναι ύποπτο (%d)."
 
-#: ../src/documents.js:1110
+#: ../src/documents.js:1112
 #, javascript-format
 msgid "Oops! Unable to load “%s”"
 msgstr "Ωχ! Αδυναμία φόρτωσης του “%s”"
@@ -195,8 +193,8 @@ msgid "You can add your online accounts in %s"
 msgstr "Μπορείτε να προσθέσετε διαδικτυακούς λογαριασμούς στις %s"
 
 #: ../src/embed.js:171
-msgid "System Settings"
-msgstr "ρυθμίσεις συστήματος"
+msgid "Settings"
+msgstr "Ρυθμίσεις"
 
 #: ../src/lib/gd-nav-bar.c:235
 #, c-format
@@ -243,31 +241,39 @@ msgstr "Αναζήτηση"
 msgid "Back"
 msgstr "Πίσω"
 
-#: ../src/mainToolbar.js:170
+#: ../src/mainToolbar.js:163
+msgid "View items as a list"
+msgstr "Προβολή στοιχείων ως κατάλογος"
+
+#: ../src/mainToolbar.js:169
+msgid "View items as a grid of icons"
+msgstr "Προβολή στοιχείων ως πλέγμα εικονιδίων"
+
+#: ../src/mainToolbar.js:203
 #, javascript-format
 msgid "Results for “%s”"
 msgstr "Αποτελέσματα για “%s”"
 
-#: ../src/mainToolbar.js:178
+#: ../src/mainToolbar.js:211
 msgid "Click on items to select them"
 msgstr "Κάντε κλικ στα αντικείμενα για να τα επιλέξετε"
 
-#: ../src/mainToolbar.js:180
+#: ../src/mainToolbar.js:213
 #, javascript-format
 msgid "%d selected"
 msgid_plural "%d selected"
 msgstr[0] "Επιλέχθηκε %d"
 msgstr[1] "Επιλέχθηκαν %d"
 
-#: ../src/mainToolbar.js:209
+#: ../src/mainToolbar.js:240
 msgid "Cancel"
 msgstr "Άκυρο"
 
-#: ../src/mainToolbar.js:250
+#: ../src/mainToolbar.js:282
 msgid "Select Items"
 msgstr "Επιλογή αντικειμένων"
 
-#: ../src/mainWindow.js:272
+#: ../src/mainWindow.js:273
 msgid "translator-credits"
 msgstr ""
 "Ελληνική μεταφραστική ομάδα GNOME\n"
@@ -275,7 +281,7 @@ msgstr ""
 "\n"
 "Για περισσότερα δείτε http://www.gnome.gr/"
 
-#: ../src/mainWindow.js:274
+#: ../src/mainWindow.js:275
 msgid "A document manager application"
 msgstr "Εφαρμογή διαχείρισης εγγράφων"
 
@@ -336,16 +342,16 @@ msgstr "Παρόν σε"
 msgid "Bookmark this page"
 msgstr "Προσθήκη αυτής της σελίδας στους σελιδοδείκτες"
 
-#: ../src/preview.js:892 ../src/selections.js:856
+#: ../src/preview.js:890 ../src/selections.js:856
 #, javascript-format
 msgid "Open with %s"
 msgstr "Άνοιγμα με %s"
 
-#: ../src/preview.js:953
+#: ../src/preview.js:951
 msgid "Find Previous"
 msgstr "Εύρεση Προηγουμένου"
 
-#: ../src/preview.js:960
+#: ../src/preview.js:958
 msgid "Find Next"
 msgstr "Εύρεση Επομένου"
 
@@ -385,27 +391,19 @@ msgctxt "Document Type"
 msgid "Type"
 msgstr "Τύπος"
 
-#: ../src/resources/app-menu.ui.h:2
-msgid "Grid"
-msgstr "Πλέγμα"
-
-#: ../src/resources/app-menu.ui.h:3
-msgid "List"
-msgstr "Λίστα"
-
-#: ../src/resources/app-menu.ui.h:4
+#: ../src/resources/app-menu.ui.h:1
 msgid "Fullscreen"
 msgstr "Πλήρης οθόνη"
 
-#: ../src/resources/app-menu.ui.h:5
-msgid "About Documents"
-msgstr "Περί του Έγγραφα"
-
-#: ../src/resources/app-menu.ui.h:6
+#: ../src/resources/app-menu.ui.h:2
 msgid "Help"
 msgstr "Βοήθεια"
 
-#: ../src/resources/app-menu.ui.h:7
+#: ../src/resources/app-menu.ui.h:3
+msgid "About"
+msgstr "Περί"
+
+#: ../src/resources/app-menu.ui.h:4
 msgid "Quit"
 msgstr "Έξοδος"
 
@@ -609,7 +607,7 @@ msgstr "Μπορείτε να ρωτήσετε τον %s για πρόσβαση
 msgid "The document was not updated"
 msgstr "Το έγγραφο δεν ανανεώθηκε"
 
-#: ../src/shellSearchProvider.js:293
+#: ../src/shellSearchProvider.js:295
 msgid "Untitled Document"
 msgstr "Ανώνυμο έγγραφο"
 
@@ -664,6 +662,15 @@ msgid "%d year ago"
 msgid_plural "%d years ago"
 msgstr[0] "%d έτος πριν"
 msgstr[1] "%d έτη πριν"
+
+#~ msgid "Grid"
+#~ msgstr "Πλέγμα"
+
+#~ msgid "List"
+#~ msgstr "Λίστα"
+
+#~ msgid "About Documents"
+#~ msgstr "Περί του Έγγραφα"
 
 #~| msgid "Organize"
 #~ msgctxt "Dialog Title"
