@@ -1,3 +1,13 @@
+3.11.4 - "Spoilers"
+===================
+
+- Hide the search bar when moving from overview to preview
+- Move the Grid/List controls to the toolbar
+- Use GtkActionBar for the selection toolbar (William Jon McCann)
+- Settings is the new name for gnome-control-center
+- Simplify the PreviewNavButtons show/hide code
+- Translation updates
+
 3.11.3 - "Buses and Pubs"
 =========================
 
