@@ -63,7 +63,8 @@ const SearchController = new Lang.Class({
     },
 
     getTerms: function() {
-        let str = Tracker.sparql_escape_string(this._string);
+        let escaped_str = Tracker.sparql_escape_string(this._string);
+        let str = GLib.utf8_casefold(escaped_str, -1);
         return str.replace(/ +/g, ' ').split(' ');
     }
 });
@@ -232,11 +233,11 @@ const SearchMatch = new Lang.Class({
     getFilter: function() {
         if (this.id == SearchMatchStock.TITLE)
             return ('fn:contains ' +
-                    '(fn:lower-case (tracker:coalesce(nie:title(?urn), nfo:fileName(?urn))), ' +
+                    '(tracker:case-fold(tracker:coalesce(nie:title(?urn), nfo:fileName(?urn))), ' +
                     '"%s")').format(this._term);
         if (this.id == SearchMatchStock.AUTHOR)
             return ('fn:contains ' +
-                    '(fn:lower-case (tracker:coalesce(nco:fullname(?creator), nco:fullname(?publisher))), ' +
+                    '(tracker:case-fold(tracker:coalesce(nco:fullname(?creator), nco:fullname(?publisher))), ' +
                     '"%s")').format(this._term);
         return '';
     }

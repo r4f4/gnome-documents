@@ -318,7 +318,7 @@ const FetchIdsJob = new Lang.Class({
     run: function(callback, cancellable) {
         this._callback = callback;
         this._cancellable = cancellable;
-        searchController.setString(this._terms.join(' ').toLowerCase());
+        searchController.setString(this._terms.join(' '));
 
         let query = queryBuilder.buildGlobalQuery();
         Application.connectionQueue.add(query.sparql, this._cancellable, Lang.bind(this,
