@@ -327,7 +327,7 @@ const OverviewSearchbar = new Lang.Class({
     },
 
     entryChanged: function() {
-        let currentText = this._searchEntry.get_text().toLowerCase();
+        let currentText = this._searchEntry.get_text();
 
         Application.searchController.disconnect(this._searchChangedId);
         Application.searchController.setString(currentText);
