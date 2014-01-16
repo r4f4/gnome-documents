@@ -26,6 +26,7 @@ const Query = imports.query;
 const Lang = imports.lang;
 const Signals = imports.signals;
 
+const GdPrivate = imports.gi.GdPrivate;
 const Gio = imports.gi.Gio;
 const GLib = imports.gi.GLib;
 const Tracker = imports.gi.Tracker;
@@ -64,7 +65,7 @@ const SearchController = new Lang.Class({
 
     getTerms: function() {
         let escaped_str = Tracker.sparql_escape_string(this._string);
-        let str = GLib.utf8_casefold(escaped_str, -1);
+        let str = GdPrivate.normalize_casefold_and_unaccent(escaped_str);
         return str.replace(/ +/g, ' ').split(' ');
     }
 });
@@ -266,11 +267,13 @@ const SearchMatch = new Lang.Class({
     getFilter: function() {
         if (this.id == SearchMatchStock.TITLE)
             return ('fn:contains ' +
-                    '(tracker:case-fold(tracker:coalesce(nie:title(?urn), nfo:fileName(?urn))), ' +
+                    '(tracker:unaccent(tracker:case-fold' +
+                    '(tracker:coalesce(nie:title(?urn), nfo:fileName(?urn)))), ' +
                     '"%s")').format(this._term);
         if (this.id == SearchMatchStock.AUTHOR)
             return ('fn:contains ' +
-                    '(tracker:case-fold(tracker:coalesce(nco:fullname(?creator), nco:fullname(?publisher))), ' +
+                    '(tracker:unaccent(tracker:case-fold' +
+                    '(tracker:coalesce(nco:fullname(?creator), nco:fullname(?publisher)))), ' +
                     '"%s")').format(this._term);
         return '';
     }

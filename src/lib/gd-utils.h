@@ -39,6 +39,8 @@ const char *gd_filename_to_mime_type (const gchar *filename_with_extension);
 
 const char *gd_filename_to_rdf_type (const gchar *filename_with_extension);
 
+char *gd_normalize_casefold_and_unaccent (const char *str);
+
 gchar *gd_iso8601_from_timestamp (gint64 timestamp);
 
 GIcon *gd_create_collection_icon (gint base_size,
