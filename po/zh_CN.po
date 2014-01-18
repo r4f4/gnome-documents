@@ -7,16 +7,16 @@
 # tuhaihe <1132321739qq@gmail.com>, 2012, 2013.
 # lainme <lainme993@gmail.com>, 2013
 # YunQiang Su <wzssyqa@gmail.com>, 2011, 2012, 2013.
-# Tong Hui <tonghuix@gmail.com>, 2013.
+# Tong Hui <tonghuix@gmail.com>, 2013, 2014.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-documents master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-01-02 09:13+0000\n"
-"PO-Revision-Date: 2014-01-04 18:24+0800\n"
-"Last-Translator: tuhaihe <1132321739qq@gmail.com>\n"
+"POT-Creation-Date: 2014-01-16 21:16+0000\n"
+"PO-Revision-Date: 2014-01-18 16:40+0800\n"
+"Last-Translator: Tong Hui <tonghuix@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
@@ -27,7 +27,7 @@ msgstr ""
 
 #: ../data/gnome-documents.appdata.xml.in.h:1
 #: ../data/gnome-documents.desktop.in.in.h:1 ../src/application.js:103
-#: ../src/mainWindow.js:52 ../src/mainWindow.js:273
+#: ../src/mainWindow.js:52 ../src/mainWindow.js:274
 msgid "Documents"
 msgstr "文档"
 
@@ -71,7 +71,6 @@ msgid "Docs;PDF;Document;"
 msgstr "Docs;PDF;Document;文件;文档;"
 
 #: ../data/org.gnome.documents.gschema.xml.h:1
-#: ../src/resources/app-menu.ui.h:1
 msgid "View as"
 msgstr "查看方式"
 
@@ -103,73 +102,73 @@ msgstr "窗口已最大化"
 msgid "Window maximized state"
 msgstr "窗口最大化状态"
 
-#: ../src/documents.js:599 ../src/search.js:417
+#: ../src/documents.js:601 ../src/search.js:418
 msgid "Local"
 msgstr "本地"
 
-#: ../src/documents.js:620
+#: ../src/documents.js:622
 msgid "GNOME"
 msgstr "GNOME"
 
-#: ../src/documents.js:621
+#: ../src/documents.js:623
 msgid "Getting Started with Documents"
 msgstr "“文档”使用入门"
 
-#: ../src/documents.js:637 ../src/documents.js:802 ../src/documents.js:856
-#: ../src/documents.js:956
+#: ../src/documents.js:639 ../src/documents.js:804 ../src/documents.js:858
+#: ../src/documents.js:958
 msgid "Collection"
 msgstr "合集"
 
-#: ../src/documents.js:681
+#: ../src/documents.js:683
 msgid "Google Docs"
 msgstr "谷歌文档"
 
-#: ../src/documents.js:682
+#: ../src/documents.js:684
 msgid "Google"
 msgstr "谷歌"
 
-#: ../src/documents.js:804 ../src/documents.js:958
+#: ../src/documents.js:806 ../src/documents.js:960
 msgid "Spreadsheet"
 msgstr "电子表格"
 
-#: ../src/documents.js:806 ../src/documents.js:960 ../src/presentation.js:47
+#: ../src/documents.js:808 ../src/documents.js:962 ../src/presentation.js:47
 msgid "Presentation"
 msgstr "演示文档"
 
-#: ../src/documents.js:808 ../src/documents.js:962
+#: ../src/documents.js:810 ../src/documents.js:964
 msgid "Document"
 msgstr "文档"
 
-#: ../src/documents.js:834
+#: ../src/documents.js:836
 msgid "ownCloud"
 msgstr "ownCloud"
 
-#: ../src/documents.js:890 ../src/documents.js:891
+#: ../src/documents.js:892 ../src/documents.js:893
 msgid "Skydrive"
 msgstr "Skydrive"
 
-#: ../src/documents.js:1082
+#: ../src/documents.js:1084
 msgid "Please check the network connection."
 msgstr "请检查网络连接。"
 
-#: ../src/documents.js:1085
+#: ../src/documents.js:1087
 msgid "Please check the network proxy settings."
 msgstr "请检查网络的代理设置。"
 
-#: ../src/documents.js:1088
+#: ../src/documents.js:1090
 msgid "Unable to sign in to the document service."
 msgstr "无法登入文档服务。"
 
-#: ../src/documents.js:1091
+#: ../src/documents.js:1093
 msgid "Unable to locate this document."
 msgstr "无法定位文档。"
 
-#: ../src/documents.js:1094
+#: ../src/documents.js:1096
 #, javascript-format
 msgid "Hmm, something is fishy (%d)."
 msgstr "有些东西不太对劲(%d)。"
 
-#: ../src/documents.js:1112
+#: ../src/documents.js:1114
 #, javascript-format
 msgid "Oops! Unable to load “%s”"
 msgstr "糟糕！无法载入“%s”"
@@ -241,39 +240,48 @@ msgstr "搜索"
 msgid "Back"
 msgstr "返回"
 
-#: ../src/mainToolbar.js:170
+#: ../src/mainToolbar.js:163
+msgid "View items as a list"
+msgstr "以列表方式查看项目"
+
+#: ../src/mainToolbar.js:169
+msgid "View items as a grid of icons"
+msgstr "以图标网格方式查看项目"
+
+#: ../src/mainToolbar.js:203
 #, javascript-format
 msgid "Results for “%s”"
 msgstr "“%s”的结果"
 
-#: ../src/mainToolbar.js:178
+#: ../src/mainToolbar.js:211
 msgid "Click on items to select them"
 msgstr "点击项目来选择它们"
 
-#: ../src/mainToolbar.js:180
+#: ../src/mainToolbar.js:213
 #, javascript-format
 msgid "%d selected"
 msgid_plural "%d selected"
 msgstr[0] "已选 %d 项"
 
-#: ../src/mainToolbar.js:209
+#: ../src/mainToolbar.js:240
 msgid "Cancel"
 msgstr "取消"
 
-#: ../src/mainToolbar.js:250
+#: ../src/mainToolbar.js:282
 msgid "Select Items"
 msgstr "选择项目"
 
-#: ../src/mainWindow.js:272
+#: ../src/mainWindow.js:273
 msgid "translator-credits"
 msgstr ""
 "甘 露 <rhythm.gan@gmail.com>, 2011\n"
 "YunQiang Su <wzssyqa@gmail.com>, 2011, 2013\n"
 "Wylmer Wang <wantinghard@gmail.com>, 2011\n"
 "EL8LatSPQ <el8latspq@hotmail.com>, 2012\n"
-"tuhaihe <1132321739qq@gmail.com>, 2012~2014"
+"tuhaihe <1132321739qq@gmail.com>, 2012~2014\n"
+"Tong Hui <tonghuix@gmail.com>, 2014"
 
-#: ../src/mainWindow.js:274
+#: ../src/mainWindow.js:275
 msgid "A document manager application"
 msgstr "一个文档管理程序"
 
@@ -382,27 +390,19 @@ msgctxt "Document Type"
 msgid "Type"
 msgstr "类型"
 
-#: ../src/resources/app-menu.ui.h:2
-msgid "Grid"
-msgstr "网格"
-
-#: ../src/resources/app-menu.ui.h:3
-msgid "List"
-msgstr "列表"
-
-#: ../src/resources/app-menu.ui.h:4
+#: ../src/resources/app-menu.ui.h:1
 msgid "Fullscreen"
 msgstr "全屏"
 
-#: ../src/resources/app-menu.ui.h:5
+#: ../src/resources/app-menu.ui.h:2
 msgid "Help"
 msgstr "帮助"
 
-#: ../src/resources/app-menu.ui.h:6
+#: ../src/resources/app-menu.ui.h:3
 msgid "About"
 msgstr "关于"
 
-#: ../src/resources/app-menu.ui.h:7
+#: ../src/resources/app-menu.ui.h:4
 msgid "Quit"
 msgstr "退出"
 
@@ -451,63 +451,63 @@ msgstr "全选"
 msgid "Select None"
 msgstr "不选"
 
-#: ../src/search.js:113
+#: ../src/search.js:114
 msgid "Category"
 msgstr "类别"
 
-#: ../src/search.js:118 ../src/search.js:170 ../src/search.js:255
-#: ../src/search.js:411
+#: ../src/search.js:119 ../src/search.js:171 ../src/search.js:256
+#: ../src/search.js:412
 msgid "All"
 msgstr "全部"
 
-#: ../src/search.js:124
+#: ../src/search.js:125
 msgid "Favorites"
 msgstr "收藏"
 
-#: ../src/search.js:129
+#: ../src/search.js:130
 msgid "Shared with you"
 msgstr "分享给您的"
 
-#: ../src/search.js:167
+#: ../src/search.js:168
 msgctxt "Search Filter"
 msgid "Type"
 msgstr "类型"
 
-#: ../src/search.js:172
+#: ../src/search.js:173
 msgid "Collections"
 msgstr "合集"
 
-#: ../src/search.js:176
+#: ../src/search.js:177
 msgid "PDF Documents"
 msgstr "PDF 文档"
 
-#: ../src/search.js:180
+#: ../src/search.js:181
 msgid "Presentations"
 msgstr "演示文档"
 
-#: ../src/search.js:183
+#: ../src/search.js:184
 msgid "Spreadsheets"
 msgstr "电子表格"
 
-#: ../src/search.js:186
+#: ../src/search.js:187
 msgid "Text Documents"
 msgstr "文本文档"
 
-#: ../src/search.js:252
+#: ../src/search.js:253
 msgid "Match"
 msgstr "匹配"
 
-#: ../src/search.js:258
+#: ../src/search.js:259
 msgctxt "Search Filter"
 msgid "Title"
 msgstr "标题"
 
-#: ../src/search.js:261
+#: ../src/search.js:262
 msgctxt "Search Filter"
 msgid "Author"
 msgstr "作者"
 
-#: ../src/search.js:407
+#: ../src/search.js:408
 msgid "Sources"
 msgstr "源"
 
@@ -657,6 +657,12 @@ msgstr "去年"
 msgid "%d year ago"
 msgid_plural "%d years ago"
 msgstr[0] "%d 年前"
+
+#~ msgid "Grid"
+#~ msgstr "网格"
+
+#~ msgid "List"
+#~ msgstr "列表"
 
 #~ msgid "About Documents"
 #~ msgstr "关于文档"
