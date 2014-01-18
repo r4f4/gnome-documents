@@ -1,16 +1,16 @@
 # Thai translation for gnome-documents.
-# Copyright (C) 2011-2013 Free Software Foundation, Inc.
+# Copyright (C) 2011-2014 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-documents package.
 # Unticha Pramgoed <unticha@gmail.com>, 2011.
-# Akom Chotiphantawanon <knight2000@gmail.com>, 2011-2013.
+# Akom Chotiphantawanon <knight2000@gmail.com>, 2011-2014.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-documents master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-10-11 13:39+0000\n"
-"PO-Revision-Date: 2013-10-12 17:34+0700\n"
+"POT-Creation-Date: 2014-01-16 21:16+0000\n"
+"PO-Revision-Date: 2014-01-18 20:29+0700\n"
 "Last-Translator: Akom Chotiphantawanon <knight2000@gmail.com>\n"
 "Language-Team: Thai <thai-l10n@googlegroups.com>\n"
 "Language: th\n"
@@ -18,10 +18,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 1.5.7\n"
 
 #: ../data/gnome-documents.appdata.xml.in.h:1
 #: ../data/gnome-documents.desktop.in.in.h:1 ../src/application.js:103
-#: ../src/mainWindow.js:52 ../src/mainWindow.js:273
+#: ../src/mainWindow.js:52 ../src/mainWindow.js:274
 msgid "Documents"
 msgstr "เอกสาร"
 
@@ -66,7 +67,6 @@ msgid "Docs;PDF;Document;"
 msgstr "Docs;PDF;เอกสาร;"
 
 #: ../data/org.gnome.documents.gschema.xml.h:1
-#: ../src/resources/app-menu.ui.h:1
 msgid "View as"
 msgstr "มุมมอง"
 
@@ -98,73 +98,73 @@ msgstr "หน้าต่างขยายแผ่อยู่"
 msgid "Window maximized state"
 msgstr "สถานะการขยายแผ่หน้าต่าง"
 
-#: ../src/documents.js:599 ../src/search.js:417
+#: ../src/documents.js:601 ../src/search.js:418
 msgid "Local"
 msgstr "ในเครื่อง"
 
-#: ../src/documents.js:620
+#: ../src/documents.js:622
 msgid "GNOME"
 msgstr "GNOME"
 
-#: ../src/documents.js:621
+#: ../src/documents.js:623
 msgid "Getting Started with Documents"
 msgstr "เริ่มต้นกับเอกสาร"
 
-#: ../src/documents.js:637 ../src/documents.js:800 ../src/documents.js:854
-#: ../src/documents.js:954
+#: ../src/documents.js:639 ../src/documents.js:804 ../src/documents.js:858
+#: ../src/documents.js:958
 msgid "Collection"
 msgstr "ชุดเอกสาร"
 
-#: ../src/documents.js:681
+#: ../src/documents.js:683
 msgid "Google Docs"
 msgstr "Google Docs"
 
-#: ../src/documents.js:682
+#: ../src/documents.js:684
 msgid "Google"
 msgstr "Google"
 
-#: ../src/documents.js:802 ../src/documents.js:956
+#: ../src/documents.js:806 ../src/documents.js:960
 msgid "Spreadsheet"
 msgstr "ตารางคำนวณ"
 
-#: ../src/documents.js:804 ../src/documents.js:958 ../src/presentation.js:47
+#: ../src/documents.js:808 ../src/documents.js:962 ../src/presentation.js:47
 msgid "Presentation"
 msgstr "งานนำเสนอ"
 
-#: ../src/documents.js:806 ../src/documents.js:960
+#: ../src/documents.js:810 ../src/documents.js:964
 msgid "Document"
 msgstr "เอกสาร"
 
-#: ../src/documents.js:832
+#: ../src/documents.js:836
 msgid "ownCloud"
 msgstr "ownCloud"
 
-#: ../src/documents.js:888 ../src/documents.js:889
+#: ../src/documents.js:892 ../src/documents.js:893
 msgid "Skydrive"
 msgstr "Skydrive"
 
-#: ../src/documents.js:1080
+#: ../src/documents.js:1084
 msgid "Please check the network connection."
 msgstr "กรุณาตรวจสอบการเชื่อมต่อเครือข่าย"
 
-#: ../src/documents.js:1083
+#: ../src/documents.js:1087
 msgid "Please check the network proxy settings."
 msgstr "กรุณาตรวจสอบการตั้งค่าพร็อกซีเครือข่าย"
 
-#: ../src/documents.js:1086
+#: ../src/documents.js:1090
 msgid "Unable to sign in to the document service."
 msgstr "ไม่สามารถเข้าระบบเพื่อใช้บริการเอกสารได้"
 
-#: ../src/documents.js:1089
+#: ../src/documents.js:1093
 msgid "Unable to locate this document."
 msgstr "หาเอกสารนี้ไม่พบ"
 
-#: ../src/documents.js:1092
+#: ../src/documents.js:1096
 #, javascript-format
 msgid "Hmm, something is fishy (%d)."
 msgstr "มีบางสิ่งบางอย่างน่าสงสัย (%d)"
 
-#: ../src/documents.js:1110
+#: ../src/documents.js:1114
 #, javascript-format
 msgid "Oops! Unable to load “%s”"
 msgstr "ไม่สามารถโหลด “%s” ได้"
@@ -188,8 +188,8 @@ msgid "You can add your online accounts in %s"
 msgstr "คุณสามารถเพิ่มบัญชีออนไลน์ของคุณได้ใน %s"
 
 #: ../src/embed.js:171
-msgid "System Settings"
-msgstr "ตั้งค่าระบบ"
+msgid "Settings"
+msgstr "ค่าตั้ง"
 
 #: ../src/lib/gd-nav-bar.c:235
 #, c-format
@@ -236,34 +236,42 @@ msgstr "ค้นหา"
 msgid "Back"
 msgstr "ถอยกลับ"
 
-#: ../src/mainToolbar.js:170
+#: ../src/mainToolbar.js:163
+msgid "View items as a list"
+msgstr "มุมมองรายการแบบรายชื่อ"
+
+#: ../src/mainToolbar.js:169
+msgid "View items as a grid of icons"
+msgstr "มุมมองรายการแบบแถวตารางไอคอน"
+
+#: ../src/mainToolbar.js:203
 #, javascript-format
 msgid "Results for “%s”"
 msgstr "ผลการค้นหาสำหรับ “%s”"
 
-#: ../src/mainToolbar.js:178
+#: ../src/mainToolbar.js:211
 msgid "Click on items to select them"
 msgstr "คลิกที่รายการเพื่อเลือก"
 
-#: ../src/mainToolbar.js:180
+#: ../src/mainToolbar.js:213
 #, javascript-format
 msgid "%d selected"
 msgid_plural "%d selected"
 msgstr[0] "เลือกอยู่ %d รายการ"
 
-#: ../src/mainToolbar.js:209
+#: ../src/mainToolbar.js:240
 msgid "Cancel"
 msgstr "ยกเลิก"
 
-#: ../src/mainToolbar.js:250
+#: ../src/mainToolbar.js:282
 msgid "Select Items"
 msgstr "เลือกรายการ"
 
-#: ../src/mainWindow.js:272
+#: ../src/mainWindow.js:273
 msgid "translator-credits"
 msgstr "Akom Chotiphantawanon <knight2000@gmail.com>"
 
-#: ../src/mainWindow.js:274
+#: ../src/mainWindow.js:275
 msgid "A document manager application"
 msgstr "โปรแกรมจัดการเอกสาร"
 
@@ -322,16 +330,16 @@ msgstr "นำเสนอออกที่"
 msgid "Bookmark this page"
 msgstr "คั่นหน้านี้"
 
-#: ../src/preview.js:892 ../src/selections.js:856
+#: ../src/preview.js:890 ../src/selections.js:856
 #, javascript-format
 msgid "Open with %s"
 msgstr "เปิดด้วย %s"
 
-#: ../src/preview.js:953
+#: ../src/preview.js:951
 msgid "Find Previous"
 msgstr "หาก่อนหน้า"
 
-#: ../src/preview.js:960
+#: ../src/preview.js:958
 msgid "Find Next"
 msgstr "หาต่อ"
 
@@ -371,27 +379,19 @@ msgctxt "Document Type"
 msgid "Type"
 msgstr "ชนิด"
 
-#: ../src/resources/app-menu.ui.h:2
-msgid "Grid"
-msgstr "แถวตาราง"
-
-#: ../src/resources/app-menu.ui.h:3
-msgid "List"
-msgstr "รายชื่อ"
-
-#: ../src/resources/app-menu.ui.h:4
+#: ../src/resources/app-menu.ui.h:1
 msgid "Fullscreen"
 msgstr "เต็มจอ"
 
-#: ../src/resources/app-menu.ui.h:5
-msgid "About Documents"
-msgstr "เกี่ยวกับโปรแกรมเอกสาร"
-
-#: ../src/resources/app-menu.ui.h:6
+#: ../src/resources/app-menu.ui.h:2
 msgid "Help"
 msgstr "วิธีใช้"
 
-#: ../src/resources/app-menu.ui.h:7
+#: ../src/resources/app-menu.ui.h:3
+msgid "About"
+msgstr "เกี่ยวกับ"
+
+#: ../src/resources/app-menu.ui.h:4
 msgid "Quit"
 msgstr "ออก"
 
@@ -440,63 +440,63 @@ msgstr "เลือกทั้งหมด"
 msgid "Select None"
 msgstr "ล้างการเลือก"
 
-#: ../src/search.js:113
+#: ../src/search.js:114
 msgid "Category"
 msgstr "หมวดหมู่"
 
-#: ../src/search.js:118 ../src/search.js:170 ../src/search.js:255
-#: ../src/search.js:411
+#: ../src/search.js:119 ../src/search.js:171 ../src/search.js:256
+#: ../src/search.js:412
 msgid "All"
 msgstr "ทั้งหมด"
 
-#: ../src/search.js:124
+#: ../src/search.js:125
 msgid "Favorites"
 msgstr "รายการโปรด"
 
-#: ../src/search.js:129
+#: ../src/search.js:130
 msgid "Shared with you"
 msgstr "แบ่งปันกับคุณ"
 
-#: ../src/search.js:167
+#: ../src/search.js:168
 msgctxt "Search Filter"
 msgid "Type"
 msgstr "ชนิด"
 
-#: ../src/search.js:172
+#: ../src/search.js:173
 msgid "Collections"
 msgstr "ชุดเอกสาร"
 
-#: ../src/search.js:176
+#: ../src/search.js:177
 msgid "PDF Documents"
 msgstr "เอกสาร PDF"
 
-#: ../src/search.js:180
+#: ../src/search.js:181
 msgid "Presentations"
 msgstr "งานนำเสนอ"
 
-#: ../src/search.js:183
+#: ../src/search.js:184
 msgid "Spreadsheets"
 msgstr "ตารางคำนวณ"
 
-#: ../src/search.js:186
+#: ../src/search.js:187
 msgid "Text Documents"
 msgstr "เอกสารข้อเขียน"
 
-#: ../src/search.js:252
+#: ../src/search.js:253
 msgid "Match"
 msgstr "ตรวจหา"
 
-#: ../src/search.js:258
+#: ../src/search.js:259
 msgctxt "Search Filter"
 msgid "Title"
 msgstr "ชื่อเรื่อง"
 
-#: ../src/search.js:261
+#: ../src/search.js:262
 msgctxt "Search Filter"
 msgid "Author"
 msgstr "ผู้เขียน"
 
-#: ../src/search.js:407
+#: ../src/search.js:408
 msgid "Sources"
 msgstr "แหล่ง"
 
@@ -595,7 +595,7 @@ msgstr "คุณสามารถติดต่อ %s เพื่อขอ�
 msgid "The document was not updated"
 msgstr "เอกสารยังไม่เป็นฉบับล่าสุด"
 
-#: ../src/shellSearchProvider.js:293
+#: ../src/shellSearchProvider.js:295
 msgid "Untitled Document"
 msgstr "เอกสารไม่มีชื่อ"
 
@@ -646,6 +646,15 @@ msgstr "ปีที่แล้ว"
 msgid "%d year ago"
 msgid_plural "%d years ago"
 msgstr[0] "%d ปีที่แล้ว"
+
+#~ msgid "Grid"
+#~ msgstr "แถวตาราง"
+
+#~ msgid "List"
+#~ msgstr "รายชื่อ"
+
+#~ msgid "About Documents"
+#~ msgstr "เกี่ยวกับโปรแกรมเอกสาร"
 
 #~ msgctxt "Dialog Title"
 #~ msgid "Organize"
