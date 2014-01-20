@@ -1,3 +1,0 @@
-[D-BUS Service]
-Name=org.gnome.Documents.SearchProvider
-Exec=@bindir@/gnome-documents --no-default-window

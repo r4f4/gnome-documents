@@ -18,6 +18,7 @@ pkglib_LTLIBRARIES =
 INTROSPECTION_GIRS =
 gir_DATA =
 typelib_DATA =
+bin_SCRIPTS =
 libexec_PROGRAMS =
 libexec_SCRIPTS =
 
@@ -55,25 +56,24 @@ typelib_DATA += $(gir_DATA:.gir=.typelib)
 
 CLEANFILES += $(gir_DATA) $(typelib_DATA)
 
-bin_SCRIPTS = gnome-documents
-
-gnome-documents: gnome-documents.in
+libexec_SCRIPTS += gnome-documents-service
+gnome-documents-service: gnome-documents-service.in
 	$(AM_V_GEN) $(do_subst) $< > $@
 	chmod +x $@
 
 CLEANFILES += \
-    gnome-documents
+    gnome-documents-service
 EXTRA_DIST += \
-    gnome-documents.in
+    gnome-documents-service.in
 
-service_in_files = org.gnome.Documents.SearchProvider.service.in
-
+service_in_files = org.gnome.Documents.service.in
 servicedir = $(datadir)/dbus-1/services
-service_DATA = $(service_in_files:.service.in=.service)
-
-%.service: %.service.in Makefile
-	$(AM_V_GEN) [ -d $(@D) ] || $(mkdir_p) $(@D) ; \
-	            sed -e "s|\@bindir\@|$(bindir)|" $< > $@.tmp && mv $@.tmp $@
+service_DATA = org.gnome.Documents.service
+org.gnome.Documents.service: org.gnome.Documents.service.in
+	$(AM_V_GEN) $(do_subst) $< > $@
 
 CLEANFILES += $(service_DATA)
 EXTRA_DIST += $(service_in_files)
+
+bin_SCRIPTS += gnome-documents
+EXTRA_DIST += gnome-documents

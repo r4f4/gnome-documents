@@ -17,9 +17,8 @@ config.log
 config.status
 config
 configure
-data/gnome-documents.appdata.xml
-data/gnome-documents.desktop
-data/gnome-documents.desktop.in
+data/org.gnome.Documents.appdata.xml
+data/org.gnome.Documents.desktop
 data/org.gnome.Documents.enums.xml
 data/org.gnome.documents.gschema.valid
 intltool-extract.in
@@ -47,11 +46,11 @@ src/Makefile
 src/Makefile.in
 src/gd-tracker-gdata-miner
 src/gd-tracker-zpj-miner
-src/gnome-documents
 src/gnome-documents-debug
+src/gnome-documents-service
 src/gnome-documents-search-provider
 src/path.js
-src/org.gnome.Documents.SearchProvider.service
+src/org.gnome.Documents.service
 src/gnome-documents.gresource
 stamp-h1
 xmldocs.make

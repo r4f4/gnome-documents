@@ -103,8 +103,12 @@ const Application = new Lang.Class({
         GLib.set_application_name(_("Documents"));
 
         this.parent({ application_id: 'org.gnome.Documents',
-                      flags: Gio.ApplicationFlags.HANDLES_COMMAND_LINE,
+                      flags: Gio.ApplicationFlags.IS_SERVICE,
                       inactivity_timeout: 12000 });
+
+        this._searchProvider = new ShellSearchProvider.ShellSearchProvider();
+        this._searchProvider.connect('activate-result', Lang.bind(this, this._onActivateResult));
+        this._searchProvider.connect('launch-search', Lang.bind(this, this._onLaunchSearch));
     },
 
     _initGettingStarted: function() {
@@ -385,12 +389,10 @@ const Application = new Lang.Class({
         }
 
         connectionQueue = new TrackerController.TrackerConnectionQueue();
-        this._searchProvider = new ShellSearchProvider.ShellSearchProvider();
-        this._searchProvider.connect('activate-result', Lang.bind(this, this._onActivateResult));
-        this._searchProvider.connect('launch-search', Lang.bind(this, this._onLaunchSearch));
 
         // now init application components
         Search.initSearch(imports.application);
+        Search.initSearch(imports.shellSearchProvider);
 
         changeMonitor = new ChangeMonitor.TrackerChangeMonitor();
         documentManager = new Documents.DocumentManager();
@@ -498,22 +500,27 @@ const Application = new Lang.Class({
         this._startMiners();
     },
 
-    vfunc_activate: function() {
-        if (this._mainWindow) {
-            this._mainWindow.window.present_with_time(this._activationTimestamp);
-            this._activationTimestamp = Gdk.CURRENT_TIME;
-        }
+    vfunc_dbus_register: function(connection, path) {
+        this.parent(connection, path);
+
+        this._searchProvider.export(connection);
+        return true;
     },
 
-    vfunc_command_line: function(cmdline) {
-        let args = cmdline.get_arguments();
-        if (args.indexOf('--no-default-window') == -1) {
+    vfunc_dbus_unregister: function(connection, path) {
+        this._searchProvider.unexport(connection);
+
+        this.parent(connection, path);
+    },
+
+    vfunc_activate: function() {
+        if (!this._mainWindow) {
             this._createWindow();
             modeController.setWindowMode(WindowMode.WindowMode.OVERVIEW);
         }
 
-        this.activate();
-        return 0;
+        this._mainWindow.window.present_with_time(this._activationTimestamp);
+        this._activationTimestamp = Gdk.CURRENT_TIME;
     },
 
     _clearState: function() {

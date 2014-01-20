@@ -1,6 +1,6 @@
 [encoding: UTF-8]
-data/gnome-documents.appdata.xml.in
-data/gnome-documents.desktop.in.in
+data/org.gnome.Documents.appdata.xml.in
+data/org.gnome.Documents.desktop.in
 data/org.gnome.documents.gschema.xml
 src/application.js
 src/documents.js

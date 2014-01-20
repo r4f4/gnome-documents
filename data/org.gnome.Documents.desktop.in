@@ -6,6 +6,7 @@ Icon=gnome-documents
 Terminal=false
 Type=Application
 StartupNotify=true
+DBusActivatable=true
 OnlyShowIn=GNOME;
 Categories=GNOME;GTK;Utility;Core;
 _Keywords=Docs;PDF;Document;

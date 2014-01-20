@@ -113,7 +113,6 @@ libgd/Makefile
 src/Makefile
 data/Makefile
 data/icons/Makefile
-data/gnome-documents.desktop.in
 getting-started/Makefile
 man/Makefile
 po/Makefile.in

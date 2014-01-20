@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <application>
-  <id type="desktop">gnome-documents.desktop</id>
+  <id type="desktop">org.gnome.Documents.desktop</id>
   <licence>CC0</licence>
   <_name>Documents</_name>
   <_summary>A document manager application for GNOME</_summary>

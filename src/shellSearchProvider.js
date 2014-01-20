@@ -48,7 +48,6 @@ let searchController = null;
 let sourceManager = null;
 
 const SEARCH_PROVIDER_IFACE = 'org.gnome.Shell.SearchProvider2';
-const SEARCH_PROVIDER_NAME  = 'org.gnome.Documents.SearchProvider';
 const SEARCH_PROVIDER_PATH  = '/org/gnome/Documents/SearchProvider';
 
 const _SHELL_SEARCH_ICON_SIZE = 128;
@@ -361,23 +360,17 @@ const ShellSearchProvider = new Lang.Class({
     Name: 'ShellSearchProvider',
 
     _init: function() {
-        Application.application.hold();
-        Gio.DBus.own_name(Gio.BusType.SESSION,
-                          SEARCH_PROVIDER_NAME,
-                          Gio.BusNameOwnerFlags.NONE,
-                          Lang.bind(this, this._onBusAcquired),
-                          null, null);
-
+        this._impl = Gio.DBusExportedObject.wrapJSObject(SearchProviderIface, this);
         this._cache = {};
         this._cancellable = new Gio.Cancellable();
-
-        Search.initSearch(imports.shellSearchProvider);
     },
 
-    _onBusAcquired: function() {
-        let dbusImpl = Gio.DBusExportedObject.wrapJSObject(SearchProviderIface, this);
-        dbusImpl.export(Gio.DBus.session, SEARCH_PROVIDER_PATH);
-        Application.application.release();
+    export: function(connection) {
+        return this._impl.export(connection, SEARCH_PROVIDER_PATH);
+    },
+
+    unexport: function(connection) {
+        return this._impl.unexport_from_connection(connection);
     },
 
     _returnMetasFromCache: function(ids, invocation) {
