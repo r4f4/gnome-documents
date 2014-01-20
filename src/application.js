@@ -361,7 +361,6 @@ const Application = new Lang.Class({
         this.parent();
         String.prototype.format = Format.format;
 
-        Gtk.init(null);
         EvDoc.init();
 
         let resource = Gio.Resource.load(Path.RESOURCE_DIR + '/gnome-documents.gresource');
