@@ -5,13 +5,13 @@
 # colaborar connosco, podes atopar máis información en http://www.trasno.net
 # Fran Diéguez <frandieguez@gnome.org>, 2011, 2012.
 # Leandro Regueiro <leandro.regueiro@gmail.com>, 2012.
-# Fran Dieguez <frandieguez@gnome.org>, 2012, 2013.
+# Fran Dieguez <frandieguez@gnome.org>, 2012, 2013, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-documents master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-12-18 23:48+0100\n"
-"PO-Revision-Date: 2013-12-18 23:48+0200\n"
+"POT-Creation-Date: 2014-01-20 23:22+0100\n"
+"PO-Revision-Date: 2014-01-20 23:23+0200\n"
 "Last-Translator: Fran Dieguez <frandieguez@gnome.org>\n"
 "Language-Team: gnome-l10n-gl@gnome.org\n"
 "Language: gl\n"
@@ -24,7 +24,7 @@ msgstr ""
 
 #: ../data/gnome-documents.appdata.xml.in.h:1
 #: ../data/gnome-documents.desktop.in.in.h:1 ../src/application.js:103
-#: ../src/mainWindow.js:52 ../src/mainWindow.js:273
+#: ../src/mainWindow.js:52 ../src/mainWindow.js:274
 msgid "Documents"
 msgstr "Documentos"
 
@@ -72,7 +72,6 @@ msgid "Docs;PDF;Document;"
 msgstr "Documentos;PDF;Documento;"
 
 #: ../data/org.gnome.documents.gschema.xml.h:1
-#: ../src/resources/app-menu.ui.h:1
 msgid "View as"
 msgstr "Ver como"
 
@@ -105,80 +104,80 @@ msgid "Window maximized state"
 msgstr "Estado de xanela maximizada"
 
 #. Translators: this refers to local documents
-#: ../src/documents.js:599 ../src/search.js:417
+#: ../src/documents.js:601 ../src/search.js:418
 msgid "Local"
 msgstr "Locais"
 
 #. Translators: Documents ships a "Getting Started with Documents"
 #. tutorial PDF. The "GNOME" string below is displayed as the author name
 #. of that document, and doesn't normally need to be translated.
-#: ../src/documents.js:620
+#: ../src/documents.js:622
 msgid "GNOME"
 msgstr "GNOME"
 
-#: ../src/documents.js:621
+#: ../src/documents.js:623
 msgid "Getting Started with Documents"
 msgstr "Comezar con Documentos"
 
-#: ../src/documents.js:637 ../src/documents.js:802 ../src/documents.js:856
-#: ../src/documents.js:956
+#: ../src/documents.js:639 ../src/documents.js:804 ../src/documents.js:858
+#: ../src/documents.js:958
 msgid "Collection"
 msgstr "Colección"
 
 #. overridden
-#: ../src/documents.js:681
+#: ../src/documents.js:683
 msgid "Google Docs"
 msgstr "Google Docs"
 
-#: ../src/documents.js:682
+#: ../src/documents.js:684
 msgid "Google"
 msgstr "Google"
 
-#: ../src/documents.js:804 ../src/documents.js:958
+#: ../src/documents.js:806 ../src/documents.js:960
 msgid "Spreadsheet"
 msgstr "Folla de cálculo"
 
-#: ../src/documents.js:806 ../src/documents.js:960 ../src/presentation.js:47
+#: ../src/documents.js:808 ../src/documents.js:962 ../src/presentation.js:47
 msgid "Presentation"
 msgstr "Presentación"
 
-#: ../src/documents.js:808 ../src/documents.js:962
+#: ../src/documents.js:810 ../src/documents.js:964
 msgid "Document"
 msgstr "Documento"
 
 #. overridden
-#: ../src/documents.js:834
+#: ../src/documents.js:836
 msgid "ownCloud"
 msgstr "ownCloud"
 
 #. overridden
-#: ../src/documents.js:890 ../src/documents.js:891
+#: ../src/documents.js:892 ../src/documents.js:893
 msgid "Skydrive"
 msgstr "Skydrive"
 
-#: ../src/documents.js:1082
+#: ../src/documents.js:1084
 msgid "Please check the network connection."
 msgstr "Comprobe a conexión á rede."
 
-#: ../src/documents.js:1085
+#: ../src/documents.js:1087
 msgid "Please check the network proxy settings."
 msgstr "Comprobe as preferencias do proxy da rede."
 
-#: ../src/documents.js:1088
+#: ../src/documents.js:1090
 msgid "Unable to sign in to the document service."
 msgstr "Non foi posíbel iniciar sesión no servizo de documentos."
 
-#: ../src/documents.js:1091
+#: ../src/documents.js:1093
 msgid "Unable to locate this document."
 msgstr "Non foi posíbel atopar este documento."
 
-#: ../src/documents.js:1094
+#: ../src/documents.js:1096
 #, c-format
 msgid "Hmm, something is fishy (%d)."
 msgstr "Hmm, algo cheira mal (%d)."
 
 #. Translators: %s is the title of a document
-#: ../src/documents.js:1112
+#: ../src/documents.js:1114
 #, c-format
 msgid "Oops! Unable to load “%s”"
 msgstr "Oops! Non foi posíbel cargar «%s»"
@@ -196,18 +195,18 @@ msgstr "Cargando…"
 msgid "No Documents Found"
 msgstr "Non se atoparon documentos"
 
-#. Translators: %s here is "System Settings", which is in a separate string
-#. due to markup, and should be translated only in the context of this sentence
+#. Translators: %s here is "Settings", which is in a separate string due to
+#. markup, and should be translated only in the context of this sentence
 #: ../src/embed.js:167
 #, c-format
 msgid "You can add your online accounts in %s"
 msgstr "Pode engadir as súas contas en liña en %s"
 
 #. Translators: this should be translated in the context of the
-#. "You can add your online accounts in System Settings" sentence above
+#. "You can add your online accounts in Settings" sentence above
 #: ../src/embed.js:171
-msgid "System Settings"
-msgstr "Preferencias do sistema"
+msgid "Settings"
+msgstr "Preferencias"
 
 #: ../src/lib/gd-nav-bar.c:235
 #, c-format
@@ -254,37 +253,45 @@ msgstr "Buscar"
 msgid "Back"
 msgstr "Atrás"
 
-#: ../src/mainToolbar.js:170
+#: ../src/mainToolbar.js:163
+msgid "View items as a list"
+msgstr "Ver elementos como unha lista"
+
+#: ../src/mainToolbar.js:169
+msgid "View items as a grid of icons"
+msgstr "Ver elementos como unha grade de iconas"
+
+#: ../src/mainToolbar.js:203
 #, c-format
 msgid "Results for “%s”"
 msgstr "Resultados para «%s»"
 
-#: ../src/mainToolbar.js:178
+#: ../src/mainToolbar.js:211
 msgid "Click on items to select them"
 msgstr "Prema nos elementos para seleccionalos"
 
-#: ../src/mainToolbar.js:180
+#: ../src/mainToolbar.js:213
 #, c-format
 msgid "%d selected"
 msgid_plural "%d selected"
 msgstr[0] "%d seleccionado"
 msgstr[1] "%d seleccionados"
 
-#: ../src/mainToolbar.js:209
+#: ../src/mainToolbar.js:240
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: ../src/mainToolbar.js:250
+#: ../src/mainToolbar.js:282
 msgid "Select Items"
 msgstr "Seleccionar elementos"
 
-#: ../src/mainWindow.js:272
+#: ../src/mainWindow.js:273
 msgid "translator-credits"
 msgstr ""
 "Fran Dieguez <frandieguez@gnome.org>, 2012-2013.\n"
 "Leandro Regueiro <leandro.regueiro@gmail.com>, 2012."
 
-#: ../src/mainWindow.js:274
+#: ../src/mainWindow.js:275
 msgid "A document manager application"
 msgstr "Un aplicativo para xestionar documentos"
 
@@ -346,16 +353,16 @@ msgid "Bookmark this page"
 msgstr "Marcar esta páxina"
 
 #. Translators: this is the Open action in a context menu
-#: ../src/preview.js:892 ../src/selections.js:856
+#: ../src/preview.js:890 ../src/selections.js:856
 #, c-format
 msgid "Open with %s"
 msgstr "Abrir con %s"
 
-#: ../src/preview.js:953
+#: ../src/preview.js:951
 msgid "Find Previous"
 msgstr "Buscar anterior"
 
-#: ../src/preview.js:960
+#: ../src/preview.js:958
 msgid "Find Next"
 msgstr "Buscar seguinte"
 
@@ -407,27 +414,19 @@ msgctxt "Document Type"
 msgid "Type"
 msgstr "Tipo"
 
-#: ../src/resources/app-menu.ui.h:2
-msgid "Grid"
-msgstr "Grade"
-
-#: ../src/resources/app-menu.ui.h:3
-msgid "List"
-msgstr "Lista"
-
-#: ../src/resources/app-menu.ui.h:4
+#: ../src/resources/app-menu.ui.h:1
 msgid "Fullscreen"
 msgstr "Pantalla completa"
 
-#: ../src/resources/app-menu.ui.h:5
+#: ../src/resources/app-menu.ui.h:2
 msgid "Help"
 msgstr "Axuda"
 
-#: ../src/resources/app-menu.ui.h:6
+#: ../src/resources/app-menu.ui.h:3
 msgid "About"
 msgstr "Sobre"
 
-#: ../src/resources/app-menu.ui.h:7
+#: ../src/resources/app-menu.ui.h:4
 msgid "Quit"
 msgstr "Saír"
 
@@ -478,73 +477,73 @@ msgstr "Seleccionar todos"
 msgid "Select None"
 msgstr "Deseleccionar todos"
 
-#: ../src/search.js:113
+#: ../src/search.js:114
 msgid "Category"
 msgstr "Categoría"
 
 #. Translators: this refers to new and recent documents
 #. Translators: this refers to documents
-#: ../src/search.js:118 ../src/search.js:170 ../src/search.js:255
-#: ../src/search.js:411
+#: ../src/search.js:119 ../src/search.js:171 ../src/search.js:256
+#: ../src/search.js:412
 msgid "All"
 msgstr "Todos"
 
 #. Translators: this refers to favorite documents
-#: ../src/search.js:124
+#: ../src/search.js:125
 msgid "Favorites"
 msgstr "Marcadores"
 
 #. Translators: this refers to shared documents
-#: ../src/search.js:129
+#: ../src/search.js:130
 msgid "Shared with you"
 msgstr "Compartidos con vostede"
 
 #. Translators: "Type" refers to a search filter on the document type
 #. (PDF, spreadsheet, ...)
-#: ../src/search.js:167
+#: ../src/search.js:168
 msgctxt "Search Filter"
 msgid "Type"
 msgstr "Tipo"
 
-#: ../src/search.js:172
+#: ../src/search.js:173
 msgid "Collections"
 msgstr "Coleccións"
 
-#: ../src/search.js:176
+#: ../src/search.js:177
 msgid "PDF Documents"
 msgstr "Documentos PDF"
 
-#: ../src/search.js:180
+#: ../src/search.js:181
 msgid "Presentations"
 msgstr "Presentacións"
 
-#: ../src/search.js:183
+#: ../src/search.js:184
 msgid "Spreadsheets"
 msgstr "Follas de cálculo"
 
-#: ../src/search.js:186
+#: ../src/search.js:187
 msgid "Text Documents"
 msgstr "Documentos de texto"
 
 #. Translators: this is a verb that refers to "All", "Title" and "Author",
 #. as in "Match All", "Match Title" and "Match Author"
-#: ../src/search.js:252
+#: ../src/search.js:253
 msgid "Match"
 msgstr "Coincidir"
 
 #. Translators: "Title" refers to "Match Title" when searching
-#: ../src/search.js:258
+#: ../src/search.js:259
 msgctxt "Search Filter"
 msgid "Title"
 msgstr "Título"
 
 #. Translators: "Author" refers to "Match Author" when searching
-#: ../src/search.js:261
+#: ../src/search.js:262
 msgctxt "Search Filter"
 msgid "Author"
 msgstr "Autor"
 
-#: ../src/search.js:407
+#: ../src/search.js:408
 msgid "Sources"
 msgstr "Fontes"
 
@@ -711,6 +710,12 @@ msgid "%d year ago"
 msgid_plural "%d years ago"
 msgstr[0] "fai %d ano"
 msgstr[1] "fai %d anos"
+
+#~ msgid "Grid"
+#~ msgstr "Grade"
+
+#~ msgid "List"
+#~ msgstr "Lista"
 
 #~ msgid "About Documents"
 #~ msgstr "Sobre Documentos"
