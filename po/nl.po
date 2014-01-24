@@ -1,249 +1,700 @@
 # Dutch translation for Gnome Documents
-#
 # This file is distributed under the same license as the gnome-documents package.
-#
 # Wouter Bolsterlee <wbolster@gnome.org>, 2012
-#
+# Reinout van Schouwen <reinouts@gnome.org>, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-documents\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-02-04 15:33+0100\n"
-"PO-Revision-Date: 2012-02-04 15:43+0100\n"
-"Last-Translator: Wouter Bolsterlee <wbolster@gnome.org>\n"
+"POT-Creation-Date: 2014-01-24 23:11+0100\n"
+"PO-Revision-Date: 2014-01-24 23:34+0200\n"
+"Last-Translator: Reinout van Schouwen <reinouts@gnome.org>\n"
 "Language-Team: Dutch <vertaling@vrijschrift.org>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.7.1\n"
+"X-Project-Style: gnome\n"
 
-#: ../data/gnome-documents.desktop.in.in.h:1
-msgid "Access, manage and share documents"
-msgstr "Documenten gebruiken, beheren en delen"
-
-#: ../data/gnome-documents.desktop.in.in.h:2 ../src/mainWindow.js:53
+#: ../data/gnome-documents.appdata.xml.in.h:1
+#: ../data/gnome-documents.desktop.in.in.h:1 ../src/application.js:103
+#: ../src/mainWindow.js:52 ../src/mainWindow.js:274
 msgid "Documents"
 msgstr "Documenten"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:1
-msgid "The active source filter"
-msgstr "Actieve bronfilter"
+#: ../data/gnome-documents.appdata.xml.in.h:2
+msgid "A document manager application for GNOME"
+msgstr "Een Gnome-toepassing voor documentbeheer"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:2
-msgid "The last active source filter"
-msgstr "Recent actieve bronfilter"
+#: ../data/gnome-documents.appdata.xml.in.h:3
+msgid ""
+"A simple application to access, organize and share your documents on GNOME. "
+"It is meant to be a simple and elegant replacement for using a file manager "
+"to deal with documents. Seamless cloud integration is offered through GNOME "
+"Online Accounts."
+msgstr ""
+"Een eenvoudige toepassing om uw documenten op Gnome te benaderen, beheren en "
+"delen. Het is bedoeld als eenvoudige en elegante vervanging van een "
+"bestandsbeheerprogramma om documenten te beheren. Via Gnome Online Accounts "
+"wordt een naadloze integratie met de cloud geboden."
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:3 ../src/application.js:125
+#: ../data/gnome-documents.appdata.xml.in.h:4
+msgid "It lets you:"
+msgstr "Het laat u:"
+
+#: ../data/gnome-documents.appdata.xml.in.h:5
+msgid ""
+"<li>View recent local and online documents</li> <li>Access your Google, "
+"ownCloud or SkyDrive content</li> <li>Search through documents</li> <li>See "
+"new documents shared by friends</li> <li>View documents fullscreen</li> "
+"<li>Print documents</li> <li>Select favorites</li> <li>Allow opening full "
+"featured editor for non-trivial changes</li>"
+msgstr ""
+"<li>De recente lokale en on-line documenten weergeven</li> <li>Toegang tot "
+"uw Google-, ownCloud- of SkyDrive-inhoud</li> <li>Doorzoeken van "
+"documenten</li> <li>Nieuwe documenten gedeeld door vrienden zien</li> "
+"<li>Weergave van documenten in volledig scherm</li> <li>Documenten afdrukken</li> "
+"<li>Favorieten selecteren</li> <li>Het volledige bewerkingsprogramma openen "
+"voor niet-triviale veranderingen</li>"
+
+#: ../data/gnome-documents.desktop.in.in.h:2
+msgid "Access, manage and share documents"
+msgstr "Documenten gebruiken, beheren en delen"
+
+#: ../data/gnome-documents.desktop.in.in.h:3
+msgid "Docs;PDF;Document;"
+msgstr "Docs;PDF;Document;"
+
+#: ../data/org.gnome.documents.gschema.xml.h:1
 msgid "View as"
 msgstr "Tonen als"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:4
+#: ../data/org.gnome.documents.gschema.xml.h:2
 msgid "View as type"
 msgstr "Tonen als type"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:5
-msgid "Window maximized"
-msgstr "Gemaximaliseerd venster"
-
-#: ../data/org.gnome.documents.gschema.xml.in.h:6
-msgid "Window maximized state"
-msgstr "Gemaximaliseerd venster"
-
-#: ../data/org.gnome.documents.gschema.xml.in.h:7
-msgid "Window position"
-msgstr "Vensterpositie"
-
-#: ../data/org.gnome.documents.gschema.xml.in.h:8
-msgid "Window position (x and y)."
-msgstr "Vensterpositie (x en y)"
-
-#: ../data/org.gnome.documents.gschema.xml.in.h:9
+#: ../data/org.gnome.documents.gschema.xml.h:3
 msgid "Window size"
 msgstr "Venstergrootte"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:10
+#: ../data/org.gnome.documents.gschema.xml.h:4
 msgid "Window size (width and height)."
 msgstr "Venstergrootte (breedte en hoogte)"
 
-#: ../src/application.js:119
-msgid "Fullscreen"
-msgstr "Volledig scherm"
+#: ../data/org.gnome.documents.gschema.xml.h:5
+msgid "Window position"
+msgstr "Vensterpositie"
 
-#: ../src/application.js:120
-msgid "Quit"
-msgstr "Afsluiten"
+#: ../data/org.gnome.documents.gschema.xml.h:6
+msgid "Window position (x and y)."
+msgstr "Vensterpositie (x en y)"
 
-#: ../src/application.js:123
-msgid "Grid"
-msgstr "Rooster"
+#: ../data/org.gnome.documents.gschema.xml.h:7
+msgid "Window maximized"
+msgstr "Gemaximaliseerd venster"
 
-#: ../src/application.js:124
-msgid "List"
-msgstr "Lijst"
+#: ../data/org.gnome.documents.gschema.xml.h:8
+msgid "Window maximized state"
+msgstr "Gemaximaliseerd venster"
 
-#: ../src/documents.js:618 ../src/sources.js:100
+#: ../src/documents.js:601 ../src/search.js:418
 msgid "Local"
 msgstr "Lokaal"
 
-#. overridden
-#: ../src/documents.js:681
-msgid "Google Docs"
-msgstr "Google Docs"
+#: ../src/documents.js:622
+msgid "GNOME"
+msgstr "Gnome"
 
-#: ../src/documents.js:682
-msgid "Google"
-msgstr "Google"
+#: ../src/documents.js:623
+msgid "Getting Started with Documents"
+msgstr "Aan de slag met Documenten"
 
-#: ../src/documents.js:751
-msgid "Spreadsheet"
-msgstr "Spreadsheet"
-
-#: ../src/documents.js:753
-msgid "Presentation"
-msgstr "Presentatie"
-
-#: ../src/documents.js:755
+#: ../src/documents.js:639 ../src/documents.js:804 ../src/documents.js:858
+#: ../src/documents.js:958
 msgid "Collection"
 msgstr "Verzameling"
 
-#: ../src/documents.js:757
+#: ../src/documents.js:683
+msgid "Google Docs"
+msgstr "Google Docs"
+
+#: ../src/documents.js:684
+msgid "Google"
+msgstr "Google"
+
+#: ../src/documents.js:806 ../src/documents.js:960
+msgid "Spreadsheet"
+msgstr "Spreadsheet"
+
+#: ../src/documents.js:808 ../src/documents.js:962 ../src/presentation.js:47
+msgid "Presentation"
+msgstr "Presentatie"
+
+#: ../src/documents.js:810 ../src/documents.js:964
 msgid "Document"
 msgstr "Document"
 
-#. Translators: %s is the title of a document
-#: ../src/error.js:37
+#: ../src/documents.js:836
+msgid "ownCloud"
+msgstr "ownCloud"
+
+#: ../src/documents.js:892 ../src/documents.js:893
+msgid "Skydrive"
+msgstr "SkyDrive"
+
+#: ../src/documents.js:1084
+msgid "Please check the network connection."
+msgstr "Controleer de netwerkverbinding."
+
+#: ../src/documents.js:1087
+msgid "Please check the network proxy settings."
+msgstr "Controleer de netwerkproxy-instellingen."
+
+#: ../src/documents.js:1090
+msgid "Unable to sign in to the document service."
+msgstr "Kan niet aanmelden bij de documentservice."
+
+#: ../src/documents.js:1093
+msgid "Unable to locate this document."
+msgstr "Kan dit document niet vinden."
+
+#: ../src/documents.js:1096
+#, javascript-format
+msgid "Hmm, something is fishy (%d)."
+msgstr "Hmm, er lijkt iets mis te gaan (%d)."
+
+#: ../src/documents.js:1114
+#, javascript-format
+msgid "Oops! Unable to load “%s”"
+msgstr "Oeps! Niet in staat ‘%s’ te laden"
+
+#: ../src/edit.js:192
+msgid "View"
+msgstr "Beeld"
+
+#: ../src/embed.js:63 ../src/lib/gd-places-bookmarks.c:383
+#: ../src/lib/gd-places-links.c:257 ../src/view.js:71
+msgid "Loading…"
+msgstr "Laden…"
+
+#: ../src/embed.js:146
+msgid "No Documents Found"
+msgstr "Geen documenten gevonden"
+
+#: ../src/embed.js:167
+#, javascript-format
+msgid "You can add your online accounts in %s"
+msgstr "U kunt uw on-line-accounts toevoegen in %s"
+
+#: ../src/embed.js:171
+msgid "Settings"
+msgstr "Instellingen"
+
+#: ../src/lib/gd-nav-bar.c:235
 #, c-format
-msgid "Unable to load \"%s\" for preview"
-msgstr "Kon ‘%s’ niet laden voor voorbeeld"
+msgid "Page %u of %u"
+msgstr "Pagina %u van %u"
 
-#: ../src/error.js:49
-msgid "Unable to fetch the list of documents"
-msgstr "Kon lijst van documenten niet opvragen"
-
-#. right section
-#: ../src/lib/gd-main-toolbar.c:210
-msgid "Done"
-msgstr "Gereed"
-
-#: ../src/lib/gd-pdf-loader.c:207
+#: ../src/lib/gd-pdf-loader.c:247
 msgid "Unable to load the document"
 msgstr "Kon document niet laden"
 
-#: ../src/lib/gd-pdf-loader.c:488
-msgid "Cannot find \"unoconv\", please check your LibreOffice installation"
-msgstr "Kon ‘unoconv’ niet vinden; controleer of LibreOffice juist geïnstalleerd is"
+#: ../src/lib/gd-pdf-loader.c:715
+msgid "LibreOffice is required to view this document"
+msgstr "LibreOffice is vereist om dit document te bekijken"
 
-#: ../src/loadMore.js:70
+#. Translators: %s is the number of the page, already formatted
+#. * as a string, for example "Page 5".
+#.
+#: ../src/lib/gd-places-bookmarks.c:312
 #, c-format
-msgid "Load %d more document"
-msgid_plural "Load %d more documents"
-msgstr[0] "Nog %d document laden"
-msgstr[1] "Nog %d documenten laden"
+msgid "Page %s"
+msgstr "Pagina %s"
 
-#: ../src/mainToolbar.js:118
+#: ../src/lib/gd-places-bookmarks.c:375
+msgid "No bookmarks"
+msgstr "Geen bladwijzers"
+
+#: ../src/lib/gd-places-bookmarks.c:648 ../src/preview.js:594
+msgid "Bookmarks"
+msgstr "Bladwijzers"
+
+#: ../src/lib/gd-places-links.c:342
+msgid "No table of contents"
+msgstr "Geen inhoudsopgave"
+
+#: ../src/lib/gd-places-links.c:518
+msgid "Contents"
+msgstr "Inhoud"
+
+#: ../src/mainToolbar.js:79
+msgid "Search"
+msgstr "Zoeken"
+
+#: ../src/mainToolbar.js:90
+msgid "Back"
+msgstr "Terug"
+
+#: ../src/mainToolbar.js:163
+msgid "View items as a list"
+msgstr "Items weergeven als een lijst"
+
+#: ../src/mainToolbar.js:169
+msgid "View items as a grid of icons"
+msgstr "Items weergeven als een raster van pictogrammen"
+
+#: ../src/mainToolbar.js:203
+#, javascript-format
+msgid "Results for “%s”"
+msgstr "Resultaten voor ‘%s’"
+
+#: ../src/mainToolbar.js:211
 msgid "Click on items to select them"
 msgstr "Klik op een item om het te selecteren"
 
-#: ../src/mainToolbar.js:120
-#, c-format
+#: ../src/mainToolbar.js:213
+#, javascript-format
 msgid "%d selected"
-msgstr "%d geselecteerd"
+msgid_plural "%d selected"
+msgstr[0] "%d geselecteerd"
+msgstr[1] "%d geselecteerd"
 
-#: ../src/mainToolbar.js:165
-msgid "New and Recent"
-msgstr "Nieuw en recent"
+#: ../src/mainToolbar.js:240
+msgid "Cancel"
+msgstr "Annuleren"
 
-#: ../src/mainToolbar.js:187
-#, c-format
-msgid "(%d of %d)"
-msgstr "(%d van %d)"
+#: ../src/mainToolbar.js:282
+msgid "Select Items"
+msgstr "Items selecteren"
 
-#: ../src/searchbar.js:86
-msgid "Category"
-msgstr "Categorie"
+#: ../src/mainWindow.js:273
+msgid "translator-credits"
+msgstr ""
+"Wouter Bolsterlee <wbolster@gnome.org>.\n"
+"Reinout van Schouwen <reinouts@gnome.org>"
 
-#: ../src/searchbar.js:91 ../src/searchbar.js:141 ../src/searchbar.js:208
-#: ../src/sources.js:94
-msgid "All"
-msgstr "Alles"
+#: ../src/mainWindow.js:275
+msgid "A document manager application"
+msgstr "Een toepassing voor documentbeheer"
 
-#: ../src/searchbar.js:97
-msgid "Favorites"
-msgstr "Favorieten"
+#: ../src/notifications.js:87
+#, javascript-format
+msgid "Printing “%s”: %s"
+msgstr "Afdrukken van ‘%s’: %s"
 
-#: ../src/searchbar.js:102
-msgid "Shared with you"
-msgstr "Met u gedeeld"
+#: ../src/notifications.js:143
+msgid "Your documents are being indexed"
+msgstr "Uw documenten worden geïndexeerd"
 
-#: ../src/searchbar.js:138
+#: ../src/notifications.js:144
+msgid "Some documents might not be available during this process"
+msgstr "Sommige documenten kunnen tijdens deze bewerking niet beschikbaar zijn"
+
+#: ../src/notifications.js:166
+#, javascript-format
+msgid "Fetching documents from %s"
+msgstr "Documenten ophalen van %s"
+
+#: ../src/notifications.js:168
+msgid "Fetching documents from online accounts"
+msgstr "Documenten ophalen uit on-line-accounts"
+
+#: ../src/password.js:45
+msgid "Password Required"
+msgstr "Wachtwoord vereist"
+
+#: ../src/password.js:48
+msgid "_Unlock"
+msgstr "_Ontgrendelen"
+
+#: ../src/password.js:64
+#, javascript-format
+msgid "Document %s is locked and requires a password to be opened."
+msgstr ""
+"Het document ‘%s’ is beveiligd en vereist een wachtwoord voordat het geopend "
+"kan worden."
+
+#: ../src/password.js:78
+msgid "_Password"
+msgstr "_Wachtwoord"
+
+#: ../src/places.js:59
+msgid "Close"
+msgstr "Sluiten"
+
+#: ../src/presentation.js:104
+msgid "Running in presentation mode"
+msgstr "Uitgevoerd in de presentatiemodus"
+
+#: ../src/presentation.js:157
+msgid "Present On"
+msgstr "Presenteren op"
+
+#: ../src/preview.js:603
+msgid "Bookmark this page"
+msgstr "Bladwijzer voor deze pagina toevoegen"
+
+#: ../src/preview.js:890 ../src/selections.js:856
+#, javascript-format
+msgid "Open with %s"
+msgstr "Openen met %s"
+
+#: ../src/preview.js:951
+msgid "Find Previous"
+msgstr "Vorige zoeken"
+
+#: ../src/preview.js:958
+msgid "Find Next"
+msgstr "Volgende zoeken"
+
+#: ../src/properties.js:60 ../src/resources/preview-menu.ui.h:9
+#: ../src/selections.js:766
+msgid "Properties"
+msgstr "Eigenschappen"
+
+#: ../src/properties.js:62 ../src/sharing.js:101
+msgid "Done"
+msgstr "Gereed"
+
+#: ../src/properties.js:82
+msgctxt "Document Title"
+msgid "Title"
+msgstr "Titel"
+
+#: ../src/properties.js:91
+msgctxt "Document Author"
+msgid "Author"
+msgstr "Auteur"
+
+#: ../src/properties.js:98
+msgid "Source"
+msgstr "Bron"
+
+#: ../src/properties.js:104
+msgid "Date Modified"
+msgstr "Datum gewijzigd"
+
+#: ../src/properties.js:111
+msgid "Date Created"
+msgstr "Datum aangemaakt"
+
+#: ../src/properties.js:120
+msgctxt "Document Type"
 msgid "Type"
 msgstr "Type"
 
-#: ../src/searchbar.js:143
+#: ../src/resources/app-menu.ui.h:1
+msgid "Fullscreen"
+msgstr "Volledig scherm"
+
+#: ../src/resources/app-menu.ui.h:2
+msgid "Help"
+msgstr "Hulp"
+
+#: ../src/resources/app-menu.ui.h:3
+msgid "About"
+msgstr "Info"
+
+#: ../src/resources/app-menu.ui.h:4
+msgid "Quit"
+msgstr "Afsluiten"
+
+#: ../src/resources/preview-context-menu.ui.h:1
+msgid "_Copy"
+msgstr "_Kopiëren"
+
+#: ../src/resources/preview-menu.ui.h:1 ../src/selections.js:746
+#: ../src/selections.js:859
+msgid "Open"
+msgstr "Openen"
+
+#: ../src/resources/preview-menu.ui.h:2
+msgid "Edit"
+msgstr "Bewerken"
+
+#: ../src/resources/preview-menu.ui.h:3
+msgid "Print…"
+msgstr "Afdrukken…"
+
+#: ../src/resources/preview-menu.ui.h:4
+msgid "Present"
+msgstr "Presenteren"
+
+#: ../src/resources/preview-menu.ui.h:5
+msgid "Zoom In"
+msgstr "Inzoomen"
+
+#: ../src/resources/preview-menu.ui.h:6
+msgid "Zoom Out"
+msgstr "Uitzoomen"
+
+#: ../src/resources/preview-menu.ui.h:7
+msgid "Rotate ↶"
+msgstr "Roteren ↶"
+
+#: ../src/resources/preview-menu.ui.h:8
+msgid "Rotate ↷"
+msgstr "Roteren ↷"
+
+#: ../src/resources/selection-menu.ui.h:1
+msgid "Select All"
+msgstr "Alles selecteren"
+
+#: ../src/resources/selection-menu.ui.h:2
+msgid "Select None"
+msgstr "Niets selecteren"
+
+#: ../src/search.js:114
+msgid "Category"
+msgstr "Categorie"
+
+#: ../src/search.js:119 ../src/search.js:171 ../src/search.js:256
+#: ../src/search.js:412
+msgid "All"
+msgstr "Alles"
+
+#: ../src/search.js:125
+msgid "Favorites"
+msgstr "Favorieten"
+
+#: ../src/search.js:130
+msgid "Shared with you"
+msgstr "Met u gedeeld"
+
+#: ../src/search.js:168
+msgctxt "Search Filter"
+msgid "Type"
+msgstr "Type"
+
+#: ../src/search.js:173
 msgid "Collections"
 msgstr "Verzamelingen"
 
-#: ../src/searchbar.js:147
+#: ../src/search.js:177
 msgid "PDF Documents"
 msgstr "PDF-documenten"
 
-#: ../src/searchbar.js:150
+#: ../src/search.js:181
 msgid "Presentations"
 msgstr "Presentaties"
 
-#: ../src/searchbar.js:153
+#: ../src/search.js:184
 msgid "Spreadsheets"
 msgstr "Spreadsheets"
 
-#: ../src/searchbar.js:156
+#: ../src/search.js:187
 msgid "Text Documents"
 msgstr "Tekstdocumenten"
 
 # ???
-#: ../src/searchbar.js:205
+#: ../src/search.js:253
 msgid "Match"
 msgstr "Resultaat"
 
-#: ../src/searchbar.js:210
+#: ../src/search.js:259
+msgctxt "Search Filter"
 msgid "Title"
 msgstr "Titel"
 
-#: ../src/searchbar.js:212
+#: ../src/search.js:262
+msgctxt "Search Filter"
 msgid "Author"
 msgstr "Auteur"
 
-#: ../src/selections.js:663
-msgid "Organize"
-msgstr "Organiseren"
-
-#: ../src/selections.js:670
-msgid "Delete"
-msgstr "Verwijderen"
-
-#. Translators: this is the Open action in a context menu
-#: ../src/selections.js:761 ../src/view.js:67
-#, c-format
-msgid "Open with %s"
-msgstr "Openen met %s"
-
-#. Translators: this is the Open action in a context menu
-#: ../src/selections.js:764 ../src/view.js:70
-msgid "Open"
-msgstr "Openen"
-
-#: ../src/selections.js:777 ../src/view.js:80
-msgid "Remove from favorites"
-msgstr "Uit favorieten verwijderen"
-
-#: ../src/selections.js:781 ../src/view.js:80
-msgid "Add to favorites"
-msgstr "Aan favorieten toevoegen"
-
-#: ../src/sources.js:90
+#: ../src/search.js:408
 msgid "Sources"
 msgstr "Bronnen"
 
-#: ../src/spinnerBox.js:58
-msgid "Loading..."
-msgstr "Laden…"
+#: ../src/selections.js:461
+msgid "You don't have any collections yet. Enter a new collection name above."
+msgstr ""
+"U heeft nog geen collecties. Voer hierboven een nieuwe collectienaam in."
+
+#: ../src/selections.js:604
+msgid "Create new collection"
+msgstr "Een nieuwe verzameling aanmaken"
+
+#: ../src/selections.js:639
+msgctxt "Dialog Title"
+msgid "Collections"
+msgstr "Verzamelingen"
+
+#: ../src/selections.js:751
+msgid "Print"
+msgstr "Print"
+
+#: ../src/selections.js:756
+msgid "Delete"
+msgstr "Verwijderen"
+
+#: ../src/selections.js:761
+msgid "Add to Collection"
+msgstr "Aan verzameling toevoegen"
+
+#: ../src/selections.js:771
+msgid "Share"
+msgstr "Delen"
+
+#: ../src/sharing.js:97
+msgid "Sharing Settings"
+msgstr "Instellingen voor delen"
+
+#: ../src/sharing.js:134
+msgid "Document permissions"
+msgstr "Documentrechten"
+
+#: ../src/sharing.js:141 ../src/sharing.js:319
+msgid "Change"
+msgstr "Wijzigen"
+
+#: ../src/sharing.js:165 ../src/sharing.js:294
+msgid "Private"
+msgstr "Privé"
+
+#: ../src/sharing.js:175 ../src/sharing.js:287
+msgid "Public"
+msgstr "Openbaar"
+
+#: ../src/sharing.js:179 ../src/sharing.js:289
+msgid "Everyone can edit"
+msgstr "Iedereen kan bewerken"
+
+#: ../src/sharing.js:186
+msgid "Add people"
+msgstr "Personen toevoegen"
+
+#: ../src/sharing.js:193
+msgid "Enter an email address"
+msgstr "Vul een e-mailadres in"
+
+#: ../src/sharing.js:208 ../src/sharing.js:375
+msgid "Can edit"
+msgstr "Kan bewerken"
+
+#: ../src/sharing.js:208 ../src/sharing.js:378
+msgid "Can view"
+msgstr "Kan bekijken"
+
+#: ../src/sharing.js:215
+msgid "Add"
+msgstr "Toevoegen"
+
+#: ../src/sharing.js:291
+msgid "Everyone can read"
+msgstr "Iedereen kan lezen"
+
+#: ../src/sharing.js:306
+msgid "Save"
+msgstr "Opslaan"
+
+#: ../src/sharing.js:372
+msgid "Owner"
+msgstr "Eigenaar"
+
+#: ../src/sharing.js:441
+#, javascript-format
+msgid "You can ask %s for access"
+msgstr "U kunt %s vragen om toegang"
+
+#: ../src/sharing.js:478 ../src/sharing.js:514 ../src/sharing.js:571
+#: ../src/sharing.js:588 ../src/sharing.js:607
+msgid "The document was not updated"
+msgstr "Het document is niet bijgewerkt"
+
+#: ../src/shellSearchProvider.js:295
+msgid "Untitled Document"
+msgstr "Naamloos document"
+
+#: ../src/trackerController.js:170
+msgid "Unable to fetch the list of documents"
+msgstr "Kon lijst van documenten niet opvragen"
+
+#: ../src/view.js:62 ../src/view.js:93
+msgid "Load More"
+msgstr "Meer laden"
+
+#: ../src/view.js:295
+msgid "Yesterday"
+msgstr "Gisteren"
+
+#: ../src/view.js:297
+#, javascript-format
+msgid "%d day ago"
+msgid_plural "%d days ago"
+msgstr[0] "%d dag geleden"
+msgstr[1] "%d dagen geleden"
+
+#: ../src/view.js:301
+msgid "Last week"
+msgstr "Vorige week"
+
+#: ../src/view.js:303
+#, javascript-format
+msgid "%d week ago"
+msgid_plural "%d weeks ago"
+msgstr[0] "%d week geleden"
+msgstr[1] "%d weken geleden"
+
+#: ../src/view.js:307
+msgid "Last month"
+msgstr "Vorige maand"
+
+#: ../src/view.js:309
+#, javascript-format
+msgid "%d month ago"
+msgid_plural "%d months ago"
+msgstr[0] "%d maand geleden"
+msgstr[1] "%d maanden geleden"
+
+#: ../src/view.js:313
+msgid "Last year"
+msgstr "Vorig jaar"
+
+#: ../src/view.js:315
+#, javascript-format
+msgid "%d year ago"
+msgid_plural "%d years ago"
+msgstr[0] "%d jaar geleden"
+msgstr[1] "%d jaar geleden"
+
+#~ msgid "The active source filter"
+#~ msgstr "Actieve bronfilter"
+
+#~ msgid "The last active source filter"
+#~ msgstr "Recent actieve bronfilter"
+
+#~ msgid "Grid"
+#~ msgstr "Rooster"
+
+#~ msgid "List"
+#~ msgstr "Lijst"
+
+#~ msgid "Unable to load \"%s\" for preview"
+#~ msgstr "Kon ‘%s’ niet laden voor voorbeeld"
+
+#~ msgid "Cannot find \"unoconv\", please check your LibreOffice installation"
+#~ msgstr ""
+#~ "Kon ‘unoconv’ niet vinden; controleer of LibreOffice juist geïnstalleerd "
+#~ "is"
+
+#~ msgid "Load %d more document"
+#~ msgid_plural "Load %d more documents"
+#~ msgstr[0] "Nog %d document laden"
+#~ msgstr[1] "Nog %d documenten laden"
+
+#~ msgid "New and Recent"
+#~ msgstr "Nieuw en recent"
+
+#~ msgid "(%d of %d)"
+#~ msgstr "(%d van %d)"
+
+#~ msgid "Organize"
+#~ msgstr "Organiseren"
+
+#~ msgid "Remove from favorites"
+#~ msgstr "Uit favorieten verwijderen"
+
+#~ msgid "Add to favorites"
+#~ msgstr "Aan favorieten toevoegen"
