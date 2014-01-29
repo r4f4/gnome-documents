@@ -206,8 +206,8 @@ const MainWindow = new Lang.Class({
         let state = event.get_state()[1];
 
         let isBack = (((state & Gdk.ModifierType.MOD1_MASK) != 0 &&
-                       (direction == Gtk.TextDirection.LTR && keyval == Gdk.KEY_Left) ||
-                       (direction == Gtk.TextDirection.RTL && keyval == Gdk.KEY_Right)) ||
+                       ((direction == Gtk.TextDirection.LTR && keyval == Gdk.KEY_Left) ||
+                       (direction == Gtk.TextDirection.RTL && keyval == Gdk.KEY_Right))) ||
                       keyval == Gdk.KEY_Back);
 
         return isBack;
