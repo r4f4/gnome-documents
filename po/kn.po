@@ -1,7 +1,7 @@
 # Kannada translation for gnome-documents.
 # Copyright (C) 2012 gnome-documents's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-documents package.
-#
+# 
 # Shankar Prasad <prasad.mvs@gmail.com>, 2012.
 # Shankar Prasad <svenkate@redhat.com>, 2012, 2013.
 msgid ""
@@ -10,18 +10,20 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2013-03-04 21:13+0000\n"
-"PO-Revision-Date: 2013-03-15 18:20+0530\n"
+"PO-Revision-Date: 2013-03-15 08:44-0400\n"
 "Last-Translator: Shankar Prasad <svenkate@redhat.com>\n"
 "Language-Team: Kannada <kn@li.org>\n"
-"Language: kn\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: kn\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
-"X-Generator: Lokalize 1.5\n"
+"X-Generator: Zanata 3.2.3\n"
 
-#: ../data/gnome-documents.desktop.in.in.h:1 ../src/application.js:101
-#: ../src/mainWindow.js:53 ../src/mainWindow.js:274
+#: ../data/gnome-documents.desktop.in.in.h:1
+#: ../src/application.js:102
+#: ../src/mainWindow.js:53
+#: ../src/mainWindow.js:274
 msgid "Documents"
 msgstr "ದಸ್ತಾವೇಜುಗಳು"
 
@@ -66,102 +68,111 @@ msgstr "ಕಿಟಕಿಯನ್ನು ಹಿಗ್ಗಿಸಲಾಗಿದೆ"
 msgid "Window maximized state"
 msgstr "ಕಿಟಕಿಯ ಹಿಗ್ಗಿಸಲಾದ ಸ್ಥಿತಿ"
 
-#: ../src/documents.js:590 ../src/search.js:416
+#. Translators: this refers to local documents
+#: ../src/documents.js:586
+#: ../src/search.js:416
 msgid "Local"
 msgstr "ಸ್ಥಳೀಯ"
 
-#: ../src/documents.js:608
+#. Translators: Documents ships a "Getting Started with Documents"
+#. tutorial PDF. The "GNOME" string below is displayed as the author name
+#. of that document, and doesn't normally need to be translated.
+#: ../src/documents.js:607
 msgid "GNOME"
 msgstr "GNOME"
 
-#: ../src/documents.js:609
+#: ../src/documents.js:608
 msgid "Getting Started with Documents"
 msgstr "ದಸ್ತಾವೇಜುಗಳು ಅನ್ವಯವನ್ನು ಬಳಸಲು ಪ್ರಾರಂಭಿಸಿ"
 
 #. overridden
-#: ../src/documents.js:656
+#: ../src/documents.js:662
 msgid "Google Docs"
 msgstr "ಗೂಗಲ್ ಡಾಕ್ಸ್‍"
 
-#: ../src/documents.js:657
+#: ../src/documents.js:663
 msgid "Google"
 msgstr "ಗೂಗಲ್"
 
-#: ../src/documents.js:721 ../src/documents.js:820
+#: ../src/documents.js:781
+#: ../src/documents.js:879
 msgid "Spreadsheet"
 msgstr "ಸ್ಪ್ರೆಡ್‌ಶೀಟ್"
 
-#: ../src/documents.js:723 ../src/documents.js:822 ../src/presentation.js:48
+#: ../src/documents.js:783
+#: ../src/documents.js:881
+#: ../src/presentation.js:48
 msgid "Presentation"
 msgstr "ಪ್ರಸ್ತುತಿ"
 
-#: ../src/documents.js:725 ../src/documents.js:824
+#: ../src/documents.js:785
+#: ../src/documents.js:883
 msgid "Collection"
 msgstr "ಸಂಗ್ರಹ"
 
-#: ../src/documents.js:727 ../src/documents.js:826
+#: ../src/documents.js:787
+#: ../src/documents.js:885
 msgid "Document"
 msgstr "ದಸ್ತಾವೇಜು"
 
 #. overridden
-#: ../src/documents.js:754 ../src/documents.js:755
+#: ../src/documents.js:813
+#: ../src/documents.js:814
 msgid "Skydrive"
 msgstr "ಸ್ಕೈಡ್ರೈವ್"
 
-#: ../src/documents.js:939
+#: ../src/documents.js:998
 msgid "Please check the network connection."
 msgstr "ದಯವಿಟ್ಟು ಜಾಲಬಂಧ ಸಂಪರ್ಕವನ್ನು ಪರೀಕ್ಚಿಸಿ."
 
-#: ../src/documents.js:942
+#: ../src/documents.js:1001
 msgid "Please check the network proxy settings."
 msgstr "ದಯವಿಟ್ಟು ಜಾಲಬಂಧ ಪ್ರಾಕ್ಸಿ ಸಿದ್ಧತೆಗಳನ್ನು ಪರೀಕ್ಚಿಸಿ."
 
-#: ../src/documents.js:945
-#| msgid "Unable to load the document"
+#: ../src/documents.js:1004
 msgid "Unable to sign in to the document service."
 msgstr "ದಸ್ತಾವೇಜು ಸೇವೆಗೆ ಪ್ರವೇಶಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ."
 
-#: ../src/documents.js:948
-#| msgid "Unable to load the document"
+#: ../src/documents.js:1007
 msgid "Unable to locate this document."
 msgstr "ಈ ದಸ್ತಾವೇಜು ಕಂಡುಬಂದಿಲ್ಲ."
 
-#: ../src/documents.js:951
+#: ../src/documents.js:1010
 #, c-format
 msgid "Hmm, something is fishy (%d)."
 msgstr "ಓಹೋ, ಸಂಶಯಾಸ್ಪದವಾಗಿದೆ (%d)."
 
 #. Translators: %s is the title of a document
-#: ../src/documents.js:964
+#: ../src/documents.js:1028
 #, c-format
 msgid "Oops! Unable to load “%s”"
 msgstr "ಅಯ್ಯೋ! ಲೋಡ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ “%s”"
 
 #: ../src/edit.js:191
-#| msgid "View as"
 msgid "View"
 msgstr "ನೋಟ"
 
-#: ../src/embed.js:63 ../src/lib/gd-places-bookmarks.c:379
-#: ../src/lib/gd-places-links.c:257 ../src/view.js:70
-#| msgid "Loading..."
+#: ../src/embed.js:64
+#: ../src/lib/gd-places-bookmarks.c:383
+#: ../src/lib/gd-places-links.c:257
+#: ../src/view.js:71
 msgid "Loading…"
 msgstr "ಲೋಡ್ ಮಾಡಲಾಗುತ್ತಿದೆ…"
 
-#: ../src/embed.js:145
+#: ../src/embed.js:146
 msgid "No Documents Found"
 msgstr "ಯಾವುದೆ ದಸ್ತಾವೇಜುಗಳು ಕಂಡುಬಂದಿಲ್ಲ"
 
 #. Translators: %s here is "System Settings", which is in a separate string
 #. due to markup, and should be translated only in the context of this sentence
-#: ../src/embed.js:166
+#: ../src/embed.js:167
 #, c-format
 msgid "You can add your online accounts in %s"
 msgstr "ನೀವು ನಿಮ್ಮ ಆನ್‌ಲೈನ್ ಖಾತೆಗಳನ್ನು %s ಎಂಬಲ್ಲಿ ಸೇರಿಸಬಹುದು"
 
 #. Translators: this should be translated in the context of the
 #. "You can add your online accounts in System Settings" sentence above
-#: ../src/embed.js:170
+#: ../src/embed.js:171
 msgid "System Settings"
 msgstr "ವ್ಯವಸ್ಥೆಯ ಸಂಯೋಜನೆಗಳು"
 
@@ -170,24 +181,26 @@ msgstr "ವ್ಯವಸ್ಥೆಯ ಸಂಯೋಜನೆಗಳು"
 msgid "Page %u of %u"
 msgstr "ಪುಟ %u, %u ರಲ್ಲಿ"
 
-#: ../src/lib/gd-pdf-loader.c:226
+#: ../src/lib/gd-pdf-loader.c:247
 msgid "Unable to load the document"
 msgstr "ದಸ್ತಾವೇಜನ್ನು ಲೋಡ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ"
 
-#: ../src/lib/gd-pdf-loader.c:676
+#: ../src/lib/gd-pdf-loader.c:717
 msgid "LibreOffice is required to view this document"
 msgstr "ಈ ದಸ್ತಾವೇಜನ್ನು ನೋಡಲು LibreOffice ಅಗತ್ಯವಿದೆ"
 
-#: ../src/lib/gd-places-bookmarks.c:309
+#. Translators: %s is the number of the page, already formatted
+#. * as a string, for example "Page 5".
+#: ../src/lib/gd-places-bookmarks.c:312
 #, c-format
 msgid "Page %s"
 msgstr "ಪುಟ %s"
 
-#: ../src/lib/gd-places-bookmarks.c:372
+#: ../src/lib/gd-places-bookmarks.c:375
 msgid "No bookmarks"
 msgstr "ಯಾವುದೆ ಪುಟಗುರುತುಗಳಿಲ್ಲ"
 
-#: ../src/lib/gd-places-bookmarks.c:644
+#: ../src/lib/gd-places-bookmarks.c:648
 msgid "Bookmarks"
 msgstr "ಪುಟಗುರುತುಗಳು"
 
@@ -199,25 +212,24 @@ msgstr "ಒಳಪಿಡಿಗಳಿಲ್ಲ"
 msgid "Contents"
 msgstr "ಒಳಪಿಡಿಗಳು"
 
-#: ../src/mainToolbar.js:62
+#: ../src/mainToolbar.js:78
 msgid "Search"
 msgstr "ಹುಡುಕು"
 
-#: ../src/mainToolbar.js:73
+#: ../src/mainToolbar.js:89
 msgid "Back"
 msgstr "ಹಿಂದಕ್ಕೆ"
 
-#: ../src/mainToolbar.js:153
+#: ../src/mainToolbar.js:169
 #, c-format
-#| msgid "Results for \"%s\""
 msgid "Results for “%s”"
 msgstr "“%s” ಗಾಗಿನ ಫಲಿತಾಂಶಗಳು"
 
-#: ../src/mainToolbar.js:161
+#: ../src/mainToolbar.js:177
 msgid "Click on items to select them"
 msgstr "ಅಂಶಗಳನ್ನು ಆರಿಸಲು ಅವುಗಳ ಮೇಲೆ ಕ್ಲಿಕ್ ಮಾಡಿ"
 
-#: ../src/mainToolbar.js:163
+#: ../src/mainToolbar.js:179
 #, c-format
 msgid "%d selected"
 msgid_plural "%d selected"
@@ -225,11 +237,13 @@ msgstr[0] "%d ಅನ್ನು ಆರಿಸಲಾಗಿದೆ"
 msgstr[1] "%d ಅನ್ನು ಆರಿಸಲಾಗಿದೆ"
 
 #. Label for Done button in Sharing dialog
-#: ../src/mainToolbar.js:192 ../src/properties.js:59 ../src/sharing.js:93
+#: ../src/mainToolbar.js:208
+#: ../src/properties.js:59
+#: ../src/sharing.js:93
 msgid "Done"
 msgstr "ಆಯಿತು"
 
-#: ../src/mainToolbar.js:233
+#: ../src/mainToolbar.js:249
 msgid "Select Items"
 msgstr "ಅಂಶಗಳನ್ನು ಆರಿಸಿ"
 
@@ -243,7 +257,6 @@ msgstr "ಒಂದು ದಸ್ತಾವೇಜು ವ್ಯವಸ್ಥಾಪಕ 
 
 #: ../src/notifications.js:87
 #, c-format
-#| msgid "Printing \"%s\": %s"
 msgid "Printing “%s”: %s"
 msgstr "“%s” ಅನ್ನು ಮುದ್ರಿಸಲಾಗುತ್ತಿದೆ: %s"
 
@@ -255,12 +268,14 @@ msgstr "ನಿಮ್ಮ ದಸ್ತಾವೇಜುಗಳನ್ನು ಸೂಚ�
 msgid "Some documents might not be available during this process"
 msgstr "ಈ ಪ್ರಕ್ರಿಯೆಯ ಸಮಯದಲ್ಲಿ ಕೆಲವು ದಸ್ತಾವೇಜುಗಳು ಲಭ್ಯವಿರದೆ ಇರಬಹುದು."
 
-#: ../src/notifications.js:164
+#. Translators: %s refers to an online account provider, e.g.
+#. "Google", or "Windows Live".
+#: ../src/notifications.js:166
 #, c-format
 msgid "Fetching documents from %s"
 msgstr "%s ಇಂದ ದಸ್ತಾವೇಜುಗಳನ್ನು ಪಡೆಯಲಾಗುತ್ತಿದೆ"
 
-#: ../src/notifications.js:166
+#: ../src/notifications.js:168
 msgid "Fetching documents from online accounts"
 msgstr "ಆನ್‌ಲೈನ್ ಖಾತೆಗಳಿಂದ ದಸ್ತಾವೇಜುಗಳನ್ನು ಪಡೆಯಲಾಗುತ್ತಿದೆ"
 
@@ -269,12 +284,12 @@ msgid "Running in presentation mode"
 msgstr "ಪ್ರದರ್ಶನ ಕ್ರಮದಲ್ಲಿ ಚಲಾಯಿಸಲಾಗುತ್ತಿದೆ"
 
 #: ../src/presentation.js:158
-#| msgid "Presentation"
 msgid "Present On"
 msgstr "ಇಲ್ಲಿ ಪ್ರಸ್ತುತಿ ಮಾಡಲಾಗುತ್ತಿದೆ"
 
-#: ../src/properties.js:57 ../src/resources/preview-menu.ui.h:9
-#: ../src/selections.js:779
+#: ../src/properties.js:57
+#: ../src/resources/preview-menu.ui.h:9
+#: ../src/selections.js:781
 msgid "Properties"
 msgstr "ಗುಣಗಳು"
 
@@ -282,28 +297,30 @@ msgstr "ಗುಣಗಳು"
 #. Translators: "Title" is the label next to the document title
 #. in the properties dialog
 #. Translators: "Title" refers to "Match Title" when searching
-#: ../src/properties.js:78 ../src/search.js:257
+#: ../src/properties.js:79
+#: ../src/search.js:257
 msgid "Title"
 msgstr "ಶೀರ್ಷಿಕೆ"
 
 #. Translators: "Author" is the label next to the document author
 #. in the properties dialog
 #. Translators: "Author" refers to "Match Author" when searching
-#: ../src/properties.js:87 ../src/search.js:260
+#: ../src/properties.js:88
+#: ../src/search.js:260
 msgid "Author"
 msgstr "ಕತೃ"
 
 #. Source item
-#: ../src/properties.js:94
+#: ../src/properties.js:95
 msgid "Source"
 msgstr "ಆಕರ"
 
 #. Date Modified item
-#: ../src/properties.js:100
+#: ../src/properties.js:101
 msgid "Date Modified"
 msgstr "ಮಾರ್ಪಡಿಸಿದ ದಿನಾಂಕ"
 
-#: ../src/properties.js:107
+#: ../src/properties.js:108
 msgid "Date Created"
 msgstr "ರಚಿಸಿದ ದಿನಾಂಕ"
 
@@ -312,7 +329,8 @@ msgstr "ರಚಿಸಿದ ದಿನಾಂಕ"
 #. (PDF, spreadsheet, ...) in the properties dialog
 #. Translators: "Type" refers to a search filter on the document type
 #. (PDF, spreadsheet, ...)
-#: ../src/properties.js:116 ../src/search.js:166
+#: ../src/properties.js:117
+#: ../src/search.js:166
 msgid "Type"
 msgstr "ಬಗೆ"
 
@@ -341,7 +359,8 @@ msgid "Quit"
 msgstr "ನಿರ್ಗಮಿಸು"
 
 #. Translators: this is the Open action in a context menu
-#: ../src/resources/preview-menu.ui.h:1 ../src/selections.js:875
+#: ../src/resources/preview-menu.ui.h:1
+#: ../src/selections.js:877
 msgid "Open"
 msgstr "ತೆರೆ"
 
@@ -354,7 +373,6 @@ msgid "Print…"
 msgstr "ಮುದ್ರಿಸು…"
 
 #: ../src/resources/preview-menu.ui.h:4
-#| msgid "Presentation"
 msgid "Present"
 msgstr "ಪ್ರಸಕ್ತ"
 
@@ -367,12 +385,10 @@ msgid "Zoom Out"
 msgstr "ಕುಗ್ಗಿಸು"
 
 #: ../src/resources/preview-menu.ui.h:7
-#| msgid "Rotate Left"
 msgid "Rotate ↶"
 msgstr "↶ ತಿರುಗಿಸು"
 
 #: ../src/resources/preview-menu.ui.h:8
-#| msgid "Rotate Left"
 msgid "Rotate ↷"
 msgstr "↷ ತಿರುಗಿಸು"
 
@@ -388,15 +404,21 @@ msgstr "ಯಾವುದನ್ನೂ ಆರಿಸಬೇಡ"
 msgid "Category"
 msgstr "ವರ್ಗ"
 
-#: ../src/search.js:117 ../src/search.js:169 ../src/search.js:254
+#. Translators: this refers to new and recent documents
+#. Translators: this refers to documents
+#: ../src/search.js:117
+#: ../src/search.js:169
+#: ../src/search.js:254
 #: ../src/search.js:410
 msgid "All"
 msgstr "ಎಲ್ಲಾ"
 
+#. Translators: this refers to favorite documents
 #: ../src/search.js:123
 msgid "Favorites"
 msgstr "ಅಚ್ಚುಮೆಚ್ಚಿನವುಗಳು"
 
+#. Translators: this refers to shared documents
 #: ../src/search.js:128
 msgid "Shared with you"
 msgstr "ನಿಮ್ಮೊಂದಿಗೆ ಹಂಚಲಾಗಿದೆ"
@@ -431,55 +453,59 @@ msgstr "ಹೊಂದಿಸು"
 msgid "Sources"
 msgstr "ಮೂಲಗಳು"
 
-#: ../src/selections.js:613 ../src/selections.js:771
+#. Translators: "Organize" refers to documents in this context
+#: ../src/selections.js:614
+#: ../src/selections.js:773
 msgid "Organize"
 msgstr "ವ್ಯವಸ್ಥಿತವಾಗಿ ಜೋಡಿಸು"
 
-#: ../src/selections.js:748
+#: ../src/selections.js:749
 msgid "Print"
 msgstr "ಮುದ್ರಿಸು"
 
-#: ../src/selections.js:755
+#: ../src/selections.js:756
 msgid "Delete"
 msgstr "ಅಳಿಸು"
 
-#: ../src/selections.js:786
+#: ../src/selections.js:788
 msgid "Share"
 msgstr "ಹಂಚು"
 
 #. Translators: this is the Open action in a context menu
-#: ../src/selections.js:872
+#: ../src/selections.js:874
 #, c-format
 msgid "Open with %s"
 msgstr "%s ನೊಂದಿಗೆ ತೆರೆ"
 
 #: ../src/sharing.js:89
-#| msgid "System Settings"
 msgid "Sharing Settings"
 msgstr "ಹಂಚಿಕೆಯ ಸಿದ್ಧತೆಗಳು"
 
 #. Label for widget group for changing document permissions
 #: ../src/sharing.js:126
-#| msgid "Documents"
 msgid "Document permissions"
 msgstr "ದಸ್ತಾವೇಜಿನ ಅನುಮತಿಗಳು"
 
 #. Label for permission change in Sharing dialog
-#: ../src/sharing.js:133 ../src/sharing.js:311
+#: ../src/sharing.js:133
+#: ../src/sharing.js:311
 msgid "Change"
 msgstr "ಬದಲಾಯಿಸು"
 
 #. Label for radiobutton that sets doc permission to private
-#: ../src/sharing.js:157 ../src/sharing.js:286
+#: ../src/sharing.js:157
+#: ../src/sharing.js:286
 msgid "Private"
 msgstr "ಖಾಸಗಿ"
 
-#: ../src/sharing.js:167 ../src/sharing.js:279
+#: ../src/sharing.js:167
+#: ../src/sharing.js:279
 msgid "Public"
 msgstr "ಸಾರ್ವಜನಿಕ"
 
 #. Label for checkbutton that sets doc permission to Can edit
-#: ../src/sharing.js:171 ../src/sharing.js:281
+#: ../src/sharing.js:171
+#: ../src/sharing.js:281
 msgid "Everyone can edit"
 msgstr "ಪ್ರತಿಯೊಬ್ಬರಿಗೂ ಸಂಪಾದಿಸಬಹುದು"
 
@@ -493,11 +519,13 @@ msgstr "ಜನರನ್ನು ಸೇರಿಸು"
 msgid "Enter an email address"
 msgstr "ಒಂದು ವಿಅಂಚೆ ವಿಳಾಸವನ್ನು ಸೇರಿಸು"
 
-#: ../src/sharing.js:200 ../src/sharing.js:367
+#: ../src/sharing.js:200
+#: ../src/sharing.js:367
 msgid "Can edit"
 msgstr "ಸಂಪಾದಿಸಬಹುದು"
 
-#: ../src/sharing.js:200 ../src/sharing.js:370
+#: ../src/sharing.js:200
+#: ../src/sharing.js:370
 msgid "Can view"
 msgstr "ನೋಡಬಹುದು"
 
@@ -522,8 +550,11 @@ msgstr "ಮಾಲಿಕ"
 msgid "You can ask %s for access"
 msgstr "ಅನುಮತಿಗಾಗಿ ನೀವು %s ಅನ್ನು ಕೇಳಬಹುದು"
 
-#: ../src/sharing.js:470 ../src/sharing.js:506 ../src/sharing.js:563
-#: ../src/sharing.js:580 ../src/sharing.js:599
+#: ../src/sharing.js:470
+#: ../src/sharing.js:506
+#: ../src/sharing.js:563
+#: ../src/sharing.js:580
+#: ../src/sharing.js:599
 msgid "The document was not updated"
 msgstr "ದಸ್ತಾವೇಜನ್ನು ಅಪ್‌ಡೇಟ್ ಮಾಡಲಾಗಿಲ್ಲ"
 
@@ -531,98 +562,52 @@ msgstr "ದಸ್ತಾವೇಜನ್ನು ಅಪ್‌ಡೇಟ್ ಮಾಡ�
 msgid "Untitled Document"
 msgstr "ಶೀರ್ಷಿಕೆ ಇರದ ದಸ್ತಾವೇಜು"
 
-#: ../src/view.js:61 ../src/view.js:91
+#. Translators: "more" refers to documents in this context
+#: ../src/view.js:62
+#: ../src/view.js:93
 msgid "Load More"
 msgstr "ಇನ್ನಷ್ಟು ಲೋಡ್ ಮಾಡು"
 
-#: ../src/view.js:292
+#: ../src/view.js:294
 msgid "Yesterday"
 msgstr "ನಿನ್ನೆ"
 
-#: ../src/view.js:294
+#: ../src/view.js:296
 #, c-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
 msgstr[0] "%d ದಿನದ ಹಿಂದೆ"
 msgstr[1] "%d ದಿನದ ಹಿಂದೆ"
 
-#: ../src/view.js:298
+#: ../src/view.js:300
 msgid "Last week"
 msgstr "ಹಿಂದಿನ ವಾರ"
 
-#: ../src/view.js:300
+#: ../src/view.js:302
 #, c-format
 msgid "%d week ago"
 msgid_plural "%d weeks ago"
 msgstr[0] "%d ವಾರದ ಹಿಂದೆ"
 msgstr[1] "%d ವಾರಗಳ ಹಿಂದೆ"
 
-#: ../src/view.js:304
+#: ../src/view.js:306
 msgid "Last month"
 msgstr "ಹಿಂದಿನ ತಿಂಗಳು"
 
-#: ../src/view.js:306
+#: ../src/view.js:308
 #, c-format
 msgid "%d month ago"
 msgid_plural "%d months ago"
 msgstr[0] "%d ತಿಂಗಳ ಹಿಂದೆ"
 msgstr[1] "%d ತಿಂಗಳ ಹಿಂದೆ"
 
-#: ../src/view.js:310
+#: ../src/view.js:312
 msgid "Last year"
 msgstr "ಹಿಂದಿನ ವರ್ಷ"
 
-#: ../src/view.js:312
+#: ../src/view.js:314
 #, c-format
 msgid "%d year ago"
 msgid_plural "%d years ago"
 msgstr[0] "%d ವರ್ಷದ ಹಿಂದೆ"
 msgstr[1] "%d ವರ್ಷಗಳ ಹಿಂದೆ"
-
-#~ msgid "Unable to load \"%s\" for preview"
-#~ msgstr "\"%s\" ಅನ್ನು ಅವಲೋಕಿಸಲು ತೆರೆಯಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ"
-
-#~ msgid "Cannot find \"unoconv\", please check your LibreOffice installation"
-#~ msgstr ""
-#~ "\"unoconv\" ಕಂಡುಬಂದಿಲ್ಲ, ದಯವಿಟ್ಟು ನಿಮ್ಮ LibreOffice ಅನುಸ್ಥಾಪನೆಯನ್ನು ಪರಿಶೀಲಿಸಿ"
-
-#~ msgid "New and Recent"
-#~ msgstr "ಹೊಸ ಮತ್ತು ಇತ್ತೀಚಿನ"
-
-#~ msgid "filtered by title"
-#~ msgstr "ಶೀರ್ಷಿಕೆಯ ಆಧಾರದಲ್ಲಿ ಶೋಧಿಸು"
-
-#~ msgid "filtered by author"
-#~ msgstr "ಕತೃವಿನ ಆಧಾರದಲ್ಲಿ ಶೋಧಿಸು"
-
-#~ msgid "Load %d more document"
-#~ msgid_plural "Load %d more documents"
-#~ msgstr[0] "ಇನ್ನೂ %d ದಸ್ತಾವೇಜನ್ನು ಲೋಡ್‌ಮಾಡು"
-#~ msgstr[1] "ಇನ್ನೂ %d ದಸ್ತಾವೇಜುಗಳನ್ನು ಲೋಡ್‌ಮಾಡು"
-
-#~ msgid "Print..."
-#~ msgstr "ಮುದ್ರಿಸು..."
-
-#~ msgid "Rotate Right"
-#~ msgstr "ಬಲಕ್ಕೆ ತಿರುಗಿಸು"
-
-#~ msgid "The active source filter"
-#~ msgstr "ಸಕ್ರಿಯ ಮೂಲ ಶೋಧಕ"
-
-#~ msgid "The last active source filter"
-#~ msgstr "ಕೊನೆ ಸಕ್ರಿಯ ಮೂಲ ಶೋಧಕ"
-
-#~ msgid "Unable to fetch the list of documents"
-#~ msgstr "ದಸ್ತಾವೇಜುಗಳ ಪಟ್ಟಿಯನ್ನು ಪಡೆಯಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ"
-
-#~ msgid "%d of %d"
-#~ msgstr "%d, %d ರಲ್ಲಿ"
-
-#~ msgid "GNOME Documents"
-#~ msgstr "GNOME ಡಾಕ್ಯುಮೆಂಟ್ಸ್‍"
-
-#~ msgid "Remove from favorites"
-#~ msgstr "ಅಚ್ಚುಮೆಚ್ಚಿನವುಗಳಿಂದ ತೆಗೆದುಹಾಕು"
-
-#~ msgid "Add to favorites"
-#~ msgstr "ಅಚ್ಚುಮೆಚ್ಚಿನವುಗಳಿಗೆ ಸೇರಿಸು"
