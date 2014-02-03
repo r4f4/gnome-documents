@@ -1,14 +1,14 @@
 # Serbian translation for gnome-documents.
 # Copyright (C) 2011 gnome-documents's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-documents package.
-# Мирослав Николић <miroslavnikolic@rocketmail.com>, 2011, 2012.
+# Мирослав Николић <miroslavnikolic@rocketmail.com>, 2011—2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-documents master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-09-14 15:15+0000\n"
-"PO-Revision-Date: 2012-09-20 20:11+0200\n"
+"POT-Creation-Date: 2014-02-03 12:55+0000\n"
+"PO-Revision-Date: 2014-02-03 17:32+0200\n"
 "Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
 "Language-Team: Serbian <gnom@prevod.org>\n"
 "Language: sr\n"
@@ -69,7 +69,6 @@ msgstr "Стање увећања прозора"
 msgid "Local"
 msgstr "На рачунару"
 
-#. overridden
 #: ../src/documents.js:693
 msgid "Google Docs"
 msgstr "Документи Гугла"
@@ -94,36 +93,29 @@ msgstr "Збирка"
 msgid "Document"
 msgstr "Документ"
 
-#. overridden
 #: ../src/documents.js:791 ../src/documents.js:792
 msgid "Skydrive"
 msgstr "Скајдрајв"
 
-#. Translators: %s is the title of a document
 #: ../src/documents.js:976
-#, c-format
+#, javascript-format
 msgid "Unable to load \"%s\" for preview"
 msgstr "Не могу да учитам „%s“ за преглед"
 
-#: ../src/embed.js:74
+#: ../src/embed.js:73
 msgid "Loading..."
 msgstr "Учитавам..."
 
-#: ../src/embed.js:220
+#: ../src/embed.js:223
 msgid "No Documents Found"
 msgstr "Нема пронађених докумената"
 
-#. Translators: %s here is "System Settings", which is in a separate string
-#. due to markup, and should be translated only in the context of this sentence
-#: ../src/embed.js:243
-#, c-format
-#| msgid "You can add your online accounts in"
+#: ../src/embed.js:246
+#, javascript-format
 msgid "You can add your online accounts in %s"
 msgstr "Можете да додате ваше мрежне налоге у %s"
 
-#. Translators: this should be translated in the context of the
-#. "You can add your online accounts in System Settings" sentence above
-#: ../src/embed.js:247
+#: ../src/embed.js:250
 msgid "System Settings"
 msgstr "Подешавања система"
 
@@ -144,7 +136,7 @@ msgid "New and Recent"
 msgstr "Нови и скоро коришћени"
 
 #: ../src/mainToolbar.js:165
-#, c-format
+#, javascript-format
 msgid "Results for \"%s\""
 msgstr "Резултати за „%s“"
 
@@ -161,15 +153,17 @@ msgid "Click on items to select them"
 msgstr "Кликните на ставке да их изаберете"
 
 #: ../src/mainToolbar.js:178
-#, c-format
+#, javascript-format
+#| msgid "%d selected"
+#| msgid_plural "%d selected"
 msgid "%d selected"
 msgid_plural "%d selected"
 msgstr[0] "%d изабран"
 msgstr[1] "%d изабрана"
 msgstr[2] "%d изабраних"
-msgstr[3] "Један изабран"
+msgstr[3] "%d изабран"
 
-#: ../src/mainToolbar.js:208 ../src/properties.js:58
+#: ../src/mainToolbar.js:208 ../src/properties.js:59
 msgid "Done"
 msgstr "Обављено"
 
@@ -190,48 +184,43 @@ msgid "A document manager application"
 msgstr "Програм за управљање документима"
 
 #: ../src/notifications.js:86
-#, c-format
+#, javascript-format
 msgid "Printing \"%s\": %s"
 msgstr "Штампам „%s“: %s"
 
-#: ../src/notifications.js:151
+#: ../src/notifications.js:152
 msgid "Your documents are being indexed"
 msgstr "Ваши документи су индексирани"
 
-#: ../src/notifications.js:155
+#: ../src/notifications.js:156
 msgid "Some documents might not be available during this process"
 msgstr "Неки документи неће бити доступни за време овог поступка"
 
-#. Properties dialog heading
-#: ../src/properties.js:73 ../src/selections.js:792
+#: ../src/properties.js:57 ../src/selections.js:793
 msgid "Properties"
 msgstr "Својства"
 
-#. Title item
-#: ../src/properties.js:81 ../src/searchbar.js:225
+#: ../src/properties.js:76 ../src/searchbar.js:228
 msgid "Title"
 msgstr "Наслов"
 
-#: ../src/properties.js:88 ../src/searchbar.js:227
+#: ../src/properties.js:85 ../src/searchbar.js:231
 msgid "Author"
 msgstr "Аутор"
 
-#. Source item
-#: ../src/properties.js:95
+#: ../src/properties.js:92
 msgid "Source"
 msgstr "Извор"
 
-#. Date Modified item
-#: ../src/properties.js:101
+#: ../src/properties.js:98
 msgid "Date Modified"
 msgstr "Датум измене"
 
-#: ../src/properties.js:108
+#: ../src/properties.js:105
 msgid "Date Created"
 msgstr "Датум стварања"
 
-#. Document type item
-#: ../src/properties.js:115 ../src/searchbar.js:135
+#: ../src/properties.js:114 ../src/searchbar.js:137
 msgid "Type"
 msgstr "Врста"
 
@@ -239,7 +228,7 @@ msgstr "Врста"
 msgid "Category"
 msgstr "Категорија"
 
-#: ../src/searchbar.js:88 ../src/searchbar.js:138 ../src/searchbar.js:223
+#: ../src/searchbar.js:88 ../src/searchbar.js:140 ../src/searchbar.js:225
 #: ../src/sources.js:89
 msgid "All"
 msgstr "Све"
@@ -252,123 +241,125 @@ msgstr "Омиљени"
 msgid "Shared with you"
 msgstr "Дељени с вама"
 
-#: ../src/searchbar.js:140
+#: ../src/searchbar.js:142
 msgid "Collections"
 msgstr "Збирке"
 
-#: ../src/searchbar.js:144
+#: ../src/searchbar.js:146
 msgid "PDF Documents"
 msgstr "ПДФ документи"
 
-#: ../src/searchbar.js:148
+#: ../src/searchbar.js:150
 msgid "Presentations"
 msgstr "Презентације"
 
-#: ../src/searchbar.js:151
+#: ../src/searchbar.js:153
 msgid "Spreadsheets"
 msgstr "Таблице"
 
-#: ../src/searchbar.js:154
+#: ../src/searchbar.js:156
 msgid "Text Documents"
 msgstr "Документи текста"
 
-#. Translators: this is a verb that refers to "All", "Title" and "Author",
-#. as in "Match All", "Match Title" and "Match Author"
-#: ../src/searchbar.js:220
+#: ../src/searchbar.js:222
 msgid "Match"
 msgstr "Поклопи"
 
-#: ../src/selections.js:761
-msgid "Print"
-msgstr "Штампајте"
-
-#: ../src/selections.js:768
-msgid "Delete"
-msgstr "Обриши"
-
-#: ../src/selections.js:784
+#: ../src/selections.js:616 ../src/selections.js:785
 msgid "Organize"
 msgstr "Организујте"
 
-#. Translators: this is the Open action in a context menu
-#: ../src/selections.js:873
-#, c-format
+#: ../src/selections.js:762
+msgid "Print"
+msgstr "Штампајте"
+
+#: ../src/selections.js:769
+msgid "Delete"
+msgstr "Обриши"
+
+#: ../src/selections.js:874
+#, javascript-format
 msgid "Open with %s"
 msgstr "Отвори програмом %s"
 
-#. Translators: this is the Open action in a context menu
-#: ../src/selections.js:876 ../src/resources/preview-menu.ui.h:1
+#: ../src/selections.js:877 ../src/resources/preview-menu.ui.h:1
 msgid "Open"
 msgstr "Отвори"
-
-#: ../src/shellSearchProvider.js:281
-msgid "Untitled Document"
-msgstr "Неименован документ"
 
 #: ../src/sources.js:85
 msgid "Sources"
 msgstr "Извори"
 
 #: ../src/view.js:79
-#, c-format
+#, javascript-format
+#| msgid "Load %d more document"
+#| msgid_plural "Load %d more documents"
 msgid "Load %d more document"
 msgid_plural "Load %d more documents"
 msgstr[0] "Учитај још %d документ"
 msgstr[1] "Учитај још %d документа"
 msgstr[2] "Учитај још %d докумената"
-msgstr[3] "Учитај још један документ"
+msgstr[3] "Учитај још %d документ"
 
 #: ../src/view.js:283
 msgid "Yesterday"
 msgstr "Јуче"
 
 #: ../src/view.js:285
-#, c-format
+#, javascript-format
+#| msgid "%d day ago"
+#| msgid_plural "%d days ago"
 msgid "%d day ago"
 msgid_plural "%d days ago"
 msgstr[0] "Пре %d дан"
 msgstr[1] "Пре %d дана"
 msgstr[2] "Пре %d дана"
-msgstr[3] "Пре једног дана"
+msgstr[3] "Пре %d дана"
 
 #: ../src/view.js:289
 msgid "Last week"
 msgstr "Прошле седмице"
 
 #: ../src/view.js:291
-#, c-format
+#, javascript-format
+#| msgid "%d week ago"
+#| msgid_plural "%d weeks ago"
 msgid "%d week ago"
 msgid_plural "%d weeks ago"
 msgstr[0] "Пре %d недеље"
 msgstr[1] "Пре %d недеље"
 msgstr[2] "Пре %d недеља"
-msgstr[3] "Пре једне недеље"
+msgstr[3] "Пре %d недеље"
 
 #: ../src/view.js:295
 msgid "Last month"
 msgstr "Прошлог месеца"
 
 #: ../src/view.js:297
-#, c-format
+#, javascript-format
+#| msgid "%d month ago"
+#| msgid_plural "%d months ago"
 msgid "%d month ago"
 msgid_plural "%d months ago"
 msgstr[0] "Пре %d месеца"
 msgstr[1] "Пре %d месеца"
 msgstr[2] "Пре %d месеци"
-msgstr[3] "Пре једног месеца"
+msgstr[3] "Пре %d месеца"
 
 #: ../src/view.js:301
 msgid "Last year"
 msgstr "Прошле године"
 
 #: ../src/view.js:303
-#, c-format
+#, javascript-format
+#| msgid "%d year ago"
+#| msgid_plural "%d years ago"
 msgid "%d year ago"
 msgid_plural "%d years ago"
 msgstr[0] "Пре %d годину"
 msgstr[1] "Пре %d године"
 msgstr[2] "Пре %d година"
-msgstr[3] "Пре једне године"
+msgstr[3] "Пре %d године"
 
 #: ../src/resources/app-menu.ui.h:2
 msgid "Grid"
@@ -421,6 +412,9 @@ msgstr "Изабери све"
 #: ../src/resources/selection-menu.ui.h:2
 msgid "Select None"
 msgstr "Поништи избор"
+
+#~ msgid "Untitled Document"
+#~ msgstr "Неименован документ"
 
 #~ msgid "Remove from favorites"
 #~ msgstr "Уклоните из омиљених"
