@@ -1,14 +1,14 @@
 # Serbian translation for gnome-documents.
 # Copyright (C) 2011 gnome-documents's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-documents package.
-# Miroslav Nikolić <miroslavnikolic@rocketmail.com>, 2011, 2012.
+# Miroslav Nikolić <miroslavnikolic@rocketmail.com>, 2011, 2012, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-documents master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-03-10 10:26+0000\n"
-"PO-Revision-Date: 2012-03-10 22:26+0200\n"
+"POT-Creation-Date: 2014-02-03 08:12+0000\n"
+"PO-Revision-Date: 2014-02-03 17:16+0200\n"
 "Last-Translator: Miroslav Nikolić <miroslavnikolic@rocketmail.com>\n"
 "Language-Team: Serbian <gnom@prevod.org>\n"
 "Language: sr\n"
@@ -19,7 +19,7 @@ msgstr ""
 "n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Project-Style: gnome\n"
 
-#: ../data/gnome-documents.desktop.in.in.h:1 ../src/mainWindow.js:54
+#: ../data/gnome-documents.desktop.in.in.h:1 ../src/mainWindow.js:53
 msgid "Documents"
 msgstr "Dokumenti"
 
@@ -31,7 +31,7 @@ msgstr "Pristupite, upravljajte i delite dokumente"
 msgid "Docs;PDF;Document;"
 msgstr "Dokumentacija;PDF;Dokumenti;"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:1 ../src/application.js:128
+#: ../data/org.gnome.documents.gschema.xml.in.h:1 ../src/application.js:131
 msgid "View as"
 msgstr "Prikaži kao"
 
@@ -40,89 +40,79 @@ msgid "View as type"
 msgstr "Prikazivanje kao vrste"
 
 #: ../data/org.gnome.documents.gschema.xml.in.h:3
-msgid "The active source filter"
-msgstr "Filter radnog izvora"
-
-#: ../data/org.gnome.documents.gschema.xml.in.h:4
-msgid "The last active source filter"
-msgstr "Filter poslednjeg radnog izvora"
-
-#: ../data/org.gnome.documents.gschema.xml.in.h:5
 msgid "Window size"
 msgstr "Veličina prozora"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:6
+#: ../data/org.gnome.documents.gschema.xml.in.h:4
 msgid "Window size (width and height)."
 msgstr "Veličina prozora (širina i visina)."
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:7
+#: ../data/org.gnome.documents.gschema.xml.in.h:5
 msgid "Window position"
 msgstr "Položaj prozora"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:8
+#: ../data/org.gnome.documents.gschema.xml.in.h:6
 msgid "Window position (x and y)."
 msgstr "Položaj prozora (h i u)."
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:9
+#: ../data/org.gnome.documents.gschema.xml.in.h:7
 msgid "Window maximized"
 msgstr "Uvećan prozor"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:10
+#: ../data/org.gnome.documents.gschema.xml.in.h:8
 msgid "Window maximized state"
 msgstr "Stanje uvećanja prozora"
 
-#: ../src/application.js:126
+#: ../src/application.js:129
 msgid "Grid"
 msgstr "Mreža"
 
-#: ../src/application.js:127
+#: ../src/application.js:130
 msgid "List"
 msgstr "Spisak"
 
-#: ../src/application.js:131
+#: ../src/application.js:134
 msgid "Fullscreen"
 msgstr "Preko celog ekrana"
 
-#: ../src/application.js:134
+#: ../src/application.js:137
 msgid "About Documents"
 msgstr "O dokumentima"
 
-#: ../src/application.js:135
+#: ../src/application.js:138
 msgid "Quit"
 msgstr "Izlaz"
 
-#: ../src/documents.js:619 ../src/sources.js:100
+#: ../src/documents.js:623 ../src/sources.js:100
 msgid "Local"
 msgstr "Lokalni"
 
-#. overridden
-#: ../src/documents.js:675
+#: ../src/documents.js:679
 msgid "Google Docs"
 msgstr "Dokumenti Gugla"
 
-#: ../src/documents.js:676
+#: ../src/documents.js:680
 msgid "Google"
 msgstr "Gugl"
 
-#: ../src/documents.js:745
+#: ../src/documents.js:749
 msgid "Spreadsheet"
 msgstr "Tablica"
 
-#: ../src/documents.js:747
+#: ../src/documents.js:751
 msgid "Presentation"
 msgstr "Prezentacija"
 
-#: ../src/documents.js:749
+#: ../src/documents.js:753
 msgid "Collection"
 msgstr "Zbirka"
 
-#: ../src/documents.js:751
+#: ../src/documents.js:755
 msgid "Document"
 msgstr "Dokument"
 
-#. Translators: %s is the title of a document
 #: ../src/error.js:37
-#, c-format
+#, javascript-format
 msgid "Unable to load \"%s\" for preview"
 msgstr "Ne mogu da učitam „%s“ za pregled"
 
@@ -144,7 +134,9 @@ msgid "Cannot find \"unoconv\", please check your LibreOffice installation"
 msgstr "Ne mogu da pronađem „unoconv“, proverite vašu instalaciju Libre ofisa"
 
 #: ../src/loadMore.js:70
-#, c-format
+#, javascript-format
+#| msgid "Load %d more document"
+#| msgid_plural "Load %d more documents"
 msgid "Load %d more document"
 msgid_plural "Load %d more documents"
 msgstr[0] "Učitaj još %d dokument"
@@ -152,35 +144,36 @@ msgstr[1] "Učitaj još %d dokumenta"
 msgstr[2] "Učitaj još %d dokumenata"
 msgstr[3] "Učitaj još jedan dokument"
 
-#: ../src/mainToolbar.js:194
+#: ../src/mainToolbar.js:204
 msgid "New and Recent"
 msgstr "Novi i skoro korišćeni"
 
-#: ../src/mainToolbar.js:201
-#, c-format
+#: ../src/mainToolbar.js:211
+#, javascript-format
 msgid "Results for \"%s\""
 msgstr "Rezultati za „%s“"
 
-#: ../src/mainToolbar.js:203
+#: ../src/mainToolbar.js:213
 msgid "filtered by title"
 msgstr "filtrirani prema naslovu"
 
-#: ../src/mainToolbar.js:205
+#: ../src/mainToolbar.js:215
 msgid "filtered by author"
 msgstr "filtrirani prema autoru"
 
-#: ../src/mainToolbar.js:218
-#, c-format
-#| msgid "(%d of %d)"
+#: ../src/mainToolbar.js:228
+#, javascript-format
 msgid "%d of %d"
 msgstr "%d od %d"
 
-#: ../src/mainToolbar.js:224
+#: ../src/mainToolbar.js:234
 msgid "Click on items to select them"
 msgstr "Kliknite na stavke da ih izaberete"
 
-#: ../src/mainToolbar.js:226
-#, c-format
+#: ../src/mainToolbar.js:236
+#, javascript-format
+#| msgid "%d selected"
+#| msgid_plural "%d selected"
 msgid "%d selected"
 msgid_plural "%d selected"
 msgstr[0] "%d izabran"
@@ -188,108 +181,100 @@ msgstr[1] "%d izabrana"
 msgstr[2] "%d izabranih"
 msgstr[3] "Jedan izabran"
 
-#: ../src/mainWindow.js:254
+#: ../src/mainWindow.js:232
 msgid "translator-credits"
 msgstr "Miroslav Nikolić"
 
-#: ../src/mainWindow.js:255
+#: ../src/mainWindow.js:233
 msgid "GNOME Documents"
 msgstr "Gnomovi dokumenti"
 
-#: ../src/mainWindow.js:256
+#: ../src/mainWindow.js:234
 msgid "A document manager application"
 msgstr "Program za upravljanje dokumentima"
 
 #: ../src/notifications.js:85
-#, c-format
+#, javascript-format
 msgid "Printing \"%s\": %s"
 msgstr "Štampam „%s“: %s"
 
-#: ../src/searchbar.js:86
+#: ../src/searchbar.js:87
 msgid "Category"
 msgstr "Kategorija"
 
-#: ../src/searchbar.js:91 ../src/searchbar.js:141 ../src/searchbar.js:210
+#: ../src/searchbar.js:92 ../src/searchbar.js:142 ../src/searchbar.js:211
 #: ../src/sources.js:94
 msgid "All"
 msgstr "Sve"
 
-#: ../src/searchbar.js:97
+#: ../src/searchbar.js:98
 msgid "Favorites"
 msgstr "Omiljeni"
 
-#: ../src/searchbar.js:102
+#: ../src/searchbar.js:103
 msgid "Shared with you"
 msgstr "Deljeni s vama"
 
-#: ../src/searchbar.js:138
+#: ../src/searchbar.js:139
 msgid "Type"
 msgstr "Vrsta"
 
-#: ../src/searchbar.js:143
+#: ../src/searchbar.js:144
 msgid "Collections"
 msgstr "Zbirke"
 
-#: ../src/searchbar.js:147
+#: ../src/searchbar.js:148
 msgid "PDF Documents"
 msgstr "PDF dokumenti"
 
-#: ../src/searchbar.js:150
+#: ../src/searchbar.js:151
 msgid "Presentations"
 msgstr "Prezentacije"
 
-#: ../src/searchbar.js:153
+#: ../src/searchbar.js:154
 msgid "Spreadsheets"
 msgstr "Tablice"
 
-#: ../src/searchbar.js:156
+#: ../src/searchbar.js:157
 msgid "Text Documents"
 msgstr "Dokumenti teksta"
 
-#. Translators: this is a verb that refers to "All", "Title" and "Author",
-#. as in "Match All", "Match Title" and "Match Author"
-#: ../src/searchbar.js:207
+#: ../src/searchbar.js:208
 msgid "Match"
 msgstr "Poklapanje"
 
-#: ../src/searchbar.js:212
+#: ../src/searchbar.js:213
 msgid "Title"
 msgstr "Naslov"
 
-#: ../src/searchbar.js:214
+#: ../src/searchbar.js:215
 msgid "Author"
 msgstr "Autor"
 
-#: ../src/selections.js:735
+#: ../src/selections.js:772
 msgid "Organize"
 msgstr "Organizuj"
 
-#: ../src/selections.js:742
+#: ../src/selections.js:779
 msgid "Delete"
 msgstr "Obriši"
 
-#. Translators: this is the Open action in a context menu
-#: ../src/selections.js:842 ../src/view.js:69
-#, c-format
+#: ../src/selections.js:868 ../src/view.js:69
+#, javascript-format
 msgid "Open with %s"
 msgstr "Otvori programom %s"
 
-#. Translators: this is the Open action in a context menu
-#: ../src/selections.js:845 ../src/view.js:72
+#: ../src/selections.js:871 ../src/view.js:72
 msgid "Open"
 msgstr "Otvori"
 
-#: ../src/selections.js:858 ../src/view.js:82
+#: ../src/selections.js:880 ../src/view.js:82
 msgid "Remove from favorites"
 msgstr "Uklonite iz omiljenih"
 
-#: ../src/selections.js:862 ../src/view.js:82
+#: ../src/selections.js:884 ../src/view.js:82
 msgid "Add to favorites"
 msgstr "Dodajte u omiljene"
-
-#: ../src/shellSearchProvider.js:332
-msgid "Untitled Document"
-msgstr "Neimenovan dokument"
 
 #: ../src/sources.js:90
 msgid "Sources"
@@ -299,12 +284,14 @@ msgstr "Izvori"
 msgid "Loading..."
 msgstr "Učitavam..."
 
-#: ../src/view.js:196
+#: ../src/view.js:198
 msgid "Yesterday"
 msgstr "Juče"
 
-#: ../src/view.js:198
-#, c-format
+#: ../src/view.js:200
+#, javascript-format
+#| msgid "%d day ago"
+#| msgid_plural "%d days ago"
 msgid "%d day ago"
 msgid_plural "%d days ago"
 msgstr[0] "Pre %d dan"
@@ -312,25 +299,29 @@ msgstr[1] "Pre %d dana"
 msgstr[2] "Pre %d dana"
 msgstr[3] "Pre jednog dana"
 
-#: ../src/view.js:202
+#: ../src/view.js:204
 msgid "Last week"
 msgstr "Prošle sedmice"
 
-#: ../src/view.js:204
-#, c-format
+#: ../src/view.js:206
+#, javascript-format
+#| msgid "%d week ago"
+#| msgid_plural "%d weeks ago"
 msgid "%d week ago"
 msgid_plural "%d weeks ago"
 msgstr[0] "Pre %d nedelju"
 msgstr[1] "Pre %d nedelje"
-msgstr[2] "Pre %d nedeljaa"
+msgstr[2] "Pre %d nedelja"
 msgstr[3] "Pre jedne nedelje"
 
-#: ../src/view.js:208
+#: ../src/view.js:210
 msgid "Last month"
 msgstr "Prošlog meseca"
 
-#: ../src/view.js:210
-#, c-format
+#: ../src/view.js:212
+#, javascript-format
+#| msgid "%d month ago"
+#| msgid_plural "%d months ago"
 msgid "%d month ago"
 msgid_plural "%d months ago"
 msgstr[0] "Pre %d mesec"
@@ -338,18 +329,29 @@ msgstr[1] "Pre %d meseca"
 msgstr[2] "Pre %d meseci"
 msgstr[3] "Pre jednog meseca"
 
-#: ../src/view.js:214
+#: ../src/view.js:216
 msgid "Last year"
 msgstr "Prošle godine"
 
-#: ../src/view.js:216
-#, c-format
+#: ../src/view.js:218
+#, javascript-format
+#| msgid "%d year ago"
+#| msgid_plural "%d years ago"
 msgid "%d year ago"
 msgid_plural "%d years ago"
 msgstr[0] "Pre %d godinu"
 msgstr[1] "Pre %d godine"
 msgstr[2] "Pre %d godina"
 msgstr[3] "Pre jedne godine"
+
+#~ msgid "The active source filter"
+#~ msgstr "Filter radnog izvora"
+
+#~ msgid "The last active source filter"
+#~ msgstr "Filter poslednjeg radnog izvora"
+
+#~ msgid "Untitled Document"
+#~ msgstr "Neimenovan dokument"
 
 #~ msgid "Enable list view"
 #~ msgstr "Uključuje pregled spiskom"
