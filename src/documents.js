@@ -242,7 +242,6 @@ const DocCommon = new Lang.Class({
         this.collection = false;
         this._collectionIconWatcher = null;
 
-        this.thumbnailed = false;
         this._thumbPath = null;
 
         this.populateFromCursor(cursor);
@@ -397,7 +396,6 @@ const DocCommon = new Lang.Class({
         if (this._thumbPath) {
             this._refreshThumbPath();
         } else {
-            this.thumbnailed = false;
             this.createThumbnail(Lang.bind(this, this._onCreateThumbnail));
         }
     },
@@ -445,7 +443,6 @@ const DocCommon = new Lang.Class({
                             function(object, res) {
                                 try {
                                     let pixbuf = GdkPixbuf.Pixbuf.new_from_stream_finish(res);
-                                    this.thumbnailed = true;
                                     this._setOrigPixbuf(pixbuf);
                                 } catch (e) {
                                     log('Unable to create pixbuf from ' + thumbFile.get_uri() + ': ' + e.toString());
@@ -525,7 +522,7 @@ const DocCommon = new Lang.Class({
 
         let thumbnailedPixbuf = null;
 
-        if (this.thumbnailed) {
+        if (this._thumbPath) {
             let [ slice, border ] = Utils.getThumbnailFrameBorder();
             thumbnailedPixbuf = Gd.embed_image_in_frame(emblemedPixbuf,
                 'resource:///org/gnome/documents/thumbnail-frame.png',
