@@ -8,4 +8,5 @@ HELP_FILES = \
 	bookmarking.svg	\
 	scrubbing.svg \
 	editing.svg \
+	learn-more.svg \
 	$(NULL)
