@@ -206,7 +206,7 @@ const ViewContainer = new Lang.Class({
                             Lang.bind(this, this._onViewSelectionChanged));
 
         // connect to settings change for list/grid view
-        this._viewSettingsId = Application.settings.connect('changed::view-as',
+        this._viewSettingsId = Application.application.connect('action-state-changed::view-as',
             Lang.bind(this, this._updateTypeForSettings));
         this._updateTypeForSettings();
 

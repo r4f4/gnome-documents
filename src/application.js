@@ -160,7 +160,9 @@ const Application = new Lang.Class({
     _viewAsCreateHook: function(action) {
         settings.connect('changed::view-as', Lang.bind(this,
             function() {
-                action.state = settings.get_value('view-as');
+                let state = settings.get_value('view-as');
+                if (state.get_string()[0] != action.state.get_string()[0])
+                    action.state = state;
             }));
     },
 
@@ -187,7 +189,8 @@ const Application = new Lang.Class({
     },
 
     _onActionViewAs: function(action, parameter) {
-        settings.set_value('view-as', parameter);
+        if (parameter.get_string()[0] != action.state.get_string()[0])
+            settings.set_value('view-as', parameter);
     },
 
     _onActionOpenCurrent: function() {
