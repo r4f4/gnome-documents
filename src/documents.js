@@ -248,8 +248,8 @@ const DocCommon = new Lang.Class({
         this.populateFromCursor(cursor);
 
         this._refreshIconId =
-            Application.settings.connect('changed::view-as',
-                                         Lang.bind(this, this.refreshIcon));
+            Application.application.connect('action-state-changed::view-as',
+                                            Lang.bind(this, this.refreshIcon));
         this._filterId =
             Application.searchCategoryManager.connect('active-changed',
                                                       Lang.bind(this, this.refreshIcon));
