@@ -1,3 +1,11 @@
+3.11.5 - "SG"
+=============
+
+- Fix invalid thumbnails when downloading from remote sources
+- Casefold search strings instead of lowercasing
+- Protet against spurious view-as changed signals
+- Fix back key behavior in RTL locales
+
 3.11.4 - "Spoilers"
 ===================
 
