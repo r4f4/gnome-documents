@@ -757,20 +757,20 @@ const SelectionToolbar = new Lang.Class({
         toolbar.pack_start(this._toolbarTrash);
         this._toolbarTrash.connect('clicked', Lang.bind(this, this._onToolbarTrash));
 
-        // organize button
-        this._toolbarCollection = new Gd.HeaderSimpleButton({ label: _("Add to Collection") });
-        toolbar.pack_end(this._toolbarCollection);
-        this._toolbarCollection.connect('clicked', Lang.bind(this, this._onToolbarCollection));
+        // share button
+        this._toolbarShare = new Gd.HeaderSimpleButton({ label: _("Share") });
+        toolbar.pack_end(this._toolbarShare);
+        this._toolbarShare.connect('clicked', Lang.bind(this, this._onToolbarShare));
 
         // properties button
         this._toolbarProperties = new Gd.HeaderSimpleButton({ label: _("Properties") });
         toolbar.pack_end(this._toolbarProperties);
         this._toolbarProperties.connect('clicked', Lang.bind(this, this._onToolbarProperties));
 
-        // share button
-	this._toolbarShare = new Gd.HeaderSimpleButton({ label: _("Share") });
-        toolbar.pack_end(this._toolbarShare);
-        this._toolbarShare.connect('clicked', Lang.bind(this, this._onToolbarShare));
+        // organize button
+        this._toolbarCollection = new Gd.HeaderSimpleButton({ label: _("Add to Collection") });
+        toolbar.pack_end(this._toolbarCollection);
+        this._toolbarCollection.connect('clicked', Lang.bind(this, this._onToolbarCollection));
 
         this.widget.show_all();
 
