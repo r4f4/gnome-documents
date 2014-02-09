@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: gnome-documents master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-08-30 13:48+0000\n"
-"PO-Revision-Date: 2013-08-31 17:27+0600\n"
+"POT-Creation-Date: 2014-02-08 19:51+0000\n"
+"PO-Revision-Date: 2014-02-09 10:25+0600\n"
 "Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
 "Language-Team: Kazakh <kk_KZ@googlegroups.com>\n"
 "Language: kk\n"
@@ -19,10 +19,46 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Poedit 1.5.4\n"
 
+#: ../data/gnome-documents.appdata.xml.in.h:1
 #: ../data/gnome-documents.desktop.in.in.h:1 ../src/application.js:103
-#: ../src/mainWindow.js:52 ../src/mainWindow.js:273
+#: ../src/mainWindow.js:52 ../src/mainWindow.js:274
 msgid "Documents"
 msgstr "Құжаттар қолданбасы"
+
+#: ../data/gnome-documents.appdata.xml.in.h:2
+#| msgid "A document manager application"
+msgid "A document manager application for GNOME"
+msgstr "GNOME үшін құжаттарды басқару қолданбасы"
+
+#: ../data/gnome-documents.appdata.xml.in.h:3
+msgid ""
+"A simple application to access, organize and share your documents on GNOME. "
+"It is meant to be a simple and elegant replacement for using a file manager "
+"to deal with documents. Seamless cloud integration is offered through GNOME "
+"Online Accounts."
+msgstr ""
+"GNOME ішінде құжаттарыңызға қатынау, реттеу және бөлісу үшін арналған "
+"қарапайым қолданба. Ол құжаттармен жұмысы үшін файлдар басқарушысын "
+"алмастыратын қарапайым әрі элегантты шешім ретінде ұсынылады. GNOME желілік "
+"тіркелгілері арқылы бұлттық қызметтермен жапсарсыз интеграция іске асырылады."
+
+#: ../data/gnome-documents.appdata.xml.in.h:4
+msgid "It lets you:"
+msgstr "Мүмкіндіктері:"
+
+#: ../data/gnome-documents.appdata.xml.in.h:5
+msgid ""
+"<li>View recent local and online documents</li> <li>Access your Google, "
+"ownCloud or SkyDrive content</li> <li>Search through documents</li> <li>See "
+"new documents shared by friends</li> <li>View documents fullscreen</li> "
+"<li>Print documents</li> <li>Select favorites</li> <li>Allow opening full "
+"featured editor for non-trivial changes</li>"
+msgstr ""
+"<li>Жуырдағы жергілікті және желідегі құжаттарды қарау</li> <li>Google, "
+"ownCloud не SkyDrive құрамасына қатынау</li> <li>Құжаттар ішінен іздеу</li> "
+"<li>Достар бөліскен жаңа құжаттарды қарау</li> <li>Құжаттарды толық экранда "
+"қарау</li> <li>Құжаттарды баспаға шығару</li> <li>Таңдамалыларды белгілеу</"
+"li> <li>Күрделірек түзетулер үшін мүмкіндіктері толық түзеткіші ашу</li>"
 
 #: ../data/gnome-documents.desktop.in.in.h:2
 msgid "Access, manage and share documents"
@@ -32,115 +68,106 @@ msgstr "Құжаттарға қатынау, басқару және оларм�
 msgid "Docs;PDF;Document;"
 msgstr "Құжаттар;PDF;Құжат;"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:1
-#: ../src/resources/app-menu.ui.h:1
+#: ../data/org.gnome.documents.gschema.xml.h:1
 msgid "View as"
 msgstr "Қалайша қарау"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:2
+#: ../data/org.gnome.documents.gschema.xml.h:2
 msgid "View as type"
 msgstr "Түрі ретінде қарау"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:3
+#: ../data/org.gnome.documents.gschema.xml.h:3
 msgid "Window size"
 msgstr "Терезе өлшемі"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:4
+#: ../data/org.gnome.documents.gschema.xml.h:4
 msgid "Window size (width and height)."
 msgstr "Терезе өлшемі (ені мен биіктігі)."
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:5
+#: ../data/org.gnome.documents.gschema.xml.h:5
 msgid "Window position"
 msgstr "Терезе орны"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:6
+#: ../data/org.gnome.documents.gschema.xml.h:6
 msgid "Window position (x and y)."
 msgstr "Терезе орны (x және y)."
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:7
+#: ../data/org.gnome.documents.gschema.xml.h:7
 msgid "Window maximized"
 msgstr "Терезе максималды етілген"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:8
+#: ../data/org.gnome.documents.gschema.xml.h:8
 msgid "Window maximized state"
 msgstr "Терезе максималды күйі"
 
-#. Translators: this refers to local documents
-#: ../src/documents.js:599 ../src/search.js:417
+#: ../src/documents.js:602 ../src/search.js:418
 msgid "Local"
 msgstr "Жергілікті"
 
-#. Translators: Documents ships a "Getting Started with Documents"
-#. tutorial PDF. The "GNOME" string below is displayed as the author name
-#. of that document, and doesn't normally need to be translated.
-#: ../src/documents.js:620
+#: ../src/documents.js:623
 msgid "GNOME"
 msgstr "GNOME"
 
-#: ../src/documents.js:621
+#: ../src/documents.js:624
 msgid "Getting Started with Documents"
 msgstr "Құжаттар қолданбасымен жұмысты бастау"
 
-#: ../src/documents.js:637 ../src/documents.js:800 ../src/documents.js:854
-#: ../src/documents.js:954
+#: ../src/documents.js:640 ../src/documents.js:805 ../src/documents.js:859
+#: ../src/documents.js:959
 msgid "Collection"
 msgstr "Жинақ"
 
-#. overridden
-#: ../src/documents.js:681
+#: ../src/documents.js:684
 msgid "Google Docs"
 msgstr "Google Docs"
 
-#: ../src/documents.js:682
+#: ../src/documents.js:685
 msgid "Google"
 msgstr "Google"
 
-#: ../src/documents.js:802 ../src/documents.js:956
+#: ../src/documents.js:807 ../src/documents.js:961
 msgid "Spreadsheet"
 msgstr "Электрондық кесте"
 
-#: ../src/documents.js:804 ../src/documents.js:958 ../src/presentation.js:47
+#: ../src/documents.js:809 ../src/documents.js:963 ../src/presentation.js:47
 msgid "Presentation"
 msgstr "Презентация"
 
-#: ../src/documents.js:806 ../src/documents.js:960
+#: ../src/documents.js:811 ../src/documents.js:965
 msgid "Document"
 msgstr "Құжат"
 
-#. overridden
-#: ../src/documents.js:832
+#: ../src/documents.js:837
 msgid "ownCloud"
 msgstr "ownCloud"
 
-#. overridden
-#: ../src/documents.js:888 ../src/documents.js:889
+#: ../src/documents.js:893 ../src/documents.js:894
 msgid "Skydrive"
 msgstr "Skydrive"
 
-#: ../src/documents.js:1080
+#: ../src/documents.js:1085
 msgid "Please check the network connection."
 msgstr "Желілік байланысты тексеріңіз."
 
-#: ../src/documents.js:1083
+#: ../src/documents.js:1088
 msgid "Please check the network proxy settings."
 msgstr "Желілік прокси баптауларын тексеріңіз."
 
-#: ../src/documents.js:1086
+#: ../src/documents.js:1091
 msgid "Unable to sign in to the document service."
 msgstr "Құжаттарды сақтау қызметіне кіру мүмкін емес."
 
-#: ../src/documents.js:1089
+#: ../src/documents.js:1094
 msgid "Unable to locate this document."
 msgstr "Бұл құжатты табу мүмкін емес."
 
-#: ../src/documents.js:1092
-#, c-format
+#: ../src/documents.js:1097
+#, javascript-format
 msgid "Hmm, something is fishy (%d)."
 msgstr "Қап, бірнәрсе біртүрлі болып тұр (%d)."
 
-#. Translators: %s is the title of a document
-#: ../src/documents.js:1110
-#, c-format
+#: ../src/documents.js:1115
+#, javascript-format
 msgid "Oops! Unable to load “%s”"
 msgstr "Қап! “%s” жүктеу мүмкін емес"
 
@@ -157,18 +184,15 @@ msgstr "Жүктеу..."
 msgid "No Documents Found"
 msgstr "Құжаттар табылмады"
 
-#. Translators: %s here is "System Settings", which is in a separate string
-#. due to markup, and should be translated only in the context of this sentence
 #: ../src/embed.js:167
-#, c-format
+#, javascript-format
 msgid "You can add your online accounts in %s"
 msgstr "Сіз желідегі тіркелгілерді %s ішінен қоса аласыз"
 
-#. Translators: this should be translated in the context of the
-#. "You can add your online accounts in System Settings" sentence above
 #: ../src/embed.js:171
-msgid "System Settings"
-msgstr "Жүйелік баптаулар"
+#| msgid "System Settings"
+msgid "Settings"
+msgstr "Баптаулар"
 
 #: ../src/lib/gd-nav-bar.c:235
 #, c-format
@@ -207,47 +231,55 @@ msgstr "Мазмұны жоқ"
 msgid "Contents"
 msgstr "Құрамасы"
 
-#: ../src/mainToolbar.js:78
+#: ../src/mainToolbar.js:79
 msgid "Search"
 msgstr "Іздеу"
 
-#: ../src/mainToolbar.js:89
+#: ../src/mainToolbar.js:90
 msgid "Back"
 msgstr "Артқа"
 
+#: ../src/mainToolbar.js:163
+msgid "View items as a list"
+msgstr "Нәрселерді тізім ретінде көрсету"
+
 #: ../src/mainToolbar.js:169
-#, c-format
+msgid "View items as a grid of icons"
+msgstr "Нәрселерді таңбашалар торы ретінде көрсету"
+
+#: ../src/mainToolbar.js:203
+#, javascript-format
 msgid "Results for “%s”"
 msgstr "“%s” үшін нәтижелер"
 
-#: ../src/mainToolbar.js:177
+#: ../src/mainToolbar.js:211
 msgid "Click on items to select them"
 msgstr "Бірнәрсені таңдау үшін оның үстіне шертіңіз"
 
-#: ../src/mainToolbar.js:179
-#, c-format
+#: ../src/mainToolbar.js:213
+#, javascript-format
 msgid "%d selected"
 msgid_plural "%d selected"
 msgstr[0] "%d таңдалды"
 
-#: ../src/mainToolbar.js:208
+#: ../src/mainToolbar.js:240
 msgid "Cancel"
 msgstr "Бас тарту"
 
-#: ../src/mainToolbar.js:249
+#: ../src/mainToolbar.js:282
 msgid "Select Items"
 msgstr "Нәрселерді таңдау"
 
-#: ../src/mainWindow.js:272
+#: ../src/mainWindow.js:273
 msgid "translator-credits"
 msgstr "Baurzhan Muftakhidinov <baurthefirst@gmail.com> 2013"
 
-#: ../src/mainWindow.js:274
+#: ../src/mainWindow.js:275
 msgid "A document manager application"
 msgstr "Құжаттарды басқару қолданбасы"
 
 #: ../src/notifications.js:87
-#, c-format
+#, javascript-format
 msgid "Printing “%s”: %s"
 msgstr "Баспаға шығару “%s”: %s"
 
@@ -259,10 +291,8 @@ msgstr "Құжаттарыңызды индекстеу жүруде"
 msgid "Some documents might not be available during this process"
 msgstr "Бұл әрекет кезінде кейбір құжаттар қолжетерсіз болуы мүмкін"
 
-#. Translators: %s refers to an online account provider, e.g.
-#. "Google", or "Windows Live".
 #: ../src/notifications.js:166
-#, c-format
+#, javascript-format
 msgid "Fetching documents from %s"
 msgstr "%s ішінен құжаттарды алу"
 
@@ -279,7 +309,7 @@ msgid "_Unlock"
 msgstr "Бо_сату"
 
 #: ../src/password.js:64
-#, c-format
+#, javascript-format
 msgid "Document %s is locked and requires a password to be opened."
 msgstr "%s құжаты блокталған және оны ашу үшін пароль керек."
 
@@ -303,52 +333,42 @@ msgstr "Қайда бар"
 msgid "Bookmark this page"
 msgstr "Бұл парақты бетбелгілерге қосу"
 
-#. Translators: this is the Open action in a context menu
-#: ../src/preview.js:892 ../src/selections.js:856
-#, c-format
+#: ../src/preview.js:890 ../src/selections.js:856
+#, javascript-format
 msgid "Open with %s"
 msgstr "%s көмегімен ашу"
 
-#: ../src/preview.js:953
+#: ../src/preview.js:951
 msgid "Find Previous"
 msgstr "Алдыңғысын табу"
 
-#: ../src/preview.js:960
+#: ../src/preview.js:958
 msgid "Find Next"
 msgstr "Келесісін табу"
 
-#. properties button
 #: ../src/properties.js:60 ../src/resources/preview-menu.ui.h:9
 #: ../src/selections.js:766
 msgid "Properties"
 msgstr "Қасиеттері"
 
-#. Label for Done button in Sharing dialog
 #: ../src/properties.js:62 ../src/sharing.js:101
 msgid "Done"
 msgstr "Дайын"
 
-#. Title item
-#. Translators: "Title" is the label next to the document title
-#. in the properties dialog
 #: ../src/properties.js:82
 msgctxt "Document Title"
 msgid "Title"
 msgstr "Атауы"
 
-#. Translators: "Author" is the label next to the document author
-#. in the properties dialog
 #: ../src/properties.js:91
 msgctxt "Document Author"
 msgid "Author"
 msgstr "Авторы"
 
-#. Source item
 #: ../src/properties.js:98
 msgid "Source"
 msgstr "Қайнар көзі"
 
-#. Date Modified item
 #: ../src/properties.js:104
 msgid "Date Modified"
 msgstr "Түзетілген уақыты"
@@ -357,35 +377,24 @@ msgstr "Түзетілген уақыты"
 msgid "Date Created"
 msgstr "Жасалған күні"
 
-#. Document type item
-#. Translators: "Type" is the label next to the document type
-#. (PDF, spreadsheet, ...) in the properties dialog
 #: ../src/properties.js:120
 msgctxt "Document Type"
 msgid "Type"
 msgstr "Түрі"
 
-#: ../src/resources/app-menu.ui.h:2
-msgid "Grid"
-msgstr "Тор"
-
-#: ../src/resources/app-menu.ui.h:3
-msgid "List"
-msgstr "Тізім"
-
-#: ../src/resources/app-menu.ui.h:4
+#: ../src/resources/app-menu.ui.h:1
 msgid "Fullscreen"
 msgstr "Толық экранға"
 
-#: ../src/resources/app-menu.ui.h:5
-msgid "About Documents"
-msgstr "Құжаттар қолданбасы туралы"
-
-#: ../src/resources/app-menu.ui.h:6
+#: ../src/resources/app-menu.ui.h:2
 msgid "Help"
 msgstr "Көмек"
 
-#: ../src/resources/app-menu.ui.h:7
+#: ../src/resources/app-menu.ui.h:3
+msgid "About"
+msgstr "Осы туралы"
+
+#: ../src/resources/app-menu.ui.h:4
 msgid "Quit"
 msgstr "Шығу"
 
@@ -393,8 +402,6 @@ msgstr "Шығу"
 msgid "_Copy"
 msgstr "_Көшіру"
 
-#. open button
-#. Translators: this is the Open action in a context menu
 #: ../src/resources/preview-menu.ui.h:1 ../src/selections.js:746
 #: ../src/selections.js:859
 msgid "Open"
@@ -436,73 +443,63 @@ msgstr "Барлығын таңдау"
 msgid "Select None"
 msgstr "Ештеңе таңдамау"
 
-#: ../src/search.js:113
+#: ../src/search.js:114
 msgid "Category"
 msgstr "Санат"
 
-#. Translators: this refers to new and recent documents
-#. Translators: this refers to documents
-#: ../src/search.js:118 ../src/search.js:170 ../src/search.js:255
-#: ../src/search.js:411
+#: ../src/search.js:119 ../src/search.js:171 ../src/search.js:256
+#: ../src/search.js:412
 msgid "All"
 msgstr "Барлығы"
 
-#. Translators: this refers to favorite documents
-#: ../src/search.js:124
+#: ../src/search.js:125
 msgid "Favorites"
 msgstr "Таңдамалы"
 
-#. Translators: this refers to shared documents
-#: ../src/search.js:129
+#: ../src/search.js:130
 msgid "Shared with you"
 msgstr "Сізбен ортақ етілген"
 
-#. Translators: "Type" refers to a search filter on the document type
-#. (PDF, spreadsheet, ...)
-#: ../src/search.js:167
+#: ../src/search.js:168
 msgctxt "Search Filter"
 msgid "Type"
 msgstr "Түрі"
 
-#: ../src/search.js:172
+#: ../src/search.js:173
 msgid "Collections"
 msgstr "Жинақтар"
 
-#: ../src/search.js:176
+#: ../src/search.js:177
 msgid "PDF Documents"
 msgstr "PDF құжаттары"
 
-#: ../src/search.js:180
+#: ../src/search.js:181
 msgid "Presentations"
 msgstr "Презентациялар"
 
-#: ../src/search.js:183
+#: ../src/search.js:184
 msgid "Spreadsheets"
 msgstr "Электрондық кесте құжаттары"
 
-#: ../src/search.js:186
+#: ../src/search.js:187
 msgid "Text Documents"
 msgstr "Мәтiндiк құжаттар"
 
-#. Translators: this is a verb that refers to "All", "Title" and "Author",
-#. as in "Match All", "Match Title" and "Match Author"
-#: ../src/search.js:252
+#: ../src/search.js:253
 msgid "Match"
 msgstr "Сәйкес"
 
-#. Translators: "Title" refers to "Match Title" when searching
-#: ../src/search.js:258
+#: ../src/search.js:259
 msgctxt "Search Filter"
 msgid "Title"
 msgstr "Атауы"
 
-#. Translators: "Author" refers to "Match Author" when searching
-#: ../src/search.js:261
+#: ../src/search.js:262
 msgctxt "Search Filter"
 msgid "Author"
 msgstr "Авторы"
 
-#: ../src/search.js:407
+#: ../src/search.js:408
 msgid "Sources"
 msgstr "Қайнар көздер"
 
@@ -514,48 +511,39 @@ msgstr "Сізде бірде-бір жинақ жоқ. Жоғарыда жаң�
 msgid "Create new collection"
 msgstr "Жаңа жинақты жасау"
 
-#. Translators: "Collections" refers to documents in this context
 #: ../src/selections.js:639
 msgctxt "Dialog Title"
 msgid "Collections"
 msgstr "Жинақтар"
 
-#. print button
 #: ../src/selections.js:751
 msgid "Print"
 msgstr "Баспаға шығару"
 
-#. trash button
 #: ../src/selections.js:756
 msgid "Delete"
 msgstr "Өшіру"
 
-#. organize button
 #: ../src/selections.js:761
-#| msgid "Collection"
-msgid "Add to Collection"
-msgstr "Жинаққа қосу"
-
-#. share button
-#: ../src/selections.js:771
 msgid "Share"
 msgstr "Бөлісу"
+
+#: ../src/selections.js:771
+msgid "Add to Collection"
+msgstr "Жинаққа қосу"
 
 #: ../src/sharing.js:97
 msgid "Sharing Settings"
 msgstr "Ортақ қылудың баптаулары"
 
-#. Label for widget group for changing document permissions
 #: ../src/sharing.js:134
 msgid "Document permissions"
 msgstr "Құжат рұқсаттары"
 
-#. Label for permission change in Sharing dialog
 #: ../src/sharing.js:141 ../src/sharing.js:319
 msgid "Change"
 msgstr "Өзгерту"
 
-#. Label for radiobutton that sets doc permission to private
 #: ../src/sharing.js:165 ../src/sharing.js:294
 msgid "Private"
 msgstr "Жеке"
@@ -564,17 +552,14 @@ msgstr "Жеке"
 msgid "Public"
 msgstr "Ортақ"
 
-#. Label for checkbutton that sets doc permission to Can edit
 #: ../src/sharing.js:179 ../src/sharing.js:289
 msgid "Everyone can edit"
 msgstr "Әркім түзете алады"
 
-#. Label for widget group used for adding new contacts
 #: ../src/sharing.js:186
 msgid "Add people"
 msgstr "Адамды қосу"
 
-#. Editable text in entry field
 #: ../src/sharing.js:193
 msgid "Enter an email address"
 msgstr "Эл. пошта адресін енгізіңіз"
@@ -604,7 +589,7 @@ msgid "Owner"
 msgstr "Иесі"
 
 #: ../src/sharing.js:441
-#, c-format
+#, javascript-format
 msgid "You can ask %s for access"
 msgstr "Рұқсат үшін %s сұраңыз"
 
@@ -613,7 +598,7 @@ msgstr "Рұқсат үшін %s сұраңыз"
 msgid "The document was not updated"
 msgstr "Құжат жаңартылмады"
 
-#: ../src/shellSearchProvider.js:293
+#: ../src/shellSearchProvider.js:295
 msgid "Untitled Document"
 msgstr "Атаусыз құжат"
 
@@ -621,7 +606,6 @@ msgstr "Атаусыз құжат"
 msgid "Unable to fetch the list of documents"
 msgstr "Құжаттар тізімін алу мүмкін емес"
 
-#. Translators: "more" refers to documents in this context
 #: ../src/view.js:62 ../src/view.js:93
 msgid "Load More"
 msgstr "Көбірек жүктеу"
@@ -631,7 +615,7 @@ msgid "Yesterday"
 msgstr "Кеше"
 
 #: ../src/view.js:297
-#, c-format
+#, javascript-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
 msgstr[0] "%d күн бұрын"
@@ -641,7 +625,7 @@ msgid "Last week"
 msgstr "Өткен апта"
 
 #: ../src/view.js:303
-#, c-format
+#, javascript-format
 msgid "%d week ago"
 msgid_plural "%d weeks ago"
 msgstr[0] "%d апта бұрын"
@@ -651,7 +635,7 @@ msgid "Last month"
 msgstr "Өткен ай"
 
 #: ../src/view.js:309
-#, c-format
+#, javascript-format
 msgid "%d month ago"
 msgid_plural "%d months ago"
 msgstr[0] "%d ай бұрын"
@@ -661,7 +645,16 @@ msgid "Last year"
 msgstr "Былтыр"
 
 #: ../src/view.js:315
-#, c-format
+#, javascript-format
 msgid "%d year ago"
 msgid_plural "%d years ago"
 msgstr[0] "%d жыл бұрын"
+
+#~ msgid "Grid"
+#~ msgstr "Тор"
+
+#~ msgid "List"
+#~ msgstr "Тізім"
+
+#~ msgid "About Documents"
+#~ msgstr "Құжаттар қолданбасы туралы"
