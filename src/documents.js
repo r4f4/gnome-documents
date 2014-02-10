@@ -567,10 +567,32 @@ const DocCommon = new Lang.Class({
                 }
 
                 let printOp = EvView.PrintOperation.new(docModel.get_document());
+
+                printOp.connect('begin-print', Lang.bind(this,
+                    function() {
+                        Application.selectionController.setSelectionMode(false);
+                    }));
+
                 printOp.connect('done', Lang.bind(this,
                     function(op, res) {
-                        if (res == Gtk.PrintOperationResult.APPLY)
-                            Application.selectionController.setSelectionMode(false);
+                        if (res == Gtk.PrintOperationResult.ERROR) {
+                            try {
+                                printOp.get_error();
+                            } catch (e) {
+                                let errorDialog = new Gtk.MessageDialog ({ transient_for: toplevel,
+                                                                           modal: true,
+                                                                           destroy_with_parent: true,
+                                                                           buttons: Gtk.ButtonsType.OK,
+                                                                           message_type: Gtk.MessageType.ERROR,
+                                                                           text: _("Failed to print document"),
+                                                                           secondary_text: e.message });
+                                errorDialog.connect ('response', Lang.bind(this,
+                                    function() {
+                                        errorDialog.destroy();
+                                    }));
+                                errorDialog.show();
+                            }
+                        }
                     }));
 
                 let printNotification = new Notifications.PrintNotification(printOp, doc);
