@@ -4,13 +4,14 @@
 # Korostil Daniel <ted.korostiled@gmail.com>, 2011, 2012.
 # Alexandr Toorchyn <ilex@mail.ua>, 2011
 # Re. <ted.korostiled@gmail.com>, 2012.
-# Daniel Korostil <ted.korostiled@gmail.com>, 2013.
+# Daniel Korostil <ted.korostiled@gmail.com>, 2013, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-21 23:17+0300\n"
-"PO-Revision-Date: 2013-09-21 23:42+0300\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"documents&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2014-02-10 07:47+0000\n"
+"PO-Revision-Date: 2014-02-10 10:45+0300\n"
 "Last-Translator: Daniel Korostil <ted.korostiled@gmail.com>\n"
 "Language-Team: linux.org.ua\n"
 "Language: uk\n"
@@ -23,6 +24,17 @@ msgstr ""
 "X-Project-Style: gnome\n"
 
 #: ../data/gnome-documents.appdata.xml.in.h:1
+#: ../data/gnome-documents.desktop.in.in.h:1 ../src/application.js:103
+#: ../src/mainWindow.js:52 ../src/mainWindow.js:274
+msgid "Documents"
+msgstr "Документи"
+
+#: ../data/gnome-documents.appdata.xml.in.h:2
+#| msgid "A document manager application"
+msgid "A document manager application for GNOME"
+msgstr "Організатор документів для GNOME"
+
+#: ../data/gnome-documents.appdata.xml.in.h:3
 msgid ""
 "A simple application to access, organize and share your documents on GNOME. "
 "It is meant to be a simple and elegant replacement for using a file manager "
@@ -34,11 +46,11 @@ msgstr ""
 "документами. Також доступна інтеграція з інтернетними службами через "
 "мережеві облікові записи у GNOME."
 
-#: ../data/gnome-documents.appdata.xml.in.h:2
+#: ../data/gnome-documents.appdata.xml.in.h:4
 msgid "It lets you:"
 msgstr "Програма дозволяє:"
 
-#: ../data/gnome-documents.appdata.xml.in.h:3
+#: ../data/gnome-documents.appdata.xml.in.h:5
 msgid ""
 "<li>View recent local and online documents</li> <li>Access your Google, "
 "ownCloud or SkyDrive content</li> <li>Search through documents</li> <li>See "
@@ -53,11 +65,6 @@ msgstr ""
 "<li>Вибирати улюблені</li> <li>Відкривати повноцінні програми для роботи з "
 "документами</li>"
 
-#: ../data/gnome-documents.desktop.in.in.h:1 ../src/application.js:103
-#: ../src/mainWindow.js:52 ../src/mainWindow.js:273
-msgid "Documents"
-msgstr "Документи"
-
 #: ../data/gnome-documents.desktop.in.in.h:2
 msgid "Access, manage and share documents"
 msgstr "Доступ, впорядкування і оприлюднення документів"
@@ -67,7 +74,6 @@ msgid "Docs;PDF;Document;"
 msgstr "Доки;PDF;Документ;"
 
 #: ../data/org.gnome.documents.gschema.xml.h:1
-#: ../src/resources/app-menu.ui.h:1
 msgid "View as"
 msgstr "Переглянути як"
 
@@ -99,73 +105,73 @@ msgstr "Вікно розгорнуто"
 msgid "Window maximized state"
 msgstr "Стан розгорнутого вікна"
 
-#: ../src/documents.js:599 ../src/search.js:417
+#: ../src/documents.js:602 ../src/search.js:418
 msgid "Local"
 msgstr "Локальне"
 
-#: ../src/documents.js:620
+#: ../src/documents.js:623
 msgid "GNOME"
 msgstr "GNOME"
 
-#: ../src/documents.js:621
+#: ../src/documents.js:624
 msgid "Getting Started with Documents"
 msgstr "Вступ"
 
-#: ../src/documents.js:637 ../src/documents.js:800 ../src/documents.js:854
-#: ../src/documents.js:954
+#: ../src/documents.js:640 ../src/documents.js:805 ../src/documents.js:859
+#: ../src/documents.js:959
 msgid "Collection"
 msgstr "Збірка"
 
-#: ../src/documents.js:681
+#: ../src/documents.js:684
 msgid "Google Docs"
 msgstr "Google Docs"
 
-#: ../src/documents.js:682
+#: ../src/documents.js:685
 msgid "Google"
 msgstr "Google"
 
-#: ../src/documents.js:802 ../src/documents.js:956
+#: ../src/documents.js:807 ../src/documents.js:961
 msgid "Spreadsheet"
 msgstr "Електронна таблиця"
 
-#: ../src/documents.js:804 ../src/documents.js:958 ../src/presentation.js:47
+#: ../src/documents.js:809 ../src/documents.js:963 ../src/presentation.js:47
 msgid "Presentation"
 msgstr "Презентація"
 
-#: ../src/documents.js:806 ../src/documents.js:960
+#: ../src/documents.js:811 ../src/documents.js:965
 msgid "Document"
 msgstr "Документ"
 
-#: ../src/documents.js:832
+#: ../src/documents.js:837
 msgid "ownCloud"
 msgstr "ownCloud"
 
-#: ../src/documents.js:888 ../src/documents.js:889
+#: ../src/documents.js:893 ../src/documents.js:894
 msgid "Skydrive"
 msgstr "Skydrive"
 
-#: ../src/documents.js:1080
+#: ../src/documents.js:1085
 msgid "Please check the network connection."
 msgstr "Перевірте мережевий зв'язок."
 
-#: ../src/documents.js:1083
+#: ../src/documents.js:1088
 msgid "Please check the network proxy settings."
 msgstr "Перевірте параметри мережевого проксі."
 
-#: ../src/documents.js:1086
+#: ../src/documents.js:1091
 msgid "Unable to sign in to the document service."
 msgstr "Неможливо ввійти в службу документів."
 
-#: ../src/documents.js:1089
+#: ../src/documents.js:1094
 msgid "Unable to locate this document."
 msgstr "Неможливо розмістити цей документ."
 
-#: ../src/documents.js:1092
+#: ../src/documents.js:1097
 #, javascript-format
 msgid "Hmm, something is fishy (%d)."
 msgstr "Гмм, в'ялою рибою запахло (%d)."
 
-#: ../src/documents.js:1110
+#: ../src/documents.js:1115
 #, javascript-format
 msgid "Oops! Unable to load “%s”"
 msgstr "Отакої! Неможливо завантажити «%s»"
@@ -189,8 +195,9 @@ msgid "You can add your online accounts in %s"
 msgstr "Можете додати ваші мережеві облікові записи у %s"
 
 #: ../src/embed.js:171
-msgid "System Settings"
-msgstr "Системні параметри"
+#| msgid "System Settings"
+msgid "Settings"
+msgstr "Параметри"
 
 #: ../src/lib/gd-nav-bar.c:235
 #, c-format
@@ -237,16 +244,24 @@ msgstr "Пошук"
 msgid "Back"
 msgstr "Назад"
 
-#: ../src/mainToolbar.js:170
+#: ../src/mainToolbar.js:163
+msgid "View items as a list"
+msgstr "Переглянути об'єкти як список"
+
+#: ../src/mainToolbar.js:169
+msgid "View items as a grid of icons"
+msgstr "Переглянути об'єкти як сітку піктограм"
+
+#: ../src/mainToolbar.js:203
 #, javascript-format
 msgid "Results for “%s”"
 msgstr "Результати на «%s»"
 
-#: ../src/mainToolbar.js:178
+#: ../src/mainToolbar.js:211
 msgid "Click on items to select them"
 msgstr "Натисніть на об'єкти, щоб вибрати їх"
 
-#: ../src/mainToolbar.js:180
+#: ../src/mainToolbar.js:213
 #, javascript-format
 msgid "%d selected"
 msgid_plural "%d selected"
@@ -254,19 +269,19 @@ msgstr[0] "%d вибрано"
 msgstr[1] "%d вибрано"
 msgstr[2] "%d вибрано"
 
-#: ../src/mainToolbar.js:209
+#: ../src/mainToolbar.js:240
 msgid "Cancel"
 msgstr "Скасувати"
 
-#: ../src/mainToolbar.js:250
+#: ../src/mainToolbar.js:282
 msgid "Select Items"
 msgstr "Вибрати об'єкти"
 
-#: ../src/mainWindow.js:272
+#: ../src/mainWindow.js:273
 msgid "translator-credits"
 msgstr "Daniel Korostil <ted.korostiled@gmail.com>"
 
-#: ../src/mainWindow.js:274
+#: ../src/mainWindow.js:275
 msgid "A document manager application"
 msgstr "Організатор документів "
 
@@ -325,16 +340,16 @@ msgstr "Презентувати"
 msgid "Bookmark this page"
 msgstr "Закласти цю сторінку"
 
-#: ../src/preview.js:892 ../src/selections.js:856
+#: ../src/preview.js:890 ../src/selections.js:856
 #, javascript-format
 msgid "Open with %s"
 msgstr "Відкрити через %s"
 
-#: ../src/preview.js:953
+#: ../src/preview.js:951
 msgid "Find Previous"
 msgstr "Знайти попереднє"
 
-#: ../src/preview.js:960
+#: ../src/preview.js:958
 msgid "Find Next"
 msgstr "Знайти наступне"
 
@@ -374,27 +389,19 @@ msgctxt "Document Type"
 msgid "Type"
 msgstr "Тип"
 
-#: ../src/resources/app-menu.ui.h:2
-msgid "Grid"
-msgstr "Сітка"
-
-#: ../src/resources/app-menu.ui.h:3
-msgid "List"
-msgstr "Список"
-
-#: ../src/resources/app-menu.ui.h:4
+#: ../src/resources/app-menu.ui.h:1
 msgid "Fullscreen"
 msgstr "На весь екран"
 
-#: ../src/resources/app-menu.ui.h:5
-msgid "About Documents"
-msgstr "Про програму"
-
-#: ../src/resources/app-menu.ui.h:6
+#: ../src/resources/app-menu.ui.h:2
 msgid "Help"
 msgstr "Довідка"
 
-#: ../src/resources/app-menu.ui.h:7
+#: ../src/resources/app-menu.ui.h:3
+msgid "About"
+msgstr "Про програму"
+
+#: ../src/resources/app-menu.ui.h:4
 msgid "Quit"
 msgstr "Вийти"
 
@@ -443,63 +450,63 @@ msgstr "Вибрати все"
 msgid "Select None"
 msgstr "Нічого не вибирати"
 
-#: ../src/search.js:113
+#: ../src/search.js:114
 msgid "Category"
 msgstr "Категорія"
 
-#: ../src/search.js:118 ../src/search.js:170 ../src/search.js:255
-#: ../src/search.js:411
+#: ../src/search.js:119 ../src/search.js:171 ../src/search.js:256
+#: ../src/search.js:412
 msgid "All"
 msgstr "Все"
 
-#: ../src/search.js:124
+#: ../src/search.js:125
 msgid "Favorites"
 msgstr "Улюблене"
 
-#: ../src/search.js:129
+#: ../src/search.js:130
 msgid "Shared with you"
 msgstr "Спільне з вами"
 
-#: ../src/search.js:167
+#: ../src/search.js:168
 msgctxt "Search Filter"
 msgid "Type"
 msgstr "Тип"
 
-#: ../src/search.js:172
+#: ../src/search.js:173
 msgid "Collections"
 msgstr "Колекції"
 
-#: ../src/search.js:176
+#: ../src/search.js:177
 msgid "PDF Documents"
 msgstr "Документи PDF"
 
-#: ../src/search.js:180
+#: ../src/search.js:181
 msgid "Presentations"
 msgstr "Презентації"
 
-#: ../src/search.js:183
+#: ../src/search.js:184
 msgid "Spreadsheets"
 msgstr "Електронні таблиці"
 
-#: ../src/search.js:186
+#: ../src/search.js:187
 msgid "Text Documents"
 msgstr "Текстові документи"
 
-#: ../src/search.js:252
+#: ../src/search.js:253
 msgid "Match"
 msgstr "Збіги"
 
-#: ../src/search.js:258
+#: ../src/search.js:259
 msgctxt "Search Filter"
 msgid "Title"
 msgstr "Заголовок"
 
-#: ../src/search.js:261
+#: ../src/search.js:262
 msgctxt "Search Filter"
 msgid "Author"
 msgstr "Автор"
 
-#: ../src/search.js:407
+#: ../src/search.js:408
 msgid "Sources"
 msgstr "Джерела"
 
@@ -525,12 +532,12 @@ msgid "Delete"
 msgstr "Вилучити"
 
 #: ../src/selections.js:761
-msgid "Add to Collection"
-msgstr "Додати до збірки"
-
-#: ../src/selections.js:771
 msgid "Share"
 msgstr "Оприлюднити"
+
+#: ../src/selections.js:771
+msgid "Add to Collection"
+msgstr "Додати до збірки"
 
 #: ../src/sharing.js:97
 msgid "Sharing Settings"
@@ -598,7 +605,7 @@ msgstr "Можете попрохати %s про доступ"
 msgid "The document was not updated"
 msgstr "Документ не оновлено"
 
-#: ../src/shellSearchProvider.js:293
+#: ../src/shellSearchProvider.js:295
 msgid "Untitled Document"
 msgstr "Неназваний документ"
 
@@ -657,6 +664,15 @@ msgid_plural "%d years ago"
 msgstr[0] "%d рік тому"
 msgstr[1] "%d роки тому"
 msgstr[2] "%d років тому"
+
+#~ msgid "Grid"
+#~ msgstr "Сітка"
+
+#~ msgid "List"
+#~ msgstr "Список"
+
+#~ msgid "About Documents"
+#~ msgstr "Про програму"
 
 #~ msgid "Organize"
 #~ msgstr "Організація"
