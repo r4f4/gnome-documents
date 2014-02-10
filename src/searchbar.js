@@ -48,7 +48,7 @@ const Searchbar = new Lang.Class({
         this.widget = new Gtk.Revealer();
 
         let toolbar = new Gtk.Toolbar();
-        toolbar.get_style_context().add_class(Gtk.STYLE_CLASS_PRIMARY_TOOLBAR);
+        toolbar.get_style_context().add_class("search-bar");
         this.widget.add(toolbar);
 
         // subclasses will create this._searchEntry and this._searchContainer
