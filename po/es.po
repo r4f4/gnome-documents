@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: gnome-documents master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-01-08 18:35+0000\n"
-"PO-Revision-Date: 2014-01-10 11:02+0100\n"
+"POT-Creation-Date: 2014-02-11 07:50+0000\n"
+"PO-Revision-Date: 2014-02-11 10:19+0100\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "Language: \n"
@@ -100,72 +100,77 @@ msgstr "Ventana maximizada"
 msgid "Window maximized state"
 msgstr "Estado maximizado de la ventana"
 
-#: ../src/documents.js:599 ../src/search.js:417
+#: ../src/documents.js:587
+#| msgid "Unable to load the document"
+msgid "Failed to print document"
+msgstr "Falló al imprimir el documento"
+
+#: ../src/documents.js:624 ../src/search.js:418
 msgid "Local"
 msgstr "Locales"
 
-#: ../src/documents.js:620
+#: ../src/documents.js:645
 msgid "GNOME"
 msgstr "GNOME"
 
-#: ../src/documents.js:621
+#: ../src/documents.js:646
 msgid "Getting Started with Documents"
 msgstr "Primeros pasos con Documentos"
 
-#: ../src/documents.js:637 ../src/documents.js:802 ../src/documents.js:856
-#: ../src/documents.js:956
+#: ../src/documents.js:662 ../src/documents.js:827 ../src/documents.js:881
+#: ../src/documents.js:981
 msgid "Collection"
 msgstr "Colección"
 
-#: ../src/documents.js:681
+#: ../src/documents.js:706
 msgid "Google Docs"
 msgstr "Google Docs"
 
-#: ../src/documents.js:682
+#: ../src/documents.js:707
 msgid "Google"
 msgstr "Google"
 
-#: ../src/documents.js:804 ../src/documents.js:958
+#: ../src/documents.js:829 ../src/documents.js:983
 msgid "Spreadsheet"
 msgstr "Hoja de cálculo"
 
-#: ../src/documents.js:806 ../src/documents.js:960 ../src/presentation.js:47
+#: ../src/documents.js:831 ../src/documents.js:985 ../src/presentation.js:47
 msgid "Presentation"
 msgstr "Presentación"
 
-#: ../src/documents.js:808 ../src/documents.js:962
+#: ../src/documents.js:833 ../src/documents.js:987
 msgid "Document"
 msgstr "Documento"
 
-#: ../src/documents.js:834
+#: ../src/documents.js:859
 msgid "ownCloud"
 msgstr "ownCloud"
 
-#: ../src/documents.js:890 ../src/documents.js:891
+#: ../src/documents.js:915 ../src/documents.js:916
 msgid "Skydrive"
 msgstr "Skydrive"
 
-#: ../src/documents.js:1082
+#: ../src/documents.js:1107
 msgid "Please check the network connection."
 msgstr "Compruebe la conexión de red."
 
-#: ../src/documents.js:1085
+#: ../src/documents.js:1110
 msgid "Please check the network proxy settings."
 msgstr "Compruebe la configuración del proxy de red."
 
-#: ../src/documents.js:1088
+#: ../src/documents.js:1113
 msgid "Unable to sign in to the document service."
 msgstr "No se pudo iniciar sesión en el servicio de documentos."
 
-#: ../src/documents.js:1091
+#: ../src/documents.js:1116
 msgid "Unable to locate this document."
 msgstr "No se pudo encontrar este documento."
 
-#: ../src/documents.js:1094
+#: ../src/documents.js:1119
 msgid "Hmm, something is fishy (%d)."
 msgstr "Hay algo sospechoso (%d)."
 
-#: ../src/documents.js:1112
+#: ../src/documents.js:1137
 msgid "Oops! Unable to load “%s”"
 msgstr "No se pudo cargar «%s»"
 
@@ -273,23 +278,23 @@ msgstr "Daniel Mustieles <daniel.mustieles@gmail.com>, 2011-2012"
 msgid "A document manager application"
 msgstr "Una aplicación para gestionar documentos"
 
-#: ../src/notifications.js:87
+#: ../src/notifications.js:86
 msgid "Printing “%s”: %s"
 msgstr "Imprimiendo «%s»: %s"
 
-#: ../src/notifications.js:143
+#: ../src/notifications.js:142
 msgid "Your documents are being indexed"
 msgstr "Se están indexando sus documentos"
 
-#: ../src/notifications.js:144
+#: ../src/notifications.js:143
 msgid "Some documents might not be available during this process"
 msgstr "Algunos documentos pueden no estar disponibles durante este proceso"
 
-#: ../src/notifications.js:166
+#: ../src/notifications.js:165
 msgid "Fetching documents from %s"
 msgstr "Obteniendo documentos de %s"
 
-#: ../src/notifications.js:168
+#: ../src/notifications.js:167
 msgid "Fetching documents from online accounts"
 msgstr "Obteniendo documentos de cuentas en línea"
 
@@ -435,63 +440,63 @@ msgstr "Seleccionar todo"
 msgid "Select None"
 msgstr "Seleccionar nada"
 
-#: ../src/search.js:113
+#: ../src/search.js:114
 msgid "Category"
 msgstr "Categoría"
 
-#: ../src/search.js:118 ../src/search.js:170 ../src/search.js:255
-#: ../src/search.js:411
+#: ../src/search.js:119 ../src/search.js:171 ../src/search.js:256
+#: ../src/search.js:412
 msgid "All"
 msgstr "Todos"
 
-#: ../src/search.js:124
+#: ../src/search.js:125
 msgid "Favorites"
 msgstr "Marcadores"
 
-#: ../src/search.js:129
+#: ../src/search.js:130
 msgid "Shared with you"
 msgstr "Compartidos con usted"
 
-#: ../src/search.js:167
+#: ../src/search.js:168
 msgctxt "Search Filter"
 msgid "Type"
 msgstr "Tipo"
 
-#: ../src/search.js:172
+#: ../src/search.js:173
 msgid "Collections"
 msgstr "Colecciones"
 
-#: ../src/search.js:176
+#: ../src/search.js:177
 msgid "PDF Documents"
 msgstr "Documentos PDF"
 
-#: ../src/search.js:180
+#: ../src/search.js:181
 msgid "Presentations"
 msgstr "Presentaciones"
 
-#: ../src/search.js:183
+#: ../src/search.js:184
 msgid "Spreadsheets"
 msgstr "Hojas de cálculo"
 
-#: ../src/search.js:186
+#: ../src/search.js:187
 msgid "Text Documents"
 msgstr "Documentos de texto"
 
-#: ../src/search.js:252
+#: ../src/search.js:253
 msgid "Match"
 msgstr "Coincidencia"
 
-#: ../src/search.js:258
+#: ../src/search.js:259
 msgctxt "Search Filter"
 msgid "Title"
 msgstr "Título"
 
-#: ../src/search.js:261
+#: ../src/search.js:262
 msgctxt "Search Filter"
 msgid "Author"
 msgstr "Autor"
 
-#: ../src/search.js:407
+#: ../src/search.js:408
 msgid "Sources"
 msgstr "Fuentes"
 
@@ -519,12 +524,12 @@ msgid "Delete"
 msgstr "Eliminar"
 
 #: ../src/selections.js:761
-msgid "Add to Collection"
-msgstr "Añadir a la colección"
-
-#: ../src/selections.js:771
 msgid "Share"
 msgstr "Compartir"
+
+#: ../src/selections.js:771
+msgid "Add to Collection"
+msgstr "Añadir a la colección"
 
 #: ../src/sharing.js:97
 msgid "Sharing Settings"
