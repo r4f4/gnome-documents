@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: gnome-documents master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-01-08 17:21+0000\n"
-"PO-Revision-Date: 2014-01-23 14:38+0630\n"
+"POT-Creation-Date: 2014-02-12 07:48+0000\n"
+"PO-Revision-Date: 2014-02-12 15:26+0630\n"
 "Last-Translator: Nilamdyuti Goswami <ngoswami@redhat.com>\n"
 "Language-Team: Assamese <kde-i18n-doc@kde.org>\n"
 "Language: as_IN\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../data/gnome-documents.appdata.xml.in.h:1
 #: ../data/gnome-documents.desktop.in.in.h:1 ../src/application.js:103
-#: ../src/mainWindow.js:52 ../src/mainWindow.js:273
+#: ../src/mainWindow.js:52 ../src/mainWindow.js:274
 msgid "Documents"
 msgstr "দস্তাবেজসমূহ"
 
@@ -104,73 +104,78 @@ msgstr "উইন্ডো সৰ্বাধিক আকাৰ"
 msgid "Window maximized state"
 msgstr "উইন্ডো সৰ্বাধিক অৱস্থা"
 
-#: ../src/documents.js:599 ../src/search.js:417
+#: ../src/documents.js:587
+#| msgid "Unable to load the document"
+msgid "Failed to print document"
+msgstr "দস্তাবেজ প্ৰিন্ট কৰিবলৈ ব্যৰ্থ"
+
+#: ../src/documents.js:624 ../src/search.js:418
 msgid "Local"
 msgstr "স্থানীয়"
 
-#: ../src/documents.js:620
+#: ../src/documents.js:645
 msgid "GNOME"
 msgstr "GNOME"
 
-#: ../src/documents.js:621
+#: ../src/documents.js:646
 msgid "Getting Started with Documents"
 msgstr "দস্তাবেজসমূহৰ সৈতে আৰম্ভ কৰা"
 
-#: ../src/documents.js:637 ../src/documents.js:802 ../src/documents.js:856
-#: ../src/documents.js:956
+#: ../src/documents.js:662 ../src/documents.js:827 ../src/documents.js:881
+#: ../src/documents.js:981
 msgid "Collection"
 msgstr "সংগ্ৰহ"
 
-#: ../src/documents.js:681
+#: ../src/documents.js:706
 msgid "Google Docs"
 msgstr "Google দস্তাবেজসমূহ"
 
-#: ../src/documents.js:682
+#: ../src/documents.js:707
 msgid "Google"
 msgstr "Google"
 
-#: ../src/documents.js:804 ../src/documents.js:958
+#: ../src/documents.js:829 ../src/documents.js:983
 msgid "Spreadsheet"
 msgstr "স্প্ৰেডশ্বিট"
 
-#: ../src/documents.js:806 ../src/documents.js:960 ../src/presentation.js:47
+#: ../src/documents.js:831 ../src/documents.js:985 ../src/presentation.js:47
 msgid "Presentation"
 msgstr "পৰিৱেশন"
 
-#: ../src/documents.js:808 ../src/documents.js:962
+#: ../src/documents.js:833 ../src/documents.js:987
 msgid "Document"
 msgstr "দস্তাবেজ"
 
-#: ../src/documents.js:834
+#: ../src/documents.js:859
 msgid "ownCloud"
 msgstr "ownCloud"
 
-#: ../src/documents.js:890 ../src/documents.js:891
+#: ../src/documents.js:915 ../src/documents.js:916
 msgid "Skydrive"
 msgstr "Skydrive"
 
-#: ../src/documents.js:1082
+#: ../src/documents.js:1107
 msgid "Please check the network connection."
 msgstr "অনুগ্ৰহ কৰি নেটৱাৰ্ক সংযোগ নীৰিক্ষণ কৰক।"
 
-#: ../src/documents.js:1085
+#: ../src/documents.js:1110
 msgid "Please check the network proxy settings."
 msgstr "অনুগ্ৰহ কৰি নেটৱাৰ্ক প্ৰক্সি সংহতিসমূহ নীৰিক্ষণ কৰক।"
 
-#: ../src/documents.js:1088
+#: ../src/documents.js:1113
 msgid "Unable to sign in to the document service."
 msgstr "দস্তাবেজ সেৱালে ছাইন ইন কৰিবলে অক্ষম।"
 
-#: ../src/documents.js:1091
+#: ../src/documents.js:1116
 msgid "Unable to locate this document."
 msgstr "এই দস্তাবেজ অৱস্থিত কৰিবলে অক্ষম।"
 
-#: ../src/documents.js:1094
+#: ../src/documents.js:1119
 #, javascript-format
 msgid "Hmm, something is fishy (%d)."
 msgstr "উমম, কিবা ঠিক যেন লগা নাই (%d)।"
 
-#: ../src/documents.js:1112
+#: ../src/documents.js:1137
 #, javascript-format
 msgid "Oops! Unable to load “%s”"
 msgstr "ইচ্চ! “%s” ল'ড কৰিবলে অক্ষম"
@@ -194,7 +199,6 @@ msgid "You can add your online accounts in %s"
 msgstr "আপুনি আপোনাৰ অনলাইন একাওন্টসমূহ %s ত যোগ কৰিব পাৰিব"
 
 #: ../src/embed.js:171
-#| msgid "System Settings"
 msgid "Settings"
 msgstr "সংহতিসমূহ"
 
@@ -275,33 +279,33 @@ msgstr "বাতিল কৰক"
 msgid "Select Items"
 msgstr "বস্তুবোৰ বাছক"
 
-#: ../src/mainWindow.js:272
+#: ../src/mainWindow.js:273
 msgid "translator-credits"
 msgstr "নীলমদ্যুতি গোস্বামী (ngoswami@redhat.com)"
 
-#: ../src/mainWindow.js:274
+#: ../src/mainWindow.js:275
 msgid "A document manager application"
 msgstr "এটা দস্তাবেজ ব্যৱস্থাপক এপ্লিকেচন"
 
-#: ../src/notifications.js:87
+#: ../src/notifications.js:86
 #, javascript-format
 msgid "Printing “%s”: %s"
 msgstr "“%s” প্ৰিন্ট কৰা হৈছে: %s"
 
-#: ../src/notifications.js:143
+#: ../src/notifications.js:142
 msgid "Your documents are being indexed"
 msgstr "আপোনাৰ দস্তাবেজসমূহ সূচীত কৰা হৈছে"
 
-#: ../src/notifications.js:144
+#: ../src/notifications.js:143
 msgid "Some documents might not be available during this process"
 msgstr "এই প্ৰক্ৰিয়াৰ সময়ত কিছুমান দস্তাবেজ উপলব্ধ নাথাকিব পাৰে"
 
-#: ../src/notifications.js:166
+#: ../src/notifications.js:165
 #, javascript-format
 msgid "Fetching documents from %s"
 msgstr "%s ৰ পৰা দস্তাবেজসমূহ প্ৰাপ্ত কৰা হৈছে"
 
-#: ../src/notifications.js:168
+#: ../src/notifications.js:167
 msgid "Fetching documents from online accounts"
 msgstr "অনলাইন একাওন্টসমূহৰ পৰা দস্তাবেজসমূহ প্ৰাপ্ত কৰা হৈছে"
 
@@ -448,63 +452,63 @@ msgstr "সকলো বাছক"
 msgid "Select None"
 msgstr "কোনোটো নাবাছিব"
 
-#: ../src/search.js:113
+#: ../src/search.js:114
 msgid "Category"
 msgstr "বিভাগ"
 
-#: ../src/search.js:118 ../src/search.js:170 ../src/search.js:255
-#: ../src/search.js:411
+#: ../src/search.js:119 ../src/search.js:171 ../src/search.js:256
+#: ../src/search.js:412
 msgid "All"
 msgstr "সকলো"
 
-#: ../src/search.js:124
+#: ../src/search.js:125
 msgid "Favorites"
 msgstr "পছন্দৰ"
 
-#: ../src/search.js:129
+#: ../src/search.js:130
 msgid "Shared with you"
 msgstr "আপোনাৰ সৈতে অংশীদাৰী কৰা আছে"
 
-#: ../src/search.js:167
+#: ../src/search.js:168
 msgctxt "Search Filter"
 msgid "Type"
 msgstr "ধৰণ"
 
-#: ../src/search.js:172
+#: ../src/search.js:173
 msgid "Collections"
 msgstr "সংগ্ৰহসমূহ"
 
-#: ../src/search.js:176
+#: ../src/search.js:177
 msgid "PDF Documents"
 msgstr "PDF দস্তাবেজসমূহ"
 
-#: ../src/search.js:180
+#: ../src/search.js:181
 msgid "Presentations"
 msgstr "পৰিৱেশনসমূহ"
 
-#: ../src/search.js:183
+#: ../src/search.js:184
 msgid "Spreadsheets"
 msgstr "স্প্ৰেডশ্বিটসমূহ"
 
-#: ../src/search.js:186
+#: ../src/search.js:187
 msgid "Text Documents"
 msgstr "লিখনী দস্তাবেজসমূহ"
 
-#: ../src/search.js:252
+#: ../src/search.js:253
 msgid "Match"
 msgstr "মিল"
 
-#: ../src/search.js:258
+#: ../src/search.js:259
 msgctxt "Search Filter"
 msgid "Title"
 msgstr "শীৰ্ষক"
 
-#: ../src/search.js:261
+#: ../src/search.js:262
 msgctxt "Search Filter"
 msgid "Author"
 msgstr "লেখক"
 
-#: ../src/search.js:407
+#: ../src/search.js:408
 msgid "Sources"
 msgstr "উৎসসমূহ"
 
@@ -530,12 +534,12 @@ msgid "Delete"
 msgstr "মচি পেলাওক"
 
 #: ../src/selections.js:761
-msgid "Add to Collection"
-msgstr "সংগ্ৰহলৈ যোগ কৰক"
-
-#: ../src/selections.js:771
 msgid "Share"
 msgstr "অংশীদাৰী কৰক"
+
+#: ../src/selections.js:771
+msgid "Add to Collection"
+msgstr "সংগ্ৰহলৈ যোগ কৰক"
 
 #: ../src/sharing.js:97
 msgid "Sharing Settings"
