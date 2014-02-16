@@ -28,7 +28,7 @@ const _ = imports.gettext.gettext;
 // Import versions go here
 imports.gi.versions.GdPrivate = '1.0';
 imports.gi.versions.Gd = '1.0';
-imports.gi.versions.Tracker = '0.18';
+imports.gi.versions.Tracker = '1.0';
 imports.gi.versions.TrackerMiner = '1.0';
 imports.gi.versions.EvinceDocument = '3.0';
 imports.gi.versions.Goa = '1.0';
