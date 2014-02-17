@@ -590,7 +590,7 @@ const OrganizeCollectionView = new Lang.Class({
     _iconCellFunc: function(col, cell, model, iter) {
         let id = model.get_value(iter, OrganizeModelColumns.ID);
 
-        cell.icon_name = "gtk-add";
+        cell.icon_name = "list-add";
         cell.visible = (id == _COLLECTION_PLACEHOLDER_ID);
     },
 
