@@ -1,3 +1,13 @@
+3.11.90 - "Mimosas"
+===================
+
+- Turn into a DBus activatable service
+- Switch to tracker 1.0 API (Colin Walters, Yosef Or Boczko)
+- Fix toolbar item positions for new GTK
+- Remove "Loading..." from spinner box
+- Miscellaneous printing fixes
+- Update search bar style (Jakub Steiner)
+
 3.11.5 - "SG"
 =============
 
