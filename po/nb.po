@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-documents 3.11.x\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-01-22 22:06+0100\n"
-"PO-Revision-Date: 2014-01-22 22:07+0100\n"
+"POT-Creation-Date: 2014-02-19 20:50+0100\n"
+"PO-Revision-Date: 2014-02-19 20:50+0100\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian bokmål <i18n-nb@lister.ping.uio.no>\n"
 "Language: \n"
@@ -17,17 +17,17 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../data/gnome-documents.appdata.xml.in.h:1
-#: ../data/gnome-documents.desktop.in.in.h:1 ../src/application.js:103
+#: ../data/org.gnome.Documents.appdata.xml.in.h:1
+#: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:103
 #: ../src/mainWindow.js:52 ../src/mainWindow.js:274
 msgid "Documents"
 msgstr "Dokumenter"
 
-#: ../data/gnome-documents.appdata.xml.in.h:2
+#: ../data/org.gnome.Documents.appdata.xml.in.h:2
 msgid "A document manager application for GNOME"
 msgstr "Et program for å håndtere dokumenter i GNOME"
 
-#: ../data/gnome-documents.appdata.xml.in.h:3
+#: ../data/org.gnome.Documents.appdata.xml.in.h:3
 msgid ""
 "A simple application to access, organize and share your documents on GNOME. "
 "It is meant to be a simple and elegant replacement for using a file manager "
@@ -39,11 +39,11 @@ msgstr ""
 "med en filhåndterer. Sømløs integrasjon med skytjenester gis via «Kontoer på "
 "nettet» i GNOME."
 
-#: ../data/gnome-documents.appdata.xml.in.h:4
+#: ../data/org.gnome.Documents.appdata.xml.in.h:4
 msgid "It lets you:"
 msgstr "Det lar deg:"
 
-#: ../data/gnome-documents.appdata.xml.in.h:5
+#: ../data/org.gnome.Documents.appdata.xml.in.h:5
 msgid ""
 "<li>View recent local and online documents</li> <li>Access your Google, "
 "ownCloud or SkyDrive content</li> <li>Search through documents</li> <li>See "
@@ -57,11 +57,11 @@ msgstr ""
 "fullskjermmodus</li> <li>Skriv ut dokumenter</li> <li>Velg favoritter</li> "
 "<li>Tillat å åpne fullverdig redigering for større endringer</li>"
 
-#: ../data/gnome-documents.desktop.in.in.h:2
+#: ../data/org.gnome.Documents.desktop.in.h:2
 msgid "Access, manage and share documents"
 msgstr "Aksesser, håndter og del dokumenter"
 
-#: ../data/gnome-documents.desktop.in.in.h:3
+#: ../data/org.gnome.Documents.desktop.in.h:3
 msgid "Docs;PDF;Document;"
 msgstr "Dokumentasjon;PDF;Dokument;"
 
@@ -97,73 +97,77 @@ msgstr "Vindu maksimert"
 msgid "Window maximized state"
 msgstr "Om vinduet er maksimert eller ikke"
 
-#: ../src/documents.js:601 ../src/search.js:418
+#: ../src/documents.js:587
+msgid "Failed to print document"
+msgstr "Klarte ikke å skrive ut dokumentet"
+
+#: ../src/documents.js:624 ../src/search.js:418
 msgid "Local"
 msgstr "Lokalt"
 
-#: ../src/documents.js:622
+#: ../src/documents.js:645
 msgid "GNOME"
 msgstr "GNOME"
 
-#: ../src/documents.js:623
+#: ../src/documents.js:646
 msgid "Getting Started with Documents"
 msgstr "Kom i gang med Dokumenter"
 
-#: ../src/documents.js:639 ../src/documents.js:804 ../src/documents.js:858
-#: ../src/documents.js:958
+#: ../src/documents.js:662 ../src/documents.js:827 ../src/documents.js:881
+#: ../src/documents.js:981
 msgid "Collection"
 msgstr "Samling"
 
-#: ../src/documents.js:683
+#: ../src/documents.js:706
 msgid "Google Docs"
 msgstr "Google Docs"
 
-#: ../src/documents.js:684
+#: ../src/documents.js:707
 msgid "Google"
 msgstr "Google"
 
-#: ../src/documents.js:806 ../src/documents.js:960
+#: ../src/documents.js:829 ../src/documents.js:983
 msgid "Spreadsheet"
 msgstr "Regneark"
 
-#: ../src/documents.js:808 ../src/documents.js:962 ../src/presentation.js:47
+#: ../src/documents.js:831 ../src/documents.js:985 ../src/presentation.js:47
 msgid "Presentation"
 msgstr "Presentasjon"
 
-#: ../src/documents.js:810 ../src/documents.js:964
+#: ../src/documents.js:833 ../src/documents.js:987
 msgid "Document"
 msgstr "Dokument"
 
-#: ../src/documents.js:836
+#: ../src/documents.js:859
 msgid "ownCloud"
 msgstr "ownCloud"
 
-#: ../src/documents.js:892 ../src/documents.js:893
+#: ../src/documents.js:915 ../src/documents.js:916
 msgid "Skydrive"
 msgstr "Skydrive"
 
-#: ../src/documents.js:1084
+#: ../src/documents.js:1107
 msgid "Please check the network connection."
 msgstr "Sjekk nettverkstilkoblingen."
 
-#: ../src/documents.js:1087
+#: ../src/documents.js:1110
 msgid "Please check the network proxy settings."
 msgstr "Sjekk proxyinnstillinger for nettverk."
 
-#: ../src/documents.js:1090
+#: ../src/documents.js:1113
 msgid "Unable to sign in to the document service."
 msgstr "Kan ikke logge inn på dokumenttjenesten."
 
-#: ../src/documents.js:1093
+#: ../src/documents.js:1116
 msgid "Unable to locate this document."
 msgstr "Kan ikke finne dette dokumentet."
 
-#: ../src/documents.js:1096
+#: ../src/documents.js:1119
 #, javascript-format
 msgid "Hmm, something is fishy (%d)."
 msgstr "Hmm, noe er galt (%d)."
 
-#: ../src/documents.js:1114
+#: ../src/documents.js:1137
 #, javascript-format
 msgid "Oops! Unable to load “%s”"
 msgstr "Opps! kan ikke laste «%s»"
@@ -172,21 +176,16 @@ msgstr "Opps! kan ikke laste «%s»"
 msgid "View"
 msgstr "Vis"
 
-#: ../src/embed.js:63 ../src/lib/gd-places-bookmarks.c:383
-#: ../src/lib/gd-places-links.c:257 ../src/view.js:71
-msgid "Loading…"
-msgstr "Laster …"
-
-#: ../src/embed.js:146
+#: ../src/embed.js:141
 msgid "No Documents Found"
 msgstr "Ingen dokumenter funnet"
 
-#: ../src/embed.js:167
+#: ../src/embed.js:162
 #, javascript-format
 msgid "You can add your online accounts in %s"
 msgstr "Du kan legge til dine kontoer på nettet i %s"
 
-#: ../src/embed.js:171
+#: ../src/embed.js:166
 msgid "Settings"
 msgstr "Innstillinger"
 
@@ -214,6 +213,11 @@ msgstr "Side %s"
 #: ../src/lib/gd-places-bookmarks.c:375
 msgid "No bookmarks"
 msgstr "Ingen bokmerker"
+
+#: ../src/lib/gd-places-bookmarks.c:383 ../src/lib/gd-places-links.c:257
+#: ../src/view.js:71
+msgid "Loading…"
+msgstr "Laster …"
 
 #: ../src/lib/gd-places-bookmarks.c:648 ../src/preview.js:594
 msgid "Bookmarks"
@@ -275,26 +279,26 @@ msgstr "Kjartan Maraas <kmaraas@gnome.org>"
 msgid "A document manager application"
 msgstr "Et program for å håndtere dokumenter"
 
-#: ../src/notifications.js:87
+#: ../src/notifications.js:86
 #, javascript-format
 msgid "Printing “%s”: %s"
 msgstr "Skriver ut «%s»: %s"
 
-#: ../src/notifications.js:143
+#: ../src/notifications.js:142
 msgid "Your documents are being indexed"
 msgstr "Dokumentene dine blir indeksert"
 
-#: ../src/notifications.js:144
+#: ../src/notifications.js:143
 msgid "Some documents might not be available during this process"
 msgstr ""
 "Noen dokumenter vil kanskje ikke være tilgjengelig under denne prosessen"
 
-#: ../src/notifications.js:166
+#: ../src/notifications.js:165
 #, javascript-format
 msgid "Fetching documents from %s"
 msgstr "Henter dokumenter fra %s"
 
-#: ../src/notifications.js:168
+#: ../src/notifications.js:167
 msgid "Fetching documents from online accounts"
 msgstr "Henter dokumenter fra kontoer på nettet"
 
@@ -524,12 +528,12 @@ msgid "Delete"
 msgstr "Slett"
 
 #: ../src/selections.js:761
-msgid "Add to Collection"
-msgstr "Legg til i samling"
-
-#: ../src/selections.js:771
 msgid "Share"
 msgstr "Del"
+
+#: ../src/selections.js:771
+msgid "Add to Collection"
+msgstr "Legg til i samling"
 
 #: ../src/sharing.js:97
 msgid "Sharing Settings"
@@ -597,7 +601,7 @@ msgstr "Du kan spørre %s om tilgang"
 msgid "The document was not updated"
 msgstr "Dokumentet ble ikke oppdatert"
 
-#: ../src/shellSearchProvider.js:295
+#: ../src/shellSearchProvider.js:294
 msgid "Untitled Document"
 msgstr "Dokument uten navn"
 
