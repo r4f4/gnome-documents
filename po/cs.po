@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: gnome-documents master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-01-08 17:21+0000\n"
-"PO-Revision-Date: 2014-01-13 14:27+0100\n"
+"POT-Creation-Date: 2014-02-20 19:47+0000\n"
+"PO-Revision-Date: 2014-02-21 08:00+0100\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -21,17 +21,17 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Generator: Gtranslator 2.91.6\n"
 
-#: ../data/gnome-documents.appdata.xml.in.h:1
-#: ../data/gnome-documents.desktop.in.in.h:1 ../src/application.js:103
-#: ../src/mainWindow.js:52 ../src/mainWindow.js:273
+#: ../data/org.gnome.Documents.appdata.xml.in.h:1
+#: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:103
+#: ../src/mainWindow.js:52 ../src/mainWindow.js:274
 msgid "Documents"
 msgstr "Dokumenty"
 
-#: ../data/gnome-documents.appdata.xml.in.h:2
+#: ../data/org.gnome.Documents.appdata.xml.in.h:2
 msgid "A document manager application for GNOME"
 msgstr "Aplikace pro správu dokumentů v GNOME"
 
-#: ../data/gnome-documents.appdata.xml.in.h:3
+#: ../data/org.gnome.Documents.appdata.xml.in.h:3
 msgid ""
 "A simple application to access, organize and share your documents on GNOME. "
 "It is meant to be a simple and elegant replacement for using a file manager "
@@ -43,11 +43,11 @@ msgstr ""
 "náhrada místo používání správce souborů k práci s dokumenty. Díky účtům on-"
 "line v GNOME umí bez problémů fungovat i s cloudem."
 
-#: ../data/gnome-documents.appdata.xml.in.h:4
+#: ../data/org.gnome.Documents.appdata.xml.in.h:4
 msgid "It lets you:"
 msgstr "Můžete v ní dělat následující věci:"
 
-#: ../data/gnome-documents.appdata.xml.in.h:5
+#: ../data/org.gnome.Documents.appdata.xml.in.h:5
 msgid ""
 "<li>View recent local and online documents</li> <li>Access your Google, "
 "ownCloud or SkyDrive content</li> <li>Search through documents</li> <li>See "
@@ -62,11 +62,11 @@ msgstr ""
 "dokumenty</li> <li>Vybírat oblíbené</li> <li>Pro náročnější změny otevřít "
 "dokumenty v plnohodnotném editoru</li>"
 
-#: ../data/gnome-documents.desktop.in.in.h:2
+#: ../data/org.gnome.Documents.desktop.in.h:2
 msgid "Access, manage and share documents"
 msgstr "Přístup k dokumentům, jejich správa a sdílení"
 
-#: ../data/gnome-documents.desktop.in.in.h:3
+#: ../data/org.gnome.Documents.desktop.in.h:3
 msgid "Docs;PDF;Document;"
 msgstr "PDF;Dokument;"
 
@@ -102,72 +102,78 @@ msgstr "Maximalizace okna"
 msgid "Window maximized state"
 msgstr "Stav maximalizace okna."
 
-#: ../src/documents.js:599 ../src/search.js:417
+#: ../src/documents.js:587
+msgid "Failed to print document"
+msgstr "Selhal tisk dokumentu"
+
+#: ../src/documents.js:624 ../src/search.js:418
 msgid "Local"
 msgstr "Místní"
 
-#: ../src/documents.js:620
+#: ../src/documents.js:645
 msgid "GNOME"
 msgstr "GNOME"
 
-#: ../src/documents.js:621
+#: ../src/documents.js:646
 msgid "Getting Started with Documents"
 msgstr "Začínáme s Dokumenty"
 
-#: ../src/documents.js:637 ../src/documents.js:802 ../src/documents.js:856
-#: ../src/documents.js:956
+#: ../src/documents.js:662 ../src/documents.js:827 ../src/documents.js:881
+#: ../src/documents.js:981
 msgid "Collection"
 msgstr "Sbírka"
 
-#: ../src/documents.js:681
+#: ../src/documents.js:706
 msgid "Google Docs"
 msgstr "Dokumenty Google"
 
-#: ../src/documents.js:682
+#: ../src/documents.js:707
 msgid "Google"
 msgstr "Google"
 
-#: ../src/documents.js:804 ../src/documents.js:958
+#: ../src/documents.js:829 ../src/documents.js:983
 msgid "Spreadsheet"
 msgstr "Sešit s tabulkami"
 
-#: ../src/documents.js:806 ../src/documents.js:960 ../src/presentation.js:47
+#: ../src/documents.js:831 ../src/documents.js:985 ../src/presentation.js:47
 msgid "Presentation"
 msgstr "Prezentace"
 
-#: ../src/documents.js:808 ../src/documents.js:962
+#: ../src/documents.js:833 ../src/documents.js:987
 msgid "Document"
 msgstr "Dokument"
 
-#: ../src/documents.js:834
+#: ../src/documents.js:859
 msgid "ownCloud"
 msgstr "ownCloud"
 
-#: ../src/documents.js:890 ../src/documents.js:891
+#: ../src/documents.js:915 ../src/documents.js:916
 msgid "Skydrive"
 msgstr "Skydrive"
 
-#: ../src/documents.js:1082
+#: ../src/documents.js:1107
 msgid "Please check the network connection."
 msgstr "Zkontrolujte prosím síťové připojení."
 
-#: ../src/documents.js:1085
+#: ../src/documents.js:1110
 msgid "Please check the network proxy settings."
 msgstr "Zkontrolujte prosím nastavení síťové proxy."
 
-#: ../src/documents.js:1088
+#: ../src/documents.js:1113
 msgid "Unable to sign in to the document service."
 msgstr "Nelze se přihlásit k dokumentové službě."
 
-#: ../src/documents.js:1091
+#: ../src/documents.js:1116
 msgid "Unable to locate this document."
 msgstr "Nelze nalézt tento dokument."
 
-#: ../src/documents.js:1094
+#: ../src/documents.js:1119
+#, javascript-format
 msgid "Hmm, something is fishy (%d)."
 msgstr "Hmm, něco je špatně (%d)."
 
-#: ../src/documents.js:1112
+#: ../src/documents.js:1137
+#, javascript-format
 msgid "Oops! Unable to load “%s”"
 msgstr "Jejda! Nelze načíst „%s“"
 
@@ -175,20 +181,16 @@ msgstr "Jejda! Nelze načíst „%s“"
 msgid "View"
 msgstr "Zobrazit"
 
-#: ../src/embed.js:63 ../src/lib/gd-places-bookmarks.c:383
-#: ../src/lib/gd-places-links.c:257 ../src/view.js:71
-msgid "Loading…"
-msgstr "Načítá se…"
-
-#: ../src/embed.js:146
+#: ../src/embed.js:141
 msgid "No Documents Found"
 msgstr "Nenalezen žádný dokument"
 
-#: ../src/embed.js:167
+#: ../src/embed.js:162
+#, javascript-format
 msgid "You can add your online accounts in %s"
 msgstr "Své účty on-line můžete přidat v %s"
 
-#: ../src/embed.js:171
+#: ../src/embed.js:166
 msgid "Settings"
 msgstr "Nastavení"
 
@@ -216,6 +218,11 @@ msgstr "Strana %s"
 #: ../src/lib/gd-places-bookmarks.c:375
 msgid "No bookmarks"
 msgstr "Žádné záložky"
+
+#: ../src/lib/gd-places-bookmarks.c:383 ../src/lib/gd-places-links.c:257
+#: ../src/view.js:71
+msgid "Loading…"
+msgstr "Načítá se…"
 
 #: ../src/lib/gd-places-bookmarks.c:648 ../src/preview.js:594
 msgid "Bookmarks"
@@ -246,6 +253,7 @@ msgid "View items as a grid of icons"
 msgstr "Zobrazit položky jako mřížku ikon"
 
 #: ../src/mainToolbar.js:203
+#, javascript-format
 msgid "Results for “%s”"
 msgstr "Výsledky pro „%s“"
 
@@ -254,6 +262,7 @@ msgid "Click on items to select them"
 msgstr "Klikáním na položky je vyberete"
 
 #: ../src/mainToolbar.js:213
+#, javascript-format
 msgid "%d selected"
 msgid_plural "%d selected"
 msgstr[0] "%d vybrán"
@@ -268,33 +277,35 @@ msgstr "Zrušit"
 msgid "Select Items"
 msgstr "Vybrat položky"
 
-#: ../src/mainWindow.js:272
+#: ../src/mainWindow.js:273
 msgid "translator-credits"
 msgstr ""
 "Marek Černocký <marek@manet.cz>\n"
 "Adam Matoušek <adamatousek@gmail.com>"
 
-#: ../src/mainWindow.js:274
+#: ../src/mainWindow.js:275
 msgid "A document manager application"
 msgstr "Aplikace pro správu dokumentů"
 
-#: ../src/notifications.js:87
+#: ../src/notifications.js:86
+#, javascript-format
 msgid "Printing “%s”: %s"
 msgstr "Tiskne se „%s“: %s"
 
-#: ../src/notifications.js:143
+#: ../src/notifications.js:142
 msgid "Your documents are being indexed"
 msgstr "Vaše dokumenty jsou indexovány"
 
-#: ../src/notifications.js:144
+#: ../src/notifications.js:143
 msgid "Some documents might not be available during this process"
 msgstr "Některé dokumenty nemusí být během tohoto procesu dostupné"
 
-#: ../src/notifications.js:166
+#: ../src/notifications.js:165
+#, javascript-format
 msgid "Fetching documents from %s"
 msgstr "Získávají se dokumenty z %s"
 
-#: ../src/notifications.js:168
+#: ../src/notifications.js:167
 msgid "Fetching documents from online accounts"
 msgstr "Získávají se dokumenty z účtů on-line"
 
@@ -307,6 +318,7 @@ msgid "_Unlock"
 msgstr "Odemkno_ut"
 
 #: ../src/password.js:64
+#, javascript-format
 msgid "Document %s is locked and requires a password to be opened."
 msgstr "Dokument %s je uzamčen a k otevření požaduje heslo."
 
@@ -332,6 +344,7 @@ msgid "Bookmark this page"
 msgstr "Tuto stránku do záložek"
 
 #: ../src/preview.js:890 ../src/selections.js:856
+#, javascript-format
 msgid "Open with %s"
 msgstr "Otevřít pomocí %s"
 
@@ -440,63 +453,63 @@ msgstr "Vybrat vše"
 msgid "Select None"
 msgstr "Nevybrat nic"
 
-#: ../src/search.js:113
+#: ../src/search.js:114
 msgid "Category"
 msgstr "Kategorie"
 
-#: ../src/search.js:118 ../src/search.js:170 ../src/search.js:255
-#: ../src/search.js:411
+#: ../src/search.js:119 ../src/search.js:171 ../src/search.js:256
+#: ../src/search.js:412
 msgid "All"
 msgstr "Vše"
 
-#: ../src/search.js:124
+#: ../src/search.js:125
 msgid "Favorites"
 msgstr "Oblíbené"
 
-#: ../src/search.js:129
+#: ../src/search.js:130
 msgid "Shared with you"
 msgstr "Sdílené s vámi"
 
-#: ../src/search.js:167
+#: ../src/search.js:168
 msgctxt "Search Filter"
 msgid "Type"
 msgstr "Typ"
 
-#: ../src/search.js:172
+#: ../src/search.js:173
 msgid "Collections"
 msgstr "Sbírky"
 
-#: ../src/search.js:176
+#: ../src/search.js:177
 msgid "PDF Documents"
 msgstr "Dokumenty PDF"
 
-#: ../src/search.js:180
+#: ../src/search.js:181
 msgid "Presentations"
 msgstr "Prezentace"
 
-#: ../src/search.js:183
+#: ../src/search.js:184
 msgid "Spreadsheets"
 msgstr "Sešity s tabulkami"
 
-#: ../src/search.js:186
+#: ../src/search.js:187
 msgid "Text Documents"
 msgstr "Textové dokumenty"
 
-#: ../src/search.js:252
+#: ../src/search.js:253
 msgid "Match"
 msgstr "Porovnávat"
 
-#: ../src/search.js:258
+#: ../src/search.js:259
 msgctxt "Search Filter"
 msgid "Title"
 msgstr "Název"
 
-#: ../src/search.js:261
+#: ../src/search.js:262
 msgctxt "Search Filter"
 msgid "Author"
 msgstr "Autora"
 
-#: ../src/search.js:407
+#: ../src/search.js:408
 msgid "Sources"
 msgstr "Zdroje"
 
@@ -522,12 +535,12 @@ msgid "Delete"
 msgstr "Smazat"
 
 #: ../src/selections.js:761
-msgid "Add to Collection"
-msgstr "Přidat do sbírky"
-
-#: ../src/selections.js:771
 msgid "Share"
 msgstr "Sdílet"
+
+#: ../src/selections.js:771
+msgid "Add to Collection"
+msgstr "Přidat do sbírky"
 
 #: ../src/sharing.js:97
 msgid "Sharing Settings"
@@ -586,6 +599,7 @@ msgid "Owner"
 msgstr "Vlastník"
 
 #: ../src/sharing.js:441
+#, javascript-format
 msgid "You can ask %s for access"
 msgstr "%s vám může udělit přistup"
 
@@ -594,7 +608,7 @@ msgstr "%s vám může udělit přistup"
 msgid "The document was not updated"
 msgstr "Dokument nebyl aktualizován"
 
-#: ../src/shellSearchProvider.js:295
+#: ../src/shellSearchProvider.js:294
 msgid "Untitled Document"
 msgstr "Nepojmenovaný dokument"
 
@@ -611,6 +625,7 @@ msgid "Yesterday"
 msgstr "Včera"
 
 #: ../src/view.js:297
+#, javascript-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
 msgstr[0] "Před %d dnem"
@@ -622,6 +637,7 @@ msgid "Last week"
 msgstr "Minulý týden"
 
 #: ../src/view.js:303
+#, javascript-format
 msgid "%d week ago"
 msgid_plural "%d weeks ago"
 msgstr[0] "Před %d týdnem"
@@ -633,6 +649,7 @@ msgid "Last month"
 msgstr "Minulý měsíc"
 
 #: ../src/view.js:309
+#, javascript-format
 msgid "%d month ago"
 msgid_plural "%d months ago"
 msgstr[0] "Před %d měsícem"
@@ -644,6 +661,7 @@ msgid "Last year"
 msgstr "Minulý rok"
 
 #: ../src/view.js:315
+#, javascript-format
 msgid "%d year ago"
 msgid_plural "%d years ago"
 msgstr[0] "Před %d rokem"
