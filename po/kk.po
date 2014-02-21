@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: gnome-documents master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-02-08 19:51+0000\n"
-"PO-Revision-Date: 2014-02-09 10:25+0600\n"
+"POT-Creation-Date: 2014-02-21 07:45+0000\n"
+"PO-Revision-Date: 2014-02-21 23:37+0600\n"
 "Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
 "Language-Team: Kazakh <kk_KZ@googlegroups.com>\n"
 "Language: kk\n"
@@ -19,18 +19,17 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Poedit 1.5.4\n"
 
-#: ../data/gnome-documents.appdata.xml.in.h:1
-#: ../data/gnome-documents.desktop.in.in.h:1 ../src/application.js:103
+#: ../data/org.gnome.Documents.appdata.xml.in.h:1
+#: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:103
 #: ../src/mainWindow.js:52 ../src/mainWindow.js:274
 msgid "Documents"
 msgstr "Құжаттар қолданбасы"
 
-#: ../data/gnome-documents.appdata.xml.in.h:2
-#| msgid "A document manager application"
+#: ../data/org.gnome.Documents.appdata.xml.in.h:2
 msgid "A document manager application for GNOME"
 msgstr "GNOME үшін құжаттарды басқару қолданбасы"
 
-#: ../data/gnome-documents.appdata.xml.in.h:3
+#: ../data/org.gnome.Documents.appdata.xml.in.h:3
 msgid ""
 "A simple application to access, organize and share your documents on GNOME. "
 "It is meant to be a simple and elegant replacement for using a file manager "
@@ -42,11 +41,11 @@ msgstr ""
 "алмастыратын қарапайым әрі элегантты шешім ретінде ұсынылады. GNOME желілік "
 "тіркелгілері арқылы бұлттық қызметтермен жапсарсыз интеграция іске асырылады."
 
-#: ../data/gnome-documents.appdata.xml.in.h:4
+#: ../data/org.gnome.Documents.appdata.xml.in.h:4
 msgid "It lets you:"
 msgstr "Мүмкіндіктері:"
 
-#: ../data/gnome-documents.appdata.xml.in.h:5
+#: ../data/org.gnome.Documents.appdata.xml.in.h:5
 msgid ""
 "<li>View recent local and online documents</li> <li>Access your Google, "
 "ownCloud or SkyDrive content</li> <li>Search through documents</li> <li>See "
@@ -60,11 +59,11 @@ msgstr ""
 "қарау</li> <li>Құжаттарды баспаға шығару</li> <li>Таңдамалыларды белгілеу</"
 "li> <li>Күрделірек түзетулер үшін мүмкіндіктері толық түзеткіші ашу</li>"
 
-#: ../data/gnome-documents.desktop.in.in.h:2
+#: ../data/org.gnome.Documents.desktop.in.h:2
 msgid "Access, manage and share documents"
 msgstr "Құжаттарға қатынау, басқару және олармен бөлісу"
 
-#: ../data/gnome-documents.desktop.in.in.h:3
+#: ../data/org.gnome.Documents.desktop.in.h:3
 msgid "Docs;PDF;Document;"
 msgstr "Құжаттар;PDF;Құжат;"
 
@@ -100,73 +99,78 @@ msgstr "Терезе максималды етілген"
 msgid "Window maximized state"
 msgstr "Терезе максималды күйі"
 
-#: ../src/documents.js:602 ../src/search.js:418
+#: ../src/documents.js:587
+#| msgid "Unable to load the document"
+msgid "Failed to print document"
+msgstr "Құжатты баспаға шығару сәтсіз аяқталды"
+
+#: ../src/documents.js:624 ../src/search.js:418
 msgid "Local"
 msgstr "Жергілікті"
 
-#: ../src/documents.js:623
+#: ../src/documents.js:645
 msgid "GNOME"
 msgstr "GNOME"
 
-#: ../src/documents.js:624
+#: ../src/documents.js:646
 msgid "Getting Started with Documents"
 msgstr "Құжаттар қолданбасымен жұмысты бастау"
 
-#: ../src/documents.js:640 ../src/documents.js:805 ../src/documents.js:859
-#: ../src/documents.js:959
+#: ../src/documents.js:662 ../src/documents.js:827 ../src/documents.js:881
+#: ../src/documents.js:981
 msgid "Collection"
 msgstr "Жинақ"
 
-#: ../src/documents.js:684
+#: ../src/documents.js:706
 msgid "Google Docs"
 msgstr "Google Docs"
 
-#: ../src/documents.js:685
+#: ../src/documents.js:707
 msgid "Google"
 msgstr "Google"
 
-#: ../src/documents.js:807 ../src/documents.js:961
+#: ../src/documents.js:829 ../src/documents.js:983
 msgid "Spreadsheet"
 msgstr "Электрондық кесте"
 
-#: ../src/documents.js:809 ../src/documents.js:963 ../src/presentation.js:47
+#: ../src/documents.js:831 ../src/documents.js:985 ../src/presentation.js:47
 msgid "Presentation"
 msgstr "Презентация"
 
-#: ../src/documents.js:811 ../src/documents.js:965
+#: ../src/documents.js:833 ../src/documents.js:987
 msgid "Document"
 msgstr "Құжат"
 
-#: ../src/documents.js:837
+#: ../src/documents.js:859
 msgid "ownCloud"
 msgstr "ownCloud"
 
-#: ../src/documents.js:893 ../src/documents.js:894
+#: ../src/documents.js:915 ../src/documents.js:916
 msgid "Skydrive"
 msgstr "Skydrive"
 
-#: ../src/documents.js:1085
+#: ../src/documents.js:1107
 msgid "Please check the network connection."
 msgstr "Желілік байланысты тексеріңіз."
 
-#: ../src/documents.js:1088
+#: ../src/documents.js:1110
 msgid "Please check the network proxy settings."
 msgstr "Желілік прокси баптауларын тексеріңіз."
 
-#: ../src/documents.js:1091
+#: ../src/documents.js:1113
 msgid "Unable to sign in to the document service."
 msgstr "Құжаттарды сақтау қызметіне кіру мүмкін емес."
 
-#: ../src/documents.js:1094
+#: ../src/documents.js:1116
 msgid "Unable to locate this document."
 msgstr "Бұл құжатты табу мүмкін емес."
 
-#: ../src/documents.js:1097
+#: ../src/documents.js:1119
 #, javascript-format
 msgid "Hmm, something is fishy (%d)."
 msgstr "Қап, бірнәрсе біртүрлі болып тұр (%d)."
 
-#: ../src/documents.js:1115
+#: ../src/documents.js:1137
 #, javascript-format
 msgid "Oops! Unable to load “%s”"
 msgstr "Қап! “%s” жүктеу мүмкін емес"
@@ -175,22 +179,16 @@ msgstr "Қап! “%s” жүктеу мүмкін емес"
 msgid "View"
 msgstr "Қарау"
 
-#: ../src/embed.js:63 ../src/lib/gd-places-bookmarks.c:383
-#: ../src/lib/gd-places-links.c:257 ../src/view.js:71
-msgid "Loading…"
-msgstr "Жүктеу..."
-
-#: ../src/embed.js:146
+#: ../src/embed.js:141
 msgid "No Documents Found"
 msgstr "Құжаттар табылмады"
 
-#: ../src/embed.js:167
+#: ../src/embed.js:162
 #, javascript-format
 msgid "You can add your online accounts in %s"
 msgstr "Сіз желідегі тіркелгілерді %s ішінен қоса аласыз"
 
-#: ../src/embed.js:171
-#| msgid "System Settings"
+#: ../src/embed.js:166
 msgid "Settings"
 msgstr "Баптаулар"
 
@@ -218,6 +216,11 @@ msgstr "Бет %s"
 #: ../src/lib/gd-places-bookmarks.c:375
 msgid "No bookmarks"
 msgstr "Бетбелгілер жоқ"
+
+#: ../src/lib/gd-places-bookmarks.c:383 ../src/lib/gd-places-links.c:257
+#: ../src/view.js:71
+msgid "Loading…"
+msgstr "Жүктеу..."
 
 #: ../src/lib/gd-places-bookmarks.c:648 ../src/preview.js:594
 msgid "Bookmarks"
@@ -278,25 +281,25 @@ msgstr "Baurzhan Muftakhidinov <baurthefirst@gmail.com> 2013"
 msgid "A document manager application"
 msgstr "Құжаттарды басқару қолданбасы"
 
-#: ../src/notifications.js:87
+#: ../src/notifications.js:86
 #, javascript-format
 msgid "Printing “%s”: %s"
 msgstr "Баспаға шығару “%s”: %s"
 
-#: ../src/notifications.js:143
+#: ../src/notifications.js:142
 msgid "Your documents are being indexed"
 msgstr "Құжаттарыңызды индекстеу жүруде"
 
-#: ../src/notifications.js:144
+#: ../src/notifications.js:143
 msgid "Some documents might not be available during this process"
 msgstr "Бұл әрекет кезінде кейбір құжаттар қолжетерсіз болуы мүмкін"
 
-#: ../src/notifications.js:166
+#: ../src/notifications.js:165
 #, javascript-format
 msgid "Fetching documents from %s"
 msgstr "%s ішінен құжаттарды алу"
 
-#: ../src/notifications.js:168
+#: ../src/notifications.js:167
 msgid "Fetching documents from online accounts"
 msgstr "Желідегі тіркелгілерден құжаттарды алу"
 
@@ -598,7 +601,7 @@ msgstr "Рұқсат үшін %s сұраңыз"
 msgid "The document was not updated"
 msgstr "Құжат жаңартылмады"
 
-#: ../src/shellSearchProvider.js:295
+#: ../src/shellSearchProvider.js:294
 msgid "Untitled Document"
 msgstr "Атаусыз құжат"
 
