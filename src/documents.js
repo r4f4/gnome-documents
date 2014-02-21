@@ -546,7 +546,7 @@ const DocCommon = new Lang.Class({
             this._collectionIconWatcher = null;
         }
 
-        Application.settings.disconnect(this._refreshIconId);
+        Application.application.disconnect(this._refreshIconId);
         Application.searchCategoryManager.disconnect(this._filterId);
     },
 
