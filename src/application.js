@@ -29,7 +29,7 @@ const _ = imports.gettext.gettext;
 imports.gi.versions.GdPrivate = '1.0';
 imports.gi.versions.Gd = '1.0';
 imports.gi.versions.Tracker = '1.0';
-imports.gi.versions.TrackerMiner = '1.0';
+imports.gi.versions.TrackerControl = '1.0';
 imports.gi.versions.EvinceDocument = '3.0';
 imports.gi.versions.Goa = '1.0';
 imports.gi.versions.WebKit = '3.0';
@@ -42,7 +42,7 @@ const Goa = imports.gi.Goa;
 const Gtk = imports.gi.Gtk;
 const GLib = imports.gi.GLib;
 const Tracker = imports.gi.Tracker;
-const TrackerMiner = imports.gi.TrackerMiner;
+const TrackerControl = imports.gi.TrackerControl;
 
 const ChangeMonitor = imports.changeMonitor;
 const Documents = imports.documents;
@@ -112,7 +112,7 @@ const Application = new Lang.Class({
     },
 
     _initGettingStarted: function() {
-        let manager = TrackerMiner.MinerManager.new_full(false);
+        let manager = TrackerControl.MinerManager.new_full(false);
 
         let languages = GLib.get_language_names();
         let files = languages.map(

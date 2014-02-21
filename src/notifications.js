@@ -23,7 +23,7 @@ const Gd = imports.gi.Gd;
 const Gio = imports.gi.Gio;
 const GLib = imports.gi.GLib;
 const Gtk = imports.gi.Gtk;
-const TrackerMiner = imports.gi.TrackerMiner;
+const TrackerControl = imports.gi.TrackerControl;
 const _ = imports.gettext.gettext;
 
 const Application = imports.application;
@@ -104,7 +104,7 @@ const IndexingNotification = new Lang.Class({
         this._timeoutId = 0;
 
         try {
-            this._manager = TrackerMiner.MinerManager.new_full(false);
+            this._manager = TrackerControl.MinerManager.new_full(false);
             this._manager.connect('miner-progress', Lang.bind(this, this._checkNotification));
         } catch(e) {
             log('Unable to create a TrackerMinerManager, indexing progress ' +

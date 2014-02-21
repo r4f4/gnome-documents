@@ -24,7 +24,6 @@
 
 #include <gtk/gtk.h>
 #include <evince-view.h>
-#include <libtracker-miner/tracker-miner.h>
 
 void gd_queue_thumbnail_job_for_file_async (GFile *file,
                                             GAsyncReadyCallback callback,

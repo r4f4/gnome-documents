@@ -63,7 +63,6 @@ GdPrivate_1_0_gir_INCLUDES = \
    Gtk-3.0 \
    EvinceDocument-3.0 \
    EvinceView-3.0 \
-   TrackerMiner-1.0 \
    Zpj-0.0
 
 GdPrivate_1_0_gir_FILES = \
