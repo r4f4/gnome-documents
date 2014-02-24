@@ -80,12 +80,8 @@ const PreviewView = new Lang.Class({
         this._previewContextMenu = Gtk.Menu.new_from_model(model);
         this._previewContextMenu.attach_to_widget(this.widget, null);
 
-        // create page nav bar
-        this._navBar = new PreviewNavBar(this._model);
-        this._overlay.add_overlay(this._navBar.widget);
-
-        // create page nav buttons
-        this._navButtons = new PreviewNavButtons(this, this._overlay);
+        // create page nav controls
+        this._navControls = new PreviewNavControls(this, this._overlay);
 
         this.widget.show_all();
 
@@ -161,7 +157,7 @@ const PreviewView = new Lang.Class({
         if (!Application.documentManager.metadata)
             return;
 
-        this._navButtons.show();
+        this._navControls.show();
 
         this._bookmarks = new GdPrivate.Bookmarks({ metadata: Application.documentManager.metadata });
     },
@@ -352,12 +348,9 @@ const PreviewView = new Lang.Class({
         if (this._controlsVisible) {
             if (this._fsToolbar)
                 this._fsToolbar.show();
-            if (!this._loadError)
-                this._navBar.show();
         } else {
             if (this._fsToolbar)
                 this._fsToolbar.hide();
-            this._navBar.hide();
         }
     },
 
@@ -366,7 +359,7 @@ const PreviewView = new Lang.Class({
         if (windowMode != WindowMode.WindowMode.PREVIEW) {
             this.controlsVisible = false;
             this._hidePresentation();
-            this._navButtons.hide();
+            this._navControls.hide();
         }
     },
 
@@ -554,8 +547,7 @@ const PreviewView = new Lang.Class({
 
         if (this._model) {
             this.view.set_model(this._model);
-            this._navBar.setModel(model);
-            this._navButtons.setModel(model);
+            this._navControls.setModel(model);
             this._model.connect('page-changed', Lang.bind(this, this._onPageChanged));
         }
     },
@@ -575,71 +567,10 @@ const PreviewView = new Lang.Class({
 Signals.addSignalMethods(PreviewView.prototype);
 
 const _PREVIEW_NAVBAR_MARGIN = 30;
-
-const PreviewNavBar = new Lang.Class({
-    Name: 'PreviewNavBar',
-
-    _init: function(model) {
-        this._model = model;
-        this.widget = new GdPrivate.NavBar({ document_model: model,
-                                             margin: _PREVIEW_NAVBAR_MARGIN,
-                                             valign: Gtk.Align.END,
-                                             opacity: 0 });
-        this.widget.get_style_context().add_class('osd');
-
-        let button = new Gtk.Button({ action_name: 'app.places',
-                                      child: new Gtk.Image({ icon_name: 'view-list-symbolic',
-                                                             pixel_size: 16 }),
-                                      valign: Gtk.Align.CENTER,
-                                      tooltip_text: _("Bookmarks")
-                                    });
-        let buttonArea = this.widget.get_button_area();
-        buttonArea.pack_start(button, false, false, 0);
-
-        button = new Gtk.ToggleButton({ action_name: 'app.bookmark-page',
-                                        child: new Gtk.Image({ icon_name: 'bookmark-add-symbolic',
-                                                               pixel_size: 16 }),
-                                        valign: Gtk.Align.CENTER,
-                                        tooltip_text: _("Bookmark this page")
-                                      });
-        buttonArea.pack_start(button, false, false, 0);
-    },
-
-    setModel: function(model) {
-        this._model = model;
-        this.widget.document_model = model;
-        if (!model)
-            this.hide();
-
-        let hasMultiplePages = (model.document.get_n_pages() > 1);
-        Application.application.lookup_action('bookmark-page').enabled = hasMultiplePages;
-        Application.application.lookup_action('places').enabled = hasMultiplePages;
-    },
-
-    show: function() {
-        if (!this._model)
-            return;
-
-        this.widget.show_all();
-        Tweener.addTween(this.widget, { opacity: 1,
-                                        time: 0.30,
-                                        transition: 'easeOutQuad' });
-    },
-
-    hide: function() {
-        Tweener.addTween(this.widget, { opacity: 0,
-                                        time: 0.30,
-                                        transition: 'easeOutQuad',
-                                        onComplete: function() {
-                                            this.widget.hide();
-                                        },
-                                        onCompleteScope: this });
-    }
-});
-
 const _AUTO_HIDE_TIMEOUT = 2;
-const PreviewNavButtons = new Lang.Class({
-    Name: 'PreviewNavButtons',
+
+const PreviewNavControls = new Lang.Class({
+    Name: 'PreviewNavControls',
 
     _init: function(previewView, overlay) {
         this._previewView = previewView;
@@ -651,6 +582,33 @@ const PreviewNavButtons = new Lang.Class({
         this._autoHideId = 0;
         this._motionId = 0;
         this._hover = false;
+
+        this.bar_widget = new GdPrivate.NavBar({ document_model: this._model,
+                                                 margin: _PREVIEW_NAVBAR_MARGIN,
+                                                 valign: Gtk.Align.END,
+                                                 opacity: 0 });
+        this.bar_widget.get_style_context().add_class('osd');
+        this._overlay.add_overlay(this.bar_widget);
+        this.bar_widget.connect('enter-notify-event', Lang.bind(this, this._onEnterNotify));
+        this.bar_widget.connect('leave-notify-event', Lang.bind(this, this._onLeaveNotify));
+
+        let buttonArea = this.bar_widget.get_button_area();
+
+        let button = new Gtk.Button({ action_name: 'app.places',
+                                      child: new Gtk.Image({ icon_name: 'view-list-symbolic',
+                                                             pixel_size: 16 }),
+                                      valign: Gtk.Align.CENTER,
+                                      tooltip_text: _("Bookmarks")
+                                    });
+        buttonArea.pack_start(button, false, false, 0);
+
+        button = new Gtk.ToggleButton({ action_name: 'app.bookmark-page',
+                                        child: new Gtk.Image({ icon_name: 'bookmark-add-symbolic',
+                                                               pixel_size: 16 }),
+                                        valign: Gtk.Align.CENTER,
+                                        tooltip_text: _("Bookmark this page")
+                                      });
+        buttonArea.pack_start(button, false, false, 0);
 
         let isRtl = (this._previewView.widget.get_direction() == Gtk.TextDirection.RTL);
         let prevIconName = isRtl ? 'go-next-symbolic' : 'go-previous-symbolic';
@@ -720,6 +678,7 @@ const PreviewNavButtons = new Lang.Class({
     },
 
     _autoHide: function() {
+        this._fadeOutButton(this.bar_widget);
         this._fadeOutButton(this.prev_widget);
         this._fadeOutButton(this.next_widget);
         this._autoHideId = 0;
@@ -741,10 +700,13 @@ const PreviewNavButtons = new Lang.Class({
 
     _updateVisibility: function() {
         if (!this._model || !this._visible) {
+            this._fadeOutButton(this.bar_widget);
             this._fadeOutButton(this.prev_widget);
             this._fadeOutButton(this.next_widget);
             return;
         }
+
+        this._fadeInButton(this.bar_widget);
 
         if (this._model.page > 0)
             this._fadeInButton(this.prev_widget);
@@ -768,9 +730,15 @@ const PreviewNavButtons = new Lang.Class({
         }
 
         this._model = model;
+        this.bar_widget.document_model = model;
 
-        if (this._model)
+        if (this._model) {
+            let hasMultiplePages = (this._model.document.get_n_pages() > 1);
+            Application.application.lookup_action('bookmark-page').enabled = hasMultiplePages;
+            Application.application.lookup_action('places').enabled = hasMultiplePages;
+
             this._pageChangedId = this._model.connect('page-changed', Lang.bind(this, this._updateVisibility));
+        }
 
         this._updateVisibility();
     },
