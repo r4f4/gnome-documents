@@ -34,6 +34,7 @@ const WindowMode = imports.windowMode;
 const Documents = imports.documents;
 
 const EvView = imports.gi.EvinceView;
+const Gd = imports.gi.Gd;
 const Gdk = imports.gi.Gdk;
 const Gio = imports.gi.Gio;
 const GLib = imports.gi.GLib;
@@ -275,6 +276,14 @@ const Embed = new Lang.Class({
             this._onWindowModeChanged(Application.modeController, windowMode, WindowMode.WindowMode.NONE);
     },
 
+    _onActivateResult: function() {
+        let iter = this._view.model.model.get_iter_first()[1];
+        if (iter) {
+            let id = this._view.model.model.get_value(iter, Gd.MainColumns.ID);
+            Application.documentManager.setActiveItem(Application.documentManager.getItemById(id))
+        };
+    },
+
     _onQueryStatusChanged: function() {
         let windowMode = Application.modeController.getWindowMode();
         if (windowMode != WindowMode.WindowMode.OVERVIEW)
@@ -349,6 +358,8 @@ const Embed = new Lang.Class({
             throw(new Error('Not handled'));
             break;
         }
+        this._toolbar.searchbar.connect('activate-result',
+                                        Lang.bind(this, this._onActivateResult));
     },
 
     _onActiveItemChanged: function(manager, doc) {

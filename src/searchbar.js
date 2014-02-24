@@ -67,6 +67,9 @@ const Searchbar = new Lang.Class({
                 if (keyval == Gdk.KEY_Escape) {
                     Application.application.change_action_state('search', GLib.Variant.new('b', false));
                     return true;
+                } else if (keyval == Gdk.KEY_Return) {
+                    this.emit('activate-result');
+                    return true;
                 }
 
                 return false;
@@ -200,6 +203,7 @@ const Searchbar = new Lang.Class({
         this._searchEntry.set_text('');
     }
 });
+Signals.addSignalMethods(Searchbar.prototype);
 
 const Dropdown = new Lang.Class({
     Name: 'Dropdown',

@@ -49,9 +49,9 @@ const MainToolbar = new Lang.Class({
         this.widget.add(this.toolbar);
         this.toolbar.show();
 
-        this._searchbar = this.createSearchbar();
-        if (this._searchbar)
-            this.widget.add(this._searchbar.widget);
+        this.searchbar = this.createSearchbar();
+        if (this.searchbar)
+            this.widget.add(this.searchbar.widget);
 
         Application.documentManager.connect('load-started', Lang.bind(this,
             function() {
@@ -70,7 +70,7 @@ const MainToolbar = new Lang.Class({
         if (!this._handleEvent)
             return false;
 
-        let res = this._searchbar.handleEvent(event);
+        let res = this.searchbar.handleEvent(event);
         return res;
     },
 
