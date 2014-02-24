@@ -426,7 +426,7 @@ const Embed = new Lang.Class({
         dialog.widget.connect('response', Lang.bind(this,
             function(widget, response) {
                 dialog.widget.destroy();
-                if (response == Gtk.ResponseType.CANCEL)
+                if (response == Gtk.ResponseType.CANCEL || response == Gtk.ResponseType.DELETE_EVENT)
                     Application.documentManager.setActiveItem(null);
             }));
     },
