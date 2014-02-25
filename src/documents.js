@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2011, 2012, 2013 Red Hat, Inc.
+ * Copyright (c) 2011, 2012, 2013, 2014 Red Hat, Inc.
  *
  * Gnome Documents is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by the
@@ -354,6 +354,10 @@ const DocCommon = new Lang.Class({
         }
     },
 
+    canShare: function(callback) {
+        log('Error: DocCommon implementations must override canShare');
+    },
+
     createThumbnail: function(callback) {
         log('Error: DocCommon implementations must override createThumbnail');
     },
@@ -678,6 +682,10 @@ const LocalDocument = new Lang.Class({
             }));
     },
 
+    canShare: function() {
+        return false;
+    },
+
     canTrash: function() {
         return this.collection;
     },
@@ -841,6 +849,10 @@ const GoogleDocument = new Lang.Class({
         this.parent(cursor);
     },
 
+    canShare: function() {
+        return true;
+    },
+
     canTrash: function() {
         return false;
     }
@@ -895,6 +907,10 @@ const OwncloudDocument = new Lang.Class({
                     callback(this, null, e);
                 }
             }));
+    },
+
+    canShare: function() {
+        return false;
     },
 
     canTrash: function() {
@@ -987,6 +1003,10 @@ const SkydriveDocument = new Lang.Class({
             description = _("Document");
 
         this.typeDescription = description;
+    },
+
+    canShare: function() {
+        return false;
     },
 
     canTrash: function() {
