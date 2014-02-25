@@ -358,6 +358,10 @@ const DocCommon = new Lang.Class({
         log('Error: DocCommon implementations must override canShare');
     },
 
+    canTrash: function(callback) {
+        log('Error: DocCommon implementations must override canTrash');
+    },
+
     createThumbnail: function(callback) {
         log('Error: DocCommon implementations must override createThumbnail');
     },
