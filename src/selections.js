@@ -430,8 +430,8 @@ const OrganizeCollectionView = new Lang.Class({
         this.widget = new Gtk.Overlay();
 
         this._sw = new Gtk.ScrolledWindow({ shadow_type: Gtk.ShadowType.IN,
-                                            margin_left: 5,
-                                            margin_right: 5,
+                                            margin_start: 5,
+                                            margin_end: 5,
                                             margin_bottom: 3 });
         this.widget.add(this._sw);
 

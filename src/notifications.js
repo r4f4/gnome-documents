@@ -51,8 +51,8 @@ const PrintNotification = new Lang.Class({
     _onPrintBegin: function() {
         this.widget = new Gtk.Grid({ orientation: Gtk.Orientation.VERTICAL,
                                      row_spacing: 6,
-                                     margin_left: 12,
-                                     margin_right: 12});
+                                     margin_start: 12,
+                                     margin_end: 12});
 
         this._statusLabel = new Gtk.Label();
         this.widget.add(this._statusLabel);
@@ -63,7 +63,7 @@ const PrintNotification = new Lang.Class({
                                                                    pixel_size: 16,
                                                                    margin_top: 2,
                                                                    margin_bottom: 2 }),
-                                            margin_left: 12,
+                                            margin_start: 12,
                                             valign: Gtk.Align.CENTER
                                             });
         this.widget.attach_next_to(this._stopButton, this._statusLabel,
@@ -181,8 +181,8 @@ const IndexingNotification = new Lang.Class({
 
     _buildWidget: function() {
         this.widget = new Gtk.Grid({ orientation: Gtk.Orientation.HORIZONTAL,
-                                     margin_left: 12,
-                                     margin_right: 12,
+                                     margin_start: 12,
+                                     margin_end: 12,
                                      column_spacing: 12 });
 
         let spinner = new Gtk.Spinner({ width_request: 16,

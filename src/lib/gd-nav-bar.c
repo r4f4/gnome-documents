@@ -855,8 +855,8 @@ create_preview_window (GdNavBar *self)
         gtk_style_context_add_class (context, GTK_STYLE_CLASS_TOOLTIP);
 
         box = gtk_box_new (GTK_ORIENTATION_VERTICAL, 6);
-        gtk_widget_set_margin_left (box, 6);
-        gtk_widget_set_margin_right (box, 6);
+        gtk_widget_set_margin_start (box, 6);
+        gtk_widget_set_margin_end (box, 6);
         gtk_widget_set_margin_top (box, 6);
         gtk_widget_set_margin_bottom (box, 6);
         gtk_container_add (GTK_CONTAINER (self->priv->preview_window), box);
@@ -912,8 +912,8 @@ gd_nav_bar_init (GdNavBar *self)
         gtk_container_add (GTK_CONTAINER (self), inner_box);
 
         priv->button_area = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
-        gtk_widget_set_margin_left (priv->button_area, 5);
-        gtk_widget_set_margin_right (priv->button_area, 5);
+        gtk_widget_set_margin_start (priv->button_area, 5);
+        gtk_widget_set_margin_end (priv->button_area, 5);
         gtk_widget_show (priv->button_area);
         gtk_box_pack_start (GTK_BOX (inner_box), priv->button_area, FALSE, FALSE, 0);
 

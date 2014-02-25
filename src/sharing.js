@@ -103,8 +103,8 @@ const SharingDialog = new Lang.Class({
         let mainGrid = new Gtk.Grid({ orientation: Gtk.Orientation.VERTICAL,
                                       column_spacing: 6,
                                       row_spacing: 6,
-                                      margin_left: 12,
-                                      margin_right: 12 });
+                                      margin_start: 12,
+                                      margin_end: 12 });
         let contentArea = this.widget.get_content_area();
         contentArea.pack_start(mainGrid, true, true, 0);
 

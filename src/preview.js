@@ -616,8 +616,8 @@ const PreviewNavControls = new Lang.Class({
 
         this.prev_widget = new Gtk.Button({ child: new Gtk.Image ({ icon_name: prevIconName,
                                                                     pixel_size: 16 }),
-                                            margin_left: _PREVIEW_NAVBAR_MARGIN,
-                                            margin_right: _PREVIEW_NAVBAR_MARGIN,
+                                            margin_start: _PREVIEW_NAVBAR_MARGIN,
+                                            margin_end: _PREVIEW_NAVBAR_MARGIN,
                                             halign: Gtk.Align.START,
                                             valign: Gtk.Align.CENTER });
         this.prev_widget.get_style_context().add_class('osd');
@@ -628,8 +628,8 @@ const PreviewNavControls = new Lang.Class({
 
         this.next_widget = new Gtk.Button({ child: new Gtk.Image ({ icon_name: nextIconName,
                                                                     pixel_size: 16 }),
-                                            margin_left: _PREVIEW_NAVBAR_MARGIN,
-                                            margin_right: _PREVIEW_NAVBAR_MARGIN,
+                                            margin_start: _PREVIEW_NAVBAR_MARGIN,
+                                            margin_end: _PREVIEW_NAVBAR_MARGIN,
                                             halign: Gtk.Align.END,
                                             valign: Gtk.Align.CENTER });
         this.next_widget.get_style_context().add_class('osd');
