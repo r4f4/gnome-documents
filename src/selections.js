@@ -834,7 +834,7 @@ const SelectionToolbar = new Lang.Class({
                 if ((doc.defaultAppName) &&
                     (apps.indexOf(doc.defaultAppName) == -1))
                     apps.push(doc.defaultAppName);
-                if ((doc instanceof Documents.LocalDocument) ||
+                if (!doc.canShare() ||
                     (doc.collection != false) ||
                     (selection.length > 1))
                     showShare = false;
