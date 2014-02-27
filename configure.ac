@@ -21,6 +21,8 @@ AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"$GETTEXT_PACKAGE",[The name of the gettext d
 IT_PROG_INTLTOOL(0.50.1)
 PKG_PROG_PKG_CONFIG([0.22])
 
+YELP_HELP_INIT
+
 GOBJECT_INTROSPECTION_REQUIRE([0.9.6])
 
 ## don't rerun to this point if we abort
@@ -109,6 +111,7 @@ AC_PATH_PROG(DESKTOP_FILE_VALIDATE, desktop-file-validate)
 
 AC_CONFIG_FILES([
 Makefile
+help/Makefile
 libgd/Makefile
 src/Makefile
 data/Makefile
