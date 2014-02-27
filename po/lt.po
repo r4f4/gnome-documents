@@ -2,18 +2,18 @@
 # Copyright (C) 2011 gnome-documents's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-documents package.
 # Algimantas Margevičius <gymka@mail.ru>, 2011.
-# Aurimas Černius <aurisc4@gmail.com>, 2011, 2013.
+# Aurimas Černius <aurisc4@gmail.com>, 2011, 2013, 2014.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-documents master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-09-24 11:57+0000\n"
-"PO-Revision-Date: 2013-09-24 22:17+0300\n"
+"POT-Creation-Date: 2014-02-27 19:47+0000\n"
+"PO-Revision-Date: 2014-02-27 23:09+0200\n"
 "Last-Translator: Aurimas Černius <aurisc4@gmail.com>\n"
 "Language-Team: Lietuvių <gnome-lt@lists.akl.lt>\n"
-"Language: \n"
+"Language: lt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -21,18 +21,17 @@ msgstr ""
 "%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Gtranslator 2.91.6\n"
 
-#: ../data/gnome-documents.appdata.xml.in.h:1
-#: ../data/gnome-documents.desktop.in.in.h:1 ../src/application.js:103
-#: ../src/mainWindow.js:52 ../src/mainWindow.js:273
+#: ../data/org.gnome.Documents.appdata.xml.in.h:1
+#: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:103
+#: ../src/mainWindow.js:52 ../src/mainWindow.js:274
 msgid "Documents"
 msgstr "Dokumentai"
 
-#: ../data/gnome-documents.appdata.xml.in.h:2
-#| msgid "A document manager application"
+#: ../data/org.gnome.Documents.appdata.xml.in.h:2
 msgid "A document manager application for GNOME"
 msgstr "Dokumentų tvarkymo programa GNOME aplinkai"
 
-#: ../data/gnome-documents.appdata.xml.in.h:3
+#: ../data/org.gnome.Documents.appdata.xml.in.h:3
 msgid ""
 "A simple application to access, organize and share your documents on GNOME. "
 "It is meant to be a simple and elegant replacement for using a file manager "
@@ -44,11 +43,11 @@ msgstr ""
 "pakaitalu darbui su dokumentais. Nerūpestinga integracija su debesų "
 "kompiuterija siūloma per GNOME internetines paskyras."
 
-#: ../data/gnome-documents.appdata.xml.in.h:4
+#: ../data/org.gnome.Documents.appdata.xml.in.h:4
 msgid "It lets you:"
 msgstr "Ji jums leidžia:"
 
-#: ../data/gnome-documents.appdata.xml.in.h:5
+#: ../data/org.gnome.Documents.appdata.xml.in.h:5
 msgid ""
 "<li>View recent local and online documents</li> <li>Access your Google, "
 "ownCloud or SkyDrive content</li> <li>Search through documents</li> <li>See "
@@ -63,16 +62,15 @@ msgstr ""
 "<li>Pasirinkti mėgiamiausius</li> <li>Leidžia atverti pilnavertį redaktorių "
 "sudėtingesniems pakeitimams</li>"
 
-#: ../data/gnome-documents.desktop.in.in.h:2
+#: ../data/org.gnome.Documents.desktop.in.h:2
 msgid "Access, manage and share documents"
 msgstr "Prieikite, tvarkykite ir bendrinkite dokumentus"
 
-#: ../data/gnome-documents.desktop.in.in.h:3
+#: ../data/org.gnome.Documents.desktop.in.h:3
 msgid "Docs;PDF;Document;"
 msgstr "Dokumentai;PDF;Dokumentas;"
 
 #: ../data/org.gnome.documents.gschema.xml.h:1
-#: ../src/resources/app-menu.ui.h:1
 msgid "View as"
 msgstr "Rodyti kaip"
 
@@ -104,82 +102,79 @@ msgstr "Langas išdidintas"
 msgid "Window maximized state"
 msgstr "Lango išdidinimo būsena"
 
-#. Translators: this refers to local documents
-#: ../src/documents.js:599 ../src/search.js:417
+#: ../src/documents.js:595
+#| msgid "Unable to load the document"
+msgid "Failed to print document"
+msgstr "Nepavyksta atspausdinti dokumento"
+
+#: ../src/documents.js:632 ../src/search.js:418
 msgid "Local"
 msgstr "Vietiniai"
 
-#. Translators: Documents ships a "Getting Started with Documents"
-#. tutorial PDF. The "GNOME" string below is displayed as the author name
-#. of that document, and doesn't normally need to be translated.
-#: ../src/documents.js:620
+#: ../src/documents.js:653
 msgid "GNOME"
 msgstr "GNOME"
 
-#: ../src/documents.js:621
+#: ../src/documents.js:654
 msgid "Getting Started with Documents"
 msgstr "Pradėkite naudotis dokumentais"
 
-#: ../src/documents.js:637 ../src/documents.js:800 ../src/documents.js:854
-#: ../src/documents.js:954
+#: ../src/documents.js:670 ../src/documents.js:839 ../src/documents.js:897
+#: ../src/documents.js:1001
 msgid "Collection"
 msgstr "Kolekcija"
 
-#. overridden
-#: ../src/documents.js:681
+#: ../src/documents.js:718
 msgid "Google Docs"
 msgstr "Google Docs"
 
-#: ../src/documents.js:682
+#: ../src/documents.js:719
 msgid "Google"
 msgstr "Google"
 
-#: ../src/documents.js:802 ../src/documents.js:956
+#: ../src/documents.js:841 ../src/documents.js:1003
 msgid "Spreadsheet"
 msgstr "Skaičiuoklė"
 
-#: ../src/documents.js:804 ../src/documents.js:958 ../src/presentation.js:47
+#: ../src/documents.js:843 ../src/documents.js:1005 ../src/presentation.js:47
 msgid "Presentation"
 msgstr "Pateiktis"
 
-#: ../src/documents.js:806 ../src/documents.js:960
+#: ../src/documents.js:845 ../src/documents.js:1007
 msgid "Document"
 msgstr "Dokumentas"
 
-#. overridden
-#: ../src/documents.js:832
+#: ../src/documents.js:875
 msgid "ownCloud"
 msgstr "ownCloud"
 
-#. overridden
-#: ../src/documents.js:888 ../src/documents.js:889
+#: ../src/documents.js:935 ../src/documents.js:936
 msgid "Skydrive"
 msgstr "Skydrive"
 
-#: ../src/documents.js:1080
+#: ../src/documents.js:1131
 msgid "Please check the network connection."
 msgstr "Patikrinkite tinklo ryšį."
 
-#: ../src/documents.js:1083
+#: ../src/documents.js:1134
 msgid "Please check the network proxy settings."
 msgstr "Patikrinkite tinklo tarpinio serverio nustatymus."
 
-#: ../src/documents.js:1086
+#: ../src/documents.js:1137
 msgid "Unable to sign in to the document service."
 msgstr "Nepavyksta prisijungti prie dokumentų tarnybos."
 
-#: ../src/documents.js:1089
+#: ../src/documents.js:1140
 msgid "Unable to locate this document."
 msgstr "Nepavyksta rasti šio dokumento."
 
-#: ../src/documents.js:1092
-#, c-format
+#: ../src/documents.js:1143
+#, javascript-format
 msgid "Hmm, something is fishy (%d)."
 msgstr "Hmm, kažkas yra negerai (%d)."
 
-#. Translators: %s is the title of a document
-#: ../src/documents.js:1110
-#, c-format
+#: ../src/documents.js:1161
+#, javascript-format
 msgid "Oops! Unable to load “%s”"
 msgstr "Oi! Nepavyksta įkelti „%s“"
 
@@ -187,27 +182,19 @@ msgstr "Oi! Nepavyksta įkelti „%s“"
 msgid "View"
 msgstr "Rodyti"
 
-#: ../src/embed.js:63 ../src/lib/gd-places-bookmarks.c:383
-#: ../src/lib/gd-places-links.c:257 ../src/view.js:71
-msgid "Loading…"
-msgstr "Įkeliama..."
-
-#: ../src/embed.js:146
+#: ../src/embed.js:142
 msgid "No Documents Found"
 msgstr "Nerasta dokumentų"
 
-#. Translators: %s here is "System Settings", which is in a separate string
-#. due to markup, and should be translated only in the context of this sentence
-#: ../src/embed.js:167
-#, c-format
+#: ../src/embed.js:163
+#, javascript-format
 msgid "You can add your online accounts in %s"
 msgstr "Internetines paskyras galite pridėti %s"
 
-#. Translators: this should be translated in the context of the
-#. "You can add your online accounts in System Settings" sentence above
-#: ../src/embed.js:171
-msgid "System Settings"
-msgstr "sistemos nustatymuose"
+#: ../src/embed.js:167
+#| msgid "System Settings"
+msgid "Settings"
+msgstr "Nustatymai"
 
 #: ../src/lib/gd-nav-bar.c:235
 #, c-format
@@ -234,7 +221,12 @@ msgstr "Puslapis %s"
 msgid "No bookmarks"
 msgstr "Nėra žymelių"
 
-#: ../src/lib/gd-places-bookmarks.c:648 ../src/preview.js:594
+#: ../src/lib/gd-places-bookmarks.c:383 ../src/lib/gd-places-links.c:257
+#: ../src/view.js:71
+msgid "Loading…"
+msgstr "Įkeliama..."
+
+#: ../src/lib/gd-places-bookmarks.c:648 ../src/preview.js:601
 msgid "Bookmarks"
 msgstr "Žymelės"
 
@@ -254,62 +246,68 @@ msgstr "Ieškoti"
 msgid "Back"
 msgstr "Grįžti"
 
-#: ../src/mainToolbar.js:170
-#, c-format
+#: ../src/mainToolbar.js:163
+msgid "View items as a list"
+msgstr "Rodyti elementus kaip sąrašą"
+
+#: ../src/mainToolbar.js:169
+msgid "View items as a grid of icons"
+msgstr "Rodyti elementus kaip piktogramų tinklelį"
+
+#: ../src/mainToolbar.js:203
+#, javascript-format
 msgid "Results for “%s”"
 msgstr "„%s“ rezultatai"
 
-#: ../src/mainToolbar.js:178
+#: ../src/mainToolbar.js:211
 msgid "Click on items to select them"
 msgstr "Spauskite ant elementų juos pažymėti"
 
-#: ../src/mainToolbar.js:180
-#, c-format
+#: ../src/mainToolbar.js:213
+#, javascript-format
 msgid "%d selected"
 msgid_plural "%d selected"
 msgstr[0] "%d pažymėtas"
 msgstr[1] "%d pažymėti"
 msgstr[2] "%d pažymėta"
 
-#: ../src/mainToolbar.js:209
+#: ../src/mainToolbar.js:240
 msgid "Cancel"
 msgstr "Atsisakyti"
 
-#: ../src/mainToolbar.js:250
+#: ../src/mainToolbar.js:282
 msgid "Select Items"
 msgstr "Pasirinkite elementus"
 
-#: ../src/mainWindow.js:272
+#: ../src/mainWindow.js:273
 msgid "translator-credits"
 msgstr ""
 "išvertė:\n"
 "Aurimas Černius <aurisc4@gmail.com>"
 
-#: ../src/mainWindow.js:274
+#: ../src/mainWindow.js:275
 msgid "A document manager application"
 msgstr "Dokumentų tvarkymo programa"
 
-#: ../src/notifications.js:87
-#, c-format
+#: ../src/notifications.js:86
+#, javascript-format
 msgid "Printing “%s”: %s"
 msgstr "Spausdinama „%s“: %s"
 
-#: ../src/notifications.js:143
+#: ../src/notifications.js:142
 msgid "Your documents are being indexed"
 msgstr "Jūsų dokumentai indeksuojami"
 
-#: ../src/notifications.js:144
+#: ../src/notifications.js:143
 msgid "Some documents might not be available during this process"
 msgstr "Kai kurie dokumentai šio proceso metu gali būti neprieinami"
 
-#. Translators: %s refers to an online account provider, e.g.
-#. "Google", or "Windows Live".
-#: ../src/notifications.js:166
-#, c-format
+#: ../src/notifications.js:165
+#, javascript-format
 msgid "Fetching documents from %s"
 msgstr "Gaunami dokumentai iš %s"
 
-#: ../src/notifications.js:168
+#: ../src/notifications.js:167
 msgid "Fetching documents from online accounts"
 msgstr "Gaunami dokumentai iš internetinių paskyrų"
 
@@ -322,7 +320,7 @@ msgid "_Unlock"
 msgstr "At_rakinti"
 
 #: ../src/password.js:64
-#, c-format
+#, javascript-format
 msgid "Document %s is locked and requires a password to be opened."
 msgstr "Dokumentas %s yra užrakintas ir jam atverti reikalingas slaptažodis."
 
@@ -342,56 +340,46 @@ msgstr "Veikia pateikties veiksena"
 msgid "Present On"
 msgstr "Pateikti"
 
-#: ../src/preview.js:603
+#: ../src/preview.js:609
 msgid "Bookmark this page"
 msgstr "Pažymėti šį puslapį"
 
-#. Translators: this is the Open action in a context menu
-#: ../src/preview.js:892 ../src/selections.js:856
-#, c-format
+#: ../src/preview.js:853 ../src/selections.js:856
+#, javascript-format
 msgid "Open with %s"
 msgstr "Atverti su %s"
 
-#: ../src/preview.js:953
+#: ../src/preview.js:915
 msgid "Find Previous"
 msgstr "Rasti ankstesnį"
 
-#: ../src/preview.js:960
+#: ../src/preview.js:922
 msgid "Find Next"
 msgstr "Rasti kitą"
 
-#. properties button
 #: ../src/properties.js:60 ../src/resources/preview-menu.ui.h:9
 #: ../src/selections.js:766
 msgid "Properties"
 msgstr "Savybės"
 
-#. Label for Done button in Sharing dialog
 #: ../src/properties.js:62 ../src/sharing.js:101
 msgid "Done"
 msgstr "Atlikta"
 
-#. Title item
-#. Translators: "Title" is the label next to the document title
-#. in the properties dialog
 #: ../src/properties.js:82
 msgctxt "Document Title"
 msgid "Title"
 msgstr "Pavadinimas"
 
-#. Translators: "Author" is the label next to the document author
-#. in the properties dialog
 #: ../src/properties.js:91
 msgctxt "Document Author"
 msgid "Author"
 msgstr "Autorius"
 
-#. Source item
 #: ../src/properties.js:98
 msgid "Source"
 msgstr "Šaltinis"
 
-#. Date Modified item
 #: ../src/properties.js:104
 msgid "Date Modified"
 msgstr "Keitimo data"
@@ -400,35 +388,24 @@ msgstr "Keitimo data"
 msgid "Date Created"
 msgstr "Sukūrimo data"
 
-#. Document type item
-#. Translators: "Type" is the label next to the document type
-#. (PDF, spreadsheet, ...) in the properties dialog
 #: ../src/properties.js:120
 msgctxt "Document Type"
 msgid "Type"
 msgstr "Tipas"
 
-#: ../src/resources/app-menu.ui.h:2
-msgid "Grid"
-msgstr "Tinklelis"
-
-#: ../src/resources/app-menu.ui.h:3
-msgid "List"
-msgstr "Sąrašas"
-
-#: ../src/resources/app-menu.ui.h:4
+#: ../src/resources/app-menu.ui.h:1
 msgid "Fullscreen"
 msgstr "Visas ekranas"
 
-#: ../src/resources/app-menu.ui.h:5
-msgid "About Documents"
-msgstr "Apie dokumentus"
-
-#: ../src/resources/app-menu.ui.h:6
+#: ../src/resources/app-menu.ui.h:2
 msgid "Help"
 msgstr "Žinynas"
 
-#: ../src/resources/app-menu.ui.h:7
+#: ../src/resources/app-menu.ui.h:3
+msgid "About"
+msgstr "Apie"
+
+#: ../src/resources/app-menu.ui.h:4
 msgid "Quit"
 msgstr "Išeiti"
 
@@ -436,8 +413,6 @@ msgstr "Išeiti"
 msgid "_Copy"
 msgstr "_Kopijuoti"
 
-#. open button
-#. Translators: this is the Open action in a context menu
 #: ../src/resources/preview-menu.ui.h:1 ../src/selections.js:746
 #: ../src/selections.js:859
 msgid "Open"
@@ -479,73 +454,63 @@ msgstr "Pasirinkti visus"
 msgid "Select None"
 msgstr "Nepasirinkti nieko"
 
-#: ../src/search.js:113
+#: ../src/search.js:114
 msgid "Category"
 msgstr "Kategorija"
 
-#. Translators: this refers to new and recent documents
-#. Translators: this refers to documents
-#: ../src/search.js:118 ../src/search.js:170 ../src/search.js:255
-#: ../src/search.js:411
+#: ../src/search.js:119 ../src/search.js:171 ../src/search.js:256
+#: ../src/search.js:412
 msgid "All"
 msgstr "Visi"
 
-#. Translators: this refers to favorite documents
-#: ../src/search.js:124
+#: ../src/search.js:125
 msgid "Favorites"
 msgstr "Mėgiamiausi"
 
-#. Translators: this refers to shared documents
-#: ../src/search.js:129
+#: ../src/search.js:130
 msgid "Shared with you"
 msgstr "Bendrinami su jumis"
 
-#. Translators: "Type" refers to a search filter on the document type
-#. (PDF, spreadsheet, ...)
-#: ../src/search.js:167
+#: ../src/search.js:168
 msgctxt "Search Filter"
 msgid "Type"
 msgstr "Tipas"
 
-#: ../src/search.js:172
+#: ../src/search.js:173
 msgid "Collections"
 msgstr "Kolekcijos"
 
-#: ../src/search.js:176
+#: ../src/search.js:177
 msgid "PDF Documents"
 msgstr "PDF dokumentai"
 
-#: ../src/search.js:180
+#: ../src/search.js:181
 msgid "Presentations"
 msgstr "Pateiktys"
 
-#: ../src/search.js:183
+#: ../src/search.js:184
 msgid "Spreadsheets"
 msgstr "Skaičiuoklės"
 
-#: ../src/search.js:186
+#: ../src/search.js:187
 msgid "Text Documents"
 msgstr "Teksto dokumentai"
 
-#. Translators: this is a verb that refers to "All", "Title" and "Author",
-#. as in "Match All", "Match Title" and "Match Author"
-#: ../src/search.js:252
+#: ../src/search.js:253
 msgid "Match"
 msgstr "Atitikmuo"
 
-#. Translators: "Title" refers to "Match Title" when searching
-#: ../src/search.js:258
+#: ../src/search.js:259
 msgctxt "Search Filter"
 msgid "Title"
 msgstr "Pavadinimas"
 
-#. Translators: "Author" refers to "Match Author" when searching
-#: ../src/search.js:261
+#: ../src/search.js:262
 msgctxt "Search Filter"
 msgid "Author"
 msgstr "Autorius"
 
-#: ../src/search.js:407
+#: ../src/search.js:408
 msgid "Sources"
 msgstr "Šaltiniai"
 
@@ -559,47 +524,39 @@ msgstr ""
 msgid "Create new collection"
 msgstr "Sukurti naują kolekciją"
 
-#. Translators: "Collections" refers to documents in this context
 #: ../src/selections.js:639
 msgctxt "Dialog Title"
 msgid "Collections"
 msgstr "Kolekcijos"
 
-#. print button
 #: ../src/selections.js:751
 msgid "Print"
 msgstr "Spausdinti"
 
-#. trash button
 #: ../src/selections.js:756
 msgid "Delete"
 msgstr "Ištrinti"
 
-#. organize button
 #: ../src/selections.js:761
-msgid "Add to Collection"
-msgstr "Pridėti į kolekciją"
-
-#. share button
-#: ../src/selections.js:771
 msgid "Share"
 msgstr "Dalintis"
+
+#: ../src/selections.js:771
+msgid "Add to Collection"
+msgstr "Pridėti į kolekciją"
 
 #: ../src/sharing.js:97
 msgid "Sharing Settings"
 msgstr "Dalinimosi nustatymai"
 
-#. Label for widget group for changing document permissions
 #: ../src/sharing.js:134
 msgid "Document permissions"
 msgstr "Dokumentų leidimai"
 
-#. Label for permission change in Sharing dialog
 #: ../src/sharing.js:141 ../src/sharing.js:319
 msgid "Change"
 msgstr "Keisti"
 
-#. Label for radiobutton that sets doc permission to private
 #: ../src/sharing.js:165 ../src/sharing.js:294
 msgid "Private"
 msgstr "Privatus"
@@ -608,17 +565,14 @@ msgstr "Privatus"
 msgid "Public"
 msgstr "Viešas"
 
-#. Label for checkbutton that sets doc permission to Can edit
 #: ../src/sharing.js:179 ../src/sharing.js:289
 msgid "Everyone can edit"
 msgstr "Visi gali keisti"
 
-#. Label for widget group used for adding new contacts
 #: ../src/sharing.js:186
 msgid "Add people"
 msgstr "Pridėti žmonių"
 
-#. Editable text in entry field
 #: ../src/sharing.js:193
 msgid "Enter an email address"
 msgstr "Įveskite el. pašto adresą"
@@ -648,7 +602,7 @@ msgid "Owner"
 msgstr "Savininkas"
 
 #: ../src/sharing.js:441
-#, c-format
+#, javascript-format
 msgid "You can ask %s for access"
 msgstr "Prieigos galite prašyti %s"
 
@@ -657,7 +611,7 @@ msgstr "Prieigos galite prašyti %s"
 msgid "The document was not updated"
 msgstr "Dokumentas nebuvo atnaujintas"
 
-#: ../src/shellSearchProvider.js:293
+#: ../src/shellSearchProvider.js:294
 msgid "Untitled Document"
 msgstr "Nepavadintas dokumentas"
 
@@ -665,7 +619,6 @@ msgstr "Nepavadintas dokumentas"
 msgid "Unable to fetch the list of documents"
 msgstr "Nepavyksta gauti dokumentų sąrašo"
 
-#. Translators: "more" refers to documents in this context
 #: ../src/view.js:62 ../src/view.js:93
 msgid "Load More"
 msgstr "Įkelti daugiau"
@@ -675,7 +628,7 @@ msgid "Yesterday"
 msgstr "Vakar"
 
 #: ../src/view.js:297
-#, c-format
+#, javascript-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
 msgstr[0] "Prieš %d dieną"
@@ -687,7 +640,7 @@ msgid "Last week"
 msgstr "Praeitą savaitę"
 
 #: ../src/view.js:303
-#, c-format
+#, javascript-format
 msgid "%d week ago"
 msgid_plural "%d weeks ago"
 msgstr[0] "Prieš %d savaitę"
@@ -699,7 +652,7 @@ msgid "Last month"
 msgstr "Praeitą mėnesį"
 
 #: ../src/view.js:309
-#, c-format
+#, javascript-format
 msgid "%d month ago"
 msgid_plural "%d months ago"
 msgstr[0] "Prieš %d mėnesį"
@@ -711,7 +664,7 @@ msgid "Last year"
 msgstr "Praeitais metais"
 
 #: ../src/view.js:315
-#, c-format
+#, javascript-format
 msgid "%d year ago"
 msgid_plural "%d years ago"
 msgstr[0] "Prieš %d metus"
