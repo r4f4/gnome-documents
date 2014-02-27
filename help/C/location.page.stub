@@ -1,19 +1,20 @@
 <page xmlns="http://projectmallard.org/1.0/"
+      xmlns:its="http://www.w3.org/2005/11/its"
       type="topic" style="task"
       id="location">
-  <info>
-    <revision pkgversion="3.5.90" date="2012-09-01" status="review"/>
 
+  <info>
     <link type="guide" xref="index#view"  />
+    <revision pkgversion="3.5.90" date="2012-09-01" status="review"/>
 
     <credit type="author copyright">
       <name>Julita Inca</name>
-      <email>yrazes@gmail.com</email>
+      <email its:translate="no">yrazes@gmail.com</email>
       <years>2012</years>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email>mdhillca@gmail.com</email>
+      <email its:translate="no">mdhillca@gmail.com</email>
       <years>2012</years>
     </credit>
 
@@ -32,11 +33,15 @@
   </comment>
 
   <p>You may forget the name of the folder where you saved a document. Let
-   <app>Documents</app> tell you where it is:</p>
+  <app>Documents</app> tell you where it is:</p>
 
   <steps>
-    <item><p>Select the document or collection.</p></item>
-    <item><p>Right-click to see the <gui>Properties</gui>.</p></item>
+    <item>
+      <p>Select the document or collection.</p>
+    </item>
+    <item>
+      <p>Right-click to see the <gui>Properties</gui>.</p>
+    </item>
   </steps>
 
 </page>
