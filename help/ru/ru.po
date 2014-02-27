@@ -1,0 +1,689 @@
+#
+#
+# Александр Прокудин <alexandre.prokoudine@gmail.com>, 2011.
+# Aleksey Kabanov <ak099@mail.ru>, 2011, 2012.
+# Yuri Myasoedov <omerta13@yandex.ru>, 2012.
+# Stas Solovey <whats_up@tut.by>, 2013.
+# jdronova <juliette.tux@gmail.com>, 2013, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: GNOME User Documentation 3.2\n"
+"POT-Creation-Date: 2014-02-27 11:16+0000\n"
+"PO-Revision-Date: 2014-02-18 18:33+0400\n"
+"Last-Translator: jdronova <juliette.tux@gmail.com>\n"
+"Language-Team: Russian <gnome-cyr@gnome.org>\n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+"X-Generator: Lokalize 1.5\n"
+
+#. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+msgctxt "_"
+msgid "translator-credits"
+msgstr ""
+"Александр Прокудин <alexandre.prokoudine@gmail.com>, 2011\n"
+"Алексей Кабанов <ak099@mail.ru>, 2011, 2012\n"
+"Станислав Соловей <whats_up@tut.by>, 2013\n"
+"Юлия Дронова <juliette.tux@gmail.com>, 2013-2014"
+
+#. (itstool) path: credit/name
+#: C/collections.page:11 C/index.page:10 C/info.page:10 C/previews.page:11
+#: C/print.page:11 C/search.page:11 C/select.page:11 C/tracker.page:11
+#: C/viewgrid.page:11 C/view.page:11
+msgid "Julita Inca"
+msgstr "Julita Inca"
+
+#. (itstool) path: credit/years
+#: C/collections.page:13 C/collections.page:18 C/filter.page:13
+#: C/formats.page:13 C/index.page:12 C/index.page:17 C/info.page:12
+#: C/info.page:17 C/previews.page:13 C/previews.page:18 C/print.page:13
+#: C/print.page:18 C/search.page:13 C/search.page:18 C/select.page:13
+#: C/select.page:18 C/tracker.page:13 C/tracker.page:18 C/viewgrid.page:13
+#: C/viewgrid.page:18 C/view.page:13 C/view.page:18
+msgid "2012"
+msgstr "2012"
+
+#. (itstool) path: credit/name
+#: C/collections.page:16 C/filter.page:11 C/formats.page:11 C/index.page:15
+#: C/info.page:15 C/previews.page:16 C/print.page:16 C/search.page:16
+#: C/select.page:16 C/tracker.page:16 C/viewgrid.page:16 C/view.page:16
+msgid "Michael Hill"
+msgstr "Майкл Хилл (Michael Hill)"
+
+#. (itstool) path: info/desc
+#: C/collections.page:23
+msgid "Group related documents in a collection."
+msgstr "Группировка взаимосвязанных документов в коллекцию."
+
+#. (itstool) path: page/title
+#: C/collections.page:26
+msgid "Make collections of documents"
+msgstr "Создание коллекции документов"
+
+#. (itstool) path: page/p
+#: C/collections.page:39
+msgid ""
+"<app>Documents</app> lets you put together documents of different types in "
+"one place called a <em>collection</em>. If you have documents that are "
+"related, you can group them to make them easier to find. For example, if you "
+"had a business trip where you made a presentation, your slides, your flight "
+"itinerary (a PDF file), your budget spreadsheet, and other hybrid PDF/ODF "
+"documents, can be grouped in one collection."
+msgstr ""
+"Приложение <app>Документы</app> позволяет держать документы различных типов "
+"в едином месте хранения, которое называется <em>коллекция</em>. При "
+"наличиивзаимосвязанных документов, их можно сгруппировать, что облегчает "
+"поиск. Например, планируя показ презентации во время деловой поездки, можно "
+"сгруппировать слайды, план маршрута (в PDF-файле), электронные таблицы с "
+"финансовой сметой и другие смешанные документы PDF/ODF в одну коллекцию."
+
+#. (itstool) path: page/p
+#: C/collections.page:46
+msgid "To create or add to a collection:"
+msgstr "Чтобы создать коллекцию или добавить в неё документ:"
+
+#. (itstool) path: item/p
+#: C/collections.page:49 C/collections.page:72 C/print.page:39
+#: C/select.page:41
+msgid "Click the <gui>✓</gui> button."
+msgstr "Нажмите кнопку <gui>✓</gui>."
+
+#. (itstool) path: item/p
+#: C/collections.page:52
+msgid "In selection mode, check the documents to be collected."
+msgstr "В режиме выбора отметьте документы для включения в коллекцию."
+
+#. (itstool) path: item/p
+#: C/collections.page:55
+msgid "Click the <gui>+</gui> button in the button bar."
+msgstr "Нажмите кнопку <gui>+</gui> на панели кнопок."
+
+#. (itstool) path: item/p
+#: C/collections.page:58
+msgid ""
+"In the collection list, click <gui>Add</gui> and type a new collection name, "
+"or select an existing collection. The selected documents will be added to "
+"the collection."
+msgstr ""
+"В списке коллекция нажмите <gui>Добавить</gui> и наберите имя новой "
+"коллекции или выберите одну из существующих коллекций. Выбранные документы "
+"будут добавлены в коллекцию."
+
+#. (itstool) path: note/p
+#: C/collections.page:65
+msgid ""
+"Collections do not behave like folders and their hierarchy: <em>you cannot "
+"put collections inside collections.</em>"
+msgstr ""
+"Коллекции ведут себя не так, как папки и их иерархические структуры: "
+"<em>нельзя поместить коллекцию внутрь другой коллекции.</em>"
+
+#. (itstool) path: page/p
+#: C/collections.page:69
+msgid "To delete a collection:"
+msgstr "Чтобы удалить коллекцию:"
+
+#. (itstool) path: item/p
+#: C/collections.page:75
+msgid "In selection mode, check the collection to be deleted."
+msgstr "В режиме выбора отметьте коллекцию, которую нужно удалить."
+
+#. (itstool) path: item/p
+#: C/collections.page:78
+msgid ""
+"Click the Trash button in the button bar. The collection will be deleted, "
+"leaving the original documents."
+msgstr ""
+"Нажмите на значке корзины в панели кнопок. Коллекция будет удалена, а "
+"входившие в неё документы останутся."
+
+#. (itstool) path: media
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/filter.page:23 C/search.page:53
+#, fuzzy
+msgctxt "_"
+msgid "external ref='media/go-down.png' md5='e8c16f5ab9ed933f4a537b740506f4d4'"
+msgstr ""
+"external ref='figures/go-down.png' md5='e8c16f5ab9ed933f4a537b740506f4d4'"
+
+#. (itstool) path: info/desc
+#: C/filter.page:18
+msgid "Choose which documents to display."
+msgstr "Выбр"
+
+#. (itstool) path: page/title
+#: C/filter.page:21
+msgid "Filter documents"
+msgstr "Фильтрация документов"
+
+#. (itstool) path: page/p
+#: C/filter.page:23
+#, fuzzy
+msgid ""
+"Click the <media type=\"image\" src=\"media/go-down.png\">down</media> "
+"button next to the <link xref=\"search\">search</link> bar to limit the "
+"scope of the search in these categories:"
+msgstr ""
+"Нажмите кнопку <media type=\"image\" src=\"figures/go-down.png\">стрелка "
+"вниз</media> рядом с панелью <link xref=\"documents-search\">поиска</link> "
+"чтобы сузить рамки поиска в следующих категориях:"
+
+#. (itstool) path: item/p
+#: C/filter.page:29
+msgid "<em>Sources</em>: Local, Google, SkyDrive, or All."
+msgstr "<em>Источники</em>: Локальные, Google, SkyDrive или Все."
+
+#. (itstool) path: item/p
+#: C/filter.page:31
+msgid ""
+"<em>Type</em>: Collections, PDF Documents, Presentations, Spreadsheets, Text "
+"Documents, or All."
+msgstr ""
+"<em>Тип</em>: Коллекции, Документы PDF, Презентации, Таблицы, Текстовые "
+"документы, или Все."
+
+#. (itstool) path: item/p
+#: C/filter.page:35
+msgid "Title, Author, or All."
+msgstr "Заголовок, Автор или Все."
+
+#. (itstool) path: note/p
+#: C/filter.page:40
+#, fuzzy
+msgid ""
+"In order for <gui>Google</gui> or <gui>SkyDrive</gui> to appear in the "
+"filter list, it is necessary to configure Google or Windows Live as an <link "
+"href=\"gnome-help:accounts-add\">online account</link>."
+msgstr ""
+"Чтобы <gui>Google</gui> или <gui>SkyDrive</gui> появились в списке, нужно "
+"настроить <link xref=\"accounts-add\">сетевую учётную запись</link> для "
+"Google или Windows Live."
+
+#. (itstool) path: info/desc
+#: C/formats.page:18
+msgid "<app>Documents</app> displays a number of popular document types."
+msgstr ""
+"Приложение <app>Документы</app> показывает некоторые популярные типы "
+"документов."
+
+#. (itstool) path: page/title
+#: C/formats.page:22
+msgid "Formats supported"
+msgstr "Поддерживаемые форматы"
+
+#. (itstool) path: page/p
+#: C/formats.page:24
+msgid ""
+"<app>Documents</app> displays PDF, DVI, XPS, PostScript and the formats "
+"supported by <app>Document Viewer</app> (Evince), <app>Microsoft Office</"
+"app>, <app>LibreOffice</app> and <app>Google Docs</app>."
+msgstr ""
+"Приложение <app>Документы</app> поддерживает форматы PDF, DVI, XPS, "
+"PostScript, а также форматы, поддерживаемые <app>Программой просмотра "
+"документов</app> (Evince), <app>Microsoft Office</app>, <app>LibreOffice</"
+"app> и <app>Google Docs</app>."
+
+#. (itstool) path: info/desc
+#: C/index.page:22
+msgid ""
+"Organize the documents stored locally on your computer or created online."
+msgstr ""
+"Сортируйте документы, хранящиеся локально на вашем компьютере или созданные "
+"он-лайн."
+
+#. (itstool) path: page/title
+#: C/index.page:26
+msgid "Documents"
+msgstr "Документы"
+
+#. (itstool) path: page/p
+#: C/index.page:38
+msgid ""
+"<app>Documents</app> is a GNOME application that lets you display, organize, "
+"and print the documents on your computer or those created remotely using "
+"<em>Google Docs</em> or <em>SkyDrive</em>."
+msgstr ""
+"<app>Документы</app> — это приложение GNOME, позволяющее просматривать, "
+"систематизировать и отправлять на печать документы, находящиеся локально на "
+"компьютере или созданные удалённо с помощью <em>Google Docs</em> или "
+"<em>SkyDrive</em>."
+
+#. (itstool) path: section/title
+#: C/index.page:43
+msgid "View, Sort and Search"
+msgstr "Просмотр, сортировка и поиск"
+
+#. (itstool) path: section/title
+#: C/index.page:47
+msgid "Select, Organize, Print"
+msgstr "Выбирайте, сортируйте, печатайте"
+
+#. (itstool) path: section/title
+#: C/index.page:51
+msgid "Questions"
+msgstr "Вопросы"
+
+#. (itstool) path: info/desc
+#: C/info.page:22
+msgid "See a document's name, location, date modified, or type."
+msgstr "Просмотр названия, местоположения, даты изменения и типа документа."
+
+#. (itstool) path: page/title
+#: C/info.page:25
+msgid "Find information about documents"
+msgstr "Поиск информации о документах"
+
+#. (itstool) path: page/p
+#: C/info.page:35
+msgid ""
+"When a document is created, it comes with <em>metadata</em>. <app>Documents</"
+"app> displays the following metadata for each document:"
+msgstr ""
+"При создании документа в него добавляются <em>метаданные</em>. Приложение "
+"<app>Документы</app> может отображать следующие метаданные для каждого "
+"документа:"
+
+#. (itstool) path: item/p
+#: C/info.page:40
+msgid "Title: the name of the document, which can be edited;"
+msgstr "Заголовок: название документа, которое можно редактировать;"
+
+#. (itstool) path: item/p
+#: C/info.page:43
+msgid "Source: the path of the folder containing the document;"
+msgstr "Источник: путь к папке, содержащей документ;"
+
+#. (itstool) path: item/p
+#: C/info.page:46
+msgid "Date Modified;"
+msgstr "Дата последнего изменения;"
+
+#. (itstool) path: item/p
+#: C/info.page:49
+#, fuzzy
+msgid "Type: the <link xref=\"formats\">file format</link> of the document."
+msgstr "Тип: <link xref=\"documents-formats\">формат файла</link> документа."
+
+#. (itstool) path: page/p
+#: C/info.page:53
+msgid "To see a document's properties:"
+msgstr "Чтобы увидеть свойства документа:"
+
+#. (itstool) path: item/p
+#: C/info.page:56
+msgid "Click the <gui>Check</gui> button to switch to selection mode."
+msgstr "Нажмите кнопку с «галочкой» чтобы переключиться в режим выделения."
+
+#. (itstool) path: item/p
+#: C/info.page:59
+msgid "Select a document."
+msgstr "Выберите документ."
+
+#. (itstool) path: item/p
+#: C/info.page:62
+msgid ""
+"Click the <gui>Properties</gui> button at the right end of the button bar."
+msgstr "Нажмите кнопку <gui>Свойства</gui> в правом конце панели кнопок."
+
+#. (itstool) path: note/p
+#: C/info.page:68
+msgid ""
+"Some types of documents (e.g. PDF files) can be password protected, "
+"preventing access to their metadata or content."
+msgstr ""
+"Некоторые типы документов (например, файлы PDF) могут быть защищены паролем, "
+"предотвращающим доступ к их метаданным и содержимому."
+
+#. (itstool) path: note/p
+#: C/info.page:73
+msgid ""
+"<app>Documents</app> does not currently offer any mechanism to add privacy "
+"to a document. You may be able to do this from the application you used to "
+"create the document (e.g. <app>LibreOffice</app> or <app>Adobe Acrobat</"
+"app>)."
+msgstr ""
+"Приложение <app>Документы</app> в настоящее время не содержит никакого "
+"механизма для добавления функционала защиты документов. Это можно сделать из "
+"приложения, которое использовалось для создания документа (например, "
+"<app>LibreOffice</app> или <app>Adobe Acrobat</app>)."
+
+#. (itstool) path: info/desc
+#: C/previews.page:23
+msgid "You can only preview files stored locally."
+msgstr "Предварительный просмотр возможен только для локальных документов."
+
+#. (itstool) path: page/title
+#: C/previews.page:26
+msgid "Why don't some files have previews?"
+msgstr "Почему у некоторых файлов отсутствуют миниатюры?"
+
+#. (itstool) path: page/p
+#: C/previews.page:34
+msgid ""
+"When you open <app>Documents</app>, a preview thumbnail is displayed for "
+"documents that are stored locally. Those stored on a remote server like "
+"<em>Google Docs</em> or <em>SkyDrive</em> show as missing (or blank) preview "
+"thumbnails."
+msgstr ""
+"При запуске приложения <app>Документы</app> для локальных документов "
+"создаются миниатюры. Для документов, которые хранятся на удалённом сервере, "
+"например на <em>Google Docs</em> или <em>SkyDrive</em>, создаются миниатюры "
+"отсутствующих (пустых) документов."
+
+#. (itstool) path: page/p
+#: C/previews.page:39
+msgid ""
+"If you download a <em>Google Docs</em> or <em>SkyDrive</em> document to "
+"local storage, a thumbnail will be generated."
+msgstr ""
+"При загрузке документа из <em>Google Docs</em> или <em>SkyDrive</em> в "
+"локальное хранилище, для документа создаётся значок."
+
+#. (itstool) path: note/p
+#: C/previews.page:43
+msgid ""
+"The local copy of a document downloaded from <em>Google Docs</em> or "
+"<em>SkyDrive</em> will lose its ability to be updated online. If you want to "
+"continue to edit it online, it is better not to download it."
+msgstr ""
+"Локальная копия документа, загруженного с <em>Google Docs</em> или "
+"<em>SkyDrive</em>, больше не будет обновляться он-лайн. Если необходимо "
+"оставить возможность его редактирования он-лайн, этот документ лучше не "
+"загружать."
+
+#. (itstool) path: info/desc
+#: C/print.page:23
+msgid "Print documents that are stored locally or online."
+msgstr "Печать документов, хранящихся на локальном компьютере или в Интернете."
+
+#. (itstool) path: page/title
+#: C/print.page:26
+msgid "Print a document"
+msgstr "Печать документа"
+
+#. (itstool) path: page/p
+#: C/print.page:35
+msgid "To print a document:"
+msgstr "Чтобы напечатать документ:"
+
+#. (itstool) path: item/p
+#: C/print.page:42
+msgid "In selection mode, check the document to be printed."
+msgstr "В режиме выбора отметьте документ, который нужно распечатать."
+
+#. (itstool) path: item/p
+#: C/print.page:45
+msgid ""
+"Click the Print button in the button bar. The <gui>Print</gui> dialog opens."
+msgstr ""
+"Нажмите кнопку печати на панели кнопок. Откроется диалоговое окно "
+"<gui>Печать</gui>."
+
+#. (itstool) path: note/p
+#: C/print.page:51
+msgid ""
+"Printing is not available when more than one document is selected, or when a "
+"collection is selected."
+msgstr ""
+"Печать недоступна, когда выбрано несколько документов, или когда выбрана "
+"коллекция."
+
+#. (itstool) path: info/desc
+#: C/search.page:23
+msgid "Find your documents by title or author."
+msgstr "Поиск документов по заголовку или автору."
+
+#. (itstool) path: page/title
+#: C/search.page:26
+msgid "Search for files"
+msgstr "Поиск файлов"
+
+#. (itstool) path: page/p
+#: C/search.page:38
+msgid "To start a search in <app>Documents</app>:"
+msgstr "Чтобы начать поиск в приложении <app>Документы</app>:"
+
+#. (itstool) path: item/p
+#: C/search.page:42
+msgid ""
+"Press <keyseq><key>Ctrl</key><key>F</key></keyseq> to open the search bar at "
+"the top of the window."
+msgstr ""
+"Нажмите <keyseq><key>Ctrl</key><key>F</key></keyseq> чтобы открыть панель "
+"поиска в верхней части окна."
+
+#. (itstool) path: item/p
+#: C/search.page:46
+msgid ""
+"Start typing keywords, and searching begins instantly. You will see a list "
+"of documents whose title or author matches the keywords."
+msgstr ""
+"Начните вводить ключевое слово, и поиск запустится мгновенно. Будет показан "
+"список документов, автор или  автор которых соответствует шаблону поиска."
+
+#. (itstool) path: note/p
+#: C/search.page:52
+#, fuzzy
+msgid ""
+"You can restrict or filter the search results by clicking the <media type="
+"\"image\" src=\"media/go-down.png\">down</media> button and selecting "
+"various <link xref=\"filter\">filters</link>."
+msgstr ""
+"Можно ограничить или отфильтровать результаты поиска, нажав кнопку со <media "
+"type=\"image\" src=\"figures/go-down.png\">стрелкой вниз</media> и выбрав "
+"нужные <link xref=\"documents-filter\">фильтры</link>."
+
+#. (itstool) path: info/desc
+#: C/select.page:23
+msgid "Use selection mode to select more than one document or collection."
+msgstr ""
+"Используйте режим выбора чтобы выбрать более одного документа или коллекции."
+
+#. (itstool) path: page/title
+#: C/select.page:27
+msgid "Selecting documents"
+msgstr "Выбор документов"
+
+#. (itstool) path: page/p
+#: C/select.page:36
+msgid ""
+"From <app>Documents</app> selection mode you can open, print, view or make "
+"collections of your documents. To use selection mode:"
+msgstr ""
+"Из режима выбора <app>Документы</app> можно открывать, печатать, "
+"просматривать или создавать коллекции документов. Чтобы применить режим "
+"выбора:"
+
+#. (itstool) path: item/p
+#: C/select.page:44
+msgid ""
+"Select one or more documents or collections. The button bar appears with the "
+"actions that are valid for your selection."
+msgstr ""
+"Выберите один или несколько документов. Появится панель с кнопками, "
+"соответствующими доступным действиям для выбранных документов."
+
+#. (itstool) path: section/title
+#: C/select.page:51
+msgid "Selection mode actions"
+msgstr "Доступные действия в режиме выбора"
+
+#. (itstool) path: section/p
+#: C/select.page:53
+msgid "After selecting one or more documents you can:"
+msgstr "Выбрав один или несколько документов, можно:"
+
+#. (itstool) path: item/p
+#: C/select.page:57
+msgid "Open with Document Viewer (folder icon)."
+msgstr "Открыть с помощью просмотрщика документов (значок папки)."
+
+#. (itstool) path: item/p
+#: C/select.page:60
+msgid ""
+"Print (printer icon): print a document (only available when a single "
+"document is selected)."
+msgstr ""
+"Печать (значок принтера): печать документа (доступно если выбран только один "
+"документ)."
+
+#. (itstool) path: item/p
+#: C/select.page:64
+msgid "Organize (plus icon): create a collection of documents."
+msgstr "Систематизировать (значок крестика): создать коллекцию документов."
+
+#. (itstool) path: item/p
+#: C/select.page:67
+msgid ""
+"Properties (wrench icon): display the properties of a document (only "
+"available when a single document is selected)."
+msgstr ""
+"Свойства (значок гаечного ключа): показать свойства документа (доступно если "
+"выбран только один документ)."
+
+#. (itstool) path: item/p
+#: C/select.page:71
+msgid "Delete (trash icon): delete one or more collections."
+msgstr "Удалить (значок корзины): удалить одну или несколько коллекций."
+
+#. (itstool) path: info/desc
+#: C/tracker.page:23
+msgid "Local or remote documents do not appear."
+msgstr "Локальные или удалённые документы не появляются."
+
+#. (itstool) path: page/title
+#: C/tracker.page:26
+msgid "My documents cannot be seen"
+msgstr "Моих документов не видно"
+
+#. (itstool) path: page/p
+#: C/tracker.page:40
+msgid ""
+"If your documents fail to display in <app>Documents</app>, <app>Tracker</"
+"app> may not be running or properly configured. Make sure Tracker is running "
+"in your session. The default configuration, set to index files in your home "
+"directory (non-recursively) and XDG folders (recursively), should be "
+"adequate. Ensure that your documents are in one of these paths."
+msgstr ""
+"Если ваши документы не отображаются в приложении <app>Документы</app>, это "
+"означает, что <app>Поиск данных</app> не запущен или неправильно настроен. "
+"Убедитесь, что в вашем сеансе «Поиск данных» запущен. Настройки по "
+"умолчанию, с индексацией файлов в вашем домашнем каталоге (не рекурсивно) и "
+"в папках XDG (рекурсивно) также должны быть правильными. Удостоверьтесь, что "
+"ваши документы расположены по одному из этих путей."
+
+#. (itstool) path: info/desc
+#: C/viewgrid.page:23
+msgid "Change the way documents are displayed."
+msgstr "Изменение способа отображения документов."
+
+#. (itstool) path: page/title
+#: C/viewgrid.page:26
+msgid "View files in a list or grid"
+msgstr "Просмотр файлов в режиме сетки или списка."
+
+#. (itstool) path: page/p
+#: C/viewgrid.page:35
+msgid ""
+"Documents and collections are presented in <gui>Grid</gui> format by "
+"default. To view in <gui>List</gui> format:"
+msgstr ""
+"Тип просмотра по умолчанию для документов и коллекций — <gui>Сетка</gui>. "
+"Чтобы просматривать их в режиме <gui>Список</gui>:"
+
+#. (itstool) path: item/p
+#: C/viewgrid.page:40
+msgid ""
+"Go to the top bar and click <app>Documents</app> to display the app menu."
+msgstr ""
+"Перейдите на верхнюю панель и нажмите <app>Документы</app> чтобы открыть "
+"меню приложения."
+
+#. (itstool) path: item/p
+#: C/viewgrid.page:44
+msgid "Click <gui>List</gui> from the <gui>View as</gui> section."
+msgstr "Нажмите <gui>Список</gui> из раздела <gui>Показывать как</gui>."
+
+#. (itstool) path: note/p
+#: C/viewgrid.page:49
+msgid ""
+"List view has columns displaying the document type and date modified, and "
+"whether it's stored locally, or in <app>Google Docs</app> or <em>SkyDrive</"
+"em>."
+msgstr ""
+"В режиме просмотра в виде списка имеются столбцы, в которых показывается тип "
+"документа и дата последнего изменения, независимо от того, хранится ли "
+"документ локально или же в <app>Google Docs</app> или <em>SkyDrive</em>."
+
+#. (itstool) path: page/p
+#: C/viewgrid.page:54
+msgid "Click <gui>Grid</gui> in the app menu to return to the default format."
+msgstr ""
+"Нажмите на пункт <gui>Сетка</gui> в меню приложения на верхней панели, чтобы "
+"вернуться к режиму отображения по умолчанию."
+
+#. (itstool) path: info/desc
+#: C/view.page:23
+msgid "View documents full-screen."
+msgstr "Просмотр документов во весь экран."
+
+#. (itstool) path: page/title
+#: C/view.page:26
+msgid "Display documents stored locally or online"
+msgstr "Показ документов, хранящихся локально или в Интернете."
+
+#. (itstool) path: page/p
+#: C/view.page:36
+msgid ""
+"When you open <app>Documents</app>, all of your documents, those stored "
+"locally as well as online, are displayed as thumbnails."
+msgstr ""
+"При открытии приложения <app>Документы</app> все документы, хранящиеся как "
+"локально, так и в сети, отображаются в виде миниатюр."
+
+#. (itstool) path: note/p
+#: C/view.page:40
+#, fuzzy
+msgid ""
+"In order for your <em>Google Docs</em> or <em>SkyDrive</em> documents to "
+"appear, it is necessary to configure Google or Windows Live, respectively, "
+"as an <link href=\"gnome-help:accounts-add\">online account</link>."
+msgstr ""
+"Чтобы появились ваши документы из <em>Google Docs</em> или <em>SkyDrive</"
+"em>, необходимо настроить Google или Windows Live, соответственно, как <link "
+"xref=\"accounts-add\">сетевые учётные записи</link>."
+
+#. (itstool) path: page/p
+#: C/view.page:45
+msgid "To view the contents of a document:"
+msgstr "Чтобы увидеть содержимое документа:"
+
+#. (itstool) path: item/p
+#: C/view.page:49
+msgid ""
+"Click the thumbnail. The document is displayed full-width in the "
+"<app>Documents</app> window (or full-screen if maximized)."
+msgstr ""
+"Нажмите на миниатюру. Документ будет показан во всю ширину окна "
+"<app>Документы</app> (или во весь экран, если окно развёрнуто)."
+
+#. (itstool) path: page/p
+#: C/view.page:54
+msgid "To exit the document, click the back arrow button."
+msgstr "Чтобы выйти из документа, нажмите кнопку со стрелкой влево."
+
+#. (itstool) path: p/link
+#: C/legal.xml:3
+msgid "Creative Commons Attribution-ShareAlike 3.0 Unported License"
+msgstr "Creative Commons Attribution-ShareAlike 3.0 Unported License"
+
+#. (itstool) path: license/p
+#: C/legal.xml:3
+msgid "This work is licensed under a <_:link-1/>."
+msgstr "Данное руководство распространяется под лицензией <_:link-1/>."

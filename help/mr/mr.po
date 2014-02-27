@@ -1,0 +1,661 @@
+# Marathi translation for gnome-user-docs.
+# Copyright (C) 2013 gnome-user-docs's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-user-docs package.
+#
+# Aniket Deshpande <djaniketster@gmail.com>, 2013.
+# Sandeep Shedmake <sshedmak@redhat.com>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-user-docs gnome-3-8\n"
+"POT-Creation-Date: 2014-02-27 11:16+0000\n"
+"PO-Revision-Date: 2013-11-13 10:52+0630\n"
+"Last-Translator: Sandeep Shedmake <sshedmak@redhat.com>\n"
+"Language-Team: Marathi <kde-i18n-doc@kde.org>\n"
+"Language: mr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+msgctxt "_"
+msgid "translator-credits"
+msgstr ""
+"Aniket Deshpande <djaniketster@gmail.com>, 2013; संदिप शेडमाके <sshedmak@redhat."
+"com>, २०१३."
+
+#. (itstool) path: credit/name
+#: C/collections.page:11 C/index.page:10 C/info.page:10 C/previews.page:11
+#: C/print.page:11 C/search.page:11 C/select.page:11 C/tracker.page:11
+#: C/viewgrid.page:11 C/view.page:11
+msgid "Julita Inca"
+msgstr "Julita Inca"
+
+#. (itstool) path: credit/years
+#: C/collections.page:13 C/collections.page:18 C/filter.page:13
+#: C/formats.page:13 C/index.page:12 C/index.page:17 C/info.page:12
+#: C/info.page:17 C/previews.page:13 C/previews.page:18 C/print.page:13
+#: C/print.page:18 C/search.page:13 C/search.page:18 C/select.page:13
+#: C/select.page:18 C/tracker.page:13 C/tracker.page:18 C/viewgrid.page:13
+#: C/viewgrid.page:18 C/view.page:13 C/view.page:18
+msgid "2012"
+msgstr "२०१२"
+
+#. (itstool) path: credit/name
+#: C/collections.page:16 C/filter.page:11 C/formats.page:11 C/index.page:15
+#: C/info.page:15 C/previews.page:16 C/print.page:16 C/search.page:16
+#: C/select.page:16 C/tracker.page:16 C/viewgrid.page:16 C/view.page:16
+msgid "Michael Hill"
+msgstr "Michael Hill"
+
+#. (itstool) path: info/desc
+#: C/collections.page:23
+msgid "Group related documents in a collection."
+msgstr "निगडित दस्तऐवजांना संग्रहात एकत्र करा."
+
+#. (itstool) path: page/title
+#: C/collections.page:26
+msgid "Make collections of documents"
+msgstr "दस्तऐवजांचा संग्रह बनवा"
+
+#. (itstool) path: page/p
+#: C/collections.page:39
+msgid ""
+"<app>Documents</app> lets you put together documents of different types in "
+"one place called a <em>collection</em>. If you have documents that are "
+"related, you can group them to make them easier to find. For example, if you "
+"had a business trip where you made a presentation, your slides, your flight "
+"itinerary (a PDF file), your budget spreadsheet, and other hybrid PDF/ODF "
+"documents, can be grouped in one collection."
+msgstr ""
+"<app>डॉक्युमेंट्स</app> तुम्हाला विविध प्रकाचे दस्तऐवज एक ठिकाणी गोळा करण्यास मदत करते, "
+"ज्यास <em>कलेक्शन</em> असे म्हटले जाते. संबंधीत दस्तऐवज असल्यास, शोध सोपे करण्यासाठी "
+"त्यांना एकत्र करणे शक्य आहे. उदाहरणार्थ, बिजनेस ट्रिपवर जेथे तुम्ही प्रस्तुतिकरण केले, तुमच्या "
+"स्लाइडज, तुमची विमानाचे तिकीट (एक PDF फाइल), तुमचे बजेट स्प्रेडशीट, आणि इतर हायब्रिड "
+"PDF किंवा ODF दस्तऐवजांना, एक गटात एकत्र करणे शक्य आहे."
+
+#. (itstool) path: page/p
+#: C/collections.page:46
+msgid "To create or add to a collection:"
+msgstr "संग्रह बनवणे आणि समाविष्ट करण्यासठी:"
+
+#. (itstool) path: item/p
+#: C/collections.page:49 C/collections.page:72 C/print.page:39
+#: C/select.page:41
+msgid "Click the <gui>✓</gui> button."
+msgstr "<gui>✓</gui> बटणावर क्लिक करा."
+
+#. (itstool) path: item/p
+#: C/collections.page:52
+msgid "In selection mode, check the documents to be collected."
+msgstr "नीवड मोडमध्ये, गोळा करण्याजोगी दस्तऐवजांची तपासणी करा."
+
+#. (itstool) path: item/p
+#: C/collections.page:55
+msgid "Click the <gui>+</gui> button in the button bar."
+msgstr "बटण पट्टीमध्ये <gui>+</gui> बटणावर क्लिक करा."
+
+#. (itstool) path: item/p
+#: C/collections.page:58
+msgid ""
+"In the collection list, click <gui>Add</gui> and type a new collection name, "
+"or select an existing collection. The selected documents will be added to "
+"the collection."
+msgstr ""
+"कलेक्शन सूचीमध्ये, <gui>समाविष्ट करा</gui> क्लिक करा आणि नवीन कलेक्शन नाव टाइप करा, "
+"किंवा अस्तित्वातील कलेक्शन निवडा. निवडलेल्या दस्तऐवजांना कलेक्शनमध्ये समाविष्ट केले जाईल."
+
+#. (itstool) path: note/p
+#: C/collections.page:65
+msgid ""
+"Collections do not behave like folders and their hierarchy: <em>you cannot "
+"put collections inside collections.</em>"
+msgstr ""
+"कलेक्शन्स फोल्डर्स आणि क्रमवारिप्रमाणे वर्तन करत नाही: <em>तुम्ही कलेक्शन्सला कलेक्शन्स अंतर्गत "
+"स्थीत करू शकत नाही.</em>"
+
+#. (itstool) path: page/p
+#: C/collections.page:69
+msgid "To delete a collection:"
+msgstr "संग्रह काढण्यासाठी:"
+
+#. (itstool) path: item/p
+#: C/collections.page:75
+msgid "In selection mode, check the collection to be deleted."
+msgstr "निवड मोडमध्ये, नष्ट करण्याजोगी कलेक्शनची तपासणी करा."
+
+#. (itstool) path: item/p
+#: C/collections.page:78
+msgid ""
+"Click the Trash button in the button bar. The collection will be deleted, "
+"leaving the original documents."
+msgstr ""
+"बटनपट्टीमध्ये कचरापेटी बटन क्लिक करा. कलेक्शन नष्ट केले जाईल, मूळ दस्तऐवजांना वगळता."
+
+#. (itstool) path: media
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/filter.page:23 C/search.page:53
+#, fuzzy
+msgctxt "_"
+msgid "external ref='media/go-down.png' md5='e8c16f5ab9ed933f4a537b740506f4d4'"
+msgstr ""
+"external ref='figures/go-down.png' md5='e8c16f5ab9ed933f4a537b740506f4d4'"
+
+#. (itstool) path: info/desc
+#: C/filter.page:18
+msgid "Choose which documents to display."
+msgstr "कुठले दस्तऐवज दाखवावेत."
+
+#. (itstool) path: page/title
+#: C/filter.page:21
+msgid "Filter documents"
+msgstr "दस्तऐवज चाळा"
+
+#. (itstool) path: page/p
+#: C/filter.page:23
+#, fuzzy
+msgid ""
+"Click the <media type=\"image\" src=\"media/go-down.png\">down</media> "
+"button next to the <link xref=\"search\">search</link> bar to limit the "
+"scope of the search in these categories:"
+msgstr ""
+"ह्या विभागांमध्ये शोधची व्याप्ति मर्यादीत ठेवण्याकरिता <link xref=\"documents-search"
+"\">शोध</link> पट्टीच्या बाजूचे <media type=\"image\" src=\"figures/go-down.png"
+"\">खाली</media> बटनावर क्लिक करा:"
+
+#. (itstool) path: item/p
+#: C/filter.page:29
+msgid "<em>Sources</em>: Local, Google, SkyDrive, or All."
+msgstr "<em>उत्पत्ती</em>: स्थानिक, Google, SkyDrive, किंवा सगळे."
+
+#. (itstool) path: item/p
+#: C/filter.page:31
+msgid ""
+"<em>Type</em>: Collections, PDF Documents, Presentations, Spreadsheets, Text "
+"Documents, or All."
+msgstr ""
+"<em>प्रकार</em>: कलेक्शन्स, PDF दस्तऐवज, प्रस्तुतिकरण, स्प्रेडशीट्स, मजकूर दस्तऐवज, किंवा "
+"सर्व."
+
+#. (itstool) path: item/p
+#: C/filter.page:35
+msgid "Title, Author, or All."
+msgstr "शीर्षक, लेखक, किंवा सगळे."
+
+#. (itstool) path: note/p
+#: C/filter.page:40
+#, fuzzy
+msgid ""
+"In order for <gui>Google</gui> or <gui>SkyDrive</gui> to appear in the "
+"filter list, it is necessary to configure Google or Windows Live as an <link "
+"href=\"gnome-help:accounts-add\">online account</link>."
+msgstr ""
+"फिल्टर सूचीमध्ये <gui>Google</gui> किंवा <gui>SkyDrive</gui> आढळण्याकरिता, Google "
+"किंवा Windows Live यास <link xref=\"accounts-add\">ऑनलाइन खाते</link> म्हणून "
+"संरचीत करणे आवश्यक आहे."
+
+#. (itstool) path: info/desc
+#: C/formats.page:18
+msgid "<app>Documents</app> displays a number of popular document types."
+msgstr "<app>डॉक्युमेंट्स</app> असंख्य प्रसिध्द दस्तऐवज प्रकार दाखवतात."
+
+#. (itstool) path: page/title
+#: C/formats.page:22
+msgid "Formats supported"
+msgstr "आधारित प्रकार"
+
+#. (itstool) path: page/p
+#: C/formats.page:24
+msgid ""
+"<app>Documents</app> displays PDF, DVI, XPS, PostScript and the formats "
+"supported by <app>Document Viewer</app> (Evince), <app>Microsoft Office</"
+"app>, <app>LibreOffice</app> and <app>Google Docs</app>."
+msgstr ""
+"<app>डॉक्युमेंट्स</app> PDF, DVI, XPS, PostScript आणि <app>डॉक्युमेंट व्युअर</app> "
+"(एविंस), <app>Microsoft Office</app>, <app>LibreOffice</app> आणि <app>Google "
+"Docs</app> तर्फे समर्थीत रुपण दाखवते."
+
+#. (itstool) path: info/desc
+#: C/index.page:22
+msgid ""
+"Organize the documents stored locally on your computer or created online."
+msgstr ""
+"संगणकावर स्थानीयरित्या साठवलेल्या किंवा ऑनलाइनपणे निर्मीत दस्तऐवजांना आयोजीत करा."
+
+#. (itstool) path: page/title
+#: C/index.page:26
+msgid "Documents"
+msgstr "दस्तएवज"
+
+#. (itstool) path: page/p
+#: C/index.page:38
+msgid ""
+"<app>Documents</app> is a GNOME application that lets you display, organize, "
+"and print the documents on your computer or those created remotely using "
+"<em>Google Docs</em> or <em>SkyDrive</em>."
+msgstr ""
+"<app>डॉक्युमेंट्स</app> हे GNOME ॲप्लिकेशन आहे जे तुम्हाला संगणकावरील किंवा <em>Google "
+"Docs</em> किंवा <em>SkyDrive</em>चा वापर करून निर्मीत दस्तऐवजांची डिस्पले, आयोजन "
+"आणि छपाईकरिता परवानगी देतो."
+
+#. (itstool) path: section/title
+#: C/index.page:43
+msgid "View, Sort and Search"
+msgstr "बघा, चाळा आणि शोधा"
+
+#. (itstool) path: section/title
+#: C/index.page:47
+msgid "Select, Organize, Print"
+msgstr "निवडा, संघटित करा, छापा"
+
+#. (itstool) path: section/title
+#: C/index.page:51
+msgid "Questions"
+msgstr "प्रश्ने"
+
+#. (itstool) path: info/desc
+#: C/info.page:22
+msgid "See a document's name, location, date modified, or type."
+msgstr "दस्तऐवजाचे नाव, ठिकाण, संपादन दिनांक, किंवा प्रकार पहा."
+
+#. (itstool) path: page/title
+#: C/info.page:25
+msgid "Find information about documents"
+msgstr "दस्तऐवजांबद्दल माहिती काढा"
+
+#. (itstool) path: page/p
+#: C/info.page:35
+msgid ""
+"When a document is created, it comes with <em>metadata</em>. <app>Documents</"
+"app> displays the following metadata for each document:"
+msgstr ""
+"दस्तऐवज निर्माण केल्यानंतर, ते <em>मेटाडाटा</em> सह येथे. <app>डॉक्युमेंट्स</app> प्रत्येक "
+"दस्तऐवजकरिता खालील मेटाडाटा दाखवते:"
+
+#. (itstool) path: item/p
+#: C/info.page:40
+msgid "Title: the name of the document, which can be edited;"
+msgstr "शीर्षक: दस्तऐवजाचे नाव, ज्याला संपादित करणे शक्य आहे;"
+
+#. (itstool) path: item/p
+#: C/info.page:43
+msgid "Source: the path of the folder containing the document;"
+msgstr "स्रोत: दस्तऐवज समाविष्टीत असणाऱ्या फोल्डरचा मार्ग;"
+
+#. (itstool) path: item/p
+#: C/info.page:46
+msgid "Date Modified;"
+msgstr "बदल केल्याची तारीख;"
+
+#. (itstool) path: item/p
+#: C/info.page:49
+#, fuzzy
+msgid "Type: the <link xref=\"formats\">file format</link> of the document."
+msgstr "प्रकार: दस्तएवजाचा <link xref=\"documents-formats\">फाइल प्रकार</link>."
+
+#. (itstool) path: page/p
+#: C/info.page:53
+msgid "To see a document's properties:"
+msgstr "दस्तएवजचे गुणधर्म बघण्यासाठी:"
+
+#. (itstool) path: item/p
+#: C/info.page:56
+msgid "Click the <gui>Check</gui> button to switch to selection mode."
+msgstr "निवड मोडचा वापर करण्यासाठी <gui>तपासणी</gui> बटन क्लिक करा."
+
+#. (itstool) path: item/p
+#: C/info.page:59
+msgid "Select a document."
+msgstr "दस्तएवज निवडा."
+
+#. (itstool) path: item/p
+#: C/info.page:62
+msgid ""
+"Click the <gui>Properties</gui> button at the right end of the button bar."
+msgstr "तळ पट्टीच्या उजव्या कोपऱ्यास <gui>गुणधर्म</gui> बटन क्लिक करा."
+
+#. (itstool) path: note/p
+#: C/info.page:68
+msgid ""
+"Some types of documents (e.g. PDF files) can be password protected, "
+"preventing access to their metadata or content."
+msgstr ""
+"काही प्रकारचे दस्तऐवज (उ.द. PDF फाइल्स) यांस पासवर्ड संरक्षित करणे शक्य आहे, मेटाडाटा "
+"किंवा अंतर्भुत माहितीकरिता प्रवेश टाळूले जाते."
+
+#. (itstool) path: note/p
+#: C/info.page:73
+msgid ""
+"<app>Documents</app> does not currently offer any mechanism to add privacy "
+"to a document. You may be able to do this from the application you used to "
+"create the document (e.g. <app>LibreOffice</app> or <app>Adobe Acrobat</"
+"app>)."
+msgstr ""
+"दस्तऐवजकरिता गोपणीयता समाविष्ट करण्यासाठी <app>डॉक्युमेंट्स</app> सध्या कोणतिही पद्धती "
+"पुरवत नाही. यास तुम्ही निर्माण करण्याजोगी दस्तऐवजपासून कार्यान्वीत करू शकता (उ.दा. "
+"<app>LibreOffice</app> किंवा <app>Adobe Acrobat</app>)."
+
+#. (itstool) path: info/desc
+#: C/previews.page:23
+msgid "You can only preview files stored locally."
+msgstr "फक्त स्थानीयरित्या साठवलेल्या फाइल्सचे पूर्वावलोकन शक्य आहे."
+
+#. (itstool) path: page/title
+#: C/previews.page:26
+msgid "Why don't some files have previews?"
+msgstr "का काही फाइल्सला पूर्वावलोकन नसते?"
+
+#. (itstool) path: page/p
+#: C/previews.page:34
+msgid ""
+"When you open <app>Documents</app>, a preview thumbnail is displayed for "
+"documents that are stored locally. Those stored on a remote server like "
+"<em>Google Docs</em> or <em>SkyDrive</em> show as missing (or blank) preview "
+"thumbnails."
+msgstr ""
+"<app>डॉक्युमेंट्स</app> उघडल्यानंतर, दस्तऐवजांकरिता एक पूर्वावलोकन थंबनेल दाखवले जाते. "
+"<em>Google Docs</em> किंवा <em>SkyDrive</em> वरील साठवलेले रिमोट सर्व्हर न आढळणारे "
+"(किंवा रिकामे) पूर्वावलोकन थंबनेल्स दाखवते."
+
+#. (itstool) path: page/p
+#: C/previews.page:39
+msgid ""
+"If you download a <em>Google Docs</em> or <em>SkyDrive</em> document to "
+"local storage, a thumbnail will be generated."
+msgstr ""
+"<em>Google Docs</em> किंवा <em>SkyDrive</em> दस्तऐवज स्थानीय स्टोरेजकरिता डाऊनलोड "
+"केल्यास, एक थंबनेल निर्माण केले जाईल."
+
+#. (itstool) path: note/p
+#: C/previews.page:43
+msgid ""
+"The local copy of a document downloaded from <em>Google Docs</em> or "
+"<em>SkyDrive</em> will lose its ability to be updated online. If you want to "
+"continue to edit it online, it is better not to download it."
+msgstr ""
+"<em>Google Docs</em> किंवा <em>SkyDrive</em> पासून डाउनलोड केलेल्या दस्तऐवजाची "
+"स्थानीय प्रत ऑनलाइनरित्या सुधारित होण्याची क्षमता गमवून बसेल. ऑनलाइन संपादित करायचे "
+"असल्यास, त्यास डाउनलोड न केलेले उत्तम."
+
+#. (itstool) path: info/desc
+#: C/print.page:23
+msgid "Print documents that are stored locally or online."
+msgstr "स्थानीयरित्या किंवा ऑनलाइनपणे साठवलेल्या दस्तऐवजांची छपाई करा."
+
+#. (itstool) path: page/title
+#: C/print.page:26
+msgid "Print a document"
+msgstr "दस्तएवज छापा"
+
+#. (itstool) path: page/p
+#: C/print.page:35
+msgid "To print a document:"
+msgstr "दस्तएवज छापण्यासाठी:"
+
+#. (itstool) path: item/p
+#: C/print.page:42
+msgid "In selection mode, check the document to be printed."
+msgstr "निवड मोडमध्ये, छपाईजोगी दस्तऐवजाची तपासणी करा."
+
+#. (itstool) path: item/p
+#: C/print.page:45
+msgid ""
+"Click the Print button in the button bar. The <gui>Print</gui> dialog opens."
+msgstr "बटन पट्टीमधील छपाई बटनावर क्लिक करा. <gui>छपाई</gui> संवाद उघडते."
+
+#. (itstool) path: note/p
+#: C/print.page:51
+msgid ""
+"Printing is not available when more than one document is selected, or when a "
+"collection is selected."
+msgstr ""
+"एकापेक्षाजास्त दस्तऐवज नीवडल्यानंतर, किंवा कलेक्शन नीवडल्यानंतर छपाई उपलब्ध होत नाही."
+
+#. (itstool) path: info/desc
+#: C/search.page:23
+msgid "Find your documents by title or author."
+msgstr "तुमचे दस्तऐवज शीर्षक किंवा लेखकाद्वारे शोधा."
+
+#. (itstool) path: page/title
+#: C/search.page:26
+msgid "Search for files"
+msgstr "फाइल्ससाठी शोधा"
+
+#. (itstool) path: page/p
+#: C/search.page:38
+msgid "To start a search in <app>Documents</app>:"
+msgstr "<app>दस्तएवज</app>मध्ये शोधण्यासाठी:"
+
+#. (itstool) path: item/p
+#: C/search.page:42
+#, fuzzy
+msgid ""
+"Press <keyseq><key>Ctrl</key><key>F</key></keyseq> to open the search bar at "
+"the top of the window."
+msgstr ""
+"पटलाचा स्क्रीनशॉट घेण्यासाठी <keyseq><key>Alt</key><key>Prt Scrn</key></keyseq>."
+
+#. (itstool) path: item/p
+#: C/search.page:46
+msgid ""
+"Start typing keywords, and searching begins instantly. You will see a list "
+"of documents whose title or author matches the keywords."
+msgstr ""
+
+#. (itstool) path: note/p
+#: C/search.page:52
+#, fuzzy
+msgid ""
+"You can restrict or filter the search results by clicking the <media type="
+"\"image\" src=\"media/go-down.png\">down</media> button and selecting "
+"various <link xref=\"filter\">filters</link>."
+msgstr ""
+"<media type=\"image\" src=\"figures/go-down.png\">डाउन</media> बटन क्लिक करून "
+"आणि विविध <link xref=\"documents-filter\">फिल्टर्स</link> नीवडून शोध परिणांना "
+"मर्यादीत करणे शक्य आहे."
+
+#. (itstool) path: info/desc
+#: C/select.page:23
+msgid "Use selection mode to select more than one document or collection."
+msgstr ""
+"एक किंवा त्यापेक्षा जास्त दस्तऐवज किंवा कलेक्शनची नीवड करण्यासाठी नीवड मोडचा वापर करा."
+
+#. (itstool) path: page/title
+#: C/select.page:27
+msgid "Selecting documents"
+msgstr "दस्तऐवज निवडणे"
+
+#. (itstool) path: page/p
+#: C/select.page:36
+msgid ""
+"From <app>Documents</app> selection mode you can open, print, view or make "
+"collections of your documents. To use selection mode:"
+msgstr ""
+"<app>डॉक्युमेंट्स</app> नीवड मोडपासून तुम्ही दस्तऐवजांचे संग्रह उघडू, छपाई, दृश्य किंवा "
+"निर्माण करू शकता. नीवड मोडचा वापर करण्यासाठी:"
+
+#. (itstool) path: item/p
+#: C/select.page:44
+msgid ""
+"Select one or more documents or collections. The button bar appears with the "
+"actions that are valid for your selection."
+msgstr ""
+"एक किंवा त्यापेक्षा जास्त दस्तऐवज किंवा संग्रह निवडा. निवडकरिता वैध कृतींसह बटन पट्टी "
+"आढळते."
+
+#. (itstool) path: section/title
+#: C/select.page:51
+msgid "Selection mode actions"
+msgstr "कार्य पद्धत निवड"
+
+#. (itstool) path: section/p
+#: C/select.page:53
+msgid "After selecting one or more documents you can:"
+msgstr "एक किंवा त्यापेक्षा जास्त दस्तऐवज निवडल्यानंतर:"
+
+#. (itstool) path: item/p
+#: C/select.page:57
+msgid "Open with Document Viewer (folder icon)."
+msgstr "दस्तएवज दर्शकासोबत उघडा (फोल्डर चिन्ह)."
+
+#. (itstool) path: item/p
+#: C/select.page:60
+msgid ""
+"Print (printer icon): print a document (only available when a single "
+"document is selected)."
+msgstr ""
+"छपाई (छपाईयंत्र चिन्ह): दस्तऐवजाची छपाई करा (एक दस्तऐवज निवडल्यावरच उपलब्ध होते)."
+
+#. (itstool) path: item/p
+#: C/select.page:64
+msgid "Organize (plus icon): create a collection of documents."
+msgstr "संघटण (प्लस चिन्ह): दस्तऐवजांचे संग्रह निर्माण करा."
+
+#. (itstool) path: item/p
+#: C/select.page:67
+msgid ""
+"Properties (wrench icon): display the properties of a document (only "
+"available when a single document is selected)."
+msgstr ""
+"गुणधर्म (पाना चिन्ह): दस्तऐवजाचे गुणधर्म दाखवा (फक्त एकच दस्तऐवज निवडल्यानंतर उपलब्ध "
+"होते)."
+
+#. (itstool) path: item/p
+#: C/select.page:71
+msgid "Delete (trash icon): delete one or more collections."
+msgstr "नष्ट करा (कचरापेटी चिन्ह): एक किंवा त्यापेक्षा जास्त संग्रह नष्ट करा."
+
+#. (itstool) path: info/desc
+#: C/tracker.page:23
+msgid "Local or remote documents do not appear."
+msgstr "स्थानीय किंवा दूरस्थ दस्तऐवज आढळत नाही."
+
+#. (itstool) path: page/title
+#: C/tracker.page:26
+msgid "My documents cannot be seen"
+msgstr "माझे दस्तऐवज दिसायला नकोत"
+
+#. (itstool) path: page/p
+#: C/tracker.page:40
+msgid ""
+"If your documents fail to display in <app>Documents</app>, <app>Tracker</"
+"app> may not be running or properly configured. Make sure Tracker is running "
+"in your session. The default configuration, set to index files in your home "
+"directory (non-recursively) and XDG folders (recursively), should be "
+"adequate. Ensure that your documents are in one of these paths."
+msgstr ""
+"<app>डॉक्टुमेंट्स</app> मध्ये दस्तऐवज डिस्पले होण्यास अपयशी ठरल्यास, <app>ट्रॅकर</app> "
+"कार्यरत किंवा योग्यरित्या संरचीत नसेल. ट्रॅकर तुमच्या सत्रमध्ये कार्यरत आहे याची खात्री करा. "
+"पूर्वनिर्धारित संरचना, तुमच्या होम डिरेक्ट्रि (नॉन-रिकरस्विहलि) आणि XDG फोल्डर्स "
+"(रिकरस्विहलि)मध्ये इंडेक्स फाइल्सकरिता सेट करा, पुरेसे पाहिजे. दुस्तऐवज यापैकी एका मार्गावर "
+"आहे याची खात्री करा."
+
+#. (itstool) path: info/desc
+#: C/viewgrid.page:23
+msgid "Change the way documents are displayed."
+msgstr "दस्तऐवज दिसण्याचा मार्ग बदला."
+
+#. (itstool) path: page/title
+#: C/viewgrid.page:26
+msgid "View files in a list or grid"
+msgstr "फाइल्स यादीत किंवा जाळीत बघा"
+
+#. (itstool) path: page/p
+#: C/viewgrid.page:35
+msgid ""
+"Documents and collections are presented in <gui>Grid</gui> format by "
+"default. To view in <gui>List</gui> format:"
+msgstr ""
+"पूर्वनिर्धारितपणे दस्तऐवज आणि संग्रह <gui>ग्रीड</gui> रूपणमध्ये उपलब्ध आहेत. <gui>सूची</"
+"gui> रूपणमध्ये अवलोकनकरिता:"
+
+#. (itstool) path: item/p
+#: C/viewgrid.page:40
+msgid ""
+"Go to the top bar and click <app>Documents</app> to display the app menu."
+msgstr "शीर्ष पट्टीकडे जा आणि ॲप मेन्यु दाखवण्याकरिता <app>डॉक्युमेंट्स</app> क्लिक करा."
+
+#. (itstool) path: item/p
+#: C/viewgrid.page:44
+msgid "Click <gui>List</gui> from the <gui>View as</gui> section."
+msgstr "<gui>असे अवलोकन करा</gui> विभागातून <gui>सूची</gui> क्लिक करा."
+
+#. (itstool) path: note/p
+#: C/viewgrid.page:49
+msgid ""
+"List view has columns displaying the document type and date modified, and "
+"whether it's stored locally, or in <app>Google Docs</app> or <em>SkyDrive</"
+"em>."
+msgstr ""
+"सूची अवलोकनमध्ये स्तंभ आहेत जे दस्तऐवज प्रकार आणि संपादित दिनांक दाखवते, आणि ज्यास "
+"स्थानीयरित्या साठवले जाते, किंवा <app>Google Docs</app> किंवा <em>SkyDrive</em>मध्ये "
+"साठवले जाते."
+
+#. (itstool) path: page/p
+#: C/viewgrid.page:54
+msgid "Click <gui>Grid</gui> in the app menu to return to the default format."
+msgstr "पूर्वनिर्धारित रूपणकरिता जाण्याकरिता ॲप मेन्युमध्ये <gui>ग्रीड</gui> क्लिक करा."
+
+#. (itstool) path: info/desc
+#: C/view.page:23
+msgid "View documents full-screen."
+msgstr "दस्तऐवज स्क्रीनभर बघा."
+
+#. (itstool) path: page/title
+#: C/view.page:26
+msgid "Display documents stored locally or online"
+msgstr "स्थानिक किंवा ऑनलाइन साठवलेले दस्तएवज दाखवा"
+
+#. (itstool) path: page/p
+#: C/view.page:36
+msgid ""
+"When you open <app>Documents</app>, all of your documents, those stored "
+"locally as well as online, are displayed as thumbnails."
+msgstr ""
+"<app>डॉक्टुमेंट्स</app> उघडल्यानंतर, तुमचे सर्व दस्तऐवज, जे स्थानीयरित्या तसेच ऑनलाइन साठवले "
+"जातात, यास थंबनेल्स म्हणून दाखवले जातात."
+
+#. (itstool) path: note/p
+#: C/view.page:40
+#, fuzzy
+msgid ""
+"In order for your <em>Google Docs</em> or <em>SkyDrive</em> documents to "
+"appear, it is necessary to configure Google or Windows Live, respectively, "
+"as an <link href=\"gnome-help:accounts-add\">online account</link>."
+msgstr ""
+"<gui>Google</gui> किंवा <gui>SkyDrive</gui> दस्तऐवज आढळण्याकरिता, Google किंवा "
+"Windows Live यास, परस्पररित्या, <link xref=\"accounts-add\">ऑनलाइन खाते</link> "
+"म्हणून संरचीत करणे आवश्यक आहे."
+
+#. (itstool) path: page/p
+#: C/view.page:45
+msgid "To view the contents of a document:"
+msgstr "दस्तएवजाचा आशय बघण्यासाठी:"
+
+#. (itstool) path: item/p
+#: C/view.page:49
+msgid ""
+"Click the thumbnail. The document is displayed full-width in the "
+"<app>Documents</app> window (or full-screen if maximized)."
+msgstr ""
+"थंबनेलवर क्लिक करा. दस्तऐवजाला <app>डॉक्युमेंट्स</app> पटलात (किंवा मोठे असल्यास पडदाभर) "
+"संपूर्ण रूंदीत दाखवले जाते."
+
+#. (itstool) path: page/p
+#: C/view.page:54
+msgid "To exit the document, click the back arrow button."
+msgstr "दस्तएवजामधून बाहेर पडण्यासाठी, मागे बाण बटण क्लिक करा."
+
+#. (itstool) path: p/link
+#: C/legal.xml:3
+msgid "Creative Commons Attribution-ShareAlike 3.0 Unported License"
+msgstr "Creative Commons Attribution-ShareAlike 3.0 Unported License"
+
+#. (itstool) path: license/p
+#: C/legal.xml:3
+msgid "This work is licensed under a <_:link-1/>."
+msgstr "हे काम <_:link-1/> अंतर्गत अनुज्ञापित आहे."

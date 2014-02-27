@@ -1,0 +1,655 @@
+# Telugu translation for gnome-user-docs.
+# Copyright (C) 2011 e-telugu localization Team.
+# This file is distributed under the same license as the gnome-user-docs package.
+# Praveen Illa <mail2ipn@gmail.com>, 2011.
+# Krishnababu Krothapalli <kkrothap@redhat.com>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2014-02-27 11:16+0000\n"
+"PO-Revision-Date: 2013-12-17 07:36-0500\n"
+"Last-Translator: Krishnababu Krothapalli <kkrothap@redhat.com>\n"
+"Language-Team: Telugu <kde-i18n-doc@kde.org>\n"
+"Language: te\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"X-Generator: Zanata 3.2.3\n"
+
+#. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+msgctxt "_"
+msgid "translator-credits"
+msgstr ""
+"Praveen Illa <mail2ipn@gmail.com>, 2011. కృష్ణబాబు క్రొత్తపల్లి <kkrothap@redhat."
+"com>, 2013."
+
+#. (itstool) path: credit/name
+#: C/collections.page:11 C/index.page:10 C/info.page:10 C/previews.page:11
+#: C/print.page:11 C/search.page:11 C/select.page:11 C/tracker.page:11
+#: C/viewgrid.page:11 C/view.page:11
+msgid "Julita Inca"
+msgstr "Julita Inca"
+
+#. (itstool) path: credit/years
+#: C/collections.page:13 C/collections.page:18 C/filter.page:13
+#: C/formats.page:13 C/index.page:12 C/index.page:17 C/info.page:12
+#: C/info.page:17 C/previews.page:13 C/previews.page:18 C/print.page:13
+#: C/print.page:18 C/search.page:13 C/search.page:18 C/select.page:13
+#: C/select.page:18 C/tracker.page:13 C/tracker.page:18 C/viewgrid.page:13
+#: C/viewgrid.page:18 C/view.page:13 C/view.page:18
+msgid "2012"
+msgstr "2012"
+
+#. (itstool) path: credit/name
+#: C/collections.page:16 C/filter.page:11 C/formats.page:11 C/index.page:15
+#: C/info.page:15 C/previews.page:16 C/print.page:16 C/search.page:16
+#: C/select.page:16 C/tracker.page:16 C/viewgrid.page:16 C/view.page:16
+msgid "Michael Hill"
+msgstr "మైకేల్ హిల్"
+
+#. (itstool) path: info/desc
+#: C/collections.page:23
+msgid "Group related documents in a collection."
+msgstr "సంపుటి నందు సమూహ సంభంద పత్రములు."
+
+#. (itstool) path: page/title
+#: C/collections.page:26
+msgid "Make collections of documents"
+msgstr "పత్రముల సంపుటాలను చేయి"
+
+#. (itstool) path: page/p
+#: C/collections.page:39
+msgid ""
+"<app>Documents</app> lets you put together documents of different types in "
+"one place called a <em>collection</em>. If you have documents that are "
+"related, you can group them to make them easier to find. For example, if you "
+"had a business trip where you made a presentation, your slides, your flight "
+"itinerary (a PDF file), your budget spreadsheet, and other hybrid PDF/ODF "
+"documents, can be grouped in one collection."
+msgstr ""
+"వివిధ రకాల పత్రములను ఒక స్థానము <em>సంపుటి</em> నందు వుంచుటకు <app>పత్రములు</app> "
+"అనుమతించును. సంబందిత పత్రములు మీరు కలిగివుంటే, మీరు వాటిని సమూహ పరచి సుళువుగా "
+"కనుగొనబడునట్లు చేయవచ్చు. ఉదాహరణకు, మీరు వ్యాపార పనిమీద వెళ్ళునప్పుడు మీరు చేసిన సమర్పణ, మీ "
+"స్లైడ్లు, మీ విమాన ప్రయాణప్రణాళిక (PDF ఫైల్), మీ బడ్జట్ స్ప్రెడ్‌షీట్, మరియు ఇతర హైబ్రిడ్ PDF/ODF "
+"పత్రములు, ఒక సంపుటిలా సమూహపరచవచ్చు."
+
+#. (itstool) path: page/p
+#: C/collections.page:46
+msgid "To create or add to a collection:"
+msgstr "సంపుటముకు సృష్టించుటకు లేదా జతచేయుటకు:"
+
+#. (itstool) path: item/p
+#: C/collections.page:49 C/collections.page:72 C/print.page:39
+#: C/select.page:41
+msgid "Click the <gui>✓</gui> button."
+msgstr "<gui>✓</gui> బటన్ నొక్కండి."
+
+#. (itstool) path: item/p
+#: C/collections.page:52
+msgid "In selection mode, check the documents to be collected."
+msgstr "ఎంపిక రీతినందు, సేకరించవలసిన పత్రములు చెక్ చేయి."
+
+#. (itstool) path: item/p
+#: C/collections.page:55
+msgid "Click the <gui>+</gui> button in the button bar."
+msgstr "బటన్ పట్టీ నందలి <gui>+</gui> బటన్ నొక్కుము."
+
+#. (itstool) path: item/p
+#: C/collections.page:58
+msgid ""
+"In the collection list, click <gui>Add</gui> and type a new collection name, "
+"or select an existing collection. The selected documents will be added to "
+"the collection."
+msgstr ""
+"సంపుటి జాబితానందు, <gui>జతచేయి</gui> నొక్కి మరియు కొత్త సంపుటి పేరు టైపుచేయి లేదా ఇప్పటికే వున్న "
+"సంపుటి ఎంపికచేయి. ఎంపికచేసిన పత్రములు సంపుటముకు జతచేయబడును."
+
+#. (itstool) path: note/p
+#: C/collections.page:65
+msgid ""
+"Collections do not behave like folders and their hierarchy: <em>you cannot "
+"put collections inside collections.</em>"
+msgstr ""
+"సంచయాలు మరియు వాటి హైరార్కీ వలె సంపుటాలు ప్రవర్తించవు: <em>సంపుటాల లోపన మీరు సంపుటాలు వుంచలేరు."
+"</em>"
+
+#. (itstool) path: page/p
+#: C/collections.page:69
+msgid "To delete a collection:"
+msgstr "సంపుటి తొలగించుటకు:"
+
+#. (itstool) path: item/p
+#: C/collections.page:75
+msgid "In selection mode, check the collection to be deleted."
+msgstr "ఎంపిక రీతినందు, తొలగించవలసిన సంపుటి చెక్ చేయి."
+
+#. (itstool) path: item/p
+#: C/collections.page:78
+msgid ""
+"Click the Trash button in the button bar. The collection will be deleted, "
+"leaving the original documents."
+msgstr "బటన్ పట్టీ నందలి ట్రాష్ బటన్ నొక్కుము. వాస్తవ పత్రములను వదిలి సంపుటం తొలగించబడును."
+
+#. (itstool) path: media
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/filter.page:23 C/search.page:53
+#, fuzzy
+msgctxt "_"
+msgid "external ref='media/go-down.png' md5='e8c16f5ab9ed933f4a537b740506f4d4'"
+msgstr ""
+"external ref='figures/go-down.png' md5='e8c16f5ab9ed933f4a537b740506f4d4'"
+
+#. (itstool) path: info/desc
+#: C/filter.page:18
+msgid "Choose which documents to display."
+msgstr "ఏ పత్రములు ప్రదర్శించాలో ఎంచుము."
+
+#. (itstool) path: page/title
+#: C/filter.page:21
+msgid "Filter documents"
+msgstr "పత్రములు వడపోయి"
+
+#. (itstool) path: page/p
+#: C/filter.page:23
+#, fuzzy
+msgid ""
+"Click the <media type=\"image\" src=\"media/go-down.png\">down</media> "
+"button next to the <link xref=\"search\">search</link> bar to limit the "
+"scope of the search in these categories:"
+msgstr ""
+"ఈ వర్గముల నందు అన్వేషణ యొక్క స్కోప్ పరిమితం చేయుటకు <link xref=\"documents-search"
+"\">అన్వేషణ</link> పట్టీ పక్కని <media type=\"image\" src=\"figures/go-down.png"
+"\">దిగువకు</media> బటన్ నొక్కుము."
+
+#. (itstool) path: item/p
+#: C/filter.page:29
+msgid "<em>Sources</em>: Local, Google, SkyDrive, or All."
+msgstr "<em>మూలాలు</em>: స్థానిక, గూగుల్, స్కైడ్రైవ్, లేదా అన్ని."
+
+#. (itstool) path: item/p
+#: C/filter.page:31
+msgid ""
+"<em>Type</em>: Collections, PDF Documents, Presentations, Spreadsheets, Text "
+"Documents, or All."
+msgstr ""
+"<em>రకం</em>: సంపుటాలు, PDF పత్రములు, సమర్పణలు, స్ప్రెడ్‌షీట్లు, పాఠం పత్రములు, లేదా అన్ని."
+
+#. (itstool) path: item/p
+#: C/filter.page:35
+msgid "Title, Author, or All."
+msgstr "శీర్షిక, మూలకర్త, లేదా అన్ని"
+
+#. (itstool) path: note/p
+#: C/filter.page:40
+#, fuzzy
+msgid ""
+"In order for <gui>Google</gui> or <gui>SkyDrive</gui> to appear in the "
+"filter list, it is necessary to configure Google or Windows Live as an <link "
+"href=\"gnome-help:accounts-add\">online account</link>."
+msgstr ""
+"<gui>Google</gui> లేదా <gui>SkyDrive</gui> వడపోత జాబితా నందు కనిపించుటకు, Google లేదా "
+"Windows Live ను  <link xref=\"accounts-add\">ఆన్‌లైన్ ఖాతా</link> గా ఆకృతీకరించుట "
+"తప్పనిసరి"
+
+#. (itstool) path: info/desc
+#: C/formats.page:18
+msgid "<app>Documents</app> displays a number of popular document types."
+msgstr "<app>పత్రములు</app> పేరొందిన పత్ర రకాల సంఖ్యను ప్రదర్శించును."
+
+#. (itstool) path: page/title
+#: C/formats.page:22
+msgid "Formats supported"
+msgstr "తోడ్పాటునిచ్చు ఫార్మాట్లు"
+
+#. (itstool) path: page/p
+#: C/formats.page:24
+msgid ""
+"<app>Documents</app> displays PDF, DVI, XPS, PostScript and the formats "
+"supported by <app>Document Viewer</app> (Evince), <app>Microsoft Office</"
+"app>, <app>LibreOffice</app> and <app>Google Docs</app>."
+msgstr ""
+"<app>పత్రములు</app> అనునది  PDF, DVI, XPS, పోస్ట్‌స్క్రిప్ట్ మరియు <app>Document Viewer</"
+"app> (Evince), <app>Microsoft Office</app>, <app>LibreOffice</app> మరియు "
+"<app>Google Docs</app> చేత తోడ్పాటునిచ్చు ఫార్మాట్లను ప్రదర్శించును."
+
+#. (itstool) path: info/desc
+#: C/index.page:22
+msgid ""
+"Organize the documents stored locally on your computer or created online."
+msgstr "మీ కంప్యూటర్ పైన స్థానికంగా నిల్వవుంచిన లేదా ఆన్‌లైన్ సృష్టించిన పత్రములను నిర్వహించు."
+
+#. (itstool) path: page/title
+#: C/index.page:26
+msgid "Documents"
+msgstr "పత్రములు"
+
+#. (itstool) path: page/p
+#: C/index.page:38
+msgid ""
+"<app>Documents</app> is a GNOME application that lets you display, organize, "
+"and print the documents on your computer or those created remotely using "
+"<em>Google Docs</em> or <em>SkyDrive</em>."
+msgstr ""
+"<app>పత్రములు</app> అనునది గ్నోమ్ అనువర్తనం అది మీ కంప్యూటర్ పైన లేదా <em>Google Docs</"
+"em> లేదా <em>SkyDrive</em> వుపయోగించి రిమోట్‌గా సృష్టించిన పత్రములను ప్రదర్శించుటకు, "
+"నిర్వహించుటకు మరియు ముద్రించుటకు ఉపయోగపడును."
+
+#. (itstool) path: section/title
+#: C/index.page:43
+msgid "View, Sort and Search"
+msgstr "దర్శించు, క్రమపరచు మరియు అన్వేషించు"
+
+#. (itstool) path: section/title
+#: C/index.page:47
+msgid "Select, Organize, Print"
+msgstr "ఎంపికచేయి, నిర్వహించు, ముద్రించు"
+
+#. (itstool) path: section/title
+#: C/index.page:51
+msgid "Questions"
+msgstr "ప్రశ్నలు"
+
+#. (itstool) path: info/desc
+#: C/info.page:22
+msgid "See a document's name, location, date modified, or type."
+msgstr "పత్రము పేరు, స్థానము, సవరించిన తేదీ, లేదా రకం చూడుము."
+
+#. (itstool) path: page/title
+#: C/info.page:25
+msgid "Find information about documents"
+msgstr "పత్రముల గురించి సమాచారం కనుగొనుము"
+
+#. (itstool) path: page/p
+#: C/info.page:35
+msgid ""
+"When a document is created, it comes with <em>metadata</em>. <app>Documents</"
+"app> displays the following metadata for each document:"
+msgstr ""
+"ఒక పత్రము సృష్టించినప్పుడు, అది <em>మెటాడాటా</em> తో వచ్చును. ప్రతి పత్రమునకు <app>పత్రములు</"
+"app> కింది మెటాడాటా ప్రదర్శించును:"
+
+#. (itstool) path: item/p
+#: C/info.page:40
+msgid "Title: the name of the document, which can be edited;"
+msgstr "శీర్షిక: సరికూర్చ గల, పత్రము యొక్క పేరు;"
+
+#. (itstool) path: item/p
+#: C/info.page:43
+msgid "Source: the path of the folder containing the document;"
+msgstr "మూలం: పత్రమును కలిగివున్న సంచయం పాత్;"
+
+#. (itstool) path: item/p
+#: C/info.page:46
+msgid "Date Modified;"
+msgstr "సవరించబడిన తేది;"
+
+#. (itstool) path: item/p
+#: C/info.page:49
+#, fuzzy
+msgid "Type: the <link xref=\"formats\">file format</link> of the document."
+msgstr "రకం: పత్రపు <link xref=\"documents-formats\">ఫైల్ ఫార్మాట్</link>"
+
+#. (itstool) path: page/p
+#: C/info.page:53
+msgid "To see a document's properties:"
+msgstr "పత్రముయొక్క లక్షణాలు చూడుటకు:"
+
+#. (itstool) path: item/p
+#: C/info.page:56
+msgid "Click the <gui>Check</gui> button to switch to selection mode."
+msgstr "ఎంపిక రీతినకు మారుటకు <gui>చెక్</gui> బటన్ నొక్కుము."
+
+#. (itstool) path: item/p
+#: C/info.page:59
+msgid "Select a document."
+msgstr "ఒక పత్రము ఎంపికచేయి."
+
+#. (itstool) path: item/p
+#: C/info.page:62
+msgid ""
+"Click the <gui>Properties</gui> button at the right end of the button bar."
+msgstr "బటన్ పట్టీ యొక్క కుడి చివరన <gui>లక్షణాలు</gui> బటన్ నొక్కుము."
+
+#. (itstool) path: note/p
+#: C/info.page:68
+msgid ""
+"Some types of documents (e.g. PDF files) can be password protected, "
+"preventing access to their metadata or content."
+msgstr ""
+"కొన్ని రకాల పత్రాలు(ఉ.దా. PDF ఫైళ్ళు) వాటి మెటాడాటా లేదా కాంటెంట్‌ భద్రత కొరకు, సంకేతపదంతో "
+"రక్షించబడవచ్చు."
+
+#. (itstool) path: note/p
+#: C/info.page:73
+msgid ""
+"<app>Documents</app> does not currently offer any mechanism to add privacy "
+"to a document. You may be able to do this from the application you used to "
+"create the document (e.g. <app>LibreOffice</app> or <app>Adobe Acrobat</"
+"app>)."
+msgstr ""
+"పత్రముకు గోప్యతను చేకూర్చుటకు <app>పత్రములు</app> ప్రస్తుతం ఏ మెకానిజం ఇవ్వడంలేదు. "
+"పత్రమును సృష్టించుటకు మీరు ఉపయోగించిన అనువర్తనం నుండి మీరు ఇది చేయవచ్చు (ఉ.దా. "
+"<app>LibreOffice</app> లేదా <app>Adobe Acrobat</app>)."
+
+#. (itstool) path: info/desc
+#: C/previews.page:23
+msgid "You can only preview files stored locally."
+msgstr "స్థానికంగా క్రమపరచిన ఫైళ్ళను మాత్రమే మీరు ముందస్తుదర్శనం చేయగలరు."
+
+#. (itstool) path: page/title
+#: C/previews.page:26
+msgid "Why don't some files have previews?"
+msgstr "కొన్ని ఫైళ్ళు ఎందుకని ముందస్తుదర్శనం కలిగిలేవు?"
+
+#. (itstool) path: page/p
+#: C/previews.page:34
+msgid ""
+"When you open <app>Documents</app>, a preview thumbnail is displayed for "
+"documents that are stored locally. Those stored on a remote server like "
+"<em>Google Docs</em> or <em>SkyDrive</em> show as missing (or blank) preview "
+"thumbnails."
+msgstr ""
+"మీరు <app>పత్రములు</app> తెరిచినప్పుడు, స్థానికంగా నిల్వవున్న పత్రముల కొరకు ఒక ముందస్తుదర్శన "
+"థంబ్‌నెయిల్ ప్రదర్శించబడును. రిమోట్ సేవిక <em>Google Docs</em> లేదా <em>SkyDrive</em> వంటి "
+"వాటిపైన నిల్వవున్న వాటికి తప్పిపోయిన (లేదా ఖాళీ) వలె ముందస్తుదర్శన థంబ్‌నెయిల్స్ ప్రదర్శించబడును."
+
+#. (itstool) path: page/p
+#: C/previews.page:39
+msgid ""
+"If you download a <em>Google Docs</em> or <em>SkyDrive</em> document to "
+"local storage, a thumbnail will be generated."
+msgstr ""
+"ఒకవేళ మీరు <em>Google Docs</em> లేదా <em>SkyDrive</em> పత్రమును స్థానికంగా దింపుకొంటే, "
+"ఒక థంబ్‌నెయిల్ సృష్టించబడును."
+
+#. (itstool) path: note/p
+#: C/previews.page:43
+msgid ""
+"The local copy of a document downloaded from <em>Google Docs</em> or "
+"<em>SkyDrive</em> will lose its ability to be updated online. If you want to "
+"continue to edit it online, it is better not to download it."
+msgstr ""
+"<em>Google Docs</em> లేదా <em>SkyDrive</em> నుండి స్థానికంగా నకలు తీసిన పత్రము ఇక ఆన్‌లైన్ "
+"నందు నవీకరింపబడలేదు. మీరు దానిని ఆన్‌లైన్ నందు సరికూర్చవలెనని అనుకుంటే, దానిని దింపుకొనకుండా వంటేనే "
+"మంచిది."
+
+#. (itstool) path: info/desc
+#: C/print.page:23
+msgid "Print documents that are stored locally or online."
+msgstr "స్థానికంగా లేదా ఆన్‌లైన్ నందు నిల్వవున్న పత్రములను ముద్రించు."
+
+#. (itstool) path: page/title
+#: C/print.page:26
+msgid "Print a document"
+msgstr "ఒక పత్రము ముద్రించు"
+
+#. (itstool) path: page/p
+#: C/print.page:35
+msgid "To print a document:"
+msgstr "ఒక పత్రము ముద్రించుటకు:"
+
+#. (itstool) path: item/p
+#: C/print.page:42
+msgid "In selection mode, check the document to be printed."
+msgstr "ఎంపిక రీతినందు, ముద్రించవలసిన పత్రమును చెక్‌చేయి."
+
+#. (itstool) path: item/p
+#: C/print.page:45
+msgid ""
+"Click the Print button in the button bar. The <gui>Print</gui> dialog opens."
+msgstr "బటన్ పట్టీ నందు ముద్రణ బటన్ నొక్కుము. <gui>ముద్రణ</gui> డైలాగ్ తెరువబడును."
+
+#. (itstool) path: note/p
+#: C/print.page:51
+msgid ""
+"Printing is not available when more than one document is selected, or when a "
+"collection is selected."
+msgstr ""
+"ఒకటి కన్నా ఎక్కువ పత్రము ఎంపికచేయబడినప్పుడు, లేదా ఒక సంపుటి ఎంపికైనప్పుడు ముద్రణ "
+"అందుబాటులోవుండదు."
+
+#. (itstool) path: info/desc
+#: C/search.page:23
+msgid "Find your documents by title or author."
+msgstr "శీర్షిక లేదా మూలకర్త తో మీ పత్రములు కనుగొను."
+
+#. (itstool) path: page/title
+#: C/search.page:26
+msgid "Search for files"
+msgstr "దస్త్రాల కోసం వెతుకు"
+
+#. (itstool) path: page/p
+#: C/search.page:38
+msgid "To start a search in <app>Documents</app>:"
+msgstr "<app>పత్రముల</app> నందు అన్వేషణ ప్రారంభించుటకు:"
+
+#. (itstool) path: item/p
+#: C/search.page:42
+#, fuzzy
+msgid ""
+"Press <keyseq><key>Ctrl</key><key>F</key></keyseq> to open the search bar at "
+"the top of the window."
+msgstr "<keyseq><key>Ctrl</key><key>F</key></keyseq> వత్తుము."
+
+#. (itstool) path: item/p
+#: C/search.page:46
+msgid ""
+"Start typing keywords, and searching begins instantly. You will see a list "
+"of documents whose title or author matches the keywords."
+msgstr ""
+
+#. (itstool) path: note/p
+#: C/search.page:52
+#, fuzzy
+msgid ""
+"You can restrict or filter the search results by clicking the <media type="
+"\"image\" src=\"media/go-down.png\">down</media> button and selecting "
+"various <link xref=\"filter\">filters</link>."
+msgstr ""
+"<media type=\"image\" src=\"figures/go-down.png\">దిగువకు</media> బటన్ నొక్కి "
+"మరియు వివిధ <link xref=\"documents-filter\">వడపోతలు</link> ఎంపికచేయుట ద్వారా మీరు "
+"అన్వేషణా ఫలితాలను నిర్బందించవచ్చు లేదా వడపోయవచ్చు."
+
+#. (itstool) path: info/desc
+#: C/select.page:23
+msgid "Use selection mode to select more than one document or collection."
+msgstr "ఒక పత్రము కన్నా ఎక్కువ లేదా సంపుటిని ఎంపికచేయుటకు ఎంపిక రీతి ఉపయోగించుము."
+
+#. (itstool) path: page/title
+#: C/select.page:27
+msgid "Selecting documents"
+msgstr "పత్రములను ఎంచుట"
+
+#. (itstool) path: page/p
+#: C/select.page:36
+msgid ""
+"From <app>Documents</app> selection mode you can open, print, view or make "
+"collections of your documents. To use selection mode:"
+msgstr ""
+"మీ పత్రములు తెరుచుట, ముద్రించుట, దర్శించుట లేదా సంపుటాలు తయారుచేయుట <app>పత్రముల</app> "
+"ఎంపిక రీతినుండి చేయవచ్చు."
+
+#. (itstool) path: item/p
+#: C/select.page:44
+msgid ""
+"Select one or more documents or collections. The button bar appears with the "
+"actions that are valid for your selection."
+msgstr ""
+"ఒకటి లేదా అంతకన్నా ఎక్కువ పత్రములు లేదా సంపుటాలు ఎంపికచేయి. మీ ఎంపికకు చెల్లునటువంటి చర్యలతో బటన్ "
+"పట్టీ కనిపించును."
+
+#. (itstool) path: section/title
+#: C/select.page:51
+msgid "Selection mode actions"
+msgstr "ఎంపిక రీతి చర్యలు"
+
+#. (itstool) path: section/p
+#: C/select.page:53
+msgid "After selecting one or more documents you can:"
+msgstr "ఒకటి లేదా ఎక్కువ పత్రములు ఎంపికచేసిన తరువాత మీరు ఇవి చేయవచ్చు:"
+
+#. (itstool) path: item/p
+#: C/select.page:57
+msgid "Open with Document Viewer (folder icon)."
+msgstr "పత్రము దర్శనితో  తెరువవచ్చు (సంచయ ప్రతిమ)."
+
+#. (itstool) path: item/p
+#: C/select.page:60
+msgid ""
+"Print (printer icon): print a document (only available when a single "
+"document is selected)."
+msgstr ""
+"ముద్రించుట (ముద్రణ ప్రతిమ): పత్రము ముద్రించు (ఒంటరి పత్రము ఎంపికచేసినప్పుడు మాత్రమే అందుబాటులో "
+"వుంటుంది)."
+
+#. (itstool) path: item/p
+#: C/select.page:64
+msgid "Organize (plus icon): create a collection of documents."
+msgstr "నిర్వహించు (ప్లస్ గుర్తు): పత్రముల సంపుటి సృష్టించు."
+
+#. (itstool) path: item/p
+#: C/select.page:67
+msgid ""
+"Properties (wrench icon): display the properties of a document (only "
+"available when a single document is selected)."
+msgstr ""
+"లక్షణాలు (పటకార ప్రతిమ): పత్రము యొక్క లక్షణాలను ప్రదర్శించును (ఒక పత్రము ఎంపికైనప్పడు మాత్రమే "
+"అందుబాటులోవుంటుంది)."
+
+#. (itstool) path: item/p
+#: C/select.page:71
+msgid "Delete (trash icon): delete one or more collections."
+msgstr "తొలగించు (చెత్తబుట్ట ప్రతిమ): ఒకటి లేదా ఎక్కువ సంపుటాలు తొలగించును."
+
+#. (itstool) path: info/desc
+#: C/tracker.page:23
+msgid "Local or remote documents do not appear."
+msgstr "స్థానిక లేదా రిమోట్ పత్రములు కనిపించవు."
+
+#. (itstool) path: page/title
+#: C/tracker.page:26
+msgid "My documents cannot be seen"
+msgstr "నా పత్రములు చూడబడలేవు"
+
+#. (itstool) path: page/p
+#: C/tracker.page:40
+msgid ""
+"If your documents fail to display in <app>Documents</app>, <app>Tracker</"
+"app> may not be running or properly configured. Make sure Tracker is running "
+"in your session. The default configuration, set to index files in your home "
+"directory (non-recursively) and XDG folders (recursively), should be "
+"adequate. Ensure that your documents are in one of these paths."
+msgstr ""
+"మీ పత్రములు ప్రదర్శించబడక పోతే <app>పత్రములు</app>, <app>ట్రాకర్</app> సరిగా నడువటంలేదని లేదా "
+"సరిగా ఆకృతీకరించలేదని. మీ సెషన్ నందు ట్రాకర్ నడుచునట్లు చూసుకోండి. అప్రమేయ ఆకృతీకరణ, మీ నివాస "
+"సంచయం నందు (నాన్-రికర్సివ్‌గా) మరియు XDG సంచయాల నందు (రికర్సివ్‌గా) విషయసూచి ఫైళ్ళకు అమర్చబడెను, "
+"ఖచ్చితంగా వుండాలి. మీ పత్రములు ఈ పాత్‌లలో ఒక దానినందు వుండునట్లు చూసుకోండి."
+
+#. (itstool) path: info/desc
+#: C/viewgrid.page:23
+msgid "Change the way documents are displayed."
+msgstr "పత్రములు ప్రదర్శించబడు మార్గాన్ని మార్చండి."
+
+#. (itstool) path: page/title
+#: C/viewgrid.page:26
+msgid "View files in a list or grid"
+msgstr "ఫైళ్ళను జాబితాగా లేక గ్రిడ్‌గా దర్శించు"
+
+#. (itstool) path: page/p
+#: C/viewgrid.page:35
+msgid ""
+"Documents and collections are presented in <gui>Grid</gui> format by "
+"default. To view in <gui>List</gui> format:"
+msgstr ""
+"పత్రములు మరియు సంపుటాలు అప్రమేయంగా <gui>గ్రిడ్</gui> విధానంలో చూపబడును. <gui>జాబితా</gui>  "
+"విధానంలో చూడుటకు:"
+
+#. (itstool) path: item/p
+#: C/viewgrid.page:40
+msgid ""
+"Go to the top bar and click <app>Documents</app> to display the app menu."
+msgstr "పై పట్టీనకు వెళ్ళి అనువర్తన మెనూ ప్రదర్శించుటకు <app>పత్రములు</app> నొక్కుము."
+
+#. (itstool) path: item/p
+#: C/viewgrid.page:44
+msgid "Click <gui>List</gui> from the <gui>View as</gui> section."
+msgstr "<gui>ఇలా దర్శించు</gui> విభాగము నుండి <gui>జాబితా</gui> పైన నొక్కుము."
+
+#. (itstool) path: note/p
+#: C/viewgrid.page:49
+msgid ""
+"List view has columns displaying the document type and date modified, and "
+"whether it's stored locally, or in <app>Google Docs</app> or <em>SkyDrive</"
+"em>."
+msgstr ""
+"జాబితా దర్శనం అనునది పత్రపు రకం మరియు సవరించిన తేదీ, మరియు అది స్థానికంగా నిల్వవున్నదా, లేక "
+"<app>Google Docs</app> నందా లేదా <em>SkyDrive</em> నందు నిల్వవుందా అనేది "
+"నిలువుపట్టీలనందు చూపును."
+
+#. (itstool) path: page/p
+#: C/viewgrid.page:54
+msgid "Click <gui>Grid</gui> in the app menu to return to the default format."
+msgstr "అప్రమేయ ఫార్మాట్‌కు తిరిగివచ్చుటకు అనువర్తన మెనూ నందలి <gui>గ్రిడ్</gui> నొక్కుము."
+
+#. (itstool) path: info/desc
+#: C/view.page:23
+msgid "View documents full-screen."
+msgstr "పత్రముల పూర్తి-తెర దర్శించుము."
+
+#. (itstool) path: page/title
+#: C/view.page:26
+msgid "Display documents stored locally or online"
+msgstr "స్థానికంగా లేదా ఆన్‌లైన్ నిల్వవుంచిన పత్రములను ప్రదర్శించుము"
+
+#. (itstool) path: page/p
+#: C/view.page:36
+msgid ""
+"When you open <app>Documents</app>, all of your documents, those stored "
+"locally as well as online, are displayed as thumbnails."
+msgstr ""
+"మీరు <app>పత్రములు</app> తెరిచినప్పుడు, మీ పత్రములు అన్నీ, స్థానికంగా నిల్వవున్నవి అదేవిధంగా ఆన్‌లైన్ "
+"నందు, థంబ్‌నెయిల్స్ గా ప్రదర్శించబడును."
+
+#. (itstool) path: note/p
+#: C/view.page:40
+#, fuzzy
+msgid ""
+"In order for your <em>Google Docs</em> or <em>SkyDrive</em> documents to "
+"appear, it is necessary to configure Google or Windows Live, respectively, "
+"as an <link href=\"gnome-help:accounts-add\">online account</link>."
+msgstr ""
+"మీ <em>Google Docs</em> లేదా <em>SkyDrive</em>  పత్రములు కనిపించుట కొరకు, <link "
+"xref=\"accounts-add\">ఆన్‌లైన్ ఖాతా</link> వలె, గూగుల్ లేదా విండోస్ లైవ్ ఆకృతీకరించుట తప్పనిసరి."
+
+#. (itstool) path: page/p
+#: C/view.page:45
+msgid "To view the contents of a document:"
+msgstr "పత్రము యొక్క సారములను దర్శించుటకు:"
+
+#. (itstool) path: item/p
+#: C/view.page:49
+msgid ""
+"Click the thumbnail. The document is displayed full-width in the "
+"<app>Documents</app> window (or full-screen if maximized)."
+msgstr ""
+"థంబ్‌నెయిల్ నొక్కుము. <app>పత్రముల</app>  విండో (లేదా పెద్దదిచేయబడితే పూర్తి-తెర) నందు పత్రము పూర్తి-"
+"వెడల్పుతో ప్రదర్శించబడును."
+
+#. (itstool) path: page/p
+#: C/view.page:54
+msgid "To exit the document, click the back arrow button."
+msgstr "పత్రము నిష్క్రమించుటకు, వెనుకకు బాణపు బటన్ నొక్కుము."
+
+#. (itstool) path: p/link
+#: C/legal.xml:3
+msgid "Creative Commons Attribution-ShareAlike 3.0 Unported License"
+msgstr "క్రియేటివ్ కామన్స్ Attribution-ShareAlike 3.0 తోడ్పాటులేని లైసెన్స్"
+
+#. (itstool) path: license/p
+#: C/legal.xml:3
+msgid "This work is licensed under a <_:link-1/>."
+msgstr "ఈ పని <_:link-1/> కిందన లైసెన్స్ కాబడినది."

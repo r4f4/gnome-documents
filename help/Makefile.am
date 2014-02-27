@@ -20,4 +20,4 @@ HELP_FILES = \
 HELP_MEDIA = \
 	media/go-down.png
 
-HELP_LINGUAS =
+HELP_LINGUAS = as ca cs de el fi fr es gl gu hi hu id it ja kn lv mr nl pa pt_BR ru sl sr sr@latin sv te vi ta zh_CN

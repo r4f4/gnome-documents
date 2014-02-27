@@ -1,0 +1,670 @@
+#
+# Shantha kumar <shkumar@redhat.com>, 2013, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2014-02-27 11:16+0000\n"
+"PO-Revision-Date: 2014-01-22 13:04+0530\n"
+"Last-Translator: Shantha kumar <shkumar@redhat.com>\n"
+"Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
+"Language: ta\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+msgctxt "_"
+msgid "translator-credits"
+msgstr "Shantha kumar, <shkumar@redhat.com>, 2013"
+
+#. (itstool) path: credit/name
+#: C/collections.page:11 C/index.page:10 C/info.page:10 C/previews.page:11
+#: C/print.page:11 C/search.page:11 C/select.page:11 C/tracker.page:11
+#: C/viewgrid.page:11 C/view.page:11
+msgid "Julita Inca"
+msgstr "ஜுலிட்டா இங்கா"
+
+#. (itstool) path: credit/years
+#: C/collections.page:13 C/collections.page:18 C/filter.page:13
+#: C/formats.page:13 C/index.page:12 C/index.page:17 C/info.page:12
+#: C/info.page:17 C/previews.page:13 C/previews.page:18 C/print.page:13
+#: C/print.page:18 C/search.page:13 C/search.page:18 C/select.page:13
+#: C/select.page:18 C/tracker.page:13 C/tracker.page:18 C/viewgrid.page:13
+#: C/viewgrid.page:18 C/view.page:13 C/view.page:18
+msgid "2012"
+msgstr "2012"
+
+#. (itstool) path: credit/name
+#: C/collections.page:16 C/filter.page:11 C/formats.page:11 C/index.page:15
+#: C/info.page:15 C/previews.page:16 C/print.page:16 C/search.page:16
+#: C/select.page:16 C/tracker.page:16 C/viewgrid.page:16 C/view.page:16
+msgid "Michael Hill"
+msgstr "மைக்கேல் ஹில்"
+
+#. (itstool) path: info/desc
+#: C/collections.page:23
+msgid "Group related documents in a collection."
+msgstr "தொடர்புடைய ஆவணங்களை தொகுப்பாக குழுப்படுத்துதல்."
+
+#. (itstool) path: page/title
+#: C/collections.page:26
+msgid "Make collections of documents"
+msgstr "ஆவணங்களின் தொகுப்பை உருவாக்குதல்"
+
+#. (itstool) path: page/p
+#: C/collections.page:39
+msgid ""
+"<app>Documents</app> lets you put together documents of different types in "
+"one place called a <em>collection</em>. If you have documents that are "
+"related, you can group them to make them easier to find. For example, if you "
+"had a business trip where you made a presentation, your slides, your flight "
+"itinerary (a PDF file), your budget spreadsheet, and other hybrid PDF/ODF "
+"documents, can be grouped in one collection."
+msgstr ""
+"<app>ஆவணங்கள்</app> பயன்பாட்டைக் கொண்டு வெவ்வேறு வகை ஆவணங்களை <em>தொகுப்பு</em> "
+"எனப்படும் ஒரே இடத்தில் வைத்துக்கொள்ளலாம். உங்களிடம் ஒன்றுக்கொன்று தொடர்புடைய ஆவணங்கள் "
+"இருந்தால், அவற்றைக் கண்டறிய எளிதாக இருக்கும் வகையில் அவற்றஒ குழுப்படுத்தலாம். உதாரணமாக, "
+"நீங்கள் வணிக நிமித்தமாக ஒரு இடத்திற்குப் பயணம் செய்து அங்கு விளக்கக் காட்சிகளை "
+"நிகழ்த்தியிருந்தால், உங்கள் விளக்கக் காட்சிக் கோப்புகள், ஸ்லைடுகள், விமான பயணத் தகவல் புத்தகம் "
+"(ஒரு PDF கோப்பு), உங்கள் நிதித்திட்ட விரிதாள் மற்றும் பிற பல வகை PDF/ODF ஆவணங்கள் ஆகிய "
+"அனைத்தையும் ஒரே தொகுப்பாகக் குழுப்படுத்திக் கொள்ளலாம்."
+
+#. (itstool) path: page/p
+#: C/collections.page:46
+msgid "To create or add to a collection:"
+msgstr "தொகுப்பு ஒன்றை உருவாக்க அல்லது ஒரு கோப்பை ஒரு தொகுப்பில் சேர்க்க:"
+
+#. (itstool) path: item/p
+#: C/collections.page:49 C/collections.page:72 C/print.page:39
+#: C/select.page:41
+msgid "Click the <gui>✓</gui> button."
+msgstr "<gui>✓</gui> பொத்தானை சொடுக்கவும்."
+
+#. (itstool) path: item/p
+#: C/collections.page:52
+msgid "In selection mode, check the documents to be collected."
+msgstr "தேர்ந்தெடுக்கும் பயன்முறையில், சேகரிக்கப்பட வேண்டிய ஆவணங்களை தேர்வு செய்யவும்."
+
+#. (itstool) path: item/p
+#: C/collections.page:55
+msgid "Click the <gui>+</gui> button in the button bar."
+msgstr "பொத்தான்கள் பட்டியில் உள்ள <gui>+</gui> பொத்தானை சொடுக்கவும்."
+
+#. (itstool) path: item/p
+#: C/collections.page:58
+msgid ""
+"In the collection list, click <gui>Add</gui> and type a new collection name, "
+"or select an existing collection. The selected documents will be added to "
+"the collection."
+msgstr ""
+"தொகுப்பு பட்டியலில், <gui>சேர்</gui> -ஐ சொடுக்கி, புதிய தொகுப்பின் பெயரைத் தட்டச்சு "
+"செய்யவும், அல்லது முன்பே உள்ள தொகுப்பு ஒன்றைத் தேர்ந்தெடுக்கவும். தேர்ந்தெடுத்த ஆவணங்கள் அந்த "
+"தொகுப்பில் சேர்க்கப்படும்."
+
+#. (itstool) path: note/p
+#: C/collections.page:65
+msgid ""
+"Collections do not behave like folders and their hierarchy: <em>you cannot "
+"put collections inside collections.</em>"
+msgstr ""
+"தொகுப்புகள் கோப்புறைகளைப் போன்றதல்ல: <em>நீங்கள் தொகுப்புகளுக்குள் தொகுப்புகளை வைக்க "
+"முடியாது.</em>"
+
+#. (itstool) path: page/p
+#: C/collections.page:69
+msgid "To delete a collection:"
+msgstr "ஒரு தொகுப்பை அழிக்க:"
+
+#. (itstool) path: item/p
+#: C/collections.page:75
+msgid "In selection mode, check the collection to be deleted."
+msgstr "தேர்ந்தெடுத்தல் பயன்முறையில், அழிக்க வேண்டிய தொகுப்புகளை தேர்வு செய்யவும்."
+
+#. (itstool) path: item/p
+#: C/collections.page:78
+msgid ""
+"Click the Trash button in the button bar. The collection will be deleted, "
+"leaving the original documents."
+msgstr ""
+"பொத்தான் பட்டியில் உள்ள குப்பைத் தொட்டி பொத்தானை சொடுக்கவும். தொகுப்பு அழிக்கப்படும், ஆனால் "
+"அசல் ஆவணங்கள் எதுவும் ஆகாது."
+
+#. (itstool) path: media
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/filter.page:23 C/search.page:53
+#, fuzzy
+msgctxt "_"
+msgid "external ref='media/go-down.png' md5='e8c16f5ab9ed933f4a537b740506f4d4'"
+msgstr ""
+"external ref='figures/go-down.png' md5='e8c16f5ab9ed933f4a537b740506f4d4'"
+
+#. (itstool) path: info/desc
+#: C/filter.page:18
+msgid "Choose which documents to display."
+msgstr "என்னென்ன ஆவணங்கள் காண்பிக்கப்பட வேண்டும் எனத் தேர்வு செய்யவும்."
+
+#. (itstool) path: page/title
+#: C/filter.page:21
+msgid "Filter documents"
+msgstr "ஆவணங்களை வடிகட்டவும்"
+
+#. (itstool) path: page/p
+#: C/filter.page:23
+#, fuzzy
+msgid ""
+"Click the <media type=\"image\" src=\"media/go-down.png\">down</media> "
+"button next to the <link xref=\"search\">search</link> bar to limit the "
+"scope of the search in these categories:"
+msgstr ""
+"பின்வரும் வகைகளுக்குள் மட்டும் தேடும்படி கட்டுப்பாட்டை அமைக்க <link xref=\"documents-"
+"search\">தேடு</link> பட்டிக்கு அடுத்துள்ள <media type=\"image\" src=\"figures/go-"
+"down.png\">கீழே</media> -ஐ சொடுக்கவும்:"
+
+#. (itstool) path: item/p
+#: C/filter.page:29
+msgid "<em>Sources</em>: Local, Google, SkyDrive, or All."
+msgstr "<em>ஆதாரங்கள்</em>: கணினி, Google, SkyDrive அல்லது அனைத்தும்."
+
+#. (itstool) path: item/p
+#: C/filter.page:31
+msgid ""
+"<em>Type</em>: Collections, PDF Documents, Presentations, Spreadsheets, Text "
+"Documents, or All."
+msgstr ""
+"<em>வகை</em>: தொகுப்புகள், PDF ஆவணங்கள், விளக்கக்காட்சிகள், விரிதாட்கள், உரை ஆவணங்கள் "
+"அல்லது அனைத்தும்."
+
+#. (itstool) path: item/p
+#: C/filter.page:35
+msgid "Title, Author, or All."
+msgstr "தலைப்பு, உருவாக்கியவர் அல்லது அனைத்தும்."
+
+#. (itstool) path: note/p
+#: C/filter.page:40
+#, fuzzy
+msgid ""
+"In order for <gui>Google</gui> or <gui>SkyDrive</gui> to appear in the "
+"filter list, it is necessary to configure Google or Windows Live as an <link "
+"href=\"gnome-help:accounts-add\">online account</link>."
+msgstr ""
+"வடிகட்டி பட்டியலில் <gui>Google</gui> அல்லது <gui>SkyDrive</gui> இடம்பெற "
+"வேண்டுமானா, Google அல்லது Windows Live ஐ ஒரு <link xref=\"accounts-add\">ஆன்லைன் "
+"கணக்காக</link> அமைவாக்கம் செய்வது அவசியம்."
+
+#. (itstool) path: info/desc
+#: C/formats.page:18
+msgid "<app>Documents</app> displays a number of popular document types."
+msgstr "<app>ஆவணங்கள்</app> பயன்பாடு பிரபலமான பல ஆவண வகைகளைக் காண்பிக்கும்."
+
+#. (itstool) path: page/title
+#: C/formats.page:22
+msgid "Formats supported"
+msgstr "ஆதரிக்கப்படும் வடிவமைப்புகள்"
+
+#. (itstool) path: page/p
+#: C/formats.page:24
+msgid ""
+"<app>Documents</app> displays PDF, DVI, XPS, PostScript and the formats "
+"supported by <app>Document Viewer</app> (Evince), <app>Microsoft Office</"
+"app>, <app>LibreOffice</app> and <app>Google Docs</app>."
+msgstr ""
+"<app>ஆவணங்கள்</app> PDF, DVI, XPS, PostScript மற்றும் <app>Document Viewer</app> "
+"(Evince), <app>Microsoft Office</app>, <app>LibreOffice</app> மற்றும் "
+"<app>Google Docs</app> ஆகியவை ஆதரிக்கும் வடிவமைப்புகள் ஆகியவற்றை காட்சிப்படுத்தும்."
+
+#. (itstool) path: info/desc
+#: C/index.page:22
+msgid ""
+"Organize the documents stored locally on your computer or created online."
+msgstr "கணினிக்குள்ளாக சேமிக்கபப்ட்ட அல்லது ஆன்லைனில் உருவாக்கப்பட்ட ஆவணங்களை ஒழுங்கமைத்தல்."
+
+#. (itstool) path: page/title
+#: C/index.page:26
+msgid "Documents"
+msgstr "ஆவணங்கள்"
+
+#. (itstool) path: page/p
+#: C/index.page:38
+msgid ""
+"<app>Documents</app> is a GNOME application that lets you display, organize, "
+"and print the documents on your computer or those created remotely using "
+"<em>Google Docs</em> or <em>SkyDrive</em>."
+msgstr ""
+"<app>ஆவணங்கள்</app> என்பது உங்கள் கணினியில் உருவாக்கப்பட்ட அல்லது<em>Google Docs</em> "
+"அல்லது <em>SkyDrive</em> போன்றவற்றில் தொலைநிலையில் உருவாக்கப்பட்ட ஆவணங்களைக் காண, "
+"ஒழுங்கமைக்க மற்றும் அச்சிடப் பயன்படும் GNOME பயன்பாடாகும்."
+
+#. (itstool) path: section/title
+#: C/index.page:43
+msgid "View, Sort and Search"
+msgstr "காணுதல், வகைப்படுத்தல் மற்றும் தேடுதல்"
+
+#. (itstool) path: section/title
+#: C/index.page:47
+msgid "Select, Organize, Print"
+msgstr "தேர்ந்தெடுத்தல், ஒழுங்கமைத்தல், அச்சிடுதல்"
+
+#. (itstool) path: section/title
+#: C/index.page:51
+msgid "Questions"
+msgstr "கேள்விகள்"
+
+#. (itstool) path: info/desc
+#: C/info.page:22
+msgid "See a document's name, location, date modified, or type."
+msgstr "ஒரு ஆவணத்தின் பெயர், இருப்பிடம், மாற்றம் செய்யப்பட்ட தேதி அல்லது வகையைக் காணுதல்."
+
+#. (itstool) path: page/title
+#: C/info.page:25
+msgid "Find information about documents"
+msgstr "ஆவணங்களைப் பற்றிய தகவலைக் கண்டுபிடித்தல்"
+
+#. (itstool) path: page/p
+#: C/info.page:35
+msgid ""
+"When a document is created, it comes with <em>metadata</em>. <app>Documents</"
+"app> displays the following metadata for each document:"
+msgstr ""
+"ஒரு ஆவணம் உருவாக்கப்படும் போது, அதனுடன் ஒரு <em>மீத்தரவு</em> ஒன்று உருவாக்கப்படும். "
+"<app>ஆவணங்கள்</app> ஒவ்வொரு ஆவணத்திற்கும் பின்வரும் மீத்தரவைக் காண்பிக்கும்:"
+
+#. (itstool) path: item/p
+#: C/info.page:40
+msgid "Title: the name of the document, which can be edited;"
+msgstr "தலைப்பு: ஆவணத்தின் பெயர் - இதைத் திருத்த முடியும்;"
+
+#. (itstool) path: item/p
+#: C/info.page:43
+msgid "Source: the path of the folder containing the document;"
+msgstr "ஆதாரம்: அந்த ஆவணத்தைக் கொண்டுள்ள கோப்புறையின் பாதை;"
+
+#. (itstool) path: item/p
+#: C/info.page:46
+msgid "Date Modified;"
+msgstr "மாற்றப்பட்ட தேதி;"
+
+#. (itstool) path: item/p
+#: C/info.page:49
+#, fuzzy
+msgid "Type: the <link xref=\"formats\">file format</link> of the document."
+msgstr "வகை: ஆவணத்தின் <link xref=\"documents-formats\">கோப்பு வடிவமைப்பு</link>."
+
+#. (itstool) path: page/p
+#: C/info.page:53
+msgid "To see a document's properties:"
+msgstr "ஒரு ஆவணத்தின் பண்புகளைப் பார்த்தல்:"
+
+#. (itstool) path: item/p
+#: C/info.page:56
+msgid "Click the <gui>Check</gui> button to switch to selection mode."
+msgstr "தேர்ந்தெடுத்தல் பயன்முறைக்கு மாற <gui>தேர்வு செய்</gui> பொத்தானை சொடுக்கவும்."
+
+#. (itstool) path: item/p
+#: C/info.page:59
+msgid "Select a document."
+msgstr "ஒரு ஆவணத்தின் தேர்ந்தெடுத்தல்."
+
+#. (itstool) path: item/p
+#: C/info.page:62
+msgid ""
+"Click the <gui>Properties</gui> button at the right end of the button bar."
+msgstr "பொத்தான் பட்டியின் வலது முடிவில் உள்ள <gui>பண்புகள்</gui> பொத்தானை சொடுக்கவும்."
+
+#. (itstool) path: note/p
+#: C/info.page:68
+msgid ""
+"Some types of documents (e.g. PDF files) can be password protected, "
+"preventing access to their metadata or content."
+msgstr ""
+"சில வகை ஆவணங்கள் (எ.கா. PDF கோப்புகள்) கடவுச்சொல்லால் பாதுகாக்கப்பட்டிருக்கலாம், இதனால் "
+"அவற்றின் மீத்தரவு அல்லது உள்ளடக்கத்தை அணுக முடியாது போகலாம்."
+
+#. (itstool) path: note/p
+#: C/info.page:73
+msgid ""
+"<app>Documents</app> does not currently offer any mechanism to add privacy "
+"to a document. You may be able to do this from the application you used to "
+"create the document (e.g. <app>LibreOffice</app> or <app>Adobe Acrobat</"
+"app>)."
+msgstr ""
+"<app>ஆவணங்கள்</app> தற்போது ஒரு ஆவணத்திற்கு தனியுரிமையைச் சேர்க்கும் வசதியை "
+"அளிக்கவில்லை. ஆவணத்தை உருவாக்கப் பயன்படுத்திய பயன்பாட்டைக் கொண்டு (எ.கா. "
+"<app>LibreOffice</app> அல்லது <app>Adobe Acrobat</app>) இதனை அமைக்கலாம்."
+
+#. (itstool) path: info/desc
+#: C/previews.page:23
+msgid "You can only preview files stored locally."
+msgstr "கணினிக்குள்ளே சேமிக்கப்பட்ட கோப்புகளின் முன்னோட்டத்தை மட்டுமே பார்க்க முடியும்."
+
+#. (itstool) path: page/title
+#: C/previews.page:26
+msgid "Why don't some files have previews?"
+msgstr "சில கோப்புகளுக்கு மாதிரிக்காட்சி இல்லாதது ஏன்?"
+
+#. (itstool) path: page/p
+#: C/previews.page:34
+msgid ""
+"When you open <app>Documents</app>, a preview thumbnail is displayed for "
+"documents that are stored locally. Those stored on a remote server like "
+"<em>Google Docs</em> or <em>SkyDrive</em> show as missing (or blank) preview "
+"thumbnails."
+msgstr ""
+"நீங்கள் <app>ஆவணங்கள்</app> -ஐ திறக்கும் போது, கணினிக்குள் சேமிக்கப்பட்ட ஆவணங்களின் "
+"மாதிரிக்காட்சி சிறுபடம் ஒன்று காண்பிக்கப்படும். <em>Google Docs</em> அல்லது "
+"<em>SkyDrive</em> போன்ற தொலைநிலை சேவையகங்களில் சேமிக்கப்பட்ட ஆவணங்களுக்கு "
+"மாதிரிக்காட்சி சிறுபடங்கள் இருக்காது."
+
+#. (itstool) path: page/p
+#: C/previews.page:39
+msgid ""
+"If you download a <em>Google Docs</em> or <em>SkyDrive</em> document to "
+"local storage, a thumbnail will be generated."
+msgstr ""
+"நீங்கள் <em>Google Docs</em> அல்லது <em>SkyDrive</em> ஆவணத்தை கணினி சேமிப்பிடத்தில் "
+"பதிவிறக்கினால், சிறுபடம் உருவாக்கப்படும்."
+
+#. (itstool) path: note/p
+#: C/previews.page:43
+msgid ""
+"The local copy of a document downloaded from <em>Google Docs</em> or "
+"<em>SkyDrive</em> will lose its ability to be updated online. If you want to "
+"continue to edit it online, it is better not to download it."
+msgstr ""
+"<em>Google Docs</em> அல்லது <em>SkyDrive</em> இலிருந்து பதிவிறக்கிய ஆவணத்தின் நகல் "
+"ஆன்லைனில் புதுப்பிக்கப்படும் திறனை இழந்துவிடும். அதைத் தொடர்ந்து ஆன்லைனில் திருத்தும்படி "
+"இருக்க வேண்டும் என விரும்பினால், அதைப் பதிவிறக்காமல் விடுவதே நல்லது."
+
+#. (itstool) path: info/desc
+#: C/print.page:23
+msgid "Print documents that are stored locally or online."
+msgstr "கணினிக்குள்ளாக சேமிக்கபப்ட்ட அல்லது ஆன்லைனில் சேமிக்கபப்ட்ட ஆவணங்களை அச்சிடுதல்."
+
+#. (itstool) path: page/title
+#: C/print.page:26
+msgid "Print a document"
+msgstr "ஒரு ஆவணத்தை அச்சிடுதல்"
+
+#. (itstool) path: page/p
+#: C/print.page:35
+msgid "To print a document:"
+msgstr "ஒரு ஆவணத்தை அச்சிட:"
+
+#. (itstool) path: item/p
+#: C/print.page:42
+msgid "In selection mode, check the document to be printed."
+msgstr "தேர்ந்தெடுத்தல் பயன்முறையில், அச்சிட வேண்டிய ஆவணத்தைத் தேர்வு செய்யவும்."
+
+#. (itstool) path: item/p
+#: C/print.page:45
+msgid ""
+"Click the Print button in the button bar. The <gui>Print</gui> dialog opens."
+msgstr ""
+"பொத்தான் பட்டியில் உள்ள அச்சிடு பொத்தானை சொடுக்கவும். <gui>அச்சிடு</gui> உரையாடல் "
+"திறக்கும்."
+
+#. (itstool) path: note/p
+#: C/print.page:51
+msgid ""
+"Printing is not available when more than one document is selected, or when a "
+"collection is selected."
+msgstr ""
+"ஒன்றுக்கு மேற்பட்ட ஆவணங்களைத் தேர்ந்தெடுத்திருக்கும் போது அல்லது தொகுப்பு ஒன்றைத் "
+"தேர்ந்தெடுத்திருக்கும் போது அச்சிட முடியாது."
+
+#. (itstool) path: info/desc
+#: C/search.page:23
+msgid "Find your documents by title or author."
+msgstr "தலைப்பு அல்லது உருவாக்கியவர் பெயரைக் கொண்டு ஆவணங்களைக் கண்டறிதல்."
+
+#. (itstool) path: page/title
+#: C/search.page:26
+msgid "Search for files"
+msgstr "கோப்புகளைத் தேடல்"
+
+#. (itstool) path: page/p
+#: C/search.page:38
+msgid "To start a search in <app>Documents</app>:"
+msgstr "<app>ஆவணங்கள்</app> -இல் தேடத் தொடங்க:"
+
+#. (itstool) path: item/p
+#: C/search.page:42
+#, fuzzy
+msgid ""
+"Press <keyseq><key>Ctrl</key><key>F</key></keyseq> to open the search bar at "
+"the top of the window."
+msgstr ""
+"ஒரு சாளரத்தை திரைப்பிடிப்பெடுக்க <keyseq><key>Alt</key><key>Prt Scrn</key></"
+"keyseq>."
+
+#. (itstool) path: item/p
+#: C/search.page:46
+msgid ""
+"Start typing keywords, and searching begins instantly. You will see a list "
+"of documents whose title or author matches the keywords."
+msgstr ""
+
+#. (itstool) path: note/p
+#: C/search.page:52
+#, fuzzy
+msgid ""
+"You can restrict or filter the search results by clicking the <media type="
+"\"image\" src=\"media/go-down.png\">down</media> button and selecting "
+"various <link xref=\"filter\">filters</link>."
+msgstr ""
+"<media type=\"image\" src=\"figures/go-down.png\">கீழே</media> பொத்தானை "
+"சொடுக்குவதன் மூலமும் பல்வேறு <link xref=\"documents-filter\">வடிகட்டிகளை</link> "
+"தேர்ந்தெடுப்பதன் மூலமும் தேடல் தேடல் முடிவுகளை வரம்புக்குள் அமைக்கலாம் அல்லது வடிகட்டலாம்."
+
+#. (itstool) path: info/desc
+#: C/select.page:23
+msgid "Use selection mode to select more than one document or collection."
+msgstr ""
+"ஒன்றுக்கு அதிகமான ஆவணங்கள் அல்லது தொகுப்பைத் தேர்ந்தெடுக்க தேர்ந்தெடுத்தல் பயன்முறையைப் "
+"பயன்படுத்தவும்."
+
+#. (itstool) path: page/title
+#: C/select.page:27
+msgid "Selecting documents"
+msgstr "ஆவணங்களைத் தேர்ந்தெடுத்தல்"
+
+#. (itstool) path: page/p
+#: C/select.page:36
+msgid ""
+"From <app>Documents</app> selection mode you can open, print, view or make "
+"collections of your documents. To use selection mode:"
+msgstr ""
+"<app>ஆவணங்கள்</app> தேர்ந்தெடுத்தல் பயன்முறையிலிருந்து, நீங்கள் ஆவணங்களைத் திறக்கலாம், "
+"அச்சிடலாம், பார்க்கலாம் அல்லது அவற்றை தொகுப்புகளாக உருவாக்கலாம். தேர்ந்தெடுத்தல் "
+"பயன்முறையைப் பயன்படுத்த:"
+
+#. (itstool) path: item/p
+#: C/select.page:44
+msgid ""
+"Select one or more documents or collections. The button bar appears with the "
+"actions that are valid for your selection."
+msgstr ""
+"ஒன்றுக்கு அதிகமான ஆவணங்கள் அல்லது தொகுப்புகளைத் தேர்ந்தெடுக்கவும். நீங்கள் தேர்ந்தெடுக்கும் "
+"உருப்படிகளுக்கு கிடைக்கின்ற செயல்களுக்கான பொத்தான் பட்டி காண்பிக்கப்படும்."
+
+#. (itstool) path: section/title
+#: C/select.page:51
+msgid "Selection mode actions"
+msgstr "தேர்ந்தெடுத்தல் பயன்முறை செயல்கள்"
+
+#. (itstool) path: section/p
+#: C/select.page:53
+msgid "After selecting one or more documents you can:"
+msgstr "ஒன்று அல்லது அதிகமான ஆவணங்களைத் தேர்ந்தெடுத்த பிறகு, நீங்கள் இவற்றைச் செய்யலாம்:"
+
+#. (itstool) path: item/p
+#: C/select.page:57
+msgid "Open with Document Viewer (folder icon)."
+msgstr "Document Viewer (கோப்புறை சின்னம்) மூலம் திறக்கலாம்."
+
+#. (itstool) path: item/p
+#: C/select.page:60
+msgid ""
+"Print (printer icon): print a document (only available when a single "
+"document is selected)."
+msgstr ""
+"அச்சிடு (அச்சு சாதன சின்னம்): ஒரு ஆவணத்தை அச்சிடலாம் (ஒரு ஆவணம் மட்டும் "
+"தேர்ந்தெடுக்கப்பட்டிருக்கும் போது கிடைக்கும்)."
+
+#. (itstool) path: item/p
+#: C/select.page:64
+msgid "Organize (plus icon): create a collection of documents."
+msgstr "ஒழுங்கமைக்கவும் (கூட்டல் சின்னம்): ஆவணங்களின் தொகுப்பை உருவாக்கலாம்."
+
+#. (itstool) path: item/p
+#: C/select.page:67
+msgid ""
+"Properties (wrench icon): display the properties of a document (only "
+"available when a single document is selected)."
+msgstr ""
+"பண்புகள் (ரென்ச் சின்னம்): ஒரு ஆவணத்தின் பண்புகளைக் காண்பிக்கும் (ஒரு ஆவணம் மட்டும் "
+"தேர்ந்தெடுக்கப்பட்டிருக்கும் போது கிடைக்கும்)."
+
+#. (itstool) path: item/p
+#: C/select.page:71
+msgid "Delete (trash icon): delete one or more collections."
+msgstr "அழி (குப்பைத் தொட்டி சின்னம்): ஒன்று அல்லது அதிக தொகுப்புகளை அழிக்கலாம்."
+
+#. (itstool) path: info/desc
+#: C/tracker.page:23
+msgid "Local or remote documents do not appear."
+msgstr "கணினிக்குள் உள்ள அல்லது தொலைநிலை ஆவணங்கள் காண்பிக்கப்படாது."
+
+#. (itstool) path: page/title
+#: C/tracker.page:26
+msgid "My documents cannot be seen"
+msgstr "என் ஆவணங்களைப் பார்க்க முடியவில்லை"
+
+#. (itstool) path: page/p
+#: C/tracker.page:40
+msgid ""
+"If your documents fail to display in <app>Documents</app>, <app>Tracker</"
+"app> may not be running or properly configured. Make sure Tracker is running "
+"in your session. The default configuration, set to index files in your home "
+"directory (non-recursively) and XDG folders (recursively), should be "
+"adequate. Ensure that your documents are in one of these paths."
+msgstr ""
+"<app>ஆவணங்கள்</app> -இல் உங்கள் ஆவணங்கள் காண்பிக்கப்படவில்லை எனில் <app>ட்ராக்கர்</app> "
+"இயங்காதிருக்கலாம் அல்லது அது சரியாக அமைவாக்கம் செய்யப்படாமல் இருக்கலாம். உங்கள் அமர்வில் "
+"ட்ராக்கர் இயங்குகிறதா எனப் பார்த்துக்கொள்ளவும். உங்கள் இல்லக் கோப்பகத்திலும் XDG கோப்பகங்களிலும் "
+"உள்ள கோப்புகளை (ஒன்றுக்குள் ஒன்றாக) அட்டவணையிடும் படி அமைக்கப்பட்டிருக்கின்ற முன்னிருப்பு "
+"அமைவாக்கமே போதும். உங்கள் ஆவணங்கள் இந்த பாதைகளில் ஏதேனும் ஒன்றில் இருக்கும்படி "
+"பார்த்துக்கொள்ளவும்."
+
+#. (itstool) path: info/desc
+#: C/viewgrid.page:23
+msgid "Change the way documents are displayed."
+msgstr "ஆவணங்கள் காண்பிக்கப்படும் விதத்தை மாற்றுதல்."
+
+#. (itstool) path: page/title
+#: C/viewgrid.page:26
+msgid "View files in a list or grid"
+msgstr "கோப்புகளை ஒரு பட்டியல் அல்லது குறுக்கு நெடுக்கு கட்டமாகக் காண்பிக்கவும்"
+
+#. (itstool) path: page/p
+#: C/viewgrid.page:35
+msgid ""
+"Documents and collections are presented in <gui>Grid</gui> format by "
+"default. To view in <gui>List</gui> format:"
+msgstr ""
+"ஆவணங்களும் தொகுப்புகளும் முன்னிருப்பாக <gui>வலையமைப்பு</gui> வடிவத்தில் காண்பிக்கப்படும். "
+"<gui>பட்டியல்</gui> வடிவமைப்பில் காண்பிக்க:"
+
+#. (itstool) path: item/p
+#: C/viewgrid.page:40
+msgid ""
+"Go to the top bar and click <app>Documents</app> to display the app menu."
+msgstr ""
+"பயன்பாட்டு மெனுவைக் காண்பிக்க, மேல் பட்டிக்குச் சென்று <app>ஆவணங்கள்</app> -ஐ சொடுக்கவும்."
+
+#. (itstool) path: item/p
+#: C/viewgrid.page:44
+msgid "Click <gui>List</gui> from the <gui>View as</gui> section."
+msgstr "<gui>இப்படிக் காட்டு</gui> பிரிவில் இருந்து <gui>பட்டியல்</gui> -ஐ சொடுக்கவும்."
+
+#. (itstool) path: note/p
+#: C/viewgrid.page:49
+msgid ""
+"List view has columns displaying the document type and date modified, and "
+"whether it's stored locally, or in <app>Google Docs</app> or <em>SkyDrive</"
+"em>."
+msgstr ""
+"பட்டியல் காட்சி வகையில் ஆவணத்தின் வகை மற்றும் மாற்றப்பட்ட தேதி மற்றும் அது கணினிக்குள் "
+"சேமிக்கப்பட்டுள்ளதா அல்லது <app>Google Docs</app> அல்லது <em>SkyDrive</em> இல் "
+"சேமிக்கப்பட்டுள்ளதா என்ற விவரமும் நெடுவரிசைகளில் காண்பிக்கப்படும்."
+
+#. (itstool) path: page/p
+#: C/viewgrid.page:54
+msgid "Click <gui>Grid</gui> in the app menu to return to the default format."
+msgstr ""
+"முன்னிருப்பு வடிவமைப்புக்கு மீண்டும் செல்ல பயன்பாட்டு மெனுவில் <gui>வலையமைப்பு</gui> -ஐ "
+"சொடுக்கவும்."
+
+#. (itstool) path: info/desc
+#: C/view.page:23
+msgid "View documents full-screen."
+msgstr "ஆவணங்களை முழுத்திரையில் காண்பிக்கவும்."
+
+#. (itstool) path: page/title
+#: C/view.page:26
+msgid "Display documents stored locally or online"
+msgstr "கணினிக்குள்ளாக சேமிக்கபப்ட்ட அல்லது ஆன்லைனில் சேமிக்கபப்ட்ட ஆவணங்களைக் காண்பித்தல்"
+
+#. (itstool) path: page/p
+#: C/view.page:36
+msgid ""
+"When you open <app>Documents</app>, all of your documents, those stored "
+"locally as well as online, are displayed as thumbnails."
+msgstr ""
+"நீங்கள் <app>ஆவணங்கள்</app> -ஐ திறக்கும் போது, உங்கள் கணினிக்குள் சேமிக்கப்பட்டுள்ள ஆவணங்கள் "
+"மற்றும் ஆன்லைனில் சேமிக்கப்பட்டுள்ள ஆவணங்கள் சிறுபடங்களாகக் காண்பிக்கப்படும்."
+
+#. (itstool) path: note/p
+#: C/view.page:40
+#, fuzzy
+msgid ""
+"In order for your <em>Google Docs</em> or <em>SkyDrive</em> documents to "
+"appear, it is necessary to configure Google or Windows Live, respectively, "
+"as an <link href=\"gnome-help:accounts-add\">online account</link>."
+msgstr ""
+"உங்கள் <em>Google Docs</em> அல்லது <em>SkyDrive</em> ஆவணங்கள் இடம்பெற வேண்டுமானால், "
+"முறையே Google அல்லது Windows Live ஐ <link xref=\"accounts-add\">ஆன்லைன் கணக்காக</"
+"link> அமைவாக்கம் செய்வது அவசியம்."
+
+#. (itstool) path: page/p
+#: C/view.page:45
+msgid "To view the contents of a document:"
+msgstr "ஒரு ஆவணத்தின் உள்ளடக்கங்களைக் காண:"
+
+#. (itstool) path: item/p
+#: C/view.page:49
+msgid ""
+"Click the thumbnail. The document is displayed full-width in the "
+"<app>Documents</app> window (or full-screen if maximized)."
+msgstr ""
+"சிறுபடத்தைச் சொடுக்கவும். ஆவணம் <app>ஆவணங்கள்</app> சாளரத்தில் முழு அகலத்தில் "
+"காட்டப்படும் (அல்லது பெரிதாக்கப்பட்டிருந்தால் முழுத்திரையில் காட்டப்படும்)."
+
+#. (itstool) path: page/p
+#: C/view.page:54
+msgid "To exit the document, click the back arrow button."
+msgstr "ஆவணத்திலிருந்து வெளியேற, பின் அம்பு பொத்தானை சொடுக்கவும்."
+
+#. (itstool) path: p/link
+#: C/legal.xml:3
+msgid "Creative Commons Attribution-ShareAlike 3.0 Unported License"
+msgstr "Creative Commons Attribution-ShareAlike 3.0 Unported License"
+
+#. (itstool) path: license/p
+#: C/legal.xml:3
+msgid "This work is licensed under a <_:link-1/>."
+msgstr "இந்தப் பணி ஒரு <_:link-1/> இன் கீழ் உரிமமளிக்கப்படுகிறது."

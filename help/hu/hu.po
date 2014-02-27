@@ -1,0 +1,710 @@
+# Hungarian translation of gnome-help
+# Copyright (C) 2011, 2012, 2013, 2014. Free Software Foundation, Inc.
+# This file is distributed under the same license as the gnome-user-guide package.
+#
+# Griechisch Erika <griechisch.erika at gmail dot com>, 2011.
+# Kelemen Gábor <kelemeng at gnome dot hu>, 2011.
+# Kucsebár Dávid <kucsdavid at gmail dot com>, 2011.
+# Lakatos 'Whisperity' Richárd <whisperity at gmail dot com>, 2011.
+# Lukács Bence <lukacs.bence1 at gmail dot com>, 2011.
+# Nagy Zoltán <dzodzie at gmail dot com>, 2011.
+# Gabor Kelemen <kelemeng at gnome dot hu>, 2011, 2012, 2013, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-help master\n"
+"POT-Creation-Date: 2014-02-27 11:16+0000\n"
+"PO-Revision-Date: 2014-02-18 04:15+0100\n"
+"Last-Translator: Gabor Kelemen <kelemeng at gnome dot hu>\n"
+"Language-Team: Hungarian <openscope at googlegroups dot com>\n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.4\n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
+"X-Launchpad-Export-Date: 2012-03-28 11:04+0000\n"
+
+# Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+#. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+msgctxt "_"
+msgid "translator-credits"
+msgstr ""
+"Griechisch Erika <griechisch.erika at gmail dot com>, 2011\n"
+"Kelemen Gábor <kelemeng at gnome dot hu>, 2011, 2012, 2013, 2014\n"
+"Kucsebár Dávid <kucsdavid at gmail dot com>, 2011\n"
+"Lakatos 'Whisperity' Richárd <whisperity at gmail dot com>, 2011\n"
+"Lukács Bence <lukacs.bence1 at gmail dot com>, 2011\n"
+"Nagy Zoltán <dzodzie at gmail dot com>, 2011"
+
+#. (itstool) path: credit/name
+#: C/collections.page:11 C/index.page:10 C/info.page:10 C/previews.page:11
+#: C/print.page:11 C/search.page:11 C/select.page:11 C/tracker.page:11
+#: C/viewgrid.page:11 C/view.page:11
+msgid "Julita Inca"
+msgstr "Julita Inca"
+
+#. (itstool) path: credit/years
+#: C/collections.page:13 C/collections.page:18 C/filter.page:13
+#: C/formats.page:13 C/index.page:12 C/index.page:17 C/info.page:12
+#: C/info.page:17 C/previews.page:13 C/previews.page:18 C/print.page:13
+#: C/print.page:18 C/search.page:13 C/search.page:18 C/select.page:13
+#: C/select.page:18 C/tracker.page:13 C/tracker.page:18 C/viewgrid.page:13
+#: C/viewgrid.page:18 C/view.page:13 C/view.page:18
+msgid "2012"
+msgstr "2012"
+
+#. (itstool) path: credit/name
+#: C/collections.page:16 C/filter.page:11 C/formats.page:11 C/index.page:15
+#: C/info.page:15 C/previews.page:16 C/print.page:16 C/search.page:16
+#: C/select.page:16 C/tracker.page:16 C/viewgrid.page:16 C/view.page:16
+msgid "Michael Hill"
+msgstr "Michael Hill"
+
+#. (itstool) path: info/desc
+#: C/collections.page:23
+msgid "Group related documents in a collection."
+msgstr "Kapcsolódó dokumentumok gyűjteménybe csoportosítása."
+
+#. (itstool) path: page/title
+#: C/collections.page:26
+msgid "Make collections of documents"
+msgstr "Dokumentumgyűjtemények készítése"
+
+#. (itstool) path: page/p
+#: C/collections.page:39
+msgid ""
+"<app>Documents</app> lets you put together documents of different types in "
+"one place called a <em>collection</em>. If you have documents that are "
+"related, you can group them to make them easier to find. For example, if you "
+"had a business trip where you made a presentation, your slides, your flight "
+"itinerary (a PDF file), your budget spreadsheet, and other hybrid PDF/ODF "
+"documents, can be grouped in one collection."
+msgstr ""
+"A <app>Dokumentumok</app> lehetővé teszi különböző típusú dokumentumok "
+"csoportosítását egy <gui>Gyűjteménybe</gui>. Ha egymáshoz kapcsolódó "
+"dokumentumai vannak, akkor a könnyebb megtalálhatóság érdekében "
+"csoportosíthatja azokat. Ha például üzleti útján egy bemutatót tartott, "
+"akkor egy gyűjteménybe csoportosíthatja az úttal kapcsolatos dokumentumait, "
+"mint az útitervet, a költségvetési tervet és más hibrid PDF/ODF "
+"dokumentumokat."
+
+#. (itstool) path: page/p
+#: C/collections.page:46
+msgid "To create or add to a collection:"
+msgstr "Gyűjtemény létrehozásához vagy hozzáadásához:"
+
+#. (itstool) path: item/p
+#: C/collections.page:49 C/collections.page:72 C/print.page:39
+#: C/select.page:41
+msgid "Click the <gui>✓</gui> button."
+msgstr "Kattintson a <gui>✓</gui> gombra."
+
+#. (itstool) path: item/p
+#: C/collections.page:52
+msgid "In selection mode, check the documents to be collected."
+msgstr "Kijelölési módban jelölje be az összegyűjtendő dokumentumokat."
+
+#. (itstool) path: item/p
+#: C/collections.page:55
+msgid "Click the <gui>+</gui> button in the button bar."
+msgstr "Kattintson a <gui>+</gui> gombra a gombsávban."
+
+#. (itstool) path: item/p
+#: C/collections.page:58
+msgid ""
+"In the collection list, click <gui>Add</gui> and type a new collection name, "
+"or select an existing collection. The selected documents will be added to "
+"the collection."
+msgstr ""
+"A gyűjteménylistában kattintson a <gui>Hozzáadás</gui> gombra, és írja be az "
+"új gyűjtemény nevét, vagy válasszon egy meglévő gyűjteményt. A kijelölt "
+"dokumentumok bekerülnek a gyűjteménybe."
+
+#. (itstool) path: note/p
+#: C/collections.page:65
+msgid ""
+"Collections do not behave like folders and their hierarchy: <em>you cannot "
+"put collections inside collections.</em>"
+msgstr ""
+"A gyűjtemények viselkedése nem azonos a mappákéval és azok hierarchiájáéval: "
+"<em>nem helyezhet el a gyűjteményekben más gyűjteményeket</em>."
+
+#. (itstool) path: page/p
+#: C/collections.page:69
+msgid "To delete a collection:"
+msgstr "Gyűjtemény törléséhez:"
+
+#. (itstool) path: item/p
+#: C/collections.page:75
+msgid "In selection mode, check the collection to be deleted."
+msgstr "Kijelölési módban jelölje be a törlendő gyűjteményt."
+
+#. (itstool) path: item/p
+#: C/collections.page:78
+msgid ""
+"Click the Trash button in the button bar. The collection will be deleted, "
+"leaving the original documents."
+msgstr ""
+"Kattintson a Kuka gombra a gombsávon. A gyűjtemény törlésre kerül, az "
+"eredeti dokumentumok azonban megmaradnak."
+
+# This is a reference to an external file such as an image or video. When
+# the file changes, the md5 hash will change to let you know you need to
+# update your localized copy. The msgstr is not used at all. Set it to
+# whatever you like once you have updated your copy of the file.
+#. (itstool) path: media
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/filter.page:23 C/search.page:53
+#, fuzzy
+msgctxt "_"
+msgid "external ref='media/go-down.png' md5='e8c16f5ab9ed933f4a537b740506f4d4'"
+msgstr ""
+"external ref='figures/go-down.png' md5='e8c16f5ab9ed933f4a537b740506f4d4'"
+
+#. (itstool) path: info/desc
+#: C/filter.page:18
+msgid "Choose which documents to display."
+msgstr "Válassza ki a megjelenítendő dokumentumokat."
+
+#. (itstool) path: page/title
+#: C/filter.page:21
+msgid "Filter documents"
+msgstr "Dokumentumok szűrése"
+
+#. (itstool) path: page/p
+#: C/filter.page:23
+#, fuzzy
+msgid ""
+"Click the <media type=\"image\" src=\"media/go-down.png\">down</media> "
+"button next to the <link xref=\"search\">search</link> bar to limit the "
+"scope of the search in these categories:"
+msgstr ""
+"Kattintson a <link xref=\"documents-search\">keresés</link> sáv melletti "
+"<media type=\"image\" src=\"figures/go-down.png\">lefelé</media> gombra a "
+"keresés hatókörének szűkítéséhez a következő kategóriákra:"
+
+#. (itstool) path: item/p
+#: C/filter.page:29
+msgid "<em>Sources</em>: Local, Google, SkyDrive, or All."
+msgstr "<em>Források</em>: Helyi, Google, SkyDrive vagy Mind."
+
+#. (itstool) path: item/p
+#: C/filter.page:31
+msgid ""
+"<em>Type</em>: Collections, PDF Documents, Presentations, Spreadsheets, Text "
+"Documents, or All."
+msgstr ""
+"<em>Típus</em>: Gyűjtemények, PDF-dokumentumok, Bemutatók, Táblázatok, "
+"Szöveges dokumentumok vagy Mind."
+
+#. (itstool) path: item/p
+#: C/filter.page:35
+msgid "Title, Author, or All."
+msgstr "Cím, Szerző vagy Mind."
+
+#. (itstool) path: note/p
+#: C/filter.page:40
+#, fuzzy
+msgid ""
+"In order for <gui>Google</gui> or <gui>SkyDrive</gui> to appear in the "
+"filter list, it is necessary to configure Google or Windows Live as an <link "
+"href=\"gnome-help:accounts-add\">online account</link>."
+msgstr ""
+"A <gui>Google</gui> vagy <gui>SkyDrive</gui> megjelenítéséhez a "
+"szűrőlistában be kell állítani egy Google vagy Windows Live <link xref="
+"\"accounts-add\">online fiókot</link>."
+
+#. (itstool) path: info/desc
+#: C/formats.page:18
+msgid "<app>Documents</app> displays a number of popular document types."
+msgstr ""
+"A <app>Dokumentumok</app> számos népszerű dokumentumtípus megjelenítésére "
+"képes."
+
+#. (itstool) path: page/title
+#: C/formats.page:22
+msgid "Formats supported"
+msgstr "Támogatott formátumok"
+
+#. (itstool) path: page/p
+#: C/formats.page:24
+msgid ""
+"<app>Documents</app> displays PDF, DVI, XPS, PostScript and the formats "
+"supported by <app>Document Viewer</app> (Evince), <app>Microsoft Office</"
+"app>, <app>LibreOffice</app> and <app>Google Docs</app>."
+msgstr ""
+"A <app>Dokumentumok</app> PDF, DVI, XPS, PostScript, valamint a "
+"<app>Dokumentummegjelenítő</app>, a <app>Microsoft Office</app>, "
+"<app>LibreOffice</app> és <app>Google Docs</app> által támogatott "
+"formátumokat jeleníti meg."
+
+#. (itstool) path: info/desc
+#: C/index.page:22
+msgid ""
+"Organize the documents stored locally on your computer or created online."
+msgstr ""
+"Rendszerezze a számítógépén helyileg tárolt vagy online létrehozott "
+"dokumentumait."
+
+#. (itstool) path: page/title
+#: C/index.page:26
+msgid "Documents"
+msgstr "Dokumentumok"
+
+#. (itstool) path: page/p
+#: C/index.page:38
+msgid ""
+"<app>Documents</app> is a GNOME application that lets you display, organize, "
+"and print the documents on your computer or those created remotely using "
+"<em>Google Docs</em> or <em>SkyDrive</em>."
+msgstr ""
+"A <app>Dokumentumok</app> a számítógépén található, illetve a <em>Google "
+"Dokumentumok</em> vagy a <em>SkyDrive</em> használatával a felhőben "
+"létrehozott dokumentumok megjelenítését, rendszerezését és nyomtatását "
+"lehetővé tevő GNOME alkalmazás."
+
+#. (itstool) path: section/title
+#: C/index.page:43
+msgid "View, Sort and Search"
+msgstr "Megjelenítés, rendezés és keresés"
+
+#. (itstool) path: section/title
+#: C/index.page:47
+msgid "Select, Organize, Print"
+msgstr "Kiválasztás, rendszerezés, nyomtatás"
+
+#. (itstool) path: section/title
+#: C/index.page:51
+msgid "Questions"
+msgstr "Kérdések"
+
+#. (itstool) path: info/desc
+#: C/info.page:22
+msgid "See a document's name, location, date modified, or type."
+msgstr ""
+"Dokumentum nevének, helyének módosítási dátumának vagy típusának "
+"megjelenítése."
+
+#. (itstool) path: page/title
+#: C/info.page:25
+msgid "Find information about documents"
+msgstr "Információk keresése dokumentumokról"
+
+#. (itstool) path: page/p
+#: C/info.page:35
+msgid ""
+"When a document is created, it comes with <em>metadata</em>. <app>Documents</"
+"app> displays the following metadata for each document:"
+msgstr ""
+"Dokumentum létrehozásakor <em>metaadatok</em> is létrejönnek. A "
+"<app>Dokumentumok</app> a következő metaadatokat jeleníti meg az egyes "
+"dokumentumokról:"
+
+#. (itstool) path: item/p
+#: C/info.page:40
+msgid "Title: the name of the document, which can be edited;"
+msgstr "Cím: A dokumentum neve, amely szerkeszthető;"
+
+#. (itstool) path: item/p
+#: C/info.page:43
+msgid "Source: the path of the folder containing the document;"
+msgstr "Forrás: A dokumentumot tartalmazó mappa útvonala;"
+
+#. (itstool) path: item/p
+#: C/info.page:46
+msgid "Date Modified;"
+msgstr "Módosítás dátuma;"
+
+#. (itstool) path: item/p
+#: C/info.page:49
+#, fuzzy
+msgid "Type: the <link xref=\"formats\">file format</link> of the document."
+msgstr ""
+"Típus: A dokumentum <link xref=\"documents-formats\">fájlformátuma</link>."
+
+#. (itstool) path: page/p
+#: C/info.page:53
+msgid "To see a document's properties:"
+msgstr "Dokumentum tulajdonságainak megjelenítéséhez:"
+
+#. (itstool) path: item/p
+#: C/info.page:56
+msgid "Click the <gui>Check</gui> button to switch to selection mode."
+msgstr "Nyomja meg a <gui>Pipa</gui> gombot a kijelölési módba váltáshoz."
+
+#. (itstool) path: item/p
+#: C/info.page:59
+msgid "Select a document."
+msgstr "Válasszon egy dokumentumot."
+
+#. (itstool) path: item/p
+#: C/info.page:62
+msgid ""
+"Click the <gui>Properties</gui> button at the right end of the button bar."
+msgstr "Nyomja meg a <gui>Tulajdonságok</gui> gombot a gombsáv jobb szélén."
+
+#. (itstool) path: note/p
+#: C/info.page:68
+msgid ""
+"Some types of documents (e.g. PDF files) can be password protected, "
+"preventing access to their metadata or content."
+msgstr ""
+"Bizonyos típusú dokumentumok (például PDF-fájlok) jelszóvédettek lehetnek, "
+"megakadályozva a metaadataik vagy tartalmuk elérését."
+
+#. (itstool) path: note/p
+#: C/info.page:73
+msgid ""
+"<app>Documents</app> does not currently offer any mechanism to add privacy "
+"to a document. You may be able to do this from the application you used to "
+"create the document (e.g. <app>LibreOffice</app> or <app>Adobe Acrobat</"
+"app>)."
+msgstr ""
+"A <app>Dokumentumok</app> önmagában nem teszi lehetővé a dokumentum "
+"adatvédelmi beállításainak módosítását. Ezt a dokumentumot létrehozó "
+"alkalmazásokból (például <app>LibreOffice</app> vagy <app>Adobe Acrobat</"
+"app>) teheti meg."
+
+#. (itstool) path: info/desc
+#: C/previews.page:23
+msgid "You can only preview files stored locally."
+msgstr "Csak a helyileg tárolt fájlok előnézetét jelenítheti meg."
+
+#. (itstool) path: page/title
+#: C/previews.page:26
+msgid "Why don't some files have previews?"
+msgstr "Miért nincs előnézet minden fájlhoz?"
+
+#. (itstool) path: page/p
+#: C/previews.page:34
+msgid ""
+"When you open <app>Documents</app>, a preview thumbnail is displayed for "
+"documents that are stored locally. Those stored on a remote server like "
+"<em>Google Docs</em> or <em>SkyDrive</em> show as missing (or blank) preview "
+"thumbnails."
+msgstr ""
+"A <app>Dokumentumok</app> megnyitásakor a helyileg tárolt dokumentumokhoz "
+"megjelenik egy előnézeti bélyegkép. A távoli kiszolgálón, például a "
+"<em>Google Dokumentumok</em> vagy <em>SkyDrive</em> tárolt dokumentumok "
+"esetén hiányozni fog az előnézeti bélyegkép."
+
+#. (itstool) path: page/p
+#: C/previews.page:39
+msgid ""
+"If you download a <em>Google Docs</em> or <em>SkyDrive</em> document to "
+"local storage, a thumbnail will be generated."
+msgstr ""
+"Ha letölt egy <em>Google Docs</em> vagy <em>SkyDrive</em> dokumentumot a "
+"helyi lemezre, akkor előállításra kerül a bélyegkép."
+
+#. (itstool) path: note/p
+#: C/previews.page:43
+msgid ""
+"The local copy of a document downloaded from <em>Google Docs</em> or "
+"<em>SkyDrive</em> will lose its ability to be updated online. If you want to "
+"continue to edit it online, it is better not to download it."
+msgstr ""
+"A <gui>Google Dokumentumokról</gui> vagy <em>SkyDrive</em>-ról származó "
+"dokumentum helyi másolata elveszti az online frissítés képességét. Ha online "
+"szeretné folytatni a szerkesztést, akkor ne töltse le."
+
+#. (itstool) path: info/desc
+#: C/print.page:23
+msgid "Print documents that are stored locally or online."
+msgstr "A helyileg vagy online tárolt dokumentumok nyomtatása."
+
+#. (itstool) path: page/title
+#: C/print.page:26
+msgid "Print a document"
+msgstr "Dokumentum nyomtatása"
+
+#. (itstool) path: page/p
+#: C/print.page:35
+msgid "To print a document:"
+msgstr "Dokumentum nyomtatásához:"
+
+#. (itstool) path: item/p
+#: C/print.page:42
+msgid "In selection mode, check the document to be printed."
+msgstr "A kijelölési módban jelölje ki a nyomtatandó dokumentumot."
+
+#. (itstool) path: item/p
+#: C/print.page:45
+msgid ""
+"Click the Print button in the button bar. The <gui>Print</gui> dialog opens."
+msgstr ""
+"Kattintson a nyomtatás ikonra a gombsávon. Megnyílik a <gui>Nyomtatás</gui> "
+"párbeszédablak."
+
+#. (itstool) path: note/p
+#: C/print.page:51
+msgid ""
+"Printing is not available when more than one document is selected, or when a "
+"collection is selected."
+msgstr ""
+"A nyomtatás nem érhető el, ha több dokumentum van kijelölve, vagy ha "
+"gyűjtemény van kijelölve."
+
+#. (itstool) path: info/desc
+#: C/search.page:23
+msgid "Find your documents by title or author."
+msgstr "Keresse meg dokumentumait cím vagy szerző alapján."
+
+#. (itstool) path: page/title
+#: C/search.page:26
+msgid "Search for files"
+msgstr "Fájlok keresése"
+
+#. (itstool) path: page/p
+#: C/search.page:38
+msgid "To start a search in <app>Documents</app>:"
+msgstr "Keresés indításához a <app>Dokumentumokban</app>."
+
+#. (itstool) path: item/p
+#: C/search.page:42
+msgid ""
+"Press <keyseq><key>Ctrl</key><key>F</key></keyseq> to open the search bar at "
+"the top of the window."
+msgstr ""
+"Nyomja meg a <keyseq><key>Ctrl</key><key>F</key></keyseq> kombinációt a "
+"keresőmező megjelenítéséhez az ablak tetején."
+
+#. (itstool) path: item/p
+#: C/search.page:46
+msgid ""
+"Start typing keywords, and searching begins instantly. You will see a list "
+"of documents whose title or author matches the keywords."
+msgstr ""
+"Kezdjen el kulcsszavakat gépelni, és a keresés azonnal megkezdődik. Ekkor "
+"megjelenik azon dokumentumok listája, amelyek címe vagy szerzője megfelel a "
+"kulcsszavaknak."
+
+#. (itstool) path: note/p
+#: C/search.page:52
+#, fuzzy
+msgid ""
+"You can restrict or filter the search results by clicking the <media type="
+"\"image\" src=\"media/go-down.png\">down</media> button and selecting "
+"various <link xref=\"filter\">filters</link>."
+msgstr ""
+"A találatokat a <media type=\"image\" src=\"figures/go-down.png\">lefelé</"
+"media> gombra kattintva, majd a <link xref=\"documents-filter\">szűrők</"
+"link> egyikét kiválasztva korlátozhatja vagy szűrheti."
+
+#. (itstool) path: info/desc
+#: C/select.page:23
+msgid "Use selection mode to select more than one document or collection."
+msgstr ""
+"A kijelölési mód használatával több dokumentumot vagy gyűjteményt is "
+"kijelölhet."
+
+#. (itstool) path: page/title
+#: C/select.page:27
+msgid "Selecting documents"
+msgstr "Dokumentumok kijelölése"
+
+#. (itstool) path: page/p
+#: C/select.page:36
+msgid ""
+"From <app>Documents</app> selection mode you can open, print, view or make "
+"collections of your documents. To use selection mode:"
+msgstr ""
+"A <app>Dokumentumok</app> kijelölési módból megnyithatja, kinyomtathatja, "
+"megjelenítheti dokumentumait, illetve gyűjteményeket készíthet belőlük. A "
+"kijelölési mód használatához:"
+
+#. (itstool) path: item/p
+#: C/select.page:44
+msgid ""
+"Select one or more documents or collections. The button bar appears with the "
+"actions that are valid for your selection."
+msgstr ""
+"Válasszon ki dokumentumokat vagy gyűjteményeket. Megjelenik a gombsáv a "
+"kijelöléshez érvényes műveletekkel."
+
+#. (itstool) path: section/title
+#: C/select.page:51
+msgid "Selection mode actions"
+msgstr "Kijelölési mód műveletei"
+
+#. (itstool) path: section/p
+#: C/select.page:53
+msgid "After selecting one or more documents you can:"
+msgstr "Legalább egy dokumentum kijelölése után:"
+
+#. (itstool) path: item/p
+#: C/select.page:57
+msgid "Open with Document Viewer (folder icon)."
+msgstr "Megnyithatja a Dokumentummegjelenítővel (mappa ikon)."
+
+#. (itstool) path: item/p
+#: C/select.page:60
+msgid ""
+"Print (printer icon): print a document (only available when a single "
+"document is selected)."
+msgstr ""
+"Kinyomtathatja (nyomtató ikon): Csak akkor érhető el, ha egy dokumentum van "
+"kijelölve."
+
+#. (itstool) path: item/p
+#: C/select.page:64
+msgid "Organize (plus icon): create a collection of documents."
+msgstr "Rendszerezheti (plusz ikon): Dokumentumgyűjtemények készítése."
+
+#. (itstool) path: item/p
+#: C/select.page:67
+msgid ""
+"Properties (wrench icon): display the properties of a document (only "
+"available when a single document is selected)."
+msgstr ""
+"Megjelenítheti a tulajdonságokat (franciakulcs ikon): Dokumentum "
+"tulajdonságainak megjelenítése (csak akkor érhető el, ha egy dokumentum van "
+"kijelölve)."
+
+#. (itstool) path: item/p
+#: C/select.page:71
+msgid "Delete (trash icon): delete one or more collections."
+msgstr "Törölheti (Kuka ikon): gyűjtemények törlése."
+
+#. (itstool) path: info/desc
+#: C/tracker.page:23
+msgid "Local or remote documents do not appear."
+msgstr "Helyi vagy távoli dokumentumok nem jelennek meg."
+
+#. (itstool) path: page/title
+#: C/tracker.page:26
+msgid "My documents cannot be seen"
+msgstr "A dokumentumaim nem láthatók"
+
+#. (itstool) path: page/p
+#: C/tracker.page:40
+msgid ""
+"If your documents fail to display in <app>Documents</app>, <app>Tracker</"
+"app> may not be running or properly configured. Make sure Tracker is running "
+"in your session. The default configuration, set to index files in your home "
+"directory (non-recursively) and XDG folders (recursively), should be "
+"adequate. Ensure that your documents are in one of these paths."
+msgstr ""
+"Ha a dokumentumai nem jelennek meg a <app>Dokumentumok</app> alkalmazásban, "
+"akkor lehet, hogy a <app>Tracker</app> nem fut, vagy nincs megfelelően "
+"beállítva. Győződjön meg róla, hogy a Tracker fut a munkamenetben, az "
+"alapértelmezett beállítás a saját mappájában történő indexelés (nem "
+"rekurzívan) és az XDG mappák indexelése (rekurzívan), ennek megfelelőnek "
+"kell lennie. Győződjön meg róla, hogy a dokumentumai ezen útvonalak egyikén "
+"vannak."
+
+#. (itstool) path: info/desc
+#: C/viewgrid.page:23
+msgid "Change the way documents are displayed."
+msgstr "Dokumentumok megjelenítési módjának megváltoztatása."
+
+#. (itstool) path: page/title
+#: C/viewgrid.page:26
+msgid "View files in a list or grid"
+msgstr "Fájlok megjelenítése listában vagy rácsban"
+
+#. (itstool) path: page/p
+#: C/viewgrid.page:35
+msgid ""
+"Documents and collections are presented in <gui>Grid</gui> format by "
+"default. To view in <gui>List</gui> format:"
+msgstr ""
+"A dokumentumok és gyűjtemények alapesetben <gui>rács</gui> formátumban "
+"jelennek meg. A <gui>lista</gui> formátumban való megjelenítéshez:"
+
+#. (itstool) path: item/p
+#: C/viewgrid.page:40
+msgid ""
+"Go to the top bar and click <app>Documents</app> to display the app menu."
+msgstr ""
+"A felső sávon válassza a <app>Dokumentumok</app> menüpontot az "
+"alkalmazásmenü megjelenítéséhez."
+
+#. (itstool) path: item/p
+#: C/viewgrid.page:44
+msgid "Click <gui>List</gui> from the <gui>View as</gui> section."
+msgstr ""
+"Válassza a <gui>Megjelenítés mint</gui> menüből a <gui>Lista</gui> "
+"lehetőséget."
+
+#. (itstool) path: note/p
+#: C/viewgrid.page:49
+msgid ""
+"List view has columns displaying the document type and date modified, and "
+"whether it's stored locally, or in <app>Google Docs</app> or <em>SkyDrive</"
+"em>."
+msgstr ""
+"A listanézet oszlopai megjelenítik a dokumentum típusát, módosítási dátumát, "
+"valamint hogy helyileg vagy a <app>Google Dokumentumokon</app> vagy a "
+"<em>SkyDrive-on</em> van-e tárolva."
+
+#. (itstool) path: page/p
+#: C/viewgrid.page:54
+msgid "Click <gui>Grid</gui> in the app menu to return to the default format."
+msgstr ""
+"Válassza az alkalmazásmenü <gui>Rács</gui> menüpontját az alapértelmezett "
+"formátum visszaállításához."
+
+#. (itstool) path: info/desc
+#: C/view.page:23
+msgid "View documents full-screen."
+msgstr "Dokumentumok megjelenítése teljes képernyőn."
+
+#. (itstool) path: page/title
+#: C/view.page:26
+msgid "Display documents stored locally or online"
+msgstr "Helyileg vagy online tárolt dokumentumok megjelenítése"
+
+#. (itstool) path: page/p
+#: C/view.page:36
+msgid ""
+"When you open <app>Documents</app>, all of your documents, those stored "
+"locally as well as online, are displayed as thumbnails."
+msgstr ""
+"A <app>Dokumentumok</app> megnyitásakor az összes, helyileg vagy online "
+"tárolt dokumentum megjelenik bélyegképként."
+
+#. (itstool) path: note/p
+#: C/view.page:40
+#, fuzzy
+msgid ""
+"In order for your <em>Google Docs</em> or <em>SkyDrive</em> documents to "
+"appear, it is necessary to configure Google or Windows Live, respectively, "
+"as an <link href=\"gnome-help:accounts-add\">online account</link>."
+msgstr ""
+"A <em>Google Dokumentumok</em> vagy <em>SkyDrive</em> dokumentumok "
+"szűrőlistában való megjelenítéséhez be kell állítani egy Google vagy Windows "
+"Live <link xref=\"accounts-add\">online fiókot</link>."
+
+#. (itstool) path: page/p
+#: C/view.page:45
+msgid "To view the contents of a document:"
+msgstr "Dokumentum tartalmának megjelenítéséhez:"
+
+#. (itstool) path: item/p
+#: C/view.page:49
+msgid ""
+"Click the thumbnail. The document is displayed full-width in the "
+"<app>Documents</app> window (or full-screen if maximized)."
+msgstr ""
+"Kattintson a bélyegképre. A dokumentum teljes szélességben jelenik meg a "
+"<app>Dokumentumok</app> ablakában (vagy teljes képernyőn, ha az "
+"maximalizálva van)."
+
+#. (itstool) path: page/p
+#: C/view.page:54
+msgid "To exit the document, click the back arrow button."
+msgstr "A dokumentum elhagyásához nyomja meg a visszafelé nyíl gombot."
+
+#. (itstool) path: p/link
+#: C/legal.xml:3
+msgid "Creative Commons Attribution-ShareAlike 3.0 Unported License"
+msgstr "Creative Commons Attribution-ShareAlike 3.0 Unported License"
+
+#. (itstool) path: license/p
+#: C/legal.xml:3
+msgid "This work is licensed under a <_:link-1/>."
+msgstr "Ez a munka a <_:link-1/> feltételei szerint használható."

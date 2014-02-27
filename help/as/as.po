@@ -1,0 +1,656 @@
+# Nilamdyuti Goswami <ngoswami@redhat.com>, 2013, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2014-02-27 11:16+0000\n"
+"PO-Revision-Date: 2014-01-15 19:18+0630\n"
+"Last-Translator: Nilamdyuti Goswami <ngoswami@redhat.com>\n"
+"Language-Team: Assamese <kde-i18n-doc@kde.org>\n"
+"Language: as_IN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 1.5\n"
+
+#. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+msgctxt "_"
+msgid "translator-credits"
+msgstr "নীলমদ্যুতি গোস্বামী (ngoswami@redhat.com)"
+
+#. (itstool) path: credit/name
+#: C/collections.page:11 C/index.page:10 C/info.page:10 C/previews.page:11
+#: C/print.page:11 C/search.page:11 C/select.page:11 C/tracker.page:11
+#: C/viewgrid.page:11 C/view.page:11
+msgid "Julita Inca"
+msgstr "জুলিটা ইনকা"
+
+#. (itstool) path: credit/years
+#: C/collections.page:13 C/collections.page:18 C/filter.page:13
+#: C/formats.page:13 C/index.page:12 C/index.page:17 C/info.page:12
+#: C/info.page:17 C/previews.page:13 C/previews.page:18 C/print.page:13
+#: C/print.page:18 C/search.page:13 C/search.page:18 C/select.page:13
+#: C/select.page:18 C/tracker.page:13 C/tracker.page:18 C/viewgrid.page:13
+#: C/viewgrid.page:18 C/view.page:13 C/view.page:18
+msgid "2012"
+msgstr "2012"
+
+#. (itstool) path: credit/name
+#: C/collections.page:16 C/filter.page:11 C/formats.page:11 C/index.page:15
+#: C/info.page:15 C/previews.page:16 C/print.page:16 C/search.page:16
+#: C/select.page:16 C/tracker.page:16 C/viewgrid.page:16 C/view.page:16
+msgid "Michael Hill"
+msgstr "মাইকেল হিল"
+
+#. (itstool) path: info/desc
+#: C/collections.page:23
+msgid "Group related documents in a collection."
+msgstr "এটা সংগ্ৰহত দল প্ৰাসংগিক দস্তাবেজসমূহ।"
+
+#. (itstool) path: page/title
+#: C/collections.page:26
+msgid "Make collections of documents"
+msgstr "দস্তাবেজসমূহৰ এটা সংগ্ৰহ নিৰ্মান কৰক"
+
+#. (itstool) path: page/p
+#: C/collections.page:39
+msgid ""
+"<app>Documents</app> lets you put together documents of different types in "
+"one place called a <em>collection</em>. If you have documents that are "
+"related, you can group them to make them easier to find. For example, if you "
+"had a business trip where you made a presentation, your slides, your flight "
+"itinerary (a PDF file), your budget spreadsheet, and other hybrid PDF/ODF "
+"documents, can be grouped in one collection."
+msgstr ""
+
+#. (itstool) path: page/p
+#: C/collections.page:46
+msgid "To create or add to a collection:"
+msgstr "সৃষ্টি কৰিবলৈ অথবা এটা সংগ্ৰহলৈ যোগ কৰিবলৈ:"
+
+#. (itstool) path: item/p
+#: C/collections.page:49 C/collections.page:72 C/print.page:39
+#: C/select.page:41
+msgid "Click the <gui>✓</gui> button."
+msgstr "<gui>✓</gui> বুটাম ক্লিক কৰক।"
+
+#. (itstool) path: item/p
+#: C/collections.page:52
+msgid "In selection mode, check the documents to be collected."
+msgstr "নিৰ্বাচন অৱস্থাত, সংগ্ৰহ কৰিবলৈ দস্তাবেজসমূহ নিৰীক্ষণ কৰক।"
+
+#. (itstool) path: item/p
+#: C/collections.page:55
+msgid "Click the <gui>+</gui> button in the button bar."
+msgstr "বুটাম বাৰত <gui>+</gui> বুটাম ক্লিক কৰক।"
+
+#. (itstool) path: item/p
+#: C/collections.page:58
+msgid ""
+"In the collection list, click <gui>Add</gui> and type a new collection name, "
+"or select an existing collection. The selected documents will be added to "
+"the collection."
+msgstr ""
+"সংগ্ৰহ তালিকাত, <gui>যোগ কৰক</gui> ক্লিক কৰক আৰু এটা নতুন সংগ্ৰহ নাম টাইপ কৰক, "
+"অথবা এটা স্থায়ী সংগ্ৰহ বাছক। নিৰ্বাচিত দস্তাবেজসমূহ সংগ্ৰহলৈ যোগ কৰা হব।"
+
+#. (itstool) path: note/p
+#: C/collections.page:65
+msgid ""
+"Collections do not behave like folders and their hierarchy: <em>you cannot "
+"put collections inside collections.</em>"
+msgstr ""
+"সংগ্ৰহসমূহে ফোল্ডাৰসমূহ আৰু সিহতৰ শ্ৰেণীক্ৰমৰ দৰে ব্যৱহাৰ নকৰে: <em>আপুনি সংগ্ৰহৰ "
+"ভিতৰত সংগ্ৰহ থব নোৱাৰিব।</em>"
+
+#. (itstool) path: page/p
+#: C/collections.page:69
+msgid "To delete a collection:"
+msgstr "এটা সংগ্ৰহ মচিবলৈ:"
+
+#. (itstool) path: item/p
+#: C/collections.page:75
+msgid "In selection mode, check the collection to be deleted."
+msgstr "নিৰ্বাচন অৱস্থাত, মচিবলৈ সংগ্ৰহ বাছক।"
+
+#. (itstool) path: item/p
+#: C/collections.page:78
+msgid ""
+"Click the Trash button in the button bar. The collection will be deleted, "
+"leaving the original documents."
+msgstr ""
+"বুটাম বাৰত আবৰ্জনা বুটামত ক্লিক কৰক। সংগ্ৰহ মচি পেলোৱা হব আৰু প্ৰকৃত দস্তাবেজসমূহ থাকি "
+"যাব।"
+
+#. (itstool) path: media
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/filter.page:23 C/search.page:53
+#, fuzzy
+msgctxt "_"
+msgid "external ref='media/go-down.png' md5='e8c16f5ab9ed933f4a537b740506f4d4'"
+msgstr ""
+"external ref='figures/go-down.png' md5='e8c16f5ab9ed933f4a537b740506f4d4'"
+
+#. (itstool) path: info/desc
+#: C/filter.page:18
+msgid "Choose which documents to display."
+msgstr "কোনবোৰ দস্তাবেজ প্ৰদৰ্শন কৰা হব বাছক।"
+
+#. (itstool) path: page/title
+#: C/filter.page:21
+msgid "Filter documents"
+msgstr "ফিল্টাৰ দস্তাবেজসমূহ"
+
+#. (itstool) path: page/p
+#: C/filter.page:23
+#, fuzzy
+msgid ""
+"Click the <media type=\"image\" src=\"media/go-down.png\">down</media> "
+"button next to the <link xref=\"search\">search</link> bar to limit the "
+"scope of the search in these categories:"
+msgstr ""
+"এই বিভাগসমূহত সন্ধানৰ বিস্তাৰ সীমিত কৰিবলৈ <link xref=\"documents-search"
+"\">সন্ধান</link> বাৰৰ কাষত <media type=\"image\" src=\"figures/go-down.png"
+"\">তল</media> বুটামত ক্লিক কৰক।"
+
+#. (itstool) path: item/p
+#: C/filter.page:29
+msgid "<em>Sources</em>: Local, Google, SkyDrive, or All."
+msgstr "<em>উৎসসমূহ</em>: স্থানীয়, Google, SkyDrive, অথবা সকলো।"
+
+#. (itstool) path: item/p
+#: C/filter.page:31
+msgid ""
+"<em>Type</em>: Collections, PDF Documents, Presentations, Spreadsheets, Text "
+"Documents, or All."
+msgstr ""
+"<em>ধৰণ</em>: সংগ্ৰহসমূহ, PDF দস্তাবেজসমূহ, উপস্থাপনসমূহ, স্প্ৰেডশ্বিটসমূহম লিখনী "
+"দস্তাবেজসমূহ, অথবা সকলো।"
+
+#. (itstool) path: item/p
+#: C/filter.page:35
+msgid "Title, Author, or All."
+msgstr "শীৰ্ষক, লেখক, অথবা সকলো।"
+
+#. (itstool) path: note/p
+#: C/filter.page:40
+#, fuzzy
+msgid ""
+"In order for <gui>Google</gui> or <gui>SkyDrive</gui> to appear in the "
+"filter list, it is necessary to configure Google or Windows Live as an <link "
+"href=\"gnome-help:accounts-add\">online account</link>."
+msgstr ""
+"<gui>Google</gui> অথবা <gui>SkyDrive</gui> ফিল্টাৰ তালিকাত উপস্থিত হবলৈ, "
+"Google অথবা Windows Live ক এটা <link xref=\"accounts-add\">অনলাইন একাওন্ট</"
+"link> ৰূপে সংৰূপণ কৰাটো প্ৰয়োজনীয়।"
+
+#. (itstool) path: info/desc
+#: C/formats.page:18
+msgid "<app>Documents</app> displays a number of popular document types."
+msgstr "<app>দস্তাবেজসমূহ</app> এ কিছুমান বিখ্যাত দস্তাবেজ ধৰণ প্ৰদৰ্শন কৰে।"
+
+#. (itstool) path: page/title
+#: C/formats.page:22
+msgid "Formats supported"
+msgstr "সমৰ্থিত বিন্যাসসমূহ"
+
+#. (itstool) path: page/p
+#: C/formats.page:24
+msgid ""
+"<app>Documents</app> displays PDF, DVI, XPS, PostScript and the formats "
+"supported by <app>Document Viewer</app> (Evince), <app>Microsoft Office</"
+"app>, <app>LibreOffice</app> and <app>Google Docs</app>."
+msgstr ""
+"<app>দস্তাবেজসমূহ</app> এ PDF, DVI, XPS, PostScript আৰু <app>Document Viewer</"
+"app> (Evince), <app>Microsoft Office</app>, <app>LibreOffice</app> আৰু "
+"<app>Google Docs</app> দ্বাৰা সমৰ্থন কৰা বিন্যাসসমূহ প্ৰদৰ্শন কৰে।"
+
+#. (itstool) path: info/desc
+#: C/index.page:22
+msgid ""
+"Organize the documents stored locally on your computer or created online."
+msgstr ""
+"আপোনাৰ কমপিউটাৰত স্থানীয়ভাৱে সংৰক্ষিত অথবা অনলাইন সৃষ্টি কৰা দস্তাবেজসমূহ সংঘঠিত "
+"কৰক।"
+
+#. (itstool) path: page/title
+#: C/index.page:26
+msgid "Documents"
+msgstr "দস্তাবেজসমূহ"
+
+#. (itstool) path: page/p
+#: C/index.page:38
+msgid ""
+"<app>Documents</app> is a GNOME application that lets you display, organize, "
+"and print the documents on your computer or those created remotely using "
+"<em>Google Docs</em> or <em>SkyDrive</em>."
+msgstr ""
+"<app>দস্তাবেজসমূহ</app> এটা GNOME এপ্লিকেচন যি আপোনাক আপোনাৰ কমপিউটাৰৰ "
+"দস্তাবেজসমূহ অথবা <em>Google Docs</em> অথবা <em>SkyDrive</em> ব্যৱহাৰ কৰি সৃষ্টি "
+"কৰা দস্তাবেজসমূহ প্ৰদৰ্শন, সংঘঠন, আৰু প্ৰিন্ট কৰাৰ সুবিধা দিয়ে।"
+
+#. (itstool) path: section/title
+#: C/index.page:43
+msgid "View, Sort and Search"
+msgstr "দৰ্শন কৰক, সজাঁওক আৰু সন্ধান কৰক"
+
+#. (itstool) path: section/title
+#: C/index.page:47
+msgid "Select, Organize, Print"
+msgstr "বাছক, সংঘঠিত কৰক, প্ৰিন্ট কৰক"
+
+#. (itstool) path: section/title
+#: C/index.page:51
+msgid "Questions"
+msgstr "প্ৰশ্নবোৰ"
+
+#. (itstool) path: info/desc
+#: C/info.page:22
+msgid "See a document's name, location, date modified, or type."
+msgstr "এটা দস্তাবেজৰ নাম, অৱস্থান, পৰিবৰ্তনৰ তাৰিখ, অথবা ধৰণ।"
+
+#. (itstool) path: page/title
+#: C/info.page:25
+msgid "Find information about documents"
+msgstr "দস্তাবেজসমূহৰ বিষয়ে তথ্য সন্ধান কৰক"
+
+#. (itstool) path: page/p
+#: C/info.page:35
+msgid ""
+"When a document is created, it comes with <em>metadata</em>. <app>Documents</"
+"app> displays the following metadata for each document:"
+msgstr ""
+"যেতিয়া এটা দস্তাবেজ সৃষ্টি কৰা হয়, তাৰ <em>মেটাডাটা</em> থাকে। "
+"<app>দস্তাবেজসমূহে</app> প্ৰত্যকটো দস্তাবেজৰ বাবে নিম্নলিখিত মেটাডাটা প্ৰদৰ্শন কৰে:"
+
+#. (itstool) path: item/p
+#: C/info.page:40
+msgid "Title: the name of the document, which can be edited;"
+msgstr "শীৰ্ষক: দস্তাবেজৰ নাম, যাক সম্পাদন কৰিব পৰা যাব;"
+
+#. (itstool) path: item/p
+#: C/info.page:43
+msgid "Source: the path of the folder containing the document;"
+msgstr "উৎস: দস্তাবেজ অন্তৰ্ভুক্ত কৰা ফোল্ডাৰৰ পথ;"
+
+#. (itstool) path: item/p
+#: C/info.page:46
+msgid "Date Modified;"
+msgstr "পৰিবৰ্তনৰ তাৰিখ;"
+
+#. (itstool) path: item/p
+#: C/info.page:49
+#, fuzzy
+msgid "Type: the <link xref=\"formats\">file format</link> of the document."
+msgstr "ধৰণ: দস্তাবেজৰ <link xref=\"documents-formats\">ফাইল বিন্যাস</link>।"
+
+#. (itstool) path: page/p
+#: C/info.page:53
+msgid "To see a document's properties:"
+msgstr "এটা দস্তাবেজৰ বৈশিষ্ট্যসমূহ চাবলৈ:"
+
+#. (itstool) path: item/p
+#: C/info.page:56
+msgid "Click the <gui>Check</gui> button to switch to selection mode."
+msgstr "নিৰ্বাচন অৱস্থালৈ যাবলৈ <gui>নিৰীক্ষণ</gui> বুটাম ক্লিক কৰক।"
+
+#. (itstool) path: item/p
+#: C/info.page:59
+msgid "Select a document."
+msgstr "এটা দস্তাবেজ বাছক।"
+
+#. (itstool) path: item/p
+#: C/info.page:62
+msgid ""
+"Click the <gui>Properties</gui> button at the right end of the button bar."
+msgstr "বুটাম বাৰৰ সোঁ চুকত <gui>বৈশিষ্ট্যসমূহ</gui> বুটাম ক্লিক কৰক।"
+
+#. (itstool) path: note/p
+#: C/info.page:68
+msgid ""
+"Some types of documents (e.g. PDF files) can be password protected, "
+"preventing access to their metadata or content."
+msgstr ""
+"কিছুমান দস্তাবেজ (উদাহৰণস্বৰূপ PDF ফাইল) পাছৱাৰ্ড সুৰক্ষিত থাকিব পাৰে, যাৰ মেটাডাটা "
+"অথবা সমললৈ অভিগম প্ৰতিৰোধিত থাকে।"
+
+#. (itstool) path: note/p
+#: C/info.page:73
+msgid ""
+"<app>Documents</app> does not currently offer any mechanism to add privacy "
+"to a document. You may be able to do this from the application you used to "
+"create the document (e.g. <app>LibreOffice</app> or <app>Adobe Acrobat</"
+"app>)."
+msgstr ""
+"<app>দস্তাবেজসমূহ</app> এ বৰ্তমানে এটা দস্তাবেজলৈ গোপনীয়তা যোগ কৰাৰ কোনো পদ্ধতি "
+"প্ৰদান নকৰে। আপুনি দস্তাবেজ সৃষ্টি কৰিবলৈ ব্যৱহাৰ কৰা এপ্লিকেচনৰ পৰা ইয়াক কৰিব পাৰে "
+"(উদাহৰণস্বৰূপ <app>LibreOffice</app> অথবা <app>Adobe Acrobat</app>)।"
+
+#. (itstool) path: info/desc
+#: C/previews.page:23
+msgid "You can only preview files stored locally."
+msgstr "আপুনি স্থানীয়ভাৱে সংৰক্ষিত ফাইলসমূহ কেৱল পূৰ্বদৰ্শন কৰিব পাৰিব।"
+
+#. (itstool) path: page/title
+#: C/previews.page:26
+msgid "Why don't some files have previews?"
+msgstr "কিছুমান ফাইলৰ পূৰ্বদৰ্শন নাই কিয়?"
+
+#. (itstool) path: page/p
+#: C/previews.page:34
+msgid ""
+"When you open <app>Documents</app>, a preview thumbnail is displayed for "
+"documents that are stored locally. Those stored on a remote server like "
+"<em>Google Docs</em> or <em>SkyDrive</em> show as missing (or blank) preview "
+"thumbnails."
+msgstr ""
+"যেতিয়া আপুনি <app>দস্তাবেজসমূহ</app> খোলে, স্থানীয়ভাৱে সংৰক্ষণ কৰা দস্তাবেজসমূহৰ "
+"বাবে এটা পূৰ্বদৰ্শন থাম্বনেইল প্ৰদৰ্শন কৰা হয়। এটা দূৰৱৰ্তী চাৰ্ভাৰ যেনে <em>Google "
+"Docs</em> অথবা <em>SkyDrive</em> ত সংৰক্ষিত দস্তাবেজসমূহে সন্ধানহিন (অথবা ৰিক্ত) "
+"পূৰ্বদৰ্শন থাম্বনেইল দেখুৱায়।"
+
+#. (itstool) path: page/p
+#: C/previews.page:39
+msgid ""
+"If you download a <em>Google Docs</em> or <em>SkyDrive</em> document to "
+"local storage, a thumbnail will be generated."
+msgstr ""
+"যদি আপুনি এটা <em>Google Docs</em> অথবা <em>SkyDrive</em> দস্তাবেজক এটা স্থানীয় "
+"সংৰক্ষণলৈ ডাউনল'ড কৰে, এটা থাম্বনেইল সৃজিত হব।"
+
+#. (itstool) path: note/p
+#: C/previews.page:43
+msgid ""
+"The local copy of a document downloaded from <em>Google Docs</em> or "
+"<em>SkyDrive</em> will lose its ability to be updated online. If you want to "
+"continue to edit it online, it is better not to download it."
+msgstr ""
+"<em>Google Docs</em> অথবা <em>SkyDrive</em> ৰ পৰা ডাউনল'ড কৰা স্থানীয় কপিক "
+"অনলাইন আপল'ড কৰিব পৰা নাযাব। যদি আপুনি ইয়াক অনলাইন সম্পাদনা কৰা অব্যাহত ৰাখিব "
+"খোজে, ইয়াক ডাউনল'ড নকৰাটোয়ে ভাল।"
+
+#. (itstool) path: info/desc
+#: C/print.page:23
+msgid "Print documents that are stored locally or online."
+msgstr "স্থানীয়ভাৱে অথবা অনলাইন সংৰক্ষিত দস্তাবেজসমূহ প্ৰিন্ট কৰক।"
+
+#. (itstool) path: page/title
+#: C/print.page:26
+msgid "Print a document"
+msgstr "এটা দস্তাবেজ প্ৰিন্ট কৰক"
+
+#. (itstool) path: page/p
+#: C/print.page:35
+msgid "To print a document:"
+msgstr "এটা দস্তাবেজ প্ৰিন্ট কৰিবলৈ:"
+
+#. (itstool) path: item/p
+#: C/print.page:42
+msgid "In selection mode, check the document to be printed."
+msgstr "নিৰ্বাচন অৱস্থাত, প্ৰিন্ট কৰিব লগিয়া দস্তাবেজ চেক কৰক।"
+
+#. (itstool) path: item/p
+#: C/print.page:45
+msgid ""
+"Click the Print button in the button bar. The <gui>Print</gui> dialog opens."
+msgstr "বুটাম বাৰত প্ৰিন্ট বুটামত ক্লিক কৰক। <gui>প্ৰিন্ট কৰক</gui> ডাইলগ খোল খায়।"
+
+#. (itstool) path: note/p
+#: C/print.page:51
+msgid ""
+"Printing is not available when more than one document is selected, or when a "
+"collection is selected."
+msgstr ""
+"যেতিয়া এটাতকৈ অধিক দস্তাবেজ নিৰ্বাচন কৰা হয়, অথবা যেতিয়া এটা সংগ্ৰহ নিৰ্বাচন কৰা "
+"হয় প্ৰিন্টিং উপলব্ধ নাথাকে।"
+
+#. (itstool) path: info/desc
+#: C/search.page:23
+msgid "Find your documents by title or author."
+msgstr "শীৰ্ষক অথবা লেখকৰ সহায়ত আপোনাৰ দস্তাবেজসমূহ সন্ধান কৰক।"
+
+#. (itstool) path: page/title
+#: C/search.page:26
+msgid "Search for files"
+msgstr "ফাইলসমূহ সন্ধান কৰক"
+
+#. (itstool) path: page/p
+#: C/search.page:38
+msgid "To start a search in <app>Documents</app>:"
+msgstr "<app>দস্তাবেজসমূহ</app> ত সন্ধান আৰম্ভ কৰিবলৈ:"
+
+#. (itstool) path: item/p
+#: C/search.page:42
+#, fuzzy
+msgid ""
+"Press <keyseq><key>Ctrl</key><key>F</key></keyseq> to open the search bar at "
+"the top of the window."
+msgstr ""
+"এটা উইন্ডোৰ স্ক্ৰিনশ্বট লবলৈ <keyseq><key>Alt</key><key>Prt Scrn</key></keyseq>।"
+
+#. (itstool) path: item/p
+#: C/search.page:46
+msgid ""
+"Start typing keywords, and searching begins instantly. You will see a list "
+"of documents whose title or author matches the keywords."
+msgstr ""
+
+#. (itstool) path: note/p
+#: C/search.page:52
+#, fuzzy
+msgid ""
+"You can restrict or filter the search results by clicking the <media type="
+"\"image\" src=\"media/go-down.png\">down</media> button and selecting "
+"various <link xref=\"filter\">filters</link>."
+msgstr ""
+"আপুনি <media type=\"image\" src=\"figures/go-down.png\">তল</media> বুটাম ক্লিক "
+"কৰি আৰু বিভিন্ন <link xref=\"documents-filter\">ফিল্টাৰসমূহ</link> নিৰ্বাচন কৰি "
+"সন্ধানৰ ফলাফলসমূহ সীমিত অথবা ফিল্টাৰ কৰিব পাৰিব।"
+
+#. (itstool) path: info/desc
+#: C/select.page:23
+msgid "Use selection mode to select more than one document or collection."
+msgstr ""
+"এটাতকৈ অধিক দস্তাবেজ অথবা সংগ্ৰহ নিৰ্বাচন কৰিবলৈ নিৰ্বাচন অৱস্থা ব্যৱহাৰ কৰক।"
+
+#. (itstool) path: page/title
+#: C/select.page:27
+msgid "Selecting documents"
+msgstr "দস্তাবেজসমূহ নিৰ্বাচন কৰা"
+
+#. (itstool) path: page/p
+#: C/select.page:36
+msgid ""
+"From <app>Documents</app> selection mode you can open, print, view or make "
+"collections of your documents. To use selection mode:"
+msgstr ""
+"<app>দস্তাবেজসমূহ</app> নিৰ্বাচন অৱস্থাৰ পৰা আপুনি আপোনাৰ দস্তাবেজসমূহক খোলিব, "
+"প্ৰিন্ট কৰিব, দৰ্শন কৰিব অথবা সংগ্ৰহ বনাব পাৰিব। নিৰ্বাচন অৱস্থা ব্যৱহাৰ কৰিবলৈ:"
+
+#. (itstool) path: item/p
+#: C/select.page:44
+msgid ""
+"Select one or more documents or collections. The button bar appears with the "
+"actions that are valid for your selection."
+msgstr ""
+"এটা বা অধিক দস্তাবেজসমূহ অথবা সংগ্ৰহ বাছক। বুটাম বাৰ আপোনাৰ নিৰ্বাচনৰ বাবে বৈধ "
+"কাৰ্য্যসমূহৰ সৈতে উপস্থিত হয়।"
+
+#. (itstool) path: section/title
+#: C/select.page:51
+msgid "Selection mode actions"
+msgstr "নিৰ্বাচন অৱস্থা কাৰ্য্যসমূহ"
+
+#. (itstool) path: section/p
+#: C/select.page:53
+msgid "After selecting one or more documents you can:"
+msgstr ""
+"এটা অথবা অধিক দস্তাবেজ নিৰ্বাচন কৰাৰ পিছত আপুনি নিম্নলিখিত কাৰ্য্য কৰিব পাৰিব:"
+
+#. (itstool) path: item/p
+#: C/select.page:57
+msgid "Open with Document Viewer (folder icon)."
+msgstr "দস্তাবেজ প্ৰদৰ্শকৰ সৈতে খোলক (ফোল্ডাৰ আইকন)।"
+
+#. (itstool) path: item/p
+#: C/select.page:60
+msgid ""
+"Print (printer icon): print a document (only available when a single "
+"document is selected)."
+msgstr ""
+"প্ৰিন্ট কৰক (প্ৰিন্টাৰ আইকন) এটা দস্তাবেজ প্ৰিন্ট কৰে (কেৱল তেতিয়াহে যেতিয়া এটা "
+"দস্তাবেজ উপলব্ধ থাকে)।"
+
+#. (itstool) path: item/p
+#: C/select.page:64
+msgid "Organize (plus icon): create a collection of documents."
+msgstr "সংঘঠিত কৰক (যোগ চিহ্ন আইকন): দস্তাবেজসমূহৰ এটা সংগ্ৰহ সৃষ্টি কৰক।"
+
+#. (itstool) path: item/p
+#: C/select.page:67
+msgid ""
+"Properties (wrench icon): display the properties of a document (only "
+"available when a single document is selected)."
+msgstr ""
+"বৈশিষ্ট্যসমূহ (ৰেঞ্চ আইকন): এটা দস্তাবেজৰ বৈশিষ্ট্যসমূহ প্ৰদৰ্শন কৰক (কেৱল এটা দস্তাবেজ "
+"নিৰ্বাচন কৰোতে উপলব্ধ)।"
+
+#. (itstool) path: item/p
+#: C/select.page:71
+msgid "Delete (trash icon): delete one or more collections."
+msgstr "মচি পেলাওক (আবৰ্জনাৰ আইকন): এটা বা অধিক সংগ্ৰহ মচি পেলাওক।"
+
+#. (itstool) path: info/desc
+#: C/tracker.page:23
+msgid "Local or remote documents do not appear."
+msgstr "স্থানীয় অথবা দূৰৱৰ্তী দস্তাবেজসমূহ উপস্থিত নহয়।"
+
+#. (itstool) path: page/title
+#: C/tracker.page:26
+msgid "My documents cannot be seen"
+msgstr "মোৰ দস্তাবেজসমূহ দেখা নাযায়"
+
+#. (itstool) path: page/p
+#: C/tracker.page:40
+msgid ""
+"If your documents fail to display in <app>Documents</app>, <app>Tracker</"
+"app> may not be running or properly configured. Make sure Tracker is running "
+"in your session. The default configuration, set to index files in your home "
+"directory (non-recursively) and XDG folders (recursively), should be "
+"adequate. Ensure that your documents are in one of these paths."
+msgstr ""
+"যদি আপোনাৰ দস্তাবেজসমূহ <app>দস্তাবেজসমূহ</app> ত প্ৰদৰ্শন হবলৈ ব্যৰ্থ হয়, "
+"<app>Tracker</app> ভালকৈ চলি থকা নাই অথবা সঠিকভাৱে সংৰূপিত নহয়। আপোনাৰ "
+"অধিবেশনত Tracker চলি থকাটো সুনিশ্চিত কৰক। অবিকল্পিত সংৰূপ, আপোনাৰ ঘৰ ডাইৰেকটৰি "
+"(বাৰংবাৰতা নহোৱাকৈ) আৰু XDG ফোল্ডাৰসমূহ (বাৰংবাৰতা হোৱাকৈ), পৰ্যাপ্ত হব লাগে। "
+"আপোনাৰ দস্তাবেজসমূহ এই পথসমূহৰ এটাত থকাটো সুনিশ্চিত কৰক।"
+
+#. (itstool) path: info/desc
+#: C/viewgrid.page:23
+msgid "Change the way documents are displayed."
+msgstr "দস্তাবেজসমূহ প্ৰদৰ্শন হোৱাৰ ধৰণ পৰিবৰ্তন কৰক।"
+
+#. (itstool) path: page/title
+#: C/viewgrid.page:26
+msgid "View files in a list or grid"
+msgstr "ফাইলসমূহক এটা তালিকা অথবা গ্ৰিডত দৰ্শন কৰক"
+
+#. (itstool) path: page/p
+#: C/viewgrid.page:35
+msgid ""
+"Documents and collections are presented in <gui>Grid</gui> format by "
+"default. To view in <gui>List</gui> format:"
+msgstr ""
+"দস্তাবেজসমূহ আৰু সংগ্ৰহসমূহ অবিকল্পিতৰূপে <gui>গ্ৰিড</gui> বিন্যাসত প্ৰদৰ্শন কৰা হয়। "
+"<gui>তালিকা</gui> বিন্যাসত দৰ্শন কৰিবলৈ:"
+
+#. (itstool) path: item/p
+#: C/viewgrid.page:40
+msgid ""
+"Go to the top bar and click <app>Documents</app> to display the app menu."
+msgstr ""
+"ওপৰ বাৰত যাওক আৰু এপ্লিকেচন মেনু প্ৰদৰ্শন কৰিবলৈ <app>দস্তাবেজসমূহ</app> ক্লিক কৰক।"
+
+#. (itstool) path: item/p
+#: C/viewgrid.page:44
+msgid "Click <gui>List</gui> from the <gui>View as</gui> section."
+msgstr "<gui>এই ধৰণে দৰ্শন কৰক</gui> অংশৰ পৰা <gui>তালিকা</gui> ক্লিক কৰক।"
+
+#. (itstool) path: note/p
+#: C/viewgrid.page:49
+msgid ""
+"List view has columns displaying the document type and date modified, and "
+"whether it's stored locally, or in <app>Google Docs</app> or <em>SkyDrive</"
+"em>."
+msgstr ""
+"তালিকাৰ দৰ্শনত দস্তাবেজৰ ধৰণ আৰু পৰিবৰ্তনৰ তাৰিখ প্ৰদৰ্শন কৰা স্তম্ভসমূহ, আৰু ই "
+"স্থানীয়ভাৱে সংৰক্ষিত, নে <app>Google Docs</app> অথবা <em>SkyDrive</em> ত "
+"সংৰক্ষিত দেখুৱা হয়।"
+
+#. (itstool) path: page/p
+#: C/viewgrid.page:54
+msgid "Click <gui>Grid</gui> in the app menu to return to the default format."
+msgstr "অবিকল্পিত বিন্যাসত ঘুৰি যাবলৈ এপ্লিকেচন মেনুত <gui>গ্ৰিড</gui> ক্লিক কৰক।"
+
+#. (itstool) path: info/desc
+#: C/view.page:23
+msgid "View documents full-screen."
+msgstr "দস্তাবেজসমূহ পূৰ্ন-পৰ্দা দৰ্শন কৰক।"
+
+#. (itstool) path: page/title
+#: C/view.page:26
+msgid "Display documents stored locally or online"
+msgstr "স্থানীয়ভাৱে অথবা অনলাইন সংৰক্ষিত দস্তাবেজসমূহ প্ৰদৰ্শন কৰক"
+
+#. (itstool) path: page/p
+#: C/view.page:36
+msgid ""
+"When you open <app>Documents</app>, all of your documents, those stored "
+"locally as well as online, are displayed as thumbnails."
+msgstr ""
+"যেতিয়া আপুনি <app>দস্তাবেজসমূহ</app> খোলে, আপোনাৰ সকলো দস্তাবেজ, স্থানীয়ভাৱে "
+"সংৰক্ষিত আৰু অনলাইন সংৰক্ষিত, থাম্ভনেইল ৰূপে প্ৰদৰ্শন হয়।"
+
+#. (itstool) path: note/p
+#: C/view.page:40
+#, fuzzy
+msgid ""
+"In order for your <em>Google Docs</em> or <em>SkyDrive</em> documents to "
+"appear, it is necessary to configure Google or Windows Live, respectively, "
+"as an <link href=\"gnome-help:accounts-add\">online account</link>."
+msgstr ""
+"আপোনাৰ <em>Google Docs</em> অথবা <em>SkyDrive</em> দস্তাবেজসমূহ উপস্থিত হবলৈ, "
+"এটা <link xref=\"accounts-add\">অনলাইন একাওন্ট</link> ৰূপে, Google অথবা "
+"Windows Live সংৰূপণ কৰাটো প্ৰয়োজনীয়।"
+
+#. (itstool) path: page/p
+#: C/view.page:45
+msgid "To view the contents of a document:"
+msgstr "এটা দস্তাবেজৰ সমলসমূহ দৰ্শন কৰিবলৈ:"
+
+#. (itstool) path: item/p
+#: C/view.page:49
+msgid ""
+"Click the thumbnail. The document is displayed full-width in the "
+"<app>Documents</app> window (or full-screen if maximized)."
+msgstr ""
+"থাম্বনেইলত ক্লিক কৰক। দস্তাবেজ <app>দস্তাবেজসমূহ</app> উইন্ডোত (অথবা পূৰ্ণ-পৰ্দা যদি "
+"সৰ্বাধিক  আকাৰত থাকে) দস্তাবেজ পূৰ্ণ-প্ৰস্থ প্ৰদৰ্শন কৰা হয়।"
+
+#. (itstool) path: page/p
+#: C/view.page:54
+msgid "To exit the document, click the back arrow button."
+msgstr "দস্তাবেজ প্ৰস্থান কৰিবলৈ, পিছলৈ এৰ' বুটাম ক্লিক কৰক।"
+
+#. (itstool) path: p/link
+#: C/legal.xml:3
+msgid "Creative Commons Attribution-ShareAlike 3.0 Unported License"
+msgstr "Creative Commons Attribution-ShareAlike 3.0 Unported License"
+
+#. (itstool) path: license/p
+#: C/legal.xml:3
+msgid "This work is licensed under a <_:link-1/>."
+msgstr "এই কাৰ্য্য <_:link-1/> ৰ অন্তৰ্গত অনুজ্ঞিত।"

@@ -1,0 +1,681 @@
+# 'gnome-user-docs/gnome-help/sl
+# Slovenian translations for gnome-help-master.
+# Copyright (C) 2011 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the caribou package.
+#
+# Andrej Žnidaršič <andrej.znidarsic@gmail.com>, 2011.
+# Martin Srebotnjak <miles@filmsi.net>, 2012 - 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Ubuntu gnome help\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-02-27 11:16+0000\n"
+"PO-Revision-Date: 2013-03-24 13:21+0100\n"
+"Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
+"Language-Team: Slovenian GNOME translation team <gnome-si@googlegroups.com>\n"
+"Language: sl_SI\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-09-24 16:20+0000\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+msgctxt "_"
+msgid "translator-credits"
+msgstr "Andrej Žnidaršič <andrej.znidarsic@ubuntu.com>"
+
+#. (itstool) path: credit/name
+#: C/collections.page:11 C/index.page:10 C/info.page:10 C/previews.page:11
+#: C/print.page:11 C/search.page:11 C/select.page:11 C/tracker.page:11
+#: C/viewgrid.page:11 C/view.page:11
+msgid "Julita Inca"
+msgstr "Julita Inca"
+
+#. (itstool) path: credit/years
+#: C/collections.page:13 C/collections.page:18 C/filter.page:13
+#: C/formats.page:13 C/index.page:12 C/index.page:17 C/info.page:12
+#: C/info.page:17 C/previews.page:13 C/previews.page:18 C/print.page:13
+#: C/print.page:18 C/search.page:13 C/search.page:18 C/select.page:13
+#: C/select.page:18 C/tracker.page:13 C/tracker.page:18 C/viewgrid.page:13
+#: C/viewgrid.page:18 C/view.page:13 C/view.page:18
+msgid "2012"
+msgstr "2012"
+
+#. (itstool) path: credit/name
+#: C/collections.page:16 C/filter.page:11 C/formats.page:11 C/index.page:15
+#: C/info.page:15 C/previews.page:16 C/print.page:16 C/search.page:16
+#: C/select.page:16 C/tracker.page:16 C/viewgrid.page:16 C/view.page:16
+msgid "Michael Hill"
+msgstr "Michael Hill"
+
+#. (itstool) path: info/desc
+#: C/collections.page:23
+msgid "Group related documents in a collection."
+msgstr "Združevanje povezanih dokumentov v zbirko."
+
+#. (itstool) path: page/title
+#: C/collections.page:26
+msgid "Make collections of documents"
+msgstr "Ustvarjanje zbirk dokumentov"
+
+#. (itstool) path: page/p
+#: C/collections.page:39
+msgid ""
+"<app>Documents</app> lets you put together documents of different types in "
+"one place called a <em>collection</em>. If you have documents that are "
+"related, you can group them to make them easier to find. For example, if you "
+"had a business trip where you made a presentation, your slides, your flight "
+"itinerary (a PDF file), your budget spreadsheet, and other hybrid PDF/ODF "
+"documents, can be grouped in one collection."
+msgstr ""
+"Program <app>Dokumenti</app> vam omogoča dajanje dokumentov različnih vrst "
+"na eno mesto z imenom <gui>zbirka</gui>. Če imate povezane dokumente, jih "
+"lahko združite, da bo iskanje lažje. Če imate na primer poslovni izlet in "
+"ste tam izvedli predstavitev, lahko združite dokumente kot so letalska "
+"rezervacija (to je datoteka PDF), preglednico s proračunom in druge hibridne "
+"dokumente PDF/ODF v eni zbirki."
+
+#. (itstool) path: page/p
+#: C/collections.page:46
+msgid "To create or add to a collection:"
+msgstr "Za ustvarjanje ali dodajanje k zbirki:"
+
+#. (itstool) path: item/p
+#: C/collections.page:49 C/collections.page:72 C/print.page:39
+#: C/select.page:41
+msgid "Click the <gui>✓</gui> button."
+msgstr "Kliknite na gumb <gui>✓</gui>."
+
+#. (itstool) path: item/p
+#: C/collections.page:52
+msgid "In selection mode, check the documents to be collected."
+msgstr "V načinu izbire izberite dokumente za biranje"
+
+#. (itstool) path: item/p
+#: C/collections.page:55
+msgid "Click the <gui>+</gui> button in the button bar."
+msgstr "Kliknite gumb <gui>+</gui> v vrstici gumbov."
+
+#. (itstool) path: item/p
+#: C/collections.page:58
+msgid ""
+"In the collection list, click <gui>Add</gui> and type a new collection name, "
+"or select an existing collection. The selected documents will be added to "
+"the collection."
+msgstr ""
+"Na seznamu zbirk kliknite <gui>Dodaj</gui> in vnesite novo ime zbirke ali "
+"izberite obstoječo zbirko. Izbrani dokumenti bodo dodani k zbirki."
+
+#. (itstool) path: note/p
+#: C/collections.page:65
+msgid ""
+"Collections do not behave like folders and their hierarchy: <em>you cannot "
+"put collections inside collections.</em>"
+msgstr ""
+"Zbirke se ne obnašajo kot mape in njihova hierarhija: <em>trenutno zbirk ne "
+"morete postaviti v obstoječe zbirke.</em>"
+
+#. (itstool) path: page/p
+#: C/collections.page:69
+msgid "To delete a collection:"
+msgstr "Za izbris zbirke:"
+
+#. (itstool) path: item/p
+#: C/collections.page:75
+msgid "In selection mode, check the collection to be deleted."
+msgstr "V načinu zbirke izberite zbirko za izbris."
+
+#. (itstool) path: item/p
+#: C/collections.page:78
+msgid ""
+"Click the Trash button in the button bar. The collection will be deleted, "
+"leaving the original documents."
+msgstr ""
+"Kliknite na gumb Smeti v vrstici gumbov. Zbirka bo bila izbrisana, izvirni "
+"dokumenti pa bodo ostali."
+
+#. (itstool) path: media
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/filter.page:23 C/search.page:53
+#, fuzzy
+msgctxt "_"
+msgid "external ref='media/go-down.png' md5='e8c16f5ab9ed933f4a537b740506f4d4'"
+msgstr ""
+"external ref='figures/go-down.png' md5='e8c16f5ab9ed933f4a537b740506f4d4'"
+
+#. (itstool) path: info/desc
+#: C/filter.page:18
+msgid "Choose which documents to display."
+msgstr "Izberite kateri dokumenti naj bodo prikazani."
+
+#. (itstool) path: page/title
+#: C/filter.page:21
+msgid "Filter documents"
+msgstr "Filtriranje dokumentov"
+
+#. (itstool) path: page/p
+#: C/filter.page:23
+#, fuzzy
+msgid ""
+"Click the <media type=\"image\" src=\"media/go-down.png\">down</media> "
+"button next to the <link xref=\"search\">search</link> bar to limit the "
+"scope of the search in these categories:"
+msgstr ""
+"Kliknite na puščico <media type=\"image\" src=\"figures/go-down.png"
+"\">navzdol</media> poleg vrstice <link xref=\"documents-search\">iskanje</"
+"link> za omejitev obsega iskanja v teh kategorijah:"
+
+#. (itstool) path: item/p
+#: C/filter.page:29
+msgid "<em>Sources</em>: Local, Google, SkyDrive, or All."
+msgstr "<em>Viri</em>: Krajevno, Google, SkyDrive, ali Vse."
+
+#. (itstool) path: item/p
+#: C/filter.page:31
+msgid ""
+"<em>Type</em>: Collections, PDF Documents, Presentations, Spreadsheets, Text "
+"Documents, or All."
+msgstr ""
+"<em>Vir</em>: Zbirke, Dokumenti PDF, Predstavitve, Preglednice, Besedilni "
+"dokumenti ali Vse."
+
+#. (itstool) path: item/p
+#: C/filter.page:35
+msgid "Title, Author, or All."
+msgstr "Naslov, avtor ali vse."
+
+#. (itstool) path: note/p
+#: C/filter.page:40
+#, fuzzy
+msgid ""
+"In order for <gui>Google</gui> or <gui>SkyDrive</gui> to appear in the "
+"filter list, it is necessary to configure Google or Windows Live as an <link "
+"href=\"gnome-help:accounts-add\">online account</link>."
+msgstr ""
+"Da se <gui>Google</gui> ali <gui>SkyDrive</gui> pojavita na seznamu filtra, "
+"morate Google ali Windows Live nastaviti kot <link xref=\"accounts-add"
+"\">spletni račun</link>."
+
+#. (itstool) path: info/desc
+#: C/formats.page:18
+msgid "<app>Documents</app> displays a number of popular document types."
+msgstr ""
+"Program <app>Dokumenti</app> prikaže številne priljubljene vrste dokumentov."
+
+#. (itstool) path: page/title
+#: C/formats.page:22
+msgid "Formats supported"
+msgstr "Podprti zapisi"
+
+#. (itstool) path: page/p
+#: C/formats.page:24
+msgid ""
+"<app>Documents</app> displays PDF, DVI, XPS, PostScript and the formats "
+"supported by <app>Document Viewer</app> (Evince), <app>Microsoft Office</"
+"app>, <app>LibreOffice</app> and <app>Google Docs</app>."
+msgstr ""
+"<app>Documents</app> prikaže PDF, DVI, XPS, PostScript in vrste dokumentov, "
+"ki jih podpirajo <app>Pregledovalnik dokumentov</app> (Evince), "
+"<app>Microsoft Office</app>, <app>LibreOffice</app> in <app>Google Docs</"
+"app>."
+
+#. (itstool) path: info/desc
+#: C/index.page:22
+msgid ""
+"Organize the documents stored locally on your computer or created online."
+msgstr ""
+"Organizirajte vse dokumente, shranjene na računalniku in vse dokumente, ki "
+"ste jih ustvarili na spletu."
+
+#. (itstool) path: page/title
+#: C/index.page:26
+msgid "Documents"
+msgstr "Dokumenti"
+
+#. (itstool) path: page/p
+#: C/index.page:38
+msgid ""
+"<app>Documents</app> is a GNOME application that lets you display, organize, "
+"and print the documents on your computer or those created remotely using "
+"<em>Google Docs</em> or <em>SkyDrive</em>."
+msgstr ""
+"<app>Dokumeti</app> je program GNOME, ki vam omogoča prikaz, organizacijo in "
+"tiskanje dokumentov na vašem računalniku in tistih, ki so bili ustvarjeni "
+"oddaljeno z <em>Google Docs</em> ali <em>SkyDrive</em>."
+
+#. (itstool) path: section/title
+#: C/index.page:43
+msgid "View, Sort and Search"
+msgstr "Oglejte, razvrstite in iščite"
+
+#. (itstool) path: section/title
+#: C/index.page:47
+msgid "Select, Organize, Print"
+msgstr "Izberite, organizirajte, tiskajte"
+
+#. (itstool) path: section/title
+#: C/index.page:51
+msgid "Questions"
+msgstr "Vprašanja"
+
+#. (itstool) path: info/desc
+#: C/info.page:22
+msgid "See a document's name, location, date modified, or type."
+msgstr "Oglejte si ime, mest, datum spremembe ali vrsto dokumenta."
+
+#. (itstool) path: page/title
+#: C/info.page:25
+msgid "Find information about documents"
+msgstr "Iskanje podatkov o dokumentih"
+
+#. (itstool) path: page/p
+#: C/info.page:35
+msgid ""
+"When a document is created, it comes with <em>metadata</em>. <app>Documents</"
+"app> displays the following metadata for each document:"
+msgstr ""
+"Ko je dokument ustvarjen, vsebuje <em>metapodatke</em>. <app>Dokumenti</app> "
+"za vsak dokument prikažejo naslednje metapodatke:"
+
+#. (itstool) path: item/p
+#: C/info.page:40
+msgid "Title: the name of the document, which can be edited;"
+msgstr "Naslov: ime dokumenta, ki ga je mogoče urejati,"
+
+#. (itstool) path: item/p
+#: C/info.page:43
+msgid "Source: the path of the folder containing the document;"
+msgstr "Vir: pot mape, ki vsebuje dokument"
+
+#. (itstool) path: item/p
+#: C/info.page:46
+msgid "Date Modified;"
+msgstr "datum spremembe,"
+
+#. (itstool) path: item/p
+#: C/info.page:49
+#, fuzzy
+msgid "Type: the <link xref=\"formats\">file format</link> of the document."
+msgstr ""
+"Vnesite: <link xref=\"documents-formats\">vrsto datoteke</link> dokumenta."
+
+#. (itstool) path: page/p
+#: C/info.page:53
+msgid "To see a document's properties:"
+msgstr "Za ogled lastnosti dokumenta:"
+
+#. (itstool) path: item/p
+#: C/info.page:56
+msgid "Click the <gui>Check</gui> button to switch to selection mode."
+msgstr "Kliknite na gumb <gui>Izbor</gui> za preklop na način izbire."
+
+#. (itstool) path: item/p
+#: C/info.page:59
+msgid "Select a document."
+msgstr "Izberite dokument."
+
+#. (itstool) path: item/p
+#: C/info.page:62
+msgid ""
+"Click the <gui>Properties</gui> button at the right end of the button bar."
+msgstr "Kliknite gumb <gui>Lastnosti</gui> na desni strani vrstice gumbov."
+
+#. (itstool) path: note/p
+#: C/info.page:68
+msgid ""
+"Some types of documents (e.g. PDF files) can be password protected, "
+"preventing access to their metadata or content."
+msgstr ""
+"Nekatere vrste dokumentov (na primer datoteke PDF) je mogoče zaščiti z "
+"geslom. Do metapodatkov ali vsebine teh datotek ne boste mogli dostopati."
+
+#. (itstool) path: note/p
+#: C/info.page:73
+msgid ""
+"<app>Documents</app> does not currently offer any mechanism to add privacy "
+"to a document. You may be able to do this from the application you used to "
+"create the document (e.g. <app>LibreOffice</app> or <app>Adobe Acrobat</"
+"app>)."
+msgstr ""
+"<app>Dokumenti</app> trenutno ne ponujajo mehanizma dodajanja zasebnosti "
+"dokumentom. To lahko običajno naredite s programom s katerim ste ustvarili "
+"vsebino (na primer <app>LibreOffice</app> ali <app>Adobe Acrobat</app>)."
+
+#. (itstool) path: info/desc
+#: C/previews.page:23
+msgid "You can only preview files stored locally."
+msgstr "Vidite lahko le predogled datotek, ki so shranjene krajevno."
+
+#. (itstool) path: page/title
+#: C/previews.page:26
+msgid "Why don't some files have previews?"
+msgstr "Zakaj za nekatere datoteke predogledi ne obstajajo?"
+
+#. (itstool) path: page/p
+#: C/previews.page:34
+msgid ""
+"When you open <app>Documents</app>, a preview thumbnail is displayed for "
+"documents that are stored locally. Those stored on a remote server like "
+"<em>Google Docs</em> or <em>SkyDrive</em> show as missing (or blank) preview "
+"thumbnails."
+msgstr ""
+"Ko odprete <app>Dokumente</app>, je za krajevno shranjene dokumenta "
+"prikazana sličica predogleda. Dokumenti shranjeni na oddaljenem strežniku "
+"kot je <em>Google Docs</em> ali <em>SkyDrive</em> bodo prikazane kot "
+"manjkajoče /ali prazne) sličice predogleda."
+
+#. (itstool) path: page/p
+#: C/previews.page:39
+msgid ""
+"If you download a <em>Google Docs</em> or <em>SkyDrive</em> document to "
+"local storage, a thumbnail will be generated."
+msgstr ""
+"Če dokument <em>Google Docs</em> ali <em>SkyDrive</em> prejmete v krajevno "
+"shrambo, bo bila ustvarjena sličica."
+
+#. (itstool) path: note/p
+#: C/previews.page:43
+msgid ""
+"The local copy of a document downloaded from <em>Google Docs</em> or "
+"<em>SkyDrive</em> will lose its ability to be updated online. If you want to "
+"continue to edit it online, it is better not to download it."
+msgstr ""
+"Krajevna kopija dokumenta prejeta z <em>Google Docs</em> ali <em>SkyDrive</"
+"em> se ne bo več posodabljala na spletu. Če jo želite še naprej urejati na "
+"spletu, je ne prejmite."
+
+#. (itstool) path: info/desc
+#: C/print.page:23
+msgid "Print documents that are stored locally or online."
+msgstr "Tiskanje dokumentov, ki so shranjeni krajevno ali na spletu."
+
+#. (itstool) path: page/title
+#: C/print.page:26
+msgid "Print a document"
+msgstr "Tiskanje dokumenta"
+
+#. (itstool) path: page/p
+#: C/print.page:35
+msgid "To print a document:"
+msgstr "Za tiskanje dokumenta:"
+
+#. (itstool) path: item/p
+#: C/print.page:42
+msgid "In selection mode, check the document to be printed."
+msgstr "V načinu izbire izberite dokument za tiskanje"
+
+#. (itstool) path: item/p
+#: C/print.page:45
+msgid ""
+"Click the Print button in the button bar. The <gui>Print</gui> dialog opens."
+msgstr ""
+"Kliknite na gumb Tiskanje v vrstici gumbov. Odpre se pogovorno okno "
+"<gui>Tiskanje</gui>."
+
+#. (itstool) path: note/p
+#: C/print.page:51
+msgid ""
+"Printing is not available when more than one document is selected, or when a "
+"collection is selected."
+msgstr ""
+"Tiskanje ni na voljo, ko je izbran več kot en dokument ali ko je izbrana "
+"zbirka."
+
+#. (itstool) path: info/desc
+#: C/search.page:23
+msgid "Find your documents by title or author."
+msgstr "Najdite svoje dokumente po naslov ali, avtorju."
+
+#. (itstool) path: page/title
+#: C/search.page:26
+msgid "Search for files"
+msgstr "Iskanje datotek"
+
+#. (itstool) path: page/p
+#: C/search.page:38
+msgid "To start a search in <app>Documents</app>:"
+msgstr "Za začetek iskanja v <app>Dokumentih</app>:"
+
+#. (itstool) path: item/p
+#: C/search.page:42
+#, fuzzy
+msgid ""
+"Press <keyseq><key>Ctrl</key><key>F</key></keyseq> to open the search bar at "
+"the top of the window."
+msgstr ""
+"Pritisnite <keyseq><key>Ctrl</key><key>F</key></keyseq> za odprtje iskalnega "
+"polja."
+
+#. (itstool) path: item/p
+#: C/search.page:46
+msgid ""
+"Start typing keywords, and searching begins instantly. You will see a list "
+"of documents whose title or author matches the keywords."
+msgstr ""
+
+#. (itstool) path: note/p
+#: C/search.page:52
+#, fuzzy
+msgid ""
+"You can restrict or filter the search results by clicking the <media type="
+"\"image\" src=\"media/go-down.png\">down</media> button and selecting "
+"various <link xref=\"filter\">filters</link>."
+msgstr ""
+"Rezultate iskanja je mogoče omejiti ali filtrirati s klikom na gumb <media "
+"type=\"image\" src=\"figures/go-down.png\">navzdol</media> in z izbiro "
+"različnih <link xref=\"documents-filter\">filtrov</link>."
+
+#. (itstool) path: info/desc
+#: C/select.page:23
+msgid "Use selection mode to select more than one document or collection."
+msgstr "Uporabite način izbire za izbiro več kot enega dokumenta ali zbirke."
+
+#. (itstool) path: page/title
+#: C/select.page:27
+msgid "Selecting documents"
+msgstr "Izbira dokumentov"
+
+#. (itstool) path: page/p
+#: C/select.page:36
+msgid ""
+"From <app>Documents</app> selection mode you can open, print, view or make "
+"collections of your documents. To use selection mode:"
+msgstr ""
+"Iz načina izbire <app>Dokumenti</app> lahko odprete, natisnete, si ogledate "
+"ali naredite zbirke svojih dokumentov. Za uporabo načina izbire:"
+
+#. (itstool) path: item/p
+#: C/select.page:44
+msgid ""
+"Select one or more documents or collections. The button bar appears with the "
+"actions that are valid for your selection."
+msgstr ""
+"Izberite enega ali več dokumentov ali zbirk. Pojavi se vrstica gumbov z "
+"dejanji, ki so na voljo za vašo izbiro."
+
+#. (itstool) path: section/title
+#: C/select.page:51
+msgid "Selection mode actions"
+msgstr "Dejanja načina izbire"
+
+#. (itstool) path: section/p
+#: C/select.page:53
+msgid "After selecting one or more documents you can:"
+msgstr "Po izbiri enega ali več dokumentov lahko:"
+
+#. (itstool) path: item/p
+#: C/select.page:57
+msgid "Open with Document Viewer (folder icon)."
+msgstr "Odpri s pregledovalnikom dokumentov (ikona mape)."
+
+#. (itstool) path: item/p
+#: C/select.page:60
+msgid ""
+"Print (printer icon): print a document (only available when a single "
+"document is selected)."
+msgstr ""
+"Tiskaj (ikona tiskalnika): tiskanje dokumenta (na voljo le, ko je izbran "
+"posamezen dokument)."
+
+#. (itstool) path: item/p
+#: C/select.page:64
+msgid "Organize (plus icon): create a collection of documents."
+msgstr "Organizirate (ikona plus): ustvarite zbirko dokumentov"
+
+#. (itstool) path: item/p
+#: C/select.page:67
+msgid ""
+"Properties (wrench icon): display the properties of a document (only "
+"available when a single document is selected)."
+msgstr ""
+"Lastnosti (ikona ključa): prikaže lastnosti dokumenta (na voljo le, ko je "
+"izbran posamezen dokument)."
+
+#. (itstool) path: item/p
+#: C/select.page:71
+msgid "Delete (trash icon): delete one or more collections."
+msgstr "Izbriši (ikona smeti): izbris ene ali več zbirk."
+
+#. (itstool) path: info/desc
+#: C/tracker.page:23
+msgid "Local or remote documents do not appear."
+msgstr "Krajevni ali oddaljeni dokumenti se ne pojavijo."
+
+#. (itstool) path: page/title
+#: C/tracker.page:26
+msgid "My documents cannot be seen"
+msgstr "Mojih dokumentih ne morem videti"
+
+#. (itstool) path: page/p
+#: C/tracker.page:40
+msgid ""
+"If your documents fail to display in <app>Documents</app>, <app>Tracker</"
+"app> may not be running or properly configured. Make sure Tracker is running "
+"in your session. The default configuration, set to index files in your home "
+"directory (non-recursively) and XDG folders (recursively), should be "
+"adequate. Ensure that your documents are in one of these paths."
+msgstr ""
+"Če se dokumenti ne prikažejo v <app>Dokumentih</app>, se morda <app>Tracker</"
+"app> ne izvaja ali ni pravilno nastavljen. Prepričajte se, da se program "
+"Tracker izvaja v vaši seji, privzeta nastavitev bi morala biti nastavljena "
+"na datoteke kazala v vaši domači mapi (ne-rekurzivno) in mape XDG "
+"(rekurzivno). Prepričajte se, da so datoteke, ki ste jih ustvarili za ta "
+"preizkus, v eni od teh poti."
+
+#. (itstool) path: info/desc
+#: C/viewgrid.page:23
+msgid "Change the way documents are displayed."
+msgstr "Sprememba načina na katerega so predstavljeni dokumenti."
+
+#. (itstool) path: page/title
+#: C/viewgrid.page:26
+msgid "View files in a list or grid"
+msgstr "Oglejte datotek na seznamu ali mrežu"
+
+#. (itstool) path: page/p
+#: C/viewgrid.page:35
+msgid ""
+"Documents and collections are presented in <gui>Grid</gui> format by "
+"default. To view in <gui>List</gui> format:"
+msgstr ""
+"Privzeto so zbirke in dokumenti predstavljene v obliki <gui>Mreže</gui>. Za "
+"ogled v obliki <gui>Seznama</gui>:"
+
+#. (itstool) path: item/p
+#: C/viewgrid.page:40
+msgid ""
+"Go to the top bar and click <app>Documents</app> to display the app menu."
+msgstr ""
+"Pojdite v zgornjo vrstico in kliknite na <app>Dokumenti</app> za prikaz "
+"menija programa."
+
+#. (itstool) path: item/p
+#: C/viewgrid.page:44
+msgid "Click <gui>List</gui> from the <gui>View as</gui> section."
+msgstr "Kliknite <gui>Seznam</gui> iz odseka <gui>Ogled kot</gui>."
+
+#. (itstool) path: note/p
+#: C/viewgrid.page:49
+msgid ""
+"List view has columns displaying the document type and date modified, and "
+"whether it's stored locally, or in <app>Google Docs</app> or <em>SkyDrive</"
+"em>."
+msgstr ""
+"Seznamski pogled vsebuje stolpce, ki priakzujejo vrsto dokumenta in datum "
+"spremembe in ali je dokument shranjen krajevno ali v <app>Google Docs</app> "
+"ali <em>SkyDrive</em>."
+
+#. (itstool) path: page/p
+#: C/viewgrid.page:54
+msgid "Click <gui>Grid</gui> in the app menu to return to the default format."
+msgstr ""
+"Kliknite na <gui>Mrežo</gui> v meniju programa, da se vrnete nazaj na "
+"privzeto obliko."
+
+#. (itstool) path: info/desc
+#: C/view.page:23
+msgid "View documents full-screen."
+msgstr "Celozaslonski ogled dokumentov."
+
+#. (itstool) path: page/title
+#: C/view.page:26
+msgid "Display documents stored locally or online"
+msgstr "Prikaz dokumentov, ki so shranjeni krajevno ali na spletu"
+
+#. (itstool) path: page/p
+#: C/view.page:36
+msgid ""
+"When you open <app>Documents</app>, all of your documents, those stored "
+"locally as well as online, are displayed as thumbnails."
+msgstr ""
+"Ko odprete <app>Dokumente</app>, bodo vsi vaši dokumenti, tako tisti "
+"shranjeni krajevno kot tisti na spletu prikazani kot sličice."
+
+#. (itstool) path: note/p
+#: C/view.page:40
+#, fuzzy
+msgid ""
+"In order for your <em>Google Docs</em> or <em>SkyDrive</em> documents to "
+"appear, it is necessary to configure Google or Windows Live, respectively, "
+"as an <link href=\"gnome-help:accounts-add\">online account</link>."
+msgstr ""
+"Da se dokumenti <em>Google Docs</em> ali <em>SkyDrive</em> pojavijo, morate "
+"nastaviti Google oz Windows Live kot <link xref=\"accounts-add\">spletni "
+"račun</link>."
+
+#. (itstool) path: page/p
+#: C/view.page:45
+msgid "To view the contents of a document:"
+msgstr "Za ogled vsebine dokumenta:"
+
+#. (itstool) path: item/p
+#: C/view.page:49
+msgid ""
+"Click the thumbnail. The document is displayed full-width in the "
+"<app>Documents</app> window (or full-screen if maximized)."
+msgstr ""
+"Kliknite sličico. Dokument je s polno širino prikazan v oknu <app>Dokumenti</"
+"app> (ali v celozaslonskem načinu, če je razpet)."
+
+#. (itstool) path: page/p
+#: C/view.page:54
+msgid "To exit the document, click the back arrow button."
+msgstr "Za zaprtje dokumenta kliknite na gumb puščice nazaj."
+
+#. (itstool) path: p/link
+#: C/legal.xml:3
+msgid "Creative Commons Attribution-ShareAlike 3.0 Unported License"
+msgstr ""
+"Priznanje avtorstva s Creative Commons in deljenje pod enakimi pogoji 3.0 "
+"neprenosljivo"
+
+#. (itstool) path: license/p
+#: C/legal.xml:3
+msgid "This work is licensed under a <_:link-1/>."
+msgstr "To delo je objavljeno z dovoljenjem <_:link-1/>."
