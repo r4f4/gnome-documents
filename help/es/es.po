@@ -13,8 +13,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-help.master\n"
-"POT-Creation-Date: 2014-02-27 11:16+0000\n"
-"PO-Revision-Date: 2014-02-24 17:49+0100\n"
+"POT-Creation-Date: 2014-02-28 07:46+0000\n"
+"PO-Revision-Date: 2014-02-28 16:42+0100\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "Language: \n"
@@ -23,6 +23,17 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Gtranslator 2.91.5\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#. (itstool) path: p/link
+#: C/legal.xml:3
+msgid "Creative Commons Attribution-ShareAlike 3.0 Unported License"
+msgstr ""
+"Licencia Creative Commons Compartir-igual de Atribución 3.0 sin soporte"
+
+#. (itstool) path: license/p
+#: C/legal.xml:3
+msgid "This work is licensed under a <_:link-1/>."
+msgstr "Este trabajo está licenciado bajo una <_:link-1/>."
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -151,11 +162,10 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: C/filter.page:23 C/search.page:53
-#, fuzzy
 msgctxt "_"
 msgid "external ref='media/go-down.png' md5='e8c16f5ab9ed933f4a537b740506f4d4'"
 msgstr ""
-"external ref='figures/go-down.png' md5='e8c16f5ab9ed933f4a537b740506f4d4'"
+"external ref='media/go-down.png' md5='e8c16f5ab9ed933f4a537b740506f4d4'"
 
 #. (itstool) path: info/desc
 #: C/filter.page:18
@@ -169,15 +179,14 @@ msgstr "Filtrar documentos"
 
 #. (itstool) path: page/p
 #: C/filter.page:23
-#, fuzzy
 msgid ""
 "Click the <media type=\"image\" src=\"media/go-down.png\">down</media> "
 "button next to the <link xref=\"search\">search</link> bar to limit the "
 "scope of the search in these categories:"
 msgstr ""
-"Pulse el botón <_:media-1/> que está junto a la barra de <link xref="
-"\"documents-search\">búsqueda</link> para limitar el ámbito de la búsqueda a "
-"esas categorías:"
+"Pulse el botón <media type=\"image\" src=\"media/go-down.png\">abajo</media> "
+"que está junto a la barra de <link xref=\"search\">búsqueda</link> para "
+"limitar el ámbito de la búsqueda a esas categorías:"
 
 #. (itstool) path: item/p
 #: C/filter.page:29
@@ -200,15 +209,14 @@ msgstr "Título, autor o todo."
 
 #. (itstool) path: note/p
 #: C/filter.page:40
-#, fuzzy
 msgid ""
 "In order for <gui>Google</gui> or <gui>SkyDrive</gui> to appear in the "
 "filter list, it is necessary to configure Google or Windows Live as an <link "
 "href=\"gnome-help:accounts-add\">online account</link>."
 msgstr ""
 "Para que <gui>Google</gui> o <gui>SkyDrive</gui> aparezcan en la lista de "
-"filtros, es necesario configurar Google o Windows Live como una <link xref="
-"\"accounts-add\">cuenta en línea</link>."
+"filtros, es necesario configurar Google o Windows Live como una <link href="
+"\"gnome-help:accounts-add\">cuenta en línea</link>."
 
 #. (itstool) path: info/desc
 #: C/formats.page:18
@@ -308,11 +316,9 @@ msgstr "Fecha de modificación;"
 
 #. (itstool) path: item/p
 #: C/info.page:49
-#, fuzzy
 msgid "Type: the <link xref=\"formats\">file format</link> of the document."
 msgstr ""
-"Tipo: el <link xref=\"documents-formats\">formato del archivo</link> del "
-"documento."
+"Tipo: el <link xref=\"formats\">formato del archivo</link> del documento."
 
 #. (itstool) path: page/p
 #: C/info.page:53
@@ -475,15 +481,14 @@ msgstr ""
 
 #. (itstool) path: note/p
 #: C/search.page:52
-#, fuzzy
 msgid ""
 "You can restrict or filter the search results by clicking the <media type="
 "\"image\" src=\"media/go-down.png\">down</media> button and selecting "
 "various <link xref=\"filter\">filters</link>."
 msgstr ""
-"Puede restringir o filtrar los resultados de búsqueda pulsando el botón <_:"
-"media-1/> y seleccionando varios <link xref=\"documents-filter\">filtros</"
-"link>."
+"Puede restringir o filtrar los resultados de búsqueda pulsando el botón "
+"<media type=\"image\" src=\"media/go-down.png\">abajo</media> y "
+"seleccionando varios <link xref=\"documents-filter\">filtros</link>."
 
 #. (itstool) path: info/desc
 #: C/select.page:23
@@ -656,7 +661,6 @@ msgstr ""
 
 #. (itstool) path: note/p
 #: C/view.page:40
-#, fuzzy
 msgid ""
 "In order for your <em>Google Docs</em> or <em>SkyDrive</em> documents to "
 "appear, it is necessary to configure Google or Windows Live, respectively, "
@@ -664,7 +668,8 @@ msgid ""
 msgstr ""
 "Para que aparezcan sus documentos de <em>Google Docs</em> o <em>SkyDrive</"
 "em> es necesario configurar una cuenta de Google o de Windows Live "
-"respectivamente como una <link xref=\"accounts-add\">cuenta en línea</link>."
+"respectivamente como una <link href=\"gnome-help:accounts-add\">cuenta en "
+"línea</link>."
 
 #. (itstool) path: page/p
 #: C/view.page:45
@@ -684,14 +689,3 @@ msgstr ""
 #: C/view.page:54
 msgid "To exit the document, click the back arrow button."
 msgstr "Para salir del documento, pulse el icono de flecha hacia atrás."
-
-#. (itstool) path: p/link
-#: C/legal.xml:3
-msgid "Creative Commons Attribution-ShareAlike 3.0 Unported License"
-msgstr ""
-"Licencia Creative Commons Compartir-igual de Atribución 3.0 sin soporte"
-
-#. (itstool) path: license/p
-#: C/legal.xml:3
-msgid "This work is licensed under a <_:link-1/>."
-msgstr "Este trabajo está licenciado bajo una <_:link-1/>."
