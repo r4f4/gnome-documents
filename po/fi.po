@@ -11,8 +11,8 @@ msgstr ""
 "Project-Id-Version: gnome-documents master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-12-31 16:04+0000\n"
-"PO-Revision-Date: 2014-01-05 19:32+0200\n"
+"POT-Creation-Date: 2014-02-24 19:48+0000\n"
+"PO-Revision-Date: 2014-02-24 22:09+0200\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos+l10n@iki.fi>\n"
 "Language-Team: suomi <gnome-fi-laatu@lists.sourceforge.net>\n"
 "Language: fi\n"
@@ -23,18 +23,17 @@ msgstr ""
 "X-Generator: Gtranslator 2.91.6\n"
 "X-POT-Import-Date: 2012-03-05 14:46:33+0000\n"
 
-#: ../data/gnome-documents.appdata.xml.in.h:1
-#: ../data/gnome-documents.desktop.in.in.h:1 ../src/application.js:103
-#: ../src/mainWindow.js:52 ../src/mainWindow.js:273
+#: ../data/org.gnome.Documents.appdata.xml.in.h:1
+#: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:103
+#: ../src/mainWindow.js:52 ../src/mainWindow.js:274
 msgid "Documents"
 msgstr "Asiakirjat"
 
-#: ../data/gnome-documents.appdata.xml.in.h:2
-#| msgid "A document manager application"
+#: ../data/org.gnome.Documents.appdata.xml.in.h:2
 msgid "A document manager application for GNOME"
 msgstr "Asiakirjojen hallintasovellus Gnomelle"
 
-#: ../data/gnome-documents.appdata.xml.in.h:3
+#: ../data/org.gnome.Documents.appdata.xml.in.h:3
 msgid ""
 "A simple application to access, organize and share your documents on GNOME. "
 "It is meant to be a simple and elegant replacement for using a file manager "
@@ -46,11 +45,11 @@ msgstr ""
 "liittyvässä työskentelyssä. Saumattoman pilvi-integraation tarjoaa Gnomen "
 "verkkotilit."
 
-#: ../data/gnome-documents.appdata.xml.in.h:4
+#: ../data/org.gnome.Documents.appdata.xml.in.h:4
 msgid "It lets you:"
 msgstr "Sen avulla voit:"
 
-#: ../data/gnome-documents.appdata.xml.in.h:5
+#: ../data/org.gnome.Documents.appdata.xml.in.h:5
 msgid ""
 "<li>View recent local and online documents</li> <li>Access your Google, "
 "ownCloud or SkyDrive content</li> <li>Search through documents</li> <li>See "
@@ -65,16 +64,15 @@ msgstr ""
 "<li>Valita suosikkeja</li> <li>Avata suurempia muutoksia varten erillinen "
 "toimisto-ohjelmisto</li>"
 
-#: ../data/gnome-documents.desktop.in.in.h:2
+#: ../data/org.gnome.Documents.desktop.in.h:2
 msgid "Access, manage and share documents"
 msgstr "Käytä, hallitse ja jaa asiakirjoja"
 
-#: ../data/gnome-documents.desktop.in.in.h:3
+#: ../data/org.gnome.Documents.desktop.in.h:3
 msgid "Docs;PDF;Document;"
 msgstr "Asiakirjat;PDF;asiakirja;dokumentti;dokumentit;Docs;Document;"
 
 #: ../data/org.gnome.documents.gschema.xml.h:1
-#: ../src/resources/app-menu.ui.h:1
 msgid "View as"
 msgstr "Näkymä"
 
@@ -106,72 +104,79 @@ msgstr "Ikkuna suurennettu"
 msgid "Window maximized state"
 msgstr "Ikkunan suurennettu tila"
 
-#: ../src/documents.js:599 ../src/search.js:417
+#: ../src/documents.js:587
+#| msgid "Unable to load the document"
+msgid "Failed to print document"
+msgstr "Asiakirjan tulostaminen epäonnistui"
+
+#: ../src/documents.js:624 ../src/search.js:418
 msgid "Local"
 msgstr "Paikallinen"
 
-#: ../src/documents.js:620
+#: ../src/documents.js:645
 msgid "GNOME"
 msgstr "Gnome"
 
-#: ../src/documents.js:621
+#: ../src/documents.js:646
 msgid "Getting Started with Documents"
 msgstr "Asiakirjat ja käytön aloitus"
 
-#: ../src/documents.js:637 ../src/documents.js:802 ../src/documents.js:856
-#: ../src/documents.js:956
+#: ../src/documents.js:662 ../src/documents.js:827 ../src/documents.js:881
+#: ../src/documents.js:981
 msgid "Collection"
 msgstr "Kokoelma"
 
-#: ../src/documents.js:681
+#: ../src/documents.js:706
 msgid "Google Docs"
 msgstr "Google Docs"
 
-#: ../src/documents.js:682
+#: ../src/documents.js:707
 msgid "Google"
 msgstr "Google"
 
-#: ../src/documents.js:804 ../src/documents.js:958
+#: ../src/documents.js:829 ../src/documents.js:983
 msgid "Spreadsheet"
 msgstr "Taulukko"
 
-#: ../src/documents.js:806 ../src/documents.js:960 ../src/presentation.js:47
+#: ../src/documents.js:831 ../src/documents.js:985 ../src/presentation.js:47
 msgid "Presentation"
 msgstr "Esitys"
 
-#: ../src/documents.js:808 ../src/documents.js:962
+#: ../src/documents.js:833 ../src/documents.js:987
 msgid "Document"
 msgstr "Asiakirja"
 
-#: ../src/documents.js:834
+#: ../src/documents.js:859
 msgid "ownCloud"
 msgstr "ownCloud"
 
-#: ../src/documents.js:890 ../src/documents.js:891
+#: ../src/documents.js:915 ../src/documents.js:916
 msgid "Skydrive"
 msgstr "Skydrive"
 
-#: ../src/documents.js:1082
+#: ../src/documents.js:1107
 msgid "Please check the network connection."
 msgstr "Tarkista verkkoyhteys."
 
-#: ../src/documents.js:1085
+#: ../src/documents.js:1110
 msgid "Please check the network proxy settings."
 msgstr "Tarkista verkkoyhteyden välityspalvelimen asetukset."
 
-#: ../src/documents.js:1088
+#: ../src/documents.js:1113
 msgid "Unable to sign in to the document service."
 msgstr "Asiakirjapalveluun kirjautuminen epäonnistui."
 
-#: ../src/documents.js:1091
+#: ../src/documents.js:1116
 msgid "Unable to locate this document."
 msgstr "Tämän asiakirjan paikantaminen epäonnistui."
 
-#: ../src/documents.js:1094
+#: ../src/documents.js:1119
+#, javascript-format
 msgid "Hmm, something is fishy (%d)."
 msgstr "Hmm, jokin meni pieleen (%d)."
 
-#: ../src/documents.js:1112
+#: ../src/documents.js:1137
+#, javascript-format
 msgid "Oops! Unable to load “%s”"
 msgstr "Hups! Kohteen \"%s\" lataus epäonnistui"
 
@@ -179,21 +184,16 @@ msgstr "Hups! Kohteen \"%s\" lataus epäonnistui"
 msgid "View"
 msgstr "Näkymä"
 
-#: ../src/embed.js:63 ../src/lib/gd-places-bookmarks.c:383
-#: ../src/lib/gd-places-links.c:257 ../src/view.js:71
-msgid "Loading…"
-msgstr "Ladataan…"
-
-#: ../src/embed.js:146
+#: ../src/embed.js:142
 msgid "No Documents Found"
 msgstr "Asiakirjoja ei löytynyt"
 
-#: ../src/embed.js:167
+#: ../src/embed.js:163
+#, javascript-format
 msgid "You can add your online accounts in %s"
 msgstr "Voit lisätä verkkotilisi %s"
 
-#: ../src/embed.js:171
-#| msgid "System Settings"
+#: ../src/embed.js:167
 msgid "Settings"
 msgstr "Asetukset"
 
@@ -222,7 +222,12 @@ msgstr "Sivu %s"
 msgid "No bookmarks"
 msgstr "Ei kirjanmerkkejä"
 
-#: ../src/lib/gd-places-bookmarks.c:648 ../src/preview.js:594
+#: ../src/lib/gd-places-bookmarks.c:383 ../src/lib/gd-places-links.c:257
+#: ../src/view.js:71
+msgid "Loading…"
+msgstr "Ladataan…"
+
+#: ../src/lib/gd-places-bookmarks.c:648 ../src/preview.js:601
 msgid "Bookmarks"
 msgstr "Kirjanmerkit"
 
@@ -242,55 +247,67 @@ msgstr "Etsi"
 msgid "Back"
 msgstr "Takaisin"
 
-#: ../src/mainToolbar.js:170
+#: ../src/mainToolbar.js:163
+msgid "View items as a list"
+msgstr "Näytä kohteet luettelona"
+
+#: ../src/mainToolbar.js:169
+msgid "View items as a grid of icons"
+msgstr "Näytä kohteet kuvakeruudukkona"
+
+#: ../src/mainToolbar.js:203
+#, javascript-format
 msgid "Results for “%s”"
 msgstr "Tulokset haulle \"%s\""
 
-#: ../src/mainToolbar.js:178
+#: ../src/mainToolbar.js:211
 msgid "Click on items to select them"
 msgstr "Napsauta kohteita valitaksesi ne"
 
-#: ../src/mainToolbar.js:180
+#: ../src/mainToolbar.js:213
+#, javascript-format
 msgid "%d selected"
 msgid_plural "%d selected"
 msgstr[0] "%d valittu"
 msgstr[1] "%d valittu"
 
-#: ../src/mainToolbar.js:209
+#: ../src/mainToolbar.js:240
 msgid "Cancel"
 msgstr "Peru"
 
-#: ../src/mainToolbar.js:250
+#: ../src/mainToolbar.js:282
 msgid "Select Items"
 msgstr "Valitse kohteet"
 
-#: ../src/mainWindow.js:272
+#: ../src/mainWindow.js:273
 msgid "translator-credits"
 msgstr "Jiri Grönroos, 2012, 2013"
 
-#: ../src/mainWindow.js:274
+#: ../src/mainWindow.js:275
 msgid "A document manager application"
 msgstr "Asiakirjojen hallintasovellus"
 
-#: ../src/notifications.js:87
+#: ../src/notifications.js:86
+#, javascript-format
 msgid "Printing “%s”: %s"
 msgstr "Tulostetaan “%s”: %s"
 
-#: ../src/notifications.js:143
+#: ../src/notifications.js:142
 msgid "Your documents are being indexed"
 msgstr "Asiakirjojasi indeksoidaan"
 
-#: ../src/notifications.js:144
+#: ../src/notifications.js:143
 msgid "Some documents might not be available during this process"
 msgstr ""
 "Jotkin asiakirjat eivät välttämättä ole käytettävissä tämän toimenpiteen "
 "aikana"
 
-#: ../src/notifications.js:166
+#: ../src/notifications.js:165
+#, javascript-format
 msgid "Fetching documents from %s"
 msgstr "Noudetaan asiakirjaa kohteesta %s"
 
-#: ../src/notifications.js:168
+#: ../src/notifications.js:167
 msgid "Fetching documents from online accounts"
 msgstr "Noudetaan asiakirjoja verkkotileiltä"
 
@@ -303,6 +320,7 @@ msgid "_Unlock"
 msgstr "_Avaa lukitus"
 
 #: ../src/password.js:64
+#, javascript-format
 msgid "Document %s is locked and requires a password to be opened."
 msgstr "Asiakirja %s on lukittu ja se vaatii salasanan avausta varten."
 
@@ -322,19 +340,20 @@ msgstr "Toimitaan esitystilassa"
 msgid "Present On"
 msgstr "Esitys näytöllä"
 
-#: ../src/preview.js:603
+#: ../src/preview.js:609
 msgid "Bookmark this page"
 msgstr "Lisää sivu kirjanmerkkeihin"
 
-#: ../src/preview.js:890 ../src/selections.js:856
+#: ../src/preview.js:858 ../src/selections.js:856
+#, javascript-format
 msgid "Open with %s"
 msgstr "Avaa sovelluksella %s"
 
-#: ../src/preview.js:951
+#: ../src/preview.js:919
 msgid "Find Previous"
 msgstr "Etsi edellinen"
 
-#: ../src/preview.js:958
+#: ../src/preview.js:926
 msgid "Find Next"
 msgstr "Etsi seuraava"
 
@@ -374,27 +393,19 @@ msgctxt "Document Type"
 msgid "Type"
 msgstr "Tyyppi"
 
-#: ../src/resources/app-menu.ui.h:2
-msgid "Grid"
-msgstr "Ruudukko"
-
-#: ../src/resources/app-menu.ui.h:3
-msgid "List"
-msgstr "Luettelo"
-
-#: ../src/resources/app-menu.ui.h:4
+#: ../src/resources/app-menu.ui.h:1
 msgid "Fullscreen"
 msgstr "Koko näyttö"
 
-#: ../src/resources/app-menu.ui.h:5
+#: ../src/resources/app-menu.ui.h:2
 msgid "Help"
 msgstr "Ohje"
 
-#: ../src/resources/app-menu.ui.h:6
+#: ../src/resources/app-menu.ui.h:3
 msgid "About"
 msgstr "Tietoja"
 
-#: ../src/resources/app-menu.ui.h:7
+#: ../src/resources/app-menu.ui.h:4
 msgid "Quit"
 msgstr "Lopeta"
 
@@ -443,63 +454,63 @@ msgstr "Valitse kaikki"
 msgid "Select None"
 msgstr "Poista kaikki valinnat"
 
-#: ../src/search.js:113
+#: ../src/search.js:114
 msgid "Category"
 msgstr "Luokka"
 
-#: ../src/search.js:118 ../src/search.js:170 ../src/search.js:255
-#: ../src/search.js:411
+#: ../src/search.js:119 ../src/search.js:171 ../src/search.js:256
+#: ../src/search.js:412
 msgid "All"
 msgstr "Kaikki"
 
-#: ../src/search.js:124
+#: ../src/search.js:125
 msgid "Favorites"
 msgstr "Suosikit"
 
-#: ../src/search.js:129
+#: ../src/search.js:130
 msgid "Shared with you"
 msgstr "Kanssani jaetut"
 
-#: ../src/search.js:167
+#: ../src/search.js:168
 msgctxt "Search Filter"
 msgid "Type"
 msgstr "Tyyppi"
 
-#: ../src/search.js:172
+#: ../src/search.js:173
 msgid "Collections"
 msgstr "Kokoelmat"
 
-#: ../src/search.js:176
+#: ../src/search.js:177
 msgid "PDF Documents"
 msgstr "PDF-asiakirjat"
 
-#: ../src/search.js:180
+#: ../src/search.js:181
 msgid "Presentations"
 msgstr "Esitykset"
 
-#: ../src/search.js:183
+#: ../src/search.js:184
 msgid "Spreadsheets"
 msgstr "Taulukot"
 
-#: ../src/search.js:186
+#: ../src/search.js:187
 msgid "Text Documents"
 msgstr "Tekstiasiakirjat"
 
-#: ../src/search.js:252
+#: ../src/search.js:253
 msgid "Match"
 msgstr "Vastaavuus"
 
-#: ../src/search.js:258
+#: ../src/search.js:259
 msgctxt "Search Filter"
 msgid "Title"
 msgstr "Otsikko"
 
-#: ../src/search.js:261
+#: ../src/search.js:262
 msgctxt "Search Filter"
 msgid "Author"
 msgstr "Tekijä"
 
-#: ../src/search.js:407
+#: ../src/search.js:408
 msgid "Sources"
 msgstr "Lähteet"
 
@@ -525,12 +536,12 @@ msgid "Delete"
 msgstr "Poista"
 
 #: ../src/selections.js:761
-msgid "Add to Collection"
-msgstr "Lisää kokoelmaan"
-
-#: ../src/selections.js:771
 msgid "Share"
 msgstr "Jaa"
+
+#: ../src/selections.js:771
+msgid "Add to Collection"
+msgstr "Lisää kokoelmaan"
 
 #: ../src/sharing.js:97
 msgid "Sharing Settings"
@@ -589,6 +600,7 @@ msgid "Owner"
 msgstr "Omistaja"
 
 #: ../src/sharing.js:441
+#, javascript-format
 msgid "You can ask %s for access"
 msgstr "Voit pyytää käyttöoikeutta henkilöltä %s"
 
@@ -597,7 +609,7 @@ msgstr "Voit pyytää käyttöoikeutta henkilöltä %s"
 msgid "The document was not updated"
 msgstr "Asiakirjaa ei päivitetty"
 
-#: ../src/shellSearchProvider.js:295
+#: ../src/shellSearchProvider.js:294
 msgid "Untitled Document"
 msgstr "Nimetön asiakirja"
 
@@ -614,6 +626,7 @@ msgid "Yesterday"
 msgstr "Eilen"
 
 #: ../src/view.js:297
+#, javascript-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
 msgstr[0] "%d päivä sitten"
@@ -624,6 +637,7 @@ msgid "Last week"
 msgstr "Viime viikolla"
 
 #: ../src/view.js:303
+#, javascript-format
 msgid "%d week ago"
 msgid_plural "%d weeks ago"
 msgstr[0] "%d viikko sitten"
@@ -634,6 +648,7 @@ msgid "Last month"
 msgstr "Viime kuussa"
 
 #: ../src/view.js:309
+#, javascript-format
 msgid "%d month ago"
 msgid_plural "%d months ago"
 msgstr[0] "%d kuukausi sitten"
@@ -644,10 +659,17 @@ msgid "Last year"
 msgstr "Viime vuonna"
 
 #: ../src/view.js:315
+#, javascript-format
 msgid "%d year ago"
 msgid_plural "%d years ago"
 msgstr[0] "%d vuosi sitten"
 msgstr[1] "%d vuotta sitten"
+
+#~ msgid "Grid"
+#~ msgstr "Ruudukko"
+
+#~ msgid "List"
+#~ msgstr "Luettelo"
 
 #~ msgid "About Documents"
 #~ msgstr "Tietoja - Asiakirjat"
