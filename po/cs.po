@@ -121,7 +121,7 @@ msgstr "Začínáme s Dokumenty"
 #: ../src/documents.js:662 ../src/documents.js:827 ../src/documents.js:881
 #: ../src/documents.js:981
 msgid "Collection"
-msgstr "Sbírka"
+msgstr "Sada"
 
 #: ../src/documents.js:706
 msgid "Google Docs"
@@ -477,7 +477,7 @@ msgstr "Typ"
 
 #: ../src/search.js:173
 msgid "Collections"
-msgstr "Sbírky"
+msgstr "Sady"
 
 #: ../src/search.js:177
 msgid "PDF Documents"
@@ -515,16 +515,16 @@ msgstr "Zdroje"
 
 #: ../src/selections.js:461
 msgid "You don't have any collections yet. Enter a new collection name above."
-msgstr "Zatím nemáte žádnou sbírku. Výše zadejte název nové sbírky."
+msgstr "Zatím nemáte žádnou sadu. Výše zadejte název nové sady."
 
 #: ../src/selections.js:604
 msgid "Create new collection"
-msgstr "Vytvořit novou sbírku"
+msgstr "Vytvořit novou sadu"
 
 #: ../src/selections.js:639
 msgctxt "Dialog Title"
 msgid "Collections"
-msgstr "Sbírky"
+msgstr "Sady"
 
 #: ../src/selections.js:751
 msgid "Print"
@@ -540,7 +540,7 @@ msgstr "Sdílet"
 
 #: ../src/selections.js:771
 msgid "Add to Collection"
-msgstr "Přidat do sbírky"
+msgstr "Přidat do sady"
 
 #: ../src/sharing.js:97
 msgid "Sharing Settings"
