@@ -5,6 +5,7 @@
 
   <info>
     <revision pkgversion="3.5.90" date="2012-08-31" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-03" status="candidate"/>
 
     <credit type="author copyright">
       <name>Julita Inca</name>
@@ -16,14 +17,22 @@
       <email its:translate="no">mdhillca@gmail.com</email>
       <years>2012</years>
     </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
 
     <include href="legal.xml" xmlns="http://www.w3.org/2001/XInclude"/>
 
-    <desc>Organize the documents stored locally on your computer or created
-    online.</desc>
+    <desc>Organize, view and edit the documents that are stored locally on your
+    computer or online.</desc>
   </info>
 
-  <title>Documents</title>
+  <title>
+    <media type="image" mime="image/png" src="media/icon_gnome-documents.png" its:translate="no" />
+    Documents
+  </title>
 
   <comment>
     <cite date="2012-02-20" href="mailto:yrazes@gmail.com">Julita Inca</cite>
@@ -36,19 +45,19 @@
   </comment>
 
   <p><app>Documents</app> is a GNOME application that lets you display,
-  organize, and print the documents on your computer or those created remotely
-  using <em>Google Docs</em> or <em>SkyDrive</em>.</p>
+  organize and print the documents on your computer or those created remotely
+  using <em>Google Docs</em>, <em>ownCloud</em> or <em>SkyDrive</em>.</p>
 
   <section id="view" style="2column">
-    <title>View, Sort and Search</title>
+    <title>View, sort and search</title>
   </section>
 
   <section id="print" style="2column">
-    <title>Select, Organize, Print</title>
+    <title>Select, organize and print</title>
   </section>
 
   <section id="question" style="2column">
-    <title>Questions</title>
+    <title>Problems</title>
   </section>
 
 </page>
