@@ -4,6 +4,9 @@
       id="index">
 
   <info>
+    <title type='link'>Documents</title>
+    <title type='text'>Documents</title>
+
     <revision pkgversion="3.5.90" date="2012-08-31" status="review"/>
     <revision pkgversion="3.12" date="2014-03-03" status="candidate"/>
 
