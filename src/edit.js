@@ -102,7 +102,7 @@ const EditView = new Lang.Class({
 
     _onLoadFinished: function(manager, doc, docModel) {
         if (doc.uri) {
-            if (doc instanceof Documents.GoogleDocument)
+            if (doc.canEdit())
                 this._editAction.enabled = true;
             this._viewAction.enabled = true;
         }

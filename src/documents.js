@@ -354,6 +354,10 @@ const DocCommon = new Lang.Class({
         }
     },
 
+    canEdit: function() {
+        log('Error: DocCommon implementations must override canEdit');
+    },
+
     canShare: function() {
         log('Error: DocCommon implementations must override canShare');
     },
@@ -686,6 +690,10 @@ const LocalDocument = new Lang.Class({
             }));
     },
 
+    canEdit: function() {
+        return false;
+    },
+
     canShare: function() {
         return false;
     },
@@ -853,6 +861,10 @@ const GoogleDocument = new Lang.Class({
         this.parent(cursor);
     },
 
+    canEdit: function() {
+        return true;
+    },
+
     canShare: function() {
         return true;
     },
@@ -911,6 +923,10 @@ const OwncloudDocument = new Lang.Class({
                     callback(this, null, e);
                 }
             }));
+    },
+
+    canEdit: function() {
+        return false;
     },
 
     canShare: function() {
@@ -1007,6 +1023,10 @@ const SkydriveDocument = new Lang.Class({
             description = _("Document");
 
         this.typeDescription = description;
+    },
+
+    canEdit: function() {
+        return false;
     },
 
     canShare: function() {
