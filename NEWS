@@ -1,3 +1,16 @@
+3.11.91 - "Banana"
+==================
+
+- Add user help (Ekaterina Gerasimova)
+- Point Getting Started to user help (Jakub Steiner)
+- Allow enter to activate first search item (Pranav Kant)
+- Disable the sharing dialog for non-Google content
+- Use margin-{start,end} instead of deprecated margin-{left,right}
+- Disable invalid UI controls in the preview toolbar
+- Handle the password dialog being deleted
+- Show the navigation bar after pointer movement
+- Translation updates
+
 3.11.90 - "Mimosas"
 ===================
 
@@ -7,14 +20,16 @@
 - Remove "Loading..." from spinner box
 - Miscellaneous printing fixes
 - Update search bar style (Jakub Steiner)
+- Translation updates
 
 3.11.5 - "SG"
 =============
 
 - Fix invalid thumbnails when downloading from remote sources
 - Casefold search strings instead of lowercasing
-- Protet against spurious view-as changed signals
+- Protect against spurious view-as changed signals
 - Fix back key behavior in RTL locales
+- Translation updates
 
 3.11.4 - "Spoilers"
 ===================
