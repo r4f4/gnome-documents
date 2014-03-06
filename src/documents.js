@@ -948,8 +948,8 @@ const SkydriveDocument = new Lang.Class({
         this.parent(cursor);
 
         // overridden
-        this.defaultAppName = _("Skydrive");
-        this.sourceName = _("Skydrive");
+        this.defaultAppName = _("OneDrive");
+        this.sourceName = _("OneDrive");
     },
 
     _createZpjEntry: function(cancellable, callback) {

@@ -177,7 +177,7 @@ const PropertiesDialog = new Lang.Class({
                                                     halign: Gtk.Align.START });
         } else if (doc instanceof Documents.SkydriveDocument) {
             this._sourceData = new Gtk.LinkButton({ label: doc.sourceName,
-                                                    uri: 'https://skydrive.live.com',
+                                                    uri: 'https://onedrive.live.com',
                                                     halign: Gtk.Align.START });
         } else { // local document
             if (doc.collection) {
