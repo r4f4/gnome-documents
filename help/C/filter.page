@@ -6,11 +6,17 @@
   <info>
     <link type="guide" xref="index#view"/>
     <revision pkgversion="3.5.90" date="2012-09-05" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-03" status="review"/>
 
     <credit type="author copyright">
       <name>Michael Hill</name>
       <email its:translate="no">mdhillca@gmail.com</email>
       <years>2012</years>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+      <years>2014</years>
     </credit>
 
     <include href="legal.xml" xmlns="http://www.w3.org/2001/XInclude"/>
@@ -20,25 +26,35 @@
 
   <title>Filter documents</title>
 
-  <p>Click the <media type="image" src="media/go-down.png">down</media> button
-  next to the <link xref="search">search</link> bar to limit the scope of the
-  search in these categories:</p>
+  <p><link xref="search">Open the search</link> and click the
+  <media type="image" src="media/go-down.png">down</media> button next to the
+  search bar to limit the scope of the search in these categories:</p>
 
-  <list>
+  <terms>
     <item>
-      <p><em>Sources</em>: Local, Google, SkyDrive, or All.</p></item>
-    <item>
-      <p><em>Type</em>: Collections, PDF Documents, Presentations,
-      Spreadsheets, Text Documents, or All.</p>
+      <title>Sources</title>
+      <p>Chose to search documents that are <gui>Local</gui>, accessed through
+      <link href="help:gnome-help/online-accounts">online accounts</link> with
+      <gui>Google</gui>, <gui>OneDrive</gui>, <gui>ownCloud</gui>, or
+      <gui>All</gui>.</p>
     </item>
     <item>
-      <p>Title, Author, or All.</p>
+      <title>Type</title>
+      <p>Search only documents that are <gui>Collections</gui>, <gui>PDF
+      Documents</gui>, <gui>Presentations</gui>, <gui>Spreadsheets</gui>,
+      <gui>Text Documents</gui>, or <gui>All</gui>.</p>
     </item>
-  </list>
+    <item>
+      <title>Match</title>
+      <p>Choose to search only the <gui>Title</gui>, the <gui>Author</gui>, or
+      <gui>All</gui>.</p>
+    </item>
+  </terms>
 
   <note style="tip">
-    <p>In order for <gui>Google</gui> or <gui>SkyDrive</gui> to appear in the
-    filter list, it is necessary to configure Google or Windows Live as an
+    <p>In order for <gui>Google</gui>, <gui>OneDrive</gui> or
+    <gui>ownCloud</gui> to appear in the filter list, it is necessary to
+    configure Google, ownCloud or  Windows Live as an
     <link href="help:gnome-help/accounts-add">online account</link>.</p>
   </note>
 
