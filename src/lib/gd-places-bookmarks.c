@@ -177,8 +177,8 @@ static char *
 get_pretty_name (const char *text)
 {
         char *name = NULL;
-        char trimmed[MAX_LEN_LABEL];
-        char basename[MAX_LEN_LABEL];
+        char *trimmed;
+        char *basename;
         int i;
         int last_word = -1;
         int last_sentence = -1;
@@ -189,7 +189,7 @@ get_pretty_name (const char *text)
 
         num_attrs = MIN (g_utf8_strlen (text, -1) + 1, MAX_LEN_LABEL);
         attrs = g_new (PangoLogAttr, num_attrs);
-        g_utf8_strncpy (trimmed, text, num_attrs - 1);
+        trimmed = g_utf8_substring (text, 0, num_attrs - 1);
         pango_get_log_attrs (trimmed, -1, -1, pango_language_get_default (), attrs, num_attrs);
 
         /* since the end of the text will always match a word boundary don't include it */
@@ -213,12 +213,15 @@ get_pretty_name (const char *text)
                 i = last_word;
         }
 
-        g_utf8_strncpy (basename, trimmed, i);
+        basename = g_utf8_substring (trimmed, 0, i);
         if (ellipse) {
                 name = g_strdup_printf ("“%s…”", basename);
         } else {
                 name = g_strdup_printf ("“%s”", basename);
         }
+
+        g_free (basename);
+        g_free (trimmed);
 
         return name;
 }
