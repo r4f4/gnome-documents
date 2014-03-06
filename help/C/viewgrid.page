@@ -6,6 +6,7 @@
   <info>
     <link type="guide" xref="index#view" />
     <revision pkgversion="3.5.90" date="2012-09-02" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-06" status="review"/>
 
     <credit type="author copyright">
       <name>Julita Inca</name>
@@ -16,6 +17,11 @@
       <name>Michael Hill</name>
       <email its:translate="no">mdhillca@gmail.com</email>
       <years>2012</years>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+      <years>2014</years>
     </credit>
 
     <include href="legal.xml" xmlns="http://www.w3.org/2001/XInclude"/>
@@ -37,20 +43,17 @@
 
   <steps>
     <item>
-      <p>Go to the top bar and click <app>Documents</app> to display the app
-      menu.</p>
-    </item>
-    <item>
-      <p>Click <gui>List</gui> from the <gui>View as</gui> section.</p>
+      <p>Press the list button in the top-right corner of the window.</p>
     </item>
   </steps>
 
   <note style="info">
     <p>List view has columns displaying the document type and date modified,
-    and whether it's stored locally, or in <app>Google Docs</app> or
-    <em>OneDrive</em>.</p>
+    and whether it's stored locally or remotely in one of your online
+    accounts.</p>
   </note>
 
-  <p>Click <gui>Grid</gui> in the app menu to return to the default format.</p>
+  <p>Click the grid button in the top-right corner of the window to return to
+  the grid view.</p>
 
 </page>
