@@ -2,15 +2,15 @@
 # Copyright (C) 2011 gnome-documents's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-documents package.
 #
-# Andika Triwidada <andika@gmail.com>, 2011, 2012, 2013.
+# Andika Triwidada <andika@gmail.com>, 2011, 2012, 2013, 2014.
 # Dirgita <dirgitadevina@yahoo.co.id>, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-documents master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-09-24 11:57+0000\n"
-"PO-Revision-Date: 2013-09-25 10:13+0700\n"
+"POT-Creation-Date: 2014-03-07 07:47+0000\n"
+"PO-Revision-Date: 2014-03-07 18:44+0700\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian <gnome@i15n.org>\n"
 "Language: id\n"
@@ -20,17 +20,17 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Poedit 1.5.7\n"
 
-#: ../data/gnome-documents.appdata.xml.in.h:1
-#: ../data/gnome-documents.desktop.in.in.h:1 ../src/application.js:103
-#: ../src/mainWindow.js:52 ../src/mainWindow.js:273
+#: ../data/org.gnome.Documents.appdata.xml.in.h:1
+#: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:103
+#: ../src/mainWindow.js:52 ../src/mainWindow.js:274
 msgid "Documents"
 msgstr "Dokumen"
 
-#: ../data/gnome-documents.appdata.xml.in.h:2
+#: ../data/org.gnome.Documents.appdata.xml.in.h:2
 msgid "A document manager application for GNOME"
 msgstr "Aplikasi manajer dokumen bagi GNOME"
 
-#: ../data/gnome-documents.appdata.xml.in.h:3
+#: ../data/org.gnome.Documents.appdata.xml.in.h:3
 msgid ""
 "A simple application to access, organize and share your documents on GNOME. "
 "It is meant to be a simple and elegant replacement for using a file manager "
@@ -42,11 +42,11 @@ msgstr ""
 "manajer berkas untuk berurusan dengan dokumen. Integrasi dengan cloud yang "
 "mulus ditawarkan melalui Akun Daring GNOME."
 
-#: ../data/gnome-documents.appdata.xml.in.h:4
+#: ../data/org.gnome.Documents.appdata.xml.in.h:4
 msgid "It lets you:"
 msgstr "Ini memungkinkan Anda:"
 
-#: ../data/gnome-documents.appdata.xml.in.h:5
+#: ../data/org.gnome.Documents.appdata.xml.in.h:5
 msgid ""
 "<li>View recent local and online documents</li> <li>Access your Google, "
 "ownCloud or SkyDrive content</li> <li>Search through documents</li> <li>See "
@@ -61,16 +61,15 @@ msgstr ""
 "li> <li>Mengijinkan membuka penyunting berfitur lengkap untuk perubahan yang "
 "non trivial</li>"
 
-#: ../data/gnome-documents.desktop.in.in.h:2
+#: ../data/org.gnome.Documents.desktop.in.h:2
 msgid "Access, manage and share documents"
 msgstr "Akses, kelola, dan berbagi dokumen"
 
-#: ../data/gnome-documents.desktop.in.in.h:3
+#: ../data/org.gnome.Documents.desktop.in.h:3
 msgid "Docs;PDF;Document;"
 msgstr "Dok;PDF;Dokumen;"
 
 #: ../data/org.gnome.documents.gschema.xml.h:1
-#: ../src/resources/app-menu.ui.h:1
 msgid "View as"
 msgstr "Tilik sebagai"
 
@@ -102,82 +101,78 @@ msgstr "Jendela dimaksimalkan"
 msgid "Window maximized state"
 msgstr "Jendela dalam keadaan dimaksimalkan"
 
-#. Translators: this refers to local documents
-#: ../src/documents.js:599 ../src/search.js:417
+#: ../src/documents.js:599
+msgid "Failed to print document"
+msgstr "Gagal mencetak dokumen"
+
+#: ../src/documents.js:636 ../src/search.js:418
 msgid "Local"
 msgstr "Lokal"
 
-#. Translators: Documents ships a "Getting Started with Documents"
-#. tutorial PDF. The "GNOME" string below is displayed as the author name
-#. of that document, and doesn't normally need to be translated.
-#: ../src/documents.js:620
+#: ../src/documents.js:657
 msgid "GNOME"
 msgstr "GNOME"
 
-#: ../src/documents.js:621
+#: ../src/documents.js:658
 msgid "Getting Started with Documents"
 msgstr "Mulai Memakai Dokumen"
 
-#: ../src/documents.js:637 ../src/documents.js:800 ../src/documents.js:854
-#: ../src/documents.js:954
+#: ../src/documents.js:674 ../src/documents.js:847 ../src/documents.js:909
+#: ../src/documents.js:1017
 msgid "Collection"
 msgstr "Koleksi"
 
-#. overridden
-#: ../src/documents.js:681
+#: ../src/documents.js:726
 msgid "Google Docs"
 msgstr "Google Docs"
 
-#: ../src/documents.js:682
+#: ../src/documents.js:727
 msgid "Google"
 msgstr "Google"
 
-#: ../src/documents.js:802 ../src/documents.js:956
+#: ../src/documents.js:849 ../src/documents.js:1019
 msgid "Spreadsheet"
 msgstr "Spreadsheet"
 
-#: ../src/documents.js:804 ../src/documents.js:958 ../src/presentation.js:47
+#: ../src/documents.js:851 ../src/documents.js:1021 ../src/presentation.js:47
 msgid "Presentation"
 msgstr "Presentasi"
 
-#: ../src/documents.js:806 ../src/documents.js:960
+#: ../src/documents.js:853 ../src/documents.js:1023
 msgid "Document"
 msgstr "Dokumen"
 
-#. overridden
-#: ../src/documents.js:832
+#: ../src/documents.js:887
 msgid "ownCloud"
 msgstr "ownCloud"
 
-#. overridden
-#: ../src/documents.js:888 ../src/documents.js:889
+#: ../src/documents.js:951 ../src/documents.js:952
 msgid "Skydrive"
 msgstr "Skydrive"
 
-#: ../src/documents.js:1080
+#: ../src/documents.js:1151
 msgid "Please check the network connection."
 msgstr "Harap periksa sambungan jaringan."
 
-#: ../src/documents.js:1083
+#: ../src/documents.js:1154
 msgid "Please check the network proxy settings."
 msgstr "Harap periksa pengaturan proksi jaringan."
 
-#: ../src/documents.js:1086
+#: ../src/documents.js:1157
 msgid "Unable to sign in to the document service."
 msgstr "Tak bisa masuk ke layanan dokumen."
 
-#: ../src/documents.js:1089
+#: ../src/documents.js:1160
 msgid "Unable to locate this document."
 msgstr "Tak bisa menemukan dokumen ini."
 
-#: ../src/documents.js:1092
-#, c-format
+#: ../src/documents.js:1163
+#, javascript-format
 msgid "Hmm, something is fishy (%d)."
 msgstr "Hm, ada sesuatu yang mencurigakan (%d)."
 
-#. Translators: %s is the title of a document
-#: ../src/documents.js:1110
-#, c-format
+#: ../src/documents.js:1181
+#, javascript-format
 msgid "Oops! Unable to load “%s”"
 msgstr "Ups! Tak bisa memuat \"%s\""
 
@@ -185,27 +180,18 @@ msgstr "Ups! Tak bisa memuat \"%s\""
 msgid "View"
 msgstr "Tilik"
 
-#: ../src/embed.js:63 ../src/lib/gd-places-bookmarks.c:383
-#: ../src/lib/gd-places-links.c:257 ../src/view.js:71
-msgid "Loading…"
-msgstr "Memuat…"
-
-#: ../src/embed.js:146
+#: ../src/embed.js:142
 msgid "No Documents Found"
 msgstr "Tidak Ada Dokumen"
 
-#. Translators: %s here is "System Settings", which is in a separate string
-#. due to markup, and should be translated only in the context of this sentence
-#: ../src/embed.js:167
-#, c-format
+#: ../src/embed.js:163
+#, javascript-format
 msgid "You can add your online accounts in %s"
 msgstr "Anda dapat menambahkan Akun daring Anda dalam %s"
 
-#. Translators: this should be translated in the context of the
-#. "You can add your online accounts in System Settings" sentence above
-#: ../src/embed.js:171
-msgid "System Settings"
-msgstr "Pengaturan Sistem"
+#: ../src/embed.js:167
+msgid "Settings"
+msgstr "Pengaturan"
 
 #: ../src/lib/gd-nav-bar.c:235
 #, c-format
@@ -232,7 +218,12 @@ msgstr "Halaman %s"
 msgid "No bookmarks"
 msgstr "Tiada penanda taut"
 
-#: ../src/lib/gd-places-bookmarks.c:648 ../src/preview.js:594
+#: ../src/lib/gd-places-bookmarks.c:383 ../src/lib/gd-places-links.c:257
+#: ../src/view.js:71
+msgid "Loading…"
+msgstr "Memuat…"
+
+#: ../src/lib/gd-places-bookmarks.c:648 ../src/preview.js:601
 msgid "Bookmarks"
 msgstr "Penanda taut"
 
@@ -252,60 +243,66 @@ msgstr "Cari"
 msgid "Back"
 msgstr "Mundur"
 
-#: ../src/mainToolbar.js:170
-#, c-format
+#: ../src/mainToolbar.js:163
+msgid "View items as a list"
+msgstr "Tilik butir sebagai daftar"
+
+#: ../src/mainToolbar.js:169
+msgid "View items as a grid of icons"
+msgstr "Tilik butir sebagai kisi ikon"
+
+#: ../src/mainToolbar.js:203
+#, javascript-format
 msgid "Results for “%s”"
 msgstr "Hasil untuk \"%s\""
 
-#: ../src/mainToolbar.js:178
+#: ../src/mainToolbar.js:211
 msgid "Click on items to select them"
 msgstr "Klik pada butir untuk memilihnya"
 
-#: ../src/mainToolbar.js:180
-#, c-format
+#: ../src/mainToolbar.js:213
+#, javascript-format
 msgid "%d selected"
 msgid_plural "%d selected"
 msgstr[0] "%d dipilih"
 
-#: ../src/mainToolbar.js:209
+#: ../src/mainToolbar.js:240
 msgid "Cancel"
 msgstr "Batal"
 
-#: ../src/mainToolbar.js:250
+#: ../src/mainToolbar.js:282
 msgid "Select Items"
 msgstr "Pilih Item"
 
-#: ../src/mainWindow.js:272
+#: ../src/mainWindow.js:273
 msgid "translator-credits"
 msgstr ""
-"Andika Triwidada <andika@gmail.com>, 2011, 2012, 2013.\n"
+"Andika Triwidada <andika@gmail.com>, 2011, 2012, 2013, 2014.\n"
 "Dirgita <dirgitadevina@yahoo.co.id>, 2012."
 
-#: ../src/mainWindow.js:274
+#: ../src/mainWindow.js:275
 msgid "A document manager application"
 msgstr "Aplikasi manajer dokumen"
 
-#: ../src/notifications.js:87
-#, c-format
+#: ../src/notifications.js:86
+#, javascript-format
 msgid "Printing “%s”: %s"
 msgstr "Mencetak \"%s\": %s"
 
-#: ../src/notifications.js:143
+#: ../src/notifications.js:142
 msgid "Your documents are being indexed"
 msgstr "Dokumen milik Anda tengah diindeks"
 
-#: ../src/notifications.js:144
+#: ../src/notifications.js:143
 msgid "Some documents might not be available during this process"
 msgstr "Sejumlah dokumen mungkin tak tersedia selama proses ini berlangsung"
 
-#. Translators: %s refers to an online account provider, e.g.
-#. "Google", or "Windows Live".
-#: ../src/notifications.js:166
-#, c-format
+#: ../src/notifications.js:165
+#, javascript-format
 msgid "Fetching documents from %s"
 msgstr "Mengambil dokumen dari %s"
 
-#: ../src/notifications.js:168
+#: ../src/notifications.js:167
 msgid "Fetching documents from online accounts"
 msgstr "Mengambil dokumend dari akun daring"
 
@@ -318,7 +315,7 @@ msgid "_Unlock"
 msgstr "B_uka Kunci"
 
 #: ../src/password.js:64
-#, c-format
+#, javascript-format
 msgid "Document %s is locked and requires a password to be opened."
 msgstr "Dokumen %s terkunci dan memerlukan sandi agar terbuka."
 
@@ -338,56 +335,46 @@ msgstr "Berjalan dalam mode presentasi"
 msgid "Present On"
 msgstr "Dipresentasi Pada"
 
-#: ../src/preview.js:603
+#: ../src/preview.js:609
 msgid "Bookmark this page"
 msgstr "Tanda tauti halaman ini"
 
-#. Translators: this is the Open action in a context menu
-#: ../src/preview.js:892 ../src/selections.js:856
-#, c-format
+#: ../src/preview.js:853 ../src/selections.js:856
+#, javascript-format
 msgid "Open with %s"
 msgstr "Buka dengan %s"
 
-#: ../src/preview.js:953
+#: ../src/preview.js:915
 msgid "Find Previous"
 msgstr "Cari Sebelumnya"
 
-#: ../src/preview.js:960
+#: ../src/preview.js:922
 msgid "Find Next"
 msgstr "Cari Selanjutnya"
 
-#. properties button
 #: ../src/properties.js:60 ../src/resources/preview-menu.ui.h:9
 #: ../src/selections.js:766
 msgid "Properties"
 msgstr "Properti"
 
-#. Label for Done button in Sharing dialog
 #: ../src/properties.js:62 ../src/sharing.js:101
 msgid "Done"
 msgstr "Selesai"
 
-#. Title item
-#. Translators: "Title" is the label next to the document title
-#. in the properties dialog
 #: ../src/properties.js:82
 msgctxt "Document Title"
 msgid "Title"
 msgstr "Judul"
 
-#. Translators: "Author" is the label next to the document author
-#. in the properties dialog
 #: ../src/properties.js:91
 msgctxt "Document Author"
 msgid "Author"
 msgstr "Pengarang"
 
-#. Source item
 #: ../src/properties.js:98
 msgid "Source"
 msgstr "Sumber"
 
-#. Date Modified item
 #: ../src/properties.js:104
 msgid "Date Modified"
 msgstr "Tanggal Diubah"
@@ -396,35 +383,24 @@ msgstr "Tanggal Diubah"
 msgid "Date Created"
 msgstr "Tanggal Dibuat"
 
-#. Document type item
-#. Translators: "Type" is the label next to the document type
-#. (PDF, spreadsheet, ...) in the properties dialog
 #: ../src/properties.js:120
 msgctxt "Document Type"
 msgid "Type"
 msgstr "Jenis"
 
-#: ../src/resources/app-menu.ui.h:2
-msgid "Grid"
-msgstr "Kisi"
-
-#: ../src/resources/app-menu.ui.h:3
-msgid "List"
-msgstr "Daftar"
-
-#: ../src/resources/app-menu.ui.h:4
+#: ../src/resources/app-menu.ui.h:1
 msgid "Fullscreen"
 msgstr "Layar penuh"
 
-#: ../src/resources/app-menu.ui.h:5
-msgid "About Documents"
-msgstr "Tentang Dokumen"
-
-#: ../src/resources/app-menu.ui.h:6
+#: ../src/resources/app-menu.ui.h:2
 msgid "Help"
 msgstr "Bantuan"
 
-#: ../src/resources/app-menu.ui.h:7
+#: ../src/resources/app-menu.ui.h:3
+msgid "About"
+msgstr "Tentang"
+
+#: ../src/resources/app-menu.ui.h:4
 msgid "Quit"
 msgstr "Keluar"
 
@@ -432,8 +408,6 @@ msgstr "Keluar"
 msgid "_Copy"
 msgstr "_Salin"
 
-#. open button
-#. Translators: this is the Open action in a context menu
 #: ../src/resources/preview-menu.ui.h:1 ../src/selections.js:746
 #: ../src/selections.js:859
 msgid "Open"
@@ -475,73 +449,63 @@ msgstr "Pilih Semua"
 msgid "Select None"
 msgstr "Jangan Pilih"
 
-#: ../src/search.js:113
+#: ../src/search.js:114
 msgid "Category"
 msgstr "Kategori"
 
-#. Translators: this refers to new and recent documents
-#. Translators: this refers to documents
-#: ../src/search.js:118 ../src/search.js:170 ../src/search.js:255
-#: ../src/search.js:411
+#: ../src/search.js:119 ../src/search.js:171 ../src/search.js:256
+#: ../src/search.js:412
 msgid "All"
 msgstr "Semua"
 
-#. Translators: this refers to favorite documents
-#: ../src/search.js:124
+#: ../src/search.js:125
 msgid "Favorites"
 msgstr "Favorit"
 
-#. Translators: this refers to shared documents
-#: ../src/search.js:129
+#: ../src/search.js:130
 msgid "Shared with you"
 msgstr "Berbagi dengan Anda"
 
-#. Translators: "Type" refers to a search filter on the document type
-#. (PDF, spreadsheet, ...)
-#: ../src/search.js:167
+#: ../src/search.js:168
 msgctxt "Search Filter"
 msgid "Type"
 msgstr "Jenis"
 
-#: ../src/search.js:172
+#: ../src/search.js:173
 msgid "Collections"
 msgstr "Koleksi"
 
-#: ../src/search.js:176
+#: ../src/search.js:177
 msgid "PDF Documents"
 msgstr "Dokumen PDF"
 
-#: ../src/search.js:180
+#: ../src/search.js:181
 msgid "Presentations"
 msgstr "Presentasi"
 
-#: ../src/search.js:183
+#: ../src/search.js:184
 msgid "Spreadsheets"
 msgstr "Spreadsheet"
 
-#: ../src/search.js:186
+#: ../src/search.js:187
 msgid "Text Documents"
 msgstr "Dokumen Teks"
 
-#. Translators: this is a verb that refers to "All", "Title" and "Author",
-#. as in "Match All", "Match Title" and "Match Author"
-#: ../src/search.js:252
+#: ../src/search.js:253
 msgid "Match"
 msgstr "Cocok"
 
-#. Translators: "Title" refers to "Match Title" when searching
-#: ../src/search.js:258
+#: ../src/search.js:259
 msgctxt "Search Filter"
 msgid "Title"
 msgstr "Judul"
 
-#. Translators: "Author" refers to "Match Author" when searching
-#: ../src/search.js:261
+#: ../src/search.js:262
 msgctxt "Search Filter"
 msgid "Author"
 msgstr "Pengarang"
 
-#: ../src/search.js:407
+#: ../src/search.js:408
 msgid "Sources"
 msgstr "Sumber"
 
@@ -553,47 +517,39 @@ msgstr "Anda belum punya koleksi apapun. Masukkan nama koleksi baru di atas."
 msgid "Create new collection"
 msgstr "Buat koleksi baru"
 
-#. Translators: "Collections" refers to documents in this context
 #: ../src/selections.js:639
 msgctxt "Dialog Title"
 msgid "Collections"
 msgstr "Koleksi"
 
-#. print button
 #: ../src/selections.js:751
 msgid "Print"
 msgstr "Cetak"
 
-#. trash button
 #: ../src/selections.js:756
 msgid "Delete"
 msgstr "Hapus"
 
-#. organize button
 #: ../src/selections.js:761
-msgid "Add to Collection"
-msgstr "Tambah ke Koleksi"
-
-#. share button
-#: ../src/selections.js:771
 msgid "Share"
 msgstr "Berbagi"
+
+#: ../src/selections.js:771
+msgid "Add to Collection"
+msgstr "Tambah ke Koleksi"
 
 #: ../src/sharing.js:97
 msgid "Sharing Settings"
 msgstr "Pengaturan Berbagi"
 
-#. Label for widget group for changing document permissions
 #: ../src/sharing.js:134
 msgid "Document permissions"
 msgstr "Hak dokumen"
 
-#. Label for permission change in Sharing dialog
 #: ../src/sharing.js:141 ../src/sharing.js:319
 msgid "Change"
 msgstr "Ubah"
 
-#. Label for radiobutton that sets doc permission to private
 #: ../src/sharing.js:165 ../src/sharing.js:294
 msgid "Private"
 msgstr "Pribadi"
@@ -602,17 +558,14 @@ msgstr "Pribadi"
 msgid "Public"
 msgstr "Umum"
 
-#. Label for checkbutton that sets doc permission to Can edit
 #: ../src/sharing.js:179 ../src/sharing.js:289
 msgid "Everyone can edit"
 msgstr "Semua orang dapat menyunting"
 
-#. Label for widget group used for adding new contacts
 #: ../src/sharing.js:186
 msgid "Add people"
 msgstr "Tambah orang"
 
-#. Editable text in entry field
 #: ../src/sharing.js:193
 msgid "Enter an email address"
 msgstr "Masukkan alamat surel"
@@ -642,7 +595,7 @@ msgid "Owner"
 msgstr "Pemilik"
 
 #: ../src/sharing.js:441
-#, c-format
+#, javascript-format
 msgid "You can ask %s for access"
 msgstr "Anda dapat meminta akses ke %s"
 
@@ -651,7 +604,7 @@ msgstr "Anda dapat meminta akses ke %s"
 msgid "The document was not updated"
 msgstr "Dokumen tak dimutakhirkan"
 
-#: ../src/shellSearchProvider.js:293
+#: ../src/shellSearchProvider.js:294
 msgid "Untitled Document"
 msgstr "Dokumen Tanpa Judul"
 
@@ -659,7 +612,6 @@ msgstr "Dokumen Tanpa Judul"
 msgid "Unable to fetch the list of documents"
 msgstr "Tak bisa mengambil daftar dokumen"
 
-#. Translators: "more" refers to documents in this context
 #: ../src/view.js:62 ../src/view.js:93
 msgid "Load More"
 msgstr "Muat Lebih Banyak"
@@ -669,7 +621,7 @@ msgid "Yesterday"
 msgstr "Kemarin"
 
 #: ../src/view.js:297
-#, c-format
+#, javascript-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
 msgstr[0] "%d hari yang lalu"
@@ -679,7 +631,7 @@ msgid "Last week"
 msgstr "Minggu lalu"
 
 #: ../src/view.js:303
-#, c-format
+#, javascript-format
 msgid "%d week ago"
 msgid_plural "%d weeks ago"
 msgstr[0] "%d minggu yang lalu"
@@ -689,7 +641,7 @@ msgid "Last month"
 msgstr "Bulan lalu"
 
 #: ../src/view.js:309
-#, c-format
+#, javascript-format
 msgid "%d month ago"
 msgid_plural "%d months ago"
 msgstr[0] "%d bulan yang laly"
@@ -699,7 +651,7 @@ msgid "Last year"
 msgstr "Tahun lalu"
 
 #: ../src/view.js:315
-#, c-format
+#, javascript-format
 msgid "%d year ago"
 msgid_plural "%d years ago"
 msgstr[0] "%d tahun yang lalu"
