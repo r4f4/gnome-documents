@@ -13,8 +13,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-help.master\n"
-"POT-Creation-Date: 2014-02-28 07:46+0000\n"
-"PO-Revision-Date: 2014-02-28 16:42+0100\n"
+"POT-Creation-Date: 2014-03-06 07:48+0000\n"
+"PO-Revision-Date: 2014-03-07 13:11+0100\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "Language: \n"
@@ -45,26 +45,26 @@ msgstr ""
 "Jorge González <jorgegonz@svn.gnome.org>, 2011, 2012"
 
 #. (itstool) path: credit/name
-#: C/collections.page:11 C/index.page:10 C/info.page:10 C/previews.page:11
+#: C/collections.page:11 C/index.page:14 C/info.page:10 C/previews.page:11
 #: C/print.page:11 C/search.page:11 C/select.page:11 C/tracker.page:11
-#: C/viewgrid.page:11 C/view.page:11
+#: C/viewgrid.page:11 C/view.page:12
 msgid "Julita Inca"
 msgstr "Julita Inca"
 
 #. (itstool) path: credit/years
 #: C/collections.page:13 C/collections.page:18 C/filter.page:13
-#: C/formats.page:13 C/index.page:12 C/index.page:17 C/info.page:12
+#: C/formats.page:14 C/index.page:16 C/index.page:21 C/info.page:12
 #: C/info.page:17 C/previews.page:13 C/previews.page:18 C/print.page:13
 #: C/print.page:18 C/search.page:13 C/search.page:18 C/select.page:13
 #: C/select.page:18 C/tracker.page:13 C/tracker.page:18 C/viewgrid.page:13
-#: C/viewgrid.page:18 C/view.page:13 C/view.page:18
+#: C/viewgrid.page:18 C/view.page:14 C/view.page:19
 msgid "2012"
 msgstr "2012"
 
 #. (itstool) path: credit/name
-#: C/collections.page:16 C/filter.page:11 C/formats.page:11 C/index.page:15
+#: C/collections.page:16 C/filter.page:11 C/formats.page:12 C/index.page:19
 #: C/info.page:15 C/previews.page:16 C/print.page:16 C/search.page:16
-#: C/select.page:16 C/tracker.page:16 C/viewgrid.page:16 C/view.page:16
+#: C/select.page:16 C/tracker.page:16 C/viewgrid.page:16 C/view.page:17
 msgid "Michael Hill"
 msgstr "Michael Hill"
 
@@ -209,74 +209,115 @@ msgstr "Título, autor o todo."
 
 #. (itstool) path: note/p
 #: C/filter.page:40
+#| msgid ""
+#| "In order for <gui>Google</gui> or <gui>SkyDrive</gui> to appear in the "
+#| "filter list, it is necessary to configure Google or Windows Live as an "
+#| "<link href=\"gnome-help:accounts-add\">online account</link>."
 msgid ""
 "In order for <gui>Google</gui> or <gui>SkyDrive</gui> to appear in the "
 "filter list, it is necessary to configure Google or Windows Live as an <link "
-"href=\"gnome-help:accounts-add\">online account</link>."
+"href=\"help:gnome-help/accounts-add\">online account</link>."
 msgstr ""
 "Para que <gui>Google</gui> o <gui>SkyDrive</gui> aparezcan en la lista de "
 "filtros, es necesario configurar Google o Windows Live como una <link href="
-"\"gnome-help:accounts-add\">cuenta en línea</link>."
+"\"help:gnome-help/accounts-add\">cuenta en línea</link>."
+
+#. (itstool) path: credit/name
+#: C/formats.page:17 C/index.page:24 C/view.page:22
+msgid "Ekaterina Gerasimova"
+msgstr "Ekaterina Gerasimova"
+
+#. (itstool) path: credit/years
+#: C/formats.page:19 C/index.page:26 C/view.page:24
+msgid "2014"
+msgstr "2014"
 
 #. (itstool) path: info/desc
-#: C/formats.page:18
+#: C/formats.page:24
 msgid "<app>Documents</app> displays a number of popular document types."
 msgstr "<app>Documentos</app> muestra varios tipos de documentos habituales."
 
 #. (itstool) path: page/title
-#: C/formats.page:22
-msgid "Formats supported"
+#: C/formats.page:28
+msgid "Supported formats"
 msgstr "Formatos soportados"
 
 #. (itstool) path: page/p
-#: C/formats.page:24
+#: C/formats.page:31
+#| msgid ""
+#| "<app>Documents</app> displays PDF, DVI, XPS, PostScript and the formats "
+#| "supported by <app>Document Viewer</app> (Evince), <app>Microsoft Office</"
+#| "app>, <app>LibreOffice</app> and <app>Google Docs</app>."
 msgid ""
 "<app>Documents</app> displays PDF, DVI, XPS, PostScript and the formats "
-"supported by <app>Document Viewer</app> (Evince), <app>Microsoft Office</"
-"app>, <app>LibreOffice</app> and <app>Google Docs</app>."
+"supported by <app href=\"help:evince\">Document Viewer</app>, <app>Microsoft "
+"Office</app>, <app>LibreOffice</app> and <app>Google Docs</app>."
 msgstr ""
 "<app>Documentos</app> muestra PDF, DVI, XPS, PostScript y los formatos "
-"soportados por el <app>Visor de documentos</app> (Evince), <app>Microsoft "
-"Office</app>, <app>LibreOffice</app> y <app>Google Docs</app>."
+"soportados por el <app href=\"help:evince\">Visor de documentos</app>, "
+"<app>Microsoft Office</app>, <app>LibreOffice</app> y <app>Google Docs</app>."
 
-#. (itstool) path: info/desc
-#: C/index.page:22
-msgid ""
-"Organize the documents stored locally on your computer or created online."
-msgstr ""
-"Organizar los documentos almacenados localmente en su equipo y los "
-"documentos creados en línea."
-
-#. (itstool) path: page/title
-#: C/index.page:26
+#. (itstool) path: info/title
+#: C/index.page:7
+#| msgid "Documents"
+msgctxt "link"
 msgid "Documents"
 msgstr "Documentos"
 
-#. (itstool) path: page/p
-#: C/index.page:38
+#. (itstool) path: info/title
+#: C/index.page:8
+#| msgid "Documents"
+msgctxt "text"
+msgid "Documents"
+msgstr "Documentos"
+
+#. (itstool) path: info/desc
+#: C/index.page:31
+#| msgid ""
+#| "Organize the documents stored locally on your computer or created online."
 msgid ""
-"<app>Documents</app> is a GNOME application that lets you display, organize, "
+"Organize, view and edit the documents that are stored locally on your "
+"computer or online."
+msgstr ""
+"Organizar, ver y editar los documentos almacenados localmente en su equipo o "
+"en línea."
+
+#. (itstool) path: page/title
+#: C/index.page:35
+msgid "<_:media-1/> Documents"
+msgstr "<_:media-1/> Documentos"
+
+#. (itstool) path: page/p
+#: C/index.page:50
+#| msgid ""
+#| "<app>Documents</app> is a GNOME application that lets you display, "
+#| "organize, and print the documents on your computer or those created "
+#| "remotely using <em>Google Docs</em> or <em>SkyDrive</em>."
+msgid ""
+"<app>Documents</app> is a GNOME application that lets you display, organize "
 "and print the documents on your computer or those created remotely using "
-"<em>Google Docs</em> or <em>SkyDrive</em>."
+"<em>Google Docs</em>, <em>ownCloud</em> or <em>SkyDrive</em>."
 msgstr ""
 "<app>Documentos</app> es una aplicación de GNOME que le permite mostrar, "
 "organizar e imprimir los documentos en su equipo o los creados remotamente "
-"usando <em>Google Docs</em> o <em>SkyDrive</em>."
+"usando <em>Google Docs</em>, <em>ownCloud</em> o <em>SkyDrive</em>."
 
 #. (itstool) path: section/title
-#: C/index.page:43
-msgid "View, Sort and Search"
+#: C/index.page:55
+#| msgid "View, Sort and Search"
+msgid "View, sort and search"
 msgstr "Ver, ordenar y buscar"
 
 #. (itstool) path: section/title
-#: C/index.page:47
-msgid "Select, Organize, Print"
-msgstr "Seleccionar, organizar, imprimir"
+#: C/index.page:59
+#| msgid "Select, Organize, Print"
+msgid "Select, organize and print"
+msgstr "Seleccionar, organizar e imprimir"
 
 #. (itstool) path: section/title
-#: C/index.page:51
-msgid "Questions"
-msgstr "Preguntas"
+#: C/index.page:63
+msgid "Problems"
+msgstr "Problemas"
 
 #. (itstool) path: info/desc
 #: C/info.page:22
@@ -640,17 +681,19 @@ msgstr ""
 "formato predeterminado."
 
 #. (itstool) path: info/desc
-#: C/view.page:23
-msgid "View documents full-screen."
-msgstr "Ver documentos a pantalla completa."
+#: C/view.page:29
+#| msgid "Print documents that are stored locally or online."
+msgid "Open documents that are stored locally or online."
+msgstr "Abrir documentos almacenados localmente o en línea."
 
 #. (itstool) path: page/title
-#: C/view.page:26
-msgid "Display documents stored locally or online"
-msgstr "Mostrar documentos almacenados en línea o en local"
+#: C/view.page:32
+#| msgid "Filter documents"
+msgid "View your documents"
+msgstr "Ver sus documentos"
 
 #. (itstool) path: page/p
-#: C/view.page:36
+#: C/view.page:42
 msgid ""
 "When you open <app>Documents</app>, all of your documents, those stored "
 "locally as well as online, are displayed as thumbnails."
@@ -660,32 +703,56 @@ msgstr ""
 "miniaturas."
 
 #. (itstool) path: note/p
-#: C/view.page:40
+#: C/view.page:46
 msgid ""
-"In order for your <em>Google Docs</em> or <em>SkyDrive</em> documents to "
-"appear, it is necessary to configure Google or Windows Live, respectively, "
-"as an <link href=\"gnome-help:accounts-add\">online account</link>."
+"To see documents from your online accounts, it is necessary to <link href="
+"\"help:gnome-help/accounts-add\">set up the accounts</link>."
 msgstr ""
-"Para que aparezcan sus documentos de <em>Google Docs</em> o <em>SkyDrive</"
-"em> es necesario configurar una cuenta de Google o de Windows Live "
-"respectivamente como una <link href=\"gnome-help:accounts-add\">cuenta en "
-"línea</link>."
+"Para ver los documentos de sus cuentas en línea, es necesario <link href="
+"\"help:gnome-help/accounts-add\">configurar las cuentas</link>."
 
 #. (itstool) path: page/p
-#: C/view.page:45
-msgid "To view the contents of a document:"
-msgstr "Para ver el contenido de un documento."
-
-#. (itstool) path: item/p
-#: C/view.page:49
-msgid ""
-"Click the thumbnail. The document is displayed full-width in the "
-"<app>Documents</app> window (or full-screen if maximized)."
-msgstr ""
-"Pulse sobre la miniatura. El documento se muestra en grande en la ventana de "
-"<app>Documentos</app> (o a pantalla completa si se maximiza)."
+#: C/view.page:50
+#| msgid "To view the contents of a document:"
+msgid "To view the contents of a document, press on the thumbnail."
+msgstr "Para ver el contenido de un documento, pulse sobre la miniatura."
 
 #. (itstool) path: page/p
-#: C/view.page:54
-msgid "To exit the document, click the back arrow button."
-msgstr "Para salir del documento, pulse el icono de flecha hacia atrás."
+#: C/view.page:52
+#| msgid "To exit the document, click the back arrow button."
+msgid ""
+"To exit the document, click the back arrow button in the top-left of the "
+"window."
+msgstr ""
+"Para salir del documento, pulse el icono de flecha hacia atrás en la parte "
+"superior izquierda de la ventana."
+
+#~ msgid "Formats supported"
+#~ msgstr "Formatos soportados"
+
+#~ msgid "Questions"
+#~ msgstr "Preguntas"
+
+#~ msgid "View documents full-screen."
+#~ msgstr "Ver documentos a pantalla completa."
+
+#~ msgid "Display documents stored locally or online"
+#~ msgstr "Mostrar documentos almacenados en línea o en local"
+
+#~ msgid ""
+#~ "In order for your <em>Google Docs</em> or <em>SkyDrive</em> documents to "
+#~ "appear, it is necessary to configure Google or Windows Live, "
+#~ "respectively, as an <link href=\"gnome-help:accounts-add\">online "
+#~ "account</link>."
+#~ msgstr ""
+#~ "Para que aparezcan sus documentos de <em>Google Docs</em> o <em>SkyDrive</"
+#~ "em> es necesario configurar una cuenta de Google o de Windows Live "
+#~ "respectivamente como una <link href=\"gnome-help:accounts-add\">cuenta en "
+#~ "línea</link>."
+
+#~ msgid ""
+#~ "Click the thumbnail. The document is displayed full-width in the "
+#~ "<app>Documents</app> window (or full-screen if maximized)."
+#~ msgstr ""
+#~ "Pulse sobre la miniatura. El documento se muestra en grande en la ventana "
+#~ "de <app>Documentos</app> (o a pantalla completa si se maximiza)."
