@@ -1,3 +1,18 @@
+3.10.2 - "Paperwork"
+====================
+
+- Allow enter to activate first search item (Pranav Kant)
+- Do not mix up ASCII and UTF8 characters
+- Show the navigation bar after pointer movement
+- Disable sharing and editing for non-Google content
+- Disable invalid UI controls in the preview toolbar
+- Handle the password dialog being deleted
+- Fix invalid thumbnails when downloading from remote sources
+- Protect against spurious view-as changed signals
+- Fix back key behavior in RTL locales
+- Casefold search strings instead of lowercasing
+- Translation updates
+
 3.10.1 - "Stay Fit"
 ===================
 
