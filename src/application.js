@@ -529,6 +529,7 @@ const Application = new Lang.Class({
         trackerController.disconnectAll();
         selectionController.disconnectAll();
         modeController.disconnectAll();
+        this.disconnectAllJS();
 
         // reset state
         documentManager.setActiveItem(null);
