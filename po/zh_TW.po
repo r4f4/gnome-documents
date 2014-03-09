@@ -8,28 +8,28 @@ msgstr ""
 "Project-Id-Version: gnome-documents 0.3.91\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-01-08 17:21+0000\n"
-"PO-Revision-Date: 2014-01-31 20:03+0800\n"
+"POT-Creation-Date: 2014-03-05 19:47+0000\n"
+"PO-Revision-Date: 2014-03-08 20:23+0800\n"
 "Last-Translator: Chao-Hsiung Liao <j_h_liau@yahoo.com.tw>\n"
 "Language-Team: Chinese (Taiwan) <chinese-l10n@googlegroups.com>\n"
+"Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 1.5.3\n"
+"X-Generator: Poedit 1.6.3\n"
 
-#: ../data/gnome-documents.appdata.xml.in.h:1
-#: ../data/gnome-documents.desktop.in.in.h:1 ../src/application.js:103
-#: ../src/mainWindow.js:52 ../src/mainWindow.js:273
+#: ../data/org.gnome.Documents.appdata.xml.in.h:1
+#: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:103
+#: ../src/mainWindow.js:52 ../src/mainWindow.js:274
 msgid "Documents"
 msgstr "文件"
 
-#: ../data/gnome-documents.appdata.xml.in.h:2
-#| msgid "A document manager application"
+#: ../data/org.gnome.Documents.appdata.xml.in.h:2
 msgid "A document manager application for GNOME"
 msgstr "GNOME 的文件管理員應用程式"
 
-#: ../data/gnome-documents.appdata.xml.in.h:3
+#: ../data/org.gnome.Documents.appdata.xml.in.h:3
 msgid ""
 "A simple application to access, organize and share your documents on GNOME. "
 "It is meant to be a simple and elegant replacement for using a file manager "
@@ -39,11 +39,11 @@ msgstr ""
 "簡單的應用程式，讓您可以在 GNOME 中存取、管理與分享您的文件。它希望能成為以檔"
 "案管理程式處理文件的優雅替代方案。透過 GNOME 線上帳號提供無縫的雲端整合。"
 
-#: ../data/gnome-documents.appdata.xml.in.h:4
+#: ../data/org.gnome.Documents.appdata.xml.in.h:4
 msgid "It lets you:"
 msgstr "它讓您可以："
 
-#: ../data/gnome-documents.appdata.xml.in.h:5
+#: ../data/org.gnome.Documents.appdata.xml.in.h:5
 msgid ""
 "<li>View recent local and online documents</li> <li>Access your Google, "
 "ownCloud or SkyDrive content</li> <li>Search through documents</li> <li>See "
@@ -56,11 +56,11 @@ msgstr ""
 "螢幕檢視文件</li> <li>列印文件</li> <li>選擇喜好文件</li> <li>允許開啟全功能"
 "的編輯器進行各項變更</li>"
 
-#: ../data/gnome-documents.desktop.in.in.h:2
+#: ../data/org.gnome.Documents.desktop.in.h:2
 msgid "Access, manage and share documents"
 msgstr "存取、管理、分享文件"
 
-#: ../data/gnome-documents.desktop.in.in.h:3
+#: ../data/org.gnome.Documents.desktop.in.h:3
 msgid "Docs;PDF;Document;"
 msgstr "文件;PDF;Docs;Document;"
 
@@ -96,72 +96,79 @@ msgstr "視窗已最大化"
 msgid "Window maximized state"
 msgstr "視窗為最大化狀態"
 
-#: ../src/documents.js:599 ../src/search.js:417
+#: ../src/documents.js:595
+#| msgid "Unable to load the document"
+msgid "Failed to print document"
+msgstr "無法列印文件"
+
+#: ../src/documents.js:632 ../src/search.js:418
 msgid "Local"
 msgstr "本地端"
 
-#: ../src/documents.js:620
+#: ../src/documents.js:653
 msgid "GNOME"
 msgstr "GNOME"
 
-#: ../src/documents.js:621
+#: ../src/documents.js:654
 msgid "Getting Started with Documents"
 msgstr "開始使用 Documents"
 
-#: ../src/documents.js:637 ../src/documents.js:802 ../src/documents.js:856
-#: ../src/documents.js:956
+#: ../src/documents.js:670 ../src/documents.js:839 ../src/documents.js:897
+#: ../src/documents.js:1001
 msgid "Collection"
 msgstr "收藏"
 
-#: ../src/documents.js:681
+#: ../src/documents.js:718
 msgid "Google Docs"
 msgstr "Google 文件"
 
-#: ../src/documents.js:682
+#: ../src/documents.js:719
 msgid "Google"
 msgstr "Google"
 
-#: ../src/documents.js:804 ../src/documents.js:958
+#: ../src/documents.js:841 ../src/documents.js:1003
 msgid "Spreadsheet"
 msgstr "試算表"
 
-#: ../src/documents.js:806 ../src/documents.js:960 ../src/presentation.js:47
+#: ../src/documents.js:843 ../src/documents.js:1005 ../src/presentation.js:47
 msgid "Presentation"
 msgstr "簡報"
 
-#: ../src/documents.js:808 ../src/documents.js:962
+#: ../src/documents.js:845 ../src/documents.js:1007
 msgid "Document"
 msgstr "文件"
 
-#: ../src/documents.js:834
+#: ../src/documents.js:875
 msgid "ownCloud"
 msgstr "ownCloud"
 
-#: ../src/documents.js:890 ../src/documents.js:891
+#: ../src/documents.js:935 ../src/documents.js:936
 msgid "Skydrive"
 msgstr "Skydrive"
 
-#: ../src/documents.js:1082
+#: ../src/documents.js:1131
 msgid "Please check the network connection."
 msgstr "請檢查網路連線。"
 
-#: ../src/documents.js:1085
+#: ../src/documents.js:1134
 msgid "Please check the network proxy settings."
 msgstr "請檢查網路代理伺服器設定值。"
 
-#: ../src/documents.js:1088
+#: ../src/documents.js:1137
 msgid "Unable to sign in to the document service."
 msgstr "無法登入文件服務。"
 
-#: ../src/documents.js:1091
+#: ../src/documents.js:1140
 msgid "Unable to locate this document."
 msgstr "無法定位這份文件。"
 
-#: ../src/documents.js:1094
+#: ../src/documents.js:1143
+#, javascript-format
 msgid "Hmm, something is fishy (%d)."
 msgstr "嗯，有些地方發生問題 (%d)。"
 
-#: ../src/documents.js:1112
+#: ../src/documents.js:1161
+#, javascript-format
 msgid "Oops! Unable to load “%s”"
 msgstr "噢！無法載入“%s”"
 
@@ -169,21 +176,16 @@ msgstr "噢！無法載入“%s”"
 msgid "View"
 msgstr "檢視"
 
-#: ../src/embed.js:63 ../src/lib/gd-places-bookmarks.c:383
-#: ../src/lib/gd-places-links.c:257 ../src/view.js:71
-msgid "Loading…"
-msgstr "正在載入..."
-
-#: ../src/embed.js:146
+#: ../src/embed.js:142
 msgid "No Documents Found"
 msgstr "找不到文件"
 
-#: ../src/embed.js:167
+#: ../src/embed.js:163
+#, javascript-format
 msgid "You can add your online accounts in %s"
 msgstr "您可以在 %s 加入您的線上帳號"
 
-#: ../src/embed.js:171
-#| msgid "System Settings"
+#: ../src/embed.js:167
 msgid "Settings"
 msgstr "設定值"
 
@@ -212,7 +214,12 @@ msgstr "頁 %s"
 msgid "No bookmarks"
 msgstr "沒有書籤"
 
-#: ../src/lib/gd-places-bookmarks.c:648 ../src/preview.js:594
+#: ../src/lib/gd-places-bookmarks.c:383 ../src/lib/gd-places-links.c:257
+#: ../src/view.js:71
+msgid "Loading…"
+msgstr "正在載入..."
+
+#: ../src/lib/gd-places-bookmarks.c:648 ../src/preview.js:601
 msgid "Bookmarks"
 msgstr "書籤"
 
@@ -241,6 +248,7 @@ msgid "View items as a grid of icons"
 msgstr "以圖示來顯示項目"
 
 #: ../src/mainToolbar.js:203
+#, javascript-format
 msgid "Results for “%s”"
 msgstr "「%s」的搜尋結果"
 
@@ -249,6 +257,7 @@ msgid "Click on items to select them"
 msgstr "點擊項目來選取它們"
 
 #: ../src/mainToolbar.js:213
+#, javascript-format
 msgid "%d selected"
 msgid_plural "%d selected"
 msgstr[0] "已選取 %d 個"
@@ -261,33 +270,35 @@ msgstr "取消"
 msgid "Select Items"
 msgstr "選擇項目"
 
-#: ../src/mainWindow.js:272
+#: ../src/mainWindow.js:273
 msgid "translator-credits"
 msgstr ""
 "Cheng-Chia Tseng <pswo10680@gmail.com>, 2011. \n"
 "Chao-Hsiung Liao <j_h_liau@yahoo.com.tw>, 2011"
 
-#: ../src/mainWindow.js:274
+#: ../src/mainWindow.js:275
 msgid "A document manager application"
 msgstr "文件管理員應用程式"
 
-#: ../src/notifications.js:87
+#: ../src/notifications.js:86
+#, javascript-format
 msgid "Printing “%s”: %s"
 msgstr "正在列印“%s”：%s"
 
-#: ../src/notifications.js:143
+#: ../src/notifications.js:142
 msgid "Your documents are being indexed"
 msgstr "您的文件已經索引"
 
-#: ../src/notifications.js:144
+#: ../src/notifications.js:143
 msgid "Some documents might not be available during this process"
 msgstr "在這個過程中有部分文件可能無法取用"
 
-#: ../src/notifications.js:166
+#: ../src/notifications.js:165
+#, javascript-format
 msgid "Fetching documents from %s"
 msgstr "正從 %s 擷取文件"
 
-#: ../src/notifications.js:168
+#: ../src/notifications.js:167
 msgid "Fetching documents from online accounts"
 msgstr "正從線上帳號擷取文件"
 
@@ -300,6 +311,7 @@ msgid "_Unlock"
 msgstr "解鎖(_U)"
 
 #: ../src/password.js:64
+#, javascript-format
 msgid "Document %s is locked and requires a password to be opened."
 msgstr "文件 %s 已鎖定，需要密碼才能開啟。"
 
@@ -319,19 +331,20 @@ msgstr "以簡報模式執行"
 msgid "Present On"
 msgstr "簡報開啟"
 
-#: ../src/preview.js:603
+#: ../src/preview.js:609
 msgid "Bookmark this page"
 msgstr "這一頁的書籤"
 
-#: ../src/preview.js:890 ../src/selections.js:856
+#: ../src/preview.js:853 ../src/selections.js:856
+#, javascript-format
 msgid "Open with %s"
 msgstr "以 %s 開啟"
 
-#: ../src/preview.js:951
+#: ../src/preview.js:915
 msgid "Find Previous"
 msgstr "尋找上一筆"
 
-#: ../src/preview.js:958
+#: ../src/preview.js:922
 msgid "Find Next"
 msgstr "尋找下一筆"
 
@@ -432,63 +445,63 @@ msgstr "全部選擇"
 msgid "Select None"
 msgstr "取消全選"
 
-#: ../src/search.js:113
+#: ../src/search.js:114
 msgid "Category"
 msgstr "分類"
 
-#: ../src/search.js:118 ../src/search.js:170 ../src/search.js:255
-#: ../src/search.js:411
+#: ../src/search.js:119 ../src/search.js:171 ../src/search.js:256
+#: ../src/search.js:412
 msgid "All"
 msgstr "全部"
 
-#: ../src/search.js:124
+#: ../src/search.js:125
 msgid "Favorites"
 msgstr "喜好"
 
-#: ../src/search.js:129
+#: ../src/search.js:130
 msgid "Shared with you"
 msgstr "與您分享"
 
-#: ../src/search.js:167
+#: ../src/search.js:168
 msgctxt "Search Filter"
 msgid "Type"
 msgstr "類型"
 
-#: ../src/search.js:172
+#: ../src/search.js:173
 msgid "Collections"
 msgstr "收藏"
 
-#: ../src/search.js:176
+#: ../src/search.js:177
 msgid "PDF Documents"
 msgstr "PDF 文件"
 
-#: ../src/search.js:180
+#: ../src/search.js:181
 msgid "Presentations"
 msgstr "簡報"
 
-#: ../src/search.js:183
+#: ../src/search.js:184
 msgid "Spreadsheets"
 msgstr "試算表"
 
-#: ../src/search.js:186
+#: ../src/search.js:187
 msgid "Text Documents"
 msgstr "文字文件"
 
-#: ../src/search.js:252
+#: ../src/search.js:253
 msgid "Match"
 msgstr "符合"
 
-#: ../src/search.js:258
+#: ../src/search.js:259
 msgctxt "Search Filter"
 msgid "Title"
 msgstr "題名"
 
-#: ../src/search.js:261
+#: ../src/search.js:262
 msgctxt "Search Filter"
 msgid "Author"
 msgstr "作者"
 
-#: ../src/search.js:407
+#: ../src/search.js:408
 msgid "Sources"
 msgstr "來源"
 
@@ -514,12 +527,12 @@ msgid "Delete"
 msgstr "刪除"
 
 #: ../src/selections.js:761
-msgid "Add to Collection"
-msgstr "加入至收藏集"
-
-#: ../src/selections.js:771
 msgid "Share"
 msgstr "分享"
+
+#: ../src/selections.js:771
+msgid "Add to Collection"
+msgstr "加入至收藏集"
 
 #: ../src/sharing.js:97
 msgid "Sharing Settings"
@@ -578,6 +591,7 @@ msgid "Owner"
 msgstr "擁有者"
 
 #: ../src/sharing.js:441
+#, javascript-format
 msgid "You can ask %s for access"
 msgstr "您可以向 %s 要求存取"
 
@@ -586,7 +600,7 @@ msgstr "您可以向 %s 要求存取"
 msgid "The document was not updated"
 msgstr "文件未更新"
 
-#: ../src/shellSearchProvider.js:295
+#: ../src/shellSearchProvider.js:294
 msgid "Untitled Document"
 msgstr "無標題文件"
 
@@ -603,6 +617,7 @@ msgid "Yesterday"
 msgstr "昨天"
 
 #: ../src/view.js:297
+#, javascript-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
 msgstr[0] "%d 天以前"
@@ -612,6 +627,7 @@ msgid "Last week"
 msgstr "上週"
 
 #: ../src/view.js:303
+#, javascript-format
 msgid "%d week ago"
 msgid_plural "%d weeks ago"
 msgstr[0] "%d 週前"
@@ -621,6 +637,7 @@ msgid "Last month"
 msgstr "上個月"
 
 #: ../src/view.js:309
+#, javascript-format
 msgid "%d month ago"
 msgid_plural "%d months ago"
 msgstr[0] "%d 個月以前"
@@ -630,6 +647,7 @@ msgid "Last year"
 msgstr "去年"
 
 #: ../src/view.js:315
+#, javascript-format
 msgid "%d year ago"
 msgid_plural "%d years ago"
 msgstr[0] "%d 年以前"
