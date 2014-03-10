@@ -11,8 +11,8 @@ msgstr ""
 "Project-Id-Version: gnome-documents\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-02-12 07:48+0000\n"
-"PO-Revision-Date: 2014-02-12 10:18-0300\n"
+"POT-Creation-Date: 2014-03-10 14:17+0000\n"
+"PO-Revision-Date: 2014-03-10 14:03-0300\n"
 "Last-Translator: Rafael Ferreira <rafael.f.f1@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <gnome-pt_br-list@gnome.org>\n"
 "Language: pt_BR\n"
@@ -20,19 +20,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 1.6.3\n"
+"X-Generator: Poedit 1.5.4\n"
 
-#: ../data/gnome-documents.appdata.xml.in.h:1
-#: ../data/gnome-documents.desktop.in.in.h:1 ../src/application.js:103
+#: ../data/org.gnome.Documents.appdata.xml.in.h:1
+#: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:103
 #: ../src/mainWindow.js:52 ../src/mainWindow.js:274
 msgid "Documents"
 msgstr "Documentos"
 
-#: ../data/gnome-documents.appdata.xml.in.h:2
+#: ../data/org.gnome.Documents.appdata.xml.in.h:2
 msgid "A document manager application for GNOME"
 msgstr "Um aplicativo do GNOME para gerenciar documentos"
 
-#: ../data/gnome-documents.appdata.xml.in.h:3
+#: ../data/org.gnome.Documents.appdata.xml.in.h:3
 msgid ""
 "A simple application to access, organize and share your documents on GNOME. "
 "It is meant to be a simple and elegant replacement for using a file manager "
@@ -45,30 +45,36 @@ msgstr ""
 "transparente com a nuvem é oferecida por meio do aplicativo de contas on-"
 "line do GNOME."
 
-#: ../data/gnome-documents.appdata.xml.in.h:4
+#: ../data/org.gnome.Documents.appdata.xml.in.h:4
 msgid "It lets you:"
 msgstr "Ele permite que você:"
 
-#: ../data/gnome-documents.appdata.xml.in.h:5
+#: ../data/org.gnome.Documents.appdata.xml.in.h:5
+#| msgid ""
+#| "<li>View recent local and online documents</li> <li>Access your Google, "
+#| "ownCloud or SkyDrive content</li> <li>Search through documents</li> "
+#| "<li>See new documents shared by friends</li> <li>View documents "
+#| "fullscreen</li> <li>Print documents</li> <li>Select favorites</li> "
+#| "<li>Allow opening full featured editor for non-trivial changes</li>"
 msgid ""
 "<li>View recent local and online documents</li> <li>Access your Google, "
-"ownCloud or SkyDrive content</li> <li>Search through documents</li> <li>See "
+"ownCloud or OneDrive content</li> <li>Search through documents</li> <li>See "
 "new documents shared by friends</li> <li>View documents fullscreen</li> "
 "<li>Print documents</li> <li>Select favorites</li> <li>Allow opening full "
 "featured editor for non-trivial changes</li>"
 msgstr ""
 "<li>Veja documentos recentes, locais ou on-line</li> <li>Acesse o seu "
-"conteúdo do Google, ownCloud ou SkyDrive</li> <li>Pesquisa nos documentos</"
+"conteúdo do Google, ownCloud ou OneDrive</li> <li>Pesquisa nos documentos</"
 "li> <li>Veja novos documentos compartilhados por amigos</li> <li>Veja "
 "documentos em tela cheia</li> <li> <li>Imprima documentos</li> <li>Selecione "
 "favoritos</li> <li>Permite abrir um editor cheio de funcionalidades para as "
 "alterações não triviais</li>"
 
-#: ../data/gnome-documents.desktop.in.in.h:2
+#: ../data/org.gnome.Documents.desktop.in.h:2
 msgid "Access, manage and share documents"
 msgstr "Acesse, gerencie e compartilhe documentos"
 
-#: ../data/gnome-documents.desktop.in.in.h:3
+#: ../data/org.gnome.Documents.desktop.in.h:3
 msgid "Docs;PDF;Document;"
 msgstr "Docs;PDF;Documento;Documentos;"
 
@@ -104,79 +110,76 @@ msgstr "Janela maximizada"
 msgid "Window maximized state"
 msgstr "Estado maximizado da janela"
 
-#: ../src/documents.js:587
-#| msgid "Unable to load the document"
+#: ../src/documents.js:599
 msgid "Failed to print document"
 msgstr "Falha ao imprimir o documento"
 
-#: ../src/documents.js:624 ../src/search.js:418
+#: ../src/documents.js:636 ../src/search.js:418
 msgid "Local"
 msgstr "Local"
 
-#: ../src/documents.js:645
+#: ../src/documents.js:657
 msgid "GNOME"
 msgstr "GNOME"
 
-#: ../src/documents.js:646
+#: ../src/documents.js:658
 msgid "Getting Started with Documents"
 msgstr "Primeiros passos com o aplicativo Documentos"
 
-#: ../src/documents.js:662 ../src/documents.js:827 ../src/documents.js:881
-#: ../src/documents.js:981
+#: ../src/documents.js:674 ../src/documents.js:847 ../src/documents.js:909
+#: ../src/documents.js:1017
 msgid "Collection"
 msgstr "Coleção"
 
-#: ../src/documents.js:706
+#: ../src/documents.js:726
 msgid "Google Docs"
 msgstr "Google Docs"
 
-#: ../src/documents.js:707
+#: ../src/documents.js:727
 msgid "Google"
 msgstr "Google"
 
-#: ../src/documents.js:829 ../src/documents.js:983
+#: ../src/documents.js:849 ../src/documents.js:1019
 msgid "Spreadsheet"
 msgstr "Planilha"
 
-#: ../src/documents.js:831 ../src/documents.js:985 ../src/presentation.js:47
+#: ../src/documents.js:851 ../src/documents.js:1021 ../src/presentation.js:47
 msgid "Presentation"
 msgstr "Apresentação"
 
-#: ../src/documents.js:833 ../src/documents.js:987
+#: ../src/documents.js:853 ../src/documents.js:1023
 msgid "Document"
 msgstr "Documento"
 
-#: ../src/documents.js:859
+#: ../src/documents.js:887
 msgid "ownCloud"
 msgstr "ownCloud"
 
-#: ../src/documents.js:915 ../src/documents.js:916
-msgid "Skydrive"
-msgstr "Skydrive"
+#: ../src/documents.js:951 ../src/documents.js:952
+msgid "OneDrive"
+msgstr "OneDrive"
 
-#: ../src/documents.js:1107
+#: ../src/documents.js:1151
 msgid "Please check the network connection."
 msgstr "Por favor, verifique a conexão de rede."
 
-#: ../src/documents.js:1110
+#: ../src/documents.js:1154
 msgid "Please check the network proxy settings."
 msgstr "Por favor, verifique as configurações do proxy de rede."
 
-#: ../src/documents.js:1113
+#: ../src/documents.js:1157
 msgid "Unable to sign in to the document service."
 msgstr "Não foi possível assinar o serviço do documento."
 
-#: ../src/documents.js:1116
+#: ../src/documents.js:1160
 msgid "Unable to locate this document."
 msgstr "Não foi possível localizar este documento."
 
-#: ../src/documents.js:1119
-#, javascript-format
+#: ../src/documents.js:1163
 msgid "Hmm, something is fishy (%d)."
 msgstr "Hmm, alguma coisa não está certa (%d)."
 
-#: ../src/documents.js:1137
-#, javascript-format
+#: ../src/documents.js:1181
 msgid "Oops! Unable to load “%s”"
 msgstr "Opa! Não foi possível carregar \"%s\""
 
@@ -184,21 +187,15 @@ msgstr "Opa! Não foi possível carregar \"%s\""
 msgid "View"
 msgstr "Ver"
 
-#: ../src/embed.js:63 ../src/lib/gd-places-bookmarks.c:383
-#: ../src/lib/gd-places-links.c:257 ../src/view.js:71
-msgid "Loading…"
-msgstr "Carregando…"
-
-#: ../src/embed.js:146
+#: ../src/embed.js:142
 msgid "No Documents Found"
 msgstr "Nenhum documento encontrado"
 
-#: ../src/embed.js:167
-#, javascript-format
+#: ../src/embed.js:163
 msgid "You can add your online accounts in %s"
 msgstr "Você pode adicionar suas contas online em %s"
 
-#: ../src/embed.js:171
+#: ../src/embed.js:167
 msgid "Settings"
 msgstr "Configurações"
 
@@ -218,16 +215,21 @@ msgstr "LibreOffice é necessário para visualizar este documento"
 #. Translators: %s is the number of the page, already formatted
 #. * as a string, for example "Page 5".
 #.
-#: ../src/lib/gd-places-bookmarks.c:312
+#: ../src/lib/gd-places-bookmarks.c:315
 #, c-format
 msgid "Page %s"
 msgstr "Página %s"
 
-#: ../src/lib/gd-places-bookmarks.c:375
+#: ../src/lib/gd-places-bookmarks.c:378
 msgid "No bookmarks"
 msgstr "Nenhum favorito"
 
-#: ../src/lib/gd-places-bookmarks.c:648 ../src/preview.js:594
+#: ../src/lib/gd-places-bookmarks.c:386 ../src/lib/gd-places-links.c:257
+#: ../src/view.js:71
+msgid "Loading…"
+msgstr "Carregando…"
+
+#: ../src/lib/gd-places-bookmarks.c:651 ../src/preview.js:601
 msgid "Bookmarks"
 msgstr "Favoritos"
 
@@ -257,7 +259,6 @@ msgid "View items as a grid of icons"
 msgstr "Ver itens como uma grade de ícones"
 
 #: ../src/mainToolbar.js:203
-#, javascript-format
 msgid "Results for “%s”"
 msgstr "Resultados para \"%s\""
 
@@ -266,7 +267,6 @@ msgid "Click on items to select them"
 msgstr "Clique nos itens para seleciona-los"
 
 #: ../src/mainToolbar.js:213
-#, javascript-format
 msgid "%d selected"
 msgid_plural "%d selected"
 msgstr[0] "%d selecionado"
@@ -292,7 +292,6 @@ msgid "A document manager application"
 msgstr "Um aplicativo para gerenciar documentos"
 
 #: ../src/notifications.js:86
-#, javascript-format
 msgid "Printing “%s”: %s"
 msgstr "Imprimindo \"%s\": %s"
 
@@ -305,7 +304,6 @@ msgid "Some documents might not be available during this process"
 msgstr "Alguns documentos podem não estar disponíveis durante esse processo"
 
 #: ../src/notifications.js:165
-#, javascript-format
 msgid "Fetching documents from %s"
 msgstr "Obtendo documentos de %s"
 
@@ -322,7 +320,6 @@ msgid "_Unlock"
 msgstr "_Desbloquear"
 
 #: ../src/password.js:64
-#, javascript-format
 msgid "Document %s is locked and requires a password to be opened."
 msgstr "O documento %s está bloqueado e requer uma senha para ser aberto."
 
@@ -342,20 +339,19 @@ msgstr "Executando no modo de apresentação"
 msgid "Present On"
 msgstr "Apresentação"
 
-#: ../src/preview.js:603
+#: ../src/preview.js:609
 msgid "Bookmark this page"
 msgstr "Adicionar aos favoritos"
 
-#: ../src/preview.js:890 ../src/selections.js:856
-#, javascript-format
+#: ../src/preview.js:853 ../src/selections.js:856
 msgid "Open with %s"
 msgstr "Abrir com %s"
 
-#: ../src/preview.js:951
+#: ../src/preview.js:915
 msgid "Find Previous"
 msgstr "Localizar anterior"
 
-#: ../src/preview.js:958
+#: ../src/preview.js:922
 msgid "Find Next"
 msgstr "Localizar próximo"
 
@@ -603,7 +599,6 @@ msgid "Owner"
 msgstr "Dono"
 
 #: ../src/sharing.js:441
-#, javascript-format
 msgid "You can ask %s for access"
 msgstr "Você pode solicitar acesso a %s"
 
@@ -612,7 +607,7 @@ msgstr "Você pode solicitar acesso a %s"
 msgid "The document was not updated"
 msgstr "O documento não foi atualizado"
 
-#: ../src/shellSearchProvider.js:295
+#: ../src/shellSearchProvider.js:294
 msgid "Untitled Document"
 msgstr "Documento sem título"
 
@@ -629,7 +624,6 @@ msgid "Yesterday"
 msgstr "Ontem"
 
 #: ../src/view.js:297
-#, javascript-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
 msgstr[0] "%d dia atrás"
@@ -640,7 +634,6 @@ msgid "Last week"
 msgstr "Semana passada"
 
 #: ../src/view.js:303
-#, javascript-format
 msgid "%d week ago"
 msgid_plural "%d weeks ago"
 msgstr[0] "%d semana atrás"
@@ -651,7 +644,6 @@ msgid "Last month"
 msgstr "Mês passado"
 
 #: ../src/view.js:309
-#, javascript-format
 msgid "%d month ago"
 msgid_plural "%d months ago"
 msgstr[0] "%d mês atrás"
@@ -662,11 +654,13 @@ msgid "Last year"
 msgstr "Ano passado"
 
 #: ../src/view.js:315
-#, javascript-format
 msgid "%d year ago"
 msgid_plural "%d years ago"
 msgstr[0] "%d ano atrás"
 msgstr[1] "%d anos atrás"
+
+#~ msgid "Skydrive"
+#~ msgstr "Skydrive"
 
 #~ msgid "Grid"
 #~ msgstr "Grade"
