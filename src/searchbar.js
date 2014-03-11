@@ -363,6 +363,10 @@ const OverviewSearchbar = new Lang.Class({
             tag.set_label(item.name);
             this._searchEntry.add_tag(tag);
         }
+
+        let eventDevice = Gtk.get_current_event_device();
+        if (eventDevice)
+            Gd.entry_focus_hack(this._searchEntry, eventDevice);
     },
 
     _onActiveSourceChanged: function() {
