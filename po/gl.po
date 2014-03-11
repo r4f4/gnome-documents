@@ -9,9 +9,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-documents master\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-03 16:57+0100\n"
-"PO-Revision-Date: 2014-03-03 17:02+0200\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"documents&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2014-03-11 19:48+0000\n"
+"PO-Revision-Date: 2014-03-11 21:07+0200\n"
 "Last-Translator: Fran Dieguez <frandieguez@gnome.org>\n"
 "Language-Team: gnome-l10n-gl@gnome.org\n"
 "Language: gl\n"
@@ -49,15 +50,21 @@ msgid "It lets you:"
 msgstr "Permítelle:"
 
 #: ../data/org.gnome.Documents.appdata.xml.in.h:5
+#| msgid ""
+#| "<li>View recent local and online documents</li> <li>Access your Google, "
+#| "ownCloud or SkyDrive content</li> <li>Search through documents</li> "
+#| "<li>See new documents shared by friends</li> <li>View documents "
+#| "fullscreen</li> <li>Print documents</li> <li>Select favorites</li> "
+#| "<li>Allow opening full featured editor for non-trivial changes</li>"
 msgid ""
 "<li>View recent local and online documents</li> <li>Access your Google, "
-"ownCloud or SkyDrive content</li> <li>Search through documents</li> <li>See "
+"ownCloud or OneDrive content</li> <li>Search through documents</li> <li>See "
 "new documents shared by friends</li> <li>View documents fullscreen</li> "
 "<li>Print documents</li> <li>Select favorites</li> <li>Allow opening full "
 "featured editor for non-trivial changes</li>"
 msgstr ""
 "<li>Ver documentos locais e en liña recentes</li> <li>Acceder aos seu "
-"contido de Google, ownCloud e SkyDrive</li> <li>Buscar en documentos</li> "
+"contido de Google, ownCloud e OneDrive</li> <li>Buscar en documentos</li> "
 "<li>Ver novos documentos compartidos polos seus amigos</li> <li>Ver os "
 "documentos a pantalla completa</li> <li>Imprimir documentos</li> "
 "<li>Seleccionar favoritos</li> <li>Permítelle abrir un editor completo para "
@@ -103,77 +110,77 @@ msgstr "Xanela maximizada"
 msgid "Window maximized state"
 msgstr "Estado de xanela maximizada"
 
-#: ../src/documents.js:595
+#: ../src/documents.js:599
 msgid "Failed to print document"
 msgstr "Non foi posíbel imprimir o documento"
 
-#: ../src/documents.js:632 ../src/search.js:418
+#: ../src/documents.js:636 ../src/search.js:418
 msgid "Local"
 msgstr "Locais"
 
-#: ../src/documents.js:653
+#: ../src/documents.js:657
 msgid "GNOME"
 msgstr "GNOME"
 
-#: ../src/documents.js:654
+#: ../src/documents.js:658
 msgid "Getting Started with Documents"
 msgstr "Comezar con Documentos"
 
-#: ../src/documents.js:670 ../src/documents.js:839 ../src/documents.js:897
-#: ../src/documents.js:1001
+#: ../src/documents.js:674 ../src/documents.js:847 ../src/documents.js:909
+#: ../src/documents.js:1017
 msgid "Collection"
 msgstr "Colección"
 
-#: ../src/documents.js:718
+#: ../src/documents.js:726
 msgid "Google Docs"
 msgstr "Google Docs"
 
-#: ../src/documents.js:719
+#: ../src/documents.js:727
 msgid "Google"
 msgstr "Google"
 
-#: ../src/documents.js:841 ../src/documents.js:1003
+#: ../src/documents.js:849 ../src/documents.js:1019
 msgid "Spreadsheet"
 msgstr "Folla de cálculo"
 
-#: ../src/documents.js:843 ../src/documents.js:1005 ../src/presentation.js:47
+#: ../src/documents.js:851 ../src/documents.js:1021 ../src/presentation.js:47
 msgid "Presentation"
 msgstr "Presentación"
 
-#: ../src/documents.js:845 ../src/documents.js:1007
+#: ../src/documents.js:853 ../src/documents.js:1023
 msgid "Document"
 msgstr "Documento"
 
-#: ../src/documents.js:875
+#: ../src/documents.js:887
 msgid "ownCloud"
 msgstr "ownCloud"
 
-#: ../src/documents.js:935 ../src/documents.js:936
-msgid "Skydrive"
-msgstr "Skydrive"
+#: ../src/documents.js:951 ../src/documents.js:952
+msgid "OneDrive"
+msgstr "OneDrive"
 
-#: ../src/documents.js:1131
+#: ../src/documents.js:1151
 msgid "Please check the network connection."
 msgstr "Comprobe a conexión á rede."
 
-#: ../src/documents.js:1134
+#: ../src/documents.js:1154
 msgid "Please check the network proxy settings."
 msgstr "Comprobe as preferencias do proxy da rede."
 
-#: ../src/documents.js:1137
+#: ../src/documents.js:1157
 msgid "Unable to sign in to the document service."
 msgstr "Non foi posíbel iniciar sesión no servizo de documentos."
 
-#: ../src/documents.js:1140
+#: ../src/documents.js:1160
 msgid "Unable to locate this document."
 msgstr "Non foi posíbel atopar este documento."
 
-#: ../src/documents.js:1143
+#: ../src/documents.js:1163
 #, javascript-format
 msgid "Hmm, something is fishy (%d)."
 msgstr "Hmm, algo cheira mal (%d)."
 
-#: ../src/documents.js:1161
+#: ../src/documents.js:1181
 #, javascript-format
 msgid "Oops! Unable to load “%s”"
 msgstr "Oops! Non foi posíbel cargar «%s»"
@@ -211,21 +218,21 @@ msgstr "Requírese LibreOffice para ver este documento"
 #. Translators: %s is the number of the page, already formatted
 #. * as a string, for example "Page 5".
 #.
-#: ../src/lib/gd-places-bookmarks.c:312
+#: ../src/lib/gd-places-bookmarks.c:315
 #, c-format
 msgid "Page %s"
 msgstr "Páxina %s"
 
-#: ../src/lib/gd-places-bookmarks.c:375
+#: ../src/lib/gd-places-bookmarks.c:378
 msgid "No bookmarks"
 msgstr "Non hai marcadores"
 
-#: ../src/lib/gd-places-bookmarks.c:383 ../src/lib/gd-places-links.c:257
+#: ../src/lib/gd-places-bookmarks.c:386 ../src/lib/gd-places-links.c:257
 #: ../src/view.js:71
 msgid "Loading…"
 msgstr "Cargando…"
 
-#: ../src/lib/gd-places-bookmarks.c:648 ../src/preview.js:601
+#: ../src/lib/gd-places-bookmarks.c:651 ../src/preview.js:601
 msgid "Bookmarks"
 msgstr "Marcadores"
 
@@ -663,6 +670,9 @@ msgid "%d year ago"
 msgid_plural "%d years ago"
 msgstr[0] "fai %d ano"
 msgstr[1] "fai %d anos"
+
+#~ msgid "Skydrive"
+#~ msgstr "Skydrive"
 
 #~ msgid "Grid"
 #~ msgstr "Grade"
