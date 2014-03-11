@@ -665,17 +665,17 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4142136"
-     inkscape:cx="325.32593"
+     inkscape:cx="326.74014"
      inkscape:cy="415.81692"
      inkscape:document-units="px"
-     inkscape:current-layer="layer3"
+     inkscape:current-layer="layer2"
      showgrid="false"
      borderlayer="true"
      inkscape:showpageshadow="false"
      inkscape:window-width="1483"
      inkscape:window-height="1311"
-     inkscape:window-x="2880"
-     inkscape:window-y="61"
+     inkscape:window-x="833"
+     inkscape:window-y="83"
      inkscape:window-maximized="0"
      width="0px"
      height="0px"
@@ -1687,5 +1687,5 @@
            id="rect3898" /></flowRegion><flowPara
          id="flowPara6970">To make Documents aware of the content you have in the cloud, go to the <flowSpan
    style="font-weight:bold;fill:#000000;fill-opacity:1"
-   id="flowSpan17222">Online Accounts Settings</flowSpan> and add your cloud service provider. Then ensure the Documents switch is turned on for the new account. Your documents will automatically appear in the application.</flowPara></flowRoot>  </g>
+   id="flowSpan17222">Online Accounts </flowSpan>setting and add your cloud service provider. Then ensure the Documents switch is turned on for the new account. Your documents will automatically appear in the application.</flowPara></flowRoot>  </g>
 </svg>
