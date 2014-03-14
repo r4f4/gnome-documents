@@ -633,6 +633,7 @@ const OrganizeCollectionDialog = new Lang.Class({
         this.widget = new Gtk.Dialog({ transient_for: toplevel,
                                        modal: true,
                                        destroy_with_parent: true,
+                                       use_header_bar: true,
                                        default_width: 400,
                                        default_height: 250,
         // Translators: "Collections" refers to documents in this context

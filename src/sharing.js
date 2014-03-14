@@ -92,13 +92,14 @@ const SharingDialog = new Lang.Class({
                                        transient_for: toplevel,
                                        modal: true,
                                        destroy_with_parent: true,
+                                       use_header_bar: true,
                                        width_request: 335,
                                        margin_top: 5,
                                        title: _("Sharing Settings"),
                                        hexpand: true });
 
         // Label for Done button in Sharing dialog
-        this.widget.add_button(_("Done"), Gtk.ResponseType.OK);
+        this.widget.add_button(_("Done"), Gtk.ResponseType.CLOSE);
 
         let mainGrid = new Gtk.Grid({ orientation: Gtk.Orientation.VERTICAL,
                                       column_spacing: 6,

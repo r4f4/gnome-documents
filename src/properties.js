@@ -56,11 +56,12 @@ const PropertiesDialog = new Lang.Class({
                                         transient_for: toplevel,
                                         modal: true,
                                         destroy_with_parent: true,
+                                        use_header_bar: true,
                                         default_width: 400,
                                         title: _("Properties"),
                                         hexpand: true });
-        this.widget.add_button(_("Done"), Gtk.ResponseType.OK);
-        this.widget.set_default_response(Gtk.ResponseType.OK);
+        this.widget.add_button(_("Done"), Gtk.ResponseType.CLOSE);
+        this.widget.set_default_response(Gtk.ResponseType.CLOSE);
 
         let grid = new Gtk.Grid ({ orientation: Gtk.Orientation.VERTICAL,
                                    row_homogeneous: true,

@@ -40,6 +40,7 @@ const PasswordDialog = new Lang.Class({
                                        transient_for: toplevel,
                                        modal: true,
                                        destroy_with_parent: true,
+                                       use_header_bar: true,
                                        default_width: 400,
                                        border_width: 6,
                                        title: _("Password Required"),
