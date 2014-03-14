@@ -358,8 +358,11 @@ const Embed = new Lang.Class({
             throw(new Error('Not handled'));
             break;
         }
-        this._toolbar.searchbar.connect('activate-result',
-                                        Lang.bind(this, this._onActivateResult));
+
+        if (this._toolbar.searchbar) {
+            this._toolbar.searchbar.connect('activate-result',
+                                            Lang.bind(this, this._onActivateResult));
+        }
     },
 
     _onActiveItemChanged: function(manager, doc) {
