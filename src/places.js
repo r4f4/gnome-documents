@@ -48,28 +48,21 @@ const PlacesDialog = new Lang.Class({
                                         transient_for: toplevel,
                                         modal: true,
                                         destroy_with_parent: true,
+                                        use_header_bar: true,
                                         default_width: 600, // FIXME use toplevel size
                                         default_height: 600,
                                         title: "",
                                         hexpand: true });
-
-        this._header = new Gtk.HeaderBar();
-        this.widget.set_titlebar(this._header);
-
-        let button = new Gd.HeaderSimpleButton({ label: _("Close") });
-        this._header.pack_end(button);
-        button.connect('clicked', Lang.bind(this,
-            function() {
-                this.widget.response(Gtk.ResponseType.CLOSE);
-            }));
+        this.widget.add_button(_("Close"), Gtk.ResponseType.CLOSE);
 
         let contentArea = this.widget.get_content_area();
         this._stack = new Gtk.Stack({ border_width: 5,
                                       homogeneous: true });
         contentArea.pack_start(this._stack, true, true, 0);
 
+        let header = this.widget.get_header_bar();
         let switcher = new Gtk.StackSwitcher({ stack: this._stack });
-        this._header.set_custom_title(switcher);
+        header.set_custom_title(switcher);
 
         this._linksPage = new GdPrivate.PlacesLinks();
         this._linksPage.connect('link-activated', Lang.bind(this,
