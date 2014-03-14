@@ -211,6 +211,10 @@ const Embed = new Lang.Class({
         this.widget = new Gtk.Box({ orientation: Gtk.Orientation.VERTICAL,
                                     visible: true });
 
+        let toplevel = Application.application.get_windows()[0];
+        this._titlebar = new Gtk.Grid({ visible: true });
+        toplevel.set_titlebar(this._titlebar);
+
         // create the toolbar for selected items, it's hidden by default
         this._selectionToolbar = new Selections.SelectionToolbar();
         this.widget.pack_end(this._selectionToolbar.widget, false, false, 0);
@@ -439,8 +443,7 @@ const Embed = new Lang.Class({
 
         // pack the toolbar
         this._toolbar = new MainToolbar.OverviewToolbar(this._stackOverlay);
-        let toplevel = Application.application.get_windows()[0];
-        toplevel.set_titlebar(this._toolbar.widget);
+        this._titlebar.add(this._toolbar.widget);
 
         this._spinnerBox.stop();
         this._stack.set_visible_child_name('view');
@@ -454,8 +457,7 @@ const Embed = new Lang.Class({
 
         // pack the toolbar
         this._toolbar = new Preview.PreviewToolbar(this._preview);
-        let toplevel = Application.application.get_windows()[0];
-        toplevel.set_titlebar(this._toolbar.widget);
+        this._titlebar.add(this._toolbar.widget);
     },
 
     _prepareForEdit: function() {
@@ -466,8 +468,7 @@ const Embed = new Lang.Class({
 
         // pack the toolbar
         this._toolbar = new Edit.EditToolbar(this._preview);
-        let toplevel = Application.application.get_windows()[0];
-        toplevel.set_titlebar(this._toolbar.widget);
+        this._titlebar.add(this._toolbar.widget);
 
         this._stack.set_visible_child_name('edit');
     },
