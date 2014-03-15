@@ -3,38 +3,35 @@
 # This file is distributed under the same license as the PACKAGE package.
 # Korostil Daniel <ted.korostiled@gmail.com>, 2011, 2012.
 # Alexandr Toorchyn <ilex@mail.ua>, 2011
-# Re. <ted.korostiled@gmail.com>, 2012.
 # Daniel Korostil <ted.korostiled@gmail.com>, 2013, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-02-10 07:47+0000\n"
-"PO-Revision-Date: 2014-02-10 10:45+0300\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-03-15 22:52+0200\n"
+"PO-Revision-Date: 2014-03-15 22:53+0300\n"
 "Last-Translator: Daniel Korostil <ted.korostiled@gmail.com>\n"
 "Language-Team: linux.org.ua\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
-"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Virtaal 0.7.1\n"
 "X-Project-Style: gnome\n"
 
-#: ../data/gnome-documents.appdata.xml.in.h:1
-#: ../data/gnome-documents.desktop.in.in.h:1 ../src/application.js:103
+#: ../data/org.gnome.Documents.appdata.xml.in.h:1
+#: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:103
 #: ../src/mainWindow.js:52 ../src/mainWindow.js:274
 msgid "Documents"
 msgstr "Документи"
 
-#: ../data/gnome-documents.appdata.xml.in.h:2
-#| msgid "A document manager application"
+#: ../data/org.gnome.Documents.appdata.xml.in.h:2
 msgid "A document manager application for GNOME"
 msgstr "Організатор документів для GNOME"
 
-#: ../data/gnome-documents.appdata.xml.in.h:3
+#: ../data/org.gnome.Documents.appdata.xml.in.h:3
 msgid ""
 "A simple application to access, organize and share your documents on GNOME. "
 "It is meant to be a simple and elegant replacement for using a file manager "
@@ -46,30 +43,30 @@ msgstr ""
 "документами. Також доступна інтеграція з інтернетними службами через "
 "мережеві облікові записи у GNOME."
 
-#: ../data/gnome-documents.appdata.xml.in.h:4
+#: ../data/org.gnome.Documents.appdata.xml.in.h:4
 msgid "It lets you:"
 msgstr "Програма дозволяє:"
 
-#: ../data/gnome-documents.appdata.xml.in.h:5
+#: ../data/org.gnome.Documents.appdata.xml.in.h:5
 msgid ""
 "<li>View recent local and online documents</li> <li>Access your Google, "
-"ownCloud or SkyDrive content</li> <li>Search through documents</li> <li>See "
+"ownCloud or OneDrive content</li> <li>Search through documents</li> <li>See "
 "new documents shared by friends</li> <li>View documents fullscreen</li> "
 "<li>Print documents</li> <li>Select favorites</li> <li>Allow opening full "
 "featured editor for non-trivial changes</li>"
 msgstr ""
-"<li>Переглядати нещодавні локальній та мережеві документи</li> "
-"<li>Доступитись до документів на Google, ownCloud, SkyDrive</li> <li>Шукати "
-"крізь документи</li> <li>Бачити нові документи оприлюднені друзями</li> "
-"<li>Переглядати документи на ввесь екран</li> <li>Друкувати документи</li> "
-"<li>Вибирати улюблені</li> <li>Відкривати повноцінні програми для роботи з "
+"<li>Переглядати нещодавні локальній та мережеві документи</li> <li>"
+"Доступитись до документів на Google, ownCloud, OneDrive</li> <li>Шукати "
+"крізь документи</li> <li>Бачити нові документи оприлюднені друзями</li> <li>"
+"Переглядати документи на ввесь екран</li> <li>Друкувати документи</li> <li>"
+"Вибирати улюблені</li> <li>Відкривати повноцінні програми для роботи з "
 "документами</li>"
 
-#: ../data/gnome-documents.desktop.in.in.h:2
+#: ../data/org.gnome.Documents.desktop.in.h:2
 msgid "Access, manage and share documents"
 msgstr "Доступ, впорядкування і оприлюднення документів"
 
-#: ../data/gnome-documents.desktop.in.in.h:3
+#: ../data/org.gnome.Documents.desktop.in.h:3
 msgid "Docs;PDF;Document;"
 msgstr "Доки;PDF;Документ;"
 
@@ -105,73 +102,77 @@ msgstr "Вікно розгорнуто"
 msgid "Window maximized state"
 msgstr "Стан розгорнутого вікна"
 
-#: ../src/documents.js:602 ../src/search.js:418
+#: ../src/documents.js:599
+msgid "Failed to print document"
+msgstr "Не вдалося надрукувати документ"
+
+#: ../src/documents.js:636 ../src/search.js:418
 msgid "Local"
 msgstr "Локальне"
 
-#: ../src/documents.js:623
+#: ../src/documents.js:657
 msgid "GNOME"
 msgstr "GNOME"
 
-#: ../src/documents.js:624
+#: ../src/documents.js:658
 msgid "Getting Started with Documents"
 msgstr "Вступ"
 
-#: ../src/documents.js:640 ../src/documents.js:805 ../src/documents.js:859
-#: ../src/documents.js:959
+#: ../src/documents.js:674 ../src/documents.js:847 ../src/documents.js:909
+#: ../src/documents.js:1017
 msgid "Collection"
 msgstr "Збірка"
 
-#: ../src/documents.js:684
+#: ../src/documents.js:726
 msgid "Google Docs"
 msgstr "Google Docs"
 
-#: ../src/documents.js:685
+#: ../src/documents.js:727
 msgid "Google"
 msgstr "Google"
 
-#: ../src/documents.js:807 ../src/documents.js:961
+#: ../src/documents.js:849 ../src/documents.js:1019
 msgid "Spreadsheet"
 msgstr "Електронна таблиця"
 
-#: ../src/documents.js:809 ../src/documents.js:963 ../src/presentation.js:47
+#: ../src/documents.js:851 ../src/documents.js:1021 ../src/presentation.js:47
 msgid "Presentation"
 msgstr "Презентація"
 
-#: ../src/documents.js:811 ../src/documents.js:965
+#: ../src/documents.js:853 ../src/documents.js:1023
 msgid "Document"
 msgstr "Документ"
 
-#: ../src/documents.js:837
+#: ../src/documents.js:887
 msgid "ownCloud"
 msgstr "ownCloud"
 
-#: ../src/documents.js:893 ../src/documents.js:894
-msgid "Skydrive"
-msgstr "Skydrive"
+#: ../src/documents.js:951 ../src/documents.js:952
+msgid "OneDrive"
+msgstr "OneDrive"
 
-#: ../src/documents.js:1085
+#: ../src/documents.js:1151
 msgid "Please check the network connection."
 msgstr "Перевірте мережевий зв'язок."
 
-#: ../src/documents.js:1088
+#: ../src/documents.js:1154
 msgid "Please check the network proxy settings."
 msgstr "Перевірте параметри мережевого проксі."
 
-#: ../src/documents.js:1091
+#: ../src/documents.js:1157
 msgid "Unable to sign in to the document service."
 msgstr "Неможливо ввійти в службу документів."
 
-#: ../src/documents.js:1094
+#: ../src/documents.js:1160
 msgid "Unable to locate this document."
 msgstr "Неможливо розмістити цей документ."
 
-#: ../src/documents.js:1097
+#: ../src/documents.js:1163
 #, javascript-format
 msgid "Hmm, something is fishy (%d)."
 msgstr "Гмм, в'ялою рибою запахло (%d)."
 
-#: ../src/documents.js:1115
+#: ../src/documents.js:1181
 #, javascript-format
 msgid "Oops! Unable to load “%s”"
 msgstr "Отакої! Неможливо завантажити «%s»"
@@ -180,22 +181,16 @@ msgstr "Отакої! Неможливо завантажити «%s»"
 msgid "View"
 msgstr "Переглянути"
 
-#: ../src/embed.js:63 ../src/lib/gd-places-bookmarks.c:383
-#: ../src/lib/gd-places-links.c:257 ../src/view.js:71
-msgid "Loading…"
-msgstr "Завантаження…"
-
-#: ../src/embed.js:146
+#: ../src/embed.js:142
 msgid "No Documents Found"
 msgstr "Не знайдено жодного документа"
 
-#: ../src/embed.js:167
+#: ../src/embed.js:163
 #, javascript-format
 msgid "You can add your online accounts in %s"
 msgstr "Можете додати ваші мережеві облікові записи у %s"
 
-#: ../src/embed.js:171
-#| msgid "System Settings"
+#: ../src/embed.js:167
 msgid "Settings"
 msgstr "Параметри"
 
@@ -215,16 +210,21 @@ msgstr "Потрібно LibreOffice, щоб переглянути цей до�
 #. Translators: %s is the number of the page, already formatted
 #. * as a string, for example "Page 5".
 #.
-#: ../src/lib/gd-places-bookmarks.c:312
+#: ../src/lib/gd-places-bookmarks.c:315
 #, c-format
 msgid "Page %s"
 msgstr "Сторінка %s"
 
-#: ../src/lib/gd-places-bookmarks.c:375
+#: ../src/lib/gd-places-bookmarks.c:378
 msgid "No bookmarks"
 msgstr "Немає закладок"
 
-#: ../src/lib/gd-places-bookmarks.c:648 ../src/preview.js:594
+#: ../src/lib/gd-places-bookmarks.c:386 ../src/lib/gd-places-links.c:257
+#: ../src/view.js:71
+msgid "Loading…"
+msgstr "Завантаження…"
+
+#: ../src/lib/gd-places-bookmarks.c:651 ../src/preview.js:601
 msgid "Bookmarks"
 msgstr "Закладки"
 
@@ -285,25 +285,25 @@ msgstr "Daniel Korostil <ted.korostiled@gmail.com>"
 msgid "A document manager application"
 msgstr "Організатор документів "
 
-#: ../src/notifications.js:87
+#: ../src/notifications.js:86
 #, javascript-format
 msgid "Printing “%s”: %s"
 msgstr "Друкування «%s»: %s"
 
-#: ../src/notifications.js:143
+#: ../src/notifications.js:142
 msgid "Your documents are being indexed"
 msgstr "Ваші документи індексуються"
 
-#: ../src/notifications.js:144
+#: ../src/notifications.js:143
 msgid "Some documents might not be available during this process"
 msgstr "Деякі документи можуть бути недоступними протягом цього процесу"
 
-#: ../src/notifications.js:166
+#: ../src/notifications.js:165
 #, javascript-format
 msgid "Fetching documents from %s"
 msgstr "Одержання документів з %s"
 
-#: ../src/notifications.js:168
+#: ../src/notifications.js:167
 msgid "Fetching documents from online accounts"
 msgstr "Одержання документів з мережевих облікових записів"
 
@@ -324,7 +324,7 @@ msgstr "Документ %s заблоковано, потрібно вказа�
 msgid "_Password"
 msgstr "_Пароль"
 
-#: ../src/places.js:59
+#: ../src/places.js:56
 msgid "Close"
 msgstr "Закрити"
 
@@ -336,20 +336,20 @@ msgstr "Запущено презентаційний режим"
 msgid "Present On"
 msgstr "Презентувати"
 
-#: ../src/preview.js:603
+#: ../src/preview.js:609
 msgid "Bookmark this page"
 msgstr "Закласти цю сторінку"
 
-#: ../src/preview.js:890 ../src/selections.js:856
+#: ../src/preview.js:853 ../src/selections.js:856
 #, javascript-format
 msgid "Open with %s"
 msgstr "Відкрити через %s"
 
-#: ../src/preview.js:951
+#: ../src/preview.js:915
 msgid "Find Previous"
 msgstr "Знайти попереднє"
 
-#: ../src/preview.js:958
+#: ../src/preview.js:922
 msgid "Find Next"
 msgstr "Знайти наступне"
 
@@ -605,7 +605,7 @@ msgstr "Можете попрохати %s про доступ"
 msgid "The document was not updated"
 msgstr "Документ не оновлено"
 
-#: ../src/shellSearchProvider.js:295
+#: ../src/shellSearchProvider.js:294
 msgid "Untitled Document"
 msgstr "Неназваний документ"
 
@@ -664,6 +664,9 @@ msgid_plural "%d years ago"
 msgstr[0] "%d рік тому"
 msgstr[1] "%d роки тому"
 msgstr[2] "%d років тому"
+
+#~ msgid "Skydrive"
+#~ msgstr "Skydrive"
 
 #~ msgid "Grid"
 #~ msgstr "Сітка"
