@@ -281,11 +281,9 @@ const Embed = new Lang.Class({
     },
 
     _onActivateResult: function() {
-        let iter = this._view.model.model.get_iter_first()[1];
-        if (iter) {
-            let id = this._view.model.model.get_value(iter, Gd.MainColumns.ID);
-            Application.documentManager.setActiveItem(Application.documentManager.getItemById(id))
-        };
+        let doc = this._view.getFirstDocument();
+        if (doc)
+            Application.documentManager.setActiveItem(doc)
     },
 
     _onQueryStatusChanged: function() {

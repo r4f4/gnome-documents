@@ -187,7 +187,7 @@ const ViewContainer = new Lang.Class({
         this._adjustmentChangedId = 0;
         this._scrollbarVisibleId = 0;
 
-        this.model = new ViewModel();
+        this._model = new ViewModel();
 
         this.widget = new Gtk.Grid({ orientation: Gtk.Orientation.VERTICAL });
         this.view = new Gd.MainView({ shadow_type: Gtk.ShadowType.NONE });
@@ -246,6 +246,18 @@ const ViewContainer = new Lang.Class({
 
         if (viewType == Gd.MainViewType.LIST)
             this._addListRenderers();
+    },
+
+    getFirstDocument: function() {
+        let doc = null;
+
+        let iter = this._model.model.get_iter_first()[1];
+        if (iter) {
+            let id = this._model.model.get_value(iter, Gd.MainColumns.ID);
+            doc = Application.documentManager.getItemById(id);
+        }
+
+        return doc;
     },
 
     _addListRenderers: function() {
@@ -332,7 +344,7 @@ const ViewContainer = new Lang.Class({
 
         if (!status) {
             // setup a model if we're not querying
-            this.view.set_model(this.model.model);
+            this.view.set_model(this._model.model);
 
             // unfreeze selection
             Application.selectionController.freezeSelection(false);
@@ -356,13 +368,13 @@ const ViewContainer = new Lang.Class({
 
         let generic = this.view.get_generic_view();
         let first = true;
-        this.model.model.foreach(Lang.bind(this,
+        this._model.model.foreach(Lang.bind(this,
             function(model, path, iter) {
-                let id = this.model.model.get_value(iter, Gd.MainColumns.ID);
+                let id = this._model.model.get_value(iter, Gd.MainColumns.ID);
                 let idIndex = selected.indexOf(id);
 
                 if (idIndex != -1) {
-                    this.model.model.set_value(iter, Gd.MainColumns.SELECTED, true);
+                    this._model.model.set_value(iter, Gd.MainColumns.SELECTED, true);
                     newSelection.push(id);
 
                     if (first) {
@@ -388,7 +400,7 @@ const ViewContainer = new Lang.Class({
     _onViewSelectionChanged: function() {
         // update the selection on the controller when the view signals a change
         let selectedURNs = Utils.getURNsFromPaths(this.view.get_selection(),
-                                                  this.model.model);
+                                                  this._model.model);
         Application.selectionController.setSelection(selectedURNs);
     },
 
