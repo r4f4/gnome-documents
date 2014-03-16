@@ -9,9 +9,9 @@ HELP_FILES = \
 	formats.page \
 	index.page \
 	info.page \
-	previews.page \
 	print.page \
 	prob-no-show.page \
+	prob-previews.page \
 	search.page \
 	viewgrid.page \
 	view.page
