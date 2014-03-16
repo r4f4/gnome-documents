@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: gnome-documents master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-02-28 19:46+0000\n"
-"PO-Revision-Date: 2014-02-28 22:07+0100\n"
+"POT-Creation-Date: 2014-03-16 07:45+0000\n"
+"PO-Revision-Date: 2014-03-16 11:35+0100\n"
 "Last-Translator: Balázs Úr <urbalazs at gmail dot com>\n"
 "Language-Team: Hungarian <openscope at googlegroups dot com>\n"
 "Language: hu\n"
@@ -47,15 +47,21 @@ msgid "It lets you:"
 msgstr "Lehetővé teszi:"
 
 #: ../data/org.gnome.Documents.appdata.xml.in.h:5
+#| msgid ""
+#| "<li>View recent local and online documents</li> <li>Access your Google, "
+#| "ownCloud or SkyDrive content</li> <li>Search through documents</li> "
+#| "<li>See new documents shared by friends</li> <li>View documents "
+#| "fullscreen</li> <li>Print documents</li> <li>Select favorites</li> "
+#| "<li>Allow opening full featured editor for non-trivial changes</li>"
 msgid ""
 "<li>View recent local and online documents</li> <li>Access your Google, "
-"ownCloud or SkyDrive content</li> <li>Search through documents</li> <li>See "
+"ownCloud or OneDrive content</li> <li>Search through documents</li> <li>See "
 "new documents shared by friends</li> <li>View documents fullscreen</li> "
 "<li>Print documents</li> <li>Select favorites</li> <li>Allow opening full "
 "featured editor for non-trivial changes</li>"
 msgstr ""
 "<li>Legutóbbi helyi és online dokumentumok megjelenítése</li> <li>Google, "
-"ownCloud vagy SkyDrive tartalom elérése</li> <li>Keresés a dokumentumokban</"
+"ownCloud vagy OneDrive tartalom elérése</li> <li>Keresés a dokumentumokban</"
 "li> <li>Ismerősei által megosztott új dokumentumok megjelenítése</li> "
 "<li>Dokumentumok megjelenítése teljes képernyőn</li> <li>Dokumentumok "
 "nyomtatása</li> <li>Kedvencek kiválasztása</li> <li>A teljes felszereltségű "
@@ -101,78 +107,77 @@ msgstr "Ablak teljes méretű"
 msgid "Window maximized state"
 msgstr "Az ablak maximalizált állapota"
 
-#: ../src/documents.js:595
-#| msgid "Unable to load the document"
+#: ../src/documents.js:599
 msgid "Failed to print document"
 msgstr "A dokumentum nyomtatása meghiúsult"
 
-#: ../src/documents.js:632 ../src/search.js:418
+#: ../src/documents.js:636 ../src/search.js:418
 msgid "Local"
 msgstr "Helyi"
 
-#: ../src/documents.js:653
+#: ../src/documents.js:657
 msgid "GNOME"
 msgstr "GNOME"
 
-#: ../src/documents.js:654
+#: ../src/documents.js:658
 msgid "Getting Started with Documents"
 msgstr "Első lépések a Dokumentumokkal"
 
-#: ../src/documents.js:670 ../src/documents.js:839 ../src/documents.js:897
-#: ../src/documents.js:1001
+#: ../src/documents.js:674 ../src/documents.js:847 ../src/documents.js:909
+#: ../src/documents.js:1017
 msgid "Collection"
 msgstr "Gyűjtemény"
 
-#: ../src/documents.js:718
+#: ../src/documents.js:726
 msgid "Google Docs"
 msgstr "Google Dokumentumok"
 
-#: ../src/documents.js:719
+#: ../src/documents.js:727
 msgid "Google"
 msgstr "Google"
 
-#: ../src/documents.js:841 ../src/documents.js:1003
+#: ../src/documents.js:849 ../src/documents.js:1019
 msgid "Spreadsheet"
 msgstr "Táblázat"
 
-#: ../src/documents.js:843 ../src/documents.js:1005 ../src/presentation.js:47
+#: ../src/documents.js:851 ../src/documents.js:1021 ../src/presentation.js:47
 msgid "Presentation"
 msgstr "Prezentáció"
 
-#: ../src/documents.js:845 ../src/documents.js:1007
+#: ../src/documents.js:853 ../src/documents.js:1023
 msgid "Document"
 msgstr "Dokumentum"
 
-#: ../src/documents.js:875
+#: ../src/documents.js:887
 msgid "ownCloud"
 msgstr "ownCloud"
 
-#: ../src/documents.js:935 ../src/documents.js:936
-msgid "Skydrive"
-msgstr "SkyDrive"
+#: ../src/documents.js:951 ../src/documents.js:952
+msgid "OneDrive"
+msgstr "OneDrive"
 
-#: ../src/documents.js:1131
+#: ../src/documents.js:1151
 msgid "Please check the network connection."
 msgstr "Ellenőrizze a hálózati kapcsolatot."
 
-#: ../src/documents.js:1134
+#: ../src/documents.js:1154
 msgid "Please check the network proxy settings."
 msgstr "Ellenőrizze a hálózati proxybeállításokat."
 
-#: ../src/documents.js:1137
+#: ../src/documents.js:1157
 msgid "Unable to sign in to the document service."
 msgstr "Nem lehet bejelentkezni a dokumentumszolgáltatásba."
 
-#: ../src/documents.js:1140
+#: ../src/documents.js:1160
 msgid "Unable to locate this document."
 msgstr "Nem található a dokumentum."
 
-#: ../src/documents.js:1143
+#: ../src/documents.js:1163
 #, javascript-format
 msgid "Hmm, something is fishy (%d)."
 msgstr "Hm, valamilyen hiba történhetett (%d)."
 
-#: ../src/documents.js:1161
+#: ../src/documents.js:1181
 #, javascript-format
 msgid "Oops! Unable to load “%s”"
 msgstr "Hoppá, „%s” nem tölthető be"
@@ -191,7 +196,6 @@ msgid "You can add your online accounts in %s"
 msgstr "Felveheti online fiókjait a %s"
 
 #: ../src/embed.js:167
-#| msgid "System Settings"
 msgid "Settings"
 msgstr "Beállítások"
 
@@ -211,21 +215,21 @@ msgstr "A dokumentum megjelenítéséhez a LibreOffice szükséges"
 #. Translators: %s is the number of the page, already formatted
 #. * as a string, for example "Page 5".
 #.
-#: ../src/lib/gd-places-bookmarks.c:312
+#: ../src/lib/gd-places-bookmarks.c:315
 #, c-format
 msgid "Page %s"
 msgstr "Oldal: %s"
 
-#: ../src/lib/gd-places-bookmarks.c:375
+#: ../src/lib/gd-places-bookmarks.c:378
 msgid "No bookmarks"
 msgstr "Nincsenek könyvjelzők"
 
-#: ../src/lib/gd-places-bookmarks.c:383 ../src/lib/gd-places-links.c:257
+#: ../src/lib/gd-places-bookmarks.c:386 ../src/lib/gd-places-links.c:257
 #: ../src/view.js:71
 msgid "Loading…"
 msgstr "Betöltés…"
 
-#: ../src/lib/gd-places-bookmarks.c:648 ../src/preview.js:601
+#: ../src/lib/gd-places-bookmarks.c:651 ../src/preview.js:601
 msgid "Bookmarks"
 msgstr "Könyvjelzők"
 
@@ -325,7 +329,7 @@ msgstr "A dokumentum („%s”) zárolva van és megnyitásához jelszó szüks�
 msgid "_Password"
 msgstr "_Jelszó"
 
-#: ../src/places.js:59
+#: ../src/places.js:56
 msgid "Close"
 msgstr "Bezárás"
 
@@ -662,6 +666,9 @@ msgid "%d year ago"
 msgid_plural "%d years ago"
 msgstr[0] "%d éve"
 msgstr[1] "%d éve"
+
+#~ msgid "Skydrive"
+#~ msgstr "SkyDrive"
 
 #~ msgid "Grid"
 #~ msgstr "Rács"
