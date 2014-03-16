@@ -32,9 +32,8 @@
     a document (can you even print them yet?).</p>
   </comment>
 
-  <p>To print a document:</p>
-
   <steps>
+    <title>To print a document:</title>
     <item>
       <p>Click the <gui>✓</gui> button.</p>
     </item>
