@@ -11,8 +11,8 @@ msgstr ""
 "Project-Id-Version: gnome-documents master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-02-24 19:48+0000\n"
-"PO-Revision-Date: 2014-02-24 22:09+0200\n"
+"POT-Creation-Date: 2014-03-16 19:45+0000\n"
+"PO-Revision-Date: 2014-03-16 22:13+0200\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos+l10n@iki.fi>\n"
 "Language-Team: suomi <gnome-fi-laatu@lists.sourceforge.net>\n"
 "Language: fi\n"
@@ -50,15 +50,21 @@ msgid "It lets you:"
 msgstr "Sen avulla voit:"
 
 #: ../data/org.gnome.Documents.appdata.xml.in.h:5
+#| msgid ""
+#| "<li>View recent local and online documents</li> <li>Access your Google, "
+#| "ownCloud or SkyDrive content</li> <li>Search through documents</li> "
+#| "<li>See new documents shared by friends</li> <li>View documents "
+#| "fullscreen</li> <li>Print documents</li> <li>Select favorites</li> "
+#| "<li>Allow opening full featured editor for non-trivial changes</li>"
 msgid ""
 "<li>View recent local and online documents</li> <li>Access your Google, "
-"ownCloud or SkyDrive content</li> <li>Search through documents</li> <li>See "
+"ownCloud or OneDrive content</li> <li>Search through documents</li> <li>See "
 "new documents shared by friends</li> <li>View documents fullscreen</li> "
 "<li>Print documents</li> <li>Select favorites</li> <li>Allow opening full "
 "featured editor for non-trivial changes</li>"
 msgstr ""
 "<li>Katsella paikallisia ja verkossa olevia asiakirjoja</li> <li>Käyttää "
-"Google-, ownCloud- ja SkyDrive-tileillä olevaa sisältöä</li> <li>Etsiä "
+"Google-, ownCloud- ja OneDrive-tileillä olevaa sisältöä</li> <li>Etsiä "
 "asiakirjoista</li> <li>Nähdä tuttaviesi jakamat asiakirjat</li> <li>Katsella "
 "asiakirjoja koko näytön tilassa</li> <li>Tulostaa asiakirjoja</li> "
 "<li>Valita suosikkeja</li> <li>Avata suurempia muutoksia varten erillinen "
@@ -104,78 +110,77 @@ msgstr "Ikkuna suurennettu"
 msgid "Window maximized state"
 msgstr "Ikkunan suurennettu tila"
 
-#: ../src/documents.js:587
-#| msgid "Unable to load the document"
+#: ../src/documents.js:599
 msgid "Failed to print document"
 msgstr "Asiakirjan tulostaminen epäonnistui"
 
-#: ../src/documents.js:624 ../src/search.js:418
+#: ../src/documents.js:636 ../src/search.js:418
 msgid "Local"
 msgstr "Paikallinen"
 
-#: ../src/documents.js:645
+#: ../src/documents.js:657
 msgid "GNOME"
 msgstr "Gnome"
 
-#: ../src/documents.js:646
+#: ../src/documents.js:658
 msgid "Getting Started with Documents"
 msgstr "Asiakirjat ja käytön aloitus"
 
-#: ../src/documents.js:662 ../src/documents.js:827 ../src/documents.js:881
-#: ../src/documents.js:981
+#: ../src/documents.js:674 ../src/documents.js:847 ../src/documents.js:909
+#: ../src/documents.js:1017
 msgid "Collection"
 msgstr "Kokoelma"
 
-#: ../src/documents.js:706
+#: ../src/documents.js:726
 msgid "Google Docs"
 msgstr "Google Docs"
 
-#: ../src/documents.js:707
+#: ../src/documents.js:727
 msgid "Google"
 msgstr "Google"
 
-#: ../src/documents.js:829 ../src/documents.js:983
+#: ../src/documents.js:849 ../src/documents.js:1019
 msgid "Spreadsheet"
 msgstr "Taulukko"
 
-#: ../src/documents.js:831 ../src/documents.js:985 ../src/presentation.js:47
+#: ../src/documents.js:851 ../src/documents.js:1021 ../src/presentation.js:47
 msgid "Presentation"
 msgstr "Esitys"
 
-#: ../src/documents.js:833 ../src/documents.js:987
+#: ../src/documents.js:853 ../src/documents.js:1023
 msgid "Document"
 msgstr "Asiakirja"
 
-#: ../src/documents.js:859
+#: ../src/documents.js:887
 msgid "ownCloud"
 msgstr "ownCloud"
 
-#: ../src/documents.js:915 ../src/documents.js:916
-msgid "Skydrive"
-msgstr "Skydrive"
+#: ../src/documents.js:951 ../src/documents.js:952
+msgid "OneDrive"
+msgstr "OneDrive"
 
-#: ../src/documents.js:1107
+#: ../src/documents.js:1151
 msgid "Please check the network connection."
 msgstr "Tarkista verkkoyhteys."
 
-#: ../src/documents.js:1110
+#: ../src/documents.js:1154
 msgid "Please check the network proxy settings."
 msgstr "Tarkista verkkoyhteyden välityspalvelimen asetukset."
 
-#: ../src/documents.js:1113
+#: ../src/documents.js:1157
 msgid "Unable to sign in to the document service."
 msgstr "Asiakirjapalveluun kirjautuminen epäonnistui."
 
-#: ../src/documents.js:1116
+#: ../src/documents.js:1160
 msgid "Unable to locate this document."
 msgstr "Tämän asiakirjan paikantaminen epäonnistui."
 
-#: ../src/documents.js:1119
+#: ../src/documents.js:1163
 #, javascript-format
 msgid "Hmm, something is fishy (%d)."
 msgstr "Hmm, jokin meni pieleen (%d)."
 
-#: ../src/documents.js:1137
+#: ../src/documents.js:1181
 #, javascript-format
 msgid "Oops! Unable to load “%s”"
 msgstr "Hups! Kohteen \"%s\" lataus epäonnistui"
@@ -213,21 +218,21 @@ msgstr "Tämän asiakirjan katselu vaatii LibreOfficen"
 #. Translators: %s is the number of the page, already formatted
 #. * as a string, for example "Page 5".
 #.
-#: ../src/lib/gd-places-bookmarks.c:312
+#: ../src/lib/gd-places-bookmarks.c:315
 #, c-format
 msgid "Page %s"
 msgstr "Sivu %s"
 
-#: ../src/lib/gd-places-bookmarks.c:375
+#: ../src/lib/gd-places-bookmarks.c:378
 msgid "No bookmarks"
 msgstr "Ei kirjanmerkkejä"
 
-#: ../src/lib/gd-places-bookmarks.c:383 ../src/lib/gd-places-links.c:257
+#: ../src/lib/gd-places-bookmarks.c:386 ../src/lib/gd-places-links.c:257
 #: ../src/view.js:71
 msgid "Loading…"
 msgstr "Ladataan…"
 
-#: ../src/lib/gd-places-bookmarks.c:648 ../src/preview.js:601
+#: ../src/lib/gd-places-bookmarks.c:651 ../src/preview.js:601
 msgid "Bookmarks"
 msgstr "Kirjanmerkit"
 
@@ -328,7 +333,7 @@ msgstr "Asiakirja %s on lukittu ja se vaatii salasanan avausta varten."
 msgid "_Password"
 msgstr "_Salasana"
 
-#: ../src/places.js:59
+#: ../src/places.js:56
 msgid "Close"
 msgstr "Sulje"
 
@@ -344,16 +349,16 @@ msgstr "Esitys näytöllä"
 msgid "Bookmark this page"
 msgstr "Lisää sivu kirjanmerkkeihin"
 
-#: ../src/preview.js:858 ../src/selections.js:856
+#: ../src/preview.js:853 ../src/selections.js:856
 #, javascript-format
 msgid "Open with %s"
 msgstr "Avaa sovelluksella %s"
 
-#: ../src/preview.js:919
+#: ../src/preview.js:915
 msgid "Find Previous"
 msgstr "Etsi edellinen"
 
-#: ../src/preview.js:926
+#: ../src/preview.js:922
 msgid "Find Next"
 msgstr "Etsi seuraava"
 
@@ -664,6 +669,9 @@ msgid "%d year ago"
 msgid_plural "%d years ago"
 msgstr[0] "%d vuosi sitten"
 msgstr[1] "%d vuotta sitten"
+
+#~ msgid "Skydrive"
+#~ msgstr "Skydrive"
 
 #~ msgid "Grid"
 #~ msgstr "Ruudukko"
