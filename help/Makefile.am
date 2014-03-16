@@ -11,8 +11,8 @@ HELP_FILES = \
 	info.page \
 	previews.page \
 	print.page \
+	prob-no-show.page \
 	search.page \
-	tracker.page \
 	viewgrid.page \
 	view.page
 
