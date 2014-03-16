@@ -12,7 +12,6 @@ HELP_FILES = \
 	previews.page \
 	print.page \
 	search.page \
-	select.page \
 	tracker.page \
 	viewgrid.page \
 	view.page
