@@ -43,7 +43,7 @@
     <p>Add links to Tracker docs, XDG paths.</p>
   </comment>
 
-  <p><app>Documents</app> supports only sertain types of documents such as
+  <p><app>Documents</app> supports only certain types of documents such as
   PDFs and office suite documents such as spreadsheets and word processor
   documents. It will not show text documents and photos.</p>
 
