@@ -110,10 +110,6 @@ const OverviewToolbar = new Lang.Class({
         this.parent();
 
         // setup listeners to mode changes that affect the toolbar layout
-        this._searchStringId = Application.searchController.connect('search-string-changed',
-            Lang.bind(this, this._setToolbarTitle));
-        this._searchTypeId = Application.searchTypeManager.connect('active-changed',
-            Lang.bind(this, this._setToolbarTitle));
         this._selectionModeId = Application.selectionController.connect('selection-mode-changed',
             Lang.bind(this, this._resetToolbarMode));
         this._resetToolbarMode();
@@ -125,16 +121,6 @@ const OverviewToolbar = new Lang.Class({
                 if (this._selectionModeId != 0) {
                     Application.selectionController.disconnect(this._selectionModeId);
                     this._selectionModeId = 0;
-                }
-
-                if (this._searchStringId != 0) {
-                    Application.searchController.disconnect(this._searchStringId);
-                    this._searchStringId = 0;
-                }
-
-                if (this._searchTypeId != 0) {
-                    Application.searchTypeManager.disconnect(this._searchTypeId);
-                    this._searchTypeId = 0;
                 }
             }));
     },
@@ -175,20 +161,8 @@ const OverviewToolbar = new Lang.Class({
         let primary = null;
 
         if (!selectionMode) {
-            if (activeCollection) {
+            if (activeCollection)
                 primary = activeCollection.name;
-            } else {
-                let string = Application.searchController.getString();
-
-                if (string == '') {
-                    let searchType = Application.searchTypeManager.getActiveItem();
-
-                    if (searchType.id != 'all')
-                        primary = searchType.name;
-                } else {
-                    primary = _("Results for “%s”").format(string);
-                }
-            }
         } else {
             let length = Application.selectionController.getSelection().length;
             let label = null;
