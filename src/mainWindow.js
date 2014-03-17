@@ -223,15 +223,44 @@ const MainWindow = new Lang.Class({
     _handleKeyPreview: function(event) {
         let keyval = event.get_keyval()[1];
         let fullscreen = Application.modeController.getFullscreen();
+        let def_mod_mask = Gtk.accelerator_get_default_mod_mask();
+        let preview = this._embed.getPreview();
+        let state = event.get_state()[1];
 
         if (keyval == Gdk.KEY_Escape) {
-            let preview = this._embed.getPreview();
             let model = preview.getModel();
 
             if (preview.controlsVisible && (model != null))
                 preview.controlsVisible = false;
             else if (fullscreen)
                 Application.documentManager.setActiveItem(null);
+
+            return false;
+        }
+
+        if (((keyval == Gdk.KEY_Page_Up) &&
+            ((state & Gdk.ModifierType.CONTROL_MASK) != 0)) ||
+            ((keyval == Gdk.KEY_Left) && ((state & def_mod_mask) == 0))) {
+            preview.view.previous_page();
+            return true;
+        }
+
+        if (((keyval == Gdk.KEY_Page_Down) &&
+            ((state & Gdk.ModifierType.CONTROL_MASK) != 0)) ||
+            ((keyval == Gdk.KEY_Right) && ((state & def_mod_mask) == 0))) {
+            preview.view.next_page();
+            return true;
+        }
+
+        if (keyval == Gdk.KEY_Page_Up) {
+            preview.view.scroll(Gtk.ScrollType.PAGE_BACKWARD, false);
+            return true;
+        }
+
+        if (keyval == Gdk.KEY_space ||
+            keyval == Gdk.KEY_Page_Down) {
+            preview.view.scroll(Gtk.ScrollType.PAGE_FORWARD, false);
+            return true;
         }
 
         return false;

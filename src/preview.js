@@ -335,8 +335,6 @@ const PreviewView = new Lang.Class({
             this._onButtonPressEvent));
         this.view.connect('button-release-event', Lang.bind(this,
             this._onButtonReleaseEvent));
-        this.view.connect('key-press-event', Lang.bind(this,
-            this._onKeyPressEvent));
         this.view.connect('selection-changed', Lang.bind(this,
             this._onViewSelectionChanged));
         this.view.connect('external-link', Lang.bind(this,
@@ -388,39 +386,6 @@ const PreviewView = new Lang.Class({
 
         this._syncControlsVisible();
     },
-
-    _onKeyPressEvent: function(widget, event) {
-        let keyval = event.get_keyval()[1];
-        let state = event.get_state()[1];
-        let def_mod_mask = Gtk.accelerator_get_default_mod_mask();
-
-        if (((keyval == Gdk.KEY_Page_Up) &&
-            ((state & Gdk.ModifierType.CONTROL_MASK) != 0)) ||
-            ((keyval == Gdk.KEY_Left) && ((state & def_mod_mask) == 0))) {
-            this.view.previous_page();
-            return true;
-        }
-
-        if (((keyval == Gdk.KEY_Page_Down) &&
-            ((state & Gdk.ModifierType.CONTROL_MASK) != 0)) ||
-            ((keyval == Gdk.KEY_Right) && ((state & def_mod_mask) == 0))) {
-            this.view.next_page();
-            return true;
-        }
-
-        if (keyval == Gdk.KEY_Page_Up) {
-            this.view.scroll(Gtk.ScrollType.PAGE_BACKWARD, false);
-            return true;
-        }
-
-        if (keyval == Gdk.KEY_space ||
-            keyval == Gdk.KEY_Page_Down) {
-            this.view.scroll(Gtk.ScrollType.PAGE_FORWARD, false);
-            return true;
-        }
-
-        return false;
-     },
 
     _flipControlsTimeout: function() {
         this._controlsFlipId = 0;
