@@ -114,10 +114,6 @@ const OverviewToolbar = new Lang.Class({
             Lang.bind(this, this._setToolbarTitle));
         this._searchTypeId = Application.searchTypeManager.connect('active-changed',
             Lang.bind(this, this._setToolbarTitle));
-        this._searchMatchId = Application.searchMatchManager.connect('active-changed',
-            Lang.bind(this, this._setToolbarTitle));
-        this._searchSourceId = Application.sourceManager.connect('active-changed',
-            Lang.bind(this, this._setToolbarTitle));
         this._selectionModeId = Application.selectionController.connect('selection-mode-changed',
             Lang.bind(this, this._resetToolbarMode));
         this._resetToolbarMode();
@@ -139,16 +135,6 @@ const OverviewToolbar = new Lang.Class({
                 if (this._searchTypeId != 0) {
                     Application.searchTypeManager.disconnect(this._searchTypeId);
                     this._searchTypeId = 0;
-                }
-
-                if (this._searchMatchId != 0) {
-                    Application.searchMatchManager.disconnect(this._searchMatchId);
-                    this._searchMatchId = 0;
-                }
-
-                if (this._searchSourceId != 0) {
-                    Application.sourceManager.disconnect(this._searchSourceId);
-                    this._searchSourceId = 0;
                 }
             }));
     },
