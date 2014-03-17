@@ -49,7 +49,7 @@
 
   <p>For your local documents to appear in <app>Documents</app>, they must be
   inside your <file>Documents</file> or <file>Downloads</file> folders, or
-  inside folders that are in those directories. Documents that in other places
+  inside folders that are in those directories. Documents that are in other places
   on your computer will not be shown.</p>
 
   <p>If your documents fail to display in <app>Documents</app>,
