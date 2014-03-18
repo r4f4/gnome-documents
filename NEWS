@@ -1,3 +1,18 @@
+3.11.92 - "Botafogo"
+====================
+
+- Use header bars in dialogs
+- Allow Enter to activate first search result (Pranav Kant)
+- Don't make "edit" active for documents that can't be edited
+- Fix zoom in not working with certain keyboards (Daniel Goetz)
+- Fix multiple stacked indexing in-app notifications (Marta Milakovic)
+- Fix toolbar behavior for GTK changes
+- Fix possible crash due to UTF-8/bytes mismatch
+- Focus search entry after changing filters (Rohit Agarwal)
+- Improve getting started turorial (Jakub Steiner, Ekaterina Gerasimova)
+- Improve user help for 3.12 (Ekaterina Gerasimova)
+- Translation updates
+
 3.11.91 - "Banana"
 ==================
 
