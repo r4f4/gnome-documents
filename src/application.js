@@ -249,6 +249,9 @@ const Application = new Lang.Class({
                 if (actionEntry.accel)
                     this.add_accelerator(actionEntry.accel, 'app.' + actionEntry.name, null);
 
+                if (actionEntry.accels)
+                    this.set_accels_for_action('app.' + actionEntry.name, actionEntry.accels);
+
                 this.add_action(action);
             }));
     },
@@ -447,9 +450,7 @@ const Application = new Lang.Class({
               window_mode: WindowMode.WindowMode.PREVIEW },
             { name: 'find-prev', accel: '<Shift><Primary>g',
               window_mode: WindowMode.WindowMode.PREVIEW },
-            { name: 'zoom-in', accel: '<Primary>plus',
-              window_mode: WindowMode.WindowMode.PREVIEW },
-            { name: 'zoom-in', accel: '<Primary>equal',
+            { name: 'zoom-in', accels: ['<Primary>plus', '<Primary>equal'],
               window_mode: WindowMode.WindowMode.PREVIEW },
             { name: 'zoom-out', accel: '<Primary>minus',
               window_mode: WindowMode.WindowMode.PREVIEW },
