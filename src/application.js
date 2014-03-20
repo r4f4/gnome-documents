@@ -87,6 +87,22 @@ let selectionController = null;
 let sourceManager = null;
 let trackerController = null;
 
+const TrackerExtractPriorityIface = '<node> \
+<interface name="org.freedesktop.Tracker1.Extract.Priority"> \
+    <method name="ClearRdfTypes" /> \
+    <method name="SetRdfTypes"> \
+        <arg name="rdf_types" type="as" /> \
+    </method> \
+</interface> \
+</node>';
+
+var TrackerExtractPriorityProxy = Gio.DBusProxy.makeProxyWrapper(TrackerExtractPriorityIface);
+function TrackerExtractPriority() {
+    return new TrackerExtractPriorityProxy(Gio.DBus.session,
+                                           'org.freedesktop.Tracker1.Miner.Extract',
+                                           '/org/freedesktop/Tracker1/Extract/Priority');
+}
+
 const MINER_REFRESH_TIMEOUT = 60; /* seconds */
 
 const Application = new Lang.Class({
@@ -96,6 +112,7 @@ const Application = new Lang.Class({
     _init: function() {
         this.minersRunning = [];
         this._activationTimestamp = Gdk.CURRENT_TIME;
+        this._extractPriority = null;
 
         Gettext.bindtextdomain('gnome-documents', Path.LOCALE_DIR);
         Gettext.textdomain('gnome-documents');
@@ -385,6 +402,14 @@ const Application = new Lang.Class({
         }
 
         try {
+            this._extractPriority = TrackerExtractPriority();
+            this._extractPriority.SetRdfTypesRemote(['nfo:Document']);
+        } catch (e) {
+            log('Unable to connect to the tracker extractor: ' + e.toString());
+            return;
+        }
+
+        try {
             goaClient = Goa.Client.new_sync(null);
         } catch (e) {
             log('Unable to create the GOA client: ' + e.toString());
@@ -485,6 +510,11 @@ const Application = new Lang.Class({
         this._initActions();
         this._initAppMenu();
         this._initGettingStarted();
+    },
+
+    vfunc_shutdown: function() {
+        this._extractPriority.ClearRdfTypesRemote();
+        this.parent();
     },
 
     _createWindow: function() {
