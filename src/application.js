@@ -120,7 +120,6 @@ const Application = new Lang.Class({
         GLib.set_application_name(_("Documents"));
 
         this.parent({ application_id: 'org.gnome.Documents',
-                      flags: Gio.ApplicationFlags.IS_SERVICE,
                       inactivity_timeout: 12000 });
 
         this._searchProvider = new ShellSearchProvider.ShellSearchProvider();

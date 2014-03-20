@@ -56,16 +56,6 @@ typelib_DATA += $(gir_DATA:.gir=.typelib)
 
 CLEANFILES += $(gir_DATA) $(typelib_DATA)
 
-libexec_SCRIPTS += gnome-documents-service
-gnome-documents-service: gnome-documents-service.in
-	$(AM_V_GEN) $(do_subst) $< > $@
-	chmod +x $@
-
-CLEANFILES += \
-    gnome-documents-service
-EXTRA_DIST += \
-    gnome-documents-service.in
-
 service_in_files = org.gnome.Documents.service.in
 servicedir = $(datadir)/dbus-1/services
 service_DATA = org.gnome.Documents.service
@@ -76,4 +66,9 @@ CLEANFILES += $(service_DATA)
 EXTRA_DIST += $(service_in_files)
 
 bin_SCRIPTS += gnome-documents
-EXTRA_DIST += gnome-documents
+gnome-documents: gnome-documents.in
+	$(AM_V_GEN) $(do_subst) $< > $@
+	chmod +x $@
+
+CLEANFILES += gnome-documents
+EXTRA_DIST += gnome-documents.in

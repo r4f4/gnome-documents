@@ -1,3 +1,3 @@
 [D-BUS Service]
 Name=org.gnome.Documents
-Exec=@libexecdir@/gnome-documents-service
+Exec=@bindir@/gnome-documents --gapplication-service

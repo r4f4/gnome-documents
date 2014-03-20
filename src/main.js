@@ -21,10 +21,11 @@
 
 const Application = imports.application;
 const GLib = imports.gi.GLib;
+const System = imports.system;
 
 function start() {
     let application = new Application.Application();
     if (GLib.getenv('DOCUMENTS_PERSIST'))
         application.hold();
-    return application.run(ARGV);
+    return application.run([System.programInvocationName].concat(ARGV));
 }
