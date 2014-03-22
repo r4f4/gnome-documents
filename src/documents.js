@@ -501,7 +501,7 @@ const DocCommon = new Lang.Class({
 
     _checkEffectsAndUpdateInfo: function() {
         let emblemIcons = [];
-        let emblemedPixbuf = null;
+        let emblemedPixbuf = this.origPixbuf;
         let activeItem;
 
         activeItem = Application.searchCategoryManager.getActiveItem();
@@ -532,8 +532,6 @@ const DocCommon = new Lang.Class({
             } catch (e) {
                 log('Unable to render the emblem: ' + e.toString());
             }
-        } else {
-            emblemedPixbuf = this.origPixbuf;
         }
 
         let thumbnailedPixbuf = null;
