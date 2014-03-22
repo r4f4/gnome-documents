@@ -192,7 +192,8 @@ const CollectionIconWatcher = new Lang.Class({
 
         this._docs.forEach(
             function(doc) {
-                pixbufs.push(doc.origPixbuf);
+                if (doc.origPixbuf)
+                    pixbufs.push(doc.origPixbuf);
             });
 
         this._pixbuf = GdPrivate.create_collection_icon(Utils.getIconSize(), pixbufs);
@@ -333,12 +334,11 @@ const DocCommon = new Lang.Class({
         if (iconInfo != null) {
             try {
                 pixbuf = iconInfo.load_icon();
+                this._setOrigPixbuf(pixbuf);
             } catch (e) {
                 log('Unable to load pixbuf: ' + e.toString());
             }
         }
-
-        this._setOrigPixbuf(pixbuf);
     },
 
     _refreshCollectionIcon: function() {
@@ -500,6 +500,9 @@ const DocCommon = new Lang.Class({
     },
 
     _checkEffectsAndUpdateInfo: function() {
+        if (!this.origPixbuf)
+            return;
+
         let emblemIcons = [];
         let emblemedPixbuf = this.origPixbuf;
         let activeItem;
