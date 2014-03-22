@@ -1,394 +1,558 @@
 # Czech translation for gnome-user-docs.
 # Copyright (C) 2012 gnome-user-docs's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-user-docs package.
+#
 # Adam Matoušek <adamatousek@gmail.com>, 2012.
+# Marek Černocký <marek@manet.cz>, 2014.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-docs master\n"
-"POT-Creation-Date: 2014-02-27 11:16+0000\n"
-"PO-Revision-Date: 2012-09-16 17:45+0100\n"
-"Last-Translator: Adam Matoušek <adamatousek@gmail.com>\n"
+"POT-Creation-Date: 2014-03-17 09:52+0000\n"
+"PO-Revision-Date: 2014-03-20 09:12+0100\n"
+"Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Gtranslator 2.91.6\n"
+
+#. (itstool) path: p/link
+#: C/legal.xml:3
+msgid "Creative Commons Attribution-ShareAlike 3.0 Unported License"
+msgstr "License Creative Commons-Attribution ShareAlike.3 0 Unported"
+
+#. (itstool) path: license/p
+#: C/legal.xml:3
+msgid "This work is licensed under a <_:link-1/>."
+msgstr "Toto práce je licencovaná pod <_:link-1/>."
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
-msgstr "Adam Matoušek <adamatousek@gmail.com>, 2012"
+msgstr ""
+"Adam Matoušek <adamatousek@gmail.com>, 2012\n"
+"Marek Černocký <marek@manet.cz>, 2014"
 
 #. (itstool) path: credit/name
-#: C/collections.page:11 C/index.page:10 C/info.page:10 C/previews.page:11
-#: C/print.page:11 C/search.page:11 C/select.page:11 C/tracker.page:11
-#: C/viewgrid.page:11 C/view.page:11
+#: C/collections.page:12 C/index.page:14 C/info.page:12 C/print.page:11
+#: C/prob-no-show.page:12 C/prob-previews.page:12 C/search.page:11
+#: C/viewgrid.page:12 C/view.page:12
 msgid "Julita Inca"
-msgstr ""
+msgstr "Julita Inca"
 
 #. (itstool) path: credit/years
-#: C/collections.page:13 C/collections.page:18 C/filter.page:13
-#: C/formats.page:13 C/index.page:12 C/index.page:17 C/info.page:12
-#: C/info.page:17 C/previews.page:13 C/previews.page:18 C/print.page:13
-#: C/print.page:18 C/search.page:13 C/search.page:18 C/select.page:13
-#: C/select.page:18 C/tracker.page:13 C/tracker.page:18 C/viewgrid.page:13
-#: C/viewgrid.page:18 C/view.page:13 C/view.page:18
+#: C/collections.page:14 C/collections.page:19 C/filter.page:14
+#: C/formats.page:14 C/index.page:16 C/index.page:21 C/info.page:14
+#: C/info.page:19 C/print.page:13 C/print.page:18 C/prob-no-show.page:14
+#: C/prob-no-show.page:19 C/prob-previews.page:14 C/prob-previews.page:19
+#: C/search.page:13 C/search.page:18 C/viewgrid.page:14 C/viewgrid.page:19
+#: C/view.page:14 C/view.page:19
 msgid "2012"
-msgstr ""
+msgstr "2012"
 
 #. (itstool) path: credit/name
-#: C/collections.page:16 C/filter.page:11 C/formats.page:11 C/index.page:15
-#: C/info.page:15 C/previews.page:16 C/print.page:16 C/search.page:16
-#: C/select.page:16 C/tracker.page:16 C/viewgrid.page:16 C/view.page:16
+#: C/collections.page:17 C/filter.page:12 C/formats.page:12 C/index.page:19
+#: C/info.page:17 C/print.page:16 C/prob-no-show.page:17
+#: C/prob-previews.page:17 C/search.page:16 C/viewgrid.page:17 C/view.page:17
 msgid "Michael Hill"
-msgstr ""
+msgstr "Michael Hill"
+
+#. (itstool) path: credit/name
+#: C/collections.page:22 C/filter.page:17 C/formats.page:17 C/index.page:24
+#: C/info.page:22 C/prob-no-show.page:22 C/prob-previews.page:22
+#: C/viewgrid.page:22 C/view.page:22
+msgid "Ekaterina Gerasimova"
+msgstr "Ekaterina Gerasimova"
+
+#. (itstool) path: credit/years
+#: C/collections.page:24 C/filter.page:19 C/formats.page:19 C/index.page:26
+#: C/info.page:24 C/prob-no-show.page:24 C/prob-previews.page:24
+#: C/viewgrid.page:24 C/view.page:24
+msgid "2014"
+msgstr "2014"
 
 #. (itstool) path: info/desc
-#: C/collections.page:23
-msgid "Group related documents in a collection."
+#: C/collections.page:29
+msgid "Group related documents together to help sort them."
 msgstr ""
+"Jak seskupit související dokumenty dohromady, aby byly lépe roztříděny."
 
 #. (itstool) path: page/title
-#: C/collections.page:26
+#: C/collections.page:32
 msgid "Make collections of documents"
-msgstr ""
+msgstr "Vytváření sad dokumentů"
 
 #. (itstool) path: page/p
-#: C/collections.page:39
+#: C/collections.page:45
 msgid ""
-"<app>Documents</app> lets you put together documents of different types in "
-"one place called a <em>collection</em>. If you have documents that are "
-"related, you can group them to make them easier to find. For example, if you "
-"had a business trip where you made a presentation, your slides, your flight "
-"itinerary (a PDF file), your budget spreadsheet, and other hybrid PDF/ODF "
-"documents, can be grouped in one collection."
+"You can put together documents of different types in one place which is "
+"called a <em>collection</em>. If you have documents that are related, you "
+"can group them to make them easier to find. For example, if you had a "
+"business trip where you made a presentation, your slides, a PDF of your "
+"flight itinerary, your budget spreadsheet, and other word processor and PDF "
+"documents can be grouped in one collection."
 msgstr ""
+"Dokumenty různých typů můžete vložit dohromady na jedno místo nazývané "
+"<em>sada</em>. Pokud máte dokumenty, které nějak souvisí, můžete je seskupit, "
+"aby se vám snadněji hledaly. Například, když máte služební cestu, na které "
+"budete dělat prezentaci, můžete si seskupit do sady svoji prezentaci, PDF s "
+"letovým plánem, tabulku s vyúčtováním a další soubory z kancelářského balíku "
+"a PDF."
 
-#. (itstool) path: page/p
-#: C/collections.page:46
+#. (itstool) path: steps/title
+#: C/collections.page:53
 msgid "To create or add to a collection:"
-msgstr ""
+msgstr "Když chcete vytvořit sadu nebo do sady přidat dokumenty:"
 
 #. (itstool) path: item/p
-#: C/collections.page:49 C/collections.page:72 C/print.page:39
-#: C/select.page:41
-#, fuzzy
-msgid "Click the <gui>✓</gui> button."
-msgstr "Klepněte na kartu <gui>Zkratky</gui>."
-
-#. (itstool) path: item/p
-#: C/collections.page:52
-msgid "In selection mode, check the documents to be collected."
-msgstr ""
-
-#. (itstool) path: item/p
-#: C/collections.page:55
-#, fuzzy
-msgid "Click the <gui>+</gui> button in the button bar."
-msgstr "Klepněte na kartu <gui>Zkratky</gui>."
+#: C/collections.page:55 C/collections.page:73 C/print.page:38
+msgid "Press the <gui>✓</gui> button."
+msgstr "Zmáčkněte tlačítko <gui>✓</gui>."
 
 #. (itstool) path: item/p
 #: C/collections.page:58
-msgid ""
-"In the collection list, click <gui>Add</gui> and type a new collection name, "
-"or select an existing collection. The selected documents will be added to "
-"the collection."
-msgstr ""
+msgid "In selection mode, select related documents."
+msgstr "V režimu výběru vyberte patřičné dokumenty."
 
-#. (itstool) path: note/p
-#: C/collections.page:65
-msgid ""
-"Collections do not behave like folders and their hierarchy: <em>you cannot "
-"put collections inside collections.</em>"
-msgstr ""
+#. (itstool) path: item/p
+#: C/collections.page:61
+msgid "Press <gui>Add to Collection</gui>."
+msgstr "Zmáčkněte <gui>Přidat do sady</gui>."
 
-#. (itstool) path: page/p
-#: C/collections.page:69
+#. (itstool) path: item/p
+#: C/collections.page:64
+msgid ""
+"In the collection list, press on <gui>Create new collection</gui> twice and "
+"type a new collection name, or select an existing collection. The selected "
+"documents will be added to the collection."
+msgstr ""
+"V seznamu sad zmáčkněte <gui>Vytvořit novou sadu</gui> a napište její nový "
+"název nebo vyberete stávající sadu. Vybrané dokumenty budou přidány do sady."
+
+#. (itstool) path: steps/title
+#: C/collections.page:71
 msgid "To delete a collection:"
-msgstr ""
+msgstr "Když chcete smazat sadu:"
 
 #. (itstool) path: item/p
-#: C/collections.page:75
-msgid "In selection mode, check the collection to be deleted."
-msgstr ""
+#: C/collections.page:76
+msgid "In selection mode, select the collection that you want to delete."
+msgstr "V režimu výběru vyberte sadu, kterou chcete smazat."
 
 #. (itstool) path: item/p
-#: C/collections.page:78
+#: C/collections.page:79
 msgid ""
-"Click the Trash button in the button bar. The collection will be deleted, "
-"leaving the original documents."
+"Press <gui style=\"button\">Delete</gui>. The collection will be deleted, "
+"leaving the original documents as they are."
 msgstr ""
+"Zmáčkněte tlačítko <gui style=\"button\">Smazat</gui>. Sada bude smazána, "
+"ale původní dokumenty zůstanou zachovány."
 
 #. (itstool) path: media
 #. This is a reference to an external file such as an image or video. When
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/filter.page:23 C/search.page:53
+#: C/filter.page:30 C/search.page:53
 msgctxt "_"
 msgid "external ref='media/go-down.png' md5='e8c16f5ab9ed933f4a537b740506f4d4'"
 msgstr ""
+"external ref='media/go-down.png' md5='e8c16f5ab9ed933f4a537b740506f4d4'"
 
 #. (itstool) path: info/desc
-#: C/filter.page:18
+#: C/filter.page:24
 msgid "Choose which documents to display."
-msgstr ""
+msgstr "Jak vybrat, které dokumenty se mají zobrazit."
 
 #. (itstool) path: page/title
-#: C/filter.page:21
+#: C/filter.page:27
 msgid "Filter documents"
-msgstr ""
+msgstr "Filtr dokumentů"
 
 #. (itstool) path: page/p
-#: C/filter.page:23
-msgid ""
-"Click the <media type=\"image\" src=\"media/go-down.png\">down</media> "
-"button next to the <link xref=\"search\">search</link> bar to limit the "
-"scope of the search in these categories:"
-msgstr ""
-
-#. (itstool) path: item/p
 #: C/filter.page:29
-msgid "<em>Sources</em>: Local, Google, SkyDrive, or All."
-msgstr ""
-
-#. (itstool) path: item/p
-#: C/filter.page:31
 msgid ""
-"<em>Type</em>: Collections, PDF Documents, Presentations, Spreadsheets, Text "
-"Documents, or All."
+"<link xref=\"search\">Open the search</link> and click the <media type="
+"\"image\" src=\"media/go-down.png\">down</media> button next to the search "
+"bar to limit the scope of the search in these categories:"
 msgstr ""
+"<link xref=\"search\">Otevřte hledání</link>, klikněte na tlačítko <media "
+"type=\"image\" src=\"media/go-down.png\">se šipkou dolů</media> vedle "
+"vyhledávací lišty a omezte rozsah hledání na tyto kategorie:"
+
+#. (itstool) path: item/title
+#: C/filter.page:35
+msgid "Sources"
+msgstr "Zdroje"
 
 #. (itstool) path: item/p
-#: C/filter.page:35
-msgid "Title, Author, or All."
+#: C/filter.page:36
+msgid ""
+"Chose to search documents that are <gui>Local</gui>, accessed through <link "
+"href=\"help:gnome-help/online-accounts\">online accounts</link> with "
+"<gui>Google</gui>, <gui>OneDrive</gui>, <gui>ownCloud</gui>, or <gui>All</"
+"gui>."
 msgstr ""
+"Zvolte, jestli se mají hledat dokumenty <gui>Místní</gui> nebo přístupné "
+"přes <link href=\"help:gnome-help/online-accounts\">účty on-line</link>, "
+"včetně <gui>Google</gui>, <gui>OneDrive</gui> a <gui>ownCloud</gui>, nebo "
+"<gui>Všechny</gui>."
+
+#. (itstool) path: item/title
+#: C/filter.page:42
+msgid "Type"
+msgstr "Typ"
+
+#. (itstool) path: item/p
+#: C/filter.page:43
+msgid ""
+"Search only documents that are <gui>Collections</gui>, <gui>PDF Documents</"
+"gui>, <gui>Presentations</gui>, <gui>Spreadsheets</gui>, <gui>Text "
+"Documents</gui>, or <gui>All</gui>."
+msgstr ""
+"Hledat jen dokumenty, které jsou <gui>Sady</gui>, <gui>Dokumenty PDF</gui>, "
+"<gui>Prezentace</gui>, <gui>Sešity s tabulkami</gui>, <gui>Textové "
+"dokumenty</gui> nebo <gui>Vše</gui>."
+
+#. (itstool) path: item/title
+#: C/filter.page:48
+msgid "Match"
+msgstr "Porovnávat"
+
+#. (itstool) path: item/p
+#: C/filter.page:49
+msgid ""
+"Choose to search only the <gui>Title</gui>, the <gui>Author</gui>, or "
+"<gui>All</gui>."
+msgstr ""
+"Zvolte jestli hledat pouzev v <gui>Názvu</gui>, <gui>Autorovi</gui> nebo ve "
+"<gui>Všem</gui>."
 
 #. (itstool) path: note/p
-#: C/filter.page:40
+#: C/filter.page:55
 msgid ""
-"In order for <gui>Google</gui> or <gui>SkyDrive</gui> to appear in the "
-"filter list, it is necessary to configure Google or Windows Live as an <link "
-"href=\"gnome-help:accounts-add\">online account</link>."
+"In order for <gui>Google</gui>, <gui>OneDrive</gui> or <gui>ownCloud</gui> "
+"to appear in the filter list, it is necessary to configure Google, ownCloud "
+"or Windows Live as an <link href=\"help:gnome-help/accounts-add\">online "
+"account</link>."
 msgstr ""
+"Aby se v seznamu filtrů objevil <gui>Google</gui>, <gui>OneDrive</gui> nebo <gui>ownCloud</gui>, "
+"musíte nejdříve nastavit <link href=\"gnome-help:accounts-add\">on-line "
+"účet</link> Google, Windows Live nebo ownCloud."
 
 #. (itstool) path: info/desc
-#: C/formats.page:18
+#: C/formats.page:24
 msgid "<app>Documents</app> displays a number of popular document types."
-msgstr ""
+msgstr "<app>Dokumenty</app> zobrazují řadu populárních formátů dokumentů."
 
 #. (itstool) path: page/title
-#: C/formats.page:22
-msgid "Formats supported"
-msgstr ""
+#: C/formats.page:28
+msgid "Supported formats"
+msgstr "Podporované formáty"
 
 #. (itstool) path: page/p
-#: C/formats.page:24
+#: C/formats.page:31
 msgid ""
 "<app>Documents</app> displays PDF, DVI, XPS, PostScript and the formats "
-"supported by <app>Document Viewer</app> (Evince), <app>Microsoft Office</"
-"app>, <app>LibreOffice</app> and <app>Google Docs</app>."
+"supported by <app href=\"help:evince\">Document Viewer</app>, <app>Microsoft "
+"Office</app>, <app>LibreOffice</app> and <app>Google Docs</app>."
 msgstr ""
+"<app>Dokumenty</app> zobrazují PDF, DVI, XPS, Postskript a formáty "
+"podporované <app href=\"help:evince\">Prohlížečem dokumentů</app>, "
+"<app>Microsoft office</app>, <app>LibreOffice</app> a <app>Google Docs</app>."
 
-#. (itstool) path: info/desc
-#: C/index.page:22
-msgid ""
-"Organize the documents stored locally on your computer or created online."
-msgstr ""
-
-#. (itstool) path: page/title
-#: C/index.page:26
+#. (itstool) path: info/title
+#: C/index.page:7
+msgctxt "link"
 msgid "Documents"
-msgstr ""
+msgstr "Dokumenty"
 
-#. (itstool) path: page/p
-#: C/index.page:38
-msgid ""
-"<app>Documents</app> is a GNOME application that lets you display, organize, "
-"and print the documents on your computer or those created remotely using "
-"<em>Google Docs</em> or <em>SkyDrive</em>."
-msgstr ""
-
-#. (itstool) path: section/title
-#: C/index.page:43
-msgid "View, Sort and Search"
-msgstr ""
-
-#. (itstool) path: section/title
-#: C/index.page:47
-msgid "Select, Organize, Print"
-msgstr ""
-
-#. (itstool) path: section/title
-#: C/index.page:51
-msgid "Questions"
-msgstr ""
+#. (itstool) path: info/title
+#: C/index.page:8
+msgctxt "text"
+msgid "Documents"
+msgstr "Dokumenty"
 
 #. (itstool) path: info/desc
-#: C/info.page:22
-msgid "See a document's name, location, date modified, or type."
+#: C/index.page:31
+msgid ""
+"Organize, view and edit the documents that are stored locally on your "
+"computer or online."
 msgstr ""
+"Uspořádejte si, zobrazujte si a upravujte dokumenty uložené místně ve svém počítači i "
+"vytvořené on-line."
 
 #. (itstool) path: page/title
-#: C/info.page:25
-msgid "Find information about documents"
-msgstr ""
+#: C/index.page:35
+msgid "<_:media-1/> Documents"
+msgstr "<_:media-1/> Dokumenty"
 
 #. (itstool) path: page/p
-#: C/info.page:35
+#: C/index.page:50
 msgid ""
-"When a document is created, it comes with <em>metadata</em>. <app>Documents</"
-"app> displays the following metadata for each document:"
+"<app>Documents</app> is a GNOME application that lets you display, organize "
+"and print the documents on your computer or those created remotely using "
+"<em>Google Docs</em>, <em>ownCloud</em> or <em>OneDrive</em>."
 msgstr ""
+"<app>Dokumenty</app> je aplikace GNOME, která umožňuje zobrazovat, "
+"organizovat a tisknout dokumenty ve vašem počítači nebo vytvořené vzdáleně "
+"pomocí <em>Google Docs</em>, <em>ownCloud</em> nebo <em>OneDrive</em>."
 
-#. (itstool) path: item/p
-#: C/info.page:40
-msgid "Title: the name of the document, which can be edited;"
-msgstr ""
+#. (itstool) path: section/title
+#: C/index.page:55
+msgid "View, sort and search"
+msgstr "Zobrazování, řazení a hledání"
 
-#. (itstool) path: item/p
-#: C/info.page:43
-msgid "Source: the path of the folder containing the document;"
-msgstr ""
+#. (itstool) path: section/title
+#: C/index.page:59
+msgid "Select, organize and print"
+msgstr "Výběr, organizování a tisk"
 
-#. (itstool) path: item/p
-#: C/info.page:46
-msgid "Date Modified;"
-msgstr ""
+#. (itstool) path: section/title
+#: C/index.page:63
+msgid "Problems"
+msgstr "Problémy"
 
-#. (itstool) path: item/p
-#: C/info.page:49
-msgid "Type: the <link xref=\"formats\">file format</link> of the document."
-msgstr ""
+#. (itstool) path: info/desc
+#: C/info.page:29
+msgid "See a document's name, location, date modified, or type."
+msgstr "Podívejte se na název, umístění, datum změny a typ dokumentu."
+
+#. (itstool) path: page/title
+#: C/info.page:32
+msgid "Find information about documents"
+msgstr "Hledání informací o dokumentech"
 
 #. (itstool) path: page/p
-#: C/info.page:53
-msgid "To see a document's properties:"
+#: C/info.page:42
+msgid ""
+"When a document is created, it contains with <em>metadata</em>. "
+"<app>Documents</app> displays the following metadata for each document:"
 msgstr ""
+"Když je dokument vytvořen, vloží se do něj <em>metadata</em>. "
+"<app>Dokumenty</app> zobrazují pro každý dokument následující metadata:"
+
+#. (itstool) path: item/p
+#: C/info.page:47
+msgid "Title: the name of the document, which can be edited;"
+msgstr "Název: název dokumentu, který můžete upravit;"
+
+#. (itstool) path: item/p
+#: C/info.page:50
+msgid "Source: the path to the folder containing the document;"
+msgstr "Zdroj: cesta ke složce obsahující dokument;"
+
+#. (itstool) path: item/p
+#: C/info.page:53
+msgid "Date Modified;"
+msgstr "Datum změny;"
 
 #. (itstool) path: item/p
 #: C/info.page:56
-msgid "Click the <gui>Check</gui> button to switch to selection mode."
-msgstr ""
+msgid "Type: the <link xref=\"formats\">file format</link> of the document."
+msgstr "Typ: <link xref=\"formats\">formát souboru</link> s dokumentem."
+
+#. (itstool) path: page/p
+#: C/info.page:60
+msgid "To see a document's properties:"
+msgstr "Když si chcete zobrazit vlastnosti dokumentu:"
 
 #. (itstool) path: item/p
-#: C/info.page:59
+#: C/info.page:63
+msgid "Click the check button to switch to selection mode."
+msgstr "Kliknutím na tlačítko <gui>✓</gui> se přepnete do režimu výběru."
+
+#. (itstool) path: item/p
+#: C/info.page:66
 msgid "Select a document."
-msgstr ""
+msgstr "Vyberte dokument."
 
 #. (itstool) path: item/p
-#: C/info.page:62
+#: C/info.page:69
 msgid ""
 "Click the <gui>Properties</gui> button at the right end of the button bar."
 msgstr ""
+"Klikněte na tlačítko <gui>Vlastnosti</gui> na pravém konci tlačítkové lišty."
 
 #. (itstool) path: note/p
-#: C/info.page:68
+#: C/info.page:75
 msgid ""
 "Some types of documents (e.g. PDF files) can be password protected, "
 "preventing access to their metadata or content."
 msgstr ""
+"Některé typy dokumentů (např. soubory PDF) mohou být chráněny heslem, aby se "
+"zabránilo v přístupu k jejich metadatům nebo obsahu."
 
 #. (itstool) path: note/p
-#: C/info.page:73
+#: C/info.page:80
 msgid ""
 "<app>Documents</app> does not currently offer any mechanism to add privacy "
 "to a document. You may be able to do this from the application you used to "
 "create the document (e.g. <app>LibreOffice</app> or <app>Adobe Acrobat</"
 "app>)."
 msgstr ""
-
-#. (itstool) path: info/desc
-#: C/previews.page:23
-msgid "You can only preview files stored locally."
-msgstr ""
-
-#. (itstool) path: page/title
-#: C/previews.page:26
-msgid "Why don't some files have previews?"
-msgstr ""
-
-#. (itstool) path: page/p
-#: C/previews.page:34
-msgid ""
-"When you open <app>Documents</app>, a preview thumbnail is displayed for "
-"documents that are stored locally. Those stored on a remote server like "
-"<em>Google Docs</em> or <em>SkyDrive</em> show as missing (or blank) preview "
-"thumbnails."
-msgstr ""
-
-#. (itstool) path: page/p
-#: C/previews.page:39
-msgid ""
-"If you download a <em>Google Docs</em> or <em>SkyDrive</em> document to "
-"local storage, a thumbnail will be generated."
-msgstr ""
-
-#. (itstool) path: note/p
-#: C/previews.page:43
-msgid ""
-"The local copy of a document downloaded from <em>Google Docs</em> or "
-"<em>SkyDrive</em> will lose its ability to be updated online. If you want to "
-"continue to edit it online, it is better not to download it."
-msgstr ""
+"Aplikace <app>Dokumenty</app> v současnosti nedisponuje žádným mechanizmem, "
+"jak přidat do dokumentu ochranu. Můžete to ale udělat z aplikace, kterou "
+"používáte k vytvoření dokumentu (např. <app>LibreOffice</app> nebo "
+"<app>Adobe Acrobat</app>)."
 
 #. (itstool) path: info/desc
 #: C/print.page:23
 msgid "Print documents that are stored locally or online."
-msgstr ""
+msgstr "Jak vytisknout dokumenty uložené na místním úložišti nebo on-line."
 
 #. (itstool) path: page/title
 #: C/print.page:26
 msgid "Print a document"
-msgstr ""
+msgstr "Tisk dokumentu"
 
-#. (itstool) path: page/p
-#: C/print.page:35
+#. (itstool) path: steps/title
+#: C/print.page:36
 msgid "To print a document:"
-msgstr ""
+msgstr "Když chcete dokument vytisknout:"
 
 #. (itstool) path: item/p
-#: C/print.page:42
+#: C/print.page:41
 msgid "In selection mode, check the document to be printed."
-msgstr ""
+msgstr "V režimu výběru zaškrtněte dokument, který chcete vytisknout."
 
 #. (itstool) path: item/p
-#: C/print.page:45
+#: C/print.page:44
 msgid ""
 "Click the Print button in the button bar. The <gui>Print</gui> dialog opens."
 msgstr ""
+"Klikněte na tlačítko Tisk na tlačítkové liště. Otevře se dialogové okno "
+"<gui>Tisk</gui>."
 
 #. (itstool) path: note/p
-#: C/print.page:51
+#: C/print.page:50
 msgid ""
 "Printing is not available when more than one document is selected, or when a "
 "collection is selected."
 msgstr ""
+"Tisk není přístupný, když je vybráno více dokumentů než jeden nebo je "
+"vybrána sada."
+
+#. (itstool) path: info/desc
+#: C/prob-no-show.page:29
+msgid "Your local documents do not appear in <gui>Documents</gui>."
+msgstr "Vaše místní dokumenty se neobjevují v aplikaci <gui>Dokumenty</gui>."
+
+#. (itstool) path: page/title
+#: C/prob-no-show.page:32
+msgid "My documents are not shown"
+msgstr "Mé dokumenty se nezobrazují"
+
+#. (itstool) path: page/p
+#: C/prob-no-show.page:46
+msgid ""
+"<app>Documents</app> supports only certain types of documents such as PDFs "
+"and office suite documents such as spreadsheets and word processor "
+"documents. It will not show text documents and photos."
+msgstr ""
+"Aplikace <app>Dokumenty</app> podporuje jen některé typy dokumentů, jako "
+"jsou PDF nebo dokumenty z kancelářských balíků typu tabulkový kalkulátor "
+"nebo textový procesor. Nezobrazuje prosté textové dokumenty ani fotografie."
+
+#. (itstool) path: page/p
+#: C/prob-no-show.page:50
+msgid ""
+"For your local documents to appear in <app>Documents</app>, they must be "
+"inside your <file>Documents</file> or <file>Downloads</file> folders, or "
+"inside folders that are in those directories. Documents that are in other "
+"places on your computer will not be shown."
+msgstr ""
+"Aby se místně uložené dokumenty objevily v <app>Dokumentech</app>, musí se "
+"nacházet ve složkách <file>Dokumenty</file> nebo <file>Stažené</file>, či "
+"jejich podsložkách. Dokumenty uložené na jiných místech ve vašem počítači se "
+"nezobrazí."
+
+#. (itstool) path: page/p
+#: C/prob-no-show.page:55
+msgid ""
+"If your documents fail to display in <app>Documents</app>, <app>Tracker</"
+"app> may not be running or properly configured. Make sure <app>Tracker</app> "
+"is running in your session. The default configuration, set to index files in "
+"your home directory (non-recursively) and XDG folders (recursively), should "
+"be adequate."
+msgstr ""
+"V případě, že selže zobrazení v aplikaci <app>Dokumenty</app>, možná neběží "
+"<app>Tracker</app> nebo není správně nastaven. Ujistěte se, že máte ve svém "
+"sezení <app>Tracker</app> spuštěný. Výchozí nastavení, ve kterém je "
+"nastaveno indexování souborů ve vaší domovské složce (nerekurzivní) a "
+"složkách XDG (rekurzivní), by mělo dostačovat."
+
+#. (itstool) path: info/desc
+#: C/prob-previews.page:29
+msgid "You can only preview files stored locally, on Google Drive or ownCloud."
+msgstr ""
+"Náhledy jdou zobrazit jen u souborů uložených na místním úložišti, v Google "
+"Drive nebo ownCloud."
+
+#. (itstool) path: page/title
+#: C/prob-previews.page:33
+msgid "Why do some files not have previews?"
+msgstr "Proč některé soubory nemají náhledy?"
+
+#. (itstool) path: page/p
+#: C/prob-previews.page:41
+msgid ""
+"When you open <app>Documents</app>, a preview thumbnail is displayed for "
+"documents that are stored locally, on <em>Google Drive</em> or <em>ownCloud</"
+"em>. Those stored in <em>OneDrive</em> show as missing (or blank) preview "
+"thumbnails."
+msgstr ""
+"Když otevřete <app>Dokumenty</app>, zobrazí se pro dokumenty uložené na "
+"místním úložišti, <em>Google Docs</em> nebo <em>ownCloud</em> náhledy "
+"dokumentů. Ty dokumenty, které jsou uloženy na <em>OneDrive</em>, se zobrazí "
+"jako chybějící (nebo prázdný) náhled."
+
+#. (itstool) path: page/p
+#: C/prob-previews.page:46
+msgid ""
+"If you download a <em>OneDrive</em> document to local storage through the "
+"web interface, a thumbnail will be generated."
+msgstr ""
+"Pokud dokument stáhnete z <em>OneDrive</em> do místního úložiště, náhled se "
+"vygeneruje."
+
+#. (itstool) path: note/p
+#: C/prob-previews.page:50
+msgid ""
+"The local copy of a document downloaded from an online account will lose its "
+"ability to be updated online. If you want to continue to edit it online, it "
+"is better not to download it."
+msgstr ""
+"Místní kopie dokumentu staženého z účtu on-line ale ztratí schopnost být "
+"aktualizována on-line. Jestli potřebujete pokračovat v úpravách on-line, je "
+"lepší dokument nestahovat."
 
 #. (itstool) path: info/desc
 #: C/search.page:23
 msgid "Find your documents by title or author."
-msgstr ""
+msgstr "Jak najít své dokumenty podle názvu nebo autora."
 
 #. (itstool) path: page/title
 #: C/search.page:26
 msgid "Search for files"
-msgstr ""
+msgstr "Hledání souborů"
 
 #. (itstool) path: page/p
 #: C/search.page:38
 msgid "To start a search in <app>Documents</app>:"
-msgstr ""
+msgstr "Když chcete v <app>Dokumentech</app> hledat:"
 
 #. (itstool) path: item/p
 #: C/search.page:42
-#, fuzzy
 msgid ""
 "Press <keyseq><key>Ctrl</key><key>F</key></keyseq> to open the search bar at "
 "the top of the window."
-msgstr "<keyseq><key>Ctrl</key><key>A</key></keyseq>"
+msgstr ""
+"Zmáčknutím <keyseq><key>Ctrl</key><key>F</key></keyseq> otevřte vyhledávací "
+"lištu v horní části okna."
 
 #. (itstool) path: item/p
 #: C/search.page:46
@@ -396,6 +560,8 @@ msgid ""
 "Start typing keywords, and searching begins instantly. You will see a list "
 "of documents whose title or author matches the keywords."
 msgstr ""
+"Začněte psát klíčová slova a ihned se bude vyhledávat. Zobrazí se vám seznam "
+"dokumentů, jejichž název nebo autor odpovídá klíčovým slovům."
 
 #. (itstool) path: note/p
 #: C/search.page:52
@@ -404,179 +570,91 @@ msgid ""
 "\"image\" src=\"media/go-down.png\">down</media> button and selecting "
 "various <link xref=\"filter\">filters</link>."
 msgstr ""
+"Výsledky hledání můžete omezit nebo filtrovat kliknutím na tlačítko "
+"<media type=\"image\" src=\"media/go-down.png\">se šipku dolů</media> a výběrem "
+"různých <link xref=\"filter\">filtrů</link>."
 
 #. (itstool) path: info/desc
-#: C/select.page:23
-msgid "Use selection mode to select more than one document or collection."
-msgstr ""
-
-#. (itstool) path: page/title
-#: C/select.page:27
-msgid "Selecting documents"
-msgstr ""
-
-#. (itstool) path: page/p
-#: C/select.page:36
-msgid ""
-"From <app>Documents</app> selection mode you can open, print, view or make "
-"collections of your documents. To use selection mode:"
-msgstr ""
-
-#. (itstool) path: item/p
-#: C/select.page:44
-msgid ""
-"Select one or more documents or collections. The button bar appears with the "
-"actions that are valid for your selection."
-msgstr ""
-
-#. (itstool) path: section/title
-#: C/select.page:51
-msgid "Selection mode actions"
-msgstr ""
-
-#. (itstool) path: section/p
-#: C/select.page:53
-msgid "After selecting one or more documents you can:"
-msgstr ""
-
-#. (itstool) path: item/p
-#: C/select.page:57
-msgid "Open with Document Viewer (folder icon)."
-msgstr ""
-
-#. (itstool) path: item/p
-#: C/select.page:60
-msgid ""
-"Print (printer icon): print a document (only available when a single "
-"document is selected)."
-msgstr ""
-
-#. (itstool) path: item/p
-#: C/select.page:64
-msgid "Organize (plus icon): create a collection of documents."
-msgstr ""
-
-#. (itstool) path: item/p
-#: C/select.page:67
-msgid ""
-"Properties (wrench icon): display the properties of a document (only "
-"available when a single document is selected)."
-msgstr ""
-
-#. (itstool) path: item/p
-#: C/select.page:71
-msgid "Delete (trash icon): delete one or more collections."
-msgstr ""
-
-#. (itstool) path: info/desc
-#: C/tracker.page:23
-msgid "Local or remote documents do not appear."
-msgstr ""
-
-#. (itstool) path: page/title
-#: C/tracker.page:26
-msgid "My documents cannot be seen"
-msgstr ""
-
-#. (itstool) path: page/p
-#: C/tracker.page:40
-msgid ""
-"If your documents fail to display in <app>Documents</app>, <app>Tracker</"
-"app> may not be running or properly configured. Make sure Tracker is running "
-"in your session. The default configuration, set to index files in your home "
-"directory (non-recursively) and XDG folders (recursively), should be "
-"adequate. Ensure that your documents are in one of these paths."
-msgstr ""
-
-#. (itstool) path: info/desc
-#: C/viewgrid.page:23
+#: C/viewgrid.page:29
 msgid "Change the way documents are displayed."
-msgstr ""
+msgstr "Jak změnit způsob zobrazení dokumentů."
 
 #. (itstool) path: page/title
-#: C/viewgrid.page:26
+#: C/viewgrid.page:32
 msgid "View files in a list or grid"
-msgstr ""
+msgstr "Zobrazení souborů v seznamu nebo mřížce"
 
 #. (itstool) path: page/p
-#: C/viewgrid.page:35
+#: C/viewgrid.page:41
 msgid ""
 "Documents and collections are presented in <gui>Grid</gui> format by "
 "default. To view in <gui>List</gui> format:"
 msgstr ""
+"Dokumenty a sady jsou ve výchozím stavu zobrazeny ve formátu <gui>mřížky</"
+"gui>. Pokud je chcete zobrazit ve formátu <gui>seznamu</gui>:"
 
 #. (itstool) path: item/p
-#: C/viewgrid.page:40
-msgid ""
-"Go to the top bar and click <app>Documents</app> to display the app menu."
-msgstr ""
-
-#. (itstool) path: item/p
-#: C/viewgrid.page:44
-msgid "Click <gui>List</gui> from the <gui>View as</gui> section."
-msgstr ""
+#: C/viewgrid.page:46
+msgid "Press the list button in the top-right corner of the window."
+msgstr "Zmáčkněte tlačítko s ikonou seznamu v pravém horním rohu okna."
 
 #. (itstool) path: note/p
-#: C/viewgrid.page:49
+#: C/viewgrid.page:51
 msgid ""
 "List view has columns displaying the document type and date modified, and "
-"whether it's stored locally, or in <app>Google Docs</app> or <em>SkyDrive</"
-"em>."
+"whether it's stored locally or remotely in one of your online accounts."
 msgstr ""
+"Seznamové zobrazení má sloupce zobrazující typ dokumentu, čas poslední změny "
+"a zda je dokument uložen na místním úložišti nebo vzdáleně ve vašich účtech on-"
+"line."
 
 #. (itstool) path: page/p
-#: C/viewgrid.page:54
-msgid "Click <gui>Grid</gui> in the app menu to return to the default format."
+#: C/viewgrid.page:56
+msgid ""
+"Click the grid button in the top-right corner of the window to return to the "
+"grid view."
 msgstr ""
+"Kliknutím na tlačítko s ikonou mřížky v pravém horním rohu okna se vrátíte k "
+"zobrazení v mřížce."
 
 #. (itstool) path: info/desc
-#: C/view.page:23
-msgid "View documents full-screen."
-msgstr ""
+#: C/view.page:29
+msgid "Open documents that are stored locally or online."
+msgstr "Jak otevřít dokumenty uložené na místním úložišti nebo on-line."
 
 #. (itstool) path: page/title
-#: C/view.page:26
-msgid "Display documents stored locally or online"
-msgstr ""
+#: C/view.page:32
+msgid "View your documents"
+msgstr "Zobrazení vašich dokumentů"
 
 #. (itstool) path: page/p
-#: C/view.page:36
+#: C/view.page:42
 msgid ""
 "When you open <app>Documents</app>, all of your documents, those stored "
 "locally as well as online, are displayed as thumbnails."
 msgstr ""
+"Když otevřete <app>Dokumenty</app>, zobrazí se náhledy všech vašich "
+"dokumentů, které máte uloženy na místním úložišti i on-line."
 
 #. (itstool) path: note/p
-#: C/view.page:40
+#: C/view.page:46
 msgid ""
-"In order for your <em>Google Docs</em> or <em>SkyDrive</em> documents to "
-"appear, it is necessary to configure Google or Windows Live, respectively, "
-"as an <link href=\"gnome-help:accounts-add\">online account</link>."
+"To see documents from your online accounts, it is necessary to <link href="
+"\"help:gnome-help/accounts-add\">set up the accounts</link>."
 msgstr ""
+"Abyste mohli vidět dokumenty, které máte ve svých účtech on-line, je "
+"zapotřebí <link href=\"help:gnome-help/accounts-add\">účty on-line nastavit</"
+"link>."
 
 #. (itstool) path: page/p
-#: C/view.page:45
-msgid "To view the contents of a document:"
-msgstr ""
-
-#. (itstool) path: item/p
-#: C/view.page:49
-msgid ""
-"Click the thumbnail. The document is displayed full-width in the "
-"<app>Documents</app> window (or full-screen if maximized)."
-msgstr ""
+#: C/view.page:50
+msgid "To view the contents of a document, press on the thumbnail."
+msgstr "Když chcete zobrazit obsah dokumentu, zmáčkněte jeho náhled."
 
 #. (itstool) path: page/p
-#: C/view.page:54
-msgid "To exit the document, click the back arrow button."
+#: C/view.page:52
+msgid ""
+"To exit the document, click the back arrow button in the top-left of the "
+"window."
 msgstr ""
-
-#. (itstool) path: p/link
-#: C/legal.xml:3
-msgid "Creative Commons Attribution-ShareAlike 3.0 Unported License"
-msgstr ""
-
-#. (itstool) path: license/p
-#: C/legal.xml:3
-msgid "This work is licensed under a <_:link-1/>."
-msgstr "Toto dílo je licencované pod <_:link-1/>."
+"Dokument opustíte kliknutím na tlačítko se šipkou v levé horní části okna."
