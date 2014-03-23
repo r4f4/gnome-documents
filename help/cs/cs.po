@@ -8,8 +8,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-docs master\n"
-"POT-Creation-Date: 2014-03-17 09:52+0000\n"
-"PO-Revision-Date: 2014-03-20 09:12+0100\n"
+"POT-Creation-Date: 2014-03-23 19:57+0000\n"
+"PO-Revision-Date: 2014-03-23 21:18+0100\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -96,11 +96,11 @@ msgid ""
 "documents can be grouped in one collection."
 msgstr ""
 "Dokumenty různých typů můžete vložit dohromady na jedno místo nazývané "
-"<em>sada</em>. Pokud máte dokumenty, které nějak souvisí, můžete je seskupit, "
-"aby se vám snadněji hledaly. Například, když máte služební cestu, na které "
-"budete dělat prezentaci, můžete si seskupit do sady svoji prezentaci, PDF s "
-"letovým plánem, tabulku s vyúčtováním a další soubory z kancelářského balíku "
-"a PDF."
+"<em>sada</em>. Pokud máte dokumenty, které nějak souvisí, můžete je "
+"seskupit, aby se vám snadněji hledaly. Například, když máte služební cestu, "
+"na které budete dělat prezentaci, můžete si seskupit do sady svoji "
+"prezentaci, PDF s letovým plánem, tabulku s vyúčtováním a další soubory z "
+"kancelářského balíku a PDF."
 
 #. (itstool) path: steps/title
 #: C/collections.page:53
@@ -239,9 +239,9 @@ msgid ""
 "or Windows Live as an <link href=\"help:gnome-help/accounts-add\">online "
 "account</link>."
 msgstr ""
-"Aby se v seznamu filtrů objevil <gui>Google</gui>, <gui>OneDrive</gui> nebo <gui>ownCloud</gui>, "
-"musíte nejdříve nastavit <link href=\"gnome-help:accounts-add\">on-line "
-"účet</link> Google, Windows Live nebo ownCloud."
+"Aby se v seznamu filtrů objevil <gui>Google</gui>, <gui>OneDrive</gui> nebo "
+"<gui>ownCloud</gui>, musíte nejdříve nastavit <link href=\"gnome-help:"
+"accounts-add\">on-line účet</link> Google, Windows Live nebo ownCloud."
 
 #. (itstool) path: info/desc
 #: C/formats.page:24
@@ -282,8 +282,8 @@ msgid ""
 "Organize, view and edit the documents that are stored locally on your "
 "computer or online."
 msgstr ""
-"Uspořádejte si, zobrazujte si a upravujte dokumenty uložené místně ve svém počítači i "
-"vytvořené on-line."
+"Uspořádejte si, zobrazujte si a upravujte dokumenty uložené místně ve svém "
+"počítači i vytvořené on-line."
 
 #. (itstool) path: page/title
 #: C/index.page:35
@@ -329,11 +329,11 @@ msgstr "Hledání informací o dokumentech"
 #. (itstool) path: page/p
 #: C/info.page:42
 msgid ""
-"When a document is created, it contains with <em>metadata</em>. "
-"<app>Documents</app> displays the following metadata for each document:"
+"When a document is created, it contains <em>metadata</em>. <app>Documents</"
+"app> displays the following metadata for each document:"
 msgstr ""
-"Když je dokument vytvořen, vloží se do něj <em>metadata</em>. "
-"<app>Dokumenty</app> zobrazují pro každý dokument následující metadata:"
+"Když je vytvořen dokument, obsahuje <em>metadata</em>. <app>Dokumenty</app> "
+"zobrazují pro každý dokument následující metadata:"
 
 #. (itstool) path: item/p
 #: C/info.page:47
@@ -570,8 +570,8 @@ msgid ""
 "\"image\" src=\"media/go-down.png\">down</media> button and selecting "
 "various <link xref=\"filter\">filters</link>."
 msgstr ""
-"Výsledky hledání můžete omezit nebo filtrovat kliknutím na tlačítko "
-"<media type=\"image\" src=\"media/go-down.png\">se šipku dolů</media> a výběrem "
+"Výsledky hledání můžete omezit nebo filtrovat kliknutím na tlačítko <media "
+"type=\"image\" src=\"media/go-down.png\">se šipku dolů</media> a výběrem "
 "různých <link xref=\"filter\">filtrů</link>."
 
 #. (itstool) path: info/desc
@@ -605,8 +605,8 @@ msgid ""
 "whether it's stored locally or remotely in one of your online accounts."
 msgstr ""
 "Seznamové zobrazení má sloupce zobrazující typ dokumentu, čas poslední změny "
-"a zda je dokument uložen na místním úložišti nebo vzdáleně ve vašich účtech on-"
-"line."
+"a zda je dokument uložen na místním úložišti nebo vzdáleně ve vašich účtech "
+"on-line."
 
 #. (itstool) path: page/p
 #: C/viewgrid.page:56
