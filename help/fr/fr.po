@@ -12,7 +12,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-docs master\n"
-"POT-Creation-Date: 2014-03-17 19:47+0000\n"
+"POT-Creation-Date: 2014-03-24 07:55+0000\n"
 "PO-Revision-Date: 2014-03-22 09:30+0100\n"
 "Last-Translator: Alain Lojewski <allomervan@gmail.com>\n"
 "Language-Team: français <GNOME French Team <gnomefr@traduc.org>>\n"
@@ -27,7 +27,8 @@ msgstr ""
 #: C/legal.xml:3
 msgid "Creative Commons Attribution-ShareAlike 3.0 Unported License"
 msgstr ""
-"Licence Creative Commons Paternité-Partage des Conditions Initiales à l'Identique 3.0 Unported"
+"Licence Creative Commons Paternité-Partage des Conditions Initiales à "
+"l'Identique 3.0 Unported"
 
 #. (itstool) path: license/p
 #: C/legal.xml:3
@@ -141,7 +142,10 @@ msgid ""
 "type a new collection name, or select an existing collection. The selected "
 "documents will be added to the collection."
 msgstr ""
-"Dans la liste des collections, double-cliquez sur <gui>Créer une nouvelle collection</gui> et saisissez un nouveau nom de collection ou sélectionnez une collection existante. Les documents sélectionnés sont ajoutés à la collection."
+"Dans la liste des collections, double-cliquez sur <gui>Créer une nouvelle "
+"collection</gui> et saisissez un nouveau nom de collection ou sélectionnez "
+"une collection existante. Les documents sélectionnés sont ajoutés à la "
+"collection."
 
 #. (itstool) path: steps/title
 #: C/collections.page:71
@@ -208,7 +212,10 @@ msgid ""
 "<gui>Google</gui>, <gui>OneDrive</gui>, <gui>ownCloud</gui>, or <gui>All</"
 "gui>."
 msgstr ""
-"Choisir de rechercher soit les documents en <gui>Local</gui>, soit ceux auxquels on accède par les <link href=\"help:gnome-help/online-accounts\">comptes en ligne</link> avec <gui>Google</gui>, <gui>OneDrive</gui>, <gui>ownCloud</gui>, ou <gui>Tout</gui>."
+"Choisir de rechercher soit les documents en <gui>Local</gui>, soit ceux "
+"auxquels on accède par les <link href=\"help:gnome-help/online-accounts"
+"\">comptes en ligne</link> avec <gui>Google</gui>, <gui>OneDrive</gui>, "
+"<gui>ownCloud</gui>, ou <gui>Tout</gui>."
 
 #. (itstool) path: item/title
 #: C/filter.page:42
@@ -270,7 +277,10 @@ msgid ""
 "supported by <app href=\"help:evince\">Document Viewer</app>, <app>Microsoft "
 "Office</app>, <app>LibreOffice</app> and <app>Google Docs</app>."
 msgstr ""
-"<app>Documents</app> affiche  les formats  PDF, DVI, XPS, PostScript et ceux pris en charge par <app href=\"help:evince\">Visionneur de documents</app>, <app>Microsoft Office</app>, <app>LibreOffice</app> et <app>Google Docs</app>."
+"<app>Documents</app> affiche  les formats  PDF, DVI, XPS, PostScript et ceux "
+"pris en charge par <app href=\"help:evince\">Visionneur de documents</app>, "
+"<app>Microsoft Office</app>, <app>LibreOffice</app> et <app>Google Docs</"
+"app>."
 
 #. (itstool) path: info/title
 #: C/index.page:7
@@ -329,7 +339,8 @@ msgstr "Problèmes"
 #: C/info.page:29
 msgid "See a document's name, location, date modified, or type."
 msgstr ""
-"Afficher un nom de document, son emplacement, sa date de modification, ou son type."
+"Afficher un nom de document, son emplacement, sa date de modification, ou "
+"son type."
 
 #. (itstool) path: page/title
 #: C/info.page:32
@@ -339,10 +350,11 @@ msgstr "Collecte d'informations sur les documents"
 #. (itstool) path: page/p
 #: C/info.page:42
 msgid ""
-"When a document is created, it contains with <em>metadata</em>. "
-"<app>Documents</app> displays the following metadata for each document:"
+"When a document is created, it contains <em>metadata</em>. <app>Documents</"
+"app> displays the following metadata for each document:"
 msgstr ""
-"Quand un document est créé, il contient des <em>métadonnées</em>. Pour chaque document, <app>Documents</app> affiche les métadonnées suivantes :"
+"Quand un document est créé, il contient des <em>métadonnées</em>. Pour "
+"chaque document, <app>Documents</app> affiche les métadonnées suivantes :"
 
 #. (itstool) path: item/p
 #: C/info.page:47
@@ -529,7 +541,8 @@ msgid ""
 "If you download a <em>OneDrive</em> document to local storage through the "
 "web interface, a thumbnail will be generated."
 msgstr ""
-"Si vous téléchargez un document de <em>OneDrive</em> dans un dossier local via l'interface Web, une miniature est générée."
+"Si vous téléchargez un document de <em>OneDrive</em> dans un dossier local "
+"via l'interface Web, une miniature est générée."
 
 #. (itstool) path: note/p
 #: C/prob-previews.page:50
@@ -538,7 +551,9 @@ msgid ""
 "ability to be updated online. If you want to continue to edit it online, it "
 "is better not to download it."
 msgstr ""
-"La copie locale d'un document téléchargé depuis un compte en ligne perd sa capacité de mise à jour en ligne. Si vous souhaitez continuer à le modifier en ligne, il ne faut pas le télécharger."
+"La copie locale d'un document téléchargé depuis un compte en ligne perd sa "
+"capacité de mise à jour en ligne. Si vous souhaitez continuer à le modifier "
+"en ligne, il ne faut pas le télécharger."
 
 #. (itstool) path: info/desc
 #: C/search.page:23
@@ -644,8 +659,8 @@ msgid ""
 "locally as well as online, are displayed as thumbnails."
 msgstr ""
 "Quand vous ouvrez <app>Documents</app>, tous vos documents, ceux stockés "
-"localement aussi bien que ceux stockés en ligne, sont affichés sous forme "
-"de miniatures."
+"localement aussi bien que ceux stockés en ligne, sont affichés sous forme de "
+"miniatures."
 
 #. (itstool) path: note/p
 #: C/view.page:46
