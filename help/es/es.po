@@ -13,8 +13,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-help.master\n"
-"POT-Creation-Date: 2014-03-17 07:48+0000\n"
-"PO-Revision-Date: 2014-03-17 10:52+0100\n"
+"POT-Creation-Date: 2014-03-24 07:55+0000\n"
+"PO-Revision-Date: 2014-03-24 13:42+0100\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "Language: \n"
@@ -84,7 +84,6 @@ msgstr "2014"
 
 #. (itstool) path: info/desc
 #: C/collections.page:29
-#| msgid "Group related documents in a collection."
 msgid "Group related documents together to help sort them."
 msgstr "Agrupar documentos relacionados para ayudar a ordenarlos."
 
@@ -95,13 +94,6 @@ msgstr "Crear colecciones de documentos"
 
 #. (itstool) path: page/p
 #: C/collections.page:45
-#| msgid ""
-#| "<app>Documents</app> lets you put together documents of different types "
-#| "in one place called a <em>collection</em>. If you have documents that are "
-#| "related, you can group them to make them easier to find. For example, if "
-#| "you had a business trip where you made a presentation, your slides, your "
-#| "flight itinerary (a PDF file), your budget spreadsheet, and other hybrid "
-#| "PDF/ODF documents, can be grouped in one collection."
 msgid ""
 "You can put together documents of different types in one place which is "
 "called a <em>collection</em>. If you have documents that are related, you "
@@ -124,13 +116,11 @@ msgstr "Para crear o añadir una colección:"
 
 #. (itstool) path: item/p
 #: C/collections.page:55 C/collections.page:73 C/print.page:38
-#| msgid "Click the <gui>✓</gui> button."
 msgid "Press the <gui>✓</gui> button."
 msgstr "Pulse el botón <gui>✓</gui>."
 
 #. (itstool) path: item/p
 #: C/collections.page:58
-#| msgid "In selection mode, check the document to be printed."
 msgid "In selection mode, select related documents."
 msgstr "En el modo de selección, seleccione los documentos relacionados."
 
@@ -141,10 +131,6 @@ msgstr "Pulse <gui>Añadir a la colección</gui>."
 
 #. (itstool) path: item/p
 #: C/collections.page:64
-#| msgid ""
-#| "In the collection list, click <gui>Add</gui> and type a new collection "
-#| "name, or select an existing collection. The selected documents will be "
-#| "added to the collection."
 msgid ""
 "In the collection list, press on <gui>Create new collection</gui> twice and "
 "type a new collection name, or select an existing collection. The selected "
@@ -161,15 +147,11 @@ msgstr "Para eliminar una colección:"
 
 #. (itstool) path: item/p
 #: C/collections.page:76
-#| msgid "In selection mode, check the collection to be deleted."
 msgid "In selection mode, select the collection that you want to delete."
 msgstr "En el modo de selección, marque la colección que quiere eliminar."
 
 #. (itstool) path: item/p
 #: C/collections.page:79
-#| msgid ""
-#| "Click the Trash button in the button bar. The collection will be deleted, "
-#| "leaving the original documents."
 msgid ""
 "Press <gui style=\"button\">Delete</gui>. The collection will be deleted, "
 "leaving the original documents as they are."
@@ -357,9 +339,12 @@ msgstr "Buscar información sobre los documentos"
 
 #. (itstool) path: page/p
 #: C/info.page:42
+#| msgid ""
+#| "When a document is created, it contains with <em>metadata</em>. "
+#| "<app>Documents</app> displays the following metadata for each document:"
 msgid ""
-"When a document is created, it contains with <em>metadata</em>. "
-"<app>Documents</app> displays the following metadata for each document:"
+"When a document is created, it contains <em>metadata</em>. <app>Documents</"
+"app> displays the following metadata for each document:"
 msgstr ""
 "Cuando se crea un documento, contiene <em>metadatos</em>. <app>Documentos</"
 "app> muestra los siguientes metadatos para cada documento:"
@@ -474,7 +459,6 @@ msgstr "Sus documentos locales no aparecen en <gui>Documentos</gui>."
 
 #. (itstool) path: page/title
 #: C/prob-no-show.page:32
-#| msgid "My documents cannot be seen"
 msgid "My documents are not shown"
 msgstr "Mis documentos no se muestran"
 
@@ -494,8 +478,8 @@ msgstr ""
 msgid ""
 "For your local documents to appear in <app>Documents</app>, they must be "
 "inside your <file>Documents</file> or <file>Downloads</file> folders, or "
-"inside folders that are in those directories. Documents that are in other places "
-"on your computer will not be shown."
+"inside folders that are in those directories. Documents that are in other "
+"places on your computer will not be shown."
 msgstr ""
 "Para que sus documentos locales aparezcan en <app>Documentos</app>, deben "
 "estar en las carpetas <file>Documentos</file> o <file>Descargas</file>, o en "
@@ -504,12 +488,6 @@ msgstr ""
 
 #. (itstool) path: page/p
 #: C/prob-no-show.page:55
-#| msgid ""
-#| "If your documents fail to display in <app>Documents</app>, <app>Tracker</"
-#| "app> may not be running or properly configured. Make sure Tracker is "
-#| "running in your session. The default configuration, set to index files in "
-#| "your home directory (non-recursively) and XDG folders (recursively), "
-#| "should be adequate. Ensure that your documents are in one of these paths."
 msgid ""
 "If your documents fail to display in <app>Documents</app>, <app>Tracker</"
 "app> may not be running or properly configured. Make sure <app>Tracker</app> "
@@ -526,7 +504,6 @@ msgstr ""
 
 #. (itstool) path: info/desc
 #: C/prob-previews.page:29
-#| msgid "You can only preview files stored locally."
 msgid "You can only preview files stored locally, on Google Drive or ownCloud."
 msgstr ""
 "Sólo puede previsualizar archivos almacenados localmente, Google Drive o en "
@@ -534,17 +511,11 @@ msgstr ""
 
 #. (itstool) path: page/title
 #: C/prob-previews.page:33
-#| msgid "Why don't some files have previews?"
 msgid "Why do some files not have previews?"
 msgstr "¿Por qué algunos archivos no tienen vista previa?"
 
 #. (itstool) path: page/p
 #: C/prob-previews.page:41
-#| msgid ""
-#| "When you open <app>Documents</app>, a preview thumbnail is displayed for "
-#| "documents that are stored locally. Those stored on a remote server like "
-#| "<em>Google Docs</em> or <em>OneDrive</em> show as missing (or blank) "
-#| "preview thumbnails."
 msgid ""
 "When you open <app>Documents</app>, a preview thumbnail is displayed for "
 "documents that are stored locally, on <em>Google Drive</em> or <em>ownCloud</"
@@ -558,9 +529,6 @@ msgstr ""
 
 #. (itstool) path: page/p
 #: C/prob-previews.page:46
-#| msgid ""
-#| "If you download a <em>Google Docs</em> or <em>OneDrive</em> document to "
-#| "local storage, a thumbnail will be generated."
 msgid ""
 "If you download a <em>OneDrive</em> document to local storage through the "
 "web interface, a thumbnail will be generated."
@@ -570,10 +538,6 @@ msgstr ""
 
 #. (itstool) path: note/p
 #: C/prob-previews.page:50
-#| msgid ""
-#| "The local copy of a document downloaded from <em>Google Docs</em> or "
-#| "<em>OneDrive</em> will lose its ability to be updated online. If you want "
-#| "to continue to edit it online, it is better not to download it."
 msgid ""
 "The local copy of a document downloaded from an online account will lose its "
 "ability to be updated online. If you want to continue to edit it online, it "
