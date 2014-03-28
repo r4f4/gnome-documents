@@ -14,7 +14,8 @@ HELP_FILES = \
 	prob-previews.page \
 	search.page \
 	viewgrid.page \
-	view.page
+	view.page \
+	view-add.page
 
 HELP_MEDIA = \
 	media/go-down.png \
