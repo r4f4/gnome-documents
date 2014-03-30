@@ -60,8 +60,6 @@ const PropertiesDialog = new Lang.Class({
                                         default_width: 400,
                                         title: _("Properties"),
                                         hexpand: true });
-        this.widget.add_button(_("Done"), Gtk.ResponseType.CLOSE);
-        this.widget.set_default_response(Gtk.ResponseType.CLOSE);
 
         let grid = new Gtk.Grid ({ orientation: Gtk.Orientation.VERTICAL,
                                    row_homogeneous: true,
