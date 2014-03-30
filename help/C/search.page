@@ -50,7 +50,8 @@
 
   <note style="tip">
     <p>You can restrict or filter the search results by clicking the
-    <media type="image" src="media/go-down.png">down</media> button and
+    <media type="image" src="media/go-down.png" its:translate="no">
+    <span its:translate="yes">down</span></media> button and
     selecting various <link xref="filter">filters</link>.</p>
   </note>
 

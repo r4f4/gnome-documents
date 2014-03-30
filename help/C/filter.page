@@ -27,7 +27,8 @@
   <title>Filter documents</title>
 
   <p><link xref="search">Open the search</link> and click the
-  <media type="image" src="media/go-down.png">down</media> button next to the
+  <media type="image" src="media/go-down.png" its:translate="no">
+  <span its:translate="yes">down</span></media> button next to the
   search bar to limit the scope of the search in these categories:</p>
 
   <terms>
