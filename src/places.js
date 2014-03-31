@@ -111,7 +111,6 @@ const PlacesDialog = new Lang.Class({
 
     _addPage: function(widget) {
         widget.document_model = this._model;
-        this._stack.add(widget);
-        this._stack.child_set_property(widget, 'title', widget.name);
+        this._stack.add_titled(widget, widget.name, widget.name);
     }
 });
