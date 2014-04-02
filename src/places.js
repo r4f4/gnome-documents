@@ -53,7 +53,6 @@ const PlacesDialog = new Lang.Class({
                                         default_height: 600,
                                         title: "",
                                         hexpand: true });
-        this.widget.add_button(_("Close"), Gtk.ResponseType.CLOSE);
 
         let contentArea = this.widget.get_content_area();
         this._stack = new Gtk.Stack({ border_width: 5,
@@ -83,12 +82,12 @@ const PlacesDialog = new Lang.Class({
         if (link.action.type == EvDocument.LinkActionType.GOTO_DEST) {
             this._gotoDest(link.action.dest);
         }
-        this.widget.response(Gtk.ResponseType.CLOSE);
+        this.widget.response(Gtk.ResponseType.DELETE_EVENT);
     },
 
     _handleBookmark: function(bookmark) {
         this._model.set_page(bookmark.page_number);
-        this.widget.response(Gtk.ResponseType.CLOSE);
+        this.widget.response(Gtk.ResponseType.DELETE_EVENT);
     },
 
     _gotoDest: function(dest) {
