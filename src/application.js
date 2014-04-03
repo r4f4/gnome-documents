@@ -201,6 +201,15 @@ const Application = new Lang.Class({
         gtkSettings.gtk_application_prefer_dark_theme = state.get_boolean();
     },
 
+    _sortByCreateHook: function(action) {
+        settings.connect('changed::sort-by', Lang.bind(this,
+            function() {
+                let state = settings.get_value('sort-by');
+                if (state.get_string()[0] != action.state.get_string()[0])
+                    action.state = state;
+            }));
+    },
+
     _onActionQuit: function() {
         this._mainWindow.destroy();
     },
@@ -231,6 +240,11 @@ const Application = new Lang.Class({
     _onActionViewAs: function(action, parameter) {
         if (parameter.get_string()[0] != action.state.get_string()[0])
             settings.set_value('view-as', parameter);
+    },
+
+    _onActionSortBy: function(action, parameter) {
+        if (parameter.get_string()[0] != action.state.get_string()[0])
+            settings.set_value('sort-by', parameter);
     },
 
     _onActionOpenCurrent: function() {
@@ -546,6 +560,14 @@ const Application = new Lang.Class({
               create_hook: this._viewAsCreateHook,
               parameter_type: 's',
               state: settings.get_value('view-as'),
+              window_modes: [WindowMode.WindowMode.COLLECTIONS,
+                             WindowMode.WindowMode.DOCUMENTS,
+                             WindowMode.WindowMode.SEARCH] },
+            { name: 'sort-by',
+              callback: this._onActionSortBy,
+              create_hook: this._sortByCreateHook,
+              parameter_type: 's',
+              state: settings.get_value('sort-by'),
               window_modes: [WindowMode.WindowMode.COLLECTIONS,
                              WindowMode.WindowMode.DOCUMENTS,
                              WindowMode.WindowMode.SEARCH] },

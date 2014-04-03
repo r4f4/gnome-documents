@@ -5,6 +5,11 @@
       <summary>View as</summary>
       <description>View as type</description>
     </key>
+    <key name="sort-by" enum="org.gnome.Documents.GdMainColumns">
+      <default>'mtime'</default>
+      <summary>Sort by</summary>
+      <description>Sort by type</description>
+    </key>
     <key name="window-size" type="ai">
       <default>[768, 600]</default>
       <summary>Window size</summary>

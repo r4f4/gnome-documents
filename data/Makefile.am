@@ -39,7 +39,8 @@ check-local: org.gnome.Documents.desktop org.gnome.Books.desktop
 
 gsettings_ENUM_NAMESPACE = org.gnome.Documents
 gsettings_ENUM_FILES = \
-    $(top_srcdir)/libgd/libgd/gd-main-view.h
+    $(top_srcdir)/libgd/libgd/gd-main-view.h \
+    $(top_srcdir)/libgd/libgd/gd-main-view-generic.h
 
 gsettings_SCHEMAS = org.gnome.documents.gschema.xml org.gnome.books.gschema.xml
 .PRECIOUS: $(gsettings_SCHEMAS)
