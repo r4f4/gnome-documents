@@ -39,6 +39,7 @@ G_DEFINE_TYPE (GdNavBar, gd_nav_bar, GTK_TYPE_BOX);
 
 enum {
         PROP_DOCUMENT_MODEL = 1,
+        PROP_HOVER,
         NUM_PROPERTIES
 };
 
@@ -81,7 +82,9 @@ struct _GdNavBarPrivate {
         int preview_page;
         int page_start;
         int page_end;
+
         gboolean scrubbing;
+        gboolean hover;
 };
 
 /* Thumbnails dimensions cache */
@@ -560,6 +563,9 @@ gd_nav_bar_get_property (GObject    *object,
         case PROP_DOCUMENT_MODEL:
                 g_value_set_object (value, self->priv->model);
                 break;
+        case PROP_HOVER:
+                g_value_set_boolean (value, gd_nav_bar_get_hover (self));
+                break;
         default:
                 G_OBJECT_WARN_INVALID_PROPERTY_ID (object, prop_id, pspec);
                 break;
@@ -612,6 +618,102 @@ gd_nav_bar_dispose (GObject *object)
         G_OBJECT_CLASS (gd_nav_bar_parent_class)->dispose (object);
 }
 
+static void
+gd_nav_bar_set_hover (GdNavBar *self,
+                      gboolean  hover)
+{
+        if (self->priv->hover == hover) {
+                return;
+        }
+
+        self->priv->hover = hover;
+        g_object_notify (G_OBJECT (self), "hover");
+}
+
+static gboolean
+gd_nav_bar_enter_notify (GtkWidget        *widget,
+			 GdkEventCrossing *event)
+{
+        GdNavBar *self = GD_NAV_BAR (widget);
+        GdNavBarPrivate *priv = self->priv;
+
+        if (event->detail != GDK_NOTIFY_INFERIOR) {
+                gd_nav_bar_set_hover (self, TRUE);
+        }
+
+        return FALSE;
+}
+
+static gboolean
+gd_nav_bar_leave_notify (GtkWidget        *widget,
+			 GdkEventCrossing *event)
+{
+        GdNavBar *self = GD_NAV_BAR (widget);
+        GdNavBarPrivate *priv = self->priv;
+
+        if (event->detail != GDK_NOTIFY_INFERIOR) {
+                gd_nav_bar_set_hover (self, FALSE);
+        }
+
+        return FALSE;
+}
+
+static void
+gd_nav_bar_size_allocate (GtkWidget     *widget,
+			  GtkAllocation *allocation)
+{
+        GdNavBar *self = GD_NAV_BAR (widget);
+        GdNavBarPrivate *priv = self->priv;
+
+        GTK_WIDGET_CLASS (gd_nav_bar_parent_class)->size_allocate (widget, allocation);
+
+        if (gtk_widget_get_realized (widget)) {
+                gdk_window_move_resize (gtk_widget_get_window (widget),
+                                        allocation->x,
+                                        allocation->y,
+                                        allocation->width,
+                                        allocation->height);
+        }
+}
+
+static void
+gd_nav_bar_realize (GtkWidget *widget)
+{
+        GdNavBar *self = GD_NAV_BAR (widget);
+        GdNavBarPrivate *priv = self->priv;
+        GtkAllocation allocation;
+        GdkWindow *window;
+        GdkWindowAttr attributes;
+        gint attributes_mask;
+
+        gtk_widget_get_allocation (widget, &allocation);
+
+        gtk_widget_set_realized (widget, TRUE);
+
+        attributes.window_type = GDK_WINDOW_CHILD;
+        attributes.x = allocation.x;
+        attributes.y = allocation.y;
+        attributes.width = allocation.width;
+        attributes.height = allocation.height;
+        attributes.wclass = GDK_INPUT_OUTPUT;
+        attributes.visual = gtk_widget_get_visual (widget);
+        attributes.event_mask = gtk_widget_get_events (widget);
+        attributes.event_mask |= (GDK_BUTTON_PRESS_MASK |
+                                  GDK_BUTTON_RELEASE_MASK |
+                                  GDK_TOUCH_MASK |
+                                  GDK_ENTER_NOTIFY_MASK |
+                                  GDK_LEAVE_NOTIFY_MASK);
+
+        attributes_mask = GDK_WA_X | GDK_WA_Y | GDK_WA_VISUAL;
+
+        window = gdk_window_new (gtk_widget_get_parent_window (widget),
+                                 &attributes, attributes_mask);
+        gtk_widget_set_window (widget, window);
+        gtk_widget_register_window (widget, window);
+
+        gtk_style_context_set_background (gtk_widget_get_style_context (widget), window);
+}
+
 static gboolean
 gd_nav_bar_draw (GtkWidget *widget,
                  cairo_t   *cr)
@@ -640,7 +742,12 @@ gd_nav_bar_class_init (GdNavBarClass *class)
         oclass->dispose = gd_nav_bar_dispose;
         oclass->get_property = gd_nav_bar_get_property;
         oclass->set_property = gd_nav_bar_set_property;
+
         wclass->draw = gd_nav_bar_draw;
+        wclass->realize = gd_nav_bar_realize;
+        wclass->enter_notify_event = gd_nav_bar_enter_notify;
+        wclass->leave_notify_event = gd_nav_bar_leave_notify;
+        wclass->size_allocate = gd_nav_bar_size_allocate;
 
         g_object_class_install_property (oclass,
                                          PROP_DOCUMENT_MODEL,
@@ -651,6 +758,14 @@ gd_nav_bar_class_init (GdNavBarClass *class)
                                                               G_PARAM_CONSTRUCT |
                                                               G_PARAM_READWRITE |
                                                               G_PARAM_STATIC_STRINGS));
+        g_object_class_install_property (oclass,
+                                         PROP_HOVER,
+                                         g_param_spec_boolean ("hover",
+                                                               "Hover",
+                                                               "Whether the widget is hovered",
+                                                               FALSE,
+                                                               G_PARAM_READABLE |
+                                                               G_PARAM_STATIC_STRINGS));
 
         g_type_class_add_private (oclass, sizeof (GdNavBarPrivate));
 }
@@ -683,12 +798,10 @@ hide_preview (GdNavBar *self)
 static void
 show_preview (GdNavBar *self)
 {
-        GdkWindow *window, *toplevel_window;
-        GtkWidget *toplevel;
+        GdkWindow *window;
         int x, y;
         int width, height;
         int bx, by;
-        int tx, ty;
 
         gtk_widget_realize (self->priv->preview_window);
 
@@ -696,14 +809,10 @@ show_preview (GdNavBar *self)
         height = gtk_widget_get_allocated_height (GTK_WIDGET (self->priv->preview_window));
 
         window = gtk_widget_get_window (GTK_WIDGET (self));
-        gdk_window_get_position (window, &bx, &by);
+        gdk_window_get_origin (window, &bx, &by);
 
-        toplevel = gtk_widget_get_toplevel (GTK_WIDGET (self));
-        toplevel_window = gtk_widget_get_window (toplevel);
-        gdk_window_get_origin (toplevel_window, &tx, &ty);
-
-        x = tx + bx + (gdk_window_get_width (window) - width) / 2;
-        y = ty + by - height - 10;
+        x = bx + (gdk_window_get_width (window) - width) / 2;
+        y = by - height - 10;
 
         gtk_window_move (GTK_WINDOW (self->priv->preview_window), x, y);
         gtk_window_present (GTK_WINDOW (self->priv->preview_window));
@@ -899,6 +1008,8 @@ gd_nav_bar_init (GdNavBar *self)
 
         priv = self->priv;
 
+        gtk_widget_set_has_window (GTK_WIDGET (self), TRUE);
+
         priv->loading_icons = g_hash_table_new_full (g_str_hash,
                                                      g_str_equal,
                                                      (GDestroyNotify)g_free,
@@ -951,6 +1062,12 @@ gd_nav_bar_init (GdNavBar *self)
                           self);
 
         create_preview_window (self);
+}
+
+gboolean
+gd_nav_bar_get_hover (GdNavBar *bar)
+{
+        return bar->priv->hover;
 }
 
 /**
