@@ -304,10 +304,6 @@ const OverviewToolbar = new Lang.Class({
     },
 
     createSearchbar: function() {
-        // create the dropdown for the search bar, it's hidden by default
-        let dropdown = new Searchbar.Dropdown();
-        this._overlay.add_overlay(dropdown.widget);
-
-        return new Searchbar.OverviewSearchbar(dropdown);
+        return new Searchbar.OverviewSearchbar();
     }
 });

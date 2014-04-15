@@ -221,8 +221,11 @@ Signals.addSignalMethods(Searchbar.prototype);
 
 const Dropdown = new Lang.Class({
     Name: 'Dropdown',
+    Extends: Gtk.Popover,
 
-    _init: function() {
+    _init: function(relativeTo) {
+        this.parent({ relative_to: relativeTo,
+                      height_request: 240 });
         this._sourceView = new Manager.BaseView(Application.sourceManager);
         this._typeView = new Manager.BaseView(Application.searchTypeManager);
         this._matchView = new Manager.BaseView(Application.searchMatchManager);
@@ -230,53 +233,31 @@ const Dropdown = new Lang.Class({
         // else?
         // this._categoryView = new Manager.BaseView(Application.searchCategoryManager);
 
-        this._sourceView.connect('item-activated',
-                                 Lang.bind(this, this._onItemActivated));
-        this._typeView.connect('item-activated',
-                               Lang.bind(this, this._onItemActivated));
-        this._matchView.connect('item-activated',
-                                Lang.bind(this, this._onItemActivated));
-
-        let frame = new Gtk.Frame({ shadow_type: Gtk.ShadowType.IN,
-                                    opacity: 0.9 });
-        frame.get_style_context().add_class('documents-dropdown');
-
-        this.widget = new Gtk.Revealer({ halign: Gtk.Align.CENTER,
-                                         valign: Gtk.Align.START });
-        this.widget.add(frame);
-
-        this._grid = new Gtk.Grid({ orientation: Gtk.Orientation.HORIZONTAL });
-        frame.add(this._grid);
+        this._grid = new Gtk.Grid({ orientation: Gtk.Orientation.HORIZONTAL,
+                                    row_homogeneous: true,
+                                    margin: 10 });
+        this.add(this._grid);
 
         this._grid.add(this._sourceView.widget);
         this._grid.add(this._typeView.widget);
         this._grid.add(this._matchView.widget);
         //this._grid.add(this._categoryView.widget);
 
+        this.get_style_context().add_class('documents-dropdown');
         this.hide();
-        this.widget.show_all();
+        this._grid.show_all();
     },
 
     _onItemActivated: function() {
         this.emit('item-activated');
-    },
-
-    show: function() {
-        this.widget.reveal_child = true;
-    },
-
-    hide: function() {
-        this.widget.reveal_child = false;
     }
 });
-Signals.addSignalMethods(Dropdown.prototype);
 
 const OverviewSearchbar = new Lang.Class({
     Name: 'OverviewSearchbar',
     Extends: Searchbar,
 
-    _init: function(dropdown) {
-        this._dropdown = dropdown;
+    _init: function() {
         this._selectAll = Application.application.lookup_action('select-all');
 
         this.parent();
@@ -304,6 +285,8 @@ const OverviewSearchbar = new Lang.Class({
             Lang.bind(this, this._onTagClicked));
         this._searchEntry.connect('tag-button-clicked',
             Lang.bind(this, this._onTagButtonClicked));
+        
+        this._dropdown = new Dropdown(this._searchEntry);
 
         this._sourceTag = new Gd.TaggedEntryTag();
         this._typeTag = new Gd.TaggedEntryTag();
@@ -315,7 +298,7 @@ const OverviewSearchbar = new Lang.Class({
 
         this._searchEntry.connect('destroy', Lang.bind(this,
             function() {
-                this._dropdown.widget.reveal_child = false;
+                this._dropdown.hide();
                 Application.searchController.disconnect(this._searchChangedId);
             }));
 
@@ -327,9 +310,10 @@ const OverviewSearchbar = new Lang.Class({
         this._dropdownButton.connect('toggled', Lang.bind(this,
             function() {
                 let active = this._dropdownButton.get_active();
-                this._dropdown.widget.reveal_child = active;
+                if(active)
+                    this._dropdown.show();
             }));
-        this._dropdown.connect('item-activated', Lang.bind(this,
+        this._dropdown.connect('closed', Lang.bind(this,
             function() {
                 this._dropdownButton.set_active(false);
             }));
