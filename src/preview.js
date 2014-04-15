@@ -589,8 +589,12 @@ const PreviewNavControls = new Lang.Class({
                                                  opacity: 0 });
         this.bar_widget.get_style_context().add_class('osd');
         this._overlay.add_overlay(this.bar_widget);
-        this.bar_widget.connect('enter-notify-event', Lang.bind(this, this._onEnterNotify));
-        this.bar_widget.connect('leave-notify-event', Lang.bind(this, this._onLeaveNotify));
+        this.bar_widget.connect('notify::hover', Lang.bind(this, function() {
+            if (this.bar_widget.hover)
+                this._onEnterNotify();
+            else
+                this._onLeaveNotify();
+        }));
 
         let buttonArea = this.bar_widget.get_button_area();
 
