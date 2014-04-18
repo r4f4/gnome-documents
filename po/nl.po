@@ -1,14 +1,14 @@
 # Dutch translation for Gnome Documents
 # This file is distributed under the same license as the gnome-documents package.
-# Wouter Bolsterlee <wbolster@gnome.org>, 2012
+# Wouter Bolsterlee <wbolster@gnome.org>, 2012–2014
 # Reinout van Schouwen <reinouts@gnome.org>, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-documents\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-01-24 23:11+0100\n"
-"PO-Revision-Date: 2014-01-24 23:34+0200\n"
-"Last-Translator: Reinout van Schouwen <reinouts@gnome.org>\n"
+"POT-Creation-Date: 2014-04-18 20:34+0200\n"
+"PO-Revision-Date: 2014-04-18 20:33+0200\n"
+"Last-Translator: Wouter Bolsterlee <wbolster@gnome.org>\n"
 "Language-Team: Dutch <vertaling@vrijschrift.org>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
@@ -18,17 +18,17 @@ msgstr ""
 "X-Generator: Virtaal 0.7.1\n"
 "X-Project-Style: gnome\n"
 
-#: ../data/gnome-documents.appdata.xml.in.h:1
-#: ../data/gnome-documents.desktop.in.in.h:1 ../src/application.js:103
+#: ../data/org.gnome.Documents.appdata.xml.in.h:1
+#: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:120
 #: ../src/mainWindow.js:52 ../src/mainWindow.js:274
 msgid "Documents"
 msgstr "Documenten"
 
-#: ../data/gnome-documents.appdata.xml.in.h:2
+#: ../data/org.gnome.Documents.appdata.xml.in.h:2
 msgid "A document manager application for GNOME"
 msgstr "Een Gnome-toepassing voor documentbeheer"
 
-#: ../data/gnome-documents.appdata.xml.in.h:3
+#: ../data/org.gnome.Documents.appdata.xml.in.h:3
 msgid ""
 "A simple application to access, organize and share your documents on GNOME. "
 "It is meant to be a simple and elegant replacement for using a file manager "
@@ -40,30 +40,30 @@ msgstr ""
 "bestandsbeheerprogramma om documenten te beheren. Via Gnome Online Accounts "
 "wordt een naadloze integratie met de cloud geboden."
 
-#: ../data/gnome-documents.appdata.xml.in.h:4
+#: ../data/org.gnome.Documents.appdata.xml.in.h:4
 msgid "It lets you:"
 msgstr "Het laat u:"
 
-#: ../data/gnome-documents.appdata.xml.in.h:5
+#: ../data/org.gnome.Documents.appdata.xml.in.h:5
 msgid ""
 "<li>View recent local and online documents</li> <li>Access your Google, "
-"ownCloud or SkyDrive content</li> <li>Search through documents</li> <li>See "
+"ownCloud or OneDrive content</li> <li>Search through documents</li> <li>See "
 "new documents shared by friends</li> <li>View documents fullscreen</li> "
 "<li>Print documents</li> <li>Select favorites</li> <li>Allow opening full "
 "featured editor for non-trivial changes</li>"
 msgstr ""
 "<li>De recente lokale en on-line documenten weergeven</li> <li>Toegang tot "
-"uw Google-, ownCloud- of SkyDrive-inhoud</li> <li>Doorzoeken van "
-"documenten</li> <li>Nieuwe documenten gedeeld door vrienden zien</li> "
-"<li>Weergave van documenten in volledig scherm</li> <li>Documenten afdrukken</li> "
+"uw Google-, ownCloud- of OneDrive-inhoud</li> <li>Doorzoeken van documenten</"
+"li> <li>Nieuwe documenten gedeeld door vrienden zien</li> <li>Weergave van "
+"documenten in volledig scherm</li> <li>Documenten afdrukken</li> "
 "<li>Favorieten selecteren</li> <li>Het volledige bewerkingsprogramma openen "
 "voor niet-triviale veranderingen</li>"
 
-#: ../data/gnome-documents.desktop.in.in.h:2
+#: ../data/org.gnome.Documents.desktop.in.h:2
 msgid "Access, manage and share documents"
 msgstr "Documenten gebruiken, beheren en delen"
 
-#: ../data/gnome-documents.desktop.in.in.h:3
+#: ../data/org.gnome.Documents.desktop.in.h:3
 msgid "Docs;PDF;Document;"
 msgstr "Docs;PDF;Document;"
 
@@ -99,73 +99,77 @@ msgstr "Gemaximaliseerd venster"
 msgid "Window maximized state"
 msgstr "Gemaximaliseerd venster"
 
-#: ../src/documents.js:601 ../src/search.js:418
+#: ../src/documents.js:600
+msgid "Failed to print document"
+msgstr "Kon document niet afdrukken"
+
+#: ../src/documents.js:637 ../src/search.js:418
 msgid "Local"
 msgstr "Lokaal"
 
-#: ../src/documents.js:622
+#: ../src/documents.js:658
 msgid "GNOME"
 msgstr "Gnome"
 
-#: ../src/documents.js:623
+#: ../src/documents.js:659
 msgid "Getting Started with Documents"
 msgstr "Aan de slag met Documenten"
 
-#: ../src/documents.js:639 ../src/documents.js:804 ../src/documents.js:858
-#: ../src/documents.js:958
+#: ../src/documents.js:675 ../src/documents.js:848 ../src/documents.js:910
+#: ../src/documents.js:1018
 msgid "Collection"
 msgstr "Verzameling"
 
-#: ../src/documents.js:683
+#: ../src/documents.js:727
 msgid "Google Docs"
 msgstr "Google Docs"
 
-#: ../src/documents.js:684
+#: ../src/documents.js:728
 msgid "Google"
 msgstr "Google"
 
-#: ../src/documents.js:806 ../src/documents.js:960
+#: ../src/documents.js:850 ../src/documents.js:1020
 msgid "Spreadsheet"
 msgstr "Spreadsheet"
 
-#: ../src/documents.js:808 ../src/documents.js:962 ../src/presentation.js:47
+#: ../src/documents.js:852 ../src/documents.js:1022 ../src/presentation.js:47
 msgid "Presentation"
 msgstr "Presentatie"
 
-#: ../src/documents.js:810 ../src/documents.js:964
+#: ../src/documents.js:854 ../src/documents.js:1024
 msgid "Document"
 msgstr "Document"
 
-#: ../src/documents.js:836
+#: ../src/documents.js:888
 msgid "ownCloud"
 msgstr "ownCloud"
 
-#: ../src/documents.js:892 ../src/documents.js:893
-msgid "Skydrive"
-msgstr "SkyDrive"
+#: ../src/documents.js:952 ../src/documents.js:953
+msgid "OneDrive"
+msgstr "OneDrive"
 
-#: ../src/documents.js:1084
+#: ../src/documents.js:1152
 msgid "Please check the network connection."
 msgstr "Controleer de netwerkverbinding."
 
-#: ../src/documents.js:1087
+#: ../src/documents.js:1155
 msgid "Please check the network proxy settings."
 msgstr "Controleer de netwerkproxy-instellingen."
 
-#: ../src/documents.js:1090
+#: ../src/documents.js:1158
 msgid "Unable to sign in to the document service."
 msgstr "Kan niet aanmelden bij de documentservice."
 
-#: ../src/documents.js:1093
+#: ../src/documents.js:1161
 msgid "Unable to locate this document."
 msgstr "Kan dit document niet vinden."
 
-#: ../src/documents.js:1096
+#: ../src/documents.js:1164
 #, javascript-format
 msgid "Hmm, something is fishy (%d)."
 msgstr "Hmm, er lijkt iets mis te gaan (%d)."
 
-#: ../src/documents.js:1114
+#: ../src/documents.js:1182
 #, javascript-format
 msgid "Oops! Unable to load “%s”"
 msgstr "Oeps! Niet in staat ‘%s’ te laden"
@@ -174,25 +178,20 @@ msgstr "Oeps! Niet in staat ‘%s’ te laden"
 msgid "View"
 msgstr "Beeld"
 
-#: ../src/embed.js:63 ../src/lib/gd-places-bookmarks.c:383
-#: ../src/lib/gd-places-links.c:257 ../src/view.js:71
-msgid "Loading…"
-msgstr "Laden…"
-
-#: ../src/embed.js:146
+#: ../src/embed.js:142
 msgid "No Documents Found"
 msgstr "Geen documenten gevonden"
 
-#: ../src/embed.js:167
+#: ../src/embed.js:163
 #, javascript-format
 msgid "You can add your online accounts in %s"
 msgstr "U kunt uw on-line-accounts toevoegen in %s"
 
-#: ../src/embed.js:171
+#: ../src/embed.js:167
 msgid "Settings"
 msgstr "Instellingen"
 
-#: ../src/lib/gd-nav-bar.c:235
+#: ../src/lib/gd-nav-bar.c:238
 #, c-format
 msgid "Page %u of %u"
 msgstr "Pagina %u van %u"
@@ -208,16 +207,21 @@ msgstr "LibreOffice is vereist om dit document te bekijken"
 #. Translators: %s is the number of the page, already formatted
 #. * as a string, for example "Page 5".
 #.
-#: ../src/lib/gd-places-bookmarks.c:312
+#: ../src/lib/gd-places-bookmarks.c:315
 #, c-format
 msgid "Page %s"
 msgstr "Pagina %s"
 
-#: ../src/lib/gd-places-bookmarks.c:375
+#: ../src/lib/gd-places-bookmarks.c:378
 msgid "No bookmarks"
 msgstr "Geen bladwijzers"
 
-#: ../src/lib/gd-places-bookmarks.c:648 ../src/preview.js:594
+#: ../src/lib/gd-places-bookmarks.c:386 ../src/lib/gd-places-links.c:257
+#: ../src/view.js:71
+msgid "Loading…"
+msgstr "Laden…"
+
+#: ../src/lib/gd-places-bookmarks.c:651 ../src/preview.js:605
 msgid "Bookmarks"
 msgstr "Bladwijzers"
 
@@ -237,35 +241,30 @@ msgstr "Zoeken"
 msgid "Back"
 msgstr "Terug"
 
-#: ../src/mainToolbar.js:163
+#: ../src/mainToolbar.js:135
 msgid "View items as a list"
 msgstr "Items weergeven als een lijst"
 
-#: ../src/mainToolbar.js:169
+#: ../src/mainToolbar.js:141
 msgid "View items as a grid of icons"
 msgstr "Items weergeven als een raster van pictogrammen"
 
-#: ../src/mainToolbar.js:203
-#, javascript-format
-msgid "Results for “%s”"
-msgstr "Resultaten voor ‘%s’"
-
-#: ../src/mainToolbar.js:211
+#: ../src/mainToolbar.js:171
 msgid "Click on items to select them"
 msgstr "Klik op een item om het te selecteren"
 
-#: ../src/mainToolbar.js:213
+#: ../src/mainToolbar.js:173
 #, javascript-format
 msgid "%d selected"
 msgid_plural "%d selected"
 msgstr[0] "%d geselecteerd"
 msgstr[1] "%d geselecteerd"
 
-#: ../src/mainToolbar.js:240
+#: ../src/mainToolbar.js:200
 msgid "Cancel"
 msgstr "Annuleren"
 
-#: ../src/mainToolbar.js:282
+#: ../src/mainToolbar.js:242
 msgid "Select Items"
 msgstr "Items selecteren"
 
@@ -279,50 +278,46 @@ msgstr ""
 msgid "A document manager application"
 msgstr "Een toepassing voor documentbeheer"
 
-#: ../src/notifications.js:87
+#: ../src/notifications.js:86
 #, javascript-format
 msgid "Printing “%s”: %s"
 msgstr "Afdrukken van ‘%s’: %s"
 
-#: ../src/notifications.js:143
+#: ../src/notifications.js:142
 msgid "Your documents are being indexed"
 msgstr "Uw documenten worden geïndexeerd"
 
-#: ../src/notifications.js:144
+#: ../src/notifications.js:143
 msgid "Some documents might not be available during this process"
 msgstr "Sommige documenten kunnen tijdens deze bewerking niet beschikbaar zijn"
 
-#: ../src/notifications.js:166
+#: ../src/notifications.js:165
 #, javascript-format
 msgid "Fetching documents from %s"
 msgstr "Documenten ophalen van %s"
 
-#: ../src/notifications.js:168
+#: ../src/notifications.js:167
 msgid "Fetching documents from online accounts"
 msgstr "Documenten ophalen uit on-line-accounts"
 
-#: ../src/password.js:45
+#: ../src/password.js:46
 msgid "Password Required"
 msgstr "Wachtwoord vereist"
 
-#: ../src/password.js:48
+#: ../src/password.js:49
 msgid "_Unlock"
 msgstr "_Ontgrendelen"
 
-#: ../src/password.js:64
+#: ../src/password.js:65
 #, javascript-format
 msgid "Document %s is locked and requires a password to be opened."
 msgstr ""
 "Het document ‘%s’ is beveiligd en vereist een wachtwoord voordat het geopend "
 "kan worden."
 
-#: ../src/password.js:78
+#: ../src/password.js:79
 msgid "_Password"
 msgstr "_Wachtwoord"
-
-#: ../src/places.js:59
-msgid "Close"
-msgstr "Sluiten"
 
 #: ../src/presentation.js:104
 msgid "Running in presentation mode"
@@ -332,55 +327,51 @@ msgstr "Uitgevoerd in de presentatiemodus"
 msgid "Present On"
 msgstr "Presenteren op"
 
-#: ../src/preview.js:603
+#: ../src/preview.js:613
 msgid "Bookmark this page"
 msgstr "Bladwijzer voor deze pagina toevoegen"
 
-#: ../src/preview.js:890 ../src/selections.js:856
+#: ../src/preview.js:857 ../src/selections.js:857
 #, javascript-format
 msgid "Open with %s"
 msgstr "Openen met %s"
 
-#: ../src/preview.js:951
+#: ../src/preview.js:919
 msgid "Find Previous"
 msgstr "Vorige zoeken"
 
-#: ../src/preview.js:958
+#: ../src/preview.js:926
 msgid "Find Next"
 msgstr "Volgende zoeken"
 
-#: ../src/properties.js:60 ../src/resources/preview-menu.ui.h:9
-#: ../src/selections.js:766
+#: ../src/properties.js:61 ../src/resources/preview-menu.ui.h:9
+#: ../src/selections.js:767
 msgid "Properties"
 msgstr "Eigenschappen"
 
-#: ../src/properties.js:62 ../src/sharing.js:101
-msgid "Done"
-msgstr "Gereed"
-
-#: ../src/properties.js:82
+#: ../src/properties.js:81
 msgctxt "Document Title"
 msgid "Title"
 msgstr "Titel"
 
-#: ../src/properties.js:91
+#: ../src/properties.js:90
 msgctxt "Document Author"
 msgid "Author"
 msgstr "Auteur"
 
-#: ../src/properties.js:98
+#: ../src/properties.js:97
 msgid "Source"
 msgstr "Bron"
 
-#: ../src/properties.js:104
+#: ../src/properties.js:103
 msgid "Date Modified"
 msgstr "Datum gewijzigd"
 
-#: ../src/properties.js:111
+#: ../src/properties.js:110
 msgid "Date Created"
 msgstr "Datum aangemaakt"
 
-#: ../src/properties.js:120
+#: ../src/properties.js:119
 msgctxt "Document Type"
 msgid "Type"
 msgstr "Type"
@@ -405,8 +396,8 @@ msgstr "Afsluiten"
 msgid "_Copy"
 msgstr "_Kopiëren"
 
-#: ../src/resources/preview-menu.ui.h:1 ../src/selections.js:746
-#: ../src/selections.js:859
+#: ../src/resources/preview-menu.ui.h:1 ../src/selections.js:747
+#: ../src/selections.js:860
 msgid "Open"
 msgstr "Openen"
 
@@ -516,94 +507,98 @@ msgstr ""
 msgid "Create new collection"
 msgstr "Een nieuwe verzameling aanmaken"
 
-#: ../src/selections.js:639
+#: ../src/selections.js:640
 msgctxt "Dialog Title"
 msgid "Collections"
 msgstr "Verzamelingen"
 
-#: ../src/selections.js:751
+#: ../src/selections.js:752
 msgid "Print"
 msgstr "Print"
 
-#: ../src/selections.js:756
+#: ../src/selections.js:757
 msgid "Delete"
 msgstr "Verwijderen"
 
-#: ../src/selections.js:761
-msgid "Add to Collection"
-msgstr "Aan verzameling toevoegen"
-
-#: ../src/selections.js:771
+#: ../src/selections.js:762
 msgid "Share"
 msgstr "Delen"
 
-#: ../src/sharing.js:97
+#: ../src/selections.js:772
+msgid "Add to Collection"
+msgstr "Aan verzameling toevoegen"
+
+#: ../src/sharing.js:98
 msgid "Sharing Settings"
 msgstr "Instellingen voor delen"
 
-#: ../src/sharing.js:134
+#: ../src/sharing.js:102
+msgid "Done"
+msgstr "Gereed"
+
+#: ../src/sharing.js:135
 msgid "Document permissions"
 msgstr "Documentrechten"
 
-#: ../src/sharing.js:141 ../src/sharing.js:319
+#: ../src/sharing.js:142 ../src/sharing.js:320
 msgid "Change"
 msgstr "Wijzigen"
 
-#: ../src/sharing.js:165 ../src/sharing.js:294
+#: ../src/sharing.js:166 ../src/sharing.js:295
 msgid "Private"
 msgstr "Privé"
 
-#: ../src/sharing.js:175 ../src/sharing.js:287
+#: ../src/sharing.js:176 ../src/sharing.js:288
 msgid "Public"
 msgstr "Openbaar"
 
-#: ../src/sharing.js:179 ../src/sharing.js:289
+#: ../src/sharing.js:180 ../src/sharing.js:290
 msgid "Everyone can edit"
 msgstr "Iedereen kan bewerken"
 
-#: ../src/sharing.js:186
+#: ../src/sharing.js:187
 msgid "Add people"
 msgstr "Personen toevoegen"
 
-#: ../src/sharing.js:193
+#: ../src/sharing.js:194
 msgid "Enter an email address"
 msgstr "Vul een e-mailadres in"
 
-#: ../src/sharing.js:208 ../src/sharing.js:375
+#: ../src/sharing.js:209 ../src/sharing.js:376
 msgid "Can edit"
 msgstr "Kan bewerken"
 
-#: ../src/sharing.js:208 ../src/sharing.js:378
+#: ../src/sharing.js:209 ../src/sharing.js:379
 msgid "Can view"
 msgstr "Kan bekijken"
 
-#: ../src/sharing.js:215
+#: ../src/sharing.js:216
 msgid "Add"
 msgstr "Toevoegen"
 
-#: ../src/sharing.js:291
+#: ../src/sharing.js:292
 msgid "Everyone can read"
 msgstr "Iedereen kan lezen"
 
-#: ../src/sharing.js:306
+#: ../src/sharing.js:307
 msgid "Save"
 msgstr "Opslaan"
 
-#: ../src/sharing.js:372
+#: ../src/sharing.js:373
 msgid "Owner"
 msgstr "Eigenaar"
 
-#: ../src/sharing.js:441
+#: ../src/sharing.js:442
 #, javascript-format
 msgid "You can ask %s for access"
 msgstr "U kunt %s vragen om toegang"
 
-#: ../src/sharing.js:478 ../src/sharing.js:514 ../src/sharing.js:571
-#: ../src/sharing.js:588 ../src/sharing.js:607
+#: ../src/sharing.js:479 ../src/sharing.js:515 ../src/sharing.js:572
+#: ../src/sharing.js:589 ../src/sharing.js:608
 msgid "The document was not updated"
 msgstr "Het document is niet bijgewerkt"
 
-#: ../src/shellSearchProvider.js:295
+#: ../src/shellSearchProvider.js:294
 msgid "Untitled Document"
 msgstr "Naamloos document"
 
@@ -615,49 +610,58 @@ msgstr "Kon lijst van documenten niet opvragen"
 msgid "Load More"
 msgstr "Meer laden"
 
-#: ../src/view.js:295
+#: ../src/view.js:307
 msgid "Yesterday"
 msgstr "Gisteren"
 
-#: ../src/view.js:297
+#: ../src/view.js:309
 #, javascript-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
 msgstr[0] "%d dag geleden"
 msgstr[1] "%d dagen geleden"
 
-#: ../src/view.js:301
+#: ../src/view.js:313
 msgid "Last week"
 msgstr "Vorige week"
 
-#: ../src/view.js:303
+#: ../src/view.js:315
 #, javascript-format
 msgid "%d week ago"
 msgid_plural "%d weeks ago"
 msgstr[0] "%d week geleden"
 msgstr[1] "%d weken geleden"
 
-#: ../src/view.js:307
+#: ../src/view.js:319
 msgid "Last month"
 msgstr "Vorige maand"
 
-#: ../src/view.js:309
+#: ../src/view.js:321
 #, javascript-format
 msgid "%d month ago"
 msgid_plural "%d months ago"
 msgstr[0] "%d maand geleden"
 msgstr[1] "%d maanden geleden"
 
-#: ../src/view.js:313
+#: ../src/view.js:325
 msgid "Last year"
 msgstr "Vorig jaar"
 
-#: ../src/view.js:315
+#: ../src/view.js:327
 #, javascript-format
 msgid "%d year ago"
 msgid_plural "%d years ago"
 msgstr[0] "%d jaar geleden"
 msgstr[1] "%d jaar geleden"
+
+#~ msgid "Skydrive"
+#~ msgstr "SkyDrive"
+
+#~ msgid "Results for “%s”"
+#~ msgstr "Resultaten voor ‘%s’"
+
+#~ msgid "Close"
+#~ msgstr "Sluiten"
 
 #~ msgid "The active source filter"
 #~ msgstr "Actieve bronfilter"
