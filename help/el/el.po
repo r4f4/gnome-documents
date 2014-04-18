@@ -10,16 +10,26 @@ msgid ""
 msgstr ""
 "Project-Id-Version: user-guide.docs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-27 11:16+0000\n"
-"PO-Revision-Date: 2014-02-03 10:34+0300\n"
-"Last-Translator: Dimitris Spingos (Δημήτρης Σπίγγος) <dmtrs32@gmail.com>\n"
+"POT-Creation-Date: 2014-04-18 19:10+0000\n"
+"PO-Revision-Date: 2014-04-19 01:51+0200\n"
+"Last-Translator: Tom Tryfonidis <tomtryf@gmail.com>\n"
 "Language-Team: team@lists.gnome.gr\n"
 "Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Virtaal 0.7.0\n"
+"X-Generator: Poedit 1.6.4\n"
+
+#. (itstool) path: p/link
+#: C/legal.xml:3
+msgid "Creative Commons Attribution-ShareAlike 3.0 Unported License"
+msgstr "Άδεια Creative Commons Attribution-ShareAlike 3.0 Unported"
+
+#. (itstool) path: license/p
+#: C/legal.xml:3
+msgid "This work is licensed under a <_:link-1/>."
+msgstr "Αυτό το έργο κυκλοφορεί υπό άδεια <_:link-1/>."
 
 # #-#-#-#-#  accerciser.HEAD.el.po (accerciser)  #-#-#-#-#
 # #-#-#-#-#  gnome-power-manager.HEAD.el.po (el)  #-#-#-#-#
@@ -37,381 +47,387 @@ msgctxt "_"
 msgid "translator-credits"
 msgstr ""
 "Ελληνική μεταφραστική ομάδα GNOME\n"
-" Δημήτρης Σπίγγος <dmtrs32@gmail.com>, 2012, 2013, 2014\n"
-" Φώτης Τσάμης <ftsamis@gmail.com>, 2009\n"
-" Μάριος Ζηντίλης <m.zindilis@dmajor.org>, 2009, 2010\n"
-" Θάνος Τρυφωνίδης <tomtryf@gmail.com>, 2012\n"
+"Δημήτρης Σπίγγος <dmtrs32@gmail.com>, 2012, 2013, 2014\n"
+"Φώτης Τσάμης <ftsamis@gmail.com>, 2009\n"
+"Μάριος Ζηντίλης <m.zindilis@dmajor.org>, 2009, 2010\n"
+"Θάνος Τρυφωνίδης <tomtryf@gmail.com>, 2012\n"
+"Μαρία Θουκυδίδου <marablack3@gmail.com>, 2014\n"
 "Για περισσότερα δείτε: http://gnome.gr"
 
 #. (itstool) path: credit/name
-#: C/collections.page:11 C/index.page:10 C/info.page:10 C/previews.page:11
-#: C/print.page:11 C/search.page:11 C/select.page:11 C/tracker.page:11
-#: C/viewgrid.page:11 C/view.page:11
+#: C/collections.page:12 C/index.page:14 C/info.page:12 C/print.page:11
+#: C/prob-no-show.page:12 C/prob-previews.page:12 C/search.page:11
+#: C/viewgrid.page:12 C/view.page:12
 msgid "Julita Inca"
 msgstr "Julita Inca"
 
 #. (itstool) path: credit/years
-#: C/collections.page:13 C/collections.page:18 C/filter.page:13
-#: C/formats.page:13 C/index.page:12 C/index.page:17 C/info.page:12
-#: C/info.page:17 C/previews.page:13 C/previews.page:18 C/print.page:13
-#: C/print.page:18 C/search.page:13 C/search.page:18 C/select.page:13
-#: C/select.page:18 C/tracker.page:13 C/tracker.page:18 C/viewgrid.page:13
-#: C/viewgrid.page:18 C/view.page:13 C/view.page:18
+#: C/collections.page:14 C/collections.page:19 C/filter.page:14
+#: C/formats.page:14 C/index.page:16 C/index.page:21 C/info.page:14
+#: C/info.page:19 C/print.page:13 C/print.page:18 C/prob-no-show.page:14
+#: C/prob-no-show.page:19 C/prob-previews.page:14 C/prob-previews.page:19
+#: C/search.page:13 C/search.page:18 C/viewgrid.page:14 C/viewgrid.page:19
+#: C/view.page:14 C/view.page:19
 msgid "2012"
 msgstr "2012"
 
 #. (itstool) path: credit/name
-#: C/collections.page:16 C/filter.page:11 C/formats.page:11 C/index.page:15
-#: C/info.page:15 C/previews.page:16 C/print.page:16 C/search.page:16
-#: C/select.page:16 C/tracker.page:16 C/viewgrid.page:16 C/view.page:16
+#: C/collections.page:17 C/filter.page:12 C/formats.page:12 C/index.page:19
+#: C/info.page:17 C/print.page:16 C/prob-no-show.page:17
+#: C/prob-previews.page:17 C/search.page:16 C/viewgrid.page:17 C/view.page:17
 msgid "Michael Hill"
 msgstr "Michael Hill"
 
+#. (itstool) path: credit/name
+#: C/collections.page:22 C/filter.page:17 C/formats.page:17 C/index.page:24
+#: C/info.page:22 C/prob-no-show.page:22 C/prob-previews.page:22
+#: C/viewgrid.page:22 C/view.page:22
+msgid "Ekaterina Gerasimova"
+msgstr "Ekaterina Gerasimova"
+
+#. (itstool) path: credit/years
+#: C/collections.page:24 C/filter.page:19 C/formats.page:19 C/index.page:26
+#: C/info.page:24 C/prob-no-show.page:24 C/prob-previews.page:24
+#: C/viewgrid.page:24 C/view.page:24
+msgid "2014"
+msgstr "2014"
+
 #. (itstool) path: info/desc
-#: C/collections.page:23
-msgid "Group related documents in a collection."
-msgstr "Έγγραφα σχετικά με ομάδες σε μια συλλογή."
+#: C/collections.page:29
+msgid "Group related documents together to help sort them."
+msgstr ""
+"Ομαδοποιήστε σχετικά έγγραφα μαζί για να βοηθήσετε την ταξινόμησή τους."
 
 #. (itstool) path: page/title
-#: C/collections.page:26
+#: C/collections.page:32
 msgid "Make collections of documents"
 msgstr "Δημιουργία συλλογών εγγράφων"
 
 #. (itstool) path: page/p
-#: C/collections.page:39
+#: C/collections.page:45
 msgid ""
-"<app>Documents</app> lets you put together documents of different types in "
-"one place called a <em>collection</em>. If you have documents that are "
-"related, you can group them to make them easier to find. For example, if you "
-"had a business trip where you made a presentation, your slides, your flight "
-"itinerary (a PDF file), your budget spreadsheet, and other hybrid PDF/ODF "
-"documents, can be grouped in one collection."
+"You can put together documents of different types in one place which is "
+"called a <em>collection</em>. If you have documents that are related, you "
+"can group them to make them easier to find. For example, if you had a "
+"business trip where you made a presentation, your slides, a PDF of your "
+"flight itinerary, your budget spreadsheet, and other word processor and PDF "
+"documents can be grouped in one collection."
 msgstr ""
-"Τα <app>έγγραφα</app> επιτρέπουν να βάλετε μαζί έγγραφα διαφορετικών τύπων "
-"σε μια θέση που λέγεται <em>συλλογή</em>. Εάν έχετε έγγραφα που σχετίζονται, "
-"μπορείτε να τα ομαδοποιήσετε διευκολύνοντας την εύρεση τους. Για παράδειγμα, "
-"εάν είχατε ένα επαγγελματικό ταξίδι όπου κάνατε μια παρουσίαση, οι "
-"διαφάνειές σας, το δρομολόγιο πτήσης σας (ένα αρχείο PDF), το υπολογιστικό "
-"φύλλο του προϋπολογισμού σας και άλλα υβριδικά έγγραφα PDF/ODF, μπορούν να "
-"ομαδοποιηθούν σε μια συλλογή."
+"Μπορείτε να βάλετε μαζί έγγραφα διαφορετικών τύπων σε μια θέση που λέγεται "
+"<em>συλλογή</em>. Εάν έχετε έγγραφα που σχετίζονται, μπορείτε να τα "
+"ομαδοποιήσετε, διευκολύνοντας την εύρεση τους. Για παράδειγμα, εάν είχατε "
+"ένα επαγγελματικό ταξίδι όπου κάνατε μια παρουσίαση, οι διαφάνειές σας, ένα "
+"PDF με το δρομολόγιο πτήσης σας, το υπολογιστικό φύλλο του προϋπολογισμού "
+"σας και άλλα έγραφα επεξεργαστών κειμένου και PDF, μπορούν να ομαδοποιηθούν "
+"σε μια συλλογή."
 
-#. (itstool) path: page/p
-#: C/collections.page:46
+#. (itstool) path: steps/title
+#: C/collections.page:53
 msgid "To create or add to a collection:"
 msgstr "Για δημιουργία ή προσθήκη σε μια συλλογή:"
 
 #. (itstool) path: item/p
-#: C/collections.page:49 C/collections.page:72 C/print.page:39
-#: C/select.page:41
-msgid "Click the <gui>✓</gui> button."
-msgstr "Πατήστε το κουμπί <gui>✓</gui>."
-
-#. (itstool) path: item/p
-#: C/collections.page:52
-msgid "In selection mode, check the documents to be collected."
-msgstr "Στην κατάσταση επιλογής, σημειώστε τα έγγραφα που θα συλλεγούν."
-
-#. (itstool) path: item/p
-#: C/collections.page:55
-msgid "Click the <gui>+</gui> button in the button bar."
-msgstr "Πατήστε το κουμπί <gui>+</gui> στη γραμμή κουμπιών."
+#: C/collections.page:55 C/collections.page:73 C/print.page:38
+msgid "Press the <gui>✓</gui> button."
+msgstr "Πατήστε το πλήκτρο <gui>✓</gui>."
 
 #. (itstool) path: item/p
 #: C/collections.page:58
-msgid ""
-"In the collection list, click <gui>Add</gui> and type a new collection name, "
-"or select an existing collection. The selected documents will be added to "
-"the collection."
-msgstr ""
-"Στη λίστα συλλογής, πατήστε <gui>προσθήκη</gui> και πληκτρολογήστε ένα νέο "
-"όνομα συλλογής, ή επιλέξτε μια υπάρχουσα συλλογή. Τα επιλεγμένα έγγραφα θα "
-"προστεθούν στη συλλογή."
+msgid "In selection mode, select related documents."
+msgstr "Στην κατάσταση επιλογής, επιλέξτε τα σχετικά έγγραφα."
 
-#. (itstool) path: note/p
-#: C/collections.page:65
-msgid ""
-"Collections do not behave like folders and their hierarchy: <em>you cannot "
-"put collections inside collections.</em>"
-msgstr ""
-"Οι συλλογές δεν συμπεριφέρονται το ίδιο όπως οι φάκελοι και η ιεραρχία τους: "
-"<em>δεν μπορείτε να βάλετε συλλογές μέσα σε συλλογές.</em>"
+#. (itstool) path: item/p
+#: C/collections.page:61
+msgid "Press <gui>Add to Collection</gui>."
+msgstr "Πατήστε <gui>Προσθήκη στη συλλογή</gui>."
 
-#. (itstool) path: page/p
-#: C/collections.page:69
+#. (itstool) path: item/p
+#: C/collections.page:64
+msgid ""
+"In the collection list, press on <gui>Create new collection</gui> twice and "
+"type a new collection name, or select an existing collection. The selected "
+"documents will be added to the collection."
+msgstr ""
+"Στον κατάλογο συλλογής, πατήστε <gui>Δημιουργία νέας συλλογής</gui> δυο "
+"φορές και πληκτρολογήστε ένα νέο όνομα συλλογής, ή επιλέξτε μια υπάρχουσα "
+"συλλογή. Τα επιλεγμένα έγγραφα θα προστεθούν στη συλλογή."
+
+#. (itstool) path: steps/title
+#: C/collections.page:71
 msgid "To delete a collection:"
-msgstr "Για διαγραφή συλλογής:"
+msgstr "Για διαγραφή μιας συλλογής:"
 
 #. (itstool) path: item/p
-#: C/collections.page:75
-msgid "In selection mode, check the collection to be deleted."
-msgstr "Στην κατάσταση επιλογής, σημειώστε τη συλλογή που θα διαγραφεί."
+#: C/collections.page:76
+msgid "In selection mode, select the collection that you want to delete."
+msgstr "Στην κατάσταση επιλογής, επιλέξτε τη συλλογή που θέλετε να διαγραφεί."
 
 #. (itstool) path: item/p
-#: C/collections.page:78
+#: C/collections.page:79
 msgid ""
-"Click the Trash button in the button bar. The collection will be deleted, "
-"leaving the original documents."
+"Press <gui style=\"button\">Delete</gui>. The collection will be deleted, "
+"leaving the original documents as they are."
 msgstr ""
-"Πατήστε το κουμπί απορριμμάτων στη γραμμή κουμπιών. Η συλλογή θα διαγραφεί, "
-"αφήνοντας τα αρχικά έγγραφα."
+"Πατήστε <gui style=\"button\">Διαγραφή</gui>. Η συλλογή θα διαγραφεί, "
+"αφήνοντας τα αρχικά έγγραφα όπως είναι."
 
 #. (itstool) path: media
 #. This is a reference to an external file such as an image or video. When
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/filter.page:23 C/search.page:53
-#, fuzzy
+#: C/filter.page:30 C/search.page:53
 msgctxt "_"
 msgid "external ref='media/go-down.png' md5='e8c16f5ab9ed933f4a537b740506f4d4'"
 msgstr ""
 "external ref='figures/go-down.png' md5='e8c16f5ab9ed933f4a537b740506f4d4'"
 
 #. (itstool) path: info/desc
-#: C/filter.page:18
+#: C/filter.page:24
 msgid "Choose which documents to display."
 msgstr "Επιλέξτε ποια έγγραφα θα εμφανιστούν."
 
 #. (itstool) path: page/title
-#: C/filter.page:21
+#: C/filter.page:27
 msgid "Filter documents"
 msgstr "Φίλτρο εγγράφων"
 
 #. (itstool) path: page/p
-#: C/filter.page:23
-#, fuzzy
-msgid ""
-"Click the <media type=\"image\" src=\"media/go-down.png\">down</media> "
-"button next to the <link xref=\"search\">search</link> bar to limit the "
-"scope of the search in these categories:"
-msgstr ""
-"Πατήστε το κουμπί <media type=\"image\" src=\"figures/go-down.png\">κάτω</"
-"media> δίπλα στη γραμμή <link xref=\"documents-search\">αναζήτηση</link> για "
-"να περιορίσετε το εύρος της αναζήτησης σε αυτές τις κατηγορίες:"
-
-#. (itstool) path: item/p
 #: C/filter.page:29
-msgid "<em>Sources</em>: Local, Google, SkyDrive, or All."
-msgstr "<em>πηγές</em>: τοπικές, google, SkyDrive, ή όλα."
-
-#. (itstool) path: item/p
-#: C/filter.page:31
+#| msgid ""
+#| "<link xref=\"search\">Open the search</link> and click the <media type="
+#| "\"image\" src=\"media/go-down.png\">down</media> button next to the "
+#| "search bar to limit the scope of the search in these categories:"
 msgid ""
-"<em>Type</em>: Collections, PDF Documents, Presentations, Spreadsheets, Text "
-"Documents, or All."
+"<link xref=\"search\">Open the search</link> and click the <media type="
+"\"image\" src=\"media/go-down.png\">down</media> button next to the search "
+"bar to limit the scope of the search in these categories:"
 msgstr ""
-"<em>Τύπος</em>: συλλογές, έγγραφα PDF, παρουσιάσεις, υπολογιστικά φύλλα, "
-"έγγραφα κειμένου, ή όλα."
+"<link xref=\"search\">Ανοίξτε την αναζήτηση</link> και πατήστε στο πλήκτρο "
+"<media type=\"image\" src=\"media/go-down.png\">κάτω</media> δίπλα στη "
+"γραμμή αναζήτησης για να περιορίσετε το εύρος της αναζήτησης σε αυτές τις "
+"κατηγορίες:"
+
+#. (itstool) path: item/title
+#: C/filter.page:35
+msgid "Sources"
+msgstr "Πηγές"
 
 #. (itstool) path: item/p
-#: C/filter.page:35
-msgid "Title, Author, or All."
-msgstr "Τίτλος, συγγραφέας, ή όλα."
+#: C/filter.page:36
+msgid ""
+"Chose to search documents that are <gui>Local</gui>, accessed through <link "
+"href=\"help:gnome-help/online-accounts\">online accounts</link> with "
+"<gui>Google</gui>, <gui>OneDrive</gui>, <gui>ownCloud</gui>, or <gui>All</"
+"gui>."
+msgstr ""
+"Επιλέξτε την αναζήτηση εγγράφων που είναι <gui>Τοπικά</gui>, προσβάσιμα μέσω "
+"<link href=\"help:gnome-help/online-accounts\">διαδικτυακών λογαριασμών</"
+"link> με <gui>Google</gui>, <gui>OneDrive</gui>, <gui>ownCloud</gui>, ή με "
+"<gui>Όλα</gui>."
+
+#. (itstool) path: item/title
+#: C/filter.page:42
+msgid "Type"
+msgstr "Πληκτρολογήστε"
+
+#. (itstool) path: item/p
+#: C/filter.page:43
+msgid ""
+"Search only documents that are <gui>Collections</gui>, <gui>PDF Documents</"
+"gui>, <gui>Presentations</gui>, <gui>Spreadsheets</gui>, <gui>Text "
+"Documents</gui>, or <gui>All</gui>."
+msgstr ""
+"Να γίνει αναζήτηση μόνο για τα έγγραφα που είναι <gui>Συλλογές</gui>, "
+"<gui>έγγραφα PDF</gui>, <gui>Παρουσιάσεις</gui>, <gui>Υπολογιστικά φύλλα</"
+"gui>, <gui>Έγγραφα κειμένου</gui>, ή για <gui>Όλα</gui>."
+
+#. (itstool) path: item/title
+#: C/filter.page:48
+msgid "Match"
+msgstr "Αντιστοίχιση"
+
+#. (itstool) path: item/p
+#: C/filter.page:49
+msgid ""
+"Choose to search only the <gui>Title</gui>, the <gui>Author</gui>, or "
+"<gui>All</gui>."
+msgstr ""
+"Επιλέξτε την αναζήτηση μόνο για τον <gui>Τίτλο</gui>, τον <gui>Συγγραφέα/ "
+"Δημιουργό</gui>, ή για <gui>Όλα</gui>."
 
 #. (itstool) path: note/p
-#: C/filter.page:40
-#, fuzzy
+#: C/filter.page:55
 msgid ""
-"In order for <gui>Google</gui> or <gui>SkyDrive</gui> to appear in the "
-"filter list, it is necessary to configure Google or Windows Live as an <link "
-"href=\"gnome-help:accounts-add\">online account</link>."
+"In order for <gui>Google</gui>, <gui>OneDrive</gui> or <gui>ownCloud</gui> "
+"to appear in the filter list, it is necessary to configure Google, ownCloud "
+"or Windows Live as an <link href=\"help:gnome-help/accounts-add\">online "
+"account</link>."
 msgstr ""
-"Για να εμφανιστεί το <gui>google</gui> ή <gui>SkyDrive</gui> στη λίστα "
-"φίλτρου, είναι απαραίτητο να ρυθμίσετε το google ή το Windows Live ως ένα "
-"<link xref=\"accounts-add\">δικτυακό λογαριασμό</link>."
+"Για να εμφανιστεί στον κατάλογο των φίλτρων το <gui>Google</gui> ή το "
+"<gui>OneDrive</gui> ή το <gui>ownCloud</gui>, είναι απαραίτητο να ρυθμίσετε "
+"το Google, το ownCloud, ή το Windows Live ως <link href=\"help:gnome-help/"
+"accounts-add\">δικτυακό λογαριασμό</link>."
 
 #. (itstool) path: info/desc
-#: C/formats.page:18
+#: C/formats.page:24
 msgid "<app>Documents</app> displays a number of popular document types."
-msgstr "Τα <app>έγγραφα</app> εμφανίζουν πολλούς δημοφιλείς τύπους εγγράφων."
+msgstr "Τα <app>Έγγραφα</app> εμφανίζουν πολλούς δημοφιλείς τύπους εγγράφων."
 
 #. (itstool) path: page/title
-#: C/formats.page:22
-msgid "Formats supported"
+#: C/formats.page:28
+msgid "Supported formats"
 msgstr "Υποστηριζόμενες μορφές"
 
 #. (itstool) path: page/p
-#: C/formats.page:24
+#: C/formats.page:31
 msgid ""
 "<app>Documents</app> displays PDF, DVI, XPS, PostScript and the formats "
-"supported by <app>Document Viewer</app> (Evince), <app>Microsoft Office</"
-"app>, <app>LibreOffice</app> and <app>Google Docs</app>."
+"supported by <app href=\"help:evince\">Document Viewer</app>, <app>Microsoft "
+"Office</app>, <app>LibreOffice</app> and <app>Google Docs</app>."
 msgstr ""
-"Τα <app>έγγραφα</app> εμφανίζουν PDF, DVI, XPS, PostScript και τις "
-"υποστηριζόμενες μορφές από την <app>προβολή εγγράφων</app> (Evince), "
-"<app>Microsoft Office</app>, <app>LibreOffice</app> και <app>Google Docs</"
-"app>."
+"Τα <app>Έγγραφα</app> εμφανίζουν τα αρχεία PDF, DVI, XPS, PostScript και τις "
+"μορφές που υποστηρίζονται από το <app href=\"help:evince\">Προβολή εγγράφων</"
+"app>, το <app>Microsoft Office</app>, το <app>LibreOffice</app> και τα "
+"<app>Google Docs</app>."
 
-#. (itstool) path: info/desc
-#: C/index.page:22
-msgid ""
-"Organize the documents stored locally on your computer or created online."
-msgstr ""
-"Οργανώστε τα έγγραφα που αποθηκεύτηκαν τοπικά στον υπολογιστή σας ή "
-"δημιουργήθηκαν δικτυακά."
-
-#. (itstool) path: page/title
-#: C/index.page:26
+#. (itstool) path: info/title
+#: C/index.page:7
+msgctxt "link"
 msgid "Documents"
 msgstr "Έγγραφα"
 
-#. (itstool) path: page/p
-#: C/index.page:38
+#. (itstool) path: info/title
+#: C/index.page:8
+msgctxt "text"
+msgid "Documents"
+msgstr "Έγγραφα"
+
+#. (itstool) path: info/desc
+#: C/index.page:31
 msgid ""
-"<app>Documents</app> is a GNOME application that lets you display, organize, "
-"and print the documents on your computer or those created remotely using "
-"<em>Google Docs</em> or <em>SkyDrive</em>."
+"Organize, view and edit the documents that are stored locally on your "
+"computer or online."
 msgstr ""
-"Τα <app>έγγραφα</app> είναι μια εφαρμογή GNOME που επιτρέπει την εμφάνιση, "
+"Οργανώστε τα έγγραφα που αποθηκεύθηκαν τοπικά στον υπολογιστή σας ή δικτυακά."
+
+#. (itstool) path: page/title
+#: C/index.page:35
+msgid "<_:media-1/> Documents"
+msgstr "<_:media-1/> Έγγραφα"
+
+#. (itstool) path: page/p
+#: C/index.page:50
+msgid ""
+"<app>Documents</app> is a GNOME application that lets you display, organize "
+"and print the documents on your computer or those created remotely using "
+"<em>Google Docs</em>, <em>ownCloud</em> or <em>OneDrive</em>."
+msgstr ""
+"Τα <app>Έγγραφα</app> είναι μια εφαρμογή GNOME που επιτρέπει την εμφάνιση, "
 "οργάνωση και εκτύπωση των εγγράφων στον υπολογιστή σας ή αυτών που "
-"δημιουργήθηκαν απομακρυσμένα χρησιμοποιώντας <em>Google Docs</em> ή "
-"<em>SkyDrive</em>."
+"δημιουργήθηκαν απομακρυσμένα χρησιμοποιώντας τα <em>Google Docs</em>, το "
+"<em>ownCloud</em> ή το <em>OneDrive</em>."
 
 #. (itstool) path: section/title
-#: C/index.page:43
-msgid "View, Sort and Search"
+#: C/index.page:55
+msgid "View, sort and search"
 msgstr "Προβολή, ταξινόμηση και αναζήτηση"
 
 #. (itstool) path: section/title
-#: C/index.page:47
-msgid "Select, Organize, Print"
+#: C/index.page:59
+msgid "Select, organize and print"
 msgstr "Επιλογή, οργάνωση, εκτύπωση"
 
 #. (itstool) path: section/title
-#: C/index.page:51
-msgid "Questions"
-msgstr "Ερωτήσεις"
+#: C/index.page:63
+msgid "Problems"
+msgstr "Προβλήματα"
 
 #. (itstool) path: info/desc
-#: C/info.page:22
+#: C/info.page:29
 msgid "See a document's name, location, date modified, or type."
 msgstr ""
-"Δείτε ένα όνομα του εγγράφου, τοποθεσίας, ημερομηνία τροποποίησης, ή τύπο."
+"Δείτε το όνομα ενός εγγράφου, την τοποθεσίας, την ημερομηνία τροποποίησης, ή "
+"τον τύπο."
 
 #. (itstool) path: page/title
-#: C/info.page:25
+#: C/info.page:32
 msgid "Find information about documents"
 msgstr "Βρείτε πληροφορίες για τα έγγραφα"
 
 #. (itstool) path: page/p
-#: C/info.page:35
+#: C/info.page:42
 msgid ""
-"When a document is created, it comes with <em>metadata</em>. <app>Documents</"
+"When a document is created, it contains <em>metadata</em>. <app>Documents</"
 "app> displays the following metadata for each document:"
 msgstr ""
-"Όταν ένα έγγραφo δημιουργείται, έρχεται με <em>μεταδεδομένα</em>. Τα "
-"<app>έγγραφα</app> εμφανίζουν τα ακόλουθα μεταδεδομένα για κάθε έγγραφο:"
+"Όταν ένα έγγραφο δημιουργείται, περιέχει και <em>μεταδεδομένα</em>. Τα "
+"<app>Έγγραφα</app> εμφανίζουν τα ακόλουθα μεταδεδομένα για κάθε έγγραφο:"
 
 #. (itstool) path: item/p
-#: C/info.page:40
+#: C/info.page:47
 msgid "Title: the name of the document, which can be edited;"
-msgstr "Τίτλος: το όνομα του εγγράφου, που μπορεί να επεξεργαστεί·"
+msgstr "Τίτλος: το όνομα του εγγράφου, που μπορεί να υποστεί επεξργασία·"
 
 #. (itstool) path: item/p
-#: C/info.page:43
-msgid "Source: the path of the folder containing the document;"
-msgstr "Πηγή: η διαδρομή του φακέλου που περιέχει το έγγραφo·"
+#: C/info.page:50
+msgid "Source: the path to the folder containing the document;"
+msgstr "Πηγή: η διαδρομή του φακέλου που περιέχει το έγγραφo"
 
 #. (itstool) path: item/p
-#: C/info.page:46
+#: C/info.page:53
 msgid "Date Modified;"
 msgstr "Ημερομηνία τροποποίησης·"
 
 #. (itstool) path: item/p
-#: C/info.page:49
-#, fuzzy
+#: C/info.page:56
 msgid "Type: the <link xref=\"formats\">file format</link> of the document."
-msgstr ""
-"Τύπος: η <link xref=\"documents-formats\">μορφή αρχείου</link> του εγγράφου."
+msgstr "Τύπος: η <link xref=\"formats\">μορφή αρχείου</link> του εγγράφου."
 
 #. (itstool) path: page/p
-#: C/info.page:53
+#: C/info.page:60
 msgid "To see a document's properties:"
 msgstr "Για να δείτε τις ιδιότητες ενός εγγράφου:"
 
 #. (itstool) path: item/p
-#: C/info.page:56
-msgid "Click the <gui>Check</gui> button to switch to selection mode."
-msgstr ""
-"Πατήστε το κουμπί <gui>έλεγχος</gui> για εναλλαγή στην κατάσταση επιλογής."
+#: C/info.page:63
+msgid "Click the check button to switch to selection mode."
+msgstr "Πατήστε το κουμπί ελέγχου για εναλλαγή του τρόπου επιλογής."
 
 #. (itstool) path: item/p
-#: C/info.page:59
+#: C/info.page:66
 msgid "Select a document."
 msgstr "Επιλέξτε ένα έγγραφο."
 
 #. (itstool) path: item/p
-#: C/info.page:62
+#: C/info.page:69
 msgid ""
 "Click the <gui>Properties</gui> button at the right end of the button bar."
 msgstr ""
-"Πατήστε το κουμπί <gui>ιδιότητες</gui> στη δεξιά άκρη της γραμμής κουμπιών."
+"Κάντε κλικ στο κουμπί <gui>Ιδιότητες</gui> στο δεξί άκρο της γραμμής "
+"κουμπιών."
 
 #. (itstool) path: note/p
-#: C/info.page:68
+#: C/info.page:75
 msgid ""
 "Some types of documents (e.g. PDF files) can be password protected, "
 "preventing access to their metadata or content."
 msgstr ""
-"Μερικοί τύποι εγγράφων (π.χ. αρχεία PDF) μπορούν να προστατεύονται με "
-"κωδικό, αποτρέποντας την πρόσβαση στα μεταδεδομένα τους ή στο περιεχόμενο."
+"Μερικοί τύποι εγγράφων (π.χ. αρχεία PDF) μπορεί να προστατεύονται με κωδικό, "
+"αποτρέποντας την πρόσβαση στα μεταδεδομένα τους ή στο περιεχόμενο."
 
 #. (itstool) path: note/p
-#: C/info.page:73
+#: C/info.page:80
 msgid ""
 "<app>Documents</app> does not currently offer any mechanism to add privacy "
 "to a document. You may be able to do this from the application you used to "
 "create the document (e.g. <app>LibreOffice</app> or <app>Adobe Acrobat</"
 "app>)."
 msgstr ""
-"Τα <app>έγγραφα</app> δεν προσφέρουν προς το παρόν κανένα μηχανισμό για "
+"Τα <app>Έγγραφα</app> δεν προσφέρουν προς το παρόν κανέναν μηχανισμό για "
 "προσθήκη ιδιωτικότητας σε ένα έγγραφο. Ίσως μπορείτε να το κάνετε αυτό από "
 "την εφαρμογή που χρησιμοποιείτε για τη δημιουργία του εγγράφου (π.χ. "
 "<app>LibreOffice</app> ή <app>Adobe Acrobat</app>)."
-
-#. (itstool) path: info/desc
-#: C/previews.page:23
-msgid "You can only preview files stored locally."
-msgstr "Μπορείτε να προεπισκοπήσετε μόνο τα αρχεία που αποθηκεύσατε τοπικά."
-
-#. (itstool) path: page/title
-#: C/previews.page:26
-msgid "Why don't some files have previews?"
-msgstr "Γιατί μερικά αρχεία δεν έχουν προεπισκοπήσεις;"
-
-#. (itstool) path: page/p
-#: C/previews.page:34
-msgid ""
-"When you open <app>Documents</app>, a preview thumbnail is displayed for "
-"documents that are stored locally. Those stored on a remote server like "
-"<em>Google Docs</em> or <em>SkyDrive</em> show as missing (or blank) preview "
-"thumbnails."
-msgstr ""
-"Όταν ανοίγετε τα <app>έγγραφα</app>, μια μικρογραφία προεπισκόπησης "
-"εμφανίζεται για έγγραφα που αποθηκεύονται τοπικά. Αυτά που αποθηκεύτηκαν σε "
-"έναν απομακρυσμένο εξυπηρετητή όπως <em>Google Docs</em> ή <em>SkyDrive</em> "
-"εμφανίζονται ότι λείπουν (ή είναι κενές) οι μικρογραφίες προεπισκόπησης."
-
-#. (itstool) path: page/p
-#: C/previews.page:39
-msgid ""
-"If you download a <em>Google Docs</em> or <em>SkyDrive</em> document to "
-"local storage, a thumbnail will be generated."
-msgstr ""
-"Εάν κατεβάσετε ένα έγγραφο <em>Google Docs</em> ή <em>SkyDrive</em> για "
-"τοπική αποθήκευση, θα δημιουργηθεί μια μικρογραφία."
-
-#. (itstool) path: note/p
-#: C/previews.page:43
-msgid ""
-"The local copy of a document downloaded from <em>Google Docs</em> or "
-"<em>SkyDrive</em> will lose its ability to be updated online. If you want to "
-"continue to edit it online, it is better not to download it."
-msgstr ""
-"Το τοπικό αντίγραφο ενός εγγράφου που φορτώθηκε από <em>Google Docs</em> ή "
-"<em>SkyDrive</em> θα χάσει την δυνατότητά του να ενημερώνεται δικτυακά. Εάν "
-"θέλετε να συνεχίσετε να το επεξεργαζόσαστε δικτυακά, είναι καλύτερο να μην "
-"το κατεβάσετε."
 
 #. (itstool) path: info/desc
 #: C/print.page:23
@@ -423,18 +439,18 @@ msgstr "Εκτύπωση εγγράφων που αποθηκεύονται το
 msgid "Print a document"
 msgstr "Εκτύπωση ενός εγγράφου"
 
-#. (itstool) path: page/p
-#: C/print.page:35
+#. (itstool) path: steps/title
+#: C/print.page:36
 msgid "To print a document:"
 msgstr "Εκτύπωση ενός εγγράφου:"
 
 #. (itstool) path: item/p
-#: C/print.page:42
+#: C/print.page:41
 msgid "In selection mode, check the document to be printed."
 msgstr "Στην κατάσταση επιλογής, σημειώστε το έγγραφo για εκτύπωση."
 
 #. (itstool) path: item/p
-#: C/print.page:45
+#: C/print.page:44
 msgid ""
 "Click the Print button in the button bar. The <gui>Print</gui> dialog opens."
 msgstr ""
@@ -442,7 +458,7 @@ msgstr ""
 "gui> ανοίγει."
 
 #. (itstool) path: note/p
-#: C/print.page:51
+#: C/print.page:50
 msgid ""
 "Printing is not available when more than one document is selected, or when a "
 "collection is selected."
@@ -451,9 +467,104 @@ msgstr ""
 "ή όταν επιλέγεται μια συλλογή."
 
 #. (itstool) path: info/desc
+#: C/prob-no-show.page:29
+msgid "Your local documents do not appear in <gui>Documents</gui>."
+msgstr "Τα τοπικά σας έγγραφα δεν εμφανίζονται στα <gui>Έγγραφα</gui>."
+
+#. (itstool) path: page/title
+#: C/prob-no-show.page:32
+msgid "My documents are not shown"
+msgstr "Τα έγγραφα μου δεν εμφανίζονται"
+
+#. (itstool) path: page/p
+#: C/prob-no-show.page:46
+msgid ""
+"<app>Documents</app> supports only certain types of documents such as PDFs "
+"and office suite documents such as spreadsheets and word processor "
+"documents. It will not show text documents and photos."
+msgstr ""
+"Τα <app>Έγγραφα</app> υποστηρίζουν μόνο συγκεκριμένους τύπους εγγράφων όπως "
+"PDFs και έγγραφα σειράς γραφείου όπως υπολογιστικά φύλλα και έγγραφα "
+"επεξεργαστή κειμένου. Δεν θα εμφανίζουν έγγραφα κειμένου και φωτογραφιών."
+
+#. (itstool) path: page/p
+#: C/prob-no-show.page:50
+msgid ""
+"For your local documents to appear in <app>Documents</app>, they must be "
+"inside your <file>Documents</file> or <file>Downloads</file> folders, or "
+"inside folders that are in those directories. Documents that are in other "
+"places on your computer will not be shown."
+msgstr ""
+"Για να εμφανιστούν τα τοπικά σας έγγραφα στο <app>Έγγραφα</app>, πρέπει να "
+"είναι μέσα στους φακέλους <file>Έγγραφα</file> ή <file>Λήψεις</file>, ή μέσα "
+"σε φακέλους που είναι σε αυτούς τους καταλόγους. Τα έγγραφα που είναι σε "
+"άλλες θέσεις στον υπολογιστή σας δεν θα εμφανιστούν."
+
+#. (itstool) path: page/p
+#: C/prob-no-show.page:55
+msgid ""
+"If your documents fail to display in <app>Documents</app>, <app>Tracker</"
+"app> may not be running or properly configured. Make sure <app>Tracker</app> "
+"is running in your session. The default configuration, set to index files in "
+"your home directory (non-recursively) and XDG folders (recursively), should "
+"be adequate."
+msgstr ""
+"Εάν τα έγγραφά σας αποτυγχάνουν να εμφανιστούν στα <app>Έγγραφα</app>, ο "
+"<app>Ανιχνευτής (Tracker)</app> μπορεί να μην τρέχει ή να μην είναι σωστά "
+"ρυθμισμένος. Βεβαιωθείτε ότι το <app>Tracker</app> τρέχει στη συνεδρία σας. "
+"Η προεπιλεγμένη διαμόρφωση, που ορίζει τα αρχεία του δείκτη στον προσωπικό "
+"σας κατάλογο (μη αναδρομικά) και τους φακέλους XDG (αναδρομικά), πρέπει να "
+"είναι επαρκής."
+
+#. (itstool) path: info/desc
+#: C/prob-previews.page:29
+msgid "You can only preview files stored locally, on Google Drive or ownCloud."
+msgstr ""
+"Μπορείτε να προεπισκοπήσετε μόνο τα αρχεία που αποθηκεύσατε τοπικά, στο "
+"Google Drive ή το ownCloud."
+
+#. (itstool) path: page/title
+#: C/prob-previews.page:33
+msgid "Why do some files not have previews?"
+msgstr "Γιατί μερικά αρχεία δεν έχουν προεπισκοπήσεις;"
+
+#. (itstool) path: page/p
+#: C/prob-previews.page:41
+msgid ""
+"When you open <app>Documents</app>, a preview thumbnail is displayed for "
+"documents that are stored locally, on <em>Google Drive</em> or <em>ownCloud</"
+"em>. Those stored in <em>OneDrive</em> show as missing (or blank) preview "
+"thumbnails."
+msgstr ""
+"Όταν ανοίγετε τα <app>Έγγραφα</app>, εμφανίζεται μια μικρογραφία "
+"προεπισκόπησης για τα έγγραφα που αποθηκεύονται τοπικά στο <em>Google Drive</"
+"em> ή το <em>ownCloud</em>. Αυτά που αποθηκεύτηκαν στο <em>OneDrive</em> "
+"εμφανίζουν ως χαμένες (ή κενές) τις μικρογραφίες προεπισκόπησης."
+
+#. (itstool) path: page/p
+#: C/prob-previews.page:46
+msgid ""
+"If you download a <em>OneDrive</em> document to local storage through the "
+"web interface, a thumbnail will be generated."
+msgstr ""
+"Εάν κατεβάσετε ένα έγγραφο <em>OneDrive</em> για τοπική αποθήκευση μέσα από "
+"μια διεπαφή ιστού, θα δημιουργηθεί μια μικρογραφία."
+
+#. (itstool) path: note/p
+#: C/prob-previews.page:50
+msgid ""
+"The local copy of a document downloaded from an online account will lose its "
+"ability to be updated online. If you want to continue to edit it online, it "
+"is better not to download it."
+msgstr ""
+"Το τοπικό αντίγραφο ενός εγγράφου που φορτώθηκε από έναν δικτυακό λογαριασμό "
+"θα χάσει την δυνατότητά του να ενημερώνεται δικτυακά. Εάν θέλετε να "
+"συνεχίσετε να το επεξεργάζεστε δικτυακά, είναι καλύτερα να μην το κατεβάσετε."
+
+#. (itstool) path: info/desc
 #: C/search.page:23
 msgid "Find your documents by title or author."
-msgstr "Βρείτε τα έγγραφά σας κατά τίτλο ή συγγραφέα."
+msgstr "Βρείτε τα έγγραφά σας ανά τίτλο ή ανά συγγραφέα."
 
 #. (itstool) path: page/title
 #: C/search.page:26
@@ -463,7 +574,7 @@ msgstr "Αναζήτηση για αρχεία"
 #. (itstool) path: page/p
 #: C/search.page:38
 msgid "To start a search in <app>Documents</app>:"
-msgstr "Για να αρχίσετε μια αναζήτηση στα <app>έγγραφα</app>:"
+msgstr "Για να αρχίσετε μια αναζήτηση στα <app>Έγγραφα</app>:"
 
 #. (itstool) path: item/p
 #: C/search.page:42
@@ -486,223 +597,227 @@ msgstr ""
 
 #. (itstool) path: note/p
 #: C/search.page:52
-#, fuzzy
+#| msgid ""
+#| "You can restrict or filter the search results by clicking the <media type="
+#| "\"image\" src=\"media/go-down.png\">down</media> button and selecting "
+#| "various <link xref=\"filter\">filters</link>."
 msgid ""
 "You can restrict or filter the search results by clicking the <media type="
 "\"image\" src=\"media/go-down.png\">down</media> button and selecting "
 "various <link xref=\"filter\">filters</link>."
 msgstr ""
 "Μπορείτε να περιορίσετε ή να φιλτράρετε τα αποτελέσματα αναζήτησης πατώντας "
-"το κουμπί<media type=\"image\" src=\"figures/go-down.png\">κάτω</media> και "
-"επιλέγοντας ποικίλα <link xref=\"documents-filter\">φίλτρα</link>."
+"το πλήκτρο <media type=\"image\" src=\"media/go-down.png\">κάτω</media> και "
+"επιλέγοντας διάφορα <link xref=\"filter\">φίλτρα</link>."
 
 #. (itstool) path: info/desc
-#: C/select.page:23
-msgid "Use selection mode to select more than one document or collection."
-msgstr ""
-"Χρησιμοποιήστε την κατάσταση επιλογής για να επιλέξετε περισσότερα από ένα "
-"έγγραφα ή συλλογές."
-
-#. (itstool) path: page/title
-#: C/select.page:27
-msgid "Selecting documents"
-msgstr "Επιλογή εγγράφων"
-
-#. (itstool) path: page/p
-#: C/select.page:36
-msgid ""
-"From <app>Documents</app> selection mode you can open, print, view or make "
-"collections of your documents. To use selection mode:"
-msgstr ""
-"Από την κατάσταση επιλογής <app>έγγραφα</app> μπορείτε να ανοίξετε, να "
-"εκτυπώσετε, να προβάλετε ή να κάνετε συλλογές των εγγράφων σας. Για να "
-"χρησιμοποιήσετε την λειτουργία επιλογής:"
-
-#. (itstool) path: item/p
-#: C/select.page:44
-msgid ""
-"Select one or more documents or collections. The button bar appears with the "
-"actions that are valid for your selection."
-msgstr ""
-"Επιλέξτε ένα ή περισσότερα έγγραφα ή συλλογές. Η γραμμή κουμπιών εμφανίζεται "
-"με τις ενέργειες που είναι έγκυρες για την επιλογή σας."
-
-#. (itstool) path: section/title
-#: C/select.page:51
-msgid "Selection mode actions"
-msgstr "Κατάσταση επιλογής ενεργειών"
-
-#. (itstool) path: section/p
-#: C/select.page:53
-msgid "After selecting one or more documents you can:"
-msgstr "Μετά την επιλογή ενός ή περισσοτέρων εγγράφων μπορείτε:"
-
-#. (itstool) path: item/p
-#: C/select.page:57
-msgid "Open with Document Viewer (folder icon)."
-msgstr "Ανοίξτε την προβολή εγγράφων (εικονίδιο φακέλου)."
-
-#. (itstool) path: item/p
-#: C/select.page:60
-msgid ""
-"Print (printer icon): print a document (only available when a single "
-"document is selected)."
-msgstr ""
-"Εκτυπώστε (εικονίδιο εκτυπωτή): εκτυπώστε ένα έγγραφo (διαθέσιμο μόνο όταν "
-"επιλέγεται ένα μόνο έγγραφo)."
-
-#. (itstool) path: item/p
-#: C/select.page:64
-msgid "Organize (plus icon): create a collection of documents."
-msgstr "Οργάνωση (εικονίδιο συν): δημιουργήστε μια συλλογή εγγράφων."
-
-#. (itstool) path: item/p
-#: C/select.page:67
-msgid ""
-"Properties (wrench icon): display the properties of a document (only "
-"available when a single document is selected)."
-msgstr ""
-"Ιδιότητες (εικονίδιο κλειδιού): εμφανίζει τις ιδιότητες ενός εγγράφου "
-"(διαθέσιμο μόνο όταν επιλέγεται ένα μόνο έγγραφo)."
-
-#. (itstool) path: item/p
-#: C/select.page:71
-msgid "Delete (trash icon): delete one or more collections."
-msgstr ""
-"Διαγραφή (εικονίδιο απορριμμάτων): διαγράψτε μία ή περισσότερες συλλογές."
-
-#. (itstool) path: info/desc
-#: C/tracker.page:23
-msgid "Local or remote documents do not appear."
-msgstr "Δεν εμφανίζονται τοπικά ή απομακρυσμένα έγγραφα."
-
-#. (itstool) path: page/title
-#: C/tracker.page:26
-msgid "My documents cannot be seen"
-msgstr "Τα έγγραφα μου δεν μπορούν να φανούν"
-
-#. (itstool) path: page/p
-#: C/tracker.page:40
-msgid ""
-"If your documents fail to display in <app>Documents</app>, <app>Tracker</"
-"app> may not be running or properly configured. Make sure Tracker is running "
-"in your session. The default configuration, set to index files in your home "
-"directory (non-recursively) and XDG folders (recursively), should be "
-"adequate. Ensure that your documents are in one of these paths."
-msgstr ""
-"Εάν τα έγγραφά σας αποτυγχάνουν να εμφανιστούν στα <app>έγγραφα</app>, ο "
-"<app>ανιχνευτής</app> μπορεί να μην τρέχει ή να μην είναι σωστά ρυθμισμένος. "
-"Βεβαιωθείτε ότι ο ανιχνευτής τρέχει στη συνεδρία σας. Η προεπιλεγμένη "
-"διαμόρφωση, που ορίζει τα αρχεία του δείκτη στον προσωπικό σας κατάλογο (μη "
-"αναδρομικά) και τους φακέλους XDG (αναδρομικά), πρέπει να είναι αρκετή. "
-"Βεβαιωθείτε ότι τα έγγραφά σας είναι σε μία από αυτές τις διαδρομές."
-
-#. (itstool) path: info/desc
-#: C/viewgrid.page:23
+#: C/viewgrid.page:29
 msgid "Change the way documents are displayed."
 msgstr "Αλλάξτε τον τρόπο εμφάνισης των εγγράφων."
 
 #. (itstool) path: page/title
-#: C/viewgrid.page:26
+#: C/viewgrid.page:32
 msgid "View files in a list or grid"
 msgstr "Προβολή αρχείων σε μια λίστα ή πλέγμα"
 
 #. (itstool) path: page/p
-#: C/viewgrid.page:35
+#: C/viewgrid.page:41
 msgid ""
 "Documents and collections are presented in <gui>Grid</gui> format by "
 "default. To view in <gui>List</gui> format:"
 msgstr ""
-"Τα έγγραφα και οι συλλογές εμφανίζονται σε μορφή <gui>πλέγματος</gui> από "
-"προεπιλογή. Για να δείτε σε μορφή <gui>λίστας</gui>:"
+"Τα έγγραφα και οι συλλογές εμφανίζονται σε μορφή <gui>Πλέγματος</gui> από "
+"προεπιλογή. Για να τα δείτε σε μορφή <gui>Λίστας</gui>:"
 
 #. (itstool) path: item/p
-#: C/viewgrid.page:40
-msgid ""
-"Go to the top bar and click <app>Documents</app> to display the app menu."
-msgstr ""
-"Πηγαίνετε στην πάνω γραμμή και πατήστε <app>έγγραφα</app> για προβολή του "
-"μενού εφαρμογών."
-
-#. (itstool) path: item/p
-#: C/viewgrid.page:44
-msgid "Click <gui>List</gui> from the <gui>View as</gui> section."
-msgstr "Πατήστε <gui>λίστα</gui> από την ενότητα <gui>προβολή ως</gui>."
+#: C/viewgrid.page:46
+msgid "Press the list button in the top-right corner of the window."
+msgstr "Πατήστε το κουμπί καταλόγου στην επάνω δεξιά γωνία του παραθύρου."
 
 #. (itstool) path: note/p
-#: C/viewgrid.page:49
+#: C/viewgrid.page:51
 msgid ""
 "List view has columns displaying the document type and date modified, and "
-"whether it's stored locally, or in <app>Google Docs</app> or <em>SkyDrive</"
-"em>."
+"whether it's stored locally or remotely in one of your online accounts."
 msgstr ""
-"Η προβολή λίστας έχει στήλες που εμφανίζουν τον τύπο του εγγράφου και την "
-"ημερομηνία τροποποίησης και εάν αποθηκεύεται τοπικά, ή στα <app>Google Docs</"
-"app> ή <em>SkyDrive</em>."
+"Η προβολή καταλόγου έχει στήλες που εμφανίζουν τον τύπο του εγγράφου και την "
+"ημερομηνία τροποποίησης και εάν αποθηκεύεται τοπικά ή απομακρυσμένα σε έναν "
+"από τους δικτυακούς σας λογαριασμούς."
 
 #. (itstool) path: page/p
-#: C/viewgrid.page:54
-msgid "Click <gui>Grid</gui> in the app menu to return to the default format."
+#: C/viewgrid.page:56
+msgid ""
+"Click the grid button in the top-right corner of the window to return to the "
+"grid view."
 msgstr ""
-"Πατήστε <gui>πλέγμα</gui> στο μενού εφαρμογών για επιστροφή στην "
-"προεπιλεγμένη μορφή."
+"Πατήστε στο πλήκτρο πλέγματος στην επάνω δεξιά γωνία του παραθύρου για "
+"επιστροφή στην προβολή πλέγματος."
 
 #. (itstool) path: info/desc
-#: C/view.page:23
-msgid "View documents full-screen."
-msgstr "Προβολή πλήρους οθόνης εγγράφων."
+#: C/view.page:29
+msgid "Open documents that are stored locally or online."
+msgstr "Άνοιγμα εγγράφων που αποθηκεύονται τοπικά ή δικτυακά."
 
 #. (itstool) path: page/title
-#: C/view.page:26
-msgid "Display documents stored locally or online"
-msgstr "Εμφανίστε τα έγγραφα που αποθηκεύτηκαν τοπικά ή δικτυακά"
+#: C/view.page:32
+msgid "View your documents"
+msgstr "Προβολή των εγγράφων σας"
 
 #. (itstool) path: page/p
-#: C/view.page:36
+#: C/view.page:42
+#| msgid ""
+#| "When you open <app>Documents</app>, all of your documents, those stored "
+#| "locally as well as online, are displayed as thumbnails."
 msgid ""
 "When you open <app>Documents</app>, all of your documents, those stored "
 "locally as well as online, are displayed as thumbnails."
 msgstr ""
-"Όταν ανοίγετε τα <app>έγγραφα</app>, όλα τα έγγραφά σας, αυτά που "
-"αποθηκεύτηκαν τοπικά καθώς και τα δικτυακά, εμφανίζονται ως μικρογραφίες."
+"Όταν ανοίγετε τα <app>Έγγραφα</app>, όλα τα έγγραφά σας, αυτά που "
+"αποθηκεύτηκαν τοπικά, καθώς και τα δικτυακά, εμφανίζονται ως μικρογραφίες."
 
 #. (itstool) path: note/p
-#: C/view.page:40
+#: C/view.page:46
+msgid ""
+"To see documents from your online accounts, it is necessary to <link href="
+"\"help:gnome-help/accounts-add\">set up the accounts</link>."
+msgstr ""
+"Για να βλέπετε έγγραφα από τους διαδικτυακούς σας λογαρισμούς, είναι "
+"απαραίτητο να <link href=\"help:gnome-help/accounts-add\">ρυθμίσετε τους "
+"λογαριασμούς</link>."
+
+#. (itstool) path: page/p
+#: C/view.page:50
+msgid "To view the contents of a document, press on the thumbnail."
+msgstr ""
+"Για να προβάλετε τα περιεχόμενα ενός εγγράφου, πατήστε πάνω στη μικρογραφία."
+
+#. (itstool) path: page/p
+#: C/view.page:52
+msgid ""
+"To exit the document, click the back arrow button in the top-left of the "
+"window."
+msgstr ""
+"Για να βγείτε από το έγγραφο, πατήστε το κουμπί με το πίσω βέλος στο επάνω "
+"αριστερό μέρος του παραθύρου."
+
 #, fuzzy
-msgid ""
-"In order for your <em>Google Docs</em> or <em>SkyDrive</em> documents to "
-"appear, it is necessary to configure Google or Windows Live, respectively, "
-"as an <link href=\"gnome-help:accounts-add\">online account</link>."
-msgstr ""
-"Για να εμφανιστούν τα <em>Google Docs</em> ή <em>SkyDrive</em>, είναι "
-"απαραίτητο να ρυθμίσετε το google ή το Windows Live, αντίστοιχα, ως ένα "
-"<link xref=\"accounts-add\">δικτυακό λογαριασμό</link>."
+#~| msgid "Click the <gui>+</gui> button in the button bar."
+#~ msgid "Click on <gui>Search</gui> to open the panel."
+#~ msgstr "Πατήστε το κουμπί <gui>+</gui> στη γραμμή κουμπιών."
 
-#. (itstool) path: page/p
-#: C/view.page:45
-msgid "To view the contents of a document:"
-msgstr "Για να προβάλετε τα περιεχόμενα ενός εγγράφου:"
+#~ msgid "In selection mode, check the documents to be collected."
+#~ msgstr "Στην λειτουργία επιλογής, επιλέξτε τα έγγραφα προς συλλογή."
 
-#. (itstool) path: item/p
-#: C/view.page:49
-msgid ""
-"Click the thumbnail. The document is displayed full-width in the "
-"<app>Documents</app> window (or full-screen if maximized)."
-msgstr ""
-"Πατήστε τη μικρογραφία. Το έγγραφο εμφανίζεται σε πλήρες πλάτος στο παράθυρο "
-"<app>έγγραφα</app> (ή σε πλήρη οθόνη εάν μεγιστοποιηθεί)."
+#~ msgid ""
+#~ "Collections do not behave like folders and their hierarchy: <em>you "
+#~ "cannot put collections inside collections.</em>"
+#~ msgstr ""
+#~ "Οι συλλογές δεν συμπεριφέρονται σαν τους φακέλους και την ιεραρχία τους: "
+#~ "<em>δεν μπορείτε να βάλετε συλλογές μέσα σε άλλες συλλογές.</em>"
 
-#. (itstool) path: page/p
-#: C/view.page:54
-msgid "To exit the document, click the back arrow button."
-msgstr "Για να βγείτε από το έγγραφο, πατήστε το κουμπί του πίσω βέλους."
+#~ msgid "Use selection mode to select more than one document or collection."
+#~ msgstr ""
+#~ "Χρησιμοποιήστε την κατάσταση επιλογής για να επιλέξετε περισσότερα από "
+#~ "ένα έγγραφα ή συλλογές."
 
-#. (itstool) path: p/link
-#: C/legal.xml:3
-msgid "Creative Commons Attribution-ShareAlike 3.0 Unported License"
-msgstr "Creative Commons Attribution-ShareAlike 3.0 Unported License"
+#~ msgid "Selecting documents"
+#~ msgstr "Επιλογή εγγράφων"
 
-#. (itstool) path: license/p
-#: C/legal.xml:3
-msgid "This work is licensed under a <_:link-1/>."
-msgstr "Αυτό το έργο έχει αδειοδοτηθεί από <_:link-1/>."
+#~ msgid ""
+#~ "From <app>Documents</app> selection mode you can open, print, view or "
+#~ "make collections of your documents. To use selection mode:"
+#~ msgstr ""
+#~ "Από την κατάσταση επιλογής <app>Έγγραφα</app> μπορείτε να ανοίξετε, να "
+#~ "εκτυπώσετε, να προβάλετε ή να κάνετε συλλογές των εγγράφων σας. Για να "
+#~ "χρησιμοποιήσετε την λειτουργία επιλογής:"
+
+#~ msgid ""
+#~ "Select one or more documents or collections. The button bar appears with "
+#~ "the actions that are valid for your selection."
+#~ msgstr ""
+#~ "Επιλέξτε ένα ή περισσότερα έγγραφα ή συλλογές. Η γραμμή κουμπιών "
+#~ "εμφανίζεται με τις ενέργειες που είναι έγκυρες για την επιλογή σας."
+
+#~ msgid "Selection mode actions"
+#~ msgstr "Κατάσταση επιλογής ενεργειών"
+
+#~ msgid "After selecting one or more documents you can:"
+#~ msgstr "Μετά την επιλογή ενός ή περισσοτέρων εγγράφων μπορείτε:"
+
+#~ msgid "Open with Document Viewer (folder icon)."
+#~ msgstr "Ανοίξτε την προβολή εγγράφων (εικονίδιο φακέλου)."
+
+#~ msgid ""
+#~ "Print (printer icon): print a document (only available when a single "
+#~ "document is selected)."
+#~ msgstr ""
+#~ "Εκτυπώστε (εικονίδιο εκτυπωτή): εκτυπώστε ένα έγγραφo (διαθέσιμο μόνο "
+#~ "όταν επιλέγεται ένα μόνο έγγραφo)."
+
+#~ msgid "Organize (plus icon): create a collection of documents."
+#~ msgstr "Οργάνωση (εικονίδιο συν): δημιουργήστε μια συλλογή εγγράφων."
+
+#~ msgid ""
+#~ "Properties (wrench icon): display the properties of a document (only "
+#~ "available when a single document is selected)."
+#~ msgstr ""
+#~ "Ιδιότητες (εικονίδιο κλειδιού): εμφανίζει τις ιδιότητες ενός εγγράφου "
+#~ "(διαθέσιμο μόνο όταν επιλέγεται ένα μόνο έγγραφo)."
+
+#~ msgid "Delete (trash icon): delete one or more collections."
+#~ msgstr ""
+#~ "Διαγραφή (εικονίδιο απορριμμάτων): διαγράψτε μία ή περισσότερες συλλογές."
+
+#~ msgid "Local or remote documents do not appear."
+#~ msgstr "Δεν εμφανίζονται τοπικά ή απομεμακρυσμένα έγγραφα."
+
+#~ msgid "<em>Sources</em>: Local, Google, SkyDrive, or All."
+#~ msgstr "<em>πηγές</em>: τοπικές, google, SkyDrive, ή όλα."
+
+#~ msgid "Title, Author, or All."
+#~ msgstr "Τίτλος, συγγραφέας, ή όλα."
+
+#~ msgid "Formats supported"
+#~ msgstr "Υποστηριζόμενες μορφές"
+
+#~ msgid "Questions"
+#~ msgstr "Ερωτήσεις"
+
+#~ msgid ""
+#~ "Go to the top bar and click <app>Documents</app> to display the app menu."
+#~ msgstr ""
+#~ "Πηγαίνετε στην πάνω γραμμή και πατήστε <app>έγγραφα</app> για προβολή του "
+#~ "μενού εφαρμογών."
+
+#~ msgid "Click <gui>List</gui> from the <gui>View as</gui> section."
+#~ msgstr "Πατήστε <gui>λίστα</gui> από την ενότητα <gui>προβολή ως</gui>."
+
+#~ msgid ""
+#~ "Click <gui>Grid</gui> in the app menu to return to the default format."
+#~ msgstr ""
+#~ "Πατήστε <gui>πλέγμα</gui> στο μενού εφαρμογών για επιστροφή στην "
+#~ "προεπιλεγμένη μορφή."
+
+#~ msgid "View documents full-screen."
+#~ msgstr "Προβολή πλήρους οθόνης εγγράφων."
+
+#~ msgid "Display documents stored locally or online"
+#~ msgstr "Εμφανίστε τα έγγραφα που αποθηκεύτηκαν τοπικά ή δικτυακά"
+
+#, fuzzy
+#~ msgid ""
+#~ "In order for your <em>Google Docs</em> or <em>SkyDrive</em> documents to "
+#~ "appear, it is necessary to configure Google or Windows Live, "
+#~ "respectively, as an <link href=\"gnome-help:accounts-add\">online "
+#~ "account</link>."
+#~ msgstr ""
+#~ "Για να εμφανιστούν τα <em>Google Docs</em> ή <em>SkyDrive</em>, είναι "
+#~ "απαραίτητο να ρυθμίσετε το google ή το Windows Live, αντίστοιχα, ως ένα "
+#~ "<link xref=\"accounts-add\">δικτυακό λογαριασμό</link>."
+
+#~ msgid ""
+#~ "Click the thumbnail. The document is displayed full-width in the "
+#~ "<app>Documents</app> window (or full-screen if maximized)."
+#~ msgstr ""
+#~ "Πατήστε τη μικρογραφία. Το έγγραφο εμφανίζεται σε πλήρες πλάτος στο "
+#~ "παράθυρο <app>έγγραφα</app> (ή σε πλήρη οθόνη εάν μεγιστοποιηθεί)."
