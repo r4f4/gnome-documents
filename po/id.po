@@ -3,25 +3,25 @@
 # This file is distributed under the same license as the gnome-documents package.
 #
 # Andika Triwidada <andika@gmail.com>, 2011, 2012, 2013, 2014.
-# Dirgita <dirgitadevina@yahoo.co.id>, 2012.
+# Dirgita <dirgitadevina@yahoo.co.id>, 2012, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-documents master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-03-20 07:45+0000\n"
-"PO-Revision-Date: 2014-03-20 21:31+0700\n"
-"Last-Translator: Andika Triwidada <andika@gmail.com>\n"
-"Language-Team: Indonesian <gnome@i15n.org>\n"
+"POT-Creation-Date: 2014-04-05 20:23+0000\n"
+"PO-Revision-Date: 2014-04-09 05:31+0700\n"
+"Last-Translator: Dirgita <dirgitadevina@yahoo.co.id>\n"
+"Language-Team: Indonesian <gnome-l10n-id@googlegroups.com>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 1.5.7\n"
+"X-Generator: Lokalize 1.5\n"
 
 #: ../data/org.gnome.Documents.appdata.xml.in.h:1
-#: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:103
+#: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:120
 #: ../src/mainWindow.js:52 ../src/mainWindow.js:274
 msgid "Documents"
 msgstr "Dokumen"
@@ -58,7 +58,7 @@ msgstr ""
 "Google, ownCloud, atau OneDrive Anda</li> <li>Mencari dalam dokumen</li> "
 "<li>Melihat dokumen baru yang dibagi-pakai oleh teman</li> <li>Melihat "
 "dokumen pada layar penuh</li> <li>Mencetak dokumen</li> <li>Memilih favorit</"
-"li> <li>Mengijinkan membuka penyunting berfitur lengkap untuk perubahan yang "
+"li> <li>Mengizinkan membuka penyunting berfitur lengkap untuk perubahan yang "
 "non trivial</li>"
 
 #: ../data/org.gnome.Documents.desktop.in.h:2
@@ -101,77 +101,77 @@ msgstr "Jendela dimaksimalkan"
 msgid "Window maximized state"
 msgstr "Jendela dalam keadaan dimaksimalkan"
 
-#: ../src/documents.js:599
+#: ../src/documents.js:600
 msgid "Failed to print document"
 msgstr "Gagal mencetak dokumen"
 
-#: ../src/documents.js:636 ../src/search.js:418
+#: ../src/documents.js:637 ../src/search.js:418
 msgid "Local"
 msgstr "Lokal"
 
-#: ../src/documents.js:657
+#: ../src/documents.js:658
 msgid "GNOME"
 msgstr "GNOME"
 
-#: ../src/documents.js:658
+#: ../src/documents.js:659
 msgid "Getting Started with Documents"
 msgstr "Mulai Memakai Dokumen"
 
-#: ../src/documents.js:674 ../src/documents.js:847 ../src/documents.js:909
-#: ../src/documents.js:1017
+#: ../src/documents.js:675 ../src/documents.js:848 ../src/documents.js:910
+#: ../src/documents.js:1018
 msgid "Collection"
 msgstr "Koleksi"
 
-#: ../src/documents.js:726
+#: ../src/documents.js:727
 msgid "Google Docs"
 msgstr "Google Docs"
 
-#: ../src/documents.js:727
+#: ../src/documents.js:728
 msgid "Google"
 msgstr "Google"
 
-#: ../src/documents.js:849 ../src/documents.js:1019
+#: ../src/documents.js:850 ../src/documents.js:1020
 msgid "Spreadsheet"
 msgstr "Spreadsheet"
 
-#: ../src/documents.js:851 ../src/documents.js:1021 ../src/presentation.js:47
+#: ../src/documents.js:852 ../src/documents.js:1022 ../src/presentation.js:47
 msgid "Presentation"
 msgstr "Presentasi"
 
-#: ../src/documents.js:853 ../src/documents.js:1023
+#: ../src/documents.js:854 ../src/documents.js:1024
 msgid "Document"
 msgstr "Dokumen"
 
-#: ../src/documents.js:887
+#: ../src/documents.js:888
 msgid "ownCloud"
 msgstr "ownCloud"
 
-#: ../src/documents.js:951 ../src/documents.js:952
+#: ../src/documents.js:952 ../src/documents.js:953
 msgid "OneDrive"
 msgstr "OneDrive"
 
-#: ../src/documents.js:1151
+#: ../src/documents.js:1152
 msgid "Please check the network connection."
 msgstr "Harap periksa sambungan jaringan."
 
-#: ../src/documents.js:1154
+#: ../src/documents.js:1155
 msgid "Please check the network proxy settings."
 msgstr "Harap periksa pengaturan proksi jaringan."
 
-#: ../src/documents.js:1157
+#: ../src/documents.js:1158
 msgid "Unable to sign in to the document service."
 msgstr "Tak bisa masuk ke layanan dokumen."
 
-#: ../src/documents.js:1160
+#: ../src/documents.js:1161
 msgid "Unable to locate this document."
 msgstr "Tak bisa menemukan dokumen ini."
 
-#: ../src/documents.js:1163
+#: ../src/documents.js:1164
 #, javascript-format
 msgid "Hmm, something is fishy (%d)."
 msgstr "Hm, ada sesuatu yang mencurigakan (%d)."
 
-#: ../src/documents.js:1181
+#: ../src/documents.js:1182
 #, javascript-format
 msgid "Oops! Unable to load “%s”"
 msgstr "Ups! Tak bisa memuat \"%s\""
@@ -182,7 +182,7 @@ msgstr "Tilik"
 
 #: ../src/embed.js:142
 msgid "No Documents Found"
-msgstr "Tidak Ada Dokumen"
+msgstr "Tak Ada Dokumen"
 
 #: ../src/embed.js:163
 #, javascript-format
@@ -243,34 +243,34 @@ msgstr "Cari"
 msgid "Back"
 msgstr "Mundur"
 
-#: ../src/mainToolbar.js:163
+#: ../src/mainToolbar.js:149
 msgid "View items as a list"
 msgstr "Tilik butir sebagai daftar"
 
-#: ../src/mainToolbar.js:169
+#: ../src/mainToolbar.js:155
 msgid "View items as a grid of icons"
 msgstr "Tilik butir sebagai kisi ikon"
 
-#: ../src/mainToolbar.js:203
+#: ../src/mainToolbar.js:189
 #, javascript-format
 msgid "Results for “%s”"
 msgstr "Hasil untuk \"%s\""
 
-#: ../src/mainToolbar.js:211
+#: ../src/mainToolbar.js:197
 msgid "Click on items to select them"
 msgstr "Klik pada butir untuk memilihnya"
 
-#: ../src/mainToolbar.js:213
+#: ../src/mainToolbar.js:199
 #, javascript-format
 msgid "%d selected"
 msgid_plural "%d selected"
 msgstr[0] "%d dipilih"
 
-#: ../src/mainToolbar.js:240
+#: ../src/mainToolbar.js:226
 msgid "Cancel"
 msgstr "Batal"
 
-#: ../src/mainToolbar.js:282
+#: ../src/mainToolbar.js:268
 msgid "Select Items"
 msgstr "Pilih Item"
 
@@ -655,3 +655,5 @@ msgstr "Tahun lalu"
 msgid "%d year ago"
 msgid_plural "%d years ago"
 msgstr[0] "%d tahun yang lalu"
+
+
