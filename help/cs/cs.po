@@ -8,8 +8,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-docs master\n"
-"POT-Creation-Date: 2014-03-23 19:57+0000\n"
-"PO-Revision-Date: 2014-03-23 21:18+0100\n"
+"POT-Creation-Date: 2014-04-23 07:00+0000\n"
+"PO-Revision-Date: 2014-04-23 11:27+0200\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -63,7 +63,7 @@ msgstr "Michael Hill"
 #. (itstool) path: credit/name
 #: C/collections.page:22 C/filter.page:17 C/formats.page:17 C/index.page:24
 #: C/info.page:22 C/prob-no-show.page:22 C/prob-previews.page:22
-#: C/viewgrid.page:22 C/view.page:22
+#: C/viewgrid.page:22 C/view.page:22 C/view-add.page:12
 msgid "Ekaterina Gerasimova"
 msgstr "Ekaterina Gerasimova"
 
@@ -151,17 +151,6 @@ msgstr ""
 "Zmáčkněte tlačítko <gui style=\"button\">Smazat</gui>. Sada bude smazána, "
 "ale původní dokumenty zůstanou zachovány."
 
-#. (itstool) path: media
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/filter.page:30 C/search.page:53
-msgctxt "_"
-msgid "external ref='media/go-down.png' md5='e8c16f5ab9ed933f4a537b740506f4d4'"
-msgstr ""
-"external ref='media/go-down.png' md5='e8c16f5ab9ed933f4a537b740506f4d4'"
-
 #. (itstool) path: info/desc
 #: C/filter.page:24
 msgid "Choose which documents to display."
@@ -172,24 +161,29 @@ msgstr "Jak vybrat, které dokumenty se mají zobrazit."
 msgid "Filter documents"
 msgstr "Filtr dokumentů"
 
+#. (itstool) path: media/span
+#: C/filter.page:31 C/search.page:54
+msgid "down"
+msgstr "šipka dolů"
+
 #. (itstool) path: page/p
 #: C/filter.page:29
 msgid ""
-"<link xref=\"search\">Open the search</link> and click the <media type="
-"\"image\" src=\"media/go-down.png\">down</media> button next to the search "
-"bar to limit the scope of the search in these categories:"
+"<link xref=\"search\">Open the search</link> and click the <_:media-1/> "
+"button next to the search bar to limit the scope of the search in these "
+"categories:"
 msgstr ""
-"<link xref=\"search\">Otevřte hledání</link>, klikněte na tlačítko <media "
+"<link xref=\"search\">Otevřete hledání</link> a klikněte na tlačítko <media "
 "type=\"image\" src=\"media/go-down.png\">se šipkou dolů</media> vedle "
-"vyhledávací lišty a omezte rozsah hledání na tyto kategorie:"
+"vyhledávací lišty, abyste omezili rozsah hledání na tyto kategorie:"
 
 #. (itstool) path: item/title
-#: C/filter.page:35
+#: C/filter.page:36
 msgid "Sources"
 msgstr "Zdroje"
 
 #. (itstool) path: item/p
-#: C/filter.page:36
+#: C/filter.page:37
 msgid ""
 "Chose to search documents that are <gui>Local</gui>, accessed through <link "
 "href=\"help:gnome-help/online-accounts\">online accounts</link> with "
@@ -202,12 +196,12 @@ msgstr ""
 "<gui>Všechny</gui>."
 
 #. (itstool) path: item/title
-#: C/filter.page:42
+#: C/filter.page:43
 msgid "Type"
 msgstr "Typ"
 
 #. (itstool) path: item/p
-#: C/filter.page:43
+#: C/filter.page:44
 msgid ""
 "Search only documents that are <gui>Collections</gui>, <gui>PDF Documents</"
 "gui>, <gui>Presentations</gui>, <gui>Spreadsheets</gui>, <gui>Text "
@@ -218,12 +212,12 @@ msgstr ""
 "dokumenty</gui> nebo <gui>Vše</gui>."
 
 #. (itstool) path: item/title
-#: C/filter.page:48
+#: C/filter.page:49
 msgid "Match"
 msgstr "Porovnávat"
 
 #. (itstool) path: item/p
-#: C/filter.page:49
+#: C/filter.page:50
 msgid ""
 "Choose to search only the <gui>Title</gui>, the <gui>Author</gui>, or "
 "<gui>All</gui>."
@@ -232,7 +226,7 @@ msgstr ""
 "<gui>Všem</gui>."
 
 #. (itstool) path: note/p
-#: C/filter.page:55
+#: C/filter.page:56
 msgid ""
 "In order for <gui>Google</gui>, <gui>OneDrive</gui> or <gui>ownCloud</gui> "
 "to appear in the filter list, it is necessary to configure Google, ownCloud "
@@ -566,13 +560,11 @@ msgstr ""
 #. (itstool) path: note/p
 #: C/search.page:52
 msgid ""
-"You can restrict or filter the search results by clicking the <media type="
-"\"image\" src=\"media/go-down.png\">down</media> button and selecting "
-"various <link xref=\"filter\">filters</link>."
+"You can restrict or filter the search results by clicking the <_:media-1/> "
+"button and selecting various <link xref=\"filter\">filters</link>."
 msgstr ""
-"Výsledky hledání můžete omezit nebo filtrovat kliknutím na tlačítko <media "
-"type=\"image\" src=\"media/go-down.png\">se šipku dolů</media> a výběrem "
-"různých <link xref=\"filter\">filtrů</link>."
+"Výsledky hledání můžete omezit nebo filtrovat kliknutím na tlačítko <_:"
+"media-1/> a výběrem různých <link xref=\"filter\">filtrů</link>."
 
 #. (itstool) path: info/desc
 #: C/viewgrid.page:29
@@ -630,14 +622,17 @@ msgstr "Zobrazení vašich dokumentů"
 #. (itstool) path: page/p
 #: C/view.page:42
 msgid ""
-"When you open <app>Documents</app>, all of your documents, those stored "
-"locally as well as online, are displayed as thumbnails."
+"When you open <app>Documents</app>, documents which are stored locally in "
+"one of the standard folders such as <file>Documents</file> or "
+"<file>Downloads</file> and in one of your online accounts, are displayed as "
+"thumbnails."
 msgstr ""
-"Když otevřete <app>Dokumenty</app>, zobrazí se náhledy všech vašich "
-"dokumentů, které máte uloženy na místním úložišti i on-line."
+"Když otevřete <app>Dokumenty</app>, zobrazí se náhledy dokumentů, které máte "
+"uložené místně v některé ze standardních složek, jako jsou <file>Dokumenty</"
+"file> nebo <file>Stažené</file>, a uložené pod některým z účtů on-line."
 
 #. (itstool) path: note/p
-#: C/view.page:46
+#: C/view.page:48
 msgid ""
 "To see documents from your online accounts, it is necessary to <link href="
 "\"help:gnome-help/accounts-add\">set up the accounts</link>."
@@ -647,14 +642,95 @@ msgstr ""
 "link>."
 
 #. (itstool) path: page/p
-#: C/view.page:50
+#: C/view.page:52
 msgid "To view the contents of a document, press on the thumbnail."
 msgstr "Když chcete zobrazit obsah dokumentu, zmáčkněte jeho náhled."
 
 #. (itstool) path: page/p
-#: C/view.page:52
+#: C/view.page:54
 msgid ""
 "To exit the document, click the back arrow button in the top-left of the "
 "window."
 msgstr ""
 "Dokument opustíte kliknutím na tlačítko se šipkou v levé horní části okna."
+
+#. (itstool) path: info/desc
+#: C/view-add.page:18
+msgid ""
+"Add extra directories to those which are already searched by <app>Documents</"
+"app>."
+msgstr ""
+"Přidání dodatečných složek k těm, které už jsou aplikací <app>Dokumenty</"
+"app> prohledávány."
+
+#. (itstool) path: page/title
+#: C/view-add.page:23
+msgid "Add custom directories"
+msgstr "Přidání vlastních složek"
+
+#. (itstool) path: page/p
+#: C/view-add.page:25
+msgid ""
+"<app>Documents</app> normally shows only documents that are in standard "
+"folders such as <file>Documents</file> or <file>Downloads</file>. You can "
+"add extra folders that you want to use from the <app>Search</app> preference "
+"panel. You may want to do this if you keep some of your documents in a non-"
+"standard location such as another folder on your computer or on an external "
+"hard disk."
+msgstr ""
+"<app>Dokumenty</app> normálně zobrazují jen dokumenty, které jsou ve "
+"standardních složkách, jako jsou <file>Dokumenty</file> nebo <file>Stažené</"
+"file>. Pomocí panelu předvoleb <app>Hledání</app> si můžete přidat další "
+"složky, které chcete používat. To se vám může hodit, třeba když některé své "
+"dokumenty uchováváte na nestandardních místech, ať už jde o složku ve vašem "
+"počítači nebo na externím disku."
+
+#. (itstool) path: item/p
+#: C/view-add.page:34
+msgid ""
+"Open the <gui href=\"help:gnome-help/shell-terminology\">Activities</gui> "
+"overview and start typing <gui>Search</gui>."
+msgstr ""
+"Otevřete přehled <gui href=\"help:gnome-help/shell-terminology\">Činností</"
+"gui> a začněte psát výraz <gui>Hledat</gui>."
+
+#. (itstool) path: item/p
+#: C/view-add.page:39
+msgid "Click on <gui>Search</gui> to open the panel."
+msgstr "Kliknutím na <gui>Hledat</gui> otevřete příslušný panel."
+
+#. (itstool) path: item/p
+#: C/view-add.page:42
+msgid ""
+"Press the button in the bottom-left of the window which will open "
+"<gui>Search Locations</gui>."
+msgstr ""
+"Zmáčkněte tlačítko ozubeného kola v pravém dolním rohu okna a otevřou se "
+"<gui>Prohledávaná umístění</gui>."
+
+#. (itstool) path: item/p
+#: C/view-add.page:46
+msgid "Press <gui style=\"button\">+</gui> to add a new search location."
+msgstr ""
+"Pro přidání nového prohledávaného umístění zmáčkněte <gui style=\"button\">"
+"+</gui>."
+
+#. (itstool) path: item/p
+#: C/view-add.page:49
+msgid ""
+"Select the folder that you want to add and press <gui style=\"button\">OK</"
+"gui> to add the folder."
+msgstr ""
+"Vyberte složku, kterou chcete přidat, a zmáčknutím <gui style=\"button"
+"\">Budiž</gui> ji přidejte."
+
+#. (itstool) path: page/p
+#: C/view-add.page:61
+msgid ""
+"Adding a new folder to the search may let some of your other applications "
+"search that folder. Unfortunately, it is not possible to tell which "
+"applications will be affected without testing them."
+msgstr ""
+"Přídání nové složky mezi prohledávané může způsobit, že ji začnou "
+"prohledávat i některé další aplikace. Bohužel není předem možné říci, které "
+"to budou, musíte to vyzkoušet."
