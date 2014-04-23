@@ -692,12 +692,12 @@ msgid ""
 "overview and start typing <gui>Search</gui>."
 msgstr ""
 "Otevřete přehled <gui href=\"help:gnome-help/shell-terminology\">Činností</"
-"gui> a začněte psát výraz <gui>Hledat</gui>."
+"gui> a začněte psát výraz <gui>Hledání</gui>."
 
 #. (itstool) path: item/p
 #: C/view-add.page:39
 msgid "Click on <gui>Search</gui> to open the panel."
-msgstr "Kliknutím na <gui>Hledat</gui> otevřete příslušný panel."
+msgstr "Kliknutím na <gui>Hledání</gui> otevřete příslušný panel."
 
 #. (itstool) path: item/p
 #: C/view-add.page:42
