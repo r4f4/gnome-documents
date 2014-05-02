@@ -1,3 +1,14 @@
+3.13.1 - "Leaking Oil"
+======================
+
+- Use X close buttons in presentation dialogs (Felipe Borges, Marta Milakovic)
+- Scale the thumbnails on HiDpi displays
+- Overlay scrub bar (slider) disappears while using it
+- Unbreak the contents and bookmarks dialog
+- Make the thumbnailing robust against theme failures
+- Prioritize relevant RDF types
+- Translation updates
+
 3.12.0 - "Lassi"
 ================
 
