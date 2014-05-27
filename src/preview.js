@@ -614,11 +614,7 @@ const PreviewNavControls = new Lang.Class({
                                       });
         buttonArea.pack_start(button, false, false, 0);
 
-        let isRtl = (this._previewView.widget.get_direction() == Gtk.TextDirection.RTL);
-        let prevIconName = isRtl ? 'go-next-symbolic' : 'go-previous-symbolic';
-        let nextIconName = isRtl ? 'go-previous-symbolic' : 'go-next-symbolic';
-
-        this.prev_widget = new Gtk.Button({ child: new Gtk.Image ({ icon_name: prevIconName,
+        this.prev_widget = new Gtk.Button({ child: new Gtk.Image ({ icon_name: 'go-previous-symbolic',
                                                                     pixel_size: 16 }),
                                             margin_start: _PREVIEW_NAVBAR_MARGIN,
                                             margin_end: _PREVIEW_NAVBAR_MARGIN,
@@ -630,7 +626,7 @@ const PreviewNavControls = new Lang.Class({
         this.prev_widget.connect('enter-notify-event', Lang.bind(this, this._onEnterNotify));
         this.prev_widget.connect('leave-notify-event', Lang.bind(this, this._onLeaveNotify));
 
-        this.next_widget = new Gtk.Button({ child: new Gtk.Image ({ icon_name: nextIconName,
+        this.next_widget = new Gtk.Button({ child: new Gtk.Image ({ icon_name: 'go-next-symbolic',
                                                                     pixel_size: 16 }),
                                             margin_start: _PREVIEW_NAVBAR_MARGIN,
                                             margin_end: _PREVIEW_NAVBAR_MARGIN,
