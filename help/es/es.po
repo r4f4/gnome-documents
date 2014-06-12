@@ -13,16 +13,16 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-help.master\n"
-"POT-Creation-Date: 2014-03-24 07:55+0000\n"
-"PO-Revision-Date: 2014-03-24 13:42+0100\n"
+"POT-Creation-Date: 2014-06-11 06:46+0000\n"
+"PO-Revision-Date: 2014-06-12 17:21+0200\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
-"Language-Team: Español <gnome-es-list@gnome.org>\n"
+"Language-Team: Español; Castellano <gnome-es-list@gnome.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Gtranslator 2.91.5\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"X-Generator: Gtranslator 2.91.6\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. (itstool) path: p/link
 #: C/legal.xml:3
@@ -71,7 +71,7 @@ msgstr "Michael Hill"
 #. (itstool) path: credit/name
 #: C/collections.page:22 C/filter.page:17 C/formats.page:17 C/index.page:24
 #: C/info.page:22 C/prob-no-show.page:22 C/prob-previews.page:22
-#: C/viewgrid.page:22 C/view.page:22
+#: C/viewgrid.page:22 C/view.page:22 C/view-add.page:12
 msgid "Ekaterina Gerasimova"
 msgstr "Ekaterina Gerasimova"
 
@@ -159,17 +159,6 @@ msgstr ""
 "Pulse <gui style=\"button\">Eliminar</gui>. La colección se eliminará, "
 "manteniendo los documentos originales."
 
-#. (itstool) path: media
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/filter.page:30 C/search.page:53
-msgctxt "_"
-msgid "external ref='media/go-down.png' md5='e8c16f5ab9ed933f4a537b740506f4d4'"
-msgstr ""
-"external ref='media/go-down.png' md5='e8c16f5ab9ed933f4a537b740506f4d4'"
-
 #. (itstool) path: info/desc
 #: C/filter.page:24
 msgid "Choose which documents to display."
@@ -180,24 +169,33 @@ msgstr "Elegir qué documentos mostrar."
 msgid "Filter documents"
 msgstr "Filtrar documentos"
 
+#. (itstool) path: media/span
+#: C/filter.page:31 C/search.page:54
+msgid "down"
+msgstr "abajo"
+
 #. (itstool) path: page/p
 #: C/filter.page:29
+#| msgid ""
+#| "<link xref=\"search\">Open the search</link> and click the <media type="
+#| "\"image\" src=\"media/go-down.png\">down</media> button next to the "
+#| "search bar to limit the scope of the search in these categories:"
 msgid ""
-"<link xref=\"search\">Open the search</link> and click the <media type="
-"\"image\" src=\"media/go-down.png\">down</media> button next to the search "
-"bar to limit the scope of the search in these categories:"
+"<link xref=\"search\">Open the search</link> and click the <_:media-1/> "
+"button next to the search bar to limit the scope of the search in these "
+"categories:"
 msgstr ""
-"<link xref=\"search\">Abra la búsqueda</link> y pulse el botón <media type="
-"\"image\" src=\"media/go-down.png\">abajo</media> junto a la barra de "
-"búsqueda para limitar el objetivo de la búsqueda a estas categorías:"
+"<link xref=\"search\">Abra la búsqueda</link> y pulse el botón <_:media-1/> "
+"junto a la barra de búsqueda para limitar el objetivo de la búsqueda a estas "
+"categorías:"
 
 #. (itstool) path: item/title
-#: C/filter.page:35
+#: C/filter.page:36
 msgid "Sources"
 msgstr "Fuentes"
 
 #. (itstool) path: item/p
-#: C/filter.page:36
+#: C/filter.page:37
 msgid ""
 "Chose to search documents that are <gui>Local</gui>, accessed through <link "
 "href=\"help:gnome-help/online-accounts\">online accounts</link> with "
@@ -210,12 +208,12 @@ msgstr ""
 "gui>."
 
 #. (itstool) path: item/title
-#: C/filter.page:42
+#: C/filter.page:43
 msgid "Type"
 msgstr "Tipo"
 
 #. (itstool) path: item/p
-#: C/filter.page:43
+#: C/filter.page:44
 msgid ""
 "Search only documents that are <gui>Collections</gui>, <gui>PDF Documents</"
 "gui>, <gui>Presentations</gui>, <gui>Spreadsheets</gui>, <gui>Text "
@@ -226,12 +224,12 @@ msgstr ""
 "texto</gui>, o <gui>Todos</gui>."
 
 #. (itstool) path: item/title
-#: C/filter.page:48
+#: C/filter.page:49
 msgid "Match"
 msgstr "Coincidencia"
 
 #. (itstool) path: item/p
-#: C/filter.page:49
+#: C/filter.page:50
 msgid ""
 "Choose to search only the <gui>Title</gui>, the <gui>Author</gui>, or "
 "<gui>All</gui>."
@@ -240,7 +238,7 @@ msgstr ""
 "gui>."
 
 #. (itstool) path: note/p
-#: C/filter.page:55
+#: C/filter.page:56
 msgid ""
 "In order for <gui>Google</gui>, <gui>OneDrive</gui> or <gui>ownCloud</gui> "
 "to appear in the filter list, it is necessary to configure Google, ownCloud "
@@ -339,9 +337,6 @@ msgstr "Buscar información sobre los documentos"
 
 #. (itstool) path: page/p
 #: C/info.page:42
-#| msgid ""
-#| "When a document is created, it contains with <em>metadata</em>. "
-#| "<app>Documents</app> displays the following metadata for each document:"
 msgid ""
 "When a document is created, it contains <em>metadata</em>. <app>Documents</"
 "app> displays the following metadata for each document:"
@@ -583,14 +578,17 @@ msgstr ""
 
 #. (itstool) path: note/p
 #: C/search.page:52
+#| msgid ""
+#| "You can restrict or filter the search results by clicking the <media type="
+#| "\"image\" src=\"media/go-down.png\">down</media> button and selecting "
+#| "various <link xref=\"filter\">filters</link>."
 msgid ""
-"You can restrict or filter the search results by clicking the <media type="
-"\"image\" src=\"media/go-down.png\">down</media> button and selecting "
-"various <link xref=\"filter\">filters</link>."
+"You can restrict or filter the search results by clicking the <_:media-1/> "
+"button and selecting various <link xref=\"filter\">filters</link>."
 msgstr ""
-"Puede restringir o filtrar los resultados de búsqueda pulsando el botón "
-"<media type=\"image\" src=\"media/go-down.png\">abajo</media> y "
-"seleccionando varios <link xref=\"documents-filter\">filtros</link>."
+"Puede restringir o filtrar los resultados de búsqueda pulsando el botón <_:"
+"media-1/> y seleccionando varios <link xref=\"documents-filter\">filtros</"
+"link>."
 
 #. (itstool) path: info/desc
 #: C/viewgrid.page:29
@@ -647,16 +645,22 @@ msgstr "Ver sus documentos"
 
 #. (itstool) path: page/p
 #: C/view.page:42
+#| msgid ""
+#| "When you open <app>Documents</app>, all of your documents, those stored "
+#| "locally as well as online, are displayed as thumbnails."
 msgid ""
-"When you open <app>Documents</app>, all of your documents, those stored "
-"locally as well as online, are displayed as thumbnails."
+"When you open <app>Documents</app>, documents which are stored locally in "
+"one of the standard folders such as <file>Documents</file> or "
+"<file>Downloads</file> and in one of your online accounts, are displayed as "
+"thumbnails."
 msgstr ""
-"Cuando abre <app>Documentos</app>, todos sus documentos, tanto los "
-"almacenados localmente como los almacenas en línea, se muestran como "
-"miniaturas."
+"Cuando abre <app>Documentos</app>, todos los documentos guardados localmente "
+"en alguna de las carpetas estándar, tales como <file>Documentos</file> o "
+"<file>Descargas</file>, o los almacenas en sus cuentas en línea, se muestran "
+"como miniaturas."
 
 #. (itstool) path: note/p
-#: C/view.page:46
+#: C/view.page:48
 msgid ""
 "To see documents from your online accounts, it is necessary to <link href="
 "\"help:gnome-help/accounts-add\">set up the accounts</link>."
@@ -665,12 +669,12 @@ msgstr ""
 "\"help:gnome-help/accounts-add\">configurar las cuentas</link>."
 
 #. (itstool) path: page/p
-#: C/view.page:50
+#: C/view.page:52
 msgid "To view the contents of a document, press on the thumbnail."
 msgstr "Para ver el contenido de un documento, pulse sobre la miniatura."
 
 #. (itstool) path: page/p
-#: C/view.page:52
+#: C/view.page:54
 msgid ""
 "To exit the document, click the back arrow button in the top-left of the "
 "window."
@@ -678,11 +682,95 @@ msgstr ""
 "Para salir del documento, pulse el icono de flecha hacia atrás en la parte "
 "superior izquierda de la ventana."
 
+#. (itstool) path: info/desc
+#: C/view-add.page:18
+msgid ""
+"Add extra directories to those which are already searched by <app>Documents</"
+"app>."
+msgstr ""
+"Añadir carpetas adicionales a aquellas en las que busca <app>Documentos</"
+"app>."
+
+#. (itstool) path: page/title
+#: C/view-add.page:23
+msgid "Add custom directories"
+msgstr "Añadir carpetas personalizadas"
+
+#. (itstool) path: page/p
+#: C/view-add.page:25
+msgid ""
+"<app>Documents</app> normally shows only documents that are in standard "
+"folders such as <file>Documents</file> or <file>Downloads</file>. You can "
+"add extra folders that you want to use from the <app>Search</app> preference "
+"panel. You may want to do this if you keep some of your documents in a non-"
+"standard location such as another folder on your computer or on an external "
+"hard disk."
+msgstr ""
+"Normalmente, <app>Documentos</app> sólo muestra los documentos que están en "
+"carpetas estándar, tales como <file>Documentos</file> o <file>Descargas</"
+"file>. Puede añadir carpetas adicionales que quiera usar desde el panel de "
+"preferencias de <app>Buscar</app>. Puede querer hacer esto si tiene "
+"documentos en ubicaciones no estándar, como pueden ser otras carpetas de su "
+"equipo o un disco duro externo."
+
+#. (itstool) path: item/p
+#: C/view-add.page:34
+msgid ""
+"Open the <gui href=\"help:gnome-help/shell-terminology\">Activities</gui> "
+"overview and start typing <gui>Search</gui>."
+msgstr ""
+"Abra la vista de <gui href=\"help:gnome-help/shell-terminology"
+"\">Actividades</gui> y empiece a escribir <gui>Buscar</gui>."
+
+#. (itstool) path: item/p
+#: C/view-add.page:39
+#| msgid "Click the <gui>+</gui> button in the button bar."
+msgid "Click on <gui>Search</gui> to open the panel."
+msgstr "Pulse en <gui>Buscar</gui> para abrir el panel."
+
+#. (itstool) path: item/p
+#: C/view-add.page:42
+msgid ""
+"Press the button in the bottom-left of the window which will open "
+"<gui>Search Locations</gui>."
+msgstr ""
+"Pulse el botón en la parte inferior izquierda de la ventana, que abrirá la "
+"<gui>Lugares de búsqueda</gui>."
+
+#. (itstool) path: item/p
+#: C/view-add.page:46
+msgid "Press <gui style=\"button\">+</gui> to add a new search location."
+msgstr ""
+"Pulse <gui style=\"button\">+</gui> para añadir un lugar de búsqueda nueva."
+
+#. (itstool) path: item/p
+#: C/view-add.page:49
+msgid ""
+"Select the folder that you want to add and press <gui style=\"button\">OK</"
+"gui> to add the folder."
+msgstr ""
+"Seleccione la carpeta que quiere añadir y pulse <gui style=\"button"
+"\">Aceptar</gui> para añadir la carpeta."
+
+#. (itstool) path: page/p
+#: C/view-add.page:61
+msgid ""
+"Adding a new folder to the search may let some of your other applications "
+"search that folder. Unfortunately, it is not possible to tell which "
+"applications will be affected without testing them."
+msgstr ""
+"Añadir una carpeta nueva a la búsqueda puede hacer que el resto de "
+"aplicaciones busquen en esa carpeta. Por desgracia, no es posible decir qué "
+"aplicaciones se verán afectadas sin probarlas."
+
+#~ msgctxt "_"
+#~ msgid ""
+#~ "external ref='media/go-down.png' md5='e8c16f5ab9ed933f4a537b740506f4d4'"
+#~ msgstr ""
+#~ "external ref='media/go-down.png' md5='e8c16f5ab9ed933f4a537b740506f4d4'"
+
 #~ msgid "In selection mode, check the documents to be collected."
 #~ msgstr "En el modo de selección marque los documentos para agruparlos."
-
-#~ msgid "Click the <gui>+</gui> button in the button bar."
-#~ msgstr "Pulse el botón <gui>+</gui> en la barra de botones."
 
 #~ msgid ""
 #~ "Collections do not behave like folders and their hierarchy: <em>you "
