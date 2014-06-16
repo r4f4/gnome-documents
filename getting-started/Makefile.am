@@ -10,3 +10,5 @@ HELP_FILES = \
 	editing.svg \
 	learn-more.svg \
 	$(NULL)
+
+-include $(top_srcdir)/git.mk

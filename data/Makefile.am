@@ -36,3 +36,5 @@ EXTRA_DIST= \
 CLEANFILES = \
     $(appdata_DATA) \
     $(desktop_DATA)
+
+-include $(top_srcdir)/git.mk

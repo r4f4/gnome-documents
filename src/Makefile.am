@@ -72,3 +72,5 @@ gnome-documents: gnome-documents.in
 
 CLEANFILES += gnome-documents
 EXTRA_DIST += gnome-documents.in
+
+-include $(top_srcdir)/git.mk

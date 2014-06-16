@@ -22,3 +22,5 @@ HELP_MEDIA = \
 	media/icon_gnome-documents.png
 
 HELP_LINGUAS = as ca cs de el fi fr es gl gu hi hu id it ja kn lv mr nl pa pt_BR ru sl sr sr@latin sv te vi ta zh_CN
+
+-include $(top_srcdir)/git.mk
