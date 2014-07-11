@@ -86,6 +86,7 @@ const PreviewView = new Lang.Class({
         this.widget.show_all();
 
         this._bookmarkPage = Application.application.lookup_action('bookmark-page');
+        this._bookmarkPage.enabled = false;
         this._bookmarkPage.connect('change-state',
             Lang.bind(this, this._onActionStateChanged));
         this._onActionStateChanged(this._bookmarkPage, this._bookmarkPage.state);
@@ -146,6 +147,7 @@ const PreviewView = new Lang.Class({
     },
 
     _onLoadStarted: function() {
+        this._bookmarkPage.enabled = false;
         this._showPlaces.enabled = false;
         this._copy.enabled = false;
     },
@@ -153,13 +155,13 @@ const PreviewView = new Lang.Class({
     _onLoadFinished: function(manager, doc, docModel) {
         this._showPlaces.enabled = true;
         this._togglePresentation.enabled = true;
+        this._navControls.show();
 
         if (!Application.documentManager.metadata)
             return;
 
-        this._navControls.show();
-
         this._bookmarks = new GdPrivate.Bookmarks({ metadata: Application.documentManager.metadata });
+        this._bookmarkPage.enabled = true;
     },
 
     _onLoadError: function(manager, doc, message, exception) {
@@ -195,6 +197,9 @@ const PreviewView = new Lang.Class({
 
     _onPageChanged: function() {
         this._pageChanged = true;
+
+        if (!this._bookmarks)
+            return;
 
         let page_number = this._model.page;
         let bookmark = new GdPrivate.Bookmark({ page_number: page_number });
@@ -548,6 +553,11 @@ const PreviewView = new Lang.Class({
         if (this._model) {
             this.view.set_model(this._model);
             this._navControls.setModel(model);
+
+            let hasMultiplePages = (this._model.document.get_n_pages() > 1);
+            this._bookmarkPage.enabled = hasMultiplePages && this._bookmarks;
+            this._showPlaces.enabled = hasMultiplePages;
+
             this._model.connect('page-changed', Lang.bind(this, this._onPageChanged));
         }
     },
@@ -732,13 +742,8 @@ const PreviewNavControls = new Lang.Class({
         this._model = model;
         this.bar_widget.document_model = model;
 
-        if (this._model) {
-            let hasMultiplePages = (this._model.document.get_n_pages() > 1);
-            Application.application.lookup_action('bookmark-page').enabled = hasMultiplePages;
-            Application.application.lookup_action('places').enabled = hasMultiplePages;
-
+        if (this._model)
             this._pageChangedId = this._model.connect('page-changed', Lang.bind(this, this._updateVisibility));
-        }
 
         this._updateVisibility();
     },

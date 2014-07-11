@@ -70,12 +70,14 @@ const PlacesDialog = new Lang.Class({
             }));
         this._addPage(this._linksPage);
 
-        this._bookmarksPage = new GdPrivate.PlacesBookmarks({ bookmarks: this._bookmarks });
-        this._bookmarksPage.connect('bookmark-activated', Lang.bind(this,
-            function(widget, link) {
-                this._handleBookmark(link);
-            }));
-        this._addPage(this._bookmarksPage);
+        if (this._bookmarks) {
+            this._bookmarksPage = new GdPrivate.PlacesBookmarks({ bookmarks: this._bookmarks });
+            this._bookmarksPage.connect('bookmark-activated', Lang.bind(this,
+                function(widget, link) {
+                    this._handleBookmark(link);
+                }));
+            this._addPage(this._bookmarksPage);
+        }
     },
 
     _handleLink: function(link) {
