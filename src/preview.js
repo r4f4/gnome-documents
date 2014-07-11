@@ -85,10 +85,10 @@ const PreviewView = new Lang.Class({
 
         this.widget.show_all();
 
-        Application.application.connect('action-state-changed::bookmark-page',
+        this._bookmarkPage = Application.application.lookup_action('bookmark-page');
+        this._bookmarkPage.connect('change-state',
             Lang.bind(this, this._onActionStateChanged));
-        this._onActionStateChanged(Application.application, 'bookmark-page',
-            Application.application.get_action_state('bookmark-page'));
+        this._onActionStateChanged(this._bookmarkPage, this._bookmarkPage.state);
 
         this._zoomIn = Application.application.lookup_action('zoom-in');
         this._zoomIn.connect('activate', Lang.bind(this,
@@ -170,7 +170,7 @@ const PreviewView = new Lang.Class({
         this._loadError = false;
     },
 
-    _onActionStateChanged: function(source, actionName, state) {
+    _onActionStateChanged: function(action, state) {
         if (!this._model)
             return;
 
@@ -200,7 +200,7 @@ const PreviewView = new Lang.Class({
         let bookmark = new GdPrivate.Bookmark({ page_number: page_number });
         let hasBookmark = (this._bookmarks.find_bookmark(bookmark) != null);
 
-        Application.application.change_action_state('bookmark-page', GLib.Variant.new('b', (hasBookmark)));
+        this._bookmarkPage.state = GLib.Variant.new('b', hasBookmark);
     },
 
     _showPlaces: function() {
