@@ -25,7 +25,9 @@ const GLib = imports.gi.GLib;
 
 const MinerIface = '<node> \
 <interface name="org.gnome.OnlineMiners.Miner"> \
-    <method name="RefreshDB" /> \
+    <method name="RefreshDB"> \
+        <arg name="index_types" type="as" direction="in"/> \
+    </method> \
     <property name="DisplayName" type="s" access="read"/> \
 </interface> \
 </node>';

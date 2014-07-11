@@ -303,7 +303,7 @@ const Application = new Lang.Class({
         this.emitJS('miners-changed', this.minersRunning);
 
         miner._cancellable = new Gio.Cancellable();
-        miner.RefreshDBRemote(miner._cancellable, Lang.bind(this,
+        miner.RefreshDBRemote(['documents'], miner._cancellable, Lang.bind(this,
             function(res, error) {
                 this.minersRunning = this.minersRunning.filter(
                     function(element) {
