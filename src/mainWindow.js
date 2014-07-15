@@ -175,12 +175,11 @@ const MainWindow = new Lang.Class({
     },
 
     _onKeyPressEvent: function(widget, event) {
-        let toolbar = this._embed.getMainToolbar();
-
-        if (toolbar.handleEvent(event))
+        if (this._handleBackKey(event))
             return true;
 
-        if (this._handleBackKey(event))
+        let toolbar = this._embed.getMainToolbar();
+        if (toolbar.handleEvent(event))
             return true;
 
         switch (Application.modeController.getWindowMode()) {
