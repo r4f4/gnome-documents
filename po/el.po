@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: gnome-documents master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-04-15 02:06+0000\n"
-"PO-Revision-Date: 2014-04-18 20:04+0200\n"
+"POT-Creation-Date: 2014-07-16 06:48+0000\n"
+"PO-Revision-Date: 2014-07-16 13:38+0200\n"
 "Last-Translator: Tom Tryfonidis <tomtryf@gmail.com>\n"
 "Language-Team: www.gnome.gr\n"
 "Language: el\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.6.4\n"
+"X-Generator: Poedit 1.6.5\n"
 "X-Project-Style: gnome\n"
 
 #: ../data/org.gnome.Documents.appdata.xml.in.h:1
@@ -40,28 +40,46 @@ msgid ""
 "Online Accounts."
 msgstr ""
 "Μια απλή εφαρμογή για να έχετε πρόσβαση, να οργανώσετε και να μοιραστείτε τα "
-"έγγραφα στο GNOME. Είναι απλή και κομψή με σκοπό να αντικαταστήσει την "
-"διαχείριση των εγγράφων σας από τον διαχειριστή αρχείων. Προσφέρεται και η "
-"ενσωμάτωση με το cloud μέσω των GNOME Online Accounts."
+"έγγραφα σας στο GNOME. Προορίζεται να είναι απλή και κομψή με σκοπό να "
+"αντικαταστήσει την διαχείριση των εγγράφων σας από τον διαχειριστή αρχείων. "
+"Προσφέρεται και η ενσωμάτωση με υπηρεσίες cloud μέσω των διαδικτυακών "
+"λογαριασμών του GNOME."
 
 #: ../data/org.gnome.Documents.appdata.xml.in.h:4
 msgid "It lets you:"
-msgstr "Σας επιτρέπει:"
+msgstr "Σας επιτρέπει να:"
 
 #: ../data/org.gnome.Documents.appdata.xml.in.h:5
-msgid ""
-"<li>View recent local and online documents</li> <li>Access your Google, "
-"ownCloud or OneDrive content</li> <li>Search through documents</li> <li>See "
-"new documents shared by friends</li> <li>View documents fullscreen</li> "
-"<li>Print documents</li> <li>Select favorites</li> <li>Allow opening full "
-"featured editor for non-trivial changes</li>"
-msgstr ""
-"<li>Προβολή πρόσφατων τοπικών και online εγγράφων</li> <li>Πρόσβαση σε "
-"περιεχόμενο λογαριασμών σας Google, ownCloud ή OneDrive</li> <li>Αναζήτηση "
-"μέσα στα έγγραφα</li> <li>Προβολή νέως εγγράφων που διαμοιράστηκαν από "
-"φίλους</li> <li>Προβολή εγγράφων σε πλήρη οθόνη</li> <li>Εκτύπωση εγγράφων</"
-"li> <li>Επιλογή αγαπημένων</li> <li>Να επιτρέπεται το άνοιγμα πλήρους "
-"επεξεργαστή για ασήμαντες αλλαγές</li>"
+msgid "View recent local and online documents"
+msgstr "Δείτε τα πρόσφατα τοπικά και διαδικτυκά έγγραφα σας"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:6
+msgid "Access your Google, ownCloud or OneDrive content"
+msgstr "Έχετε πρόσβαση στο περιεχόμενο σας σε Google, ownCloud ή OneDrive"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:7
+msgid "Search through documents"
+msgstr "Αναζητήσετε έγγραφα"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:8
+msgid "See new documents shared by friends"
+msgstr "Δείτε νέα έγγραφα που έχουν διαμοιραστεί από τους φίλους σας"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:9
+msgid "View documents fullscreen"
+msgstr "Δείτε έγγραφα σε πλήρη οθόνη"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:10
+msgid "Print documents"
+msgstr "Εκτυπώσετε έγγραφα"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:11
+msgid "Select favorites"
+msgstr "Επιλέξετε τα αγαπημένα σας"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:12
+msgid "Allow opening full featured editor for non-trivial changes"
+msgstr "Ανοίξετε τα έγγραφα σας με έναν επεξεργαστή για σημαντικές αλλαγές"
 
 #: ../data/org.gnome.Documents.desktop.in.h:2
 msgid "Access, manage and share documents"
@@ -81,7 +99,7 @@ msgstr "Προβολή ως τύπο"
 
 #: ../data/org.gnome.documents.gschema.xml.h:3
 msgid "Window size"
-msgstr "Μεγέθος παραθύρου"
+msgstr "Μέγεθος παραθύρου"
 
 #: ../data/org.gnome.documents.gschema.xml.h:4
 msgid "Window size (width and height)."
@@ -103,77 +121,77 @@ msgstr "Μεγιστοποιημένο παράθυρο"
 msgid "Window maximized state"
 msgstr "Κατάσταση μεγιστοποιημένου παραθύρου"
 
-#: ../src/documents.js:600
+#: ../src/documents.js:607
 msgid "Failed to print document"
 msgstr "Αδυναμία εκτύπωσης του εγγράφου"
 
-#: ../src/documents.js:637 ../src/search.js:418
+#: ../src/documents.js:644 ../src/search.js:418
 msgid "Local"
 msgstr "Τοπικά"
 
-#: ../src/documents.js:658
+#: ../src/documents.js:665
 msgid "GNOME"
 msgstr "GNOME"
 
-#: ../src/documents.js:659
+#: ../src/documents.js:666
 msgid "Getting Started with Documents"
 msgstr "Ξεκινώντας με τα έγγραφα"
 
-#: ../src/documents.js:675 ../src/documents.js:848 ../src/documents.js:910
-#: ../src/documents.js:1018
+#: ../src/documents.js:682 ../src/documents.js:855 ../src/documents.js:917
+#: ../src/documents.js:1025
 msgid "Collection"
 msgstr "Συλλογή"
 
-#: ../src/documents.js:727
+#: ../src/documents.js:734
 msgid "Google Docs"
 msgstr "Έγγραφα Google"
 
-#: ../src/documents.js:728
+#: ../src/documents.js:735
 msgid "Google"
 msgstr "Google"
 
-#: ../src/documents.js:850 ../src/documents.js:1020
+#: ../src/documents.js:857 ../src/documents.js:1027
 msgid "Spreadsheet"
 msgstr "Λογιστικό φύλλο"
 
-#: ../src/documents.js:852 ../src/documents.js:1022 ../src/presentation.js:47
+#: ../src/documents.js:859 ../src/documents.js:1029 ../src/presentation.js:47
 msgid "Presentation"
 msgstr "Παρουσίαση"
 
-#: ../src/documents.js:854 ../src/documents.js:1024
+#: ../src/documents.js:861 ../src/documents.js:1031
 msgid "Document"
 msgstr "Έγγραφo"
 
-#: ../src/documents.js:888
+#: ../src/documents.js:895
 msgid "ownCloud"
 msgstr "ownCloud"
 
-#: ../src/documents.js:952 ../src/documents.js:953
+#: ../src/documents.js:959 ../src/documents.js:960
 msgid "OneDrive"
 msgstr "OneDrive"
 
-#: ../src/documents.js:1152
+#: ../src/documents.js:1159
 msgid "Please check the network connection."
 msgstr "Παρακαλούμε ελέγξτε τις ρυθμίσεις δικτύου."
 
-#: ../src/documents.js:1155
+#: ../src/documents.js:1162
 msgid "Please check the network proxy settings."
-msgstr "Παρακαλούμε ελέγξτε τις ρυθμίσεις του μεσολαβητή δικτύου. "
+msgstr "Παρακαλούμε ελέγξτε τις ρυθμίσεις του διαμεσολαβητή δικτύου. "
 
-#: ../src/documents.js:1158
+#: ../src/documents.js:1165
 msgid "Unable to sign in to the document service."
 msgstr "Αδυναμία σύνδεσης στην υπηρεσία του εγγράφου."
 
-#: ../src/documents.js:1161
+#: ../src/documents.js:1168
 msgid "Unable to locate this document."
 msgstr "Αδυναμία εύρεσης αυτού του εγγράφου."
 
-#: ../src/documents.js:1164
+#: ../src/documents.js:1171
 #, javascript-format
 msgid "Hmm, something is fishy (%d)."
 msgstr "Χμμ, κάτι είναι ύποπτο (%d)."
 
-#: ../src/documents.js:1182
+#: ../src/documents.js:1189
 #, javascript-format
 msgid "Oops! Unable to load “%s”"
 msgstr "Ωχ! Αδυναμία φόρτωσης του “%s”"
@@ -225,7 +243,7 @@ msgstr "Δεν υπάρχουν σελιδοδείκτες"
 msgid "Loading…"
 msgstr "Γίνεται φόρτωση…"
 
-#: ../src/lib/gd-places-bookmarks.c:651 ../src/preview.js:605
+#: ../src/lib/gd-places-bookmarks.c:651 ../src/preview.js:615
 msgid "Bookmarks"
 msgstr "Σελιδοδείκτες"
 
@@ -241,34 +259,34 @@ msgstr "Περιεχόμενα"
 msgid "Search"
 msgstr "Αναζήτηση"
 
-#: ../src/mainToolbar.js:90
+#: ../src/mainToolbar.js:87
 msgid "Back"
 msgstr "Πίσω"
 
-#: ../src/mainToolbar.js:135
+#: ../src/mainToolbar.js:132
 msgid "View items as a list"
 msgstr "Προβολή στοιχείων ως κατάλογος"
 
-#: ../src/mainToolbar.js:141
+#: ../src/mainToolbar.js:138
 msgid "View items as a grid of icons"
 msgstr "Προβολή στοιχείων ως πλέγμα εικονιδίων"
 
-#: ../src/mainToolbar.js:171
+#: ../src/mainToolbar.js:168
 msgid "Click on items to select them"
 msgstr "Κάντε κλικ στα αντικείμενα για να τα επιλέξετε"
 
-#: ../src/mainToolbar.js:173
+#: ../src/mainToolbar.js:170
 #, javascript-format
 msgid "%d selected"
 msgid_plural "%d selected"
 msgstr[0] "Επιλέχθηκε %d"
 msgstr[1] "Επιλέχθηκαν %d"
 
-#: ../src/mainToolbar.js:200
+#: ../src/mainToolbar.js:197
 msgid "Cancel"
 msgstr "Άκυρο"
 
-#: ../src/mainToolbar.js:242
+#: ../src/mainToolbar.js:239
 msgid "Select Items"
 msgstr "Επιλογή αντικειμένων"
 
@@ -276,9 +294,10 @@ msgstr "Επιλογή αντικειμένων"
 msgid "translator-credits"
 msgstr ""
 "Ελληνική μεταφραστική ομάδα GNOME\n"
-" Θάνος Τρυφωνίδης <tomtryf@gmail.com>, 2012\n"
+" Θάνος Τρυφωνίδης <tomtryf@gmail.com>\n"
 "\n"
-"Για περισσότερα δείτε http://www.gnome.gr/"
+"Για περισσότερες πληροφορίες, επισκεφθείτε τη σελίδα\n"
+"http://gnome.gr/"
 
 #: ../src/mainWindow.js:275
 msgid "A document manager application"
@@ -301,15 +320,15 @@ msgstr ""
 #: ../src/notifications.js:165
 #, javascript-format
 msgid "Fetching documents from %s"
-msgstr "Λήψη εγγράφων από %s"
+msgstr "Ανάκτηση εγγράφων από %s"
 
 #: ../src/notifications.js:167
 msgid "Fetching documents from online accounts"
-msgstr "Λήψη εγγράφων από διαδικτυακούς λογαριασμούς"
+msgstr "Ανάκτηση εγγράφων από διαδικτυακούς λογαριασμούς"
 
 #: ../src/password.js:46
 msgid "Password Required"
-msgstr "Απαιτείται Συνθηματικό"
+msgstr "Απαιτείται κωδικός πρόσβασης"
 
 #: ../src/password.js:49
 msgid "_Unlock"
@@ -319,11 +338,12 @@ msgstr "_Ξεκλείδωμα"
 #, javascript-format
 msgid "Document %s is locked and requires a password to be opened."
 msgstr ""
-"Το έγγραφο %s είναι κλειδωμένο και απαιτείται συνθηματικό ώστε να ανοίξει."
+"Το έγγραφο %s είναι κλειδωμένο και απαιτείται κωδικός πρόσβασης ώστε να "
+"ανοίξει."
 
 #: ../src/password.js:79
 msgid "_Password"
-msgstr "_Συνθηματικό"
+msgstr "_Κωδικός πρόσβασης"
 
 #: ../src/presentation.js:104
 msgid "Running in presentation mode"
@@ -333,20 +353,20 @@ msgstr "Εκτέλεση σε λειτουργία παρουσίασης"
 msgid "Present On"
 msgstr "Παρόν σε"
 
-#: ../src/preview.js:613
+#: ../src/preview.js:623
 msgid "Bookmark this page"
 msgstr "Προσθήκη αυτής της σελίδας στους σελιδοδείκτες"
 
-#: ../src/preview.js:857 ../src/selections.js:857
+#: ../src/preview.js:858 ../src/selections.js:857
 #, javascript-format
 msgid "Open with %s"
 msgstr "Άνοιγμα με %s"
 
-#: ../src/preview.js:919
+#: ../src/preview.js:920
 msgid "Find Previous"
 msgstr "Εύρεση προηγουμένου"
 
-#: ../src/preview.js:926
+#: ../src/preview.js:927
 msgid "Find Next"
 msgstr "Εύρεση επομένου"
 
@@ -506,7 +526,7 @@ msgstr "Πηγές"
 #: ../src/selections.js:461
 msgid "You don't have any collections yet. Enter a new collection name above."
 msgstr ""
-"Δεν έχετε καμία συλλογή ακόμα. Εισάγετε παραπάνω ένα νέο όνομα συλλογής."
+"Δεν έχετε καμία συλλογή ακόμα. Πληκτρολογήστε παραπάνω ένα όνομα συλλογής."
 
 #: ../src/selections.js:604
 msgid "Create new collection"
@@ -609,7 +629,7 @@ msgstr "Ανώνυμο έγγραφο"
 
 #: ../src/trackerController.js:170
 msgid "Unable to fetch the list of documents"
-msgstr "Αδυναμία λήψης λίστας εγγράφων"
+msgstr "Αδυναμία ανάκτησης της λίστας εγγράφων"
 
 #: ../src/view.js:62 ../src/view.js:93
 msgid "Load More"
@@ -658,6 +678,20 @@ msgid "%d year ago"
 msgid_plural "%d years ago"
 msgstr[0] "%d έτος πριν"
 msgstr[1] "%d έτη πριν"
+
+#~ msgid ""
+#~ "<li>View recent local and online documents</li> <li>Access your Google, "
+#~ "ownCloud or OneDrive content</li> <li>Search through documents</li> "
+#~ "<li>See new documents shared by friends</li> <li>View documents "
+#~ "fullscreen</li> <li>Print documents</li> <li>Select favorites</li> "
+#~ "<li>Allow opening full featured editor for non-trivial changes</li>"
+#~ msgstr ""
+#~ "<li>Προβολή πρόσφατων τοπικών και διαδικτυακών εγγράφων</li> <li>Πρόσβαση "
+#~ "σε περιεχόμενο λογαριασμών σας στο Google, ownCloud ή OneDrive</li> "
+#~ "<li>Αναζήτηση στα έγγραφα</li> <li>Προβολή νέων εγγράφων που "
+#~ "διαμοιράστηκαν από φίλους</li> <li>Προβολή εγγράφων σε πλήρη οθόνη</li> "
+#~ "<li>Εκτύπωση εγγράφων</li> <li>Επιλογή αγαπημένων</li> <li>Να επιτρέπεται "
+#~ "το άνοιγμα πλήρους επεξεργαστή για ασήμαντες αλλαγές</li>"
 
 #~ msgid "Results for “%s”"
 #~ msgstr "Αποτελέσματα για “%s”"
