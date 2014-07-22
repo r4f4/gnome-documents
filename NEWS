@@ -1,3 +1,13 @@
+3.13.4 - "Pappankala"
+=====================
+
+- Appdata fixes (Baptiste Mille-Mathias, Pranav Kant)
+- Single-binary setup for DBus activation (Álvaro Peña)
+- Update menu icon to use a hamburger instead of a gear (Daniel Mustieles)
+- Disable bookmarking if metadata is unsupported
+- Update for new RefreshDB API
+- Translation updates
+
 3.13.1 - "Leaking Oil"
 ======================
 
