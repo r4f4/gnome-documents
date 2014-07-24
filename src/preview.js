@@ -807,9 +807,9 @@ const PreviewToolbar = new Lang.Class({
 
         // menu button, on the right of the toolbar
         let previewMenu = this._getPreviewMenu();
-        let menuButton = new Gd.HeaderMenuButton({ menu_model: previewMenu,
-                                                   action_name: 'app.gear-menu',
-                                                   symbolic_icon_name: 'open-menu-symbolic' });
+        let menuButton = new Gtk.MenuButton({ image: new Gtk.Image ({ icon_name: 'open-menu-symbolic' }),
+                                              menu_model: previewMenu,
+                                              action_name: 'app.gear-menu' });
         this.toolbar.pack_end(menuButton);
 
         // search button, on the right of the toolbar

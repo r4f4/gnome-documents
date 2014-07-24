@@ -177,10 +177,14 @@ const OverviewToolbar = new Lang.Class({
                 primary = label;
         }
 
-        if (this._selectionMenu)
-            this._selectionMenu.set_label(primary);
-        else
+        if (this._selectionMenu) {
+            if (primary) {
+                this._selectionMenu.set_label(primary);
+                this._selectionMenu.get_child().use_markup = true;
+            }
+        } else {
             this.toolbar.set_title(primary);
+        }
     },
 
     _populateForSelectionMode: function() {
@@ -189,8 +193,7 @@ const OverviewToolbar = new Lang.Class({
         let builder = new Gtk.Builder();
         builder.add_from_resource('/org/gnome/documents/selection-menu.ui');
         let selectionMenu = builder.get_object('selection-menu');
-        this._selectionMenu = new Gd.HeaderMenuButton({ menu_model: selectionMenu,
-                                                        use_markup: true });
+        this._selectionMenu = new Gtk.MenuButton({ menu_model: selectionMenu });
         this._selectionMenu.get_style_context().add_class('selection-menu');
         this.toolbar.set_custom_title(this._selectionMenu);
 
