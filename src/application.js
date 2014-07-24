@@ -74,6 +74,7 @@ let settings = null;
 // used by the application, but not by the search provider
 let changeMonitor = null;
 let collectionManager = null;
+let cssProvider = null;
 let documentManager = null;
 let modeController = null;
 let notificationManager = null;
@@ -380,6 +381,24 @@ const Application = new Lang.Class({
             }));
     },
 
+    _themeChanged: function(gtkSettings) {
+        let screen = Gdk.Screen.get_default();
+
+        if (gtkSettings.gtk_theme_name == 'Adwaita') {
+            if (cssProvider == null) {
+                cssProvider = new Gtk.CssProvider();
+                let file = Gio.File.new_for_uri("resource:///org/gnome/documents/Adwaita.css");
+                cssProvider.load_from_file(file);
+            }
+
+            Gtk.StyleContext.add_provider_for_screen(screen,
+                                                     cssProvider,
+                                                     Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
+        } else if (cssProvider != null) {
+            Gtk.StyleContext.remove_provider_for_screen(screen, cssProvider);
+        }
+    },
+
     vfunc_startup: function() {
         this.parent();
         String.prototype.format = Format.format;
@@ -391,6 +410,10 @@ const Application = new Lang.Class({
 
         application = this;
         settings = new Gio.Settings({ schema: 'org.gnome.documents' });
+
+        let gtkSettings = Gtk.Settings.get_default();
+        gtkSettings.connect('notify::gtk-theme-name', Lang.bind(this, this._themeChanged));
+        this._themeChanged(gtkSettings);
 
         // connect to tracker
         try {
