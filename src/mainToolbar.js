@@ -75,9 +75,9 @@ const MainToolbar = new Lang.Class({
     },
 
     addSearchButton: function() {
-        let searchButton = new Gd.HeaderToggleButton({ symbolic_icon_name: 'edit-find-symbolic',
-                                                       label: _("Search"),
-                                                       action_name: 'app.search' });
+        let searchButton = new Gtk.ToggleButton({ image: new Gtk.Image ({ icon_name: 'edit-find-symbolic' }),
+                                                  tooltip_text: _("Search"),
+                                                  action_name: 'app.search' });
         this.toolbar.pack_end(searchButton);
         return searchButton;
     },
