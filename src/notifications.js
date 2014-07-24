@@ -205,7 +205,9 @@ const IndexingNotification = new Lang.Class({
                                                             pixel_size: 16,
                                                             margin_top: 2,
                                                             margin_bottom: 2 }),
-                                     valign: Gtk.Align.CENTER });
+                                     valign: Gtk.Align.CENTER,
+                                     focus_on_click: false,
+                                     relief: Gtk.ReliefStyle.NONE });
         close.connect('clicked', Lang.bind(this,
             function() {
                 this._destroy(true);
