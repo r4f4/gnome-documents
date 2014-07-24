@@ -83,8 +83,8 @@ const MainToolbar = new Lang.Class({
     },
 
     addBackButton: function() {
-        let backButton = new Gd.HeaderSimpleButton({ symbolic_icon_name: 'go-previous-symbolic',
-                                                     label: _("Back") });
+        let backButton = new Gtk.Button({ image: new Gtk.Image({ icon_name: 'go-previous-symbolic' }),
+                                          tooltip_text: _("Back") });
         this.toolbar.pack_start(backButton);
         return backButton;
     }
@@ -128,17 +128,17 @@ const OverviewToolbar = new Lang.Class({
         viewAsBox.get_style_context().add_class('linked');
         this.toolbar.pack_end(viewAsBox);
 
-        this._viewListButton = new Gd.HeaderSimpleButton({ symbolic_icon_name: 'view-list-symbolic',
-                                                           label: _("View items as a list"),
-                                                           no_show_all: true,
-                                                           action_name: 'app.view-as',
-                                                           action_target: GLib.Variant.new('s', 'list') });
+        this._viewListButton = new Gtk.Button({ image: new Gtk.Image ({ icon_name: 'view-list-symbolic' }),
+                                                tooltip_text: _("View items as a list"),
+                                                no_show_all: true,
+                                                action_name: 'app.view-as',
+                                                action_target: GLib.Variant.new('s', 'list') });
         viewAsBox.add(this._viewListButton);
-        this._viewGridButton = new Gd.HeaderSimpleButton({ symbolic_icon_name: 'view-grid-symbolic',
-                                                           label: _("View items as a grid of icons"),
-                                                           no_show_all: true,
-                                                           action_name: 'app.view-as',
-                                                           action_target: GLib.Variant.new('s', 'icon') });
+        this._viewGridButton = new Gtk.Button({ image: new Gtk.Image ({ icon_name: 'view-grid-symbolic' }),
+                                                tooltip_text: _("View items as a grid of icons"),
+                                                no_show_all: true,
+                                                action_name: 'app.view-as',
+                                                action_target: GLib.Variant.new('s', 'icon') });
         viewAsBox.add(this._viewGridButton);
 
         this._viewSettingsId = Application.settings.connect('changed::view-as',
@@ -194,7 +194,7 @@ const OverviewToolbar = new Lang.Class({
         this._selectionMenu.get_style_context().add_class('selection-menu');
         this.toolbar.set_custom_title(this._selectionMenu);
 
-        let selectionButton = new Gd.HeaderSimpleButton({ label: _("Cancel") });
+        let selectionButton = new Gtk.Button({ label: _("Cancel") });
         this.toolbar.pack_end(selectionButton);
         selectionButton.connect('clicked', Lang.bind(this,
             function() {
@@ -235,8 +235,8 @@ const OverviewToolbar = new Lang.Class({
         this.toolbar.set_show_close_button(true);
         this._checkCollectionBackButton();
 
-        let selectionButton = new Gd.HeaderSimpleButton({ symbolic_icon_name: 'object-select-symbolic',
-                                                          label: _("Select Items") });
+        let selectionButton = new Gtk.Button({ image: new Gtk.Image ({ icon_name: 'object-select-symbolic' }),
+                                               tooltip_text: _("Select Items") });
         this.toolbar.pack_end(selectionButton);
         selectionButton.connect('clicked', Lang.bind(this,
             function() {

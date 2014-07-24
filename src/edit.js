@@ -189,8 +189,8 @@ const EditToolbar = new Lang.Class({
                 Application.documentManager.setActiveItem(null);
             }));
 
-        let viewButton = new Gd.HeaderSimpleButton({ label: _("View"),
-                                                     action_name: 'app.view-current' });
+        let viewButton = new Gtk.Button({ label: _("View"),
+                                          action_name: 'app.view-current' });
         viewButton.get_style_context().add_class('suggested-action');
         this.toolbar.pack_end(viewButton);
 

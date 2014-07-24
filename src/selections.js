@@ -744,32 +744,32 @@ const SelectionToolbar = new Lang.Class({
         this.widget.add(toolbar);
 
         // open button
-        this._toolbarOpen = new Gd.HeaderSimpleButton({ label: _("Open") });
+        this._toolbarOpen = new Gtk.Button({ label: _("Open") });
         toolbar.pack_start(this._toolbarOpen);
         this._toolbarOpen.connect('clicked', Lang.bind(this, this._onToolbarOpen));
 
         // print button
-        this._toolbarPrint = new Gd.HeaderSimpleButton({ label: _("Print") });
+        this._toolbarPrint = new Gtk.Button({ label: _("Print") });
         toolbar.pack_start(this._toolbarPrint);
         this._toolbarPrint.connect('clicked', Lang.bind(this, this._onToolbarPrint));
 
         // trash button
-        this._toolbarTrash = new Gd.HeaderSimpleButton({ label: _("Delete") });
+        this._toolbarTrash = new Gtk.Button({ label: _("Delete") });
         toolbar.pack_start(this._toolbarTrash);
         this._toolbarTrash.connect('clicked', Lang.bind(this, this._onToolbarTrash));
 
         // share button
-        this._toolbarShare = new Gd.HeaderSimpleButton({ label: _("Share") });
+        this._toolbarShare = new Gtk.Button({ label: _("Share") });
         toolbar.pack_end(this._toolbarShare);
         this._toolbarShare.connect('clicked', Lang.bind(this, this._onToolbarShare));
 
         // properties button
-        this._toolbarProperties = new Gd.HeaderSimpleButton({ label: _("Properties") });
+        this._toolbarProperties = new Gtk.Button({ label: _("Properties") });
         toolbar.pack_end(this._toolbarProperties);
         this._toolbarProperties.connect('clicked', Lang.bind(this, this._onToolbarProperties));
 
         // organize button
-        this._toolbarCollection = new Gd.HeaderSimpleButton({ label: _("Add to Collection") });
+        this._toolbarCollection = new Gtk.Button({ label: _("Add to Collection") });
         toolbar.pack_end(this._toolbarCollection);
         this._toolbarCollection.connect('clicked', Lang.bind(this, this._onToolbarCollection));
 
