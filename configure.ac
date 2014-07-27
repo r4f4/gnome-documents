@@ -90,13 +90,8 @@ PKG_CHECK_MODULES(DOCUMENTS,
 
 LIBGD_INIT([
   gtk-hacks
-  header-bar
   main-view
-  main-toolbar
-  margin-container
   notification
-  revealer
-  stack
   tagged-entry
   gir
 ])
