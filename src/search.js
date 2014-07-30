@@ -111,7 +111,7 @@ const SearchCategoryManager = new Lang.Class({
     Extends: Manager.BaseManager,
 
     _init: function(context) {
-        this.parent(_("Category"), context);
+        this.parent(_("Category"), 'search-category', context);
 
         let category, recent;
         recent = new SearchCategory({ id: SearchCategoryStock.ALL,
@@ -174,7 +174,7 @@ const SearchTypeManager = new Lang.Class({
     _init: function(context) {
         // Translators: "Type" refers to a search filter on the document type
         // (PDF, spreadsheet, ...)
-        this.parent(C_("Search Filter", "Type"), context);
+        this.parent(C_("Search Filter", "Type"), 'search-type', context);
 
         this.addItem(new SearchType({ id: SearchTypeStock.ALL,
                                       name: _("All") }));
@@ -259,7 +259,7 @@ const SearchMatchManager = new Lang.Class({
     _init: function(context) {
         // Translators: this is a verb that refers to "All", "Title" and "Author",
         // as in "Match All", "Match Title" and "Match Author"
-        this.parent(_("Match"), context);
+        this.parent(_("Match"), 'search-match', context);
 
         this.addItem(new SearchMatch({ id: SearchMatchStock.ALL,
                                        name: _("All") }));
