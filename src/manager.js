@@ -21,6 +21,8 @@
 
 const GdPrivate = imports.gi.GdPrivate;
 const Gdk = imports.gi.Gdk;
+const Gio = imports.gi.Gio;
+const GLib = imports.gi.GLib;
 const GObject = imports.gi.GObject;
 const Gtk = imports.gi.Gtk;
 const Pango = imports.gi.Pango;
@@ -185,125 +187,45 @@ const BaseManager = new Lang.Class({
 });
 Signals.addSignalMethods(BaseManager.prototype);
 
-// GTK+ implementations
-
-const BaseModelColumns = {
-    ID: 0,
-    NAME: 1,
-    HEADING_TEXT: 2
-};
-
 const BaseModel = new Lang.Class({
     Name: 'BaseModel',
 
     _init: function(manager) {
-        this.model = Gtk.ListStore.new(
-            [ GObject.TYPE_STRING, // ID
-              GObject.TYPE_STRING, // NAME
-              GObject.TYPE_STRING ]); // HEADING_TEXT
+        this.model = new Gio.Menu();
         this._manager = manager;
         this._manager.connect('item-added', Lang.bind(this, this._refreshModel));
         this._manager.connect('item-removed', Lang.bind(this, this._refreshModel));
+
+        let application = Gio.Application.get_default();
+        let actionId = this._manager.getActionId();
+        application.connect('action-state-changed::' + actionId, Lang.bind(this, function(actionGroup, actionName, value) {
+            let itemId = value.get_string()[0];
+            this._manager.setActiveItemById(itemId);
+        }));
+        this._manager.connect('active-changed', Lang.bind(this, function(manager, activeItem) {
+            application.change_action_state(actionId, GLib.Variant.new('s', activeItem.id));
+        }));
 
         this._refreshModel();
     },
 
     _refreshModel: function() {
-        this.model.clear();
+        this.model.remove_all();
 
-        let iter;
+        let menuItem;
         let title = this._manager.getTitle();
+        let actionId = this._manager.getActionId();
 
-        if (title) {
-            iter = this.model.append();
-            this.model.set(iter,
-                [ 0, 1, 2 ],
-                [ 'heading', '', title ]);
-        }
+        let section = new Gio.Menu();
+        this.model.append_section(title, section);
 
         let items = this._manager.getItems();
         for (let idx in items) {
             let item = items[idx];
-            iter = this.model.append();
-            this.model.set(iter,
-                [ 0, 1, 2 ],
-                [ item.id, item.name, '' ]);
+            menuItem = new Gio.MenuItem();
+            menuItem.set_action_and_target_value(actionId, GLib.Variant.new('s', item.id));
+            menuItem.set_label(item.name);
+            section.append_item(menuItem);
         }
     }
 });
-
-const BaseView = new Lang.Class({
-    Name: 'BaseView',
-
-    _init: function(manager) {
-        this._model = new BaseModel(manager);
-        this._manager = manager;
-
-        this.widget = new Gtk.TreeView({ activate_on_single_click: true,
-                                         headers_visible: false,
-                                         enable_search: false });
-        this._treeView = this.widget;
-        this._treeView.set_model(this._model.model);
-
-        let selection = this._treeView.get_selection();
-        selection.set_mode(Gtk.SelectionMode.NONE);
-
-        this._treeView.connect('row-activated', Lang.bind(this,
-            function(view, path) {
-                let iter = this._model.model.get_iter(path)[1];
-                let id = this._model.model.get_value(iter, BaseModelColumns.ID);
-
-                this.emit('item-activated');
-                this._manager.setActiveItemById(id);
-            }));
-
-        let col = new Gtk.TreeViewColumn();
-        this._treeView.append_column(col);
-
-        // headings
-        this._rendererHeading = new Gtk.CellRendererText({ weight: Pango.Weight.BOLD,
-                                                           weight_set: true });
-        col.pack_start(this._rendererHeading, false);
-        col.add_attribute(this._rendererHeading,
-                          'text', BaseModelColumns.HEADING_TEXT);
-        col.set_cell_data_func(this._rendererHeading,
-            Lang.bind(this, this._visibilityForHeading, true));
-
-        // radio selection
-        this._rendererRadio = new Gtk.CellRendererToggle({ radio: true,
-                                                           mode: Gtk.CellRendererMode.INERT });
-        col.pack_start(this._rendererRadio, false);
-        col.set_cell_data_func(this._rendererRadio,
-            Lang.bind(this, this._visibilityForHeading, false,
-                      Lang.bind(this,
-                          function(col, cell, model, iter) {
-                              let id = model.get_value(iter, BaseModelColumns.ID);
-                              if (id == this._manager.getActiveItem().id)
-                                  cell.active = true;
-                              else
-                                  cell.active = false;
-                          })));
-
-        // item name
-        this._rendererText = new Gtk.CellRendererText();
-        col.pack_start(this._rendererText, true);
-        col.add_attribute(this._rendererText,
-                          'text', BaseModelColumns.NAME);
-        col.set_cell_data_func(this._rendererText,
-            Lang.bind(this, this._visibilityForHeading, false));
-
-        this.widget.show_all();
-    },
-
-    _visibilityForHeading: function(col, cell, model, iter, visible, additionalFunc) {
-        let heading = model.get_value(iter, BaseModelColumns.HEADING_TEXT);
-        if ((visible && heading != null && heading.length) || (!visible && heading != null && !heading.length))
-            cell.visible = true;
-        else
-            cell.visible = false;
-
-        if (additionalFunc)
-            additionalFunc(col, cell, model, iter);
-    }
-});
-Signals.addSignalMethods(BaseView.prototype);

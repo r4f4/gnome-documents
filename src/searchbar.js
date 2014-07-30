@@ -224,32 +224,26 @@ const Dropdown = new Lang.Class({
     Extends: Gtk.Popover,
 
     _init: function(relativeTo) {
-        this.parent({ relative_to: relativeTo,
-                      height_request: 240 });
-        this._sourceView = new Manager.BaseView(Application.sourceManager);
-        this._typeView = new Manager.BaseView(Application.searchTypeManager);
-        this._matchView = new Manager.BaseView(Application.searchMatchManager);
-        // TODO: this is out for now, but should we move it somewhere
-        // else?
-        // this._categoryView = new Manager.BaseView(Application.searchCategoryManager);
+        this.parent({ relative_to: relativeTo, position: Gtk.PositionType.BOTTOM });
 
-        this._grid = new Gtk.Grid({ orientation: Gtk.Orientation.HORIZONTAL,
-                                    row_homogeneous: true,
-                                    margin: 10 });
-        this.add(this._grid);
+        let grid = new Gtk.Grid({ orientation: Gtk.Orientation.HORIZONTAL,
+                                  row_homogeneous: true });
+        this.add(grid);
 
-        this._grid.add(this._sourceView.widget);
-        this._grid.add(this._typeView.widget);
-        this._grid.add(this._matchView.widget);
-        //this._grid.add(this._categoryView.widget);
+        [Application.sourceManager,
+         Application.searchTypeManager,
+         Application.searchMatchManager].forEach(Lang.bind(this, function(manager) {
+             let model = new Manager.BaseModel(manager);
 
-        this.get_style_context().add_class('documents-dropdown');
-        this.hide();
-        this._grid.show_all();
-    },
-
-    _onItemActivated: function() {
-        this.emit('item-activated');
+             // HACK: see https://bugzilla.gnome.org/show_bug.cgi?id=733977
+             let popover = new Gtk.Popover();
+             popover.bind_model(model.model, 'app');
+             let w = popover.get_child();
+             w.reparent(grid);
+             w.valign = Gtk.Align.START;
+             w.vexpand = true;
+             popover.destroy();
+         }));
     }
 });
 
@@ -285,8 +279,6 @@ const OverviewSearchbar = new Lang.Class({
             Lang.bind(this, this._onTagClicked));
         this._searchEntry.connect('tag-button-clicked',
             Lang.bind(this, this._onTagButtonClicked));
-        
-        this._dropdown = new Dropdown(this._searchEntry);
 
         this._sourceTag = new Gd.TaggedEntryTag();
         this._typeTag = new Gd.TaggedEntryTag();
@@ -311,8 +303,10 @@ const OverviewSearchbar = new Lang.Class({
             function() {
                 let active = this._dropdownButton.get_active();
                 if(active)
-                    this._dropdown.show();
+                    this._dropdown.show_all();
             }));
+
+        this._dropdown = new Dropdown(this._dropdownButton);
         this._dropdown.connect('closed', Lang.bind(this,
             function() {
                 this._dropdownButton.set_active(false);
