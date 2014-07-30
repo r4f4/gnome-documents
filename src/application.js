@@ -522,7 +522,19 @@ const Application = new Lang.Class({
               window_mode: WindowMode.WindowMode.PREVIEW },
             { name: 'copy',
               accel: '<Primary>c',
-              window_mode: WindowMode.WindowMode.PREVIEW }
+              window_mode: WindowMode.WindowMode.PREVIEW },
+            { name: 'search-source',
+              parameter_type: 's',
+              state: GLib.Variant.new('s', Search.SearchSourceStock.ALL),
+              window_mode: WindowMode.WindowMode.OVERVIEW },
+            { name: 'search-type',
+              parameter_type: 's',
+              state: GLib.Variant.new('s', Search.SearchTypeStock.ALL),
+              window_mode: WindowMode.WindowMode.OVERVIEW },
+            { name: 'search-match',
+              parameter_type: 's',
+              state: GLib.Variant.new('s', Search.SearchMatchStock.ALL),
+              window_mode: WindowMode.WindowMode.OVERVIEW }
         ];
 
         this.gdataMiner = new Miners.GDataMiner();
