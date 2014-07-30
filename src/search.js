@@ -158,6 +158,15 @@ const SearchType = new Lang.Class({
     }
 });
 
+const SearchTypeStock = {
+    ALL: 'all',
+    COLLECTIONS: 'collections',
+    PDF: 'pdf',
+    PRESENTATIONS: 'presentations',
+    SPREADSHEETS: 'spreadsheets',
+    TEXTDOCS: 'textdocs'
+};
+
 const SearchTypeManager = new Lang.Class({
     Name: 'SearchTypeManager',
     Extends: Manager.BaseManager,
@@ -167,33 +176,33 @@ const SearchTypeManager = new Lang.Class({
         // (PDF, spreadsheet, ...)
         this.parent(C_("Search Filter", "Type"), context);
 
-        this.addItem(new SearchType({ id: 'all',
+        this.addItem(new SearchType({ id: SearchTypeStock.ALL,
                                       name: _("All") }));
-        this.addItem(new SearchType({ id: 'collections',
+        this.addItem(new SearchType({ id: SearchTypeStock.COLLECTIONS,
                                       name: _("Collections"),
                                       filter: 'fn:starts-with(nao:identifier(?urn), \"gd:collection\")',
                                       where: '?urn rdf:type nfo:DataContainer .' }));
-        this.addItem(new SearchType({ id: 'pdf',
+        this.addItem(new SearchType({ id: SearchTypeStock.PDF,
                                       name: _("PDF Documents"),
                                       filter: 'fn:contains(nie:mimeType(?urn), \"application/pdf\")',
                                       where: '?urn rdf:type nfo:PaginatedTextDocument .' }));
-        this.addItem(new SearchType({ id: 'presentations',
+        this.addItem(new SearchType({ id: SearchTypeStock.PRESENTATIONS,
                                       name: _("Presentations"),
                                       where: '?urn rdf:type nfo:Presentation .' }));
-        this.addItem(new SearchType({ id: 'spreadsheets',
+        this.addItem(new SearchType({ id: SearchTypeStock.SPREADSHEETS,
                                       name: _("Spreadsheets"),
                                       where: '?urn rdf:type nfo:Spreadsheet .' }));
-        this.addItem(new SearchType({ id: 'textdocs',
+        this.addItem(new SearchType({ id: SearchTypeStock.TEXTDOCS,
                                       name: _("Text Documents"),
                                       where: '?urn rdf:type nfo:PaginatedTextDocument .' }));
 
-        this.setActiveItemById('all');
+        this.setActiveItemById(SearchTypeStock.ALL);
     },
 
     getCurrentTypes: function() {
         let activeItem = this.getActiveItem();
 
-        if (activeItem.id == 'all')
+        if (activeItem.id == SearchTypeStock.ALL)
             return this.getAllTypes();
 
         return [ activeItem ];
@@ -203,7 +212,7 @@ const SearchTypeManager = new Lang.Class({
         let types = [];
 
         this.forEachItem(function(item) {
-            if (item.id != 'all')
+            if (item.id != SearchTypeStock.ALL)
                 types.push(item);
             });
 
