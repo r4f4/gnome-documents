@@ -18,45 +18,6 @@ GdMainIconView.content-view.cell:active {
     color: gray;
 }
 
-.documents-dropdown,
-.documents-dropdown .view {
-    background-color: shade (@theme_bg_color, 1.02);
-}
-
-.documents-dropdown.frame {
-    padding: 6px;
-    border-width: 0 1px 1px 1px;
-    border-style: solid;
-    border-radius: 0 0 5px 5px;
-}
-
-.documents-dropdown .view.radio,
-.documents-dropdown .view.radio:focused,
-.documents-dropdown .view.radio:selected {
-    background-image: none;
-    background-color: alpha(@theme_base_color, 0.0);
-}
-
-.documents-dropdown .view.radio:active,
-.documents-dropdown .view.radio:active:focused,
-.documents-dropdown .view.radio:active:prelight {
-    background-image: url("sidebar-radio-checked.svg");
-}
-
-.documents-dropdown .view.radio:prelight {
-    background-image: url("sidebar-radio-prelight.svg");
-}
-
-.documents-dropdown .view.radio:active:selected,
-.documents-dropdown .view.radio:active:selected:focused {
-    background-image: url("sidebar-radio-selected.svg");
-}
-
-.documents-dropdown .view.radio:selected:prelight,
-.documents-dropdown .view.radio:selected:focused {
-    background-image: url("sidebar-radio-selected-prelight.svg");
-}
-
 .documents-load-more.button {
     border-image: none;
     border-color: @borders;

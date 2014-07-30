@@ -6,10 +6,6 @@
     <file alias="dnd-counter.svg" preprocess="to-pixdata">resources/dnd-counter.svg</file>
     <file alias="preview-menu.ui" preprocess="xml-stripblanks">resources/preview-menu.ui</file>
     <file alias="selection-menu.ui" preprocess="xml-stripblanks">resources/selection-menu.ui</file>
-    <file alias="sidebar-radio-checked.svg" preprocess="to-pixdata">resources/sidebar-radio-checked.svg</file>
-    <file alias="sidebar-radio-prelight.svg" preprocess="to-pixdata">resources/sidebar-radio-prelight.svg</file>
-    <file alias="sidebar-radio-selected.svg" preprocess="to-pixdata">resources/sidebar-radio-selected.svg</file>
-    <file alias="sidebar-radio-selected-prelight.svg" preprocess="to-pixdata">resources/sidebar-radio-selected-prelight.svg</file>
     <file alias="preview-context-menu.ui" preprocess="xml-stripblanks">resources/preview-context-menu.ui</file>
     <file alias="collections-placeholder.png" preprocess="to-pixdata">resources/collections-placeholder.png</file>
     <file alias="thumbnail-frame.png" preprocess="to-pixdata">resources/thumbnail-frame.png</file>
