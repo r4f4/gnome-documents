@@ -278,7 +278,7 @@ const SearchMatchManager = new Lang.Class({
     }
 });
 
-const SourceStock = {
+const SearchSourceStock = {
     ALL: 'all',
     LOCAL: 'local'
 };
@@ -378,9 +378,9 @@ const Source = new Lang.Class({
     getFilter: function() {
         let filters = [];
 
-        if (this.id == SourceStock.LOCAL) {
+        if (this.id == SearchSourceStock.LOCAL) {
             filters.push(this._buildFilterLocal());
-        } else if (this.id == SourceStock.ALL) {
+        } else if (this.id == SearchSourceStock.ALL) {
             filters.push(this._buildFilterLocal());
             filters.push(this._manager.getFilterNotLocal());
         } else {
@@ -405,15 +405,15 @@ const SourceManager = new Lang.Class({
     Extends: Manager.BaseManager,
 
     _init: function(context) {
-        this.parent(_("Sources"), context);
+        this.parent(_("Sources"), 'search-source', context);
 
-        let source = new Source({ id: SourceStock.ALL,
+        let source = new Source({ id: SearchSourceStock.ALL,
         // Translators: this refers to documents
                                   name: _("All"),
                                   builtin: true });
         this.addItem(source);
 
-        source = new Source({ id: SourceStock.LOCAL,
+        source = new Source({ id: SearchSourceStock.LOCAL,
         // Translators: this refers to local documents
                               name: _("Local"),
                               builtin: true });
@@ -424,7 +424,7 @@ const SourceManager = new Lang.Class({
         Application.goaClient.connect('account-removed', Lang.bind(this, this._refreshGoaAccounts));
 
         this._refreshGoaAccounts();
-        this.setActiveItemById(SourceStock.ALL);
+        this.setActiveItemById(SearchSourceStock.ALL);
     },
 
     _refreshGoaAccounts: function() {
