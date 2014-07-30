@@ -369,6 +369,20 @@ const DocCommon = new Lang.Class({
         log('Error: DocCommon implementations must override canTrash');
     },
 
+    trash: function() {
+        if (!this.canTrash())
+            return;
+
+        this.trashImpl();
+
+        let job = new DeleteItemJob(this.id);
+        job.run(null);
+    },
+
+    trashImpl: function() {
+        log('Error: DocCommon implementations must override trashImpl');
+    },
+
     createThumbnail: function(callback) {
         log('Error: DocCommon implementations must override createThumbnail');
     },
@@ -707,14 +721,22 @@ const LocalDocument = new Lang.Class({
     },
 
     canTrash: function() {
-        return this.collection;
+        return true;
     },
 
-    trash: function() {
-        if (this.collection) {
-            let job = new DeleteItemJob(this.id);
-            job.run(null);
-        }
+    trashImpl: function() {
+        if (this.collection)
+            return;
+
+        let file = Gio.file_new_for_uri(this.uri);
+        file.delete_async(GLib.PRIORITY_DEFAULT, null, Lang.bind(this,
+            function(source, res) {
+                try {
+                    file.delete_finish(res);
+                } catch(e) {
+                    log('Unable to delete ' + this.uri + ': ' + e.message);
+                }
+            }));
     }
 });
 
