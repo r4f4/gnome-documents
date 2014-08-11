@@ -20,6 +20,7 @@
  */
 
 const Gd = imports.gi.Gd;
+const Gettext = imports.gettext;
 const Gio = imports.gi.Gio;
 const GLib = imports.gi.GLib;
 const Gtk = imports.gi.Gtk;
@@ -33,6 +34,76 @@ const WindowMode = imports.windowMode;
 const Lang = imports.lang;
 const Mainloop = imports.mainloop;
 const Signals = imports.signals;
+
+const DELETE_TIMEOUT = 10; // seconds
+
+const DeleteNotification = new Lang.Class({
+    Name: 'DeleteNotification',
+
+    _init: function(docs) {
+        this._docs = docs;
+        this.widget = new Gtk.Grid({ orientation: Gtk.Orientation.HORIZONTAL,
+                                     column_spacing: 12,
+                                     margin_start: 12,
+                                     margin_end: 12 });
+
+        let msg = Gettext.ngettext("Selected item has been deleted",
+                                   "Selected items have been deleted",
+                                   this._docs.length);
+        let label = new Gtk.Label({ label: msg,
+                                    halign: Gtk.Align.START });
+        this.widget.add(label);
+
+        let undo = new Gtk.Button({ label: _("Undo"),
+                                    valign: Gtk.Align.CENTER });
+        this.widget.add(undo);
+        undo.connect('clicked', Lang.bind(this,
+            function() {
+                this._docs.forEach(Lang.bind(this,
+                    function(doc) {
+                        Application.documentManager.addItem(doc);
+                    }));
+
+                this._removeTimeout();
+                this.widget.destroy();
+            }));
+
+        let close = new Gtk.Button({ image: new Gtk.Image({ icon_name: 'window-close-symbolic',
+                                                            pixel_size: 16,
+                                                            margin_top: 2,
+                                                            margin_bottom: 2 }),
+                                     valign: Gtk.Align.CENTER,
+                                     focus_on_click: false,
+                                     relief: Gtk.ReliefStyle.NONE });
+        this.widget.add(close);
+        close.connect('clicked', Lang.bind(this, this._deleteItems));
+
+        Application.notificationManager.addNotification(this);
+        this._timeoutId = Mainloop.timeout_add_seconds(DELETE_TIMEOUT, Lang.bind(this,
+            function() {
+                this._timeoutId = 0;
+                this._deleteItems();
+                return false;
+            }));
+    },
+
+    _deleteItems: function() {
+        this._docs.forEach(Lang.bind(this,
+            function(doc) {
+                doc.trash();
+            }))
+
+        this._removeTimeout();
+        this.widget.destroy();
+    },
+
+    _removeTimeout: function() {
+        if (this._timeoutId != 0) {
+            Mainloop.source_remove(this._timeoutId);
+            this._timeoutId = 0;
+        }
+    }
+});
 
 const PrintNotification = new Lang.Class({
     Name: 'PrintNotification',

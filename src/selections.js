@@ -898,13 +898,21 @@ const SelectionToolbar = new Lang.Class({
 
     _onToolbarTrash: function(widget) {
         let selection = Application.selectionController.getSelection();
-        Application.selectionController.setSelectionMode(false);
+        let docs = [];
 
         selection.forEach(Lang.bind(this,
             function(urn) {
                 let doc = Application.documentManager.getItemById(urn);
-                doc.trash();
+                docs.push(doc);
             }));
+
+        docs.forEach(Lang.bind(this,
+            function(doc) {
+                Application.documentManager.removeItem(doc);
+            }));
+
+        let deleteNotification = new Notifications.DeleteNotification(docs);
+        Application.selectionController.setSelectionMode(false);
     },
 
     _onToolbarProperties: function(widget) {
