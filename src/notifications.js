@@ -130,7 +130,7 @@ const PrintNotification = new Lang.Class({
         this._progressBar = new Gtk.ProgressBar();
         this.widget.add(this._progressBar);
 
-        this._stopButton = new Gtk.Button({ child: new Gtk.Image({ icon_name: 'process-stop-symbolic',
+        this._stopButton = new Gtk.Button({ image: new Gtk.Image({ icon_name: 'process-stop-symbolic',
                                                                    pixel_size: 16,
                                                                    margin_top: 2,
                                                                    margin_bottom: 2 }),
@@ -272,7 +272,7 @@ const IndexingNotification = new Lang.Class({
         this._secondaryLabel.get_style_context().add_class('dim-label');
         labels.add(this._secondaryLabel);
 
-        let close = new Gtk.Button({ child: new Gtk.Image({ icon_name: 'window-close-symbolic',
+        let close = new Gtk.Button({ image: new Gtk.Image({ icon_name: 'window-close-symbolic',
                                                             pixel_size: 16,
                                                             margin_top: 2,
                                                             margin_bottom: 2 }),

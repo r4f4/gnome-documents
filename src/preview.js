@@ -574,7 +574,7 @@ const PreviewNavControls = new Lang.Class({
         let buttonArea = this.bar_widget.get_button_area();
 
         let button = new Gtk.Button({ action_name: 'app.places',
-                                      child: new Gtk.Image({ icon_name: 'view-list-symbolic',
+                                      image: new Gtk.Image({ icon_name: 'view-list-symbolic',
                                                              pixel_size: 16 }),
                                       valign: Gtk.Align.CENTER,
                                       tooltip_text: _("Bookmarks")
@@ -582,14 +582,14 @@ const PreviewNavControls = new Lang.Class({
         buttonArea.pack_start(button, false, false, 0);
 
         button = new Gtk.ToggleButton({ action_name: 'app.bookmark-page',
-                                        child: new Gtk.Image({ icon_name: 'bookmark-add-symbolic',
+                                        image: new Gtk.Image({ icon_name: 'bookmark-add-symbolic',
                                                                pixel_size: 16 }),
                                         valign: Gtk.Align.CENTER,
                                         tooltip_text: _("Bookmark this page")
                                       });
         buttonArea.pack_start(button, false, false, 0);
 
-        this.prev_widget = new Gtk.Button({ child: new Gtk.Image ({ icon_name: 'go-previous-symbolic',
+        this.prev_widget = new Gtk.Button({ image: new Gtk.Image ({ icon_name: 'go-previous-symbolic',
                                                                     pixel_size: 16 }),
                                             margin_start: _PREVIEW_NAVBAR_MARGIN,
                                             margin_end: _PREVIEW_NAVBAR_MARGIN,
@@ -601,7 +601,7 @@ const PreviewNavControls = new Lang.Class({
         this.prev_widget.connect('enter-notify-event', Lang.bind(this, this._onEnterNotify));
         this.prev_widget.connect('leave-notify-event', Lang.bind(this, this._onLeaveNotify));
 
-        this.next_widget = new Gtk.Button({ child: new Gtk.Image ({ icon_name: 'go-next-symbolic',
+        this.next_widget = new Gtk.Button({ image: new Gtk.Image ({ icon_name: 'go-next-symbolic',
                                                                     pixel_size: 16 }),
                                             margin_start: _PREVIEW_NAVBAR_MARGIN,
                                             margin_end: _PREVIEW_NAVBAR_MARGIN,
