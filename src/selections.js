@@ -906,6 +906,8 @@ const SelectionToolbar = new Lang.Class({
                 docs.push(doc);
             }));
 
+        // Removing an item from DocumentManager changes the selection, so
+        // we can't use the selection while removing items.
         docs.forEach(Lang.bind(this,
             function(doc) {
                 Application.documentManager.removeItem(doc);
