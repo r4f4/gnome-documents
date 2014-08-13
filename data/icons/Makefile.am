@@ -2,6 +2,7 @@ NULL =
 
 public_icons_themes = \
 	hicolor	\
+	HighContrast \
 	$(NULL)
 
 public_icons = \
@@ -11,6 +12,12 @@ public_icons = \
 	hicolor_apps_32x32_gnome-documents.png \
 	hicolor_apps_48x48_gnome-documents.png \
 	hicolor_apps_256x256_gnome-documents.png \
+	HighContrast_apps_16x16_gnome-documents.png \
+	HighContrast_apps_22x22_gnome-documents.png \
+	HighContrast_apps_24x24_gnome-documents.png \
+	HighContrast_apps_32x32_gnome-documents.png \
+	HighContrast_apps_48x48_gnome-documents.png \
+	HighContrast_apps_256x256_gnome-documents.png \
 	$(NULL)
 
 noinst_DATA = \
