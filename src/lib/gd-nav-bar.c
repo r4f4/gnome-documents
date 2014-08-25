@@ -51,11 +51,11 @@ typedef struct {
 } GdPreviewSizeCache;
 
 typedef struct {
-        GdkPixbuf *pixbuf;
-        gboolean   loaded;
-        char      *label;
-        int        page;
-        EvJob     *job;
+        cairo_surface_t *surface;
+        gboolean         loaded;
+        char            *label;
+        int              page;
+        EvJob           *job;
 } PreviewItem;
 
 struct _GdNavBarPrivate {
@@ -206,28 +206,32 @@ gd_preview_size_cache_get (EvDocument *document)
         return cache;
 }
 
-static GdkPixbuf *
+static cairo_surface_t *
 preview_get_loading_icon (GdNavBar *self,
                           int       width,
                           int       height)
 {
         GdNavBarPrivate *priv = self->priv;
-        GdkPixbuf *icon;
-        char      *key;
+        cairo_surface_t *icon;
+        char *key;
 
         key = g_strdup_printf ("%dx%d", width, height);
         icon = g_hash_table_lookup (priv->loading_icons, key);
         if (icon == NULL) {
                 gboolean inverted_colors;
+                gint device_scale = gtk_widget_get_scale_factor (GTK_WIDGET (self));
 
                 inverted_colors = ev_document_model_get_inverted_colors (priv->model);
-                icon = ev_document_misc_render_loading_thumbnail (GTK_WIDGET (self), width, height, inverted_colors);
+                icon = ev_document_misc_render_loading_thumbnail_surface (GTK_WIDGET (self),
+                                                                          width * device_scale,
+                                                                          height * device_scale,
+                                                                          inverted_colors);
                 g_hash_table_insert (priv->loading_icons, key, icon);
         } else {
                 g_free (key);
         }
 
-        return g_object_ref (icon);
+        return cairo_surface_reference (icon);
 }
 
 static void
@@ -260,24 +264,31 @@ thumbnail_job_completed_cb (EvJobThumbnail *job,
                             GdNavBar       *self)
 {
         GdNavBarPrivate *priv = self->priv;
-        GdkPixbuf *pixbuf;
+        cairo_surface_t *surface;
         PreviewItem *item;
 
-        pixbuf = ev_document_misc_render_thumbnail_with_frame (GTK_WIDGET (self), job->thumbnail);
+#ifdef HAVE_CAIRO_SURFACE_SET_DEVICE_SCALE
+        gint device_scale;
+        device_scale = gtk_widget_get_scale_factor (GTK_WIDGET (self));
+        cairo_surface_set_device_scale (job->thumbnail_surface, device_scale, device_scale);
+#endif
+        surface = ev_document_misc_render_thumbnail_surface_with_frame (GTK_WIDGET (self),
+                                                                        job->thumbnail_surface,
+                                                                        -1, -1);
 
         if (priv->inverted_colors) {
-                ev_document_misc_invert_pixbuf (pixbuf);
+                ev_document_misc_invert_surface (surface);
         }
 
         item = &self->priv->previews[job->page];
-        g_clear_object (&item->pixbuf);
-        item->pixbuf = pixbuf;
+        g_clear_pointer (&item->surface, (GDestroyNotify) cairo_surface_destroy);
+        item->surface = surface;
         item->loaded = TRUE;
         g_clear_object (&item->job);
 
         /* check to see if preview needs updating */
         if (self->priv->preview_page == job->page) {
-                gtk_image_set_from_pixbuf (GTK_IMAGE (self->priv->preview_image), item->pixbuf);
+                gtk_image_set_from_surface (GTK_IMAGE (self->priv->preview_image), item->surface);
         }
 }
 
@@ -310,15 +321,27 @@ previews_clear_range (GdNavBar *self,
                 }
         }
 }
-static gdouble
-get_scale_for_page (GdNavBar *self,
-                    int       page)
+static void
+get_size_for_page (GdNavBar *self,
+                   int       page,
+                   gint     *width_return,
+                   gint     *height_return)
 {
-        gdouble width;
+        gdouble width, height;
+        gint preview_height;
+        gint device_scale;
 
-        ev_document_get_page_size (self->priv->document, page, &width, NULL);
+        device_scale = gtk_widget_get_scale_factor (GTK_WIDGET (self));
+        ev_document_get_page_size (self->priv->document, page, &width, &height);
+        preview_height = (int) (PREVIEW_WIDTH * height / width + 0.5);
 
-        return (gdouble)PREVIEW_WIDTH / width;
+        if (self->priv->rotation == 90 || self->priv->rotation == 270) {
+                *width_return = preview_height * device_scale;
+                *height_return = PREVIEW_WIDTH * device_scale;
+        } else {
+                *width_return = PREVIEW_WIDTH * device_scale;
+                *height_return = preview_height * device_scale;
+        }
 }
 
 static void
@@ -334,11 +357,13 @@ previews_load_range (GdNavBar *self,
                 PreviewItem *item = &self->priv->previews[i];
 
                 if (item != NULL && !item->loaded && item->job == NULL) {
-                        item->job = ev_job_thumbnail_new (self->priv->document,
-                                                          i,
-                                                          self->priv->rotation,
-                                                          get_scale_for_page (self, i));
+                        gint preview_width, preview_height;
+                        get_size_for_page (self, i, &preview_width, &preview_height);
+                        item->job = ev_job_thumbnail_new_with_target_size (self->priv->document,
+                                                                           i, self->priv->rotation,
+                                                                           preview_width, preview_height);
                         ev_job_thumbnail_set_has_frame (EV_JOB_THUMBNAIL (item->job), FALSE);
+                        ev_job_thumbnail_set_output_format (EV_JOB_THUMBNAIL (item->job), EV_JOB_THUMBNAIL_SURFACE);
                         ev_job_scheduler_push_job (EV_JOB (item->job), EV_JOB_PRIORITY_HIGH);
 
                         g_signal_connect (item->job, "finished",
@@ -399,7 +424,7 @@ previews_create (GdNavBar *self)
                                                 &width, &height);
                 item->page = i;
                 item->label = g_markup_printf_escaped ("%s", label);
-                item->pixbuf = preview_get_loading_icon (self, width, height);
+                item->surface = preview_get_loading_icon (self, width, height);
                 item->loaded = FALSE;
                 item->job = NULL;
 
@@ -421,7 +446,7 @@ previews_clear (GdNavBar *self)
 
                 preview_item_clear_thumbnail_job (self, item);
 
-                g_clear_object (&item->pixbuf);
+                g_clear_pointer (&item->surface, (GDestroyNotify) cairo_surface_destroy);
                 g_free (item->label);
                 item->label = NULL;
         }
@@ -850,8 +875,8 @@ update_preview (GdNavBar *self)
 
         item = &self->priv->previews[self->priv->preview_page];
 
-        if (item->pixbuf != NULL) {
-                gtk_image_set_from_pixbuf (GTK_IMAGE (self->priv->preview_image), item->pixbuf);
+        if (item->surface != NULL) {
+                gtk_image_set_from_surface (GTK_IMAGE (self->priv->preview_image), item->surface);
         }
 
         gtk_label_set_text (GTK_LABEL (self->priv->preview_label), item->label);
@@ -1013,7 +1038,7 @@ gd_nav_bar_init (GdNavBar *self)
         priv->loading_icons = g_hash_table_new_full (g_str_hash,
                                                      g_str_equal,
                                                      (GDestroyNotify)g_free,
-                                                     (GDestroyNotify)g_object_unref);
+                                                     (GDestroyNotify)cairo_surface_destroy);
 
         inner_box = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 5);
         gtk_container_set_border_width (GTK_CONTAINER (inner_box), 10);
@@ -1044,6 +1069,8 @@ gd_nav_bar_init (GdNavBar *self)
 
         gtk_style_context_add_class (gtk_widget_get_style_context (GTK_WIDGET (self)),
                                      GTK_STYLE_CLASS_TOOLBAR);
+        g_signal_connect (self, "notify::scale-factor",
+                          G_CALLBACK (previews_reload), NULL);
 
         g_signal_connect (priv->scale, "value-changed",
                           G_CALLBACK (scale_value_changed_cb),

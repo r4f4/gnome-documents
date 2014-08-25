@@ -49,7 +49,7 @@ GETTING_STARTED_INIT
 AC_CHECK_LIBM
 AC_SUBST(LIBM)
 
-EVINCE_MIN_VERSION=3.7.4
+EVINCE_MIN_VERSION=3.13.3
 WEBKITGTK_MIN_VERSION=1.10.0
 GLIB_MIN_VERSION=2.39.3
 GTK_MIN_VERSION=3.13.2
@@ -87,6 +87,14 @@ PKG_CHECK_MODULES(DOCUMENTS,
                   goa-1.0 >= $GOA_MIN_VERSION
                   libgdata >= $GDATA_MIN_VERSION
                   zapojit-0.0 >= $ZAPOJIT_MIN_VERSION)
+
+# Although GTK+ 3.10 includes hi-dpi functionality, it does not require a cairo with
+# cairo_surface_set_device_scale(), which we also need if we're to support hi-dpi,
+# so we need check for that explicity.
+documents_save_LIBS="$LIBS"
+LIBS="$LIBS $DOCUMENTS_LIBS"
+AC_CHECK_FUNCS(cairo_surface_set_device_scale)
+LIBS="$documents_save_LIBS"
 
 LIBGD_INIT([
   gtk-hacks
