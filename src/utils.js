@@ -77,6 +77,8 @@ function iconFromRdfType(type) {
         iconName = 'x-office-spreadsheet';
     else if (type.indexOf('nfo#Presentation') != -1)
         iconName = 'x-office-presentation';
+    else if (type.indexOf('nfo#EBook') != -1)
+        iconName = 'x-office-document'; //FIXME should be a real icon
     else if (type.indexOf('nfo#DataContainer') != -1)
         return GdPrivate.create_collection_icon(
             getIconSize() * Application.application.getScaleFactor(),

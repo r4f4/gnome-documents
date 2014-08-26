@@ -399,7 +399,10 @@ const Embed = new Lang.Class({
     },
 
     _onLoadFinished: function(manager, doc, docModel) {
-        docModel.set_sizing_mode(EvView.SizingMode.AUTOMATIC);
+        if (!Application.application.isBooks)
+            docModel.set_sizing_mode(EvView.SizingMode.AUTOMATIC);
+        else
+            docModel.set_sizing_mode(EvView.SizingMode.FIT_PAGE);
         docModel.set_page_layout(EvView.PageLayout.AUTOMATIC);
         this._toolbar.setModel(docModel);
         this._preview.setModel(docModel);

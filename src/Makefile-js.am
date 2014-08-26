@@ -6,6 +6,7 @@ dist_js_DATA = \
     edit.js \
     embed.js \
     main.js \
+    mainBooks.js \
     mainToolbar.js \
     mainWindow.js \
     manager.js \

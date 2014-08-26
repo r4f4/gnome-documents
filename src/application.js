@@ -110,17 +110,27 @@ const Application = new Lang.Class({
     Name: 'Application',
     Extends: Gtk.Application,
 
-    _init: function() {
+    _init: function(isBooks) {
         this.minersRunning = [];
         this._activationTimestamp = Gdk.CURRENT_TIME;
         this._extractPriority = null;
 
+        this.isBooks = isBooks;
+
         Gettext.bindtextdomain('gnome-documents', Path.LOCALE_DIR);
         Gettext.textdomain('gnome-documents');
-        GLib.set_prgname('gnome-documents');
-        GLib.set_application_name(_("Documents"));
+        let appid;
+        if (!this.isBooks) {
+            GLib.set_prgname('gnome-documents');
+            GLib.set_application_name(_("Documents"));
+            appid = 'org.gnome.Documents';
+        } else {
+            GLib.set_prgname('gnome-books');
+            GLib.set_application_name(_("Books"));
+            appid = 'org.gnome.Books';
+        }
 
-        this.parent({ application_id: 'org.gnome.Documents',
+        this.parent({ application_id: appid,
                       inactivity_timeout: 12000 });
 
         this._searchProvider = new ShellSearchProvider.ShellSearchProvider();
@@ -409,7 +419,10 @@ const Application = new Lang.Class({
         resource._register();
 
         application = this;
-        settings = new Gio.Settings({ schema_id: 'org.gnome.documents' });
+        if (!application.isBooks)
+            settings = new Gio.Settings({ schema: 'org.gnome.documents' });
+        else
+            settings = new Gio.Settings({ schema: 'org.gnome.books' });
 
         let gtkSettings = Gtk.Settings.get_default();
         gtkSettings.connect('notify::gtk-theme-name', Lang.bind(this, this._themeChanged));
@@ -542,7 +555,9 @@ const Application = new Lang.Class({
 
         this._initActions();
         this._initAppMenu();
-        this._initGettingStarted();
+
+        if (!this.isBooks)
+            this._initGettingStarted();
     },
 
     vfunc_shutdown: function() {

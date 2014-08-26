@@ -24,7 +24,7 @@ const GLib = imports.gi.GLib;
 const System = imports.system;
 
 function start() {
-    let application = new Application.Application(false);
+    let application = new Application.Application(true);
     if (GLib.getenv('DOCUMENTS_PERSIST'))
         application.hold();
     return application.run([System.programInvocationName].concat(ARGV));

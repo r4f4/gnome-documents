@@ -124,6 +124,7 @@ gd_filename_get_extension_offset (const char *filename)
 		if (strcmp (end, ".gz") == 0 ||
 		    strcmp (end, ".bz2") == 0 ||
 		    strcmp (end, ".sit") == 0 ||
+		    strcmp (end, ".zip") == 0 ||
 		    strcmp (end, ".Z") == 0) {
 			end2 = end - 1;
 			while (end2 > filename &&
@@ -182,6 +183,24 @@ gd_filename_to_mime_type (const gchar *filename_with_extension)
 
   if (g_strcmp0 (extension, ".pdf") == 0)
     type = "application/pdf";
+  else if (g_strcmp0 (extension, ".epub") == 0)
+    type = "application/epub+zip";
+  else if (g_strcmp0 (extension, ".cbr") == 0)
+    type = "application/x-cbr";
+  else if (g_strcmp0 (extension, ".cbz") == 0)
+    type = "application/x-cbz";
+  else if (g_strcmp0 (extension, ".cbt") == 0)
+    type = "application/x-cbt";
+  else if (g_strcmp0 (extension, ".cb7") == 0)
+    type = "application/x-cb7";
+  else if (g_strcmp0 (extension, ".fb2.zip") == 0)
+    type = "application/x-zip-compressed-fb2";
+  else if (g_strcmp0 (extension, ".fb2") == 0)
+    type = "application/x-fictionbook+xml";
+  else if (g_strcmp0 (extension, ".mobi") == 0)
+    type = "application/x-mobipocket-ebook";
+  else if (g_strcmp0 (extension, ".prc") == 0)
+    type = "application/x-mobipocket-ebook";
 
   return type;
 }
@@ -210,9 +229,19 @@ gd_filename_to_rdf_type (const gchar *filename_with_extension)
       || g_strcmp0 (extension, ".docx") == 0
       || g_strcmp0 (extension, ".dot") == 0
       || g_strcmp0 (extension, ".dotx") == 0
-      || g_strcmp0 (extension, ".epub") == 0
       || g_strcmp0 (extension, ".pdf") == 0)
     type = "nfo:PaginatedTextDocument";
+
+  else if (g_strcmp0 (extension, ".epub") == 0
+           || g_strcmp0 (extension, ".cbr") == 0
+           || g_strcmp0 (extension, ".cbz") == 0
+           || g_strcmp0 (extension, ".cbt") == 0
+           || g_strcmp0 (extension, ".cb7") == 0
+           || g_strcmp0 (extension, ".fb2") == 0
+           || g_strcmp0 (extension, ".fb2.zip") == 0
+           || g_strcmp0 (extension, ".mobi") == 0
+           || g_strcmp0 (extension, ".prc") == 0)
+    type = "nfo:EBook";
 
   else if (g_strcmp0 (extension, ".pot") == 0
            || g_strcmp0 (extension, ".potm") == 0

@@ -56,10 +56,14 @@ typelib_DATA += $(gir_DATA:.gir=.typelib)
 
 CLEANFILES += $(gir_DATA) $(typelib_DATA)
 
-service_in_files = org.gnome.Documents.service.in
+service_in_files = org.gnome.Documents.service.in org.gnome.Books.service.in
 servicedir = $(datadir)/dbus-1/services
-service_DATA = org.gnome.Documents.service
+service_DATA = org.gnome.Documents.service org.gnome.Books.service
+
 org.gnome.Documents.service: org.gnome.Documents.service.in
+	$(AM_V_GEN) $(do_subst) $< > $@
+
+org.gnome.Books.service: org.gnome.Books.service.in
 	$(AM_V_GEN) $(do_subst) $< > $@
 
 CLEANFILES += $(service_DATA)
@@ -72,5 +76,13 @@ gnome-documents: gnome-documents.in
 
 CLEANFILES += gnome-documents
 EXTRA_DIST += gnome-documents.in
+
+bin_SCRIPTS += gnome-books
+gnome-books: gnome-books.in
+	$(AM_V_GEN) $(do_subst) $< > $@
+	chmod +x $@
+
+CLEANFILES += gnome-books
+EXTRA_DIST += gnome-books.in
 
 -include $(top_srcdir)/git.mk

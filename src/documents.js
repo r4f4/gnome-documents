@@ -879,6 +879,8 @@ const GoogleDocument = new Lang.Class({
             description = _("Spreadsheet");
         else if (this.rdfType.indexOf('nfo#Presentation') != -1)
             description = _("Presentation");
+        else if (this.rdfType.indexOf('nfo#EBook') != -1)
+            description = _("e-Book");
         else
             description = _("Document");
 
@@ -1049,6 +1051,8 @@ const SkydriveDocument = new Lang.Class({
             description = _("Spreadsheet");
         else if (this.rdfType.indexOf('nfo#Presentation') != -1)
             description = _("Presentation");
+        else if (this.rdfType.indexOf('nfo#EBook') != -1)
+            description = _("e-Book");
         else
             description = _("Document");
 

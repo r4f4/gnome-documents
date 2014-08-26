@@ -8,21 +8,22 @@ appdata_in_files = org.gnome.Documents.appdata.xml.in
 
 desktopdir = $(datadir)/applications
 desktop_DATA = $(desktop_in_files:.desktop.in=.desktop)
-desktop_in_files = org.gnome.Documents.desktop.in
+desktop_in_files = org.gnome.Documents.desktop.in org.gnome.Books.desktop.in
 
 searchproviderdir = $(datadir)/gnome-shell/search-providers
 searchprovider_DATA = org.gnome.Documents.search-provider.ini
 
 @INTLTOOL_DESKTOP_RULE@
 
-check-local: org.gnome.Documents.desktop
+check-local: org.gnome.Documents.desktop org.gnome.Books.desktop
 	$(DESKTOP_FILE_VALIDATE) org.gnome.Documents.desktop
+	$(DESKTOP_FILE_VALIDATE) org.gnome.Books.desktop
 
 gsettings_ENUM_NAMESPACE = org.gnome.Documents
 gsettings_ENUM_FILES = \
     $(top_srcdir)/libgd/libgd/gd-main-view.h
 
-gsettings_SCHEMAS = org.gnome.documents.gschema.xml
+gsettings_SCHEMAS = org.gnome.documents.gschema.xml org.gnome.books.gschema.xml
 .PRECIOUS: $(gsettings_SCHEMAS)
 
 @GSETTINGS_RULES@

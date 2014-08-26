@@ -1,0 +1,13 @@
+[Desktop Entry]
+_Name=Books
+_Comment=Access, manage and share books
+Exec=gnome-books
+# FIXME icon
+Icon=gnome-books
+Terminal=false
+Type=Application
+StartupNotify=true
+DBusActivatable=true
+OnlyShowIn=GNOME;
+Categories=GNOME;GTK;Utility;Core;
+_Keywords=Books;Comics;ePub;PDF;
