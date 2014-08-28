@@ -202,7 +202,7 @@ gd_filename_to_rdf_type (const gchar *filename_with_extension)
 
   extension = gd_filename_get_extension_offset (filename_with_extension);
 
-  if (g_strcmp0 (extension, ".txt") == 0)
+  if (g_strcmp0 (extension, ".html") == 0)
     type = "nfo:HtmlDocument";
 
   else if (g_strcmp0 (extension, ".doc") == 0
