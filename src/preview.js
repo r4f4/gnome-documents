@@ -582,7 +582,7 @@ const PreviewNavControls = new Lang.Class({
         buttonArea.pack_start(button, false, false, 0);
 
         button = new Gtk.ToggleButton({ action_name: 'app.bookmark-page',
-                                        image: new Gtk.Image({ icon_name: 'bookmark-add-symbolic',
+                                        image: new Gtk.Image({ icon_name: 'bookmark-new-symbolic',
                                                                pixel_size: 16 }),
                                         valign: Gtk.Align.CENTER,
                                         tooltip_text: _("Bookmark this page")
