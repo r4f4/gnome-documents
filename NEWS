@@ -1,3 +1,15 @@
+3.13.91 - "Lemongrass"
+======================
+
+- Use a GtkPopover for the search options dropdown (Marta Milakovic)
+- Add a notification when an item is deleted
+- Fix HiDpi support in the preview floating window
+- Fix HiDpi support in the search entry tags
+- Fix handling of back key in preview mode (Paul Martin)
+- Fix RDF type of text and HTML files (Bastien Nocera)
+- Fix CSS style for latest GTK (Saurav Agarwalla)
+- Translation updates
+
 3.13.4 - "Pappankala"
 =====================
 
