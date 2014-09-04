@@ -326,7 +326,7 @@ const Source = new Lang.Class({
     },
 
     _getTrackerLocations: function() {
-        let settings = new Gio.Settings({ schema: TRACKER_SCHEMA });
+        let settings = new Gio.Settings({ schema_id: TRACKER_SCHEMA });
         let locations = settings.get_strv(TRACKER_KEY_RECURSIVE_DIRECTORIES);
         let files = [];
 

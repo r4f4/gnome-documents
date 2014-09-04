@@ -409,7 +409,7 @@ const Application = new Lang.Class({
         resource._register();
 
         application = this;
-        settings = new Gio.Settings({ schema: 'org.gnome.documents' });
+        settings = new Gio.Settings({ schema_id: 'org.gnome.documents' });
 
         let gtkSettings = Gtk.Settings.get_default();
         gtkSettings.connect('notify::gtk-theme-name', Lang.bind(this, this._themeChanged));
