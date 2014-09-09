@@ -764,7 +764,7 @@ const GoogleDocument = new Lang.Class({
         let service = new GData.DocumentsService({ authorizer: authorizer });
 
         service.query_single_entry_async
-            (service.get_primary_authorization_domain(),
+            (GData.DocumentsService.get_primary_authorization_domain(),
              this.identifier, null,
              GData.DocumentsText,
              cancellable, Lang.bind(this,
@@ -828,7 +828,7 @@ const GoogleDocument = new Lang.Class({
                     return;
                 }
 
-                let authorizationDomain = service.get_primary_authorization_domain();
+                let authorizationDomain = GData.DocumentsService.get_primary_authorization_domain();
                 let inputStream = new GData.DownloadStream({ service: service,
                                                              authorization_domain: authorizationDomain,
                                                              download_uri: uri });

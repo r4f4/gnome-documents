@@ -329,7 +329,7 @@ const SharingDialog = new Lang.Class({
     // Get the id of the selected doc from the sourceManager, give auth info to Google, and start the service
     _createGDataEntry: function() {
         // Query the service for the entry related to the doc
-        this._service.query_single_entry_async(this._service.get_primary_authorization_domain(),
+        this._service.query_single_entry_async(GData.DocumentsService.get_primary_authorization_domain(),
             this._doc.identifier, null, GData.DocumentsText, null, Lang.bind(this,
                 function(object, res) {
                     try {
@@ -465,7 +465,7 @@ const SharingDialog = new Lang.Class({
 
         this._contactEntry.set_sensitive(false);
 
-        this._service.insert_entry_async(this._service.get_primary_authorization_domain(),
+        this._service.insert_entry_async(GData.DocumentsService.get_primary_authorization_domain(),
             aclLink.get_uri(), accessRule, null, Lang.bind(this,
                 function(service, res) {
                     this._contactEntry.set_sensitive(true);
@@ -504,7 +504,7 @@ const SharingDialog = new Lang.Class({
         let accessRule = new GData.AccessRule({ scope_type: scopeType,
                                                 role: role });
 
-        this._service.insert_entry_async(this._service.get_primary_authorization_domain(),
+        this._service.insert_entry_async(GData.DocumentsService.get_primary_authorization_domain(),
             aclLink.get_uri(), accessRule, null, Lang.bind(this,
                 function(service, res) {
                     try {
@@ -561,7 +561,7 @@ const SharingDialog = new Lang.Class({
             let accessRule = entries[idx];
             accessRule.set_role(newRole);
 
-            this._service.update_entry_async(this._service.get_primary_authorization_domain(),
+            this._service.update_entry_async(GData.DocumentsService.get_primary_authorization_domain(),
                 accessRule, null, Lang.bind(this,
                     function(service, res) {
                         try {
@@ -578,7 +578,7 @@ const SharingDialog = new Lang.Class({
             // If we are changing the permission to private, delete the public entry.
             let accessRule = entries[idx];
 
-            this._service.delete_entry_async(this._service.get_primary_authorization_domain(),
+            this._service.delete_entry_async(GData.DocumentsService.get_primary_authorization_domain(),
                 accessRule, null, Lang.bind(this,
                     function(service, res) {
                         try {
@@ -595,7 +595,7 @@ const SharingDialog = new Lang.Class({
             // Workaround if the doc is shared with link: step 1 delete shared with link permission.
             let accessRule = entries[idx];
 
-            this._service.delete_entry_async(this._service.get_primary_authorization_domain(),
+            this._service.delete_entry_async(GData.DocumentsService.get_primary_authorization_domain(),
                 accessRule, null, Lang.bind(this,
                     function(service, res) {
                         try {
