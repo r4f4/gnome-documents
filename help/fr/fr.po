@@ -374,7 +374,7 @@ msgstr "Date de modification ;"
 #. (itstool) path: item/p
 #: C/info.page:56
 msgid "Type: the <link xref=\"formats\">file format</link> of the document."
-msgstr "Type : le <link xref=\"formats>format de fichier</link> du document."
+msgstr "Type : le <link xref=\"formats\">format de fichier</link> du document."
 
 #. (itstool) path: page/p
 #: C/info.page:60
