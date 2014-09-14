@@ -4,16 +4,16 @@
 #
 # Dr.T.Vasudevan <agnihot3@gmail.com>, 2011, 2012, 2013.
 # naveenkumar palaniswamy(நவீன் குமார் கெம்ளின்)  <naveenmtp@gmail.com>, 2011.
-# Shantha kumar <shkumar@redhat.com>, 2013.
+# Shantha kumar <shkumar@redhat.com>, 2013, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-documents master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-10-31 15:32+0000\n"
-"PO-Revision-Date: 2013-11-21 17:27+0530\n"
+"POT-Creation-Date: 2014-09-14 18:45+0000\n"
+"PO-Revision-Date: 2014-09-15 02:39+0530\n"
 "Last-Translator: Shantha kumar <shkumar@redhat.com>\n"
-"Language-Team: Tamil <>\n"
+"Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
 "Language: ta\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,18 +21,17 @@ msgstr ""
 "X-Generator: Lokalize 1.5\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: ../data/gnome-documents.appdata.xml.in.h:1
-#: ../data/gnome-documents.desktop.in.in.h:1 ../src/application.js:103
-#: ../src/mainWindow.js:52 ../src/mainWindow.js:273
+#: ../data/org.gnome.Documents.appdata.xml.in.h:1
+#: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:121
+#: ../src/mainWindow.js:52 ../src/mainWindow.js:302
 msgid "Documents"
 msgstr "ஆவணங்கள்"
 
-#: ../data/gnome-documents.appdata.xml.in.h:2
-#| msgid "A document manager application"
+#: ../data/org.gnome.Documents.appdata.xml.in.h:2
 msgid "A document manager application for GNOME"
 msgstr "GNOME க்கான ஆவண நிர்வாகப் பயன்பாடு"
 
-#: ../data/gnome-documents.appdata.xml.in.h:3
+#: ../data/org.gnome.Documents.appdata.xml.in.h:3
 msgid ""
 "A simple application to access, organize and share your documents on GNOME. "
 "It is meant to be a simple and elegant replacement for using a file manager "
@@ -42,40 +41,59 @@ msgstr ""
 "GNOME இல் உங்கள் ஆவணங்களை அணுகவும் ஒழுங்கமைக்கவும் பகிரவும் உதவும் ஒரு எளிய "
 "பயன்பாடு. "
 "இது ஆவணங்களைக் கையாள கோப்பு நிர்வாகியைப் பயன்படுத்துவதற்கு பதிலாக "
-"உருவாக்கப்பட்ட ஒரு எளியதும் அற்புதமானதுமான ஒரு கருவி. GNOME "
-"ஆன்லைன் கணக்குகளுடன் சிக்கலற்ற ஒத்திசைவு வசதியையும் இது வழங்குகிறது."
+"உருவாக்கப்பட்ட ஒரு "
+"எளியதும் அற்புதமானதுமான ஒரு கருவி. GNOME ஆன்லைன் கணக்குகளுடன் சிக்கலற்ற "
+"ஒத்திசைவு "
+"வசதியையும் இது வழங்குகிறது."
 
-#: ../data/gnome-documents.appdata.xml.in.h:4
+#: ../data/org.gnome.Documents.appdata.xml.in.h:4
 msgid "It lets you:"
 msgstr "இதைக் கொண்டு நீங்கள் செய்யக்கூடியவை:"
 
-#: ../data/gnome-documents.appdata.xml.in.h:5
-msgid ""
-"<li>View recent local and online documents</li> <li>Access your Google, "
-"ownCloud or SkyDrive content</li> <li>Search through documents</li> <li>See "
-"new documents shared by friends</li> <li>View documents fullscreen</li> "
-"<li>Print documents</li> <li>Select favorites</li> <li>Allow opening full "
-"featured editor for non-trivial changes</li>"
-msgstr ""
-"<li>சமீபத்திய கணினிக்குள்ளான ஆவணங்களையும் ஆன்லைன் ஆவணங்களையும் காணலாம்</li> <"
-"li>உங்கள் Google, "
-"ownCloud அல்லது SkyDrive உள்ளடக்கங்களை அணுகலாம்</li> <li>ஆவணங்களைத் "
-"தேடியறியலாம்</li> <li>நண்பர்கள் பகிரும் புதிய ஆவணங்களைக் காணலாம்</li> <li>"
-"ஆவணங்களை முழுத்திரையில் காணலாம்</li> "
-"<li>ஆவணங்களை அச்சிடலாம்</li> <li>பிடித்தவற்றைத் தேர்ந்தெடுக்கலாம்</li> <li>"
-"மிக முக்கியத்துவம் வாய்ந்ததல்லாத மாற்றங்களைச் செய்ய முழு அம்சங்கள் நிறைந்த "
-"திருத்தியைத் திறக்கலாம்</li>"
+#: ../data/org.gnome.Documents.appdata.xml.in.h:5
+msgid "View recent local and online documents"
+msgstr "சமீபத்தில் திறந்த கணினி மற்றும் இணைய ஆவணங்களைக் காண்"
 
-#: ../data/gnome-documents.desktop.in.in.h:2
+#: ../data/org.gnome.Documents.appdata.xml.in.h:6
+msgid "Access your Google, ownCloud or OneDrive content"
+msgstr "உங்கள் Google, ownCloud அல்லது OneDrive உள்ளடக்கத்தைக் காணலாம்"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:7
+msgid "Search through documents"
+msgstr "ஆவணங்களைத் தேடலாம்"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:8
+msgid "See new documents shared by friends"
+msgstr "நண்பர்கள் பகிர்ந்த புதிய ஆவணங்களைக் காணலாம்"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:9
+msgid "View documents fullscreen"
+msgstr "ஆவணங்களை முழுத்திரையில் காணலாம்"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:10
+#| msgid "PDF Documents"
+msgid "Print documents"
+msgstr "ஆவணங்களை அச்சிடலாம்"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:11
+#| msgid "Select Items"
+msgid "Select favorites"
+msgstr "பிடித்தவற்றைத் தேர்ந்தெடுக்கலாம்"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:12
+msgid "Allow opening full featured editor for non-trivial changes"
+msgstr ""
+"மிக முக்கியமல்லாத மாற்றங்களுக்கு முழு வசதி கொண்ட திருத்தியைத் திறக்க அனுமதி"
+
+#: ../data/org.gnome.Documents.desktop.in.h:2
 msgid "Access, manage and share documents"
 msgstr "ஆவணங்களை அணுகு, மேலாளு, பகிர்"
 
-#: ../data/gnome-documents.desktop.in.in.h:3
+#: ../data/org.gnome.Documents.desktop.in.h:3
 msgid "Docs;PDF;Document;"
 msgstr "டாக்ஸ்;பிடிஎஃப்;ஆவணங்கள்;"
 
 #: ../data/org.gnome.documents.gschema.xml.h:1
-#: ../src/resources/app-menu.ui.h:1
 msgid "View as"
 msgstr "இப்படிப்பார்க்க "
 
@@ -107,73 +125,78 @@ msgstr "முழுமையாக்கிய சாளரம்"
 msgid "Window maximized state"
 msgstr "முழுமையாக்கிய சாளர நிலை"
 
-#: ../src/documents.js:599 ../src/search.js:417
+#: ../src/documents.js:621
+#| msgid "Unable to load the document"
+msgid "Failed to print document"
+msgstr "ஆவணத்தை அச்சிட முடியவில்லை"
+
+#: ../src/documents.js:658 ../src/search.js:427
 msgid "Local"
 msgstr "உள்ளமை"
 
-#: ../src/documents.js:620
+#: ../src/documents.js:679
 msgid "GNOME"
 msgstr "GNOME"
 
-#: ../src/documents.js:621
+#: ../src/documents.js:680
 msgid "Getting Started with Documents"
 msgstr "ஆவணங்களை துவக்கலாம்"
 
-#: ../src/documents.js:637 ../src/documents.js:802 ../src/documents.js:856
-#: ../src/documents.js:956
+#: ../src/documents.js:696 ../src/documents.js:877 ../src/documents.js:939
+#: ../src/documents.js:1047
 msgid "Collection"
 msgstr "சேகரம்"
 
-#: ../src/documents.js:681
+#: ../src/documents.js:756
 msgid "Google Docs"
 msgstr "கூகுள் டாக்ஸ்"
 
-#: ../src/documents.js:682
+#: ../src/documents.js:757
 msgid "Google"
 msgstr "கூகுள்"
 
-#: ../src/documents.js:804 ../src/documents.js:958
+#: ../src/documents.js:879 ../src/documents.js:1049
 msgid "Spreadsheet"
 msgstr "விரிதாள்"
 
-#: ../src/documents.js:806 ../src/documents.js:960 ../src/presentation.js:47
+#: ../src/documents.js:881 ../src/documents.js:1051 ../src/presentation.js:47
 msgid "Presentation"
 msgstr "முன்வைப்பு"
 
-#: ../src/documents.js:808 ../src/documents.js:962
+#: ../src/documents.js:883 ../src/documents.js:1053
 msgid "Document"
 msgstr "ஆவணம்"
 
-#: ../src/documents.js:834
+#: ../src/documents.js:917
 msgid "ownCloud"
 msgstr "ownCloud"
 
-#: ../src/documents.js:890 ../src/documents.js:891
-msgid "Skydrive"
-msgstr "ஸ்கைட்ரைவ்"
+#: ../src/documents.js:981 ../src/documents.js:982
+msgid "OneDrive"
+msgstr "OneDrive"
 
-#: ../src/documents.js:1082
+#: ../src/documents.js:1181
 msgid "Please check the network connection."
 msgstr "வலையமைப்பு இணைப்பை சரி பார்க்கவும்"
 
-#: ../src/documents.js:1085
+#: ../src/documents.js:1184
 msgid "Please check the network proxy settings."
 msgstr "வலையமைப்பு பதிலாள் அமைப்புகளை சரி பார்க்கவும்"
 
-#: ../src/documents.js:1088
+#: ../src/documents.js:1187
 msgid "Unable to sign in to the document service."
 msgstr "ஆவண சேவைக்கு உள் நுழைய முடியவில்லை"
 
-#: ../src/documents.js:1091
+#: ../src/documents.js:1190
 msgid "Unable to locate this document."
 msgstr "இந்த ஆவணத்தின் இடம் காண முடியவில்லை"
 
-#: ../src/documents.js:1094
+#: ../src/documents.js:1193
 #, javascript-format
 msgid "Hmm, something is fishy (%d)."
 msgstr "ஹும்ம்ம்ம், ஏதோ சரியில்லை  (%d)."
 
-#: ../src/documents.js:1112
+#: ../src/documents.js:1211
 #, javascript-format
 msgid "Oops! Unable to load “%s”"
 msgstr "அடடா, “%s” ஐ ஏற்ற முடியவில்லை"
@@ -182,25 +205,21 @@ msgstr "அடடா, “%s” ஐ ஏற்ற முடியவில்ல�
 msgid "View"
 msgstr "காட்சி"
 
-#: ../src/embed.js:63 ../src/lib/gd-places-bookmarks.c:383
-#: ../src/lib/gd-places-links.c:257 ../src/view.js:71
-msgid "Loading…"
-msgstr "ஏற்றுகிறது..."
-
-#: ../src/embed.js:146
+#: ../src/embed.js:142
 msgid "No Documents Found"
 msgstr "ஆவணங்கள் ஏதும் காணப்படவில்லை"
 
-#: ../src/embed.js:167
+#: ../src/embed.js:163
 #, javascript-format
 msgid "You can add your online accounts in %s"
 msgstr "நீங்கள் %s இல் உங்கள் இணைய கணக்குகளை சேர்க்கலாம் "
 
-#: ../src/embed.js:171
-msgid "System Settings"
-msgstr "கணினி அமைப்புகள்"
+#: ../src/embed.js:167
+#| msgid "System Settings"
+msgid "Settings"
+msgstr "அமைவுகள்"
 
-#: ../src/lib/gd-nav-bar.c:235
+#: ../src/lib/gd-nav-bar.c:242
 #, c-format
 msgid "Page %u of %u"
 msgstr "பக்கம் %u,   %u இல்"
@@ -216,16 +235,21 @@ msgstr "இந்த ஆவணத்தை காண லிப்ரே ஆப�
 #. Translators: %s is the number of the page, already formatted
 #. * as a string, for example "Page 5".
 #.
-#: ../src/lib/gd-places-bookmarks.c:312
+#: ../src/lib/gd-places-bookmarks.c:315
 #, c-format
 msgid "Page %s"
 msgstr "பக்கம் %s"
 
-#: ../src/lib/gd-places-bookmarks.c:375
+#: ../src/lib/gd-places-bookmarks.c:378
 msgid "No bookmarks"
 msgstr "புத்தக குறிகள் இல்லை"
 
-#: ../src/lib/gd-places-bookmarks.c:648 ../src/preview.js:594
+#: ../src/lib/gd-places-bookmarks.c:386 ../src/lib/gd-places-links.c:257
+#: ../src/view.js:71
+msgid "Loading…"
+msgstr "ஏற்றுகிறது..."
+
+#: ../src/lib/gd-places-bookmarks.c:651 ../src/preview.js:580
 msgid "Bookmarks"
 msgstr "புத்தகக்குறிகள்"
 
@@ -241,87 +265,96 @@ msgstr "உள்ளடக்கங்கள்"
 msgid "Search"
 msgstr "தேடு"
 
-#: ../src/mainToolbar.js:90
+#: ../src/mainToolbar.js:87
 msgid "Back"
 msgstr "பின்"
 
-#: ../src/mainToolbar.js:170
-#, javascript-format
-msgid "Results for “%s”"
-msgstr "\"%s\" க்கான விடைகள்"
+#: ../src/mainToolbar.js:132
+msgid "View items as a list"
+msgstr "உருப்படிகளை பட்டியலாகக் காண்பி"
 
-#: ../src/mainToolbar.js:178
+#: ../src/mainToolbar.js:138
+msgid "View items as a grid of icons"
+msgstr "உருப்படிகளை சின்னங்களின் குறுக்கு நெடுக்கு வரிசையாகக் காண்பி"
+
+#: ../src/mainToolbar.js:168
 msgid "Click on items to select them"
 msgstr "உருப்படிகளை தேர்ந்தெடுக்க அதன் மீது சொடுக்கவும்"
 
-#: ../src/mainToolbar.js:180
+#: ../src/mainToolbar.js:170
 #, javascript-format
 msgid "%d selected"
 msgid_plural "%d selected"
 msgstr[0] "%d தேர்வு செய்யப்பட்டது"
 msgstr[1] "%d தேர்வு செய்யப்பட்டது"
 
-#: ../src/mainToolbar.js:209
+#: ../src/mainToolbar.js:200
 msgid "Cancel"
 msgstr "ரத்து"
 
-#: ../src/mainToolbar.js:250
+#: ../src/mainToolbar.js:242
 msgid "Select Items"
 msgstr "தேர்வு செய்த உருப்படிகள்"
 
-#: ../src/mainWindow.js:272
+#: ../src/mainWindow.js:301
 msgid "translator-credits"
 msgstr ""
 "Dr.T.Vasudevan <agnihot3@gmail.com>, 2011, 2012., naveenkumar palaniswamy "
 "<naveenmtp@gmail.com>, 2011."
 
-#: ../src/mainWindow.js:274
+#: ../src/mainWindow.js:303
 msgid "A document manager application"
 msgstr "ஒரு ஆவண மேலாண்மை பயன்பாடு"
 
-#: ../src/notifications.js:87
+#: ../src/notifications.js:50
+msgid "Selected item has been deleted"
+msgid_plural "Selected items have been deleted"
+msgstr[0] "தேர்ந்தெடுத்த உருப்படி நீக்கப்பட்டுவிட்டது"
+msgstr[1] "தேர்ந்தெடுத்த உருப்படிகள் நீக்கப்பட்டுவிட்டன"
+
+#: ../src/notifications.js:57
+msgid "Undo"
+msgstr "செயல்தவிர்"
+
+#: ../src/notifications.js:157
 #, javascript-format
 msgid "Printing “%s”: %s"
 msgstr "\"%s\" ஐ அச்சிடுகிறது : %s"
 
-#: ../src/notifications.js:143
+#: ../src/notifications.js:213
 msgid "Your documents are being indexed"
 msgstr "உங்கள் ஆவணங்கள் பட்டியலிடப்படுகின்றன."
 
-#: ../src/notifications.js:144
+#: ../src/notifications.js:214
 msgid "Some documents might not be available during this process"
 msgstr "இந்த செயலின் போது சில ஆவனங்கள் கிடைக்காமல் போகலாம்."
 
-#: ../src/notifications.js:166
+#: ../src/notifications.js:236
 #, javascript-format
 msgid "Fetching documents from %s"
 msgstr "%s இல் இருந்து ஆவணங்களை கொண்டு வருகிறது"
 
-#: ../src/notifications.js:168
+#: ../src/notifications.js:238
 msgid "Fetching documents from online accounts"
 msgstr "வலை இணைப்பு கணக்குகளில் இருந்து ஆவணங்களை கொண்டு வருகிறது"
 
-#: ../src/password.js:45
+#: ../src/password.js:46
 msgid "Password Required"
 msgstr "கடவுச்சொல் தேவைப்படுகிறது"
 
-#: ../src/password.js:48
+#: ../src/password.js:49
 msgid "_Unlock"
 msgstr "விடுவி (_U)"
 
-#: ../src/password.js:64
+#: ../src/password.js:65
 #, javascript-format
 msgid "Document %s is locked and requires a password to be opened."
 msgstr ""
 "ஆவணம் %s பூட்டப்பட்டுள்ளது, அதனை திறப்பதற்கு கடவுச்சொல் தேவைப்படுகிறது."
 
-#: ../src/password.js:78
+#: ../src/password.js:79
 msgid "_Password"
 msgstr "கடவுச்சொல் (_P)"
-
-#: ../src/places.js:59
-msgid "Close"
-msgstr "மூடு"
 
 #: ../src/presentation.js:104
 msgid "Running in presentation mode"
@@ -331,84 +364,68 @@ msgstr "காட்சி அளிப்பு பாங்கில் இய
 msgid "Present On"
 msgstr "இந்த நாளில் முன்வை"
 
-#: ../src/preview.js:603
-#| msgid "Bookmarks"
+#: ../src/preview.js:588
 msgid "Bookmark this page"
 msgstr "இந்த பக்கத்தைப் புத்தகக்குறியில் சேர்"
 
-#: ../src/preview.js:892 ../src/selections.js:856
+#: ../src/preview.js:823 ../src/selections.js:857
 #, javascript-format
 msgid "Open with %s"
 msgstr "%s ஆல் திற"
 
-#: ../src/preview.js:953
+#: ../src/preview.js:885
 msgid "Find Previous"
 msgstr "முந்தையதைக் கண்டுபிடி"
 
-#: ../src/preview.js:960
+#: ../src/preview.js:892
 msgid "Find Next"
 msgstr "அடுத்ததைக் கண்டுபிடி"
 
-#: ../src/properties.js:60 ../src/resources/preview-menu.ui.h:9
-#: ../src/selections.js:766
+#: ../src/properties.js:61 ../src/resources/preview-menu.ui.h:9
+#: ../src/selections.js:767
 msgid "Properties"
 msgstr "பண்புகள்"
 
-#: ../src/properties.js:62 ../src/sharing.js:101
-msgid "Done"
-msgstr "முடிந்தது"
-
-#: ../src/properties.js:82
-#| msgid "Title"
+#: ../src/properties.js:81
 msgctxt "Document Title"
 msgid "Title"
 msgstr "தலைப்பு"
 
-#: ../src/properties.js:91
-#| msgid "Author"
+#: ../src/properties.js:90
 msgctxt "Document Author"
 msgid "Author"
 msgstr "உருவாக்கியவர்"
 
-#: ../src/properties.js:98
+#: ../src/properties.js:97
 msgid "Source"
 msgstr "மூலம்"
 
-#: ../src/properties.js:104
+#: ../src/properties.js:103
 msgid "Date Modified"
 msgstr "மாற்றப்பட்ட தேதி"
 
-#: ../src/properties.js:111
+#: ../src/properties.js:110
 msgid "Date Created"
 msgstr "உருவாக்கிய தேதி"
 
-#: ../src/properties.js:120
-#| msgid "Type"
+#: ../src/properties.js:119
 msgctxt "Document Type"
 msgid "Type"
 msgstr "வகை"
 
-#: ../src/resources/app-menu.ui.h:2
-msgid "Grid"
-msgstr "வலைப்பின்னல்"
-
-#: ../src/resources/app-menu.ui.h:3
-msgid "List"
-msgstr "பட்டியல்"
-
-#: ../src/resources/app-menu.ui.h:4
+#: ../src/resources/app-menu.ui.h:1
 msgid "Fullscreen"
 msgstr "முழுத்திரை"
 
-#: ../src/resources/app-menu.ui.h:5
-msgid "About Documents"
-msgstr "ஆவணங்கள் - அறிமுகம்"
-
-#: ../src/resources/app-menu.ui.h:6
+#: ../src/resources/app-menu.ui.h:2
 msgid "Help"
 msgstr "உதவி"
 
-#: ../src/resources/app-menu.ui.h:7
+#: ../src/resources/app-menu.ui.h:3
+msgid "About"
+msgstr "அறிமுகம்"
+
+#: ../src/resources/app-menu.ui.h:4
 msgid "Quit"
 msgstr "வெளியேறு"
 
@@ -416,8 +433,8 @@ msgstr "வெளியேறு"
 msgid "_Copy"
 msgstr "நகலெடு (_C)"
 
-#: ../src/resources/preview-menu.ui.h:1 ../src/selections.js:746
-#: ../src/selections.js:859
+#: ../src/resources/preview-menu.ui.h:1 ../src/selections.js:747
+#: ../src/selections.js:860
 msgid "Open"
 msgstr "திற"
 
@@ -457,66 +474,63 @@ msgstr "அனைத்தையும் தேர்வு செய்"
 msgid "Select None"
 msgstr "எதையும் தேர்ந்தெடுக்காதே "
 
-#: ../src/search.js:113
+#: ../src/search.js:114
 msgid "Category"
 msgstr "வகை"
 
-#: ../src/search.js:118 ../src/search.js:170 ../src/search.js:255
-#: ../src/search.js:411
+#: ../src/search.js:119 ../src/search.js:180 ../src/search.js:265
+#: ../src/search.js:421
 msgid "All"
 msgstr "அனைத்தும் "
 
-#: ../src/search.js:124
+#: ../src/search.js:125
 msgid "Favorites"
 msgstr "விருப்பங்கள்"
 
-#: ../src/search.js:129
+#: ../src/search.js:130
 msgid "Shared with you"
 msgstr "உங்களுடன் பகிர்ந்த"
 
-#: ../src/search.js:167
-#| msgid "Type"
+#: ../src/search.js:177
 msgctxt "Search Filter"
 msgid "Type"
 msgstr "வகை"
 
-#: ../src/search.js:172
+#: ../src/search.js:182
 msgid "Collections"
 msgstr "சேகரங்கள்"
 
-#: ../src/search.js:176
+#: ../src/search.js:186
 msgid "PDF Documents"
 msgstr "பிடிஎஃப் ஆவணங்கள்"
 
-#: ../src/search.js:180
+#: ../src/search.js:190
 msgid "Presentations"
 msgstr "முன்வைப்புகள்"
 
-#: ../src/search.js:183
+#: ../src/search.js:193
 msgid "Spreadsheets"
 msgstr "விரிதாட்கள்"
 
-#: ../src/search.js:186
+#: ../src/search.js:196
 msgid "Text Documents"
 msgstr "உரை ஆவணங்கள்"
 
-#: ../src/search.js:252
+#: ../src/search.js:262
 msgid "Match"
 msgstr "ஒப்பிடு"
 
-#: ../src/search.js:258
-#| msgid "Title"
+#: ../src/search.js:268
 msgctxt "Search Filter"
 msgid "Title"
 msgstr "தலைப்பு"
 
-#: ../src/search.js:261
-#| msgid "Author"
+#: ../src/search.js:271
 msgctxt "Search Filter"
 msgid "Author"
 msgstr "உருவாக்கியவர்"
 
-#: ../src/search.js:407
+#: ../src/search.js:417
 msgid "Sources"
 msgstr "மூலங்கள் "
 
@@ -527,100 +541,101 @@ msgstr ""
 "உள்ளிடவும்."
 
 #: ../src/selections.js:604
-#| msgid "Collection"
 msgid "Create new collection"
 msgstr "ஒரு புதிய தொகுப்பை உருவாக்கு"
 
-#: ../src/selections.js:639
-#| msgid "Collections"
+#: ../src/selections.js:640
 msgctxt "Dialog Title"
 msgid "Collections"
 msgstr "தொகுப்புகள்"
 
-#: ../src/selections.js:751
+#: ../src/selections.js:752
 msgid "Print"
 msgstr "அச்சிடு"
 
-#: ../src/selections.js:756
+#: ../src/selections.js:757
 msgid "Delete"
 msgstr "நீக்கு"
 
-#: ../src/selections.js:761
-#| msgid "Collection"
-msgid "Add to Collection"
-msgstr "தொகுப்பில் சேர்"
-
-#: ../src/selections.js:771
+#: ../src/selections.js:762
 msgid "Share"
 msgstr "பகிர்"
 
-#: ../src/sharing.js:97
+#: ../src/selections.js:772
+msgid "Add to Collection"
+msgstr "தொகுப்பில் சேர்"
+
+#: ../src/sharing.js:98
 msgid "Sharing Settings"
 msgstr " அமைப்புகளை பகிர்கிறது"
 
-#: ../src/sharing.js:134
+#: ../src/sharing.js:102
+msgid "Done"
+msgstr "முடிந்தது"
+
+#: ../src/sharing.js:135
 msgid "Document permissions"
 msgstr "ஆவணங்கள் அனுமதிகள்"
 
-#: ../src/sharing.js:141 ../src/sharing.js:319
+#: ../src/sharing.js:142 ../src/sharing.js:320
 msgid "Change"
 msgstr "மாற்று"
 
-#: ../src/sharing.js:165 ../src/sharing.js:294
+#: ../src/sharing.js:166 ../src/sharing.js:295
 msgid "Private"
 msgstr "அந்தரங்க"
 
-#: ../src/sharing.js:175 ../src/sharing.js:287
+#: ../src/sharing.js:176 ../src/sharing.js:288
 msgid "Public"
 msgstr "பொது"
 
-#: ../src/sharing.js:179 ../src/sharing.js:289
+#: ../src/sharing.js:180 ../src/sharing.js:290
 msgid "Everyone can edit"
 msgstr "யாரும் திருத்தலாம்"
 
-#: ../src/sharing.js:186
+#: ../src/sharing.js:187
 msgid "Add people"
 msgstr "மக்களை சேர்"
 
-#: ../src/sharing.js:193
+#: ../src/sharing.js:194
 msgid "Enter an email address"
 msgstr "ஒரு மின்னஞ்சல் முகவரியை உள்ளிடுக"
 
-#: ../src/sharing.js:208 ../src/sharing.js:375
+#: ../src/sharing.js:209 ../src/sharing.js:376
 msgid "Can edit"
 msgstr "திருத்தலாம்"
 
-#: ../src/sharing.js:208 ../src/sharing.js:378
+#: ../src/sharing.js:209 ../src/sharing.js:379
 msgid "Can view"
 msgstr "காணலாம்"
 
-#: ../src/sharing.js:215
+#: ../src/sharing.js:216
 msgid "Add"
 msgstr "சேர்க்க"
 
-#: ../src/sharing.js:291
+#: ../src/sharing.js:292
 msgid "Everyone can read"
 msgstr "யாரும் படிக்கலாம்"
 
-#: ../src/sharing.js:306
+#: ../src/sharing.js:307
 msgid "Save"
 msgstr "சேமி"
 
-#: ../src/sharing.js:372
+#: ../src/sharing.js:373
 msgid "Owner"
 msgstr "உரிமையாளர்"
 
-#: ../src/sharing.js:441
+#: ../src/sharing.js:442
 #, javascript-format
 msgid "You can ask %s for access"
 msgstr "நீங்கள்  %s ஐ அணுகலுக்கு கேட்கலாம். "
 
-#: ../src/sharing.js:478 ../src/sharing.js:514 ../src/sharing.js:571
-#: ../src/sharing.js:588 ../src/sharing.js:607
+#: ../src/sharing.js:479 ../src/sharing.js:515 ../src/sharing.js:572
+#: ../src/sharing.js:589 ../src/sharing.js:608
 msgid "The document was not updated"
 msgstr "ஆவணம் இற்றைப்படுத்தப்படவில்லை."
 
-#: ../src/shellSearchProvider.js:295
+#: ../src/shellSearchProvider.js:294
 msgid "Untitled Document"
 msgstr "தலைப்பில்லா ஆவணம்"
 
@@ -632,49 +647,81 @@ msgstr "ஆவணங்கள் பட்டியலை கொண்டுவ�
 msgid "Load More"
 msgstr "மேலும் ஏற்றுக"
 
-#: ../src/view.js:295
+#: ../src/view.js:307
 msgid "Yesterday"
 msgstr "நேற்று"
 
-#: ../src/view.js:297
+#: ../src/view.js:309
 #, javascript-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
 msgstr[0] "%d நாள் முன்"
 msgstr[1] "%d நாட்களுக்கு முன்"
 
-#: ../src/view.js:301
+#: ../src/view.js:313
 msgid "Last week"
 msgstr "போன வாரம்"
 
-#: ../src/view.js:303
+#: ../src/view.js:315
 #, javascript-format
 msgid "%d week ago"
 msgid_plural "%d weeks ago"
 msgstr[0] "%d வாரம் முன்"
 msgstr[1] "%d வாரங்கள் முன்"
 
-#: ../src/view.js:307
+#: ../src/view.js:319
 msgid "Last month"
 msgstr "போன மாதம்"
 
-#: ../src/view.js:309
+#: ../src/view.js:321
 #, javascript-format
 msgid "%d month ago"
 msgid_plural "%d months ago"
 msgstr[0] "%d மாதம் முன்"
 msgstr[1] "%d மாதங்களுக்கு முன்"
 
-#: ../src/view.js:313
+#: ../src/view.js:325
 msgid "Last year"
 msgstr "போன வருடம்"
 
-#: ../src/view.js:315
+#: ../src/view.js:327
 #, javascript-format
 msgid "%d year ago"
 msgid_plural "%d years ago"
 msgstr[0] "%d வருடத்திற்கு முன்"
 msgstr[1] "%d வருடங்களுக்கு முன்"
+
+#~ msgid ""
+#~ "<li>View recent local and online documents</li> <li>Access your Google, "
+#~ "ownCloud or SkyDrive content</li> <li>Search through documents</li> "
+#~ "<li>See new documents shared by friends</li> <li>View documents "
+#~ "fullscreen</li> <li>Print documents</li> <li>Select favorites</li> "
+#~ "<li>Allow opening full featured editor for non-trivial changes</li>"
+#~ msgstr ""
+#~ "<li>சமீபத்திய கணினிக்குள்ளான ஆவணங்களையும் ஆன்லைன் ஆவணங்களையும் காணலாம்</li> <li>உங்கள் "
+#~ "Google, ownCloud அல்லது SkyDrive உள்ளடக்கங்களை அணுகலாம்</li> <li>ஆவணங்களைத் "
+#~ "தேடியறியலாம்</li> <li>நண்பர்கள் பகிரும் புதிய ஆவணங்களைக் காணலாம்</li> <li>ஆவணங்களை "
+#~ "முழுத்திரையில் காணலாம்</li> <li>ஆவணங்களை அச்சிடலாம்</li> <li>பிடித்தவற்றைத் "
+#~ "தேர்ந்தெடுக்கலாம்</li> <li>மிக முக்கியத்துவம் வாய்ந்ததல்லாத மாற்றங்களைச் செய்ய முழு "
+#~ "அம்சங்கள் நிறைந்த திருத்தியைத் திறக்கலாம்</li>"
+
+#~ msgid "Skydrive"
+#~ msgstr "ஸ்கைட்ரைவ்"
+
+#~ msgid "Results for “%s”"
+#~ msgstr "\"%s\" க்கான விடைகள்"
+
+#~ msgid "Close"
+#~ msgstr "மூடு"
+
+#~ msgid "Grid"
+#~ msgstr "வலைப்பின்னல்"
+
+#~ msgid "List"
+#~ msgstr "பட்டியல்"
+
+#~ msgid "About Documents"
+#~ msgstr "ஆவணங்கள் - அறிமுகம்"
 
 #~ msgid "Organize"
 #~ msgstr "ஒருங்கிணை"
