@@ -1,0 +1,707 @@
+# Korean translation for gnome-documents.
+# Copyright (C) 2014 gnome-documents's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-documents package.
+# Seong-ho Cho <shcho@gnome.org>, 2014.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-documents master\n"
+"POT-Creation-Date: 2014-09-14 12:21+0000\n"
+"PO-Revision-Date: 2014-09-15 00:28+0900\n"
+"Last-Translator: Seong-ho Cho <shcho@gnome.org>\n"
+"Language-Team: Korean <gnome-kr@googlegroups.com>\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 1.5.5\n"
+
+#. (itstool) path: p/link
+#: C/legal.xml:3
+msgid "Creative Commons Attribution-ShareAlike 3.0 Unported License"
+msgstr "크리에이티브 커먼즈 저작자 표시 3.0 Unported 라이선스"
+
+#. (itstool) path: license/p
+#: C/legal.xml:3
+msgid "This work is licensed under a <_:link-1/>."
+msgstr "이 문서는  <_:link-1/>에 따른 활용을 허가합니다."
+
+#. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+msgctxt "_"
+msgid "translator-credits"
+msgstr "Seong-ho Cho <shcho@gnome.org>, 2014."
+
+#. (itstool) path: credit/name
+#: C/collections.page:12 C/index.page:14 C/info.page:12 C/print.page:11
+#: C/prob-no-show.page:12 C/prob-previews.page:12 C/search.page:11
+#: C/viewgrid.page:12 C/view.page:12
+msgid "Julita Inca"
+msgstr "Julita Inca"
+
+#. (itstool) path: credit/years
+#: C/collections.page:14 C/collections.page:19 C/filter.page:14
+#: C/formats.page:14 C/index.page:16 C/index.page:21 C/info.page:14
+#: C/info.page:19 C/print.page:13 C/print.page:18 C/prob-no-show.page:14
+#: C/prob-no-show.page:19 C/prob-previews.page:14 C/prob-previews.page:19
+#: C/search.page:13 C/search.page:18 C/viewgrid.page:14 C/viewgrid.page:19
+#: C/view.page:14 C/view.page:19
+msgid "2012"
+msgstr "2012"
+
+#. (itstool) path: credit/name
+#: C/collections.page:17 C/filter.page:12 C/formats.page:12 C/index.page:19
+#: C/info.page:17 C/print.page:16 C/prob-no-show.page:17
+#: C/prob-previews.page:17 C/search.page:16 C/viewgrid.page:17 C/view.page:17
+msgid "Michael Hill"
+msgstr "Michael Hill"
+
+#. (itstool) path: credit/name
+#: C/collections.page:22 C/filter.page:17 C/formats.page:17 C/index.page:24
+#: C/info.page:22 C/prob-no-show.page:22 C/prob-previews.page:22
+#: C/viewgrid.page:22 C/view.page:22 C/view-add.page:12
+msgid "Ekaterina Gerasimova"
+msgstr "Ekaterina Gerasimova"
+
+#. (itstool) path: credit/years
+#: C/collections.page:24 C/filter.page:19 C/formats.page:19 C/index.page:26
+#: C/info.page:24 C/prob-no-show.page:24 C/prob-previews.page:24
+#: C/viewgrid.page:24 C/view.page:24
+msgid "2014"
+msgstr "2014"
+
+#. (itstool) path: info/desc
+#: C/collections.page:29
+msgid "Group related documents together to help sort them."
+msgstr "정리해서 볼 수 있도록 관련 문서를 함께 모읍니다."
+
+#. (itstool) path: page/title
+#: C/collections.page:32
+msgid "Make collections of documents"
+msgstr "문서 모음 만들기"
+
+#. (itstool) path: page/p
+#: C/collections.page:45
+msgid ""
+"You can put together documents of different types in one place which is "
+"called a <em>collection</em>. If you have documents that are related, you "
+"can group them to make them easier to find. For example, if you had a "
+"business trip where you made a presentation, your slides, a PDF of your "
+"flight itinerary, your budget spreadsheet, and other word processor and PDF "
+"documents can be grouped in one collection."
+msgstr ""
+"다른 형식의 문서를 <em>모음</em>이라고 하는 하나의 장소에 함께 놓을 수 있습니"
+"다. 관련 문서가 있다면 찾기 쉽게 모아놓을 수 있습니다. 예를 들어 프리젠테이션"
+"을 수행할 출장을 갈 때, 슬라이드, 여행 일정 PDF 문서, 예산 스프레드시트, 다"
+"른 워드프로세서 문서와 PDF 문서를 한가지 모음에  모아놓을 수 있습니다."
+
+#. (itstool) path: steps/title
+#: C/collections.page:53
+msgid "To create or add to a collection:"
+msgstr "모음을 만들거나 추가하려면:"
+
+#. (itstool) path: item/p
+#: C/collections.page:55 C/collections.page:73 C/print.page:38
+msgid "Press the <gui>✓</gui> button."
+msgstr "<gui>✓</gui> 단추를 누르십시오."
+
+#. (itstool) path: item/p
+#: C/collections.page:58
+msgid "In selection mode, select related documents."
+msgstr "선택 모드에서 관련 문서를 선택하십시오."
+
+#. (itstool) path: item/p
+#: C/collections.page:61
+msgid "Press <gui>Add to Collection</gui>."
+msgstr "<gui>모음에 추가</gui>를 누르십시오."
+
+#. (itstool) path: item/p
+#: C/collections.page:64
+msgid ""
+"In the collection list, press on <gui>Create new collection</gui> twice and "
+"type a new collection name, or select an existing collection. The selected "
+"documents will be added to the collection."
+msgstr ""
+"모음 목록에서 <gui>새 모음 만들기</gui>를 두번 누르고, 새 모음 이름을 입력하"
+"거나 기존 모음을 선택하십시오. 선택한 문서는 모음에 추가합니다."
+
+#. (itstool) path: steps/title
+#: C/collections.page:71
+msgid "To delete a collection:"
+msgstr "모음을 삭제하려면:"
+
+#. (itstool) path: item/p
+#: C/collections.page:76
+msgid "In selection mode, select the collection that you want to delete."
+msgstr "선택 모드에서 삭제할 모음을 선택하십시오."
+
+#. (itstool) path: item/p
+#: C/collections.page:79
+msgid ""
+"Press <gui style=\"button\">Delete</gui>. The collection will be deleted, "
+"leaving the original documents as they are."
+msgstr ""
+"<gui style=\"button\">삭제</gui>를 누르십시오. 모음을 지우고, 남은 원래 문서"
+"는 그대로 남습니다."
+
+#. (itstool) path: info/desc
+#: C/filter.page:24
+msgid "Choose which documents to display."
+msgstr "표시할 문서를 선택합니다."
+
+#. (itstool) path: page/title
+#: C/filter.page:27
+msgid "Filter documents"
+msgstr "문서 필터링"
+
+#. (itstool) path: media/span
+#: C/filter.page:31 C/search.page:54
+msgid "down"
+msgstr "아래"
+
+#. (itstool) path: page/p
+#: C/filter.page:29
+msgid ""
+"<link xref=\"search\">Open the search</link> and click the <_:media-1/> "
+"button next to the search bar to limit the scope of the search in these "
+"categories:"
+msgstr ""
+"<link xref=\"search\">검색 표시줄을 여시고</link> 검색 표시줄 옆에 있는 <_:"
+"media-1/> 단추를 눌러 다음 분류를 통해 검색 범위를 제한하십시오:"
+
+#. (itstool) path: item/title
+#: C/filter.page:36
+msgid "Sources"
+msgstr "원본"
+
+#. (itstool) path: item/p
+#: C/filter.page:37
+msgid ""
+"Chose to search documents that are <gui>Local</gui>, accessed through <link "
+"href=\"help:gnome-help/online-accounts\">online accounts</link> with "
+"<gui>Google</gui>, <gui>OneDrive</gui>, <gui>ownCloud</gui>, or <gui>All</"
+"gui>."
+msgstr ""
+"<gui>로컬</gui> 있는 문서를 검색할지, <gui>구글</gui>, <gui>원드라이브</"
+"gui>, <gui>오운클라우드</gui>, 계정 <gui>모두</gui>에 해당하는 <link href="
+"\"help:gnome-help/online-accounts\">온라인 계정</link>에 접근하여 검색할지 선"
+"택하십시오."
+
+#. (itstool) path: item/title
+#: C/filter.page:43
+msgid "Type"
+msgstr "형식"
+
+#. (itstool) path: item/p
+#: C/filter.page:44
+msgid ""
+"Search only documents that are <gui>Collections</gui>, <gui>PDF Documents</"
+"gui>, <gui>Presentations</gui>, <gui>Spreadsheets</gui>, <gui>Text "
+"Documents</gui>, or <gui>All</gui>."
+msgstr ""
+"<gui>모음</gui>, <gui>PDF 문서</gui>, <gui>프리젠테이션</gui>, <gui>스프레드"
+"시트</gui>, <gui>텍스트 문서</gui>, 지원 형식 <gui>모두</gui>와 관련된 문서"
+"만 검색합니다."
+
+#. (itstool) path: item/title
+#: C/filter.page:49
+msgid "Match"
+msgstr "일치"
+
+#. (itstool) path: item/p
+#: C/filter.page:50
+msgid ""
+"Choose to search only the <gui>Title</gui>, the <gui>Author</gui>, or "
+"<gui>All</gui>."
+msgstr ""
+" <gui>제목</gui>, <gui>저자</gui>, <gui>모두</gui>만 검색 목적으로 선택하십시"
+"오."
+
+#. (itstool) path: note/p
+#: C/filter.page:56
+msgid ""
+"In order for <gui>Google</gui>, <gui>OneDrive</gui> or <gui>ownCloud</gui> "
+"to appear in the filter list, it is necessary to configure Google, ownCloud "
+"or Windows Live as an <link href=\"help:gnome-help/accounts-add\">online "
+"account</link>."
+msgstr ""
+"<gui>구글</gui>, <gui>원 드라이브</gui>, <gui>오운클라우드</gui>를 필터 목록"
+"에 나타나게 하려면, 구글, 오운클라우드, 윈도우 라이브 <link href=\"help:"
+"gnome-help/accounts-add\">온라인 계정</link>을 설정해야 합니다."
+
+#. (itstool) path: info/desc
+#: C/formats.page:24
+msgid "<app>Documents</app> displays a number of popular document types."
+msgstr "<app>문서</app>는 잘 알려진 수많은 형식의 문서를 표시합니다."
+
+#. (itstool) path: page/title
+#: C/formats.page:28
+msgid "Supported formats"
+msgstr "지원 형식"
+
+#. (itstool) path: page/p
+#: C/formats.page:31
+msgid ""
+"<app>Documents</app> displays PDF, DVI, XPS, PostScript and the formats "
+"supported by <app href=\"help:evince\">Document Viewer</app>, <app>Microsoft "
+"Office</app>, <app>LibreOffice</app> and <app>Google Docs</app>."
+msgstr ""
+"<app>문서</app>는 PDF, DVI, XPS, 포스트스크립트, 그리고 <app href=\"help:"
+"evince\">문서 보기</app>, <app>마이크로소프트 오피스</app>, <app>리브레오피스"
+"</app>, <app>구글 독스</app>에서 지원하는 형식의 문서를 표시합니다."
+
+#. (itstool) path: info/title
+#: C/index.page:7
+msgctxt "link"
+msgid "Documents"
+msgstr "문서"
+
+#. (itstool) path: info/title
+#: C/index.page:8
+msgctxt "text"
+msgid "Documents"
+msgstr "문서"
+
+#. (itstool) path: info/desc
+#: C/index.page:31
+msgid ""
+"Organize, view and edit the documents that are stored locally on your "
+"computer or online."
+msgstr "컴퓨터 또는 온라인에 저장한 문서를 모아보고 편집합니다."
+
+#. (itstool) path: page/title
+#: C/index.page:35
+msgid "<_:media-1/> Documents"
+msgstr "<_:media-1/> 문서"
+
+#. (itstool) path: page/p
+#: C/index.page:50
+msgid ""
+"<app>Documents</app> is a GNOME application that lets you display, organize "
+"and print the documents on your computer or those created remotely using "
+"<em>Google Docs</em>, <em>ownCloud</em> or <em>OneDrive</em>."
+msgstr ""
+"<app>문서</app>는 컴퓨터 또는 <em>구글 독스</em>, <em>오운클라우드</em>, <em>"
+"원 드라이브</em>를 통해 원격에서 만든 문서를 표시하고 정리하고 출력하는 그놈 "
+"프로그램 입니다."
+
+#. (itstool) path: section/title
+#: C/index.page:55
+msgid "View, sort and search"
+msgstr "보고, 정렬하고, 검색합니다"
+
+#. (itstool) path: section/title
+#: C/index.page:59
+msgid "Select, organize and print"
+msgstr "선택하고 정리하고 출력합니다"
+
+#. (itstool) path: section/title
+#: C/index.page:63
+msgid "Problems"
+msgstr "문제"
+
+#. (itstool) path: info/desc
+#: C/info.page:29
+msgid "See a document's name, location, date modified, or type."
+msgstr "문서 이름, 위치, 수정 날짜, 형식을 살펴봅니다."
+
+#. (itstool) path: page/title
+#: C/info.page:32
+msgid "Find information about documents"
+msgstr "문서 정보 찾기"
+
+#. (itstool) path: page/p
+#: C/info.page:42
+msgid ""
+"When a document is created, it contains <em>metadata</em>. <app>Documents</"
+"app> displays the following metadata for each document:"
+msgstr ""
+"문서를 만들면, <em>메타데이터</em>가 들어갑니다. <app>문서</app>에서는 각각"
+"의 문서에 있는 다음의 메타데이터 내용을 표시합니다:"
+
+#. (itstool) path: item/p
+#: C/info.page:47
+msgid "Title: the name of the document, which can be edited;"
+msgstr "제목: 편집 가능한 문서 이름입니다;"
+
+#. (itstool) path: item/p
+#: C/info.page:50
+msgid "Source: the path to the folder containing the document;"
+msgstr "원본: 문서가 있는 폴더 경로입니다;"
+
+#. (itstool) path: item/p
+#: C/info.page:53
+msgid "Date Modified;"
+msgstr "수정 날짜;"
+
+#. (itstool) path: item/p
+#: C/info.page:56
+msgid "Type: the <link xref=\"formats\">file format</link> of the document."
+msgstr "형식: 문서의 <link xref=\"formats\">파일 형식</link> 입니다."
+
+#. (itstool) path: page/p
+#: C/info.page:60
+msgid "To see a document's properties:"
+msgstr "문서 속성을 보려면:"
+
+#. (itstool) path: item/p
+#: C/info.page:63
+msgid "Click the check button to switch to selection mode."
+msgstr "선택 모드로 전환하려면 표시 단추를 누르십시오."
+
+#. (itstool) path: item/p
+#: C/info.page:66
+msgid "Select a document."
+msgstr "문서를 선택하십시오."
+
+#. (itstool) path: item/p
+#: C/info.page:69
+msgid ""
+"Click the <gui>Properties</gui> button at the right end of the button bar."
+msgstr "단추 표시줄의 오른쪽 끝에 있는 <gui>속성</gui> 단추를 누르십시오."
+
+#. (itstool) path: note/p
+#: C/info.page:75
+msgid ""
+"Some types of documents (e.g. PDF files) can be password protected, "
+"preventing access to their metadata or content."
+msgstr ""
+"문서의 일부 형식(예: PDF)은 메타데이터 또는 내용을 보호하려 암호로 보호했을 "
+"수도 있습니다."
+
+#. (itstool) path: note/p
+#: C/info.page:80
+msgid ""
+"<app>Documents</app> does not currently offer any mechanism to add privacy "
+"to a document. You may be able to do this from the application you used to "
+"create the document (e.g. <app>LibreOffice</app> or <app>Adobe Acrobat</"
+"app>)."
+msgstr ""
+"<app>문서</app>은 현재 문서에 개인 정보 보호 요소를 추가하는 기능을 제공하지 "
+"않습니다. 문서를 만들 때 사용하는 프로그램에서 이 기능을 사용할 수 있습니다"
+"(예: <app>리브레오피스</app> 또는 <app>어도비 애크로뱃</app>)."
+
+#. (itstool) path: info/desc
+#: C/print.page:23
+msgid "Print documents that are stored locally or online."
+msgstr "로컬 또는 온라인에 저장한 문서를 인쇄합니다."
+
+#. (itstool) path: page/title
+#: C/print.page:26
+msgid "Print a document"
+msgstr "문서 인쇄"
+
+#. (itstool) path: steps/title
+#: C/print.page:36
+msgid "To print a document:"
+msgstr "문서를 인쇄하려면:"
+
+#. (itstool) path: item/p
+#: C/print.page:41
+msgid "In selection mode, check the document to be printed."
+msgstr "선택 모드에서 출력할 문서를 표시하십시오."
+
+#. (itstool) path: item/p
+#: C/print.page:44
+msgid ""
+"Click the Print button in the button bar. The <gui>Print</gui> dialog opens."
+msgstr ""
+"단추 표시줄의 인쇄 단추를 누르십시오. <gui>인쇄</gui> 대화 상자를 엽니다."
+
+#. (itstool) path: note/p
+#: C/print.page:50
+msgid ""
+"Printing is not available when more than one document is selected, or when a "
+"collection is selected."
+msgstr "하나 이상의 문서 또는 모음을 선택했을 경우 인쇄할 수 없습니다."
+
+#. (itstool) path: info/desc
+#: C/prob-no-show.page:29
+msgid "Your local documents do not appear in <gui>Documents</gui>."
+msgstr "로컬 문서는 <gui>문서</gui>에 나타나지 않습니다."
+
+#. (itstool) path: page/title
+#: C/prob-no-show.page:32
+msgid "My documents are not shown"
+msgstr "내 문서가 나타나지 않음"
+
+#. (itstool) path: page/p
+#: C/prob-no-show.page:46
+msgid ""
+"<app>Documents</app> supports only certain types of documents such as PDFs "
+"and office suite documents such as spreadsheets and word processor "
+"documents. It will not show text documents and photos."
+msgstr ""
+"<app>문서</app>는 PDF, 스프레드시트 또는 워드 프로세서 문서와 같은 오피스 모"
+"음 문서 형식의 종류만 지원합니다. 텍스트 문서와 사진은 보여주지 않습니다."
+
+#. (itstool) path: page/p
+#: C/prob-no-show.page:50
+msgid ""
+"For your local documents to appear in <app>Documents</app>, they must be "
+"inside your <file>Documents</file> or <file>Downloads</file> folders, or "
+"inside folders that are in those directories. Documents that are in other "
+"places on your computer will not be shown."
+msgstr ""
+"<app>문서</app>에서 로컬 문서를 나타내려면, <file>문서</file> 또는 <file>다운"
+"로드</file> 폴더, 또는 이들 디렉터리 안에 있는 폴더에 있어야 합니다. 컴퓨터"
+"의 다른 위치에 있는 문서는 나타나지 않습니다."
+
+#. (itstool) path: page/p
+#: C/prob-no-show.page:55
+msgid ""
+"If your documents fail to display in <app>Documents</app>, <app>Tracker</"
+"app> may not be running or properly configured. Make sure <app>Tracker</app> "
+"is running in your session. The default configuration, set to index files in "
+"your home directory (non-recursively) and XDG folders (recursively), should "
+"be adequate."
+msgstr ""
+"<app>문서</app>에서 문서 표시에 실패했을 때, <app>트래커</app>가 동작하지 않"
+"거나 제대로 설정되지 않았을 수도 있습니다. <app>트래커</app> 세션이 실행 중인"
+"지 확인하십시오. 기본 설정에서 내 폴더(비재귀), XDG 폴더(재귀적)에 대한 파일 "
+"인덱싱 설정을 적절하게 해야합니다."
+
+#. (itstool) path: info/desc
+#: C/prob-previews.page:29
+msgid "You can only preview files stored locally, on Google Drive or ownCloud."
+msgstr ""
+"로컬에 구글 드라이브 또는 오운클라우드의 파일을 저장했을 때만 미리볼 수 있습"
+"니다."
+
+#. (itstool) path: page/title
+#: C/prob-previews.page:33
+msgid "Why do some files not have previews?"
+msgstr "왜 일부 파일은 미리보기가 안나오나요?"
+
+#. (itstool) path: page/p
+#: C/prob-previews.page:41
+msgid ""
+"When you open <app>Documents</app>, a preview thumbnail is displayed for "
+"documents that are stored locally, on <em>Google Drive</em> or <em>ownCloud</"
+"em>. Those stored in <em>OneDrive</em> show as missing (or blank) preview "
+"thumbnails."
+msgstr ""
+"<app>문서</app>를 열 때, 로컬, <em>구글 드라이브</em>, <em>오운클라우드</em>"
+"에 저장한 문서는 미리 보기 그림이 나타납니다. <em>원드라이브</em>에 저장한 문"
+"서는 미리 보기 그림이 빠진(또는 빈) 모양새로 나타납니다."
+
+#. (itstool) path: page/p
+#: C/prob-previews.page:46
+msgid ""
+"If you download a <em>OneDrive</em> document to local storage through the "
+"web interface, a thumbnail will be generated."
+msgstr ""
+"<em>원드라이브</em> 문서를 웹 인터페이스로 로컬 저장소에 다운로드하면, 섬네일"
+"을 만듭니다."
+
+#. (itstool) path: note/p
+#: C/prob-previews.page:50
+msgid ""
+"The local copy of a document downloaded from an online account will lose its "
+"ability to be updated online. If you want to continue to edit it online, it "
+"is better not to download it."
+msgstr ""
+"온라인 계정에서 다운로드한 로컬 문서 사본은 온라인으로 업데이트할 가능성이 사"
+"라질 수도 있습니다. 온라인으로 계속 편집하시려면 다운로드하지 않는 것이 좋습"
+"니다."
+
+#. (itstool) path: info/desc
+#: C/search.page:23
+msgid "Find your documents by title or author."
+msgstr "제목 또는 저자로 문서를 찾습니다."
+
+#. (itstool) path: page/title
+#: C/search.page:26
+msgid "Search for files"
+msgstr "파일 검색"
+
+#. (itstool) path: page/p
+#: C/search.page:38
+msgid "To start a search in <app>Documents</app>:"
+msgstr "<app>문서</app> 검색을 시작하려면:"
+
+#. (itstool) path: item/p
+#: C/search.page:42
+msgid ""
+"Press <keyseq><key>Ctrl</key><key>F</key></keyseq> to open the search bar at "
+"the top of the window."
+msgstr ""
+"<keyseq><key>Ctrl</key><key>F</key></keyseq>키 조합을 입력하여 창 상단의 검"
+"색 표시줄을 여십시오."
+
+#. (itstool) path: item/p
+#: C/search.page:46
+msgid ""
+"Start typing keywords, and searching begins instantly. You will see a list "
+"of documents whose title or author matches the keywords."
+msgstr ""
+"검색 단어 입력을 시작하시면 검색을 바로 시작합니다. 검색 단어에 일치하는 제"
+"목, 저자의 문서 목록이 나타납니다."
+
+#. (itstool) path: note/p
+#: C/search.page:52
+msgid ""
+"You can restrict or filter the search results by clicking the <_:media-1/> "
+"button and selecting various <link xref=\"filter\">filters</link>."
+msgstr ""
+"<_:media-1/> 단추를 눌러 검색 결과를 제한하거나 필터링 할 수 있으며 다양한 "
+"<link xref=\"filter\">필터</link>를 선택할 수 있습니다."
+
+#. (itstool) path: info/desc
+#: C/viewgrid.page:29
+msgid "Change the way documents are displayed."
+msgstr "문서를 표시하는 방법을 바꿉니다."
+
+#. (itstool) path: page/title
+#: C/viewgrid.page:32
+msgid "View files in a list or grid"
+msgstr "목록 또는 바둑판 배치 방식으로 파일 보기"
+
+#. (itstool) path: page/p
+#: C/viewgrid.page:41
+msgid ""
+"Documents and collections are presented in <gui>Grid</gui> format by "
+"default. To view in <gui>List</gui> format:"
+msgstr ""
+"문서와 모음은 기본적으로 <gui>바둑판</gui> 형식으로 나타납니다. <gui>목록</"
+"gui> 형식으로 보려면:"
+
+#. (itstool) path: item/p
+#: C/viewgrid.page:46
+msgid "Press the list button in the top-right corner of the window."
+msgstr "창의 우측 상단에 있는 목록 단추를 누르십시오."
+
+#. (itstool) path: note/p
+#: C/viewgrid.page:51
+msgid ""
+"List view has columns displaying the document type and date modified, and "
+"whether it's stored locally or remotely in one of your online accounts."
+msgstr ""
+"목록 보기에는 문서 형식과 수정 날짜, 로컬에 저장했는지 온라인 계정 중 한 곳"
+"에 저장했는지 여부를 표시하는 내용이 나타납니다."
+
+#. (itstool) path: page/p
+#: C/viewgrid.page:56
+msgid ""
+"Click the grid button in the top-right corner of the window to return to the "
+"grid view."
+msgstr "창의 우측 상단에 있는 바둑판 단추를 눌러 바둑판 보기로 돌아가십시오."
+
+#. (itstool) path: info/desc
+#: C/view.page:29
+msgid "Open documents that are stored locally or online."
+msgstr "로컬 또는 온라인에 저장한 문서를 엽니다."
+
+#. (itstool) path: page/title
+#: C/view.page:32
+msgid "View your documents"
+msgstr "문서 보기"
+
+#. (itstool) path: page/p
+#: C/view.page:42
+msgid ""
+"When you open <app>Documents</app>, documents which are stored locally in "
+"one of the standard folders such as <file>Documents</file> or "
+"<file>Downloads</file> and in one of your online accounts, are displayed as "
+"thumbnails."
+msgstr ""
+"<app>문서</app>를 열면 <file>문서</file> 또는 <file>다운로드</file>와 같은 표"
+"준 폴더 중 한 곳에 저장한 문서와 온라인 계정에 있는 문서가 미리 보기 그림으"
+"로 나타납니다."
+
+#. (itstool) path: note/p
+#: C/view.page:48
+msgid ""
+"To see documents from your online accounts, it is necessary to <link href="
+"\"help:gnome-help/accounts-add\">set up the accounts</link>."
+msgstr ""
+"온라인 계정의 문서를 보려면, <link href=\"help:gnome-help/accounts-add\">계"
+"정 설정</link>을 해야 합니다."
+
+#. (itstool) path: page/p
+#: C/view.page:52
+msgid "To view the contents of a document, press on the thumbnail."
+msgstr "문서 내용을 보려면, 미리 보기 그림을 누르십시오."
+
+#. (itstool) path: page/p
+#: C/view.page:54
+msgid ""
+"To exit the document, click the back arrow button in the top-left of the "
+"window."
+msgstr ""
+"문서 프로그램을 빠져나가려면, 창의 좌측 상단에 있는 뒤 방향 화살표 단추를 누"
+"르십시오."
+
+#. (itstool) path: info/desc
+#: C/view-add.page:18
+msgid ""
+"Add extra directories to those which are already searched by <app>Documents</"
+"app>."
+msgstr "<app>문서</app>에서 이미 검색한 곳의 추가 디렉터리를 추가합니다."
+
+#. (itstool) path: page/title
+#: C/view-add.page:23
+msgid "Add custom directories"
+msgstr "개별 정의 디렉터리 추가"
+
+#. (itstool) path: page/p
+#: C/view-add.page:25
+msgid ""
+"<app>Documents</app> normally shows only documents that are in standard "
+"folders such as <file>Documents</file> or <file>Downloads</file>. You can "
+"add extra folders that you want to use from the <app>Search</app> preference "
+"panel. You may want to do this if you keep some of your documents in a non-"
+"standard location such as another folder on your computer or on an external "
+"hard disk."
+msgstr ""
+"<app>문서</app>는 보통 <file>문서</file> 또는 <file>다운로드</file> 같은 표"
+"준 폴더의 문서만 보여줍니다. <app>검색</app> 기본 설정 패널에서 찾아보려는 추"
+"가 폴더를 추가할 수 있습니다. 컴퓨터의 다른 비표준 폴더 위치 또는 외부 하드 "
+"디스크 같은 곳에 문서를 저장했을 경우 이런 과정이 필요합니다."
+
+#. (itstool) path: item/p
+#: C/view-add.page:34
+msgid ""
+"Open the <gui href=\"help:gnome-help/shell-terminology\">Activities</gui> "
+"overview and start typing <gui>Search</gui>."
+msgstr ""
+"<gui href=\"help:gnome-help/shell-terminology\">현재 활동</gui> 개요를 열고 "
+"<gui>검색</gui> 입력을 시작하십시오."
+
+#. (itstool) path: item/p
+#: C/view-add.page:39
+msgid "Click on <gui>Search</gui> to open the panel."
+msgstr "<gui>검색</gui>을 눌러 패널을 여십시오."
+
+#. (itstool) path: item/p
+#: C/view-add.page:42
+msgid ""
+"Press the button in the bottom-left of the window which will open "
+"<gui>Search Locations</gui>."
+msgstr "<gui>검색 위치</gui>를 열 창의 좌측 하단에 있는 단추를 누르십시오."
+
+#. (itstool) path: item/p
+#: C/view-add.page:46
+msgid "Press <gui style=\"button\">+</gui> to add a new search location."
+msgstr ""
+"새 검색 위치를 추가하려면 <gui style=\"button\">+</gui> 단추를 누르십시오."
+
+#. (itstool) path: item/p
+#: C/view-add.page:49
+msgid ""
+"Select the folder that you want to add and press <gui style=\"button\">OK</"
+"gui> to add the folder."
+msgstr ""
+"추가하려는 폴더를 선택하고 <gui style=\"button\">확인</gui>을 눌러 폴더를 추"
+"가하십시오."
+
+#. (itstool) path: page/p
+#: C/view-add.page:61
+msgid ""
+"Adding a new folder to the search may let some of your other applications "
+"search that folder. Unfortunately, it is not possible to tell which "
+"applications will be affected without testing them."
+msgstr ""
+"새 폴더를 검색 대상에 추가하면 기타 일부 프로그램에서 해당 폴더를 검색합니"
+"다. 불행하게도 테스트를 거치지 않고는 어떤 프로그램이 영향을 주는지 알려줄 "
+"수 없습니다."
