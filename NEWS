@@ -1,3 +1,12 @@
+3.13.92 - "Johor Laksa"
+=======================
+
+- Fix use of gdata_documents_service_get_primary_authorization_domain
+- Fix drag and drop of items in the view
+- Update for new Adwaita/GTK style changes
+- Use schema_id instead of deprecated schema for GSettings (David King)
+- Translation updates
+
 3.13.91 - "Lemongrass"
 ======================
 
