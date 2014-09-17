@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gnome-documents master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-11-19 22:21+0000\n"
+"POT-Creation-Date: 2012-10-25 20:52+0000\n"
 "PO-Revision-Date: 2012-10-29 11:16+0530\n"
 "Last-Translator: Sayak Sarkar <sayak.bugsmith@gmail.com>\n"
 "Language-Team: Bengali (India) <anubad@lists.ankur.org.in>\n"
@@ -65,7 +65,7 @@ msgstr "পূর্ণবিস্তারিত উইন্ডো"
 msgid "Window maximized state"
 msgstr "পূর্ণবিস্তারিত উইন্ডো রূপ"
 
-#: ../src/documents.js:640 ../src/sources.js:99
+#: ../src/documents.js:640 ../src/sources.js:95
 msgid "Local"
 msgstr "স্থানীয়"
 
@@ -105,7 +105,7 @@ msgstr "Skydrive"
 msgid "Unable to load \"%s\" for preview"
 msgstr "\"%s\" এর জন্য প্রিভিউ লোড করতে ব্যর্থ"
 
-#: ../src/embed.js:73 ../src/view.js:70
+#: ../src/embed.js:73
 msgid "Loading..."
 msgstr "লোড হচ্ছে ..."
 
@@ -133,7 +133,8 @@ msgstr "দস্তাবেজ লোড করতে ব্যর্থ"
 #: ../src/lib/gd-pdf-loader.c:673
 msgid "Cannot find \"unoconv\", please check your LibreOffice installation"
 msgstr ""
-"\"unoconv\" খুঁজে পাওয়া যাচ্ছে না, অনুগ্রহ করে আপনার LibreOffice ইনস্টলেশন চেক করুন"
+"\"unoconv\" খুঁজে পাওয়া যাচ্ছে না, অনুগ্রহ করে আপনার LibreOffice ইনস্টলেশন "
+"চেক করুন"
 
 #: ../src/mainToolbar.js:73
 msgid "Search"
@@ -210,45 +211,34 @@ msgid "Fetching documents from online accounts"
 msgstr "অনলাইন অ্যাকাউন্ট থেকে দস্তাবেজ প্রাপ্ত করা হচ্ছে"
 
 #: ../src/properties.js:57 ../src/selections.js:793
-#: ../src/resources/preview-menu.ui.h:7
 msgid "Properties"
 msgstr "বৈশিষ্ট্যাবলী"
 
 #. Title item
-#. Translators: "Title" is the label next to the document title
-#. in the properties dialog
-#. Translators: "Title" refers to "Match Title" when searching
-#: ../src/properties.js:76 ../src/searchbar.js:228
+#: ../src/properties.js:74 ../src/searchbar.js:225
 msgid "Title"
 msgstr "শিরোনাম"
 
-#. Translators: "Author" is the label next to the document author
-#. in the properties dialog
-#. Translators: "Author" refers to "Match Author" when searching
-#: ../src/properties.js:85 ../src/searchbar.js:231
+#: ../src/properties.js:81 ../src/searchbar.js:227
 msgid "Author"
 msgstr "গ্রন্থকার"
 
 #. Source item
-#: ../src/properties.js:92
+#: ../src/properties.js:88
 msgid "Source"
 msgstr "উৎস"
 
 #. Date Modified item
-#: ../src/properties.js:98
+#: ../src/properties.js:94
 msgid "Date Modified"
 msgstr "সংশোধনের তারিখ"
 
-#: ../src/properties.js:105
+#: ../src/properties.js:101
 msgid "Date Created"
 msgstr "নির্মান তারিখ"
 
 #. Document type item
-#. Translators: "Type" is the label next to the document type
-#. (PDF, spreadsheet, ...) in the properties dialog
-#. Translators: "Type" refers to a search filter on the document type
-#. (PDF, spreadsheet, ...)
-#: ../src/properties.js:114 ../src/searchbar.js:137
+#: ../src/properties.js:108 ../src/searchbar.js:135
 msgid "Type"
 msgstr "প্রকার"
 
@@ -256,8 +246,8 @@ msgstr "প্রকার"
 msgid "Category"
 msgstr "শ্রেণী"
 
-#: ../src/searchbar.js:88 ../src/searchbar.js:140 ../src/searchbar.js:225
-#: ../src/sources.js:93
+#: ../src/searchbar.js:88 ../src/searchbar.js:138 ../src/searchbar.js:223
+#: ../src/sources.js:89
 msgid "All"
 msgstr "সকল"
 
@@ -269,29 +259,29 @@ msgstr "পছন্দ সমূহ"
 msgid "Shared with you"
 msgstr "আপনার সাথে শেয়ার করা"
 
-#: ../src/searchbar.js:142
+#: ../src/searchbar.js:140
 msgid "Collections"
 msgstr "সংগ্রহ সমূহ"
 
-#: ../src/searchbar.js:146
+#: ../src/searchbar.js:144
 msgid "PDF Documents"
 msgstr "PDF দস্তাবেজ"
 
-#: ../src/searchbar.js:150
+#: ../src/searchbar.js:148
 msgid "Presentations"
 msgstr "প্রেসেন্টেশান সমূহ"
 
-#: ../src/searchbar.js:153
+#: ../src/searchbar.js:151
 msgid "Spreadsheets"
 msgstr "স্প্রেডশীট সমূহ"
 
-#: ../src/searchbar.js:156
+#: ../src/searchbar.js:154
 msgid "Text Documents"
 msgstr "টেক্সট দস্তাবেজ"
 
 #. Translators: this is a verb that refers to "All", "Title" and "Author",
 #. as in "Match All", "Match Title" and "Match Author"
-#: ../src/searchbar.js:222
+#: ../src/searchbar.js:220
 msgid "Match"
 msgstr "মেলান"
 
@@ -322,52 +312,55 @@ msgstr "খুলুন"
 msgid "Untitled Document"
 msgstr "শিরোনামহীন দস্তাবেজ"
 
-#: ../src/sources.js:89
+#: ../src/sources.js:85
 msgid "Sources"
 msgstr "সূত্র সমূহ"
 
-#: ../src/view.js:61 ../src/view.js:91
-msgid "Load More"
-msgstr ""
+#: ../src/view.js:79
+#, c-format
+msgid "Load %d more document"
+msgid_plural "Load %d more documents"
+msgstr[0] "আরো %d দস্তাবেজ লোড করুন"
+msgstr[1] "আরো % d দস্তাবেজ লোড করুন"
 
-#: ../src/view.js:295
+#: ../src/view.js:283
 msgid "Yesterday"
 msgstr "গতকাল"
 
-#: ../src/view.js:297
+#: ../src/view.js:285
 #, c-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
 msgstr[0] "%d দিন আগে"
 msgstr[1] "%d দিন আগে"
 
-#: ../src/view.js:301
+#: ../src/view.js:289
 msgid "Last week"
 msgstr "গত সপ্তাহে"
 
-#: ../src/view.js:303
+#: ../src/view.js:291
 #, c-format
 msgid "%d week ago"
 msgid_plural "%d weeks ago"
 msgstr[0] "%d সপ্তাহ আগে"
 msgstr[1] "%d সপ্তাহ আগে"
 
-#: ../src/view.js:307
+#: ../src/view.js:295
 msgid "Last month"
 msgstr "গত মাসে"
 
-#: ../src/view.js:309
+#: ../src/view.js:297
 #, c-format
 msgid "%d month ago"
 msgid_plural "%d months ago"
 msgstr[0] "%d মাস আগে"
 msgstr[1] "%d মাস আগে"
 
-#: ../src/view.js:313
+#: ../src/view.js:301
 msgid "Last year"
 msgstr "গত বছর"
 
-#: ../src/view.js:315
+#: ../src/view.js:303
 #, c-format
 msgid "%d year ago"
 msgid_plural "%d years ago"
@@ -399,10 +392,8 @@ msgid "Quit"
 msgstr "বরখাস্তকরণ"
 
 #: ../src/resources/preview-menu.ui.h:2
-#, fuzzy
-#| msgid "Print"
-msgid "Print…"
-msgstr "মুদ্রিত করুন"
+msgid "Print..."
+msgstr "মুদ্রিত করুন..."
 
 #: ../src/resources/preview-menu.ui.h:3
 msgid "Zoom In"
@@ -428,10 +419,3 @@ msgstr "সকল নির্বাচন করুন"
 msgid "Select None"
 msgstr "কিছুই নির্বাচিত করবেন না"
 
-#~ msgid "Load %d more document"
-#~ msgid_plural "Load %d more documents"
-#~ msgstr[0] "আরো %d দস্তাবেজ লোড করুন"
-#~ msgstr[1] "আরো % d দস্তাবেজ লোড করুন"
-
-#~ msgid "Print..."
-#~ msgstr "মুদ্রিত করুন..."
