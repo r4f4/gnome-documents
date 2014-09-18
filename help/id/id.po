@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-documents master\n"
-"POT-Creation-Date: 2014-03-26 20:01+0000\n"
-"PO-Revision-Date: 2014-03-27 14:39+0700\n"
+"POT-Creation-Date: 2014-09-17 06:48+0000\n"
+"PO-Revision-Date: 2014-09-18 08:10+0700\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian <gnome@i15n.org>\n"
 "Language: id\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 1.5.7\n"
+"X-Generator: Poedit 1.6.9\n"
 
 #. (itstool) path: p/link
 #: C/legal.xml:3
@@ -59,7 +59,7 @@ msgstr "Michael Hill"
 #. (itstool) path: credit/name
 #: C/collections.page:22 C/filter.page:17 C/formats.page:17 C/index.page:24
 #: C/info.page:22 C/prob-no-show.page:22 C/prob-previews.page:22
-#: C/viewgrid.page:22 C/view.page:22
+#: C/viewgrid.page:22 C/view.page:22 C/view-add.page:12
 msgid "Ekaterina Gerasimova"
 msgstr "Ekaterina Gerasimova"
 
@@ -149,16 +149,6 @@ msgstr ""
 "Tekan <gui style=\"button\">Hapus</gui>. Koleksi akan dihapus, meninggalkan "
 "dokumen-dokumen asli apa adanya."
 
-#. (itstool) path: media
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/filter.page:30 C/search.page:53
-msgctxt "_"
-msgid "external ref='media/go-down.png' md5='e8c16f5ab9ed933f4a537b740506f4d4'"
-msgstr "-"
-
 #. (itstool) path: info/desc
 #: C/filter.page:24
 msgid "Choose which documents to display."
@@ -169,24 +159,28 @@ msgstr "Pilih dokumen mana yang akan ditampilkan."
 msgid "Filter documents"
 msgstr "Saring dokumen"
 
+#. (itstool) path: media/span
+#: C/filter.page:31 C/search.page:54
+msgid "down"
+msgstr "turun"
+
 #. (itstool) path: page/p
 #: C/filter.page:29
 msgid ""
-"<link xref=\"search\">Open the search</link> and click the <media type="
-"\"image\" src=\"media/go-down.png\">down</media> button next to the search "
-"bar to limit the scope of the search in these categories:"
+"<link xref=\"search\">Open the search</link> and click the <_:media-1/> "
+"button next to the search bar to limit the scope of the search in these "
+"categories:"
 msgstr ""
-"<link xref=\"search\">Buka pencarian</link> dan klik tombol <media type="
-"\"image\" src=\"media/go-down.png\">turun</media> di sebelah bilah pencarian "
-"untuk membatasi skup pencarian dalam kategori ini:"
+"<link xref=\"search\">Buka pencarian</link> dan klik tombol <_:media-1/> di "
+"sebelah bilah pencarian untuk membatasi skup pencarian dalam kategori ini:"
 
 #. (itstool) path: item/title
-#: C/filter.page:35
+#: C/filter.page:36
 msgid "Sources"
 msgstr "Sumber"
 
 #. (itstool) path: item/p
-#: C/filter.page:36
+#: C/filter.page:37
 msgid ""
 "Chose to search documents that are <gui>Local</gui>, accessed through <link "
 "href=\"help:gnome-help/online-accounts\">online accounts</link> with "
@@ -199,12 +193,12 @@ msgstr ""
 "<gui>Semua</gui>."
 
 #. (itstool) path: item/title
-#: C/filter.page:42
+#: C/filter.page:43
 msgid "Type"
 msgstr "Tipe"
 
 #. (itstool) path: item/p
-#: C/filter.page:43
+#: C/filter.page:44
 msgid ""
 "Search only documents that are <gui>Collections</gui>, <gui>PDF Documents</"
 "gui>, <gui>Presentations</gui>, <gui>Spreadsheets</gui>, <gui>Text "
@@ -215,12 +209,12 @@ msgstr ""
 "atau <gui>Semua</gui>."
 
 #. (itstool) path: item/title
-#: C/filter.page:48
+#: C/filter.page:49
 msgid "Match"
 msgstr "Cocok"
 
 #. (itstool) path: item/p
-#: C/filter.page:49
+#: C/filter.page:50
 msgid ""
 "Choose to search only the <gui>Title</gui>, the <gui>Author</gui>, or "
 "<gui>All</gui>."
@@ -229,7 +223,7 @@ msgstr ""
 "<gui>Semua</gui>."
 
 #. (itstool) path: note/p
-#: C/filter.page:55
+#: C/filter.page:56
 msgid ""
 "In order for <gui>Google</gui>, <gui>OneDrive</gui> or <gui>ownCloud</gui> "
 "to appear in the filter list, it is necessary to configure Google, ownCloud "
@@ -563,13 +557,11 @@ msgstr ""
 #. (itstool) path: note/p
 #: C/search.page:52
 msgid ""
-"You can restrict or filter the search results by clicking the <media type="
-"\"image\" src=\"media/go-down.png\">down</media> button and selecting "
-"various <link xref=\"filter\">filters</link>."
+"You can restrict or filter the search results by clicking the <_:media-1/> "
+"button and selecting various <link xref=\"filter\">filters</link>."
 msgstr ""
 "Anda dapat membatasi atau menyaring hasil pencarian dengan mengklik tombol "
-"<media type=\"image\" src=\"media/go-down.png\">turun</media> dan memilih "
-"berbagai <link xref=\"filter\">penyaring</link>."
+"<_:media-1/> dan memilih berbagai <link xref=\"filter\">penyaring</link>."
 
 #. (itstool) path: info/desc
 #: C/viewgrid.page:29
@@ -626,14 +618,17 @@ msgstr "Tilik dokumen Anda"
 #. (itstool) path: page/p
 #: C/view.page:42
 msgid ""
-"When you open <app>Documents</app>, all of your documents, those stored "
-"locally as well as online, are displayed as thumbnails."
+"When you open <app>Documents</app>, documents which are stored locally in "
+"one of the standard folders such as <file>Documents</file> or "
+"<file>Downloads</file> and in one of your online accounts, are displayed as "
+"thumbnails."
 msgstr ""
-"Ketika Anda membuka <app>Dokumen</app>, semua dokumen Anda, yang tersimpan "
-"secara lokal maupun daring, ditampilkan sebagai gambar mini."
+"Ketika Anda membuka <app>Dokumen</app>, dokumen-dokumen yang tersimpan "
+"secara lokal di satu dari folder standar seperti <file>Documents</file> atau "
+"<file>Downloads</file> maupun daring, ditampilkan sebagai gambar-gambar mini."
 
 #. (itstool) path: note/p
-#: C/view.page:46
+#: C/view.page:48
 msgid ""
 "To see documents from your online accounts, it is necessary to <link href="
 "\"help:gnome-help/accounts-add\">set up the accounts</link>."
@@ -642,15 +637,100 @@ msgstr ""
 "help/accounts-add\">menyiapkan akun</link>."
 
 #. (itstool) path: page/p
-#: C/view.page:50
+#: C/view.page:52
 msgid "To view the contents of a document, press on the thumbnail."
 msgstr "Untuk menilik isi dari dokumen, tekan pada gambar mini."
 
 #. (itstool) path: page/p
-#: C/view.page:52
+#: C/view.page:54
 msgid ""
 "To exit the document, click the back arrow button in the top-left of the "
 "window."
 msgstr ""
 "Untuk keluar dari dokumen, klik tombol panah mundur di pojok kiri atas "
 "jendela."
+
+#. (itstool) path: info/desc
+#: C/view-add.page:18
+msgid ""
+"Add extra directories to those which are already searched by <app>Documents</"
+"app>."
+msgstr ""
+"Menambah direktori ekstra ke yang sudah dicari oleh <app>Dokumen</app>."
+
+#. (itstool) path: page/title
+#: C/view-add.page:23
+msgid "Add custom directories"
+msgstr "Tambah direktori ubahan"
+
+#. (itstool) path: page/p
+#: C/view-add.page:25
+msgid ""
+"<app>Documents</app> normally shows only documents that are in standard "
+"folders such as <file>Documents</file> or <file>Downloads</file>. You can "
+"add extra folders that you want to use from the <app>Search</app> preference "
+"panel. You may want to do this if you keep some of your documents in a non-"
+"standard location such as another folder on your computer or on an external "
+"hard disk."
+msgstr ""
+"<app>Dokumen</app> biasanya hanya menampilkan dokumen yang berada di folder "
+"standar seperti <file>Documents</file> atau <file>Downloads</file>. Anda "
+"dapat menambah folder-folder ekstra yang ingin Anda pakai dari panel "
+"preferensi <app>Cari</app>. Anda mungkin ingin melakukan ini bila Anda "
+"menyimpan beberapa dokumen Anda dalam lokasi tak standar seperti folder lain "
+"pada komputer Anda atau pada hard disk eksternal."
+
+#. (itstool) path: item/p
+#: C/view-add.page:34
+msgid ""
+"Open the <gui href=\"help:gnome-help/shell-terminology\">Activities</gui> "
+"overview and start typing <gui>Search</gui>."
+msgstr ""
+"Buka ringkasan <gui href=\"help:gnome-help/shell-terminology\">Aktivitas</"
+"gui> Mulailah mengetikkan <gui>Cari</gui>."
+
+#. (itstool) path: item/p
+#: C/view-add.page:39
+msgid "Click on <gui>Search</gui> to open the panel."
+msgstr "Klik pada <gui>Cari</gui> untuk membuka panel."
+
+#. (itstool) path: item/p
+#: C/view-add.page:42
+msgid ""
+"Press the button in the bottom-left of the window which will open "
+"<gui>Search Locations</gui>."
+msgstr ""
+"Tekan tombol di kiri bawah jendela yang akan membuka <gui>Lokasi Pencarian</"
+"gui>."
+
+#. (itstool) path: item/p
+#: C/view-add.page:46
+msgid "Press <gui style=\"button\">+</gui> to add a new search location."
+msgstr ""
+"Tekan <gui style=\"button\">+</gui> untuk menambah sebuah lokasi pencarian "
+"baru."
+
+#. (itstool) path: item/p
+#: C/view-add.page:49
+msgid ""
+"Select the folder that you want to add and press <gui style=\"button\">OK</"
+"gui> to add the folder."
+msgstr ""
+"Pilih folder yang ingin Anda tambahkan dan tekan <gui style=\"button\">OK</"
+"gui> untuk menambah folder."
+
+#. (itstool) path: page/p
+#: C/view-add.page:61
+msgid ""
+"Adding a new folder to the search may let some of your other applications "
+"search that folder. Unfortunately, it is not possible to tell which "
+"applications will be affected without testing them."
+msgstr ""
+"Menambahkan folder baru ke pencarian dapat menyebabkan beberapa aplikasi "
+"lain Anda mencari ke folder tersebut. Sayang sekali, tak mungkin mengatakan "
+"aplikasi mana yang akan dipengaruhi tanpa menguji mereka."
+
+#~ msgctxt "_"
+#~ msgid ""
+#~ "external ref='media/go-down.png' md5='e8c16f5ab9ed933f4a537b740506f4d4'"
+#~ msgstr "-"
