@@ -9,25 +9,26 @@
 # Lukács Bence <lukacs.bence1 at gmail dot com>, 2011.
 # Nagy Zoltán <dzodzie at gmail dot com>, 2011.
 # Gabor Kelemen <kelemeng at gnome dot hu>, 2011, 2012, 2013, 2014.
+# Balázs Úr <urbalazs at gmail dot com>, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-help master\n"
-"POT-Creation-Date: 2014-03-23 19:57+0000\n"
-"PO-Revision-Date: 2014-03-23 21:23+0100\n"
-"Last-Translator: Gabor Kelemen <kelemeng at gnome dot hu>\n"
+"POT-Creation-Date: 2014-09-21 06:42+0000\n"
+"PO-Revision-Date: 2014-09-21 11:34+0200\n"
+"Last-Translator: Balázs Úr <urbalazs@gmail.com>\n"
 "Language-Team: Hungarian <openscope at googlegroups dot com>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.4\n"
+"X-Generator: Lokalize 1.2\n"
 "Plural-Forms:  nplurals=2; plural=(n != 1);\n"
 "X-Launchpad-Export-Date: 2012-03-28 11:04+0000\n"
 
 #. (itstool) path: p/link
 #: C/legal.xml:3
 msgid "Creative Commons Attribution-ShareAlike 3.0 Unported License"
-msgstr "Creative Commons Attribution-ShareAlike 3.0 Unported License"
+msgstr "Creative Commons Nevezd meg!-Így add tovább! 3.0 átíratlan licenc"
 
 #. (itstool) path: license/p
 #: C/legal.xml:3
@@ -73,7 +74,7 @@ msgstr "Michael Hill"
 #. (itstool) path: credit/name
 #: C/collections.page:22 C/filter.page:17 C/formats.page:17 C/index.page:24
 #: C/info.page:22 C/prob-no-show.page:22 C/prob-previews.page:22
-#: C/viewgrid.page:22 C/view.page:22
+#: C/viewgrid.page:22 C/view.page:22 C/view-add.page:12
 msgid "Ekaterina Gerasimova"
 msgstr "Ekaterina Gerasimova"
 
@@ -161,21 +162,6 @@ msgstr ""
 "Kattintson a <gui style=\"button\">Törlés</gui> gombra. A gyűjtemény "
 "törlésre kerül, az eredeti dokumentumok azonban változatlanul megmaradnak."
 
-# This is a reference to an external file such as an image or video. When
-# the file changes, the md5 hash will change to let you know you need to
-# update your localized copy. The msgstr is not used at all. Set it to
-# whatever you like once you have updated your copy of the file.
-#. (itstool) path: media
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/filter.page:30 C/search.page:53
-msgctxt "_"
-msgid "external ref='media/go-down.png' md5='e8c16f5ab9ed933f4a537b740506f4d4'"
-msgstr ""
-"external ref='media/go-down.png' md5='e8c16f5ab9ed933f4a537b740506f4d4'"
-
 #. (itstool) path: info/desc
 #: C/filter.page:24
 msgid "Choose which documents to display."
@@ -186,25 +172,34 @@ msgstr "Válassza ki a megjelenítendő dokumentumokat."
 msgid "Filter documents"
 msgstr "Dokumentumok szűrése"
 
+#. (itstool) path: media/span
+#: C/filter.page:31 C/search.page:54
+msgid "down"
+msgstr "le"
+
 #. (itstool) path: page/p
 #: C/filter.page:29
+#| msgid ""
+#| "<link xref=\"search\">Open the search</link> and click the <media type="
+#| "\"image\" src=\"media/go-down.png\">down</media> button next to the "
+#| "search bar to limit the scope of the search in these categories:"
 msgid ""
-"<link xref=\"search\">Open the search</link> and click the <media type="
-"\"image\" src=\"media/go-down.png\">down</media> button next to the search "
-"bar to limit the scope of the search in these categories:"
+"<link xref=\"search\">Open the search</link> and click the <_:media-1/> "
+"button next to the search bar to limit the scope of the search in these "
+"categories:"
 msgstr ""
-"<link xref=\"documents-search\">Nyissa meg a keresést</link> és kattintson a "
-"<media type=\"image\" src=\"figures/go-down.png\">lefelé</media> gombra a "
-"keresősáv mellett a keresés hatókörének szűkítéséhez a következő "
+"<link xref=\"search\">Nyissa meg a keresést</link> és kattintson a <"
+"_:media-1/> gombra a keresősáv mellett a keresés hatókörének szűkítéséhez a "
+"következő "
 "kategóriákra:"
 
 #. (itstool) path: item/title
-#: C/filter.page:35
+#: C/filter.page:36
 msgid "Sources"
 msgstr "Források"
 
 #. (itstool) path: item/p
-#: C/filter.page:36
+#: C/filter.page:37
 msgid ""
 "Chose to search documents that are <gui>Local</gui>, accessed through <link "
 "href=\"help:gnome-help/online-accounts\">online accounts</link> with "
@@ -217,12 +212,12 @@ msgstr ""
 "gui> közt szeretne keresni."
 
 #. (itstool) path: item/title
-#: C/filter.page:42
+#: C/filter.page:43
 msgid "Type"
 msgstr "Típus"
 
 #. (itstool) path: item/p
-#: C/filter.page:43
+#: C/filter.page:44
 msgid ""
 "Search only documents that are <gui>Collections</gui>, <gui>PDF Documents</"
 "gui>, <gui>Presentations</gui>, <gui>Spreadsheets</gui>, <gui>Text "
@@ -233,12 +228,12 @@ msgstr ""
 "<gui>Összes</gui> dokumentum keresése."
 
 #. (itstool) path: item/title
-#: C/filter.page:48
+#: C/filter.page:49
 msgid "Match"
 msgstr "Keresés"
 
 #. (itstool) path: item/p
-#: C/filter.page:49
+#: C/filter.page:50
 msgid ""
 "Choose to search only the <gui>Title</gui>, the <gui>Author</gui>, or "
 "<gui>All</gui>."
@@ -247,7 +242,7 @@ msgstr ""
 "<gui>Összes</gui> szerint keres."
 
 #. (itstool) path: note/p
-#: C/filter.page:55
+#: C/filter.page:56
 msgid ""
 "In order for <gui>Google</gui>, <gui>OneDrive</gui> or <gui>ownCloud</gui> "
 "to appear in the filter list, it is necessary to configure Google, ownCloud "
@@ -350,9 +345,6 @@ msgstr "Információk keresése dokumentumokról"
 
 #. (itstool) path: page/p
 #: C/info.page:42
-#| msgid ""
-#| "When a document is created, it contains with <em>metadata</em>. "
-#| "<app>Documents</app> displays the following metadata for each document:"
 msgid ""
 "When a document is created, it contains <em>metadata</em>. <app>Documents</"
 "app> displays the following metadata for each document:"
@@ -592,14 +584,16 @@ msgstr ""
 
 #. (itstool) path: note/p
 #: C/search.page:52
+#| msgid ""
+#| "You can restrict or filter the search results by clicking the <media type="
+#| "\"image\" src=\"media/go-down.png\">down</media> button and selecting "
+#| "various <link xref=\"filter\">filters</link>."
 msgid ""
-"You can restrict or filter the search results by clicking the <media type="
-"\"image\" src=\"media/go-down.png\">down</media> button and selecting "
-"various <link xref=\"filter\">filters</link>."
+"You can restrict or filter the search results by clicking the <_:media-1/> "
+"button and selecting various <link xref=\"filter\">filters</link>."
 msgstr ""
-"A találatokat a <media type=\"image\" src=\"media/go-down.png\">lefelé</"
-"media> gombra kattintva, majd a <link xref=\"filter\">szűrők</link> egyikét "
-"kiválasztva korlátozhatja vagy szűrheti."
+"A találatokat a <_:media-1/> gombra kattintva, majd a különféle <link "
+"xref=\"filter\">szűrők</link> egyikét kiválasztva korlátozhatja vagy szűrheti."
 
 #. (itstool) path: info/desc
 #: C/viewgrid.page:29
@@ -655,15 +649,22 @@ msgstr "Dokumentumok megjelenítése"
 
 #. (itstool) path: page/p
 #: C/view.page:42
+#| msgid ""
+#| "When you open <app>Documents</app>, all of your documents, those stored "
+#| "locally as well as online, are displayed as thumbnails."
 msgid ""
-"When you open <app>Documents</app>, all of your documents, those stored "
-"locally as well as online, are displayed as thumbnails."
+"When you open <app>Documents</app>, documents which are stored locally in "
+"one of the standard folders such as <file>Documents</file> or "
+"<file>Downloads</file> and in one of your online accounts, are displayed as "
+"thumbnails."
 msgstr ""
-"A <app>Dokumentumok</app> megnyitásakor az összes, helyileg vagy online "
-"tárolt dokumentum megjelenik bélyegképként."
+"A <app>Dokumentumok</app> megnyitásakor azok a dokumentumok lesznek "
+"bélyegképként megjelenítve, amelyeket helyileg tárolnak a szabványos mappák "
+"egyikében, mint például a <file>Dokumentumok</file> vagy a <file>Letöltések<"
+"/file> mappában, valamint az online fiókok valamelyikében."
 
 #. (itstool) path: note/p
-#: C/view.page:46
+#: C/view.page:48
 msgid ""
 "To see documents from your online accounts, it is necessary to <link href="
 "\"help:gnome-help/accounts-add\">set up the accounts</link>."
@@ -672,12 +673,12 @@ msgstr ""
 "href=\"help:gnome-help/accounts-add\">a fiókok beállítására</link>."
 
 #. (itstool) path: page/p
-#: C/view.page:50
+#: C/view.page:52
 msgid "To view the contents of a document, press on the thumbnail."
 msgstr "Dokumentum tartalmának megjelenítéséhez kattintson a bélyegképre."
 
 #. (itstool) path: page/p
-#: C/view.page:52
+#: C/view.page:54
 msgid ""
 "To exit the document, click the back arrow button in the top-left of the "
 "window."
@@ -685,11 +686,101 @@ msgstr ""
 "A dokumentum elhagyásához nyomja meg a visszafelé nyíl gombot az ablak bal "
 "felső sarkában."
 
+#. (itstool) path: info/desc
+#: C/view-add.page:18
+msgid ""
+"Add extra directories to those which are already searched by <app>Documents</"
+"app>."
+msgstr ""
+"További könyvtárak hozzáadása azokhoz, amelyeket már keresett a <app>"
+"Dokumentumok</app> alkalmazás."
+
+#. (itstool) path: page/title
+#: C/view-add.page:23
+msgid "Add custom directories"
+msgstr "Egyéni könyvtárak hozzáadása"
+
+#. (itstool) path: page/p
+#: C/view-add.page:25
+msgid ""
+"<app>Documents</app> normally shows only documents that are in standard "
+"folders such as <file>Documents</file> or <file>Downloads</file>. You can "
+"add extra folders that you want to use from the <app>Search</app> preference "
+"panel. You may want to do this if you keep some of your documents in a non-"
+"standard location such as another folder on your computer or on an external "
+"hard disk."
+msgstr ""
+"A <app>Dokumentumok</app> általában csak azokat a dokumentumokat jeleníti "
+"meg, amelyek a szabványos mappákban találhatók, úgymint a <file>Dokumentumok<"
+"/file> vagy a <file>Letöltések</file>. További mappákat adhat hozzá, "
+"amelyeket a <app>Keresés</app> beállítások panelről használni szeretne. Erre "
+"akkor lehet szüksége, ha a dokumentumai egy részét nem a szabványos helyeken "
+"tartja, hanem a számítógépen lévő egyéb mappában vagy egy külső merevlemezen."
+
+#. (itstool) path: item/p
+#: C/view-add.page:34
+msgid ""
+"Open the <gui href=\"help:gnome-help/shell-terminology\">Activities</gui> "
+"overview and start typing <gui>Search</gui>."
+msgstr ""
+"Nyissa meg a <gui href=\"help:gnome-help/shell-terminology\">Tevékenységek<"
+"/gui> áttekintőt, és kezdje el gépelni a <gui>Keresést</gui>."
+
+#. (itstool) path: item/p
+#: C/view-add.page:39
+#| msgid "Click the <gui>+</gui> button in the button bar."
+msgid "Click on <gui>Search</gui> to open the panel."
+msgstr "Kattintson a <gui>Keresés</gui> menüpontra a panel megnyitásához."
+
+#. (itstool) path: item/p
+#: C/view-add.page:42
+msgid ""
+"Press the button in the bottom-left of the window which will open "
+"<gui>Search Locations</gui>."
+msgstr ""
+"Nyomja meg az ablak bal alsó részén található gombot, amely meg fogja nyitni "
+"a <gui>Keresési helyeket</gui>."
+
+#. (itstool) path: item/p
+#: C/view-add.page:46
+msgid "Press <gui style=\"button\">+</gui> to add a new search location."
+msgstr ""
+"Nyomja meg a <gui style=\"button\">+</gui> gombot egy új keresési hely "
+"hozzáadásához."
+
+#. (itstool) path: item/p
+#: C/view-add.page:49
+msgid ""
+"Select the folder that you want to add and press <gui style=\"button\">OK</"
+"gui> to add the folder."
+msgstr ""
+"Válassza ki azt a mappát, amelyet hozzá szeretne adni, majd nyomja meg az <"
+"gui style=\"button\">OK</gui> gombot a mappa hozzáadásához."
+
+#. (itstool) path: page/p
+#: C/view-add.page:61
+msgid ""
+"Adding a new folder to the search may let some of your other applications "
+"search that folder. Unfortunately, it is not possible to tell which "
+"applications will be affected without testing them."
+msgstr ""
+"A kereséshez való új mappa hozzáadásával lehetővé teheti néhány más "
+"alkalmazás számára azoknak a mappáknak a keresését. Sajnos nem lehetséges "
+"annak meghatározása, hogy mely alkalmazások lesznek érintve anélkül, hogy "
+"letesztelné azokat."
+
+# This is a reference to an external file such as an image or video. When
+# the file changes, the md5 hash will change to let you know you need to
+# update your localized copy. The msgstr is not used at all. Set it to
+# whatever you like once you have updated your copy of the file.
+#~ msgctxt "_"
+#~ msgid ""
+#~ "external ref='media/go-down.png' md5='e8c16f5ab9ed933f4a537b740506f4d4'"
+#~ msgstr ""
+#~ "external ref='media/go-down.png' md5='e8c16f5ab9ed933f4a537b740506f4d4'"
+
 #~ msgid "In selection mode, check the documents to be collected."
 #~ msgstr "Kijelölési módban jelölje be az összegyűjtendő dokumentumokat."
-
-#~ msgid "Click the <gui>+</gui> button in the button bar."
-#~ msgstr "Kattintson a <gui>+</gui> gombra a gombsávban."
 
 #~ msgid ""
 #~ "Collections do not behave like folders and their hierarchy: <em>you "
