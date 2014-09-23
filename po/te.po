@@ -4,27 +4,27 @@
 # This file is distributed under the same license as the gnome-documents package.
 # Sasi Bhushan Boddepalli <sasi@swecha.net>, 2012.
 # Praveen Illa <mail2ipn@gmail.com>, 2011, 2012, 2014.
-# Krishnababu Krothapalli <kkrothap@redhat.com>, 2013.
+# Krishnababu Krothapalli <kkrothap@redhat.com>, 2013, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-documents master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-03-21 07:50+0000\n"
-"PO-Revision-Date: 2014-03-22 00:16+0530\n"
-"Last-Translator: Praveen Illa <mail2ipn@gmail.com>\n"
-"Language-Team: indlinux-telugu@lists.sourceforge.net\n"
+"POT-Creation-Date: 2014-09-23 06:49+0000\n"
+"PO-Revision-Date: 2014-09-23 17:18+0530\n"
+"Last-Translator: Krishnababu Krothapalli <kkrothap@redhat.com>\n"
+"Language-Team: American English <kde-i18n-doc@kde.org>\n"
 "Language: te\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Lokalize 1.5\n"
 "X-Project-Style: gnome\n"
 
 #: ../data/org.gnome.Documents.appdata.xml.in.h:1
-#: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:103
-#: ../src/mainWindow.js:52 ../src/mainWindow.js:274
+#: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:121
+#: ../src/mainWindow.js:52 ../src/mainWindow.js:302
 msgid "Documents"
 msgstr "పత్రాలు"
 
@@ -39,8 +39,10 @@ msgid ""
 "to deal with documents. Seamless cloud integration is offered through GNOME "
 "Online Accounts."
 msgstr ""
-"గ్నోమ్ పై ఉన్న మీ పత్రాలను ప్రాప్యించుటకు, నిర్వహించుటకు మరియు పంచుకొనుటకు రూపొందించిన ఒక సరళ "
-"అనువర్తనం. దస్త్ర నిర్వాహకం ఉపయోగించకుండానే తేలికగా, అందమైన ఈ అనువర్తనంతో నిర్వహించుకోవచ్చు. గ్నోమ్ "
+"గ్నోమ్ పై ఉన్న మీ పత్రాలను ప్రాప్యించుటకు, నిర్వహించుటకు మరియు పంచుకొనుటకు "
+"రూపొందించిన ఒక సరళ "
+"అనువర్తనం. దస్త్ర నిర్వాహకం ఉపయోగించకుండానే తేలికగా, అందమైన ఈ అనువర్తనంతో "
+"నిర్వహించుకోవచ్చు. గ్నోమ్ "
 "జాల ఖాతాలతో క్లౌడ్ ఏకీకరణ కూడా సాధ్యం."
 
 #: ../data/org.gnome.Documents.appdata.xml.in.h:4
@@ -48,17 +50,38 @@ msgid "It lets you:"
 msgstr "ఇది మిమ్మల్ని:"
 
 #: ../data/org.gnome.Documents.appdata.xml.in.h:5
-msgid ""
-"<li>View recent local and online documents</li> <li>Access your Google, "
-"ownCloud or OneDrive content</li> <li>Search through documents</li> <li>See "
-"new documents shared by friends</li> <li>View documents fullscreen</li> "
-"<li>Print documents</li> <li>Select favorites</li> <li>Allow opening full "
-"featured editor for non-trivial changes</li>"
-msgstr ""
-"<li>స్థానిక మరియు జాల పత్రాలను చూడండి</li> <li>మీ గూగులు, ఓన్‌క్లౌడ్ లేదా ఒన్‌డ్రైవ్ అంశాలను "
-"ప్రాప్యించండి</li> <li>పత్రాలను శోధించండి</li> <li>మీ స్నేహితులచే పంచబడిన కొత్త పత్రాలను చూడండి</"
-"li> <li>పత్రాలను పూర్తితెరపై చూడండి</li> <li>పత్రాలను ముద్రించుకోండి</li> <li>ఇష్టమైన వాటిని "
-"ఎంచుకోండి</li> <li>అల్పంకాని మార్పుల కోసం పూర్తిస్థాయి కూర్పకముతో తెరుచుటకు అనుమతిస్తుంది</li>"
+msgid "View recent local and online documents"
+msgstr "ఇటీవలి స్థానిక మరియు ఆన్‌లైన్ పత్రములు దర్శించు"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:6
+msgid "Access your Google, ownCloud or OneDrive content"
+msgstr "మీ గూగుల్, ownCloud లేదా OneDrive కాంటెంట్ ఏక్సెస్ చేయుము"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:7
+msgid "Search through documents"
+msgstr "పత్రముల ద్వారా వెతుకు"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:8
+msgid "See new documents shared by friends"
+msgstr "స్నేహితుల ద్వారా పంచుకొనిన కొత్త పత్రములు చూడు"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:9
+msgid "View documents fullscreen"
+msgstr "పత్రములు నిండుతెర నందు చూడు"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:10
+#| msgid "PDF Documents"
+msgid "Print documents"
+msgstr "పత్రాలు ముద్రించు"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:11
+#| msgid "Select Items"
+msgid "Select favorites"
+msgstr "అభీష్టమైనవి ఎంపికచేయి"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:12
+msgid "Allow opening full featured editor for non-trivial changes"
+msgstr "నాన్-ట్రైవల్ మార్పుల కొరకు ఫుల్ ఫీచర్డ్ ఎడిటర్ అనుమతించు"
 
 #: ../data/org.gnome.Documents.desktop.in.h:2
 msgid "Access, manage and share documents"
@@ -100,77 +123,77 @@ msgstr "కిటికీ గరిష్ఠీకరణ"
 msgid "Window maximized state"
 msgstr "కిటికీ గరిష్ఠీకరణ స్థితి"
 
-#: ../src/documents.js:599
+#: ../src/documents.js:621
 msgid "Failed to print document"
 msgstr "పత్రమును ముద్రించుటలో విఫలమైంది"
 
-#: ../src/documents.js:636 ../src/search.js:418
+#: ../src/documents.js:658 ../src/search.js:427
 msgid "Local"
 msgstr "స్థానిక"
 
-#: ../src/documents.js:657
+#: ../src/documents.js:679
 msgid "GNOME"
 msgstr "గ్నోమ్"
 
-#: ../src/documents.js:658
+#: ../src/documents.js:680
 msgid "Getting Started with Documents"
 msgstr "పత్రములతో ప్రారంభమౌతోంది"
 
-#: ../src/documents.js:674 ../src/documents.js:847 ../src/documents.js:909
-#: ../src/documents.js:1017
+#: ../src/documents.js:696 ../src/documents.js:877 ../src/documents.js:939
+#: ../src/documents.js:1047
 msgid "Collection"
 msgstr "సేకరణ"
 
-#: ../src/documents.js:726
+#: ../src/documents.js:756
 msgid "Google Docs"
 msgstr "గూగుల్ డాక్స్"
 
-#: ../src/documents.js:727
+#: ../src/documents.js:757
 msgid "Google"
 msgstr "గూగుల్"
 
-#: ../src/documents.js:849 ../src/documents.js:1019
+#: ../src/documents.js:879 ../src/documents.js:1049
 msgid "Spreadsheet"
 msgstr "స్ప్రెడ్‌షీట్"
 
-#: ../src/documents.js:851 ../src/documents.js:1021 ../src/presentation.js:47
+#: ../src/documents.js:881 ../src/documents.js:1051 ../src/presentation.js:47
 msgid "Presentation"
 msgstr "సమర్పణం"
 
-#: ../src/documents.js:853 ../src/documents.js:1023
+#: ../src/documents.js:883 ../src/documents.js:1053
 msgid "Document"
 msgstr "పత్రం"
 
-#: ../src/documents.js:887
+#: ../src/documents.js:917
 msgid "ownCloud"
 msgstr "ఓన్‌క్లౌడ్"
 
-#: ../src/documents.js:951 ../src/documents.js:952
+#: ../src/documents.js:981 ../src/documents.js:982
 msgid "OneDrive"
 msgstr "ఒన్‌డ్రైవ్"
 
-#: ../src/documents.js:1151
+#: ../src/documents.js:1181
 msgid "Please check the network connection."
 msgstr "నెట్వర్కు అనుసంధానం పరిశీలించు."
 
-#: ../src/documents.js:1154
+#: ../src/documents.js:1184
 msgid "Please check the network proxy settings."
 msgstr "నెట్వర్కు ప్రోక్సీ అమరికలు పరిశీలించు."
 
-#: ../src/documents.js:1157
+#: ../src/documents.js:1187
 msgid "Unable to sign in to the document service."
 msgstr "పత్ర సేవలోనికి ప్రవేశించలేక పోయింది."
 
-#: ../src/documents.js:1160
+#: ../src/documents.js:1190
 msgid "Unable to locate this document."
 msgstr "ఈ పత్రాన్ని గుర్తించలేక పోయింది."
 
-#: ../src/documents.js:1163
+#: ../src/documents.js:1193
 #, javascript-format
 msgid "Hmm, something is fishy (%d)."
 msgstr "ఏదో లోపాయికారీగా వుంది (%d)."
 
-#: ../src/documents.js:1181
+#: ../src/documents.js:1211
 #, javascript-format
 msgid "Oops! Unable to load “%s”"
 msgstr "అయ్యో! “%s” లోడ్ చేయలేదు"
@@ -192,7 +215,7 @@ msgstr "%s లో మీ ఆన్‌లైను ఖాతాను జతచ�
 msgid "Settings"
 msgstr "అమరికలు"
 
-#: ../src/lib/gd-nav-bar.c:235
+#: ../src/lib/gd-nav-bar.c:242
 #, c-format
 msgid "Page %u of %u"
 msgstr "పేజీ %u మొత్తం %u లో"
@@ -222,7 +245,7 @@ msgstr "ఇష్టాంశములు లేవు"
 msgid "Loading…"
 msgstr "లోడుచేస్తోంది..."
 
-#: ../src/lib/gd-places-bookmarks.c:651 ../src/preview.js:601
+#: ../src/lib/gd-places-bookmarks.c:651 ../src/preview.js:580
 msgid "Bookmarks"
 msgstr "ఇష్టాంశాలు"
 
@@ -238,69 +261,74 @@ msgstr "విషయాలు"
 msgid "Search"
 msgstr "వెతుకు"
 
-#: ../src/mainToolbar.js:90
+#: ../src/mainToolbar.js:87
 msgid "Back"
 msgstr "వెనక్కు "
 
-#: ../src/mainToolbar.js:163
+#: ../src/mainToolbar.js:132
 msgid "View items as a list"
 msgstr "అంశాలను జాబితా వలె చూడండి"
 
-#: ../src/mainToolbar.js:169
+#: ../src/mainToolbar.js:138
 msgid "View items as a grid of icons"
 msgstr "అంశాలను ప్రతీకాల గడులుగా చూడండి"
 
-#: ../src/mainToolbar.js:203
-#, javascript-format
-msgid "Results for “%s”"
-msgstr "“%s” కొరకు ఫలితాలు"
-
-#: ../src/mainToolbar.js:211
+#: ../src/mainToolbar.js:168
 msgid "Click on items to select them"
 msgstr "ఎంచుకోదలచుకున్న అంశాలపై నొక్కండి"
 
-#: ../src/mainToolbar.js:213
+#: ../src/mainToolbar.js:170
 #, javascript-format
 msgid "%d selected"
 msgid_plural "%d selected"
 msgstr[0] "%d ఎంపికచేయబడింది"
 msgstr[1] "%d ఎంపికచేయబడ్డాయి"
 
-#: ../src/mainToolbar.js:240
+#: ../src/mainToolbar.js:200
 msgid "Cancel"
 msgstr "రద్దుచేయి"
 
-#: ../src/mainToolbar.js:282
+#: ../src/mainToolbar.js:242
 msgid "Select Items"
 msgstr "అంశాల ఎంపిక "
 
-#: ../src/mainWindow.js:273
+#: ../src/mainWindow.js:301
 msgid "translator-credits"
 msgstr "Praveen Illa <mail2ipn@gmail.com>, 2011-12, 2014."
 
-#: ../src/mainWindow.js:275
+#: ../src/mainWindow.js:303
 msgid "A document manager application"
 msgstr "పత్ర నిర్వాహక అనువర్తనం"
 
-#: ../src/notifications.js:86
+#: ../src/notifications.js:50
+msgid "Selected item has been deleted"
+msgid_plural "Selected items have been deleted"
+msgstr[0] "ఎంపికచేసిన అంశము తొలగించబడింది"
+msgstr[1] "ఎంపికచేసిన అంశములు తొలగించబడినవి"
+
+#: ../src/notifications.js:57
+msgid "Undo"
+msgstr "చేయవద్దు"
+
+#: ../src/notifications.js:157
 #, javascript-format
 msgid "Printing “%s”: %s"
 msgstr "ముద్రిస్తోంది “%s”: %s"
 
-#: ../src/notifications.js:142
+#: ../src/notifications.js:213
 msgid "Your documents are being indexed"
 msgstr "మీ పత్రాలు సూచీలోకి చేరుస్తుంది"
 
-#: ../src/notifications.js:143
+#: ../src/notifications.js:214
 msgid "Some documents might not be available during this process"
 msgstr "ఈ ప్రక్రియ నడుస్తున్నప్పుడు కొన్ని పత్రాలు అందుబాటులోవుండకపోవచ్చు"
 
-#: ../src/notifications.js:165
+#: ../src/notifications.js:236
 #, javascript-format
 msgid "Fetching documents from %s"
 msgstr "%s నుండి పత్రము తెస్తోంది"
 
-#: ../src/notifications.js:167
+#: ../src/notifications.js:238
 msgid "Fetching documents from online accounts"
 msgstr "ఆన్‌లైన్ ఖాతాల నుండి పత్రములను తెస్తోంది"
 
@@ -321,10 +349,6 @@ msgstr "%s పత్రం తాళం వేయబడివుంది, త�
 msgid "_Password"
 msgstr "సంకేతపదం (_P)"
 
-#: ../src/places.js:56
-msgid "Close"
-msgstr "మూసివేయి"
-
 #: ../src/presentation.js:104
 msgid "Running in presentation mode"
 msgstr "సమర్పణ రీతి నందు నడుస్తోంది"
@@ -333,20 +357,20 @@ msgstr "సమర్పణ రీతి నందు నడుస్తోంద
 msgid "Present On"
 msgstr "సమర్పణం వుంది"
 
-#: ../src/preview.js:609
+#: ../src/preview.js:588
 msgid "Bookmark this page"
 msgstr "ఈ పుటని ఇష్టాంశముగా చేయి"
 
-#: ../src/preview.js:853 ../src/selections.js:857
+#: ../src/preview.js:823 ../src/selections.js:857
 #, javascript-format
 msgid "Open with %s"
 msgstr "%s‍తో తెరువు"
 
-#: ../src/preview.js:915
+#: ../src/preview.js:885
 msgid "Find Previous"
 msgstr "మునుపటిది వెతుకు"
 
-#: ../src/preview.js:922
+#: ../src/preview.js:892
 msgid "Find Next"
 msgstr "తరువాతది వెతుకు"
 
@@ -355,33 +379,29 @@ msgstr "తరువాతది వెతుకు"
 msgid "Properties"
 msgstr "లక్షణాలు"
 
-#: ../src/properties.js:63 ../src/sharing.js:102
-msgid "Done"
-msgstr "అయినది"
-
-#: ../src/properties.js:83
+#: ../src/properties.js:81
 msgctxt "Document Title"
 msgid "Title"
 msgstr "శీర్షిక"
 
-#: ../src/properties.js:92
+#: ../src/properties.js:90
 msgctxt "Document Author"
 msgid "Author"
 msgstr "ములకర్త"
 
-#: ../src/properties.js:99
+#: ../src/properties.js:97
 msgid "Source"
 msgstr "మూలం"
 
-#: ../src/properties.js:105
+#: ../src/properties.js:103
 msgid "Date Modified"
 msgstr "సవరించిన తేదీ"
 
-#: ../src/properties.js:112
+#: ../src/properties.js:110
 msgid "Date Created"
 msgstr "సృష్టించిన తేదీ"
 
-#: ../src/properties.js:121
+#: ../src/properties.js:119
 msgctxt "Document Type"
 msgid "Type"
 msgstr "రకం"
@@ -451,8 +471,8 @@ msgstr "ఏమీ ఎంపికచేయవద్దు"
 msgid "Category"
 msgstr "వర్గము"
 
-#: ../src/search.js:119 ../src/search.js:171 ../src/search.js:256
-#: ../src/search.js:412
+#: ../src/search.js:119 ../src/search.js:180 ../src/search.js:265
+#: ../src/search.js:421
 msgid "All"
 msgstr "అన్ని"
 
@@ -464,46 +484,46 @@ msgstr "ఇష్టాంశాలు"
 msgid "Shared with you"
 msgstr "మీతో పంచుకొనబడినవి"
 
-#: ../src/search.js:168
+#: ../src/search.js:177
 msgctxt "Search Filter"
 msgid "Type"
 msgstr "రకం"
 
-#: ../src/search.js:173
+#: ../src/search.js:182
 msgid "Collections"
 msgstr "సేకరణలు"
 
-#: ../src/search.js:177
+#: ../src/search.js:186
 msgid "PDF Documents"
 msgstr "పిడియఫ్ పత్రాలు"
 
-#: ../src/search.js:181
+#: ../src/search.js:190
 msgid "Presentations"
 msgstr "సమర్పణలు"
 
-#: ../src/search.js:184
+#: ../src/search.js:193
 msgid "Spreadsheets"
 msgstr "స్ప్రెడ్‌షీట్లు"
 
-#: ../src/search.js:187
+#: ../src/search.js:196
 msgid "Text Documents"
 msgstr "పాఠ్య పత్రాలు"
 
-#: ../src/search.js:253
+#: ../src/search.js:262
 msgid "Match"
 msgstr "సరిపోల్చు"
 
-#: ../src/search.js:259
+#: ../src/search.js:268
 msgctxt "Search Filter"
 msgid "Title"
 msgstr "శీర్షిక"
 
-#: ../src/search.js:262
+#: ../src/search.js:271
 msgctxt "Search Filter"
 msgid "Author"
 msgstr "ములకర్త"
 
-#: ../src/search.js:408
+#: ../src/search.js:417
 msgid "Sources"
 msgstr "వనరులు"
 
@@ -539,6 +559,10 @@ msgstr "సేకరణకు జతచేయి"
 #: ../src/sharing.js:98
 msgid "Sharing Settings"
 msgstr "అమరికలు పంచుకొనుట"
+
+#: ../src/sharing.js:102
+msgid "Done"
+msgstr "అయినది"
 
 #: ../src/sharing.js:135
 msgid "Document permissions"
@@ -657,6 +681,25 @@ msgid "%d year ago"
 msgid_plural "%d years ago"
 msgstr[0] "%d సంవత్సరం క్రితం"
 msgstr[1] "%d సంవత్సరాల క్రితం"
+
+#~ msgid ""
+#~ "<li>View recent local and online documents</li> <li>Access your Google, "
+#~ "ownCloud or OneDrive content</li> <li>Search through documents</li> "
+#~ "<li>See new documents shared by friends</li> <li>View documents "
+#~ "fullscreen</li> <li>Print documents</li> <li>Select favorites</li> "
+#~ "<li>Allow opening full featured editor for non-trivial changes</li>"
+#~ msgstr ""
+#~ "<li>స్థానిక మరియు జాల పత్రాలను చూడండి</li> <li>మీ గూగులు, ఓన్‌క్లౌడ్ లేదా ఒన్‌డ్రైవ్ అంశాలను "
+#~ "ప్రాప్యించండి</li> <li>పత్రాలను శోధించండి</li> <li>మీ స్నేహితులచే పంచబడిన కొత్త పత్రాలను "
+#~ "చూడండి</li> <li>పత్రాలను పూర్తితెరపై చూడండి</li> <li>పత్రాలను ముద్రించుకోండి</li> "
+#~ "<li>ఇష్టమైన వాటిని ఎంచుకోండి</li> <li>అల్పంకాని మార్పుల కోసం పూర్తిస్థాయి కూర్పకముతో తెరుచుటకు "
+#~ "అనుమతిస్తుంది</li>"
+
+#~ msgid "Results for “%s”"
+#~ msgstr "“%s” కొరకు ఫలితాలు"
+
+#~ msgid "Close"
+#~ msgstr "మూసివేయి"
 
 #~ msgid "Skydrive"
 #~ msgstr "స్కైడ్రైవ్"
