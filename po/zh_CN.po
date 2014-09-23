@@ -14,9 +14,9 @@ msgstr ""
 "Project-Id-Version: gnome-documents master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-03-08 22:37+0000\n"
-"PO-Revision-Date: 2014-03-09 09:30+0800\n"
-"Last-Translator: Tong Hui <tonghuix@gmail.com>\n"
+"POT-Creation-Date: 2014-08-25 05:49+0000\n"
+"PO-Revision-Date: 2014-08-02 22:08+0800\n"
+"Last-Translator: irisgyq <gouyingqiyanxuan321@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
@@ -26,8 +26,8 @@ msgstr ""
 "X-Generator: Poedit 1.5.4\n"
 
 #: ../data/org.gnome.Documents.appdata.xml.in.h:1
-#: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:103
-#: ../src/mainWindow.js:52 ../src/mainWindow.js:274
+#: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:121
+#: ../src/mainWindow.js:52 ../src/mainWindow.js:302
 msgid "Documents"
 msgstr "文档"
 
@@ -50,23 +50,36 @@ msgid "It lets you:"
 msgstr "它允许您："
 
 #: ../data/org.gnome.Documents.appdata.xml.in.h:5
-#| msgid ""
-#| "<li>View recent local and online documents</li> <li>Access your Google, "
-#| "ownCloud or SkyDrive content</li> <li>Search through documents</li> "
-#| "<li>See new documents shared by friends</li> <li>View documents "
-#| "fullscreen</li> <li>Print documents</li> <li>Select favorites</li> "
-#| "<li>Allow opening full featured editor for non-trivial changes</li>"
-msgid ""
-"<li>View recent local and online documents</li> <li>Access your Google, "
-"ownCloud or OneDrive content</li> <li>Search through documents</li> <li>See "
-"new documents shared by friends</li> <li>View documents fullscreen</li> "
-"<li>Print documents</li> <li>Select favorites</li> <li>Allow opening full "
-"featured editor for non-trivial changes</li>"
-msgstr ""
-"<li>查看最近的本地和在线文档</li> <li>访问您的 Google、ownCloud 或 OneDrive "
-"内容</li> <li>搜索文档</li> <li>查看好友分享的文档</li> <li>以全屏方式查看文"
-"档</li> <li>打印文档</li> <li>选择收藏</li> <li>支持打开全功能编辑器对文档进"
-"行重大更改</li>"
+msgid "View recent local and online documents"
+msgstr "查看最近本地和在线的文档"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:6
+msgid "Access your Google, ownCloud or OneDrive content"
+msgstr "获取你的 Google,ownCloud 或 OneDrive 的内容"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:7
+msgid "Search through documents"
+msgstr "从文档中搜索"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:8
+msgid "See new documents shared by friends"
+msgstr "查看朋友分享的新文档"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:9
+msgid "View documents fullscreen"
+msgstr "全屏查看文档"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:10
+msgid "Print documents"
+msgstr "打印文档"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:11
+msgid "Select favorites"
+msgstr "选择最喜爱的"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:12
+msgid "Allow opening full featured editor for non-trivial changes"
+msgstr "允许打开全功能编辑器进行比较重大的修改"
 
 #: ../data/org.gnome.Documents.desktop.in.h:2
 msgid "Access, manage and share documents"
@@ -108,77 +121,77 @@ msgstr "窗口已最大化"
 msgid "Window maximized state"
 msgstr "窗口最大化状态"
 
-#: ../src/documents.js:599
+#: ../src/documents.js:621
 msgid "Failed to print document"
 msgstr "无法打印文档"
 
-#: ../src/documents.js:636 ../src/search.js:418
+#: ../src/documents.js:658 ../src/search.js:427
 msgid "Local"
 msgstr "本地"
 
-#: ../src/documents.js:657
+#: ../src/documents.js:679
 msgid "GNOME"
 msgstr "GNOME"
 
-#: ../src/documents.js:658
+#: ../src/documents.js:680
 msgid "Getting Started with Documents"
 msgstr "“文档”使用入门"
 
-#: ../src/documents.js:674 ../src/documents.js:847 ../src/documents.js:909
-#: ../src/documents.js:1017
+#: ../src/documents.js:696 ../src/documents.js:877 ../src/documents.js:939
+#: ../src/documents.js:1047
 msgid "Collection"
 msgstr "合集"
 
-#: ../src/documents.js:726
+#: ../src/documents.js:756
 msgid "Google Docs"
 msgstr "谷歌文档"
 
-#: ../src/documents.js:727
+#: ../src/documents.js:757
 msgid "Google"
 msgstr "谷歌"
 
-#: ../src/documents.js:849 ../src/documents.js:1019
+#: ../src/documents.js:879 ../src/documents.js:1049
 msgid "Spreadsheet"
 msgstr "电子表格"
 
-#: ../src/documents.js:851 ../src/documents.js:1021 ../src/presentation.js:47
+#: ../src/documents.js:881 ../src/documents.js:1051 ../src/presentation.js:47
 msgid "Presentation"
 msgstr "演示文档"
 
-#: ../src/documents.js:853 ../src/documents.js:1023
+#: ../src/documents.js:883 ../src/documents.js:1053
 msgid "Document"
 msgstr "文档"
 
-#: ../src/documents.js:887
+#: ../src/documents.js:917
 msgid "ownCloud"
 msgstr "ownCloud"
 
-#: ../src/documents.js:951 ../src/documents.js:952
+#: ../src/documents.js:981 ../src/documents.js:982
 msgid "OneDrive"
 msgstr "OneDrive"
 
-#: ../src/documents.js:1151
+#: ../src/documents.js:1181
 msgid "Please check the network connection."
 msgstr "请检查网络连接。"
 
-#: ../src/documents.js:1154
+#: ../src/documents.js:1184
 msgid "Please check the network proxy settings."
 msgstr "请检查网络的代理设置。"
 
-#: ../src/documents.js:1157
+#: ../src/documents.js:1187
 msgid "Unable to sign in to the document service."
 msgstr "无法登入文档服务。"
 
-#: ../src/documents.js:1160
+#: ../src/documents.js:1190
 msgid "Unable to locate this document."
 msgstr "无法定位文档。"
 
-#: ../src/documents.js:1163
+#: ../src/documents.js:1193
 #, javascript-format
 msgid "Hmm, something is fishy (%d)."
 msgstr "有些东西不太对劲(%d)。"
 
-#: ../src/documents.js:1181
+#: ../src/documents.js:1211
 #, javascript-format
 msgid "Oops! Unable to load “%s”"
 msgstr "糟糕！无法载入“%s”"
@@ -200,7 +213,7 @@ msgstr "您可以在 %s 中添加您的在线帐号"
 msgid "Settings"
 msgstr "设置"
 
-#: ../src/lib/gd-nav-bar.c:235
+#: ../src/lib/gd-nav-bar.c:242
 #, c-format
 msgid "Page %u of %u"
 msgstr "第 %u/%u 页"
@@ -230,7 +243,7 @@ msgstr "没有书签"
 msgid "Loading…"
 msgstr "正在加载…"
 
-#: ../src/lib/gd-places-bookmarks.c:651 ../src/preview.js:601
+#: ../src/lib/gd-places-bookmarks.c:651 ../src/preview.js:580
 msgid "Bookmarks"
 msgstr "书签"
 
@@ -246,42 +259,37 @@ msgstr "目录"
 msgid "Search"
 msgstr "搜索"
 
-#: ../src/mainToolbar.js:90
+#: ../src/mainToolbar.js:87
 msgid "Back"
 msgstr "返回"
 
-#: ../src/mainToolbar.js:163
+#: ../src/mainToolbar.js:132
 msgid "View items as a list"
 msgstr "以列表方式查看项目"
 
-#: ../src/mainToolbar.js:169
+#: ../src/mainToolbar.js:138
 msgid "View items as a grid of icons"
 msgstr "以图标网格方式查看项目"
 
-#: ../src/mainToolbar.js:203
-#, javascript-format
-msgid "Results for “%s”"
-msgstr "“%s”的结果"
-
-#: ../src/mainToolbar.js:211
+#: ../src/mainToolbar.js:168
 msgid "Click on items to select them"
 msgstr "点击项目来选择它们"
 
-#: ../src/mainToolbar.js:213
+#: ../src/mainToolbar.js:170
 #, javascript-format
 msgid "%d selected"
 msgid_plural "%d selected"
 msgstr[0] "已选 %d 项"
 
-#: ../src/mainToolbar.js:240
+#: ../src/mainToolbar.js:200
 msgid "Cancel"
 msgstr "取消"
 
-#: ../src/mainToolbar.js:282
+#: ../src/mainToolbar.js:242
 msgid "Select Items"
 msgstr "选择项目"
 
-#: ../src/mainWindow.js:273
+#: ../src/mainWindow.js:301
 msgid "translator-credits"
 msgstr ""
 "甘 露 <rhythm.gan@gmail.com>, 2011\n"
@@ -291,52 +299,57 @@ msgstr ""
 "tuhaihe <1132321739qq@gmail.com>, 2012~2014\n"
 "Tong Hui <tonghuix@gmail.com>, 2014"
 
-#: ../src/mainWindow.js:275
+#: ../src/mainWindow.js:303
 msgid "A document manager application"
 msgstr "一个文档管理程序"
 
-#: ../src/notifications.js:86
+#: ../src/notifications.js:50
+msgid "Selected item has been deleted"
+msgid_plural "Selected items have been deleted"
+msgstr[0] ""
+
+#: ../src/notifications.js:57
+msgid "Undo"
+msgstr ""
+
+#: ../src/notifications.js:157
 #, javascript-format
 msgid "Printing “%s”: %s"
 msgstr "正在打印“%s”：%s"
 
-#: ../src/notifications.js:142
+#: ../src/notifications.js:213
 msgid "Your documents are being indexed"
 msgstr "您的文档正被索引"
 
-#: ../src/notifications.js:143
+#: ../src/notifications.js:214
 msgid "Some documents might not be available during this process"
 msgstr "在该过程中部分文档可能不可用"
 
-#: ../src/notifications.js:165
+#: ../src/notifications.js:236
 #, javascript-format
 msgid "Fetching documents from %s"
 msgstr "从 %s 获取文档"
 
-#: ../src/notifications.js:167
+#: ../src/notifications.js:238
 msgid "Fetching documents from online accounts"
 msgstr "从在线账户获取文档"
 
-#: ../src/password.js:45
+#: ../src/password.js:46
 msgid "Password Required"
 msgstr "需要密码"
 
-#: ../src/password.js:48
+#: ../src/password.js:49
 msgid "_Unlock"
 msgstr "解锁(_U)"
 
-#: ../src/password.js:64
+#: ../src/password.js:65
 #, javascript-format
 msgid "Document %s is locked and requires a password to be opened."
 msgstr "文档 %s 已被锁定，打开需要密码。"
 
-#: ../src/password.js:78
+#: ../src/password.js:79
 msgid "_Password"
 msgstr "密码(_P)"
-
-#: ../src/places.js:59
-msgid "Close"
-msgstr "关闭"
 
 #: ../src/presentation.js:104
 msgid "Running in presentation mode"
@@ -346,56 +359,52 @@ msgstr "正在演示模式下运行"
 msgid "Present On"
 msgstr "演示时间"
 
-#: ../src/preview.js:609
+#: ../src/preview.js:588
 msgid "Bookmark this page"
 msgstr "添加该页至书签"
 
-#: ../src/preview.js:853 ../src/selections.js:856
+#: ../src/preview.js:823 ../src/selections.js:857
 #, javascript-format
 msgid "Open with %s"
 msgstr "使用 %s 打开"
 
-#: ../src/preview.js:915
+#: ../src/preview.js:885
 msgid "Find Previous"
 msgstr "查找上一个"
 
 # 后一个，怪怪的
-#: ../src/preview.js:922
+#: ../src/preview.js:892
 msgid "Find Next"
 msgstr "查找下一个"
 
-#: ../src/properties.js:60 ../src/resources/preview-menu.ui.h:9
-#: ../src/selections.js:766
+#: ../src/properties.js:61 ../src/resources/preview-menu.ui.h:9
+#: ../src/selections.js:767
 msgid "Properties"
 msgstr "属性"
 
-#: ../src/properties.js:62 ../src/sharing.js:101
-msgid "Done"
-msgstr "完成"
-
-#: ../src/properties.js:82
+#: ../src/properties.js:81
 msgctxt "Document Title"
 msgid "Title"
 msgstr "标题"
 
-#: ../src/properties.js:91
+#: ../src/properties.js:90
 msgctxt "Document Author"
 msgid "Author"
 msgstr "作者"
 
-#: ../src/properties.js:98
+#: ../src/properties.js:97
 msgid "Source"
 msgstr "源"
 
-#: ../src/properties.js:104
+#: ../src/properties.js:103
 msgid "Date Modified"
 msgstr "修改日期"
 
-#: ../src/properties.js:111
+#: ../src/properties.js:110
 msgid "Date Created"
 msgstr "创建日期"
 
-#: ../src/properties.js:120
+#: ../src/properties.js:119
 msgctxt "Document Type"
 msgid "Type"
 msgstr "类型"
@@ -420,8 +429,8 @@ msgstr "退出"
 msgid "_Copy"
 msgstr "复制(_C)"
 
-#: ../src/resources/preview-menu.ui.h:1 ../src/selections.js:746
-#: ../src/selections.js:859
+#: ../src/resources/preview-menu.ui.h:1 ../src/selections.js:747
+#: ../src/selections.js:860
 msgid "Open"
 msgstr "打开"
 
@@ -465,8 +474,8 @@ msgstr "不选"
 msgid "Category"
 msgstr "类别"
 
-#: ../src/search.js:119 ../src/search.js:171 ../src/search.js:256
-#: ../src/search.js:412
+#: ../src/search.js:119 ../src/search.js:180 ../src/search.js:265
+#: ../src/search.js:421
 msgid "All"
 msgstr "全部"
 
@@ -478,46 +487,46 @@ msgstr "收藏"
 msgid "Shared with you"
 msgstr "分享给您的"
 
-#: ../src/search.js:168
+#: ../src/search.js:177
 msgctxt "Search Filter"
 msgid "Type"
 msgstr "类型"
 
-#: ../src/search.js:173
+#: ../src/search.js:182
 msgid "Collections"
 msgstr "合集"
 
-#: ../src/search.js:177
+#: ../src/search.js:186
 msgid "PDF Documents"
 msgstr "PDF 文档"
 
-#: ../src/search.js:181
+#: ../src/search.js:190
 msgid "Presentations"
 msgstr "演示文档"
 
-#: ../src/search.js:184
+#: ../src/search.js:193
 msgid "Spreadsheets"
 msgstr "电子表格"
 
-#: ../src/search.js:187
+#: ../src/search.js:196
 msgid "Text Documents"
 msgstr "文本文档"
 
-#: ../src/search.js:253
+#: ../src/search.js:262
 msgid "Match"
 msgstr "匹配"
 
-#: ../src/search.js:259
+#: ../src/search.js:268
 msgctxt "Search Filter"
 msgid "Title"
 msgstr "标题"
 
-#: ../src/search.js:262
+#: ../src/search.js:271
 msgctxt "Search Filter"
 msgid "Author"
 msgstr "作者"
 
-#: ../src/search.js:408
+#: ../src/search.js:417
 msgid "Sources"
 msgstr "源"
 
@@ -529,90 +538,94 @@ msgstr "您尚未有合集。请在上面输入新合集名。"
 msgid "Create new collection"
 msgstr "创建新合集"
 
-#: ../src/selections.js:639
+#: ../src/selections.js:640
 msgctxt "Dialog Title"
 msgid "Collections"
 msgstr "合集"
 
-#: ../src/selections.js:751
+#: ../src/selections.js:752
 msgid "Print"
 msgstr "打印"
 
-#: ../src/selections.js:756
+#: ../src/selections.js:757
 msgid "Delete"
 msgstr "删除"
 
-#: ../src/selections.js:761
+#: ../src/selections.js:762
 msgid "Share"
 msgstr "分享"
 
-#: ../src/selections.js:771
+#: ../src/selections.js:772
 msgid "Add to Collection"
 msgstr "添加到合集"
 
-#: ../src/sharing.js:97
+#: ../src/sharing.js:98
 msgid "Sharing Settings"
 msgstr "分享设置"
 
-#: ../src/sharing.js:134
+#: ../src/sharing.js:102
+msgid "Done"
+msgstr "完成"
+
+#: ../src/sharing.js:135
 msgid "Document permissions"
 msgstr "文档权限"
 
-#: ../src/sharing.js:141 ../src/sharing.js:319
+#: ../src/sharing.js:142 ../src/sharing.js:320
 msgid "Change"
 msgstr "更改"
 
-#: ../src/sharing.js:165 ../src/sharing.js:294
+#: ../src/sharing.js:166 ../src/sharing.js:295
 msgid "Private"
 msgstr "私有"
 
-#: ../src/sharing.js:175 ../src/sharing.js:287
+#: ../src/sharing.js:176 ../src/sharing.js:288
 msgid "Public"
 msgstr "公开"
 
-#: ../src/sharing.js:179 ../src/sharing.js:289
+#: ../src/sharing.js:180 ../src/sharing.js:290
 msgid "Everyone can edit"
 msgstr "任何人都可以编辑"
 
-#: ../src/sharing.js:186
+#: ../src/sharing.js:187
 msgid "Add people"
 msgstr "添加联系人"
 
-#: ../src/sharing.js:193
+#: ../src/sharing.js:194
 msgid "Enter an email address"
 msgstr "输入一个电子邮件地址"
 
-#: ../src/sharing.js:208 ../src/sharing.js:375
+#: ../src/sharing.js:209 ../src/sharing.js:376
 msgid "Can edit"
 msgstr "可以编辑"
 
-#: ../src/sharing.js:208 ../src/sharing.js:378
+#: ../src/sharing.js:209 ../src/sharing.js:379
 msgid "Can view"
 msgstr "可以查看"
 
-#: ../src/sharing.js:215
+#: ../src/sharing.js:216
 msgid "Add"
 msgstr "添加"
 
-#: ../src/sharing.js:291
+#: ../src/sharing.js:292
 msgid "Everyone can read"
 msgstr "任何人都可以阅读"
 
-#: ../src/sharing.js:306
+#: ../src/sharing.js:307
 msgid "Save"
 msgstr "保存"
 
-#: ../src/sharing.js:372
+#: ../src/sharing.js:373
 msgid "Owner"
 msgstr "所有者"
 
-#: ../src/sharing.js:441
+#: ../src/sharing.js:442
 #, javascript-format
 msgid "You can ask %s for access"
 msgstr "您可以向 %s 请求访问权限"
 
-#: ../src/sharing.js:478 ../src/sharing.js:514 ../src/sharing.js:571
-#: ../src/sharing.js:588 ../src/sharing.js:607
+#: ../src/sharing.js:479 ../src/sharing.js:515 ../src/sharing.js:572
+#: ../src/sharing.js:589 ../src/sharing.js:608
 msgid "The document was not updated"
 msgstr "文档没有被更新"
 
@@ -628,100 +641,42 @@ msgstr "无法获取文档列表"
 msgid "Load More"
 msgstr "载入更多"
 
-#: ../src/view.js:295
+#: ../src/view.js:307
 msgid "Yesterday"
 msgstr "昨天"
 
-#: ../src/view.js:297
+#: ../src/view.js:309
 #, javascript-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
 msgstr[0] "%d 天前"
 
-#: ../src/view.js:301
+#: ../src/view.js:313
 msgid "Last week"
 msgstr "上周"
 
-#: ../src/view.js:303
+#: ../src/view.js:315
 #, javascript-format
 msgid "%d week ago"
 msgid_plural "%d weeks ago"
 msgstr[0] "%d 周前"
 
-#: ../src/view.js:307
+#: ../src/view.js:319
 msgid "Last month"
 msgstr "上个月"
 
-#: ../src/view.js:309
+#: ../src/view.js:321
 #, javascript-format
 msgid "%d month ago"
 msgid_plural "%d months ago"
 msgstr[0] "%d 个月前"
 
-#: ../src/view.js:313
+#: ../src/view.js:325
 msgid "Last year"
 msgstr "去年"
 
-#: ../src/view.js:315
+#: ../src/view.js:327
 #, javascript-format
 msgid "%d year ago"
 msgid_plural "%d years ago"
 msgstr[0] "%d 年前"
-
-#~ msgid "Skydrive"
-#~ msgstr "Skydrive"
-
-#~ msgid "Grid"
-#~ msgstr "网格"
-
-#~ msgid "List"
-#~ msgstr "列表"
-
-#~ msgid "About Documents"
-#~ msgstr "关于文档"
-
-#~ msgid "Organize"
-#~ msgstr "组织"
-
-#~ msgid "Unable to load \"%s\" for preview"
-#~ msgstr "无法加载“%s”进行预览"
-
-#~ msgid "Cannot find \"unoconv\", please check your LibreOffice installation"
-#~ msgstr "无法找到“unoconv”，请检查你的 LibreOffice 安装"
-
-#~ msgid "New and Recent"
-#~ msgstr "新建及最近文档"
-
-#~ msgid "filtered by title"
-#~ msgstr "按标题过滤"
-
-#~ msgid "filtered by author"
-#~ msgstr "按作者过滤"
-
-#~ msgid "Load %d more document"
-#~ msgid_plural "Load %d more documents"
-#~ msgstr[0] "再加载 %d 份文档"
-
-#~ msgid "Print..."
-#~ msgstr "打印..."
-
-#~ msgid "Rotate Right"
-#~ msgstr "向右旋转"
-
-#~ msgid "The active source filter"
-#~ msgstr "活动的源过滤器"
-
-#~ msgid "The last active source filter"
-#~ msgstr "最后活动的源过滤器"
-
-#~ msgid "%d of %d"
-#~ msgstr "第 %d 个，共 %d 个"
-
-#~ msgid "GNOME Documents"
-#~ msgstr "GNOME 文档"
-
-#~ msgid "Remove from favorites"
-#~ msgstr "从收藏中移除"
-
-#~ msgid "Add to favorites"
-#~ msgstr "添加到收藏"
