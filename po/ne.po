@@ -82,7 +82,7 @@ msgstr "सञ्जाल साझेदार वा संसाधन प�
 
 #: ../data/org.gnome.Documents.desktop.in.h:3
 msgid "Docs;PDF;Document;"
-msgstr "docs;पि डि यफ; कागजात"
+msgstr "docs;पि डि यफ; कागजात;"
 
 #: ../data/org.gnome.documents.gschema.xml.h:1
 #, fuzzy
