@@ -38,7 +38,7 @@ const Search = imports.search;
 const TrackerUtils = imports.trackerUtils;
 const Utils = imports.utils;
 
-let collectionManager = null;
+let documentManager = null;
 let offsetController = null;
 let queryBuilder = null;
 let searchCategoryManager = null;

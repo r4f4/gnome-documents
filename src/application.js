@@ -73,7 +73,6 @@ let settings = null;
 
 // used by the application, but not by the search provider
 let changeMonitor = null;
-let collectionManager = null;
 let cssProvider = null;
 let documentManager = null;
 let modeController = null;
@@ -468,13 +467,12 @@ const Application = new Lang.Class({
         }
 
         connectionQueue = new TrackerController.TrackerConnectionQueue();
+        changeMonitor = new ChangeMonitor.TrackerChangeMonitor();
 
         // now init application components
         Search.initSearch(imports.application);
         Search.initSearch(imports.shellSearchProvider);
 
-        changeMonitor = new ChangeMonitor.TrackerChangeMonitor();
-        documentManager = new Documents.DocumentManager();
         modeController = new WindowMode.ModeController();
         trackerController = new TrackerController.TrackerController();
         selectionController = new Selections.SelectionController();

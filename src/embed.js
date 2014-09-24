@@ -374,11 +374,8 @@ const Embed = new Lang.Class({
     },
 
     _onActiveItemChanged: function(manager, doc) {
-        if (doc) {
-            let collection = Application.collectionManager.getItemById(doc.id);
-            if (!collection)
-                return;
-        }
+        if (doc && !doc.collection)
+            return;
 
         Application.modeController.setWindowMode(WindowMode.WindowMode.OVERVIEW);
     },

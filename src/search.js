@@ -20,6 +20,7 @@
  */
 
 const Application = imports.application;
+const Documents = imports.documents;
 const Manager = imports.manager;
 const Query = imports.query;
 
@@ -34,7 +35,7 @@ const _ = imports.gettext.gettext;
 const C_ = imports.gettext.pgettext;
 
 function initSearch(context) {
-    context.collectionManager = new Manager.BaseManager(context);
+    context.documentManager = new Documents.DocumentManager();
     context.sourceManager = new SourceManager(context);
     context.searchCategoryManager = new SearchCategoryManager(context);
     context.searchMatchManager = new SearchMatchManager(context);

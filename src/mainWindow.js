@@ -149,7 +149,7 @@ const MainWindow = new Lang.Class({
 
     _goBack: function() {
         let windowMode = Application.modeController.getWindowMode();
-        let activeCollection = Application.collectionManager.getActiveItem();
+        let activeCollection = Application.documentManager.getActiveCollection();
         let handled = true;
 
         if (windowMode == WindowMode.WindowMode.PREVIEW ||

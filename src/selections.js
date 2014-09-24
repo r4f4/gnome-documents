@@ -138,7 +138,7 @@ const FetchCollectionStateForSelectionJob = new Lang.Class({
 
     _emitCallback: function() {
         let collectionState = {};
-        let collections = Application.collectionManager.getItems();
+        let collections = Application.documentManager.getCollections();
 
         // for all the registered collections...
         for (let collIdx in collections) {
@@ -325,9 +325,9 @@ const OrganizeCollectionModel = new Lang.Class({
               GObject.TYPE_STRING,
               GObject.TYPE_INT ]);
 
-        this._collAddedId = Application.collectionManager.connect('item-added',
+        this._collAddedId = Application.documentManager.connect('item-added',
             Lang.bind(this, this._onCollectionAdded));
-        this._collRemovedId = Application.collectionManager.connect('item-removed',
+        this._collRemovedId = Application.documentManager.connect('item-removed',
             Lang.bind(this, this._onCollectionRemoved));
 
         let iter;
@@ -372,7 +372,7 @@ const OrganizeCollectionModel = new Lang.Class({
 
     _onFetchCollectionStateForSelection: function(collectionState) {
         for (let idx in collectionState) {
-            let item = Application.collectionManager.getItemById(idx);
+            let item = Application.documentManager.getItemById(idx);
 
             if ((collectionState[item.id] & OrganizeCollectionState.HIDDEN) != 0)
                 continue;
@@ -410,12 +410,12 @@ const OrganizeCollectionModel = new Lang.Class({
 
     destroy: function() {
         if (this._collAddedId != 0) {
-            Application.collectionManager.disconnect(this._collAddedId);
+            Application.documentManager.disconnect(this._collAddedId);
             this._collAddedId = 0;
         }
 
         if (this._collRemovedId != 0) {
-            Application.collectionManager.disconnect(this._collRemovedId);
+            Application.documentManager.disconnect(this._collRemovedId);
             this._collRemovedId = 0;
         }
     }
@@ -610,7 +610,7 @@ const OrganizeCollectionView = new Lang.Class({
 
     _detailCellFunc: function(col, cell, model, iter) {
         let id = model.get_value(iter, OrganizeModelColumns.ID);
-        let item = Application.collectionManager.getItemById(id);
+        let item = Application.documentManager.getItemById(id);
 
         if (item && item.identifier.indexOf(Query.LOCAL_COLLECTIONS_IDENTIFIER) == -1) {
             cell.text = Application.sourceManager.getItemById(item.resourceUrn).name;

@@ -135,7 +135,7 @@ const TrackerController = new Lang.Class({
 
         Application.offsetController.connect('offset-changed', Lang.bind(this, this._performCurrentQuery));
 
-        Application.collectionManager.connect('active-changed', Lang.bind(this, this._refreshForObject));
+        Application.documentManager.connect('active-collection-changed', Lang.bind(this, this._refreshForObject));
         Application.searchController.connect('search-string-changed', Lang.bind(this, this._refreshForObject));
         Application.searchCategoryManager.connect('active-changed', Lang.bind(this, this._refreshForObject));
         Application.searchTypeManager.connect('active-changed', Lang.bind(this, this._refreshForObject));

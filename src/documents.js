@@ -1097,6 +1097,9 @@ const DocumentManager = new Lang.Class({
         this._activeDocModelIds = [];
         this._loaderCancellable = null;
 
+        this._activeCollection = null;
+        this._collections = {};
+
         // a stack containing the collections which were used to
         // navigate to the active document or collection
         this._collectionPath = [];
@@ -1122,9 +1125,6 @@ const DocumentManager = new Lang.Class({
                 if (doc) {
                     doc.destroy();
                     this.removeItemById(changeEvent.urn);
-
-                    if (doc.collection)
-                        Application.collectionManager.removeItemById(changeEvent.urn);
                 }
             }
         }
@@ -1181,20 +1181,50 @@ const DocumentManager = new Lang.Class({
         } else {
             doc = this.createDocumentFromCursor(cursor);
             this.addItem(doc);
-            if (doc.collection)
-                Application.collectionManager.addItem(doc);
         }
 
         return doc;
     },
 
+    addItem: function(doc) {
+        if (doc.collection) {
+            let oldCollection = this._collections[doc.id];
+            if (oldCollection)
+                this.removeItem(oldCollection);
+
+            this._collections[doc.id] = doc;
+        }
+
+        this.parent(doc);
+    },
+
     clear: function() {
+        this._collections = {};
+        this._activeCollection = null;
+
         let items = this.getItems();
         for (let idx in items) {
             items[idx].destroy();
         };
 
         this.parent();
+    },
+
+    getActiveCollection: function() {
+        return this._activeCollection;
+    },
+
+    getCollections: function() {
+        return this._collections;
+    },
+
+    getWhere: function() {
+        let retval = '';
+
+        if (this._activeCollection)
+            retval = this._activeCollection.getWhere();
+
+        return retval;
     },
 
     _humanizeError: function(error) {
@@ -1272,33 +1302,74 @@ const DocumentManager = new Lang.Class({
         this.emit('load-started', doc);
     },
 
+    removeItemById: function(id) {
+        if (this._collections[id]) {
+            delete this._collections[id];
+        }
+
+        this.parent(id);
+    },
+
     setActiveItem: function(doc) {
-        if (!this.parent(doc))
-            return;
+        let activeCollectionChanged = false;
+        let activeDoc = this.getActiveItem();
+        let retval = false;
+        let startLoading = false;
+
+        // Passing null is a way to go back to the current collection or
+        // overview from the preview. However, you can't do that when you
+        // are looking at a collection. Use activatePreviousCollection for
+        // unwinding the collection stack.
+        if (!doc) {
+            if (activeDoc != this._activeCollection)
+                doc = this._activeCollection;
+            else
+                return false;
+        }
 
         // cleanup any state we have for previously loaded model
         this._clearActiveDocModel();
 
-        if (!doc)
-            return;
-
-        if (doc.collection) {
-            this._collectionPath.push(Application.collectionManager.getActiveItem());
-            Application.collectionManager.setActiveItem(doc);
-            return;
+        // If doc is null then we are going back to the overview from
+        // the preview.
+        if (doc) {
+            if (doc.collection) {
+                // If doc is the active collection then we are going back to the
+                // collection from the preview.
+                if (doc != this._activeCollection) {
+                    this._collectionPath.push(this._activeCollection);
+                    this._activeCollection = doc;
+                    activeCollectionChanged = true;
+                }
+            } else {
+                startLoading = true;
+            }
         }
 
-        let recentManager = Gtk.RecentManager.get_default();
-        recentManager.add_item(doc.uri);
+        retval = this.parent(doc);
 
-        this._loaderCancellable = new Gio.Cancellable();
-        doc.load(null, this._loaderCancellable, Lang.bind(this, this._onDocumentLoaded));
-        this.emit('load-started', doc);
+        if (retval && activeCollectionChanged)
+            this.emit('active-collection-changed', this._activeCollection);
+
+        if (retval && startLoading) {
+            let recentManager = Gtk.RecentManager.get_default();
+            recentManager.add_item(doc.uri);
+
+            this._loaderCancellable = new Gio.Cancellable();
+            doc.load(null, this._loaderCancellable, Lang.bind(this, this._onDocumentLoaded));
+            this.emit('load-started', doc);
+        }
+
+        return retval;
     },
 
     activatePreviousCollection: function() {
         this._clearActiveDocModel();
-        Application.collectionManager.setActiveItem(this._collectionPath.pop());
+
+        let collection = this._collectionPath.pop();
+        this._activeCollection = collection;
+        Manager.BaseManager.prototype.setActiveItem.call(this, collection);
+        this.emit('active-collection-changed', this._activeCollection);
     },
 
     _clearActiveDocModel: function() {

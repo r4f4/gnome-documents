@@ -166,7 +166,7 @@ const OverviewSearchbar = new Lang.Class({
             Lang.bind(this, this._onActiveTypeChanged));
         this._searchMatchId = Application.searchMatchManager.connect('active-changed',
             Lang.bind(this, this._onActiveMatchChanged));
-        this._collectionId = Application.collectionManager.connect('active-changed',
+        this._collectionId = Application.documentManager.connect('active-collection-changed',
             Lang.bind(this, this._onActiveCollectionChanged));
 
         this._onActiveSourceChanged();
@@ -312,7 +312,7 @@ const OverviewSearchbar = new Lang.Class({
         }
 
         if (this._collectionId != 0) {
-            Application.collectionManager.disconnect(this._collectionId);
+            Application.documentManager.disconnect(this._collectionId);
             this._collectionId = 0;
         }
 

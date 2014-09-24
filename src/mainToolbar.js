@@ -154,7 +154,7 @@ const OverviewToolbar = new Lang.Class({
 
     _setToolbarTitle: function() {
         let selectionMode = Application.selectionController.getSelectionMode();
-        let activeCollection = Application.collectionManager.getActiveItem();
+        let activeCollection = Application.documentManager.getActiveCollection();
         let primary = null;
 
         if (!selectionMode) {
@@ -213,7 +213,7 @@ const OverviewToolbar = new Lang.Class({
     },
 
     _checkCollectionBackButton: function() {
-        let item = Application.collectionManager.getActiveItem();
+        let item = Application.documentManager.getActiveCollection();
 
         if (item && !this._collBackButton) {
             this._collBackButton = this.addBackButton();
@@ -251,7 +251,7 @@ const OverviewToolbar = new Lang.Class({
 
         // connect to active collection changes while in this mode
         this._collectionId =
-            Application.collectionManager.connect('active-changed',
+            Application.documentManager.connect('active-collection-changed',
                                              Lang.bind(this, this._onActiveCollectionChanged));
     },
 
@@ -263,7 +263,7 @@ const OverviewToolbar = new Lang.Class({
         this.toolbar.set_custom_title(null);
 
         if (this._collectionId != 0) {
-            Application.collectionManager.disconnect(this._collectionId);
+            Application.documentManager.disconnect(this._collectionId);
             this._collectionId = 0;
         }
 
