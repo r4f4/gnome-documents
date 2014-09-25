@@ -79,7 +79,7 @@ const EditView = new Lang.Class({
         this._viewAction.enabled = false;
         this._viewAction.connect('activate', Lang.bind(this,
             function() {
-                Application.modeController.setWindowMode(WindowMode.WindowMode.PREVIEW);
+                Application.modeController.goBack();
             }));
 
         Application.documentManager.connect('load-started',

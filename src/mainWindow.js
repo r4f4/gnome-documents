@@ -155,6 +155,7 @@ const MainWindow = new Lang.Class({
         if (windowMode == WindowMode.WindowMode.PREVIEW ||
             windowMode == WindowMode.WindowMode.EDIT) {
             Application.documentManager.setActiveItem(null);
+            Application.modeController.goBack();
         } else if (windowMode == WindowMode.WindowMode.OVERVIEW && activeCollection) {
             Application.documentManager.activatePreviousCollection();
         } else {
@@ -234,10 +235,12 @@ const MainWindow = new Lang.Class({
         if (keyval == Gdk.KEY_Escape) {
             let model = preview.getModel();
 
-            if (preview.controlsVisible && (model != null))
+            if (preview.controlsVisible && (model != null)) {
                 preview.controlsVisible = false;
-            else if (fullscreen)
+            } else if (fullscreen) {
                 Application.documentManager.setActiveItem(null);
+                Application.modeController.goBack();
+            }
 
             return false;
         }

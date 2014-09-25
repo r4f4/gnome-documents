@@ -374,10 +374,6 @@ const Embed = new Lang.Class({
     },
 
     _onActiveItemChanged: function(manager, doc) {
-        if (doc && !doc.collection)
-            return;
-
-        Application.modeController.setWindowMode(WindowMode.WindowMode.OVERVIEW);
     },
 
     _clearLoadTimer: function() {

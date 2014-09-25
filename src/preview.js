@@ -792,6 +792,7 @@ const PreviewToolbar = new Lang.Class({
         backButton.connect('clicked', Lang.bind(this,
             function() {
                 Application.documentManager.setActiveItem(null);
+                Application.modeController.goBack();
                 this._searchAction.enabled = true;
             }));
 
