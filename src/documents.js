@@ -1173,11 +1173,17 @@ const DocumentManager = new Lang.Class({
     },
 
     addDocumentFromCursor: function(cursor) {
-        let doc = this.createDocumentFromCursor(cursor);
-        this.addItem(doc);
+        let id = cursor.get_string(Query.QueryColumns.URN)[0];
+        let doc = this.getItemById(id);
 
-        if (doc.collection)
-            Application.collectionManager.addItem(doc);
+        if (doc) {
+            this.emit('item-added', doc);
+        } else {
+            doc = this.createDocumentFromCursor(cursor);
+            this.addItem(doc);
+            if (doc.collection)
+                Application.collectionManager.addItem(doc);
+        }
 
         return doc;
     },

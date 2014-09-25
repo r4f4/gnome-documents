@@ -242,8 +242,6 @@ const TrackerController = new Lang.Class({
         }
 
         this._setQueryStatus(true);
-        Application.documentManager.clear();
-
         this._performCurrentQuery();
     },
 

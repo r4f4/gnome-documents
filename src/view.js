@@ -57,8 +57,13 @@ const ViewModel = new Lang.Class({
             Lang.bind(this, this._onItemAdded));
         Application.documentManager.connect('item-removed',
             Lang.bind(this, this._onItemRemoved));
-        Application.documentManager.connect('clear',
-            Lang.bind(this, this._onClear));
+
+        Application.trackerController.connect('query-status-changed', Lang.bind(this,
+            function(o, status) {
+                if (!status)
+                    return;
+                this._clear();
+            }));
 
         // populate with the intial items
         let items = Application.documentManager.getItems();
@@ -67,7 +72,7 @@ const ViewModel = new Lang.Class({
         }
     },
 
-    _onClear: function() {
+    _clear: function() {
         this.model.clear();
     },
 
