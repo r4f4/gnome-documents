@@ -14,16 +14,26 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-docs master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-27 11:16+0000\n"
-"PO-Revision-Date: 2014-01-26 17:44+0100\n"
-"Last-Translator: Benjamin Steinwender <b@stbe.at>\n"
+"POT-Creation-Date: 2014-09-24 18:49+0000\n"
+"PO-Revision-Date: 2014-09-26 23:28+0100\n"
+"Last-Translator: Bernd Homuth <dev@hmt.im>\n"
 "Language-Team: Deutsch <gnome-de@gnome.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.6.3\n"
+"X-Generator: Poedit 1.6.9\n"
+
+#. (itstool) path: p/link
+#: C/legal.xml:3
+msgid "Creative Commons Attribution-ShareAlike 3.0 Unported License"
+msgstr "Creative Commons Attribution-ShareAlike 3.0 Unported License"
+
+#. (itstool) path: license/p
+#: C/legal.xml:3
+msgid "This work is licensed under a <_:link-1/>."
+msgstr "Dieses Werk wird unter einer <_:link-1/> verbreitet."
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -31,315 +41,356 @@ msgid "translator-credits"
 msgstr ""
 "Hendrik Knackstedt <hendrik.knackstedt@t-online.de>, 2011.\n"
 "Gabor Karsay <gabor.karsay@gmx.at>, 2011, 2012.\n"
-"Christian Kirbach <christian.kirbach@gmail.com>, 2011-2013.\n"
+"Christian Kirbach <christian.kirbach@gmail.com>, 2011-2014.\n"
 "Mario Blättermann <mario.blaettermann@gmail.com>, 2011-2013.\n"
 "Benjamin Steinwender <b@stbe.at>, 2014."
 
 #. (itstool) path: credit/name
-#: C/collections.page:11 C/index.page:10 C/info.page:10 C/previews.page:11
-#: C/print.page:11 C/search.page:11 C/select.page:11 C/tracker.page:11
-#: C/viewgrid.page:11 C/view.page:11
+#: C/collections.page:12 C/index.page:14 C/info.page:12 C/print.page:11
+#: C/prob-no-show.page:12 C/prob-previews.page:12 C/search.page:11
+#: C/viewgrid.page:12 C/view.page:12
 msgid "Julita Inca"
 msgstr "Julita Inca"
 
 #. (itstool) path: credit/years
-#: C/collections.page:13 C/collections.page:18 C/filter.page:13
-#: C/formats.page:13 C/index.page:12 C/index.page:17 C/info.page:12
-#: C/info.page:17 C/previews.page:13 C/previews.page:18 C/print.page:13
-#: C/print.page:18 C/search.page:13 C/search.page:18 C/select.page:13
-#: C/select.page:18 C/tracker.page:13 C/tracker.page:18 C/viewgrid.page:13
-#: C/viewgrid.page:18 C/view.page:13 C/view.page:18
+#: C/collections.page:14 C/collections.page:19 C/filter.page:14
+#: C/formats.page:14 C/index.page:16 C/index.page:21 C/info.page:14
+#: C/info.page:19 C/print.page:13 C/print.page:18 C/prob-no-show.page:14
+#: C/prob-no-show.page:19 C/prob-previews.page:14 C/prob-previews.page:19
+#: C/search.page:13 C/search.page:18 C/viewgrid.page:14 C/viewgrid.page:19
+#: C/view.page:14 C/view.page:19
 msgid "2012"
 msgstr "2012"
 
 #. (itstool) path: credit/name
-#: C/collections.page:16 C/filter.page:11 C/formats.page:11 C/index.page:15
-#: C/info.page:15 C/previews.page:16 C/print.page:16 C/search.page:16
-#: C/select.page:16 C/tracker.page:16 C/viewgrid.page:16 C/view.page:16
+#: C/collections.page:17 C/filter.page:12 C/formats.page:12 C/index.page:19
+#: C/info.page:17 C/print.page:16 C/prob-no-show.page:17
+#: C/prob-previews.page:17 C/search.page:16 C/viewgrid.page:17 C/view.page:17
 msgid "Michael Hill"
 msgstr "Michael Hill"
 
+#. (itstool) path: credit/name
+#: C/collections.page:22 C/filter.page:17 C/formats.page:17 C/index.page:24
+#: C/info.page:22 C/prob-no-show.page:22 C/prob-previews.page:22
+#: C/viewgrid.page:22 C/view.page:22
+msgid "Ekaterina Gerasimova"
+msgstr "Ekaterina Gerasimova"
+
+#. (itstool) path: credit/years
+#: C/collections.page:24 C/filter.page:19 C/formats.page:19 C/index.page:26
+#: C/info.page:24 C/prob-no-show.page:24 C/prob-previews.page:24
+#: C/viewgrid.page:24 C/view.page:24
+msgid "2014"
+msgstr "2014"
+
 #. (itstool) path: info/desc
-#: C/collections.page:23
-msgid "Group related documents in a collection."
-msgstr "Zusammengehörende Dokumente in einer Sammlung gruppieren."
+#: C/collections.page:29
+msgid "Group related documents together to help sort them."
+msgstr ""
+"So gruppieren Sie zusammengehörende Dokumente, um das Sortieren zu "
+"erleichtern."
 
 #. (itstool) path: page/title
-#: C/collections.page:26
+#: C/collections.page:32
 msgid "Make collections of documents"
 msgstr "Dokumentsammlungen erstellen"
 
 #. (itstool) path: page/p
-#: C/collections.page:39
+#: C/collections.page:45
 msgid ""
-"<app>Documents</app> lets you put together documents of different types in "
-"one place called a <em>collection</em>. If you have documents that are "
-"related, you can group them to make them easier to find. For example, if you "
-"had a business trip where you made a presentation, your slides, your flight "
-"itinerary (a PDF file), your budget spreadsheet, and other hybrid PDF/ODF "
-"documents, can be grouped in one collection."
+"You can put together documents of different types in one place which is "
+"called a <em>collection</em>. If you have documents that are related, you "
+"can group them to make them easier to find. For example, if you had a "
+"business trip where you made a presentation, your slides, a PDF of your "
+"flight itinerary, your budget spreadsheet, and other word processor and PDF "
+"documents can be grouped in one collection."
 msgstr ""
-"<app>Dokumente</app> ermöglicht Ihnen die Zusammenfassung mehrerer Dokumente "
-"verschiedener Typen an einem zentralen Ort, der <gui>Sammlung</gui>. In "
-"irgendeiner Weise zusammengehörende Dokumente können Sie gruppieren, um sie "
-"leichter zu finden. Falls Sie beispielsweise eine Geschäftsreise unternommen "
-"und dort eine Präsentation vorgeführt haben, können Sie die "
-"Präsentationsdatei gemeinsam mit dem Flugplan (einer PDF-Datei), der Tabelle "
-"mit der Kostenkalkulation sowie weiteren PDF- oder ODF-Dokumenten in einer "
-"Sammlung zusammenfassen."
+"Fassen Sie Dokumente verschiedener Typen an einem zentralen Ort zusammen, "
+"der <gui>Sammlung</gui>. Zusammen gehörende Dokumente können Sie gruppieren, "
+"um sie leichter zu finden. Falls Sie beispielsweise eine Geschäftsreise "
+"unternommen und dort eine Präsentation vorgeführt haben, können Sie die "
+"Folien gemeinsam mit dem Flugplan im PDF-Format, der Tabelle mit der "
+"Kostenkalkulation sowie weiteren PDF- oder Textdokumenten in einer Sammlung "
+"gruppieren."
 
-#. (itstool) path: page/p
-#: C/collections.page:46
+#. (itstool) path: steps/title
+#: C/collections.page:53
 msgid "To create or add to a collection:"
 msgstr "So können Sie eine Sammlung erstellen oder hinzufügen:"
 
 #. (itstool) path: item/p
-#: C/collections.page:49 C/collections.page:72 C/print.page:39
-#: C/select.page:41
-msgid "Click the <gui>✓</gui> button."
+#: C/collections.page:55 C/collections.page:73 C/print.page:38
+msgid "Press the <gui>✓</gui> button."
 msgstr "Klicken Sie auf den Knopf <gui>✓</gui>."
 
 #. (itstool) path: item/p
-#: C/collections.page:52
-msgid "In selection mode, check the documents to be collected."
-msgstr ""
-"Verwenden Sie den Auswahlmodus, um die zusammenzufassenden Dokumente "
-"auszuwählen."
-
-#. (itstool) path: item/p
-#: C/collections.page:55
-msgid "Click the <gui>+</gui> button in the button bar."
-msgstr "Klicken Sie auf den <gui>+</gui>-Knopf in der Knopfleiste."
-
-#. (itstool) path: item/p
 #: C/collections.page:58
-msgid ""
-"In the collection list, click <gui>Add</gui> and type a new collection name, "
-"or select an existing collection. The selected documents will be added to "
-"the collection."
-msgstr ""
-"Klicken Sie in der Liste der Sammlungen auf <gui>Hinzufügen</gui> und geben "
-"Sie einen neuen Sammlungsnamen ein oder wählen Sie eine vorhandene Sammlung. "
-"Die ausgewählten Dokumente werden zu dieser Sammlung hinzugefügt."
+msgid "In selection mode, select related documents."
+msgstr "Wählen Sie zusammen gehörende Dokumente im Auswahlmodus."
 
-#. (itstool) path: note/p
-#: C/collections.page:65
-msgid ""
-"Collections do not behave like folders and their hierarchy: <em>you cannot "
-"put collections inside collections.</em>"
-msgstr ""
-"Sammlungen verhalten sich nicht wie Ordner mit ihrer hierarchischen "
-"Struktur. Daher können Sie <em>keine Sammlungen ineinander verschachteln</"
-"em>."
+#. (itstool) path: item/p
+#: C/collections.page:61
+msgid "Press <gui>Add to Collection</gui>."
+msgstr "Klicken Sie auf <gui>Zur Auswahl hinzufügen</gui>."
 
-#. (itstool) path: page/p
-#: C/collections.page:69
+#. (itstool) path: item/p
+#: C/collections.page:64
+msgid ""
+"In the collection list, press on <gui>Create new collection</gui> twice and "
+"type a new collection name, or select an existing collection. The selected "
+"documents will be added to the collection."
+msgstr ""
+"Klicken Sie in der Liste der Sammlungen zwei mal auf <gui>Neue Sammlung "
+"erstellen</gui> und geben Sie einen neuen Sammlungsnamen ein, oder wählen "
+"Sie eine vorhandene Sammlung. Die ausgewählten Dokumente werden zu dieser "
+"Sammlung hinzugefügt."
+
+#. (itstool) path: steps/title
+#: C/collections.page:71
 msgid "To delete a collection:"
 msgstr "So löschen Sie eine Sammlung:"
 
 #. (itstool) path: item/p
-#: C/collections.page:75
-msgid "In selection mode, check the collection to be deleted."
+#: C/collections.page:76
+msgid "In selection mode, select the collection that you want to delete."
 msgstr "Wählen Sie im Auswahlmodus die zu löschende Sammlung aus."
 
 #. (itstool) path: item/p
-#: C/collections.page:78
+#: C/collections.page:79
 msgid ""
-"Click the Trash button in the button bar. The collection will be deleted, "
-"leaving the original documents."
+"Press <gui style=\"button\">Delete</gui>. The collection will be deleted, "
+"leaving the original documents as they are."
 msgstr ""
-"Klicken Sie auf den Papierkorb-Knopf in der Knopfleiste. Die Sammlung wird "
-"entfernt, wobei die Originaldokumente nicht angetastet werden."
+"Klicken Sie auf <gui style=\"button\">Löschen</gui>. Die Sammlung wird "
+"gelöscht, wobei die Originaldokumente unversehrt bleiben."
 
 #. (itstool) path: media
 #. This is a reference to an external file such as an image or video. When
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/filter.page:23 C/search.page:53
-#, fuzzy
+#: C/filter.page:30 C/search.page:53
 msgctxt "_"
 msgid "external ref='media/go-down.png' md5='e8c16f5ab9ed933f4a537b740506f4d4'"
 msgstr "original"
 
 #. (itstool) path: info/desc
-#: C/filter.page:18
+#: C/filter.page:24
 msgid "Choose which documents to display."
 msgstr "Wählen Sie Dokumente zum Anzeigen aus."
 
 #. (itstool) path: page/title
-#: C/filter.page:21
+#: C/filter.page:27
 msgid "Filter documents"
 msgstr "Dokumente filtern"
 
 #. (itstool) path: page/p
-#: C/filter.page:23
-#, fuzzy
-msgid ""
-"Click the <media type=\"image\" src=\"media/go-down.png\">down</media> "
-"button next to the <link xref=\"search\">search</link> bar to limit the "
-"scope of the search in these categories:"
-msgstr ""
-"Klicken Sie auf den <media type=\"image\" src=\"figures/go-down.png"
-"\">Abwärtspfeil</media> in der Werkzeugleiste neben der <link xref="
-"\"documents-search\">Such</link>leiste, um den Suchbereich anhand folgender "
-"Kategorien einzuschränken:"
-
-#. (itstool) path: item/p
 #: C/filter.page:29
-msgid "<em>Sources</em>: Local, Google, SkyDrive, or All."
-msgstr "<em>Quellen</em>: Lokal, Google, SkyDrive oder Alle."
-
-#. (itstool) path: item/p
-#: C/filter.page:31
 msgid ""
-"<em>Type</em>: Collections, PDF Documents, Presentations, Spreadsheets, Text "
-"Documents, or All."
+"<link xref=\"search\">Open the search</link> and click the <media type="
+"\"image\" src=\"media/go-down.png\">down</media> button next to the search "
+"bar to limit the scope of the search in these categories:"
 msgstr ""
-"<em>Typ</em>: Sammlungen, PDF-Dokumente, Präsentationen, Tabellendokumente, "
-"Textdokumente oder Alle."
+"Öffnen Sie die <link xref=\"documents-search\">Such</link>leiste und klicken "
+"Sie auf den Knopf <media type=\"image\" src=\"media/go-down.png\">↓</media> "
+"neben der Suchleiste, um den Suchbereich anhand folgender Kategorien "
+"einzuschränken:"
+
+#. (itstool) path: item/title
+#: C/filter.page:35
+msgid "Sources"
+msgstr "Quellen"
 
 #. (itstool) path: item/p
-#: C/filter.page:35
-msgid "Title, Author, or All."
-msgstr "Titel, Autor oder Alle."
+#: C/filter.page:36
+msgid ""
+"Chose to search documents that are <gui>Local</gui>, accessed through <link "
+"href=\"help:gnome-help/online-accounts\">online accounts</link> with "
+"<gui>Google</gui>, <gui>OneDrive</gui>, <gui>ownCloud</gui>, or <gui>All</"
+"gui>."
+msgstr ""
+"Wählen Sie, um nach <gui>lokalen</gui> Dokumenten, oder Dokumenten von <link "
+"href=\"help:gnome-help/online-accounts\">Online-Konten</link> bei "
+"<gui>Google</gui>, <gui>OneDrive</gui>, <gui>ownCloud</gui> oder <gui>Allen</"
+"gui> zu suchen."
+
+#. (itstool) path: item/title
+#: C/filter.page:42
+msgid "Type"
+msgstr "Typ"
+
+#. (itstool) path: item/p
+#: C/filter.page:43
+msgid ""
+"Search only documents that are <gui>Collections</gui>, <gui>PDF Documents</"
+"gui>, <gui>Presentations</gui>, <gui>Spreadsheets</gui>, <gui>Text "
+"Documents</gui>, or <gui>All</gui>."
+msgstr ""
+"Nur Dokumente Suchen, die <gui>Sammlungen</gui>, <gui>PDF-Dokumente</gui>, "
+"<gui>Präsentationen</gui>, <gui>Tabellendokumente</gui>, <gui>Textdokumente</"
+"gui> sind, oder <gui>Alle</gui>."
+
+#. (itstool) path: item/title
+#: C/filter.page:48
+msgid "Match"
+msgstr "Übereinstimmung"
+
+#. (itstool) path: item/p
+#: C/filter.page:49
+msgid ""
+"Choose to search only the <gui>Title</gui>, the <gui>Author</gui>, or "
+"<gui>All</gui>."
+msgstr ""
+"Wählen Sie, um nur nach <gui>Titel</gui>, dem <gui>Autor</gui> oder "
+"<gui>Alle</gui> zu suchen."
 
 #. (itstool) path: note/p
-#: C/filter.page:40
-#, fuzzy
+#: C/filter.page:55
 msgid ""
-"In order for <gui>Google</gui> or <gui>SkyDrive</gui> to appear in the "
-"filter list, it is necessary to configure Google or Windows Live as an <link "
-"href=\"gnome-help:accounts-add\">online account</link>."
+"In order for <gui>Google</gui>, <gui>OneDrive</gui> or <gui>ownCloud</gui> "
+"to appear in the filter list, it is necessary to configure Google, ownCloud "
+"or Windows Live as an <link href=\"help:gnome-help/accounts-add\">online "
+"account</link>."
 msgstr ""
-"Damit <gui>Google</gui> oder <gui>SkyDrive</gui> in der Filterliste "
-"erscheinen, is es notwendig, Google oder Windows Live als ein <link xref="
-"\"accounts-add\">Online-Konto</link> einzurichten."
+"Damit <gui>Google</gui>, <gui>OneDrive</gui> oder <gui>ownCloud</gui> in der "
+"Filterliste erscheinen, ist es notwendig, Google, ownCload oder Windows Live "
+"als ein <link href=\"help:gnome-help/accounts-add\">Online-Konto</link> "
+"einzurichten."
 
 #. (itstool) path: info/desc
-#: C/formats.page:18
+#: C/formats.page:24
 msgid "<app>Documents</app> displays a number of popular document types."
 msgstr ""
 "<app>Dokumente</app> zeigt eine Reihe von verbreiteten Dokumenttypen an."
 
 #. (itstool) path: page/title
-#: C/formats.page:22
-msgid "Formats supported"
+#: C/formats.page:28
+msgid "Supported formats"
 msgstr "Unterstützte Formate"
 
 #. (itstool) path: page/p
-#: C/formats.page:24
+#: C/formats.page:31
 msgid ""
 "<app>Documents</app> displays PDF, DVI, XPS, PostScript and the formats "
-"supported by <app>Document Viewer</app> (Evince), <app>Microsoft Office</"
-"app>, <app>LibreOffice</app> and <app>Google Docs</app>."
+"supported by <app href=\"help:evince\">Document Viewer</app>, <app>Microsoft "
+"Office</app>, <app>LibreOffice</app> and <app>Google Docs</app>."
 msgstr ""
-"<app>Dokumente</app> zeigt PDF, DVI, XPS, PostScript und die vom "
-"<app>Dokumentenbetrachter</app> (Evince), <app>Microsoft Office</app>, "
-"<app>LibreOffice</app> und <app>Google Docs</app> unterstützten Formate an."
+"<app>Dokumente</app> zeigt PDF, DVI, XPS, PostScript und die von <app href="
+"\"help:evince\">Dokumentenbetrachter</app> (Evince), <app>Microsoft Office</"
+"app>, <app>LibreOffice</app> und <app>Google Docs</app> unterstützten "
+"Formate an."
 
-#. (itstool) path: info/desc
-#: C/index.page:22
-msgid ""
-"Organize the documents stored locally on your computer or created online."
-msgstr ""
-"Verwalten Sie alle lokal auf Ihrem Rechner gespeicherten und online "
-"erstellten Dokumente."
-
-#. (itstool) path: page/title
-#: C/index.page:26
+#. (itstool) path: info/title
+#: C/index.page:7
+msgctxt "link"
 msgid "Documents"
 msgstr "Dokumente"
 
-#. (itstool) path: page/p
-#: C/index.page:38
+#. (itstool) path: info/title
+#: C/index.page:8
+msgctxt "text"
+msgid "Documents"
+msgstr "Dokumente"
+
+#. (itstool) path: info/desc
+#: C/index.page:31
 msgid ""
-"<app>Documents</app> is a GNOME application that lets you display, organize, "
+"Organize, view and edit the documents that are stored locally on your "
+"computer or online."
+msgstr ""
+"Verwalten, betrachten und bearbeiten Sie lokal auf Ihrem Rechner oder im "
+"Internet gespeicherte Dokumente."
+
+#. (itstool) path: page/title
+#: C/index.page:35
+msgid "<_:media-1/> Documents"
+msgstr "<_:media-1/> Documente"
+
+#. (itstool) path: page/p
+#: C/index.page:50
+msgid ""
+"<app>Documents</app> is a GNOME application that lets you display, organize "
 "and print the documents on your computer or those created remotely using "
-"<em>Google Docs</em> or <em>SkyDrive</em>."
+"<em>Google Docs</em>, <em>ownCloud</em> or <em>OneDrive</em>."
 msgstr ""
 "<app>Dokumente</app> ist eine Anwendung für GNOME, mit der Sie die Dokumente "
 "auf Ihrem Rechner anzeigen, organisieren und drucken können. Diese können "
-"entweder lokal oder entfernt mittels <em>Google Docs</em> oder <em>SkyDrive</"
-"em> erstellt worden sein."
+"entweder lokal oder entfernt in <em>Google Docs</em>, <em>ownCloud</em> oder "
+"<em>OneDrive</em> gespeichert sein."
 
 #. (itstool) path: section/title
-#: C/index.page:43
-msgid "View, Sort and Search"
+#: C/index.page:55
+msgid "View, sort and search"
 msgstr "Anzeigen, Sortieren und Suchen"
 
 #. (itstool) path: section/title
-#: C/index.page:47
-msgid "Select, Organize, Print"
-msgstr "Wählen, organisieren und drucken"
+#: C/index.page:59
+msgid "Select, organize and print"
+msgstr "Auswählen, organisieren und drucken"
 
 #. (itstool) path: section/title
-#: C/index.page:51
-msgid "Questions"
-msgstr "Fragen"
+#: C/index.page:63
+msgid "Problems"
+msgstr "Probleme"
 
 #. (itstool) path: info/desc
-#: C/info.page:22
+#: C/info.page:29
 msgid "See a document's name, location, date modified, or type."
 msgstr ""
 "Den Namen, Ort, das Änderungsdatum oder den Typ eines Dokuments anzeigen."
 
 #. (itstool) path: page/title
-#: C/info.page:25
+#: C/info.page:32
 msgid "Find information about documents"
 msgstr "Ermitteln von Informationen über Dokumente"
 
 #. (itstool) path: page/p
-#: C/info.page:35
+#: C/info.page:42
 msgid ""
-"When a document is created, it comes with <em>metadata</em>. <app>Documents</"
+"When a document is created, it contains <em>metadata</em>. <app>Documents</"
 "app> displays the following metadata for each document:"
 msgstr ""
-"Bei der Erstellung eines Dokuments werden <em>Metadaten</em> erzeugt. "
-"<app>Dokumente</app> zeigt die folgenden Metadaten entsprechend dem "
+"Bei der Erstellung eines Dokuments werden <em>Metadaten</em> mit "
+"gespeichert. <app>Dokumente</app> zeigt die folgenden Metadaten für jeden "
 "Dokumenttyp an:"
 
 #. (itstool) path: item/p
-#: C/info.page:40
+#: C/info.page:47
 msgid "Title: the name of the document, which can be edited;"
 msgstr "Titel: Der Name des Dokuments, der bearbeitet werden kann;"
 
 #. (itstool) path: item/p
-#: C/info.page:43
-msgid "Source: the path of the folder containing the document;"
+#: C/info.page:50
+msgid "Source: the path to the folder containing the document;"
 msgstr "Quelle: Der Pfad zum Ordner, der das Dokument enthält;"
 
 #. (itstool) path: item/p
-#: C/info.page:46
+#: C/info.page:53
 msgid "Date Modified;"
 msgstr "Änderungsdatum;"
 
 #. (itstool) path: item/p
-#: C/info.page:49
-#, fuzzy
+#: C/info.page:56
 msgid "Type: the <link xref=\"formats\">file format</link> of the document."
-msgstr ""
-"Typ: Das <link xref=\"documents-formats\">Dateiformat</link> des Dokuments."
+msgstr "Typ: Das <link xref=\"formats\">Dateiformat</link> des Dokuments."
 
 #. (itstool) path: page/p
-#: C/info.page:53
+#: C/info.page:60
 msgid "To see a document's properties:"
 msgstr "So betrachten Sie die Eigenschaften eines Dokuments:"
 
 #. (itstool) path: item/p
-#: C/info.page:56
-msgid "Click the <gui>Check</gui> button to switch to selection mode."
-msgstr ""
-"Klicken Sie auf den Knopf <gui>Prüfen</gui>, um in den Auswahlmodus zu "
-"wechseln."
+#: C/info.page:63
+msgid "Click the check button to switch to selection mode."
+msgstr "Klicken Sie auf den Ankreuzknopf, um in den Auswahlmodus zu wechseln."
 
 #. (itstool) path: item/p
-#: C/info.page:59
+#: C/info.page:66
 msgid "Select a document."
 msgstr "Wählen Sie ein Dokument aus."
 
 #. (itstool) path: item/p
-#: C/info.page:62
+#: C/info.page:69
 msgid ""
 "Click the <gui>Properties</gui> button at the right end of the button bar."
 msgstr ""
@@ -347,7 +398,7 @@ msgstr ""
 "Knopfleiste."
 
 #. (itstool) path: note/p
-#: C/info.page:68
+#: C/info.page:75
 msgid ""
 "Some types of documents (e.g. PDF files) can be password protected, "
 "preventing access to their metadata or content."
@@ -357,7 +408,7 @@ msgstr ""
 "oder den vollständigen Inhalt anzuzeigen."
 
 #. (itstool) path: note/p
-#: C/info.page:73
+#: C/info.page:80
 msgid ""
 "<app>Documents</app> does not currently offer any mechanism to add privacy "
 "to a document. You may be able to do this from the application you used to "
@@ -370,51 +421,6 @@ msgstr ""
 "Acrobat</app>)."
 
 #. (itstool) path: info/desc
-#: C/previews.page:23
-msgid "You can only preview files stored locally."
-msgstr ""
-"Sie können nur Vorschauen für lokal gespeicherte Dateien anzeigen lassen."
-
-#. (itstool) path: page/title
-#: C/previews.page:26
-msgid "Why don't some files have previews?"
-msgstr "Warum gibt es keine Vorschauen für einige Dateien?"
-
-#. (itstool) path: page/p
-#: C/previews.page:34
-msgid ""
-"When you open <app>Documents</app>, a preview thumbnail is displayed for "
-"documents that are stored locally. Those stored on a remote server like "
-"<em>Google Docs</em> or <em>SkyDrive</em> show as missing (or blank) preview "
-"thumbnails."
-msgstr ""
-"Wenn Sie <app>Dokumente</app> öffnen, wird ein Vorschaubild für lokal "
-"gespeicherte Dokumente angezeigt. Dokumente, die sich auf einem entfernten "
-"Server wie <em>Google Docs</em> oder <em>SkyDrive</em> befinden, werden als "
-"fehlende oder leere Vorschauen angezeigt."
-
-#. (itstool) path: page/p
-#: C/previews.page:39
-msgid ""
-"If you download a <em>Google Docs</em> or <em>SkyDrive</em> document to "
-"local storage, a thumbnail will be generated."
-msgstr ""
-"Wenn Sie ein <em>Google Docs</em> oder <em>SkyDrive</em>-Dokument lokal "
-"speichern, wird ein Vorschaubild erzeugt."
-
-#. (itstool) path: note/p
-#: C/previews.page:43
-msgid ""
-"The local copy of a document downloaded from <em>Google Docs</em> or "
-"<em>SkyDrive</em> will lose its ability to be updated online. If you want to "
-"continue to edit it online, it is better not to download it."
-msgstr ""
-"Die lokale Kopie eines von <em>Google Docs</em> oder <em>SkyDrive</em> "
-"heruntergeladenen Dokuments kann nicht mehr online aktualisiert werden. "
-"Falls Sie diese Möglichkeit erhalten wollen, ist es besser, es nicht "
-"herunterzuladen."
-
-#. (itstool) path: info/desc
 #: C/print.page:23
 msgid "Print documents that are stored locally or online."
 msgstr "Drucken Sie lokal oder im Internet gespeicherte Dokumente."
@@ -424,19 +430,19 @@ msgstr "Drucken Sie lokal oder im Internet gespeicherte Dokumente."
 msgid "Print a document"
 msgstr "Ein Dokument drucken"
 
-#. (itstool) path: page/p
-#: C/print.page:35
+#. (itstool) path: steps/title
+#: C/print.page:36
 msgid "To print a document:"
 msgstr "So drucken Sie ein Dokument:"
 
 #. (itstool) path: item/p
-#: C/print.page:42
+#: C/print.page:41
 msgid "In selection mode, check the document to be printed."
 msgstr ""
 "Verwenden Sie den Auswahlmodus, um das zu druckende Dokument auszuwählen."
 
 #. (itstool) path: item/p
-#: C/print.page:45
+#: C/print.page:44
 msgid ""
 "Click the Print button in the button bar. The <gui>Print</gui> dialog opens."
 msgstr ""
@@ -444,13 +450,109 @@ msgstr ""
 "der Dialog <gui>Drucken</gui>."
 
 #. (itstool) path: note/p
-#: C/print.page:51
+#: C/print.page:50
 msgid ""
 "Printing is not available when more than one document is selected, or when a "
 "collection is selected."
 msgstr ""
 "Das Drucken ist nicht möglich, wenn mehr als ein Dokument oder eine Sammlung "
 "ausgewählt ist."
+
+#. (itstool) path: info/desc
+#: C/prob-no-show.page:29
+msgid "Your local documents do not appear in <gui>Documents</gui>."
+msgstr "Ihre lokalen Dokumente erscheinen nicht in <gui>Dokumente</gui>."
+
+#. (itstool) path: page/title
+#: C/prob-no-show.page:32
+msgid "My documents are not shown"
+msgstr "Meine Dokumente sind nicht sichtbar"
+
+#. (itstool) path: page/p
+#: C/prob-no-show.page:46
+msgid ""
+"<app>Documents</app> supports only certain types of documents such as PDFs "
+"and office suite documents such as spreadsheets and word processor "
+"documents. It will not show text documents and photos."
+msgstr ""
+"<app>Dokumente</app> unterstützt nur bestimmte Dokumententypen wie z.B. PDFs "
+"und Office-Dokumente wie Tabellenkalkulationen und "
+"Textverarbeitungsdokumente. Es stellt keine reinen Textdokuments oder Fotos "
+"dar."
+
+#. (itstool) path: page/p
+#: C/prob-no-show.page:50
+msgid ""
+"For your local documents to appear in <app>Documents</app>, they must be "
+"inside your <file>Documents</file> or <file>Downloads</file> folders, or "
+"inside folders that are in those directories. Documents that are in other "
+"places on your computer will not be shown."
+msgstr ""
+"Damit lokale Dokumente in <app>Dokumente</app> erscheinen, müssen sie in "
+"Ihrem Ordner <file>Dokumente</file> oder <file>Downloads</file> sein, oder "
+"in deren Unterordnern. Dokumente an anderen Orten auf Ihrem Rechner werden "
+"nicht angezeigt."
+
+#. (itstool) path: page/p
+#: C/prob-no-show.page:55
+msgid ""
+"If your documents fail to display in <app>Documents</app>, <app>Tracker</"
+"app> may not be running or properly configured. Make sure <app>Tracker</app> "
+"is running in your session. The default configuration, set to index files in "
+"your home directory (non-recursively) and XDG folders (recursively), should "
+"be adequate."
+msgstr ""
+"Falls Ihre Dokumente in <app>Dokumente</app> nicht angezeigt werden können, "
+"so ist es möglich, dass <app>Tracker</app> nicht läuft oder nicht korrekt "
+"eingerichtet ist. Stellen Sie sicher, dass <app>Tracker</app> in Ihrer "
+"Sitzung läuft. In der Standardkonfiguration, die passend sein sollte, werden "
+"Dateien in Ihrem persönlichen Ordner (nicht rekursiv) sowie in den XDG-"
+"Ordnern (rekursiv) erfasst."
+
+#. (itstool) path: info/desc
+#: C/prob-previews.page:29
+msgid "You can only preview files stored locally, on Google Drive or ownCloud."
+msgstr ""
+"Sie können nur Vorschauen für lokal gespeicherte Dateien, auf Google Drive "
+"und ownCloud anzeigen lassen."
+
+#. (itstool) path: page/title
+#: C/prob-previews.page:33
+msgid "Why do some files not have previews?"
+msgstr "Warum gibt es keine Vorschauen für einige Dateien?"
+
+#. (itstool) path: page/p
+#: C/prob-previews.page:41
+msgid ""
+"When you open <app>Documents</app>, a preview thumbnail is displayed for "
+"documents that are stored locally, on <em>Google Drive</em> or <em>ownCloud</"
+"em>. Those stored in <em>OneDrive</em> show as missing (or blank) preview "
+"thumbnails."
+msgstr ""
+"Wenn Sie <app>Dokumente</app> öffnen, wird ein Vorschaubild für lokal, auf "
+"<em>Google Drive</em> und <em>ownCloud</em> gespeicherte Dokumente "
+"angezeigt. Dokumente, die sich auf <em>OneDrive</em> befinden, werden als "
+"fehlende oder leere Vorschauen angezeigt."
+
+#. (itstool) path: page/p
+#: C/prob-previews.page:46
+msgid ""
+"If you download a <em>OneDrive</em> document to local storage through the "
+"web interface, a thumbnail will be generated."
+msgstr ""
+"Wenn Sie ein <em>OneDrive</em>-Dokument über das Internet herunterladen und "
+"lokal speichern, wird ein Vorschaubild erstellt."
+
+#. (itstool) path: note/p
+#: C/prob-previews.page:50
+msgid ""
+"The local copy of a document downloaded from an online account will lose its "
+"ability to be updated online. If you want to continue to edit it online, it "
+"is better not to download it."
+msgstr ""
+"Die lokale Kopie eines von einem Online-Konto heruntergeladenen Dokuments "
+"kann nicht mehr online aktualisiert werden. Falls Sie es im Internet "
+"bearbeiten wollen, ist es besser, es nicht herunterzuladen."
 
 #. (itstool) path: info/desc
 #: C/search.page:23
@@ -482,132 +584,32 @@ msgid ""
 "Start typing keywords, and searching begins instantly. You will see a list "
 "of documents whose title or author matches the keywords."
 msgstr ""
+"Tippen Sie Schlagworte ein und die Suche beginnt sofort. Sie sehen dann eine "
+"Liste der Dokumente, deren Titel oder Autor den Schlagwörtern entspricht."
 
 #. (itstool) path: note/p
 #: C/search.page:52
-#, fuzzy
 msgid ""
 "You can restrict or filter the search results by clicking the <media type="
 "\"image\" src=\"media/go-down.png\">down</media> button and selecting "
 "various <link xref=\"filter\">filters</link>."
 msgstr ""
 "Sie können die Suchergebnisse einschränken oder filtern, indem Sie auf den "
-"<media type=\"image\" src=\"figures/go-down.png\">Abwärtspfeil</media> in "
-"der Werkzeugleiste klicken und verschiedene <link xref=\"documents-filter"
-"\">Filter</link> auswählen."
+"Knopf <media type=\"image\" src=\"media/go-down.png\">↓</media> klicken und "
+"verschiedene <link xref=\"filter\">Filter</link> auswählen."
 
 #. (itstool) path: info/desc
-#: C/select.page:23
-msgid "Use selection mode to select more than one document or collection."
-msgstr ""
-"Verwenden Sie den Auswahlmodus, um mehrere Dokumente oder Sammlungen "
-"auszuwählen."
-
-#. (itstool) path: page/title
-#: C/select.page:27
-msgid "Selecting documents"
-msgstr "Dokumente auswählen"
-
-#. (itstool) path: page/p
-#: C/select.page:36
-msgid ""
-"From <app>Documents</app> selection mode you can open, print, view or make "
-"collections of your documents. To use selection mode:"
-msgstr ""
-"Aus dem Auswahlmodus von <app>Dokumente</app> können Sie Dokumente öffnen, "
-"drucken, betrachten oder Sammlungen daraus erstellen. So verwenden Sie den "
-"Auswahlmodus:"
-
-#. (itstool) path: item/p
-#: C/select.page:44
-msgid ""
-"Select one or more documents or collections. The button bar appears with the "
-"actions that are valid for your selection."
-msgstr ""
-"Wählen Sie ein oder mehrere Dokumente oder Sammlungen aus. Die Knopfleiste "
-"erscheint und zeigt die Aktionen an, die für Ihre Auswahl möglich sind."
-
-#. (itstool) path: section/title
-#: C/select.page:51
-msgid "Selection mode actions"
-msgstr "Aktionen im Auswahlmodus:"
-
-#. (itstool) path: section/p
-#: C/select.page:53
-msgid "After selecting one or more documents you can:"
-msgstr "Nach dem Auswählen eines oder mehrerer Dokumente können Sie:"
-
-#. (itstool) path: item/p
-#: C/select.page:57
-msgid "Open with Document Viewer (folder icon)."
-msgstr "Öffnen mit dem Dokumentenbetrachter (Ordnersymbol)."
-
-#. (itstool) path: item/p
-#: C/select.page:60
-msgid ""
-"Print (printer icon): print a document (only available when a single "
-"document is selected)."
-msgstr ""
-"Drucken (Druckersymbol): ein Dokument drucken, sofern nur ein einzelnes "
-"Dokument ausgewählt ist."
-
-#. (itstool) path: item/p
-#: C/select.page:64
-msgid "Organize (plus icon): create a collection of documents."
-msgstr "Organisieren (mit dem Plus-Symbol): Eine Dokumentsammlungen erstellen"
-
-#. (itstool) path: item/p
-#: C/select.page:67
-msgid ""
-"Properties (wrench icon): display the properties of a document (only "
-"available when a single document is selected)."
-msgstr ""
-"Eigenschaften (Schraubenschlüsselsymbol): die Eigenschaften eines Dokuments "
-"anzeigen, sofern nur ein einzelnes Dokument ausgewählt ist."
-
-#. (itstool) path: item/p
-#: C/select.page:71
-msgid "Delete (trash icon): delete one or more collections."
-msgstr "Löschen (Papierkorbsymbol): eine oder mehrere Sammlungen löschen."
-
-#. (itstool) path: info/desc
-#: C/tracker.page:23
-msgid "Local or remote documents do not appear."
-msgstr "Lokale oder entfernte Dokumente werden nicht angezeigt."
-
-#. (itstool) path: page/title
-#: C/tracker.page:26
-msgid "My documents cannot be seen"
-msgstr "Meine Dokumente sind nicht sichtbar"
-
-#. (itstool) path: page/p
-#: C/tracker.page:40
-msgid ""
-"If your documents fail to display in <app>Documents</app>, <app>Tracker</"
-"app> may not be running or properly configured. Make sure Tracker is running "
-"in your session. The default configuration, set to index files in your home "
-"directory (non-recursively) and XDG folders (recursively), should be "
-"adequate. Ensure that your documents are in one of these paths."
-msgstr ""
-"Falls Ihre Dokumente in <app>Dokumente</app> nicht angezeigt werden können, "
-"wäre es möglich, dass <app>Tracker</app> nicht läuft oder nicht korrekt "
-"eingerichtet ist. Stellen Sie sicher, dass Tracker in Ihrer Sitzung läuft. "
-"In der Standardkonfiguration werden Dateien in Ihrem persönlichen Ordner "
-"(nicht rekursiv) sowie in den XDG-Ordner (rekursiv) erfasst. Stellen Sie "
-"sicher, dass sich Ihre Ordner in einem dieser Pfade befinden."
-
-#. (itstool) path: info/desc
-#: C/viewgrid.page:23
+#: C/viewgrid.page:29
 msgid "Change the way documents are displayed."
 msgstr "Ändern Sie die Art der Anzeige von Dokumenten."
 
 #. (itstool) path: page/title
-#: C/viewgrid.page:26
+#: C/viewgrid.page:32
 msgid "View files in a list or grid"
 msgstr "Dateien in einer Liste oder in einem Raster anzeigen"
 
 #. (itstool) path: page/p
-#: C/viewgrid.page:35
+#: C/viewgrid.page:41
 msgid ""
 "Documents and collections are presented in <gui>Grid</gui> format by "
 "default. To view in <gui>List</gui> format:"
@@ -616,48 +618,42 @@ msgstr ""
 "angezeigt. So ändern Sie dies in die <gui>Listenansicht</gui>:"
 
 #. (itstool) path: item/p
-#: C/viewgrid.page:40
-msgid ""
-"Go to the top bar and click <app>Documents</app> to display the app menu."
+#: C/viewgrid.page:46
+msgid "Press the list button in the top-right corner of the window."
 msgstr ""
-"Klicken Sie auf <app>Dokumente</app> im oberen Panel, um das Anwendungsmenü "
-"anzuzeigen."
-
-#. (itstool) path: item/p
-#: C/viewgrid.page:44
-msgid "Click <gui>List</gui> from the <gui>View as</gui> section."
-msgstr "Klicken Sie im Abschnitt <gui>Anzeigen als</gui> auf <gui>Liste</gui>."
+"Klicken Sie auf den Listenknopf in der oberen rechten Ecke des Fensters."
 
 #. (itstool) path: note/p
-#: C/viewgrid.page:49
+#: C/viewgrid.page:51
 msgid ""
 "List view has columns displaying the document type and date modified, and "
-"whether it's stored locally, or in <app>Google Docs</app> or <em>SkyDrive</"
-"em>."
+"whether it's stored locally or remotely in one of your online accounts."
 msgstr ""
 "In der Listenansicht werden in Spalten der Dokumenttyp und der Zeitpunkt der "
-"letzten Änderung, außerdem Informationen darüber, ob es lokal gespeichert "
-"ist oder in <app>Google Docs</app> oder <em>SkyDrive</em>."
+"letzten Änderung angezeigt. Zusätzlich wird angezeigt, ob es lokal oder in "
+"einem Online-Konto gespeichert ist."
 
 #. (itstool) path: page/p
-#: C/viewgrid.page:54
-msgid "Click <gui>Grid</gui> in the app menu to return to the default format."
+#: C/viewgrid.page:56
+msgid ""
+"Click the grid button in the top-right corner of the window to return to the "
+"grid view."
 msgstr ""
-"Klicken Sie auf <gui>Raster</gui> im Anwendungsmenü, um zum vorgegebenen "
-"Format zurückzukehren."
+"Klicken Sie auf den Rasterknopf in der oberen rechten Ecke des Fensters, um "
+"in die Rasteransicht zurückzukehren."
 
 #. (itstool) path: info/desc
-#: C/view.page:23
-msgid "View documents full-screen."
-msgstr "Dokumente im Vollbildmodus betrachten."
+#: C/view.page:29
+msgid "Open documents that are stored locally or online."
+msgstr "So öffnen Sie lokale oder im Internet gespeicherte Dokumente."
 
 #. (itstool) path: page/title
-#: C/view.page:26
-msgid "Display documents stored locally or online"
-msgstr "Lokal oder online gespeicherte Dokumente ansehen"
+#: C/view.page:32
+msgid "View your documents"
+msgstr "Ihre Dokumente ansehen"
 
 #. (itstool) path: page/p
-#: C/view.page:36
+#: C/view.page:42
 msgid ""
 "When you open <app>Documents</app>, all of your documents, those stored "
 "locally as well as online, are displayed as thumbnails."
@@ -666,44 +662,151 @@ msgstr ""
 "lokal als auch online gespeicherte, als Vorschauen angezeigt."
 
 #. (itstool) path: note/p
-#: C/view.page:40
+#: C/view.page:46
+msgid ""
+"To see documents from your online accounts, it is necessary to <link href="
+"\"help:gnome-help/accounts-add\">set up the accounts</link>."
+msgstr ""
+"Es ist notwendig <link href=\"help:gnome-help/accounts-add\">die Konten "
+"einzurichten</link>, um die Dokumente Ihrer Online-Konten zu sehen."
+
+#. (itstool) path: page/p
+#: C/view.page:50
+msgid "To view the contents of a document, press on the thumbnail."
+msgstr ""
+"Klicken Sie auf das Vorschaubild, um den Inhalt eines Dokuments anzuschauen."
+
+#. (itstool) path: page/p
+#: C/view.page:52
+msgid ""
+"To exit the document, click the back arrow button in the top-left of the "
+"window."
+msgstr ""
+"Um das Dokument zu verlassen, klicken Sie auf den Knopf mit dem rückwärts "
+"weisenden Pfeil in der oberen linken Ecke des Fensters."
+
+#~ msgid "In selection mode, check the documents to be collected."
+#~ msgstr ""
+#~ "Verwenden Sie den Auswahlmodus, um die zusammenzufassenden Dokumente "
+#~ "auszuwählen."
+
+#~ msgid "Click the <gui>+</gui> button in the button bar."
+#~ msgstr "Klicken Sie auf den <gui>+</gui>-Knopf in der Knopfleiste."
+
+#~ msgid ""
+#~ "Collections do not behave like folders and their hierarchy: <em>you "
+#~ "cannot put collections inside collections.</em>"
+#~ msgstr ""
+#~ "Sammlungen verhalten sich nicht wie Ordner mit ihrer hierarchischen "
+#~ "Struktur. Daher können Sie <em>keine Sammlungen ineinander verschachteln</"
+#~ "em>."
+
+#~ msgid "<em>Sources</em>: Local, Google, SkyDrive, or All."
+#~ msgstr "<em>Quellen</em>: Lokal, Google, SkyDrive oder Alle."
+
+#~ msgid "Title, Author, or All."
+#~ msgstr "Titel, Autor oder Alle."
+
+#~ msgid "Formats supported"
+#~ msgstr "Unterstützte Formate"
+
+#~ msgid "Questions"
+#~ msgstr "Fragen"
+
+#~ msgid "Use selection mode to select more than one document or collection."
+#~ msgstr ""
+#~ "Verwenden Sie den Auswahlmodus, um mehrere Dokumente oder Sammlungen "
+#~ "auszuwählen."
+
+#~ msgid "Selecting documents"
+#~ msgstr "Dokumente auswählen"
+
+#~ msgid ""
+#~ "From <app>Documents</app> selection mode you can open, print, view or "
+#~ "make collections of your documents. To use selection mode:"
+#~ msgstr ""
+#~ "Aus dem Auswahlmodus von <app>Dokumente</app> können Sie Dokumente "
+#~ "öffnen, drucken, betrachten oder Sammlungen daraus erstellen. So "
+#~ "verwenden Sie den Auswahlmodus:"
+
+#~ msgid ""
+#~ "Select one or more documents or collections. The button bar appears with "
+#~ "the actions that are valid for your selection."
+#~ msgstr ""
+#~ "Wählen Sie ein oder mehrere Dokumente oder Sammlungen aus. Die "
+#~ "Knopfleiste erscheint und zeigt die Aktionen an, die für Ihre Auswahl "
+#~ "möglich sind."
+
+#~ msgid "Selection mode actions"
+#~ msgstr "Aktionen im Auswahlmodus:"
+
+#~ msgid "After selecting one or more documents you can:"
+#~ msgstr "Nach dem Auswählen eines oder mehrerer Dokumente können Sie:"
+
+#~ msgid "Open with Document Viewer (folder icon)."
+#~ msgstr "Öffnen mit dem Dokumentenbetrachter (Ordnersymbol)."
+
+#~ msgid ""
+#~ "Print (printer icon): print a document (only available when a single "
+#~ "document is selected)."
+#~ msgstr ""
+#~ "Drucken (Druckersymbol): ein Dokument drucken, sofern nur ein einzelnes "
+#~ "Dokument ausgewählt ist."
+
+#~ msgid "Organize (plus icon): create a collection of documents."
+#~ msgstr ""
+#~ "Organisieren (mit dem Plus-Symbol): Eine Dokumentsammlungen erstellen"
+
+#~ msgid ""
+#~ "Properties (wrench icon): display the properties of a document (only "
+#~ "available when a single document is selected)."
+#~ msgstr ""
+#~ "Eigenschaften (Schraubenschlüsselsymbol): die Eigenschaften eines "
+#~ "Dokuments anzeigen, sofern nur ein einzelnes Dokument ausgewählt ist."
+
+#~ msgid "Delete (trash icon): delete one or more collections."
+#~ msgstr "Löschen (Papierkorbsymbol): eine oder mehrere Sammlungen löschen."
+
+#~ msgid "Local or remote documents do not appear."
+#~ msgstr "Lokale oder entfernte Dokumente werden nicht angezeigt."
+
+#~ msgid ""
+#~ "Go to the top bar and click <app>Documents</app> to display the app menu."
+#~ msgstr ""
+#~ "Klicken Sie auf <app>Dokumente</app> im oberen Panel, um das "
+#~ "Anwendungsmenü anzuzeigen."
+
+#~ msgid "Click <gui>List</gui> from the <gui>View as</gui> section."
+#~ msgstr ""
+#~ "Klicken Sie im Abschnitt <gui>Anzeigen als</gui> auf <gui>Liste</gui>."
+
+#~ msgid ""
+#~ "Click <gui>Grid</gui> in the app menu to return to the default format."
+#~ msgstr ""
+#~ "Klicken Sie auf <gui>Raster</gui> im Anwendungsmenü, um zum vorgegebenen "
+#~ "Format zurückzukehren."
+
+#~ msgid "View documents full-screen."
+#~ msgstr "Dokumente im Vollbildmodus betrachten."
+
+#~ msgid "Display documents stored locally or online"
+#~ msgstr "Lokal oder online gespeicherte Dokumente ansehen"
+
 #, fuzzy
-msgid ""
-"In order for your <em>Google Docs</em> or <em>SkyDrive</em> documents to "
-"appear, it is necessary to configure Google or Windows Live, respectively, "
-"as an <link href=\"gnome-help:accounts-add\">online account</link>."
-msgstr ""
-"Damit Dokumente aus <em>Google Docs</em> oder <em>SkyDrive</em> erscheinen, "
-"is es notwendig, Google beziehungsweise Windows Live als ein <link xref="
-"\"accounts-add\">Online-Konto</link> einzurichten."
+#~ msgid ""
+#~ "In order for your <em>Google Docs</em> or <em>SkyDrive</em> documents to "
+#~ "appear, it is necessary to configure Google or Windows Live, "
+#~ "respectively, as an <link href=\"gnome-help:accounts-add\">online "
+#~ "account</link>."
+#~ msgstr ""
+#~ "Damit Dokumente aus <em>Google Docs</em> oder <em>SkyDrive</em> "
+#~ "erscheinen, is es notwendig, Google beziehungsweise Windows Live als ein "
+#~ "<link xref=\"accounts-add\">Online-Konto</link> einzurichten."
 
-#. (itstool) path: page/p
-#: C/view.page:45
-msgid "To view the contents of a document:"
-msgstr "So zeigen Sie den Inhalt eines Dokuments an:"
-
-#. (itstool) path: item/p
-#: C/view.page:49
-msgid ""
-"Click the thumbnail. The document is displayed full-width in the "
-"<app>Documents</app> window (or full-screen if maximized)."
-msgstr ""
-"Klicken Sie auf die Vorschau. Das Dokument wird in voller Breite im "
-"<app>Dokumente</app>-Fenster dargestellt, oder im Vollbild, falls maximiert."
-
-#. (itstool) path: page/p
-#: C/view.page:54
-msgid "To exit the document, click the back arrow button."
-msgstr ""
-"Um das Dokument zu beenden, klicken Sie auf den Knopf mit dem rückwärts "
-"weisenden Pfeil."
-
-#. (itstool) path: p/link
-#: C/legal.xml:3
-msgid "Creative Commons Attribution-ShareAlike 3.0 Unported License"
-msgstr "Creative Commons Attribution-ShareAlike 3.0 Unported License"
-
-#. (itstool) path: license/p
-#: C/legal.xml:3
-msgid "This work is licensed under a <_:link-1/>."
-msgstr "Dieses Werk wird unter einer <_:link-1/> verbreitet."
+#~ msgid ""
+#~ "Click the thumbnail. The document is displayed full-width in the "
+#~ "<app>Documents</app> window (or full-screen if maximized)."
+#~ msgstr ""
+#~ "Klicken Sie auf die Vorschau. Das Dokument wird in voller Breite im "
+#~ "<app>Dokumente</app>-Fenster dargestellt, oder im Vollbild, falls "
+#~ "maximiert."
