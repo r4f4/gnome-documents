@@ -2,28 +2,29 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 #
+#
 # Rūdofls Mazurs <rudolfs.mazurs@gmail.com>, 2011, 2012, 2013.
 # Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>, 2013, 2014.
-#
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-19 23:02+0200\n"
-"PO-Revision-Date: 2014-03-19 23:02+0200\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"documents&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2014-09-28 06:53+0000\n"
+"PO-Revision-Date: 2014-09-28 16:27+0300\n"
 "Last-Translator: Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>\n"
-"Language-Team: Latviešu <lata-l10n@googlegroups.com>\n"
+"Language-Team: Latvian <lata-l10n@googlegroups.com>\n"
 "Language: lv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
 "2);\n"
-"X-Generator: Gtranslator 2.91.6\n"
+"X-Generator: Lokalize 1.5\n"
 
 #: ../data/org.gnome.Documents.appdata.xml.in.h:1
-#: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:103
-#: ../src/mainWindow.js:52 ../src/mainWindow.js:274
+#: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:121
+#: ../src/mainWindow.js:52 ../src/mainWindow.js:302
 msgid "Documents"
 msgstr "Dokumenti"
 
@@ -48,18 +49,38 @@ msgid "It lets you:"
 msgstr "Tas jums ļauj:"
 
 #: ../data/org.gnome.Documents.appdata.xml.in.h:5
-msgid ""
-"<li>View recent local and online documents</li> <li>Access your Google, "
-"ownCloud or OneDrive content</li> <li>Search through documents</li> <li>See "
-"new documents shared by friends</li> <li>View documents fullscreen</li> "
-"<li>Print documents</li> <li>Select favorites</li> <li>Allow opening full "
-"featured editor for non-trivial changes</li>"
-msgstr ""
-"<li>Skatīt nesenos lokālos un tiešsaistes dokumentus</li> <li>Piekļūt savam "
-"Google, ownCloud vai OneDrive saturam</li> <li>Meklēt dokumentos</li> "
-"<li>Redzēt dokumentus, ar ko ir dalījušies draugi</li> <li>Skatīt dokumentus "
-"pa visu ekrānu</li> <li>Drukāt dokumentus</li> <li>Izvēlēties iecienītos</"
-"li> <li>Netriviālām izmaiņām atvērt tos ar citiem redaktoriem</li>"
+msgid "View recent local and online documents"
+msgstr "Skatiet nesenos lokālos un tiešsaistes dokumentus"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:6
+msgid "Access your Google, ownCloud or OneDrive content"
+msgstr "Piekļūstiet savam Google, ownCloud vai OneDrive saturam"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:7
+msgid "Search through documents"
+msgstr "Meklējiet dokumentos"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:8
+msgid "See new documents shared by friends"
+msgstr "Skatiet jaunus dokumentus, ar kuriem dalījušies draugi"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:9
+msgid "View documents fullscreen"
+msgstr "Skatiet dokumentus pilnekrāna režīmā"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:10
+#| msgid "PDF Documents"
+msgid "Print documents"
+msgstr "Drukājiet dokumentus"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:11
+#| msgid "Select Items"
+msgid "Select favorites"
+msgstr "Izvēlēties izlasi"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:12
+msgid "Allow opening full featured editor for non-trivial changes"
+msgstr "Ļauj atvērt redaktoru netriviālām izmaiņām"
 
 #: ../data/org.gnome.Documents.desktop.in.h:2
 msgid "Access, manage and share documents"
@@ -101,86 +122,78 @@ msgstr "Logs maksimizēts"
 msgid "Window maximized state"
 msgstr "Loga stāvoklis — maksimizēts"
 
-#: ../src/documents.js:599
+#: ../src/documents.js:621
 msgid "Failed to print document"
 msgstr "Neizdevās izdrukāt dokumentu"
 
-#. Translators: this refers to local documents
-#: ../src/documents.js:636 ../src/search.js:418
+#: ../src/documents.js:658 ../src/search.js:427
 msgid "Local"
 msgstr "Lokāls"
 
-#. Translators: Documents ships a "Getting Started with Documents"
-#. tutorial PDF. The "GNOME" string below is displayed as the author name
-#. of that document, and doesn't normally need to be translated.
-#: ../src/documents.js:657
+#: ../src/documents.js:679
 msgid "GNOME"
 msgstr "GNOME"
 
-#: ../src/documents.js:658
+#: ../src/documents.js:680
 msgid "Getting Started with Documents"
 msgstr "Darba sākšana ar Dokumentiem"
 
-#: ../src/documents.js:674 ../src/documents.js:847 ../src/documents.js:909
-#: ../src/documents.js:1017
+#: ../src/documents.js:696 ../src/documents.js:877 ../src/documents.js:939
+#: ../src/documents.js:1047
 msgid "Collection"
 msgstr "Kolekcija"
 
-#. overridden
-#: ../src/documents.js:726
+#: ../src/documents.js:756
 msgid "Google Docs"
 msgstr "Google Docs"
 
-#: ../src/documents.js:727
+#: ../src/documents.js:757
 msgid "Google"
 msgstr "Google"
 
-#: ../src/documents.js:849 ../src/documents.js:1019
+#: ../src/documents.js:879 ../src/documents.js:1049
 msgid "Spreadsheet"
 msgstr "Izklājlapa"
 
-#: ../src/documents.js:851 ../src/documents.js:1021 ../src/presentation.js:47
+#: ../src/documents.js:881 ../src/documents.js:1051 ../src/presentation.js:47
 msgid "Presentation"
 msgstr "Prezentācija"
 
-#: ../src/documents.js:853 ../src/documents.js:1023
+#: ../src/documents.js:883 ../src/documents.js:1053
 msgid "Document"
 msgstr "Dokuments"
 
-#. overridden
-#: ../src/documents.js:887
+#: ../src/documents.js:917
 msgid "ownCloud"
 msgstr "ownCloud"
 
-#. overridden
-#: ../src/documents.js:951 ../src/documents.js:952
+#: ../src/documents.js:981 ../src/documents.js:982
 msgid "OneDrive"
 msgstr "OneDrive"
 
-#: ../src/documents.js:1151
+#: ../src/documents.js:1181
 msgid "Please check the network connection."
 msgstr "Lūdzu, pārbaudiet tīkla savienojumu."
 
-#: ../src/documents.js:1154
+#: ../src/documents.js:1184
 msgid "Please check the network proxy settings."
 msgstr "Lūdzu, pārbaudiet tīkla starpnieka iestatījumus."
 
-#: ../src/documents.js:1157
+#: ../src/documents.js:1187
 msgid "Unable to sign in to the document service."
 msgstr "Nevar ierakstīties dokumentu servisā."
 
-#: ../src/documents.js:1160
+#: ../src/documents.js:1190
 msgid "Unable to locate this document."
 msgstr "Neizdevās atrast šo dokumentu."
 
-#: ../src/documents.js:1163
-#, c-format
+#: ../src/documents.js:1193
+#, javascript-format
 msgid "Hmm, something is fishy (%d)."
 msgstr "Hmm, kaut kas nav tā (%d)."
 
-#. Translators: %s is the title of a document
-#: ../src/documents.js:1181
-#, c-format
+#: ../src/documents.js:1211
+#, javascript-format
 msgid "Oops! Unable to load “%s”"
 msgstr "Ak vai! Neizdevās ielādēt “%s”"
 
@@ -192,20 +205,16 @@ msgstr "Skats"
 msgid "No Documents Found"
 msgstr "Nav atrastu dokumentu"
 
-#. Translators: %s here is "Settings", which is in a separate string due to
-#. markup, and should be translated only in the context of this sentence
 #: ../src/embed.js:163
-#, c-format
+#, javascript-format
 msgid "You can add your online accounts in %s"
 msgstr "Savus tiešsaistes kontus var pievienot %s"
 
-#. Translators: this should be translated in the context of the
-#. "You can add your online accounts in Settings" sentence above
 #: ../src/embed.js:167
 msgid "Settings"
 msgstr "Iestatījumi"
 
-#: ../src/lib/gd-nav-bar.c:235
+#: ../src/lib/gd-nav-bar.c:242
 #, c-format
 msgid "Page %u of %u"
 msgstr "Lappuse %u no %u"
@@ -235,7 +244,7 @@ msgstr "Nav grāmatzīmju"
 msgid "Loading…"
 msgstr "Ielādē…"
 
-#: ../src/lib/gd-places-bookmarks.c:651 ../src/preview.js:601
+#: ../src/lib/gd-places-bookmarks.c:651 ../src/preview.js:580
 msgid "Bookmarks"
 msgstr "Grāmatzīmes"
 
@@ -251,74 +260,78 @@ msgstr "Saturs"
 msgid "Search"
 msgstr "Meklēt"
 
-#: ../src/mainToolbar.js:90
+#: ../src/mainToolbar.js:87
 msgid "Back"
 msgstr "Atpakaļ"
 
-#: ../src/mainToolbar.js:163
+#: ../src/mainToolbar.js:132
 msgid "View items as a list"
 msgstr "Skatīt vienumus kā sarakstu"
 
-#: ../src/mainToolbar.js:169
+#: ../src/mainToolbar.js:138
 msgid "View items as a grid of icons"
 msgstr "Skatīt vienumus kā ikonu režģi"
 
-#: ../src/mainToolbar.js:203
-#, c-format
-msgid "Results for “%s”"
-msgstr "“%s” rezultāti"
-
-#: ../src/mainToolbar.js:211
+#: ../src/mainToolbar.js:168
 msgid "Click on items to select them"
 msgstr "Spiediet uz vienumiem, lai tos izvēlētos"
 
-#: ../src/mainToolbar.js:213
-#, c-format
+#: ../src/mainToolbar.js:170
+#, javascript-format
 msgid "%d selected"
 msgid_plural "%d selected"
 msgstr[0] "%d izvēlēts"
 msgstr[1] "%d izvēlēti"
 msgstr[2] "%d izvēlētu"
 
-#: ../src/mainToolbar.js:240
+#: ../src/mainToolbar.js:200
 msgid "Cancel"
 msgstr "Atcelt"
 
-#: ../src/mainToolbar.js:282
+#: ../src/mainToolbar.js:242
 msgid "Select Items"
 msgstr "Izvēlēties vienumus"
 
-#: ../src/mainWindow.js:273
+#: ../src/mainWindow.js:301
 msgid "translator-credits"
 msgstr ""
 "Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>\n"
 "Anita Reitere <nitalynx@gmail.com>"
 
-#: ../src/mainWindow.js:275
+#: ../src/mainWindow.js:303
 msgid "A document manager application"
 msgstr "Dokumentu pārvaldības lietotne"
 
-#: ../src/notifications.js:86
-#, c-format
+#: ../src/notifications.js:50
+msgid "Selected item has been deleted"
+msgid_plural "Selected items have been deleted"
+msgstr[0] "Izvēlētais vienums ir izdzēsts"
+msgstr[1] "Izvēlētie vienumi ir izdzēsti"
+msgstr[2] "Izvēlētie vienumi ir izdzēsti"
+
+#: ../src/notifications.js:57
+msgid "Undo"
+msgstr "Atsaukt"
+
+#: ../src/notifications.js:157
+#, javascript-format
 msgid "Printing “%s”: %s"
 msgstr "Drukā “%s” — %s"
 
-#: ../src/notifications.js:142
+#: ../src/notifications.js:213
 msgid "Your documents are being indexed"
 msgstr "Dokumenti tiek indeksēti"
 
-#: ../src/notifications.js:143
+#: ../src/notifications.js:214
 msgid "Some documents might not be available during this process"
 msgstr "Šajā laikā daži dokumenti varētu nebūt pieejami"
 
-#. Translators: %s refers to an online account provider, e.g.
-#. "Google", or "Windows Live".
-#: ../src/notifications.js:165
-#, c-format
+#: ../src/notifications.js:236
+#, javascript-format
 msgid "Fetching documents from %s"
 msgstr "Saņem dokumentus no %s"
 
-#: ../src/notifications.js:167
+#: ../src/notifications.js:238
 msgid "Fetching documents from online accounts"
 msgstr "Saņem dokumentus no tiešsaistes kontiem"
 
@@ -331,17 +344,13 @@ msgid "_Unlock"
 msgstr "_Atbloķēt"
 
 #: ../src/password.js:65
-#, c-format
+#, javascript-format
 msgid "Document %s is locked and requires a password to be opened."
 msgstr "Dokuments %s ir bloķēts; lai to atvērtu, ir vajadzīga parole."
 
 #: ../src/password.js:79
 msgid "_Password"
 msgstr "_Parole"
-
-#: ../src/places.js:56
-msgid "Close"
-msgstr "Aizvērt"
 
 #: ../src/presentation.js:104
 msgid "Running in presentation mode"
@@ -351,68 +360,51 @@ msgstr "Darbojas prezentācijas režīmā"
 msgid "Present On"
 msgstr "Parādīt"
 
-#: ../src/preview.js:609
+#: ../src/preview.js:588
 msgid "Bookmark this page"
 msgstr "Pievienot lapu grāmatzīmēm"
 
-#. Translators: this is the Open action in a context menu
-#: ../src/preview.js:853 ../src/selections.js:857
-#, c-format
+#: ../src/preview.js:823 ../src/selections.js:857
+#, javascript-format
 msgid "Open with %s"
 msgstr "Atvērt ar %s"
 
-#: ../src/preview.js:915
+#: ../src/preview.js:885
 msgid "Find Previous"
 msgstr "Meklēt iepriekšējo"
 
-#: ../src/preview.js:922
+#: ../src/preview.js:892
 msgid "Find Next"
 msgstr "Meklēt nākamo"
 
-#. properties button
 #: ../src/properties.js:61 ../src/resources/preview-menu.ui.h:9
 #: ../src/selections.js:767
 msgid "Properties"
 msgstr "Īpašības"
 
-#. Label for Done button in Sharing dialog
-#: ../src/properties.js:63 ../src/sharing.js:102
-msgid "Done"
-msgstr "Gatavs"
-
-#. Title item
-#. Translators: "Title" is the label next to the document title
-#. in the properties dialog
-#: ../src/properties.js:83
+#: ../src/properties.js:81
 msgctxt "Document Title"
 msgid "Title"
 msgstr "Nosaukums"
 
-#. Translators: "Author" is the label next to the document author
-#. in the properties dialog
-#: ../src/properties.js:92
+#: ../src/properties.js:90
 msgctxt "Document Author"
 msgid "Author"
 msgstr "Autors"
 
-#. Source item
-#: ../src/properties.js:99
+#: ../src/properties.js:97
 msgid "Source"
 msgstr "Avots"
 
-#. Date Modified item
-#: ../src/properties.js:105
+#: ../src/properties.js:103
 msgid "Date Modified"
 msgstr "Izmaiņu datums"
 
-#: ../src/properties.js:112
+#: ../src/properties.js:110
 msgid "Date Created"
 msgstr "Izveidošanas datums"
 
-#. Document type item
-#. Translators: "Type" is the label next to the document type
-#. (PDF, spreadsheet, ...) in the properties dialog
-#: ../src/properties.js:121
+#: ../src/properties.js:119
 msgctxt "Document Type"
 msgid "Type"
 msgstr "Tips"
@@ -437,8 +429,6 @@ msgstr "Iziet"
 msgid "_Copy"
 msgstr "_Kopēt"
 
-#. open button
-#. Translators: this is the Open action in a context menu
 #: ../src/resources/preview-menu.ui.h:1 ../src/selections.js:747
 #: ../src/selections.js:860
 msgid "Open"
@@ -484,69 +474,59 @@ msgstr "Neizvēlēties nevienu"
 msgid "Category"
 msgstr "Kategorija"
 
-#. Translators: this refers to new and recent documents
-#. Translators: this refers to documents
-#: ../src/search.js:119 ../src/search.js:171 ../src/search.js:256
-#: ../src/search.js:412
+#: ../src/search.js:119 ../src/search.js:180 ../src/search.js:265
+#: ../src/search.js:421
 msgid "All"
 msgstr "Visi"
 
-#. Translators: this refers to favorite documents
 #: ../src/search.js:125
 msgid "Favorites"
 msgstr "Izlase"
 
-#. Translators: this refers to shared documents
 #: ../src/search.js:130
 msgid "Shared with you"
 msgstr "Ar jums koplietots"
 
-#. Translators: "Type" refers to a search filter on the document type
-#. (PDF, spreadsheet, ...)
-#: ../src/search.js:168
+#: ../src/search.js:177
 msgctxt "Search Filter"
 msgid "Type"
 msgstr "Tips"
 
-#: ../src/search.js:173
+#: ../src/search.js:182
 msgid "Collections"
 msgstr "Kolekcijas"
 
-#: ../src/search.js:177
+#: ../src/search.js:186
 msgid "PDF Documents"
 msgstr "PDF dokumenti"
 
-#: ../src/search.js:181
+#: ../src/search.js:190
 msgid "Presentations"
 msgstr "Prezentācijas"
 
-#: ../src/search.js:184
+#: ../src/search.js:193
 msgid "Spreadsheets"
 msgstr "Izklājlapas"
 
-#: ../src/search.js:187
+#: ../src/search.js:196
 msgid "Text Documents"
 msgstr "Teksta dokumenti"
 
-#. Translators: this is a verb that refers to "All", "Title" and "Author",
-#. as in "Match All", "Match Title" and "Match Author"
-#: ../src/search.js:253
+#: ../src/search.js:262
 msgid "Match"
 msgstr "Atbilst"
 
-#. Translators: "Title" refers to "Match Title" when searching
-#: ../src/search.js:259
+#: ../src/search.js:268
 msgctxt "Search Filter"
 msgid "Title"
 msgstr "Nosaukums"
 
-#. Translators: "Author" refers to "Match Author" when searching
-#: ../src/search.js:262
+#: ../src/search.js:271
 msgctxt "Search Filter"
 msgid "Author"
 msgstr "Autors"
 
-#: ../src/search.js:408
+#: ../src/search.js:417
 msgid "Sources"
 msgstr "Avoti"
 
@@ -558,28 +538,23 @@ msgstr "Jums vēl nav kolekciju. Augstāk ievadiet jaunu kolekcijas nosaukumu."
 msgid "Create new collection"
 msgstr "Izveidot jaunu kolekciju"
 
-#. Translators: "Collections" refers to documents in this context
 #: ../src/selections.js:640
 msgctxt "Dialog Title"
 msgid "Collections"
 msgstr "Kolekcijas"
 
-#. print button
 #: ../src/selections.js:752
 msgid "Print"
 msgstr "Drukāt"
 
-#. trash button
 #: ../src/selections.js:757
 msgid "Delete"
 msgstr "Dzēst"
 
-#. share button
 #: ../src/selections.js:762
 msgid "Share"
 msgstr "Koplietot"
 
-#. organize button
 #: ../src/selections.js:772
 msgid "Add to Collection"
 msgstr "Pievienot kolekcijai"
@@ -588,17 +563,18 @@ msgstr "Pievienot kolekcijai"
 msgid "Sharing Settings"
 msgstr "Koplietošanas iestatījumi"
 
-#. Label for widget group for changing document permissions
+#: ../src/sharing.js:102
+msgid "Done"
+msgstr "Gatavs"
+
 #: ../src/sharing.js:135
 msgid "Document permissions"
 msgstr "Dokumenta atļaujas"
 
-#. Label for permission change in Sharing dialog
 #: ../src/sharing.js:142 ../src/sharing.js:320
 msgid "Change"
 msgstr "Mainīt"
 
-#. Label for radiobutton that sets doc permission to private
 #: ../src/sharing.js:166 ../src/sharing.js:295
 msgid "Private"
 msgstr "Privāts"
@@ -607,17 +583,14 @@ msgstr "Privāts"
 msgid "Public"
 msgstr "Publisks"
 
-#. Label for checkbutton that sets doc permission to Can edit
 #: ../src/sharing.js:180 ../src/sharing.js:290
 msgid "Everyone can edit"
 msgstr "Jebkurš var rediģēt"
 
-#. Label for widget group used for adding new contacts
 #: ../src/sharing.js:187
 msgid "Add people"
 msgstr "Pievienot cilvēkus"
 
-#. Editable text in entry field
 #: ../src/sharing.js:194
 msgid "Enter an email address"
 msgstr "Ievadiet e-pasta adresi"
@@ -647,7 +620,7 @@ msgid "Owner"
 msgstr "Īpašnieks"
 
 #: ../src/sharing.js:442
-#, c-format
+#, javascript-format
 msgid "You can ask %s for access"
 msgstr "Jūs varat prasīt %s piekļuvei"
 
@@ -664,7 +637,6 @@ msgstr "Nenosaukts dokuments"
 msgid "Unable to fetch the list of documents"
 msgstr "Neizdevās saņemt dokumentu sarakstu"
 
-#. Translators: "more" refers to documents in this context
 #: ../src/view.js:62 ../src/view.js:93
 msgid "Load More"
 msgstr "Ielādēt vairāk"
@@ -674,7 +646,7 @@ msgid "Yesterday"
 msgstr "Vakar"
 
 #: ../src/view.js:309
-#, c-format
+#, javascript-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
 msgstr[0] "Pirms %d dienas"
@@ -686,7 +658,7 @@ msgid "Last week"
 msgstr "Pagājušajā nedēļā"
 
 #: ../src/view.js:315
-#, c-format
+#, javascript-format
 msgid "%d week ago"
 msgid_plural "%d weeks ago"
 msgstr[0] "Pirms %d nedēļas"
@@ -698,7 +670,7 @@ msgid "Last month"
 msgstr "Pagājušajā mēnesī"
 
 #: ../src/view.js:321
-#, c-format
+#, javascript-format
 msgid "%d month ago"
 msgid_plural "%d months ago"
 msgstr[0] "Pirms %d mēneša"
@@ -710,12 +682,32 @@ msgid "Last year"
 msgstr "Pagājušajā gadā"
 
 #: ../src/view.js:327
-#, c-format
+#, javascript-format
 msgid "%d year ago"
 msgid_plural "%d years ago"
 msgstr[0] "Pirms %d gada"
 msgstr[1] "Pirms %d gadiem"
 msgstr[2] "Pirms %d gadiem"
+
+#~ msgid ""
+#~ "<li>View recent local and online documents</li> <li>Access your Google, "
+#~ "ownCloud or OneDrive content</li> <li>Search through documents</li> "
+#~ "<li>See new documents shared by friends</li> <li>View documents "
+#~ "fullscreen</li> <li>Print documents</li> <li>Select favorites</li> "
+#~ "<li>Allow opening full featured editor for non-trivial changes</li>"
+#~ msgstr ""
+#~ "<li>Skatīt nesenos lokālos un tiešsaistes dokumentus</li> <li>Piekļūt "
+#~ "savam Google, ownCloud vai OneDrive saturam</li> <li>Meklēt dokumentos</"
+#~ "li> <li>Redzēt dokumentus, ar ko ir dalījušies draugi</li> <li>Skatīt "
+#~ "dokumentus pa visu ekrānu</li> <li>Drukāt dokumentus</li> <li>Izvēlēties "
+#~ "iecienītos</li> <li>Netriviālām izmaiņām atvērt tos ar citiem "
+#~ "redaktoriem</li>"
+
+#~ msgid "Results for “%s”"
+#~ msgstr "“%s” rezultāti"
+
+#~ msgid "Close"
+#~ msgstr "Aizvērt"
 
 #~ msgid "Skydrive"
 #~ msgstr "Skydrive"
