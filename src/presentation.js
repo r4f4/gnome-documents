@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2013 Red Hat, Inc.
+ * Copyright (c) 2013, 2014 Red Hat, Inc.
  *
  * Gnome Documents is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by the
@@ -72,7 +72,8 @@ const PresentationWindow = new Lang.Class({
     },
 
     setOutput: function(output) {
-        this.window.move(output.x, output.y);
+        let [x, y, width, height] = output.get_geometry();
+        this.window.move(x, y);
     },
 
     _createView: function() {
@@ -125,6 +126,8 @@ const PresentationOutputChooser = new Lang.Class({
     },
 
     _populateList: function() {
+        let sizeGroup = new Gtk.SizeGroup({ mode: Gtk.SizeGroupMode.HORIZONTAL });
+
         for (let i = 0; i < this._outputs.list.length; i++) {
             let row = new Gtk.Grid({ orientation: Gtk.Orientation.HORIZONTAL,
                                      column_spacing: 12,
@@ -132,10 +135,13 @@ const PresentationOutputChooser = new Lang.Class({
             this._box.add(row);
 
             let output = this._outputs.list[i];
-            let markup = '<b>' + output.display_name + '</b>';
-            let label = new Gtk.Label({ label: markup,
-                                        use_markup: true });
             row.output = output;
+
+            let preview = new GdPrivate.DisplayPreview({ info: output, clone: this._outputs.clone });
+            sizeGroup.add_widget(preview);
+            row.add(preview);
+
+            let label = new Gtk.Label({ label: output.get_display_name() });
             row.add(label);
 
             if (this._outputs.list.length > 1) {
@@ -144,9 +150,9 @@ const PresentationOutputChooser = new Lang.Class({
                 if (this._outputs.clone)
                     // Translators: "Mirrored" describes when both displays show the same view
                     status = _("Mirrored");
-                else if (output.is_primary)
+                else if (output.get_primary())
                     status = _("Primary");
-                else if (!output.is_active)
+                else if (!output.is_active())
                     status = _("Off");
                 else
                     status = _("Secondary");
@@ -195,19 +201,6 @@ const PresentationOutputChooser = new Lang.Class({
 });
 Signals.addSignalMethods(PresentationOutputChooser.prototype);
 
-const PresentationOutput = new Lang.Class({
-    Name: 'PresentationOutput',
-    _init: function() {
-        this.id = null;
-        this.name = null;
-        this.display_name = null;
-        this.is_active = false;
-        this.is_primary = false;
-        this.x = 0;
-        this.y = 0;
-    }
-});
-
 const PresentationOutputs = new Lang.Class({
     Name: 'PresentationOutputs',
 
@@ -220,6 +213,7 @@ const PresentationOutputs = new Lang.Class({
 
         this._config = GnomeDesktop.RRConfig.new_current(this._screen);
         this.clone = this._config.get_clone();
+        this._infos = this._config.get_outputs();
 
         this.load();
     },
@@ -229,27 +223,16 @@ const PresentationOutputs = new Lang.Class({
     },
 
     load: function() {
-        this._outputs = this._screen.list_outputs();
         this.list = [];
-        for (let idx in this._outputs) {
-            let output = this._outputs[idx];
-
-            let out = new PresentationOutput();
-            out.name = output.get_name();
-            out.display_name = output.get_display_name();
-            out.is_primary = output.get_is_primary();
-
-            if (output.get_crtc())
-                out.is_active = true;
-
-            let [x, y] = output.get_position();
-            out.x = x;
-            out.y = y;
+        for (let idx in this._infos) {
+            let info = this._infos[idx];
+            let name = info.get_name();
+            let output = this._screen.get_output_by_name(name);
 
             if (output.is_builtin_display())
-                this.list.unshift(out);
+                this.list.unshift(info);
             else
-                this.list.push(out);
+                this.list.push(info);
         }
     }
 });

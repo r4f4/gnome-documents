@@ -14,6 +14,7 @@ gdprivate_source_h = \
     lib/gd-nav-bar.h \
     lib/gd-bookmark.h \
     lib/gd-bookmarks.h \
+    lib/gd-display-preview.h \
     lib/gd-places-page.h \
     lib/gd-places-bookmarks.h \
     lib/gd-places-links.h \
@@ -26,6 +27,7 @@ gdprivate_source_c = \
     lib/gd-nav-bar.c \
     lib/gd-bookmark.c \
     lib/gd-bookmarks.c \
+    lib/gd-display-preview.c \
     lib/gd-places-page.c \
     lib/gd-places-bookmarks.c \
     lib/gd-places-links.c \
@@ -59,6 +61,7 @@ GdPrivate_1_0_gir_CFLAGS = $(AM_CPPFLAGS) $(gdprivate_cflags)
 GdPrivate_1_0_gir_SCANNERFLAGS = --warn-all --symbol-prefix=gd --identifier-prefix=Gd
 GdPrivate_1_0_gir_INCLUDES = \
    GData-0.0 \
+   GnomeDesktop-3.0 \
    Goa-1.0 \
    Gtk-3.0 \
    EvinceDocument-3.0 \
