@@ -150,7 +150,7 @@ const PresentationOutputChooser = new Lang.Class({
 
     _createWindow: function() {
         let toplevel = Application.application.get_windows()[0];
-        this.window = new Gtk.Dialog ({ resizable: true,
+        this.window = new Gtk.Dialog ({ resizable: false,
                                         modal: true,
                                         transient_for: toplevel,
                                         destroy_with_parent: true,
