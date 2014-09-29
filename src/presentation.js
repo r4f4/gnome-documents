@@ -194,16 +194,35 @@ const PresentationOutputChooser = new Lang.Class({
                                         title: _("Present On"),
                                         default_width: 300,
                                         default_height: 150,
+                                        border_width: 5,
                                         hexpand: true });
         this.window.connect('response', Lang.bind(this,
             function(widget, response) {
                 this.emit('output-activated', null);
             }));
 
-        this._box = new Gtk.ListBox({ valign: Gtk.Align.CENTER });
+        let frame = new Gtk.Frame({ shadow_type: Gtk.ShadowType.IN });
+
+        this._box = new Gtk.ListBox({ hexpand: true,
+                                      valign: Gtk.Align.CENTER,
+                                      selection_mode: Gtk.SelectionMode.NONE });
+        frame.add(this._box);
         this._box.connect('row-activated', Lang.bind(this, this._onActivated));
+        this._box.set_header_func(Lang.bind(this,
+            function(row, before) {
+                if (!before)
+                    return;
+
+                let current = row.get_header();
+                if (!current) {
+                    current = new Gtk.Separator({ orientation: Gtk.Orientation.HORIZONTAL });
+                    current.show();
+                    row.set_header(current);
+                }
+            }));
+
         let contentArea = this.window.get_content_area();
-        contentArea.pack_start(this._box, true, false, 0);
+        contentArea.pack_start(frame, true, false, 0);
     }
 });
 Signals.addSignalMethods(PresentationOutputChooser.prototype);
