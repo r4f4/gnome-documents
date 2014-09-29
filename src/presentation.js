@@ -126,15 +126,38 @@ const PresentationOutputChooser = new Lang.Class({
 
     _populateList: function() {
         for (let i = 0; i < this._outputs.list.length; i++) {
+            let row = new Gtk.Grid({ orientation: Gtk.Orientation.HORIZONTAL,
+                                     column_spacing: 12,
+                                     border_width: 12});
+            this._box.add(row);
+
             let output = this._outputs.list[i];
             let markup = '<b>' + output.display_name + '</b>';
             let label = new Gtk.Label({ label: markup,
-                                        use_markup: true,
-                                        margin_top: 5,
-                                        margin_bottom: 5 });
-            label.show();
-            label.output = output;
-            this._box.add(label);
+                                        use_markup: true });
+            row.output = output;
+            row.add(label);
+
+            if (this._outputs.list.length > 1) {
+                let status;
+
+                if (this._outputs.clone)
+                    // Translators: "Mirrored" describes when both displays show the same view
+                    status = _("Mirrored");
+                else if (output.is_primary)
+                    status = _("Primary");
+                else if (!output.is_active)
+                    status = _("Off");
+                else
+                    status = _("Secondary");
+
+                label = new Gtk.Label({ label: status,
+                                        halign: Gtk.Align.END,
+                                        hexpand: true });
+                row.add(label);
+
+                this._box.show_all();
+            }
         }
     },
 
@@ -178,6 +201,7 @@ const PresentationOutput = new Lang.Class({
         this.id = null;
         this.name = null;
         this.display_name = null;
+        this.is_active = false;
         this.is_primary = false;
         this.x = 0;
         this.y = 0;
@@ -193,6 +217,9 @@ const PresentationOutputs = new Lang.Class({
         let gdkscreen = Gdk.Screen.get_default();
         this._screen = GnomeDesktop.RRScreen.new(gdkscreen, null);
         this._screen.connect('changed', Lang.bind(this, this._onScreenChanged));
+
+        this._config = GnomeDesktop.RRConfig.new_current(this._screen);
+        this.clone = this._config.get_clone();
 
         this.load();
     },
@@ -211,6 +238,10 @@ const PresentationOutputs = new Lang.Class({
             out.name = output.get_name();
             out.display_name = output.get_display_name();
             out.is_primary = output.get_is_primary();
+
+            if (output.get_crtc())
+                out.is_active = true;
+
             let [x, y] = output.get_position();
             out.x = x;
             out.y = y;
