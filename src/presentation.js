@@ -154,6 +154,7 @@ const PresentationOutputChooser = new Lang.Class({
                                         modal: true,
                                         transient_for: toplevel,
                                         destroy_with_parent: true,
+                                        use_header_bar: true,
                                         title: _("Present On"),
                                         default_width: 300,
                                         default_height: 150,
