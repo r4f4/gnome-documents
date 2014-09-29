@@ -215,7 +215,10 @@ const PresentationOutputs = new Lang.Class({
             out.x = x;
             out.y = y;
 
-            this.list.push(out);
+            if (output.is_builtin_display())
+                this.list.unshift(out);
+            else
+                this.list.push(out);
         }
     }
 });
