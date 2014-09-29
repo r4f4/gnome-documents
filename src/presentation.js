@@ -164,11 +164,18 @@ const PresentationOutputChooser = new Lang.Class({
 
                 this._box.show_all();
             }
+
+            if (!output.is_active())
+                row.sensitive = false;
         }
     },
 
     _onActivated: function(box, row) {
-        this.output = row.get_child().output;
+        let output = row.get_child().output;
+        if (!output.is_active())
+            return;
+
+        this.output = output;
         this.emit('output-activated', this.output);
         this.close();
     },
