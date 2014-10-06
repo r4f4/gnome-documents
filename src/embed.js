@@ -385,6 +385,8 @@ const Embed = new Lang.Class({
     },
 
     _onLoadStarted: function() {
+        Application.modeController.setWindowMode(WindowMode.WindowMode.PREVIEW);
+
         this._clearLoadTimer();
         this._loadShowId = Mainloop.timeout_add(_PDF_LOADER_TIMEOUT, Lang.bind(this,
             function() {
@@ -397,8 +399,6 @@ const Embed = new Lang.Class({
     },
 
     _onLoadFinished: function(manager, doc, docModel) {
-        Application.modeController.setWindowMode(WindowMode.WindowMode.PREVIEW);
-
         docModel.set_sizing_mode(EvView.SizingMode.AUTOMATIC);
         docModel.set_page_layout(EvView.PageLayout.AUTOMATIC);
         this._toolbar.setModel(docModel);
@@ -411,8 +411,6 @@ const Embed = new Lang.Class({
     },
 
     _onLoadError: function(manager, doc, message, exception) {
-        Application.modeController.setWindowMode(WindowMode.WindowMode.PREVIEW);
-
         this._clearLoadTimer();
         this._spinnerBox.stop();
         this._setError(message, exception.message);
@@ -456,6 +454,8 @@ const Embed = new Lang.Class({
         // pack the toolbar
         this._toolbar = new Preview.PreviewToolbar(this._preview);
         this._titlebar.add(this._toolbar.widget);
+
+        this._stack.set_visible_child_name('preview');
     },
 
     _prepareForEdit: function() {
