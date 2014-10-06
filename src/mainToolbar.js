@@ -99,12 +99,17 @@ const OverviewToolbar = new Lang.Class({
         this._collBackButton = null;
         this._collectionId = 0;
         this._selectionChangedId = 0;
-        this._selectionMenu = null;
         this._viewGridButton = null;
         this._viewListButton = null;
         this._viewSettingsId = 0;
 
         this.parent();
+
+        let builder = new Gtk.Builder();
+        builder.add_from_resource('/org/gnome/documents/selection-menu.ui');
+        let selectionMenu = builder.get_object('selection-menu');
+        this._selectionMenu = new Gtk.MenuButton({ menu_model: selectionMenu });
+        this._selectionMenu.get_style_context().add_class('selection-menu');
 
         // setup listeners to mode changes that affect the toolbar layout
         this._selectionModeId = Application.selectionController.connect('selection-mode-changed',
@@ -177,7 +182,7 @@ const OverviewToolbar = new Lang.Class({
                 primary = label;
         }
 
-        if (this._selectionMenu) {
+        if (selectionMode) {
             if (primary) {
                 this._selectionMenu.set_label(primary);
                 this._selectionMenu.get_child().use_markup = true;
@@ -189,12 +194,6 @@ const OverviewToolbar = new Lang.Class({
 
     _populateForSelectionMode: function() {
         this.toolbar.get_style_context().add_class('selection-mode');
-
-        let builder = new Gtk.Builder();
-        builder.add_from_resource('/org/gnome/documents/selection-menu.ui');
-        let selectionMenu = builder.get_object('selection-menu');
-        this._selectionMenu = new Gtk.MenuButton({ menu_model: selectionMenu });
-        this._selectionMenu.get_style_context().add_class('selection-menu');
         this.toolbar.set_custom_title(this._selectionMenu);
 
         let selectionButton = new Gtk.Button({ label: _("Cancel") });
@@ -257,7 +256,6 @@ const OverviewToolbar = new Lang.Class({
 
     _clearStateData: function() {
         this._collBackButton = null;
-        this._selectionMenu = null;
         this._viewGridButton = null;
         this._viewListButton = null;
         this.toolbar.set_custom_title(null);
