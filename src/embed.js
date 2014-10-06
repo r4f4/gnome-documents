@@ -431,7 +431,7 @@ const Embed = new Lang.Class({
 
     _prepareForOverview: function() {
         if (this._preview)
-            this._preview.setModel(null);
+            this._preview.reset();
         if (this._edit)
             this._edit.setUri(null);
         if (this._toolbar)

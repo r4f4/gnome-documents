@@ -80,9 +80,6 @@ const PreviewView = new Lang.Class({
         this._previewContextMenu = Gtk.Menu.new_from_model(model);
         this._previewContextMenu.attach_to_widget(this.widget, null);
 
-        // create page nav controls
-        this._navControls = new PreviewNavControls(this, this._overlay);
-
         this.widget.show_all();
 
         this._bookmarkPage = Application.application.lookup_action('bookmark-page');
@@ -339,6 +336,8 @@ const PreviewView = new Lang.Class({
             this._onViewSelectionChanged));
         this.view.connect('external-link', Lang.bind(this,
             this._handleExternalLink));
+
+        this._navControls = new PreviewNavControls(this, this._overlay);
     },
 
     _getPreviewContextMenu: function() {
@@ -502,6 +501,13 @@ const PreviewView = new Lang.Class({
         // and thus is not introspectable
         GdPrivate.ev_view_find_changed(this.view, job, page);
         this.emit('search-changed', job.has_results());
+    },
+
+    reset: function() {
+        this.setModel(null);
+        this.view.destroy();
+        this._navControls.destroy();
+        this._createView();
     },
 
     setModel: function(model) {
@@ -740,6 +746,12 @@ const PreviewNavControls = new Lang.Class({
     hide: function() {
         this._visible = false;
         this._updateVisibility();
+    },
+
+    destroy: function() {
+        this.bar_widget.destroy();
+        this.prev_widget.destroy();
+        this.next_widget.destroy();
     }
 });
 
