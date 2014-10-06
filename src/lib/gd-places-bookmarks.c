@@ -178,7 +178,7 @@ get_pretty_name (const char *text)
 {
         char *name = NULL;
         char *trimmed;
-        char *basename;
+        char *basename = NULL;
         int i;
         int last_word = -1;
         int last_sentence = -1;
@@ -213,6 +213,11 @@ get_pretty_name (const char *text)
                 i = last_word;
         }
 
+        if (i == -1) {
+                name = NULL;
+                goto out;
+        }
+
         basename = g_utf8_substring (trimmed, 0, i);
         if (ellipse) {
                 name = g_strdup_printf ("“%s…”", basename);
@@ -220,6 +225,7 @@ get_pretty_name (const char *text)
                 name = g_strdup_printf ("“%s”", basename);
         }
 
+ out:
         g_free (basename);
         g_free (trimmed);
 
