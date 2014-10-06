@@ -94,7 +94,7 @@ const OverviewToolbar = new Lang.Class({
     Name: 'OverviewToolbar',
     Extends: MainToolbar,
 
-    _init: function(overlay) {
+    _init: function(overlay, stack) {
         this._overlay = overlay;
         this._collBackButton = null;
         this._collectionId = 0;
@@ -110,6 +110,10 @@ const OverviewToolbar = new Lang.Class({
         let selectionMenu = builder.get_object('selection-menu');
         this._selectionMenu = new Gtk.MenuButton({ menu_model: selectionMenu });
         this._selectionMenu.get_style_context().add_class('selection-menu');
+
+        this._stackSwitcher = new Gtk.StackSwitcher({ no_show_all: true,
+                                                      stack: stack });
+        this._stackSwitcher.show();
 
         // setup listeners to mode changes that affect the toolbar layout
         this._selectionModeId = Application.selectionController.connect('selection-mode-changed',
@@ -235,6 +239,7 @@ const OverviewToolbar = new Lang.Class({
 
     _populateForOverview: function() {
         this.toolbar.set_show_close_button(true);
+        this.toolbar.set_custom_title(this._stackSwitcher);
         this._checkCollectionBackButton();
 
         let selectionButton = new Gtk.Button({ image: new Gtk.Image ({ icon_name: 'object-select-symbolic' }),

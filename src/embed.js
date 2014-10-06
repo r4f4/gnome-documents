@@ -440,7 +440,7 @@ const Embed = new Lang.Class({
             this._toolbar.widget.destroy();
 
         // pack the toolbar
-        this._toolbar = new MainToolbar.OverviewToolbar(this._stackOverlay);
+        this._toolbar = new MainToolbar.OverviewToolbar(this._stackOverlay, this._stack);
         this._titlebar.add(this._toolbar.widget);
 
         this._spinnerBox.stop();
