@@ -14,7 +14,7 @@ public_icons = \
 	$(NULL)
 
 noinst_DATA = \
-	gnome-documents.svg \
+	hicolor_gnome-documents.svg \
 	$(NULL)
 
 EXTRA_DIST = \
