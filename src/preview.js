@@ -772,7 +772,7 @@ const PreviewToolbar = new Lang.Class({
         this._searchAction.enabled = false;
 
         this._gearMenu = Application.application.lookup_action('gear-menu');
-        this._gearMenu.enabled = true;
+        this._gearMenu.enabled = false;
 
         // back button, on the left of the toolbar
         let backButton = this.addBackButton();
@@ -857,6 +857,7 @@ const PreviewToolbar = new Lang.Class({
             return;
 
         this._model = model;
+        this._gearMenu.enabled = true;
         this._enableSearch();
         this._setToolbarTitle();
     }
