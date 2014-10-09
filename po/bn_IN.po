@@ -1,182 +1,223 @@
 # Bengali (India) translation for gnome-documents.
 # Copyright (C) 2012 gnome-documents's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-documents package.
-# 
+#
 # Sayak Sarkar <sayak.bugsmith@gmail.com>, 2012.
-# sray <sray@redhat.com>, 2013. #zanata
+# sray <sray@redhat.com>, 2013, 2014. #zanata.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-documents master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-11-19 22:21+0000\n"
-"PO-Revision-Date: 2013-09-23 04:28-0400\n"
-"Last-Translator: sray <sray@redhat.com>\n"
-"Language-Team: Bengali (India) <anubad@lists.ankur.org.in>\n"
+"POT-Creation-Date: 2014-10-06 18:53+0000\n"
+"PO-Revision-Date: 2014-10-09 13:30+0000\n"
+"Last-Translator: \n"
+"Language-Team: Bengali (India) <kde-i18n-doc@kde.org>\n"
+"Language: bn-IN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: bn-IN\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Zanata 3.1.2\n"
+"X-Generator: Lokalize 1.5\n"
 
-#: ../data/gnome-documents.desktop.in.in.h:1
-#: ../src/application.js:102
-#: ../src/mainWindow.js:53
-#: ../src/mainWindow.js:274
+#: ../data/org.gnome.Documents.appdata.xml.in.h:1
+#: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:121
+#: ../src/mainWindow.js:52 ../src/mainWindow.js:302
 msgid "Documents"
 msgstr "দস্তাবেজ"
 
-#: ../data/gnome-documents.desktop.in.in.h:2
+#: ../data/org.gnome.Documents.appdata.xml.in.h:2
+#| msgid "A document manager application"
+msgid "A document manager application for GNOME"
+msgstr "GNOME'র জন্য দস্তাবেজ ব্যবস্থাপনার একটি অ্যাপ্লিকেশন"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:3
+msgid ""
+"A simple application to access, organize and share your documents on GNOME. "
+"It is meant to be a simple and elegant replacement for using a file manager "
+"to deal with documents. Seamless cloud integration is offered through GNOME "
+"Online Accounts."
+msgstr ""
+"GNOME এ অাপনার নথিগুলি অ্যাক্সেস, সংগঠিত এবং ভাগ করার এক অ্যাপ্লিকেশন। "
+"নথি নিয়ে কাজ করতে ফাইল ম্যানেজারের ব্যবহার করার থেকে এর ব্যবহার অনেক বেশি সহজ "
+"এবং কার্যকর। GNOME "
+"অনলাইন অ্যাকাউন্টের মাধ্যমে ঝামেলামুক্ত ভাবে ক্লাউড একত্রিকরণ প্রদান করা হয়।"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:4
+msgid "It lets you:"
+msgstr "অাপনাকে অনুমতি দেয়:"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:5
+msgid "View recent local and online documents"
+msgstr "সাম্প্রতিক স্থানীয় এবং অনলাইন নথিগুলি দেখুন"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:6
+msgid "Access your Google, ownCloud or OneDrive content"
+msgstr "অাপনার Google, ownCloud বা OneDrive বিষয়বস্তু অ্যাক্সেস করুন"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:7
+msgid "Search through documents"
+msgstr "নথিগুলি দিয়ে অনুসন্ধান করুন"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:8
+msgid "See new documents shared by friends"
+msgstr "বন্ধুদের ভাগ করা নতুন নথিগুলি দেখুন"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:9
+msgid "View documents fullscreen"
+msgstr "নথিগুলি সম্পূর্ণ-স্ক্রিনে দেখুন"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:10
+#| msgid "PDF Documents"
+msgid "Print documents"
+msgstr "দস্তাবেজগুলি মুদ্রণ করুন"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:11
+#| msgid "Select Items"
+msgid "Select favorites"
+msgstr "পছন্দসই নির্বাচন করুন"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:12
+msgid "Allow opening full featured editor for non-trivial changes"
+msgstr ""
+"বিস্তারিত পরিবর্তনের ক্ষেত্রে সম্পূর্ণ বৈশিষ্ট সমন্বিত সম্পাদক খোলার অনুমতি "
+"দিন"
+
+#: ../data/org.gnome.Documents.desktop.in.h:2
 msgid "Access, manage and share documents"
 msgstr "দস্তাবেজ অ্যাক্সেস, পরিচালনা এবং শেয়ার করুন"
 
-#: ../data/gnome-documents.desktop.in.in.h:3
+#: ../data/org.gnome.Documents.desktop.in.h:3
 msgid "Docs;PDF;Document;"
 msgstr "Docs;PDF;Document;"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:1
-#: ../src/resources/app-menu.ui.h:1
+#: ../data/org.gnome.documents.gschema.xml.h:1
 msgid "View as"
 msgstr "হিসাবে দেখুন"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:2
+#: ../data/org.gnome.documents.gschema.xml.h:2
 msgid "View as type"
 msgstr "প্রকার হিসাবে দেখুন"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:3
+#: ../data/org.gnome.documents.gschema.xml.h:3
 msgid "Window size"
 msgstr "উইন্ডোর আয়তন"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:4
+#: ../data/org.gnome.documents.gschema.xml.h:4
 msgid "Window size (width and height)."
 msgstr "উইন্ডোর আকার (প্রস্থ এবং উচ্চতা)।"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:5
+#: ../data/org.gnome.documents.gschema.xml.h:5
 msgid "Window position"
 msgstr "উইন্ডোর অবস্থান"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:6
+#: ../data/org.gnome.documents.gschema.xml.h:6
 msgid "Window position (x and y)."
 msgstr "উইন্ডোর অবস্থান (x এবং y)।"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:7
+#: ../data/org.gnome.documents.gschema.xml.h:7
 msgid "Window maximized"
 msgstr "পূর্ণবিস্তারিত উইন্ডো"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:8
+#: ../data/org.gnome.documents.gschema.xml.h:8
 msgid "Window maximized state"
 msgstr "পূর্ণবিস্তারিত উইন্ডো রূপ"
 
-#. Translators: this refers to local documents
-#: ../src/documents.js:586
-#: ../src/search.js:416
+#: ../src/documents.js:621
+#| msgid "Unable to load the document"
+msgid "Failed to print document"
+msgstr "ডকুমেন্ট প্রিন্ট করতে ব্যর্থ"
+
+#: ../src/documents.js:658 ../src/search.js:427
 msgid "Local"
 msgstr "স্থানীয়"
 
-#. Translators: Documents ships a "Getting Started with Documents"
-#. tutorial PDF. The "GNOME" string below is displayed as the author name
-#. of that document, and doesn't normally need to be translated.
-#: ../src/documents.js:607
+#: ../src/documents.js:679
 msgid "GNOME"
 msgstr "GNOME"
 
-#: ../src/documents.js:608
+#: ../src/documents.js:680
 msgid "Getting Started with Documents"
 msgstr "নথিপত্রের মাধ্যমে শুরু করুন"
 
-#. overridden
-#: ../src/documents.js:662
-msgid "Google Docs"
-msgstr "Google Docs"
-
-#: ../src/documents.js:663
-msgid "Google"
-msgstr "Google"
-
-#: ../src/documents.js:781
-#: ../src/documents.js:879
-msgid "Spreadsheet"
-msgstr "স্প্রেডশীট"
-
-#: ../src/documents.js:783
-#: ../src/documents.js:881
-#: ../src/presentation.js:48
-msgid "Presentation"
-msgstr "প্রেসেন্টেশান"
-
-#: ../src/documents.js:785
-#: ../src/documents.js:883
+#: ../src/documents.js:696 ../src/documents.js:877 ../src/documents.js:939
+#: ../src/documents.js:1047
 msgid "Collection"
 msgstr "সংগ্রহ"
 
-#: ../src/documents.js:787
-#: ../src/documents.js:885
+#: ../src/documents.js:756
+msgid "Google Docs"
+msgstr "Google Docs"
+
+#: ../src/documents.js:757
+msgid "Google"
+msgstr "Google"
+
+#: ../src/documents.js:879 ../src/documents.js:1049
+msgid "Spreadsheet"
+msgstr "স্প্রেডশীট"
+
+#: ../src/documents.js:881 ../src/documents.js:1051 ../src/presentation.js:47
+msgid "Presentation"
+msgstr "প্রেসেন্টেশান"
+
+#: ../src/documents.js:883 ../src/documents.js:1053
 msgid "Document"
 msgstr "দস্তাবেজ"
 
-#. overridden
-#: ../src/documents.js:813
-#: ../src/documents.js:814
-msgid "Skydrive"
-msgstr "Skydrive"
+#: ../src/documents.js:917
+msgid "ownCloud"
+msgstr "ownCloud"
 
-#: ../src/documents.js:998
+#: ../src/documents.js:981 ../src/documents.js:982
+msgid "OneDrive"
+msgstr "OneDrive"
+
+#: ../src/documents.js:1181
 msgid "Please check the network connection."
 msgstr "অনুগ্রহ করে নেটওয়ার্ক সংযোগ দেখে নিন।"
 
-#: ../src/documents.js:1001
+#: ../src/documents.js:1184
 msgid "Please check the network proxy settings."
 msgstr "অনুগ্রহ করে নেটওয়ার্ক প্রক্সি সেটিং দেখে নিন।"
 
-#: ../src/documents.js:1004
+#: ../src/documents.js:1187
 msgid "Unable to sign in to the document service."
 msgstr "নথি পরিষেবায় সাইন ইন করা গেল না।"
 
-#: ../src/documents.js:1007
+#: ../src/documents.js:1190
 msgid "Unable to locate this document."
 msgstr "এই নথির অবস্থান নির্দিষ্ট করা গেল না।"
 
-#: ../src/documents.js:1010
-#, c-format
+#: ../src/documents.js:1193
+#, javascript-format
 msgid "Hmm, something is fishy (%d)."
 msgstr "কিছু গোলযোগ আছে (%d)।"
 
-#. Translators: %s is the title of a document
-#: ../src/documents.js:1028
-#, c-format
+#: ../src/documents.js:1211
+#, javascript-format
 msgid "Oops! Unable to load “%s”"
 msgstr "এই যা! “%s” লোড করা গেল না"
 
-#: ../src/edit.js:191
+#: ../src/edit.js:192
 msgid "View"
 msgstr "প্রদর্শন"
 
-#: ../src/embed.js:64
-#: ../src/lib/gd-places-bookmarks.c:383
-#: ../src/lib/gd-places-links.c:257
-#: ../src/view.js:71
-msgid "Loading…"
-msgstr "লোড করা হচ্ছে ..."
-
-#: ../src/embed.js:146
+#: ../src/embed.js:142
 msgid "No Documents Found"
 msgstr "কোনও দস্তাবেজ পাওয়া যায়নি"
 
-#. Translators: %s here is "System Settings", which is in a separate string
-#. due to markup, and should be translated only in the context of this sentence
-#: ../src/embed.js:167
-#, c-format
+#: ../src/embed.js:163
+#, javascript-format
 msgid "You can add your online accounts in %s"
 msgstr "আপনি %s - এ আপনার অনলাইন অ্যাকাউন্ট যোগ করতে পারেন"
 
-#. Translators: this should be translated in the context of the
-#. "You can add your online accounts in System Settings" sentence above
-#: ../src/embed.js:171
-msgid "System Settings"
-msgstr "সিস্টেম সেটিংস"
+#: ../src/embed.js:167
+#| msgid "System Settings"
+msgid "Settings"
+msgstr "সেটিংস"
 
-#: ../src/lib/gd-nav-bar.c:235
+#: ../src/lib/gd-nav-bar.c:242
 #, c-format
 msgid "Page %u of %u"
 msgstr "%u এর %u পৃষ্ঠা "
@@ -185,22 +226,28 @@ msgstr "%u এর %u পৃষ্ঠা "
 msgid "Unable to load the document"
 msgstr "দস্তাবেজ লোড করতে ব্যর্থ"
 
-#: ../src/lib/gd-pdf-loader.c:717
+#: ../src/lib/gd-pdf-loader.c:715
 msgid "LibreOffice is required to view this document"
 msgstr "এই নথিটি দেখতে LibreOffice প্রয়োজন"
 
 #. Translators: %s is the number of the page, already formatted
 #. * as a string, for example "Page 5".
-#: ../src/lib/gd-places-bookmarks.c:312
+#.
+#: ../src/lib/gd-places-bookmarks.c:315
 #, c-format
 msgid "Page %s"
 msgstr "পৃষ্ঠা %s"
 
-#: ../src/lib/gd-places-bookmarks.c:375
+#: ../src/lib/gd-places-bookmarks.c:378
 msgid "No bookmarks"
 msgstr "কোনো বুকমার্ক নেই"
 
-#: ../src/lib/gd-places-bookmarks.c:648
+#: ../src/lib/gd-places-bookmarks.c:386 ../src/lib/gd-places-links.c:257
+#: ../src/view.js:71
+msgid "Loading…"
+msgstr "লোড করা হচ্ছে ..."
+
+#: ../src/lib/gd-places-bookmarks.c:651 ../src/preview.js:586
 msgid "Bookmarks"
 msgstr "বুকমার্ক"
 
@@ -212,155 +259,197 @@ msgstr "কোনো বিষয়বস্তুর তালিকা নেই
 msgid "Contents"
 msgstr "বিষয়বস্তু"
 
-#: ../src/mainToolbar.js:78
+#: ../src/mainToolbar.js:79
 msgid "Search"
 msgstr "অনুসন্ধান"
 
-#: ../src/mainToolbar.js:89
+#: ../src/mainToolbar.js:87
 msgid "Back"
 msgstr "পিছনে"
 
-#: ../src/mainToolbar.js:169
-#, c-format
-msgid "Results for “%s”"
-msgstr "“%s” এর ফলাফল"
+#: ../src/mainToolbar.js:132
+msgid "View items as a list"
+msgstr "অাইটেমগুলি তালিকার অাকারে দেখুন"
 
-#: ../src/mainToolbar.js:177
+#: ../src/mainToolbar.js:138
+msgid "View items as a grid of icons"
+msgstr "অাইটেমগুলিকে অাইকনগুলির গ্রিড হিসাবে দেখুন"
+
+#: ../src/mainToolbar.js:168
 msgid "Click on items to select them"
 msgstr "কোনও আইটেম নির্বাচন করতে সেটিকে ক্লিক করুন"
 
-#: ../src/mainToolbar.js:179
-#, c-format
+#: ../src/mainToolbar.js:170
+#, javascript-format
 msgid "%d selected"
 msgid_plural "%d selected"
 msgstr[0] "%d নির্বাচিত"
 msgstr[1] "%d নির্বাচিত"
 
-#. Label for Done button in Sharing dialog
-#: ../src/mainToolbar.js:208
-#: ../src/properties.js:59
-#: ../src/sharing.js:93
-msgid "Done"
-msgstr "সম্পন্ন হয়েছে"
+#: ../src/mainToolbar.js:200
+msgid "Cancel"
+msgstr "বাতিল করুন"
 
-#: ../src/mainToolbar.js:249
+#: ../src/mainToolbar.js:242
 msgid "Select Items"
 msgstr "আইটেম সমূহ নির্বাচন করুন"
 
-#: ../src/mainWindow.js:273
+#: ../src/mainWindow.js:301
 msgid "translator-credits"
 msgstr "অনুবাদক-কৃতিত্ব"
 
-#: ../src/mainWindow.js:275
+#: ../src/mainWindow.js:303
 msgid "A document manager application"
 msgstr "একটি দস্তাবেজ ব্যবস্থাপক আবেদন"
 
-#: ../src/notifications.js:87
-#, c-format
+#: ../src/notifications.js:50
+msgid "Selected item has been deleted"
+msgid_plural "Selected items have been deleted"
+msgstr[0] "নির্বাচিত অাইটেম মোছা হয়েছে"
+msgstr[1] "নির্বাচিত অাইটেমগুলি মোছা হয়েছে"
+
+#: ../src/notifications.js:57
+msgid "Undo"
+msgstr "পূর্বাবস্থা"
+
+#: ../src/notifications.js:157
+#, javascript-format
 msgid "Printing “%s”: %s"
 msgstr "প্রিন্ট করা হচ্ছে “%s”: %s"
 
-#: ../src/notifications.js:143
+#: ../src/notifications.js:213
 msgid "Your documents are being indexed"
 msgstr "আপনার দস্তাবেজ সূচিবদ্ধ করা হচ্ছে"
 
-#: ../src/notifications.js:144
+#: ../src/notifications.js:214
 msgid "Some documents might not be available during this process"
 msgstr "কিছু দস্তাবেজ এই প্রক্রিয়ার সময় উপলব্ধ নাও হতে পারে"
 
-#. Translators: %s refers to an online account provider, e.g.
-#. "Google", or "Windows Live".
-#: ../src/notifications.js:166
-#, c-format
+#: ../src/notifications.js:236
+#, javascript-format
 msgid "Fetching documents from %s"
 msgstr "%s দস্তাবেজ থেকে প্রাপ্ত করা হচ্ছে"
 
-#: ../src/notifications.js:168
+#: ../src/notifications.js:238
 msgid "Fetching documents from online accounts"
 msgstr "অনলাইন অ্যাকাউন্ট থেকে দস্তাবেজ প্রাপ্ত করা হচ্ছে"
+
+#: ../src/password.js:46
+msgid "Password Required"
+msgstr "পাসওয়ার্ড প্রয়োজন"
+
+#: ../src/password.js:49
+msgid "_Unlock"
+msgstr "আন-লক করুন (_U)"
+
+#: ../src/password.js:65
+#, javascript-format
+msgid "Document %s is locked and requires a password to be opened."
+msgstr "%s নথি লক অাছে এবং খুলতে একটি পাসওয়ার্ডের প্রয়োজন।"
+
+#: ../src/password.js:79
+msgid "_Password"
+msgstr "পাসওয়ার্ড (_P)"
 
 #: ../src/presentation.js:105
 msgid "Running in presentation mode"
 msgstr "উপস্থাপনা মোডে চলছে"
 
+#: ../src/presentation.js:152
+msgid "Mirrored"
+msgstr "প্রতিফলিত"
+
+#: ../src/presentation.js:154
+msgid "Primary"
+msgstr "প্রাথমিক"
+
+#: ../src/presentation.js:156
+msgid "Off"
+msgstr "বন্ধ"
+
 #: ../src/presentation.js:158
+msgid "Secondary"
+msgstr "অপ্রধান"
+
+#: ../src/presentation.js:194
 msgid "Present On"
 msgstr "এতে উপস্থিত"
 
-#: ../src/properties.js:57
-#: ../src/resources/preview-menu.ui.h:9
-#: ../src/selections.js:781
+#: ../src/preview.js:594
+#| msgid "Bookmarks"
+msgid "Bookmark this page"
+msgstr "এই পৃষ্ঠা বুকমার্ক করুন"
+
+#: ../src/preview.js:835 ../src/selections.js:857
+#, javascript-format
+msgid "Open with %s"
+msgstr "%s এর সাহাজ্যে খুলুন"
+
+#: ../src/preview.js:897
+msgid "Find Previous"
+msgstr "পূর্ববর্তী খুঁজুন"
+
+#: ../src/preview.js:904
+msgid "Find Next"
+msgstr "পরবর্তী খুঁজুন"
+
+#: ../src/properties.js:61 ../src/resources/preview-menu.ui.h:9
+#: ../src/selections.js:767
 msgid "Properties"
 msgstr "বৈশিষ্ট্যাবলী"
 
-#. Title item
-#. Translators: "Title" is the label next to the document title
-#. in the properties dialog
-#. Translators: "Title" refers to "Match Title" when searching
-#: ../src/properties.js:79
-#: ../src/search.js:257
+#: ../src/properties.js:81
+#| msgid "Title"
+msgctxt "Document Title"
 msgid "Title"
 msgstr "শিরোনাম"
 
-#. Translators: "Author" is the label next to the document author
-#. in the properties dialog
-#. Translators: "Author" refers to "Match Author" when searching
-#: ../src/properties.js:88
-#: ../src/search.js:260
+#: ../src/properties.js:90
+#| msgid "Author"
+msgctxt "Document Author"
 msgid "Author"
-msgstr "গ্রন্থকার"
+msgstr "লেখক"
 
-#. Source item
-#: ../src/properties.js:95
+#: ../src/properties.js:97
 msgid "Source"
 msgstr "উৎস"
 
-#. Date Modified item
-#: ../src/properties.js:101
+#: ../src/properties.js:103
 msgid "Date Modified"
 msgstr "সংশোধনের তারিখ"
 
-#: ../src/properties.js:108
+#: ../src/properties.js:110
 msgid "Date Created"
 msgstr "নির্মান তারিখ"
 
-#. Document type item
-#. Translators: "Type" is the label next to the document type
-#. (PDF, spreadsheet, ...) in the properties dialog
-#. Translators: "Type" refers to a search filter on the document type
-#. (PDF, spreadsheet, ...)
-#: ../src/properties.js:117
-#: ../src/search.js:166
+#: ../src/properties.js:119
+#| msgid "Type"
+msgctxt "Document Type"
 msgid "Type"
 msgstr "প্রকার"
 
-#: ../src/resources/app-menu.ui.h:2
-msgid "Grid"
-msgstr "গ্রিড"
-
-#: ../src/resources/app-menu.ui.h:3
-msgid "List"
-msgstr "তালিকা"
-
-#: ../src/resources/app-menu.ui.h:4
+#: ../src/resources/app-menu.ui.h:1
 msgid "Fullscreen"
 msgstr "পূর্ণ স্ক্রীণ"
 
-#: ../src/resources/app-menu.ui.h:5
-msgid "About Documents"
-msgstr "দস্তাবেজ সম্পর্কে"
-
-#: ../src/resources/app-menu.ui.h:6
+#: ../src/resources/app-menu.ui.h:2
 msgid "Help"
 msgstr "সাহায্য"
 
-#: ../src/resources/app-menu.ui.h:7
+#: ../src/resources/app-menu.ui.h:3
+msgid "About"
+msgstr "সম্পর্কে"
+
+#: ../src/resources/app-menu.ui.h:4
 msgid "Quit"
 msgstr "বরখাস্তকরণ"
 
-#. Translators: this is the Open action in a context menu
-#: ../src/resources/preview-menu.ui.h:1
-#: ../src/selections.js:877
+#: ../src/resources/preview-context-menu.ui.h:1
+msgid "_Copy"
+msgstr "অনুলিপি করুন (_C)"
+
+#: ../src/resources/preview-menu.ui.h:1 ../src/selections.js:747
+#: ../src/selections.js:860
 msgid "Open"
 msgstr "খুলুন"
 
@@ -400,214 +489,242 @@ msgstr "সকল নির্বাচন করুন"
 msgid "Select None"
 msgstr "কিছুই নির্বাচিত করবেন না"
 
-#: ../src/search.js:112
+#: ../src/search.js:114
 msgid "Category"
 msgstr "শ্রেণী"
 
-#. Translators: this refers to new and recent documents
-#. Translators: this refers to documents
-#: ../src/search.js:117
-#: ../src/search.js:169
-#: ../src/search.js:254
-#: ../src/search.js:410
+#: ../src/search.js:119 ../src/search.js:180 ../src/search.js:265
+#: ../src/search.js:421
 msgid "All"
 msgstr "সকল"
 
-#. Translators: this refers to favorite documents
-#: ../src/search.js:123
+#: ../src/search.js:125
 msgid "Favorites"
 msgstr "পছন্দ সমূহ"
 
-#. Translators: this refers to shared documents
-#: ../src/search.js:128
+#: ../src/search.js:130
 msgid "Shared with you"
 msgstr "আপনার সাথে শেয়ার করা"
 
-#: ../src/search.js:171
+#: ../src/search.js:177
+#| msgid "Type"
+msgctxt "Search Filter"
+msgid "Type"
+msgstr "প্রকার"
+
+#: ../src/search.js:182
 msgid "Collections"
 msgstr "সংগ্রহ সমূহ"
 
-#: ../src/search.js:175
+#: ../src/search.js:186
 msgid "PDF Documents"
 msgstr "PDF দস্তাবেজ"
 
-#: ../src/search.js:179
+#: ../src/search.js:190
 msgid "Presentations"
 msgstr "প্রেসেন্টেশান সমূহ"
 
-#: ../src/search.js:182
+#: ../src/search.js:193
 msgid "Spreadsheets"
 msgstr "স্প্রেডশীট সমূহ"
 
-#: ../src/search.js:185
+#: ../src/search.js:196
 msgid "Text Documents"
 msgstr "টেক্সট দস্তাবেজ"
 
-#. Translators: this is a verb that refers to "All", "Title" and "Author",
-#. as in "Match All", "Match Title" and "Match Author"
-#: ../src/search.js:251
+#: ../src/search.js:262
 msgid "Match"
 msgstr "মেলান"
 
-#: ../src/search.js:406
+#: ../src/search.js:268
+#| msgid "Title"
+msgctxt "Search Filter"
+msgid "Title"
+msgstr "শিরোনাম"
+
+#: ../src/search.js:271
+#| msgid "Author"
+msgctxt "Search Filter"
+msgid "Author"
+msgstr "লেখক"
+
+#: ../src/search.js:417
 msgid "Sources"
 msgstr "সূত্র সমূহ"
 
-#. Translators: "Organize" refers to documents in this context
-#: ../src/selections.js:614
-#: ../src/selections.js:773
-msgid "Organize"
-msgstr "সংগঠিত করুন"
+#: ../src/selections.js:461
+msgid "You don't have any collections yet. Enter a new collection name above."
+msgstr "এখনও পর্যন্ত অাপনার কোনো সংগ্রহ নেই। উপরে একটি নতুন সংগ্রহ নাম দিন।"
 
-#: ../src/selections.js:749
+#: ../src/selections.js:604
+#| msgid "Collection"
+msgid "Create new collection"
+msgstr "নতুন সংগ্রহ তৈরি করুন"
+
+#: ../src/selections.js:640
+#| msgid "Collections"
+msgctxt "Dialog Title"
+msgid "Collections"
+msgstr "সংগ্রহসমূহ"
+
+#: ../src/selections.js:752
 msgid "Print"
 msgstr "মুদ্রিত করুন"
 
-#: ../src/selections.js:756
+#: ../src/selections.js:757
 msgid "Delete"
 msgstr "মুছে ফেলুন"
 
-#: ../src/selections.js:788
+#: ../src/selections.js:762
 msgid "Share"
 msgstr "ভাগ করুন"
 
-#. Translators: this is the Open action in a context menu
-#: ../src/selections.js:874
-#, c-format
-msgid "Open with %s"
-msgstr "%s এর সাহাজ্যে খুলুন"
+#: ../src/selections.js:772
+#| msgid "Collection"
+msgid "Add to Collection"
+msgstr "সংগ্রহে যোগ করুন"
 
-#: ../src/sharing.js:89
+#: ../src/sharing.js:98
 msgid "Sharing Settings"
 msgstr "ভাগ করার সেটিং"
 
-#. Label for widget group for changing document permissions
-#: ../src/sharing.js:126
+#: ../src/sharing.js:102
+msgid "Done"
+msgstr "সম্পন্ন হয়েছে"
+
+#: ../src/sharing.js:135
 msgid "Document permissions"
 msgstr "নথি অনুমতি"
 
-#. Label for permission change in Sharing dialog
-#: ../src/sharing.js:133
-#: ../src/sharing.js:311
+#: ../src/sharing.js:142 ../src/sharing.js:320
 msgid "Change"
 msgstr "পরিবর্তন করুন"
 
-#. Label for radiobutton that sets doc permission to private
-#: ../src/sharing.js:157
-#: ../src/sharing.js:286
+#: ../src/sharing.js:166 ../src/sharing.js:295
 msgid "Private"
 msgstr "ব্যক্তিগত"
 
-#: ../src/sharing.js:167
-#: ../src/sharing.js:279
+#: ../src/sharing.js:176 ../src/sharing.js:288
 msgid "Public"
 msgstr "সার্বজনীন"
 
-#. Label for checkbutton that sets doc permission to Can edit
-#: ../src/sharing.js:171
-#: ../src/sharing.js:281
+#: ../src/sharing.js:180 ../src/sharing.js:290
 msgid "Everyone can edit"
 msgstr "যেকেউ সম্পাদনা করতে পারবেন"
 
-#. Label for widget group used for adding new contacts
-#: ../src/sharing.js:178
+#: ../src/sharing.js:187
 msgid "Add people"
 msgstr "মানুষজন যোগ করুন"
 
-#. Editable text in entry field
-#: ../src/sharing.js:185
+#: ../src/sharing.js:194
 msgid "Enter an email address"
 msgstr "একটি ই-মেইল ঠিকানা উল্লেখ করুন"
 
-#: ../src/sharing.js:200
-#: ../src/sharing.js:367
+#: ../src/sharing.js:209 ../src/sharing.js:376
 msgid "Can edit"
 msgstr "সম্পাদনা করতে পারবেন"
 
-#: ../src/sharing.js:200
-#: ../src/sharing.js:370
+#: ../src/sharing.js:209 ../src/sharing.js:379
 msgid "Can view"
 msgstr "দেখতে পারবেন"
 
-#: ../src/sharing.js:207
+#: ../src/sharing.js:216
 msgid "Add"
 msgstr "যোগ করুন"
 
-#: ../src/sharing.js:283
+#: ../src/sharing.js:292
 msgid "Everyone can read"
 msgstr "সবাই পড়তে পারবেন"
 
-#: ../src/sharing.js:298
+#: ../src/sharing.js:307
 msgid "Save"
 msgstr "সংরক্ষণ করুন"
 
-#: ../src/sharing.js:364
+#: ../src/sharing.js:373
 msgid "Owner"
 msgstr "মালিক"
 
-#: ../src/sharing.js:433
-#, c-format
+#: ../src/sharing.js:442
+#, javascript-format
 msgid "You can ask %s for access"
 msgstr "অ্যাক্সেসের জন্য অাপনি %s কে জিঞ্জাসা করতে পারবেন"
 
-#: ../src/sharing.js:470
-#: ../src/sharing.js:506
-#: ../src/sharing.js:563
-#: ../src/sharing.js:580
-#: ../src/sharing.js:599
+#: ../src/sharing.js:479 ../src/sharing.js:515 ../src/sharing.js:572
+#: ../src/sharing.js:589 ../src/sharing.js:608
 msgid "The document was not updated"
 msgstr "নথি অাপডেট করা হয়নি"
 
-#: ../src/shellSearchProvider.js:293
+#: ../src/shellSearchProvider.js:294
 msgid "Untitled Document"
 msgstr "শিরোনামহীন দস্তাবেজ"
 
-#. Translators: "more" refers to documents in this context
-#: ../src/view.js:62
-#: ../src/view.js:93
+#: ../src/trackerController.js:170
+#| msgid "Unable to locate this document."
+msgid "Unable to fetch the list of documents"
+msgstr "নথিগুলির তালিকা নিয়ে অাসা গেল না"
+
+#: ../src/view.js:62 ../src/view.js:93
 msgid "Load More"
 msgstr "অারো লোড করুন"
 
-#: ../src/view.js:294
+#: ../src/view.js:307
 msgid "Yesterday"
 msgstr "গতকাল"
 
-#: ../src/view.js:296
-#, c-format
+#: ../src/view.js:309
+#, javascript-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
 msgstr[0] "%d দিন আগে"
 msgstr[1] "%d দিন আগে"
 
-#: ../src/view.js:300
+#: ../src/view.js:313
 msgid "Last week"
 msgstr "গত সপ্তাহে"
 
-#: ../src/view.js:302
-#, c-format
+#: ../src/view.js:315
+#, javascript-format
 msgid "%d week ago"
 msgid_plural "%d weeks ago"
 msgstr[0] "%d সপ্তাহ আগে"
 msgstr[1] "%d সপ্তাহ আগে"
 
-#: ../src/view.js:306
+#: ../src/view.js:319
 msgid "Last month"
 msgstr "গত মাসে"
 
-#: ../src/view.js:308
-#, c-format
+#: ../src/view.js:321
+#, javascript-format
 msgid "%d month ago"
 msgid_plural "%d months ago"
 msgstr[0] "%d মাস আগে"
 msgstr[1] "%d মাস আগে"
 
-#: ../src/view.js:312
+#: ../src/view.js:325
 msgid "Last year"
 msgstr "গত বছর"
 
-#: ../src/view.js:314
-#, c-format
+#: ../src/view.js:327
+#, javascript-format
 msgid "%d year ago"
 msgid_plural "%d years ago"
 msgstr[0] "%d বছর আগে"
 msgstr[1] "%d বছর আগে"
+
+#~ msgid "Skydrive"
+#~ msgstr "Skydrive"
+
+#~ msgid "Results for “%s”"
+#~ msgstr "“%s” এর ফলাফল"
+
+#~ msgid "Grid"
+#~ msgstr "গ্রিড"
+
+#~ msgid "List"
+#~ msgstr "তালিকা"
+
+#~ msgid "About Documents"
+#~ msgstr "দস্তাবেজ সম্পর্কে"
+
+#~ msgid "Organize"
+#~ msgstr "সংগঠিত করুন"
