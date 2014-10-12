@@ -37,74 +37,6 @@ const TrackerUtils = imports.trackerUtils;
 const WindowMode = imports.windowMode;
 const Utils = imports.utils;
 
-const LoadMoreButton = new Lang.Class({
-    Name: 'LoadMoreButton',
-
-    _init: function() {
-        this._block = false;
-
-        this._controller = Application.offsetController;
-        this._controllerId =
-            this._controller.connect('item-count-changed',
-                                     Lang.bind(this, this._onItemCountChanged));
-
-        let child = new Gtk.Grid({ column_spacing: 10,
-                                   hexpand: true,
-                                   halign: Gtk.Align.CENTER,
-                                   visible: true });
-
-        this._spinner = new Gtk.Spinner({ halign: Gtk.Align.CENTER,
-                                          no_show_all: true });
-        this._spinner.set_size_request(16, 16);
-        child.add(this._spinner);
-
-        // Translators: "more" refers to documents in this context
-        this._label = new Gtk.Label({ label: _("Load More"),
-                                      visible: true });
-        child.add(this._label);
-
-        this.widget = new Gtk.Button({ no_show_all: true,
-                                       child: child });
-        this.widget.get_style_context().add_class('documents-load-more');
-        this.widget.connect('clicked', Lang.bind(this,
-            function() {
-                this._label.label = _("Loading…");
-                this._spinner.show();
-                this._spinner.start();
-
-                this._controller.increaseOffset();
-            }));
-
-        this.widget.connect('destroy', Lang.bind(this,
-            function() {
-                this._controller.disconnect(this._controllerId);
-            }));
-
-        this._onItemCountChanged();
-    },
-
-    _onItemCountChanged: function() {
-        let remainingDocs = this._controller.getRemainingDocs();
-        let visible = !(remainingDocs <= 0 || this._block);
-        this.widget.set_visible(visible);
-
-        if (!visible) {
-            // Translators: "more" refers to documents in this context
-            this._label.label = _("Load More");
-            this._spinner.stop();
-            this._spinner.hide();
-        }
-    },
-
-    setBlock: function(block) {
-        if (this._block == block)
-            return;
-
-        this._block = block;
-        this._onItemCountChanged();
-    }
-});
-
 const ViewModel = new Lang.Class({
     Name: 'ViewModel',
 
@@ -192,9 +124,6 @@ const ViewContainer = new Lang.Class({
         this.widget = new Gtk.Grid({ orientation: Gtk.Orientation.VERTICAL });
         this.view = new Gd.MainView({ shadow_type: Gtk.ShadowType.NONE });
         this.widget.add(this.view);
-
-        this._loadMore = new LoadMoreButton();
-        this.widget.add(this._loadMore.widget);
 
         this.widget.show_all();
 
@@ -413,57 +342,17 @@ const ViewContainer = new Lang.Class({
     },
 
     _connectView: function() {
-        this._adjustmentValueId =
-            this.view.vadjustment.connect('value-changed',
-                                          Lang.bind(this, this._onScrolledWinChange));
-        this._adjustmentChangedId =
-            this.view.vadjustment.connect('changed',
-                                          Lang.bind(this, this._onScrolledWinChange));
-        this._scrollbarVisibleId =
-            this.view.get_vscrollbar().connect('notify::visible',
-                                               Lang.bind(this, this._onScrolledWinChange));
-        this._onScrolledWinChange();
-    },
-
-    _onScrolledWinChange: function() {
-        let vScrollbar = this.view.get_vscrollbar();
-        let adjustment = this.view.vadjustment;
-        let revealAreaHeight = 32;
-
-        // if there's no vscrollbar, or if it's not visible, hide the button
-        if (!vScrollbar ||
-            !vScrollbar.get_visible()) {
-            this._loadMore.setBlock(true);
-            return;
-        }
-
-        let value = adjustment.value;
-        let upper = adjustment.upper;
-        let page_size = adjustment.page_size;
-
-        let end = false;
-
-        // special case this values which happen at construction
-        if ((value == 0) && (upper == 1) && (page_size == 1))
-            end = false;
-        else
-            end = !(value < (upper - page_size - revealAreaHeight));
-
-        this._loadMore.setBlock(!end);
+        this._edgeHitId = this.view.connect('edge-overshot', Lang.bind(this,
+            function (view, pos) {
+                if (pos == Gtk.PositionType.BOTTOM)
+                    Application.offsetController.increaseOffset();
+            }));
     },
 
     _disconnectView: function() {
-        if (this._adjustmentValueId != 0) {
-            this.view.vadjustment.disconnect(this._adjustmentValueId);
-            this._adjustmentValueId = 0;
-        }
-        if (this._adjustmentChangedId != 0) {
-            this.view.vadjustment.disconnect(this._adjustmentChangedId);
-            this._adjustmentChangedId = 0;
-        }
-        if (this._scrollbarVisibleId != 0) {
-            this.view.get_vscrollbar().disconnect(this._scrollbarVisibleId);
-            this._scrollbarVisibleId = 0;
+        if (this._edgeHitId != 0) {
+            this.view.disconnect(this._edgeHitId);
+            this._edgeHitId = 0;
         }
     }
 });
