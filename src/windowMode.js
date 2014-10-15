@@ -53,7 +53,7 @@ const ModeController = new Lang.Class({
             return;
 
         let policy = this._canFullscreenPolicy(oldMode);
-        this.setCanFullscreen(policy);
+        this._setCanFullscreen(policy);
 
         // Swap the old and current modes.
         let tmp = oldMode;
@@ -70,7 +70,7 @@ const ModeController = new Lang.Class({
             return;
 
         let policy = this._canFullscreenPolicy(mode);
-        this.setCanFullscreen(policy);
+        this._setCanFullscreen(policy);
 
         this._history.push(oldMode);
         this._mode = mode;
@@ -82,7 +82,7 @@ const ModeController = new Lang.Class({
         return this._mode;
     },
 
-    setCanFullscreen: function(canFullscreen) {
+    _setCanFullscreen: function(canFullscreen) {
         this._canFullscreen = canFullscreen;
 
         if (!this._canFullscreen && this._fullscreen)
