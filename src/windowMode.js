@@ -39,12 +39,7 @@ const ModeController = new Lang.Class({
     _init: function() {
         this._mode = WindowMode.NONE;
         this._fullscreen = false;
-        this._canFullscreen = false;
         this._history = [];
-    },
-
-    _canFullscreenPolicy: function(mode) {
-        return (mode == WindowMode.PREVIEW || mode == WindowMode.EDIT);
     },
 
     goBack: function() {
@@ -52,14 +47,12 @@ const ModeController = new Lang.Class({
         if (!oldMode || oldMode == WindowMode.NONE)
             return;
 
-        let policy = this._canFullscreenPolicy(oldMode);
-        this._setCanFullscreen(policy);
-
         // Swap the old and current modes.
         let tmp = oldMode;
         oldMode = this._mode;
         this._mode = tmp;
 
+        this._updateFullscreen();
         this.emit('window-mode-changed', this._mode, oldMode);
     },
 
@@ -69,12 +62,10 @@ const ModeController = new Lang.Class({
         if (oldMode == mode)
             return;
 
-        let policy = this._canFullscreenPolicy(mode);
-        this._setCanFullscreen(policy);
-
         this._history.push(oldMode);
         this._mode = mode;
 
+        this._updateFullscreen();
         this.emit('window-mode-changed', this._mode, oldMode);
     },
 
@@ -82,11 +73,9 @@ const ModeController = new Lang.Class({
         return this._mode;
     },
 
-    _setCanFullscreen: function(canFullscreen) {
-        this._canFullscreen = canFullscreen;
-
-        if (!this._canFullscreen && this._fullscreen)
-            this.setFullscreen(false);
+    _updateFullscreen: function() {
+        if (!this.getCanFullscreen() && this._fullscreen)
+            this._setFullscreen(false);
 
         this.emit('can-fullscreen-changed');
     },
@@ -108,7 +97,7 @@ const ModeController = new Lang.Class({
     },
 
     getCanFullscreen: function() {
-        return this._canFullscreen;
+        return (this._mode == WindowMode.PREVIEW || this._mode == WindowMode.EDIT);
     }
 });
 Signals.addSignalMethods(ModeController.prototype);
