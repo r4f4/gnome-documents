@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2011, 2012 Red Hat, Inc.
+ * Copyright (c) 2011, 2012, 2014 Red Hat, Inc.
  *
  * Gnome Documents is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by the
@@ -41,7 +41,7 @@ function initSearch(context) {
     context.searchMatchManager = new SearchMatchManager(context);
     context.searchTypeManager = new SearchTypeManager(context);
     context.searchController = new SearchController(context);
-    context.offsetController = new OffsetController(context);
+    context.offsetController = new OffsetOverviewController(context);
     context.queryBuilder = new Query.QueryBuilder(context);
 };
 
@@ -549,10 +549,9 @@ const _OFFSET_STEP = 50;
 const OffsetController = new Lang.Class({
     Name: 'OffsetController',
 
-    _init: function(context) {
+    _init: function() {
         this._offset = 0;
         this._itemCount = 0;
-        this._context = context;
     },
 
     // to be called by the view
@@ -563,7 +562,7 @@ const OffsetController = new Lang.Class({
 
     // to be called by the model
     resetItemCount: function() {
-        let query = this._context.queryBuilder.buildCountQuery();
+        let query = this.getQuery();
 
         Application.connectionQueue.add
             (query.sparql, null, Lang.bind(this,
@@ -590,6 +589,10 @@ const OffsetController = new Lang.Class({
                 }));
     },
 
+    getQuery: function() {
+        log('Error: OffsetController implementations must override getQuery');
+    },
+
     // to be called by the model
     resetOffset: function() {
         this._offset = 0;
@@ -612,3 +615,17 @@ const OffsetController = new Lang.Class({
     }
 });
 Signals.addSignalMethods(OffsetController.prototype);
+
+const OffsetOverviewController = new Lang.Class({
+    Name: 'OffsetOverviewController',
+    Extends: OffsetController,
+
+    _init: function(context) {
+        this.parent();
+        this._context = context;
+    },
+
+    getQuery: function() {
+        return this._context.queryBuilder.buildCountQuery();
+    }
+});
