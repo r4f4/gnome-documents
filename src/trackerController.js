@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2011, 2013 Red Hat, Inc.
+ * Copyright (c) 2011, 2013, 2014 Red Hat, Inc.
  *
  * Gnome Documents is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by the
@@ -111,9 +111,10 @@ const RefreshFlags = {
 const TrackerController = new Lang.Class({
     Name: 'TrackerController',
 
-    _init: function() {
+    _init: function(windowMode) {
         this._currentQuery = null;
         this._cancellable = new Gio.Cancellable();
+        this._mode = windowMode;
         this._queryQueued = false;
         this._queryQueuedFlags = RefreshFlags.NONE;
         this._querying = false;
@@ -125,22 +126,19 @@ const TrackerController = new Lang.Class({
 
         Application.sourceManager.connect('item-added', Lang.bind(this, this._onSourceAddedRemoved));
         Application.sourceManager.connect('item-removed', Lang.bind(this, this._onSourceAddedRemoved));
-        Application.sourceManager.connect('active-changed', Lang.bind(this, this._refreshForObject));
 
         Application.modeController.connect('window-mode-changed', Lang.bind(this,
             function(object, newMode) {
-                if (this._refreshPending && newMode == WindowMode.WindowMode.OVERVIEW)
+                if (this._refreshPending && newMode == this._mode)
                     this._refreshForSource();
             }));
 
-        Application.offsetController.connect('offset-changed', Lang.bind(this, this._performCurrentQuery));
+        this._offsetController = this.getOffsetController();
+        this._offsetController.connect('offset-changed', Lang.bind(this, this._performCurrentQuery));
+    },
 
-        Application.documentManager.connect('active-collection-changed', Lang.bind(this, this._refreshForObject));
-        Application.searchController.connect('search-string-changed', Lang.bind(this, this._refreshForObject));
-        Application.searchCategoryManager.connect('active-changed', Lang.bind(this, this._refreshForObject));
-        Application.searchTypeManager.connect('active-changed', Lang.bind(this, this._refreshForObject));
-
-        Application.searchMatchManager.connect('active-changed', Lang.bind(this, this._onSearchMatchChanged));
+    getOffsetController: function() {
+        log('Error: TrackerController implementations must override getOffsetController');
     },
 
     _setQueryStatus: function(status) {
@@ -157,6 +155,10 @@ const TrackerController = new Lang.Class({
 
         this._querying = status;
         this.emit('query-status-changed', this._querying);
+    },
+
+    getQuery: function() {
+        log('Error: TrackerController implementations must override getQuery');
     },
 
     getQueryStatus: function() {
@@ -177,7 +179,7 @@ const TrackerController = new Lang.Class({
         if (exception)
             this._onQueryError(exception);
         else
-            Application.offsetController.resetItemCount();
+            this._offsetController.resetItemCount();
 
         if (this._queryQueued) {
             this._queryQueued = false;
@@ -220,7 +222,7 @@ const TrackerController = new Lang.Class({
     },
 
     _performCurrentQuery: function() {
-        this._currentQuery = Application.queryBuilder.buildGlobalQuery();
+        this._currentQuery = this.getQuery();
         this._cancellable.reset();
 
         Application.connectionQueue.add(this._currentQuery.sparql,
@@ -231,7 +233,7 @@ const TrackerController = new Lang.Class({
         this._isStarted = true;
 
         if (flags & RefreshFlags.RESET_OFFSET)
-            Application.offsetController.resetOffset();
+            this._offsetController.resetOffset();
 
         if (this.getQueryStatus()) {
             this._cancellable.cancel();
@@ -245,7 +247,7 @@ const TrackerController = new Lang.Class({
         this._performCurrentQuery();
     },
 
-    _refreshForObject: function(_object, _item) {
+    refreshForObject: function(_object, _item) {
         this._refreshInternal(RefreshFlags.RESET_OFFSET);
     },
 
@@ -261,17 +263,10 @@ const TrackerController = new Lang.Class({
         this._refreshPending = false;
     },
 
-    _onSearchMatchChanged: function() {
-        // when the "match" search setting changes, refresh only if
-        // the search string is not empty
-        if (Application.searchController.getString() != '')
-            this._refreshInternal(RefreshFlags.RESET_OFFSET);
-    },
-
     _onSourceAddedRemoved: function(manager, item) {
         let mode = Application.modeController.getWindowMode();
 
-        if (mode == WindowMode.WindowMode.OVERVIEW)
+        if (mode == this._mode)
             this._refreshForSource();
         else
             this._refreshPending = true;
@@ -285,3 +280,35 @@ const TrackerController = new Lang.Class({
     }
 });
 Signals.addSignalMethods(TrackerController.prototype);
+
+const TrackerOverviewController = new Lang.Class({
+    Name: 'TrackerOverviewController',
+    Extends: TrackerController,
+
+    _init: function() {
+        this.parent(WindowMode.WindowMode.OVERVIEW);
+
+        Application.sourceManager.connect('active-changed', Lang.bind(this, this.refreshForObject));
+        Application.documentManager.connect('active-collection-changed', Lang.bind(this, this.refreshForObject));
+        Application.searchController.connect('search-string-changed', Lang.bind(this, this.refreshForObject));
+        Application.searchCategoryManager.connect('active-changed', Lang.bind(this, this.refreshForObject));
+        Application.searchTypeManager.connect('active-changed', Lang.bind(this, this.refreshForObject));
+
+        Application.searchMatchManager.connect('active-changed', Lang.bind(this, this._onSearchMatchChanged));
+    },
+
+    _onSearchMatchChanged: function() {
+        // when the "match" search setting changes, refresh only if
+        // the search string is not empty
+        if (Application.searchController.getString() != '')
+            this.refreshForObject();
+    },
+
+    getOffsetController: function() {
+        return Application.offsetController;
+    },
+
+    getQuery: function() {
+        return Application.queryBuilder.buildGlobalQuery();
+    },
+});

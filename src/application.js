@@ -474,7 +474,7 @@ const Application = new Lang.Class({
         Search.initSearch(imports.shellSearchProvider);
 
         modeController = new WindowMode.ModeController();
-        trackerController = new TrackerController.TrackerController();
+        trackerController = new TrackerController.TrackerOverviewController();
         selectionController = new Selections.SelectionController();
 
         this._actionEntries = [
