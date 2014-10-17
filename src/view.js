@@ -37,6 +37,8 @@ const TrackerUtils = imports.trackerUtils;
 const WindowMode = imports.windowMode;
 const Utils = imports.utils;
 
+const _RESET_COUNT_TIMEOUT = 500; // msecs
+
 const ViewModel = new Lang.Class({
     Name: 'ViewModel',
 
@@ -52,6 +54,8 @@ const ViewModel = new Lang.Class({
               GObject.TYPE_UINT ]);
         this.model.set_sort_column_id(Gd.MainColumns.MTIME,
                                       Gtk.SortType.DESCENDING);
+
+        this._resetCountId = 0;
 
         Application.documentManager.connect('item-added',
             Lang.bind(this, this._onItemAdded));
@@ -77,6 +81,11 @@ const ViewModel = new Lang.Class({
     },
 
     _onItemAdded: function(source, doc) {
+        // Update the count so that OffsetController has the correct
+        // values. Otherwise things like loading more items and "No
+        // Results" page will not work correctly.
+        this._resetCount();
+
         let iter = this.model.append();
         this.model.set(iter,
             [ 0, 1, 2, 3, 4, 5 ],
@@ -102,6 +111,11 @@ const ViewModel = new Lang.Class({
     },
 
     _onItemRemoved: function(source, doc) {
+        // Update the count so that OffsetController has the correct
+        // values. Otherwise things like loading more items and "No
+        // Results" page will not work correctly.
+        this._resetCount();
+
         this.model.foreach(Lang.bind(this,
             function(model, path, iter) {
                 let id = model.get_value(iter, Gd.MainColumns.ID);
@@ -112,6 +126,102 @@ const ViewModel = new Lang.Class({
                 }
 
                 return false;
+            }));
+    },
+
+    _resetCount: function() {
+        if (this._resetCountId == 0) {
+            this._resetCountId = Mainloop.timeout_add(_RESET_COUNT_TIMEOUT, Lang.bind(this,
+                function() {
+                    this._resetCountId = 0;
+                    Application.offsetController.resetItemCount();
+                    return false;
+                }));
+        }
+    }
+});
+
+const EmptyResultsBox = new Lang.Class({
+    Name: 'EmptyResultsBox',
+
+    _init: function() {
+        this.widget = new Gtk.Grid({ orientation: Gtk.Orientation.HORIZONTAL,
+                                     column_spacing: 12,
+                                     hexpand: true,
+                                     vexpand: true,
+                                     halign: Gtk.Align.CENTER,
+                                     valign: Gtk.Align.CENTER });
+        this.widget.get_style_context().add_class('dim-label');
+
+        this._image = new Gtk.Image({ pixel_size: 64,
+                                      icon_name: 'emblem-documents-symbolic' });
+        this.widget.add(this._image);
+
+        this._labelsGrid = new Gtk.Grid({ orientation: Gtk.Orientation.VERTICAL,
+                                          row_spacing: 12 });
+        this.widget.add(this._labelsGrid);
+
+        let titleLabel = new Gtk.Label({ label: '<b><span size="large">' +
+                                         (Application.application.isBooks ?
+                                          _("No Books Found") :
+                                          _("No Documents Found")) +
+                                         '</span></b>',
+                                         use_markup: true,
+                                         halign: Gtk.Align.START,
+                                         vexpand: true });
+        this._labelsGrid.add(titleLabel);
+
+        if (Application.sourceManager.hasOnlineSources() ||
+            Application.application.isBooks) {
+            titleLabel.valign = Gtk.Align.CENTER;
+        } else {
+            titleLabel.valign = Gtk.Align.START;
+            this._addSystemSettingsLabel();
+        }
+
+        this.widget.show_all();
+    },
+
+    _addSystemSettingsLabel: function() {
+        let detailsStr =
+            // Translators: %s here is "Settings", which is in a separate string due to
+            // markup, and should be translated only in the context of this sentence
+            _("You can add your online accounts in %s").format(
+            " <a href=\"system-settings\">" +
+            // Translators: this should be translated in the context of the
+            // "You can add your online accounts in Settings" sentence above
+            _("Settings") +
+            "</a>");
+        let details = new Gtk.Label({ label: detailsStr,
+                                      use_markup: true,
+                                      halign: Gtk.Align.START,
+                                      xalign: 0,
+                                      max_width_chars: 24,
+                                      wrap: true });
+        this._labelsGrid.add(details);
+
+        details.connect('activate-link', Lang.bind(this,
+            function(label, uri) {
+                if (uri != 'system-settings')
+                    return false;
+
+                try {
+                    let app = Gio.AppInfo.create_from_commandline(
+                        'gnome-control-center online-accounts', null, 0);
+
+                    let screen = this.widget.get_screen();
+                    let display = screen ? screen.get_display() : Gdk.Display.get_default();
+                    let ctx = display.get_app_launch_context();
+
+                    if (screen)
+                        ctx.set_screen(screen);
+
+                    app.launch([], ctx);
+                } catch(e) {
+                    log('Unable to launch gnome-control-center: ' + e.message);
+                }
+
+                return true;
             }));
     }
 });
@@ -124,11 +234,20 @@ const ViewContainer = new Lang.Class({
 
         this._model = new ViewModel();
 
-        this.widget = new Gtk.Grid({ orientation: Gtk.Orientation.VERTICAL });
+        this.widget = new Gtk.Stack({ homogeneous: true,
+                                      transition_type: Gtk.StackTransitionType.CROSSFADE });
+
+        let grid = new Gtk.Grid({ orientation: Gtk.Orientation.VERTICAL });
+        this.widget.add_named(grid, 'view');
+
+        this._noResults = new EmptyResultsBox();
+        this.widget.add_named(this._noResults.widget, 'no-results');
+
         this.view = new Gd.MainView({ shadow_type: Gtk.ShadowType.NONE });
-        this.widget.add(this.view);
+        grid.add(this.view);
 
         this.widget.show_all();
+        this.widget.set_visible_child_full('view', Gtk.StackTransitionType.NONE);
 
         this.view.connect('item-activated',
                             Lang.bind(this, this._onItemActivated));
@@ -161,6 +280,14 @@ const ViewContainer = new Lang.Class({
         selectNone.connect('activate', Lang.bind(this,
             function() {
                 this.view.unselect_all();
+            }));
+
+        Application.offsetController.connect('item-count-changed', Lang.bind(this,
+            function(controller, count) {
+                if (count == 0)
+                    this.widget.set_visible_child_name('no-results');
+                else
+                    this.widget.set_visible_child_name('view');
             }));
 
         this._queryId = Application.trackerController.connect('query-status-changed',

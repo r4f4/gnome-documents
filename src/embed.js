@@ -118,91 +118,6 @@ const ErrorBox = new Lang.Class({
     }
 });
 
-const EmptyResultsBox = new Lang.Class({
-    Name: 'EmptyResultsBox',
-
-    _init: function() {
-        this.widget = new Gtk.Grid({ orientation: Gtk.Orientation.HORIZONTAL,
-                                     column_spacing: 12,
-                                     hexpand: true,
-                                     vexpand: true,
-                                     halign: Gtk.Align.CENTER,
-                                     valign: Gtk.Align.CENTER });
-        this.widget.get_style_context().add_class('dim-label');
-
-        this._image = new Gtk.Image({ pixel_size: 64,
-                                      icon_name: 'emblem-documents-symbolic' });
-        this.widget.add(this._image);
-
-        this._labelsGrid = new Gtk.Grid({ orientation: Gtk.Orientation.VERTICAL,
-                                          row_spacing: 12 });
-        this.widget.add(this._labelsGrid);
-
-        let titleLabel = new Gtk.Label({ label: '<b><span size="large">' +
-                                         (Application.application.isBooks ?
-                                          _("No Books Found") :
-                                          _("No Documents Found")) +
-                                         '</span></b>',
-                                         use_markup: true,
-                                         halign: Gtk.Align.START,
-                                         vexpand: true });
-        this._labelsGrid.add(titleLabel);
-
-        if (Application.sourceManager.hasOnlineSources() ||
-            Application.application.isBooks) {
-            titleLabel.valign = Gtk.Align.CENTER;
-        } else {
-            titleLabel.valign = Gtk.Align.START;
-            this._addSystemSettingsLabel();
-        }
-
-        this.widget.show_all();
-    },
-
-    _addSystemSettingsLabel: function() {
-        let detailsStr =
-            // Translators: %s here is "Settings", which is in a separate string due to
-            // markup, and should be translated only in the context of this sentence
-            _("You can add your online accounts in %s").format(
-            " <a href=\"system-settings\">" +
-            // Translators: this should be translated in the context of the
-            // "You can add your online accounts in Settings" sentence above
-            _("Settings") +
-            "</a>");
-        let details = new Gtk.Label({ label: detailsStr,
-                                      use_markup: true,
-                                      halign: Gtk.Align.START,
-                                      xalign: 0,
-                                      max_width_chars: 24,
-                                      wrap: true });
-        this._labelsGrid.add(details);
-
-        details.connect('activate-link', Lang.bind(this,
-            function(label, uri) {
-                if (uri != 'system-settings')
-                    return false;
-
-                try {
-                    let app = Gio.AppInfo.create_from_commandline(
-                        'gnome-control-center online-accounts', null, 0);
-
-                    let screen = this.widget.get_screen();
-                    let display = screen ? screen.get_display() : Gdk.Display.get_default();
-                    let ctx = display.get_app_launch_context();
-
-                    if (screen)
-                        ctx.set_screen(screen);
-
-                    app.launch([], ctx);
-                } catch(e) {
-                    log('Unable to launch gnome-control-center: ' + e.message);
-                }
-
-                return true;
-            }));
-    }
-});
-
 const Embed = new Lang.Class({
     Name: 'Embed',
 
@@ -249,9 +164,6 @@ const Embed = new Lang.Class({
         this._errorBox = new ErrorBox();
         this._stack.add_named(this._errorBox.widget, 'error');
 
-        this._noResults = new EmptyResultsBox();
-        this._stack.add_named(this._noResults.widget, 'no-results');
-
         Application.modeController.connect('window-mode-changed',
                                            Lang.bind(this, this._onWindowModeChanged));
 
@@ -261,9 +173,6 @@ const Embed = new Lang.Class({
                                               Lang.bind(this, this._onQueryStatusChanged));
         Application.trackerController.connect('query-error',
                                               Lang.bind(this, this._onQueryError));
-
-        Application.offsetController.connect('item-count-changed',
-                                             Lang.bind(this, this._onItemCountChanged));
 
         Application.documentManager.connect('active-changed',
                                             Lang.bind(this, this._onActiveItemChanged));
@@ -305,36 +214,6 @@ const Embed = new Lang.Class({
         } else {
             this._spinnerBox.stop();
             this._stack.set_visible_child_name('view');
-        }
-    },
-
-    _hideNoResultsPage: function() {
-        if (this._noResultsChangeId != 0) {
-            Application.changeMonitor.disconnect(this._noResultsChangeId);
-            this._noResultsChangeId = 0;
-        }
-
-        this._stack.set_visible_child_name('view');
-    },
-
-    _onItemCountChanged: function() {
-        let windowMode = Application.modeController.getWindowMode();
-        if (windowMode != WindowMode.WindowMode.OVERVIEW)
-            return;
-
-        let itemCount = Application.offsetController.getItemCount();
-
-        if (itemCount == 0) {
-            // also listen to changes-pending while in this mode
-            this._noResultsChangeId =
-                Application.changeMonitor.connect('changes-pending', Lang.bind(this,
-                    function() {
-                        this._hideNoResultsPage();
-                    }));
-
-            this._stack.set_visible_child_name('no-results');
-        } else {
-            this._hideNoResultsPage();
         }
     },
 
