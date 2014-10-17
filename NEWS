@@ -1,3 +1,10 @@
+3.14.1 - "Boardwalk"
+====================
+
+- Pass the correct arguments to pdf_loader_load_uri_async (Pranav Kant)
+- Fix crash in places and bookmarks dialog
+- Translation updates
+
 3.14.0 - "Rajhrad"
 ==================
 
