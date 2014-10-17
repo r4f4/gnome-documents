@@ -234,6 +234,17 @@ const SearchTypeManager = new Lang.Class({
         return [ activeItem ];
     },
 
+    getDocumentTypes: function() {
+        let types = [];
+
+        types.push(this.getItemById(SearchTypeStock.PDF));
+        types.push(this.getItemById(SearchTypeStock.PRESENTATIONS));
+        types.push(this.getItemById(SearchTypeStock.SPREADSHEETS));
+        types.push(this.getItemById(SearchTypeStock.TEXTDOCS));
+
+        return types;
+    },
+
     getAllTypes: function() {
         let types = [];
 
