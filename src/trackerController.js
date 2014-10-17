@@ -281,15 +281,72 @@ const TrackerController = new Lang.Class({
 });
 Signals.addSignalMethods(TrackerController.prototype);
 
-const TrackerOverviewController = new Lang.Class({
-    Name: 'TrackerOverviewController',
+const TrackerCollectionsController = new Lang.Class({
+    Name: 'TrackerCollectionsController',
     Extends: TrackerController,
 
     _init: function() {
-        this.parent(WindowMode.WindowMode.OVERVIEW);
+        this.parent(WindowMode.WindowMode.COLLECTIONS);
+
+        Application.documentManager.connect('active-collection-changed', Lang.bind(this,
+            function() {
+                let windowMode = Application.modeController.getWindowMode();
+                if (windowMode == WindowMode.WindowMode.COLLECTIONS)
+                    this.refreshForObject();
+            }));
+    },
+
+    getOffsetController: function() {
+        return Application.offsetCollectionsController;
+    },
+
+    getQuery: function() {
+        let flags;
+        let activeCollection = Application.documentManager.getActiveCollection();
+
+        if (activeCollection)
+            flags = Query.QueryFlags.NONE;
+        else
+            flags = Query.QueryFlags.COLLECTIONS;
+
+        return Application.queryBuilder.buildGlobalQuery(flags,
+                                                         Application.offsetCollectionsController);
+    },
+});
+
+const TrackerDocumentsController = new Lang.Class({
+    Name: 'TrackerDocumentsController',
+    Extends: TrackerController,
+
+    _init: function() {
+        this.parent(WindowMode.WindowMode.DOCUMENTS);
+    },
+
+    getOffsetController: function() {
+        return Application.offsetDocumentsController;
+    },
+
+    getQuery: function() {
+        return Application.queryBuilder.buildGlobalQuery(Query.QueryFlags.DOCUMENTS,
+                                                         Application.offsetDocumentsController);
+    },
+});
+
+const TrackerSearchController = new Lang.Class({
+    Name: 'TrackerSearchController',
+    Extends: TrackerController,
+
+    _init: function() {
+        this.parent(WindowMode.WindowMode.SEARCH);
+
+        Application.documentManager.connect('active-collection-changed', Lang.bind(this,
+            function() {
+                let windowMode = Application.modeController.getWindowMode();
+                if (windowMode == WindowMode.WindowMode.SEARCH)
+                    this.refreshForObject();
+            }));
 
         Application.sourceManager.connect('active-changed', Lang.bind(this, this.refreshForObject));
-        Application.documentManager.connect('active-collection-changed', Lang.bind(this, this.refreshForObject));
         Application.searchController.connect('search-string-changed', Lang.bind(this, this.refreshForObject));
         Application.searchCategoryManager.connect('active-changed', Lang.bind(this, this.refreshForObject));
         Application.searchTypeManager.connect('active-changed', Lang.bind(this, this.refreshForObject));
@@ -305,10 +362,11 @@ const TrackerOverviewController = new Lang.Class({
     },
 
     getOffsetController: function() {
-        return Application.offsetController;
+        return Application.offsetSearchController;
     },
 
     getQuery: function() {
-        return Application.queryBuilder.buildGlobalQuery();
+        return Application.queryBuilder.buildGlobalQuery(Query.QueryFlags.SEARCH,
+                                                         Application.offsetSearchController);
     },
 });

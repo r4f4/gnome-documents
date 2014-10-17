@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2011, 2012 Red Hat, Inc.
+ * Copyright (c) 2011, 2012, 2014 Red Hat, Inc.
  *
  * Gnome Documents is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by the
@@ -77,7 +77,9 @@ let cssProvider = null;
 let documentManager = null;
 let modeController = null;
 let notificationManager = null;
-let offsetController = null;
+let offsetCollectionsController = null;
+let offsetDocumentsController = null;
+let offsetSearchController = null;
 let queryBuilder = null;
 let searchCategoryManager = null;
 let searchController = null;
@@ -85,7 +87,9 @@ let searchMatchManager = null;
 let searchTypeManager = null;
 let selectionController = null;
 let sourceManager = null;
-let trackerController = null;
+let trackerCollectionsController = null;
+let trackerDocumentsController = null;
+let trackerSearchController = null;
 
 const TrackerExtractPriorityIface = '<node> \
 <interface name="org.freedesktop.Tracker1.Extract.Priority"> \
@@ -488,7 +492,12 @@ const Application = new Lang.Class({
         Search.initSearch(imports.shellSearchProvider);
 
         modeController = new WindowMode.ModeController();
-        trackerController = new TrackerController.TrackerOverviewController();
+        offsetCollectionsController = new Search.OffsetCollectionsController();
+        offsetDocumentsController = new Search.OffsetDocumentsController();
+        offsetSearchController = new Search.OffsetSearchController();
+        trackerCollectionsController = new TrackerController.TrackerCollectionsController();
+        trackerDocumentsController = new TrackerController.TrackerDocumentsController();
+        trackerSearchController = new TrackerController.TrackerSearchController();
         selectionController = new Selections.SelectionController();
 
         this._actionEntries = [
@@ -518,7 +527,9 @@ const Application = new Lang.Class({
               create_hook: this._viewAsCreateHook,
               parameter_type: 's',
               state: settings.get_value('view-as'),
-              window_mode: WindowMode.WindowMode.OVERVIEW },
+              window_modes: [WindowMode.WindowMode.COLLECTIONS,
+                             WindowMode.WindowMode.DOCUMENTS,
+                             WindowMode.WindowMode.SEARCH] },
             { name: 'open-current',
               callback: this._onActionOpenCurrent,
               window_mode: WindowMode.WindowMode.PREVIEW },
@@ -550,9 +561,13 @@ const Application = new Lang.Class({
             { name: 'rotate-right', accel: '<Primary>Right',
               window_mode: WindowMode.WindowMode.PREVIEW },
             { name: 'select-all', accel: '<Primary>a',
-              window_mode: WindowMode.WindowMode.OVERVIEW },
+              window_modes: [WindowMode.WindowMode.COLLECTIONS,
+                             WindowMode.WindowMode.DOCUMENTS,
+                             WindowMode.WindowMode.SEARCH] },
             { name: 'select-none',
-              window_mode: WindowMode.WindowMode.OVERVIEW },
+              window_modes: [WindowMode.WindowMode.COLLECTIONS,
+                             WindowMode.WindowMode.DOCUMENTS,
+                             WindowMode.WindowMode.SEARCH] },
             { name: 'properties',
               callback: this._onActionProperties,
               window_mode: WindowMode.WindowMode.PREVIEW },
@@ -570,15 +585,21 @@ const Application = new Lang.Class({
             { name: 'search-source',
               parameter_type: 's',
               state: GLib.Variant.new('s', Search.SearchSourceStock.ALL),
-              window_mode: WindowMode.WindowMode.OVERVIEW },
+              window_modes: [WindowMode.WindowMode.COLLECTIONS,
+                             WindowMode.WindowMode.DOCUMENTS,
+                             WindowMode.WindowMode.SEARCH] },
             { name: 'search-type',
               parameter_type: 's',
               state: GLib.Variant.new('s', Search.SearchTypeStock.ALL),
-              window_mode: WindowMode.WindowMode.OVERVIEW },
+              window_modes: [WindowMode.WindowMode.COLLECTIONS,
+                             WindowMode.WindowMode.DOCUMENTS,
+                             WindowMode.WindowMode.SEARCH] },
             { name: 'search-match',
               parameter_type: 's',
               state: GLib.Variant.new('s', Search.SearchMatchStock.ALL),
-              window_mode: WindowMode.WindowMode.OVERVIEW }
+              window_modes: [WindowMode.WindowMode.COLLECTIONS,
+                             WindowMode.WindowMode.DOCUMENTS,
+                             WindowMode.WindowMode.SEARCH] }
         ];
 
         this.gdataMiner = new Miners.GDataMiner();
@@ -628,7 +649,7 @@ const Application = new Lang.Class({
     vfunc_activate: function() {
         if (!this._mainWindow) {
             this._createWindow();
-            modeController.setWindowMode(WindowMode.WindowMode.OVERVIEW);
+            modeController.setWindowMode(WindowMode.WindowMode.DOCUMENTS);
         }
 
         this._mainWindow.window.present_with_time(this._activationTimestamp);
@@ -639,7 +660,9 @@ const Application = new Lang.Class({
         // clean up signals
         changeMonitor.disconnectAll();
         documentManager.disconnectAll();
-        trackerController.disconnectAll();
+        trackerCollectionsController.disconnectAll();
+        trackerDocumentsController.disconnectAll();
+        trackerSearchController.disconnectAll();
         selectionController.disconnectAll();
         modeController.disconnectAll();
         this.disconnectAllJS();
@@ -692,7 +715,8 @@ const Application = new Lang.Class({
             // forward the search terms next time we enter the overview
             let modeChangeId = modeController.connect('window-mode-changed', Lang.bind(this,
                 function(object, newMode) {
-                    if (newMode != WindowMode.WindowMode.OVERVIEW)
+                    if (newMode == WindowMode.WindowMode.EDIT
+                        || newMode == WindowMode.WindowMode.PREVIEW)
                         return;
 
                     modeController.disconnect(modeChangeId);
@@ -705,7 +729,7 @@ const Application = new Lang.Class({
 
     _onLaunchSearch: function(provider, terms, timestamp) {
         this._createWindow();
-        modeController.setWindowMode(WindowMode.WindowMode.OVERVIEW);
+        modeController.setWindowMode(WindowMode.WindowMode.DOCUMENTS);
         searchController.setString(terms.join(' '));
         this.change_action_state('search', GLib.Variant.new('b', true));
 

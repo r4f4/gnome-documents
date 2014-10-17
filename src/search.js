@@ -41,7 +41,6 @@ function initSearch(context) {
     context.searchMatchManager = new SearchMatchManager(context);
     context.searchTypeManager = new SearchTypeManager(context);
     context.searchController = new SearchController(context);
-    context.offsetController = new OffsetOverviewController(context);
     context.queryBuilder = new Query.QueryBuilder(context);
 };
 
@@ -138,6 +137,12 @@ const SearchCategoryManager = new Lang.Class({
         // this._categories[category.id] = category;
 
         this.setActiveItem(recent);
+    },
+
+    getFilter: function(flags) {
+        // Since we don't expose the SearchCategoryManager in the UI,
+        // this is a placeholder for the moment.
+        return '(true)';
     }
 });
 
@@ -320,7 +325,10 @@ const SearchMatchManager = new Lang.Class({
         this.setActiveItemById(SearchMatchStock.ALL);
     },
 
-    getFilter: function() {
+    getFilter: function(flags) {
+        if ((flags & Query.QueryFlags.SEARCH) == 0)
+            return '(true)';
+
         let terms = this.context.searchController.getTerms();
         let filters = [];
 
@@ -328,7 +336,16 @@ const SearchMatchManager = new Lang.Class({
             this.forEachItem(function(item) {
                 item.setFilterTerm(terms[i]);
             });
-            filters.push(this.parent());
+
+            let filter;
+            let item = this.getActiveItem();
+
+            if (item.id == SearchMatchStock.ALL)
+                filter = this.getAllFilter();
+            else
+                filter = item.getFilter();
+
+            filters.push(filter);
         }
         return filters.length ? '( ' + filters.join(' && ') + ')' : '(true)';
     }
@@ -507,6 +524,24 @@ const SourceManager = new Lang.Class({
         this.processNewItems(newItems);
     },
 
+    getFilter: function(flags) {
+        let item;
+
+        if (flags & Query.QueryFlags.SEARCH)
+            item = this.getActiveItem();
+        else
+            item = this.getItemById(SearchSourceStock.ALL);
+
+        let filter;
+
+        if (item.id == SearchSourceStock.ALL)
+            filter = this.getAllFilter();
+        else
+            filter = item.getFilter();
+
+        return filter;
+    },
+
     getFilterNotLocal: function() {
         let sources = this.getItems();
         let filters = [];
@@ -555,7 +590,7 @@ const SourceManager = new Lang.Class({
     }
 });
 
-const _OFFSET_STEP = 50;
+const OFFSET_STEP = 50;
 
 const OffsetController = new Lang.Class({
     Name: 'OffsetController',
@@ -567,7 +602,7 @@ const OffsetController = new Lang.Class({
 
     // to be called by the view
     increaseOffset: function() {
-        this._offset += _OFFSET_STEP;
+        this._offset += OFFSET_STEP;
         this.emit('offset-changed', this._offset);
     },
 
@@ -614,11 +649,11 @@ const OffsetController = new Lang.Class({
     },
 
     getRemainingDocs: function() {
-        return (this._itemCount - (this._offset + _OFFSET_STEP));
+        return (this._itemCount - (this._offset + OFFSET_STEP));
     },
 
     getOffsetStep: function() {
-        return _OFFSET_STEP;
+        return OFFSET_STEP;
     },
 
     getOffset: function() {
@@ -627,16 +662,49 @@ const OffsetController = new Lang.Class({
 });
 Signals.addSignalMethods(OffsetController.prototype);
 
-const OffsetOverviewController = new Lang.Class({
-    Name: 'OffsetOverviewController',
+const OffsetCollectionsController = new Lang.Class({
+    Name: 'OffsetCollectionsController',
     Extends: OffsetController,
 
-    _init: function(context) {
+    _init: function() {
         this.parent();
-        this._context = context;
     },
 
     getQuery: function() {
-        return this._context.queryBuilder.buildCountQuery();
+        let activeCollection = Application.documentManager.getActiveCollection();
+        let flags;
+
+        if (activeCollection)
+            flags = Query.QueryFlags.NONE;
+        else
+            flags = Query.QueryFlags.COLLECTIONS;
+
+        return Application.queryBuilder.buildCountQuery(flags);
+    }
+});
+
+const OffsetDocumentsController = new Lang.Class({
+    Name: 'OffsetDocumentsController',
+    Extends: OffsetController,
+
+    _init: function() {
+        this.parent();
+    },
+
+    getQuery: function() {
+        return Application.queryBuilder.buildCountQuery(Query.QueryFlags.DOCUMENTS);
+    }
+});
+
+const OffsetSearchController = new Lang.Class({
+    Name: 'OffsetSearchController',
+    Extends: OffsetController,
+
+    _init: function() {
+        this.parent();
+    },
+
+    getQuery: function() {
+        return Application.queryBuilder.buildCountQuery(Query.QueryFlags.SEARCH);
     }
 });

@@ -28,9 +28,11 @@ const Application = imports.application;
 
 const WindowMode = {
     NONE: 0,
-    OVERVIEW: 1,
+    DOCUMENTS: 1,
     PREVIEW: 2,
-    EDIT: 3
+    EDIT: 3,
+    COLLECTIONS: 4,
+    SEARCH: 5
 };
 
 const ModeController = new Lang.Class({

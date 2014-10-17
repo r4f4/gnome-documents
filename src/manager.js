@@ -124,16 +124,8 @@ const BaseManager = new Lang.Class({
         this.emit('clear');
     },
 
-    getFilter: function() {
-        let item = this.getActiveItem();
-        let retval = '';
-
-        if (item.id == 'all')
-            retval = this._getAllFilter();
-        else if (item && item.getFilter)
-            retval = item.getFilter();
-
-        return retval;
+    getFilter: function(flags) {
+        log('Error: BaseManager implementations must override getFilter');
     },
 
     getWhere: function() {
@@ -151,7 +143,7 @@ const BaseManager = new Lang.Class({
             func(this._items[idx]);
     },
 
-    _getAllFilter: function() {
+    getAllFilter: function() {
         let filters = [];
 
         this.forEachItem(function(item) {

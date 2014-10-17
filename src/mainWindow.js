@@ -154,6 +154,7 @@ const MainWindow = new Lang.Class({
 
         switch (windowMode) {
         case WindowMode.WindowMode.NONE:
+        case WindowMode.WindowMode.DOCUMENTS:
             handled = false;
             break;
         case WindowMode.WindowMode.EDIT:
@@ -161,7 +162,8 @@ const MainWindow = new Lang.Class({
             Application.documentManager.setActiveItem(null);
             Application.modeController.goBack();
             break;
-        case WindowMode.WindowMode.OVERVIEW:
+        case WindowMode.WindowMode.COLLECTIONS:
+        case WindowMode.WindowMode.SEARCH:
             if (activeCollection)
                 Application.documentManager.activatePreviousCollection();
             break;
@@ -200,7 +202,9 @@ const MainWindow = new Lang.Class({
             return false;
         case WindowMode.WindowMode.PREVIEW:
             return this._handleKeyPreview(event);
-        case WindowMode.WindowMode.OVERVIEW:
+        case WindowMode.WindowMode.COLLECTIONS:
+        case WindowMode.WindowMode.DOCUMENTS:
+        case WindowMode.WindowMode.SEARCH:
             return this._handleKeyOverview(event);
         case WindowMode.WindowMode.EDIT:
             return false;

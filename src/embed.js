@@ -28,6 +28,7 @@ const Notifications = imports.notifications;
 const Password = imports.password;
 const Preview = imports.preview;
 const Edit = imports.edit;
+const Search = imports.search;
 const Selections = imports.selections;
 const View = imports.view;
 const WindowMode = imports.windowMode;
@@ -104,8 +105,14 @@ const Embed = new Lang.Class({
         this._stackOverlay.add_overlay(Application.notificationManager.widget);
 
         // now create the actual content widgets
-        this._view = new View.ViewContainer();
-        this._stack.add_named(this._view.widget, 'view');
+        this._documents = new View.ViewContainer(WindowMode.WindowMode.DOCUMENTS);
+        this._stack.add_titled(this._documents.widget, 'documents', _("Recent"));
+
+        this._collections = new View.ViewContainer(WindowMode.WindowMode.COLLECTIONS);
+        this._stack.add_titled(this._collections.widget, 'collections', _("Collections"));
+
+        this._search = new View.ViewContainer(WindowMode.WindowMode.SEARCH);
+        this._stack.add_named(this._search.widget, 'search');
 
         this._preview = new Preview.PreviewView(this._stackOverlay);
         this._stack.add_named(this._preview.widget, 'preview');
@@ -116,13 +123,16 @@ const Embed = new Lang.Class({
         this._spinnerBox = new SpinnerBox();
         this._stack.add_named(this._spinnerBox.widget, 'spinner');
 
+        this._stack.connect('notify::visible-child',
+                            Lang.bind(this, this._onVisibleChildChanged));
+
         Application.modeController.connect('window-mode-changed',
                                            Lang.bind(this, this._onWindowModeChanged));
 
         Application.modeController.connect('fullscreen-changed',
                                            Lang.bind(this, this._onFullscreenChanged));
-        Application.trackerController.connect('query-status-changed',
-                                              Lang.bind(this, this._onQueryStatusChanged));
+        Application.trackerDocumentsController.connect('query-status-changed',
+                                                       Lang.bind(this, this._onQueryStatusChanged));
 
         Application.documentManager.connect('active-changed',
                                             Lang.bind(this, this._onActiveItemChanged));
@@ -135,6 +145,14 @@ const Embed = new Lang.Class({
         Application.documentManager.connect('password-needed',
                                             Lang.bind(this, this._onPasswordNeeded));
 
+        Application.searchTypeManager.connect('active-changed',
+                                              Lang.bind(this, this._onSearchChanged));
+        Application.sourceManager.connect('active-changed',
+                                          Lang.bind(this, this._onSearchChanged));
+
+        Application.searchController.connect('search-string-changed',
+                                             Lang.bind(this, this._onSearchChanged));
+
         this._onQueryStatusChanged();
 
         let windowMode = Application.modeController.getWindowMode();
@@ -142,28 +160,70 @@ const Embed = new Lang.Class({
             this._onWindowModeChanged(Application.modeController, windowMode, WindowMode.WindowMode.NONE);
     },
 
+    _getViewFromMode: function(windowMode) {
+        let view;
+
+        switch (windowMode) {
+        case WindowMode.WindowMode.COLLECTIONS:
+            view = this._collections;
+            break;
+        case WindowMode.WindowMode.DOCUMENTS:
+            view = this._documents;
+            break;
+        case WindowMode.WindowMode.PREVIEW:
+            view = this._preview;
+            break;
+        case WindowMode.WindowMode.SEARCH:
+            view = this._search;
+            break;
+        default:
+            throw(new Error('Not handled'));
+            break;
+        }
+
+        return view;
+    },
+
     _onActivateResult: function() {
         let windowMode = Application.modeController.getWindowMode();
+        let view = this._getViewFromMode(mode);
+        view.activateResult();
+    },
 
-        if (windowMode == WindowMode.WindowMode.OVERVIEW)
-            this._view.activateResult();
-        else if (windowMode == WindowMode.WindowMode.PREVIEW)
-            this._preview.activateResult();
+    _restoreLastPage: function() {
+        let page;
+        let windowMode = Application.modeController.getWindowMode();
+
+        switch (windowMode) {
+        case WindowMode.WindowMode.COLLECTIONS:
+            page = 'collections';
+            break;
+        case WindowMode.WindowMode.DOCUMENTS:
+            page = 'documents';
+            break;
+        case WindowMode.WindowMode.PREVIEW:
+            page = 'preview';
+            break;
+        case WindowMode.WindowMode.SEARCH:
+            page = 'search';
+            break;
+        default:
+            throw(new Error('Not handled'));
+            break;
+        }
+
+        this._stack.set_visible_child_name(page);
     },
 
     _onQueryStatusChanged: function() {
-        let windowMode = Application.modeController.getWindowMode();
-        if (windowMode != WindowMode.WindowMode.OVERVIEW)
-            return;
-
-        let queryStatus = Application.trackerController.getQueryStatus();
+        let queryStatus = Application.trackerDocumentsController.getQueryStatus();
 
         if (queryStatus) {
             this._spinnerBox.start();
             this._stack.set_visible_child_name('spinner');
         } else {
             this._spinnerBox.stop();
-            this._stack.set_visible_child_name('view');
+            this._restoreLastPage();
         }
     },
 
@@ -172,10 +232,58 @@ const Embed = new Lang.Class({
         this._toolbar.widget.sensitive = !fullscreen;
     },
 
+    _onSearchChanged: function() {
+        // Whenever a search constraint is specified we want to switch to
+        // the search mode, and when all constraints have been lifted we
+        // want to go back to the previous mode which can be either
+        // collections or documents.
+        //
+        // However there are some exceptions, which are taken care of
+        // elsewhere:
+        //  - when moving from search to preview or collection view
+        //  - when in preview or coming out of it
+
+        let doc = Application.documentManager.getActiveItem();
+        let windowMode = Application.modeController.getWindowMode();
+        if (windowMode == WindowMode.WindowMode.SEARCH && doc)
+            return;
+        if (windowMode == WindowMode.WindowMode.PREVIEW)
+            return;
+
+        let searchType = Application.searchTypeManager.getActiveItem();
+        let source = Application.sourceManager.getActiveItem();
+        let str = Application.searchController.getString();
+
+        if (searchType.id == Search.SearchTypeStock.ALL &&
+            source.id == Search.SearchSourceStock.ALL &&
+            (!str || str == '')) {
+            Application.modeController.goBack();
+        } else {
+            Application.modeController.setWindowMode(WindowMode.WindowMode.SEARCH);
+        }
+    },
+
+    _onVisibleChildChanged: function() {
+        let visibleChild = this._stack.visible_child;
+        let windowMode = WindowMode.WindowMode.NONE;
+
+        if (visibleChild == this._collections.widget)
+            windowMode = WindowMode.WindowMode.COLLECTIONS;
+        else if (visibleChild == this._documents.widget)
+            windowMode = WindowMode.WindowMode.DOCUMENTS;
+
+        if (windowMode == WindowMode.WindowMode.NONE)
+            return;
+
+        Application.modeController.setWindowMode(windowMode);
+    },
+
     _onWindowModeChanged: function(object, newMode, oldMode) {
         switch (newMode) {
-        case WindowMode.WindowMode.OVERVIEW:
-            this._prepareForOverview();
+        case WindowMode.WindowMode.COLLECTIONS:
+        case WindowMode.WindowMode.DOCUMENTS:
+        case WindowMode.WindowMode.SEARCH:
+            this._prepareForOverview(newMode, oldMode);
             break;
         case WindowMode.WindowMode.PREVIEW:
             if (oldMode == WindowMode.WindowMode.EDIT)
@@ -255,20 +363,44 @@ const Embed = new Lang.Class({
             }));
     },
 
-    _prepareForOverview: function() {
+    _prepareForOverview: function(newMode, oldMode) {
+        let createToolbar = (oldMode != WindowMode.WindowMode.COLLECTIONS &&
+                             oldMode != WindowMode.WindowMode.DOCUMENTS &&
+                             oldMode != WindowMode.WindowMode.SEARCH);
+
+        let visibleChildName;
+
+        switch (newMode) {
+        case WindowMode.WindowMode.COLLECTIONS:
+            visibleChildName = 'collections';
+            break;
+        case WindowMode.WindowMode.DOCUMENTS:
+            visibleChildName = 'documents';
+            break;
+        case WindowMode.WindowMode.SEARCH:
+            visibleChildName = 'search';
+            break;
+        default:
+            throw(new Error('Not handled'));
+            break;
+        }
+
         if (this._preview)
             this._preview.reset();
         if (this._edit)
             this._edit.setUri(null);
-        if (this._toolbar)
-            this._toolbar.widget.destroy();
 
-        // pack the toolbar
-        this._toolbar = new MainToolbar.OverviewToolbar(this._stackOverlay, this._stack);
-        this._titlebar.add(this._toolbar.widget);
+        if (createToolbar) {
+            if (this._toolbar)
+                this._toolbar.widget.destroy();
+
+            // pack the toolbar
+            this._toolbar = new MainToolbar.OverviewToolbar(this._stackOverlay, this._stack);
+            this._titlebar.add(this._toolbar.widget);
+        }
 
         this._spinnerBox.stop();
-        this._stack.set_visible_child_name('view');
+        this._stack.set_visible_child_name(visibleChildName);
     },
 
     _prepareForPreview: function() {

@@ -241,6 +241,7 @@ const DocCommon = new Lang.Class({
         this.typeDescription = null;
         this.sourceName = null;
 
+        this.rowRefs = {};
         this.shared = false;
 
         this.collection = false;

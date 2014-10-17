@@ -39,7 +39,6 @@ const TrackerUtils = imports.trackerUtils;
 const Utils = imports.utils;
 
 let documentManager = null;
-let offsetController = null;
 let queryBuilder = null;
 let searchCategoryManager = null;
 let searchMatchManager = null;
@@ -319,7 +318,7 @@ const FetchIdsJob = new Lang.Class({
         this._cancellable = cancellable;
         searchController.setString(this._terms.join(' '));
 
-        let query = queryBuilder.buildGlobalQuery();
+        let query = queryBuilder.buildGlobalQuery(Query.QueryFlags.SEARCH, null);
         Application.connectionQueue.add(query.sparql, this._cancellable, Lang.bind(this,
             function(object, res) {
                 let cursor = null;

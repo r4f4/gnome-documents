@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2011 Red Hat, Inc.
+ * Copyright (c) 2011, 2015 Red Hat, Inc.
  *
  * Gnome Documents is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by the
@@ -37,12 +37,37 @@ const TrackerUtils = imports.trackerUtils;
 const WindowMode = imports.windowMode;
 const Utils = imports.utils;
 
+function getController(windowMode) {
+    let offsetController;
+    let trackerController;
+
+    switch (windowMode) {
+    case WindowMode.WindowMode.COLLECTIONS:
+        offsetController = Application.offsetCollectionsController;
+        trackerController = Application.trackerCollectionsController;
+        break;
+    case WindowMode.WindowMode.DOCUMENTS:
+        offsetController = Application.offsetDocumentsController;
+        trackerController = Application.trackerDocumentsController;
+        break;
+    case WindowMode.WindowMode.SEARCH:
+        offsetController = Application.offsetSearchController;
+        trackerController = Application.trackerSearchController;
+        break;
+    default:
+        throw(new Error('Not handled'));
+        break;
+    }
+
+    return [ offsetController, trackerController ];
+}
+
 const _RESET_COUNT_TIMEOUT = 500; // msecs
 
 const ViewModel = new Lang.Class({
     Name: 'ViewModel',
 
-    _init: function() {
+    _init: function(windowMode) {
         this.model = Gtk.ListStore.new(
             [ GObject.TYPE_STRING,
               GObject.TYPE_STRING,
@@ -57,30 +82,34 @@ const ViewModel = new Lang.Class({
 
         this._resetCountId = 0;
 
+        this._mode = windowMode;
+        this._rowRefKey = "row-ref-" + this._mode;
+
         Application.documentManager.connect('item-added',
             Lang.bind(this, this._onItemAdded));
         Application.documentManager.connect('item-removed',
             Lang.bind(this, this._onItemRemoved));
 
-        Application.trackerController.connect('query-status-changed', Lang.bind(this,
+        [ this._offsetController, this._trackerController ] = getController(this._mode);
+        this._trackerController.connect('query-status-changed', Lang.bind(this,
             function(o, status) {
                 if (!status)
                     return;
                 this._clear();
             }));
-
-        // populate with the intial items
-        let items = Application.documentManager.getItems();
-        for (let idx in items) {
-            this._onItemAdded(null, items[idx]);
-        }
     },
 
     _clear: function() {
+        let items = Application.documentManager.getItems();
+        for (let idx in items) {
+            let doc = items[idx];
+            doc.rowRefs[this._rowRefKey] = null;
+        }
+
         this.model.clear();
     },
 
-    _onItemAdded: function(source, doc) {
+    _addItem: function(doc) {
         // Update the count so that OffsetController has the correct
         // values. Otherwise things like loading more items and "No
         // Results" page will not work correctly.
@@ -94,23 +123,12 @@ const ViewModel = new Lang.Class({
 
         let treePath = this.model.get_path(iter);
         let treeRowRef = Gtk.TreeRowReference.new(this.model, treePath);
+        doc.rowRefs[this._rowRefKey] = treeRowRef;
 
-        doc.connect('info-updated', Lang.bind(this,
-            function() {
-                let objectPath = treeRowRef.get_path();
-                if (!objectPath)
-                    return;
-
-                let objectIter = this.model.get_iter(objectPath)[1];
-                if (objectIter)
-                    this.model.set(objectIter,
-                        [ 0, 1, 2, 3, 4, 5 ],
-                        [ doc.id, doc.uri, doc.name,
-                          doc.author, doc.surface, doc.mtime ]);
-            }));
+        doc.connect('info-updated', Lang.bind(this, this._onInfoUpdated));
     },
 
-    _onItemRemoved: function(source, doc) {
+    _removeItem: function(doc) {
         // Update the count so that OffsetController has the correct
         // values. Otherwise things like loading more items and "No
         // Results" page will not work correctly.
@@ -127,6 +145,64 @@ const ViewModel = new Lang.Class({
 
                 return false;
             }));
+
+        doc.rowRefs[this._rowRefKey] = null;
+    },
+
+    _onInfoUpdated: function(doc) {
+        let activeCollection = Application.documentManager.getActiveCollection();
+        let treeRowRef = doc.rowRefs[this._rowRefKey];
+
+        if (this._mode == WindowMode.WindowMode.COLLECTIONS) {
+            if (!doc.collection && treeRowRef && !activeCollection) {
+                ;
+            } else if (doc.collection && !treeRowRef && !activeCollection) {
+                this._addItem(doc);
+            }
+        } else if (this._mode == WindowMode.WindowMode.DOCUMENTS) {
+            if (doc.collection && treeRowRef) {
+                ;
+            } else if (!doc.collection && !treeRowRef) {
+                this._addItem(doc);
+            }
+        }
+
+        treeRowRef = doc.rowRefs[this._rowRefKey];
+        if (treeRowRef) {
+            let objectPath = treeRowRef.get_path();
+            if (!objectPath)
+                return;
+
+            let objectIter = this.model.get_iter(objectPath)[1];
+            if (objectIter)
+                this.model.set(objectIter,
+                    [ 0, 1, 2, 3, 4, 5 ],
+                    [ doc.id, doc.uri, doc.name,
+                      doc.author, doc.surface, doc.mtime ]);
+        }
+    },
+
+    _onItemAdded: function(source, doc) {
+        if (doc.rowRefs[this._rowRefKey])
+            return;
+
+        let activeCollection = Application.documentManager.getActiveCollection();
+        let windowMode = Application.modeController.getWindowMode();
+
+        if (!activeCollection || this._mode != windowMode) {
+            if (this._mode == WindowMode.WindowMode.COLLECTIONS && !doc.collection
+                || this._mode == WindowMode.WindowMode.DOCUMENTS && doc.collection) {
+                doc.connect('info-updated', Lang.bind(this, this._onInfoUpdated));
+                return;
+            }
+        }
+
+        this._addItem(doc);
+        doc.connect('info-updated', Lang.bind(this, this._onInfoUpdated));
+    },
+
+    _onItemRemoved: function(source, doc) {
+        this._removeItem(doc);
     },
 
     _resetCount: function() {
@@ -134,7 +210,7 @@ const ViewModel = new Lang.Class({
             this._resetCountId = Mainloop.timeout_add(_RESET_COUNT_TIMEOUT, Lang.bind(this,
                 function() {
                     this._resetCountId = 0;
-                    Application.offsetController.resetItemCount();
+                    this._offsetController.resetItemCount();
                     return false;
                 }));
         }
@@ -276,10 +352,11 @@ const ErrorBox = new Lang.Class({
 const ViewContainer = new Lang.Class({
     Name: 'ViewContainer',
 
-    _init: function() {
+    _init: function(windowMode) {
         this._edgeHitId = 0;
+        this._mode = windowMode;
 
-        this._model = new ViewModel();
+        this._model = new ViewModel(this._mode);
 
         this.widget = new Gtk.Stack({ homogeneous: true,
                                       transition_type: Gtk.StackTransitionType.CROSSFADE });
@@ -332,7 +409,9 @@ const ViewContainer = new Lang.Class({
                 this.view.unselect_all();
             }));
 
-        Application.offsetController.connect('item-count-changed', Lang.bind(this,
+        [ this._offsetController, this._trackerController ] = getController(this._mode);
+
+        this._offsetController.connect('item-count-changed', Lang.bind(this,
             function(controller, count) {
                 if (count == 0)
                     this.widget.set_visible_child_name('no-results');
@@ -340,12 +419,12 @@ const ViewContainer = new Lang.Class({
                     this.widget.set_visible_child_name('view');
             }));
 
-        Application.trackerController.connect('query-error',
+        this._trackerController.connect('query-error',
             Lang.bind(this, this._onQueryError));
-        this._queryId = Application.trackerController.connect('query-status-changed',
+        this._queryId = this._trackerController.connect('query-status-changed',
             Lang.bind(this, this._onQueryStatusChanged));
         // ensure the tracker controller is started
-        Application.trackerController.start();
+        this._trackerController.start();
 
         // this will create the model if we're done querying
         this._onQueryStatusChanged();
@@ -461,7 +540,7 @@ const ViewContainer = new Lang.Class({
     },
 
     _onQueryStatusChanged: function() {
-        let status = Application.trackerController.getQueryStatus();
+        let status = this._trackerController.getQueryStatus();
 
         if (!status) {
             // setup a model if we're not querying
@@ -532,7 +611,7 @@ const ViewContainer = new Lang.Class({
 
     _onWindowModeChanged: function() {
         let mode = Application.modeController.getWindowMode();
-        if (mode == WindowMode.WindowMode.OVERVIEW)
+        if (mode == this._mode)
             this._connectView();
         else
             this._disconnectView();
@@ -542,7 +621,7 @@ const ViewContainer = new Lang.Class({
         this._edgeHitId = this.view.connect('edge-reached', Lang.bind(this,
             function (view, pos) {
                 if (pos == Gtk.PositionType.BOTTOM)
-                    Application.offsetController.increaseOffset();
+                    this._offsetController.increaseOffset();
             }));
     },
 

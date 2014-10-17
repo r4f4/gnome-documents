@@ -23,6 +23,7 @@ const GdPrivate = imports.gi.GdPrivate;
 const Gio = imports.gi.Gio;
 const GLib = imports.gi.GLib;
 const Lang = imports.lang;
+const Search = imports.search;
 
 const QueryColumns = {
     URN: 0,
@@ -41,7 +42,10 @@ const QueryColumns = {
 
 const QueryFlags = {
     NONE: 0,
-    UNFILTERED: 1 << 0
+    UNFILTERED: 1 << 0,
+    COLLECTIONS: 1 << 1,
+    DOCUMENTS: 1 << 2,
+    SEARCH: 1 << 3
 };
 
 const LOCAL_DOCUMENTS_COLLECTIONS_IDENTIFIER = 'gd:collection:local:';
@@ -59,12 +63,12 @@ const QueryBuilder = new Lang.Class({
                  activeSource: this._context.sourceManager.getActiveItem() };
     },
 
-    _buildFilterString: function(currentType) {
+    _buildFilterString: function(currentType, flags) {
         let filters = [];
 
-        filters.push(this._context.searchMatchManager.getFilter());
-        filters.push(this._context.sourceManager.getFilter());
-        filters.push(this._context.searchCategoryManager.getFilter());
+        filters.push(this._context.searchMatchManager.getFilter(flags));
+        filters.push(this._context.sourceManager.getFilter(flags));
+        filters.push(this._context.searchCategoryManager.getFilter(flags));
 
         if (currentType) {
             filters.push(currentType.getFilter());
@@ -86,10 +90,14 @@ const QueryBuilder = new Lang.Class({
         let whereParts = [];
         let searchTypes = [];
 
-        if (flags & QueryFlags.UNFILTERED)
-            searchTypes = this._context.searchTypeManager.getAllTypes();
-        else
+        if (flags & QueryFlags.COLLECTIONS)
+            searchTypes = [this._context.searchTypeManager.getItemById(Search.SearchTypeStock.COLLECTIONS)];
+        else if (flags & QueryFlags.DOCUMENTS)
+            searchTypes = this._context.searchTypeManager.getDocumentTypes();
+        else if (flags & QueryFlags.SEARCH)
             searchTypes = this._context.searchTypeManager.getCurrentTypes();
+        else
+            searchTypes = this._context.searchTypeManager.getAllTypes();
 
         // build an array of WHERE clauses; each clause maps to one
         // type of resource we're looking for.
@@ -102,7 +110,7 @@ const QueryBuilder = new Lang.Class({
                         part += this._context.searchCategoryManager.getWhere() +
                                 this._context.documentManager.getWhere();
 
-                    part += this._buildFilterString(currentType);
+                    part += this._buildFilterString(currentType, flags);
                 }
 
                 part += ' }';
@@ -116,16 +124,23 @@ const QueryBuilder = new Lang.Class({
         return whereSparql;
     },
 
-    _buildQueryInternal: function(global, flags) {
+    _buildQueryInternal: function(global, flags, offsetController) {
         let whereSparql = this._buildWhere(global, flags);
         let tailSparql = '';
 
         // order results by mtime
         if (global) {
+            let offset = 0;
+            let step = Search.OFFSET_STEP;
+
+            if (offsetController) {
+                offset = offsetController.getOffset();
+                step = offsetController.getOffsetStep();
+            }
+
             tailSparql +=
                 'ORDER BY DESC (?mtime)' +
-                ('LIMIT %d OFFSET %d').format(this._context.offsetController.getOffsetStep(),
-                                              this._context.offsetController.getOffset());
+                ('LIMIT %d OFFSET %d').format(step, offset);
         }
 
         let sparql =
@@ -153,13 +168,13 @@ const QueryBuilder = new Lang.Class({
         return this._createQuery(sparql);
     },
 
-    buildGlobalQuery: function() {
-        return this._createQuery(this._buildQueryInternal(true, QueryFlags.NONE));
+    buildGlobalQuery: function(flags, offsetController) {
+        return this._createQuery(this._buildQueryInternal(true, flags, offsetController));
     },
 
-    buildCountQuery: function() {
+    buildCountQuery: function(flags) {
         let sparql = 'SELECT DISTINCT COUNT(?urn) ' +
-            this._buildWhere(true, QueryFlags.NONE);
+            this._buildWhere(true, flags);
 
         return this._createQuery(sparql);
     },
