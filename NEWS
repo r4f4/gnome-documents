@@ -1,8 +1,9 @@
-3.15.1 - ""
-===========
+3.15.1 - "Pandemonium"
+======================
 
 - Pass the correct arguments to pdf_loader_load_uri_async (Pranav Kant)
 - Let the back button cancel an ongoing load operation (Pranav Kant)
+- Replace "Load more" button with edge hit detection (Carlos Garnacho)
 - Fix crash in places and bookmarks dialog
 - Polish the presentation output chooser
 - Use symbolics for high contrast icons
