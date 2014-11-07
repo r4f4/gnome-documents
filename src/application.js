@@ -32,7 +32,7 @@ imports.gi.versions.Tracker = '1.0';
 imports.gi.versions.TrackerControl = '1.0';
 imports.gi.versions.EvinceDocument = '3.0';
 imports.gi.versions.Goa = '1.0';
-imports.gi.versions.WebKit = '3.0';
+imports.gi.versions.WebKit2 = '4.0';
 
 const EvDoc = imports.gi.EvinceDocument;
 const GdPrivate = imports.gi.GdPrivate;

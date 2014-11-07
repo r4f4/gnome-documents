@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2013 Red Hat, Inc.
+ * Copyright (c) 2013, 2014 Red Hat, Inc.
  *
  * Gnome Documents is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by the
@@ -17,7 +17,7 @@
  *
  */
 
-const WebKit = imports.gi.WebKit;
+const WebKit = imports.gi.WebKit2;
 const Soup = imports.gi.Soup;
 const Gd = imports.gi.Gd;
 const GdPrivate = imports.gi.GdPrivate;
@@ -48,18 +48,12 @@ const EditView = new Lang.Class({
         this._uri = null;
 
         this.widget = new Gtk.Overlay();
-
-        this._scrolledWindow = new Gtk.ScrolledWindow({ hexpand: true,
-                                                        vexpand: true });
         this.widget.get_style_context().add_class('documents-scrolledwin');
-        this.widget.add(this._scrolledWindow);
 
-        this._session = WebKit.get_default_session ();
-        Soup.Session.prototype.add_feature.call(this._session, new Soup.ProxyResolverDefault());
-        Soup.Session.prototype.remove_feature.call(this._session, new Soup.CookieJar());
+        context = WebKit.WebContext.get_default();
+        cookie_manager = context.get_cookie_manager();
         let jarfile = GLib.build_filenamev([GLib.get_user_cache_dir(), 'gnome-documents', 'cookies.sqlite']);
-        this._cookieJar = new Soup.CookieJarDB({ filename: jarfile, read_only: false });
-        Soup.Session.prototype.add_feature.call(this._session, this._cookieJar);
+        cookie_manager.set_persistent_storage(jarfile, WebKit.CookiePersistentStorage.SQLITE);
 
         this._progressBar = new Gtk.ProgressBar({ halign: Gtk.Align.FILL,
                                                   valign: Gtk.Align.START });
@@ -110,28 +104,17 @@ const EditView = new Lang.Class({
 
     _createView: function() {
         this.view = new WebKit.WebView();
-        this._scrolledWindow.add(this.view);
+        this.widget.add(this.view);
         this.view.show();
-        this.view.connect('notify::progress', Lang.bind(this, this._onProgressChanged));
-    },
-
-    _isLoading: function() {
-        let status = this.view.load_status;
-        if ((status == WebKit.LoadStatus.finished
-            || status == WebKit.LoadStatus.failed)
-            && status != WebKit.LoadStatus.provisional)
-            return false;
-
-        return status != WebKit.LoadStatus.finished
-            && status != WebKit.LoadStatus.failed;
+        this.view.connect('notify::estimated-load-progress', Lang.bind(this, this._onProgressChanged));
     },
 
     _onProgressChanged: function() {
         if (!this.view.uri || this.view.uri == _BLANK_URI)
             return;
 
-        let progress = this.view.progress;
-        let loading = this._isLoading();
+        let progress = this.view.estimated_load_progress;
+        let loading = this.view.is_loading;
 
         if (progress == 1.0 || !loading) {
             if (!this._timeoutId)
