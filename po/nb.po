@@ -5,10 +5,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-documents 3.13.x\n"
+"Project-Id-Version: gnome-documents 3.15.x\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-08-23 11:22+0200\n"
-"PO-Revision-Date: 2014-08-23 11:22+0200\n"
+"POT-Creation-Date: 2014-11-13 20:28+0100\n"
+"PO-Revision-Date: 2014-11-13 20:29+0100\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian bokmål <i18n-nb@lister.ping.uio.no>\n"
 "Language: \n"
@@ -198,7 +198,7 @@ msgstr "Hmm, noe er galt (%d)."
 msgid "Oops! Unable to load “%s”"
 msgstr "Opps! kan ikke laste «%s»"
 
-#: ../src/edit.js:192
+#: ../src/edit.js:175
 msgid "View"
 msgstr "Vis"
 
@@ -219,7 +219,7 @@ msgstr "Du kan legge til dine kontoer på nettet i %s"
 msgid "Settings"
 msgstr "Innstillinger"
 
-#: ../src/lib/gd-nav-bar.c:238
+#: ../src/lib/gd-nav-bar.c:242
 #, c-format
 msgid "Page %u of %u"
 msgstr "Side %u av %u"
@@ -235,21 +235,20 @@ msgstr "LibreOffice kreves for å vise dette dokumentet"
 #. Translators: %s is the number of the page, already formatted
 #. * as a string, for example "Page 5".
 #.
-#: ../src/lib/gd-places-bookmarks.c:315
+#: ../src/lib/gd-places-bookmarks.c:321
 #, c-format
 msgid "Page %s"
 msgstr "Side %s"
 
-#: ../src/lib/gd-places-bookmarks.c:378
+#: ../src/lib/gd-places-bookmarks.c:384
 msgid "No bookmarks"
 msgstr "Ingen bokmerker"
 
-#: ../src/lib/gd-places-bookmarks.c:386 ../src/lib/gd-places-links.c:257
-#: ../src/view.js:71
+#: ../src/lib/gd-places-bookmarks.c:392 ../src/lib/gd-places-links.c:257
 msgid "Loading…"
 msgstr "Laster …"
 
-#: ../src/lib/gd-places-bookmarks.c:651 ../src/preview.js:580
+#: ../src/lib/gd-places-bookmarks.c:657 ../src/preview.js:586
 msgid "Bookmarks"
 msgstr "Bokmerker"
 
@@ -356,29 +355,46 @@ msgstr "Dokumentet %s er låst og krever et passord for å åpnes."
 msgid "_Password"
 msgstr "_Passord"
 
-#: ../src/presentation.js:104
+#: ../src/presentation.js:105
 msgid "Running in presentation mode"
 msgstr "Kjører i presentasjonsmodus"
 
-#: ../src/presentation.js:157
+#. Translators: "Mirrored" describes when both displays show the same view
+#: ../src/presentation.js:152
+msgid "Mirrored"
+msgstr "Speilet"
+
+#: ../src/presentation.js:154
+msgid "Primary"
+msgstr "Primær"
+
+#: ../src/presentation.js:156
+msgid "Off"
+msgstr "Av"
+
+#: ../src/presentation.js:158
+msgid "Secondary"
+msgstr "Sekundær"
+
+#: ../src/presentation.js:194
 msgid "Present On"
 msgstr "Presentasjonsmodus på"
 
-#: ../src/preview.js:588
+#: ../src/preview.js:594
 msgid "Bookmark this page"
 msgstr "Lag bokmerke for denne siden"
 
 #. Translators: this is the Open action in a context menu
-#: ../src/preview.js:823 ../src/selections.js:857
+#: ../src/preview.js:835 ../src/selections.js:857
 #, javascript-format
 msgid "Open with %s"
 msgstr "Åpne med %s"
 
-#: ../src/preview.js:885
+#: ../src/preview.js:898
 msgid "Find Previous"
 msgstr "Finn forrige"
 
-#: ../src/preview.js:892
+#: ../src/preview.js:905
 msgid "Find Next"
 msgstr "Finn neste"
 
@@ -678,49 +694,44 @@ msgstr "Dokument uten navn"
 msgid "Unable to fetch the list of documents"
 msgstr "Kan ikke hente listen med dokumenter"
 
-#. Translators: "more" refers to documents in this context
-#: ../src/view.js:62 ../src/view.js:93
-msgid "Load More"
-msgstr "Last flere"
-
-#: ../src/view.js:307
+#: ../src/view.js:236
 msgid "Yesterday"
 msgstr "I går"
 
-#: ../src/view.js:309
+#: ../src/view.js:238
 #, javascript-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
 msgstr[0] "%d dag siden"
 msgstr[1] "%d dager siden"
 
-#: ../src/view.js:313
+#: ../src/view.js:242
 msgid "Last week"
 msgstr "Siste uke"
 
-#: ../src/view.js:315
+#: ../src/view.js:244
 #, javascript-format
 msgid "%d week ago"
 msgid_plural "%d weeks ago"
 msgstr[0] "%d uke siden"
 msgstr[1] "%d uker siden"
 
-#: ../src/view.js:319
+#: ../src/view.js:248
 msgid "Last month"
 msgstr "Siste måned"
 
-#: ../src/view.js:321
+#: ../src/view.js:250
 #, javascript-format
 msgid "%d month ago"
 msgid_plural "%d months ago"
 msgstr[0] "%d måned siden"
 msgstr[1] "%d måneder siden"
 
-#: ../src/view.js:325
+#: ../src/view.js:254
 msgid "Last year"
 msgstr "Siste år"
 
-#: ../src/view.js:327
+#: ../src/view.js:256
 #, javascript-format
 msgid "%d year ago"
 msgid_plural "%d years ago"
