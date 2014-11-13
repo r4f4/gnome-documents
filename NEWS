@@ -1,3 +1,8 @@
+3.14.2 - "Candy"
+================
+
+- Disable SSLv3 to prevent POODLE attacks
+
 3.14.1 - "Boardwalk"
 ====================
 
