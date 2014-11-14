@@ -14,16 +14,16 @@ msgstr ""
 "Project-Id-Version: gnome-documents master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-08-25 05:49+0000\n"
-"PO-Revision-Date: 2014-08-02 22:08+0800\n"
-"Last-Translator: irisgyq <gouyingqiyanxuan321@gmail.com>\n"
+"POT-Creation-Date: 2014-11-14 07:39+0000\n"
+"PO-Revision-Date: 2014-11-15 01:13+0800\n"
+"Last-Translator: YunQiang Su <wzssyqa@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 1.6.10\n"
 
 #: ../data/org.gnome.Documents.appdata.xml.in.h:1
 #: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:121
@@ -229,21 +229,21 @@ msgstr "需要 LibreOffice 以阅读此文档"
 #. Translators: %s is the number of the page, already formatted
 #. * as a string, for example "Page 5".
 #.
-#: ../src/lib/gd-places-bookmarks.c:315
+#: ../src/lib/gd-places-bookmarks.c:321
 #, c-format
 msgid "Page %s"
 msgstr "第 %s 页"
 
-#: ../src/lib/gd-places-bookmarks.c:378
+#: ../src/lib/gd-places-bookmarks.c:384
 msgid "No bookmarks"
 msgstr "没有书签"
 
-#: ../src/lib/gd-places-bookmarks.c:386 ../src/lib/gd-places-links.c:257
+#: ../src/lib/gd-places-bookmarks.c:392 ../src/lib/gd-places-links.c:257
 #: ../src/view.js:71
 msgid "Loading…"
 msgstr "正在加载…"
 
-#: ../src/lib/gd-places-bookmarks.c:651 ../src/preview.js:580
+#: ../src/lib/gd-places-bookmarks.c:657 ../src/preview.js:580
 msgid "Bookmarks"
 msgstr "书签"
 
@@ -306,11 +306,11 @@ msgstr "一个文档管理程序"
 #: ../src/notifications.js:50
 msgid "Selected item has been deleted"
 msgid_plural "Selected items have been deleted"
-msgstr[0] ""
+msgstr[0] "选中的项目已经删除"
 
 #: ../src/notifications.js:57
 msgid "Undo"
-msgstr ""
+msgstr "撤销"
 
 #: ../src/notifications.js:157
 #, javascript-format
