@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: gnome-documents master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-08-23 06:50+0000\n"
-"PO-Revision-Date: 2014-08-23 09:22+0200\n"
+"POT-Creation-Date: 2014-11-26 07:44+0000\n"
+"PO-Revision-Date: 2014-11-26 09:35+0100\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -195,7 +195,7 @@ msgstr "Hmm, něco je špatně (%d)."
 msgid "Oops! Unable to load “%s”"
 msgstr "Jejda! Nelze načíst „%s“"
 
-#: ../src/edit.js:192
+#: ../src/edit.js:175
 msgid "View"
 msgstr "Zobrazit"
 
@@ -212,7 +212,7 @@ msgstr "Své účty on-line můžete přidat v %s"
 msgid "Settings"
 msgstr "Nastavení"
 
-#: ../src/lib/gd-nav-bar.c:238
+#: ../src/lib/gd-nav-bar.c:242
 #, c-format
 msgid "Page %u of %u"
 msgstr "Strana %u z %u"
@@ -228,21 +228,20 @@ msgstr "K prohlížení tohoto dokumentu je vyžadován LibreOffice"
 #. Translators: %s is the number of the page, already formatted
 #. * as a string, for example "Page 5".
 #.
-#: ../src/lib/gd-places-bookmarks.c:315
+#: ../src/lib/gd-places-bookmarks.c:321
 #, c-format
 msgid "Page %s"
 msgstr "Strana %s"
 
-#: ../src/lib/gd-places-bookmarks.c:378
+#: ../src/lib/gd-places-bookmarks.c:384
 msgid "No bookmarks"
 msgstr "Žádné záložky"
 
-#: ../src/lib/gd-places-bookmarks.c:386 ../src/lib/gd-places-links.c:257
-#: ../src/view.js:71
+#: ../src/lib/gd-places-bookmarks.c:392 ../src/lib/gd-places-links.c:257
 msgid "Loading…"
 msgstr "Načítá se…"
 
-#: ../src/lib/gd-places-bookmarks.c:651 ../src/preview.js:580
+#: ../src/lib/gd-places-bookmarks.c:657 ../src/preview.js:586
 msgid "Bookmarks"
 msgstr "Záložky"
 
@@ -350,29 +349,45 @@ msgstr "Dokument %s je uzamčen a k otevření požaduje heslo."
 msgid "_Password"
 msgstr "_Heslo"
 
-#: ../src/presentation.js:104
+#: ../src/presentation.js:105
 msgid "Running in presentation mode"
-msgstr "Probíhá režim prezentace"
+msgstr "Běží režim prezentace"
+
+#: ../src/presentation.js:152
+msgid "Mirrored"
+msgstr "Duplikovaný"
+
+#: ../src/presentation.js:154
+msgid "Primary"
+msgstr "Hlavní"
+
+#: ../src/presentation.js:156
+msgid "Off"
+msgstr "Vypnout"
+
+#: ../src/presentation.js:158
+msgid "Secondary"
+msgstr "Vedlejší"
 
 # Nadpis okna s výběrem
-#: ../src/presentation.js:157
+#: ../src/presentation.js:194
 msgid "Present On"
-msgstr "Prezentovat na…"
+msgstr "Prezentovat na"
 
-#: ../src/preview.js:588
+#: ../src/preview.js:594
 msgid "Bookmark this page"
 msgstr "Tuto stránku do záložek"
 
-#: ../src/preview.js:823 ../src/selections.js:857
+#: ../src/preview.js:835 ../src/selections.js:857
 #, javascript-format
 msgid "Open with %s"
 msgstr "Otevřít pomocí %s"
 
-#: ../src/preview.js:885
+#: ../src/preview.js:898
 msgid "Find Previous"
 msgstr "Najít předchozí"
 
-#: ../src/preview.js:892
+#: ../src/preview.js:905
 msgid "Find Next"
 msgstr "Najít následující"
 
@@ -636,15 +651,11 @@ msgstr "Nepojmenovaný dokument"
 msgid "Unable to fetch the list of documents"
 msgstr "Nelze získat seznam dokumentů"
 
-#: ../src/view.js:62 ../src/view.js:93
-msgid "Load More"
-msgstr "Načíst více"
-
-#: ../src/view.js:307
+#: ../src/view.js:236
 msgid "Yesterday"
 msgstr "Včera"
 
-#: ../src/view.js:309
+#: ../src/view.js:238
 #, javascript-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
@@ -652,11 +663,11 @@ msgstr[0] "Před %d dnem"
 msgstr[1] "Před %d dny"
 msgstr[2] "Před %d dny"
 
-#: ../src/view.js:313
+#: ../src/view.js:242
 msgid "Last week"
 msgstr "Minulý týden"
 
-#: ../src/view.js:315
+#: ../src/view.js:244
 #, javascript-format
 msgid "%d week ago"
 msgid_plural "%d weeks ago"
@@ -664,11 +675,11 @@ msgstr[0] "Před %d týdnem"
 msgstr[1] "Před %d týdny"
 msgstr[2] "Před %d týdny"
 
-#: ../src/view.js:319
+#: ../src/view.js:248
 msgid "Last month"
 msgstr "Minulý měsíc"
 
-#: ../src/view.js:321
+#: ../src/view.js:250
 #, javascript-format
 msgid "%d month ago"
 msgid_plural "%d months ago"
@@ -676,17 +687,20 @@ msgstr[0] "Před %d měsícem"
 msgstr[1] "Před %d měsíci"
 msgstr[2] "Před %d měsíci"
 
-#: ../src/view.js:325
+#: ../src/view.js:254
 msgid "Last year"
 msgstr "Minulý rok"
 
-#: ../src/view.js:327
+#: ../src/view.js:256
 #, javascript-format
 msgid "%d year ago"
 msgid_plural "%d years ago"
 msgstr[0] "Před %d rokem"
 msgstr[1] "Před %d roky"
 msgstr[2] "Před %d lety"
+
+#~ msgid "Load More"
+#~ msgstr "Načíst více"
 
 #~ msgid ""
 #~ "<li>View recent local and online documents</li> <li>Access your Google, "
