@@ -1,0 +1,701 @@
+# Romanian translation for gnome-documents.
+# Copyright (C) 2014 gnome-documents's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-documents package.
+# Bogdan Mințoi <mintoi.bogdan@gmail.com>, 2014.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-documents master\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"documents&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2014-11-27 07:40+0000\n"
+"PO-Revision-Date: 2014-11-27 18:17+0200\n"
+"Last-Translator: Bogdan Mințoi <mintoi.bogdan@gmail.com>\n"
+"Language-Team: Română <>\n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
+"20)) ? 1 : 2);\n"
+"X-Generator: Gtranslator 2.91.6\n"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:1
+#: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:121
+#: ../src/mainWindow.js:52 ../src/mainWindow.js:302
+msgid "Documents"
+msgstr "Documente"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:2
+msgid "A document manager application for GNOME"
+msgstr "Un administrator de documente pentru GNOME"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:3
+msgid ""
+"A simple application to access, organize and share your documents on GNOME. "
+"It is meant to be a simple and elegant replacement for using a file manager "
+"to deal with documents. Seamless cloud integration is offered through GNOME "
+"Online Accounts."
+msgstr ""
+"O aplicație simplă care vă permite să accesați, organizați și să partajați "
+"documentele dumneavoastră în mediul GNOME. Se dorește a fi un înlocuitor "
+"simplu și elegant pentru un administrator de fișiere, la lucrul cu "
+"documentele. Oferă integrare cloud perfectă prin Conturi Online GNOME."
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:4
+msgid "It lets you:"
+msgstr "Vă oferă posibilitatea să:"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:5
+msgid "View recent local and online documents"
+msgstr ""
+"Vizualizați documentele locale recente și documentele în modul conectat"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:6
+msgid "Access your Google, ownCloud or OneDrive content"
+msgstr ""
+"Accesați conținutul conturilor dumneavoastră Google, OneDrive sau ownCloud"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:7
+msgid "Search through documents"
+msgstr "Căutați prin documente"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:8
+msgid "See new documents shared by friends"
+msgstr "Vizualizați documente noi partajate de către prieteni"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:9
+msgid "View documents fullscreen"
+msgstr "Vizualizați documente în modul ecran complet"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:10
+msgid "Print documents"
+msgstr "Tipăriți documente"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:11
+msgid "Select favorites"
+msgstr "Selectați favorite"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:12
+msgid "Allow opening full featured editor for non-trivial changes"
+msgstr ""
+"Permiteți deschiderea editorului cu opțiuni avansate pentru modificări "
+"importante."
+
+#: ../data/org.gnome.Documents.desktop.in.h:2
+msgid "Access, manage and share documents"
+msgstr "Accesați, administrați și partajați documente"
+
+#: ../data/org.gnome.Documents.desktop.in.h:3
+msgid "Docs;PDF;Document;"
+msgstr "Docs;PDF;Document;"
+
+#: ../data/org.gnome.documents.gschema.xml.h:1
+msgid "View as"
+msgstr "Vizualizează ca"
+
+#: ../data/org.gnome.documents.gschema.xml.h:2
+msgid "View as type"
+msgstr "Vizualizează ca tip"
+
+#: ../data/org.gnome.documents.gschema.xml.h:3
+msgid "Window size"
+msgstr "Dimensiunea ferestrei"
+
+#: ../data/org.gnome.documents.gschema.xml.h:4
+msgid "Window size (width and height)."
+msgstr "Dimensiunea ferestrei (lățime și înălțime)."
+
+#: ../data/org.gnome.documents.gschema.xml.h:5
+msgid "Window position"
+msgstr "Poziția ferestrei"
+
+#: ../data/org.gnome.documents.gschema.xml.h:6
+msgid "Window position (x and y)."
+msgstr "Poziția ferestrei (x și y)."
+
+#: ../data/org.gnome.documents.gschema.xml.h:7
+msgid "Window maximized"
+msgstr "Fereastra maximizată"
+
+#: ../data/org.gnome.documents.gschema.xml.h:8
+msgid "Window maximized state"
+msgstr "Starea ferestrei maximizate"
+
+#: ../src/documents.js:621
+msgid "Failed to print document"
+msgstr "Eșec la tipărirea documentului"
+
+#: ../src/documents.js:658 ../src/search.js:427
+msgid "Local"
+msgstr "Local"
+
+#: ../src/documents.js:679
+msgid "GNOME"
+msgstr "GNOME"
+
+#: ../src/documents.js:680
+msgid "Getting Started with Documents"
+msgstr "Noțiuni de bază despre Documente"
+
+#: ../src/documents.js:696 ../src/documents.js:877 ../src/documents.js:939
+#: ../src/documents.js:1047
+msgid "Collection"
+msgstr "Colecție"
+
+#: ../src/documents.js:756
+msgid "Google Docs"
+msgstr "Google Docs"
+
+#: ../src/documents.js:757
+msgid "Google"
+msgstr "Google"
+
+#: ../src/documents.js:879 ../src/documents.js:1049
+msgid "Spreadsheet"
+msgstr "Foaie de calcul"
+
+#: ../src/documents.js:881 ../src/documents.js:1051 ../src/presentation.js:47
+msgid "Presentation"
+msgstr "Prezentare"
+
+#: ../src/documents.js:883 ../src/documents.js:1053
+msgid "Document"
+msgstr "Document"
+
+#: ../src/documents.js:917
+msgid "ownCloud"
+msgstr "ownCloud"
+
+#: ../src/documents.js:981 ../src/documents.js:982
+msgid "OneDrive"
+msgstr "OneDrive"
+
+#: ../src/documents.js:1181
+msgid "Please check the network connection."
+msgstr "Verificați conexiunea la rețea."
+
+#: ../src/documents.js:1184
+msgid "Please check the network proxy settings."
+msgstr "Verificați setările proxy ale rețelei."
+
+#: ../src/documents.js:1187
+msgid "Unable to sign in to the document service."
+msgstr "Eșec la autentificarea serviciului de documente."
+
+#: ../src/documents.js:1190
+msgid "Unable to locate this document."
+msgstr "Nu s-a putut localiza acest document."
+
+#: ../src/documents.js:1193
+#, javascript-format
+msgid "Hmm, something is fishy (%d)."
+msgstr "Ceva este suspicios (%d)."
+
+#: ../src/documents.js:1211
+#, javascript-format
+msgid "Oops! Unable to load “%s”"
+msgstr "Ups! Nu s-a putut încărca „%s”"
+
+#: ../src/edit.js:175
+msgid "View"
+msgstr "Vizualizare"
+
+#: ../src/embed.js:142
+msgid "No Documents Found"
+msgstr "Nu s-a găsit niciun document"
+
+#: ../src/embed.js:163
+#, javascript-format
+msgid "You can add your online accounts in %s"
+msgstr "Puteți adăuga conturile proprii online în %s"
+
+#: ../src/embed.js:167
+msgid "Settings"
+msgstr "Setări"
+
+#: ../src/lib/gd-nav-bar.c:242
+#, c-format
+msgid "Page %u of %u"
+msgstr "Pagina %u din %u"
+
+#: ../src/lib/gd-pdf-loader.c:247
+msgid "Unable to load the document"
+msgstr "Documentul nu a putut fi încărcat"
+
+#: ../src/lib/gd-pdf-loader.c:715
+msgid "LibreOffice is required to view this document"
+msgstr "Este necesară suita LibreOffice pentru a vizualiza acest document"
+
+#. Translators: %s is the number of the page, already formatted
+#. * as a string, for example "Page 5".
+#.
+#: ../src/lib/gd-places-bookmarks.c:321
+#, c-format
+msgid "Page %s"
+msgstr "Pagina %s"
+
+#: ../src/lib/gd-places-bookmarks.c:384
+msgid "No bookmarks"
+msgstr "Niciun semn de carte"
+
+#: ../src/lib/gd-places-bookmarks.c:392 ../src/lib/gd-places-links.c:257
+msgid "Loading…"
+msgstr "Se încarcă…"
+
+#: ../src/lib/gd-places-bookmarks.c:657 ../src/preview.js:586
+msgid "Bookmarks"
+msgstr "Semne de carte"
+
+#: ../src/lib/gd-places-links.c:342
+msgid "No table of contents"
+msgstr "Cuprinsul nu există"
+
+#: ../src/lib/gd-places-links.c:518
+msgid "Contents"
+msgstr "Conținut"
+
+#: ../src/mainToolbar.js:79
+msgid "Search"
+msgstr "Caută"
+
+#: ../src/mainToolbar.js:87
+msgid "Back"
+msgstr "Înapoi"
+
+#: ../src/mainToolbar.js:132
+msgid "View items as a list"
+msgstr "Vizualizați elementele ca o listă"
+
+#: ../src/mainToolbar.js:138
+msgid "View items as a grid of icons"
+msgstr "Vizualizați elementele ca o grilă de pictograme"
+
+#: ../src/mainToolbar.js:168
+msgid "Click on items to select them"
+msgstr "Clic pe elemente pentru a le selecta"
+
+#: ../src/mainToolbar.js:170
+#, javascript-format
+msgid "%d selected"
+msgid_plural "%d selected"
+msgstr[0] "%d selectat"
+msgstr[1] "%d selectate"
+msgstr[2] "%d selectate"
+
+#: ../src/mainToolbar.js:200
+msgid "Cancel"
+msgstr "Anulează"
+
+#: ../src/mainToolbar.js:242
+msgid "Select Items"
+msgstr "Selectați elementele"
+
+#: ../src/mainWindow.js:301
+msgid "translator-credits"
+msgstr "Bogdan Mințoi <mintoi.bogdan@gmail.com>, 2014"
+
+#: ../src/mainWindow.js:303
+msgid "A document manager application"
+msgstr "O aplicație de administrare de documente"
+
+#: ../src/notifications.js:50
+msgid "Selected item has been deleted"
+msgid_plural "Selected items have been deleted"
+msgstr[0] "Elementul selectat a fost șters"
+msgstr[1] "Elementele selectate au fost șterse"
+msgstr[2] "Elementele selectate au fost șterse"
+
+#: ../src/notifications.js:57
+msgid "Undo"
+msgstr "Anulează"
+
+#: ../src/notifications.js:157
+#, javascript-format
+msgid "Printing “%s”: %s"
+msgstr "Se tipărește „%s” : %s"
+
+#: ../src/notifications.js:213
+msgid "Your documents are being indexed"
+msgstr "Documentele sunt indexate"
+
+#: ../src/notifications.js:214
+msgid "Some documents might not be available during this process"
+msgstr "Unele documente pot fi indisponibile pe parcursul procesului"
+
+#: ../src/notifications.js:236
+#, javascript-format
+msgid "Fetching documents from %s"
+msgstr "Se preiau documente de la %s"
+
+#: ../src/notifications.js:238
+msgid "Fetching documents from online accounts"
+msgstr "Se preiau documente de la conturile online"
+
+#: ../src/password.js:46
+msgid "Password Required"
+msgstr "Este necesară parola"
+
+#: ../src/password.js:49
+msgid "_Unlock"
+msgstr "_Deblochează"
+
+#: ../src/password.js:65
+#, javascript-format
+msgid "Document %s is locked and requires a password to be opened."
+msgstr ""
+"Documentul %s este blocat și se solicită o parolă pentru a putea fi deschis."
+
+#: ../src/password.js:79
+msgid "_Password"
+msgstr "_Parolă"
+
+#: ../src/presentation.js:105
+msgid "Running in presentation mode"
+msgstr "Rulează în modul de prezentare"
+
+#: ../src/presentation.js:152
+msgid "Mirrored"
+msgstr "Oglindit"
+
+#: ../src/presentation.js:154
+msgid "Primary"
+msgstr "Primar"
+
+#: ../src/presentation.js:156
+msgid "Off"
+msgstr "Dezactivat"
+
+#: ../src/presentation.js:158
+msgid "Secondary"
+msgstr "Secundar"
+
+#: ../src/presentation.js:194
+msgid "Present On"
+msgstr "Prezentarea este pornită"
+
+#: ../src/preview.js:594
+msgid "Bookmark this page"
+msgstr "Pune un semn de carte la această pagină"
+
+#: ../src/preview.js:835 ../src/selections.js:857
+#, javascript-format
+msgid "Open with %s"
+msgstr "Deschide cu %s"
+
+#: ../src/preview.js:898
+msgid "Find Previous"
+msgstr "Găsește precedentul"
+
+#: ../src/preview.js:905
+msgid "Find Next"
+msgstr "Găsește următorul"
+
+#: ../src/properties.js:61 ../src/resources/preview-menu.ui.h:9
+#: ../src/selections.js:767
+msgid "Properties"
+msgstr "Proprietăți"
+
+#: ../src/properties.js:81
+msgctxt "Document Title"
+msgid "Title"
+msgstr "Titlu"
+
+#: ../src/properties.js:90
+msgctxt "Document Author"
+msgid "Author"
+msgstr "Autor"
+
+#: ../src/properties.js:97
+msgid "Source"
+msgstr "Sursă"
+
+#: ../src/properties.js:103
+msgid "Date Modified"
+msgstr "Data modificării"
+
+#: ../src/properties.js:110
+msgid "Date Created"
+msgstr "Data creării"
+
+#: ../src/properties.js:119
+msgctxt "Document Type"
+msgid "Type"
+msgstr "Tip"
+
+#: ../src/resources/app-menu.ui.h:1
+msgid "Fullscreen"
+msgstr "Mod ecran complet"
+
+#: ../src/resources/app-menu.ui.h:2
+msgid "Help"
+msgstr "Ajutor"
+
+#: ../src/resources/app-menu.ui.h:3
+msgid "About"
+msgstr "Despre"
+
+#: ../src/resources/app-menu.ui.h:4
+msgid "Quit"
+msgstr "Renunță"
+
+#: ../src/resources/preview-context-menu.ui.h:1
+msgid "_Copy"
+msgstr "_Copiază"
+
+#: ../src/resources/preview-menu.ui.h:1 ../src/selections.js:747
+#: ../src/selections.js:860
+msgid "Open"
+msgstr "Deschide"
+
+#: ../src/resources/preview-menu.ui.h:2
+msgid "Edit"
+msgstr "Editează"
+
+#: ../src/resources/preview-menu.ui.h:3
+msgid "Print…"
+msgstr "Tipărește…"
+
+#: ../src/resources/preview-menu.ui.h:4
+msgid "Present"
+msgstr "Prezintă"
+
+#: ../src/resources/preview-menu.ui.h:5
+msgid "Zoom In"
+msgstr "Apropiere"
+
+#: ../src/resources/preview-menu.ui.h:6
+msgid "Zoom Out"
+msgstr "Depărtare"
+
+#: ../src/resources/preview-menu.ui.h:7
+msgid "Rotate ↶"
+msgstr "Rotește ↶"
+
+#: ../src/resources/preview-menu.ui.h:8
+msgid "Rotate ↷"
+msgstr "Rotește ↷"
+
+#: ../src/resources/selection-menu.ui.h:1
+msgid "Select All"
+msgstr "Selectează tot"
+
+#: ../src/resources/selection-menu.ui.h:2
+msgid "Select None"
+msgstr "Deselectează tot"
+
+#: ../src/search.js:114
+msgid "Category"
+msgstr "Categorie"
+
+#: ../src/search.js:119 ../src/search.js:180 ../src/search.js:265
+#: ../src/search.js:421
+msgid "All"
+msgstr "Toate"
+
+#: ../src/search.js:125
+msgid "Favorites"
+msgstr "Favorite"
+
+#: ../src/search.js:130
+msgid "Shared with you"
+msgstr "Partajate cu dumneavoastră"
+
+#: ../src/search.js:177
+msgctxt "Search Filter"
+msgid "Type"
+msgstr "Tip"
+
+#: ../src/search.js:182
+msgid "Collections"
+msgstr "Colecții"
+
+#: ../src/search.js:186
+msgid "PDF Documents"
+msgstr "Documente PDF"
+
+#: ../src/search.js:190
+msgid "Presentations"
+msgstr "Prezentări"
+
+#: ../src/search.js:193
+msgid "Spreadsheets"
+msgstr "Foi de calcul"
+
+#: ../src/search.js:196
+msgid "Text Documents"
+msgstr "Documente text"
+
+#: ../src/search.js:262
+msgid "Match"
+msgstr "Potrivire"
+
+#: ../src/search.js:268
+msgctxt "Search Filter"
+msgid "Title"
+msgstr "Titlu"
+
+#: ../src/search.js:271
+msgctxt "Search Filter"
+msgid "Author"
+msgstr "Autor"
+
+#: ../src/search.js:417
+msgid "Sources"
+msgstr "Surse"
+
+#: ../src/selections.js:461
+msgid "You don't have any collections yet. Enter a new collection name above."
+msgstr ""
+"Nu aveți nicio colecție încă. Introduceți deasupra numele unei colecții noi. "
+
+#: ../src/selections.js:604
+msgid "Create new collection"
+msgstr "Creează o colecție nouă"
+
+#: ../src/selections.js:640
+msgctxt "Dialog Title"
+msgid "Collections"
+msgstr "Colecții"
+
+#: ../src/selections.js:752
+msgid "Print"
+msgstr "Tipărește"
+
+#: ../src/selections.js:757
+msgid "Delete"
+msgstr "Șterge"
+
+#: ../src/selections.js:762
+msgid "Share"
+msgstr "Partajează"
+
+#: ../src/selections.js:772
+msgid "Add to Collection"
+msgstr "Adaugă la colecție"
+
+#: ../src/sharing.js:98
+msgid "Sharing Settings"
+msgstr "Setări de partajare"
+
+#: ../src/sharing.js:102
+msgid "Done"
+msgstr "Realizat"
+
+#: ../src/sharing.js:135
+msgid "Document permissions"
+msgstr "Permisiunile documentului"
+
+#: ../src/sharing.js:142 ../src/sharing.js:320
+msgid "Change"
+msgstr "Schimbă"
+
+#: ../src/sharing.js:166 ../src/sharing.js:295
+msgid "Private"
+msgstr "Privat"
+
+#: ../src/sharing.js:176 ../src/sharing.js:288
+msgid "Public"
+msgstr "Public"
+
+#: ../src/sharing.js:180 ../src/sharing.js:290
+msgid "Everyone can edit"
+msgstr "Oricine poate edita"
+
+#: ../src/sharing.js:187
+msgid "Add people"
+msgstr "Adaugă persoane"
+
+#: ../src/sharing.js:194
+msgid "Enter an email address"
+msgstr "Introduceți o adresă de poștă electronică"
+
+#: ../src/sharing.js:209 ../src/sharing.js:376
+msgid "Can edit"
+msgstr "Poate edita"
+
+#: ../src/sharing.js:209 ../src/sharing.js:379
+msgid "Can view"
+msgstr "Poate vizualiza"
+
+#: ../src/sharing.js:216
+msgid "Add"
+msgstr "Adaugă"
+
+#: ../src/sharing.js:292
+msgid "Everyone can read"
+msgstr "Oricine poate citi"
+
+#: ../src/sharing.js:307
+msgid "Save"
+msgstr "Salvează"
+
+#: ../src/sharing.js:373
+msgid "Owner"
+msgstr "Proprietar"
+
+#: ../src/sharing.js:442
+#, javascript-format
+msgid "You can ask %s for access"
+msgstr "Puteți să cereți drepturi de acces lui %s"
+
+#: ../src/sharing.js:479 ../src/sharing.js:515 ../src/sharing.js:572
+#: ../src/sharing.js:589 ../src/sharing.js:608
+msgid "The document was not updated"
+msgstr "Documentul nu a fost actualizat"
+
+#: ../src/shellSearchProvider.js:294
+msgid "Untitled Document"
+msgstr "Document fără titlu"
+
+#: ../src/trackerController.js:170
+msgid "Unable to fetch the list of documents"
+msgstr "Nu se poate prelua lista documentelor"
+
+#: ../src/view.js:236
+msgid "Yesterday"
+msgstr "Ieri"
+
+#: ../src/view.js:238
+#, javascript-format
+msgid "%d day ago"
+msgid_plural "%d days ago"
+msgstr[0] "acum %d zi"
+msgstr[1] "acum %d zile"
+msgstr[2] "acum %d de zile"
+
+#: ../src/view.js:242
+msgid "Last week"
+msgstr "Săptămâna trecută"
+
+#: ../src/view.js:244
+#, javascript-format
+msgid "%d week ago"
+msgid_plural "%d weeks ago"
+msgstr[0] "acum %d săptămână"
+msgstr[1] "acum %d săptămâni"
+msgstr[2] "acum %d de săptămâni"
+
+#: ../src/view.js:248
+msgid "Last month"
+msgstr "Luna trecută"
+
+#: ../src/view.js:250
+#, javascript-format
+msgid "%d month ago"
+msgid_plural "%d months ago"
+msgstr[0] "acum %d lună"
+msgstr[1] "acum %d luni"
+msgstr[2] "acum %d de luni"
+
+#: ../src/view.js:254
+msgid "Last year"
+msgstr "Anul trecut"
+
+#: ../src/view.js:256
+#, javascript-format
+msgid "%d year ago"
+msgid_plural "%d years ago"
+msgstr[0] "acum %d an"
+msgstr[1] "acum %d ani"
+msgstr[2] "acum %d de ani"
