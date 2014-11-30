@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: gnome-documents master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-09-14 06:50+0000\n"
-"PO-Revision-Date: 2014-09-14 13:20+0200\n"
+"POT-Creation-Date: 2014-11-30 07:43+0000\n"
+"PO-Revision-Date: 2014-11-30 17:37+0100\n"
 "Last-Translator: Balázs Úr <urbalazs@gmail.com>\n"
 "Language-Team: Hungarian <openscope at googlegroups dot com>\n"
 "Language: hu\n"
@@ -67,12 +67,10 @@ msgid "View documents fullscreen"
 msgstr "Dokumentumok megtekintése teljes képernyőn"
 
 #: ../data/org.gnome.Documents.appdata.xml.in.h:10
-#| msgid "PDF Documents"
 msgid "Print documents"
 msgstr "Dokumentumok nyomtatása"
 
 #: ../data/org.gnome.Documents.appdata.xml.in.h:11
-#| msgid "Select Items"
 msgid "Select favorites"
 msgstr "Kedvencek kiválasztása"
 
@@ -197,7 +195,7 @@ msgstr "Hm, valamilyen hiba történhetett (%d)."
 msgid "Oops! Unable to load “%s”"
 msgstr "Hoppá, „%s” nem tölthető be"
 
-#: ../src/edit.js:192
+#: ../src/edit.js:175
 msgid "View"
 msgstr "Nézet"
 
@@ -230,21 +228,20 @@ msgstr "A dokumentum megjelenítéséhez a LibreOffice szükséges"
 #. Translators: %s is the number of the page, already formatted
 #. * as a string, for example "Page 5".
 #.
-#: ../src/lib/gd-places-bookmarks.c:315
+#: ../src/lib/gd-places-bookmarks.c:321
 #, c-format
 msgid "Page %s"
 msgstr "Oldal: %s"
 
-#: ../src/lib/gd-places-bookmarks.c:378
+#: ../src/lib/gd-places-bookmarks.c:384
 msgid "No bookmarks"
 msgstr "Nincsenek könyvjelzők"
 
-#: ../src/lib/gd-places-bookmarks.c:386 ../src/lib/gd-places-links.c:257
-#: ../src/view.js:71
+#: ../src/lib/gd-places-bookmarks.c:392 ../src/lib/gd-places-links.c:257
 msgid "Loading…"
 msgstr "Betöltés…"
 
-#: ../src/lib/gd-places-bookmarks.c:651 ../src/preview.js:580
+#: ../src/lib/gd-places-bookmarks.c:657 ../src/preview.js:586
 msgid "Bookmarks"
 msgstr "Könyvjelzők"
 
@@ -349,28 +346,44 @@ msgstr "A dokumentum („%s”) zárolva van és megnyitásához jelszó szüks�
 msgid "_Password"
 msgstr "_Jelszó"
 
-#: ../src/presentation.js:104
+#: ../src/presentation.js:105
 msgid "Running in presentation mode"
 msgstr "Bemutató mód"
 
-#: ../src/presentation.js:157
+#: ../src/presentation.js:152
+msgid "Mirrored"
+msgstr "Tükrözött"
+
+#: ../src/presentation.js:154
+msgid "Primary"
+msgstr "Elsődleges"
+
+#: ../src/presentation.js:156
+msgid "Off"
+msgstr "Ki"
+
+#: ../src/presentation.js:158
+msgid "Secondary"
+msgstr "Másodlagos"
+
+#: ../src/presentation.js:194
 msgid "Present On"
 msgstr "Bemutató be"
 
-#: ../src/preview.js:588
+#: ../src/preview.js:594
 msgid "Bookmark this page"
 msgstr "Oldal könyvjelzőbe"
 
-#: ../src/preview.js:823 ../src/selections.js:857
+#: ../src/preview.js:835 ../src/selections.js:857
 #, javascript-format
 msgid "Open with %s"
 msgstr "Megnyitás ezzel: %s"
 
-#: ../src/preview.js:885
+#: ../src/preview.js:898
 msgid "Find Previous"
 msgstr "Előző keresése"
 
-#: ../src/preview.js:892
+#: ../src/preview.js:905
 msgid "Find Next"
 msgstr "Következő keresése"
 
@@ -635,53 +648,52 @@ msgstr "Névtelen dokumentum"
 msgid "Unable to fetch the list of documents"
 msgstr "Nem kérhető le a dokumentumok listája"
 
-#: ../src/view.js:62 ../src/view.js:93
-msgid "Load More"
-msgstr "Több betöltése"
-
-#: ../src/view.js:307
+#: ../src/view.js:236
 msgid "Yesterday"
 msgstr "Tegnap"
 
-#: ../src/view.js:309
+#: ../src/view.js:238
 #, javascript-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
 msgstr[0] "%d napja"
 msgstr[1] "%d napja"
 
-#: ../src/view.js:313
+#: ../src/view.js:242
 msgid "Last week"
 msgstr "Múlt héten"
 
-#: ../src/view.js:315
+#: ../src/view.js:244
 #, javascript-format
 msgid "%d week ago"
 msgid_plural "%d weeks ago"
 msgstr[0] "%d hete"
 msgstr[1] "%d hete"
 
-#: ../src/view.js:319
+#: ../src/view.js:248
 msgid "Last month"
 msgstr "Múlt hónapban"
 
-#: ../src/view.js:321
+#: ../src/view.js:250
 #, javascript-format
 msgid "%d month ago"
 msgid_plural "%d months ago"
 msgstr[0] "%d hónapja"
 msgstr[1] "%d hónapja"
 
-#: ../src/view.js:325
+#: ../src/view.js:254
 msgid "Last year"
 msgstr "Múlt évben"
 
-#: ../src/view.js:327
+#: ../src/view.js:256
 #, javascript-format
 msgid "%d year ago"
 msgid_plural "%d years ago"
 msgstr[0] "%d éve"
 msgstr[1] "%d éve"
+
+#~ msgid "Load More"
+#~ msgstr "Több betöltése"
 
 #~| msgid ""
 #~| "<li>View recent local and online documents</li> <li>Access your Google, "
