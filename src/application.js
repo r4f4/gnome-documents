@@ -202,7 +202,7 @@ const Application = new Lang.Class({
     },
 
     _onActionAbout: function() {
-        this._mainWindow.showAbout();
+        this._mainWindow.showAbout(this.isBooks);
     },
 
     _onActionHelp: function() {

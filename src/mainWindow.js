@@ -291,7 +291,7 @@ const MainWindow = new Lang.Class({
         return false;
     },
 
-    showAbout: function() {
+    showAbout: function(isBooks) {
         let aboutDialog = new Gtk.AboutDialog();
 
         aboutDialog.artists = [ 'Jakub Steiner <jimmac@gmail.com>' ];
@@ -299,13 +299,20 @@ const MainWindow = new Lang.Class({
                                 'Florian M' + String.fromCharCode(0x00FC) + 'llner <fmuellner@gnome.org>',
                                 'William Jon McCann <william.jon.mccann@gmail.com>' ];
         aboutDialog.translator_credits = _("translator-credits");
-        aboutDialog.program_name = _("Documents");
-        aboutDialog.comments = _("A document manager application");
+        if (!isBooks) {
+            aboutDialog.program_name = _("Documents");
+            aboutDialog.comments = _("A document manager application");
+            aboutDialog.logo_icon_name = 'gnome-documents';
+            aboutDialog.website = 'https://wiki.gnome.org/Apps/Documents';
+        } else {
+            aboutDialog.program_name = _("Books");
+            aboutDialog.comments = _("An e-books manager application");
+            aboutDialog.logo_icon_name = 'gnome-books';
+            aboutDialog.website = 'https://wiki.gnome.org/Apps/Books';
+        }
         aboutDialog.copyright = 'Copyright ' + String.fromCharCode(0x00A9) + ' 2011' + String.fromCharCode(0x2013) + '2012 Red Hat, Inc.';
         aboutDialog.license_type = Gtk.License.GPL_2_0;
-        aboutDialog.logo_icon_name = 'gnome-documents';
         aboutDialog.version = Config.PACKAGE_VERSION;
-        aboutDialog.website = 'https://wiki.gnome.org/Apps/Documents';
         aboutDialog.wrap_license = true;
 
         aboutDialog.modal = true;
