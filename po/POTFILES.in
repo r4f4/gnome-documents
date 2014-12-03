@@ -1,4 +1,6 @@
 [encoding: UTF-8]
+data/org.gnome.Books.desktop.in
+data/org.gnome.books.gschema.xml
 data/org.gnome.Documents.appdata.xml.in
 data/org.gnome.Documents.desktop.in
 data/org.gnome.documents.gschema.xml
