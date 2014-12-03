@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: gnome-documents master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-11-30 07:43+0000\n"
-"PO-Revision-Date: 2014-11-30 17:37+0100\n"
+"POT-Creation-Date: 2014-12-03 14:06+0000\n"
+"PO-Revision-Date: 2014-12-03 17:04+0100\n"
 "Last-Translator: Balázs Úr <urbalazs@gmail.com>\n"
 "Language-Team: Hungarian <openscope at googlegroups dot com>\n"
 "Language: hu\n"
@@ -20,9 +20,64 @@ msgstr ""
 "Plural-Forms:  nplurals=2; plural=(n != 1);\n"
 "X-Generator: Lokalize 1.2\n"
 
+#: ../data/org.gnome.Books.desktop.in.h:1 ../src/application.js:129
+#: ../src/mainWindow.js:309
+#| msgid "Bookmarks"
+msgid "Books"
+msgstr "Könyvek"
+
+#: ../data/org.gnome.Books.desktop.in.h:2
+#| msgid "Access, manage and share documents"
+msgid "Access, manage and share books"
+msgstr "Könyvek elérése, kezelése és megosztása"
+
+#: ../data/org.gnome.Books.desktop.in.h:3
+msgid "Books;Comics;ePub;PDF;"
+msgstr "Könyvek;Képregény;ePub;PDF;"
+
+#: ../data/org.gnome.books.gschema.xml.h:1
+#: ../data/org.gnome.documents.gschema.xml.h:1
+msgid "View as"
+msgstr "Megjelenítés mint"
+
+#: ../data/org.gnome.books.gschema.xml.h:2
+#: ../data/org.gnome.documents.gschema.xml.h:2
+msgid "View as type"
+msgstr "Megjelenítés típusként"
+
+#: ../data/org.gnome.books.gschema.xml.h:3
+#: ../data/org.gnome.documents.gschema.xml.h:3
+msgid "Window size"
+msgstr "Ablakméret"
+
+#: ../data/org.gnome.books.gschema.xml.h:4
+#: ../data/org.gnome.documents.gschema.xml.h:4
+msgid "Window size (width and height)."
+msgstr "Ablak mérete (szélesség és magasság)."
+
+#: ../data/org.gnome.books.gschema.xml.h:5
+#: ../data/org.gnome.documents.gschema.xml.h:5
+msgid "Window position"
+msgstr "Ablakpozíció"
+
+#: ../data/org.gnome.books.gschema.xml.h:6
+#: ../data/org.gnome.documents.gschema.xml.h:6
+msgid "Window position (x and y)."
+msgstr "Ablakpozíció (x és y)."
+
+#: ../data/org.gnome.books.gschema.xml.h:7
+#: ../data/org.gnome.documents.gschema.xml.h:7
+msgid "Window maximized"
+msgstr "Ablak teljes méretű"
+
+#: ../data/org.gnome.books.gschema.xml.h:8
+#: ../data/org.gnome.documents.gschema.xml.h:8
+msgid "Window maximized state"
+msgstr "Az ablak maximalizált állapota"
+
 #: ../data/org.gnome.Documents.appdata.xml.in.h:1
-#: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:121
-#: ../src/mainWindow.js:52 ../src/mainWindow.js:302
+#: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:125
+#: ../src/mainWindow.js:52 ../src/mainWindow.js:304
 msgid "Documents"
 msgstr "Dokumentumok"
 
@@ -88,43 +143,11 @@ msgstr "Dokumentumok elérése, kezelése és megosztása"
 msgid "Docs;PDF;Document;"
 msgstr "Dokumentum;PDF;Doksi;"
 
-#: ../data/org.gnome.documents.gschema.xml.h:1
-msgid "View as"
-msgstr "Megjelenítés mint"
-
-#: ../data/org.gnome.documents.gschema.xml.h:2
-msgid "View as type"
-msgstr "Megjelenítés típusként"
-
-#: ../data/org.gnome.documents.gschema.xml.h:3
-msgid "Window size"
-msgstr "Ablakméret"
-
-#: ../data/org.gnome.documents.gschema.xml.h:4
-msgid "Window size (width and height)."
-msgstr "Ablak mérete (szélesség és magasság)."
-
-#: ../data/org.gnome.documents.gschema.xml.h:5
-msgid "Window position"
-msgstr "Ablakpozíció"
-
-#: ../data/org.gnome.documents.gschema.xml.h:6
-msgid "Window position (x and y)."
-msgstr "Ablakpozíció (x és y)."
-
-#: ../data/org.gnome.documents.gschema.xml.h:7
-msgid "Window maximized"
-msgstr "Ablak teljes méretű"
-
-#: ../data/org.gnome.documents.gschema.xml.h:8
-msgid "Window maximized state"
-msgstr "Az ablak maximalizált állapota"
-
 #: ../src/documents.js:621
 msgid "Failed to print document"
 msgstr "A dokumentum nyomtatása meghiúsult"
 
-#: ../src/documents.js:658 ../src/search.js:427
+#: ../src/documents.js:658 ../src/search.js:452
 msgid "Local"
 msgstr "Helyi"
 
@@ -136,8 +159,8 @@ msgstr "GNOME"
 msgid "Getting Started with Documents"
 msgstr "Első lépések a Dokumentumokkal"
 
-#: ../src/documents.js:696 ../src/documents.js:877 ../src/documents.js:939
-#: ../src/documents.js:1047
+#: ../src/documents.js:696 ../src/documents.js:877 ../src/documents.js:941
+#: ../src/documents.js:1049
 msgid "Collection"
 msgstr "Gyűjtemény"
 
@@ -149,48 +172,52 @@ msgstr "Google Dokumentumok"
 msgid "Google"
 msgstr "Google"
 
-#: ../src/documents.js:879 ../src/documents.js:1049
+#: ../src/documents.js:879 ../src/documents.js:1051
 msgid "Spreadsheet"
 msgstr "Táblázat"
 
-#: ../src/documents.js:881 ../src/documents.js:1051 ../src/presentation.js:47
+#: ../src/documents.js:881 ../src/documents.js:1053 ../src/presentation.js:47
 msgid "Presentation"
 msgstr "Prezentáció"
 
-#: ../src/documents.js:883 ../src/documents.js:1053
+#: ../src/documents.js:883 ../src/documents.js:1055
+msgid "e-Book"
+msgstr "e-Könyv"
+
+#: ../src/documents.js:885 ../src/documents.js:1057
 msgid "Document"
 msgstr "Dokumentum"
 
-#: ../src/documents.js:917
+#: ../src/documents.js:919
 msgid "ownCloud"
 msgstr "ownCloud"
 
-#: ../src/documents.js:981 ../src/documents.js:982
+#: ../src/documents.js:983 ../src/documents.js:984
 msgid "OneDrive"
 msgstr "OneDrive"
 
-#: ../src/documents.js:1181
+#: ../src/documents.js:1185
 msgid "Please check the network connection."
 msgstr "Ellenőrizze a hálózati kapcsolatot."
 
-#: ../src/documents.js:1184
+#: ../src/documents.js:1188
 msgid "Please check the network proxy settings."
 msgstr "Ellenőrizze a hálózati proxybeállításokat."
 
-#: ../src/documents.js:1187
+#: ../src/documents.js:1191
 msgid "Unable to sign in to the document service."
 msgstr "Nem lehet bejelentkezni a dokumentumszolgáltatásba."
 
-#: ../src/documents.js:1190
+#: ../src/documents.js:1194
 msgid "Unable to locate this document."
 msgstr "Nem található a dokumentum."
 
-#: ../src/documents.js:1193
+#: ../src/documents.js:1197
 #, javascript-format
 msgid "Hmm, something is fishy (%d)."
 msgstr "Hm, valamilyen hiba történhetett (%d)."
 
-#: ../src/documents.js:1211
+#: ../src/documents.js:1215
 #, javascript-format
 msgid "Oops! Unable to load “%s”"
 msgstr "Hoppá, „%s” nem tölthető be"
@@ -288,13 +315,18 @@ msgstr "Mégse"
 msgid "Select Items"
 msgstr "Válasszon elemeket"
 
-#: ../src/mainWindow.js:301
+#: ../src/mainWindow.js:302
 msgid "translator-credits"
 msgstr "Kelemen Gábor <kelemeng at gnome dot hu>"
 
-#: ../src/mainWindow.js:303
+#: ../src/mainWindow.js:305
 msgid "A document manager application"
 msgstr "Egy dokumentumkezelő alkalmazás"
+
+#: ../src/mainWindow.js:310
+#| msgid "A document manager application"
+msgid "An e-books manager application"
+msgstr "Egy e-könyv kezelő alkalmazás"
 
 #: ../src/notifications.js:50
 msgid "Selected item has been deleted"
@@ -484,8 +516,8 @@ msgstr "Kijelölés megszüntetése"
 msgid "Category"
 msgstr "Kategória"
 
-#: ../src/search.js:119 ../src/search.js:180 ../src/search.js:265
-#: ../src/search.js:421
+#: ../src/search.js:119 ../src/search.js:182 ../src/search.js:288
+#: ../src/search.js:446
 msgid "All"
 msgstr "Összes"
 
@@ -497,46 +529,55 @@ msgstr "Kedvencek"
 msgid "Shared with you"
 msgstr "Megosztva Önnel"
 
-#: ../src/search.js:177
+#: ../src/search.js:179
 msgctxt "Search Filter"
 msgid "Type"
 msgstr "Típus"
 
-#: ../src/search.js:182
+#: ../src/search.js:185 ../src/search.js:194
 msgid "Collections"
 msgstr "Gyűjtemények"
 
-#: ../src/search.js:186
+#: ../src/search.js:189
 msgid "PDF Documents"
 msgstr "PDF-dokumentumok"
 
-#: ../src/search.js:190
+#: ../src/search.js:202
 msgid "Presentations"
 msgstr "Bemutatók"
 
-#: ../src/search.js:193
+#: ../src/search.js:205
 msgid "Spreadsheets"
 msgstr "Táblázatok"
 
-#: ../src/search.js:196
+#: ../src/search.js:208
 msgid "Text Documents"
 msgstr "Szöveges dokumentumok"
 
-#: ../src/search.js:262
+#: ../src/search.js:212
+#| msgid "Bookmarks"
+msgid "e-Books"
+msgstr "e-Könyvek"
+
+#: ../src/search.js:216
+msgid "Comics"
+msgstr "Képregények"
+
+#: ../src/search.js:285
 msgid "Match"
 msgstr "Keresés"
 
-#: ../src/search.js:268
+#: ../src/search.js:291
 msgctxt "Search Filter"
 msgid "Title"
 msgstr "Cím"
 
-#: ../src/search.js:271
+#: ../src/search.js:294
 msgctxt "Search Filter"
 msgid "Author"
 msgstr "Szerző"
 
-#: ../src/search.js:417
+#: ../src/search.js:442
 msgid "Sources"
 msgstr "Források"
 
