@@ -5,6 +5,10 @@
         <attribute name="action">app.fullscreen</attribute>
         <attribute name="label" translatable="yes">Fullscreen</attribute>
       </item>
+      <item>
+        <attribute name="action">app.night-mode</attribute>
+        <attribute name="label" translatable="yes">Night Mode</attribute>
+      </item>
     </section>
     <section>
       <item>

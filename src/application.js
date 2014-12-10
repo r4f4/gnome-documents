@@ -197,6 +197,22 @@ const Application = new Lang.Class({
             }));
     },
 
+    _nightModeCreateHook: function(action) {
+        settings.connect('changed::night-mode', Lang.bind(this,
+            function() {
+                let state = settings.get_value('night-mode');
+                if (state.get_boolean()[0] != action.state.get_boolean()[0])
+                    action.state = state;
+
+                let gtkSettings = Gtk.Settings.get_default();
+                gtkSettings.gtk_application_prefer_dark_theme = state.get_boolean();
+            }));
+
+        let state = settings.get_value('night-mode');
+        let gtkSettings = Gtk.Settings.get_default();
+        gtkSettings.gtk_application_prefer_dark_theme = state.get_boolean();
+    },
+
     _onActionQuit: function() {
         this._mainWindow.window.destroy();
     },
@@ -213,6 +229,12 @@ const Application = new Lang.Class({
         } catch (e) {
             log('Unable to display help: ' + e.message);
         }
+    },
+
+    _onActionNightMode: function(action) {
+        let state = action.get_state();
+        action.change_state(GLib.Variant.new('b', !state.get_boolean()));
+        settings.set_value('night-mode', GLib.Variant.new('b', !state.get_boolean()));
     },
 
     _onActionFullscreen: function() {
@@ -477,6 +499,10 @@ const Application = new Lang.Class({
               create_hook: this._fullscreenCreateHook,
               accel: 'F11',
               window_mode: WindowMode.WindowMode.PREVIEW },
+            { name: 'night-mode',
+              callback: this._onActionNightMode,
+              create_hook: this._nightModeCreateHook,
+              state: settings.get_value('night-mode') },
             { name: 'gear-menu',
               callback: this._onActionToggle,
               state: GLib.Variant.new('b', false),

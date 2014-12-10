@@ -20,5 +20,10 @@
       <summary>Window maximized</summary>
       <description>Window maximized state</description>
     </key>
+    <key name="night-mode" type="b">
+      <default>false</default>
+      <summary>Night mode</summary>
+      <description>Whether the application is in night mode.</description>
+    </key>
   </schema>
 </schemalist>
