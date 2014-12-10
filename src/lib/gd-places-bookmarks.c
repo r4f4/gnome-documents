@@ -598,7 +598,6 @@ gd_places_bookmarks_construct (GdPlacesBookmarks *self)
         model = gtk_list_store_new (N_COLUMNS, G_TYPE_STRING, G_TYPE_STRING, GD_TYPE_BOOKMARK);
         priv->tree_view = gtk_tree_view_new_with_model (GTK_TREE_MODEL (model));
         enable_selection (self, FALSE);
-        gtk_tree_view_set_rules_hint (GTK_TREE_VIEW (priv->tree_view), TRUE);
         gtk_tree_view_set_activate_on_single_click (GTK_TREE_VIEW (priv->tree_view), TRUE);
         gtk_tree_view_set_headers_visible (GTK_TREE_VIEW (priv->tree_view), FALSE);
         g_object_unref (model);
