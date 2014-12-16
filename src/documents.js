@@ -658,8 +658,15 @@ const LocalDocument = new Lang.Class({
         this.sourceName = _("Local");
 
         let defaultApp = null;
-        if (this.mimeType)
-            defaultApp = Gio.app_info_get_default_for_type(this.mimeType, true);
+        if (this.mimeType) {
+            let apps = Gio.app_info_get_recommended_for_type (this.mimeType);
+            for (let i = 0; i < apps.length; i++) {
+                if (apps[i].supports_uris ()) {
+                    defaultApp = apps[i];
+                    break;
+                }
+            }
+        }
 
         if (defaultApp)
             this.defaultAppName = defaultApp.get_name();
