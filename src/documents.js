@@ -585,6 +585,9 @@ const DocCommon = new Lang.Class({
     },
 
     open: function(screen, timestamp) {
+        if (!this.defaultAppName)
+            return;
+
         try {
             Gtk.show_uri(screen, this.uri, timestamp);
         } catch (e) {
