@@ -146,7 +146,8 @@ const EmptyResultsBox = new Lang.Class({
                                          vexpand: true });
         this._labelsGrid.add(titleLabel);
 
-        if (Application.sourceManager.hasOnlineSources()) {
+        if (Application.sourceManager.hasOnlineSources() ||
+            Application.application.isBooks) {
             titleLabel.valign = Gtk.Align.CENTER;
         } else {
             titleLabel.valign = Gtk.Align.START;
