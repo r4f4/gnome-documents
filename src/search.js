@@ -206,6 +206,7 @@ const SearchTypeManager = new Lang.Class({
                                           where: '?urn rdf:type nfo:Spreadsheet .' }));
             this.addItem(new SearchType({ id: SearchTypeStock.TEXTDOCS,
                                           name: _("Text Documents"),
+                                          filter: 'NOT EXISTS { ?urn a nfo:EBook }',
                                           where: '?urn rdf:type nfo:PaginatedTextDocument .' }));
         } else {
           this.addItem(new SearchType({ id: SearchTypeStock.EBOOKS,
