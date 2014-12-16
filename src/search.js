@@ -453,11 +453,14 @@ const SourceManager = new Lang.Class({
                               builtin: true });
         this.addItem(source);
 
-        Application.goaClient.connect('account-added', Lang.bind(this, this._refreshGoaAccounts));
-        Application.goaClient.connect('account-changed', Lang.bind(this, this._refreshGoaAccounts));
-        Application.goaClient.connect('account-removed', Lang.bind(this, this._refreshGoaAccounts));
+        if (!Application.application.isBooks) {
+            Application.goaClient.connect('account-added', Lang.bind(this, this._refreshGoaAccounts));
+            Application.goaClient.connect('account-changed', Lang.bind(this, this._refreshGoaAccounts));
+            Application.goaClient.connect('account-removed', Lang.bind(this, this._refreshGoaAccounts));
 
-        this._refreshGoaAccounts();
+            this._refreshGoaAccounts();
+        }
+
         this.setActiveItemById(SearchSourceStock.ALL);
     },
 

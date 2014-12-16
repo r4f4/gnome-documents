@@ -466,11 +466,13 @@ const Application = new Lang.Class({
             return;
         }
 
-        try {
-            goaClient = Goa.Client.new_sync(null);
-        } catch (e) {
-            log('Unable to create the GOA client: ' + e.toString());
-            return;
+        if (!application.isBooks) {
+            try {
+                goaClient = Goa.Client.new_sync(null);
+            } catch (e) {
+                log('Unable to create the GOA client: ' + e.toString());
+                return;
+            }
         }
 
         connectionQueue = new TrackerController.TrackerConnectionQueue();
