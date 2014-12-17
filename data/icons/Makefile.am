@@ -6,7 +6,15 @@ public_icons_themes = \
 	$(NULL)
 
 public_icons = \
+	Adwaita_apps_scalable_gnome-books-symbolic.svg \
 	Adwaita_apps_scalable_gnome-documents-symbolic.svg \
+	hicolor_apps_16x16_gnome-books.png \
+	hicolor_apps_22x22_gnome-books.png \
+	hicolor_apps_24x24_gnome-books.png \
+	hicolor_apps_32x32_gnome-books.png \
+	hicolor_apps_48x48_gnome-books.png \
+	hicolor_apps_256x256_gnome-books.png \
+	hicolor_apps_512x512_gnome-books.png \
 	hicolor_apps_16x16_gnome-documents.png \
 	hicolor_apps_22x22_gnome-documents.png \
 	hicolor_apps_24x24_gnome-documents.png \
@@ -17,6 +25,8 @@ public_icons = \
 	$(NULL)
 
 noinst_DATA = \
+  hicolor_gnome-books.blend \
+  hicolor_gnome-books.svg \
 	hicolor_gnome-documents.svg \
 	$(NULL)
 
