@@ -13,6 +13,7 @@ public_icons = \
 	hicolor_apps_32x32_gnome-documents.png \
 	hicolor_apps_48x48_gnome-documents.png \
 	hicolor_apps_256x256_gnome-documents.png \
+	hicolor_apps_512x512_gnome-documents.png \
 	$(NULL)
 
 noinst_DATA = \
