@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: gnome-documents master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-10-10 09:22+0000\n"
-"PO-Revision-Date: 2014-10-11 21:08+0600\n"
+"POT-Creation-Date: 2014-12-17 19:45+0000\n"
+"PO-Revision-Date: 2014-12-18 06:44+0600\n"
 "Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
 "Language-Team: Kazakh <kk_KZ@googlegroups.com>\n"
 "Language: kk\n"
@@ -19,9 +19,74 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Poedit 1.5.4\n"
 
+#: ../data/org.gnome.Books.desktop.in.h:1 ../src/application.js:129
+#: ../src/mainWindow.js:309
+#| msgid "Bookmarks"
+msgid "Books"
+msgstr "Кітаптар"
+
+#: ../data/org.gnome.Books.desktop.in.h:2
+#| msgid "Access, manage and share documents"
+msgid "Access, manage and share books"
+msgstr "Кітаптарға қатынау, басқару және олармен бөлісу"
+
+#: ../data/org.gnome.Books.desktop.in.h:3
+msgid "Books;Comics;ePub;PDF;"
+msgstr "Кітаптар;комикстер;ePub;PDF;"
+
+#: ../data/org.gnome.books.gschema.xml.h:1
+#: ../data/org.gnome.documents.gschema.xml.h:1
+msgid "View as"
+msgstr "Қалайша қарау"
+
+#: ../data/org.gnome.books.gschema.xml.h:2
+#: ../data/org.gnome.documents.gschema.xml.h:2
+msgid "View as type"
+msgstr "Түрі ретінде қарау"
+
+#: ../data/org.gnome.books.gschema.xml.h:3
+#: ../data/org.gnome.documents.gschema.xml.h:3
+msgid "Window size"
+msgstr "Терезе өлшемі"
+
+#: ../data/org.gnome.books.gschema.xml.h:4
+#: ../data/org.gnome.documents.gschema.xml.h:4
+msgid "Window size (width and height)."
+msgstr "Терезе өлшемі (ені мен биіктігі)."
+
+#: ../data/org.gnome.books.gschema.xml.h:5
+#: ../data/org.gnome.documents.gschema.xml.h:5
+msgid "Window position"
+msgstr "Терезе орны"
+
+#: ../data/org.gnome.books.gschema.xml.h:6
+#: ../data/org.gnome.documents.gschema.xml.h:6
+msgid "Window position (x and y)."
+msgstr "Терезе орны (x және y)."
+
+#: ../data/org.gnome.books.gschema.xml.h:7
+#: ../data/org.gnome.documents.gschema.xml.h:7
+msgid "Window maximized"
+msgstr "Терезе максималды етілген"
+
+#: ../data/org.gnome.books.gschema.xml.h:8
+#: ../data/org.gnome.documents.gschema.xml.h:8
+msgid "Window maximized state"
+msgstr "Терезе максималды күйі"
+
+#: ../data/org.gnome.books.gschema.xml.h:9
+#: ../data/org.gnome.documents.gschema.xml.h:9
+msgid "Night mode"
+msgstr "Түнгі режимі"
+
+#: ../data/org.gnome.books.gschema.xml.h:10
+#: ../data/org.gnome.documents.gschema.xml.h:10
+msgid "Whether the application is in night mode."
+msgstr "Қолданба түнгі режимінде ме, соны көрсетеді."
+
 #: ../data/org.gnome.Documents.appdata.xml.in.h:1
-#: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:121
-#: ../src/mainWindow.js:52 ../src/mainWindow.js:302
+#: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:125
+#: ../src/mainWindow.js:52 ../src/mainWindow.js:304
 msgid "Documents"
 msgstr "Құжаттар қолданбасы"
 
@@ -85,43 +150,11 @@ msgstr "Құжаттарға қатынау, басқару және оларм�
 msgid "Docs;PDF;Document;"
 msgstr "Құжаттар;PDF;Құжат;"
 
-#: ../data/org.gnome.documents.gschema.xml.h:1
-msgid "View as"
-msgstr "Қалайша қарау"
-
-#: ../data/org.gnome.documents.gschema.xml.h:2
-msgid "View as type"
-msgstr "Түрі ретінде қарау"
-
-#: ../data/org.gnome.documents.gschema.xml.h:3
-msgid "Window size"
-msgstr "Терезе өлшемі"
-
-#: ../data/org.gnome.documents.gschema.xml.h:4
-msgid "Window size (width and height)."
-msgstr "Терезе өлшемі (ені мен биіктігі)."
-
-#: ../data/org.gnome.documents.gschema.xml.h:5
-msgid "Window position"
-msgstr "Терезе орны"
-
-#: ../data/org.gnome.documents.gschema.xml.h:6
-msgid "Window position (x and y)."
-msgstr "Терезе орны (x және y)."
-
-#: ../data/org.gnome.documents.gschema.xml.h:7
-msgid "Window maximized"
-msgstr "Терезе максималды етілген"
-
-#: ../data/org.gnome.documents.gschema.xml.h:8
-msgid "Window maximized state"
-msgstr "Терезе максималды күйі"
-
 #: ../src/documents.js:621
 msgid "Failed to print document"
 msgstr "Құжатты баспаға шығару сәтсіз аяқталды"
 
-#: ../src/documents.js:658 ../src/search.js:427
+#: ../src/documents.js:658 ../src/search.js:453
 msgid "Local"
 msgstr "Жергілікті"
 
@@ -133,8 +166,8 @@ msgstr "GNOME"
 msgid "Getting Started with Documents"
 msgstr "Құжаттар қолданбасымен жұмысты бастау"
 
-#: ../src/documents.js:696 ../src/documents.js:877 ../src/documents.js:939
-#: ../src/documents.js:1047
+#: ../src/documents.js:696 ../src/documents.js:877 ../src/documents.js:941
+#: ../src/documents.js:1049
 msgid "Collection"
 msgstr "Жинақ"
 
@@ -146,53 +179,57 @@ msgstr "Google Docs"
 msgid "Google"
 msgstr "Google"
 
-#: ../src/documents.js:879 ../src/documents.js:1049
+#: ../src/documents.js:879 ../src/documents.js:1051
 msgid "Spreadsheet"
 msgstr "Электрондық кесте"
 
-#: ../src/documents.js:881 ../src/documents.js:1051 ../src/presentation.js:47
+#: ../src/documents.js:881 ../src/documents.js:1053 ../src/presentation.js:47
 msgid "Presentation"
 msgstr "Презентация"
 
-#: ../src/documents.js:883 ../src/documents.js:1053
+#: ../src/documents.js:883 ../src/documents.js:1055
+msgid "e-Book"
+msgstr "Эл. кітап"
+
+#: ../src/documents.js:885 ../src/documents.js:1057
 msgid "Document"
 msgstr "Құжат"
 
-#: ../src/documents.js:917
+#: ../src/documents.js:919
 msgid "ownCloud"
 msgstr "ownCloud"
 
-#: ../src/documents.js:981 ../src/documents.js:982
+#: ../src/documents.js:983 ../src/documents.js:984
 msgid "OneDrive"
 msgstr "OneDrive"
 
-#: ../src/documents.js:1181
+#: ../src/documents.js:1185
 msgid "Please check the network connection."
 msgstr "Желілік байланысты тексеріңіз."
 
-#: ../src/documents.js:1184
+#: ../src/documents.js:1188
 msgid "Please check the network proxy settings."
 msgstr "Желілік прокси баптауларын тексеріңіз."
 
-#: ../src/documents.js:1187
+#: ../src/documents.js:1191
 msgid "Unable to sign in to the document service."
 msgstr "Құжаттарды сақтау қызметіне кіру мүмкін емес."
 
-#: ../src/documents.js:1190
+#: ../src/documents.js:1194
 msgid "Unable to locate this document."
 msgstr "Бұл құжатты табу мүмкін емес."
 
-#: ../src/documents.js:1193
+#: ../src/documents.js:1197
 #, javascript-format
 msgid "Hmm, something is fishy (%d)."
 msgstr "Қап, бірнәрсе біртүрлі болып тұр (%d)."
 
-#: ../src/documents.js:1211
+#: ../src/documents.js:1215
 #, javascript-format
 msgid "Oops! Unable to load “%s”"
 msgstr "Қап! “%s” жүктеу мүмкін емес"
 
-#: ../src/edit.js:192
+#: ../src/edit.js:175
 msgid "View"
 msgstr "Қарау"
 
@@ -200,12 +237,12 @@ msgstr "Қарау"
 msgid "No Documents Found"
 msgstr "Құжаттар табылмады"
 
-#: ../src/embed.js:163
+#: ../src/embed.js:164
 #, javascript-format
 msgid "You can add your online accounts in %s"
 msgstr "Сіз желідегі тіркелгілерді %s ішінен қоса аласыз"
 
-#: ../src/embed.js:167
+#: ../src/embed.js:168
 msgid "Settings"
 msgstr "Баптаулар"
 
@@ -235,11 +272,10 @@ msgid "No bookmarks"
 msgstr "Бетбелгілер жоқ"
 
 #: ../src/lib/gd-places-bookmarks.c:392 ../src/lib/gd-places-links.c:257
-#: ../src/view.js:71
 msgid "Loading…"
 msgstr "Жүктеу..."
 
-#: ../src/lib/gd-places-bookmarks.c:657 ../src/preview.js:586
+#: ../src/lib/gd-places-bookmarks.c:656 ../src/preview.js:586
 msgid "Bookmarks"
 msgstr "Бетбелгілер"
 
@@ -285,13 +321,18 @@ msgstr "Бас тарту"
 msgid "Select Items"
 msgstr "Нәрселерді таңдау"
 
-#: ../src/mainWindow.js:301
+#: ../src/mainWindow.js:302
 msgid "translator-credits"
-msgstr "Baurzhan Muftakhidinov <baurthefirst@gmail.com> 2013"
+msgstr "Baurzhan Muftakhidinov <baurthefirst@gmail.com>"
 
-#: ../src/mainWindow.js:303
+#: ../src/mainWindow.js:305
 msgid "A document manager application"
 msgstr "Құжаттарды басқару қолданбасы"
+
+#: ../src/mainWindow.js:310
+#| msgid "A document manager application"
+msgid "An e-books manager application"
+msgstr "Электрондық кітаптарды басқару қолданбасы"
 
 #: ../src/notifications.js:50
 msgid "Selected item has been deleted"
@@ -419,14 +460,18 @@ msgid "Fullscreen"
 msgstr "Толық экранға"
 
 #: ../src/resources/app-menu.ui.h:2
+msgid "Night Mode"
+msgstr "Түнгі режимі"
+
+#: ../src/resources/app-menu.ui.h:3
 msgid "Help"
 msgstr "Көмек"
 
-#: ../src/resources/app-menu.ui.h:3
+#: ../src/resources/app-menu.ui.h:4
 msgid "About"
 msgstr "Осы туралы"
 
-#: ../src/resources/app-menu.ui.h:4
+#: ../src/resources/app-menu.ui.h:5
 msgid "Quit"
 msgstr "Шығу"
 
@@ -479,8 +524,8 @@ msgstr "Ештеңе таңдамау"
 msgid "Category"
 msgstr "Санат"
 
-#: ../src/search.js:119 ../src/search.js:180 ../src/search.js:265
-#: ../src/search.js:421
+#: ../src/search.js:119 ../src/search.js:182 ../src/search.js:289
+#: ../src/search.js:447
 msgid "All"
 msgstr "Барлығы"
 
@@ -492,46 +537,55 @@ msgstr "Таңдамалы"
 msgid "Shared with you"
 msgstr "Сізбен ортақ етілген"
 
-#: ../src/search.js:177
+#: ../src/search.js:179
 msgctxt "Search Filter"
 msgid "Type"
 msgstr "Түрі"
 
-#: ../src/search.js:182
+#: ../src/search.js:185 ../src/search.js:194
 msgid "Collections"
 msgstr "Жинақтар"
 
-#: ../src/search.js:186
+#: ../src/search.js:189
 msgid "PDF Documents"
 msgstr "PDF құжаттары"
 
-#: ../src/search.js:190
+#: ../src/search.js:202
 msgid "Presentations"
 msgstr "Презентациялар"
 
-#: ../src/search.js:193
+#: ../src/search.js:205
 msgid "Spreadsheets"
 msgstr "Электрондық кесте құжаттары"
 
-#: ../src/search.js:196
+#: ../src/search.js:208
 msgid "Text Documents"
 msgstr "Мәтiндiк құжаттар"
 
-#: ../src/search.js:262
+#: ../src/search.js:213
+#| msgid "Bookmarks"
+msgid "e-Books"
+msgstr "Эл. кітаптар"
+
+#: ../src/search.js:217
+msgid "Comics"
+msgstr "Комикстер"
+
+#: ../src/search.js:286
 msgid "Match"
 msgstr "Сәйкес"
 
-#: ../src/search.js:268
+#: ../src/search.js:292
 msgctxt "Search Filter"
 msgid "Title"
 msgstr "Атауы"
 
-#: ../src/search.js:271
+#: ../src/search.js:295
 msgctxt "Search Filter"
 msgid "Author"
 msgstr "Авторы"
 
-#: ../src/search.js:417
+#: ../src/search.js:443
 msgid "Sources"
 msgstr "Қайнар көздер"
 
@@ -642,46 +696,45 @@ msgstr "Атаусыз құжат"
 msgid "Unable to fetch the list of documents"
 msgstr "Құжаттар тізімін алу мүмкін емес"
 
-#: ../src/view.js:62 ../src/view.js:93
-msgid "Load More"
-msgstr "Көбірек жүктеу"
-
-#: ../src/view.js:307
+#: ../src/view.js:236
 msgid "Yesterday"
 msgstr "Кеше"
 
-#: ../src/view.js:309
+#: ../src/view.js:238
 #, javascript-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
 msgstr[0] "%d күн бұрын"
 
-#: ../src/view.js:313
+#: ../src/view.js:242
 msgid "Last week"
 msgstr "Өткен апта"
 
-#: ../src/view.js:315
+#: ../src/view.js:244
 #, javascript-format
 msgid "%d week ago"
 msgid_plural "%d weeks ago"
 msgstr[0] "%d апта бұрын"
 
-#: ../src/view.js:319
+#: ../src/view.js:248
 msgid "Last month"
 msgstr "Өткен ай"
 
-#: ../src/view.js:321
+#: ../src/view.js:250
 #, javascript-format
 msgid "%d month ago"
 msgid_plural "%d months ago"
 msgstr[0] "%d ай бұрын"
 
-#: ../src/view.js:325
+#: ../src/view.js:254
 msgid "Last year"
 msgstr "Былтыр"
 
-#: ../src/view.js:327
+#: ../src/view.js:256
 #, javascript-format
 msgid "%d year ago"
 msgid_plural "%d years ago"
 msgstr[0] "%d жыл бұрын"
+
+#~ msgid "Load More"
+#~ msgstr "Көбірек жүктеу"
