@@ -232,6 +232,7 @@ const DocCommon = new Lang.Class({
         this.resourceUrn = null;
         this.surface = null;
         this.origPixbuf = null;
+        this.defaultApp = null;
         this.defaultAppName = null;
 
         this.mimeType = null;
@@ -588,8 +589,13 @@ const DocCommon = new Lang.Class({
         if (!this.defaultAppName)
             return;
 
+        // Without a defaultApp, launch in the web browser,
+        // otherwise use that system application
         try {
-            Gtk.show_uri(screen, this.uri, timestamp);
+            if (this.defaultApp)
+                this.defaultApp.launch_uris( [ this.uri ], null);
+            else
+                Gtk.show_uri(screen, this.uri, timestamp);
         } catch (e) {
             log('Unable to show URI ' + this.uri + ': ' + e.toString());
         }
@@ -660,19 +666,18 @@ const LocalDocument = new Lang.Class({
 
         this.sourceName = _("Local");
 
-        let defaultApp = null;
         if (this.mimeType) {
             let apps = Gio.app_info_get_recommended_for_type (this.mimeType);
             for (let i = 0; i < apps.length; i++) {
                 if (apps[i].supports_uris ()) {
-                    defaultApp = apps[i];
+                    this.defaultApp = apps[i];
                     break;
                 }
             }
         }
 
-        if (defaultApp)
-            this.defaultAppName = defaultApp.get_name();
+        if (this.defaultApp)
+            this.defaultAppName = this.defaultApp.get_name();
     },
 
     populateFromCursor: function(cursor) {
@@ -928,12 +933,11 @@ const OwncloudDocument = new Lang.Class({
         // overridden
         this.sourceName = _("ownCloud");
 
-        let defaultApp = null;
         if (this.mimeType)
-            defaultApp = Gio.app_info_get_default_for_type(this.mimeType, true);
+            this.defaultApp = Gio.app_info_get_default_for_type(this.mimeType, true);
 
-        if (defaultApp)
-            this.defaultAppName = defaultApp.get_name();
+        if (this.defaultApp)
+            this.defaultAppName = this.defaultApp.get_name();
     },
 
     createThumbnail: function(callback) {
