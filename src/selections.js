@@ -759,9 +759,11 @@ const SelectionToolbar = new Lang.Class({
         this._toolbarTrash.connect('clicked', Lang.bind(this, this._onToolbarTrash));
 
         // share button
-        this._toolbarShare = new Gtk.Button({ label: _("Share") });
-        toolbar.pack_end(this._toolbarShare);
-        this._toolbarShare.connect('clicked', Lang.bind(this, this._onToolbarShare));
+        if (!Application.application.isBooks) {
+            this._toolbarShare = new Gtk.Button({ label: _("Share") });
+            toolbar.pack_end(this._toolbarShare);
+            this._toolbarShare.connect('clicked', Lang.bind(this, this._onToolbarShare));
+        }
 
         // properties button
         this._toolbarProperties = new Gtk.Button({ label: _("Properties") });
@@ -865,7 +867,8 @@ const SelectionToolbar = new Lang.Class({
         this._toolbarProperties.set_sensitive(showProperties);
         this._toolbarTrash.set_sensitive(showTrash);
         this._toolbarOpen.set_sensitive(showOpen);
-        this._toolbarShare.set_sensitive(showShare);
+        if (this._toolbarShare)
+            this._toolbarShare.set_sensitive(showShare);
         this._toolbarCollection.set_sensitive(showCollection);
 
         this._insideRefresh = false;
