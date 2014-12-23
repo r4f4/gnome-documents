@@ -54,6 +54,7 @@ const PreviewView = new Lang.Class({
         this._controlsFlipId = 0;
         this._controlsVisible = false;
         this._pageChanged = false;
+        this._hasSelection = false;
         this._viewSelectionChanged = false;
         this._fsToolbar = null;
         this._overlay = overlay;
@@ -248,10 +249,18 @@ const PreviewView = new Lang.Class({
     },
 
     _onViewSelectionChanged: function() {
+        let hasSelection = this.view.get_has_selection();
+        this._copy.enabled = hasSelection;
+
+        if (!hasSelection &&
+            hasSelection == this._hasSelection) {
+            this._viewSelectionChanged = false;
+            return;
+        }
+
+        this._hasSelection = hasSelection;
         this._viewSelectionChanged = true;
-        let has_selection = this.view.get_has_selection();
-        this._copy.enabled = has_selection;
-        if (!has_selection)
+        if (!hasSelection)
             this._cancelControlsFlip();
     },
 
