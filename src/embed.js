@@ -139,7 +139,9 @@ const EmptyResultsBox = new Lang.Class({
         this.widget.add(this._labelsGrid);
 
         let titleLabel = new Gtk.Label({ label: '<b><span size="large">' +
-                                         _("No Documents Found") +
+                                         (Application.application.isBooks ?
+                                          _("No Books Found") :
+                                          _("No Documents Found")) +
                                          '</span></b>',
                                          use_markup: true,
                                          halign: Gtk.Align.START,
