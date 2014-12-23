@@ -115,9 +115,7 @@ const ViewContainer = new Lang.Class({
     Name: 'ViewContainer',
 
     _init: function() {
-        this._adjustmentValueId = 0;
-        this._adjustmentChangedId = 0;
-        this._scrollbarVisibleId = 0;
+        this._edgeHitId = 0;
 
         this._model = new ViewModel();
 
