@@ -50,8 +50,8 @@ const EditView = new Lang.Class({
         this.widget = new Gtk.Overlay();
         this.widget.get_style_context().add_class('documents-scrolledwin');
 
-        context = WebKit.WebContext.get_default();
-        cookie_manager = context.get_cookie_manager();
+        let context = WebKit.WebContext.get_default();
+        let cookie_manager = context.get_cookie_manager();
         let jarfile = GLib.build_filenamev([GLib.get_user_cache_dir(), 'gnome-documents', 'cookies.sqlite']);
         cookie_manager.set_persistent_storage(jarfile, WebKit.CookiePersistentStorage.SQLITE);
 
