@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: gnome-documents master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-12-20 07:44+0000\n"
-"PO-Revision-Date: 2014-12-20 12:55+0100\n"
+"POT-Creation-Date: 2014-12-23 14:42+0000\n"
+"PO-Revision-Date: 2014-12-23 16:56+0100\n"
 "Last-Translator: Balázs Úr <urbalazs@gmail.com>\n"
 "Language-Team: Hungarian <openscope at googlegroups dot com>\n"
 "Language: hu\n"
@@ -234,16 +234,21 @@ msgstr "Hoppá, „%s” nem tölthető be"
 msgid "View"
 msgstr "Nézet"
 
-#: ../src/embed.js:142
+#: ../src/embed.js:143
+#| msgid "No Documents Found"
+msgid "No Books Found"
+msgstr "Nincsenek könyvek"
+
+#: ../src/embed.js:144
 msgid "No Documents Found"
 msgstr "Nincsenek dokumentumok"
 
-#: ../src/embed.js:164
+#: ../src/embed.js:166
 #, javascript-format
 msgid "You can add your online accounts in %s"
 msgstr "Felveheti online fiókjait a %s"
 
-#: ../src/embed.js:168
+#: ../src/embed.js:170
 msgid "Settings"
 msgstr "Beállítások"
 
@@ -276,7 +281,7 @@ msgstr "Nincsenek könyvjelzők"
 msgid "Loading…"
 msgstr "Betöltés…"
 
-#: ../src/lib/gd-places-bookmarks.c:656 ../src/preview.js:586
+#: ../src/lib/gd-places-bookmarks.c:656 ../src/preview.js:595
 msgid "Bookmarks"
 msgstr "Könyvjelzők"
 
@@ -409,25 +414,25 @@ msgstr "Másodlagos"
 msgid "Present On"
 msgstr "Bemutató be"
 
-#: ../src/preview.js:594
+#: ../src/preview.js:603
 msgid "Bookmark this page"
 msgstr "Oldal könyvjelzőbe"
 
-#: ../src/preview.js:835 ../src/selections.js:857
+#: ../src/preview.js:844 ../src/selections.js:859
 #, javascript-format
 msgid "Open with %s"
 msgstr "Megnyitás ezzel: %s"
 
-#: ../src/preview.js:898
+#: ../src/preview.js:907
 msgid "Find Previous"
 msgstr "Előző keresése"
 
-#: ../src/preview.js:905
+#: ../src/preview.js:914
 msgid "Find Next"
 msgstr "Következő keresése"
 
 #: ../src/properties.js:61 ../src/resources/preview-menu.ui.h:9
-#: ../src/selections.js:767
+#: ../src/selections.js:769
 msgid "Properties"
 msgstr "Tulajdonságok"
 
@@ -483,7 +488,7 @@ msgid "_Copy"
 msgstr "_Másolás"
 
 #: ../src/resources/preview-menu.ui.h:1 ../src/selections.js:747
-#: ../src/selections.js:860
+#: ../src/selections.js:862
 msgid "Open"
 msgstr "Megnyitás"
 
@@ -613,11 +618,11 @@ msgstr "Nyomtatás"
 msgid "Delete"
 msgstr "Törlés"
 
-#: ../src/selections.js:762
+#: ../src/selections.js:763
 msgid "Share"
 msgstr "Megosztás"
 
-#: ../src/selections.js:772
+#: ../src/selections.js:774
 msgid "Add to Collection"
 msgstr "Hozzáadás a gyűjteményhez"
 
@@ -699,44 +704,44 @@ msgstr "Névtelen dokumentum"
 msgid "Unable to fetch the list of documents"
 msgstr "Nem kérhető le a dokumentumok listája"
 
-#: ../src/view.js:236
+#: ../src/view.js:234
 msgid "Yesterday"
 msgstr "Tegnap"
 
-#: ../src/view.js:238
+#: ../src/view.js:236
 #, javascript-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
 msgstr[0] "%d napja"
 msgstr[1] "%d napja"
 
-#: ../src/view.js:242
+#: ../src/view.js:240
 msgid "Last week"
 msgstr "Múlt héten"
 
-#: ../src/view.js:244
+#: ../src/view.js:242
 #, javascript-format
 msgid "%d week ago"
 msgid_plural "%d weeks ago"
 msgstr[0] "%d hete"
 msgstr[1] "%d hete"
 
-#: ../src/view.js:248
+#: ../src/view.js:246
 msgid "Last month"
 msgstr "Múlt hónapban"
 
-#: ../src/view.js:250
+#: ../src/view.js:248
 #, javascript-format
 msgid "%d month ago"
 msgid_plural "%d months ago"
 msgstr[0] "%d hónapja"
 msgstr[1] "%d hónapja"
 
-#: ../src/view.js:254
+#: ../src/view.js:252
 msgid "Last year"
 msgstr "Múlt évben"
 
-#: ../src/view.js:256
+#: ../src/view.js:254
 #, javascript-format
 msgid "%d year ago"
 msgid_plural "%d years ago"
