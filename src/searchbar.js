@@ -41,22 +41,14 @@ const Searchbar = new Lang.Class({
     _init: function() {
         this.searchChangeBlocked = false;
 
-        this._in = false;
-
-        this.widget = new Gtk.Revealer();
-
-        let toolbar = new Gtk.Toolbar();
-        toolbar.get_style_context().add_class("search-bar");
-        this.widget.add(toolbar);
+        this.widget = new Gtk.SearchBar();
 
         // subclasses will create this._searchEntry and this._searchContainer
         // GtkWidgets
         this.createSearchWidgets();
 
-        let item = new Gtk.ToolItem();
-        item.set_expand(true);
-        item.add(this._searchContainer);
-        toolbar.insert(item, 0);
+        this.widget.add(this._searchContainer);
+        this.widget.connect_entry(this._searchEntry);
 
         this._searchEntry.connect('search-changed', Lang.bind(this,
             function() {
@@ -64,6 +56,11 @@ const Searchbar = new Lang.Class({
                     return;
 
                 this.entryChanged();
+            }));
+        this.widget.connect('notify::search-mode-enabled', Lang.bind(this,
+            function() {
+                let searchEnabled = this.widget.search_mode_enabled;
+                Application.application.change_action_state('search', GLib.Variant.new('b', searchEnabled));
             }));
 
         // connect to the search action state for visibility
@@ -99,118 +96,27 @@ const Searchbar = new Lang.Class({
         this.widget.destroy();
     },
 
-    _isEscapeEvent: function(event) {
-        let keyval = event.get_keyval()[1];
-        return (keyval == Gdk.KEY_Escape);
-    },
-
-    _isKeynavEvent: function(event) {
-        let keyval = event.get_keyval()[1];
-        let state = event.get_state()[1];
-
-        if (keyval == Gdk.KEY_Up ||
-            keyval == Gdk.KEY_KP_Up ||
-            keyval == Gdk.KEY_Down ||
-            keyval == Gdk.KEY_KP_Down ||
-            keyval == Gdk.KEY_Left ||
-            keyval == Gdk.KEY_KP_Left ||
-            keyval == Gdk.KEY_Right ||
-            keyval == Gdk.KEY_KP_Right ||
-            keyval == Gdk.KEY_Home ||
-            keyval == Gdk.KEY_KP_Home ||
-            keyval == Gdk.KEY_End ||
-            keyval == Gdk.KEY_KP_End ||
-            keyval == Gdk.KEY_Page_Up ||
-            keyval == Gdk.KEY_KP_Page_Up ||
-            keyval == Gdk.KEY_Page_Down ||
-            keyval == Gdk.KEY_KP_Page_Down ||
-            (state & (Gdk.ModifierType.CONTROL_MASK | Gdk.ModifierType.MOD1_MASK) != 0))
-            return true;
-
-        return false;
-    },
-
-    _isSpaceEvent: function(event) {
-        let keyval = event.get_keyval()[1];
-        return (keyval == Gdk.KEY_space);
-    },
-
-    _isTabEvent: function(event) {
-        let keyval = event.get_keyval()[1];
-        return (keyval == Gdk.KEY_Tab || keyval == Gdk.KEY_KP_Tab);
-    },
-
     handleEvent: function(event) {
         // Skip if the search bar is shown and the focus is elsewhere
-        if (this._in && !this._searchEntry.is_focus)
+        if (this.widget.search_mode_enabled && !this._searchEntry.is_focus)
             return false;
-
-        let isEscape = this._isEscapeEvent(event);
-        let isKeynav = this._isKeynavEvent(event);
-        let isTab = this._isTabEvent(event);
-        let isSpace = this._isSpaceEvent(event);
-
-        // Skip these if the search bar is hidden
-        if (!this._in && (isEscape || isKeynav || isTab || isSpace))
-            return false;
-
-        // At this point, either the search bar is hidden and the event
-        // is neither escape nor keynav nor space; or the search bar is
-        // shown and has the focus.
 
         let keyval = event.get_keyval()[1];
-        if (isEscape) {
-            Application.application.change_action_state('search', GLib.Variant.new('b', false));
-            return true;
-        } else if (keyval == Gdk.KEY_Return) {
+        if (keyval == Gdk.KEY_Return) {
             this.emit('activate-result');
             return true;
         }
 
-        if (!this._searchEntry.get_realized())
-            this._searchEntry.realize();
-
-        // Since we can have keynav or space only when the search bar
-        // is shown, we want to handle it. Otherwise it will hinder
-        // text input. However, we don't want to handle tabs so that
-        // focus can be shifted to other widgets.
-        let handled = isKeynav || isSpace;
-
-        let preeditChanged = false;
-        let preeditChangedId =
-            this._searchEntry.connect('preedit-changed', Lang.bind(this,
-                function() {
-                    preeditChanged = true;
-                }));
-
-        let oldText = this._searchEntry.get_text();
-        let res = this._searchEntry.event(event);
-        let newText = this._searchEntry.get_text();
-
-        this._searchEntry.disconnect(preeditChangedId);
-
-        if (((res && (newText != oldText)) || preeditChanged)) {
-            handled = true;
-
-            if (!this._in)
-                Application.application.change_action_state('search', GLib.Variant.new('b', true));
-        }
-
-        return handled;
+        return this.widget.handle_event(event);
     },
 
     show: function() {
-        let eventDevice = Gtk.get_current_event_device();
-        this.widget.set_reveal_child(true);
-        this._in = true;
-
-        if (eventDevice)
-            Gd.entry_focus_hack(this._searchEntry, eventDevice);
+        this.widget.search_mode_enabled = true;
     },
 
     hide: function() {
-        this._in = false;
-        this.widget.set_reveal_child(false);
+        this.widget.search_mode_enabled = false;
+
         // clear all the search properties when hiding the entry
         this._searchEntry.set_text('');
     }
