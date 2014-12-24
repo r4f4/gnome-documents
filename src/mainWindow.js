@@ -129,8 +129,12 @@ const MainWindow = new Lang.Class({
         let window = widget.get_window();
         let state = window.get_state();
 
-        if (state & Gdk.WindowState.FULLSCREEN)
+        if (state & Gdk.WindowState.FULLSCREEN) {
+            Application.modeController.setFullscreen(true);
             return;
+        }
+
+        Application.modeController.setFullscreen(false);
 
         let maximized = (state & Gdk.WindowState.MAXIMIZED);
         Application.settings.set_boolean('window-maximized', maximized);

@@ -74,14 +74,7 @@ const ModeController = new Lang.Class({
     },
 
     setFullscreen: function(fullscreen) {
-        if (this._mode != WindowMode.PREVIEW
-            && this._mode != WindowMode.EDIT)
-            return;
-
         if (this._fullscreen == fullscreen)
-            return;
-
-        if (fullscreen && !this._canFullscreen)
             return;
 
         this._fullscreen = fullscreen;
