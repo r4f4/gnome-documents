@@ -64,9 +64,9 @@ const SearchController = new Lang.Class({
     },
 
     getTerms: function() {
-        let escaped_str = Tracker.sparql_escape_string(this._string);
-        let str = GdPrivate.normalize_casefold_and_unaccent(escaped_str);
-        return str.replace(/ +/g, ' ').split(' ');
+        let escapedStr = Tracker.sparql_escape_string(this._string);
+        let [tokens, ] = GLib.str_tokenize_and_fold(escapedStr, null);
+        return tokens;
     }
 });
 Signals.addSignalMethods(SearchController.prototype);
@@ -269,12 +269,20 @@ const SearchMatch = new Lang.Class({
             return ('fn:contains ' +
                     '(tracker:unaccent(tracker:case-fold' +
                     '(tracker:coalesce(nie:title(?urn), nfo:fileName(?urn)))), ' +
-                    '"%s")').format(this._term);
+                    '"%s") || ' +
+                    'fn:contains ' +
+                    '(tracker:case-fold' +
+                    '(tracker:coalesce(nie:title(?urn), nfo:fileName(?urn))), ' +
+                    '"%s")').format(this._term, this._term);
         if (this.id == SearchMatchStock.AUTHOR)
             return ('fn:contains ' +
                     '(tracker:unaccent(tracker:case-fold' +
                     '(tracker:coalesce(nco:fullname(?creator), nco:fullname(?publisher)))), ' +
-                    '"%s")').format(this._term);
+                    '"%s") || ' +
+                    'fn:contains ' +
+                    '(tracker:case-fold' +
+                    '(tracker:coalesce(nco:fullname(?creator), nco:fullname(?publisher))), ' +
+                    '"%s")').format(this._term, this._term);
         return '';
     }
 });
@@ -310,7 +318,7 @@ const SearchMatchManager = new Lang.Class({
             });
             filters.push(this.parent());
         }
-        return filters.length ? '( ' + filters.join(' && ') + ')' : '';
+        return filters.length ? '( ' + filters.join(' && ') + ')' : '(true)';
     }
 });
 
