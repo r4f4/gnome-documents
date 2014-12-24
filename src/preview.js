@@ -480,6 +480,10 @@ const PreviewView = new Lang.Class({
         this._syncControlsVisible();
     },
 
+    activateResult: function() {
+        this.view.find_next();
+    },
+
     startSearch: function(str) {
         if (!this._model)
             return;

@@ -284,9 +284,12 @@ const Embed = new Lang.Class({
     },
 
     _onActivateResult: function() {
-        let doc = this._view.getFirstDocument();
-        if (doc)
-            Application.documentManager.setActiveItem(doc)
+        let windowMode = Application.modeController.getWindowMode();
+
+        if (windowMode == WindowMode.WindowMode.OVERVIEW)
+            this._view.activateResult();
+        else if (windowMode == WindowMode.WindowMode.PREVIEW)
+            this._preview.activateResult();
     },
 
     _onQueryStatusChanged: function() {

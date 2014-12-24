@@ -175,7 +175,13 @@ const ViewContainer = new Lang.Class({
             this._addListRenderers();
     },
 
-    getFirstDocument: function() {
+    activateResult: function() {
+        let doc = this._getFirstDocument();
+        if (doc)
+            Application.documentManager.setActiveItem(doc)
+    },
+
+    _getFirstDocument: function() {
         let doc = null;
 
         let iter = this._model.model.get_iter_first()[1];
