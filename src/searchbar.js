@@ -39,8 +39,6 @@ const Searchbar = new Lang.Class({
     Name: 'Searchbar',
 
     _init: function() {
-        this._searchTypeId = 0;
-        this._searchMatchId = 0;
         this.searchChangeBlocked = false;
 
         this._in = false;
