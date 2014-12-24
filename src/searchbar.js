@@ -260,9 +260,7 @@ const OverviewSearchbar = new Lang.Class({
             this._searchEntry.add_tag(tag);
         }
 
-        let eventDevice = Gtk.get_current_event_device();
-        if (eventDevice)
-            Gd.entry_focus_hack(this._searchEntry, eventDevice);
+        this._searchEntry.grab_focus_without_selecting();
     },
 
     _onActiveSourceChanged: function() {
