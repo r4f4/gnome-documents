@@ -102,7 +102,7 @@ const Searchbar = new Lang.Class({
             return false;
 
         let keyval = event.get_keyval()[1];
-        if (keyval == Gdk.KEY_Return) {
+        if (this.widget.search_mode_enabled && keyval == Gdk.KEY_Return) {
             this.emit('activate-result');
             return true;
         }
