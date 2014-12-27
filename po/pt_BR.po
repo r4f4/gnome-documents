@@ -11,8 +11,8 @@ msgstr ""
 "Project-Id-Version: gnome-documents\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-12-20 19:46+0000\n"
-"PO-Revision-Date: 2014-12-20 19:51-0300\n"
+"POT-Creation-Date: 2014-12-24 09:30+0000\n"
+"PO-Revision-Date: 2014-12-24 09:06-0300\n"
 "Last-Translator: Ricardo Barbosa <barbosa.cisco@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <gnome-pt_br-list@gnome.org>\n"
 "Language: pt_BR\n"
@@ -23,7 +23,7 @@ msgstr ""
 "X-Generator: Poedit 1.7.1\n"
 
 #: ../data/org.gnome.Books.desktop.in.h:1 ../src/application.js:129
-#: ../src/mainWindow.js:309
+#: ../src/mainWindow.js:313
 msgid "Books"
 msgstr "Livros"
 
@@ -87,7 +87,7 @@ msgstr "Se o aplicativo está em modo noturno."
 
 #: ../data/org.gnome.Documents.appdata.xml.in.h:1
 #: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:125
-#: ../src/mainWindow.js:52 ../src/mainWindow.js:304
+#: ../src/mainWindow.js:52 ../src/mainWindow.js:308
 msgid "Documents"
 msgstr "Documentos"
 
@@ -156,7 +156,7 @@ msgstr "Docs;PDF;Documento;Documentos;"
 msgid "Failed to print document"
 msgstr "Falha ao imprimir o documento"
 
-#: ../src/documents.js:661 ../src/search.js:453
+#: ../src/documents.js:661 ../src/search.js:464
 msgid "Local"
 msgstr "Local"
 
@@ -235,16 +235,20 @@ msgstr "Opa! Não foi possível carregar \"%s\""
 msgid "View"
 msgstr "Ver"
 
-#: ../src/embed.js:142
+#: ../src/embed.js:143
+msgid "No Books Found"
+msgstr "Nenhum livro encontrado"
+
+#: ../src/embed.js:144
 msgid "No Documents Found"
 msgstr "Nenhum documento encontrado"
 
-#: ../src/embed.js:164
+#: ../src/embed.js:166
 #, javascript-format
 msgid "You can add your online accounts in %s"
 msgstr "Você pode adicionar suas contas online em %s"
 
-#: ../src/embed.js:168
+#: ../src/embed.js:170
 msgid "Settings"
 msgstr "Configurações"
 
@@ -277,7 +281,7 @@ msgstr "Nenhum favorito"
 msgid "Loading…"
 msgstr "Carregando…"
 
-#: ../src/lib/gd-places-bookmarks.c:656 ../src/preview.js:586
+#: ../src/lib/gd-places-bookmarks.c:656 ../src/preview.js:599
 msgid "Bookmarks"
 msgstr "Favoritos"
 
@@ -325,18 +329,18 @@ msgstr "Cancelar"
 msgid "Select Items"
 msgstr "Selecionar itens"
 
-#: ../src/mainWindow.js:302
+#: ../src/mainWindow.js:306
 msgid "translator-credits"
 msgstr ""
 "Felipe Borges <felipeborges@src.gnome.org>\n"
 "Rafael Ferreira <rafael.f.f1@gmail.com>\n"
 "Enrico Nicoletto <liverig@gmail.com>."
 
-#: ../src/mainWindow.js:305
+#: ../src/mainWindow.js:309
 msgid "A document manager application"
 msgstr "Um aplicativo para gerenciar documentos"
 
-#: ../src/mainWindow.js:310
+#: ../src/mainWindow.js:314
 msgid "An e-books manager application"
 msgstr "Um aplicativo para gerenciamento de livros eletrônicos"
 
@@ -413,25 +417,25 @@ msgstr "Secundário"
 msgid "Present On"
 msgstr "Apresentação"
 
-#: ../src/preview.js:594
+#: ../src/preview.js:607
 msgid "Bookmark this page"
 msgstr "Adicionar aos favoritos"
 
-#: ../src/preview.js:835 ../src/selections.js:857
+#: ../src/preview.js:848 ../src/selections.js:859
 #, javascript-format
 msgid "Open with %s"
 msgstr "Abrir com %s"
 
-#: ../src/preview.js:898
+#: ../src/preview.js:911
 msgid "Find Previous"
 msgstr "Localizar anterior"
 
-#: ../src/preview.js:905
+#: ../src/preview.js:918
 msgid "Find Next"
 msgstr "Localizar próximo"
 
 #: ../src/properties.js:61 ../src/resources/preview-menu.ui.h:9
-#: ../src/selections.js:767
+#: ../src/selections.js:769
 msgid "Properties"
 msgstr "Propriedades"
 
@@ -487,7 +491,7 @@ msgid "_Copy"
 msgstr "_Copiar"
 
 #: ../src/resources/preview-menu.ui.h:1 ../src/selections.js:747
-#: ../src/selections.js:860
+#: ../src/selections.js:862
 msgid "Open"
 msgstr "Abrir"
 
@@ -527,71 +531,71 @@ msgstr "Selecionar todos"
 msgid "Select None"
 msgstr "Não selecionar nada"
 
-#: ../src/search.js:114
+#: ../src/search.js:115
 msgid "Category"
 msgstr "Categoria"
 
-#: ../src/search.js:119 ../src/search.js:182 ../src/search.js:289
-#: ../src/search.js:447
+#: ../src/search.js:120 ../src/search.js:183 ../src/search.js:300
+#: ../src/search.js:458
 msgid "All"
 msgstr "Todos"
 
-#: ../src/search.js:125
+#: ../src/search.js:126
 msgid "Favorites"
 msgstr "Favoritos"
 
-#: ../src/search.js:130
+#: ../src/search.js:131
 msgid "Shared with you"
 msgstr "Compartilhado com você"
 
-#: ../src/search.js:179
+#: ../src/search.js:180
 msgctxt "Search Filter"
 msgid "Type"
 msgstr "Tipo do filtro"
 
-#: ../src/search.js:185 ../src/search.js:194
+#: ../src/search.js:186 ../src/search.js:195
 msgid "Collections"
 msgstr "Coleções"
 
-#: ../src/search.js:189
+#: ../src/search.js:190
 msgid "PDF Documents"
 msgstr "Documentos PDF"
 
-#: ../src/search.js:202
+#: ../src/search.js:203
 msgid "Presentations"
 msgstr "Apresentações"
 
-#: ../src/search.js:205
+#: ../src/search.js:206
 msgid "Spreadsheets"
 msgstr "Planilhas"
 
-#: ../src/search.js:208
+#: ../src/search.js:209
 msgid "Text Documents"
 msgstr "Documentos de texto"
 
-#: ../src/search.js:213
+#: ../src/search.js:214
 msgid "e-Books"
 msgstr "Livros eletrônicos"
 
-#: ../src/search.js:217
+#: ../src/search.js:218
 msgid "Comics"
 msgstr "Quadrinhos"
 
-#: ../src/search.js:286
+#: ../src/search.js:297
 msgid "Match"
 msgstr "Filtrar"
 
-#: ../src/search.js:292
+#: ../src/search.js:303
 msgctxt "Search Filter"
 msgid "Title"
 msgstr "Título"
 
-#: ../src/search.js:295
+#: ../src/search.js:306
 msgctxt "Search Filter"
 msgid "Author"
 msgstr "Autor"
 
-#: ../src/search.js:443
+#: ../src/search.js:454
 msgid "Sources"
 msgstr "Fontes"
 
@@ -617,11 +621,11 @@ msgstr "Imprimir"
 msgid "Delete"
 msgstr "Excluir"
 
-#: ../src/selections.js:762
+#: ../src/selections.js:763
 msgid "Share"
 msgstr "Compartilhar"
 
-#: ../src/selections.js:772
+#: ../src/selections.js:774
 msgid "Add to Collection"
 msgstr "Adicionar a coleção"
 
@@ -703,44 +707,44 @@ msgstr "Documento sem título"
 msgid "Unable to fetch the list of documents"
 msgstr "Não foi possível buscar a lista de documentos"
 
-#: ../src/view.js:236
+#: ../src/view.js:240
 msgid "Yesterday"
 msgstr "Ontem"
 
-#: ../src/view.js:238
+#: ../src/view.js:242
 #, javascript-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
 msgstr[0] "%d dia atrás"
 msgstr[1] "%d dias atrás"
 
-#: ../src/view.js:242
+#: ../src/view.js:246
 msgid "Last week"
 msgstr "Semana passada"
 
-#: ../src/view.js:244
+#: ../src/view.js:248
 #, javascript-format
 msgid "%d week ago"
 msgid_plural "%d weeks ago"
 msgstr[0] "%d semana atrás"
 msgstr[1] "%d semanas atrás"
 
-#: ../src/view.js:248
+#: ../src/view.js:252
 msgid "Last month"
 msgstr "Mês passado"
 
-#: ../src/view.js:250
+#: ../src/view.js:254
 #, javascript-format
 msgid "%d month ago"
 msgid_plural "%d months ago"
 msgstr[0] "%d mês atrás"
 msgstr[1] "%d meses atrás"
 
-#: ../src/view.js:254
+#: ../src/view.js:258
 msgid "Last year"
 msgstr "Ano passado"
 
-#: ../src/view.js:256
+#: ../src/view.js:260
 #, javascript-format
 msgid "%d year ago"
 msgid_plural "%d years ago"
