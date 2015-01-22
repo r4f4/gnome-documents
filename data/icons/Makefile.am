@@ -1,13 +1,12 @@
 NULL =
 
 public_icons_themes = \
-	Adwaita \
 	hicolor	\
 	$(NULL)
 
 public_icons = \
-	Adwaita_apps_scalable_gnome-books-symbolic.svg \
-	Adwaita_apps_scalable_gnome-documents-symbolic.svg \
+	hicolor_apps_scalable_gnome-books-symbolic.svg \
+	hicolor_apps_scalable_gnome-documents-symbolic.svg \
 	hicolor_apps_16x16_gnome-books.png \
 	hicolor_apps_22x22_gnome-books.png \
 	hicolor_apps_24x24_gnome-books.png \
