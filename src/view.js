@@ -346,7 +346,7 @@ const ViewContainer = new Lang.Class({
     },
 
     _connectView: function() {
-        this._edgeHitId = this.view.connect('edge-overshot', Lang.bind(this,
+        this._edgeHitId = this.view.connect('edge-reached', Lang.bind(this,
             function (view, pos) {
                 if (pos == Gtk.PositionType.BOTTOM)
                     Application.offsetController.increaseOffset();
