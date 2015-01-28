@@ -1,3 +1,14 @@
+3.15.2 - "Gaston"
+=================
+
+- Add support for "Night mode"
+- Add new "Books" applications
+  (Note that viewing ePub and Mobi formats isn't implemented yet)
+- Port to WebKit2
+- Fix some documents getting opened in the Archive Manager
+- Fix a number of interaction problems related to fullscreen and controls
+- Use GTK+' search bar widget instead of our own
+
 3.15.1 - "Pandemonium"
 ======================
 
