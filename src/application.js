@@ -442,9 +442,9 @@ const Application = new Lang.Class({
 
         application = this;
         if (!application.isBooks)
-            settings = new Gio.Settings({ schema: 'org.gnome.documents' });
+            settings = new Gio.Settings({ schema_id: 'org.gnome.documents' });
         else
-            settings = new Gio.Settings({ schema: 'org.gnome.books' });
+            settings = new Gio.Settings({ schema_id: 'org.gnome.books' });
 
         let gtkSettings = Gtk.Settings.get_default();
         gtkSettings.connect('notify::gtk-theme-name', Lang.bind(this, this._themeChanged));
