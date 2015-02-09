@@ -660,6 +660,9 @@ const Application = new Lang.Class({
         // clean up signals
         changeMonitor.disconnectAll();
         documentManager.disconnectAll();
+        offsetCollectionsController.disconnectAll();
+        offsetDocumentsController.disconnectAll();
+        offsetSearchController.disconnectAll();
         trackerCollectionsController.disconnectAll();
         trackerDocumentsController.disconnectAll();
         trackerSearchController.disconnectAll();
