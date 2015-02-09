@@ -73,51 +73,6 @@ const SpinnerBox = new Lang.Class({
     }
 });
 
-const ErrorBox = new Lang.Class({
-    Name: 'ErrorBox',
-
-    _init: function(primary, secondary) {
-        this.widget = new Gtk.Grid({ orientation: Gtk.Orientation.VERTICAL,
-                                     row_spacing: 12,
-                                     hexpand: true,
-                                     vexpand: true,
-                                     halign: Gtk.Align.CENTER,
-                                     valign: Gtk.Align.CENTER });
-
-        this._image = new Gtk.Image({ pixel_size: _ICON_SIZE,
-                                      icon_name: 'face-uncertain-symbolic',
-                                      halign: Gtk.Align.CENTER,
-                                      valign: Gtk.Align.CENTER });
-
-        this.widget.add(this._image);
-
-        this._primaryLabel =
-            new Gtk.Label({ label: '',
-                            use_markup: true,
-                            halign: Gtk.Align.CENTER,
-                            valign: Gtk.Align.CENTER });
-        this.widget.add(this._primaryLabel);
-
-        this._secondaryLabel =
-            new Gtk.Label({ label: '',
-                            use_markup: true,
-                            wrap: true,
-                            halign: Gtk.Align.CENTER,
-                            valign: Gtk.Align.CENTER });
-        this.widget.add(this._secondaryLabel);
-
-        this.widget.show_all();
-    },
-
-    update: function(primary, secondary) {
-        let primaryMarkup = '<big><b>' + GLib.markup_escape_text(primary, -1) + '</b></big>';
-        let secondaryMarkup = GLib.markup_escape_text(secondary, -1);
-
-        this._primaryLabel.label = primaryMarkup;
-        this._secondaryLabel.label = secondaryMarkup;
-    }
-});
-
 const Embed = new Lang.Class({
     Name: 'Embed',
 
@@ -161,9 +116,6 @@ const Embed = new Lang.Class({
         this._spinnerBox = new SpinnerBox();
         this._stack.add_named(this._spinnerBox.widget, 'spinner');
 
-        this._errorBox = new ErrorBox();
-        this._stack.add_named(this._errorBox.widget, 'error');
-
         Application.modeController.connect('window-mode-changed',
                                            Lang.bind(this, this._onWindowModeChanged));
 
@@ -171,8 +123,6 @@ const Embed = new Lang.Class({
                                            Lang.bind(this, this._onFullscreenChanged));
         Application.trackerController.connect('query-status-changed',
                                               Lang.bind(this, this._onQueryStatusChanged));
-        Application.trackerController.connect('query-error',
-                                              Lang.bind(this, this._onQueryError));
 
         Application.documentManager.connect('active-changed',
                                             Lang.bind(this, this._onActiveItemChanged));
@@ -215,10 +165,6 @@ const Embed = new Lang.Class({
             this._spinnerBox.stop();
             this._stack.set_visible_child_name('view');
         }
-    },
-
-    _onQueryError: function(manager, message, exception) {
-        this._setError(message, exception.message);
     },
 
     _onFullscreenChanged: function(controller, fullscreen) {
@@ -294,7 +240,6 @@ const Embed = new Lang.Class({
     _onLoadError: function(manager, doc, message, exception) {
         this._clearLoadTimer();
         this._spinnerBox.stop();
-        this._setError(message, exception.message);
     },
 
     _onPasswordNeeded: function(manager, doc) {
@@ -350,11 +295,6 @@ const Embed = new Lang.Class({
         this._titlebar.add(this._toolbar.widget);
 
         this._stack.set_visible_child_name('edit');
-    },
-
-    _setError: function(primary, secondary) {
-        this._errorBox.update(primary, secondary);
-        this._stack.set_visible_child_name('error');
     },
 
     getMainToolbar: function() {

@@ -226,6 +226,53 @@ const EmptyResultsBox = new Lang.Class({
     }
 });
 
+const _ICON_SIZE = 128;
+
+const ErrorBox = new Lang.Class({
+    Name: 'ErrorBox',
+
+    _init: function(primary, secondary) {
+        this.widget = new Gtk.Grid({ orientation: Gtk.Orientation.VERTICAL,
+                                     row_spacing: 12,
+                                     hexpand: true,
+                                     vexpand: true,
+                                     halign: Gtk.Align.CENTER,
+                                     valign: Gtk.Align.CENTER });
+
+        this._image = new Gtk.Image({ pixel_size: _ICON_SIZE,
+                                      icon_name: 'face-uncertain-symbolic',
+                                      halign: Gtk.Align.CENTER,
+                                      valign: Gtk.Align.CENTER });
+
+        this.widget.add(this._image);
+
+        this._primaryLabel =
+            new Gtk.Label({ label: '',
+                            use_markup: true,
+                            halign: Gtk.Align.CENTER,
+                            valign: Gtk.Align.CENTER });
+        this.widget.add(this._primaryLabel);
+
+        this._secondaryLabel =
+            new Gtk.Label({ label: '',
+                            use_markup: true,
+                            wrap: true,
+                            halign: Gtk.Align.CENTER,
+                            valign: Gtk.Align.CENTER });
+        this.widget.add(this._secondaryLabel);
+
+        this.widget.show_all();
+    },
+
+    update: function(primary, secondary) {
+        let primaryMarkup = '<big><b>' + GLib.markup_escape_text(primary, -1) + '</b></big>';
+        let secondaryMarkup = GLib.markup_escape_text(secondary, -1);
+
+        this._primaryLabel.label = primaryMarkup;
+        this._secondaryLabel.label = secondaryMarkup;
+    }
+});
+
 const ViewContainer = new Lang.Class({
     Name: 'ViewContainer',
 
@@ -242,6 +289,9 @@ const ViewContainer = new Lang.Class({
 
         this._noResults = new EmptyResultsBox();
         this.widget.add_named(this._noResults.widget, 'no-results');
+
+        this._errorBox = new ErrorBox();
+        this.widget.add_named(this._errorBox.widget, 'error');
 
         this.view = new Gd.MainView({ shadow_type: Gtk.ShadowType.NONE });
         grid.add(this.view);
@@ -290,6 +340,8 @@ const ViewContainer = new Lang.Class({
                     this.widget.set_visible_child_name('view');
             }));
 
+        Application.trackerController.connect('query-error',
+            Lang.bind(this, this._onQueryError));
         this._queryId = Application.trackerController.connect('query-status-changed',
             Lang.bind(this, this._onQueryStatusChanged));
         // ensure the tracker controller is started
@@ -404,6 +456,10 @@ const ViewContainer = new Lang.Class({
         Application.documentManager.setActiveItemById(id);
     },
 
+    _onQueryError: function(manager, message, exception) {
+        this._setError(message, exception.message);
+    },
+
     _onQueryStatusChanged: function() {
         let status = Application.trackerController.getQueryStatus();
 
@@ -422,6 +478,11 @@ const ViewContainer = new Lang.Class({
             // so that we don't uselessly refresh the rows
             this.view.set_model(null);
         }
+    },
+
+    _setError: function(primary, secondary) {
+        this._errorBox.update(primary, secondary);
+        this.widget.set_visible_child_name('error');
     },
 
     _updateSelection: function() {
