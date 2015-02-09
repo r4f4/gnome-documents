@@ -1,14 +1,14 @@
 # Norwegian bokmål translation of gnome-documents.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Kjartan Maraas <kmaraas@gnome.org>, 2011-2014.
+# Kjartan Maraas <kmaraas@gnome.org>, 2011-2015.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-documents 3.15.x\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-13 20:28+0100\n"
-"PO-Revision-Date: 2014-11-13 20:29+0100\n"
+"POT-Creation-Date: 2015-02-09 18:59+0100\n"
+"PO-Revision-Date: 2015-02-09 19:00+0100\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian bokmål <i18n-nb@lister.ping.uio.no>\n"
 "Language: \n"
@@ -17,9 +17,72 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+#: ../data/org.gnome.Books.desktop.in.h:1 ../src/application.js:129
+#: ../src/mainWindow.js:313
+msgid "Books"
+msgstr "Bøker"
+
+#: ../data/org.gnome.Books.desktop.in.h:2
+msgid "Access, manage and share books"
+msgstr "Aksesser, håndter og del bøker"
+
+#: ../data/org.gnome.Books.desktop.in.h:3
+msgid "Books;Comics;ePub;PDF;"
+msgstr "Bøker;Tegneserier;ePub;PDF;"
+
+#: ../data/org.gnome.books.gschema.xml.h:1
+#: ../data/org.gnome.documents.gschema.xml.h:1
+msgid "View as"
+msgstr "Vis som"
+
+#: ../data/org.gnome.books.gschema.xml.h:2
+#: ../data/org.gnome.documents.gschema.xml.h:2
+msgid "View as type"
+msgstr "Vis som type"
+
+#: ../data/org.gnome.books.gschema.xml.h:3
+#: ../data/org.gnome.documents.gschema.xml.h:3
+msgid "Window size"
+msgstr "Vindustørrelse"
+
+#: ../data/org.gnome.books.gschema.xml.h:4
+#: ../data/org.gnome.documents.gschema.xml.h:4
+msgid "Window size (width and height)."
+msgstr "Vindustørrelse (bredde og høyde)."
+
+#: ../data/org.gnome.books.gschema.xml.h:5
+#: ../data/org.gnome.documents.gschema.xml.h:5
+msgid "Window position"
+msgstr "Vinduposisjon"
+
+#: ../data/org.gnome.books.gschema.xml.h:6
+#: ../data/org.gnome.documents.gschema.xml.h:6
+msgid "Window position (x and y)."
+msgstr "Vinduposisjon (x og y)."
+
+#: ../data/org.gnome.books.gschema.xml.h:7
+#: ../data/org.gnome.documents.gschema.xml.h:7
+msgid "Window maximized"
+msgstr "Vindu maksimert"
+
+#: ../data/org.gnome.books.gschema.xml.h:8
+#: ../data/org.gnome.documents.gschema.xml.h:8
+msgid "Window maximized state"
+msgstr "Om vinduet er maksimert eller ikke"
+
+#: ../data/org.gnome.books.gschema.xml.h:9
+#: ../data/org.gnome.documents.gschema.xml.h:9
+msgid "Night mode"
+msgstr "Nattmodus"
+
+#: ../data/org.gnome.books.gschema.xml.h:10
+#: ../data/org.gnome.documents.gschema.xml.h:10
+msgid "Whether the application is in night mode."
+msgstr "Hvorvidt programmet er i nattmodus."
+
 #: ../data/org.gnome.Documents.appdata.xml.in.h:1
-#: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:121
-#: ../src/mainWindow.js:52 ../src/mainWindow.js:302
+#: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:125
+#: ../src/mainWindow.js:52 ../src/mainWindow.js:308
 msgid "Documents"
 msgstr "Dokumenter"
 
@@ -83,117 +146,89 @@ msgstr "Aksesser, håndter og del dokumenter"
 msgid "Docs;PDF;Document;"
 msgstr "Dokumentasjon;PDF;Dokument;"
 
-#: ../data/org.gnome.documents.gschema.xml.h:1
-msgid "View as"
-msgstr "Vis som"
-
-#: ../data/org.gnome.documents.gschema.xml.h:2
-msgid "View as type"
-msgstr "Vis som type"
-
-#: ../data/org.gnome.documents.gschema.xml.h:3
-msgid "Window size"
-msgstr "Vindustørrelse"
-
-#: ../data/org.gnome.documents.gschema.xml.h:4
-msgid "Window size (width and height)."
-msgstr "Vindustørrelse (bredde og høyde)."
-
-#: ../data/org.gnome.documents.gschema.xml.h:5
-msgid "Window position"
-msgstr "Vinduposisjon"
-
-#: ../data/org.gnome.documents.gschema.xml.h:6
-msgid "Window position (x and y)."
-msgstr "Vinduposisjon (x og y)."
-
-#: ../data/org.gnome.documents.gschema.xml.h:7
-msgid "Window maximized"
-msgstr "Vindu maksimert"
-
-#: ../data/org.gnome.documents.gschema.xml.h:8
-msgid "Window maximized state"
-msgstr "Om vinduet er maksimert eller ikke"
-
-#: ../src/documents.js:621
+#: ../src/documents.js:630
 msgid "Failed to print document"
 msgstr "Klarte ikke å skrive ut dokumentet"
 
 #. Translators: this refers to local documents
-#: ../src/documents.js:658 ../src/search.js:427
+#: ../src/documents.js:667 ../src/search.js:464
 msgid "Local"
 msgstr "Lokalt"
 
 #. Translators: Documents ships a "Getting Started with Documents"
 #. tutorial PDF. The "GNOME" string below is displayed as the author name
 #. of that document, and doesn't normally need to be translated.
-#: ../src/documents.js:679
+#: ../src/documents.js:694
 msgid "GNOME"
 msgstr "GNOME"
 
-#: ../src/documents.js:680
+#: ../src/documents.js:695
 msgid "Getting Started with Documents"
 msgstr "Kom i gang med Dokumenter"
 
-#: ../src/documents.js:696 ../src/documents.js:877 ../src/documents.js:939
-#: ../src/documents.js:1047
+#: ../src/documents.js:711 ../src/documents.js:892 ../src/documents.js:955
+#: ../src/documents.js:1063
 msgid "Collection"
 msgstr "Samling"
 
 #. overridden
-#: ../src/documents.js:756
+#: ../src/documents.js:771
 msgid "Google Docs"
 msgstr "Google Docs"
 
-#: ../src/documents.js:757
+#: ../src/documents.js:772
 msgid "Google"
 msgstr "Google"
 
-#: ../src/documents.js:879 ../src/documents.js:1049
+#: ../src/documents.js:894 ../src/documents.js:1065
 msgid "Spreadsheet"
 msgstr "Regneark"
 
-#: ../src/documents.js:881 ../src/documents.js:1051 ../src/presentation.js:47
+#: ../src/documents.js:896 ../src/documents.js:1067 ../src/presentation.js:47
 msgid "Presentation"
 msgstr "Presentasjon"
 
-#: ../src/documents.js:883 ../src/documents.js:1053
+#: ../src/documents.js:898 ../src/documents.js:1069
+msgid "e-Book"
+msgstr "e-bok"
+
+#: ../src/documents.js:900 ../src/documents.js:1071
 msgid "Document"
 msgstr "Dokument"
 
 #. overridden
-#: ../src/documents.js:917
+#: ../src/documents.js:934
 msgid "ownCloud"
 msgstr "ownCloud"
 
 #. overridden
-#: ../src/documents.js:981 ../src/documents.js:982
+#: ../src/documents.js:997 ../src/documents.js:998
 msgid "OneDrive"
 msgstr "OneDrive"
 
-#: ../src/documents.js:1181
+#: ../src/documents.js:1199
 msgid "Please check the network connection."
 msgstr "Sjekk nettverkstilkoblingen."
 
-#: ../src/documents.js:1184
+#: ../src/documents.js:1202
 msgid "Please check the network proxy settings."
 msgstr "Sjekk proxyinnstillinger for nettverk."
 
-#: ../src/documents.js:1187
+#: ../src/documents.js:1205
 msgid "Unable to sign in to the document service."
 msgstr "Kan ikke logge inn på dokumenttjenesten."
 
-#: ../src/documents.js:1190
+#: ../src/documents.js:1208
 msgid "Unable to locate this document."
 msgstr "Kan ikke finne dette dokumentet."
 
-#: ../src/documents.js:1193
+#: ../src/documents.js:1211
 #, javascript-format
 msgid "Hmm, something is fishy (%d)."
 msgstr "Hmm, noe er galt (%d)."
 
 #. Translators: %s is the title of a document
-#: ../src/documents.js:1211
+#: ../src/documents.js:1229
 #, javascript-format
 msgid "Oops! Unable to load “%s”"
 msgstr "Opps! kan ikke laste «%s»"
@@ -202,20 +237,24 @@ msgstr "Opps! kan ikke laste «%s»"
 msgid "View"
 msgstr "Vis"
 
-#: ../src/embed.js:142
+#: ../src/embed.js:143
+msgid "No Books Found"
+msgstr "Ingen bøker funnet"
+
+#: ../src/embed.js:144
 msgid "No Documents Found"
 msgstr "Ingen dokumenter funnet"
 
 #. Translators: %s here is "Settings", which is in a separate string due to
 #. markup, and should be translated only in the context of this sentence
-#: ../src/embed.js:163
+#: ../src/embed.js:166
 #, javascript-format
 msgid "You can add your online accounts in %s"
 msgstr "Du kan legge til dine kontoer på nettet i %s"
 
 #. Translators: this should be translated in the context of the
 #. "You can add your online accounts in Settings" sentence above
-#: ../src/embed.js:167
+#: ../src/embed.js:170
 msgid "Settings"
 msgstr "Innstillinger"
 
@@ -248,7 +287,7 @@ msgstr "Ingen bokmerker"
 msgid "Loading…"
 msgstr "Laster …"
 
-#: ../src/lib/gd-places-bookmarks.c:657 ../src/preview.js:586
+#: ../src/lib/gd-places-bookmarks.c:656 ../src/preview.js:599
 msgid "Bookmarks"
 msgstr "Bokmerker"
 
@@ -295,13 +334,17 @@ msgstr "Avbryt"
 msgid "Select Items"
 msgstr "Velg oppføringer"
 
-#: ../src/mainWindow.js:301
+#: ../src/mainWindow.js:306
 msgid "translator-credits"
 msgstr "Kjartan Maraas <kmaraas@gnome.org>"
 
-#: ../src/mainWindow.js:303
+#: ../src/mainWindow.js:309
 msgid "A document manager application"
 msgstr "Et program for å håndtere dokumenter"
+
+#: ../src/mainWindow.js:314
+msgid "An e-books manager application"
+msgstr "Et program for å håndtere e-bøker"
 
 #: ../src/notifications.js:50
 msgid "Selected item has been deleted"
@@ -380,27 +423,27 @@ msgstr "Sekundær"
 msgid "Present On"
 msgstr "Presentasjonsmodus på"
 
-#: ../src/preview.js:594
+#: ../src/preview.js:607
 msgid "Bookmark this page"
 msgstr "Lag bokmerke for denne siden"
 
 #. Translators: this is the Open action in a context menu
-#: ../src/preview.js:835 ../src/selections.js:857
+#: ../src/preview.js:848 ../src/selections.js:859
 #, javascript-format
 msgid "Open with %s"
 msgstr "Åpne med %s"
 
-#: ../src/preview.js:898
+#: ../src/preview.js:911
 msgid "Find Previous"
 msgstr "Finn forrige"
 
-#: ../src/preview.js:905
+#: ../src/preview.js:918
 msgid "Find Next"
 msgstr "Finn neste"
 
 #. properties button
 #: ../src/properties.js:61 ../src/resources/preview-menu.ui.h:9
-#: ../src/selections.js:767
+#: ../src/selections.js:769
 msgid "Properties"
 msgstr "Egenskaper"
 
@@ -446,14 +489,18 @@ msgid "Fullscreen"
 msgstr "Fullskjerm"
 
 #: ../src/resources/app-menu.ui.h:2
+msgid "Night Mode"
+msgstr "Nattmodus"
+
+#: ../src/resources/app-menu.ui.h:3
 msgid "Help"
 msgstr "Hjelp"
 
-#: ../src/resources/app-menu.ui.h:3
+#: ../src/resources/app-menu.ui.h:4
 msgid "About"
 msgstr "Om"
 
-#: ../src/resources/app-menu.ui.h:4
+#: ../src/resources/app-menu.ui.h:5
 msgid "Quit"
 msgstr "Avslutt"
 
@@ -464,7 +511,7 @@ msgstr "_Kopier"
 #. open button
 #. Translators: this is the Open action in a context menu
 #: ../src/resources/preview-menu.ui.h:1 ../src/selections.js:747
-#: ../src/selections.js:860
+#: ../src/selections.js:862
 msgid "Open"
 msgstr "Åpne"
 
@@ -504,73 +551,81 @@ msgstr "Velg alle"
 msgid "Select None"
 msgstr "Velg ingen"
 
-#: ../src/search.js:114
+#: ../src/search.js:115
 msgid "Category"
 msgstr "Kategori"
 
 #. Translators: this refers to new and recent documents
 #. Translators: this refers to documents
-#: ../src/search.js:119 ../src/search.js:180 ../src/search.js:265
-#: ../src/search.js:421
+#: ../src/search.js:120 ../src/search.js:183 ../src/search.js:300
+#: ../src/search.js:458
 msgid "All"
 msgstr "Alle"
 
 #. Translators: this refers to favorite documents
-#: ../src/search.js:125
+#: ../src/search.js:126
 msgid "Favorites"
 msgstr "Favoritter"
 
 #. Translators: this refers to shared documents
-#: ../src/search.js:130
+#: ../src/search.js:131
 msgid "Shared with you"
 msgstr "Delt med deg"
 
 #. Translators: "Type" refers to a search filter on the document type
 #. (PDF, spreadsheet, ...)
-#: ../src/search.js:177
+#: ../src/search.js:180
 msgctxt "Search Filter"
 msgid "Type"
 msgstr "Type"
 
-#: ../src/search.js:182
+#: ../src/search.js:186 ../src/search.js:195
 msgid "Collections"
 msgstr "Samlinger"
 
-#: ../src/search.js:186
+#: ../src/search.js:190
 msgid "PDF Documents"
 msgstr "PDF-dokumenter"
 
-#: ../src/search.js:190
+#: ../src/search.js:203
 msgid "Presentations"
 msgstr "Presentasjoner"
 
-#: ../src/search.js:193
+#: ../src/search.js:206
 msgid "Spreadsheets"
 msgstr "Regneark"
 
-#: ../src/search.js:196
+#: ../src/search.js:209
 msgid "Text Documents"
 msgstr "Tekstdokumenter"
 
+#: ../src/search.js:214
+msgid "e-Books"
+msgstr "e-bøker"
+
+#: ../src/search.js:218
+msgid "Comics"
+msgstr "Tegneserier"
+
 #. Translators: this is a verb that refers to "All", "Title" and "Author",
 #. as in "Match All", "Match Title" and "Match Author"
-#: ../src/search.js:262
+#: ../src/search.js:297
 msgid "Match"
 msgstr "Treff"
 
 #. Translators: "Title" refers to "Match Title" when searching
-#: ../src/search.js:268
+#: ../src/search.js:303
 msgctxt "Search Filter"
 msgid "Title"
 msgstr "Tittel"
 
 #. Translators: "Author" refers to "Match Author" when searching
-#: ../src/search.js:271
+#: ../src/search.js:306
 msgctxt "Search Filter"
 msgid "Author"
 msgstr "Forfatter"
 
-#: ../src/search.js:417
+#: ../src/search.js:454
 msgid "Sources"
 msgstr "Kilder"
 
@@ -599,13 +654,12 @@ msgstr "Skriv ut"
 msgid "Delete"
 msgstr "Slett"
 
-#. share button
-#: ../src/selections.js:762
+#: ../src/selections.js:763
 msgid "Share"
 msgstr "Del"
 
 #. organize button
-#: ../src/selections.js:772
+#: ../src/selections.js:774
 msgid "Add to Collection"
 msgstr "Legg til i samling"
 
@@ -694,44 +748,44 @@ msgstr "Dokument uten navn"
 msgid "Unable to fetch the list of documents"
 msgstr "Kan ikke hente listen med dokumenter"
 
-#: ../src/view.js:236
+#: ../src/view.js:240
 msgid "Yesterday"
 msgstr "I går"
 
-#: ../src/view.js:238
+#: ../src/view.js:242
 #, javascript-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
 msgstr[0] "%d dag siden"
 msgstr[1] "%d dager siden"
 
-#: ../src/view.js:242
+#: ../src/view.js:246
 msgid "Last week"
 msgstr "Siste uke"
 
-#: ../src/view.js:244
+#: ../src/view.js:248
 #, javascript-format
 msgid "%d week ago"
 msgid_plural "%d weeks ago"
 msgstr[0] "%d uke siden"
 msgstr[1] "%d uker siden"
 
-#: ../src/view.js:248
+#: ../src/view.js:252
 msgid "Last month"
 msgstr "Siste måned"
 
-#: ../src/view.js:250
+#: ../src/view.js:254
 #, javascript-format
 msgid "%d month ago"
 msgid_plural "%d months ago"
 msgstr[0] "%d måned siden"
 msgstr[1] "%d måneder siden"
 
-#: ../src/view.js:254
+#: ../src/view.js:258
 msgid "Last year"
 msgstr "Siste år"
 
-#: ../src/view.js:256
+#: ../src/view.js:260
 #, javascript-format
 msgid "%d year ago"
 msgid_plural "%d years ago"
