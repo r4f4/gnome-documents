@@ -314,6 +314,20 @@ const Application = new Lang.Class({
                             let action = this.lookup_action(actionEntry.name);
                             action.set_enabled(mode == actionEntry.window_mode);
                         }));
+                } else if (actionEntry.window_modes) {
+                    modeController.connect('window-mode-changed', Lang.bind(this,
+                        function() {
+                            let mode = modeController.getWindowMode();
+                            let action = this.lookup_action(actionEntry.name);
+                            let enable = false;
+                            for (let idx in actionEntry.window_modes) {
+                                if (mode == actionEntry.window_modes[idx]) {
+                                    enable = true;
+                                    break;
+                                }
+                            }
+                            action.set_enabled(enable);
+                        }));
                 }
             }));
     },
