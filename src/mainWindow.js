@@ -152,14 +152,22 @@ const MainWindow = new Lang.Class({
         let activeCollection = Application.documentManager.getActiveCollection();
         let handled = true;
 
-        if (windowMode == WindowMode.WindowMode.PREVIEW ||
-            windowMode == WindowMode.WindowMode.EDIT) {
+        switch (windowMode) {
+        case WindowMode.WindowMode.NONE:
+            handled = false;
+            break;
+        case WindowMode.WindowMode.EDIT:
+        case WindowMode.WindowMode.PREVIEW:
             Application.documentManager.setActiveItem(null);
             Application.modeController.goBack();
-        } else if (windowMode == WindowMode.WindowMode.OVERVIEW && activeCollection) {
-            Application.documentManager.activatePreviousCollection();
-        } else {
-            handled = false;
+            break;
+        case WindowMode.WindowMode.OVERVIEW:
+            if (activeCollection)
+                Application.documentManager.activatePreviousCollection();
+            break;
+        default:
+            throw(new Error('Not handled'));
+            break;
         }
 
         return handled;
