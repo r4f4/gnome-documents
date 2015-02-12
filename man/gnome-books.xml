@@ -1,0 +1,65 @@
+<?xml version='1.0'?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
+        "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
+
+<refentry id="gnome-books">
+
+        <refentryinfo>
+                <title>gnome-books</title>
+                <productname>GNOME</productname>
+
+                <authorgroup>
+                        <author>
+                                <contrib>Maintainer</contrib>
+                                <firstname>Cosimo</firstname>
+                                <surname>Cecchi</surname>
+                                <email>cosimoc@gnome.org</email>
+                        </author>
+                </authorgroup>
+
+        </refentryinfo>
+
+        <refmeta>
+                <refentrytitle>gnome-books</refentrytitle>
+                <manvolnum>1</manvolnum>
+                <refmiscinfo class="manual">User Commands</refmiscinfo>
+        </refmeta>
+
+        <refnamediv>
+                <refname>gnome-books</refname>
+                <refpurpose>An e-book manager application for GNOME</refpurpose>
+        </refnamediv>
+
+        <refsynopsisdiv>
+                <cmdsynopsis>
+                        <command>gnome-books</command>
+                </cmdsynopsis>
+        </refsynopsisdiv>
+
+        <refsect1>
+                <title>Description</title>
+
+                <para><command>gnome-books</command> is an e-book
+                manager application designed to work with GNOME 3. You
+                can view your local e-books, search through
+                them, print or mark them as favorites.</para>
+        </refsect1>
+
+        <refsect1>
+                <title>Bugs</title>
+
+                <para>The bug tracker can be reached by visiting the
+                website <ulink url="https://bugzilla.gnome.org/buglist.cgi?product=gnome-documents&amp;component=books">https://bugzilla.gnome.org/buglist.cgi?product=gnome-documents&amp;component=books</ulink>.
+                Before sending a bug report, please verify that you have
+                the latest version of gnome-books. Many bugs (major and
+                minor) are fixed at each release, and if yours is out of
+                date, the problem may already have been solved.</para>
+        </refsect1>
+
+        <refsect1>
+                <title>Additional Information</title>
+
+                <para>For further information, visit the website
+                <ulink url="https://wiki.gnome.org/Apps/Books">https://wiki.gnome.org/Apps/Books</ulink>.</para>
+        </refsect1>
+</refentry>
