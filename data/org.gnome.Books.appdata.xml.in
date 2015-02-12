@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2015 Red Hat, Inc. -->
+<application>
+  <id type="desktop">org.gnome.Books.desktop</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-2.0+</project_license>
+  <_name>Books</_name>
+  <_summary>An e-book manager application for GNOME</_summary>
+  <description>
+    <_p>
+      A simple application to access and organize your e-books on
+      GNOME. It is meant to be a simple and elegant replacement for using a
+      file manager to deal with e-books.
+    </_p>
+    <_p>It lets you:</_p>
+    <ul>
+      <_li>View recent e-books</_li>
+      <_li>Search through e-books</_li>
+      <_li>View e-books fullscreen</_li>
+      <_li>Print e-books</_li>
+      <_li>Allow opening full featured editor for non-trivial changes</_li>
+    </ul>
+  </description>
+  <url type="homepage">https://wiki.gnome.org/Apps/Books</url>
+  <updatecontact>debarshir_at_gnome.org</updatecontact>
+</application>
