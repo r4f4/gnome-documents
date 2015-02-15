@@ -3,14 +3,14 @@
 # This file is distributed under the same license as the gnome-documents package.
 #
 # Gabor Kelemen <kelemeng at gnome dot hu>, 2011, 2012, 2013.
-# Balázs Úr <urbalazs at gmail dot com>, 2013, 2014.
+# Balázs Úr <urbalazs at gmail dot com>, 2013, 2014, 2015.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-documents master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-12-23 14:42+0000\n"
-"PO-Revision-Date: 2014-12-23 16:56+0100\n"
+"POT-Creation-Date: 2015-02-15 07:49+0000\n"
+"PO-Revision-Date: 2015-02-15 13:56+0100\n"
 "Last-Translator: Balázs Úr <urbalazs@gmail.com>\n"
 "Language-Team: Hungarian <openscope at googlegroups dot com>\n"
 "Language: hu\n"
@@ -20,10 +20,62 @@ msgstr ""
 "Plural-Forms:  nplurals=2; plural=(n != 1);\n"
 "X-Generator: Lokalize 1.2\n"
 
+#: ../data/org.gnome.Books.appdata.xml.in.h:1
 #: ../data/org.gnome.Books.desktop.in.h:1 ../src/application.js:129
-#: ../src/mainWindow.js:309
+#: ../src/mainWindow.js:313
 msgid "Books"
 msgstr "Könyvek"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:2
+#| msgid "An e-books manager application"
+msgid "An e-book manager application for GNOME"
+msgstr "Egy e-könyv kezelő alkalmazás a GNOME-hoz"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:3
+#| msgid ""
+#| "A simple application to access, organize and share your documents on "
+#| "GNOME. It is meant to be a simple and elegant replacement for using a "
+#| "file manager to deal with documents. Seamless cloud integration is "
+#| "offered through GNOME Online Accounts."
+msgid ""
+"A simple application to access and organize your e-books on GNOME. It is "
+"meant to be a simple and elegant replacement for using a file manager to "
+"deal with e-books."
+msgstr ""
+"Egyszerű alkalmazás e-könyvek eléréséhez és rendszerezéséhez GNOME alatt. A "
+"fájlkezelő e-könyvek kezelésére való használatának egyszerű és elegáns "
+"helyettesítésére tervezték."
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:4
+#: ../data/org.gnome.Documents.appdata.xml.in.h:4
+msgid "It lets you:"
+msgstr "Lehetővé teszi:"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:5
+msgid "View recent e-books"
+msgstr "Legutóbbi e-könyvek megtekintése"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:6
+#| msgid "Search through documents"
+msgid "Search through e-books"
+msgstr "Keresés az e-könyvekben"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:7
+#| msgid "View documents fullscreen"
+msgid "View e-books fullscreen"
+msgstr "E-könyvek megtekintése teljes képernyőn"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:8
+#| msgid "e-Books"
+msgid "Print e-books"
+msgstr "E-könyvek nyomtatása"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:9
+#: ../data/org.gnome.Documents.appdata.xml.in.h:12
+msgid "Allow opening full featured editor for non-trivial changes"
+msgstr ""
+"A teljes funkcionalitású szerkesztő megnyitásának engedélyezése a nem "
+"egyértelmű módosításokhoz"
 
 #: ../data/org.gnome.Books.desktop.in.h:2
 msgid "Access, manage and share books"
@@ -85,7 +137,7 @@ msgstr "Az alkalmazás éjszakai módban van-e?"
 
 #: ../data/org.gnome.Documents.appdata.xml.in.h:1
 #: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:125
-#: ../src/mainWindow.js:52 ../src/mainWindow.js:304
+#: ../src/mainWindow.js:52 ../src/mainWindow.js:308
 msgid "Documents"
 msgstr "Dokumentumok"
 
@@ -104,10 +156,6 @@ msgstr ""
 "megosztásához GNOME alatt. A fájlkezelő dokumentumok kezelésére való "
 "használatának egyszerű és elegáns helyettesítésére tervezték. A GNOME Online "
 "fiókok használatával sima felhőintegráció érhető el."
-
-#: ../data/org.gnome.Documents.appdata.xml.in.h:4
-msgid "It lets you:"
-msgstr "Lehetővé teszi:"
 
 #: ../data/org.gnome.Documents.appdata.xml.in.h:5
 msgid "View recent local and online documents"
@@ -137,12 +185,6 @@ msgstr "Dokumentumok nyomtatása"
 msgid "Select favorites"
 msgstr "Kedvencek kiválasztása"
 
-#: ../data/org.gnome.Documents.appdata.xml.in.h:12
-msgid "Allow opening full featured editor for non-trivial changes"
-msgstr ""
-"A teljes funkcionalitású szerkesztő megnyitásának engedélyezése a nem "
-"egyértelmű módosításokhoz"
-
 #: ../data/org.gnome.Documents.desktop.in.h:2
 msgid "Access, manage and share documents"
 msgstr "Dokumentumok elérése, kezelése és megosztása"
@@ -151,81 +193,81 @@ msgstr "Dokumentumok elérése, kezelése és megosztása"
 msgid "Docs;PDF;Document;"
 msgstr "Dokumentum;PDF;Doksi;"
 
-#: ../src/documents.js:624
+#: ../src/documents.js:630
 msgid "Failed to print document"
 msgstr "A dokumentum nyomtatása meghiúsult"
 
-#: ../src/documents.js:661 ../src/search.js:453
+#: ../src/documents.js:667 ../src/search.js:464
 msgid "Local"
 msgstr "Helyi"
 
-#: ../src/documents.js:689
+#: ../src/documents.js:694
 msgid "GNOME"
 msgstr "GNOME"
 
-#: ../src/documents.js:690
+#: ../src/documents.js:695
 msgid "Getting Started with Documents"
 msgstr "Első lépések a Dokumentumokkal"
 
-#: ../src/documents.js:706 ../src/documents.js:887 ../src/documents.js:951
-#: ../src/documents.js:1059
+#: ../src/documents.js:711 ../src/documents.js:892 ../src/documents.js:955
+#: ../src/documents.js:1063
 msgid "Collection"
 msgstr "Gyűjtemény"
 
-#: ../src/documents.js:766
+#: ../src/documents.js:771
 msgid "Google Docs"
 msgstr "Google Dokumentumok"
 
-#: ../src/documents.js:767
+#: ../src/documents.js:772
 msgid "Google"
 msgstr "Google"
 
-#: ../src/documents.js:889 ../src/documents.js:1061
+#: ../src/documents.js:894 ../src/documents.js:1065
 msgid "Spreadsheet"
 msgstr "Táblázat"
 
-#: ../src/documents.js:891 ../src/documents.js:1063 ../src/presentation.js:47
+#: ../src/documents.js:896 ../src/documents.js:1067 ../src/presentation.js:47
 msgid "Presentation"
 msgstr "Prezentáció"
 
-#: ../src/documents.js:893 ../src/documents.js:1065
+#: ../src/documents.js:898 ../src/documents.js:1069
 msgid "e-Book"
 msgstr "e-Könyv"
 
-#: ../src/documents.js:895 ../src/documents.js:1067
+#: ../src/documents.js:900 ../src/documents.js:1071
 msgid "Document"
 msgstr "Dokumentum"
 
-#: ../src/documents.js:929
+#: ../src/documents.js:934
 msgid "ownCloud"
 msgstr "ownCloud"
 
-#: ../src/documents.js:993 ../src/documents.js:994
+#: ../src/documents.js:997 ../src/documents.js:998
 msgid "OneDrive"
 msgstr "OneDrive"
 
-#: ../src/documents.js:1195
+#: ../src/documents.js:1199
 msgid "Please check the network connection."
 msgstr "Ellenőrizze a hálózati kapcsolatot."
 
-#: ../src/documents.js:1198
+#: ../src/documents.js:1202
 msgid "Please check the network proxy settings."
 msgstr "Ellenőrizze a hálózati proxybeállításokat."
 
-#: ../src/documents.js:1201
+#: ../src/documents.js:1205
 msgid "Unable to sign in to the document service."
 msgstr "Nem lehet bejelentkezni a dokumentumszolgáltatásba."
 
-#: ../src/documents.js:1204
+#: ../src/documents.js:1208
 msgid "Unable to locate this document."
 msgstr "Nem található a dokumentum."
 
-#: ../src/documents.js:1207
+#: ../src/documents.js:1211
 #, javascript-format
 msgid "Hmm, something is fishy (%d)."
 msgstr "Hm, valamilyen hiba történhetett (%d)."
 
-#: ../src/documents.js:1225
+#: ../src/documents.js:1229
 #, javascript-format
 msgid "Oops! Unable to load “%s”"
 msgstr "Hoppá, „%s” nem tölthető be"
@@ -235,7 +277,6 @@ msgid "View"
 msgstr "Nézet"
 
 #: ../src/embed.js:143
-#| msgid "No Documents Found"
 msgid "No Books Found"
 msgstr "Nincsenek könyvek"
 
@@ -281,7 +322,7 @@ msgstr "Nincsenek könyvjelzők"
 msgid "Loading…"
 msgstr "Betöltés…"
 
-#: ../src/lib/gd-places-bookmarks.c:656 ../src/preview.js:595
+#: ../src/lib/gd-places-bookmarks.c:656 ../src/preview.js:599
 msgid "Bookmarks"
 msgstr "Könyvjelzők"
 
@@ -328,15 +369,15 @@ msgstr "Mégse"
 msgid "Select Items"
 msgstr "Válasszon elemeket"
 
-#: ../src/mainWindow.js:302
+#: ../src/mainWindow.js:306
 msgid "translator-credits"
 msgstr "Kelemen Gábor <kelemeng at gnome dot hu>"
 
-#: ../src/mainWindow.js:305
+#: ../src/mainWindow.js:309
 msgid "A document manager application"
 msgstr "Egy dokumentumkezelő alkalmazás"
 
-#: ../src/mainWindow.js:310
+#: ../src/mainWindow.js:314
 msgid "An e-books manager application"
 msgstr "Egy e-könyv kezelő alkalmazás"
 
@@ -414,20 +455,20 @@ msgstr "Másodlagos"
 msgid "Present On"
 msgstr "Bemutató be"
 
-#: ../src/preview.js:603
+#: ../src/preview.js:607
 msgid "Bookmark this page"
 msgstr "Oldal könyvjelzőbe"
 
-#: ../src/preview.js:844 ../src/selections.js:859
+#: ../src/preview.js:848 ../src/selections.js:859
 #, javascript-format
 msgid "Open with %s"
 msgstr "Megnyitás ezzel: %s"
 
-#: ../src/preview.js:907
+#: ../src/preview.js:911
 msgid "Find Previous"
 msgstr "Előző keresése"
 
-#: ../src/preview.js:914
+#: ../src/preview.js:918
 msgid "Find Next"
 msgstr "Következő keresése"
 
@@ -528,71 +569,71 @@ msgstr "Összes kijelölése"
 msgid "Select None"
 msgstr "Kijelölés megszüntetése"
 
-#: ../src/search.js:114
+#: ../src/search.js:115
 msgid "Category"
 msgstr "Kategória"
 
-#: ../src/search.js:119 ../src/search.js:182 ../src/search.js:289
-#: ../src/search.js:447
+#: ../src/search.js:120 ../src/search.js:183 ../src/search.js:300
+#: ../src/search.js:458
 msgid "All"
 msgstr "Összes"
 
-#: ../src/search.js:125
+#: ../src/search.js:126
 msgid "Favorites"
 msgstr "Kedvencek"
 
-#: ../src/search.js:130
+#: ../src/search.js:131
 msgid "Shared with you"
 msgstr "Megosztva Önnel"
 
-#: ../src/search.js:179
+#: ../src/search.js:180
 msgctxt "Search Filter"
 msgid "Type"
 msgstr "Típus"
 
-#: ../src/search.js:185 ../src/search.js:194
+#: ../src/search.js:186 ../src/search.js:195
 msgid "Collections"
 msgstr "Gyűjtemények"
 
-#: ../src/search.js:189
+#: ../src/search.js:190
 msgid "PDF Documents"
 msgstr "PDF-dokumentumok"
 
-#: ../src/search.js:202
+#: ../src/search.js:203
 msgid "Presentations"
 msgstr "Bemutatók"
 
-#: ../src/search.js:205
+#: ../src/search.js:206
 msgid "Spreadsheets"
 msgstr "Táblázatok"
 
-#: ../src/search.js:208
+#: ../src/search.js:209
 msgid "Text Documents"
 msgstr "Szöveges dokumentumok"
 
-#: ../src/search.js:213
+#: ../src/search.js:214
 msgid "e-Books"
 msgstr "e-Könyvek"
 
-#: ../src/search.js:217
+#: ../src/search.js:218
 msgid "Comics"
 msgstr "Képregények"
 
-#: ../src/search.js:286
+#: ../src/search.js:297
 msgid "Match"
 msgstr "Keresés"
 
-#: ../src/search.js:292
+#: ../src/search.js:303
 msgctxt "Search Filter"
 msgid "Title"
 msgstr "Cím"
 
-#: ../src/search.js:295
+#: ../src/search.js:306
 msgctxt "Search Filter"
 msgid "Author"
 msgstr "Szerző"
 
-#: ../src/search.js:443
+#: ../src/search.js:454
 msgid "Sources"
 msgstr "Források"
 
@@ -704,44 +745,44 @@ msgstr "Névtelen dokumentum"
 msgid "Unable to fetch the list of documents"
 msgstr "Nem kérhető le a dokumentumok listája"
 
-#: ../src/view.js:234
+#: ../src/view.js:240
 msgid "Yesterday"
 msgstr "Tegnap"
 
-#: ../src/view.js:236
+#: ../src/view.js:242
 #, javascript-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
 msgstr[0] "%d napja"
 msgstr[1] "%d napja"
 
-#: ../src/view.js:240
+#: ../src/view.js:246
 msgid "Last week"
 msgstr "Múlt héten"
 
-#: ../src/view.js:242
+#: ../src/view.js:248
 #, javascript-format
 msgid "%d week ago"
 msgid_plural "%d weeks ago"
 msgstr[0] "%d hete"
 msgstr[1] "%d hete"
 
-#: ../src/view.js:246
+#: ../src/view.js:252
 msgid "Last month"
 msgstr "Múlt hónapban"
 
-#: ../src/view.js:248
+#: ../src/view.js:254
 #, javascript-format
 msgid "%d month ago"
 msgid_plural "%d months ago"
 msgstr[0] "%d hónapja"
 msgstr[1] "%d hónapja"
 
-#: ../src/view.js:252
+#: ../src/view.js:258
 msgid "Last year"
 msgstr "Múlt évben"
 
-#: ../src/view.js:254
+#: ../src/view.js:260
 #, javascript-format
 msgid "%d year ago"
 msgid_plural "%d years ago"
