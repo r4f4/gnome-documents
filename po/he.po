@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Gnome-Documents\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-01-24 19:20+0200\n"
-"PO-Revision-Date: 2015-01-24 19:21+0200\n"
-"Last-Translator: Yosef Or Boczko <yoseforb@gmail.com>\n"
+"POT-Creation-Date: 2015-02-16 23:37+0200\n"
+"PO-Revision-Date: 2015-02-16 23:42+0200\n"
+"Last-Translator: Yosef Or Boczko <yoseforb@gnome.org>\n"
 "Language-Team: עברית <>\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
@@ -20,10 +20,50 @@ msgstr ""
 "X-Poedit-SourceCharset: utf-8\n"
 "X-Generator: Gtranslator 2.91.6\n"
 
+#: ../data/org.gnome.Books.appdata.xml.in.h:1
 #: ../data/org.gnome.Books.desktop.in.h:1 ../src/application.js:129
 #: ../src/mainWindow.js:313
 msgid "Books"
 msgstr "ספרים"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:2
+msgid "An e-book manager application for GNOME"
+msgstr "יישום לניהול ספרים אלקטרוניים עבור GNOME"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:3
+msgid ""
+"A simple application to access and organize your e-books on GNOME. It is "
+"meant to be a simple and elegant replacement for using a file manager to "
+"deal with e-books."
+msgstr ""
+"יישום פשוט לגישה ולארגון הספרים האלקטרוניים שלך על GNOME. היישום משמש חלופה "
+"פשוטה ואלגנטית למנהל קבצים לצורך טיפול בספרים אלקטרוניים."
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:4
+#: ../data/org.gnome.Documents.appdata.xml.in.h:4
+msgid "It lets you:"
+msgstr "היישום מאפשר לך:"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:5
+msgid "View recent e-books"
+msgstr "הצגת הספרים האלקטרוניים האחרונים"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:6
+msgid "Search through e-books"
+msgstr "חיפוש מבעד לספרים אלקטרוניים"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:7
+msgid "View e-books fullscreen"
+msgstr "צפייה בספרים אלקטרוניים במסך מלא"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:8
+msgid "Print e-books"
+msgstr "הדפסת ספרים אלקטרוניים"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:9
+#: ../data/org.gnome.Documents.appdata.xml.in.h:12
+msgid "Allow opening full featured editor for non-trivial changes"
+msgstr "אפשרות לפתיחה של עורך עשיר בתכונות לשינויים מתקדמים יותר"
 
 #: ../data/org.gnome.Books.desktop.in.h:2
 msgid "Access, manage and share books"
@@ -104,10 +144,6 @@ msgstr ""
 "כחלופה פשוטה ואלגנטית למנהל הקבצים לצורך טיפול במסמכים. שילוב שקוף בשירותי "
 "ענן מוצע באמצעות חשבונות מקוונים ב־GNOME."
 
-#: ../data/org.gnome.Documents.appdata.xml.in.h:4
-msgid "It lets you:"
-msgstr "היישום מאפשר לך:"
-
 #: ../data/org.gnome.Documents.appdata.xml.in.h:5
 msgid "View recent local and online documents"
 msgstr "הצגת מסמכים מקומיים ומקוונים אחרונים"
@@ -135,10 +171,6 @@ msgstr "הדפסת מסמכים"
 #: ../data/org.gnome.Documents.appdata.xml.in.h:11
 msgid "Select favorites"
 msgstr "בחירת מועדפים"
-
-#: ../data/org.gnome.Documents.appdata.xml.in.h:12
-msgid "Allow opening full featured editor for non-trivial changes"
-msgstr "אפשרות לפתיחה של עורך עשיר בתכונות לשינויים מתקדמים יותר"
 
 #: ../data/org.gnome.Documents.desktop.in.h:2
 msgid "Access, manage and share documents"
@@ -225,13 +257,13 @@ msgid "Unable to locate this document."
 msgstr "לא ניתן לאתר מסמך זה."
 
 #: ../src/documents.js:1211
-#, c-format
+#, javascript-format
 msgid "Hmm, something is fishy (%d)."
 msgstr "המממ, משהו פה מסריח (%d)."
 
 #. Translators: %s is the title of a document
 #: ../src/documents.js:1229
-#, c-format
+#, javascript-format
 msgid "Oops! Unable to load “%s”"
 msgstr "אופס! לא ניתן לטעון את „%s“"
 
@@ -250,7 +282,7 @@ msgstr "לא נמצאו מסמכים"
 #. Translators: %s here is "Settings", which is in a separate string due to
 #. markup, and should be translated only in the context of this sentence
 #: ../src/embed.js:166
-#, c-format
+#, javascript-format
 msgid "You can add your online accounts in %s"
 msgstr "ניתן להוסיף את החשבונות המקוונים שלך תחת %s"
 
@@ -363,7 +395,7 @@ msgid "Undo"
 msgstr "ביטול"
 
 #: ../src/notifications.js:157
-#, c-format
+#, javascript-format
 msgid "Printing “%s”: %s"
 msgstr "מתבצעת הדפסה של „%s“:‏ %s"
 
@@ -378,7 +410,7 @@ msgstr "יתכן שחלק מהמסמכים לא יהיו זמינים במשך �
 #. Translators: %s refers to an online account provider, e.g.
 #. "Google", or "Windows Live".
 #: ../src/notifications.js:236
-#, c-format
+#, javascript-format
 msgid "Fetching documents from %s"
 msgstr "מתקבל מסמך מ־%s"
 
@@ -395,7 +427,7 @@ msgid "_Unlock"
 msgstr "_שחרור"
 
 #: ../src/password.js:65
-#, c-format
+#, javascript-format
 msgid "Document %s is locked and requires a password to be opened."
 msgstr "המסמך %s נעול ונדרשת ססמה כדי לפתוח אותו."
 
@@ -434,7 +466,7 @@ msgstr "סימון דף זה"
 
 #. Translators: this is the Open action in a context menu
 #: ../src/preview.js:848 ../src/selections.js:859
-#, c-format
+#, javascript-format
 msgid "Open with %s"
 msgstr "פתיחה באמצעות %s"
 
@@ -735,7 +767,7 @@ msgid "Owner"
 msgstr "בעלים"
 
 #: ../src/sharing.js:442
-#, c-format
+#, javascript-format
 msgid "You can ask %s for access"
 msgstr "ניתן לבקש גישה מ־%s"
 
