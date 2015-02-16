@@ -3,13 +3,13 @@
 # This file is distributed under the same license as the gnome-user-docs package.
 #
 # Adam Matoušek <adamatousek@gmail.com>, 2012.
-# Marek Černocký <marek@manet.cz>, 2014.
+# Marek Černocký <marek@manet.cz>, 2014, 2015.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-docs master\n"
-"POT-Creation-Date: 2014-04-23 07:00+0000\n"
-"PO-Revision-Date: 2014-04-23 11:27+0200\n"
+"POT-Creation-Date: 2015-02-16 19:45+0000\n"
+"PO-Revision-Date: 2015-02-16 20:59+0100\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -63,7 +63,7 @@ msgstr "Michael Hill"
 #. (itstool) path: credit/name
 #: C/collections.page:22 C/filter.page:17 C/formats.page:17 C/index.page:24
 #: C/info.page:22 C/prob-no-show.page:22 C/prob-previews.page:22
-#: C/viewgrid.page:22 C/view.page:22 C/view-add.page:12
+#: C/viewgrid.page:22 C/view.page:22 C/view-add.page:13
 msgid "Ekaterina Gerasimova"
 msgstr "Ekaterina Gerasimova"
 
@@ -654,8 +654,13 @@ msgid ""
 msgstr ""
 "Dokument opustíte kliknutím na tlačítko se šipkou v levé horní části okna."
 
+#. (itstool) path: credit/years
+#: C/view-add.page:15
+msgid "2014–2015"
+msgstr "2014 – 2015"
+
 #. (itstool) path: info/desc
-#: C/view-add.page:18
+#: C/view-add.page:20
 msgid ""
 "Add extra directories to those which are already searched by <app>Documents</"
 "app>."
@@ -664,12 +669,12 @@ msgstr ""
 "app> prohledávány."
 
 #. (itstool) path: page/title
-#: C/view-add.page:23
+#: C/view-add.page:25
 msgid "Add custom directories"
 msgstr "Přidání vlastních složek"
 
 #. (itstool) path: page/p
-#: C/view-add.page:25
+#: C/view-add.page:27
 msgid ""
 "<app>Documents</app> normally shows only documents that are in standard "
 "folders such as <file>Documents</file> or <file>Downloads</file>. You can "
@@ -686,7 +691,7 @@ msgstr ""
 "počítači nebo na externím disku."
 
 #. (itstool) path: item/p
-#: C/view-add.page:34
+#: C/view-add.page:36
 msgid ""
 "Open the <gui href=\"help:gnome-help/shell-terminology\">Activities</gui> "
 "overview and start typing <gui>Search</gui>."
@@ -695,28 +700,31 @@ msgstr ""
 "gui> a začněte psát výraz <gui>Hledání</gui>."
 
 #. (itstool) path: item/p
-#: C/view-add.page:39
+#: C/view-add.page:41
 msgid "Click on <gui>Search</gui> to open the panel."
 msgstr "Kliknutím na <gui>Hledání</gui> otevřete příslušný panel."
 
 #. (itstool) path: item/p
-#: C/view-add.page:42
+#: C/view-add.page:44
+#| msgid ""
+#| "Press the button in the bottom-left of the window which will open "
+#| "<gui>Search Locations</gui>."
 msgid ""
-"Press the button in the bottom-left of the window which will open "
+"Press the button in the bottom-right of the window which will open "
 "<gui>Search Locations</gui>."
 msgstr ""
-"Zmáčkněte tlačítko ozubeného kola v pravém dolním rohu okna a otevřou se "
-"<gui>Prohledávaná umístění</gui>."
+"Zmáčkněte tlačítko v pravém dolním rohu okna, které otevře <gui>Prohledávaná "
+"umístění</gui>."
 
 #. (itstool) path: item/p
-#: C/view-add.page:46
+#: C/view-add.page:48
 msgid "Press <gui style=\"button\">+</gui> to add a new search location."
 msgstr ""
 "Pro přidání nového prohledávaného umístění zmáčkněte <gui style=\"button\">"
 "+</gui>."
 
 #. (itstool) path: item/p
-#: C/view-add.page:49
+#: C/view-add.page:51
 msgid ""
 "Select the folder that you want to add and press <gui style=\"button\">OK</"
 "gui> to add the folder."
@@ -725,7 +733,7 @@ msgstr ""
 "\">Budiž</gui> ji přidejte."
 
 #. (itstool) path: page/p
-#: C/view-add.page:61
+#: C/view-add.page:63
 msgid ""
 "Adding a new folder to the search may let some of your other applications "
 "search that folder. Unfortunately, it is not possible to tell which "
