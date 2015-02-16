@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-documents 3.15.x\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-09 18:59+0100\n"
-"PO-Revision-Date: 2015-02-09 19:00+0100\n"
+"POT-Creation-Date: 2015-02-16 18:22+0100\n"
+"PO-Revision-Date: 2015-02-16 18:23+0100\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian bokmål <i18n-nb@lister.ping.uio.no>\n"
 "Language: \n"
@@ -17,10 +17,48 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+#: ../data/org.gnome.Books.appdata.xml.in.h:1
 #: ../data/org.gnome.Books.desktop.in.h:1 ../src/application.js:129
 #: ../src/mainWindow.js:313
 msgid "Books"
 msgstr "Bøker"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:2
+msgid "An e-book manager application for GNOME"
+msgstr "Et program for å håndtere e-bøker for GNOME"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:3
+msgid ""
+"A simple application to access and organize your e-books on GNOME. It is "
+"meant to be a simple and elegant replacement for using a file manager to "
+"deal with e-books."
+msgstr "Et enkelt program for å aksessere, organisere dine e-bøker i GNOME. Ment å være en enkel og elegant erstatning for å håndtere e-bøker med en filhåndterer."
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:4
+#: ../data/org.gnome.Documents.appdata.xml.in.h:4
+msgid "It lets you:"
+msgstr "Det lar deg:"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:5
+msgid "View recent e-books"
+msgstr "Vis nylige e-bøker"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:6
+msgid "Search through e-books"
+msgstr "Søk i e-bøker"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:7
+msgid "View e-books fullscreen"
+msgstr "Vis e-bøker med fullskjerm"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:8
+msgid "Print e-books"
+msgstr "Skriv ut e-bøker"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:9
+#: ../data/org.gnome.Documents.appdata.xml.in.h:12
+msgid "Allow opening full featured editor for non-trivial changes"
+msgstr "Tillat åpning av et redigeringsprogram for å gjøre avanserte endringer"
 
 #: ../data/org.gnome.Books.desktop.in.h:2
 msgid "Access, manage and share books"
@@ -102,10 +140,6 @@ msgstr ""
 "med en filhåndterer. Sømløs integrasjon med skytjenester gis via «Kontoer på "
 "nettet» i GNOME."
 
-#: ../data/org.gnome.Documents.appdata.xml.in.h:4
-msgid "It lets you:"
-msgstr "Det lar deg:"
-
 #: ../data/org.gnome.Documents.appdata.xml.in.h:5
 msgid "View recent local and online documents"
 msgstr "vis nylige dokumenter lokalt og på nettet"
@@ -133,10 +167,6 @@ msgstr "Skriv ut dokumenter"
 #: ../data/org.gnome.Documents.appdata.xml.in.h:11
 msgid "Select favorites"
 msgstr "Velg favoritter"
-
-#: ../data/org.gnome.Documents.appdata.xml.in.h:12
-msgid "Allow opening full featured editor for non-trivial changes"
-msgstr "Tillat åpning av et redigeringsprogram for å gjøre avanserte endringer"
 
 #: ../data/org.gnome.Documents.desktop.in.h:2
 msgid "Access, manage and share documents"
