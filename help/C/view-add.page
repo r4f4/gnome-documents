@@ -7,10 +7,12 @@
     <link type="guide" xref="index#view"/>
     <link type="seealso" xref="view"/>
     <revision pkgversion="3.12" date="2014-03-28" status="review"/>
+    <revision pkgversion="3.15" date="2015-02-16" status="review"/>
 
     <credit type="author">
       <name>Ekaterina Gerasimova</name>
       <email its:translate="no">kittykat3756@gmail.com</email>
+      <years>2014–2015</years>
     </credit>
 
     <include href="legal.xml" xmlns="http://www.w3.org/2001/XInclude"/>
@@ -39,7 +41,7 @@
       <p>Click on <gui>Search</gui> to open the panel.</p>
     </item>
     <item>
-      <p>Press the button in the bottom-left of the window which will open
+      <p>Press the button in the bottom-right of the window which will open
       <gui>Search Locations</gui>.</p>
     </item>
     <item>
