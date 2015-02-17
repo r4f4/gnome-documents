@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: gnome-documents master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-01-12 07:43+0000\n"
-"PO-Revision-Date: 2015-01-12 12:02+0100\n"
+"POT-Creation-Date: 2015-02-17 07:47+0000\n"
+"PO-Revision-Date: 2015-02-17 18:06+0100\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Español; Castellano <gnome-es-list@gnome.org>\n"
 "Language: \n"
@@ -20,10 +20,60 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Gtranslator 2.91.6\n"
 
+#: ../data/org.gnome.Books.appdata.xml.in.h:1
 #: ../data/org.gnome.Books.desktop.in.h:1 ../src/application.js:129
 #: ../src/mainWindow.js:313
 msgid "Books"
 msgstr "Libros"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:2
+#| msgid "An e-books manager application"
+msgid "An e-book manager application for GNOME"
+msgstr "Una aplicación para gestionar libros electrónicos para GNOME"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:3
+#| msgid ""
+#| "A simple application to access, organize and share your documents on "
+#| "GNOME. It is meant to be a simple and elegant replacement for using a "
+#| "file manager to deal with documents. Seamless cloud integration is "
+#| "offered through GNOME Online Accounts."
+msgid ""
+"A simple application to access and organize your e-books on GNOME. It is "
+"meant to be a simple and elegant replacement for using a file manager to "
+"deal with e-books."
+msgstr ""
+"Una sencilla aplicación para acceder y organizar sus libros electrónicos en "
+"GNOME. Está pensada para ser un reemplazo sencillo elegante del uso de un "
+"gestor de archivos para gestionar sus libros electrónicos."
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:4
+#: ../data/org.gnome.Documents.appdata.xml.in.h:4
+msgid "It lets you:"
+msgstr "Le permite:"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:5
+msgid "View recent e-books"
+msgstr "Ver los libros recientes"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:6
+#| msgid "Search through documents"
+msgid "Search through e-books"
+msgstr "Buscar en los libros electrónicos"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:7
+#| msgid "View documents fullscreen"
+msgid "View e-books fullscreen"
+msgstr "Ver libros electrónicos a pantalla completa"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:8
+#| msgid "e-Books"
+msgid "Print e-books"
+msgstr "Imprimir libros electrónicos"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:9
+#: ../data/org.gnome.Documents.appdata.xml.in.h:12
+msgid "Allow opening full featured editor for non-trivial changes"
+msgstr "Abrir un editor completo para cambios no triviales"
 
 #: ../data/org.gnome.Books.desktop.in.h:2
 msgid "Access, manage and share books"
@@ -105,10 +155,6 @@ msgstr ""
 "gestor de archivos para gestionar sus documentos. Se integra perfectamente "
 "con la nube mediante las cuentas en línea de GNOME."
 
-#: ../data/org.gnome.Documents.appdata.xml.in.h:4
-msgid "It lets you:"
-msgstr "Le permite:"
-
 #: ../data/org.gnome.Documents.appdata.xml.in.h:5
 msgid "View recent local and online documents"
 msgstr "Ver archivos locales y en línea recientes"
@@ -137,10 +183,6 @@ msgstr "Imprimir documentos"
 msgid "Select favorites"
 msgstr "Seleccionar favoritos"
 
-#: ../data/org.gnome.Documents.appdata.xml.in.h:12
-msgid "Allow opening full featured editor for non-trivial changes"
-msgstr "Abrir un editor completo para cambios no triviales"
-
 #: ../data/org.gnome.Documents.desktop.in.h:2
 msgid "Access, manage and share documents"
 msgstr "Acceder, gestionar y compartir documentos"
@@ -149,81 +191,81 @@ msgstr "Acceder, gestionar y compartir documentos"
 msgid "Docs;PDF;Document;"
 msgstr "Documentos;PDF;OneDrive;"
 
-#: ../src/documents.js:624
+#: ../src/documents.js:630
 msgid "Failed to print document"
 msgstr "Falló al imprimir el documento"
 
-#: ../src/documents.js:661 ../src/search.js:464
+#: ../src/documents.js:667 ../src/search.js:464
 msgid "Local"
 msgstr "Locales"
 
-#: ../src/documents.js:689
+#: ../src/documents.js:694
 msgid "GNOME"
 msgstr "GNOME"
 
-#: ../src/documents.js:690
+#: ../src/documents.js:695
 msgid "Getting Started with Documents"
 msgstr "Primeros pasos con Documentos"
 
-#: ../src/documents.js:706 ../src/documents.js:887 ../src/documents.js:951
-#: ../src/documents.js:1059
+#: ../src/documents.js:711 ../src/documents.js:892 ../src/documents.js:955
+#: ../src/documents.js:1063
 msgid "Collection"
 msgstr "Colección"
 
-#: ../src/documents.js:766
+#: ../src/documents.js:771
 msgid "Google Docs"
 msgstr "Google Docs"
 
-#: ../src/documents.js:767
+#: ../src/documents.js:772
 msgid "Google"
 msgstr "Google"
 
-#: ../src/documents.js:889 ../src/documents.js:1061
+#: ../src/documents.js:894 ../src/documents.js:1065
 msgid "Spreadsheet"
 msgstr "Hoja de cálculo"
 
-#: ../src/documents.js:891 ../src/documents.js:1063 ../src/presentation.js:47
+#: ../src/documents.js:896 ../src/documents.js:1067 ../src/presentation.js:47
 msgid "Presentation"
 msgstr "Presentación"
 
-#: ../src/documents.js:893 ../src/documents.js:1065
+#: ../src/documents.js:898 ../src/documents.js:1069
 msgid "e-Book"
 msgstr "e-Book"
 
-#: ../src/documents.js:895 ../src/documents.js:1067
+#: ../src/documents.js:900 ../src/documents.js:1071
 msgid "Document"
 msgstr "Documento"
 
-#: ../src/documents.js:929
+#: ../src/documents.js:934
 msgid "ownCloud"
 msgstr "ownCloud"
 
-#: ../src/documents.js:993 ../src/documents.js:994
+#: ../src/documents.js:997 ../src/documents.js:998
 msgid "OneDrive"
 msgstr "OneDrive"
 
-#: ../src/documents.js:1195
+#: ../src/documents.js:1199
 msgid "Please check the network connection."
 msgstr "Compruebe la conexión de red."
 
-#: ../src/documents.js:1198
+#: ../src/documents.js:1202
 msgid "Please check the network proxy settings."
 msgstr "Compruebe la configuración del proxy de red."
 
-#: ../src/documents.js:1201
+#: ../src/documents.js:1205
 msgid "Unable to sign in to the document service."
 msgstr "No se pudo iniciar sesión en el servicio de documentos."
 
-#: ../src/documents.js:1204
+#: ../src/documents.js:1208
 msgid "Unable to locate this document."
 msgstr "No se pudo encontrar este documento."
 
-#: ../src/documents.js:1207
+#: ../src/documents.js:1211
 #, javascript-format
 msgid "Hmm, something is fishy (%d)."
 msgstr "Hay algo sospechoso (%d)."
 
-#: ../src/documents.js:1225
+#: ../src/documents.js:1229
 #, javascript-format
 msgid "Oops! Unable to load “%s”"
 msgstr "No se pudo cargar «%s»"
@@ -233,7 +275,6 @@ msgid "View"
 msgstr "Ver"
 
 #: ../src/embed.js:143
-#| msgid "No Documents Found"
 msgid "No Books Found"
 msgstr "No se encontraron libros"
 
@@ -336,7 +377,7 @@ msgstr "Una aplicación para gestionar documentos"
 
 #: ../src/mainWindow.js:314
 msgid "An e-books manager application"
-msgstr "Una aplicación para gestionar e-books"
+msgstr "Una aplicación para gestionar libros electrónicos"
 
 #: ../src/notifications.js:50
 msgid "Selected item has been deleted"
@@ -570,7 +611,7 @@ msgstr "Documentos de texto"
 
 #: ../src/search.js:214
 msgid "e-Books"
-msgstr "e-Books"
+msgstr "Libros electrónicos"
 
 #: ../src/search.js:218
 msgid "Comics"
