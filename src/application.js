@@ -458,14 +458,6 @@ const Application = new Lang.Class({
             return;
         }
 
-        try {
-            this._extractPriority = TrackerExtractPriority();
-            this._extractPriority.SetRdfTypesRemote(['nfo:Document']);
-        } catch (e) {
-            log('Unable to connect to the tracker extractor: ' + e.toString());
-            return;
-        }
-
         if (!application.isBooks) {
             try {
                 goaClient = Goa.Client.new_sync(null);
@@ -588,11 +580,6 @@ const Application = new Lang.Class({
             this._initGettingStarted();
     },
 
-    vfunc_shutdown: function() {
-        this._extractPriority.ClearRdfTypesRemote();
-        this.parent();
-    },
-
     _createWindow: function() {
         if (this._mainWindow)
             return;
@@ -601,6 +588,13 @@ const Application = new Lang.Class({
         this._connectActionsToMode();
         this._mainWindow = new MainWindow.MainWindow(this);
         this._mainWindow.window.connect('destroy', Lang.bind(this, this._onWindowDestroy));
+
+        try {
+            this._extractPriority = TrackerExtractPriority();
+            this._extractPriority.SetRdfTypesRemote(['nfo:Document']);
+        } catch (e) {
+            log('Unable to connect to the tracker extractor: ' + e.toString());
+        }
 
         // start miners
         this._startMiners();
@@ -646,6 +640,9 @@ const Application = new Lang.Class({
 
         // stop miners
         this._stopMiners();
+
+        if (this._extractPriority)
+            this._extractPriority.ClearRdfTypesRemote();
     },
 
     _onWindowDestroy: function(window) {
