@@ -407,6 +407,10 @@ const Application = new Lang.Class({
     },
 
     _startMiners: function() {
+        this.gdataMiner = new Miners.GDataMiner();
+        this.owncloudMiner = new Miners.OwncloudMiner();
+        this.zpjMiner = new Miners.ZpjMiner();
+
         this._refreshMiners();
 
         this._sourceAddedId = sourceManager.connect('item-added', Lang.bind(this, this._refreshMiners));
@@ -428,6 +432,10 @@ const Application = new Lang.Class({
             function(miner) {
                 miner._cancellable.cancel();
             }));
+
+        this.gdataMiner = null;
+        this.owncloudMiner = null;
+        this.zpjMiner = null;
     },
 
     _themeChanged: function(gtkSettings) {
@@ -601,10 +609,6 @@ const Application = new Lang.Class({
                              WindowMode.WindowMode.DOCUMENTS,
                              WindowMode.WindowMode.SEARCH] }
         ];
-
-        this.gdataMiner = new Miners.GDataMiner();
-        this.owncloudMiner = new Miners.OwncloudMiner();
-        this.zpjMiner = new Miners.ZpjMiner();
 
         this._initActions();
         this._initAppMenu();
