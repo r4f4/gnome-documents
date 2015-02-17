@@ -8,13 +8,13 @@
 #
 # Jorge González <jorgegonz@svn.gnome.org>, 2011.
 # Milagros Alessandra Infante Montero <maim92@gmail.com>, 2012.
-# Daniel Mustieles <daniel.mustieles@gmail.com>, 2011, 2012, 2013, 2014.
+# Daniel Mustieles <daniel.mustieles@gmail.com>, 2011, 2012, 2013, 2014, 2015.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-help.master\n"
-"POT-Creation-Date: 2014-06-11 06:46+0000\n"
-"PO-Revision-Date: 2014-06-12 17:21+0200\n"
+"POT-Creation-Date: 2015-02-17 07:48+0000\n"
+"PO-Revision-Date: 2015-02-17 18:06+0100\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Español; Castellano <gnome-es-list@gnome.org>\n"
 "Language: \n"
@@ -39,7 +39,7 @@ msgstr "Este trabajo está licenciado bajo una <_:link-1/>."
 msgctxt "_"
 msgid "translator-credits"
 msgstr ""
-"Daniel Mustieles <daniel.mustieles@gmail.com>, 2011 - 2014\n"
+"Daniel Mustieles <daniel.mustieles@gmail.com>, 2011 - 2015\n"
 "Nicolás Satragno <nsatragno@gnome.org>, 2012\n"
 "Francisco Molinero <paco@byasl.com>, 2011\n"
 "Jorge González <jorgegonz@svn.gnome.org>, 2011, 2012"
@@ -71,7 +71,7 @@ msgstr "Michael Hill"
 #. (itstool) path: credit/name
 #: C/collections.page:22 C/filter.page:17 C/formats.page:17 C/index.page:24
 #: C/info.page:22 C/prob-no-show.page:22 C/prob-previews.page:22
-#: C/viewgrid.page:22 C/view.page:22 C/view-add.page:12
+#: C/viewgrid.page:22 C/view.page:22 C/view-add.page:13
 msgid "Ekaterina Gerasimova"
 msgstr "Ekaterina Gerasimova"
 
@@ -176,10 +176,6 @@ msgstr "abajo"
 
 #. (itstool) path: page/p
 #: C/filter.page:29
-#| msgid ""
-#| "<link xref=\"search\">Open the search</link> and click the <media type="
-#| "\"image\" src=\"media/go-down.png\">down</media> button next to the "
-#| "search bar to limit the scope of the search in these categories:"
 msgid ""
 "<link xref=\"search\">Open the search</link> and click the <_:media-1/> "
 "button next to the search bar to limit the scope of the search in these "
@@ -578,10 +574,6 @@ msgstr ""
 
 #. (itstool) path: note/p
 #: C/search.page:52
-#| msgid ""
-#| "You can restrict or filter the search results by clicking the <media type="
-#| "\"image\" src=\"media/go-down.png\">down</media> button and selecting "
-#| "various <link xref=\"filter\">filters</link>."
 msgid ""
 "You can restrict or filter the search results by clicking the <_:media-1/> "
 "button and selecting various <link xref=\"filter\">filters</link>."
@@ -645,9 +637,6 @@ msgstr "Ver sus documentos"
 
 #. (itstool) path: page/p
 #: C/view.page:42
-#| msgid ""
-#| "When you open <app>Documents</app>, all of your documents, those stored "
-#| "locally as well as online, are displayed as thumbnails."
 msgid ""
 "When you open <app>Documents</app>, documents which are stored locally in "
 "one of the standard folders such as <file>Documents</file> or "
@@ -682,8 +671,13 @@ msgstr ""
 "Para salir del documento, pulse el icono de flecha hacia atrás en la parte "
 "superior izquierda de la ventana."
 
+#. (itstool) path: credit/years
+#: C/view-add.page:15
+msgid "2014–2015"
+msgstr "2014–2015"
+
 #. (itstool) path: info/desc
-#: C/view-add.page:18
+#: C/view-add.page:20
 msgid ""
 "Add extra directories to those which are already searched by <app>Documents</"
 "app>."
@@ -692,12 +686,12 @@ msgstr ""
 "app>."
 
 #. (itstool) path: page/title
-#: C/view-add.page:23
+#: C/view-add.page:25
 msgid "Add custom directories"
 msgstr "Añadir carpetas personalizadas"
 
 #. (itstool) path: page/p
-#: C/view-add.page:25
+#: C/view-add.page:27
 msgid ""
 "<app>Documents</app> normally shows only documents that are in standard "
 "folders such as <file>Documents</file> or <file>Downloads</file>. You can "
@@ -714,7 +708,7 @@ msgstr ""
 "equipo o un disco duro externo."
 
 #. (itstool) path: item/p
-#: C/view-add.page:34
+#: C/view-add.page:36
 msgid ""
 "Open the <gui href=\"help:gnome-help/shell-terminology\">Activities</gui> "
 "overview and start typing <gui>Search</gui>."
@@ -723,28 +717,30 @@ msgstr ""
 "\">Actividades</gui> y empiece a escribir <gui>Buscar</gui>."
 
 #. (itstool) path: item/p
-#: C/view-add.page:39
-#| msgid "Click the <gui>+</gui> button in the button bar."
+#: C/view-add.page:41
 msgid "Click on <gui>Search</gui> to open the panel."
 msgstr "Pulse en <gui>Buscar</gui> para abrir el panel."
 
 #. (itstool) path: item/p
-#: C/view-add.page:42
+#: C/view-add.page:44
+#| msgid ""
+#| "Press the button in the bottom-left of the window which will open "
+#| "<gui>Search Locations</gui>."
 msgid ""
-"Press the button in the bottom-left of the window which will open "
+"Press the button in the bottom-right of the window which will open "
 "<gui>Search Locations</gui>."
 msgstr ""
-"Pulse el botón en la parte inferior izquierda de la ventana, que abrirá la "
+"Pulse el botón en la parte inferior derecha de la ventana, que abrirá los "
 "<gui>Lugares de búsqueda</gui>."
 
 #. (itstool) path: item/p
-#: C/view-add.page:46
+#: C/view-add.page:48
 msgid "Press <gui style=\"button\">+</gui> to add a new search location."
 msgstr ""
 "Pulse <gui style=\"button\">+</gui> para añadir un lugar de búsqueda nueva."
 
 #. (itstool) path: item/p
-#: C/view-add.page:49
+#: C/view-add.page:51
 msgid ""
 "Select the folder that you want to add and press <gui style=\"button\">OK</"
 "gui> to add the folder."
@@ -753,7 +749,7 @@ msgstr ""
 "\">Aceptar</gui> para añadir la carpeta."
 
 #. (itstool) path: page/p
-#: C/view-add.page:61
+#: C/view-add.page:63
 msgid ""
 "Adding a new folder to the search may let some of your other applications "
 "search that folder. Unfortunately, it is not possible to tell which "
