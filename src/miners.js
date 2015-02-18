@@ -34,23 +34,26 @@ const MinerIface = '<node> \
 
 var MinerProxy = Gio.DBusProxy.makeProxyWrapper(MinerIface);
 
-function _makeMinerProxy(iface, path) {
-    let miner = new MinerProxy(Gio.DBus.session, iface, path);
+function _makeMinerProxy(iface, path, callback) {
+    let miner = new MinerProxy(Gio.DBus.session, iface, path, callback);
     miner.set_default_timeout(GLib.MAXINT32);
     return miner;
 }
 
-function GDataMiner() {
+function GDataMiner(callback) {
     return _makeMinerProxy('org.gnome.OnlineMiners.GData',
-                           '/org/gnome/OnlineMiners/GData');
+                           '/org/gnome/OnlineMiners/GData',
+                           callback);
 }
 
-function OwncloudMiner() {
+function OwncloudMiner(callback) {
     return _makeMinerProxy('org.gnome.OnlineMiners.Owncloud',
-                           '/org/gnome/OnlineMiners/Owncloud');
+                           '/org/gnome/OnlineMiners/Owncloud',
+                           callback);
 }
 
-function ZpjMiner() {
+function ZpjMiner(callback) {
     return _makeMinerProxy('org.gnome.OnlineMiners.Zpj',
-                           '/org/gnome/OnlineMiners/Zpj');
+                           '/org/gnome/OnlineMiners/Zpj',
+                           callback);
 }
