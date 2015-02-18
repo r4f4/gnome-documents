@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-documents\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-01-31 07:46+0000\n"
-"PO-Revision-Date: 2015-01-31 15:51+0100\n"
+"POT-Creation-Date: 2015-02-18 07:50+0000\n"
+"PO-Revision-Date: 2015-02-18 15:56+0100\n"
 "Last-Translator: Dušan Kazik <prescott66@gmail.com>\n"
 "Language-Team: Slovak <gnome-sk-list@gnome.org>\n"
 "Language: sk\n"
@@ -17,11 +17,48 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 1 : (n>=2 && n<=4) ? 2 : 0;\n"
-"X-Generator: Poedit 1.7.3\n"
+"X-Generator: Poedit 1.7.4\n"
 
-#: ../data/org.gnome.Books.desktop.in.h:1 ../src/application.js:129 ../src/mainWindow.js:313
+#: ../data/org.gnome.Books.appdata.xml.in.h:1 ../data/org.gnome.Books.desktop.in.h:1 ../src/application.js:129
+#: ../src/mainWindow.js:313
 msgid "Books"
 msgstr "Knihy"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:2
+msgid "An e-book manager application for GNOME"
+msgstr "Aplikácia na správu elektronických kníh pre GNOME"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:3
+msgid ""
+"A simple application to access and organize your e-books on GNOME. It is meant to be a simple and elegant replacement for using a "
+"file manager to deal with e-books."
+msgstr ""
+"Jednoduchá aplikácia prostredia GNOME na prístup k vašim elektronickým knihám a ich organizáciu. Cieľom tejto aplikácie je "
+"jednoducho a elegantne nahradiť správcu súborov ako prehliadač e-kníh."
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:4 ../data/org.gnome.Documents.appdata.xml.in.h:4
+msgid "It lets you:"
+msgstr "Umožňuje vám:"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:5
+msgid "View recent e-books"
+msgstr "Zobraziť nedávne e-knihy"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:6
+msgid "Search through e-books"
+msgstr "Vyhľadávať v e-knihách"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:7
+msgid "View e-books fullscreen"
+msgstr "Prehliadať e-knihy v režime na celú obrazovku"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:8
+msgid "Print e-books"
+msgstr "Tlačiť e-knihy"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:9 ../data/org.gnome.Documents.appdata.xml.in.h:12
+msgid "Allow opening full featured editor for non-trivial changes"
+msgstr "Otvoriť plne funkčný editor pre zložitejšie úpravy"
 
 # desktop entry comment
 #: ../data/org.gnome.Books.desktop.in.h:2
@@ -99,10 +136,6 @@ msgstr ""
 "pohodlnou náhradou pôvodného prehliadania dokumentov za pomoci správcu súborov. Prepojenie s cloudom je zabezpečené pomocou Účtov "
 "služieb prostredia GNOME (GOA)."
 
-#: ../data/org.gnome.Documents.appdata.xml.in.h:4
-msgid "It lets you:"
-msgstr "Umožňuje vám:"
-
 #: ../data/org.gnome.Documents.appdata.xml.in.h:5
 msgid "View recent local and online documents"
 msgstr "Prehliadať nedávne miestne a vzdialené dokumenty"
@@ -130,10 +163,6 @@ msgstr "Tlačiť dokumenty"
 #: ../data/org.gnome.Documents.appdata.xml.in.h:11
 msgid "Select favorites"
 msgstr "Vybrať obľúbené dokumenty"
-
-#: ../data/org.gnome.Documents.appdata.xml.in.h:12
-msgid "Allow opening full featured editor for non-trivial changes"
-msgstr "Otvoriť plne funkčný editor pre zložitejšie úpravy"
 
 # desktop entry comment
 #: ../data/org.gnome.Documents.desktop.in.h:2
