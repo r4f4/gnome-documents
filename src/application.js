@@ -344,9 +344,37 @@ const Application = new Lang.Class({
         this.set_app_menu(menu);
     },
 
+    _createMiners: function(callback) {
+        let count = 3;
+
+        this.gdataMiner = new Miners.GDataMiner(Lang.bind(this,
+            function() {
+                count--;
+                if (count == 0)
+                    callback();
+            }));
+
+        this.owncloudMiner = new Miners.OwncloudMiner(Lang.bind(this,
+            function() {
+                count--;
+                if (count == 0)
+                    callback();
+            }));
+
+        this.zpjMiner = new Miners.ZpjMiner(Lang.bind(this,
+            function() {
+                count--;
+                if (count == 0)
+                    callback();
+            }));
+    },
+
     _refreshMinerNow: function(miner) {
         let env = GLib.getenv('DOCUMENTS_DISABLE_MINERS');
         if (env)
+            return false;
+
+        if (!miner)
             return false;
 
         this.minersRunning.push(miner);
@@ -407,14 +435,15 @@ const Application = new Lang.Class({
     },
 
     _startMiners: function() {
-        this.gdataMiner = new Miners.GDataMiner();
-        this.owncloudMiner = new Miners.OwncloudMiner();
-        this.zpjMiner = new Miners.ZpjMiner();
+        this._createMiners(Lang.bind(this,
+            function() {
+                this._refreshMiners();
 
-        this._refreshMiners();
-
-        this._sourceAddedId = sourceManager.connect('item-added', Lang.bind(this, this._refreshMiners));
-        this._sourceRemovedId = sourceManager.connect('item-removed', Lang.bind(this, this._refreshMiners));
+                this._sourceAddedId = sourceManager.connect('item-added',
+                                                            Lang.bind(this, this._refreshMiners));
+                this._sourceRemovedId = sourceManager.connect('item-removed',
+                                                              Lang.bind(this, this._refreshMiners));
+            }));
     },
 
     _stopMiners: function() {
