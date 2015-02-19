@@ -42,10 +42,17 @@ const ModeController = new Lang.Class({
         this._history = [];
     },
 
-    goBack: function() {
-        let oldMode = this._history.pop();
-        if (!oldMode || oldMode == WindowMode.NONE)
-            return;
+    goBack: function(steps) {
+        if (!steps)
+            steps = 1;
+
+        let oldMode;
+
+        for (let i = 0; i < steps; i++) {
+            oldMode = this._history.pop();
+            if (!oldMode || oldMode == WindowMode.NONE)
+                return;
+        }
 
         // Swap the old and current modes.
         let tmp = oldMode;
