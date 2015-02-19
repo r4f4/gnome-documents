@@ -13,7 +13,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-docs master\n"
-"POT-Creation-Date: 2014-09-15 18:45+0000\n"
+"POT-Creation-Date: 2015-02-19 08:02+0000\n"
 "PO-Revision-Date: 2014-09-17 01:07+0200\n"
 "Last-Translator: Alain Lojewski <allomervan@gmail.com>\n"
 "Language-Team: français <GNOME French Team <gnomefr@traduc.org>>\n"
@@ -77,7 +77,7 @@ msgstr "Michael Hill"
 #. (itstool) path: credit/name
 #: C/collections.page:22 C/filter.page:17 C/formats.page:17 C/index.page:24
 #: C/info.page:22 C/prob-no-show.page:22 C/prob-previews.page:22
-#: C/viewgrid.page:22 C/view.page:22 C/view-add.page:12
+#: C/viewgrid.page:22 C/view.page:22 C/view-add.page:13
 msgid "Ekaterina Gerasimova"
 msgstr "Ekaterina Gerasimova"
 
@@ -191,8 +191,8 @@ msgid ""
 "categories:"
 msgstr ""
 "<link xref=\"search\">Ouvrir la recherche</link> et cliquez sur le bouton <_:"
-"media-1/> près de la barre de recherche pour limiter le "
-"champ de recherche à ces catégories :"
+"media-1/> près de la barre de recherche pour limiter le champ de recherche à "
+"ces catégories :"
 
 #. (itstool) path: item/title
 #: C/filter.page:36
@@ -682,8 +682,13 @@ msgstr ""
 "Pour quitter le document, cliquez sur le bouton flèche arrière en haut à "
 "gauche de la fenêtre."
 
+#. (itstool) path: credit/years
+#: C/view-add.page:15
+msgid "2014–2015"
+msgstr "2014–2015"
+
 #. (itstool) path: info/desc
-#: C/view-add.page:18
+#: C/view-add.page:20
 msgid ""
 "Add extra directories to those which are already searched by <app>Documents</"
 "app>."
@@ -691,12 +696,12 @@ msgstr ""
 "Ajouter de nouveaux répertoires à ceux déjà indexés par <app>Documents</app>."
 
 #. (itstool) path: page/title
-#: C/view-add.page:23
+#: C/view-add.page:25
 msgid "Add custom directories"
 msgstr "Ajouter des répertoires personnalisés"
 
 #. (itstool) path: page/p
-#: C/view-add.page:25
+#: C/view-add.page:27
 msgid ""
 "<app>Documents</app> normally shows only documents that are in standard "
 "folders such as <file>Documents</file> or <file>Downloads</file>. You can "
@@ -708,13 +713,13 @@ msgstr ""
 "<app>Documents</app> ne présente normalement que les documents présents dans "
 "les dossiers standards comme <file>Documents</file> ou "
 "<file>Téléchargements</file>. Vous pouvez ajouter d'autres dossiers que vous "
-"souhaitez utiliser, depuis le panneau des préférences <app>Rechercher</"
-"app>. Vous pouvez en avoir besoin si vous rangez certains de vos documents "
-"dans un emplacement non standard comme un autre dossier de votre ordinateur "
-"ou sur un disque dur externe."
+"souhaitez utiliser, depuis le panneau des préférences <app>Rechercher</app>. "
+"Vous pouvez en avoir besoin si vous rangez certains de vos documents dans un "
+"emplacement non standard comme un autre dossier de votre ordinateur ou sur "
+"un disque dur externe."
 
 #. (itstool) path: item/p
-#: C/view-add.page:34
+#: C/view-add.page:36
 msgid ""
 "Open the <gui href=\"help:gnome-help/shell-terminology\">Activities</gui> "
 "overview and start typing <gui>Search</gui>."
@@ -723,28 +728,28 @@ msgstr ""
 "gui> et commencez à taper dans <gui>Rechercher</gui>."
 
 #. (itstool) path: item/p
-#: C/view-add.page:39
+#: C/view-add.page:41
 msgid "Click on <gui>Search</gui> to open the panel."
 msgstr "Cliquez sur le bouton <gui>Rechercher</gui> pour ouvrir le panneau."
 
 #. (itstool) path: item/p
-#: C/view-add.page:42
+#: C/view-add.page:44
 msgid ""
-"Press the button in the bottom-left of the window which will open "
+"Press the button in the bottom-right of the window which will open "
 "<gui>Search Locations</gui>."
 msgstr ""
-"Appuyez sur le boutton en bas à gauche de la fenêtre pour ouvrir "
+"Appuyez sur le boutton en bas à droite de la fenêtre pour ouvrir "
 "<gui>Emplacements de la recherche</gui>."
 
 #. (itstool) path: item/p
-#: C/view-add.page:46
+#: C/view-add.page:48
 msgid "Press <gui style=\"button\">+</gui> to add a new search location."
 msgstr ""
 "Cliquez sur <gui style=\"button\">+</gui> pour ajouter un nouvel emplacement "
 "de recherche."
 
 #. (itstool) path: item/p
-#: C/view-add.page:49
+#: C/view-add.page:51
 msgid ""
 "Select the folder that you want to add and press <gui style=\"button\">OK</"
 "gui> to add the folder."
@@ -753,7 +758,7 @@ msgstr ""
 "\"button\">Valider</gui> pour ajouter le dossier."
 
 #. (itstool) path: page/p
-#: C/view-add.page:61
+#: C/view-add.page:63
 msgid ""
 "Adding a new folder to the search may let some of your other applications "
 "search that folder. Unfortunately, it is not possible to tell which "
