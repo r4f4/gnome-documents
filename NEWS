@@ -1,3 +1,12 @@
+3.15.90 - "Keyboard"
+====================
+
+- Separate views for documents and collections
+- Fix edge hit detection to use edge-reached instead of edge-overshot
+- Add man page and AppData for Books
+- Documentation updates (Ekaterina Gerasimova)
+- Translation updates
+
 3.15.2 - "Gaston"
 =================
 
