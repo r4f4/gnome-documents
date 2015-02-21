@@ -6,20 +6,22 @@
 # Marios Zindilis <m.zindilis@dmajor.org>, 2010.
 # Dimitris Spingos (Δημήτρης Σπίγγος) <dmtrs32@gmail.com>, 2012, 2013, 2014.
 # keratea <dmtrs32@gmail.com>, 2013.
+# Efstathios Iosifidis <iosifidis@opensuse.org>, 2015.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: user-guide.docs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-18 06:43+0000\n"
-"PO-Revision-Date: 2014-10-11 23:59+0200\n"
-"Last-Translator: Tom Tryfonidis <tomtryf@gmail.com>\n"
-"Language-Team: team@lists.gnome.gr\n"
+"POT-Creation-Date: 2015-02-21 10:44+0000\n"
+"PO-Revision-Date: 2015-02-21 16:07+0200\n"
+"Last-Translator: Efstathios Iosifidis <iosifidis@opensuse.org>\n"
+"Language-Team: Greek, Modern (1453-) <opensuse-translation-el@opensuse.org>\n"
 "Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.6.9\n"
+"X-Generator: Gtranslator 2.91.6\n"
 
 #. (itstool) path: p/link
 #: C/legal.xml:3
@@ -80,7 +82,7 @@ msgstr "Michael Hill"
 #. (itstool) path: credit/name
 #: C/collections.page:22 C/filter.page:17 C/formats.page:17 C/index.page:24
 #: C/info.page:22 C/prob-no-show.page:22 C/prob-previews.page:22
-#: C/viewgrid.page:22 C/view.page:22 C/view-add.page:12
+#: C/viewgrid.page:22 C/view.page:22 C/view-add.page:13
 msgid "Ekaterina Gerasimova"
 msgstr "Ekaterina Gerasimova"
 
@@ -686,8 +688,13 @@ msgstr ""
 "Για να βγείτε από το έγγραφο, πατήστε το κουμπί με το πίσω βέλος στο επάνω "
 "αριστερό μέρος του παραθύρου."
 
+#. (itstool) path: credit/years
+#: C/view-add.page:15
+msgid "2014–2015"
+msgstr "2014–2015"
+
 #. (itstool) path: info/desc
-#: C/view-add.page:18
+#: C/view-add.page:20
 msgid ""
 "Add extra directories to those which are already searched by <app>Documents</"
 "app>."
@@ -696,12 +703,12 @@ msgstr ""
 "<app>Έγγραφα</app>."
 
 #. (itstool) path: page/title
-#: C/view-add.page:23
+#: C/view-add.page:25
 msgid "Add custom directories"
 msgstr "Προσθήκη προσαρμοσμένων καταλόγων"
 
 #. (itstool) path: page/p
-#: C/view-add.page:25
+#: C/view-add.page:27
 msgid ""
 "<app>Documents</app> normally shows only documents that are in standard "
 "folders such as <file>Documents</file> or <file>Downloads</file>. You can "
@@ -718,7 +725,7 @@ msgstr ""
 "όπως σε έναν άλλο φάκελο στον υπολογιστή σας ή σε έναν εξωτερικό δίσκο."
 
 #. (itstool) path: item/p
-#: C/view-add.page:34
+#: C/view-add.page:36
 msgid ""
 "Open the <gui href=\"help:gnome-help/shell-terminology\">Activities</gui> "
 "overview and start typing <gui>Search</gui>."
@@ -727,28 +734,31 @@ msgstr ""
 "\">Δραστηριότητες</gui> και πληκτρολογήστε στην <gui>Αναζήτηση</gui>."
 
 #. (itstool) path: item/p
-#: C/view-add.page:39
+#: C/view-add.page:41
 msgid "Click on <gui>Search</gui> to open the panel."
 msgstr "Κάντε κλικ στην <gui>Αναζήτηση</gui> για να ανοίξει το πλαίσιο"
 
 #. (itstool) path: item/p
-#: C/view-add.page:42
+#: C/view-add.page:44
+#| msgid ""
+#| "Press the button in the bottom-left of the window which will open "
+#| "<gui>Search Locations</gui>."
 msgid ""
-"Press the button in the bottom-left of the window which will open "
+"Press the button in the bottom-right of the window which will open "
 "<gui>Search Locations</gui>."
 msgstr ""
-"Πατήστε το κουμπί κάτω αριστερά του παραθύρου για να ανοίξουν οι "
+"Πατήστε το κουμπί κάτω δεξιά του παραθύρου για να ανοίξουν οι "
 "<gui>Τοποθεσίες αναζήτησης</gui>."
 
 #. (itstool) path: item/p
-#: C/view-add.page:46
+#: C/view-add.page:48
 msgid "Press <gui style=\"button\">+</gui> to add a new search location."
 msgstr ""
 "Επιλέξτε <gui style=\"button\">+</gui> για την προσθήκη μιας νέας θέσης "
 "αναζήτησης."
 
 #. (itstool) path: item/p
-#: C/view-add.page:49
+#: C/view-add.page:51
 msgid ""
 "Select the folder that you want to add and press <gui style=\"button\">OK</"
 "gui> to add the folder."
@@ -757,7 +767,7 @@ msgstr ""
 "\">Εντάξει</gui> για να προσθέσετε το φάκελο."
 
 #. (itstool) path: page/p
-#: C/view-add.page:61
+#: C/view-add.page:63
 msgid ""
 "Adding a new folder to the search may let some of your other applications "
 "search that folder. Unfortunately, it is not possible to tell which "
