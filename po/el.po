@@ -12,7 +12,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2015-02-21 10:44+0000\n"
-"PO-Revision-Date: 2015-02-21 15:33+0200\n"
+"PO-Revision-Date: 2015-02-21 15:35+0200\n"
 "Last-Translator: Efstathios Iosifidis <iosifidis@opensuse.org>\n"
 "Language-Team: Greek, Modern (1453-) <opensuse-translation-el@opensuse.org>\n"
 "Language: el\n"
@@ -281,7 +281,7 @@ msgstr "Προβολή"
 
 #: ../src/embed.js:109
 msgid "Recent"
-msgstr ""
+msgstr "Πρόσφατα"
 
 #: ../src/embed.js:112 ../src/search.js:192 ../src/search.js:201
 msgid "Collections"
