@@ -4,32 +4,82 @@
 # Tom Tryfonidis <tomtryf@gmail.com>, 2012.
 # Kostas Papadimas <pkst@gnome.org>, 2012.
 # Dimitris Spingos (Δημήτρης Σπίγγος) <dmtrs32@gmail.com>, 2013, 2014, 2015.
-# Efstathios Iosifidis <iosifidis@opensuse.org>, 2013.
+# Efstathios Iosifidis <iosifidis@opensuse.org>, 2013, 2015.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-documents master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-01-02 07:44+0000\n"
-"PO-Revision-Date: 2015-01-05 18:38+0300\n"
-"Last-Translator: Dimitris Spingos (Δημήτρης Σπίγγος) <dmtrs32@gmail.com>\n"
-"Language-Team: team@lists.gnome.gr\n"
+"POT-Creation-Date: 2015-02-21 10:44+0000\n"
+"PO-Revision-Date: 2015-02-21 15:33+0200\n"
+"Last-Translator: Efstathios Iosifidis <iosifidis@opensuse.org>\n"
+"Language-Team: Greek, Modern (1453-) <opensuse-translation-el@opensuse.org>\n"
 "Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Virtaal 0.7.1\n"
+"X-Generator: Gtranslator 2.91.6\n"
 "X-Project-Style: gnome\n"
 
-#: ../data/org.gnome.Books.desktop.in.h:1 ../src/application.js:129
-#: ../src/mainWindow.js:313
-#| msgid "Bookmarks"
+#: ../data/org.gnome.Books.appdata.xml.in.h:1
+#: ../data/org.gnome.Books.desktop.in.h:1 ../src/application.js:132
+#: ../src/mainWindow.js:328
 msgid "Books"
 msgstr "Βιβλία"
 
+#: ../data/org.gnome.Books.appdata.xml.in.h:2
+#| msgid "An e-books manager application"
+msgid "An e-book manager application for GNOME"
+msgstr "Εφαρμογή διαχείρισης ηλεκτρονικών βιβλίων για το GNOME"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:3
+#| msgid ""
+#| "A simple application to access, organize and share your documents on "
+#| "GNOME. It is meant to be a simple and elegant replacement for using a "
+#| "file manager to deal with documents. Seamless cloud integration is "
+#| "offered through GNOME Online Accounts."
+msgid ""
+"A simple application to access and organize your e-books on GNOME. It is "
+"meant to be a simple and elegant replacement for using a file manager to "
+"deal with e-books."
+msgstr ""
+"Μια απλή εφαρμογή για να έχετε πρόσβαση και να οργανώσετε τα ηλεκτρονικά "
+"βιβλία σας στο GNOME. Η εφαρμογή προορίζεται να είναι απλή και κομψή "
+"αντικατάσταση του διαχειριστή αρχείων σας, με σκοπό τη διαχείριση των "
+"ηλεκτρονικών σας βιβλίων."
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:4
+#: ../data/org.gnome.Documents.appdata.xml.in.h:4
+msgid "It lets you:"
+msgstr "Σας επιτρέπει να:"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:5
+msgid "View recent e-books"
+msgstr "Προβολή πρόσφατων ηλεκτρονικών βιβλίων"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:6
+#| msgid "Search through documents"
+msgid "Search through e-books"
+msgstr "Αναζητήσετε στα ηλεκτρονικά βιβλία"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:7
+#| msgid "View documents fullscreen"
+msgid "View e-books fullscreen"
+msgstr "Προβολή ηλεκτρινικών βιβλίων σε πλήρη οθόνη"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:8
+#| msgid "e-Books"
+msgid "Print e-books"
+msgstr "Εκτύπωση ηλεκτρονικών βιβλίων"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:9
+#: ../data/org.gnome.Documents.appdata.xml.in.h:12
+msgid "Allow opening full featured editor for non-trivial changes"
+msgstr "Ανοίξετε τα έγγραφα σας με έναν επεξεργαστή για σημαντικές αλλαγές"
+
 #: ../data/org.gnome.Books.desktop.in.h:2
-#| msgid "Access, manage and share documents"
 msgid "Access, manage and share books"
 msgstr "Προσέγγιση, διαχείριση και κοινή χρήση βιβλίων"
 
@@ -88,8 +138,8 @@ msgid "Whether the application is in night mode."
 msgstr "Αν η εφαρμογή είναι σε νυχτερινή λειτουργία."
 
 #: ../data/org.gnome.Documents.appdata.xml.in.h:1
-#: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:125
-#: ../src/mainWindow.js:52 ../src/mainWindow.js:308
+#: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:128
+#: ../src/mainWindow.js:52 ../src/mainWindow.js:323
 msgid "Documents"
 msgstr "Έγγραφα"
 
@@ -109,10 +159,6 @@ msgstr ""
 "αντικαταστήσει την διαχείριση των εγγράφων σας από τον διαχειριστή αρχείων. "
 "Προσφέρεται και η ενσωμάτωση με υπηρεσίες cloud μέσω των διαδικτυακών "
 "λογαριασμών του GNOME."
-
-#: ../data/org.gnome.Documents.appdata.xml.in.h:4
-msgid "It lets you:"
-msgstr "Σας επιτρέπει να:"
 
 #: ../data/org.gnome.Documents.appdata.xml.in.h:5
 msgid "View recent local and online documents"
@@ -142,10 +188,6 @@ msgstr "Εκτυπώσετε έγγραφα"
 msgid "Select favorites"
 msgstr "Επιλέξετε τα αγαπημένα σας"
 
-#: ../data/org.gnome.Documents.appdata.xml.in.h:12
-msgid "Allow opening full featured editor for non-trivial changes"
-msgstr "Ανοίξετε τα έγγραφα σας με έναν επεξεργαστή για σημαντικές αλλαγές"
-
 #: ../data/org.gnome.Documents.desktop.in.h:2
 msgid "Access, manage and share documents"
 msgstr "Προσεγγίστε, διαχειριστείτε και μοιραστείτε έγγραφα"
@@ -154,106 +196,96 @@ msgstr "Προσεγγίστε, διαχειριστείτε και μοιρασ
 msgid "Docs;PDF;Document;"
 msgstr "Έγγραφα;PDF;Έγγραφο;Docs;Document;"
 
-#: ../src/documents.js:624
+#: ../src/documents.js:631
 msgid "Failed to print document"
 msgstr "Αδυναμία εκτύπωσης του εγγράφου"
 
-#: ../src/documents.js:661 ../src/search.js:464
+#: ../src/documents.js:668 ../src/search.js:493
 msgid "Local"
 msgstr "Τοπικά"
 
-#: ../src/documents.js:689
+#: ../src/documents.js:695
 msgid "GNOME"
 msgstr "GNOME"
 
-#: ../src/documents.js:690
+#: ../src/documents.js:696
 msgid "Getting Started with Documents"
 msgstr "Ξεκινώντας με τα έγγραφα"
 
-#: ../src/documents.js:706 ../src/documents.js:887 ../src/documents.js:951
-#: ../src/documents.js:1059
+#: ../src/documents.js:712 ../src/documents.js:893 ../src/documents.js:956
+#: ../src/documents.js:1064
 msgid "Collection"
 msgstr "Συλλογή"
 
-#: ../src/documents.js:766
+#: ../src/documents.js:772
 msgid "Google Docs"
 msgstr "Έγγραφα Google"
 
-#: ../src/documents.js:767
+#: ../src/documents.js:773
 msgid "Google"
 msgstr "Google"
 
-#: ../src/documents.js:889 ../src/documents.js:1061
+#: ../src/documents.js:895 ../src/documents.js:1066
 msgid "Spreadsheet"
 msgstr "Λογιστικό φύλλο"
 
-#: ../src/documents.js:891 ../src/documents.js:1063 ../src/presentation.js:47
+#: ../src/documents.js:897 ../src/documents.js:1068 ../src/presentation.js:47
 msgid "Presentation"
 msgstr "Παρουσίαση"
 
-#: ../src/documents.js:893 ../src/documents.js:1065
+#: ../src/documents.js:899 ../src/documents.js:1070
 msgid "e-Book"
 msgstr "ηλεκτρονικό βιβλίο"
 
-#: ../src/documents.js:895 ../src/documents.js:1067
+#: ../src/documents.js:901 ../src/documents.js:1072
 msgid "Document"
 msgstr "Έγγραφo"
 
-#: ../src/documents.js:929
+#: ../src/documents.js:935
 msgid "ownCloud"
 msgstr "ownCloud"
 
-#: ../src/documents.js:993 ../src/documents.js:994
+#: ../src/documents.js:998 ../src/documents.js:999
 msgid "OneDrive"
 msgstr "OneDrive"
 
-#: ../src/documents.js:1195
+#: ../src/documents.js:1236
 msgid "Please check the network connection."
 msgstr "Παρακαλούμε ελέγξτε τις ρυθμίσεις δικτύου."
 
-#: ../src/documents.js:1198
+#: ../src/documents.js:1239
 msgid "Please check the network proxy settings."
 msgstr "Παρακαλούμε ελέγξτε τις ρυθμίσεις του διαμεσολαβητή δικτύου. "
 
-#: ../src/documents.js:1201
+#: ../src/documents.js:1242
 msgid "Unable to sign in to the document service."
 msgstr "Αδυναμία σύνδεσης στην υπηρεσία του εγγράφου."
 
-#: ../src/documents.js:1204
+#: ../src/documents.js:1245
 msgid "Unable to locate this document."
 msgstr "Αδυναμία εύρεσης αυτού του εγγράφου."
 
-#: ../src/documents.js:1207
+#: ../src/documents.js:1248
 #, javascript-format
 msgid "Hmm, something is fishy (%d)."
 msgstr "Χμμ, κάτι είναι ύποπτο (%d)."
 
-#: ../src/documents.js:1225
+#: ../src/documents.js:1266
 #, javascript-format
 msgid "Oops! Unable to load “%s”"
 msgstr "Ωχ! Αδυναμία φόρτωσης του “%s”"
 
-#: ../src/edit.js:175
+#: ../src/edit.js:176
 msgid "View"
 msgstr "Προβολή"
 
-#: ../src/embed.js:143
-#| msgid "No Documents Found"
-msgid "No Books Found"
-msgstr "Δε βρέθηκαν βιβλία"
+#: ../src/embed.js:109
+msgid "Recent"
+msgstr ""
 
-#: ../src/embed.js:144
-msgid "No Documents Found"
-msgstr "Δε βρέθηκαν έγγραφα"
-
-#: ../src/embed.js:166
-#, javascript-format
-msgid "You can add your online accounts in %s"
-msgstr "Μπορείτε να προσθέσετε τους διαδικτυακούς σας λογαριασμούς στις %s"
-
-#: ../src/embed.js:170
-msgid "Settings"
-msgstr "Ρυθμίσεις"
+#: ../src/embed.js:112 ../src/search.js:192 ../src/search.js:201
+msgid "Collections"
+msgstr "Συλλογές"
 
 #: ../src/lib/gd-nav-bar.c:242
 #, c-format
@@ -304,34 +336,34 @@ msgstr "Αναζήτηση"
 msgid "Back"
 msgstr "Πίσω"
 
-#: ../src/mainToolbar.js:132
+#: ../src/mainToolbar.js:141
 msgid "View items as a list"
 msgstr "Προβολή στοιχείων ως κατάλογος"
 
-#: ../src/mainToolbar.js:138
+#: ../src/mainToolbar.js:147
 msgid "View items as a grid of icons"
 msgstr "Προβολή στοιχείων ως πλέγμα εικονιδίων"
 
-#: ../src/mainToolbar.js:168
+#: ../src/mainToolbar.js:177
 msgid "Click on items to select them"
 msgstr "Κάντε κλικ στα αντικείμενα για να τα επιλέξετε"
 
-#: ../src/mainToolbar.js:170
+#: ../src/mainToolbar.js:179
 #, javascript-format
 msgid "%d selected"
 msgid_plural "%d selected"
 msgstr[0] "Επιλέχθηκε %d"
 msgstr[1] "Επιλέχθηκαν %d"
 
-#: ../src/mainToolbar.js:200
+#: ../src/mainToolbar.js:203
 msgid "Cancel"
 msgstr "Άκυρο"
 
-#: ../src/mainToolbar.js:242
+#: ../src/mainToolbar.js:246
 msgid "Select Items"
 msgstr "Επιλογή αντικειμένων"
 
-#: ../src/mainWindow.js:306
+#: ../src/mainWindow.js:321
 msgid "translator-credits"
 msgstr ""
 "Ελληνική μεταφραστική ομάδα GNOME\n"
@@ -344,12 +376,11 @@ msgstr ""
 "Για περισσότερες πληροφορίες, επισκεφθείτε τη σελίδα\n"
 "http://gnome.gr/"
 
-#: ../src/mainWindow.js:309
+#: ../src/mainWindow.js:324
 msgid "A document manager application"
 msgstr "Εφαρμογή διαχείρισης εγγράφων"
 
-#: ../src/mainWindow.js:314
-#| msgid "A document manager application"
+#: ../src/mainWindow.js:329
 msgid "An e-books manager application"
 msgstr "Εφαρμογή διαχείρισης ηλεκτρονικών βιβλίων"
 
@@ -433,16 +464,16 @@ msgstr "Παρόν σε"
 msgid "Bookmark this page"
 msgstr "Προσθήκη αυτής της σελίδας στους σελιδοδείκτες"
 
-#: ../src/preview.js:848 ../src/selections.js:859
+#: ../src/preview.js:849 ../src/selections.js:859
 #, javascript-format
 msgid "Open with %s"
 msgstr "Άνοιγμα με %s"
 
-#: ../src/preview.js:911
+#: ../src/preview.js:912
 msgid "Find Previous"
 msgstr "Εύρεση προηγουμένου"
 
-#: ../src/preview.js:918
+#: ../src/preview.js:919
 msgid "Find Next"
 msgstr "Εύρεση επομένου"
 
@@ -547,8 +578,8 @@ msgstr "Επιλογή κανενός"
 msgid "Category"
 msgstr "Κατηγορία"
 
-#: ../src/search.js:120 ../src/search.js:183 ../src/search.js:300
-#: ../src/search.js:458
+#: ../src/search.js:120 ../src/search.js:189 ../src/search.js:317
+#: ../src/search.js:487
 msgid "All"
 msgstr "Όλα"
 
@@ -560,55 +591,50 @@ msgstr "Αγαπημένα"
 msgid "Shared with you"
 msgstr "Από κοινού με εσάς"
 
-#: ../src/search.js:180
+#: ../src/search.js:186
 msgctxt "Search Filter"
 msgid "Type"
 msgstr "Τύπος"
 
-#: ../src/search.js:186 ../src/search.js:195
-msgid "Collections"
-msgstr "Συλλογές"
-
-#: ../src/search.js:190
+#: ../src/search.js:196
 msgid "PDF Documents"
 msgstr "Έγγραφα PDF"
 
-#: ../src/search.js:203
+#: ../src/search.js:209
 msgid "Presentations"
 msgstr "Παρουσιάσεις"
 
-#: ../src/search.js:206
+#: ../src/search.js:212
 msgid "Spreadsheets"
 msgstr "Λογιστικά φύλλα"
 
-#: ../src/search.js:209
+#: ../src/search.js:215
 msgid "Text Documents"
 msgstr "Έγγραφα κειμένου"
 
-#: ../src/search.js:214
-#| msgid "Bookmarks"
+#: ../src/search.js:220
 msgid "e-Books"
 msgstr "ηλεκτρονικά βιβλία"
 
-#: ../src/search.js:218
+#: ../src/search.js:224
 msgid "Comics"
 msgstr "Βιβλίο με σκίτσα"
 
-#: ../src/search.js:297
+#: ../src/search.js:314
 msgid "Match"
 msgstr "Ταίριασμα"
 
-#: ../src/search.js:303
+#: ../src/search.js:320
 msgctxt "Search Filter"
 msgid "Title"
 msgstr "Τίτλος"
 
-#: ../src/search.js:306
+#: ../src/search.js:323
 msgctxt "Search Filter"
 msgid "Author"
 msgstr "Συγγραφέας"
 
-#: ../src/search.js:454
+#: ../src/search.js:483
 msgid "Sources"
 msgstr "Πηγές"
 
@@ -712,52 +738,69 @@ msgstr "Μπορείτε να ρωτήσετε τον %s για πρόσβαση
 msgid "The document was not updated"
 msgstr "Το έγγραφο δεν ανανεώθηκε"
 
-#: ../src/shellSearchProvider.js:294
+#: ../src/shellSearchProvider.js:293
 msgid "Untitled Document"
 msgstr "Ανώνυμο έγγραφο"
 
-#: ../src/trackerController.js:170
+#: ../src/trackerController.js:172
 msgid "Unable to fetch the list of documents"
 msgstr "Αδυναμία ανάκτησης της λίστας εγγράφων"
 
-#: ../src/view.js:240
+#: ../src/view.js:242
+msgid "No Books Found"
+msgstr "Δε βρέθηκαν βιβλία"
+
+#: ../src/view.js:243
+msgid "No Documents Found"
+msgstr "Δε βρέθηκαν έγγραφα"
+
+#: ../src/view.js:265
+#, javascript-format
+msgid "You can add your online accounts in %s"
+msgstr "Μπορείτε να προσθέσετε τους διαδικτυακούς σας λογαριασμούς στις %s"
+
+#: ../src/view.js:269
+msgid "Settings"
+msgstr "Ρυθμίσεις"
+
+#: ../src/view.js:503
 msgid "Yesterday"
 msgstr "Χθες"
 
-#: ../src/view.js:242
+#: ../src/view.js:505
 #, javascript-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
 msgstr[0] "%d ημέρα πριν"
 msgstr[1] "%d ημέρες πριν"
 
-#: ../src/view.js:246
+#: ../src/view.js:509
 msgid "Last week"
 msgstr "Προηγούμενη εβδομάδα"
 
-#: ../src/view.js:248
+#: ../src/view.js:511
 #, javascript-format
 msgid "%d week ago"
 msgid_plural "%d weeks ago"
 msgstr[0] "%d εβδομάδα πριν"
 msgstr[1] "%d εβδομάδες πριν"
 
-#: ../src/view.js:252
+#: ../src/view.js:515
 msgid "Last month"
 msgstr "Προηγούμενος μήνας"
 
-#: ../src/view.js:254
+#: ../src/view.js:517
 #, javascript-format
 msgid "%d month ago"
 msgid_plural "%d months ago"
 msgstr[0] "%d μήνα πριν"
 msgstr[1] "%d μήνες πριν"
 
-#: ../src/view.js:258
+#: ../src/view.js:521
 msgid "Last year"
 msgstr "Προηγούμενο έτος"
 
-#: ../src/view.js:260
+#: ../src/view.js:523
 #, javascript-format
 msgid "%d year ago"
 msgid_plural "%d years ago"
