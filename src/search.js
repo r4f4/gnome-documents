@@ -242,10 +242,15 @@ const SearchTypeManager = new Lang.Class({
     getDocumentTypes: function() {
         let types = [];
 
-        types.push(this.getItemById(SearchTypeStock.PDF));
-        types.push(this.getItemById(SearchTypeStock.PRESENTATIONS));
-        types.push(this.getItemById(SearchTypeStock.SPREADSHEETS));
-        types.push(this.getItemById(SearchTypeStock.TEXTDOCS));
+        if (!Application.application.isBooks) {
+            types.push(this.getItemById(SearchTypeStock.PDF));
+            types.push(this.getItemById(SearchTypeStock.PRESENTATIONS));
+            types.push(this.getItemById(SearchTypeStock.SPREADSHEETS));
+            types.push(this.getItemById(SearchTypeStock.TEXTDOCS));
+        } else {
+            types.push(this.getItemById(SearchTypeStock.EBOOKS));
+            types.push(this.getItemById(SearchTypeStock.COMICS));
+        }
 
         return types;
     },
