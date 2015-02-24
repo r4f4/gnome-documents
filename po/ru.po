@@ -6,18 +6,18 @@
 # Stas Solovey <whats_up@tut.by>, 2011.
 # Yuri Kozlov <yuray@komyakino.ru>, 2012.
 # Alexsey Nadtochey <irbis4lan@yandex.com>, 2012.
-# Ivan Komaritsyn <vantu5z@mail.ru>, 2015.
 # Yuri Myasoedov <ymyasoedov@yandex.ru>, 2011, 2012, 2013, 2014, 2015.
+# Ivan Komaritsyn <vantu5z@mail.ru>, 2015.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-documents master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-02-19 09:28+0000\n"
-"PO-Revision-Date: 2015-02-19 13:28+0300\n"
-"Last-Translator: Yuri Myasoedov <ymyasoedov@yandex.ru>\n"
-"Language-Team: русский <gnome-cyr@gnome.org>\n"
+"POT-Creation-Date: 2015-02-20 07:47+0000\n"
+"PO-Revision-Date: 2015-02-20 13:57+0300\n"
+"Last-Translator: Ivan Komaritsyn <vantu5z@mail.ru>\n"
+"Language-Team: Русский <gnome-cyr@gnome.org>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -27,8 +27,8 @@ msgstr ""
 "X-Generator: Gtranslator 2.91.6\n"
 
 #: ../data/org.gnome.Books.appdata.xml.in.h:1
-#: ../data/org.gnome.Books.desktop.in.h:1 ../src/application.js:128
-#: ../src/mainWindow.js:316
+#: ../data/org.gnome.Books.desktop.in.h:1 ../src/application.js:132
+#: ../src/mainWindow.js:328
 msgid "Books"
 msgstr "Книги"
 
@@ -131,8 +131,8 @@ msgid "Whether the application is in night mode."
 msgstr "Должно ли приложение использовать ночной режим."
 
 #: ../data/org.gnome.Documents.appdata.xml.in.h:1
-#: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:124
-#: ../src/mainWindow.js:52 ../src/mainWindow.js:311
+#: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:128
+#: ../src/mainWindow.js:52 ../src/mainWindow.js:323
 msgid "Documents"
 msgstr "Документы"
 
@@ -188,105 +188,96 @@ msgstr "Управление и предоставление доступа к �
 msgid "Docs;PDF;Document;"
 msgstr "Документы;PDF;Документ;"
 
-#: ../src/documents.js:630
+#: ../src/documents.js:631
 msgid "Failed to print document"
 msgstr "Не удалось напечатать документ"
 
-#: ../src/documents.js:667 ../src/search.js:465
+#: ../src/documents.js:668 ../src/search.js:493
 msgid "Local"
 msgstr "Локальные"
 
-#: ../src/documents.js:694
+#: ../src/documents.js:695
 msgid "GNOME"
 msgstr "GNOME"
 
-#: ../src/documents.js:695
+#: ../src/documents.js:696
 msgid "Getting Started with Documents"
 msgstr "Начало работы с приложением «Документы»"
 
-#: ../src/documents.js:711 ../src/documents.js:892 ../src/documents.js:955
-#: ../src/documents.js:1063
+#: ../src/documents.js:712 ../src/documents.js:893 ../src/documents.js:956
+#: ../src/documents.js:1064
 msgid "Collection"
 msgstr "Коллекция"
 
-#: ../src/documents.js:771
+#: ../src/documents.js:772
 msgid "Google Docs"
 msgstr "Документы Google"
 
-#: ../src/documents.js:772
+#: ../src/documents.js:773
 msgid "Google"
 msgstr "Google"
 
-#: ../src/documents.js:894 ../src/documents.js:1065
+#: ../src/documents.js:895 ../src/documents.js:1066
 msgid "Spreadsheet"
 msgstr "Таблица"
 
-#: ../src/documents.js:896 ../src/documents.js:1067 ../src/presentation.js:47
+#: ../src/documents.js:897 ../src/documents.js:1068 ../src/presentation.js:47
 msgid "Presentation"
 msgstr "Презентация"
 
-#: ../src/documents.js:898 ../src/documents.js:1069
+#: ../src/documents.js:899 ../src/documents.js:1070
 msgid "e-Book"
 msgstr "Электронная книга"
 
-#: ../src/documents.js:900 ../src/documents.js:1071
+#: ../src/documents.js:901 ../src/documents.js:1072
 msgid "Document"
 msgstr "Документ"
 
-#: ../src/documents.js:934
+#: ../src/documents.js:935
 msgid "ownCloud"
 msgstr "ownCloud"
 
-#: ../src/documents.js:997 ../src/documents.js:998
+#: ../src/documents.js:998 ../src/documents.js:999
 msgid "OneDrive"
 msgstr "OneDrive"
 
-#: ../src/documents.js:1235
+#: ../src/documents.js:1236
 msgid "Please check the network connection."
 msgstr "Проверьте подключение к сети."
 
-#: ../src/documents.js:1238
+#: ../src/documents.js:1239
 msgid "Please check the network proxy settings."
 msgstr "Проверьте параметры прокси-сервера."
 
-#: ../src/documents.js:1241
+#: ../src/documents.js:1242
 msgid "Unable to sign in to the document service."
 msgstr "Не удалось войти в службу документов."
 
-#: ../src/documents.js:1244
+#: ../src/documents.js:1245
 msgid "Unable to locate this document."
 msgstr "Не удалось определить расположение документа."
 
-#: ../src/documents.js:1247
+#: ../src/documents.js:1248
 #, javascript-format
 msgid "Hmm, something is fishy (%d)."
 msgstr "Хм, что-то сомнительно (%d)."
 
-#: ../src/documents.js:1265
+#: ../src/documents.js:1266
 #, javascript-format
 msgid "Oops! Unable to load “%s”"
 msgstr "Ой! Не удалось загрузить «%s»"
 
-#: ../src/edit.js:175
+#: ../src/edit.js:176
 msgid "View"
 msgstr "Вид"
 
-#: ../src/embed.js:143
-msgid "No Books Found"
-msgstr "Книги не найдены"
+#: ../src/embed.js:109
+msgid "Recent"
+msgstr "Недавние"
 
-#: ../src/embed.js:144
-msgid "No Documents Found"
-msgstr "Документы не найдены"
-
-#: ../src/embed.js:166
-#, javascript-format
-msgid "You can add your online accounts in %s"
-msgstr "Вы можете добавить сетевые учётные записи через приложение «%s»"
-
-#: ../src/embed.js:170
-msgid "Settings"
-msgstr "Параметры"
+#: ../src/embed.js:112 ../src/search.js:192 ../src/search.js:201
+msgid "Collections"
+msgstr "Коллекции"
 
 #: ../src/lib/gd-nav-bar.c:242
 #, c-format
@@ -337,19 +328,19 @@ msgstr "Поиск"
 msgid "Back"
 msgstr "Назад"
 
-#: ../src/mainToolbar.js:132
+#: ../src/mainToolbar.js:141
 msgid "View items as a list"
 msgstr "Показывать в виде списка"
 
-#: ../src/mainToolbar.js:138
+#: ../src/mainToolbar.js:147
 msgid "View items as a grid of icons"
 msgstr "Показывать в виде сетки значков"
 
-#: ../src/mainToolbar.js:168
+#: ../src/mainToolbar.js:177
 msgid "Click on items to select them"
 msgstr "Щёлкните по элементам, чтобы выбрать их"
 
-#: ../src/mainToolbar.js:170
+#: ../src/mainToolbar.js:179
 #, javascript-format
 msgid "%d selected"
 msgid_plural "%d selected"
@@ -357,23 +348,23 @@ msgstr[0] "Выбрано: %d"
 msgstr[1] "Выбрано: %d"
 msgstr[2] "Выбрано: %d"
 
-#: ../src/mainToolbar.js:200
+#: ../src/mainToolbar.js:203
 msgid "Cancel"
 msgstr "Отмена"
 
-#: ../src/mainToolbar.js:242
+#: ../src/mainToolbar.js:246
 msgid "Select Items"
 msgstr "Выбрать элементы"
 
-#: ../src/mainWindow.js:309
+#: ../src/mainWindow.js:321
 msgid "translator-credits"
 msgstr "Юрий Мясоедов <omerta13@yandex.ru>, 2014"
 
-#: ../src/mainWindow.js:312
+#: ../src/mainWindow.js:324
 msgid "A document manager application"
 msgstr "Приложение для управления документами"
 
-#: ../src/mainWindow.js:317
+#: ../src/mainWindow.js:329
 msgid "An e-books manager application"
 msgstr "Приложение для управления электронными книгами"
 
@@ -565,71 +556,67 @@ msgstr "Выбрать все"
 msgid "Select None"
 msgstr "Отменить выбор"
 
-#: ../src/search.js:116
+#: ../src/search.js:115
 msgid "Category"
 msgstr "Категория"
 
-#: ../src/search.js:121 ../src/search.js:184 ../src/search.js:301
-#: ../src/search.js:459
+#: ../src/search.js:120 ../src/search.js:189 ../src/search.js:317
+#: ../src/search.js:487
 msgid "All"
 msgstr "Все"
 
-#: ../src/search.js:127
+#: ../src/search.js:126
 msgid "Favorites"
 msgstr "Избранное"
 
-#: ../src/search.js:132
+#: ../src/search.js:131
 msgid "Shared with you"
 msgstr "В открытом для вас доступе"
 
-#: ../src/search.js:181
+#: ../src/search.js:186
 msgctxt "Search Filter"
 msgid "Type"
 msgstr "Тип"
 
-#: ../src/search.js:187 ../src/search.js:196
-msgid "Collections"
-msgstr "Коллекции"
-
-#: ../src/search.js:191
+#: ../src/search.js:196
 msgid "PDF Documents"
 msgstr "Документы PDF"
 
-#: ../src/search.js:204
+#: ../src/search.js:209
 msgid "Presentations"
 msgstr "Презентации"
 
-#: ../src/search.js:207
+#: ../src/search.js:212
 msgid "Spreadsheets"
 msgstr "Таблицы"
 
-#: ../src/search.js:210
+#: ../src/search.js:215
 msgid "Text Documents"
 msgstr "Текстовые документы"
 
-#: ../src/search.js:215
+#: ../src/search.js:220
 msgid "e-Books"
 msgstr "Электронные книги"
 
-#: ../src/search.js:219
+#: ../src/search.js:224
 msgid "Comics"
 msgstr "Комиксы"
 
-#: ../src/search.js:298
+#: ../src/search.js:314
 msgid "Match"
 msgstr "Совпадение"
 
-#: ../src/search.js:304
+#: ../src/search.js:320
 msgctxt "Search Filter"
 msgid "Title"
 msgstr "Заголовок"
 
-#: ../src/search.js:307
+#: ../src/search.js:323
 msgctxt "Search Filter"
 msgid "Author"
 msgstr "Автор"
 
-#: ../src/search.js:455
+#: ../src/search.js:483
 msgid "Sources"
 msgstr "Источники"
 
@@ -732,19 +719,36 @@ msgstr "Можно попросить %s для получения доступ�
 msgid "The document was not updated"
 msgstr "Документ не был обновлён"
 
-#: ../src/shellSearchProvider.js:294
+#: ../src/shellSearchProvider.js:293
 msgid "Untitled Document"
 msgstr "Безымянный документ"
 
-#: ../src/trackerController.js:170
+#: ../src/trackerController.js:172
 msgid "Unable to fetch the list of documents"
 msgstr "Не удалось получить список документов"
 
-#: ../src/view.js:245
+#: ../src/view.js:242
+msgid "No Books Found"
+msgstr "Книги не найдены"
+
+#: ../src/view.js:243
+msgid "No Documents Found"
+msgstr "Документы не найдены"
+
+#: ../src/view.js:265
+#, javascript-format
+msgid "You can add your online accounts in %s"
+msgstr "Вы можете добавить сетевые учётные записи через приложение «%s»"
+
+#: ../src/view.js:269
+msgid "Settings"
+msgstr "Параметры"
+
+#: ../src/view.js:503
 msgid "Yesterday"
 msgstr "Вчера"
 
-#: ../src/view.js:247
+#: ../src/view.js:505
 #, javascript-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
@@ -752,11 +756,11 @@ msgstr[0] "%d день назад"
 msgstr[1] "%d дня назад"
 msgstr[2] "%d дней назад"
 
-#: ../src/view.js:251
+#: ../src/view.js:509
 msgid "Last week"
 msgstr "На прошлой неделе"
 
-#: ../src/view.js:253
+#: ../src/view.js:511
 #, javascript-format
 msgid "%d week ago"
 msgid_plural "%d weeks ago"
@@ -764,11 +768,11 @@ msgstr[0] "%d неделя назад"
 msgstr[1] "%d недели назад"
 msgstr[2] "%d недель назад"
 
-#: ../src/view.js:257
+#: ../src/view.js:515
 msgid "Last month"
 msgstr "В прошлом месяце"
 
-#: ../src/view.js:259
+#: ../src/view.js:517
 #, javascript-format
 msgid "%d month ago"
 msgid_plural "%d months ago"
@@ -776,11 +780,11 @@ msgstr[0] "%d месяц назад"
 msgstr[1] "%d месяца назад"
 msgstr[2] "%d месяцев назад"
 
-#: ../src/view.js:263
+#: ../src/view.js:521
 msgid "Last year"
 msgstr "В прошлом году"
 
-#: ../src/view.js:265
+#: ../src/view.js:523
 #, javascript-format
 msgid "%d year ago"
 msgid_plural "%d years ago"
