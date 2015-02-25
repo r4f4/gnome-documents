@@ -654,8 +654,13 @@ const PreviewNavControls = new Lang.Class({
         return false;
     },
 
-    _onMotion: function() {
+    _onMotion: function(widget, event) {
         if (this._motionId != 0) {
+            return false;
+        }
+
+        let device = event.get_source_device();
+        if (device.input_source == Gdk.InputSource.TOUCHSCREEN) {
             return false;
         }
 
