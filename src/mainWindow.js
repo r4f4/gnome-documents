@@ -19,6 +19,7 @@
  *
  */
 
+const GdPrivate = imports.gi.GdPrivate;
 const Gdk = imports.gi.Gdk;
 const GLib = imports.gi.GLib;
 const Gtk = imports.gi.Gtk;
@@ -27,7 +28,6 @@ const Lang = imports.lang;
 const Mainloop = imports.mainloop;
 
 const Application = imports.application;
-const Config = imports.config;
 const Embed = imports.embed;
 const Selections = imports.selections;
 const Utils = imports.utils;
@@ -311,36 +311,6 @@ const MainWindow = new Lang.Class({
     },
 
     showAbout: function(isBooks) {
-        let aboutDialog = new Gtk.AboutDialog();
-
-        aboutDialog.artists = [ 'Jakub Steiner <jimmac@gmail.com>' ];
-        aboutDialog.authors = [ 'Cosimo Cecchi <cosimoc@gnome.org>',
-                                'Florian M' + String.fromCharCode(0x00FC) + 'llner <fmuellner@gnome.org>',
-                                'William Jon McCann <william.jon.mccann@gmail.com>',
-                                'Bastien Nocera <hadess@hadess.net>' ];
-        aboutDialog.translator_credits = _("translator-credits");
-        if (!isBooks) {
-            aboutDialog.program_name = _("Documents");
-            aboutDialog.comments = _("A document manager application");
-            aboutDialog.logo_icon_name = 'gnome-documents';
-            aboutDialog.website = 'https://wiki.gnome.org/Apps/Documents';
-        } else {
-            aboutDialog.program_name = _("Books");
-            aboutDialog.comments = _("An e-books manager application");
-            aboutDialog.logo_icon_name = 'gnome-books';
-            aboutDialog.website = 'https://wiki.gnome.org/Apps/Books';
-        }
-        aboutDialog.copyright = 'Copyright ' + String.fromCharCode(0x00A9) + ' 2011' + String.fromCharCode(0x2013) + '2014 Red Hat, Inc.';
-        aboutDialog.license_type = Gtk.License.GPL_2_0;
-        aboutDialog.version = Config.PACKAGE_VERSION;
-        aboutDialog.wrap_license = true;
-
-        aboutDialog.modal = true;
-        aboutDialog.transient_for = this.window;
-
-        aboutDialog.show();
-        aboutDialog.connect('response', function() {
-            aboutDialog.destroy();
-        });
+        GdPrivate.show_about_dialog(this.window, isBooks);
     }
 });
