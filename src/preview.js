@@ -572,10 +572,10 @@ const PreviewNavControls = new Lang.Class({
         this._overlay = overlay;
 
         this._visible = false;
+        this._visibleInternal = false;
         this._pageChangedId = 0;
         this._autoHideId = 0;
         this._motionId = 0;
-        this._hover = false;
 
         this.bar_widget = new GdPrivate.NavBar({ document_model: this._model,
                                                  margin: _PREVIEW_NAVBAR_MARGIN,
@@ -634,23 +634,28 @@ const PreviewNavControls = new Lang.Class({
 
         this._overlay.connect('motion-notify-event', Lang.bind(this, this._onMotion));
 
+        this._tapGesture = new Gtk.GestureMultiPress({ propagation_phase: Gtk.PropagationPhase.CAPTURE,
+                                                       touch_only: true,
+                                                       widget: this._previewView.view });
+        this._tapGesture.connect('released', Lang.bind(this, this._onMultiPressReleased));
+        this._tapGesture.connect('stopped', Lang.bind(this, this._onMultiPressStopped));
     },
 
     _onEnterNotify: function() {
-        this._hover = true;
         this._unqueueAutoHide();
         return false;
     },
 
     _onLeaveNotify: function() {
-        this._hover = false;
         this._queueAutoHide();
         return false;
     },
 
     _motionTimeout: function() {
         this._motionId = 0;
+        this._visibleInternal = true;
         this._updateVisibility();
+        this._queueAutoHide();
         return false;
     },
 
@@ -668,6 +673,17 @@ const PreviewNavControls = new Lang.Class({
         return false;
     },
 
+    _onMultiPressReleased: function() {
+        this._tapGesture.set_state(Gtk.EventSequenceState.CLAIMED);
+        this._visibleInternal = !this._visibleInternal;
+        this._unqueueAutoHide();
+        this._updateVisibility();
+    },
+
+    _onMultiPressStopped: function() {
+        this._tapGesture.set_state(Gtk.EventSequenceState.DENIED);
+    },
+
     _onPrevClicked: function() {
         this._previewView.view.previous_page();
     },
@@ -677,10 +693,9 @@ const PreviewNavControls = new Lang.Class({
     },
 
     _autoHide: function() {
-        this._fadeOutButton(this.bar_widget);
-        this._fadeOutButton(this.prev_widget);
-        this._fadeOutButton(this.next_widget);
         this._autoHideId = 0;
+        this._visibleInternal = false;
+        this._updateVisibility();
         return false;
     },
 
@@ -698,7 +713,7 @@ const PreviewNavControls = new Lang.Class({
     },
 
     _updateVisibility: function() {
-        if (!this._model || !this._visible) {
+        if (!this._model || !this._visible || !this._visibleInternal) {
             this._fadeOutButton(this.bar_widget);
             this._fadeOutButton(this.prev_widget);
             this._fadeOutButton(this.next_widget);
@@ -717,9 +732,6 @@ const PreviewNavControls = new Lang.Class({
             this._fadeInButton(this.next_widget);
         else
             this._fadeOutButton(this.next_widget);
-
-        if (!this._hover)
-            this._queueAutoHide();
     },
 
     setModel: function(model) {
@@ -735,6 +747,7 @@ const PreviewNavControls = new Lang.Class({
             this._pageChangedId = this._model.connect('page-changed', Lang.bind(this, this._updateVisibility));
 
         this._updateVisibility();
+        this._queueAutoHide();
     },
 
     _fadeInButton: function(widget) {
@@ -758,11 +771,14 @@ const PreviewNavControls = new Lang.Class({
 
     show: function() {
         this._visible = true;
+        this._visibleInternal = true;
         this._updateVisibility();
+        this._queueAutoHide();
     },
 
     hide: function() {
         this._visible = false;
+        this._visibleInternal = false;
         this._updateVisibility();
     },
 
@@ -770,6 +786,7 @@ const PreviewNavControls = new Lang.Class({
         this.bar_widget.destroy();
         this.prev_widget.destroy();
         this.next_widget.destroy();
+        this._tapGesture = null;
     }
 });
 
