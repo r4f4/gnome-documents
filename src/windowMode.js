@@ -84,7 +84,7 @@ const ModeController = new Lang.Class({
 
     _updateFullscreen: function() {
         if (!this.getCanFullscreen() && this._fullscreen)
-            this._setFullscreen(false);
+            this.setFullscreen(false);
 
         this.emit('can-fullscreen-changed');
     },
