@@ -48,5 +48,8 @@ void gd_ev_view_find_changed (EvView *view,
                               EvJobFind *job,
                               gint page);
 
+void gd_show_about_dialog (GtkWindow *parent,
+                           gboolean is_books);
+
 #endif /* __GD_UTILS_H__ */
                                   
