@@ -634,7 +634,7 @@ const OrganizeCollectionDialog = new Lang.Class({
                                        modal: true,
                                        destroy_with_parent: true,
                                        default_width: 400,
-                                       default_height: 250,
+                                       default_height: 300,
         // Translators: "Collections" refers to documents in this context
                                        title: C_("Dialog Title", "Collections") });
 
