@@ -736,9 +736,6 @@ const PreviewNavControls = new Lang.Class({
 
         if (this._model)
             this._pageChangedId = this._model.connect('page-changed', Lang.bind(this, this._updateVisibility));
-
-        this._updateVisibility();
-        this._queueAutoHide();
     },
 
     _fadeInButton: function(widget) {
