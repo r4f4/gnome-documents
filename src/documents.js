@@ -717,6 +717,17 @@ const LocalDocument = new Lang.Class({
     },
 
     load: function(passwd, cancellable, callback) {
+        if (this.mimeType == 'application/epub+zip' ||
+            this.mimeType == 'application/x-mobipocket-ebook' ||
+            this.mimeType == 'application/x-fictionbook+xml' ||
+            this.mimeType == 'application/x-zip-compressed-fb2') {
+            let exception = new GLib.Error(Gio.IOErrorEnum,
+                                           Gio.IOErrorEnum.NOT_SUPPORTED,
+                                           "Internal error: Ebooks preview isn't support yet");
+            callback(this, null, exception);
+            return;
+        }
+
         GdPrivate.pdf_loader_load_uri_async(this.uri, passwd, cancellable, Lang.bind(this,
             function(source, res) {
                 try {
@@ -1248,7 +1259,17 @@ const DocumentManager = new Lang.Class({
                 message = _("Hmm, something is fishy (%d).").format(error.code);
                 break;
             }
+        } else if (error.domain == Gio.IOErrorEnum) {
+            switch (error.code) {
+            case Gio.IOErrorEnum.NOT_SUPPORTED:
+                if (Application.application.isBooks)
+                    message = _("You are using a preview of Books. Full viewing capabilities are coming soon!");
+                break;
+            default:
+                break;
+            }
         }
+
         let exception = new GLib.Error(error.domain, error.code, message);
         return exception;
     },
