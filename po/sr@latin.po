@@ -1,14 +1,14 @@
 # Serbian translation for gnome-documents.
 # Copyright (C) 2011 gnome-documents's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-documents package.
-# Miroslav Nikolić <miroslavnikolic@rocketmail.com>, 2011—2014.
+# Miroslav Nikolić <miroslavnikolic@rocketmail.com>, 2011—2015.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-documents master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-09-20 06:53+0000\n"
-"PO-Revision-Date: 2014-09-20 11:31+0200\n"
+"POT-Creation-Date: 2015-03-02 12:38+0000\n"
+"PO-Revision-Date: 2015-03-02 19:07+0200\n"
 "Last-Translator: Miroslav Nikolić <miroslavnikolic@rocketmail.com>\n"
 "Language-Team: Serbian <gnom@prevod.org>\n"
 "Language: sr\n"
@@ -19,9 +19,123 @@ msgstr ""
 "n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Project-Style: gnome\n"
 
+#: ../data/org.gnome.Books.appdata.xml.in.h:1
+#: ../data/org.gnome.Books.desktop.in.h:1 ../src/application.js:132
+#: ../src/lib/gd-utils.c:418
+#| msgid "Bookmarks"
+msgid "Books"
+msgstr "Knjige"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:2
+#| msgid "A document manager application for GNOME"
+msgid "An e-book manager application for GNOME"
+msgstr "Gnomov program za upravljanje el. knjigama"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:3
+#| msgid ""
+#| "A simple application to access, organize and share your documents on "
+#| "GNOME. It is meant to be a simple and elegant replacement for using a "
+#| "file manager to deal with documents. Seamless cloud integration is "
+#| "offered through GNOME Online Accounts."
+msgid ""
+"A simple application to access and organize your e-books on GNOME. It is "
+"meant to be a simple and elegant replacement for using a file manager to "
+"deal with e-books."
+msgstr ""
+"Jednostavan program za pristup i sređivanje el. knjiga na Gnomu. Zamišljen je "
+"da bude jednostavna i prigodna zamena upravnika datoteka za rad sa el. "
+"knjigama."
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:4
+#: ../data/org.gnome.Documents.appdata.xml.in.h:4
+msgid "It lets you:"
+msgstr "Omogućava vam da:"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:5
+msgid "View recent e-books"
+msgstr "Pogledate skorašnje el. knjige"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:6
+#| msgid "Search through documents"
+msgid "Search through e-books"
+msgstr "Pretražujete el. knjige"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:7
+#| msgid "View documents fullscreen"
+msgid "View e-books fullscreen"
+msgstr "Prikažete el. knjige preko celog ekrana"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:8
+msgid "Print e-books"
+msgstr "Štampate el. knjige"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:9
+#: ../data/org.gnome.Documents.appdata.xml.in.h:12
+msgid "Allow opening full featured editor for non-trivial changes"
+msgstr "Omogućava otvaranje potpunijeg uređivača za naprednije izmene"
+
+#: ../data/org.gnome.Books.desktop.in.h:2
+#| msgid "Access, manage and share documents"
+msgid "Access, manage and share books"
+msgstr "Pristupite, upravljajte i delite knjige"
+
+#: ../data/org.gnome.Books.desktop.in.h:3
+msgid "Books;Comics;ePub;PDF;"
+msgstr "knjige;stripovi;ePub;PDF;"
+
+#: ../data/org.gnome.books.gschema.xml.h:1
+#: ../data/org.gnome.documents.gschema.xml.h:1
+msgid "View as"
+msgstr "Prikaži kao"
+
+#: ../data/org.gnome.books.gschema.xml.h:2
+#: ../data/org.gnome.documents.gschema.xml.h:2
+msgid "View as type"
+msgstr "Prikazivanje prema vrsti"
+
+#: ../data/org.gnome.books.gschema.xml.h:3
+#: ../data/org.gnome.documents.gschema.xml.h:3
+msgid "Window size"
+msgstr "Veličina prozora"
+
+#: ../data/org.gnome.books.gschema.xml.h:4
+#: ../data/org.gnome.documents.gschema.xml.h:4
+msgid "Window size (width and height)."
+msgstr "Veličina prozora (širina i visina)."
+
+#: ../data/org.gnome.books.gschema.xml.h:5
+#: ../data/org.gnome.documents.gschema.xml.h:5
+msgid "Window position"
+msgstr "Položaj prozora"
+
+#: ../data/org.gnome.books.gschema.xml.h:6
+#: ../data/org.gnome.documents.gschema.xml.h:6
+msgid "Window position (x and y)."
+msgstr "Položaj prozora (položeno i uspravno)."
+
+#: ../data/org.gnome.books.gschema.xml.h:7
+#: ../data/org.gnome.documents.gschema.xml.h:7
+msgid "Window maximized"
+msgstr "Uvećan prozor"
+
+#: ../data/org.gnome.books.gschema.xml.h:8
+#: ../data/org.gnome.documents.gschema.xml.h:8
+msgid "Window maximized state"
+msgstr "Stanje uvećanja prozora"
+
+#: ../data/org.gnome.books.gschema.xml.h:9
+#: ../data/org.gnome.documents.gschema.xml.h:9
+msgid "Night mode"
+msgstr "Noćni režim"
+
+#: ../data/org.gnome.books.gschema.xml.h:10
+#: ../data/org.gnome.documents.gschema.xml.h:10
+msgid "Whether the application is in night mode."
+msgstr "Da li je program u noćnom režimu."
+
 #: ../data/org.gnome.Documents.appdata.xml.in.h:1
-#: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:121
-#: ../src/mainWindow.js:52 ../src/mainWindow.js:302
+#: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:128
+#: ../src/lib/gd-utils.c:411 ../src/mainWindow.js:52
 msgid "Documents"
 msgstr "Dokumenti"
 
@@ -40,10 +154,6 @@ msgstr ""
 "Zamišljen je da bude jednostavna i prigodna zamena korišćenju upravnika "
 "datoteka za rukovanje dokumentima. Slično oblačno objedinjavanje se nudi u "
 "Gnomovim nalozima na mreži."
-
-#: ../data/org.gnome.Documents.appdata.xml.in.h:4
-msgid "It lets you:"
-msgstr "Omogućava vam da:"
 
 #: ../data/org.gnome.Documents.appdata.xml.in.h:5
 msgid "View recent local and online documents"
@@ -66,18 +176,12 @@ msgid "View documents fullscreen"
 msgstr "Prikažite dokumente preko celog ekrana"
 
 #: ../data/org.gnome.Documents.appdata.xml.in.h:10
-#| msgid "PDF Documents"
 msgid "Print documents"
 msgstr "Štampajte dokumente"
 
 #: ../data/org.gnome.Documents.appdata.xml.in.h:11
-#| msgid "Select Items"
 msgid "Select favorites"
 msgstr "Izaberite omiljene"
-
-#: ../data/org.gnome.Documents.appdata.xml.in.h:12
-msgid "Allow opening full featured editor for non-trivial changes"
-msgstr "Omogućava otvaranje potpunijeg uređivača za naprednije izmene"
 
 #: ../data/org.gnome.Documents.desktop.in.h:2
 msgid "Access, manage and share documents"
@@ -87,129 +191,96 @@ msgstr "Pristupite, upravljajte i delite dokumente"
 msgid "Docs;PDF;Document;"
 msgstr "dokumentacija;pdf;dokument;"
 
-#: ../data/org.gnome.documents.gschema.xml.h:1
-msgid "View as"
-msgstr "Prikaži kao"
-
-#: ../data/org.gnome.documents.gschema.xml.h:2
-msgid "View as type"
-msgstr "Prikazivanje prema vrsti"
-
-#: ../data/org.gnome.documents.gschema.xml.h:3
-msgid "Window size"
-msgstr "Veličina prozora"
-
-#: ../data/org.gnome.documents.gschema.xml.h:4
-msgid "Window size (width and height)."
-msgstr "Veličina prozora (širina i visina)."
-
-#: ../data/org.gnome.documents.gschema.xml.h:5
-msgid "Window position"
-msgstr "Položaj prozora"
-
-#: ../data/org.gnome.documents.gschema.xml.h:6
-msgid "Window position (x and y)."
-msgstr "Položaj prozora (položeno i uspravno)."
-
-#: ../data/org.gnome.documents.gschema.xml.h:7
-msgid "Window maximized"
-msgstr "Uvećan prozor"
-
-#: ../data/org.gnome.documents.gschema.xml.h:8
-msgid "Window maximized state"
-msgstr "Stanje uvećanja prozora"
-
-#: ../src/documents.js:621
+#: ../src/documents.js:631
 msgid "Failed to print document"
 msgstr "Nisam uspeo da odštampam dokument"
 
-#: ../src/documents.js:658 ../src/search.js:427
+#: ../src/documents.js:668 ../src/search.js:498
 msgid "Local"
 msgstr "Na računaru"
 
-#: ../src/documents.js:679
+#: ../src/documents.js:695
 msgid "GNOME"
 msgstr "Gnom"
 
-#: ../src/documents.js:680
+#: ../src/documents.js:696
 msgid "Getting Started with Documents"
 msgstr "Započnite rad sa Dokumentima"
 
-#: ../src/documents.js:696 ../src/documents.js:877 ../src/documents.js:939
-#: ../src/documents.js:1047
+#: ../src/documents.js:712 ../src/documents.js:893 ../src/documents.js:956
+#: ../src/documents.js:1064
 msgid "Collection"
 msgstr "Zbirka"
 
-#: ../src/documents.js:756
+#: ../src/documents.js:772
 msgid "Google Docs"
 msgstr "Dokumenti Gugla"
 
-#: ../src/documents.js:757
+#: ../src/documents.js:773
 msgid "Google"
 msgstr "Gugl"
 
-#: ../src/documents.js:879 ../src/documents.js:1049
+#: ../src/documents.js:895 ../src/documents.js:1066
 msgid "Spreadsheet"
 msgstr "Tablica"
 
-#: ../src/documents.js:881 ../src/documents.js:1051 ../src/presentation.js:47
+#: ../src/documents.js:897 ../src/documents.js:1068 ../src/presentation.js:47
 msgid "Presentation"
 msgstr "Prezentacija"
 
-#: ../src/documents.js:883 ../src/documents.js:1053
+#: ../src/documents.js:899 ../src/documents.js:1070
+msgid "e-Book"
+msgstr "el. knjiga"
+
+#: ../src/documents.js:901 ../src/documents.js:1072
 msgid "Document"
 msgstr "Dokument"
 
-#: ../src/documents.js:917
+#: ../src/documents.js:935
 msgid "ownCloud"
 msgstr "Vlastiti oblak"
 
-#: ../src/documents.js:981 ../src/documents.js:982
+#: ../src/documents.js:998 ../src/documents.js:999
 msgid "OneDrive"
 msgstr "Jedan disk"
 
-#: ../src/documents.js:1181
+#: ../src/documents.js:1236
 msgid "Please check the network connection."
 msgstr "Molim proverite mrežnu vezu."
 
-#: ../src/documents.js:1184
+#: ../src/documents.js:1239
 msgid "Please check the network proxy settings."
 msgstr "Molim proverite podešavanja mrežnog posrednika."
 
-#: ../src/documents.js:1187
+#: ../src/documents.js:1242
 msgid "Unable to sign in to the document service."
 msgstr "Ne mogu da se prijavim na uslugu dokumenata."
 
-#: ../src/documents.js:1190
+#: ../src/documents.js:1245
 msgid "Unable to locate this document."
 msgstr "Ne mogu da pronađem ovaj dokument."
 
-#: ../src/documents.js:1193
+#: ../src/documents.js:1248
 #, javascript-format
 msgid "Hmm, something is fishy (%d)."
 msgstr "Hmm, nešto ovde nije kako treba (%d)."
 
-#: ../src/documents.js:1211
+#: ../src/documents.js:1266
 #, javascript-format
 msgid "Oops! Unable to load “%s”"
 msgstr "Ups! Ne mogu da učitam „%s“"
 
-#: ../src/edit.js:192
+#: ../src/edit.js:176
 msgid "View"
 msgstr "Pregled"
 
-#: ../src/embed.js:142
-msgid "No Documents Found"
-msgstr "Nema pronađenih dokumenata"
+#: ../src/embed.js:109
+msgid "Recent"
+msgstr "Skorašnje"
 
-#: ../src/embed.js:163
-#, javascript-format
-msgid "You can add your online accounts in %s"
-msgstr "Možete da dodate vaše mrežne naloge u %s"
-
-#: ../src/embed.js:167
-msgid "Settings"
-msgstr "Podešavanja"
+#: ../src/embed.js:112 ../src/search.js:192 ../src/search.js:201
+msgid "Collections"
+msgstr "Zbirke"
 
 #: ../src/lib/gd-nav-bar.c:242
 #, c-format
@@ -227,21 +298,20 @@ msgstr "Potreban je Libre ofis da pregledate ovaj dokument"
 #. Translators: %s is the number of the page, already formatted
 #. * as a string, for example "Page 5".
 #.
-#: ../src/lib/gd-places-bookmarks.c:315
+#: ../src/lib/gd-places-bookmarks.c:321
 #, c-format
 msgid "Page %s"
 msgstr "Stranica br. %s"
 
-#: ../src/lib/gd-places-bookmarks.c:378
+#: ../src/lib/gd-places-bookmarks.c:384
 msgid "No bookmarks"
 msgstr "Nema obeleživača"
 
-#: ../src/lib/gd-places-bookmarks.c:386 ../src/lib/gd-places-links.c:257
-#: ../src/view.js:71
+#: ../src/lib/gd-places-bookmarks.c:392 ../src/lib/gd-places-links.c:257
 msgid "Loading…"
 msgstr "Učitavam…"
 
-#: ../src/lib/gd-places-bookmarks.c:651 ../src/preview.js:580
+#: ../src/lib/gd-places-bookmarks.c:656 ../src/preview.js:599
 msgid "Bookmarks"
 msgstr "Obeleživači"
 
@@ -253,6 +323,22 @@ msgstr "Nema tabele sadržaja"
 msgid "Contents"
 msgstr "Sadržaj"
 
+#: ../src/lib/gd-utils.c:412
+msgid "A document manager application"
+msgstr "Program za upravljanje dokumentima"
+
+#: ../src/lib/gd-utils.c:419
+#| msgid "A document manager application"
+msgid "An e-books manager application"
+msgstr "Program za upravljanje el. knjigama"
+
+#: ../src/lib/gd-utils.c:427
+msgid "translator-credits"
+msgstr ""
+"  Miroslav Nikolić <miroslavnikolic@rocketmail.com>\n"
+"\n"
+"http://prevod.org — prevod na srpski jezik"
+
 #: ../src/mainToolbar.js:79
 msgid "Search"
 msgstr "Potraži"
@@ -261,19 +347,19 @@ msgstr "Potraži"
 msgid "Back"
 msgstr "Nazad"
 
-#: ../src/mainToolbar.js:132
+#: ../src/mainToolbar.js:141
 msgid "View items as a list"
 msgstr "Pregledajte stavke kao spisak"
 
-#: ../src/mainToolbar.js:138
+#: ../src/mainToolbar.js:147
 msgid "View items as a grid of icons"
 msgstr "Pregledajte stavke kao ikonice"
 
-#: ../src/mainToolbar.js:168
+#: ../src/mainToolbar.js:177
 msgid "Click on items to select them"
 msgstr "Kliknite na stavke da ih izaberete"
 
-#: ../src/mainToolbar.js:170
+#: ../src/mainToolbar.js:179
 #, javascript-format
 msgid "%d selected"
 msgid_plural "%d selected"
@@ -282,24 +368,13 @@ msgstr[1] "%d izabrana"
 msgstr[2] "%d izabranih"
 msgstr[3] "%d izabran"
 
-#: ../src/mainToolbar.js:200
+#: ../src/mainToolbar.js:203
 msgid "Cancel"
 msgstr "Otkaži"
 
-#: ../src/mainToolbar.js:242
+#: ../src/mainToolbar.js:246
 msgid "Select Items"
 msgstr "Izaberite stavke"
-
-#: ../src/mainWindow.js:301
-msgid "translator-credits"
-msgstr ""
-"  Miroslav Nikolić <miroslavnikolic@rocketmail.com>\n"
-"\n"
-"http://prevod.org — prevod na srpski jezik"
-
-#: ../src/mainWindow.js:303
-msgid "A document manager application"
-msgstr "Program za upravljanje dokumentima"
 
 #: ../src/notifications.js:50
 msgid "Selected item has been deleted"
@@ -352,33 +427,49 @@ msgstr "Dokument „%s“ je zaključan i neophodna je lozinka za njegovo otvara
 msgid "_Password"
 msgstr "_Lozinka"
 
-#: ../src/presentation.js:104
+#: ../src/presentation.js:105
 msgid "Running in presentation mode"
 msgstr "Pokretanje u režimu prezentacije"
 
-#: ../src/presentation.js:157
+#: ../src/presentation.js:152
+msgid "Mirrored"
+msgstr "U ogledalu"
+
+#: ../src/presentation.js:154
+msgid "Primary"
+msgstr "Glavno"
+
+#: ../src/presentation.js:156
+msgid "Off"
+msgstr "Isklj."
+
+#: ../src/presentation.js:158
+msgid "Secondary"
+msgstr "Sporedno"
+
+#: ../src/presentation.js:194
 msgid "Present On"
 msgstr "Prezentacija"
 
-#: ../src/preview.js:588
+#: ../src/preview.js:607
 msgid "Bookmark this page"
 msgstr "Obeležite ovu stranicu"
 
-#: ../src/preview.js:823 ../src/selections.js:857
+#: ../src/preview.js:871 ../src/selections.js:859
 #, javascript-format
 msgid "Open with %s"
 msgstr "Otvori programom %s"
 
-#: ../src/preview.js:885
+#: ../src/preview.js:934
 msgid "Find Previous"
 msgstr "Nađi prethodno"
 
-#: ../src/preview.js:892
+#: ../src/preview.js:941
 msgid "Find Next"
 msgstr "Nađi sledeće"
 
 #: ../src/properties.js:61 ../src/resources/preview-menu.ui.h:9
-#: ../src/selections.js:767
+#: ../src/selections.js:769
 msgid "Properties"
 msgstr "Svojstva"
 
@@ -414,14 +505,18 @@ msgid "Fullscreen"
 msgstr "Preko celog ekrana"
 
 #: ../src/resources/app-menu.ui.h:2
+msgid "Night Mode"
+msgstr "Noćni režim"
+
+#: ../src/resources/app-menu.ui.h:3
 msgid "Help"
 msgstr "Pomoć"
 
-#: ../src/resources/app-menu.ui.h:3
+#: ../src/resources/app-menu.ui.h:4
 msgid "About"
 msgstr "O programu"
 
-#: ../src/resources/app-menu.ui.h:4
+#: ../src/resources/app-menu.ui.h:5
 msgid "Quit"
 msgstr "Izađi"
 
@@ -430,7 +525,7 @@ msgid "_Copy"
 msgstr "_Umnoži"
 
 #: ../src/resources/preview-menu.ui.h:1 ../src/selections.js:747
-#: ../src/selections.js:860
+#: ../src/selections.js:862
 msgid "Open"
 msgstr "Otvori"
 
@@ -470,63 +565,68 @@ msgstr "Izaberi sve"
 msgid "Select None"
 msgstr "Poništi izbor"
 
-#: ../src/search.js:114
+#: ../src/search.js:115
 msgid "Category"
 msgstr "Kategorija"
 
-#: ../src/search.js:119 ../src/search.js:180 ../src/search.js:265
-#: ../src/search.js:421
+#: ../src/search.js:120 ../src/search.js:189 ../src/search.js:322
+#: ../src/search.js:492
 msgid "All"
 msgstr "Sve"
 
-#: ../src/search.js:125
+#: ../src/search.js:126
 msgid "Favorites"
 msgstr "Omiljeni"
 
-#: ../src/search.js:130
+#: ../src/search.js:131
 msgid "Shared with you"
 msgstr "Deljeni s vama"
 
-#: ../src/search.js:177
+#: ../src/search.js:186
 msgctxt "Search Filter"
 msgid "Type"
 msgstr "Vrsta"
 
-#: ../src/search.js:182
-msgid "Collections"
-msgstr "Zbirke"
-
-#: ../src/search.js:186
+#: ../src/search.js:196
 msgid "PDF Documents"
 msgstr "PDF dokumenti"
 
-#: ../src/search.js:190
+#: ../src/search.js:209
 msgid "Presentations"
 msgstr "Prezentacije"
 
-#: ../src/search.js:193
+#: ../src/search.js:212
 msgid "Spreadsheets"
 msgstr "Tablice"
 
-#: ../src/search.js:196
+#: ../src/search.js:215
 msgid "Text Documents"
 msgstr "Dokumenti teksta"
 
-#: ../src/search.js:262
+#: ../src/search.js:220
+#| msgid "Bookmarks"
+msgid "e-Books"
+msgstr "el. knjige"
+
+#: ../src/search.js:224
+msgid "Comics"
+msgstr "Stripovi"
+
+#: ../src/search.js:319
 msgid "Match"
 msgstr "Poklopi"
 
-#: ../src/search.js:268
+#: ../src/search.js:325
 msgctxt "Search Filter"
 msgid "Title"
 msgstr "Naziv"
 
-#: ../src/search.js:271
+#: ../src/search.js:328
 msgctxt "Search Filter"
 msgid "Author"
 msgstr "Stvaralac"
 
-#: ../src/search.js:417
+#: ../src/search.js:488
 msgid "Sources"
 msgstr "Izvori"
 
@@ -551,11 +651,11 @@ msgstr "Štampajte"
 msgid "Delete"
 msgstr "Obriši"
 
-#: ../src/selections.js:762
+#: ../src/selections.js:763
 msgid "Share"
 msgstr "Deli"
 
-#: ../src/selections.js:772
+#: ../src/selections.js:774
 msgid "Add to Collection"
 msgstr "Dodaj u zbirku"
 
@@ -629,23 +729,37 @@ msgstr "Možete da pitate „%s“ za pristup"
 msgid "The document was not updated"
 msgstr "Dokument nije osvežen"
 
-#: ../src/shellSearchProvider.js:294
+#: ../src/shellSearchProvider.js:293
 msgid "Untitled Document"
 msgstr "Neimenovan dokument"
 
-#: ../src/trackerController.js:170
+#: ../src/trackerController.js:172
 msgid "Unable to fetch the list of documents"
 msgstr "Ne mogu da dovučem spisak dokumenata"
 
-#: ../src/view.js:62 ../src/view.js:93
-msgid "Load More"
-msgstr "Učitaj još"
+#: ../src/view.js:242
+#| msgid "No Documents Found"
+msgid "No Books Found"
+msgstr "Nisam pronašao knjige"
 
-#: ../src/view.js:307
+#: ../src/view.js:243
+msgid "No Documents Found"
+msgstr "Nema pronađenih dokumenata"
+
+#: ../src/view.js:265
+#, javascript-format
+msgid "You can add your online accounts in %s"
+msgstr "Možete da dodate vaše mrežne naloge u %s"
+
+#: ../src/view.js:269
+msgid "Settings"
+msgstr "Podešavanja"
+
+#: ../src/view.js:503
 msgid "Yesterday"
 msgstr "Juče"
 
-#: ../src/view.js:309
+#: ../src/view.js:505
 #, javascript-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
@@ -654,11 +768,11 @@ msgstr[1] "Pre %d dana"
 msgstr[2] "Pre %d dana"
 msgstr[3] "Pre %d dana"
 
-#: ../src/view.js:313
+#: ../src/view.js:509
 msgid "Last week"
 msgstr "Prošle sedmice"
 
-#: ../src/view.js:315
+#: ../src/view.js:511
 #, javascript-format
 msgid "%d week ago"
 msgid_plural "%d weeks ago"
@@ -667,11 +781,11 @@ msgstr[1] "Pre %d nedelje"
 msgstr[2] "Pre %d nedelja"
 msgstr[3] "Pre %d nedelje"
 
-#: ../src/view.js:319
+#: ../src/view.js:515
 msgid "Last month"
 msgstr "Prošlog meseca"
 
-#: ../src/view.js:321
+#: ../src/view.js:517
 #, javascript-format
 msgid "%d month ago"
 msgid_plural "%d months ago"
@@ -680,11 +794,11 @@ msgstr[1] "Pre %d meseca"
 msgstr[2] "Pre %d meseci"
 msgstr[3] "Pre %d meseca"
 
-#: ../src/view.js:325
+#: ../src/view.js:521
 msgid "Last year"
 msgstr "Prošle godine"
 
-#: ../src/view.js:327
+#: ../src/view.js:523
 #, javascript-format
 msgid "%d year ago"
 msgid_plural "%d years ago"
@@ -692,6 +806,9 @@ msgstr[0] "Pre %d godine"
 msgstr[1] "Pre %d godine"
 msgstr[2] "Pre %d godina"
 msgstr[3] "Pre %d godine"
+
+#~ msgid "Load More"
+#~ msgstr "Učitaj još"
 
 #~| msgid ""
 #~| "<li>View recent local and online documents</li> <li>Access your Google, "
