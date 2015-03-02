@@ -1299,8 +1299,8 @@ const DocumentManager = new Lang.Class({
         this._clearActiveDocModel();
 
         this._loaderCancellable = new Gio.Cancellable();
-        doc.load(passwd, this._loaderCancellable, Lang.bind(this, this._onDocumentLoaded));
         this.emit('load-started', doc);
+        doc.load(passwd, this._loaderCancellable, Lang.bind(this, this._onDocumentLoaded));
     },
 
     removeItemById: function(id) {
@@ -1357,8 +1357,8 @@ const DocumentManager = new Lang.Class({
             recentManager.add_item(doc.uri);
 
             this._loaderCancellable = new Gio.Cancellable();
-            doc.load(null, this._loaderCancellable, Lang.bind(this, this._onDocumentLoaded));
             this.emit('load-started', doc);
+            doc.load(null, this._loaderCancellable, Lang.bind(this, this._onDocumentLoaded));
         }
 
         return retval;
