@@ -138,8 +138,6 @@ const PreviewView = new Lang.Class({
 
         Application.documentManager.connect('load-started',
                                             Lang.bind(this, this._onLoadStarted));
-        Application.documentManager.connect('load-finished',
-                                            Lang.bind(this, this._onLoadFinished));
         Application.documentManager.connect('load-error',
                                             Lang.bind(this, this._onLoadError));
     },
@@ -148,18 +146,6 @@ const PreviewView = new Lang.Class({
         this._bookmarkPage.enabled = false;
         this._showPlaces.enabled = false;
         this._copy.enabled = false;
-    },
-
-    _onLoadFinished: function(manager, doc, docModel) {
-        this._showPlaces.enabled = true;
-        this._togglePresentation.enabled = true;
-        this._navControls.show();
-
-        if (!Application.documentManager.metadata)
-            return;
-
-        this._bookmarks = new GdPrivate.Bookmarks({ metadata: Application.documentManager.metadata });
-        this._bookmarkPage.enabled = true;
     },
 
     _onLoadError: function(manager, doc, message, exception) {
@@ -537,6 +523,11 @@ const PreviewView = new Lang.Class({
         if (this._model) {
             this.view.set_model(this._model);
             this._navControls.setModel(model);
+            this._navControls.show();
+            this._togglePresentation.enabled = true;
+
+            if (Application.documentManager.metadata)
+                this._bookmarks = new GdPrivate.Bookmarks({ metadata: Application.documentManager.metadata });
 
             let hasMultiplePages = (this._model.document.get_n_pages() > 1);
             this._bookmarkPage.enabled = hasMultiplePages && this._bookmarks;
