@@ -7,11 +7,11 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-documents master\n"
+"Project-Id-Version: gnome-documents gnome-3.16\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-01-07 07:44+0000\n"
-"PO-Revision-Date: 2015-01-07 09:42+0100\n"
+"POT-Creation-Date: 2015-03-04 07:52+0000\n"
+"PO-Revision-Date: 2015-03-04 19:30+0100\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -21,10 +21,51 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Generator: Gtranslator 2.91.6\n"
 
-#: ../data/org.gnome.Books.desktop.in.h:1 ../src/application.js:129
-#: ../src/mainWindow.js:313
+#: ../data/org.gnome.Books.appdata.xml.in.h:1
+#: ../data/org.gnome.Books.desktop.in.h:1 ../src/application.js:132
+#: ../src/lib/gd-utils.c:418
 msgid "Books"
 msgstr "Knihy"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:2
+msgid "An e-book manager application for GNOME"
+msgstr "Aplikace pro správu elektronických knih v GNOME"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:3
+msgid ""
+"A simple application to access and organize your e-books on GNOME. It is "
+"meant to be a simple and elegant replacement for using a file manager to "
+"deal with e-books."
+msgstr ""
+"Jednoduchá aplikace, kterou můžete používat pro přístup ke svým elektronickým "
+"knihám v GNOME a jejich roztřídění. Je zamýšlena jako snadná a elegantní "
+"náhrada za používání správce souborů k zacházení s e-knihami."
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:4
+#: ../data/org.gnome.Documents.appdata.xml.in.h:4
+msgid "It lets you:"
+msgstr "Můžete v ní dělat následující věci:"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:5
+msgid "View recent e-books"
+msgstr "Zobrazit si nedávné e-knihy"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:6
+msgid "Search through e-books"
+msgstr "Vyhledávat v e-knihách"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:7
+msgid "View e-books fullscreen"
+msgstr "Zobrazit si e-knihu přes celou obrazovku"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:8
+msgid "Print e-books"
+msgstr "Vytisknout e-knihy"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:9
+#: ../data/org.gnome.Documents.appdata.xml.in.h:12
+msgid "Allow opening full featured editor for non-trivial changes"
+msgstr "Otevírat dokumenty v plnohodnotném editoru kvůli složitějším úpravám"
 
 #: ../data/org.gnome.Books.desktop.in.h:2
 msgid "Access, manage and share books"
@@ -85,8 +126,8 @@ msgid "Whether the application is in night mode."
 msgstr "Zda je aplikace v nočním režimu."
 
 #: ../data/org.gnome.Documents.appdata.xml.in.h:1
-#: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:125
-#: ../src/mainWindow.js:52 ../src/mainWindow.js:308
+#: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:128
+#: ../src/lib/gd-utils.c:411 ../src/mainWindow.js:52
 msgid "Documents"
 msgstr "Dokumenty"
 
@@ -103,12 +144,8 @@ msgid ""
 msgstr ""
 "Jednoduchá aplikace, kterou můžete používat pro přístup, uspořádávání a "
 "sdílení svých dokumentů v GNOME. Je zamýšlena jako snadná a elegantní "
-"náhrada místo používání správce souborů k práci s dokumenty. Díky účtům on-"
-"line v GNOME umí bez problémů fungovat i s cloudem."
-
-#: ../data/org.gnome.Documents.appdata.xml.in.h:4
-msgid "It lets you:"
-msgstr "Můžete v ní dělat následující věci:"
+"náhrada za používání správce souborů k zacházení s dokumenty. Díky účtům "
+"on-line v GNOME umí bez problémů fungovat i s cloudem."
 
 #: ../data/org.gnome.Documents.appdata.xml.in.h:5
 msgid "View recent local and online documents"
@@ -139,10 +176,6 @@ msgstr "Vytisknout dokumenty"
 msgid "Select favorites"
 msgstr "Vybírat oblíbené dokumenty"
 
-#: ../data/org.gnome.Documents.appdata.xml.in.h:12
-msgid "Allow opening full featured editor for non-trivial changes"
-msgstr "Otevírat dokumenty v plnohodnotném editoru kvůli složitějším úpravám"
-
 #: ../data/org.gnome.Documents.desktop.in.h:2
 msgid "Access, manage and share documents"
 msgstr "Přístup k dokumentům, jejich správa a sdílení"
@@ -151,105 +184,96 @@ msgstr "Přístup k dokumentům, jejich správa a sdílení"
 msgid "Docs;PDF;Document;"
 msgstr "PDF;Dokument;"
 
-#: ../src/documents.js:624
+#: ../src/documents.js:631
 msgid "Failed to print document"
 msgstr "Selhal tisk dokumentu"
 
-#: ../src/documents.js:661 ../src/search.js:464
+#: ../src/documents.js:668 ../src/search.js:498
 msgid "Local"
 msgstr "Místní"
 
-#: ../src/documents.js:689
+#: ../src/documents.js:695
 msgid "GNOME"
 msgstr "GNOME"
 
-#: ../src/documents.js:690
+#: ../src/documents.js:696
 msgid "Getting Started with Documents"
 msgstr "Začínáme s Dokumenty"
 
-#: ../src/documents.js:706 ../src/documents.js:887 ../src/documents.js:951
-#: ../src/documents.js:1059
+#: ../src/documents.js:712 ../src/documents.js:893 ../src/documents.js:956
+#: ../src/documents.js:1064
 msgid "Collection"
 msgstr "Sada"
 
-#: ../src/documents.js:766
+#: ../src/documents.js:772
 msgid "Google Docs"
 msgstr "Dokumenty Google"
 
-#: ../src/documents.js:767
+#: ../src/documents.js:773
 msgid "Google"
 msgstr "Google"
 
-#: ../src/documents.js:889 ../src/documents.js:1061
+#: ../src/documents.js:895 ../src/documents.js:1066
 msgid "Spreadsheet"
 msgstr "Sešit s tabulkami"
 
-#: ../src/documents.js:891 ../src/documents.js:1063 ../src/presentation.js:47
+#: ../src/documents.js:897 ../src/documents.js:1068 ../src/presentation.js:47
 msgid "Presentation"
 msgstr "Prezentace"
 
-#: ../src/documents.js:893 ../src/documents.js:1065
+#: ../src/documents.js:899 ../src/documents.js:1070
 msgid "e-Book"
 msgstr "E-kniha"
 
-#: ../src/documents.js:895 ../src/documents.js:1067
+#: ../src/documents.js:901 ../src/documents.js:1072
 msgid "Document"
 msgstr "Dokument"
 
-#: ../src/documents.js:929
+#: ../src/documents.js:935
 msgid "ownCloud"
 msgstr "ownCloud"
 
-#: ../src/documents.js:993 ../src/documents.js:994
+#: ../src/documents.js:998 ../src/documents.js:999
 msgid "OneDrive"
 msgstr "OneDrive"
 
-#: ../src/documents.js:1195
+#: ../src/documents.js:1236
 msgid "Please check the network connection."
 msgstr "Zkontrolujte prosím síťové připojení."
 
-#: ../src/documents.js:1198
+#: ../src/documents.js:1239
 msgid "Please check the network proxy settings."
 msgstr "Zkontrolujte prosím nastavení síťové proxy."
 
-#: ../src/documents.js:1201
+#: ../src/documents.js:1242
 msgid "Unable to sign in to the document service."
 msgstr "Nelze se přihlásit k dokumentové službě."
 
-#: ../src/documents.js:1204
+#: ../src/documents.js:1245
 msgid "Unable to locate this document."
 msgstr "Nelze nalézt tento dokument."
 
-#: ../src/documents.js:1207
+#: ../src/documents.js:1248
 #, javascript-format
 msgid "Hmm, something is fishy (%d)."
 msgstr "Hmm, něco je špatně (%d)."
 
-#: ../src/documents.js:1225
+#: ../src/documents.js:1266
 #, javascript-format
 msgid "Oops! Unable to load “%s”"
 msgstr "Jejda! Nelze načíst „%s“"
 
-#: ../src/edit.js:175
+#: ../src/edit.js:176
 msgid "View"
 msgstr "Zobrazit"
 
-#: ../src/embed.js:143
-msgid "No Books Found"
-msgstr "Nenalezeny žádné knihy"
+#: ../src/embed.js:109
+msgid "Recent"
+msgstr "Nedávné"
 
-#: ../src/embed.js:144
-msgid "No Documents Found"
-msgstr "Nenalezen žádný dokument"
-
-#: ../src/embed.js:166
-#, javascript-format
-msgid "You can add your online accounts in %s"
-msgstr "Své účty on-line můžete přidat v %s"
-
-#: ../src/embed.js:170
-msgid "Settings"
-msgstr "Nastavení"
+#: ../src/embed.js:112 ../src/search.js:192 ../src/search.js:201
+msgid "Collections"
+msgstr "Sady"
 
 #: ../src/lib/gd-nav-bar.c:242
 #, c-format
@@ -280,7 +304,7 @@ msgstr "Žádné záložky"
 msgid "Loading…"
 msgstr "Načítá se…"
 
-#: ../src/lib/gd-places-bookmarks.c:656 ../src/preview.js:599
+#: ../src/lib/gd-places-bookmarks.c:656 ../src/preview.js:590
 msgid "Bookmarks"
 msgstr "Záložky"
 
@@ -292,6 +316,20 @@ msgstr "Bez obsahu"
 msgid "Contents"
 msgstr "Obsah"
 
+#: ../src/lib/gd-utils.c:412
+msgid "A document manager application"
+msgstr "Aplikace pro správu dokumentů"
+
+#: ../src/lib/gd-utils.c:419
+msgid "An e-books manager application"
+msgstr "Aplikace pro správu elektronických knih"
+
+#: ../src/lib/gd-utils.c:427
+msgid "translator-credits"
+msgstr ""
+"Marek Černocký <marek@manet.cz>\n"
+"Adam Matoušek <adamatousek@gmail.com>"
+
 #: ../src/mainToolbar.js:79
 msgid "Search"
 msgstr "Hledat"
@@ -300,19 +338,19 @@ msgstr "Hledat"
 msgid "Back"
 msgstr "Zpět"
 
-#: ../src/mainToolbar.js:132
+#: ../src/mainToolbar.js:141
 msgid "View items as a list"
 msgstr "Zobrazit položky jako seznam"
 
-#: ../src/mainToolbar.js:138
+#: ../src/mainToolbar.js:147
 msgid "View items as a grid of icons"
 msgstr "Zobrazit položky jako mřížku ikon"
 
-#: ../src/mainToolbar.js:168
+#: ../src/mainToolbar.js:177
 msgid "Click on items to select them"
 msgstr "Klikáním na položky je vyberete"
 
-#: ../src/mainToolbar.js:170
+#: ../src/mainToolbar.js:179
 #, javascript-format
 msgid "%d selected"
 msgid_plural "%d selected"
@@ -320,27 +358,13 @@ msgstr[0] "%d vybrán"
 msgstr[1] "%d vybrány"
 msgstr[2] "%d vybráno"
 
-#: ../src/mainToolbar.js:200
+#: ../src/mainToolbar.js:203
 msgid "Cancel"
 msgstr "Zrušit"
 
-#: ../src/mainToolbar.js:242
+#: ../src/mainToolbar.js:246
 msgid "Select Items"
 msgstr "Vybrat položky"
-
-#: ../src/mainWindow.js:306
-msgid "translator-credits"
-msgstr ""
-"Marek Černocký <marek@manet.cz>\n"
-"Adam Matoušek <adamatousek@gmail.com>"
-
-#: ../src/mainWindow.js:309
-msgid "A document manager application"
-msgstr "Aplikace pro správu dokumentů"
-
-#: ../src/mainWindow.js:314
-msgid "An e-books manager application"
-msgstr "Aplikace pro správu elektronických knih"
 
 #: ../src/notifications.js:50
 msgid "Selected item has been deleted"
@@ -417,20 +441,20 @@ msgstr "Vedlejší"
 msgid "Present On"
 msgstr "Prezentovat na"
 
-#: ../src/preview.js:607
+#: ../src/preview.js:598
 msgid "Bookmark this page"
 msgstr "Tuto stránku do záložek"
 
-#: ../src/preview.js:848 ../src/selections.js:859
+#: ../src/preview.js:859 ../src/selections.js:859
 #, javascript-format
 msgid "Open with %s"
 msgstr "Otevřít pomocí %s"
 
-#: ../src/preview.js:911
+#: ../src/preview.js:922
 msgid "Find Previous"
 msgstr "Najít předchozí"
 
-#: ../src/preview.js:918
+#: ../src/preview.js:929
 msgid "Find Next"
 msgstr "Najít následující"
 
@@ -535,8 +559,8 @@ msgstr "Nevybrat nic"
 msgid "Category"
 msgstr "Kategorie"
 
-#: ../src/search.js:120 ../src/search.js:183 ../src/search.js:300
-#: ../src/search.js:458
+#: ../src/search.js:120 ../src/search.js:189 ../src/search.js:322
+#: ../src/search.js:492
 msgid "All"
 msgstr "Vše"
 
@@ -548,54 +572,50 @@ msgstr "Oblíbené"
 msgid "Shared with you"
 msgstr "Sdílené s vámi"
 
-#: ../src/search.js:180
+#: ../src/search.js:186
 msgctxt "Search Filter"
 msgid "Type"
 msgstr "Typ"
 
-#: ../src/search.js:186 ../src/search.js:195
-msgid "Collections"
-msgstr "Sady"
-
-#: ../src/search.js:190
+#: ../src/search.js:196
 msgid "PDF Documents"
 msgstr "Dokumenty PDF"
 
-#: ../src/search.js:203
+#: ../src/search.js:209
 msgid "Presentations"
 msgstr "Prezentace"
 
-#: ../src/search.js:206
+#: ../src/search.js:212
 msgid "Spreadsheets"
 msgstr "Sešity s tabulkami"
 
-#: ../src/search.js:209
+#: ../src/search.js:215
 msgid "Text Documents"
 msgstr "Textové dokumenty"
 
-#: ../src/search.js:214
+#: ../src/search.js:220
 msgid "e-Books"
 msgstr "E-kniha"
 
-#: ../src/search.js:218
+#: ../src/search.js:224
 msgid "Comics"
 msgstr "Komiks"
 
-#: ../src/search.js:297
+#: ../src/search.js:319
 msgid "Match"
 msgstr "Porovnávat"
 
-#: ../src/search.js:303
+#: ../src/search.js:325
 msgctxt "Search Filter"
 msgid "Title"
 msgstr "Název"
 
-#: ../src/search.js:306
+#: ../src/search.js:328
 msgctxt "Search Filter"
 msgid "Author"
 msgstr "Autora"
 
-#: ../src/search.js:454
+#: ../src/search.js:488
 msgid "Sources"
 msgstr "Zdroje"
 
@@ -698,19 +718,36 @@ msgstr "%s vám může udělit přistup"
 msgid "The document was not updated"
 msgstr "Dokument nebyl aktualizován"
 
-#: ../src/shellSearchProvider.js:294
+#: ../src/shellSearchProvider.js:293
 msgid "Untitled Document"
 msgstr "Nepojmenovaný dokument"
 
-#: ../src/trackerController.js:170
+#: ../src/trackerController.js:172
 msgid "Unable to fetch the list of documents"
 msgstr "Nelze získat seznam dokumentů"
 
-#: ../src/view.js:240
+#: ../src/view.js:242
+msgid "No Books Found"
+msgstr "Nenalezeny žádné knihy"
+
+#: ../src/view.js:243
+msgid "No Documents Found"
+msgstr "Nenalezen žádný dokument"
+
+#: ../src/view.js:265
+#, javascript-format
+msgid "You can add your online accounts in %s"
+msgstr "Své účty on-line můžete přidat v %s"
+
+#: ../src/view.js:269
+msgid "Settings"
+msgstr "Nastavení"
+
+#: ../src/view.js:503
 msgid "Yesterday"
 msgstr "Včera"
 
-#: ../src/view.js:242
+#: ../src/view.js:505
 #, javascript-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
@@ -718,11 +755,11 @@ msgstr[0] "Před %d dnem"
 msgstr[1] "Před %d dny"
 msgstr[2] "Před %d dny"
 
-#: ../src/view.js:246
+#: ../src/view.js:509
 msgid "Last week"
 msgstr "Minulý týden"
 
-#: ../src/view.js:248
+#: ../src/view.js:511
 #, javascript-format
 msgid "%d week ago"
 msgid_plural "%d weeks ago"
@@ -730,11 +767,11 @@ msgstr[0] "Před %d týdnem"
 msgstr[1] "Před %d týdny"
 msgstr[2] "Před %d týdny"
 
-#: ../src/view.js:252
+#: ../src/view.js:515
 msgid "Last month"
 msgstr "Minulý měsíc"
 
-#: ../src/view.js:254
+#: ../src/view.js:517
 #, javascript-format
 msgid "%d month ago"
 msgid_plural "%d months ago"
@@ -742,11 +779,11 @@ msgstr[0] "Před %d měsícem"
 msgstr[1] "Před %d měsíci"
 msgstr[2] "Před %d měsíci"
 
-#: ../src/view.js:258
+#: ../src/view.js:521
 msgid "Last year"
 msgstr "Minulý rok"
 
-#: ../src/view.js:260
+#: ../src/view.js:523
 #, javascript-format
 msgid "%d year ago"
 msgid_plural "%d years ago"
