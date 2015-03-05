@@ -47,9 +47,19 @@ const DeleteNotification = new Lang.Class({
                                      margin_start: 12,
                                      margin_end: 12 });
 
-        let msg = Gettext.ngettext("Selected item has been deleted",
-                                   "Selected items have been deleted",
-                                   this._docs.length);
+        let msg;
+
+        if (this._docs.length == 1 && this._docs[0].name) {
+            // Translators: only one item has been deleted and %s is its name
+            msg = (_("“%s” deleted")).format(this._docs[0].name);
+        } else {
+            // Translators: one or more items might have been deleted, and %d
+            // is the count
+            msg = Gettext.ngettext("%d item deleted",
+                                   "%d items deleted",
+                                   this._docs.length).format(this._docs.length);
+        }
+
         let label = new Gtk.Label({ label: msg,
                                     halign: Gtk.Align.START });
         this.widget.add(label);
