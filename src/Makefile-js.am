@@ -5,6 +5,7 @@ dist_js_DATA = \
     documents.js \
     edit.js \
     embed.js \
+    errorBox.js \
     main.js \
     mainBooks.js \
     mainToolbar.js \
