@@ -59,7 +59,6 @@ const PreviewView = new Lang.Class({
         this._fsToolbar = null;
         this._overlay = overlay;
         this._lastSearch = '';
-        this._loadError = false;
 
         Application.modeController.connect('fullscreen-changed', Lang.bind(this,
             this._onFullscreenChanged));
@@ -150,10 +149,7 @@ const PreviewView = new Lang.Class({
 
     _onLoadError: function(manager, doc, message, exception) {
         this._controlsVisible = true;
-
-        this._loadError = true;
         this._syncControlsVisible();
-        this._loadError = false;
     },
 
     _onActionStateChanged: function(action, state) {
