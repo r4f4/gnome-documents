@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2011 Red Hat, Inc.
+ * Copyright (c) 2011, 2015 Red Hat, Inc.
  *
  * Gnome Documents is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by the
@@ -35,6 +35,7 @@ const Signals = imports.signals;
 const Tweener = imports.tweener.tweener;
 
 const Application = imports.application;
+const ErrorBox = imports.errorBox;
 const MainToolbar = imports.mainToolbar;
 const Places = imports.places;
 const Searchbar = imports.searchbar;
@@ -65,20 +66,27 @@ const PreviewView = new Lang.Class({
         Application.modeController.connect('window-mode-changed', Lang.bind(this,
             this._onWindowModeChanged));
 
-        this.widget = new Gtk.ScrolledWindow({ hexpand: true,
-                                               vexpand: true });
-        this.widget.get_style_context().add_class('documents-scrolledwin');
-        this.widget.get_hscrollbar().connect('button-press-event', Lang.bind(this, this._onScrollbarClick));
-        this.widget.get_vscrollbar().connect('button-press-event', Lang.bind(this, this._onScrollbarClick));
-        this.widget.get_hadjustment().connect('value-changed', Lang.bind(this, this._onAdjustmentChanged));
-        this.widget.get_vadjustment().connect('value-changed', Lang.bind(this, this._onAdjustmentChanged));
+        this.widget = new Gtk.Stack({ homogeneous: true,
+                                      transition_type: Gtk.StackTransitionType.CROSSFADE });
+
+        this._errorBox = new ErrorBox.ErrorBox();
+        this.widget.add_named(this._errorBox.widget, 'error');
+
+        this._sw = new Gtk.ScrolledWindow({ hexpand: true,
+                                            vexpand: true });
+        this._sw.get_style_context().add_class('documents-scrolledwin');
+        this._sw.get_hscrollbar().connect('button-press-event', Lang.bind(this, this._onScrollbarClick));
+        this._sw.get_vscrollbar().connect('button-press-event', Lang.bind(this, this._onScrollbarClick));
+        this._sw.get_hadjustment().connect('value-changed', Lang.bind(this, this._onAdjustmentChanged));
+        this._sw.get_vadjustment().connect('value-changed', Lang.bind(this, this._onAdjustmentChanged));
+        this.widget.add_named(this._sw, 'view');
 
         this._createView();
 
         // create context menu
         let model = this._getPreviewContextMenu();
         this._previewContextMenu = Gtk.Menu.new_from_model(model);
-        this._previewContextMenu.attach_to_widget(this.widget, null);
+        this._previewContextMenu.attach_to_widget(this._sw, null);
 
         this.widget.show_all();
 
@@ -150,6 +158,7 @@ const PreviewView = new Lang.Class({
     _onLoadError: function(manager, doc, message, exception) {
         this._controlsVisible = true;
         this._syncControlsVisible();
+        this._setError(message, exception.message);
     },
 
     _onActionStateChanged: function(action, state) {
@@ -186,6 +195,11 @@ const PreviewView = new Lang.Class({
         let hasBookmark = (this._bookmarks.find_bookmark(bookmark) != null);
 
         this._bookmarkPage.state = GLib.Variant.new('b', hasBookmark);
+    },
+
+    _setError: function(primary, secondary) {
+        this._errorBox.update(primary, secondary);
+        this.widget.set_visible_child_name('error');
     },
 
     _showPlaces: function() {
@@ -312,7 +326,7 @@ const PreviewView = new Lang.Class({
 
     _createView: function() {
         this.view = EvView.View.new();
-        this.widget.add(this.view);
+        this._sw.add(this.view);
         this.view.show();
 
         this.view.connect('notify::can-zoom-in', Lang.bind(this,
@@ -329,6 +343,7 @@ const PreviewView = new Lang.Class({
             this._handleExternalLink));
 
         this._navControls = new PreviewNavControls(this, this._overlay);
+        this.widget.set_visible_child_full('view', Gtk.StackTransitionType.NONE);
     },
 
     _getPreviewContextMenu: function() {
