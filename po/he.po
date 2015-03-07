@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Gnome-Documents\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-04 22:46+0200\n"
-"PO-Revision-Date: 2015-03-04 22:46+0200\n"
+"POT-Creation-Date: 2015-03-07 23:27+0200\n"
+"PO-Revision-Date: 2015-03-07 23:31+0200\n"
 "Last-Translator: Yosef Or Boczko <yoseforb@gmail.com>\n"
 "Language-Team: עברית <>\n"
 "Language: he\n"
@@ -200,69 +200,74 @@ msgstr "GNOME"
 msgid "Getting Started with Documents"
 msgstr "צעדים ראשונים עם מסמכים"
 
-#: ../src/documents.js:712 ../src/documents.js:893 ../src/documents.js:956
-#: ../src/documents.js:1064
+#: ../src/documents.js:712 ../src/documents.js:904 ../src/documents.js:967
+#: ../src/documents.js:1075
 msgid "Collection"
 msgstr "אוסף"
 
 #. overridden
-#: ../src/documents.js:772
+#: ../src/documents.js:783
 msgid "Google Docs"
 msgstr "Google Docs"
 
-#: ../src/documents.js:773
+#: ../src/documents.js:784
 msgid "Google"
 msgstr "Google"
 
-#: ../src/documents.js:895 ../src/documents.js:1066
+#: ../src/documents.js:906 ../src/documents.js:1077
 msgid "Spreadsheet"
 msgstr "גיליון אלקטרוני"
 
-#: ../src/documents.js:897 ../src/documents.js:1068 ../src/presentation.js:47
+#: ../src/documents.js:908 ../src/documents.js:1079 ../src/presentation.js:47
 msgid "Presentation"
 msgstr "מצגת"
 
-#: ../src/documents.js:899 ../src/documents.js:1070
+#: ../src/documents.js:910 ../src/documents.js:1081
 msgid "e-Book"
 msgstr "e-Book"
 
-#: ../src/documents.js:901 ../src/documents.js:1072
+#: ../src/documents.js:912 ../src/documents.js:1083
 msgid "Document"
 msgstr "מסמך"
 
 #. overridden
-#: ../src/documents.js:935
+#: ../src/documents.js:946
 msgid "ownCloud"
 msgstr "ownCloud"
 
 #. overridden
-#: ../src/documents.js:998 ../src/documents.js:999
+#: ../src/documents.js:1009 ../src/documents.js:1010
 msgid "OneDrive"
 msgstr "OneDrive"
 
-#: ../src/documents.js:1236
+#: ../src/documents.js:1247
 msgid "Please check the network connection."
 msgstr "נא לבדוק את החיבור לרשת."
 
-#: ../src/documents.js:1239
+#: ../src/documents.js:1250
 msgid "Please check the network proxy settings."
 msgstr "נא לבדוק את הגדרות המתווך של הרשת."
 
-#: ../src/documents.js:1242
+#: ../src/documents.js:1253
 msgid "Unable to sign in to the document service."
 msgstr "לא ניתן להיכנס לשירות המסמכים."
 
-#: ../src/documents.js:1245
+#: ../src/documents.js:1256
 msgid "Unable to locate this document."
 msgstr "לא ניתן לאתר מסמך זה."
 
-#: ../src/documents.js:1248
+#: ../src/documents.js:1259
 #, javascript-format
 msgid "Hmm, something is fishy (%d)."
 msgstr "המממ, משהו פה מסריח (%d)."
 
-#. Translators: %s is the title of a document
 #: ../src/documents.js:1266
+msgid ""
+"You are using a preview of Books. Full viewing capabilities are coming soon!"
+msgstr "הנך משתמש בתצוגה מקדימה של ספרים. תצוגה תכונות מלאה תגיע בקרוב!"
+
+#. Translators: %s is the title of a document
+#: ../src/documents.js:1287
 #, javascript-format
 msgid "Oops! Unable to load “%s”"
 msgstr "אופס! לא ניתן לטעון את „%s“"
@@ -308,7 +313,7 @@ msgstr "אין סימניות"
 msgid "Loading…"
 msgstr "בטעינה…"
 
-#: ../src/lib/gd-places-bookmarks.c:656 ../src/preview.js:590
+#: ../src/lib/gd-places-bookmarks.c:656 ../src/preview.js:601
 msgid "Bookmarks"
 msgstr "סימניות"
 
@@ -370,38 +375,47 @@ msgstr "ביטול"
 msgid "Select Items"
 msgstr "בחירת פריטים"
 
-#: ../src/notifications.js:50
-msgid "Selected item has been deleted"
-msgid_plural "Selected items have been deleted"
-msgstr[0] "הפריט הנבחר נמחק"
-msgstr[1] "הפריטים הנבחרים נמחקו"
-msgstr[2] "הפריטים הנבחרים נמחקו"
+#. Translators: only one item has been deleted and %s is its name
+#: ../src/notifications.js:54
+#, javascript-format
+msgid "“%s” deleted"
+msgstr "‏„%s” נמחק"
 
-#: ../src/notifications.js:57
+#. Translators: one or more items might have been deleted, and %d
+#. is the count
+#: ../src/notifications.js:58
+#, c-format
+msgid "%d item deleted"
+msgid_plural "%d items deleted"
+msgstr[0] "פריט אחד נמחק"
+msgstr[1] "%d פריטים נמחקו"
+msgstr[2] "%d פריטים נמחקו"
+
+#: ../src/notifications.js:67
 msgid "Undo"
 msgstr "ביטול"
 
-#: ../src/notifications.js:157
+#: ../src/notifications.js:167
 #, javascript-format
 msgid "Printing “%s”: %s"
 msgstr "מתבצעת הדפסה של „%s“:‏ %s"
 
-#: ../src/notifications.js:213
+#: ../src/notifications.js:223
 msgid "Your documents are being indexed"
 msgstr "המסמכים שלך נשמרים באינדקס"
 
-#: ../src/notifications.js:214
+#: ../src/notifications.js:224
 msgid "Some documents might not be available during this process"
 msgstr "יתכן שחלק מהמסמכים לא יהיו זמינים במשך תהליך זה"
 
 #. Translators: %s refers to an online account provider, e.g.
 #. "Google", or "Windows Live".
-#: ../src/notifications.js:236
+#: ../src/notifications.js:246
 #, javascript-format
 msgid "Fetching documents from %s"
 msgstr "מתקבל מסמך מ־%s"
 
-#: ../src/notifications.js:238
+#: ../src/notifications.js:248
 msgid "Fetching documents from online accounts"
 msgstr "מתקבלים מסמכים מחשבונות מקוונים"
 
@@ -447,21 +461,21 @@ msgstr "משני"
 msgid "Present On"
 msgstr "מצב מצגת מופעל"
 
-#: ../src/preview.js:598
+#: ../src/preview.js:609
 msgid "Bookmark this page"
 msgstr "סימון דף זה"
 
 #. Translators: this is the Open action in a context menu
-#: ../src/preview.js:859 ../src/selections.js:859
+#: ../src/preview.js:870 ../src/selections.js:859
 #, javascript-format
 msgid "Open with %s"
 msgstr "פתיחה באמצעות %s"
 
-#: ../src/preview.js:922
+#: ../src/preview.js:933
 msgid "Find Previous"
 msgstr "חיפוש הקודם"
 
-#: ../src/preview.js:929
+#: ../src/preview.js:940
 msgid "Find Next"
 msgstr "חיפוש הבא"
 
@@ -767,32 +781,32 @@ msgstr "מסמך ללא שם"
 msgid "Unable to fetch the list of documents"
 msgstr "לא ניתן לקבל את רשימת המסמכים"
 
-#: ../src/view.js:242
+#: ../src/view.js:243
 msgid "No Books Found"
 msgstr "לא נמצאו ספרים"
 
-#: ../src/view.js:243
+#: ../src/view.js:244
 msgid "No Documents Found"
 msgstr "לא נמצאו מסמכים"
 
 #. Translators: %s here is "Settings", which is in a separate string due to
 #. markup, and should be translated only in the context of this sentence
-#: ../src/view.js:265
+#: ../src/view.js:266
 #, javascript-format
 msgid "You can add your online accounts in %s"
 msgstr "ניתן להוסיף את החשבונות המקוונים שלך תחת %s"
 
 #. Translators: this should be translated in the context of the
 #. "You can add your online accounts in Settings" sentence above
-#: ../src/view.js:269
+#: ../src/view.js:270
 msgid "Settings"
 msgstr "הגדרות"
 
-#: ../src/view.js:503
+#: ../src/view.js:457
 msgid "Yesterday"
 msgstr "אתמול"
 
-#: ../src/view.js:505
+#: ../src/view.js:459
 #, c-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
@@ -800,11 +814,11 @@ msgstr[0] "אתמול"
 msgstr[1] "לפני %d ימים"
 msgstr[2] "שלשום"
 
-#: ../src/view.js:509
+#: ../src/view.js:463
 msgid "Last week"
 msgstr "שבוע שעבר"
 
-#: ../src/view.js:511
+#: ../src/view.js:465
 #, c-format
 msgid "%d week ago"
 msgid_plural "%d weeks ago"
@@ -812,11 +826,11 @@ msgstr[0] "לפני שבוע"
 msgstr[1] "לפני %d שבועות"
 msgstr[2] "לפני שבועיים"
 
-#: ../src/view.js:515
+#: ../src/view.js:469
 msgid "Last month"
 msgstr "בחודש שעבר"
 
-#: ../src/view.js:517
+#: ../src/view.js:471
 #, c-format
 msgid "%d month ago"
 msgid_plural "%d months ago"
@@ -824,11 +838,11 @@ msgstr[0] "לפני חודש"
 msgstr[1] "לפני %d חודשים"
 msgstr[2] "לפני חודשיים"
 
-#: ../src/view.js:521
+#: ../src/view.js:475
 msgid "Last year"
 msgstr "שנה שעברה"
 
-#: ../src/view.js:523
+#: ../src/view.js:477
 #, c-format
 msgid "%d year ago"
 msgid_plural "%d years ago"
