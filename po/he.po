@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Gnome-Documents\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-07 23:27+0200\n"
-"PO-Revision-Date: 2015-03-07 23:31+0200\n"
+"POT-Creation-Date: 2015-03-07 23:39+0200\n"
+"PO-Revision-Date: 2015-03-07 23:39+0200\n"
 "Last-Translator: Yosef Or Boczko <yoseforb@gmail.com>\n"
 "Language-Team: עברית <>\n"
 "Language: he\n"
@@ -349,7 +349,7 @@ msgstr "חזרה"
 
 #: ../src/mainToolbar.js:141
 msgid "View items as a list"
-msgstr "צפייה בפירטים כרשימה"
+msgstr "צפייה בפריטים כרשימה"
 
 #: ../src/mainToolbar.js:147
 msgid "View items as a grid of icons"
