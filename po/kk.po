@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: gnome-documents master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-02-25 19:48+0000\n"
-"PO-Revision-Date: 2015-02-26 09:52+0500\n"
+"POT-Creation-Date: 2015-03-08 11:34+0000\n"
+"PO-Revision-Date: 2015-03-08 22:23+0500\n"
 "Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
 "Language-Team: Kazakh <kk_KZ@googlegroups.com>\n"
 "Language: kk\n"
@@ -17,11 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 1.7.4\n"
+"X-Generator: Poedit 1.7.3\n"
 
 #: ../data/org.gnome.Books.appdata.xml.in.h:1
 #: ../data/org.gnome.Books.desktop.in.h:1 ../src/application.js:132
-#: ../src/mainWindow.js:328
+#: ../src/lib/gd-utils.c:418
 msgid "Books"
 msgstr "Кітаптар"
 
@@ -125,7 +125,7 @@ msgstr "Қолданба түнгі режимінде ме, соны көрсе
 
 #: ../data/org.gnome.Documents.appdata.xml.in.h:1
 #: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:128
-#: ../src/mainWindow.js:52 ../src/mainWindow.js:323
+#: ../src/lib/gd-utils.c:411 ../src/mainWindow.js:52
 msgid "Documents"
 msgstr "Құжаттар қолданбасы"
 
@@ -197,65 +197,72 @@ msgstr "GNOME"
 msgid "Getting Started with Documents"
 msgstr "Құжаттар қолданбасымен жұмысты бастау"
 
-#: ../src/documents.js:712 ../src/documents.js:893 ../src/documents.js:956
-#: ../src/documents.js:1064
+#: ../src/documents.js:712 ../src/documents.js:904 ../src/documents.js:967
+#: ../src/documents.js:1075
 msgid "Collection"
 msgstr "Жинақ"
 
-#: ../src/documents.js:772
+#: ../src/documents.js:783
 msgid "Google Docs"
 msgstr "Google Docs"
 
-#: ../src/documents.js:773
+#: ../src/documents.js:784
 msgid "Google"
 msgstr "Google"
 
-#: ../src/documents.js:895 ../src/documents.js:1066
+#: ../src/documents.js:906 ../src/documents.js:1077
 msgid "Spreadsheet"
 msgstr "Электрондық кесте"
 
-#: ../src/documents.js:897 ../src/documents.js:1068 ../src/presentation.js:47
+#: ../src/documents.js:908 ../src/documents.js:1079 ../src/presentation.js:47
 msgid "Presentation"
 msgstr "Презентация"
 
-#: ../src/documents.js:899 ../src/documents.js:1070
+#: ../src/documents.js:910 ../src/documents.js:1081
 msgid "e-Book"
 msgstr "Эл. кітап"
 
-#: ../src/documents.js:901 ../src/documents.js:1072
+#: ../src/documents.js:912 ../src/documents.js:1083
 msgid "Document"
 msgstr "Құжат"
 
-#: ../src/documents.js:935
+#: ../src/documents.js:946
 msgid "ownCloud"
 msgstr "ownCloud"
 
-#: ../src/documents.js:998 ../src/documents.js:999
+#: ../src/documents.js:1009 ../src/documents.js:1010
 msgid "OneDrive"
 msgstr "OneDrive"
 
-#: ../src/documents.js:1236
+#: ../src/documents.js:1247
 msgid "Please check the network connection."
 msgstr "Желілік байланысты тексеріңіз."
 
-#: ../src/documents.js:1239
+#: ../src/documents.js:1250
 msgid "Please check the network proxy settings."
 msgstr "Желілік прокси баптауларын тексеріңіз."
 
-#: ../src/documents.js:1242
+#: ../src/documents.js:1253
 msgid "Unable to sign in to the document service."
 msgstr "Құжаттарды сақтау қызметіне кіру мүмкін емес."
 
-#: ../src/documents.js:1245
+#: ../src/documents.js:1256
 msgid "Unable to locate this document."
 msgstr "Бұл құжатты табу мүмкін емес."
 
-#: ../src/documents.js:1248
+#: ../src/documents.js:1259
 #, javascript-format
 msgid "Hmm, something is fishy (%d)."
 msgstr "Қап, бірнәрсе біртүрлі болып тұр (%d)."
 
 #: ../src/documents.js:1266
+msgid ""
+"You are using a preview of Books. Full viewing capabilities are coming soon!"
+msgstr ""
+"Сіз Кітаптар қолданбасының алдын-ала нұсқасын қолданудасыз. Толық "
+"мүмкіндіктері жақында шығарылады!"
+
+#: ../src/documents.js:1287
 #, javascript-format
 msgid "Oops! Unable to load “%s”"
 msgstr "Қап! “%s” жүктеу мүмкін емес"
@@ -301,7 +308,7 @@ msgstr "Бетбелгілер жоқ"
 msgid "Loading…"
 msgstr "Жүктеу..."
 
-#: ../src/lib/gd-places-bookmarks.c:656 ../src/preview.js:599
+#: ../src/lib/gd-places-bookmarks.c:656 ../src/preview.js:601
 msgid "Bookmarks"
 msgstr "Бетбелгілер"
 
@@ -312,6 +319,18 @@ msgstr "Мазмұны жоқ"
 #: ../src/lib/gd-places-links.c:518
 msgid "Contents"
 msgstr "Құрамасы"
+
+#: ../src/lib/gd-utils.c:412
+msgid "A document manager application"
+msgstr "Құжаттарды басқару қолданбасы"
+
+#: ../src/lib/gd-utils.c:419
+msgid "An e-books manager application"
+msgstr "Электрондық кітаптарды басқару қолданбасы"
+
+#: ../src/lib/gd-utils.c:427
+msgid "translator-credits"
+msgstr "Baurzhan Muftakhidinov <baurthefirst@gmail.com>"
 
 #: ../src/mainToolbar.js:79
 msgid "Search"
@@ -347,46 +366,42 @@ msgstr "Бас тарту"
 msgid "Select Items"
 msgstr "Нәрселерді таңдау"
 
-#: ../src/mainWindow.js:321
-msgid "translator-credits"
-msgstr "Baurzhan Muftakhidinov <baurthefirst@gmail.com>"
+#: ../src/notifications.js:54
+#, javascript-format
+msgid "“%s” deleted"
+msgstr "\"%s\" өшірілді"
 
-#: ../src/mainWindow.js:324
-msgid "A document manager application"
-msgstr "Құжаттарды басқару қолданбасы"
+#: ../src/notifications.js:58
+#, javascript-format
+#| msgid "Selected item has been deleted"
+#| msgid_plural "Selected items have been deleted"
+msgid "%d item deleted"
+msgid_plural "%d items deleted"
+msgstr[0] "%d нәрсе өшірілді"
 
-#: ../src/mainWindow.js:329
-msgid "An e-books manager application"
-msgstr "Электрондық кітаптарды басқару қолданбасы"
-
-#: ../src/notifications.js:50
-msgid "Selected item has been deleted"
-msgid_plural "Selected items have been deleted"
-msgstr[0] "Таңдалған нәрселер өшірілген"
-
-#: ../src/notifications.js:57
+#: ../src/notifications.js:67
 msgid "Undo"
 msgstr "Болдырмау"
 
-#: ../src/notifications.js:157
+#: ../src/notifications.js:167
 #, javascript-format
 msgid "Printing “%s”: %s"
 msgstr "Баспаға шығару “%s”: %s"
 
-#: ../src/notifications.js:213
+#: ../src/notifications.js:223
 msgid "Your documents are being indexed"
 msgstr "Құжаттарыңызды индекстеу жүруде"
 
-#: ../src/notifications.js:214
+#: ../src/notifications.js:224
 msgid "Some documents might not be available during this process"
 msgstr "Бұл әрекет кезінде кейбір құжаттар қолжетерсіз болуы мүмкін"
 
-#: ../src/notifications.js:236
+#: ../src/notifications.js:246
 #, javascript-format
 msgid "Fetching documents from %s"
 msgstr "%s ішінен құжаттарды алу"
 
-#: ../src/notifications.js:238
+#: ../src/notifications.js:248
 msgid "Fetching documents from online accounts"
 msgstr "Желідегі тіркелгілерден құжаттарды алу"
 
@@ -431,20 +446,20 @@ msgstr "Екіншілік"
 msgid "Present On"
 msgstr "Қайда бар"
 
-#: ../src/preview.js:607
+#: ../src/preview.js:609
 msgid "Bookmark this page"
 msgstr "Бұл парақты бетбелгілерге қосу"
 
-#: ../src/preview.js:871 ../src/selections.js:859
+#: ../src/preview.js:870 ../src/selections.js:859
 #, javascript-format
 msgid "Open with %s"
 msgstr "%s көмегімен ашу"
 
-#: ../src/preview.js:934
+#: ../src/preview.js:933
 msgid "Find Previous"
 msgstr "Алдыңғысын табу"
 
-#: ../src/preview.js:941
+#: ../src/preview.js:940
 msgid "Find Next"
 msgstr "Келесісін табу"
 
@@ -716,58 +731,58 @@ msgstr "Атаусыз құжат"
 msgid "Unable to fetch the list of documents"
 msgstr "Құжаттар тізімін алу мүмкін емес"
 
-#: ../src/view.js:242
+#: ../src/view.js:243
 msgid "No Books Found"
 msgstr "Кітаптар табылмады"
 
-#: ../src/view.js:243
+#: ../src/view.js:244
 msgid "No Documents Found"
 msgstr "Құжаттар табылмады"
 
-#: ../src/view.js:265
+#: ../src/view.js:266
 #, javascript-format
 msgid "You can add your online accounts in %s"
 msgstr "Сіз желідегі тіркелгілерді %s ішінен қоса аласыз"
 
-#: ../src/view.js:269
+#: ../src/view.js:270
 msgid "Settings"
 msgstr "Баптаулар"
 
-#: ../src/view.js:503
+#: ../src/view.js:457
 msgid "Yesterday"
 msgstr "Кеше"
 
-#: ../src/view.js:505
+#: ../src/view.js:459
 #, javascript-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
 msgstr[0] "%d күн бұрын"
 
-#: ../src/view.js:509
+#: ../src/view.js:463
 msgid "Last week"
 msgstr "Өткен апта"
 
-#: ../src/view.js:511
+#: ../src/view.js:465
 #, javascript-format
 msgid "%d week ago"
 msgid_plural "%d weeks ago"
 msgstr[0] "%d апта бұрын"
 
-#: ../src/view.js:515
+#: ../src/view.js:469
 msgid "Last month"
 msgstr "Өткен ай"
 
-#: ../src/view.js:517
+#: ../src/view.js:471
 #, javascript-format
 msgid "%d month ago"
 msgid_plural "%d months ago"
 msgstr[0] "%d ай бұрын"
 
-#: ../src/view.js:521
+#: ../src/view.js:475
 msgid "Last year"
 msgstr "Былтыр"
 
-#: ../src/view.js:523
+#: ../src/view.js:477
 #, javascript-format
 msgid "%d year ago"
 msgid_plural "%d years ago"
