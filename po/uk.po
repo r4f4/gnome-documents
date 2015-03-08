@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-28 01:42+0200\n"
-"PO-Revision-Date: 2015-02-28 01:48+0300\n"
+"POT-Creation-Date: 2015-03-08 13:29+0200\n"
+"PO-Revision-Date: 2015-03-08 13:32+0300\n"
 "Last-Translator: Daniel Korostil <ted.korostiled@gmail.com>\n"
 "Language-Team: linux.org.ua\n"
 "Language: uk\n"
@@ -202,69 +202,74 @@ msgstr "GNOME"
 msgid "Getting Started with Documents"
 msgstr "Вступ"
 
-#: ../src/documents.js:712 ../src/documents.js:893 ../src/documents.js:956
-#: ../src/documents.js:1064
+#: ../src/documents.js:712 ../src/documents.js:904 ../src/documents.js:967
+#: ../src/documents.js:1075
 msgid "Collection"
 msgstr "Збірка"
 
 #. overridden
-#: ../src/documents.js:772
+#: ../src/documents.js:783
 msgid "Google Docs"
 msgstr "Google Docs"
 
-#: ../src/documents.js:773
+#: ../src/documents.js:784
 msgid "Google"
 msgstr "Google"
 
-#: ../src/documents.js:895 ../src/documents.js:1066
+#: ../src/documents.js:906 ../src/documents.js:1077
 msgid "Spreadsheet"
 msgstr "Електронна таблиця"
 
-#: ../src/documents.js:897 ../src/documents.js:1068 ../src/presentation.js:47
+#: ../src/documents.js:908 ../src/documents.js:1079 ../src/presentation.js:47
 msgid "Presentation"
 msgstr "Презентація"
 
-#: ../src/documents.js:899 ../src/documents.js:1070
+#: ../src/documents.js:910 ../src/documents.js:1081
 msgid "e-Book"
 msgstr "Книга"
 
-#: ../src/documents.js:901 ../src/documents.js:1072
+#: ../src/documents.js:912 ../src/documents.js:1083
 msgid "Document"
 msgstr "Документ"
 
 #. overridden
-#: ../src/documents.js:935
+#: ../src/documents.js:946
 msgid "ownCloud"
 msgstr "ownCloud"
 
 #. overridden
-#: ../src/documents.js:998 ../src/documents.js:999
+#: ../src/documents.js:1009 ../src/documents.js:1010
 msgid "OneDrive"
 msgstr "OneDrive"
 
-#: ../src/documents.js:1236
+#: ../src/documents.js:1247
 msgid "Please check the network connection."
 msgstr "Перевірте мережевий зв'язок."
 
-#: ../src/documents.js:1239
+#: ../src/documents.js:1250
 msgid "Please check the network proxy settings."
 msgstr "Перевірте параметри мережевого проксі."
 
-#: ../src/documents.js:1242
+#: ../src/documents.js:1253
 msgid "Unable to sign in to the document service."
 msgstr "Неможливо ввійти в службу документів."
 
-#: ../src/documents.js:1245
+#: ../src/documents.js:1256
 msgid "Unable to locate this document."
 msgstr "Неможливо розмістити цей документ."
 
-#: ../src/documents.js:1248
+#: ../src/documents.js:1259
 #, javascript-format
 msgid "Hmm, something is fishy (%d)."
 msgstr "Гмм, в'ялою рибою запахло (%d)."
 
-#. Translators: %s is the title of a document
 #: ../src/documents.js:1266
+msgid ""
+"You are using a preview of Books. Full viewing capabilities are coming soon!"
+msgstr "Це не повноцінна версія програми. Повноцінний варіант буде згодом. "
+
+#. Translators: %s is the title of a document
+#: ../src/documents.js:1287
 #, javascript-format
 msgid "Oops! Unable to load “%s”"
 msgstr "Отакої! Неможливо завантажити «%s»"
@@ -310,7 +315,7 @@ msgstr "Немає закладок"
 msgid "Loading…"
 msgstr "Завантаження…"
 
-#: ../src/lib/gd-places-bookmarks.c:656 ../src/preview.js:599
+#: ../src/lib/gd-places-bookmarks.c:656 ../src/preview.js:601
 msgid "Bookmarks"
 msgstr "Закладки"
 
@@ -370,38 +375,47 @@ msgstr "Скасувати"
 msgid "Select Items"
 msgstr "Вибрати об'єкти"
 
-#: ../src/notifications.js:50
-msgid "Selected item has been deleted"
-msgid_plural "Selected items have been deleted"
-msgstr[0] "Вибраний об'єкт вилучено"
-msgstr[1] "Вибрані об'єкти вилучено"
-msgstr[2] "Вибрані об'єкти вилучено"
+#. Translators: only one item has been deleted and %s is its name
+#: ../src/notifications.js:54
+#, javascript-format
+msgid "“%s” deleted"
+msgstr "«%s» вилучено"
 
-#: ../src/notifications.js:57
+#. Translators: one or more items might have been deleted, and %d
+#. is the count
+#: ../src/notifications.js:58
+#, javascript-format
+msgid "%d item deleted"
+msgid_plural "%d items deleted"
+msgstr[0] "%d об'єкт вилучено"
+msgstr[1] "%d об'єкти вилучено"
+msgstr[2] "%d об'єктів вилучено"
+
+#: ../src/notifications.js:67
 msgid "Undo"
 msgstr "Повернути"
 
-#: ../src/notifications.js:157
+#: ../src/notifications.js:167
 #, javascript-format
 msgid "Printing “%s”: %s"
 msgstr "Друкування «%s»: %s"
 
-#: ../src/notifications.js:213
+#: ../src/notifications.js:223
 msgid "Your documents are being indexed"
 msgstr "Ваші документи індексуються"
 
-#: ../src/notifications.js:214
+#: ../src/notifications.js:224
 msgid "Some documents might not be available during this process"
 msgstr "Деякі документи можуть бути недоступними протягом цього процесу"
 
 #. Translators: %s refers to an online account provider, e.g.
 #. "Google", or "Windows Live".
-#: ../src/notifications.js:236
+#: ../src/notifications.js:246
 #, javascript-format
 msgid "Fetching documents from %s"
 msgstr "Одержання документів з %s"
 
-#: ../src/notifications.js:238
+#: ../src/notifications.js:248
 msgid "Fetching documents from online accounts"
 msgstr "Одержання документів з мережевих облікових записів"
 
@@ -447,21 +461,21 @@ msgstr "Вторинний"
 msgid "Present On"
 msgstr "Презентувати"
 
-#: ../src/preview.js:607
+#: ../src/preview.js:609
 msgid "Bookmark this page"
 msgstr "Закласти цю сторінку"
 
 #. Translators: this is the Open action in a context menu
-#: ../src/preview.js:871 ../src/selections.js:859
+#: ../src/preview.js:870 ../src/selections.js:859
 #, javascript-format
 msgid "Open with %s"
 msgstr "Відкрити через %s"
 
-#: ../src/preview.js:934
+#: ../src/preview.js:933
 msgid "Find Previous"
 msgstr "Знайти попереднє"
 
-#: ../src/preview.js:941
+#: ../src/preview.js:940
 msgid "Find Next"
 msgstr "Знайти наступне"
 
@@ -767,32 +781,32 @@ msgstr "Неназваний документ"
 msgid "Unable to fetch the list of documents"
 msgstr "Неможливо одержати список документів"
 
-#: ../src/view.js:242
+#: ../src/view.js:243
 msgid "No Books Found"
 msgstr "Не знайдено жодної книги"
 
-#: ../src/view.js:243
+#: ../src/view.js:244
 msgid "No Documents Found"
 msgstr "Не знайдено жодного документа"
 
 #. Translators: %s here is "Settings", which is in a separate string due to
 #. markup, and should be translated only in the context of this sentence
-#: ../src/view.js:265
+#: ../src/view.js:266
 #, javascript-format
 msgid "You can add your online accounts in %s"
 msgstr "Можете додати ваші мережеві облікові записи у %s"
 
 #. Translators: this should be translated in the context of the
 #. "You can add your online accounts in Settings" sentence above
-#: ../src/view.js:269
+#: ../src/view.js:270
 msgid "Settings"
 msgstr "Параметри"
 
-#: ../src/view.js:503
+#: ../src/view.js:457
 msgid "Yesterday"
 msgstr "Учора"
 
-#: ../src/view.js:505
+#: ../src/view.js:459
 #, javascript-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
@@ -800,11 +814,11 @@ msgstr[0] "%d день тому"
 msgstr[1] "%d дні тому"
 msgstr[2] "%d днів тому"
 
-#: ../src/view.js:509
+#: ../src/view.js:463
 msgid "Last week"
 msgstr "Минулого тижня"
 
-#: ../src/view.js:511
+#: ../src/view.js:465
 #, javascript-format
 msgid "%d week ago"
 msgid_plural "%d weeks ago"
@@ -812,11 +826,11 @@ msgstr[0] "%d тиждень тому"
 msgstr[1] "%d тижні тому"
 msgstr[2] "%d тижнів тому"
 
-#: ../src/view.js:515
+#: ../src/view.js:469
 msgid "Last month"
 msgstr "Минулого місяця"
 
-#: ../src/view.js:517
+#: ../src/view.js:471
 #, javascript-format
 msgid "%d month ago"
 msgid_plural "%d months ago"
@@ -824,11 +838,11 @@ msgstr[0] "%d місяць тому"
 msgstr[1] "%d місяці тому"
 msgstr[2] "%d місяців тому"
 
-#: ../src/view.js:521
+#: ../src/view.js:475
 msgid "Last year"
 msgstr "Минулого року"
 
-#: ../src/view.js:523
+#: ../src/view.js:477
 #, javascript-format
 msgid "%d year ago"
 msgid_plural "%d years ago"
