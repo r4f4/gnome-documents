@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: gnome-documents gnome-3.16\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-03-04 07:52+0000\n"
-"PO-Revision-Date: 2015-03-04 19:30+0100\n"
+"POT-Creation-Date: 2015-03-08 20:26+0000\n"
+"PO-Revision-Date: 2015-03-08 22:39+0100\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -37,9 +37,9 @@ msgid ""
 "meant to be a simple and elegant replacement for using a file manager to "
 "deal with e-books."
 msgstr ""
-"Jednoduchá aplikace, kterou můžete používat pro přístup ke svým elektronickým "
-"knihám v GNOME a jejich roztřídění. Je zamýšlena jako snadná a elegantní "
-"náhrada za používání správce souborů k zacházení s e-knihami."
+"Jednoduchá aplikace, kterou můžete používat pro přístup ke svým "
+"elektronickým knihám v GNOME a jejich roztřídění. Je zamýšlena jako snadná a "
+"elegantní náhrada za používání správce souborů k zacházení s e-knihami."
 
 #: ../data/org.gnome.Books.appdata.xml.in.h:4
 #: ../data/org.gnome.Documents.appdata.xml.in.h:4
@@ -144,8 +144,8 @@ msgid ""
 msgstr ""
 "Jednoduchá aplikace, kterou můžete používat pro přístup, uspořádávání a "
 "sdílení svých dokumentů v GNOME. Je zamýšlena jako snadná a elegantní "
-"náhrada za používání správce souborů k zacházení s dokumenty. Díky účtům "
-"on-line v GNOME umí bez problémů fungovat i s cloudem."
+"náhrada za používání správce souborů k zacházení s dokumenty. Díky účtům on-"
+"line v GNOME umí bez problémů fungovat i s cloudem."
 
 #: ../data/org.gnome.Documents.appdata.xml.in.h:5
 msgid "View recent local and online documents"
@@ -200,65 +200,71 @@ msgstr "GNOME"
 msgid "Getting Started with Documents"
 msgstr "Začínáme s Dokumenty"
 
-#: ../src/documents.js:712 ../src/documents.js:893 ../src/documents.js:956
-#: ../src/documents.js:1064
+#: ../src/documents.js:712 ../src/documents.js:904 ../src/documents.js:967
+#: ../src/documents.js:1075
 msgid "Collection"
 msgstr "Sada"
 
-#: ../src/documents.js:772
+#: ../src/documents.js:783
 msgid "Google Docs"
 msgstr "Dokumenty Google"
 
-#: ../src/documents.js:773
+#: ../src/documents.js:784
 msgid "Google"
 msgstr "Google"
 
-#: ../src/documents.js:895 ../src/documents.js:1066
+#: ../src/documents.js:906 ../src/documents.js:1077
 msgid "Spreadsheet"
 msgstr "Sešit s tabulkami"
 
-#: ../src/documents.js:897 ../src/documents.js:1068 ../src/presentation.js:47
+#: ../src/documents.js:908 ../src/documents.js:1079 ../src/presentation.js:47
 msgid "Presentation"
 msgstr "Prezentace"
 
-#: ../src/documents.js:899 ../src/documents.js:1070
+#: ../src/documents.js:910 ../src/documents.js:1081
 msgid "e-Book"
 msgstr "E-kniha"
 
-#: ../src/documents.js:901 ../src/documents.js:1072
+#: ../src/documents.js:912 ../src/documents.js:1083
 msgid "Document"
 msgstr "Dokument"
 
-#: ../src/documents.js:935
+#: ../src/documents.js:946
 msgid "ownCloud"
 msgstr "ownCloud"
 
-#: ../src/documents.js:998 ../src/documents.js:999
+#: ../src/documents.js:1009 ../src/documents.js:1010
 msgid "OneDrive"
 msgstr "OneDrive"
 
-#: ../src/documents.js:1236
+#: ../src/documents.js:1247
 msgid "Please check the network connection."
 msgstr "Zkontrolujte prosím síťové připojení."
 
-#: ../src/documents.js:1239
+#: ../src/documents.js:1250
 msgid "Please check the network proxy settings."
 msgstr "Zkontrolujte prosím nastavení síťové proxy."
 
-#: ../src/documents.js:1242
+#: ../src/documents.js:1253
 msgid "Unable to sign in to the document service."
 msgstr "Nelze se přihlásit k dokumentové službě."
 
-#: ../src/documents.js:1245
+#: ../src/documents.js:1256
 msgid "Unable to locate this document."
 msgstr "Nelze nalézt tento dokument."
 
-#: ../src/documents.js:1248
+#: ../src/documents.js:1259
 #, javascript-format
 msgid "Hmm, something is fishy (%d)."
 msgstr "Hmm, něco je špatně (%d)."
 
 #: ../src/documents.js:1266
+msgid ""
+"You are using a preview of Books. Full viewing capabilities are coming soon!"
+msgstr ""
+"Používáte ukázku aplikace Knihy. Plně funkční aplikace přijde v brzké době!"
+
+#: ../src/documents.js:1287
 #, javascript-format
 msgid "Oops! Unable to load “%s”"
 msgstr "Jejda! Nelze načíst „%s“"
@@ -304,7 +310,7 @@ msgstr "Žádné záložky"
 msgid "Loading…"
 msgstr "Načítá se…"
 
-#: ../src/lib/gd-places-bookmarks.c:656 ../src/preview.js:590
+#: ../src/lib/gd-places-bookmarks.c:656 ../src/preview.js:601
 msgid "Bookmarks"
 msgstr "Záložky"
 
@@ -366,36 +372,42 @@ msgstr "Zrušit"
 msgid "Select Items"
 msgstr "Vybrat položky"
 
-#: ../src/notifications.js:50
-msgid "Selected item has been deleted"
-msgid_plural "Selected items have been deleted"
-msgstr[0] "Vybraná položka byla smazána"
-msgstr[1] "Vybrané položky byly smazány"
-msgstr[2] "Vybrané položky byly smazány"
+#: ../src/notifications.js:54
+#, javascript-format
+msgid "“%s” deleted"
+msgstr "„%s“ byl smazán"
 
-#: ../src/notifications.js:57
+#: ../src/notifications.js:58
+#, javascript-format
+msgid "%d item deleted"
+msgid_plural "%d items deleted"
+msgstr[0] "%d položka byla smazána"
+msgstr[1] "%d položky byly smazány"
+msgstr[2] "%d položek bylo smazáno"
+
+#: ../src/notifications.js:67
 msgid "Undo"
 msgstr "Zpět"
 
-#: ../src/notifications.js:157
+#: ../src/notifications.js:167
 #, javascript-format
 msgid "Printing “%s”: %s"
 msgstr "Tiskne se „%s“: %s"
 
-#: ../src/notifications.js:213
+#: ../src/notifications.js:223
 msgid "Your documents are being indexed"
 msgstr "Vaše dokumenty jsou indexovány"
 
-#: ../src/notifications.js:214
+#: ../src/notifications.js:224
 msgid "Some documents might not be available during this process"
 msgstr "Některé dokumenty nemusí být během tohoto procesu dostupné"
 
-#: ../src/notifications.js:236
+#: ../src/notifications.js:246
 #, javascript-format
 msgid "Fetching documents from %s"
 msgstr "Získávají se dokumenty z %s"
 
-#: ../src/notifications.js:238
+#: ../src/notifications.js:248
 msgid "Fetching documents from online accounts"
 msgstr "Získávají se dokumenty z účtů on-line"
 
@@ -441,20 +453,20 @@ msgstr "Vedlejší"
 msgid "Present On"
 msgstr "Prezentovat na"
 
-#: ../src/preview.js:598
+#: ../src/preview.js:609
 msgid "Bookmark this page"
 msgstr "Tuto stránku do záložek"
 
-#: ../src/preview.js:859 ../src/selections.js:859
+#: ../src/preview.js:870 ../src/selections.js:859
 #, javascript-format
 msgid "Open with %s"
 msgstr "Otevřít pomocí %s"
 
-#: ../src/preview.js:922
+#: ../src/preview.js:933
 msgid "Find Previous"
 msgstr "Najít předchozí"
 
-#: ../src/preview.js:929
+#: ../src/preview.js:940
 msgid "Find Next"
 msgstr "Najít následující"
 
@@ -726,28 +738,28 @@ msgstr "Nepojmenovaný dokument"
 msgid "Unable to fetch the list of documents"
 msgstr "Nelze získat seznam dokumentů"
 
-#: ../src/view.js:242
+#: ../src/view.js:243
 msgid "No Books Found"
 msgstr "Nenalezeny žádné knihy"
 
-#: ../src/view.js:243
+#: ../src/view.js:244
 msgid "No Documents Found"
 msgstr "Nenalezen žádný dokument"
 
-#: ../src/view.js:265
+#: ../src/view.js:266
 #, javascript-format
 msgid "You can add your online accounts in %s"
 msgstr "Své účty on-line můžete přidat v %s"
 
-#: ../src/view.js:269
+#: ../src/view.js:270
 msgid "Settings"
 msgstr "Nastavení"
 
-#: ../src/view.js:503
+#: ../src/view.js:457
 msgid "Yesterday"
 msgstr "Včera"
 
-#: ../src/view.js:505
+#: ../src/view.js:459
 #, javascript-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
@@ -755,11 +767,11 @@ msgstr[0] "Před %d dnem"
 msgstr[1] "Před %d dny"
 msgstr[2] "Před %d dny"
 
-#: ../src/view.js:509
+#: ../src/view.js:463
 msgid "Last week"
 msgstr "Minulý týden"
 
-#: ../src/view.js:511
+#: ../src/view.js:465
 #, javascript-format
 msgid "%d week ago"
 msgid_plural "%d weeks ago"
@@ -767,11 +779,11 @@ msgstr[0] "Před %d týdnem"
 msgstr[1] "Před %d týdny"
 msgstr[2] "Před %d týdny"
 
-#: ../src/view.js:515
+#: ../src/view.js:469
 msgid "Last month"
 msgstr "Minulý měsíc"
 
-#: ../src/view.js:517
+#: ../src/view.js:471
 #, javascript-format
 msgid "%d month ago"
 msgid_plural "%d months ago"
@@ -779,11 +791,11 @@ msgstr[0] "Před %d měsícem"
 msgstr[1] "Před %d měsíci"
 msgstr[2] "Před %d měsíci"
 
-#: ../src/view.js:521
+#: ../src/view.js:475
 msgid "Last year"
 msgstr "Minulý rok"
 
-#: ../src/view.js:523
+#: ../src/view.js:477
 #, javascript-format
 msgid "%d year ago"
 msgid_plural "%d years ago"
