@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-documents 3.15.x\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-16 18:22+0100\n"
-"PO-Revision-Date: 2015-02-16 18:23+0100\n"
+"POT-Creation-Date: 2015-03-09 19:49+0100\n"
+"PO-Revision-Date: 2015-03-09 19:50+0100\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian bokmål <i18n-nb@lister.ping.uio.no>\n"
 "Language: \n"
@@ -18,8 +18,8 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../data/org.gnome.Books.appdata.xml.in.h:1
-#: ../data/org.gnome.Books.desktop.in.h:1 ../src/application.js:129
-#: ../src/mainWindow.js:313
+#: ../data/org.gnome.Books.desktop.in.h:1 ../src/application.js:132
+#: ../src/lib/gd-utils.c:418
 msgid "Books"
 msgstr "Bøker"
 
@@ -32,7 +32,10 @@ msgid ""
 "A simple application to access and organize your e-books on GNOME. It is "
 "meant to be a simple and elegant replacement for using a file manager to "
 "deal with e-books."
-msgstr "Et enkelt program for å aksessere, organisere dine e-bøker i GNOME. Ment å være en enkel og elegant erstatning for å håndtere e-bøker med en filhåndterer."
+msgstr ""
+"Et enkelt program for å aksessere, organisere dine e-bøker i GNOME. Ment å "
+"være en enkel og elegant erstatning for å håndtere e-bøker med en "
+"filhåndterer."
 
 #: ../data/org.gnome.Books.appdata.xml.in.h:4
 #: ../data/org.gnome.Documents.appdata.xml.in.h:4
@@ -119,8 +122,8 @@ msgid "Whether the application is in night mode."
 msgstr "Hvorvidt programmet er i nattmodus."
 
 #: ../data/org.gnome.Documents.appdata.xml.in.h:1
-#: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:125
-#: ../src/mainWindow.js:52 ../src/mainWindow.js:308
+#: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:128
+#: ../src/lib/gd-utils.c:411 ../src/mainWindow.js:52
 msgid "Documents"
 msgstr "Dokumenter"
 
@@ -176,117 +179,109 @@ msgstr "Aksesser, håndter og del dokumenter"
 msgid "Docs;PDF;Document;"
 msgstr "Dokumentasjon;PDF;Dokument;"
 
-#: ../src/documents.js:630
+#: ../src/documents.js:631
 msgid "Failed to print document"
 msgstr "Klarte ikke å skrive ut dokumentet"
 
 #. Translators: this refers to local documents
-#: ../src/documents.js:667 ../src/search.js:464
+#: ../src/documents.js:668 ../src/search.js:498
 msgid "Local"
 msgstr "Lokalt"
 
 #. Translators: Documents ships a "Getting Started with Documents"
 #. tutorial PDF. The "GNOME" string below is displayed as the author name
 #. of that document, and doesn't normally need to be translated.
-#: ../src/documents.js:694
+#: ../src/documents.js:695
 msgid "GNOME"
 msgstr "GNOME"
 
-#: ../src/documents.js:695
+#: ../src/documents.js:696
 msgid "Getting Started with Documents"
 msgstr "Kom i gang med Dokumenter"
 
-#: ../src/documents.js:711 ../src/documents.js:892 ../src/documents.js:955
-#: ../src/documents.js:1063
+#: ../src/documents.js:712 ../src/documents.js:904 ../src/documents.js:967
+#: ../src/documents.js:1075
 msgid "Collection"
 msgstr "Samling"
 
 #. overridden
-#: ../src/documents.js:771
+#: ../src/documents.js:783
 msgid "Google Docs"
 msgstr "Google Docs"
 
-#: ../src/documents.js:772
+#: ../src/documents.js:784
 msgid "Google"
 msgstr "Google"
 
-#: ../src/documents.js:894 ../src/documents.js:1065
+#: ../src/documents.js:906 ../src/documents.js:1077
 msgid "Spreadsheet"
 msgstr "Regneark"
 
-#: ../src/documents.js:896 ../src/documents.js:1067 ../src/presentation.js:47
+#: ../src/documents.js:908 ../src/documents.js:1079 ../src/presentation.js:47
 msgid "Presentation"
 msgstr "Presentasjon"
 
-#: ../src/documents.js:898 ../src/documents.js:1069
+#: ../src/documents.js:910 ../src/documents.js:1081
 msgid "e-Book"
 msgstr "e-bok"
 
-#: ../src/documents.js:900 ../src/documents.js:1071
+#: ../src/documents.js:912 ../src/documents.js:1083
 msgid "Document"
 msgstr "Dokument"
 
 #. overridden
-#: ../src/documents.js:934
+#: ../src/documents.js:946
 msgid "ownCloud"
 msgstr "ownCloud"
 
 #. overridden
-#: ../src/documents.js:997 ../src/documents.js:998
+#: ../src/documents.js:1009 ../src/documents.js:1010
 msgid "OneDrive"
 msgstr "OneDrive"
 
-#: ../src/documents.js:1199
+#: ../src/documents.js:1247
 msgid "Please check the network connection."
 msgstr "Sjekk nettverkstilkoblingen."
 
-#: ../src/documents.js:1202
+#: ../src/documents.js:1250
 msgid "Please check the network proxy settings."
 msgstr "Sjekk proxyinnstillinger for nettverk."
 
-#: ../src/documents.js:1205
+#: ../src/documents.js:1253
 msgid "Unable to sign in to the document service."
 msgstr "Kan ikke logge inn på dokumenttjenesten."
 
-#: ../src/documents.js:1208
+#: ../src/documents.js:1256
 msgid "Unable to locate this document."
 msgstr "Kan ikke finne dette dokumentet."
 
-#: ../src/documents.js:1211
+#: ../src/documents.js:1259
 #, javascript-format
 msgid "Hmm, something is fishy (%d)."
 msgstr "Hmm, noe er galt (%d)."
 
+#: ../src/documents.js:1266
+msgid ""
+"You are using a preview of Books. Full viewing capabilities are coming soon!"
+msgstr "Du bruker en forhåndsvisning av Bøker. Flere visningsfunksjoner kommer snart!"
+
 #. Translators: %s is the title of a document
-#: ../src/documents.js:1229
+#: ../src/documents.js:1287
 #, javascript-format
 msgid "Oops! Unable to load “%s”"
 msgstr "Opps! kan ikke laste «%s»"
 
-#: ../src/edit.js:175
+#: ../src/edit.js:176
 msgid "View"
 msgstr "Vis"
 
-#: ../src/embed.js:143
-msgid "No Books Found"
-msgstr "Ingen bøker funnet"
+#: ../src/embed.js:109
+msgid "Recent"
+msgstr "Nylig"
 
-#: ../src/embed.js:144
-msgid "No Documents Found"
-msgstr "Ingen dokumenter funnet"
-
-#. Translators: %s here is "Settings", which is in a separate string due to
-#. markup, and should be translated only in the context of this sentence
-#: ../src/embed.js:166
-#, javascript-format
-msgid "You can add your online accounts in %s"
-msgstr "Du kan legge til dine kontoer på nettet i %s"
-
-#. Translators: this should be translated in the context of the
-#. "You can add your online accounts in Settings" sentence above
-#: ../src/embed.js:170
-msgid "Settings"
-msgstr "Innstillinger"
+#: ../src/embed.js:112 ../src/search.js:192 ../src/search.js:201
+msgid "Collections"
+msgstr "Samlinger"
 
 #: ../src/lib/gd-nav-bar.c:242
 #, c-format
@@ -317,7 +312,7 @@ msgstr "Ingen bokmerker"
 msgid "Loading…"
 msgstr "Laster …"
 
-#: ../src/lib/gd-places-bookmarks.c:656 ../src/preview.js:599
+#: ../src/lib/gd-places-bookmarks.c:656 ../src/preview.js:601
 msgid "Bookmarks"
 msgstr "Bokmerker"
 
@@ -329,6 +324,18 @@ msgstr "Ingen innholdsfortegnelse"
 msgid "Contents"
 msgstr "Innhold"
 
+#: ../src/lib/gd-utils.c:412
+msgid "A document manager application"
+msgstr "Et program for å håndtere dokumenter"
+
+#: ../src/lib/gd-utils.c:419
+msgid "An e-books manager application"
+msgstr "Et program for å håndtere e-bøker"
+
+#: ../src/lib/gd-utils.c:427
+msgid "translator-credits"
+msgstr "Kjartan Maraas <kmaraas@gnome.org>"
+
 #: ../src/mainToolbar.js:79
 msgid "Search"
 msgstr "Søk"
@@ -337,77 +344,74 @@ msgstr "Søk"
 msgid "Back"
 msgstr "Tilbake"
 
-#: ../src/mainToolbar.js:132
+#: ../src/mainToolbar.js:141
 msgid "View items as a list"
 msgstr "Vis oppføringer som en liste"
 
-#: ../src/mainToolbar.js:138
+#: ../src/mainToolbar.js:147
 msgid "View items as a grid of icons"
 msgstr "Vis oppføringer som et rutenett med ikoner"
 
-#: ../src/mainToolbar.js:168
+#: ../src/mainToolbar.js:177
 msgid "Click on items to select them"
 msgstr "Klikk på oppføringer for å velge dem"
 
-#: ../src/mainToolbar.js:170
+#: ../src/mainToolbar.js:179
 #, javascript-format
 msgid "%d selected"
 msgid_plural "%d selected"
 msgstr[0] "%d valgt"
 msgstr[1] "%d valgt"
 
-#: ../src/mainToolbar.js:200
+#: ../src/mainToolbar.js:203
 msgid "Cancel"
 msgstr "Avbryt"
 
-#: ../src/mainToolbar.js:242
+#: ../src/mainToolbar.js:246
 msgid "Select Items"
 msgstr "Velg oppføringer"
 
-#: ../src/mainWindow.js:306
-msgid "translator-credits"
-msgstr "Kjartan Maraas <kmaraas@gnome.org>"
+#. Translators: only one item has been deleted and %s is its name
+#: ../src/notifications.js:54
+#, javascript-format
+msgid "“%s” deleted"
+msgstr "«%s» slettet"
 
-#: ../src/mainWindow.js:309
-msgid "A document manager application"
-msgstr "Et program for å håndtere dokumenter"
+#. Translators: one or more items might have been deleted, and %d
+#. is the count
+#: ../src/notifications.js:58
+#, javascript-format
+msgid "%d item deleted"
+msgid_plural "%d items deleted"
+msgstr[0] "%d oppføring er slettet"
+msgstr[1] "%d oppføringer er slettet"
 
-#: ../src/mainWindow.js:314
-msgid "An e-books manager application"
-msgstr "Et program for å håndtere e-bøker"
-
-#: ../src/notifications.js:50
-msgid "Selected item has been deleted"
-msgid_plural "Selected items have been deleted"
-msgstr[0] "Valgt oppføring er slettet"
-msgstr[1] "Valgte oppføringer er slettet"
-
-#: ../src/notifications.js:57
+#: ../src/notifications.js:67
 msgid "Undo"
 msgstr "Angre"
 
-#: ../src/notifications.js:157
+#: ../src/notifications.js:167
 #, javascript-format
 msgid "Printing “%s”: %s"
 msgstr "Skriver ut «%s»: %s"
 
-#: ../src/notifications.js:213
+#: ../src/notifications.js:223
 msgid "Your documents are being indexed"
 msgstr "Dokumentene dine blir indeksert"
 
-#: ../src/notifications.js:214
+#: ../src/notifications.js:224
 msgid "Some documents might not be available during this process"
 msgstr ""
 "Noen dokumenter vil kanskje ikke være tilgjengelig under denne prosessen"
 
 #. Translators: %s refers to an online account provider, e.g.
 #. "Google", or "Windows Live".
-#: ../src/notifications.js:236
+#: ../src/notifications.js:246
 #, javascript-format
 msgid "Fetching documents from %s"
 msgstr "Henter dokumenter fra %s"
 
-#: ../src/notifications.js:238
+#: ../src/notifications.js:248
 msgid "Fetching documents from online accounts"
 msgstr "Henter dokumenter fra kontoer på nettet"
 
@@ -453,21 +457,21 @@ msgstr "Sekundær"
 msgid "Present On"
 msgstr "Presentasjonsmodus på"
 
-#: ../src/preview.js:607
+#: ../src/preview.js:609
 msgid "Bookmark this page"
 msgstr "Lag bokmerke for denne siden"
 
 #. Translators: this is the Open action in a context menu
-#: ../src/preview.js:848 ../src/selections.js:859
+#: ../src/preview.js:870 ../src/selections.js:859
 #, javascript-format
 msgid "Open with %s"
 msgstr "Åpne med %s"
 
-#: ../src/preview.js:911
+#: ../src/preview.js:933
 msgid "Find Previous"
 msgstr "Finn forrige"
 
-#: ../src/preview.js:918
+#: ../src/preview.js:940
 msgid "Find Next"
 msgstr "Finn neste"
 
@@ -587,8 +591,8 @@ msgstr "Kategori"
 
 #. Translators: this refers to new and recent documents
 #. Translators: this refers to documents
-#: ../src/search.js:120 ../src/search.js:183 ../src/search.js:300
-#: ../src/search.js:458
+#: ../src/search.js:120 ../src/search.js:189 ../src/search.js:322
+#: ../src/search.js:492
 msgid "All"
 msgstr "Alle"
 
@@ -604,58 +608,54 @@ msgstr "Delt med deg"
 
 #. Translators: "Type" refers to a search filter on the document type
 #. (PDF, spreadsheet, ...)
-#: ../src/search.js:180
+#: ../src/search.js:186
 msgctxt "Search Filter"
 msgid "Type"
 msgstr "Type"
 
-#: ../src/search.js:186 ../src/search.js:195
-msgid "Collections"
-msgstr "Samlinger"
-
-#: ../src/search.js:190
+#: ../src/search.js:196
 msgid "PDF Documents"
 msgstr "PDF-dokumenter"
 
-#: ../src/search.js:203
+#: ../src/search.js:209
 msgid "Presentations"
 msgstr "Presentasjoner"
 
-#: ../src/search.js:206
+#: ../src/search.js:212
 msgid "Spreadsheets"
 msgstr "Regneark"
 
-#: ../src/search.js:209
+#: ../src/search.js:215
 msgid "Text Documents"
 msgstr "Tekstdokumenter"
 
-#: ../src/search.js:214
+#: ../src/search.js:220
 msgid "e-Books"
 msgstr "e-bøker"
 
-#: ../src/search.js:218
+#: ../src/search.js:224
 msgid "Comics"
 msgstr "Tegneserier"
 
 #. Translators: this is a verb that refers to "All", "Title" and "Author",
 #. as in "Match All", "Match Title" and "Match Author"
-#: ../src/search.js:297
+#: ../src/search.js:319
 msgid "Match"
 msgstr "Treff"
 
 #. Translators: "Title" refers to "Match Title" when searching
-#: ../src/search.js:303
+#: ../src/search.js:325
 msgctxt "Search Filter"
 msgid "Title"
 msgstr "Tittel"
 
 #. Translators: "Author" refers to "Match Author" when searching
-#: ../src/search.js:306
+#: ../src/search.js:328
 msgctxt "Search Filter"
 msgid "Author"
 msgstr "Forfatter"
 
-#: ../src/search.js:454
+#: ../src/search.js:488
 msgid "Sources"
 msgstr "Kilder"
 
@@ -770,52 +770,73 @@ msgstr "Du kan spørre %s om tilgang"
 msgid "The document was not updated"
 msgstr "Dokumentet ble ikke oppdatert"
 
-#: ../src/shellSearchProvider.js:294
+#: ../src/shellSearchProvider.js:293
 msgid "Untitled Document"
 msgstr "Dokument uten navn"
 
-#: ../src/trackerController.js:170
+#: ../src/trackerController.js:172
 msgid "Unable to fetch the list of documents"
 msgstr "Kan ikke hente listen med dokumenter"
 
-#: ../src/view.js:240
+#: ../src/view.js:243
+msgid "No Books Found"
+msgstr "Ingen bøker funnet"
+
+#: ../src/view.js:244
+msgid "No Documents Found"
+msgstr "Ingen dokumenter funnet"
+
+#. Translators: %s here is "Settings", which is in a separate string due to
+#. markup, and should be translated only in the context of this sentence
+#: ../src/view.js:266
+#, javascript-format
+msgid "You can add your online accounts in %s"
+msgstr "Du kan legge til dine kontoer på nettet i %s"
+
+#. Translators: this should be translated in the context of the
+#. "You can add your online accounts in Settings" sentence above
+#: ../src/view.js:270
+msgid "Settings"
+msgstr "Innstillinger"
+
+#: ../src/view.js:457
 msgid "Yesterday"
 msgstr "I går"
 
-#: ../src/view.js:242
+#: ../src/view.js:459
 #, javascript-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
 msgstr[0] "%d dag siden"
 msgstr[1] "%d dager siden"
 
-#: ../src/view.js:246
+#: ../src/view.js:463
 msgid "Last week"
 msgstr "Siste uke"
 
-#: ../src/view.js:248
+#: ../src/view.js:465
 #, javascript-format
 msgid "%d week ago"
 msgid_plural "%d weeks ago"
 msgstr[0] "%d uke siden"
 msgstr[1] "%d uker siden"
 
-#: ../src/view.js:252
+#: ../src/view.js:469
 msgid "Last month"
 msgstr "Siste måned"
 
-#: ../src/view.js:254
+#: ../src/view.js:471
 #, javascript-format
 msgid "%d month ago"
 msgid_plural "%d months ago"
 msgstr[0] "%d måned siden"
 msgstr[1] "%d måneder siden"
 
-#: ../src/view.js:258
+#: ../src/view.js:475
 msgid "Last year"
 msgstr "Siste år"
 
-#: ../src/view.js:260
+#: ../src/view.js:477
 #, javascript-format
 msgid "%d year ago"
 msgid_plural "%d years ago"
