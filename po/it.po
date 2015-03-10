@@ -1,17 +1,17 @@
 # Italian translation for gnome-documents.
 # Copyright (C) 2011 gnome-documents's COPYRIGHT HOLDER
-# Copyright (C) 2012, 2013, 2014 Free Software Foundation
+# Copyright (C) 2012, 2013, 2014, 2015 Free Software Foundation
 # This file is distributed under the same license as the gnome-documents package.
 # Luca Ferretti <lferrett@gnome.org>, 2011, 2012, 2013.
-# Milo Casagrande <milo@milo.name>, 2013, 2014.
+# Milo Casagrande <milo@milo.name>, 2013, 2014, 2015.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-documents\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-10-09 08:03+0000\n"
-"PO-Revision-Date: 2014-10-10 10:49+0100\n"
+"POT-Creation-Date: 2015-03-10 19:51+0000\n"
+"PO-Revision-Date: 2015-03-10 21:45+0100\n"
 "Last-Translator: Milo Casagrande <milo@milo.name>\n"
 "Language-Team: Italian <tp@lists.linux.it>\n"
 "Language: it\n"
@@ -19,11 +19,115 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
-"X-Generator: Poedit 1.6.9\n"
+"X-Generator: Poedit 1.7.4\n"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:1
+#: ../data/org.gnome.Books.desktop.in.h:1 ../src/application.js:132
+#: ../src/lib/gd-utils.c:418
+msgid "Books"
+msgstr "Libri"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:2
+msgid "An e-book manager application for GNOME"
+msgstr "Una applicazione GNOME per gestire e-book"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:3
+msgid ""
+"A simple application to access and organize your e-books on GNOME. It is "
+"meant to be a simple and elegant replacement for using a file manager to "
+"deal with e-books."
+msgstr ""
+"Una semplice applicazione per accedere, organizzare e condividere su GNOME i "
+"propri e-book. È pensata per essere un'alternativa semplice ed elegante "
+"all'utilizzo di un file manager nella gestione dei documenti."
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:4
+#: ../data/org.gnome.Documents.appdata.xml.in.h:4
+msgid "It lets you:"
+msgstr "Permette di:"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:5
+msgid "View recent e-books"
+msgstr "Visualizzare e-book recenti"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:6
+msgid "Search through e-books"
+msgstr "Cercare tra gli e-book"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:7
+msgid "View e-books fullscreen"
+msgstr "Visualizzare e-book a schermo intero"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:8
+msgid "Print e-books"
+msgstr "Stampare e-book"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:9
+#: ../data/org.gnome.Documents.appdata.xml.in.h:12
+msgid "Allow opening full featured editor for non-trivial changes"
+msgstr "Consente di aprire un editor di testo per eseguire modifiche"
+
+#: ../data/org.gnome.Books.desktop.in.h:2
+msgid "Access, manage and share books"
+msgstr "Accede, gestisce e condivide libri"
+
+#: ../data/org.gnome.Books.desktop.in.h:3
+msgid "Books;Comics;ePub;PDF;"
+msgstr "Libri;Fumetti;ePub;PDF;"
+
+#: ../data/org.gnome.books.gschema.xml.h:1
+#: ../data/org.gnome.documents.gschema.xml.h:1
+msgid "View as"
+msgstr "Vedi come"
+
+#: ../data/org.gnome.books.gschema.xml.h:2
+#: ../data/org.gnome.documents.gschema.xml.h:2
+msgid "View as type"
+msgstr "Visualizza come tipo"
+
+#: ../data/org.gnome.books.gschema.xml.h:3
+#: ../data/org.gnome.documents.gschema.xml.h:3
+msgid "Window size"
+msgstr "Dimensione finestra"
+
+#: ../data/org.gnome.books.gschema.xml.h:4
+#: ../data/org.gnome.documents.gschema.xml.h:4
+msgid "Window size (width and height)."
+msgstr "Dimensione della finestra (larghezza e altezza)"
+
+#: ../data/org.gnome.books.gschema.xml.h:5
+#: ../data/org.gnome.documents.gschema.xml.h:5
+msgid "Window position"
+msgstr "Posizione finestra"
+
+#: ../data/org.gnome.books.gschema.xml.h:6
+#: ../data/org.gnome.documents.gschema.xml.h:6
+msgid "Window position (x and y)."
+msgstr "Posizione della finestra (x e y)"
+
+#: ../data/org.gnome.books.gschema.xml.h:7
+#: ../data/org.gnome.documents.gschema.xml.h:7
+msgid "Window maximized"
+msgstr "Finestra massimizzata"
+
+#: ../data/org.gnome.books.gschema.xml.h:8
+#: ../data/org.gnome.documents.gschema.xml.h:8
+msgid "Window maximized state"
+msgstr "Stato massimizzato della finestra"
+
+#: ../data/org.gnome.books.gschema.xml.h:9
+#: ../data/org.gnome.documents.gschema.xml.h:9
+msgid "Night mode"
+msgstr "Modalità notte"
+
+#: ../data/org.gnome.books.gschema.xml.h:10
+#: ../data/org.gnome.documents.gschema.xml.h:10
+msgid "Whether the application is in night mode."
+msgstr "Indica se l'applicazione è in modalità notte."
 
 #: ../data/org.gnome.Documents.appdata.xml.in.h:1
-#: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:121
-#: ../src/mainWindow.js:52 ../src/mainWindow.js:302
+#: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:128
+#: ../src/lib/gd-utils.c:411 ../src/mainWindow.js:52
 msgid "Documents"
 msgstr "Documenti"
 
@@ -42,10 +146,6 @@ msgstr ""
 "propri documenti. È pensata per essere un'alternativa semplice ed elegante "
 "all'utilizzo di un file manager nella gestione dei documenti. L'integrazione "
 "con il cloud è offerta attraverso GNOME Online Accounts."
-
-#: ../data/org.gnome.Documents.appdata.xml.in.h:4
-msgid "It lets you:"
-msgstr "Permette di:"
 
 #: ../data/org.gnome.Documents.appdata.xml.in.h:5
 msgid "View recent local and online documents"
@@ -75,10 +175,6 @@ msgstr "Stampare documenti"
 msgid "Select favorites"
 msgstr "Selezionare i preferiti"
 
-#: ../data/org.gnome.Documents.appdata.xml.in.h:12
-msgid "Allow opening full featured editor for non-trivial changes"
-msgstr "Consente di aprire un editor di testo per eseguire modifiche"
-
 #: ../data/org.gnome.Documents.desktop.in.h:2
 msgid "Access, manage and share documents"
 msgstr "Accede, gestisce e condivide documenti"
@@ -87,129 +183,103 @@ msgstr "Accede, gestisce e condivide documenti"
 msgid "Docs;PDF;Document;"
 msgstr "Documenti;PDF;Doc;"
 
-#: ../data/org.gnome.documents.gschema.xml.h:1
-msgid "View as"
-msgstr "Vedi come"
-
-#: ../data/org.gnome.documents.gschema.xml.h:2
-msgid "View as type"
-msgstr "Visualizza come tipo"
-
-#: ../data/org.gnome.documents.gschema.xml.h:3
-msgid "Window size"
-msgstr "Dimensione finestra"
-
-#: ../data/org.gnome.documents.gschema.xml.h:4
-msgid "Window size (width and height)."
-msgstr "Dimensione della finestra (larghezza e altezza)"
-
-#: ../data/org.gnome.documents.gschema.xml.h:5
-msgid "Window position"
-msgstr "Posizione finestra"
-
-#: ../data/org.gnome.documents.gschema.xml.h:6
-msgid "Window position (x and y)."
-msgstr "Posizione della finestra (x e y)"
-
-#: ../data/org.gnome.documents.gschema.xml.h:7
-msgid "Window maximized"
-msgstr "Finestra massimizzata"
-
-#: ../data/org.gnome.documents.gschema.xml.h:8
-msgid "Window maximized state"
-msgstr "Stato massimizzato della finestra"
-
-#: ../src/documents.js:621
+#: ../src/documents.js:631
 msgid "Failed to print document"
 msgstr "Impossibile stampare il documento"
 
-#: ../src/documents.js:658 ../src/search.js:427
+#: ../src/documents.js:668 ../src/search.js:498
 msgid "Local"
 msgstr "Locali"
 
-#: ../src/documents.js:679
+#: ../src/documents.js:695
 msgid "GNOME"
 msgstr "GNOME"
 
-#: ../src/documents.js:680
+#: ../src/documents.js:696
 msgid "Getting Started with Documents"
 msgstr "Introduzione a Documenti"
 
-#: ../src/documents.js:696 ../src/documents.js:877 ../src/documents.js:939
-#: ../src/documents.js:1047
+#: ../src/documents.js:712 ../src/documents.js:904 ../src/documents.js:967
+#: ../src/documents.js:1075
 msgid "Collection"
 msgstr "Raccolta"
 
-#: ../src/documents.js:756
+#: ../src/documents.js:783
 msgid "Google Docs"
 msgstr "Google Docs"
 
-#: ../src/documents.js:757
+#: ../src/documents.js:784
 msgid "Google"
 msgstr "Google"
 
-#: ../src/documents.js:879 ../src/documents.js:1049
+#: ../src/documents.js:906 ../src/documents.js:1077
 msgid "Spreadsheet"
 msgstr "Foglio di calcolo"
 
-#: ../src/documents.js:881 ../src/documents.js:1051 ../src/presentation.js:47
+#: ../src/documents.js:908 ../src/documents.js:1079 ../src/presentation.js:47
 msgid "Presentation"
 msgstr "Presentazione"
 
-#: ../src/documents.js:883 ../src/documents.js:1053
+#: ../src/documents.js:910 ../src/documents.js:1081
+msgid "e-Book"
+msgstr "e-Book"
+
+#: ../src/documents.js:912 ../src/documents.js:1083
 msgid "Document"
 msgstr "Documento"
 
-#: ../src/documents.js:917
+#: ../src/documents.js:946
 msgid "ownCloud"
 msgstr "ownCloud"
 
-#: ../src/documents.js:981 ../src/documents.js:982
+#: ../src/documents.js:1009 ../src/documents.js:1010
 msgid "OneDrive"
 msgstr "OneDrive"
 
-#: ../src/documents.js:1181
+#: ../src/documents.js:1247
 msgid "Please check the network connection."
 msgstr "Controllare la connessione di rete."
 
-#: ../src/documents.js:1184
+#: ../src/documents.js:1250
 msgid "Please check the network proxy settings."
 msgstr "Controllare le impostazioni del proxy di rete."
 
-#: ../src/documents.js:1187
+#: ../src/documents.js:1253
 msgid "Unable to sign in to the document service."
 msgstr "Impossibile accedere al servizio di documenti."
 
-#: ../src/documents.js:1190
+#: ../src/documents.js:1256
 msgid "Unable to locate this document."
 msgstr "Impossibile localizzare questo documento."
 
-#: ../src/documents.js:1193
+#: ../src/documents.js:1259
 #, javascript-format
 msgid "Hmm, something is fishy (%d)."
 msgstr "Qualcosa è andato a male (%d)."
 
-#: ../src/documents.js:1211
+#: ../src/documents.js:1266
+msgid ""
+"You are using a preview of Books. Full viewing capabilities are coming soon!"
+msgstr ""
+"Questa è una versione in anteprima di Libri. Maggiori funzionalità verranno "
+"aggiunte molto presto."
+
+#: ../src/documents.js:1287
 #, javascript-format
 msgid "Oops! Unable to load “%s”"
 msgstr "Impossibile caricare «%s»"
 
-#: ../src/edit.js:192
+#: ../src/edit.js:176
 msgid "View"
 msgstr "Visualizza"
 
-#: ../src/embed.js:142
-msgid "No Documents Found"
-msgstr "Nessun documento trovato"
+#: ../src/embed.js:109
+msgid "Recent"
+msgstr "Recenti"
 
-#: ../src/embed.js:163
-#, javascript-format
-msgid "You can add your online accounts in %s"
-msgstr "È possibile aggiungere i propri account online in %s"
-
-#: ../src/embed.js:167
-msgid "Settings"
-msgstr "Impostazioni"
+#: ../src/embed.js:112 ../src/search.js:192 ../src/search.js:201
+msgid "Collections"
+msgstr "Raccolte"
 
 #: ../src/lib/gd-nav-bar.c:242
 #, c-format
@@ -237,11 +307,10 @@ msgid "No bookmarks"
 msgstr "Nessun segnalibro"
 
 #: ../src/lib/gd-places-bookmarks.c:392 ../src/lib/gd-places-links.c:257
-#: ../src/view.js:71
 msgid "Loading…"
 msgstr "Caricamento…"
 
-#: ../src/lib/gd-places-bookmarks.c:657 ../src/preview.js:580
+#: ../src/lib/gd-places-bookmarks.c:656 ../src/preview.js:601
 msgid "Bookmarks"
 msgstr "Segnalibri"
 
@@ -253,6 +322,21 @@ msgstr "Nessun indice"
 msgid "Contents"
 msgstr "Indice"
 
+#: ../src/lib/gd-utils.c:412
+msgid "A document manager application"
+msgstr "Una applicazione per gestire documenti"
+
+#: ../src/lib/gd-utils.c:419
+msgid "An e-books manager application"
+msgstr "Una applicazione per gestire e-book"
+
+#: ../src/lib/gd-utils.c:427
+msgid "translator-credits"
+msgstr ""
+"Milo Casagrande <milo@milo.name>\n"
+"Luca Ferretti <lferrett@gnome.org>\n"
+"Giuseppe Pignataro <anubisteam01@gmail.com>"
+
 #: ../src/mainToolbar.js:79
 msgid "Search"
 msgstr "Cerca"
@@ -261,73 +345,69 @@ msgstr "Cerca"
 msgid "Back"
 msgstr "Indietro"
 
-#: ../src/mainToolbar.js:132
+#: ../src/mainToolbar.js:141
 msgid "View items as a list"
 msgstr "Visualizza oggetti come elenco"
 
-#: ../src/mainToolbar.js:138
+#: ../src/mainToolbar.js:147
 msgid "View items as a grid of icons"
 msgstr "Visualizza come griglia di icone"
 
-#: ../src/mainToolbar.js:168
+#: ../src/mainToolbar.js:177
 msgid "Click on items to select them"
 msgstr "Fare clic sugli elementi per selezionarli"
 
-#: ../src/mainToolbar.js:170
+#: ../src/mainToolbar.js:179
 #, javascript-format
 msgid "%d selected"
 msgid_plural "%d selected"
 msgstr[0] "%d selezionato"
 msgstr[1] "%d selezionati"
 
-#: ../src/mainToolbar.js:200
+#: ../src/mainToolbar.js:203
 msgid "Cancel"
 msgstr "Annulla"
 
-#: ../src/mainToolbar.js:242
+#: ../src/mainToolbar.js:246
 msgid "Select Items"
 msgstr "Seleziona gli elementi"
 
-#: ../src/mainWindow.js:301
-msgid "translator-credits"
-msgstr ""
-"Luca Ferretti <lferrett@gnome.org>\n"
-"Giuseppe Pignataro <anubisteam01@gmail.com>"
+#: ../src/notifications.js:54
+#, javascript-format
+msgid "“%s” deleted"
+msgstr "«%s» eliminato"
 
-#: ../src/mainWindow.js:303
-msgid "A document manager application"
-msgstr "Una applicazione per gestire documenti"
+#: ../src/notifications.js:58
+#, javascript-format
+msgid "%d item deleted"
+msgid_plural "%d items deleted"
+msgstr[0] "%d elemento eliminato"
+msgstr[1] "%d elementi eliminati"
 
-#: ../src/notifications.js:50
-msgid "Selected item has been deleted"
-msgid_plural "Selected items have been deleted"
-msgstr[0] "L'elemento selezionato è stato eliminato"
-msgstr[1] "Gli elementi selezionati sono stati eliminati"
-
-#: ../src/notifications.js:57
+#: ../src/notifications.js:67
 msgid "Undo"
 msgstr "Annulla"
 
-#: ../src/notifications.js:157
+#: ../src/notifications.js:167
 #, javascript-format
 msgid "Printing “%s”: %s"
 msgstr "Stampa di «%s»: %s"
 
-#: ../src/notifications.js:213
+#: ../src/notifications.js:223
 msgid "Your documents are being indexed"
 msgstr "È in corso l'indicizzazione dei documenti"
 
-#: ../src/notifications.js:214
+#: ../src/notifications.js:224
 msgid "Some documents might not be available during this process"
 msgstr ""
 "Alcuni documenti potrebbero non essere disponibili durante questo processo"
 
-#: ../src/notifications.js:236
+#: ../src/notifications.js:246
 #, javascript-format
 msgid "Fetching documents from %s"
 msgstr "Recupero dei documenti da %s"
 
-#: ../src/notifications.js:238
+#: ../src/notifications.js:248
 msgid "Fetching documents from online accounts"
 msgstr "Recupero dei documenti dagli account online"
 
@@ -348,33 +428,49 @@ msgstr "Il documento %s è bloccato, è necessaria una password per aprirlo."
 msgid "_Password"
 msgstr "Pass_word"
 
-#: ../src/presentation.js:104
+#: ../src/presentation.js:105
 msgid "Running in presentation mode"
 msgstr "Esecuzione in modalità presentazione"
 
-#: ../src/presentation.js:157
+#: ../src/presentation.js:152
+msgid "Mirrored"
+msgstr "Duplicato"
+
+#: ../src/presentation.js:154
+msgid "Primary"
+msgstr "Primario"
+
+#: ../src/presentation.js:156
+msgid "Off"
+msgstr "Off"
+
+#: ../src/presentation.js:158
+msgid "Secondary"
+msgstr "Secondario"
+
+#: ../src/presentation.js:194
 msgid "Present On"
 msgstr "Presentazione su"
 
-#: ../src/preview.js:588
+#: ../src/preview.js:609
 msgid "Bookmark this page"
 msgstr "Aggiungi pagina ai segnalibri"
 
-#: ../src/preview.js:823 ../src/selections.js:857
+#: ../src/preview.js:870 ../src/selections.js:859
 #, javascript-format
 msgid "Open with %s"
 msgstr "Apri con %s"
 
-#: ../src/preview.js:885
+#: ../src/preview.js:933
 msgid "Find Previous"
 msgstr "Trova precedente"
 
-#: ../src/preview.js:892
+#: ../src/preview.js:940
 msgid "Find Next"
 msgstr "Trova successivo"
 
 #: ../src/properties.js:61 ../src/resources/preview-menu.ui.h:9
-#: ../src/selections.js:767
+#: ../src/selections.js:769
 msgid "Properties"
 msgstr "Proprietà"
 
@@ -410,14 +506,18 @@ msgid "Fullscreen"
 msgstr "Schermo intero"
 
 #: ../src/resources/app-menu.ui.h:2
+msgid "Night Mode"
+msgstr "Modalità notte"
+
+#: ../src/resources/app-menu.ui.h:3
 msgid "Help"
 msgstr "Aiuto"
 
-#: ../src/resources/app-menu.ui.h:3
+#: ../src/resources/app-menu.ui.h:4
 msgid "About"
 msgstr "Informazioni"
 
-#: ../src/resources/app-menu.ui.h:4
+#: ../src/resources/app-menu.ui.h:5
 msgid "Quit"
 msgstr "Esci"
 
@@ -426,7 +526,7 @@ msgid "_Copy"
 msgstr "_Copia"
 
 #: ../src/resources/preview-menu.ui.h:1 ../src/selections.js:747
-#: ../src/selections.js:860
+#: ../src/selections.js:862
 msgid "Open"
 msgstr "Apri"
 
@@ -466,64 +566,68 @@ msgstr "Seleziona tutto"
 msgid "Select None"
 msgstr "Seleziona nessuno"
 
-#: ../src/search.js:114
+#: ../src/search.js:115
 msgid "Category"
 msgstr "Categoria"
 
 # FIXME: commento, riferito a?
-#: ../src/search.js:119 ../src/search.js:180 ../src/search.js:265
-#: ../src/search.js:421
+#: ../src/search.js:120 ../src/search.js:189 ../src/search.js:322
+#: ../src/search.js:492
 msgid "All"
 msgstr "Tutte"
 
-#: ../src/search.js:125
+#: ../src/search.js:126
 msgid "Favorites"
 msgstr "Preferiti"
 
-#: ../src/search.js:130
+#: ../src/search.js:131
 msgid "Shared with you"
 msgstr "Condivisi con te"
 
-#: ../src/search.js:177
+#: ../src/search.js:186
 msgctxt "Search Filter"
 msgid "Type"
 msgstr "Tipo"
 
-#: ../src/search.js:182
-msgid "Collections"
-msgstr "Raccolte"
-
-#: ../src/search.js:186
+#: ../src/search.js:196
 msgid "PDF Documents"
 msgstr "Documenti PDF"
 
-#: ../src/search.js:190
+#: ../src/search.js:209
 msgid "Presentations"
 msgstr "Presentazioni"
 
-#: ../src/search.js:193
+#: ../src/search.js:212
 msgid "Spreadsheets"
 msgstr "Fogli di calcolo"
 
-#: ../src/search.js:196
+#: ../src/search.js:215
 msgid "Text Documents"
 msgstr "Documenti di testo"
 
-#: ../src/search.js:262
+#: ../src/search.js:220
+msgid "e-Books"
+msgstr "e-Book"
+
+#: ../src/search.js:224
+msgid "Comics"
+msgstr "Fumetti"
+
+#: ../src/search.js:319
 msgid "Match"
 msgstr "Corrispondenza"
 
-#: ../src/search.js:268
+#: ../src/search.js:325
 msgctxt "Search Filter"
 msgid "Title"
 msgstr "Titolo"
 
-#: ../src/search.js:271
+#: ../src/search.js:328
 msgctxt "Search Filter"
 msgid "Author"
 msgstr "Autore"
 
-#: ../src/search.js:417
+#: ../src/search.js:488
 msgid "Sources"
 msgstr "Sorgenti"
 
@@ -550,11 +654,11 @@ msgstr "Stampa"
 msgid "Delete"
 msgstr "Elimina"
 
-#: ../src/selections.js:762
+#: ../src/selections.js:763
 msgid "Share"
 msgstr "Condividi"
 
-#: ../src/selections.js:772
+#: ../src/selections.js:774
 msgid "Add to Collection"
 msgstr "Aggiungi alla raccolta"
 
@@ -628,90 +732,71 @@ msgstr "È possibile richiedere l'accesso a %s"
 msgid "The document was not updated"
 msgstr "Il documento non è stato aggiornato"
 
-#: ../src/shellSearchProvider.js:294
+#: ../src/shellSearchProvider.js:293
 msgid "Untitled Document"
 msgstr "Documento senza titolo"
 
-#: ../src/trackerController.js:170
+#: ../src/trackerController.js:172
 msgid "Unable to fetch the list of documents"
 msgstr "Impossibile recuperare l'elenco dei documenti"
 
-#: ../src/view.js:62 ../src/view.js:93
-msgid "Load More"
-msgstr "Carica altri"
+#: ../src/view.js:243
+msgid "No Books Found"
+msgstr "Nessun libro trovato"
 
-#: ../src/view.js:307
+#: ../src/view.js:244
+msgid "No Documents Found"
+msgstr "Nessun documento trovato"
+
+#: ../src/view.js:266
+#, javascript-format
+msgid "You can add your online accounts in %s"
+msgstr "È possibile aggiungere i propri account online in %s"
+
+#: ../src/view.js:270
+msgid "Settings"
+msgstr "Impostazioni"
+
+#: ../src/view.js:457
 msgid "Yesterday"
 msgstr "Ieri"
 
-#: ../src/view.js:309
+#: ../src/view.js:459
 #, javascript-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
 msgstr[0] "%d giorno fa"
 msgstr[1] "%d giorni fa"
 
-#: ../src/view.js:313
+#: ../src/view.js:463
 msgid "Last week"
 msgstr "Ultima settimana"
 
-#: ../src/view.js:315
+#: ../src/view.js:465
 #, javascript-format
 msgid "%d week ago"
 msgid_plural "%d weeks ago"
 msgstr[0] "%d settimana fa"
 msgstr[1] "%d settimane fa"
 
-#: ../src/view.js:319
+#: ../src/view.js:469
 msgid "Last month"
 msgstr "Ultimo mese"
 
-#: ../src/view.js:321
+#: ../src/view.js:471
 #, javascript-format
 msgid "%d month ago"
 msgid_plural "%d months ago"
 msgstr[0] "%d mese fa"
 msgstr[1] "%d mesi fa"
 
-#: ../src/view.js:325
+#: ../src/view.js:475
 msgid "Last year"
 msgstr "Ultimo anno"
 
-#: ../src/view.js:327
+#: ../src/view.js:477
 #, javascript-format
 msgid "%d year ago"
 msgid_plural "%d years ago"
 msgstr[0] "%d anno fa"
 msgstr[1] "%d anni fa"
-
-#~ msgid ""
-#~ "<li>View recent local and online documents</li> <li>Access your Google, "
-#~ "ownCloud or OneDrive content</li> <li>Search through documents</li> "
-#~ "<li>See new documents shared by friends</li> <li>View documents "
-#~ "fullscreen</li> <li>Print documents</li> <li>Select favorites</li> "
-#~ "<li>Allow opening full featured editor for non-trivial changes</li>"
-#~ msgstr ""
-#~ "<li>Visualizzare i documenti recenti locali e online</li> <li>Accedere ai "
-#~ "propri contenuti su Google, ownCloud o OneDrive</li> <li>Cercare nei "
-#~ "documenti</li> <li>Visualizzare nuovi documenti condivisi dagli amici</"
-#~ "li> <li>Visualizzare i documenti a tutto schermo</li> <li>Stampare "
-#~ "documenti</li> <li>Selezionare i preferiti</li> <li>Aprire i file in un "
-#~ "editor per le modifiche più ampie</li>"
-
-#~ msgid "Results for “%s”"
-#~ msgstr "Risultati per «%s»"
-
-#~ msgid "Close"
-#~ msgstr "Chiudi"
-
-#~ msgid "Skydrive"
-#~ msgstr "Skydrive"
-
-#~ msgid "Grid"
-#~ msgstr "Griglia"
-
-#~ msgid "List"
-#~ msgstr "Elenco"
-
-#~ msgid "About Documents"
-#~ msgstr "Informazioni su Documenti"
