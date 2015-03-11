@@ -14,8 +14,8 @@ msgstr ""
 "Project-Id-Version: gnome-documents master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-03-11 20:32+0000\n"
-"PO-Revision-Date: 2015-03-12 00:44+0300\n"
+"POT-Creation-Date: 2015-03-11 21:52+0000\n"
+"PO-Revision-Date: 2015-03-12 01:04+0300\n"
 "Last-Translator: Stas Solovey <whats_up@tut.by>\n"
 "Language-Team: Русский <gnome-cyr@gnome.org>\n"
 "Language: ru\n"
@@ -380,9 +380,10 @@ msgstr "Выбрать элементы"
 #: ../src/notifications.js:54
 #, javascript-format
 msgid "“%s” deleted"
-msgstr "«%s» удалён"
+msgstr "Удалён объект «%s»"
 
 #: ../src/notifications.js:58
+#, javascript-format
 msgid "%d item deleted"
 msgid_plural "%d items deleted"
 msgstr[0] "Удалён %d элемент"
