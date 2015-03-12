@@ -557,6 +557,7 @@ const Application = new Lang.Class({
         // clean up signals
         changeMonitor.disconnectAll();
         documentManager.disconnectAll();
+        offsetController.disconnectAll();
         trackerController.disconnectAll();
         selectionController.disconnectAll();
         modeController.disconnectAll();
