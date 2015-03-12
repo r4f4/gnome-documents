@@ -78,7 +78,6 @@ const Embed = new Lang.Class({
     Name: 'Embed',
 
     _init: function() {
-        this._queryErrorId = 0;
         this._noResultsChangeId = 0;
         this._loadShowId = 0;
 
