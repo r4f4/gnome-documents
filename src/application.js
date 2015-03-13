@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2011, 2012, 2014 Red Hat, Inc.
+ * Copyright (c) 2011, 2012, 2014, 2015 Red Hat, Inc.
  *
  * Gnome Documents is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by the
@@ -774,11 +774,19 @@ const Application = new Lang.Class({
     },
 
     getScaleFactor: function() {
-        return this._mainWindow.window.get_scale_factor();
+        let scaleFactor = 1;
+        if (this._mainWindow)
+            scaleFactor = this._mainWindow.window.get_scale_factor();
+
+        return scaleFactor;
     },
 
     getGdkWindow: function() {
-        return this._mainWindow.window.get_window();
+        let window = null;
+        if (this._mainWindow)
+            window = this._mainWindow.window.get_window();
+
+        return window;
     }
 });
 Utils.addJSSignalMethods(Application.prototype);
