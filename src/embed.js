@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2011, 2013 Red Hat, Inc.
+ * Copyright (c) 2011, 2013, 2015 Red Hat, Inc.
  *
  * Gnome Documents is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by the
@@ -190,8 +190,11 @@ const Embed = new Lang.Class({
     },
 
     _restoreLastPage: function() {
-        let page;
         let windowMode = Application.modeController.getWindowMode();
+        if (windowMode == WindowMode.WindowMode.NONE)
+            return;
+
+        let page;
 
         switch (windowMode) {
         case WindowMode.WindowMode.COLLECTIONS:
