@@ -10,20 +10,20 @@ msgstr ""
 "Project-Id-Version: gnome-documents\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-02-19 19:25+0000\n"
-"PO-Revision-Date: 2015-02-23 16:35+0100\n"
-"Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
+"POT-Creation-Date: 2015-03-13 07:53+0000\n"
+"PO-Revision-Date: 2015-03-13 00:32+0100\n"
+"Last-Translator: Sebastian Rasmussen <sebras@gmail.com>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.7.3\n"
+"X-Generator: Poedit 1.6.10\n"
 
 #: ../data/org.gnome.Books.appdata.xml.in.h:1
 #: ../data/org.gnome.Books.desktop.in.h:1 ../src/application.js:132
-#: ../src/mainWindow.js:328
+#: ../src/lib/gd-utils.c:418
 msgid "Books"
 msgstr "Böcker"
 
@@ -33,13 +33,13 @@ msgstr "Ett program för hantering av e-böcker för GNOME"
 
 #: ../data/org.gnome.Books.appdata.xml.in.h:3
 msgid ""
-"A simple application to access and organize your e-books on GNOME. It is meant "
-"to be a simple and elegant replacement for using a file manager to deal with e-"
-"books."
+"A simple application to access and organize your e-books on GNOME. It is "
+"meant to be a simple and elegant replacement for using a file manager to "
+"deal with e-books."
 msgstr ""
-"Ett enkelt program för att komma åt och organisera dina e-böcker i GNOME. Det "
-"är avsett att vara en enkel och elegant ersättare för att hantera e-böcker med "
-"en filhanterare."
+"Ett enkelt program för att komma åt och organisera dina e-böcker i GNOME. "
+"Det är avsett att vara en enkel och elegant ersättare för att hantera e-"
+"böcker med en filhanterare."
 
 #: ../data/org.gnome.Books.appdata.xml.in.h:4
 #: ../data/org.gnome.Documents.appdata.xml.in.h:4
@@ -127,7 +127,7 @@ msgstr "Huruvida programmet är i nattläge."
 
 #: ../data/org.gnome.Documents.appdata.xml.in.h:1
 #: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:128
-#: ../src/mainWindow.js:52 ../src/mainWindow.js:323
+#: ../src/lib/gd-utils.c:411 ../src/mainWindow.js:52
 msgid "Documents"
 msgstr "Dokument"
 
@@ -137,9 +137,9 @@ msgstr "Ett program för dokumenthantering för GNOME"
 
 #: ../data/org.gnome.Documents.appdata.xml.in.h:3
 msgid ""
-"A simple application to access, organize and share your documents on GNOME. It "
-"is meant to be a simple and elegant replacement for using a file manager to "
-"deal with documents. Seamless cloud integration is offered through GNOME "
+"A simple application to access, organize and share your documents on GNOME. "
+"It is meant to be a simple and elegant replacement for using a file manager "
+"to deal with documents. Seamless cloud integration is offered through GNOME "
 "Online Accounts."
 msgstr ""
 "Ett enkelt program för att komma åt, organisera och dela dina dokument i "
@@ -187,7 +187,7 @@ msgstr "Dok;PDF;Dokument;"
 msgid "Failed to print document"
 msgstr "Misslyckades med att skriva ut dokument"
 
-#: ../src/documents.js:668 ../src/search.js:493
+#: ../src/documents.js:668 ../src/search.js:498
 msgid "Local"
 msgstr "Lokal"
 
@@ -199,65 +199,72 @@ msgstr "GNOME"
 msgid "Getting Started with Documents"
 msgstr "Kom igång med Dokument"
 
-#: ../src/documents.js:712 ../src/documents.js:893 ../src/documents.js:956
-#: ../src/documents.js:1064
+#: ../src/documents.js:712 ../src/documents.js:904 ../src/documents.js:967
+#: ../src/documents.js:1075
 msgid "Collection"
 msgstr "Samling"
 
-#: ../src/documents.js:772
+#: ../src/documents.js:783
 msgid "Google Docs"
 msgstr "Google Docs"
 
-#: ../src/documents.js:773
+#: ../src/documents.js:784
 msgid "Google"
 msgstr "Google"
 
-#: ../src/documents.js:895 ../src/documents.js:1066
+#: ../src/documents.js:906 ../src/documents.js:1077
 msgid "Spreadsheet"
 msgstr "Kalkylark"
 
-#: ../src/documents.js:897 ../src/documents.js:1068 ../src/presentation.js:47
+#: ../src/documents.js:908 ../src/documents.js:1079 ../src/presentation.js:47
 msgid "Presentation"
 msgstr "Presentation"
 
-#: ../src/documents.js:899 ../src/documents.js:1070
+#: ../src/documents.js:910 ../src/documents.js:1081
 msgid "e-Book"
 msgstr "e-bok"
 
-#: ../src/documents.js:901 ../src/documents.js:1072
+#: ../src/documents.js:912 ../src/documents.js:1083
 msgid "Document"
 msgstr "Dokument"
 
-#: ../src/documents.js:935
+#: ../src/documents.js:946
 msgid "ownCloud"
 msgstr "ownCloud"
 
-#: ../src/documents.js:998 ../src/documents.js:999
+#: ../src/documents.js:1009 ../src/documents.js:1010
 msgid "OneDrive"
 msgstr "OneDrive"
 
-#: ../src/documents.js:1236
+#: ../src/documents.js:1247
 msgid "Please check the network connection."
 msgstr "Kontrollera din nätverksuppkoppling."
 
-#: ../src/documents.js:1239
+#: ../src/documents.js:1250
 msgid "Please check the network proxy settings."
 msgstr "Kontrollera nätverksproxy-inställningarna"
 
-#: ../src/documents.js:1242
+#: ../src/documents.js:1253
 msgid "Unable to sign in to the document service."
 msgstr "Kunde inte logga in på dokumenttjänsten."
 
-#: ../src/documents.js:1245
+#: ../src/documents.js:1256
 msgid "Unable to locate this document."
 msgstr "Kunde inte hitta detta dokument."
 
-#: ../src/documents.js:1248
+#: ../src/documents.js:1259
 #, javascript-format
 msgid "Hmm, something is fishy (%d)."
 msgstr "Hmm, något är konstigt (%d)."
 
 #: ../src/documents.js:1266
+msgid ""
+"You are using a preview of Books. Full viewing capabilities are coming soon!"
+msgstr ""
+"Du använder en förhandsversion av Böcker. Fullständiga visningsfunktioner "
+"kommer snart!"
+
+#: ../src/documents.js:1287
 #, javascript-format
 msgid "Oops! Unable to load “%s”"
 msgstr "Oj! Misslyckades att läsa in “%s“"
@@ -266,11 +273,11 @@ msgstr "Oj! Misslyckades att läsa in “%s“"
 msgid "View"
 msgstr "Visa"
 
-#: ../src/embed.js:109
+#: ../src/embed.js:108
 msgid "Recent"
 msgstr "Senaste"
 
-#: ../src/embed.js:112 ../src/search.js:192 ../src/search.js:201
+#: ../src/embed.js:111 ../src/search.js:192 ../src/search.js:201
 msgid "Collections"
 msgstr "Samlingar"
 
@@ -303,7 +310,7 @@ msgstr "Inga bokmärken"
 msgid "Loading…"
 msgstr "Läser in…"
 
-#: ../src/lib/gd-places-bookmarks.c:656 ../src/preview.js:599
+#: ../src/lib/gd-places-bookmarks.c:656 ../src/preview.js:601
 msgid "Bookmarks"
 msgstr "Bokmärken"
 
@@ -314,6 +321,24 @@ msgstr "Ingen innehållsförteckning"
 #: ../src/lib/gd-places-links.c:518
 msgid "Contents"
 msgstr "Innehåll"
+
+#: ../src/lib/gd-utils.c:412
+msgid "A document manager application"
+msgstr "Ett program för dokumenthantering"
+
+#: ../src/lib/gd-utils.c:419
+msgid "An e-books manager application"
+msgstr "Ett program för hantering av e-böcker"
+
+#: ../src/lib/gd-utils.c:427
+msgid "translator-credits"
+msgstr ""
+"Daniel Nylander <po@danielnylander.se>\n"
+"Sebastian Rasmussen <sebras@gmail.com>\n"
+"Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
+"\n"
+"Skicka synpunkter på översättningen till\n"
+"<tp-sv@listor.tp-sv.se>."
 
 #: ../src/mainToolbar.js:79
 msgid "Search"
@@ -350,53 +375,42 @@ msgstr "Avbryt"
 msgid "Select Items"
 msgstr "Markera objekt"
 
-#: ../src/mainWindow.js:321
-msgid "translator-credits"
-msgstr ""
-"Daniel Nylander <po@danielnylander.se>\n"
-"Sebastian Rasmussen <sebras@gmail.com>\n"
-"Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
-"\n"
-"Skicka synpunkter på översättningen till\n"
-"<tp-sv@listor.tp-sv.se>."
+#: ../src/notifications.js:54
+#, javascript-format
+msgid "“%s” deleted"
+msgstr "”%s” borttagen"
 
-#: ../src/mainWindow.js:324
-msgid "A document manager application"
-msgstr "Ett program för dokumenthantering"
+#: ../src/notifications.js:58
+#, javascript-format
+msgid "%d item deleted"
+msgid_plural "%d items deleted"
+msgstr[0] "%d objekt borttaget"
+msgstr[1] "%d objekt borttagna"
 
-#: ../src/mainWindow.js:329
-msgid "An e-books manager application"
-msgstr "Ett program för hantering av e-böcker"
-
-#: ../src/notifications.js:50
-msgid "Selected item has been deleted"
-msgid_plural "Selected items have been deleted"
-msgstr[0] "Markerat objekt har tagits bort"
-msgstr[1] "Markerade objekt har tagits bort"
-
-#: ../src/notifications.js:57
+#: ../src/notifications.js:67
 msgid "Undo"
 msgstr "Ångra"
 
-#: ../src/notifications.js:157
+#: ../src/notifications.js:167
 #, javascript-format
 msgid "Printing “%s”: %s"
 msgstr "Skriver ut “%s“: %s"
 
-#: ../src/notifications.js:213
+#: ../src/notifications.js:223
 msgid "Your documents are being indexed"
 msgstr "Dina dokument håller på att indexeras"
 
-#: ../src/notifications.js:214
+#: ../src/notifications.js:224
 msgid "Some documents might not be available during this process"
-msgstr "Vissa dokument kan komma att inte vara tillgängliga under denna process"
+msgstr ""
+"Vissa dokument kan komma att inte vara tillgängliga under denna process"
 
-#: ../src/notifications.js:236
+#: ../src/notifications.js:246
 #, javascript-format
 msgid "Fetching documents from %s"
 msgstr "Hämtar dokument från %s"
 
-#: ../src/notifications.js:238
+#: ../src/notifications.js:248
 msgid "Fetching documents from online accounts"
 msgstr "Hämtar dokument från nätkonton"
 
@@ -441,20 +455,20 @@ msgstr "Sekundär"
 msgid "Present On"
 msgstr "Presentera på"
 
-#: ../src/preview.js:607
+#: ../src/preview.js:609
 msgid "Bookmark this page"
 msgstr "Bokmärk denna sida"
 
-#: ../src/preview.js:849 ../src/selections.js:859
+#: ../src/preview.js:870 ../src/selections.js:859
 #, javascript-format
 msgid "Open with %s"
 msgstr "Öppna med %s"
 
-#: ../src/preview.js:912
+#: ../src/preview.js:933
 msgid "Find Previous"
 msgstr "Hitta föregående"
 
-#: ../src/preview.js:919
+#: ../src/preview.js:940
 msgid "Find Next"
 msgstr "Hitta nästa"
 
@@ -559,8 +573,8 @@ msgstr "Markera inget"
 msgid "Category"
 msgstr "Kategori"
 
-#: ../src/search.js:120 ../src/search.js:189 ../src/search.js:317
-#: ../src/search.js:487
+#: ../src/search.js:120 ../src/search.js:189 ../src/search.js:322
+#: ../src/search.js:492
 msgid "All"
 msgstr "Alla"
 
@@ -601,21 +615,21 @@ msgstr "e-böcker"
 msgid "Comics"
 msgstr "Serietidningar"
 
-#: ../src/search.js:314
+#: ../src/search.js:319
 msgid "Match"
 msgstr "Matcha"
 
-#: ../src/search.js:320
+#: ../src/search.js:325
 msgctxt "Search Filter"
 msgid "Title"
 msgstr "Titel"
 
-#: ../src/search.js:323
+#: ../src/search.js:328
 msgctxt "Search Filter"
 msgid "Author"
 msgstr "Författare"
 
-#: ../src/search.js:483
+#: ../src/search.js:488
 msgid "Sources"
 msgstr "Källor"
 
@@ -726,61 +740,61 @@ msgstr "Namnlöst dokument"
 msgid "Unable to fetch the list of documents"
 msgstr "Kunde inte hämta listan över dokument"
 
-#: ../src/view.js:242
+#: ../src/view.js:243
 msgid "No Books Found"
 msgstr "Inga böcker hittades"
 
-#: ../src/view.js:243
+#: ../src/view.js:244
 msgid "No Documents Found"
 msgstr "Inga dokument hittades"
 
-#: ../src/view.js:265
+#: ../src/view.js:266
 #, javascript-format
 msgid "You can add your online accounts in %s"
 msgstr "Du kan lägga till dina nätkonton i %s"
 
-#: ../src/view.js:269
+#: ../src/view.js:270
 msgid "Settings"
 msgstr "Inställningar"
 
-#: ../src/view.js:503
+#: ../src/view.js:457
 msgid "Yesterday"
 msgstr "Igår"
 
-#: ../src/view.js:505
+#: ../src/view.js:459
 #, javascript-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
 msgstr[0] "%d dag sedan"
 msgstr[1] "%d dagar sedan"
 
-#: ../src/view.js:509
+#: ../src/view.js:463
 msgid "Last week"
 msgstr "Förra veckan"
 
-#: ../src/view.js:511
+#: ../src/view.js:465
 #, javascript-format
 msgid "%d week ago"
 msgid_plural "%d weeks ago"
 msgstr[0] "%d vecka sedan"
 msgstr[1] "%d veckor sedan"
 
-#: ../src/view.js:515
+#: ../src/view.js:469
 msgid "Last month"
 msgstr "Förra månaden"
 
-#: ../src/view.js:517
+#: ../src/view.js:471
 #, javascript-format
 msgid "%d month ago"
 msgid_plural "%d months ago"
 msgstr[0] "%d månad sedan"
 msgstr[1] "%d månader sedan"
 
-#: ../src/view.js:521
+#: ../src/view.js:475
 msgid "Last year"
 msgstr "Förra året"
 
-#: ../src/view.js:523
+#: ../src/view.js:477
 #, javascript-format
 msgid "%d year ago"
 msgid_plural "%d years ago"
