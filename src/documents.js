@@ -1222,6 +1222,13 @@ const DocumentManager = new Lang.Class({
         this.parent();
     },
 
+    clearRowRefs: function() {
+        let items = this.getItems();
+        for (let idx in items) {
+            items[idx].rowRefs = {};
+        }
+    },
+
     getActiveCollection: function() {
         return this._activeCollection;
     },
