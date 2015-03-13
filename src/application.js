@@ -704,6 +704,7 @@ const Application = new Lang.Class({
         this.disconnectAllJS();
 
         // reset state
+        documentManager.clearRowRefs();
         documentManager.setActiveItem(null);
         modeController.setWindowMode(WindowMode.WindowMode.NONE);
         selectionController.setSelection(null);

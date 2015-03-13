@@ -98,6 +98,12 @@ const ViewModel = new Lang.Class({
                     return;
                 this._clear();
             }));
+
+        // populate with the initial items
+        let items = Application.documentManager.getItems();
+        for (let idx in items) {
+            this._onItemAdded(Application.documentManager, items[idx]);
+        }
     },
 
     _clear: function() {
