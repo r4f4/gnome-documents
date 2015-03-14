@@ -2,14 +2,14 @@
 # Copyright (C) 2011 gnome-documents's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-documents package.
 #
-# A S Alam <aalam@users.sf.net>, 2011, 2012, 2013, 2014.
+# A S Alam <aalam@users.sf.net>, 2011, 2012, 2013, 2014, 2015.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-documents master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-09-12 18:49+0000\n"
-"PO-Revision-Date: 2014-09-12 15:46-0500\n"
+"POT-Creation-Date: 2015-03-13 20:28+0000\n"
+"PO-Revision-Date: 2015-03-13 22:12-0500\n"
 "Last-Translator: A S Alam <aalam@users.sf.net>\n"
 "Language-Team: Punjabi/Panjabi <punjabi-users@lists.sf.net>\n"
 "Language: pa\n"
@@ -19,9 +19,124 @@ msgstr ""
 "X-Generator: Lokalize 1.5\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
+#: ../data/org.gnome.Books.appdata.xml.in.h:1
+#: ../data/org.gnome.Books.desktop.in.h:1 ../src/application.js:132
+#: ../src/lib/gd-utils.c:418
+#| msgid "Bookmarks"
+msgid "Books"
+msgstr "ਕਿਤਾਬਾਂ"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:2
+#| msgid "A document manager application for GNOME"
+msgid "An e-book manager application for GNOME"
+msgstr "ਗਨੋਮ ਲਈ ਈ-ਬੁੱਕ ਮੈਨੇਜਰ ਐਪਲੀਕੇਸ਼ਨ ਹੈ"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:3
+#| msgid ""
+#| "A simple application to access, organize and share your documents on "
+#| "GNOME. It is meant to be a simple and elegant replacement for using a "
+#| "file manager to deal with documents. Seamless cloud integration is "
+#| "offered through GNOME Online Accounts."
+msgid ""
+"A simple application to access and organize your e-books on GNOME. It is "
+"meant to be a simple and elegant replacement for using a file manager to "
+"deal with e-books."
+msgstr ""
+"ਗਨੋਮ ਵਿੱਚ ਤੁਹਾਡੀਆਂ ਈ-ਬੁੱਕਾਂ ਨੂੰ ਵਰਤਣ ਤੇ ਉਹਨਾਂ ਦਾ ਪਰਬੰਧ ਕਰਨ ਲਈ ਸੌਖੀ ਜੇਹੀ "
+"ਐਪਲੀਕੇਸ਼ਨ ਹੈ। ਇਸ "
+"ਨੂੰ ਈ-ਬੁੱਕਾਂ ਦਾ ਪਰਬੰਧ ਕਰਨ ਲਈ ਫਾਇਲ ਮੈਨੇਜਰ ਨੂੰ ਸੌਖਾ ਤੇ ਸਧਾਰਨ ਰੂਪ ਵਿੱਚ "
+"ਤਿਆਰ ਕੀਤਾ ਗਿਆ ਹੈ।"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:4
+#: ../data/org.gnome.Documents.appdata.xml.in.h:4
+msgid "It lets you:"
+msgstr "ਇਹ ਤੁਹਾਡੇ ਲਈ ਹੈ:"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:5
+msgid "View recent e-books"
+msgstr "ਤਾਜ਼ਾ ਈ-ਕਿਤਾਬਾਂ ਵੇਖੋ"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:6
+#| msgid "Search through documents"
+msgid "Search through e-books"
+msgstr "ਈ-ਬੁੱਕਾਂ ਵਿੱਚ ਲੱਭੋ"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:7
+#| msgid "View documents fullscreen"
+msgid "View e-books fullscreen"
+msgstr "ਈ-ਬੁੱਕਾਂ ਨੂੰ ਪੂਰੀ ਸਕਰੀਨ ਉੱਤੇ ਵੇਖੋ"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:8
+msgid "Print e-books"
+msgstr "ਈ-ਬੁੱਕ ਛਾਪੋ"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:9
+#: ../data/org.gnome.Documents.appdata.xml.in.h:12
+msgid "Allow opening full featured editor for non-trivial changes"
+msgstr "ਗ਼ੈਰ-ਮਮੂਲੀ ਤਬਦੀਲੀਆਂ ਲਈ ਪੂਰੇ ਫੀਚਰ ਐਡੀਟਰ ਖੋਲ੍ਹਣ ਦੀ ਮਨਜ਼ੂਰੀ"
+
+#: ../data/org.gnome.Books.desktop.in.h:2
+#| msgid "Access, manage and share documents"
+msgid "Access, manage and share books"
+msgstr "ਕਿਤਾਬਾਂ ਨੂੰ ਵਰਤੋਂ, ਪਰਬੰਧ ਕਰੋ ਅਤੇ ਸਾਂਝੀਆਂ ਕਰੋ"
+
+#: ../data/org.gnome.Books.desktop.in.h:3
+msgid "Books;Comics;ePub;PDF;"
+msgstr "ਕਿਤਾਬਾਂ;ਕੌਮਿਕਸ;ePub;PDF;ਈ-ਪਬ;ਪੀਡੀਐਫ;"
+
+#: ../data/org.gnome.books.gschema.xml.h:1
+#: ../data/org.gnome.documents.gschema.xml.h:1
+msgid "View as"
+msgstr "ਇੰਝ ਵੇਖੋ"
+
+#: ../data/org.gnome.books.gschema.xml.h:2
+#: ../data/org.gnome.documents.gschema.xml.h:2
+msgid "View as type"
+msgstr "ਕਿਸਮਾਂ ਵਾਂਗ ਵੇਖੋ"
+
+#: ../data/org.gnome.books.gschema.xml.h:3
+#: ../data/org.gnome.documents.gschema.xml.h:3
+msgid "Window size"
+msgstr "ਵਿੰਡੋ ਆਕਾਰ"
+
+#: ../data/org.gnome.books.gschema.xml.h:4
+#: ../data/org.gnome.documents.gschema.xml.h:4
+msgid "Window size (width and height)."
+msgstr "ਵਿੰਡੋ ਆਕਾਰ (ਚੌੜਾਈ ਅਤੇ ਉਚਾਈ)"
+
+#: ../data/org.gnome.books.gschema.xml.h:5
+#: ../data/org.gnome.documents.gschema.xml.h:5
+msgid "Window position"
+msgstr "ਵਿੰਡੋ ਸਥਿਤੀ"
+
+#: ../data/org.gnome.books.gschema.xml.h:6
+#: ../data/org.gnome.documents.gschema.xml.h:6
+msgid "Window position (x and y)."
+msgstr "ਵਿੰਡੋ ਸਥਿਤੀ (x ਅਤੇ y)"
+
+#: ../data/org.gnome.books.gschema.xml.h:7
+#: ../data/org.gnome.documents.gschema.xml.h:7
+msgid "Window maximized"
+msgstr "ਵਿੰਡੋ ਵੱਧੋ-ਵੱਧ ਕਰਨੀ"
+
+#: ../data/org.gnome.books.gschema.xml.h:8
+#: ../data/org.gnome.documents.gschema.xml.h:8
+msgid "Window maximized state"
+msgstr "ਵਿੰਡੋ ਵੱਧੋ-ਵੱਧ ਆਕਾਰ ਸਥਿਤੀ"
+
+#: ../data/org.gnome.books.gschema.xml.h:9
+#: ../data/org.gnome.documents.gschema.xml.h:9
+msgid "Night mode"
+msgstr "ਰਾਤ ਮੋਡ"
+
+#: ../data/org.gnome.books.gschema.xml.h:10
+#: ../data/org.gnome.documents.gschema.xml.h:10
+msgid "Whether the application is in night mode."
+msgstr "ਕੀ ਐਪਲੀਕੇਸ਼ਨ ਰਾਤ ਮੋਡ ਵਿੱਚ ਹੈ।"
+
 #: ../data/org.gnome.Documents.appdata.xml.in.h:1
-#: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:121
-#: ../src/mainWindow.js:52 ../src/mainWindow.js:302
+#: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:128
+#: ../src/lib/gd-utils.c:411 ../src/mainWindow.js:52
 msgid "Documents"
 msgstr "ਡੌਕੂਮੈਂਟ"
 
@@ -41,10 +156,6 @@ msgstr ""
 "ਐਪਲੀਕੇਸ਼ਨ ਹੈ। ਇਸ ਨੂੰ ਦਸਤਾਵੇਜ਼ ਦਾ ਪਰਬੰਧ ਕਰਨ ਲਈ ਫਾਇਲ ਮੈਨੇਜਰ ਦੀ ਬਜਾਏ ਸੌਖਾ ਤੇ ਸਧਾਰਨ "
 "ਰੂਪ ਵਿੱਚ "
 "ਤਿਆਰ ਕੀਤਾ ਗਿਆ ਹੈ। ਗਨੋਮ ਆਨਲਾਈਨ ਖਾਤਿਆਂ ਰਾਹੀਂ ਕਲਾਉਡ ਜੋੜ ਨੂੰ ਵੀ ਸੌਖਾ ਬਣਾਇਆ ਗਿਆ ਹੈ।"
-
-#: ../data/org.gnome.Documents.appdata.xml.in.h:4
-msgid "It lets you:"
-msgstr "ਇਹ ਤੁਹਾਡੇ ਲਈ ਹੈ:"
 
 #: ../data/org.gnome.Documents.appdata.xml.in.h:5
 msgid "View recent local and online documents"
@@ -67,18 +178,12 @@ msgid "View documents fullscreen"
 msgstr "ਡੌਕੂਮੈਂਟ ਪੂਰੀ ਸਕਰੀਨ ਉੱਤੇ ਵੇਖੋ"
 
 #: ../data/org.gnome.Documents.appdata.xml.in.h:10
-#| msgid "PDF Documents"
 msgid "Print documents"
 msgstr "ਡੌਕੂਮੈਂਟ ਪਰਿੰਟ ਕਰੋ"
 
 #: ../data/org.gnome.Documents.appdata.xml.in.h:11
-#| msgid "Select Items"
 msgid "Select favorites"
 msgstr "ਪਸੰਦੀਦਾ ਚੁਣੋ"
-
-#: ../data/org.gnome.Documents.appdata.xml.in.h:12
-msgid "Allow opening full featured editor for non-trivial changes"
-msgstr "ਗ਼ੈਰ-ਮਮੂਲੀ ਤਬਦੀਲੀਆਂ ਲਈ ਪੂਰੇ ਫੀਚਰ ਐਡੀਟਰ ਖੋਲ੍ਹਣ ਦੀ ਮਨਜ਼ੂਰੀ"
 
 #: ../data/org.gnome.Documents.desktop.in.h:2
 msgid "Access, manage and share documents"
@@ -88,129 +193,102 @@ msgstr "ਡੌਕੂਮੈਂਟ ਵਰਤੋਂ, ਪਰਬੰਧ ਕਰੋ ਅ�
 msgid "Docs;PDF;Document;"
 msgstr "ਡੌਕੂਮੈਂਟ;PDF,ਦਸਤਾਵੇਜ਼;"
 
-#: ../data/org.gnome.documents.gschema.xml.h:1
-msgid "View as"
-msgstr "ਵੇਖੋ"
-
-#: ../data/org.gnome.documents.gschema.xml.h:2
-msgid "View as type"
-msgstr "ਕਿਸਮਾਂ ਵਾਂਗ ਵੇਖੋ"
-
-#: ../data/org.gnome.documents.gschema.xml.h:3
-msgid "Window size"
-msgstr "ਵਿੰਡੋ ਆਕਾਰ"
-
-#: ../data/org.gnome.documents.gschema.xml.h:4
-msgid "Window size (width and height)."
-msgstr "ਵਿੰਡੋ ਆਕਾਰ (ਚੌੜਾਈ ਅਤੇ ਉਚਾਈ)"
-
-#: ../data/org.gnome.documents.gschema.xml.h:5
-msgid "Window position"
-msgstr "ਵਿੰਡੋ ਸਥਿਤੀ"
-
-#: ../data/org.gnome.documents.gschema.xml.h:6
-msgid "Window position (x and y)."
-msgstr "ਵਿੰਡੋ ਸਥਿਤੀ (x ਅਤੇ y)"
-
-#: ../data/org.gnome.documents.gschema.xml.h:7
-msgid "Window maximized"
-msgstr "ਵਿੰਡੋ ਵੱਧੋ-ਵੱਧ ਕਰਨੀ"
-
-#: ../data/org.gnome.documents.gschema.xml.h:8
-msgid "Window maximized state"
-msgstr "ਵਿੰਡੋ ਵੱਧੋ-ਵੱਧ ਆਕਾਰ ਸਥਿਤੀ"
-
-#: ../src/documents.js:621
+#: ../src/documents.js:631
 msgid "Failed to print document"
 msgstr "ਡੌਕੂਮੈਂਟ ਪਰਿੰਟ ਕਰਨ ਲਈ ਫੇਲ੍ਹ"
 
-#: ../src/documents.js:658 ../src/search.js:427
+#: ../src/documents.js:668 ../src/search.js:498
 msgid "Local"
 msgstr "ਲੋਕਲ"
 
-#: ../src/documents.js:679
+#: ../src/documents.js:695
 msgid "GNOME"
 msgstr "ਗਨੋਮ"
 
-#: ../src/documents.js:680
+#: ../src/documents.js:696
 msgid "Getting Started with Documents"
 msgstr "ਡੌਕੂਮੈਂਟ ਨਾਲ ਸ਼ੁਰੂਆਤ"
 
-#: ../src/documents.js:696 ../src/documents.js:877 ../src/documents.js:939
-#: ../src/documents.js:1047
+#: ../src/documents.js:712 ../src/documents.js:904 ../src/documents.js:967
+#: ../src/documents.js:1075
 msgid "Collection"
 msgstr "ਭੰਡਾਰ"
 
-#: ../src/documents.js:756
+#: ../src/documents.js:783
 msgid "Google Docs"
 msgstr "ਗੂਗਲ ਡੌਕਸ"
 
-#: ../src/documents.js:757
+#: ../src/documents.js:784
 msgid "Google"
 msgstr "ਗੂਗਲ"
 
-#: ../src/documents.js:879 ../src/documents.js:1049
+#: ../src/documents.js:906 ../src/documents.js:1077
 msgid "Spreadsheet"
 msgstr "ਸਪਰੈਡਸ਼ੀਟ"
 
-#: ../src/documents.js:881 ../src/documents.js:1051 ../src/presentation.js:47
+#: ../src/documents.js:908 ../src/documents.js:1079 ../src/presentation.js:47
 msgid "Presentation"
 msgstr "ਪਰਿਜ਼ੈੱਨਟੇਸ਼ਨ"
 
-#: ../src/documents.js:883 ../src/documents.js:1053
+#: ../src/documents.js:910 ../src/documents.js:1081
+msgid "e-Book"
+msgstr "ਈ-ਬੁੱਕ"
+
+#: ../src/documents.js:912 ../src/documents.js:1083
 msgid "Document"
 msgstr "ਡੌਕੂਮੈਂਟ"
 
-#: ../src/documents.js:917
+#: ../src/documents.js:946
 msgid "ownCloud"
 msgstr "ownCloud"
 
-#: ../src/documents.js:981 ../src/documents.js:982
+#: ../src/documents.js:1009 ../src/documents.js:1010
 msgid "OneDrive"
 msgstr "OneDrive"
 
-#: ../src/documents.js:1181
+#: ../src/documents.js:1247
 msgid "Please check the network connection."
 msgstr "ਨੈੱਟਵਰਕ ਕੁਨੈਕਸ਼ਨ ਚੈਕ ਕਰੋ ਜੀ।"
 
-#: ../src/documents.js:1184
+#: ../src/documents.js:1250
 msgid "Please check the network proxy settings."
 msgstr "ਨੈੱਟਵਰਕ ਪਰਾਕਸੀ ਸੈਟਿੰਗ ਜਾਂਚੋ।"
 
-#: ../src/documents.js:1187
+#: ../src/documents.js:1253
 msgid "Unable to sign in to the document service."
 msgstr "ਡੌਕੂਮੈਂਟ ਸਰਵਿਸ ਵਿੱਚ ਸਾਇਨ ਇਨ ਕਰਨ ਲਈ ਅਸਮਰੱਥ ਹੈ।"
 
-#: ../src/documents.js:1190
+#: ../src/documents.js:1256
 msgid "Unable to locate this document."
 msgstr "ਡੌਕੂਮੈਂਟ ਲੱਭਣ ਲਈ ਅਸਮਰੱਥ ਹੈ।"
 
-#: ../src/documents.js:1193
+#: ../src/documents.js:1259
 #, javascript-format
 msgid "Hmm, something is fishy (%d)."
 msgstr "ਹੂੰ,  ਕੁਝ ਗੜਬੜ ਲੱਗਦਾ ਹੈ (%d)"
 
-#: ../src/documents.js:1211
+#: ../src/documents.js:1266
+msgid ""
+"You are using a preview of Books. Full viewing capabilities are coming soon!"
+msgstr "ਤੁਸੀਂ ਕਿਤਾਬਾਂ ਦੀ ਝਲਕ ਵਰਤ ਰਹੇ ਹੋ। ਪੂਰੀ ਝਲਕ ਦੀ ਸਮੱਰਥਾ ਛੇਤੀ ਹੀ ਆ ਰਹੀ ਹੈ!"
+
+#: ../src/documents.js:1287
 #, javascript-format
 msgid "Oops! Unable to load “%s”"
 msgstr "ਓਹ! “%s” ਲੋਡ ਕਰਨ ਲਈ ਅਸਮਰੱਥ"
 
-#: ../src/edit.js:192
+#: ../src/edit.js:176
 msgid "View"
 msgstr "ਵੇਖੋ"
 
-#: ../src/embed.js:142
-msgid "No Documents Found"
-msgstr "ਕੋਈ ਡੌਕੂਮੈਂਟ ਨਹੀਂ ਲੱਭਿਆ"
+#: ../src/embed.js:108
+#| msgid "New and Recent"
+msgid "Recent"
+msgstr "ਤਾਜ਼ਾ"
 
-#: ../src/embed.js:163
-#, javascript-format
-msgid "You can add your online accounts in %s"
-msgstr "ਤੁਸੀਂ %s ਵਿੱਚ ਆਪਣੇ ਆਨਲਾਈਨ ਅਕਾਊਂਟ ਸ਼ਾਮਿਲ ਕਰ ਸਕਦੇ ਹੋ"
-
-#: ../src/embed.js:167
-msgid "Settings"
-msgstr "ਸੈਟਿੰਗ"
+#: ../src/embed.js:111 ../src/search.js:192 ../src/search.js:201
+msgid "Collections"
+msgstr "ਭੰਡਾਰ"
 
 #: ../src/lib/gd-nav-bar.c:242
 #, c-format
@@ -228,21 +306,20 @@ msgstr "ਇਹ ਡੌਕੂਮੈਂਟ ਵੇਖਣ ਲਈ ਲਿਬਰੇਆ�
 #. Translators: %s is the number of the page, already formatted
 #. * as a string, for example "Page 5".
 #.
-#: ../src/lib/gd-places-bookmarks.c:315
+#: ../src/lib/gd-places-bookmarks.c:321
 #, c-format
 msgid "Page %s"
 msgstr "ਪੇਜ਼ %s"
 
-#: ../src/lib/gd-places-bookmarks.c:378
+#: ../src/lib/gd-places-bookmarks.c:384
 msgid "No bookmarks"
 msgstr "ਬੁੱਕਮਾਰਕ ਨਹੀਂ"
 
-#: ../src/lib/gd-places-bookmarks.c:386 ../src/lib/gd-places-links.c:257
-#: ../src/view.js:71
+#: ../src/lib/gd-places-bookmarks.c:392 ../src/lib/gd-places-links.c:257
 msgid "Loading…"
 msgstr "…ਲੋਡ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ"
 
-#: ../src/lib/gd-places-bookmarks.c:651 ../src/preview.js:580
+#: ../src/lib/gd-places-bookmarks.c:656 ../src/preview.js:601
 msgid "Bookmarks"
 msgstr "ਬੁੱਕਮਾਰਕ"
 
@@ -254,6 +331,21 @@ msgstr "ਕੋਈ ਤਤਕਰਾ ਨਹੀਂ"
 msgid "Contents"
 msgstr "ਸਮੱਗਰੀ"
 
+#: ../src/lib/gd-utils.c:412
+msgid "A document manager application"
+msgstr "ਡੌਕੂਮੈਂਟ ਮੈਨੇਜਰ ਐਪਲੀਕੇਸ਼ਨ"
+
+#: ../src/lib/gd-utils.c:419
+#| msgid "A document manager application"
+msgid "An e-books manager application"
+msgstr "ਈ-ਬੁੱਕ ਮੈਨੇਜਰ ਐਪਲੀਕੇਸ਼ਨ"
+
+#: ../src/lib/gd-utils.c:427
+msgid "translator-credits"
+msgstr ""
+"ਅਮਨਪਰੀਤ ਸਿੰਘ ਆਲਮ\n"
+"ਪੰਜਾਬੀ ਓਪਨਸੋਰਸ ਟੀਮ (POST) ੨੦੧੧-੨੦੧੫"
+
 #: ../src/mainToolbar.js:79
 msgid "Search"
 msgstr "ਖੋਜ"
@@ -262,73 +354,70 @@ msgstr "ਖੋਜ"
 msgid "Back"
 msgstr "ਪਿੱਛੇ"
 
-#: ../src/mainToolbar.js:132
+#: ../src/mainToolbar.js:141
 msgid "View items as a list"
 msgstr "ਆਈਟਮਾਂ ਨੂੰ ਸੂਚੀ ਵਜੋਂ ਵੇਖੋ"
 
-#: ../src/mainToolbar.js:138
+#: ../src/mainToolbar.js:147
 msgid "View items as a grid of icons"
 msgstr "ਆਈਟਮਾਂ ਨੂੰ ਆਈਕਾਨ ਦੇ ਗਰਿੱਡ ਵਜੋਂ ਵੇਖੋ"
 
-#: ../src/mainToolbar.js:168
+#: ../src/mainToolbar.js:177
 msgid "Click on items to select them"
 msgstr "ਆਈਟਮਾਂ ਨੂੰ ਚੁਣਨ ਲਈ ਉਹਨਾਂ ਉੱਤੇ ਕਲਿੱਕ ਕਰੋ"
 
-#: ../src/mainToolbar.js:170
+#: ../src/mainToolbar.js:179
 #, javascript-format
 msgid "%d selected"
 msgid_plural "%d selected"
 msgstr[0] "%d ਚੁਣਿਆ"
 msgstr[1] "%d ਚੁਣੇ"
 
-#: ../src/mainToolbar.js:200
+#: ../src/mainToolbar.js:203
 msgid "Cancel"
 msgstr "ਰੱਦ ਕਰੋ"
 
-#: ../src/mainToolbar.js:242
+#: ../src/mainToolbar.js:246
 msgid "Select Items"
 msgstr "ਆਈਟਮਾਂ ਚੁਣੋ"
 
-#: ../src/mainWindow.js:301
-msgid "translator-credits"
-msgstr ""
-"ਅਮਨਪਰੀਤ ਸਿੰਘ ਆਲਮ\n"
-"ਪੰਜਾਬੀ ਓਪਨਸੋਰਸ ਟੀਮ (POST) ੨੦੧੧-੨੦੧੨\n"
-"http://www.satuj.org"
+#: ../src/notifications.js:54
+#, javascript-format
+msgid "“%s” deleted"
+msgstr "“%s” ਹਟਾਈ"
 
-#: ../src/mainWindow.js:303
-msgid "A document manager application"
-msgstr "ਡੌਕੂਮੈਂਟ ਮੈਨੇਜਰ ਐਪਲੀਕੇਸ਼ਨ"
+#: ../src/notifications.js:58
+#, javascript-format
+#| msgid "Selected item has been deleted"
+#| msgid_plural "Selected items have been deleted"
+msgid "%d item deleted"
+msgid_plural "%d items deleted"
+msgstr[0] "%d ਆਈਟਮ ਹਟਾਈ"
+msgstr[1] "%d ਆਈਟਮਾਂ ਹਟਾਈਆਂ"
 
-#: ../src/notifications.js:50
-msgid "Selected item has been deleted"
-msgid_plural "Selected items have been deleted"
-msgstr[0] "ਚੁਣੀ ਆਈਟਮ ਨੂੰ ਹਟਾਈ ਜਾ ਚੁੱਕੀ ਹੈ"
-msgstr[1] "ਚੁਣੀਆਂ ਆਈਟਮਾਂ ਹਟਾਈਆਂ ਜਾ ਚੁੱਕੀਆਂ ਹਨ"
-
-#: ../src/notifications.js:57
+#: ../src/notifications.js:67
 msgid "Undo"
 msgstr "ਵਾਪਿਸ"
 
-#: ../src/notifications.js:157
+#: ../src/notifications.js:167
 #, javascript-format
 msgid "Printing “%s”: %s"
 msgstr "“%s” ਪਰਿੰਟ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ: %s"
 
-#: ../src/notifications.js:213
+#: ../src/notifications.js:223
 msgid "Your documents are being indexed"
 msgstr "ਤੁਹਾਡੇ ਡੌਕੂਮੈਂਟ ਦਾ ਇੰਡੈਕਸ ਬਣਾਇਆ ਜਾ ਰਿਹਾ ਹੈ"
 
-#: ../src/notifications.js:214
+#: ../src/notifications.js:224
 msgid "Some documents might not be available during this process"
 msgstr "ਕੁਝ ਡੌਕੂਮੈਂਟ ਇਹ ਕਾਰਵਾਈ ਦੌਰਾਨ ਸ਼ਾਇਦ ਉਪਲੱਬਧ ਨਹੀਂ ਹੋਣਗੇ"
 
-#: ../src/notifications.js:236
+#: ../src/notifications.js:246
 #, javascript-format
 msgid "Fetching documents from %s"
 msgstr "%s ਤੋਂ ਡੌਕੂਮੈਂਟ ਲਏ ਜਾ ਰਹੇ ਹਨ"
 
-#: ../src/notifications.js:238
+#: ../src/notifications.js:248
 msgid "Fetching documents from online accounts"
 msgstr "ਆਨਲਾਈਨ ਅਕਾਊਂਟ ਤੋਂ ਡੌਕੂਮੈਂਟ ਲਏ ਜਾ ਰਹੇ ਹਨ"
 
@@ -349,33 +438,49 @@ msgstr "ਡੌਕੂਮੈਂਟ “%s” ਲਾਕ ਹੈ ਅਤੇ ਇਸ ਨ�
 msgid "_Password"
 msgstr "ਪਾਸਵਰਡ(_P)"
 
-#: ../src/presentation.js:104
+#: ../src/presentation.js:105
 msgid "Running in presentation mode"
 msgstr "ਪਰਿਜ਼ੈਂਟੇਸ਼ਨ ਮੋਡ ਵਿੱਚ ਚੱਲ ਰਿਹਾ ਹੈ"
 
-#: ../src/presentation.js:157
+#: ../src/presentation.js:152
+msgid "Mirrored"
+msgstr "ਮਿਰਰ ਕੀਤਾ"
+
+#: ../src/presentation.js:154
+msgid "Primary"
+msgstr "ਪ੍ਰਾਇਮਰੀ"
+
+#: ../src/presentation.js:156
+msgid "Off"
+msgstr "ਬੰਦ"
+
+#: ../src/presentation.js:158
+msgid "Secondary"
+msgstr "ਸੈਕੰਡਰੀ"
+
+#: ../src/presentation.js:194
 msgid "Present On"
 msgstr "ਪਰਿਜੈਂਟ ਚਾਲੂ"
 
-#: ../src/preview.js:588
+#: ../src/preview.js:609
 msgid "Bookmark this page"
 msgstr "ਇਹ ਸਫ਼ਾ ਬੁੱਕਮਾਰਕ ਕਰੋ"
 
-#: ../src/preview.js:823 ../src/selections.js:857
+#: ../src/preview.js:870 ../src/selections.js:859
 #, javascript-format
 msgid "Open with %s"
 msgstr "%s ਨਾਲ ਖੋਲ੍ਹੋ"
 
-#: ../src/preview.js:885
+#: ../src/preview.js:933
 msgid "Find Previous"
 msgstr "ਪਿੱਛੇ ਖੋਜ"
 
-#: ../src/preview.js:892
+#: ../src/preview.js:940
 msgid "Find Next"
 msgstr "ਅੱਗੇ ਖੋਜ"
 
 #: ../src/properties.js:61 ../src/resources/preview-menu.ui.h:9
-#: ../src/selections.js:767
+#: ../src/selections.js:769
 msgid "Properties"
 msgstr "ਵਿਸ਼ੇਸ਼ਤਾ"
 
@@ -411,14 +516,18 @@ msgid "Fullscreen"
 msgstr "ਪੂਰੀ ਸਕਰੀਨ"
 
 #: ../src/resources/app-menu.ui.h:2
+msgid "Night Mode"
+msgstr "ਰਾਤ ਮੋਡ"
+
+#: ../src/resources/app-menu.ui.h:3
 msgid "Help"
 msgstr "ਮੱਦਦ"
 
-#: ../src/resources/app-menu.ui.h:3
+#: ../src/resources/app-menu.ui.h:4
 msgid "About"
 msgstr "ਇਸ ਬਾਰੇ"
 
-#: ../src/resources/app-menu.ui.h:4
+#: ../src/resources/app-menu.ui.h:5
 msgid "Quit"
 msgstr "ਬਾਹਰ"
 
@@ -427,7 +536,7 @@ msgid "_Copy"
 msgstr "ਕਾਪੀ ਕਰੋ(_C)"
 
 #: ../src/resources/preview-menu.ui.h:1 ../src/selections.js:747
-#: ../src/selections.js:860
+#: ../src/selections.js:862
 msgid "Open"
 msgstr "ਖੋਲ੍ਹੋ"
 
@@ -467,63 +576,68 @@ msgstr "ਸਭ ਚੁਣੋ"
 msgid "Select None"
 msgstr "ਸਭ ਚੁਣੋ"
 
-#: ../src/search.js:114
+#: ../src/search.js:115
 msgid "Category"
 msgstr "ਕੈਟਾਗਰੀ"
 
-#: ../src/search.js:119 ../src/search.js:180 ../src/search.js:265
-#: ../src/search.js:421
+#: ../src/search.js:120 ../src/search.js:189 ../src/search.js:322
+#: ../src/search.js:492
 msgid "All"
 msgstr "ਸਭ"
 
-#: ../src/search.js:125
+#: ../src/search.js:126
 msgid "Favorites"
 msgstr "ਪਸੰਦੀਦਾ"
 
-#: ../src/search.js:130
+#: ../src/search.js:131
 msgid "Shared with you"
 msgstr "ਤੁਹਾਡੇ ਨਾਲ ਸਾਂਝਾ ਕੀਤਾ"
 
-#: ../src/search.js:177
+#: ../src/search.js:186
 msgctxt "Search Filter"
 msgid "Type"
 msgstr "ਕਿਸਮ"
 
-#: ../src/search.js:182
-msgid "Collections"
-msgstr "ਭੰਡਾਰ"
-
-#: ../src/search.js:186
+#: ../src/search.js:196
 msgid "PDF Documents"
 msgstr "PDF ਡੌਕੂਮੈਂਟ"
 
-#: ../src/search.js:190
+#: ../src/search.js:209
 msgid "Presentations"
 msgstr "ਪਰਿਜੈੱਟੇਸ਼ਨ"
 
-#: ../src/search.js:193
+#: ../src/search.js:212
 msgid "Spreadsheets"
 msgstr "ਸਪਰੈਡਸ਼ੀਟ"
 
-#: ../src/search.js:196
+#: ../src/search.js:215
 msgid "Text Documents"
 msgstr "ਟੈਕਸਟ ਡੌਕੂਮੈਂਟ"
 
-#: ../src/search.js:262
+#: ../src/search.js:220
+#| msgid "Bookmarks"
+msgid "e-Books"
+msgstr "ਈ-ਬੁੱਕ"
+
+#: ../src/search.js:224
+msgid "Comics"
+msgstr "ਕਾਮਿਕ"
+
+#: ../src/search.js:319
 msgid "Match"
 msgstr "ਮਿਲਦਾ"
 
-#: ../src/search.js:268
+#: ../src/search.js:325
 msgctxt "Search Filter"
 msgid "Title"
 msgstr "ਟਾਈਟਲ"
 
-#: ../src/search.js:271
+#: ../src/search.js:328
 msgctxt "Search Filter"
 msgid "Author"
 msgstr "ਲੇਖਕ"
 
-#: ../src/search.js:417
+#: ../src/search.js:488
 msgid "Sources"
 msgstr "ਸਰੋਤ"
 
@@ -548,11 +662,11 @@ msgstr "ਪਰਿੰਟ ਕਰੋ"
 msgid "Delete"
 msgstr "ਹਟਾਓ"
 
-#: ../src/selections.js:762
+#: ../src/selections.js:763
 msgid "Share"
 msgstr "ਸਾਂਝਾ"
 
-#: ../src/selections.js:772
+#: ../src/selections.js:774
 msgid "Add to Collection"
 msgstr "ਭੰਡਾਰ ਵਿੱਚ ਸ਼ਾਮਲ"
 
@@ -626,61 +740,78 @@ msgstr "ਤੁਸੀਂ %s ਲਈ ਵਰਤੋਂ ਦੀ ਪੁੱਛ ਸਕਦ�
 msgid "The document was not updated"
 msgstr "ਡੌਕੂਮੈਂਟ ਅੱਪਡੇਟ ਨਹੀਂ ਹੈ"
 
-#: ../src/shellSearchProvider.js:294
+#: ../src/shellSearchProvider.js:293
 msgid "Untitled Document"
 msgstr "ਬਿਨ-ਨਾਂ ਡੌਕੂਮੈਂਟ"
 
-#: ../src/trackerController.js:170
+#: ../src/trackerController.js:172
 msgid "Unable to fetch the list of documents"
 msgstr "ਡੌਕੂਮੈਂਟ ਦੀ ਲਿਸਟ ਲੈਣ ਲਈ ਅਸਮਰੱਥ"
 
-#: ../src/view.js:62 ../src/view.js:93
-msgid "Load More"
-msgstr "ਹੋਰ ਲੋਡ"
+#: ../src/view.js:243
+#| msgid "No Documents Found"
+msgid "No Books Found"
+msgstr "ਕੋਈ ਕਿਤਾਬ ਨਹੀਂ ਲੱਭੀ"
 
-#: ../src/view.js:307
+#: ../src/view.js:244
+msgid "No Documents Found"
+msgstr "ਕੋਈ ਡੌਕੂਮੈਂਟ ਨਹੀਂ ਲੱਭਿਆ"
+
+#: ../src/view.js:266
+#, javascript-format
+msgid "You can add your online accounts in %s"
+msgstr "ਤੁਸੀਂ %s ਵਿੱਚ ਆਪਣੇ ਆਨਲਾਈਨ ਅਕਾਊਂਟ ਸ਼ਾਮਿਲ ਕਰ ਸਕਦੇ ਹੋ"
+
+#: ../src/view.js:270
+msgid "Settings"
+msgstr "ਸੈਟਿੰਗ"
+
+#: ../src/view.js:457
 msgid "Yesterday"
 msgstr "ਕੱਲ੍ਹ"
 
-#: ../src/view.js:309
+#: ../src/view.js:459
 #, javascript-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
 msgstr[0] "%d ਦਿਨ ਪਹਿਲਾਂ"
 msgstr[1] "%d ਦਿਨ ਪਹਿਲਾਂ"
 
-#: ../src/view.js:313
+#: ../src/view.js:463
 msgid "Last week"
 msgstr "ਪਿਛਲੇ ਹਫ਼ਤੇ"
 
-#: ../src/view.js:315
+#: ../src/view.js:465
 #, javascript-format
 msgid "%d week ago"
 msgid_plural "%d weeks ago"
 msgstr[0] "%d ਹਫ਼ਤਾ ਪਹਿਲਾਂ"
 msgstr[1] "%d ਹਫ਼ਤੇ ਪਹਿਲਾਂ"
 
-#: ../src/view.js:319
+#: ../src/view.js:469
 msgid "Last month"
 msgstr "ਪਿਛਲੇ ਮਹੀਨੇ"
 
-#: ../src/view.js:321
+#: ../src/view.js:471
 #, javascript-format
 msgid "%d month ago"
 msgid_plural "%d months ago"
 msgstr[0] "%d ਮਹੀਨਾ ਪਹਿਲਾਂ"
 msgstr[1] "%d ਮਹੀਨੇ ਪਹਿਲਾਂ"
 
-#: ../src/view.js:325
+#: ../src/view.js:475
 msgid "Last year"
 msgstr "ਪਿਛਲੇ ਸਾਲ"
 
-#: ../src/view.js:327
+#: ../src/view.js:477
 #, javascript-format
 msgid "%d year ago"
 msgid_plural "%d years ago"
 msgstr[0] "%d ਸਾਲ ਪਹਿਲਾਂ"
 msgstr[1] "%d ਸਾਲ ਪਹਿਲਾਂ"
+
+#~ msgid "Load More"
+#~ msgstr "ਹੋਰ ਲੋਡ"
 
 #~| msgid ""
 #~| "<li>View recent local and online documents</li> <li>Access your Google, "
@@ -734,9 +865,6 @@ msgstr[1] "%d ਸਾਲ ਪਹਿਲਾਂ"
 #~ msgid "Cannot find \"unoconv\", please check your LibreOffice installation"
 #~ msgstr ""
 #~ "\"unoconv\" ਨਹੀ ਲੱਭਿਆ ਜਾ ਸਕਦਾ, ਆਪਣੀ ਲਿਬਰੇਆਫਿਸ (LibreOffice) ਇੰਸਟਾਲੇਸ਼ਨ ਜਾਂਚੋ"
-
-#~ msgid "New and Recent"
-#~ msgstr "ਨਵੇਂ ਅਤੇ ਤਾਜ਼ਾ"
 
 #~ msgid "Load %d more document"
 #~ msgid_plural "Load %d more documents"
