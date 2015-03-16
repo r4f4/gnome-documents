@@ -185,7 +185,7 @@ const Embed = new Lang.Class({
 
     _onActivateResult: function() {
         let windowMode = Application.modeController.getWindowMode();
-        let view = this._getViewFromMode(mode);
+        let view = this._getViewFromMode(windowMode);
         view.activateResult();
     },
 
