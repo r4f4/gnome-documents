@@ -6,25 +6,26 @@
 # Fran Diéguez <frandieguez@gnome.org>, 2011, 2012.
 # Leandro Regueiro <leandro.regueiro@gmail.com>, 2012.
 # Fran Dieguez <frandieguez@gnome.org>, 2012, 2013, 2014, 2015.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-documents master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-22 02:38+0100\n"
-"PO-Revision-Date: 2015-02-22 02:39+0200\n"
+"POT-Creation-Date: 2015-03-18 00:45+0100\n"
+"PO-Revision-Date: 2015-03-18 00:46+0100\n"
 "Last-Translator: Fran Dieguez <frandieguez@gnome.org>\n"
-"Language-Team: gnome-l10n-gl@gnome.org\n"
+"Language-Team: Galician <gnome-l10n-gl@gnome.org>\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Virtaal 0.7.1\n"
+"X-Generator: Gtranslator 2.91.6\n"
 "X-Project-Style: gnome\n"
 
 #: ../data/org.gnome.Books.appdata.xml.in.h:1
 #: ../data/org.gnome.Books.desktop.in.h:1 ../src/application.js:132
-#: ../src/mainWindow.js:328
+#: ../src/lib/gd-utils.c:418
 msgid "Books"
 msgstr "Libros"
 
@@ -128,7 +129,7 @@ msgstr "Indica se o aplicativo está en modo noite."
 
 #: ../data/org.gnome.Documents.appdata.xml.in.h:1
 #: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:128
-#: ../src/mainWindow.js:52 ../src/mainWindow.js:323
+#: ../src/lib/gd-utils.c:411 ../src/mainWindow.js:52
 msgid "Documents"
 msgstr "Documentos"
 
@@ -189,7 +190,7 @@ msgid "Failed to print document"
 msgstr "Non foi posíbel imprimir o documento"
 
 #. Translators: this refers to local documents
-#: ../src/documents.js:668 ../src/search.js:493
+#: ../src/documents.js:668 ../src/search.js:498
 msgid "Local"
 msgstr "Locais"
 
@@ -204,69 +205,76 @@ msgstr "GNOME"
 msgid "Getting Started with Documents"
 msgstr "Comezar con Documentos"
 
-#: ../src/documents.js:712 ../src/documents.js:893 ../src/documents.js:956
-#: ../src/documents.js:1064
+#: ../src/documents.js:712 ../src/documents.js:904 ../src/documents.js:967
+#: ../src/documents.js:1075
 msgid "Collection"
 msgstr "Colección"
 
 #. overridden
-#: ../src/documents.js:772
+#: ../src/documents.js:783
 msgid "Google Docs"
 msgstr "Google Docs"
 
-#: ../src/documents.js:773
+#: ../src/documents.js:784
 msgid "Google"
 msgstr "Google"
 
-#: ../src/documents.js:895 ../src/documents.js:1066
+#: ../src/documents.js:906 ../src/documents.js:1077
 msgid "Spreadsheet"
 msgstr "Folla de cálculo"
 
-#: ../src/documents.js:897 ../src/documents.js:1068 ../src/presentation.js:47
+#: ../src/documents.js:908 ../src/documents.js:1079 ../src/presentation.js:47
 msgid "Presentation"
 msgstr "Presentación"
 
-#: ../src/documents.js:899 ../src/documents.js:1070
+#: ../src/documents.js:910 ../src/documents.js:1081
 msgid "e-Book"
 msgstr "Libro dixital"
 
-#: ../src/documents.js:901 ../src/documents.js:1072
+#: ../src/documents.js:912 ../src/documents.js:1083
 msgid "Document"
 msgstr "Documento"
 
 #. overridden
-#: ../src/documents.js:935
+#: ../src/documents.js:946
 msgid "ownCloud"
 msgstr "ownCloud"
 
 #. overridden
-#: ../src/documents.js:998 ../src/documents.js:999
+#: ../src/documents.js:1009 ../src/documents.js:1010
 msgid "OneDrive"
 msgstr "OneDrive"
 
-#: ../src/documents.js:1236
+#: ../src/documents.js:1254
 msgid "Please check the network connection."
 msgstr "Comprobe a conexión á rede."
 
-#: ../src/documents.js:1239
+#: ../src/documents.js:1257
 msgid "Please check the network proxy settings."
 msgstr "Comprobe as preferencias do proxy da rede."
 
-#: ../src/documents.js:1242
+#: ../src/documents.js:1260
 msgid "Unable to sign in to the document service."
 msgstr "Non foi posíbel iniciar sesión no servizo de documentos."
 
-#: ../src/documents.js:1245
+#: ../src/documents.js:1263
 msgid "Unable to locate this document."
 msgstr "Non foi posíbel atopar este documento."
 
-#: ../src/documents.js:1248
+#: ../src/documents.js:1266
 #, javascript-format
 msgid "Hmm, something is fishy (%d)."
 msgstr "Hmm, algo cheira mal (%d)."
 
+#: ../src/documents.js:1273
+msgid ""
+"You are using a preview of Books. Full viewing capabilities are coming soon!"
+msgstr ""
+"Está usando unha versión preliminar de Libros. As capacidades de "
+"visualización completas chegarán pronto!"
+
 #. Translators: %s is the title of a document
-#: ../src/documents.js:1266
+#: ../src/documents.js:1294
 #, javascript-format
 msgid "Oops! Unable to load “%s”"
 msgstr "Oops! Non foi posíbel cargar «%s»"
@@ -275,11 +283,11 @@ msgstr "Oops! Non foi posíbel cargar «%s»"
 msgid "View"
 msgstr "Ver"
 
-#: ../src/embed.js:109
+#: ../src/embed.js:108
 msgid "Recent"
 msgstr "Recentes"
 
-#: ../src/embed.js:112 ../src/search.js:192 ../src/search.js:201
+#: ../src/embed.js:111 ../src/search.js:192 ../src/search.js:201
 msgid "Collections"
 msgstr "Coleccións"
 
@@ -312,7 +320,7 @@ msgstr "Non hai marcadores"
 msgid "Loading…"
 msgstr "Cargando…"
 
-#: ../src/lib/gd-places-bookmarks.c:656 ../src/preview.js:599
+#: ../src/lib/gd-places-bookmarks.c:656 ../src/preview.js:601
 msgid "Bookmarks"
 msgstr "Marcadores"
 
@@ -323,6 +331,20 @@ msgstr "Non hai táboa de contidos"
 #: ../src/lib/gd-places-links.c:518
 msgid "Contents"
 msgstr "Contidos"
+
+#: ../src/lib/gd-utils.c:412
+msgid "A document manager application"
+msgstr "Un aplicativo para xestionar documentos"
+
+#: ../src/lib/gd-utils.c:419
+msgid "An e-books manager application"
+msgstr "Un aplicativo para xestionar libros dixitais"
+
+#: ../src/lib/gd-utils.c:427
+msgid "translator-credits"
+msgstr ""
+"Fran Dieguez <frandieguez@gnome.org>, 2012-2013.\n"
+"Leandro Regueiro <leandro.regueiro@gmail.com>, 2012."
 
 #: ../src/mainToolbar.js:79
 msgid "Search"
@@ -359,51 +381,46 @@ msgstr "Cancelar"
 msgid "Select Items"
 msgstr "Seleccionar elementos"
 
-#: ../src/mainWindow.js:321
-msgid "translator-credits"
-msgstr ""
-"Fran Dieguez <frandieguez@gnome.org>, 2012-2013.\n"
-"Leandro Regueiro <leandro.regueiro@gmail.com>, 2012."
+#. Translators: only one item has been deleted and %s is its name
+#: ../src/notifications.js:54
+#, javascript-format
+msgid "“%s” deleted"
+msgstr "“%s” eliminado"
 
-#: ../src/mainWindow.js:324
-msgid "A document manager application"
-msgstr "Un aplicativo para xestionar documentos"
+#. Translators: one or more items might have been deleted, and %d
+#. is the count
+#: ../src/notifications.js:58
+#, javascript-format
+msgid "%d item deleted"
+msgid_plural "%d items deleted"
+msgstr[0] "%d elemento eliminado"
+msgstr[1] "%d elementos eliminados"
 
-#: ../src/mainWindow.js:329
-msgid "An e-books manager application"
-msgstr "Un aplicativo para xestionar libros dixitais"
-
-#: ../src/notifications.js:50
-msgid "Selected item has been deleted"
-msgid_plural "Selected items have been deleted"
-msgstr[0] "O elemento seleccionado foi eliminado"
-msgstr[1] "Os elementos seleccionados foron eliminados"
-
-#: ../src/notifications.js:57
+#: ../src/notifications.js:67
 msgid "Undo"
 msgstr "Desfacer"
 
-#: ../src/notifications.js:157
+#: ../src/notifications.js:167
 #, javascript-format
 msgid "Printing “%s”: %s"
 msgstr "Imprimindo «%s»: %s"
 
-#: ../src/notifications.js:213
+#: ../src/notifications.js:223
 msgid "Your documents are being indexed"
 msgstr "Estanse indexando os seus documentos"
 
-#: ../src/notifications.js:214
+#: ../src/notifications.js:224
 msgid "Some documents might not be available during this process"
 msgstr "Algúns documentos poderían non estar dispoñíbeis durante este proceso"
 
 #. Translators: %s refers to an online account provider, e.g.
 #. "Google", or "Windows Live".
-#: ../src/notifications.js:236
+#: ../src/notifications.js:246
 #, javascript-format
 msgid "Fetching documents from %s"
 msgstr "Obtendo os documentos desde %s"
 
-#: ../src/notifications.js:238
+#: ../src/notifications.js:248
 msgid "Fetching documents from online accounts"
 msgstr "Obtendo os documentos das contas en liña"
 
@@ -449,21 +466,21 @@ msgstr "Secundaria"
 msgid "Present On"
 msgstr "Presentación activada"
 
-#: ../src/preview.js:607
+#: ../src/preview.js:609
 msgid "Bookmark this page"
 msgstr "Marcar esta páxina"
 
 #. Translators: this is the Open action in a context menu
-#: ../src/preview.js:849 ../src/selections.js:859
+#: ../src/preview.js:870 ../src/selections.js:859
 #, javascript-format
 msgid "Open with %s"
 msgstr "Abrir con %s"
 
-#: ../src/preview.js:912
+#: ../src/preview.js:933
 msgid "Find Previous"
 msgstr "Buscar anterior"
 
-#: ../src/preview.js:919
+#: ../src/preview.js:940
 msgid "Find Next"
 msgstr "Buscar seguinte"
 
@@ -583,8 +600,8 @@ msgstr "Categoría"
 
 #. Translators: this refers to new and recent documents
 #. Translators: this refers to documents
-#: ../src/search.js:120 ../src/search.js:189 ../src/search.js:317
-#: ../src/search.js:487
+#: ../src/search.js:120 ../src/search.js:189 ../src/search.js:322
+#: ../src/search.js:492
 msgid "All"
 msgstr "Todos"
 
@@ -631,23 +648,23 @@ msgstr "Bandas deseñadas"
 
 #. Translators: this is a verb that refers to "All", "Title" and "Author",
 #. as in "Match All", "Match Title" and "Match Author"
-#: ../src/search.js:314
+#: ../src/search.js:319
 msgid "Match"
 msgstr "Coincidir"
 
 #. Translators: "Title" refers to "Match Title" when searching
-#: ../src/search.js:320
+#: ../src/search.js:325
 msgctxt "Search Filter"
 msgid "Title"
 msgstr "Título"
 
 #. Translators: "Author" refers to "Match Author" when searching
-#: ../src/search.js:323
+#: ../src/search.js:328
 msgctxt "Search Filter"
 msgid "Author"
 msgstr "Autor"
 
-#: ../src/search.js:483
+#: ../src/search.js:488
 msgid "Sources"
 msgstr "Fontes"
 
@@ -770,65 +787,65 @@ msgstr "Documento sen título"
 msgid "Unable to fetch the list of documents"
 msgstr "Non foi posíbel obter a lista de documentos"
 
-#: ../src/view.js:242
+#: ../src/view.js:249
 msgid "No Books Found"
 msgstr "Non se atoparon libros"
 
-#: ../src/view.js:243
+#: ../src/view.js:250
 msgid "No Documents Found"
 msgstr "Non se atoparon documentos"
 
 #. Translators: %s here is "Settings", which is in a separate string due to
 #. markup, and should be translated only in the context of this sentence
-#: ../src/view.js:265
+#: ../src/view.js:272
 #, javascript-format
 msgid "You can add your online accounts in %s"
 msgstr "Pode engadir as súas contas en liña en %s"
 
 #. Translators: this should be translated in the context of the
 #. "You can add your online accounts in Settings" sentence above
-#: ../src/view.js:269
+#: ../src/view.js:276
 msgid "Settings"
 msgstr "Preferencias"
 
-#: ../src/view.js:503
+#: ../src/view.js:463
 msgid "Yesterday"
 msgstr "Onte"
 
-#: ../src/view.js:505
+#: ../src/view.js:465
 #, javascript-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
 msgstr[0] "fai %d día"
 msgstr[1] "fai %d días"
 
-#: ../src/view.js:509
+#: ../src/view.js:469
 msgid "Last week"
 msgstr "Última semana"
 
-#: ../src/view.js:511
+#: ../src/view.js:471
 #, javascript-format
 msgid "%d week ago"
 msgid_plural "%d weeks ago"
 msgstr[0] "fai %d semana"
 msgstr[1] "fai %d semanas"
 
-#: ../src/view.js:515
+#: ../src/view.js:475
 msgid "Last month"
 msgstr "Último mes"
 
-#: ../src/view.js:517
+#: ../src/view.js:477
 #, javascript-format
 msgid "%d month ago"
 msgid_plural "%d months ago"
 msgstr[0] "fai %d mes"
 msgstr[1] "fai %d meses"
 
-#: ../src/view.js:521
+#: ../src/view.js:481
 msgid "Last year"
 msgstr "Último ano"
 
-#: ../src/view.js:523
+#: ../src/view.js:483
 #, javascript-format
 msgid "%d year ago"
 msgid_plural "%d years ago"
