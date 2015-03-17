@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2011, 2013 Red Hat, Inc.
+ * Copyright (c) 2011, 2013, 2015 Red Hat, Inc.
  *
  * Gnome Documents is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by the
@@ -215,24 +215,33 @@ const OverviewToolbar = new Lang.Class({
         this.addSearchButton();
     },
 
-    _checkCollectionBackButton: function() {
+    _checkCollectionWidgets: function() {
+        let customTitle;
         let item = Application.documentManager.getActiveCollection();
 
-        if (item && !this._collBackButton) {
-            this._collBackButton = this.addBackButton();
-            this._collBackButton.show();
-            this._collBackButton.connect('clicked', Lang.bind(this,
-                function() {
-                    Application.documentManager.activatePreviousCollection();
-                }));
-        } else if (!item && this._collBackButton) {
-            this._collBackButton.destroy();
-            this._collBackButton = null;
+        if (item) {
+            customTitle = null;
+            if (!this._collBackButton) {
+                this._collBackButton = this.addBackButton();
+                this._collBackButton.show();
+                this._collBackButton.connect('clicked', Lang.bind(this,
+                    function() {
+                        Application.documentManager.activatePreviousCollection();
+                    }));
+            }
+        } else {
+            customTitle = this._stackSwitcher;
+            if (this._collBackButton) {
+                this._collBackButton.destroy();
+                this._collBackButton = null;
+            }
         }
+
+        this.toolbar.set_custom_title(customTitle);
     },
 
     _onActiveCollectionChanged: function() {
-        this._checkCollectionBackButton();
+        this._checkCollectionWidgets();
         this._setToolbarTitle();
         Application.application.change_action_state('search', GLib.Variant.new('b', false));
     },
@@ -240,7 +249,7 @@ const OverviewToolbar = new Lang.Class({
     _populateForOverview: function() {
         this.toolbar.set_show_close_button(true);
         this.toolbar.set_custom_title(this._stackSwitcher);
-        this._checkCollectionBackButton();
+        this._checkCollectionWidgets();
 
         let selectionButton = new Gtk.Button({ image: new Gtk.Image ({ icon_name: 'object-select-symbolic' }),
                                                tooltip_text: _("Select Items") });
