@@ -239,7 +239,10 @@ const OverviewSearchbar = new Lang.Class({
         this._searchEntry.set_text(string);
     },
 
-    _onActiveCollectionChanged: function() {
+    _onActiveCollectionChanged: function(manager, collection) {
+        if (!collection)
+            return;
+
         let searchType = Application.searchTypeManager.getActiveItem();
 
         if (Application.searchController.getString() != '' ||
