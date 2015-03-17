@@ -243,7 +243,6 @@ const OverviewToolbar = new Lang.Class({
     _onActiveCollectionChanged: function() {
         this._checkCollectionWidgets();
         this._setToolbarTitle();
-        Application.application.change_action_state('search', GLib.Variant.new('b', false));
     },
 
     _populateForOverview: function() {
