@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2011, 2012, 2014 Red Hat, Inc.
+ * Copyright (c) 2011, 2012, 2014, 2015 Red Hat, Inc.
  *
  * Gnome Documents is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by the
@@ -43,6 +43,17 @@ function initSearch(context) {
     context.searchController = new SearchController(context);
     context.queryBuilder = new Query.QueryBuilder(context);
 };
+
+const SearchState = new Lang.Class({
+    Name: 'SearchState',
+
+    _init: function(searchMatch, searchType, source, str) {
+        this.searchMatch = searchMatch;
+        this.searchType = searchType;
+        this.source = source;
+        this.str = str;
+    }
+});
 
 const SearchController = new Lang.Class({
     Name: 'SearchController',

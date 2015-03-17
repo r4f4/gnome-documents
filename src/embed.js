@@ -80,6 +80,7 @@ const Embed = new Lang.Class({
     _init: function() {
         this._noResultsChangeId = 0;
         this._loadShowId = 0;
+        this._searchState = null;
 
         this.widget = new Gtk.Box({ orientation: Gtk.Orientation.VERTICAL,
                                     visible: true });
@@ -308,7 +309,37 @@ const Embed = new Lang.Class({
         }
     },
 
+    _restoreSearch: function() {
+        if (!this._searchState)
+            return;
+
+        Application.searchMatchManager.setActiveItem(this._searchState.searchMatch);
+        Application.searchTypeManager.setActiveItem(this._searchState.searchType);
+        Application.sourceManager.setActiveItem(this._searchState.source);
+        Application.searchController.setString(this._searchState.str);
+        this._searchState = null;
+    },
+
+    _saveSearch: function() {
+        if (this._searchState)
+            return;
+
+        this._searchState = new Search.SearchState(Application.searchMatchManager.getActiveItem(),
+                                                   Application.searchTypeManager.getActiveItem(),
+                                                   Application.sourceManager.getActiveItem(),
+                                                   Application.searchController.getString());
+    },
+
     _onActiveItemChanged: function(manager, doc) {
+        let windowMode = Application.modeController.getWindowMode();
+        let showSearch = (windowMode == WindowMode.WindowMode.PREVIEW && !doc
+                          || windowMode == WindowMode.WindowMode.SEARCH && !doc);
+        if (showSearch)
+            this._restoreSearch();
+        else
+            this._saveSearch();
+
+        Application.application.change_action_state('search', GLib.Variant.new('b', showSearch));
     },
 
     _clearLoadTimer: function() {
