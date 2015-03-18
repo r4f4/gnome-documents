@@ -194,7 +194,6 @@ const OverviewSearchbar = new Lang.Class({
 
         this._searchEntry.connect('destroy', Lang.bind(this,
             function() {
-                this._dropdown.hide();
                 Application.searchController.disconnect(this._searchChangedId);
             }));
 
