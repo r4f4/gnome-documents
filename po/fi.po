@@ -11,8 +11,8 @@ msgstr ""
 "Project-Id-Version: gnome-documents master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-03-03 08:42+0000\n"
-"PO-Revision-Date: 2015-03-03 21:52+0200\n"
+"POT-Creation-Date: 2015-03-14 07:50+0000\n"
+"PO-Revision-Date: 2015-03-14 12:53+0200\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos+l10n@iki.fi>\n"
 "Language-Team: suomi <gnome-fi-laatu@lists.sourceforge.net>\n"
 "Language: fi\n"
@@ -26,30 +26,22 @@ msgstr ""
 #: ../data/org.gnome.Books.appdata.xml.in.h:1
 #: ../data/org.gnome.Books.desktop.in.h:1 ../src/application.js:132
 #: ../src/lib/gd-utils.c:418
-#| msgid "Bookmarks"
 msgid "Books"
 msgstr "Kirjat"
 
 #: ../data/org.gnome.Books.appdata.xml.in.h:2
-#| msgid "A document manager application for GNOME"
 msgid "An e-book manager application for GNOME"
-msgstr "Sähkökirjojen hallintasovellus Gnomelle"
+msgstr "Kirjojen hallintasovellus Gnomelle"
 
 #: ../data/org.gnome.Books.appdata.xml.in.h:3
-#| msgid ""
-#| "A simple application to access, organize and share your documents on "
-#| "GNOME. It is meant to be a simple and elegant replacement for using a "
-#| "file manager to deal with documents. Seamless cloud integration is "
-#| "offered through GNOME Online Accounts."
 msgid ""
 "A simple application to access and organize your e-books on GNOME. It is "
 "meant to be a simple and elegant replacement for using a file manager to "
 "deal with e-books."
 msgstr ""
-"Yksinkertainen Gnome-sovellus sähkökirjojen käyttöä, organisointia ja "
-"jakamista varten. Sen on tarkoitus korvata tiedostonhallinta sähkökirjoihin "
-"liittyvässä työskentelyssä. Saumattoman pilvi-integraation tarjoaa Gnomen "
-"verkkotilit."
+"Yksinkertainen Gnome-sovellus kirjojen käyttöä, organisointia ja jakamista "
+"varten. Sen on tarkoitus korvata tiedostonhallinta kirjoihin liittyvässä "
+"käytössä. Saumattoman pilvi-integraation tarjoaa Gnomen verkkotilit."
 
 #: ../data/org.gnome.Books.appdata.xml.in.h:4
 #: ../data/org.gnome.Documents.appdata.xml.in.h:4
@@ -58,21 +50,19 @@ msgstr "Sen avulla voit:"
 
 #: ../data/org.gnome.Books.appdata.xml.in.h:5
 msgid "View recent e-books"
-msgstr "Katsella viimeisimpiä sähkökirjoja"
+msgstr "Katsella viimeisimpiä kirjoja"
 
 #: ../data/org.gnome.Books.appdata.xml.in.h:6
-#| msgid "Search through documents"
 msgid "Search through e-books"
-msgstr "Etsiä sähkökirjojen sisällöstä"
+msgstr "Etsiä kirjojen sisällöstä"
 
 #: ../data/org.gnome.Books.appdata.xml.in.h:7
-#| msgid "View documents fullscreen"
 msgid "View e-books fullscreen"
-msgstr "Katsella sähkökirjoja koko näytön tilassa"
+msgstr "Katsella kirjoja koko näytön tilassa"
 
 #: ../data/org.gnome.Books.appdata.xml.in.h:8
 msgid "Print e-books"
-msgstr "Tulostaa sähkökirjoja"
+msgstr "Tulostaa kirjoja"
 
 #: ../data/org.gnome.Books.appdata.xml.in.h:9
 #: ../data/org.gnome.Documents.appdata.xml.in.h:12
@@ -80,14 +70,14 @@ msgid "Allow opening full featured editor for non-trivial changes"
 msgstr "Avata erillisen muokkaimen suuria muutoksia varten"
 
 #: ../data/org.gnome.Books.desktop.in.h:2
-#| msgid "Access, manage and share documents"
 msgid "Access, manage and share books"
-msgstr "Käytä, hallitse ja jaa sähkökirjoja"
+msgstr "Käytä, hallitse ja jaa kirjoja"
 
 #: ../data/org.gnome.Books.desktop.in.h:3
 msgid "Books;Comics;ePub;PDF;"
 msgstr ""
 "Books;Comics;ePub;PDF;Kirjat;Sarjakuvat;Sarjikset;Dokumentit;Asiakirjat;"
+"Sähkökirjat;"
 
 #: ../data/org.gnome.books.gschema.xml.h:1
 #: ../data/org.gnome.documents.gschema.xml.h:1
@@ -213,65 +203,72 @@ msgstr "Gnome"
 msgid "Getting Started with Documents"
 msgstr "Asiakirjat ja käytön aloitus"
 
-#: ../src/documents.js:712 ../src/documents.js:893 ../src/documents.js:956
-#: ../src/documents.js:1064
+#: ../src/documents.js:712 ../src/documents.js:904 ../src/documents.js:967
+#: ../src/documents.js:1075
 msgid "Collection"
 msgstr "Kokoelma"
 
-#: ../src/documents.js:772
+#: ../src/documents.js:783
 msgid "Google Docs"
 msgstr "Google Docs"
 
-#: ../src/documents.js:773
+#: ../src/documents.js:784
 msgid "Google"
 msgstr "Google"
 
-#: ../src/documents.js:895 ../src/documents.js:1066
+#: ../src/documents.js:906 ../src/documents.js:1077
 msgid "Spreadsheet"
 msgstr "Taulukko"
 
-#: ../src/documents.js:897 ../src/documents.js:1068 ../src/presentation.js:47
+#: ../src/documents.js:908 ../src/documents.js:1079 ../src/presentation.js:47
 msgid "Presentation"
 msgstr "Esitys"
 
-#: ../src/documents.js:899 ../src/documents.js:1070
+#: ../src/documents.js:910 ../src/documents.js:1081
 msgid "e-Book"
-msgstr "Sähkökirja"
+msgstr "Kirja"
 
-#: ../src/documents.js:901 ../src/documents.js:1072
+#: ../src/documents.js:912 ../src/documents.js:1083
 msgid "Document"
 msgstr "Asiakirja"
 
-#: ../src/documents.js:935
+#: ../src/documents.js:946
 msgid "ownCloud"
 msgstr "ownCloud"
 
-#: ../src/documents.js:998 ../src/documents.js:999
+#: ../src/documents.js:1009 ../src/documents.js:1010
 msgid "OneDrive"
 msgstr "OneDrive"
 
-#: ../src/documents.js:1236
+#: ../src/documents.js:1247
 msgid "Please check the network connection."
 msgstr "Tarkista verkkoyhteys."
 
-#: ../src/documents.js:1239
+#: ../src/documents.js:1250
 msgid "Please check the network proxy settings."
 msgstr "Tarkista verkkoyhteyden välityspalvelimen asetukset."
 
-#: ../src/documents.js:1242
+#: ../src/documents.js:1253
 msgid "Unable to sign in to the document service."
 msgstr "Asiakirjapalveluun kirjautuminen epäonnistui."
 
-#: ../src/documents.js:1245
+#: ../src/documents.js:1256
 msgid "Unable to locate this document."
 msgstr "Tämän asiakirjan paikantaminen epäonnistui."
 
-#: ../src/documents.js:1248
+#: ../src/documents.js:1259
 #, javascript-format
 msgid "Hmm, something is fishy (%d)."
 msgstr "Hmm, jokin meni pieleen (%d)."
 
 #: ../src/documents.js:1266
+msgid ""
+"You are using a preview of Books. Full viewing capabilities are coming soon!"
+msgstr ""
+"Käytössäsi on Kirjat-sovelluksen esiversio. Parannetut katseluominaisuudet "
+"tulevat pian!"
+
+#: ../src/documents.js:1287
 #, javascript-format
 msgid "Oops! Unable to load “%s”"
 msgstr "Hups! Kohteen \"%s\" lataus epäonnistui"
@@ -280,12 +277,11 @@ msgstr "Hups! Kohteen \"%s\" lataus epäonnistui"
 msgid "View"
 msgstr "Näkymä"
 
-#: ../src/embed.js:109
-#| msgid "New and Recent"
+#: ../src/embed.js:108
 msgid "Recent"
 msgstr "Viimeisimmät"
 
-#: ../src/embed.js:112 ../src/search.js:192 ../src/search.js:201
+#: ../src/embed.js:111 ../src/search.js:192 ../src/search.js:201
 msgid "Collections"
 msgstr "Kokoelmat"
 
@@ -318,7 +314,7 @@ msgstr "Ei kirjanmerkkejä"
 msgid "Loading…"
 msgstr "Ladataan…"
 
-#: ../src/lib/gd-places-bookmarks.c:656 ../src/preview.js:599
+#: ../src/lib/gd-places-bookmarks.c:656 ../src/preview.js:601
 msgid "Bookmarks"
 msgstr "Kirjanmerkit"
 
@@ -335,9 +331,8 @@ msgid "A document manager application"
 msgstr "Asiakirjojen hallintasovellus"
 
 #: ../src/lib/gd-utils.c:419
-#| msgid "A document manager application"
 msgid "An e-books manager application"
-msgstr "Sähkökirjojen hallintasovellus"
+msgstr "Kirjojen hallintasovellus"
 
 #: ../src/lib/gd-utils.c:427
 msgid "translator-credits"
@@ -378,37 +373,45 @@ msgstr "Peru"
 msgid "Select Items"
 msgstr "Valitse kohteet"
 
-#: ../src/notifications.js:50
-msgid "Selected item has been deleted"
-msgid_plural "Selected items have been deleted"
-msgstr[0] "Valittu kohde on poistettu"
-msgstr[1] "Valitut kohteet on poistettu"
+#: ../src/notifications.js:54
+#, javascript-format
+msgid "“%s” deleted"
+msgstr "“%s” poistettu"
 
-#: ../src/notifications.js:57
+#: ../src/notifications.js:58
+#, javascript-format
+#| msgid "Selected item has been deleted"
+#| msgid_plural "Selected items have been deleted"
+msgid "%d item deleted"
+msgid_plural "%d items deleted"
+msgstr[0] "%d kohde poistettu"
+msgstr[1] "%d kohdetta poistettu"
+
+#: ../src/notifications.js:67
 msgid "Undo"
 msgstr "Kumoa"
 
-#: ../src/notifications.js:157
+#: ../src/notifications.js:167
 #, javascript-format
 msgid "Printing “%s”: %s"
 msgstr "Tulostetaan “%s”: %s"
 
-#: ../src/notifications.js:213
+#: ../src/notifications.js:223
 msgid "Your documents are being indexed"
 msgstr "Asiakirjojasi indeksoidaan"
 
-#: ../src/notifications.js:214
+#: ../src/notifications.js:224
 msgid "Some documents might not be available during this process"
 msgstr ""
 "Jotkin asiakirjat eivät välttämättä ole käytettävissä tämän toimenpiteen "
 "aikana"
 
-#: ../src/notifications.js:236
+#: ../src/notifications.js:246
 #, javascript-format
 msgid "Fetching documents from %s"
 msgstr "Noudetaan asiakirjaa kohteesta %s"
 
-#: ../src/notifications.js:238
+#: ../src/notifications.js:248
 msgid "Fetching documents from online accounts"
 msgstr "Noudetaan asiakirjoja verkkotileiltä"
 
@@ -453,20 +456,20 @@ msgstr "Toissijainen"
 msgid "Present On"
 msgstr "Esitys näytöllä"
 
-#: ../src/preview.js:607
+#: ../src/preview.js:609
 msgid "Bookmark this page"
 msgstr "Lisää sivu kirjanmerkkeihin"
 
-#: ../src/preview.js:871 ../src/selections.js:859
+#: ../src/preview.js:870 ../src/selections.js:859
 #, javascript-format
 msgid "Open with %s"
 msgstr "Avaa sovelluksella %s"
 
-#: ../src/preview.js:934
+#: ../src/preview.js:933
 msgid "Find Previous"
 msgstr "Etsi edellinen"
 
-#: ../src/preview.js:941
+#: ../src/preview.js:940
 msgid "Find Next"
 msgstr "Etsi seuraava"
 
@@ -606,9 +609,8 @@ msgid "Text Documents"
 msgstr "Tekstiasiakirjat"
 
 #: ../src/search.js:220
-#| msgid "Bookmarks"
 msgid "e-Books"
-msgstr "Sähkökirjat"
+msgstr "Kirjat"
 
 #: ../src/search.js:224
 msgid "Comics"
@@ -739,62 +741,61 @@ msgstr "Nimetön asiakirja"
 msgid "Unable to fetch the list of documents"
 msgstr "Asiakirjalistauksen nouto epäonnistui"
 
-#: ../src/view.js:242
-#| msgid "No Documents Found"
+#: ../src/view.js:243
 msgid "No Books Found"
 msgstr "Kirjoja ei löytynyt"
 
-#: ../src/view.js:243
+#: ../src/view.js:244
 msgid "No Documents Found"
 msgstr "Asiakirjoja ei löytynyt"
 
-#: ../src/view.js:265
+#: ../src/view.js:266
 #, javascript-format
 msgid "You can add your online accounts in %s"
 msgstr "Voit lisätä verkkotilisi %s"
 
-#: ../src/view.js:269
+#: ../src/view.js:270
 msgid "Settings"
 msgstr "Asetukset"
 
-#: ../src/view.js:503
+#: ../src/view.js:457
 msgid "Yesterday"
 msgstr "Eilen"
 
-#: ../src/view.js:505
+#: ../src/view.js:459
 #, javascript-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
 msgstr[0] "%d päivä sitten"
 msgstr[1] "%d päivää sitten"
 
-#: ../src/view.js:509
+#: ../src/view.js:463
 msgid "Last week"
 msgstr "Viime viikolla"
 
-#: ../src/view.js:511
+#: ../src/view.js:465
 #, javascript-format
 msgid "%d week ago"
 msgid_plural "%d weeks ago"
 msgstr[0] "%d viikko sitten"
 msgstr[1] "%d viikkoa sitten"
 
-#: ../src/view.js:515
+#: ../src/view.js:469
 msgid "Last month"
 msgstr "Viime kuussa"
 
-#: ../src/view.js:517
+#: ../src/view.js:471
 #, javascript-format
 msgid "%d month ago"
 msgid_plural "%d months ago"
 msgstr[0] "%d kuukausi sitten"
 msgstr[1] "%d kuukautta sitten"
 
-#: ../src/view.js:521
+#: ../src/view.js:475
 msgid "Last year"
 msgstr "Viime vuonna"
 
-#: ../src/view.js:523
+#: ../src/view.js:477
 #, javascript-format
 msgid "%d year ago"
 msgid_plural "%d years ago"
