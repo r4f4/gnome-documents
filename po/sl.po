@@ -7,11 +7,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-documents master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-03-15 07:42+0000\n"
-"PO-Revision-Date: 2015-03-15 13:38+0100\n"
-"Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-03-23 15:21+0200\n"
+"PO-Revision-Date: 2015-03-23 15:21+0200\n"
+"Last-Translator: Yosef Or Boczko <yoseforb@gmail.com>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "Language: Slovenian\n"
 "MIME-Version: 1.0\n"
@@ -182,16 +181,20 @@ msgstr "Upravljanje, dostop in souporaba dokumentov"
 
 #: ../data/org.gnome.Documents.desktop.in.h:3
 msgid "Docs;PDF;Document;"
-msgstr "Doc;PDF;Dokumenti;Word"
+msgstr "Doc;PDF;Dokumenti;Word;"
 
 #: ../src/documents.js:631
 msgid "Failed to print document"
 msgstr "Tiskanje dokumenta je spodletelo"
 
+#. Translators: this refers to local documents
 #: ../src/documents.js:668 ../src/search.js:498
 msgid "Local"
 msgstr "Krajevno"
 
+#. Translators: Documents ships a "Getting Started with Documents"
+#. tutorial PDF. The "GNOME" string below is displayed as the author name
+#. of that document, and doesn't normally need to be translated.
 #: ../src/documents.js:695
 msgid "GNOME"
 msgstr "GNOME"
@@ -205,6 +208,7 @@ msgstr "Kako začeti s programom"
 msgid "Collection"
 msgstr "Zbirka"
 
+#. overridden
 #: ../src/documents.js:783
 msgid "Google Docs"
 msgstr "Google dokumenti"
@@ -229,43 +233,46 @@ msgstr "Elektronska slika"
 msgid "Document"
 msgstr "Dokument"
 
+#. overridden
 #: ../src/documents.js:946
 msgid "ownCloud"
 msgstr "ownCloud"
 
+#. overridden
 #: ../src/documents.js:1009 ../src/documents.js:1010
 msgid "OneDrive"
 msgstr "OneDrive"
 
-#: ../src/documents.js:1247
+#: ../src/documents.js:1254
 msgid "Please check the network connection."
 msgstr "Preveriti je treba nastavitve omrežne povezave."
 
-#: ../src/documents.js:1250
+#: ../src/documents.js:1257
 msgid "Please check the network proxy settings."
 msgstr "Preveriti je treba nastavitve posredniškega strežnika."
 
-#: ../src/documents.js:1253
+#: ../src/documents.js:1260
 msgid "Unable to sign in to the document service."
 msgstr "Ni se mogoče povezati s storitvijo dokumenta"
 
-#: ../src/documents.js:1256
+#: ../src/documents.js:1263
 msgid "Unable to locate this document."
 msgstr "Dokumenta ni mogoče najti"
 
-#: ../src/documents.js:1259
+#: ../src/documents.js:1266
 #, javascript-format
 msgid "Hmm, something is fishy (%d)."
 msgstr "Zaznana je nepravilnost (%d)."
 
-#: ../src/documents.js:1266
+#: ../src/documents.js:1273
 msgid ""
 "You are using a preview of Books. Full viewing capabilities are coming soon!"
 msgstr ""
 "Uporabljate predogled programa. Polne pregledovalne zmožnosti bodo omogočene "
 "kmalu."
 
-#: ../src/documents.js:1287
+#. Translators: %s is the title of a document
+#: ../src/documents.js:1294
 #, javascript-format
 msgid "Oops! Unable to load “%s”"
 msgstr "Napaka! Ni mogoče naložiti dokumenta “%s”."
@@ -368,15 +375,18 @@ msgstr[3] "%d izbrani"
 msgid "Cancel"
 msgstr "Prekliči"
 
-#: ../src/mainToolbar.js:246
+#: ../src/mainToolbar.js:255
 msgid "Select Items"
 msgstr "Izbor predmetov"
 
+#. Translators: only one item has been deleted and %s is its name
 #: ../src/notifications.js:54
 #, javascript-format
 msgid "“%s” deleted"
 msgstr "Predmet “%s” je izbrisan"
 
+#. Translators: one or more items might have been deleted, and %d
+#. is the count
 #: ../src/notifications.js:58
 #, javascript-format
 msgid "%d item deleted"
@@ -403,6 +413,8 @@ msgstr "Iz podatkov datotek se pripravlja kazalo"
 msgid "Some documents might not be available during this process"
 msgstr "Nekateri dokumenti med opravilom lahko niso na voljo"
 
+#. Translators: %s refers to an online account provider, e.g.
+#. "Google", or "Windows Live".
 #: ../src/notifications.js:246
 #, javascript-format
 msgid "Fetching documents from %s"
@@ -433,6 +445,7 @@ msgstr "_Geslo"
 msgid "Running in presentation mode"
 msgstr "Zagnano v predstavitvenem načinu"
 
+#. Translators: "Mirrored" describes when both displays show the same view
 #: ../src/presentation.js:152
 msgid "Mirrored"
 msgstr "Zrcalno"
@@ -457,6 +470,7 @@ msgstr "Predstavi na"
 msgid "Bookmark this page"
 msgstr "Ustvari zaznamek"
 
+#. Translators: this is the Open action in a context menu
 #: ../src/preview.js:870 ../src/selections.js:859
 #, javascript-format
 msgid "Open with %s"
@@ -470,25 +484,33 @@ msgstr "Najdi predhodno"
 msgid "Find Next"
 msgstr "Najdi naslednje"
 
+#. properties button
 #: ../src/properties.js:61 ../src/resources/preview-menu.ui.h:9
 #: ../src/selections.js:769
 msgid "Properties"
 msgstr "Lastnosti"
 
+#. Title item
+#. Translators: "Title" is the label next to the document title
+#. in the properties dialog
 #: ../src/properties.js:81
 msgctxt "Document Title"
 msgid "Title"
 msgstr "Naslov"
 
+#. Translators: "Author" is the label next to the document author
+#. in the properties dialog
 #: ../src/properties.js:90
 msgctxt "Document Author"
 msgid "Author"
 msgstr "Avtor"
 
+#. Source item
 #: ../src/properties.js:97
 msgid "Source"
 msgstr "Vir"
 
+#. Date Modified item
 #: ../src/properties.js:103
 msgid "Date Modified"
 msgstr "Datum spremembe"
@@ -497,6 +519,9 @@ msgstr "Datum spremembe"
 msgid "Date Created"
 msgstr "Datum ustvaritve"
 
+#. Document type item
+#. Translators: "Type" is the label next to the document type
+#. (PDF, spreadsheet, ...) in the properties dialog
 #: ../src/properties.js:119
 msgctxt "Document Type"
 msgid "Type"
@@ -526,6 +551,8 @@ msgstr "Končaj"
 msgid "_Copy"
 msgstr "_Kopiraj"
 
+#. open button
+#. Translators: this is the Open action in a context menu
 #: ../src/resources/preview-menu.ui.h:1 ../src/selections.js:747
 #: ../src/selections.js:862
 msgid "Open"
@@ -571,19 +598,25 @@ msgstr "Odstrani izbor"
 msgid "Category"
 msgstr "Kategorija"
 
+#. Translators: this refers to new and recent documents
+#. Translators: this refers to documents
 #: ../src/search.js:120 ../src/search.js:189 ../src/search.js:322
 #: ../src/search.js:492
 msgid "All"
 msgstr "Vse"
 
+#. Translators: this refers to favorite documents
 #: ../src/search.js:126
 msgid "Favorites"
 msgstr "Priljubljeno"
 
+#. Translators: this refers to shared documents
 #: ../src/search.js:131
 msgid "Shared with you"
 msgstr "V souporabi"
 
+#. Translators: "Type" refers to a search filter on the document type
+#. (PDF, spreadsheet, ...)
 #: ../src/search.js:186
 msgctxt "Search Filter"
 msgid "Type"
@@ -613,15 +646,19 @@ msgstr "Elektronske knjige"
 msgid "Comics"
 msgstr "Stripi"
 
+#. Translators: this is a verb that refers to "All", "Title" and "Author",
+#. as in "Match All", "Match Title" and "Match Author"
 #: ../src/search.js:319
 msgid "Match"
 msgstr "Se sklada"
 
+#. Translators: "Title" refers to "Match Title" when searching
 #: ../src/search.js:325
 msgctxt "Search Filter"
 msgid "Title"
 msgstr "Naslov"
 
+#. Translators: "Author" refers to "Match Author" when searching
 #: ../src/search.js:328
 msgctxt "Search Filter"
 msgid "Author"
@@ -639,15 +676,18 @@ msgstr "Ni še določene zbirke. Najprej je treba vpisati ime za ustvarjanje."
 msgid "Create new collection"
 msgstr "Ustvari novo zbirko"
 
+#. Translators: "Collections" refers to documents in this context
 #: ../src/selections.js:640
 msgctxt "Dialog Title"
 msgid "Collections"
 msgstr "Zbirke"
 
+#. print button
 #: ../src/selections.js:752
 msgid "Print"
 msgstr "Natisni"
 
+#. trash button
 #: ../src/selections.js:757
 msgid "Delete"
 msgstr "Izbriši"
@@ -656,6 +696,7 @@ msgstr "Izbriši"
 msgid "Share"
 msgstr "Daj v souporabo"
 
+#. organize button
 #: ../src/selections.js:774
 msgid "Add to Collection"
 msgstr "Dodaj v zbirko"
@@ -664,18 +705,22 @@ msgstr "Dodaj v zbirko"
 msgid "Sharing Settings"
 msgstr "Nastavitve souporabe"
 
+#. Label for Done button in Sharing dialog
 #: ../src/sharing.js:102
 msgid "Done"
 msgstr "Končano"
 
+#. Label for widget group for changing document permissions
 #: ../src/sharing.js:135
 msgid "Document permissions"
 msgstr "Dovoljenja dokumentov"
 
+#. Label for permission change in Sharing dialog
 #: ../src/sharing.js:142 ../src/sharing.js:320
 msgid "Change"
 msgstr "Spremeni"
 
+#. Label for radiobutton that sets doc permission to private
 #: ../src/sharing.js:166 ../src/sharing.js:295
 msgid "Private"
 msgstr "Zasebno"
@@ -684,14 +729,17 @@ msgstr "Zasebno"
 msgid "Public"
 msgstr "Javno"
 
+#. Label for checkbutton that sets doc permission to Can edit
 #: ../src/sharing.js:180 ../src/sharing.js:290
 msgid "Everyone can edit"
 msgstr "Vsi lahk urejejo"
 
+#. Label for widget group used for adding new contacts
 #: ../src/sharing.js:187
 msgid "Add people"
 msgstr "Dodaj uporabnike"
 
+#. Editable text in entry field
 #: ../src/sharing.js:194
 msgid "Enter an email address"
 msgstr "Vnos elektronske pošte"
@@ -738,28 +786,32 @@ msgstr "Neimenovan dokument"
 msgid "Unable to fetch the list of documents"
 msgstr "Seznama dokumentov ni mogoče pridobiti"
 
-#: ../src/view.js:243
+#: ../src/view.js:249
 msgid "No Books Found"
 msgstr "Ni najdenih knjig"
 
-#: ../src/view.js:244
+#: ../src/view.js:250
 msgid "No Documents Found"
 msgstr "Ni najdenih dokumentov"
 
-#: ../src/view.js:266
+#. Translators: %s here is "Settings", which is in a separate string due to
+#. markup, and should be translated only in the context of this sentence
+#: ../src/view.js:272
 #, javascript-format
 msgid "You can add your online accounts in %s"
 msgstr "Spletne račune je mogoče dodati v meniju %s"
 
-#: ../src/view.js:270
+#. Translators: this should be translated in the context of the
+#. "You can add your online accounts in Settings" sentence above
+#: ../src/view.js:276
 msgid "Settings"
 msgstr "Nastavitve"
 
-#: ../src/view.js:457
+#: ../src/view.js:463
 msgid "Yesterday"
 msgstr "Včeraj"
 
-#: ../src/view.js:459
+#: ../src/view.js:465
 #, javascript-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
@@ -768,11 +820,11 @@ msgstr[1] "%d dan nazaj"
 msgstr[2] "%d dneva nazaj"
 msgstr[3] "%d dni nazaj"
 
-#: ../src/view.js:463
+#: ../src/view.js:469
 msgid "Last week"
 msgstr "Prejšnji teden"
 
-#: ../src/view.js:465
+#: ../src/view.js:471
 #, javascript-format
 msgid "%d week ago"
 msgid_plural "%d weeks ago"
@@ -781,11 +833,11 @@ msgstr[1] "%d teden nazaj"
 msgstr[2] "%d tedna nazaj"
 msgstr[3] "%d tedne nazaj"
 
-#: ../src/view.js:469
+#: ../src/view.js:475
 msgid "Last month"
 msgstr "Prejšnji mesec"
 
-#: ../src/view.js:471
+#: ../src/view.js:477
 #, javascript-format
 msgid "%d month ago"
 msgid_plural "%d months ago"
@@ -794,11 +846,11 @@ msgstr[1] "%d mesec nazaj"
 msgstr[2] "%d meseca nazaj"
 msgstr[3] "%d mesece nazaj"
 
-#: ../src/view.js:475
+#: ../src/view.js:481
 msgid "Last year"
 msgstr "Lansko leto"
 
-#: ../src/view.js:477
+#: ../src/view.js:483
 #, javascript-format
 msgid "%d year ago"
 msgid_plural "%d years ago"
