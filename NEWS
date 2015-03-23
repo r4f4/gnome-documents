@@ -1,3 +1,15 @@
+3.17.1 - ""
+===========
+
+- Handle inability to load unsupported e-book formats (Bastien Nocera)
+- Fixed partially visible text in collections dialog (Muhammet Kara)
+- Prevent multiple about dialogs from opening (Alessandro Bono)
+- Make the overlaid preview controls work nicely on touchscreens
+- Stop search provider from spawning miners and setting the tracker priority
+- Fixed bugs and regressions caused by having separate views for documents
+  and collections
+- Translation updates
+
 3.15.90 - "Keyboard"
 ====================
 
