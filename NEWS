@@ -1,3 +1,10 @@
+3.16.0 - "Civic"
+================
+
+- Fixed bugs and regressions caused by having separate views for documents
+  and collections
+- Translation updates
+
 3.15.91 - "Cake"
 ================
 
