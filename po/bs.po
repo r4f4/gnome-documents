@@ -73,7 +73,7 @@ msgstr "Pristupajte, upravljajte i dijelite knjige"
 
 #: ../data/org.gnome.Books.desktop.in.h:3
 msgid "Books;Comics;ePub;PDF;"
-msgstr "Knjige;Stripovi;ePub;PDF"
+msgstr "Knjige;Stripovi;ePub;PDF;"
 
 #: ../data/org.gnome.books.gschema.xml.h:1
 #: ../data/org.gnome.documents.gschema.xml.h:1
