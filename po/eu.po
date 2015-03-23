@@ -3,15 +3,15 @@
 # This file is distributed under the same license as the gnome-documents package.
 #
 # Julen Ruiz Aizpuru <julenx@gmail.com>, 2011.
-# Iñaki Larrañaga Murgoitio <dooteo@zundan.com>, 2012, 2013, 2014.
+# Iñaki Larrañaga Murgoitio <dooteo@zundan.com>, 2012, 2013, 2014, 2015.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-documents master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-12-30 17:10+0100\n"
-"PO-Revision-Date: 2014-12-30 17:11+0100\n"
+"POT-Creation-Date: 2015-03-23 19:12+0100\n"
+"PO-Revision-Date: 2015-03-23 19:15+0100\n"
 "Last-Translator: Iñaki Larrañaga Murgoitio <dooteo@zundan.com>\n"
 "Language-Team: Basque <librezale@librezale.org>\n"
 "Language: eu\n"
@@ -19,13 +19,54 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 1.4\n"
+"X-Generator: Lokalize 1.5\n"
 "X-Project-Style: gnome\n"
 
-#: ../data/org.gnome.Books.desktop.in.h:1 ../src/application.js:129
-#: ../src/mainWindow.js:313
+#: ../data/org.gnome.Books.appdata.xml.in.h:1
+#: ../data/org.gnome.Books.desktop.in.h:1 ../src/application.js:132
+#: ../src/lib/gd-utils.c:418
 msgid "Books"
 msgstr "Liburuak"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:2
+msgid "An e-book manager application for GNOME"
+msgstr "Liburu elektronikoak kudeatzeko GNOMEren aplikazio bat"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:3
+msgid ""
+"A simple application to access and organize your e-books on GNOME. It is "
+"meant to be a simple and elegant replacement for using a file manager to "
+"deal with e-books."
+msgstr ""
+"Zure dokumentuak GNOMEn atzitu eta antolatzeko aplikazio xumea. "
+"Liburu elektronikoekin aritzeko fitxategi-kudeatzaile baten ordezko xume "
+"eta dotore bat da."
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:4
+#: ../data/org.gnome.Documents.appdata.xml.in.h:4
+msgid "It lets you:"
+msgstr "Honakoak eskaintzen dizkizu:"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:5
+msgid "View recent e-books"
+msgstr "Ikusi azken liburu elek."
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:6
+msgid "Search through e-books"
+msgstr "Bilatu liburu elek. artean"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:7
+msgid "View e-books fullscreen"
+msgstr "Ikusi liburuak pantaila osoan"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:8
+msgid "Print e-books"
+msgstr "Inprimatu liburu elek."
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:9
+#: ../data/org.gnome.Documents.appdata.xml.in.h:12
+msgid "Allow opening full featured editor for non-trivial changes"
+msgstr "Ireki eginbide osoko editorea aldaketa ez-arruntentzako"
 
 #: ../data/org.gnome.Books.desktop.in.h:2
 msgid "Access, manage and share books"
@@ -86,8 +127,8 @@ msgid "Whether the application is in night mode."
 msgstr "Aplikazioa gaueko moduan dagoen edo ez."
 
 #: ../data/org.gnome.Documents.appdata.xml.in.h:1
-#: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:125
-#: ../src/mainWindow.js:52 ../src/mainWindow.js:308
+#: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:128
+#: ../src/lib/gd-utils.c:411 ../src/mainWindow.js:52
 msgid "Documents"
 msgstr "Dokumentuak"
 
@@ -106,10 +147,6 @@ msgstr ""
 "bat: hau da, dokumentuekin aritzeko fitxategi-kudeatzaile baten ordezko xume "
 "eta dotore bat GNOMEren lineako kontuen (GNOME Online Accounts) bidez "
 "lainoarekin sinestezineko bateragarritasuna du."
-
-#: ../data/org.gnome.Documents.appdata.xml.in.h:4
-msgid "It lets you:"
-msgstr "Honakoak eskaintzen dizkizu:"
 
 #: ../data/org.gnome.Documents.appdata.xml.in.h:5
 msgid "View recent local and online documents"
@@ -139,10 +176,6 @@ msgstr "Inprimatu dokumentuak"
 msgid "Select favorites"
 msgstr "Hautatu gogokoak"
 
-#: ../data/org.gnome.Documents.appdata.xml.in.h:12
-msgid "Allow opening full featured editor for non-trivial changes"
-msgstr "Ireki eginbide osoko editorea aldaketa ez-arruntentzako"
-
 #: ../data/org.gnome.Documents.desktop.in.h:2
 msgid "Access, manage and share documents"
 msgstr "Atzitu, kudeatu eta partekatu dokumentuak"
@@ -151,117 +184,111 @@ msgstr "Atzitu, kudeatu eta partekatu dokumentuak"
 msgid "Docs;PDF;Document;"
 msgstr "Dokumentuak;PDF;Dokumentua;"
 
-#: ../src/documents.js:624
+#: ../src/documents.js:631
 msgid "Failed to print document"
 msgstr "Huts egin du dokumentua inprimatzean"
 
 #. Translators: this refers to local documents
-#: ../src/documents.js:661 ../src/search.js:464
+#: ../src/documents.js:668 ../src/search.js:498
 msgid "Local"
 msgstr "Lokala"
 
 #. Translators: Documents ships a "Getting Started with Documents"
 #. tutorial PDF. The "GNOME" string below is displayed as the author name
 #. of that document, and doesn't normally need to be translated.
-#: ../src/documents.js:689
+#: ../src/documents.js:695
 msgid "GNOME"
 msgstr "GNOME"
 
-#: ../src/documents.js:690
+#: ../src/documents.js:696
 msgid "Getting Started with Documents"
 msgstr "Dokumentuen oinarrizko erabileraren xehetasunak"
 
-#: ../src/documents.js:706 ../src/documents.js:887 ../src/documents.js:951
-#: ../src/documents.js:1059
+#: ../src/documents.js:712 ../src/documents.js:904 ../src/documents.js:967
+#: ../src/documents.js:1075
 msgid "Collection"
 msgstr "Bilduma"
 
 #. overridden
-#: ../src/documents.js:766
+#: ../src/documents.js:783
 msgid "Google Docs"
 msgstr "Google Docs"
 
-#: ../src/documents.js:767
+#: ../src/documents.js:784
 msgid "Google"
 msgstr "Google"
 
-#: ../src/documents.js:889 ../src/documents.js:1061
+#: ../src/documents.js:906 ../src/documents.js:1077
 msgid "Spreadsheet"
 msgstr "Kalkulu-orria"
 
-#: ../src/documents.js:891 ../src/documents.js:1063 ../src/presentation.js:47
+#: ../src/documents.js:908 ../src/documents.js:1079 ../src/presentation.js:47
 msgid "Presentation"
 msgstr "Aurkezpena"
 
-#: ../src/documents.js:893 ../src/documents.js:1065
+#: ../src/documents.js:910 ../src/documents.js:1081
 msgid "e-Book"
 msgstr "Liburu elek."
 
-#: ../src/documents.js:895 ../src/documents.js:1067
+#: ../src/documents.js:912 ../src/documents.js:1083
 msgid "Document"
 msgstr "Dokumentua"
 
 #. overridden
-#: ../src/documents.js:929
+#: ../src/documents.js:946
 msgid "ownCloud"
 msgstr "ownCloud"
 
 #. overridden
-#: ../src/documents.js:993 ../src/documents.js:994
+#: ../src/documents.js:1009 ../src/documents.js:1010
 msgid "OneDrive"
 msgstr "OneDrive"
 
-#: ../src/documents.js:1195
+#: ../src/documents.js:1254
 msgid "Please check the network connection."
 msgstr "Egiaztatu sarearen konexioa."
 
-#: ../src/documents.js:1198
+#: ../src/documents.js:1257
 msgid "Please check the network proxy settings."
 msgstr "Egiaztatu sarearen proxyaren ezarpenak."
 
-#: ../src/documents.js:1201
+#: ../src/documents.js:1260
 msgid "Unable to sign in to the document service."
 msgstr "Ezin da dokumentuaren zerbitzuan sinatu."
 
-#: ../src/documents.js:1204
+#: ../src/documents.js:1263
 msgid "Unable to locate this document."
 msgstr "Ezin da dokumentu hau aurkitu."
 
-#: ../src/documents.js:1207
-#, c-format
+#: ../src/documents.js:1266
+#, javascript-format
 msgid "Hmm, something is fishy (%d)."
 msgstr "Mmmm... Zerbait susmagarria dago (%d)."
 
+#: ../src/documents.js:1273
+msgid ""
+"You are using a preview of Books. Full viewing capabilities are coming soon!"
+msgstr ""
+"Liburuen aurrebista erabiltzen ari zara. Ikuspegi osoaren gaitasuna laster "
+"etorriko da!"
+
 #. Translators: %s is the title of a document
-#: ../src/documents.js:1225
-#, c-format
+#: ../src/documents.js:1294
+#, javascript-format
 msgid "Oops! Unable to load “%s”"
 msgstr "Ezin da '%s' kargatu"
 
-#: ../src/edit.js:175
+#: ../src/edit.js:176
 msgid "View"
 msgstr "Ikusi"
 
-#: ../src/embed.js:143
-msgid "No Books Found"
-msgstr "Ez da libururik aurkitu"
+#: ../src/embed.js:108
+msgid "Recent"
+msgstr "Azken liburuak"
 
-#: ../src/embed.js:144
-msgid "No Documents Found"
-msgstr "Ez da dokumenturik aurkitu"
-
-#. Translators: %s here is "Settings", which is in a separate string due to
-#. markup, and should be translated only in the context of this sentence
-#: ../src/embed.js:166
-#, c-format
-msgid "You can add your online accounts in %s"
-msgstr "Zure lineako kontuak gehi ditzakezu %s(e)n"
-
-#. Translators: this should be translated in the context of the
-#. "You can add your online accounts in Settings" sentence above
-#: ../src/embed.js:170
-msgid "Settings"
-msgstr "Ezarpenak"
+#: ../src/embed.js:111 ../src/search.js:192 ../src/search.js:201
+msgid "Collections"
+msgstr "Bildumak"
 
 #: ../src/lib/gd-nav-bar.c:242
 #, c-format
@@ -292,7 +319,7 @@ msgstr "Laster-markarik ez"
 msgid "Loading…"
 msgstr "Kargatzen…"
 
-#: ../src/lib/gd-places-bookmarks.c:656 ../src/preview.js:599
+#: ../src/lib/gd-places-bookmarks.c:656 ../src/preview.js:601
 msgid "Bookmarks"
 msgstr "Laster-markak"
 
@@ -304,6 +331,18 @@ msgstr "Edukien aurkibiderik ez"
 msgid "Contents"
 msgstr "Edukia"
 
+#: ../src/lib/gd-utils.c:412
+msgid "A document manager application"
+msgstr "Dokumentuak kudeatzeko aplikazio bat"
+
+#: ../src/lib/gd-utils.c:419
+msgid "An e-books manager application"
+msgstr "Liburu elektronikoak kudeatzeko aplikazio bat"
+
+#: ../src/lib/gd-utils.c:427
+msgid "translator-credits"
+msgstr "Iñaki Larrañaga Murgoitio <dooteo@zundan.com>"
+
 #: ../src/mainToolbar.js:79
 msgid "Search"
 msgstr "Bilatu"
@@ -312,77 +351,74 @@ msgstr "Bilatu"
 msgid "Back"
 msgstr "Atzera"
 
-#: ../src/mainToolbar.js:132
+#: ../src/mainToolbar.js:141
 msgid "View items as a list"
 msgstr "Ikusi elementuak zerrenda gisa"
 
-#: ../src/mainToolbar.js:138
+#: ../src/mainToolbar.js:147
 msgid "View items as a grid of icons"
 msgstr "Ikusi elementuak ikonoen sareta gisa"
 
-#: ../src/mainToolbar.js:168
+#: ../src/mainToolbar.js:177
 msgid "Click on items to select them"
 msgstr "Egin klik elementuetan hautatzeko"
 
-#: ../src/mainToolbar.js:170
-#, c-format
+#: ../src/mainToolbar.js:179
+#, javascript-format
 msgid "%d selected"
 msgid_plural "%d selected"
 msgstr[0] "%d hautatuta"
 msgstr[1] "%d hautatuta"
 
-#: ../src/mainToolbar.js:200
+#: ../src/mainToolbar.js:203
 msgid "Cancel"
 msgstr "Utzi"
 
-#: ../src/mainToolbar.js:242
+#: ../src/mainToolbar.js:255
 msgid "Select Items"
 msgstr "Hautatu elementuak"
 
-#: ../src/mainWindow.js:306
-msgid "translator-credits"
-msgstr "Iñaki Larrañaga Murgoitio <dooteo@zundan.com>"
+#. Translators: only one item has been deleted and %s is its name
+#: ../src/notifications.js:54
+#, javascript-format
+msgid "“%s” deleted"
+msgstr "“%s” ezabatuta"
 
-#: ../src/mainWindow.js:309
-msgid "A document manager application"
-msgstr "Dokumentuak kudeatzeko aplikazio bat"
+#. Translators: one or more items might have been deleted, and %d
+#. is the count
+#: ../src/notifications.js:58
+#, javascript-format
+msgid "%d item deleted"
+msgid_plural "%d items deleted"
+msgstr[0] "Elementu %d ezabatuta"
+msgstr[1] "%d elementu ezabatuta"
 
-#: ../src/mainWindow.js:314
-msgid "An e-books manager application"
-msgstr "Liburu elektronikoak kudeatzeko aplikazio bat"
-
-#: ../src/notifications.js:50
-msgid "Selected item has been deleted"
-msgid_plural "Selected items have been deleted"
-msgstr[0] "Hautatutako elementua ezabatu da"
-msgstr[1] "Hautatutako elementuak ezabatu dira"
-
-#: ../src/notifications.js:57
+#: ../src/notifications.js:67
 msgid "Undo"
 msgstr "Desegin"
 
-#: ../src/notifications.js:157
-#, c-format
+#: ../src/notifications.js:167
+#, javascript-format
 msgid "Printing “%s”: %s"
 msgstr "'%s' inprimatzen: %s"
 
-#: ../src/notifications.js:213
+#: ../src/notifications.js:223
 msgid "Your documents are being indexed"
 msgstr "Zure dokumentuak indexatzen ari dira"
 
-#: ../src/notifications.js:214
+#: ../src/notifications.js:224
 msgid "Some documents might not be available during this process"
 msgstr ""
 "Dokumentu batzuk ez dira erabilgarri egongo prozesuak irauten duen bitartean"
 
 #. Translators: %s refers to an online account provider, e.g.
 #. "Google", or "Windows Live".
-#: ../src/notifications.js:236
-#, c-format
+#: ../src/notifications.js:246
+#, javascript-format
 msgid "Fetching documents from %s"
 msgstr "%s(e)ndik dokumentuak eskuratzen"
 
-#: ../src/notifications.js:238
+#: ../src/notifications.js:248
 msgid "Fetching documents from online accounts"
 msgstr "Lineako kontuetatik dokumentuak eskuratzen"
 
@@ -395,7 +431,7 @@ msgid "_Unlock"
 msgstr "_Desblokeatu"
 
 #: ../src/password.js:65
-#, c-format
+#, javascript-format
 msgid "Document %s is locked and requires a password to be opened."
 msgstr "'%s' dokumentua blokeatuta dago eta pasahitza behar da irekitzeko."
 
@@ -428,21 +464,21 @@ msgstr "Bigarren mailakoa"
 msgid "Present On"
 msgstr "Aurkezpena aktibatuta"
 
-#: ../src/preview.js:607
+#: ../src/preview.js:609
 msgid "Bookmark this page"
 msgstr "Ezarri laster-marka orrialde honi"
 
 #. Translators: this is the Open action in a context menu
-#: ../src/preview.js:848 ../src/selections.js:859
-#, c-format
+#: ../src/preview.js:870 ../src/selections.js:859
+#, javascript-format
 msgid "Open with %s"
 msgstr "Ireki '%s'(r)ekin"
 
-#: ../src/preview.js:911
+#: ../src/preview.js:933
 msgid "Find Previous"
 msgstr "Bilatu aurrekoa"
 
-#: ../src/preview.js:918
+#: ../src/preview.js:940
 msgid "Find Next"
 msgstr "Bilatu hurrengoa"
 
@@ -562,8 +598,8 @@ msgstr "Kategoria"
 
 #. Translators: this refers to new and recent documents
 #. Translators: this refers to documents
-#: ../src/search.js:120 ../src/search.js:183 ../src/search.js:300
-#: ../src/search.js:458
+#: ../src/search.js:120 ../src/search.js:189 ../src/search.js:322
+#: ../src/search.js:492
 msgid "All"
 msgstr "Denak"
 
@@ -579,58 +615,54 @@ msgstr "Zurekin partekatuak"
 
 #. Translators: "Type" refers to a search filter on the document type
 #. (PDF, spreadsheet, ...)
-#: ../src/search.js:180
+#: ../src/search.js:186
 msgctxt "Search Filter"
 msgid "Type"
 msgstr "Mota"
 
-#: ../src/search.js:186 ../src/search.js:195
-msgid "Collections"
-msgstr "Bildumak"
-
-#: ../src/search.js:190
+#: ../src/search.js:196
 msgid "PDF Documents"
 msgstr "PDF dokumentuak"
 
-#: ../src/search.js:203
+#: ../src/search.js:209
 msgid "Presentations"
 msgstr "Aurkezpenak"
 
-#: ../src/search.js:206
+#: ../src/search.js:212
 msgid "Spreadsheets"
 msgstr "Kalkulu-orriak"
 
-#: ../src/search.js:209
+#: ../src/search.js:215
 msgid "Text Documents"
 msgstr "Testu-dokumentuak"
 
-#: ../src/search.js:214
+#: ../src/search.js:220
 msgid "e-Books"
 msgstr "Liburu elek."
 
-#: ../src/search.js:218
+#: ../src/search.js:224
 msgid "Comics"
 msgstr "Komikiak"
 
 #. Translators: this is a verb that refers to "All", "Title" and "Author",
 #. as in "Match All", "Match Title" and "Match Author"
-#: ../src/search.js:297
+#: ../src/search.js:319
 msgid "Match"
 msgstr "Bat etorri"
 
 #. Translators: "Title" refers to "Match Title" when searching
-#: ../src/search.js:303
+#: ../src/search.js:325
 msgctxt "Search Filter"
 msgid "Title"
 msgstr "Titulua"
 
 #. Translators: "Author" refers to "Match Author" when searching
-#: ../src/search.js:306
+#: ../src/search.js:328
 msgctxt "Search Filter"
 msgid "Author"
 msgstr "Egilea"
 
-#: ../src/search.js:454
+#: ../src/search.js:488
 msgid "Sources"
 msgstr "Iturriak"
 
@@ -735,7 +767,7 @@ msgid "Owner"
 msgstr "Jabea"
 
 #: ../src/sharing.js:442
-#, c-format
+#, javascript-format
 msgid "You can ask %s for access"
 msgstr "Eskatu '%s'(r)i sarbidetza"
 
@@ -744,53 +776,74 @@ msgstr "Eskatu '%s'(r)i sarbidetza"
 msgid "The document was not updated"
 msgstr "Dokumentua ez da eguneratu"
 
-#: ../src/shellSearchProvider.js:294
+#: ../src/shellSearchProvider.js:293
 msgid "Untitled Document"
 msgstr "Izenik gabeko dokumentua"
 
-#: ../src/trackerController.js:170
+#: ../src/trackerController.js:172
 msgid "Unable to fetch the list of documents"
 msgstr "Ezin da dokumentuen zerrenda eskuratu"
 
-#: ../src/view.js:240
+#: ../src/view.js:249
+msgid "No Books Found"
+msgstr "Ez da libururik aurkitu"
+
+#: ../src/view.js:250
+msgid "No Documents Found"
+msgstr "Ez da dokumenturik aurkitu"
+
+#. Translators: %s here is "Settings", which is in a separate string due to
+#. markup, and should be translated only in the context of this sentence
+#: ../src/view.js:272
+#, javascript-format
+msgid "You can add your online accounts in %s"
+msgstr "Zure lineako kontuak gehi ditzakezu %s(e)n"
+
+#. Translators: this should be translated in the context of the
+#. "You can add your online accounts in Settings" sentence above
+#: ../src/view.js:276
+msgid "Settings"
+msgstr "Ezarpenak"
+
+#: ../src/view.js:463
 msgid "Yesterday"
 msgstr "Atzo"
 
-#: ../src/view.js:242
-#, c-format
+#: ../src/view.js:465
+#, javascript-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
 msgstr[0] "duela egun %d"
 msgstr[1] "orain dela %d egun"
 
-#: ../src/view.js:246
+#: ../src/view.js:469
 msgid "Last week"
 msgstr "Azken astea"
 
-#: ../src/view.js:248
-#, c-format
+#: ../src/view.js:471
+#, javascript-format
 msgid "%d week ago"
 msgid_plural "%d weeks ago"
 msgstr[0] "duela aste %d"
 msgstr[1] "orain dela %d aste"
 
-#: ../src/view.js:252
+#: ../src/view.js:475
 msgid "Last month"
 msgstr "Azken hilabetea"
 
-#: ../src/view.js:254
-#, c-format
+#: ../src/view.js:477
+#, javascript-format
 msgid "%d month ago"
 msgid_plural "%d months ago"
 msgstr[0] "duela hilabete %d"
 msgstr[1] "orain dela %d hilabete"
 
-#: ../src/view.js:258
+#: ../src/view.js:481
 msgid "Last year"
 msgstr "Azken urtea"
 
-#: ../src/view.js:260
-#, c-format
+#: ../src/view.js:483
+#, javascript-format
 msgid "%d year ago"
 msgid_plural "%d years ago"
 msgstr[0] "duela urte %d"
@@ -856,9 +909,6 @@ msgstr[1] "orain dela %d urte"
 #~ msgid_plural "Load %d more documents"
 #~ msgstr[0] "Kargatu dokumentu %d gehiago"
 #~ msgstr[1] "Kargatu %d dokumentu gehiago"
-
-#~ msgid "New and Recent"
-#~ msgstr "Berrienak eta azkenak"
 
 #~ msgid "%d of %d"
 #~ msgstr "%d / %d"
