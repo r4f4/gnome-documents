@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-documents\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-03-06 20:24+0000\n"
-"PO-Revision-Date: 2015-03-06 21:43+0100\n"
+"POT-Creation-Date: 2015-04-01 07:03+0000\n"
+"PO-Revision-Date: 2015-04-01 14:31+0100\n"
 "Last-Translator: Dušan Kazik <prescott66@gmail.com>\n"
 "Language-Team: Slovak <gnome-sk-list@gnome.org>\n"
 "Language: sk\n"
@@ -233,32 +233,32 @@ msgstr "ownCloud"
 msgid "OneDrive"
 msgstr "OneDrive"
 
-#: ../src/documents.js:1247
+#: ../src/documents.js:1254
 msgid "Please check the network connection."
 msgstr "Skontrolujte, prosím, sieťové pripojenie."
 
-#: ../src/documents.js:1250
+#: ../src/documents.js:1257
 msgid "Please check the network proxy settings."
 msgstr "Skontrolujte prosím nastavenia sieťového sprostredkovateľa (proxy)."
 
-#: ../src/documents.js:1253
+#: ../src/documents.js:1260
 msgid "Unable to sign in to the document service."
 msgstr "Nepodarilo sa prihlásiť k službe dokumentov."
 
-#: ../src/documents.js:1256
+#: ../src/documents.js:1263
 msgid "Unable to locate this document."
 msgstr "Nepodarilo sa nájsť tento dokument."
 
-#: ../src/documents.js:1259
+#: ../src/documents.js:1266
 #, javascript-format
 msgid "Hmm, something is fishy (%d)."
 msgstr "Zdá sa, že niekde nastal problém (%d)."
 
-#: ../src/documents.js:1266
+#: ../src/documents.js:1273
 msgid "You are using a preview of Books. Full viewing capabilities are coming soon!"
 msgstr "Používate ukážku aplikácie Knihy. Úplné schopnosti prezerania prídu čoskoro!"
 
-#: ../src/documents.js:1287
+#: ../src/documents.js:1294
 #, javascript-format
 msgid "Oops! Unable to load “%s”"
 msgstr "Ale nie! Nepodarilo sa načítať dokument „%s“"
@@ -268,11 +268,11 @@ msgstr "Ale nie! Nepodarilo sa načítať dokument „%s“"
 msgid "View"
 msgstr "Zobraziť"
 
-#: ../src/embed.js:109
+#: ../src/embed.js:108
 msgid "Recent"
 msgstr "Nedávne"
 
-#: ../src/embed.js:112 ../src/search.js:192 ../src/search.js:201
+#: ../src/embed.js:111 ../src/search.js:192 ../src/search.js:201
 msgid "Collections"
 msgstr "Zbierky"
 
@@ -368,7 +368,7 @@ msgid "Cancel"
 msgstr "Zrušiť"
 
 # DK: je to tooltip.prelozene na 100% spravne-overene
-#: ../src/mainToolbar.js:246
+#: ../src/mainToolbar.js:255
 msgid "Select Items"
 msgstr "Umožní výber položiek"
 
@@ -653,17 +653,17 @@ msgstr "Zbierky"
 # button tooltip
 #: ../src/selections.js:752
 msgid "Print"
-msgstr "Uskutoční tlač"
+msgstr "Tlač"
 
 # button tooltip
 #: ../src/selections.js:757
 msgid "Delete"
-msgstr "Uskutoční odstránenie"
+msgstr "Odstrániť"
 
 # button tooltip
 #: ../src/selections.js:763
 msgid "Share"
-msgstr "Sprístupní"
+msgstr "Sprístupniť"
 
 #: ../src/selections.js:774
 msgid "Add to Collection"
@@ -756,29 +756,29 @@ msgstr "Nepomenovaný dokument"
 msgid "Unable to fetch the list of documents"
 msgstr "Nepodarilo sa získať zoznam dokumentov."
 
-#: ../src/view.js:243
+#: ../src/view.js:249
 msgid "No Books Found"
 msgstr "Neboli nájdené žiadne knihy"
 
-#: ../src/view.js:244
+#: ../src/view.js:250
 msgid "No Documents Found"
 msgstr "Neboli nájdené žiadne dokumenty"
 
-#: ../src/view.js:266
+#: ../src/view.js:272
 #, javascript-format
 msgid "You can add your online accounts in %s"
 msgstr "Vaše účty služieb môžete pridať v %s"
 
 # gramaticky apeluje na predoslu frazu "Mozete pridat Vase online ucty v %s"
-#: ../src/view.js:270
+#: ../src/view.js:276
 msgid "Settings"
 msgstr "Nastaveniach"
 
-#: ../src/view.js:457
+#: ../src/view.js:463
 msgid "Yesterday"
 msgstr "Včera"
 
-#: ../src/view.js:459
+#: ../src/view.js:465
 #, javascript-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
@@ -786,11 +786,11 @@ msgstr[0] "Pred %d dňami"
 msgstr[1] "Pred %d dňom"
 msgstr[2] "Pred %d dňami"
 
-#: ../src/view.js:463
+#: ../src/view.js:469
 msgid "Last week"
 msgstr "Minulý týždeň"
 
-#: ../src/view.js:465
+#: ../src/view.js:471
 #, javascript-format
 msgid "%d week ago"
 msgid_plural "%d weeks ago"
@@ -798,11 +798,11 @@ msgstr[0] "Pred %d týždňami"
 msgstr[1] "Pred %d týždňom"
 msgstr[2] "Pred %d týždňami"
 
-#: ../src/view.js:469
+#: ../src/view.js:475
 msgid "Last month"
 msgstr "Minulý mesiac"
 
-#: ../src/view.js:471
+#: ../src/view.js:477
 #, javascript-format
 msgid "%d month ago"
 msgid_plural "%d months ago"
@@ -810,11 +810,11 @@ msgstr[0] "Pred %d mesiacmi"
 msgstr[1] "Pred %d mesiacom"
 msgstr[2] "Pred %d mesiacmi"
 
-#: ../src/view.js:475
+#: ../src/view.js:481
 msgid "Last year"
 msgstr "Minulý rok"
 
-#: ../src/view.js:477
+#: ../src/view.js:483
 #, javascript-format
 msgid "%d year ago"
 msgid_plural "%d years ago"
