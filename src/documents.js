@@ -756,12 +756,12 @@ const LocalDocument = new Lang.Class({
             return;
 
         let file = Gio.file_new_for_uri(this.uri);
-        file.delete_async(GLib.PRIORITY_DEFAULT, null, Lang.bind(this,
+        file.trash_async(GLib.PRIORITY_DEFAULT, null, Lang.bind(this,
             function(source, res) {
                 try {
-                    file.delete_finish(res);
+                    file.trash_finish(res);
                 } catch(e) {
-                    log('Unable to delete ' + this.uri + ': ' + e.message);
+                    log('Unable to trash ' + this.uri + ': ' + e.message);
                 }
             }));
     }
