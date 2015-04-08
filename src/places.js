@@ -63,12 +63,25 @@ const PlacesDialog = new Lang.Class({
         let switcher = new Gtk.StackSwitcher({ stack: this._stack });
         header.set_custom_title(switcher);
 
-        this._linksPage = new GdPrivate.PlacesLinks();
-        this._linksPage.connect('link-activated', Lang.bind(this,
-            function(widget, link) {
-                this._handleLink(link);
-            }));
-        this._addPage(this._linksPage);
+        let evDoc = this._model.get_document();
+        let docHasLinks = false;
+
+        try {
+            // This is a hack to find out if evDoc implements the
+            // EvDocument.DocumentLinks interface or not.
+            docHasLinks = evDoc.has_document_links();
+        } catch (e if e instanceof TypeError) {
+        } catch (e) {
+        }
+
+        if (docHasLinks) {
+            this._linksPage = new GdPrivate.PlacesLinks();
+            this._linksPage.connect('link-activated', Lang.bind(this,
+                function(widget, link) {
+                    this._handleLink(link);
+                }));
+            this._addPage(this._linksPage);
+        }
 
         if (this._bookmarks) {
             this._bookmarksPage = new GdPrivate.PlacesBookmarks({ bookmarks: this._bookmarks });
