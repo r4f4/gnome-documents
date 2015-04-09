@@ -355,10 +355,6 @@ gd_places_links_document_changed_cb (EvDocumentModel *model,
         EvDocument *document = ev_document_model_get_document (model);
         GdPlacesLinksPrivate *priv = self->priv;
 
-        if (!EV_IS_DOCUMENT_LINKS (document)) {
-                return;
-        }
-
         g_clear_object (&priv->document);
         priv->document = g_object_ref (document);
 
