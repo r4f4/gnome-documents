@@ -139,6 +139,9 @@ const PreviewView = new Lang.Class({
         let showPlaces = Application.application.lookup_action('places');
         let showPlacesId = showPlaces.connect('activate', Lang.bind(this, this._showPlaces));
 
+        let nightModeId = Application.application.connect('action-state-changed::night-mode',
+            Lang.bind(this, this._updateNightMode));
+
         this._togglePresentation = Application.application.lookup_action('present-current');
         let presentCurrentId = Application.application.connect('action-state-changed::present-current',
             Lang.bind(this, this._onPresentStateChanged));
@@ -160,6 +163,7 @@ const PreviewView = new Lang.Class({
                 rotRight.disconnect(rotRightId);
                 showPlaces.disconnect(showPlacesId);
                 Application.application.disconnect(presentCurrentId);
+                Application.application.disconnect(nightModeId);
             }));
     },
 
@@ -559,6 +563,15 @@ const PreviewView = new Lang.Class({
             this._showPlaces.enabled = hasMultiplePages;
 
             this._model.connect('page-changed', Lang.bind(this, this._onPageChanged));
+
+            this._updateNightMode();
+        }
+    },
+
+    _updateNightMode: function() {
+        if (this._model) {
+            let nightMode = Application.settings.get_boolean('night-mode');
+            this._model.set_inverted_colors(nightMode);
         }
     },
 
