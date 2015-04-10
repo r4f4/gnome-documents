@@ -125,18 +125,14 @@ const OverviewToolbar = new Lang.Class({
         this._stackSwitcher.show();
 
         // setup listeners to mode changes that affect the toolbar layout
-        this._selectionModeId = Application.selectionController.connect('selection-mode-changed',
+        let selectionModeId = Application.selectionController.connect('selection-mode-changed',
             Lang.bind(this, this._resetToolbarMode));
         this._resetToolbarMode();
 
         this.widget.connect('destroy', Lang.bind(this,
             function() {
                 this._clearStateData();
-
-                if (this._selectionModeId != 0) {
-                    Application.selectionController.disconnect(this._selectionModeId);
-                    this._selectionModeId = 0;
-                }
+                Application.selectionController.disconnect(selectionModeId);
             }));
     },
 
