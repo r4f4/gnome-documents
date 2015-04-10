@@ -344,7 +344,7 @@ const ViewContainer = new Lang.Class({
                             Lang.bind(this, this._onViewSelectionChanged));
 
         // connect to settings change for list/grid view
-        this._viewSettingsId = Application.application.connect('action-state-changed::view-as',
+        let viewSettingsId = Application.application.connect('action-state-changed::view-as',
             Lang.bind(this, this._updateTypeForSettings));
         this._updateTypeForSettings();
 
@@ -358,13 +358,13 @@ const ViewContainer = new Lang.Class({
         this._onWindowModeChanged();
 
         let selectAll = Application.application.lookup_action('select-all');
-        selectAll.connect('activate', Lang.bind(this,
+        let selectAllId = selectAll.connect('activate', Lang.bind(this,
             function() {
                 this.view.select_all();
             }));
 
         let selectNone = Application.application.lookup_action('select-none');
-        selectNone.connect('activate', Lang.bind(this,
+        let selectNoneId = selectNone.connect('activate', Lang.bind(this,
             function() {
                 this.view.unselect_all();
             }));
@@ -388,6 +388,13 @@ const ViewContainer = new Lang.Class({
 
         // this will create the model if we're done querying
         this._onQueryStatusChanged();
+
+        this.widget.connect('destroy', Lang.bind(this,
+            function() {
+                Application.application.disconnect(viewSettingsId);
+                selectAll.disconnect(selectAllId);
+                selectNone.disconnect(selectNoneId);
+            }));
     },
 
     _updateTypeForSettings: function() {
