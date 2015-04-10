@@ -236,7 +236,6 @@ const Application = new Lang.Class({
 
     _onActionNightMode: function(action) {
         let state = action.get_state();
-        action.change_state(GLib.Variant.new('b', !state.get_boolean()));
         settings.set_value('night-mode', GLib.Variant.new('b', !state.get_boolean()));
     },
 
