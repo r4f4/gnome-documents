@@ -110,13 +110,13 @@ const PreviewView = new Lang.Class({
                 this.view.zoom_out();
             }));
 
-        this._findPrev = Application.application.lookup_action('find-prev');
-        this._findPrev.connect('activate', Lang.bind(this,
+        let findPrev = Application.application.lookup_action('find-prev');
+        findPrev.connect('activate', Lang.bind(this,
             function() {
                 this.view.find_previous();
             }));
-        this._findNext = Application.application.lookup_action('find-next');
-        this._findNext.connect('activate', Lang.bind(this,
+        let findNext = Application.application.lookup_action('find-next');
+        findNext.connect('activate', Lang.bind(this,
             function() {
                 this.view.find_next();
             }));
