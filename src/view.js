@@ -349,7 +349,7 @@ const ViewContainer = new Lang.Class({
         this._updateTypeForSettings();
 
         // setup selection controller => view
-        this._selectionModeId = Application.selectionController.connect('selection-mode-changed',
+        Application.selectionController.connect('selection-mode-changed',
             Lang.bind(this, this._onSelectionModeChanged));
         this._onSelectionModeChanged();
 
@@ -381,7 +381,7 @@ const ViewContainer = new Lang.Class({
 
         this._trackerController.connect('query-error',
             Lang.bind(this, this._onQueryError));
-        this._queryId = this._trackerController.connect('query-status-changed',
+        this._trackerController.connect('query-status-changed',
             Lang.bind(this, this._onQueryStatusChanged));
         // ensure the tracker controller is started
         this._trackerController.start();
