@@ -92,61 +92,75 @@ const PreviewView = new Lang.Class({
 
         this._bookmarkPage = Application.application.lookup_action('bookmark-page');
         this._bookmarkPage.enabled = false;
-        this._bookmarkPage.connect('change-state',
+        let bookmarkPageId = this._bookmarkPage.connect('change-state',
             Lang.bind(this, this._onActionStateChanged));
         this._onActionStateChanged(this._bookmarkPage, this._bookmarkPage.state);
 
         this._zoomIn = Application.application.lookup_action('zoom-in');
-        this._zoomIn.connect('activate', Lang.bind(this,
+        let zoomInId = this._zoomIn.connect('activate', Lang.bind(this,
             function() {
                 this._model.set_sizing_mode(EvView.SizingMode.FREE);
                 this.view.zoom_in();
             }));
 
         this._zoomOut = Application.application.lookup_action('zoom-out');
-        this._zoomOut.connect('activate', Lang.bind(this,
+        let zoomOutId = this._zoomOut.connect('activate', Lang.bind(this,
             function() {
                 this._model.set_sizing_mode(EvView.SizingMode.FREE);
                 this.view.zoom_out();
             }));
 
         let findPrev = Application.application.lookup_action('find-prev');
-        findPrev.connect('activate', Lang.bind(this,
+        let findPrevId = findPrev.connect('activate', Lang.bind(this,
             function() {
                 this.view.find_previous();
             }));
         let findNext = Application.application.lookup_action('find-next');
-        findNext.connect('activate', Lang.bind(this,
+        let findNextId = findNext.connect('activate', Lang.bind(this,
             function() {
                 this.view.find_next();
             }));
         this._copy = Application.application.lookup_action('copy');
-        this._copy.connect('activate', Lang.bind(this,
+        let copyId = this._copy.connect('activate', Lang.bind(this,
             function() {
                 this.view.copy();
             }));
 
         let rotLeft = Application.application.lookup_action('rotate-left');
-        rotLeft.connect('activate', Lang.bind(this,
+        let rotLeftId = rotLeft.connect('activate', Lang.bind(this,
             function() {
                 this._changeRotation(-90);
             }));
         let rotRight = Application.application.lookup_action('rotate-right');
-        rotRight.connect('activate', Lang.bind(this,
+        let rotRightId = rotRight.connect('activate', Lang.bind(this,
             function() {
                 this._changeRotation(90);
             }));
         let showPlaces = Application.application.lookup_action('places');
-        showPlaces.connect('activate', Lang.bind(this, this._showPlaces));
+        let showPlacesId = showPlaces.connect('activate', Lang.bind(this, this._showPlaces));
 
         this._togglePresentation = Application.application.lookup_action('present-current');
-        Application.application.connect('action-state-changed::present-current',
+        let presentCurrentId = Application.application.connect('action-state-changed::present-current',
             Lang.bind(this, this._onPresentStateChanged));
 
         Application.documentManager.connect('load-started',
                                             Lang.bind(this, this._onLoadStarted));
         Application.documentManager.connect('load-error',
                                             Lang.bind(this, this._onLoadError));
+
+        this.widget.connect('destroy', Lang.bind(this,
+            function() {
+                this._bookmarkPage.disconnect(bookmarkPageId);
+                this._zoomIn.disconnect(zoomInId);
+                this._zoomOut.disconnect(zoomOutId);
+                findPrev.disconnect(findPrevId);
+                findNext.disconnect(findNextId);
+                this._copy.disconnect(copyId);
+                rotLeft.disconnect(rotLeftId);
+                rotRight.disconnect(rotRightId);
+                showPlaces.disconnect(showPlacesId);
+                Application.application.disconnect(presentCurrentId);
+            }));
     },
 
     _onLoadStarted: function() {
