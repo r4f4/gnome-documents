@@ -204,7 +204,7 @@ const Application = new Lang.Class({
         settings.connect('changed::night-mode', Lang.bind(this,
             function() {
                 let state = settings.get_value('night-mode');
-                if (state.get_boolean()[0] != action.state.get_boolean()[0])
+                if (state.get_boolean() != action.state.get_boolean())
                     action.state = state;
 
                 let gtkSettings = Gtk.Settings.get_default();
