@@ -53,13 +53,22 @@ const MainToolbar = new Lang.Class({
         if (this.searchbar)
             this.widget.add(this.searchbar.widget);
 
-        Application.documentManager.connect('load-started', Lang.bind(this,
+        let loadStartedId = Application.documentManager.connect('load-started', Lang.bind(this,
             function() {
                 this._handleEvent = true;
             }));
 
-        Application.documentManager.connect('load-error', Lang.bind(this, this._onLoadErrorOrPassword));
-        Application.documentManager.connect('password-needed', Lang.bind(this, this._onLoadErrorOrPassword));
+        let loadErrorId = Application.documentManager.connect('load-error',
+            Lang.bind(this, this._onLoadErrorOrPassword));
+        let passwordNeededId = Application.documentManager.connect('password-needed',
+            Lang.bind(this, this._onLoadErrorOrPassword));
+
+        this.widget.connect('destroy', Lang.bind(this,
+            function() {
+                Application.documentManager.disconnect(loadStartedId);
+                Application.documentManager.disconnect(loadErrorId);
+                Application.documentManager.disconnect(passwordNeededId);
+            }));
     },
 
     _onLoadErrorOrPassword: function() {
