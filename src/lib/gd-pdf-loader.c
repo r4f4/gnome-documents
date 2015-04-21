@@ -561,7 +561,7 @@ pdf_load_job_from_google_documents (PdfLoadJob *job)
   job->original_file_mtime = gdata_entry_get_updated (job->gdata_entry);
 
   tmp_name = g_strdup_printf ("gnome-documents-%u.pdf",
-                              g_str_hash (gdata_documents_entry_get_resource_id (GDATA_DOCUMENTS_ENTRY (job->gdata_entry))));
+                              g_str_hash (gdata_entry_get_id (job->gdata_entry)));
   tmp_path = g_build_filename (g_get_user_cache_dir (), "gnome-documents", NULL);
   job->pdf_path = pdf_path =
     g_build_filename (tmp_path, tmp_name, NULL);
@@ -961,44 +961,15 @@ query_info_ready_cb (GObject *obj,
   g_object_unref (info);
 }
 
-static gchar *
-resource_id_from_entry_id (const gchar *entry_id)
-{
-  const gchar *ptr;
-
-  ptr = g_strrstr (entry_id, "%3A");
-
-  if (ptr)
-    {
-      const gchar *p = ptr;
-
-      while (p >= entry_id)
-        {
-          if (*p == '/')
-            {
-              gchar *id;
-              gchar *type = g_strndup (p + 1, ptr - p - 1);
-
-              id = g_strdup_printf ("%s:%s", type, ptr + 3);
-              g_free (type);
-
-              return id;
-            }
-          p--;
-        }
-    }
-
-  return g_strdup (entry_id);
-}
-
 static void
 pdf_load_job_from_regular_file (PdfLoadJob *job)
 {
   GFile *file;
+  const gchar *gdata_prefix = "google:drive:";
   const gchar *zpj_prefix = "windows-live:skydrive:";
 
-  if (g_str_has_prefix (job->uri, "https://docs.google.com")) {
-    job->resource_id = resource_id_from_entry_id (job->uri);
+  if (g_str_has_prefix (job->uri, gdata_prefix)) {
+    job->resource_id = g_strdup (job->uri + strlen (gdata_prefix));
     pdf_load_job_from_gdata_cache (job);
     return;
   }
