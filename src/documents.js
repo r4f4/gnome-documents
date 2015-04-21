@@ -740,6 +740,8 @@ const LocalDocument = new Lang.Class({
     }
 });
 
+const GOOGLE_PREFIX = 'google:drive:';
+
 const GoogleDocument = new Lang.Class({
     Name: 'GoogleDocument',
     Extends: DocCommon,
@@ -759,10 +761,11 @@ const GoogleDocument = new Lang.Class({
 
         let authorizer = new GData.GoaAuthorizer({ goa_object: source.object });
         let service = new GData.DocumentsService({ authorizer: authorizer });
+        let gdata_id = this.identifier.substring(GOOGLE_PREFIX.length);
 
         service.query_single_entry_async
             (GData.DocumentsService.get_primary_authorization_domain(),
-             this.identifier, null,
+             gdata_id, null,
              GData.DocumentsText,
              cancellable, Lang.bind(this,
                  function(object, res) {
@@ -1122,7 +1125,7 @@ const DocumentManager = new Lang.Class({
 
     _identifierIsGoogle: function(identifier) {
         return (identifier &&
-                (identifier.indexOf('https://docs.google.com') != -1));
+                (identifier.indexOf(GOOGLE_PREFIX) != -1));
     },
 
     _identifierIsOwncloud: function(identifier) {
