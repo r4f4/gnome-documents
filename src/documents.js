@@ -767,9 +767,6 @@ const LocalDocument = new Lang.Class({
     }
 });
 
-const _GOOGLE_DOCS_SCHEME_LABELS = "http://schemas.google.com/g/2005/labels";
-const _GOOGLE_DOCS_TERM_STARRED = "http://schemas.google.com/g/2005/labels#starred";
-
 const GoogleDocument = new Lang.Class({
     Name: 'GoogleDocument',
     Extends: DocCommon,
