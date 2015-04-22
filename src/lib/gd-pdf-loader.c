@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2011, 2012, 2013 Red Hat, Inc.
+ * Copyright (c) 2011, 2012, 2013, 2015 Red Hat, Inc.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU Lesser General Public License as published by 
@@ -965,20 +965,6 @@ static void
 pdf_load_job_from_regular_file (PdfLoadJob *job)
 {
   GFile *file;
-  const gchar *gdata_prefix = "google:drive:";
-  const gchar *zpj_prefix = "windows-live:skydrive:";
-
-  if (g_str_has_prefix (job->uri, gdata_prefix)) {
-    job->resource_id = g_strdup (job->uri + strlen (gdata_prefix));
-    pdf_load_job_from_gdata_cache (job);
-    return;
-  }
-
-  if (g_str_has_prefix (job->uri, zpj_prefix)) {
-    job->resource_id = g_strdup (job->uri + strlen (zpj_prefix));
-    pdf_load_job_from_zpj_cache (job);
-    return;
-  }
 
   file = g_file_new_for_uri (job->uri);
   g_file_query_info_async (file,
@@ -1144,23 +1130,42 @@ pdf_load_job_from_remote_file (PdfLoadJob *job)
 }
 
 static void
-pdf_load_job_start (PdfLoadJob *job)
+pdf_load_job_from_uri (PdfLoadJob *job)
 {
-  GFile *file = NULL;
+  GFile *file;
+  const gchar *gdata_prefix = "google:drive:";
+  const gchar *zpj_prefix = "windows-live:skydrive:";
 
-  if (job->uri != NULL)
-    file = g_file_new_for_uri (job->uri);
+  if (g_str_has_prefix (job->uri, gdata_prefix)) {
+    job->resource_id = g_strdup (job->uri + strlen (gdata_prefix));
+    pdf_load_job_from_gdata_cache (job);
+    return;
+  }
 
-  if (job->gdata_entry != NULL)
-    pdf_load_job_from_google_documents (job);
-  else if (job->zpj_entry != NULL)
-    pdf_load_job_from_skydrive (job);
-  else if (file != NULL && !g_file_is_native (file))
+  if (g_str_has_prefix (job->uri, zpj_prefix)) {
+    job->resource_id = g_strdup (job->uri + strlen (zpj_prefix));
+    pdf_load_job_from_zpj_cache (job);
+    return;
+  }
+
+  file = g_file_new_for_uri (job->uri);
+  if (!g_file_is_native (file))
     pdf_load_job_from_remote_file (job);
   else
     pdf_load_job_from_regular_file (job);
 
-  g_clear_object (&file);
+  g_object_unref (file);
+}
+
+static void
+pdf_load_job_start (PdfLoadJob *job)
+{
+  if (job->gdata_entry != NULL)
+    pdf_load_job_from_google_documents (job);
+  else if (job->zpj_entry != NULL)
+    pdf_load_job_from_skydrive (job);
+  else
+    pdf_load_job_from_uri (job);
 }
 
 /**
