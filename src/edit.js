@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2013, 2014 Red Hat, Inc.
+ * Copyright (c) 2013, 2014, 2015 Red Hat, Inc.
  *
  * Gnome Documents is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by the
@@ -51,6 +51,10 @@ const EditView = new Lang.Class({
         this.widget.get_style_context().add_class('documents-scrolledwin');
 
         let context = WebKit.WebContext.get_default();
+
+        let cacheDir = GLib.build_filenamev([GLib.get_user_cache_dir(), 'gnome-documents', 'webkit']);
+        context.set_disk_cache_directory(cacheDir);
+
         let cookie_manager = context.get_cookie_manager();
         let jarfile = GLib.build_filenamev([GLib.get_user_cache_dir(), 'gnome-documents', 'cookies.sqlite']);
         cookie_manager.set_persistent_storage(jarfile, WebKit.CookiePersistentStorage.SQLITE);
