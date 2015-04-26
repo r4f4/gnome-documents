@@ -3,13 +3,13 @@
 # This file is distributed under the same license as the gnome-documents package.
 # Abdalrahim G. Fakhouri <abdilra7eem@yahoo.com>, 2011.
 # Ibrahim Saed <ibraheem5000@gmail.com>, 2012.
-# Khaled Hosny <khaledhosny@eglug.org>, 2012, 2013.
+# Khaled Hosny <khaledhosny@eglug.org>, 2012, 2013, 2015.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-documents master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-26 01:48+0200\n"
-"PO-Revision-Date: 2013-12-17 03:26+0200\n"
+"POT-Creation-Date: 2015-04-26 22:20+0200\n"
+"PO-Revision-Date: 2015-04-26 22:34+0200\n"
 "Last-Translator: Khaled Hosny <khaledhosny@eglug.org>\n"
 "Language-Team: Arabic <doc@arabeyes.org>\n"
 "Language: ar\n"
@@ -18,12 +18,115 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Virtaal 0.7.1-rc1\n"
+"X-Generator: Virtaal 0.7.1\n"
 "X-Project-Style: gnome\n"
 
+#: ../data/org.gnome.Books.appdata.xml.in.h:1
+#: ../data/org.gnome.Books.desktop.in.h:1 ../src/application.js:132
+#: ../src/lib/gd-utils.c:418
+msgid "Books"
+msgstr "الكتب"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:2
+msgid "An e-book manager application for GNOME"
+msgstr "تطبيق إدارة الكتب الرقمية لجنوم"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:3
+msgid ""
+"A simple application to access and organize your e-books on GNOME. It is "
+"meant to be a simple and elegant replacement for using a file manager to "
+"deal with e-books."
+msgstr ""
+"تطبيق بسيط للوصول إلى الكتب الرقمية و تنظيمها و مشاركتها في جنوم. صُمم ليكون "
+"بديلا بسيطًا و رائعًا عن مدير الملفات للتعامل مع الكتب الرقمية."
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:4
+#: ../data/org.gnome.Documents.appdata.xml.in.h:4
+msgid "It lets you:"
+msgstr "يتيح لك:"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:5
+msgid "View recent e-books"
+msgstr "عرض الكتب الرقمية الحديثة"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:6
+msgid "Search through e-books"
+msgstr "البحث قي الكتب الرقمية"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:7
+msgid "View e-books fullscreen"
+msgstr "عرض الكتب الرقمية بملء الشاشة"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:8
+msgid "Print e-books"
+msgstr "طباعة الكتب الرقمية"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:9
+#: ../data/org.gnome.Documents.appdata.xml.in.h:12
+msgid "Allow opening full featured editor for non-trivial changes"
+msgstr "يسمح بالفتح في محرر كامل الخصائص للتغيرات غير الطفيفة"
+
+#: ../data/org.gnome.Books.desktop.in.h:2
+msgid "Access, manage and share books"
+msgstr "الوصول إلى الكتب و إدارتها و مشاركتها"
+
+#: ../data/org.gnome.Books.desktop.in.h:3
+msgid "Books;Comics;ePub;PDF;"
+msgstr "كتب;كتب مصورة;ePub;PDF;"
+
+#: ../data/org.gnome.books.gschema.xml.h:1
+#: ../data/org.gnome.documents.gschema.xml.h:1
+msgid "View as"
+msgstr "اعرض كـ"
+
+#: ../data/org.gnome.books.gschema.xml.h:2
+#: ../data/org.gnome.documents.gschema.xml.h:2
+msgid "View as type"
+msgstr "اعرض حسب النوع"
+
+#: ../data/org.gnome.books.gschema.xml.h:3
+#: ../data/org.gnome.documents.gschema.xml.h:3
+msgid "Window size"
+msgstr "حجم النافذة"
+
+#: ../data/org.gnome.books.gschema.xml.h:4
+#: ../data/org.gnome.documents.gschema.xml.h:4
+msgid "Window size (width and height)."
+msgstr "حجم النافذة (العرض والارتفاع)."
+
+#: ../data/org.gnome.books.gschema.xml.h:5
+#: ../data/org.gnome.documents.gschema.xml.h:5
+msgid "Window position"
+msgstr "موضع النافذة"
+
+#: ../data/org.gnome.books.gschema.xml.h:6
+#: ../data/org.gnome.documents.gschema.xml.h:6
+msgid "Window position (x and y)."
+msgstr "موضع النافذة (س و ص)."
+
+#: ../data/org.gnome.books.gschema.xml.h:7
+#: ../data/org.gnome.documents.gschema.xml.h:7
+msgid "Window maximized"
+msgstr "تكبير النافذة"
+
+#: ../data/org.gnome.books.gschema.xml.h:8
+#: ../data/org.gnome.documents.gschema.xml.h:8
+msgid "Window maximized state"
+msgstr "حالة تكبير النافذة"
+
+#: ../data/org.gnome.books.gschema.xml.h:9
+#: ../data/org.gnome.documents.gschema.xml.h:9
+msgid "Night mode"
+msgstr "الوضع الليلي"
+
+#: ../data/org.gnome.books.gschema.xml.h:10
+#: ../data/org.gnome.documents.gschema.xml.h:10
+msgid "Whether the application is in night mode."
+msgstr "ما إذا كان التطبيق في الوضع الليلي."
+
 #: ../data/org.gnome.Documents.appdata.xml.in.h:1
-#: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:120
-#: ../src/mainWindow.js:52 ../src/mainWindow.js:274
+#: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:128
+#: ../src/lib/gd-utils.c:411 ../src/mainWindow.js:52
 msgid "Documents"
 msgstr "المستندات"
 
@@ -42,24 +145,33 @@ msgstr ""
 "بديلا بسيطًا و رائعًا عن مدير الملفات للتعامل مع المستندات. يتوفر تكامل سلل مع "
 "الخدمات السحابية عبر حسابات الإنترنت في جنوم."
 
-#: ../data/org.gnome.Documents.appdata.xml.in.h:4
-msgid "It lets you:"
-msgstr "يتيح لك:"
-
 #: ../data/org.gnome.Documents.appdata.xml.in.h:5
-#, fuzzy
-msgid ""
-"<li>View recent local and online documents</li> <li>Access your Google, "
-"ownCloud or OneDrive content</li> <li>Search through documents</li> <li>See "
-"new documents shared by friends</li> <li>View documents fullscreen</li> "
-"<li>Print documents</li> <li>Select favorites</li> <li>Allow opening full "
-"featured editor for non-trivial changes</li>"
-msgstr ""
-"<li>عرض المستندات الحديثة من حاسوبك أو الوب</li> <li>الوصول إلى محتوى جوجل "
-"أو ownCloud أو SkyDrive</li> <li>البحث في المستندات</li> <li>رؤية المستندات "
-"الجديدة التي يُشاركها معك أصدقاؤك</li> <li>عرض المستندات تملأ الشاشة</li> "
-"<li>طباعة المستندات</li> <li>اختيار المفضلات</li> <li>يسمح بفتح محرر كامل "
-"الخصائص للتغييرات غير البسيطة</li>"
+msgid "View recent local and online documents"
+msgstr "عرض المستندات المحلية و من الوب الحديثة "
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:6
+msgid "Access your Google, ownCloud or OneDrive content"
+msgstr "الوصول إلى محتوى جوجل، و ownCloud و OneDrive"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:7
+msgid "Search through documents"
+msgstr "البحث في المستندات"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:8
+msgid "See new documents shared by friends"
+msgstr "الاطلاع على المستندات التي شاركها معك أصدقاؤك"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:9
+msgid "View documents fullscreen"
+msgstr "عرض المستندات بملء الشاشة"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:10
+msgid "Print documents"
+msgstr "طباعة المستندات"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:11
+msgid "Select favorites"
+msgstr "اختيار المفضلة"
 
 #: ../data/org.gnome.Documents.desktop.in.h:2
 msgid "Access, manage and share documents"
@@ -69,133 +181,111 @@ msgstr "الوصول للمستندات وإدارتها ومشاركتها"
 msgid "Docs;PDF;Document;"
 msgstr "مستندات;المستندات;بي دي اف;"
 
-#: ../data/org.gnome.documents.gschema.xml.h:1
-msgid "View as"
-msgstr "اعرض كـ"
-
-#: ../data/org.gnome.documents.gschema.xml.h:2
-msgid "View as type"
-msgstr "اعرض حسب النوع"
-
-#: ../data/org.gnome.documents.gschema.xml.h:3
-msgid "Window size"
-msgstr "حجم النافذة"
-
-#: ../data/org.gnome.documents.gschema.xml.h:4
-msgid "Window size (width and height)."
-msgstr "حجم النافذة (العرض والارتفاع)."
-
-#: ../data/org.gnome.documents.gschema.xml.h:5
-msgid "Window position"
-msgstr "موضع النافذة"
-
-#: ../data/org.gnome.documents.gschema.xml.h:6
-msgid "Window position (x and y)."
-msgstr "موضع النافذة (س و ص)."
-
-#: ../data/org.gnome.documents.gschema.xml.h:7
-msgid "Window maximized"
-msgstr "تكبير النافذة"
-
-#: ../data/org.gnome.documents.gschema.xml.h:8
-msgid "Window maximized state"
-msgstr "حالة تكبير النافذة"
-
-#: ../src/documents.js:600
-#, fuzzy
+#: ../src/documents.js:631
 msgid "Failed to print document"
-msgstr "تعذّر تحميل المُستند"
+msgstr "تعذر طبع المستند"
 
-#: ../src/documents.js:637 ../src/search.js:418
+#. Translators: this refers to local documents
+#: ../src/documents.js:668 ../src/search.js:509
 msgid "Local"
 msgstr "محلّي"
 
-#: ../src/documents.js:658
+#. Translators: Documents ships a "Getting Started with Documents"
+#. tutorial PDF. The "GNOME" string below is displayed as the author name
+#. of that document, and doesn't normally need to be translated.
+#: ../src/documents.js:695
 msgid "GNOME"
 msgstr "جنوم"
 
-#: ../src/documents.js:659
+#: ../src/documents.js:696
 msgid "Getting Started with Documents"
 msgstr "ابدأ مع المستندات"
 
-#: ../src/documents.js:675 ../src/documents.js:848 ../src/documents.js:910
-#: ../src/documents.js:1018
+#: ../src/documents.js:712 ../src/documents.js:904 ../src/documents.js:967
+#: ../src/documents.js:1075
 msgid "Collection"
 msgstr "تجميعة"
 
-#: ../src/documents.js:727
+#. overridden
+#: ../src/documents.js:782
 msgid "Google Docs"
 msgstr "مستندات جوجل"
 
-#: ../src/documents.js:728
+#: ../src/documents.js:783
 msgid "Google"
 msgstr "جوجل"
 
-#: ../src/documents.js:850 ../src/documents.js:1020
+#: ../src/documents.js:906 ../src/documents.js:1077
 msgid "Spreadsheet"
 msgstr "جدول ممتد"
 
-#: ../src/documents.js:852 ../src/documents.js:1022 ../src/presentation.js:47
+#: ../src/documents.js:908 ../src/documents.js:1079 ../src/presentation.js:47
 msgid "Presentation"
 msgstr "عرض تقديمي"
 
-#: ../src/documents.js:854 ../src/documents.js:1024
+#: ../src/documents.js:910 ../src/documents.js:1081
+msgid "e-Book"
+msgstr "كتاب رقمي"
+
+#: ../src/documents.js:912 ../src/documents.js:1083
 msgid "Document"
 msgstr "مستندات"
 
-#: ../src/documents.js:888
+#. overridden
+#: ../src/documents.js:946
 msgid "ownCloud"
 msgstr "ownCloud"
 
-#: ../src/documents.js:952 ../src/documents.js:953
+#. overridden
+#: ../src/documents.js:1009 ../src/documents.js:1010
 msgid "OneDrive"
-msgstr ""
+msgstr "OneDrive"
 
-#: ../src/documents.js:1152
+#: ../src/documents.js:1254
 msgid "Please check the network connection."
 msgstr "افحص الاتصال الشبكي من فضلك."
 
-#: ../src/documents.js:1155
+#: ../src/documents.js:1257
 msgid "Please check the network proxy settings."
 msgstr "افحص إعدادات وسيط الشبكة من فضلك."
 
-#: ../src/documents.js:1158
+#: ../src/documents.js:1260
 msgid "Unable to sign in to the document service."
 msgstr "تعذّر الولوج إلى خدمة المستندات."
 
-#: ../src/documents.js:1161
+#: ../src/documents.js:1263
 msgid "Unable to locate this document."
 msgstr "تعذّر إيجاد المُستند."
 
-#: ../src/documents.js:1164
+#: ../src/documents.js:1266
 #, javascript-format
 msgid "Hmm, something is fishy (%d)."
 msgstr "شيء ما خطأ (%d)."
 
-#: ../src/documents.js:1182
+#: ../src/documents.js:1273
+msgid ""
+"You are using a preview of Books. Full viewing capabilities are coming soon!"
+msgstr "تستخدم نسخة مبدئية من «الكتب». إمكانيات العرض الكاملة قريبًا."
+
+#. Translators: %s is the title of a document
+#: ../src/documents.js:1294
 #, javascript-format
 msgid "Oops! Unable to load “%s”"
 msgstr "تعذّر تحميل ”%s“"
 
-#: ../src/edit.js:192
+#: ../src/edit.js:180
 msgid "View"
 msgstr "عرض"
 
-#: ../src/embed.js:142
-msgid "No Documents Found"
-msgstr "لم يُعثر على أي مستندات"
+#: ../src/embed.js:109
+msgid "Recent"
+msgstr "الحديثة"
 
-#: ../src/embed.js:163
-#, javascript-format
-msgid "You can add your online accounts in %s"
-msgstr "يمكنك إضافة حسابات الإنترنت في %s"
+#: ../src/embed.js:112 ../src/search.js:203 ../src/search.js:212
+msgid "Collections"
+msgstr "تجميعات"
 
-#: ../src/embed.js:167
-#, fuzzy
-msgid "Settings"
-msgstr "إعدادات النظام"
-
-#: ../src/lib/gd-nav-bar.c:235
+#: ../src/lib/gd-nav-bar.c:242
 #, c-format
 msgid "Page %u of %u"
 msgstr "صفحة %u من %u"
@@ -211,21 +301,20 @@ msgstr "تحتاج ليبرأوفيس لعرض هذا المستند"
 #. Translators: %s is the number of the page, already formatted
 #. * as a string, for example "Page 5".
 #.
-#: ../src/lib/gd-places-bookmarks.c:315
+#: ../src/lib/gd-places-bookmarks.c:321
 #, c-format
 msgid "Page %s"
 msgstr "صفحة %s"
 
-#: ../src/lib/gd-places-bookmarks.c:378
+#: ../src/lib/gd-places-bookmarks.c:384
 msgid "No bookmarks"
 msgstr "لا علامات"
 
-#: ../src/lib/gd-places-bookmarks.c:386 ../src/lib/gd-places-links.c:257
-#: ../src/view.js:71
+#: ../src/lib/gd-places-bookmarks.c:392 ../src/lib/gd-places-links.c:257
 msgid "Loading…"
 msgstr "يُحمّل…"
 
-#: ../src/lib/gd-places-bookmarks.c:651 ../src/preview.js:601
+#: ../src/lib/gd-places-bookmarks.c:656 ../src/preview.js:628
 msgid "Bookmarks"
 msgstr "العلامات"
 
@@ -233,36 +322,48 @@ msgstr "العلامات"
 msgid "No table of contents"
 msgstr "لا جدول محتويات"
 
-#: ../src/lib/gd-places-links.c:518
+#: ../src/lib/gd-places-links.c:514
 msgid "Contents"
 msgstr "المحتويات"
 
-#: ../src/mainToolbar.js:79
+#: ../src/lib/gd-utils.c:412
+msgid "A document manager application"
+msgstr "تطبيق إدارة مُستندات"
+
+#: ../src/lib/gd-utils.c:419
+msgid "An e-books manager application"
+msgstr "تطبيق لإدارة الكتب الرقمية"
+
+#: ../src/lib/gd-utils.c:427
+msgid "translator-credits"
+msgstr ""
+"فريق عربآيز للترجمة http://www.arabeyes.org:\n"
+"عبد الرحيم فاخوري <abdilra7eem@yahoo.com>\n"
+"إبراهيم سعيد <ibraheem5000@gmail.com>\n"
+"خالد حسني <khaledhosny@eglug.org>"
+
+#: ../src/mainToolbar.js:88
 msgid "Search"
 msgstr "ابحث"
 
-#: ../src/mainToolbar.js:90
+#: ../src/mainToolbar.js:96
 msgid "Back"
 msgstr "السابق"
 
-#: ../src/mainToolbar.js:149
+#: ../src/mainToolbar.js:146
 msgid "View items as a list"
-msgstr ""
+msgstr "اعرض العناصر في قائمة"
 
-#: ../src/mainToolbar.js:155
+#: ../src/mainToolbar.js:152
 msgid "View items as a grid of icons"
-msgstr ""
+msgstr "اعرض العناصر في شبكة أيقونات"
 
-#: ../src/mainToolbar.js:189
-#, javascript-format
-msgid "Results for “%s”"
-msgstr "نتائج ”%s“"
-
-#: ../src/mainToolbar.js:197
+#: ../src/mainToolbar.js:182
 msgid "Click on items to select them"
 msgstr "انقر على عناصر لاختيارها"
 
-#: ../src/mainToolbar.js:199
+#: ../src/mainToolbar.js:184
+#, javascript-format
 msgid "%d selected"
 msgid_plural "%d selected"
 msgstr[0] "لا عناصر مُختارة"
@@ -272,45 +373,58 @@ msgstr[3] "%d عناصر مُختارة"
 msgstr[4] "%d عنصرا مُختارًا"
 msgstr[5] "%d عنصر مُختار"
 
-#: ../src/mainToolbar.js:226
+#: ../src/mainToolbar.js:208
 msgid "Cancel"
 msgstr "ألغِ"
 
-#: ../src/mainToolbar.js:268
+#: ../src/mainToolbar.js:259
 msgid "Select Items"
 msgstr "اختر العناصر"
 
-#: ../src/mainWindow.js:273
-msgid "translator-credits"
-msgstr ""
-"فريق عربآيز للترجمة http://www.arabeyes.org:\n"
-"عبد الرحيم فاخوري <abdilra7eem@yahoo.com>\n"
-"إبراهيم سعيد <ibraheem5000@gmail.com>\n"
-"خالد حسني <khaledhosny@eglug.org>"
+#. Translators: only one item has been deleted and %s is its name
+#: ../src/notifications.js:54
+#, javascript-format
+msgid "“%s” deleted"
+msgstr "حُذِف ‏”%s“"
 
-#: ../src/mainWindow.js:275
-msgid "A document manager application"
-msgstr "تطبيق إدارة مُستندات"
+#. Translators: one or more items might have been deleted, and %d
+#. is the count
+#: ../src/notifications.js:58
+#, javascript-format
+msgid "%d item deleted"
+msgid_plural "%d items deleted"
+msgstr[0] "لم تحذف أي عناصر"
+msgstr[1] "حُذِف عنصر واحد"
+msgstr[2] "حُذِف عنصرين"
+msgstr[3] "حُذِف %d عناصر"
+msgstr[4] "حُذِف %d عنصرًا"
+msgstr[5] "حُذِف %d عنصر"
 
-#: ../src/notifications.js:86
+#: ../src/notifications.js:67
+msgid "Undo"
+msgstr "تراجع"
+
+#: ../src/notifications.js:167
 #, javascript-format
 msgid "Printing “%s”: %s"
 msgstr "يطبع ”%s“:‏ %s"
 
-#: ../src/notifications.js:142
+#: ../src/notifications.js:223
 msgid "Your documents are being indexed"
 msgstr "يجري فهرسة مستنداتك"
 
-#: ../src/notifications.js:143
+#: ../src/notifications.js:224
 msgid "Some documents might not be available during this process"
 msgstr "قد لا تتاح بعض المستندات أثناء هذا"
 
-#: ../src/notifications.js:165
+#. Translators: %s refers to an online account provider, e.g.
+#. "Google", or "Windows Live".
+#: ../src/notifications.js:246
 #, javascript-format
 msgid "Fetching documents from %s"
 msgstr "يجلب المستند من %s"
 
-#: ../src/notifications.js:167
+#: ../src/notifications.js:248
 msgid "Fetching documents from online accounts"
 msgstr "يجلب المستندات من حسابات الإنترنت"
 
@@ -331,67 +445,88 @@ msgstr "المستند %s مقفل ويتطلب كلمة سر ليُفتح."
 msgid "_Password"
 msgstr "_كلمة السر"
 
-#: ../src/places.js:56
-msgid "Close"
-msgstr "أغلق"
-
-#: ../src/presentation.js:104
+#: ../src/presentation.js:105
 msgid "Running in presentation mode"
 msgstr "يعمل في نمط العرض التقديمي"
 
-#: ../src/presentation.js:157
+#. Translators: "Mirrored" describes when both displays show the same view
+#: ../src/presentation.js:152
+msgid "Mirrored"
+msgstr "متطابقة"
+
+#: ../src/presentation.js:154
+msgid "Primary"
+msgstr "أساسي"
+
+#: ../src/presentation.js:156
+msgid "Off"
+msgstr "مغلق"
+
+#: ../src/presentation.js:158
+msgid "Secondary"
+msgstr "ثانوي"
+
+#: ../src/presentation.js:194
 msgid "Present On"
 msgstr "عرض تقديمي"
 
-#: ../src/preview.js:609
+#: ../src/preview.js:636
 msgid "Bookmark this page"
 msgstr "علّم هذه الصفحة"
 
-#: ../src/preview.js:853 ../src/selections.js:857
+#. Translators: this is the Open action in a context menu
+#: ../src/preview.js:897 ../src/selections.js:859
 #, javascript-format
 msgid "Open with %s"
 msgstr "افتح باستخدام %s"
 
-#: ../src/preview.js:915
+#: ../src/preview.js:960
 msgid "Find Previous"
 msgstr "ابحث عن السابق"
 
-#: ../src/preview.js:922
+#: ../src/preview.js:967
 msgid "Find Next"
 msgstr "ابحث عن التالي"
 
+#. properties button
 #: ../src/properties.js:61 ../src/resources/preview-menu.ui.h:9
-#: ../src/selections.js:767
+#: ../src/selections.js:769
 msgid "Properties"
 msgstr "الخصائص"
 
-#: ../src/properties.js:63 ../src/sharing.js:102
-msgid "Done"
-msgstr "تم"
-
-#: ../src/properties.js:83
+#. Title item
+#. Translators: "Title" is the label next to the document title
+#. in the properties dialog
+#: ../src/properties.js:81
 msgctxt "Document Title"
 msgid "Title"
 msgstr "العنوان"
 
-#: ../src/properties.js:92
+#. Translators: "Author" is the label next to the document author
+#. in the properties dialog
+#: ../src/properties.js:90
 msgctxt "Document Author"
 msgid "Author"
 msgstr "المؤلف"
 
-#: ../src/properties.js:99
+#. Source item
+#: ../src/properties.js:97
 msgid "Source"
 msgstr "المصدر"
 
-#: ../src/properties.js:105
+#. Date Modified item
+#: ../src/properties.js:103
 msgid "Date Modified"
 msgstr "تاريخ التعديل"
 
-#: ../src/properties.js:112
+#: ../src/properties.js:110
 msgid "Date Created"
 msgstr "تاريخ الإنشاء"
 
-#: ../src/properties.js:121
+#. Document type item
+#. Translators: "Type" is the label next to the document type
+#. (PDF, spreadsheet, ...) in the properties dialog
+#: ../src/properties.js:119
 msgctxt "Document Type"
 msgid "Type"
 msgstr "النوع"
@@ -401,14 +536,18 @@ msgid "Fullscreen"
 msgstr "ملء الشاشة"
 
 #: ../src/resources/app-menu.ui.h:2
+msgid "Night Mode"
+msgstr "الوضع الليلي"
+
+#: ../src/resources/app-menu.ui.h:3
 msgid "Help"
 msgstr "مساعدة"
 
-#: ../src/resources/app-menu.ui.h:3
+#: ../src/resources/app-menu.ui.h:4
 msgid "About"
 msgstr "عنْ"
 
-#: ../src/resources/app-menu.ui.h:4
+#: ../src/resources/app-menu.ui.h:5
 msgid "Quit"
 msgstr "أنهِ"
 
@@ -416,8 +555,10 @@ msgstr "أنهِ"
 msgid "_Copy"
 msgstr "ا_نسخ"
 
+#. open button
+#. Translators: this is the Open action in a context menu
 #: ../src/resources/preview-menu.ui.h:1 ../src/selections.js:747
-#: ../src/selections.js:860
+#: ../src/selections.js:862
 msgid "Open"
 msgstr "افتح"
 
@@ -457,63 +598,77 @@ msgstr "اختر الكل"
 msgid "Select None"
 msgstr "أزل الاختيار عن الكل"
 
-#: ../src/search.js:114
+#: ../src/search.js:126
 msgid "Category"
 msgstr "الفئة"
 
-#: ../src/search.js:119 ../src/search.js:171 ../src/search.js:256
-#: ../src/search.js:412
+#. Translators: this refers to new and recent documents
+#. Translators: this refers to documents
+#: ../src/search.js:131 ../src/search.js:200 ../src/search.js:333
+#: ../src/search.js:503
 msgid "All"
 msgstr "الكلّ"
 
-#: ../src/search.js:125
+#. Translators: this refers to favorite documents
+#: ../src/search.js:137
 msgid "Favorites"
 msgstr "المفضّلة"
 
-#: ../src/search.js:130
+#. Translators: this refers to shared documents
+#: ../src/search.js:142
 msgid "Shared with you"
 msgstr "مشتركة معك"
 
-#: ../src/search.js:168
+#. Translators: "Type" refers to a search filter on the document type
+#. (PDF, spreadsheet, ...)
+#: ../src/search.js:197
 msgctxt "Search Filter"
 msgid "Type"
 msgstr "النوع"
 
-#: ../src/search.js:173
-msgid "Collections"
-msgstr "تجميعات"
-
-#: ../src/search.js:177
+#: ../src/search.js:207
 msgid "PDF Documents"
 msgstr "مستندات PDF"
 
-#: ../src/search.js:181
+#: ../src/search.js:220
 msgid "Presentations"
 msgstr "عروض تقديميّة"
 
-#: ../src/search.js:184
+#: ../src/search.js:223
 msgid "Spreadsheets"
 msgstr "جداول ممتدة"
 
-#: ../src/search.js:187
+#: ../src/search.js:226
 msgid "Text Documents"
 msgstr "مستندات نصيّة"
 
-#: ../src/search.js:253
+#: ../src/search.js:231
+msgid "e-Books"
+msgstr "كتب رقمية"
+
+#: ../src/search.js:235
+msgid "Comics"
+msgstr "كتب مصوّرة"
+
+#. Translators: this is a verb that refers to "All", "Title" and "Author",
+#. as in "Match All", "Match Title" and "Match Author"
+#: ../src/search.js:330
 msgid "Match"
 msgstr "طابق"
 
-#: ../src/search.js:259
+#. Translators: "Title" refers to "Match Title" when searching
+#: ../src/search.js:336
 msgctxt "Search Filter"
 msgid "Title"
 msgstr "العنوان"
 
-#: ../src/search.js:262
+#. Translators: "Author" refers to "Match Author" when searching
+#: ../src/search.js:339
 msgctxt "Search Filter"
 msgid "Author"
 msgstr "المؤلف"
 
-#: ../src/search.js:408
+#: ../src/search.js:499
 msgid "Sources"
 msgstr "المصادر"
 
@@ -525,24 +680,28 @@ msgstr "ليس لديك أي تجميعات بعد. أدخل اسم تجميعة
 msgid "Create new collection"
 msgstr "أنشئ تجميعة جديدة"
 
+#. Translators: "Collections" refers to documents in this context
 #: ../src/selections.js:640
 msgctxt "Dialog Title"
 msgid "Collections"
 msgstr "التجميعات"
 
+#. print button
 #: ../src/selections.js:752
 msgid "Print"
 msgstr "اطبع"
 
+#. trash button
 #: ../src/selections.js:757
 msgid "Delete"
 msgstr "احذف"
 
-#: ../src/selections.js:762
+#: ../src/selections.js:763
 msgid "Share"
 msgstr "تشارَك"
 
-#: ../src/selections.js:772
+#. organize button
+#: ../src/selections.js:774
 msgid "Add to Collection"
 msgstr "أضف إلى التجميعة"
 
@@ -550,14 +709,22 @@ msgstr "أضف إلى التجميعة"
 msgid "Sharing Settings"
 msgstr "إعدادات المشاركة"
 
+#. Label for Done button in Sharing dialog
+#: ../src/sharing.js:102
+msgid "Done"
+msgstr "تم"
+
+#. Label for widget group for changing document permissions
 #: ../src/sharing.js:135
 msgid "Document permissions"
 msgstr "صلاحيات المستندات"
 
+#. Label for permission change in Sharing dialog
 #: ../src/sharing.js:142 ../src/sharing.js:320
 msgid "Change"
 msgstr "غيّر"
 
+#. Label for radiobutton that sets doc permission to private
 #: ../src/sharing.js:166 ../src/sharing.js:295
 msgid "Private"
 msgstr "خاص"
@@ -566,14 +733,17 @@ msgstr "خاص"
 msgid "Public"
 msgstr "عام"
 
+#. Label for checkbutton that sets doc permission to Can edit
 #: ../src/sharing.js:180 ../src/sharing.js:290
 msgid "Everyone can edit"
 msgstr "يمكن للجميع تحريره"
 
+#. Label for widget group used for adding new contacts
 #: ../src/sharing.js:187
 msgid "Add people"
 msgstr "أضف أشخاصًا"
 
+#. Editable text in entry field
 #: ../src/sharing.js:194
 msgid "Enter an email address"
 msgstr "أدخل عنوان البريد"
@@ -612,23 +782,41 @@ msgstr "يمكنك طلب الصلاحية من %s"
 msgid "The document was not updated"
 msgstr "لم يُحدَّث المستند"
 
-#: ../src/shellSearchProvider.js:294
+#: ../src/shellSearchProvider.js:293
 msgid "Untitled Document"
 msgstr "مستند بلا عنوان"
 
-#: ../src/trackerController.js:170
+#: ../src/trackerController.js:172
 msgid "Unable to fetch the list of documents"
 msgstr "تعذّر جلب قائمة المستندات"
 
-#: ../src/view.js:62 ../src/view.js:93
-msgid "Load More"
-msgstr "حمّل المزيد"
+#: ../src/view.js:249
+msgid "No Books Found"
+msgstr "لم يُعثر على أي كتب"
 
-#: ../src/view.js:307
+#: ../src/view.js:250
+msgid "No Documents Found"
+msgstr "لم يُعثر على أي مستندات"
+
+#. Translators: %s here is "Settings", which is in a separate string due to
+#. markup, and should be translated only in the context of this sentence
+#: ../src/view.js:272
+#, javascript-format
+msgid "You can add your online accounts in %s"
+msgstr "يمكنك إضافة حسابات الإنترنت في %s"
+
+#. Translators: this should be translated in the context of the
+#. "You can add your online accounts in Settings" sentence above
+#: ../src/view.js:276
+msgid "Settings"
+msgstr "الإعدادات"
+
+#: ../src/view.js:470
 msgid "Yesterday"
 msgstr "بالأمس"
 
-#: ../src/view.js:309
+#: ../src/view.js:472
+#, javascript-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
 msgstr[0] "منذ أقل من يوم"
@@ -638,11 +826,12 @@ msgstr[3] "منذ %d أيام"
 msgstr[4] "منذ %d يوما"
 msgstr[5] "منذ %d يوم"
 
-#: ../src/view.js:313
+#: ../src/view.js:476
 msgid "Last week"
 msgstr "الأسبوع الماضي"
 
-#: ../src/view.js:315
+#: ../src/view.js:478
+#, javascript-format
 msgid "%d week ago"
 msgid_plural "%d weeks ago"
 msgstr[0] "منذ أقل من أسبوع"
@@ -652,11 +841,12 @@ msgstr[3] "منذ %d أسابيع"
 msgstr[4] "منذ %d أسبوعا"
 msgstr[5] "منذ %d أسبوع"
 
-#: ../src/view.js:319
+#: ../src/view.js:482
 msgid "Last month"
 msgstr "الشهر الماضي"
 
-#: ../src/view.js:321
+#: ../src/view.js:484
+#, javascript-format
 msgid "%d month ago"
 msgid_plural "%d months ago"
 msgstr[0] "منذ أقل من شهر"
@@ -666,11 +856,12 @@ msgstr[3] "منذ %d أشهر"
 msgstr[4] "منذ %d شهرا"
 msgstr[5] "منذ %d شهر"
 
-#: ../src/view.js:325
+#: ../src/view.js:488
 msgid "Last year"
 msgstr "السنة الماضية"
 
-#: ../src/view.js:327
+#: ../src/view.js:490
+#, javascript-format
 msgid "%d year ago"
 msgid_plural "%d years ago"
 msgstr[0] "منذ أقل من سنة"
@@ -679,6 +870,29 @@ msgstr[2] "منذ سنتين"
 msgstr[3] "منذ %d سنوات"
 msgstr[4] "منذ %d سنة"
 msgstr[5] "منذ %d سنة"
+
+#, fuzzy
+#~ msgid ""
+#~ "<li>View recent local and online documents</li> <li>Access your Google, "
+#~ "ownCloud or OneDrive content</li> <li>Search through documents</li> "
+#~ "<li>See new documents shared by friends</li> <li>View documents "
+#~ "fullscreen</li> <li>Print documents</li> <li>Select favorites</li> "
+#~ "<li>Allow opening full featured editor for non-trivial changes</li>"
+#~ msgstr ""
+#~ "<li>عرض المستندات الحديثة من حاسوبك أو الوب</li> <li>الوصول إلى محتوى "
+#~ "جوجل أو ownCloud أو SkyDrive</li> <li>البحث في المستندات</li> <li>رؤية "
+#~ "المستندات الجديدة التي يُشاركها معك أصدقاؤك</li> <li>عرض المستندات تملأ "
+#~ "الشاشة</li> <li>طباعة المستندات</li> <li>اختيار المفضلات</li> <li>يسمح "
+#~ "بفتح محرر كامل الخصائص للتغييرات غير البسيطة</li>"
+
+#~ msgid "Results for “%s”"
+#~ msgstr "نتائج ”%s“"
+
+#~ msgid "Close"
+#~ msgstr "أغلق"
+
+#~ msgid "Load More"
+#~ msgstr "حمّل المزيد"
 
 #~ msgid "Skydrive"
 #~ msgstr "Skydrive"
@@ -705,9 +919,6 @@ msgstr[5] "منذ %d سنة"
 
 #~ msgid "Cannot find \"unoconv\", please check your LibreOffice installation"
 #~ msgstr "تعذّر العثور على \"unoconv\"، رجاءً تأكد من تثبيت ليبر أوفيس"
-
-#~ msgid "New and Recent"
-#~ msgstr "جديد وحديث"
 
 #~ msgid "filtered by title"
 #~ msgstr "مُرشّحة حسب العنوان"
