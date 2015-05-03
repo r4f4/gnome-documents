@@ -14,8 +14,8 @@ msgstr ""
 "Project-Id-Version: gnome-documents master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-11-14 07:39+0000\n"
-"PO-Revision-Date: 2014-11-15 01:13+0800\n"
+"POT-Creation-Date: 2015-04-22 16:44+0000\n"
+"PO-Revision-Date: 2015-04-22 23:28+0800\n"
 "Last-Translator: YunQiang Su <wzssyqa@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -23,11 +23,114 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 1.6.10\n"
+"X-Generator: Poedit 1.7.5\n"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:1
+#: ../data/org.gnome.Books.desktop.in.h:1 ../src/application.js:132
+#: ../src/lib/gd-utils.c:418
+msgid "Books"
+msgstr "图书"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:2
+msgid "An e-book manager application for GNOME"
+msgstr "GNOME 下的一款电子书管理应用程序"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:3
+msgid ""
+"A simple application to access and organize your e-books on GNOME. It is "
+"meant to be a simple and elegant replacement for using a file manager to "
+"deal with e-books."
+msgstr ""
+"GNOME 下一款可访问、管理您的电子书的简洁应用。它的目标是成为一款替代文件管理"
+"器来处理电子书的优雅工具。"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:4
+#: ../data/org.gnome.Documents.appdata.xml.in.h:4
+msgid "It lets you:"
+msgstr "它允许您："
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:5
+msgid "View recent e-books"
+msgstr "查看最近的电子书"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:6
+msgid "Search through e-books"
+msgstr "从电子书中搜索"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:7
+msgid "View e-books fullscreen"
+msgstr "全屏查看电子书"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:8
+msgid "Print e-books"
+msgstr "打印电子书"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:9
+#: ../data/org.gnome.Documents.appdata.xml.in.h:12
+msgid "Allow opening full featured editor for non-trivial changes"
+msgstr "允许打开全功能编辑器进行比较重大的修改"
+
+#: ../data/org.gnome.Books.desktop.in.h:2
+msgid "Access, manage and share books"
+msgstr "访问，管理以及分享图书"
+
+#: ../data/org.gnome.Books.desktop.in.h:3
+msgid "Books;Comics;ePub;PDF;"
+msgstr "Books;Comics;ePub;PDF;图书;漫画;"
+
+#: ../data/org.gnome.books.gschema.xml.h:1
+#: ../data/org.gnome.documents.gschema.xml.h:1
+msgid "View as"
+msgstr "查看方式"
+
+#: ../data/org.gnome.books.gschema.xml.h:2
+#: ../data/org.gnome.documents.gschema.xml.h:2
+msgid "View as type"
+msgstr "查看为类型"
+
+#: ../data/org.gnome.books.gschema.xml.h:3
+#: ../data/org.gnome.documents.gschema.xml.h:3
+msgid "Window size"
+msgstr "窗口大小"
+
+#: ../data/org.gnome.books.gschema.xml.h:4
+#: ../data/org.gnome.documents.gschema.xml.h:4
+msgid "Window size (width and height)."
+msgstr "窗口大小(宽度和高度)。"
+
+#: ../data/org.gnome.books.gschema.xml.h:5
+#: ../data/org.gnome.documents.gschema.xml.h:5
+msgid "Window position"
+msgstr "窗口位置"
+
+#: ../data/org.gnome.books.gschema.xml.h:6
+#: ../data/org.gnome.documents.gschema.xml.h:6
+msgid "Window position (x and y)."
+msgstr "窗口位置(水平和竖直)。"
+
+#: ../data/org.gnome.books.gschema.xml.h:7
+#: ../data/org.gnome.documents.gschema.xml.h:7
+msgid "Window maximized"
+msgstr "窗口已最大化"
+
+#: ../data/org.gnome.books.gschema.xml.h:8
+#: ../data/org.gnome.documents.gschema.xml.h:8
+msgid "Window maximized state"
+msgstr "窗口最大化状态"
+
+#: ../data/org.gnome.books.gschema.xml.h:9
+#: ../data/org.gnome.documents.gschema.xml.h:9
+msgid "Night mode"
+msgstr "夜间模式"
+
+#: ../data/org.gnome.books.gschema.xml.h:10
+#: ../data/org.gnome.documents.gschema.xml.h:10
+msgid "Whether the application is in night mode."
+msgstr "应用程序是否进入夜间模式。"
 
 #: ../data/org.gnome.Documents.appdata.xml.in.h:1
-#: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:121
-#: ../src/mainWindow.js:52 ../src/mainWindow.js:302
+#: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:128
+#: ../src/lib/gd-utils.c:411 ../src/mainWindow.js:52
 msgid "Documents"
 msgstr "文档"
 
@@ -44,10 +147,6 @@ msgid ""
 msgstr ""
 "GNOME 下一款可访问、管理以及分享文档的简洁应用。它的目标是成为一款替代文件管"
 "理器来处理文档的优雅工具。通过 GNOME 在线帐号，提供了无缝云集成功能。"
-
-#: ../data/org.gnome.Documents.appdata.xml.in.h:4
-msgid "It lets you:"
-msgstr "它允许您："
 
 #: ../data/org.gnome.Documents.appdata.xml.in.h:5
 msgid "View recent local and online documents"
@@ -77,10 +176,6 @@ msgstr "打印文档"
 msgid "Select favorites"
 msgstr "选择最喜爱的"
 
-#: ../data/org.gnome.Documents.appdata.xml.in.h:12
-msgid "Allow opening full featured editor for non-trivial changes"
-msgstr "允许打开全功能编辑器进行比较重大的修改"
-
 #: ../data/org.gnome.Documents.desktop.in.h:2
 msgid "Access, manage and share documents"
 msgstr "访问，管理以及分享文档"
@@ -89,129 +184,101 @@ msgstr "访问，管理以及分享文档"
 msgid "Docs;PDF;Document;"
 msgstr "Docs;PDF;Document;文件;文档;"
 
-#: ../data/org.gnome.documents.gschema.xml.h:1
-msgid "View as"
-msgstr "查看方式"
-
-#: ../data/org.gnome.documents.gschema.xml.h:2
-msgid "View as type"
-msgstr "查看为类型"
-
-#: ../data/org.gnome.documents.gschema.xml.h:3
-msgid "Window size"
-msgstr "窗口大小"
-
-#: ../data/org.gnome.documents.gschema.xml.h:4
-msgid "Window size (width and height)."
-msgstr "窗口大小(宽度和高度)。"
-
-#: ../data/org.gnome.documents.gschema.xml.h:5
-msgid "Window position"
-msgstr "窗口位置"
-
-#: ../data/org.gnome.documents.gschema.xml.h:6
-msgid "Window position (x and y)."
-msgstr "窗口位置(水平和竖直)。"
-
-#: ../data/org.gnome.documents.gschema.xml.h:7
-msgid "Window maximized"
-msgstr "窗口已最大化"
-
-#: ../data/org.gnome.documents.gschema.xml.h:8
-msgid "Window maximized state"
-msgstr "窗口最大化状态"
-
-#: ../src/documents.js:621
+#: ../src/documents.js:631
 msgid "Failed to print document"
 msgstr "无法打印文档"
 
-#: ../src/documents.js:658 ../src/search.js:427
+#: ../src/documents.js:668 ../src/search.js:509
 msgid "Local"
 msgstr "本地"
 
-#: ../src/documents.js:679
+#: ../src/documents.js:695
 msgid "GNOME"
 msgstr "GNOME"
 
-#: ../src/documents.js:680
+#: ../src/documents.js:696
 msgid "Getting Started with Documents"
 msgstr "“文档”使用入门"
 
-#: ../src/documents.js:696 ../src/documents.js:877 ../src/documents.js:939
-#: ../src/documents.js:1047
+#: ../src/documents.js:712 ../src/documents.js:904 ../src/documents.js:967
+#: ../src/documents.js:1075
 msgid "Collection"
 msgstr "合集"
 
-#: ../src/documents.js:756
+#: ../src/documents.js:782
 msgid "Google Docs"
 msgstr "谷歌文档"
 
-#: ../src/documents.js:757
+#: ../src/documents.js:783
 msgid "Google"
 msgstr "谷歌"
 
-#: ../src/documents.js:879 ../src/documents.js:1049
+#: ../src/documents.js:906 ../src/documents.js:1077
 msgid "Spreadsheet"
 msgstr "电子表格"
 
-#: ../src/documents.js:881 ../src/documents.js:1051 ../src/presentation.js:47
+#: ../src/documents.js:908 ../src/documents.js:1079 ../src/presentation.js:47
 msgid "Presentation"
 msgstr "演示文档"
 
-#: ../src/documents.js:883 ../src/documents.js:1053
+#: ../src/documents.js:910 ../src/documents.js:1081
+msgid "e-Book"
+msgstr "电子书"
+
+#: ../src/documents.js:912 ../src/documents.js:1083
 msgid "Document"
 msgstr "文档"
 
-#: ../src/documents.js:917
+#: ../src/documents.js:946
 msgid "ownCloud"
 msgstr "ownCloud"
 
-#: ../src/documents.js:981 ../src/documents.js:982
+#: ../src/documents.js:1009 ../src/documents.js:1010
 msgid "OneDrive"
 msgstr "OneDrive"
 
-#: ../src/documents.js:1181
+#: ../src/documents.js:1254
 msgid "Please check the network connection."
 msgstr "请检查网络连接。"
 
-#: ../src/documents.js:1184
+#: ../src/documents.js:1257
 msgid "Please check the network proxy settings."
 msgstr "请检查网络的代理设置。"
 
-#: ../src/documents.js:1187
+#: ../src/documents.js:1260
 msgid "Unable to sign in to the document service."
 msgstr "无法登入文档服务。"
 
-#: ../src/documents.js:1190
+#: ../src/documents.js:1263
 msgid "Unable to locate this document."
 msgstr "无法定位文档。"
 
-#: ../src/documents.js:1193
+#: ../src/documents.js:1266
 #, javascript-format
 msgid "Hmm, something is fishy (%d)."
 msgstr "有些东西不太对劲(%d)。"
 
-#: ../src/documents.js:1211
+#: ../src/documents.js:1273
+msgid ""
+"You are using a preview of Books. Full viewing capabilities are coming soon!"
+msgstr "您正在使用 图书 的预览版本。完整的浏览功能即将推出！"
+
+#: ../src/documents.js:1294
 #, javascript-format
 msgid "Oops! Unable to load “%s”"
 msgstr "糟糕！无法载入“%s”"
 
-#: ../src/edit.js:192
+#: ../src/edit.js:180
 msgid "View"
 msgstr "查看"
 
-#: ../src/embed.js:142
-msgid "No Documents Found"
-msgstr "未发现文档"
+#: ../src/embed.js:109
+msgid "Recent"
+msgstr "最近"
 
-#: ../src/embed.js:163
-#, javascript-format
-msgid "You can add your online accounts in %s"
-msgstr "您可以在 %s 中添加您的在线帐号"
-
-#: ../src/embed.js:167
-msgid "Settings"
-msgstr "设置"
+#: ../src/embed.js:112 ../src/search.js:203 ../src/search.js:212
+msgid "Collections"
+msgstr "合集"
 
 #: ../src/lib/gd-nav-bar.c:242
 #, c-format
@@ -239,11 +306,10 @@ msgid "No bookmarks"
 msgstr "没有书签"
 
 #: ../src/lib/gd-places-bookmarks.c:392 ../src/lib/gd-places-links.c:257
-#: ../src/view.js:71
 msgid "Loading…"
 msgstr "正在加载…"
 
-#: ../src/lib/gd-places-bookmarks.c:657 ../src/preview.js:580
+#: ../src/lib/gd-places-bookmarks.c:656 ../src/preview.js:628
 msgid "Bookmarks"
 msgstr "书签"
 
@@ -251,45 +317,19 @@ msgstr "书签"
 msgid "No table of contents"
 msgstr "没有目录"
 
-#: ../src/lib/gd-places-links.c:518
+#: ../src/lib/gd-places-links.c:514
 msgid "Contents"
 msgstr "目录"
 
-#: ../src/mainToolbar.js:79
-msgid "Search"
-msgstr "搜索"
+#: ../src/lib/gd-utils.c:412
+msgid "A document manager application"
+msgstr "文档管理程序"
 
-#: ../src/mainToolbar.js:87
-msgid "Back"
-msgstr "返回"
+#: ../src/lib/gd-utils.c:419
+msgid "An e-books manager application"
+msgstr "电子书管理程序"
 
-#: ../src/mainToolbar.js:132
-msgid "View items as a list"
-msgstr "以列表方式查看项目"
-
-#: ../src/mainToolbar.js:138
-msgid "View items as a grid of icons"
-msgstr "以图标网格方式查看项目"
-
-#: ../src/mainToolbar.js:168
-msgid "Click on items to select them"
-msgstr "点击项目来选择它们"
-
-#: ../src/mainToolbar.js:170
-#, javascript-format
-msgid "%d selected"
-msgid_plural "%d selected"
-msgstr[0] "已选 %d 项"
-
-#: ../src/mainToolbar.js:200
-msgid "Cancel"
-msgstr "取消"
-
-#: ../src/mainToolbar.js:242
-msgid "Select Items"
-msgstr "选择项目"
-
-#: ../src/mainWindow.js:301
+#: ../src/lib/gd-utils.c:427
 msgid "translator-credits"
 msgstr ""
 "甘 露 <rhythm.gan@gmail.com>, 2011\n"
@@ -299,38 +339,74 @@ msgstr ""
 "tuhaihe <1132321739qq@gmail.com>, 2012~2014\n"
 "Tong Hui <tonghuix@gmail.com>, 2014"
 
-#: ../src/mainWindow.js:303
-msgid "A document manager application"
-msgstr "一个文档管理程序"
+#: ../src/mainToolbar.js:88
+msgid "Search"
+msgstr "搜索"
 
-#: ../src/notifications.js:50
-msgid "Selected item has been deleted"
-msgid_plural "Selected items have been deleted"
-msgstr[0] "选中的项目已经删除"
+#: ../src/mainToolbar.js:96
+msgid "Back"
+msgstr "返回"
 
-#: ../src/notifications.js:57
+#: ../src/mainToolbar.js:146
+msgid "View items as a list"
+msgstr "以列表方式查看项目"
+
+#: ../src/mainToolbar.js:152
+msgid "View items as a grid of icons"
+msgstr "以图标网格方式查看项目"
+
+#: ../src/mainToolbar.js:182
+msgid "Click on items to select them"
+msgstr "点击项目来选择它们"
+
+#: ../src/mainToolbar.js:184
+#, javascript-format
+msgid "%d selected"
+msgid_plural "%d selected"
+msgstr[0] "已选 %d 项"
+
+#: ../src/mainToolbar.js:208
+msgid "Cancel"
+msgstr "取消"
+
+#: ../src/mainToolbar.js:259
+msgid "Select Items"
+msgstr "选择项目"
+
+#: ../src/notifications.js:54
+#, javascript-format
+msgid "“%s” deleted"
+msgstr "“%s” 已删除"
+
+#: ../src/notifications.js:58
+#, javascript-format
+msgid "%d item deleted"
+msgid_plural "%d items deleted"
+msgstr[0] "%d 个项目已经删除"
+
+#: ../src/notifications.js:67
 msgid "Undo"
 msgstr "撤销"
 
-#: ../src/notifications.js:157
+#: ../src/notifications.js:167
 #, javascript-format
 msgid "Printing “%s”: %s"
 msgstr "正在打印“%s”：%s"
 
-#: ../src/notifications.js:213
+#: ../src/notifications.js:223
 msgid "Your documents are being indexed"
 msgstr "您的文档正被索引"
 
-#: ../src/notifications.js:214
+#: ../src/notifications.js:224
 msgid "Some documents might not be available during this process"
 msgstr "在该过程中部分文档可能不可用"
 
-#: ../src/notifications.js:236
+#: ../src/notifications.js:246
 #, javascript-format
 msgid "Fetching documents from %s"
 msgstr "从 %s 获取文档"
 
-#: ../src/notifications.js:238
+#: ../src/notifications.js:248
 msgid "Fetching documents from online accounts"
 msgstr "从在线账户获取文档"
 
@@ -351,34 +427,50 @@ msgstr "文档 %s 已被锁定，打开需要密码。"
 msgid "_Password"
 msgstr "密码(_P)"
 
-#: ../src/presentation.js:104
+#: ../src/presentation.js:105
 msgid "Running in presentation mode"
 msgstr "正在演示模式下运行"
 
-#: ../src/presentation.js:157
+#: ../src/presentation.js:152
+msgid "Mirrored"
+msgstr ""
+
+#: ../src/presentation.js:154
+msgid "Primary"
+msgstr ""
+
+#: ../src/presentation.js:156
+msgid "Off"
+msgstr ""
+
+#: ../src/presentation.js:158
+msgid "Secondary"
+msgstr ""
+
+#: ../src/presentation.js:194
 msgid "Present On"
 msgstr "演示时间"
 
-#: ../src/preview.js:588
+#: ../src/preview.js:636
 msgid "Bookmark this page"
 msgstr "添加该页至书签"
 
-#: ../src/preview.js:823 ../src/selections.js:857
+#: ../src/preview.js:897 ../src/selections.js:859
 #, javascript-format
 msgid "Open with %s"
 msgstr "使用 %s 打开"
 
-#: ../src/preview.js:885
+#: ../src/preview.js:960
 msgid "Find Previous"
 msgstr "查找上一个"
 
 # 后一个，怪怪的
-#: ../src/preview.js:892
+#: ../src/preview.js:967
 msgid "Find Next"
 msgstr "查找下一个"
 
 #: ../src/properties.js:61 ../src/resources/preview-menu.ui.h:9
-#: ../src/selections.js:767
+#: ../src/selections.js:769
 msgid "Properties"
 msgstr "属性"
 
@@ -414,14 +506,18 @@ msgid "Fullscreen"
 msgstr "全屏"
 
 #: ../src/resources/app-menu.ui.h:2
+msgid "Night Mode"
+msgstr "夜间模式"
+
+#: ../src/resources/app-menu.ui.h:3
 msgid "Help"
 msgstr "帮助"
 
-#: ../src/resources/app-menu.ui.h:3
+#: ../src/resources/app-menu.ui.h:4
 msgid "About"
 msgstr "关于"
 
-#: ../src/resources/app-menu.ui.h:4
+#: ../src/resources/app-menu.ui.h:5
 msgid "Quit"
 msgstr "退出"
 
@@ -430,7 +526,7 @@ msgid "_Copy"
 msgstr "复制(_C)"
 
 #: ../src/resources/preview-menu.ui.h:1 ../src/selections.js:747
-#: ../src/selections.js:860
+#: ../src/selections.js:862
 msgid "Open"
 msgstr "打开"
 
@@ -470,63 +566,67 @@ msgstr "全选"
 msgid "Select None"
 msgstr "不选"
 
-#: ../src/search.js:114
+#: ../src/search.js:126
 msgid "Category"
 msgstr "类别"
 
-#: ../src/search.js:119 ../src/search.js:180 ../src/search.js:265
-#: ../src/search.js:421
+#: ../src/search.js:131 ../src/search.js:200 ../src/search.js:333
+#: ../src/search.js:503
 msgid "All"
 msgstr "全部"
 
-#: ../src/search.js:125
+#: ../src/search.js:137
 msgid "Favorites"
 msgstr "收藏"
 
-#: ../src/search.js:130
+#: ../src/search.js:142
 msgid "Shared with you"
 msgstr "分享给您的"
 
-#: ../src/search.js:177
+#: ../src/search.js:197
 msgctxt "Search Filter"
 msgid "Type"
 msgstr "类型"
 
-#: ../src/search.js:182
-msgid "Collections"
-msgstr "合集"
-
-#: ../src/search.js:186
+#: ../src/search.js:207
 msgid "PDF Documents"
 msgstr "PDF 文档"
 
-#: ../src/search.js:190
+#: ../src/search.js:220
 msgid "Presentations"
 msgstr "演示文档"
 
-#: ../src/search.js:193
+#: ../src/search.js:223
 msgid "Spreadsheets"
 msgstr "电子表格"
 
-#: ../src/search.js:196
+#: ../src/search.js:226
 msgid "Text Documents"
 msgstr "文本文档"
 
-#: ../src/search.js:262
+#: ../src/search.js:231
+msgid "e-Books"
+msgstr "电子书"
+
+#: ../src/search.js:235
+msgid "Comics"
+msgstr "漫画"
+
+#: ../src/search.js:330
 msgid "Match"
 msgstr "匹配"
 
-#: ../src/search.js:268
+#: ../src/search.js:336
 msgctxt "Search Filter"
 msgid "Title"
 msgstr "标题"
 
-#: ../src/search.js:271
+#: ../src/search.js:339
 msgctxt "Search Filter"
 msgid "Author"
 msgstr "作者"
 
-#: ../src/search.js:417
+#: ../src/search.js:499
 msgid "Sources"
 msgstr "源"
 
@@ -551,11 +651,11 @@ msgstr "打印"
 msgid "Delete"
 msgstr "删除"
 
-#: ../src/selections.js:762
+#: ../src/selections.js:763
 msgid "Share"
 msgstr "分享"
 
-#: ../src/selections.js:772
+#: ../src/selections.js:774
 msgid "Add to Collection"
 msgstr "添加到合集"
 
@@ -593,7 +693,7 @@ msgstr "添加联系人"
 
 #: ../src/sharing.js:194
 msgid "Enter an email address"
-msgstr "输入一个电子邮件地址"
+msgstr "输入电子邮件地址"
 
 #: ../src/sharing.js:209 ../src/sharing.js:376
 msgid "Can edit"
@@ -629,54 +729,70 @@ msgstr "您可以向 %s 请求访问权限"
 msgid "The document was not updated"
 msgstr "文档没有被更新"
 
-#: ../src/shellSearchProvider.js:294
+#: ../src/shellSearchProvider.js:293
 msgid "Untitled Document"
 msgstr "无标题文档"
 
-#: ../src/trackerController.js:170
+#: ../src/trackerController.js:172
 msgid "Unable to fetch the list of documents"
 msgstr "无法获取文档列表"
 
-#: ../src/view.js:62 ../src/view.js:93
-msgid "Load More"
-msgstr "载入更多"
+#: ../src/view.js:249
+msgid "No Books Found"
+msgstr "未发现图书"
 
-#: ../src/view.js:307
+#: ../src/view.js:250
+msgid "No Documents Found"
+msgstr "未发现文档"
+
+#: ../src/view.js:272
+#, javascript-format
+msgid "You can add your online accounts in %s"
+msgstr "您可以在 %s 中添加您的在线帐号"
+
+#: ../src/view.js:276
+msgid "Settings"
+msgstr "设置"
+
+#: ../src/view.js:470
 msgid "Yesterday"
 msgstr "昨天"
 
-#: ../src/view.js:309
+#: ../src/view.js:472
 #, javascript-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
 msgstr[0] "%d 天前"
 
-#: ../src/view.js:313
+#: ../src/view.js:476
 msgid "Last week"
 msgstr "上周"
 
-#: ../src/view.js:315
+#: ../src/view.js:478
 #, javascript-format
 msgid "%d week ago"
 msgid_plural "%d weeks ago"
 msgstr[0] "%d 周前"
 
-#: ../src/view.js:319
+#: ../src/view.js:482
 msgid "Last month"
 msgstr "上个月"
 
-#: ../src/view.js:321
+#: ../src/view.js:484
 #, javascript-format
 msgid "%d month ago"
 msgid_plural "%d months ago"
 msgstr[0] "%d 个月前"
 
-#: ../src/view.js:325
+#: ../src/view.js:488
 msgid "Last year"
 msgstr "去年"
 
-#: ../src/view.js:327
+#: ../src/view.js:490
 #, javascript-format
 msgid "%d year ago"
 msgid_plural "%d years ago"
 msgstr[0] "%d 年前"
+
+#~ msgid "Load More"
+#~ msgstr "载入更多"
