@@ -703,7 +703,7 @@ msgstr "تشارَك"
 #. organize button
 #: ../src/selections.js:774
 msgid "Add to Collection"
-msgstr "أضف إلى التجميعة"
+msgstr "أضف إلى تجميعة"
 
 #: ../src/sharing.js:98
 msgid "Sharing Settings"
