@@ -1,3 +1,16 @@
+3.16.2 - "Adamov"
+=================
+
+- Implement night mode in the content (Alessandro Bono)
+- Use the trash while deleting (Bastien Nocera)
+- Add placeholder text for PostScript files when the no TOC is available
+- Restore the search criteria when we move back from the preview or collection
+  view to the search results
+- Adapt to changes in nao:identifier syntax for Google items
+- Unbreak loading Google and SkyDrive items from the cache
+- Prevent WebKit2 from blowing away our cache
+- Translation updates
+
 3.16.0 - "Civic"
 ================
 
