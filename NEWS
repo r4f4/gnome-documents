@@ -1,3 +1,13 @@
+3.10.3 - "Pop Wheelie"
+======================
+
+- Fixed partially visible text in collections dialog (Muhammet Kara)
+- Pass the correct arguments to pdf_loader_load_uri_async (Pranav Kant)
+- Add placeholder text for PostScript files when the no TOC is available
+- Fix crash in places and bookmarks dialog
+- Disable SSLv3 to prevent POODLE attacks
+- Fix crash when list view is destroyed
+
 3.10.2 - "Paperwork"
 ====================
 
