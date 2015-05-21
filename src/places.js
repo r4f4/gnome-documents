@@ -59,10 +59,6 @@ const PlacesDialog = new Lang.Class({
                                       homogeneous: true });
         contentArea.pack_start(this._stack, true, true, 0);
 
-        let header = this.widget.get_header_bar();
-        let switcher = new Gtk.StackSwitcher({ stack: this._stack });
-        header.set_custom_title(switcher);
-
         let evDoc = this._model.get_document();
         let docHasLinks = false;
 
@@ -90,6 +86,16 @@ const PlacesDialog = new Lang.Class({
                     this._handleBookmark(link);
                 }));
             this._addPage(this._bookmarksPage);
+        }
+
+        let pages = this._stack.get_children();
+        let header = this.widget.get_header_bar();
+
+        if (pages.length == 1) {
+            header.set_title(pages[0].name);
+        } else if (pages.length > 1) {
+            let switcher = new Gtk.StackSwitcher({ stack: this._stack });
+            header.set_custom_title(switcher);
         }
     },
 
