@@ -48,8 +48,7 @@ const QueryFlags = {
     SEARCH: 1 << 3
 };
 
-const LOCAL_DOCUMENTS_COLLECTIONS_IDENTIFIER = 'gd:collection:local:';
-const LOCAL_BOOKS_COLLECTIONS_IDENTIFIER = 'gb:collection:local:';
+const LOCAL_COLLECTIONS_IDENTIFIER = 'gd:collection:local:';
 
 const QueryBuilder = new Lang.Class({
     Name: 'QueryBuilder',
@@ -220,17 +219,11 @@ const QueryBuilder = new Lang.Class({
     },
 
     buildCreateCollectionQuery: function(name) {
-        let application = Gio.Application.get_default();
-        let collectionsIdentifier;
-        if (!application.isBooks)
-            collectionsIdentifier = LOCAL_DOCUMENTS_COLLECTIONS_IDENTIFIER;
-        else
-            collectionsIdentifier = LOCAL_BOOKS_COLLECTIONS_IDENTIFIER;
         let time = GdPrivate.iso8601_from_timestamp(GLib.get_real_time() / GLib.USEC_PER_SEC);
         let sparql = ('INSERT { _:res a nfo:DataContainer ; a nie:DataObject ; ' +
                       'nie:contentLastModified \"' + time + '\" ; ' +
                       'nie:title \"' + name + '\" ; ' +
-                      'nao:identifier \"' + collectionsIdentifier + name + '\" }');
+                      'nao:identifier \"' + LOCAL_COLLECTIONS_IDENTIFIER + name + '\" }');
 
         return this._createQuery(sparql);
     },
