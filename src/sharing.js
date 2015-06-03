@@ -81,7 +81,16 @@ const SharingDialog = new Lang.Class({
 
         this._entry = null;
         this._feed = null;
-        this._createGDataEntry();
+
+        this._doc.createGDataEntry(null, Lang.bind(this,
+            function(entry, service, exception) {
+                if (exception) {
+                    log("Error getting GData Entry " + exception.message);
+                    return;
+                }
+                this._entry = entry;
+                this._refreshEntryACL();
+            }));
 
         this._docShare = DocumentShareState.UNKNOWN;
         this._pubEdit = false;
@@ -324,21 +333,6 @@ const SharingDialog = new Lang.Class({
             this._privateRadio.hide();
             this._publicBox.hide();
         }
-    },
-
-    // Get the id of the selected doc from the sourceManager, give auth info to Google, and start the service
-    _createGDataEntry: function() {
-        // Query the service for the entry related to the doc
-        this._service.query_single_entry_async(GData.DocumentsService.get_primary_authorization_domain(),
-            this._doc.identifier, null, GData.DocumentsText, null, Lang.bind(this,
-                function(object, res) {
-                    try {
-                        this._entry = object.query_single_entry_finish(res);
-                        this._refreshEntryACL();
-                    } catch (e) {
-                        log("Error getting GData Entry " + e.message);
-                    }
-                }));
     },
 
     // Return a feed containing the acl related to the entry

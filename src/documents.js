@@ -756,7 +756,7 @@ const GoogleDocument = new Lang.Class({
         this.sourceName = _("Google");
     },
 
-    _createGDataEntry: function(cancellable, callback) {
+    createGDataEntry: function(cancellable, callback) {
         let source = Application.sourceManager.getItemById(this.resourceUrn);
 
         let authorizer = new GData.GoaAuthorizer({ goa_object: source.object });
@@ -783,7 +783,7 @@ const GoogleDocument = new Lang.Class({
     },
 
     load: function(passwd, cancellable, callback) {
-        this._createGDataEntry(cancellable, Lang.bind(this,
+        this.createGDataEntry(cancellable, Lang.bind(this,
             function(entry, service, exception) {
                 if (exception) {
                     // try loading from the most recent cache, if any
@@ -815,7 +815,7 @@ const GoogleDocument = new Lang.Class({
     },
 
     createThumbnail: function(callback) {
-        this._createGDataEntry(null, Lang.bind(this,
+        this.createGDataEntry(null, Lang.bind(this,
             function(entry, service, exception) {
                 if (exception) {
                     callback(false);
