@@ -289,7 +289,8 @@ const Application = new Lang.Class({
                     action = Gio.SimpleAction.new_stateful(actionEntry.name,
                         parameterType, actionEntry.state);
                 else
-                    action = new Gio.SimpleAction({ name: actionEntry.name });
+                    action = new Gio.SimpleAction({ name: actionEntry.name,
+                        parameter_type: parameterType });
 
                 if (actionEntry.create_hook)
                     actionEntry.create_hook.apply(this, [action]);
