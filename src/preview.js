@@ -565,6 +565,8 @@ const PreviewView = new Lang.Class({
             this._model.connect('page-changed', Lang.bind(this, this._onPageChanged));
 
             this._updateNightMode();
+
+            this.widget.set_visible_child_full('view', Gtk.StackTransitionType.NONE);
         }
     },
 
