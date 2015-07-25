@@ -35,26 +35,27 @@ const Application = imports.application;
 
 const PresentationWindow = new Lang.Class({
     Name: 'PresentationWindow',
+    Extends: Gtk.Window,
 
     _init: function(model) {
         this._model = model;
         this._inhibitId = 0;
 
         let toplevel = Application.application.get_windows()[0];
-        this.window = new Gtk.Window ({ type: Gtk.WindowType.TOPLEVEL,
-                                        transient_for: toplevel,
-                                        destroy_with_parent: true,
-                                        title: _("Presentation"),
-                                        hexpand: true });
-        this.window.connect('key-press-event',
-                            Lang.bind(this, this._onKeyPressEvent));
+        this.parent({ type: Gtk.WindowType.TOPLEVEL,
+                      transient_for: toplevel,
+                      destroy_with_parent: true,
+                      title: _("Presentation"),
+                      hexpand: true });
+        this.connect('key-press-event',
+                     Lang.bind(this, this._onKeyPressEvent));
 
         this._model.connect('page-changed',
                             Lang.bind(this, this._onPageChanged));
 
         this._createView();
-        this.window.fullscreen();
-        this.window.show_all();
+        this.fullscreen();
+        this.show_all();
     },
 
     _onPageChanged: function() {
@@ -73,7 +74,7 @@ const PresentationWindow = new Lang.Class({
 
     setOutput: function(output) {
         let [x, y, width, height] = output.get_geometry();
-        this.window.move(x, y);
+        this.move(x, y);
     },
 
     _createView: function() {
@@ -88,7 +89,7 @@ const PresentationWindow = new Lang.Class({
         this.view.connect('finished', Lang.bind(this, this.close));
         this.view.connect('notify::current-page', Lang.bind(this, this._onPresentationPageChanged));
 
-        this.window.add(this.view);
+        this.add(this.view);
         this.view.show();
 
         this._inhibitIdle();
@@ -96,7 +97,7 @@ const PresentationWindow = new Lang.Class({
 
     close: function() {
         this._uninhibitIdle();
-        this.window.destroy();
+        this.destroy();
     },
 
     _inhibitIdle: function() {
@@ -116,13 +117,25 @@ const PresentationWindow = new Lang.Class({
 
 const PresentationOutputChooser = new Lang.Class({
     Name: 'PresentationOutputChooser',
+    Extends: Gtk.Dialog,
 
     _init: function(outputs) {
+        let toplevel = Application.application.get_windows()[0];
+        this.parent({ resizable: false,
+                      modal: true,
+                      transient_for: toplevel,
+                      destroy_with_parent: true,
+                      use_header_bar: true,
+                      title: _("Present On"),
+                      default_width: 300,
+                      default_height: 150,
+                      border_width: 5,
+                      hexpand: true });
         this.output = null;
         this._outputs = outputs;
         this._createWindow();
         this._populateList();
-        this.window.show_all();
+        this.show_all();
     },
 
     _populateList: function() {
@@ -181,22 +194,11 @@ const PresentationOutputChooser = new Lang.Class({
     },
 
     close: function() {
-        this.window.destroy();
+        this.destroy();
     },
 
     _createWindow: function() {
-        let toplevel = Application.application.get_windows()[0];
-        this.window = new Gtk.Dialog ({ resizable: false,
-                                        modal: true,
-                                        transient_for: toplevel,
-                                        destroy_with_parent: true,
-                                        use_header_bar: true,
-                                        title: _("Present On"),
-                                        default_width: 300,
-                                        default_height: 150,
-                                        border_width: 5,
-                                        hexpand: true });
-        this.window.connect('response', Lang.bind(this,
+        this.connect('response', Lang.bind(this,
             function(widget, response) {
                 this.emit('output-activated', null);
             }));
@@ -221,7 +223,7 @@ const PresentationOutputChooser = new Lang.Class({
                 }
             }));
 
-        let contentArea = this.window.get_content_area();
+        let contentArea = this.get_content_area();
         contentArea.pack_start(frame, true, false, 0);
     }
 });

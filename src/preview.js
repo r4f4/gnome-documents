@@ -239,7 +239,7 @@ const PreviewView = new Lang.Class({
 
     _showPresentation: function(output) {
         this._presentation = new Presentation.PresentationWindow(this._model);
-        this._presentation.window.connect('destroy', Lang.bind(this, this._hidePresentation));
+        this._presentation.connect('destroy', Lang.bind(this, this._hidePresentation));
         if (output)
             this._presentation.setOutput(output);
     },
