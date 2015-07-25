@@ -318,9 +318,11 @@ const OrganizeModelColumns = {
 
 const OrganizeCollectionModel = new Lang.Class({
     Name: 'OrganizeCollectionModel',
+    Extends: Gtk.ListStore,
 
     _init: function() {
-        this.model = Gtk.ListStore.new(
+        this.parent();
+        this.set_column_types(
             [ GObject.TYPE_STRING,
               GObject.TYPE_STRING,
               GObject.TYPE_INT ]);
@@ -333,14 +335,14 @@ const OrganizeCollectionModel = new Lang.Class({
         let iter;
 
         // add the placeholder
-        iter = this.model.append();
-        this.model.set(iter,
+        iter = this.append();
+        this.set(iter,
             [ 0, 1, 2 ],
             [ _COLLECTION_PLACEHOLDER_ID, '', OrganizeCollectionState.ACTIVE ]);
 
         // add the separator
-        iter = this.model.append();
-        this.model.set(iter,
+        iter = this.append();
+        this.set(iter,
             [ 0, 1, 2 ],
             [ _SEPARATOR_PLACEHOLDER_ID, '', OrganizeCollectionState.ACTIVE ]);
 
@@ -352,7 +354,7 @@ const OrganizeCollectionModel = new Lang.Class({
     _findCollectionIter: function(item) {
         let collPath = null;
 
-        this.model.foreach(Lang.bind(this,
+        this.foreach(Lang.bind(this,
             function(model, path, iter) {
                 let id = model.get_value(iter, OrganizeModelColumns.ID);
 
@@ -365,7 +367,7 @@ const OrganizeCollectionModel = new Lang.Class({
             }));
 
         if (collPath)
-            return this.model.get_iter(collPath)[1];
+            return this.get_iter(collPath)[1];
 
         return null;
     },
@@ -380,9 +382,9 @@ const OrganizeCollectionModel = new Lang.Class({
             let iter = this._findCollectionIter(item);
 
             if (!iter)
-                iter = this.model.append();
+                iter = this.append();
 
-            this.model.set(iter,
+            this.set(iter,
                 [ 0, 1, 2 ],
                 [ item.id, item.name, collectionState[item.id] ]);
         }
@@ -401,7 +403,7 @@ const OrganizeCollectionModel = new Lang.Class({
         let iter = this._findCollectionIter(itemRemoved);
 
         if (iter)
-            this.model.remove(iter);
+            this.remove(iter);
     },
 
     refreshCollectionState: function() {
@@ -439,7 +441,7 @@ const OrganizeCollectionView = new Lang.Class({
         this._view = new Gtk.TreeView({ headers_visible: false,
                                         vexpand: true,
                                         hexpand: true });
-        this._view.set_model(this._model.model);
+        this._view.set_model(this._model);
         this._view.set_row_separator_func(Lang.bind(this,
             function(model, iter) {
                 let id = model.get_value(iter, OrganizeModelColumns.ID);
@@ -465,8 +467,8 @@ const OrganizeCollectionView = new Lang.Class({
         this._msgGrid.add(this._label);
 
         // show the overlay only if there aren't any collections in the model
-        this._msgGrid.visible = (this._model.model.iter_n_children(null) < 2);
-        this._model.model.connect('row-inserted', Lang.bind(this,
+        this._msgGrid.visible = (this._model.iter_n_children(null) < 2);
+        this._model.connect('row-inserted', Lang.bind(this,
             function() {
                 this._msgGrid.hide();
             }));
@@ -523,9 +525,9 @@ const OrganizeCollectionView = new Lang.Class({
 
     _onCheckToggled: function(renderer, pathStr) {
         let path = Gtk.TreePath.new_from_string(pathStr);
-        let iter = this._model.model.get_iter(path)[1];
+        let iter = this._model.get_iter(path)[1];
 
-        let collUrn = this._model.model.get_value(iter, OrganizeModelColumns.ID);
+        let collUrn = this._model.get_value(iter, OrganizeModelColumns.ID);
         let state = this._rendererCheck.get_active();
 
         let job = new SetCollectionForSelectionJob(collUrn, !state);
@@ -544,8 +546,8 @@ const OrganizeCollectionView = new Lang.Class({
         }
 
         // update the new name immediately
-        let iter = this._model.model.append();
-        this._model.model.set_value(iter, OrganizeModelColumns.NAME, newText);
+        let iter = this._model.append();
+        this._model.set_value(iter, OrganizeModelColumns.NAME, newText);
 
         // force the editable row to be unselected
         this.selection.unselect_all();
@@ -557,7 +559,7 @@ const OrganizeCollectionView = new Lang.Class({
                 if (!createdUrn)
                     return;
 
-                this._model.model.set_value(iter, OrganizeModelColumns.ID, createdUrn);
+                this._model.set_value(iter, OrganizeModelColumns.ID, createdUrn);
 
                 let job = new SetCollectionForSelectionJob(createdUrn, true);
                 job.run(null);
@@ -628,21 +630,22 @@ const OrganizeCollectionView = new Lang.Class({
 
 const OrganizeCollectionDialog = new Lang.Class({
     Name: 'OrganizeCollectionDialog',
+    Extends: Gtk.Dialog,
 
     _init: function(toplevel) {
-        this.widget = new Gtk.Dialog({ transient_for: toplevel,
-                                       modal: true,
-                                       destroy_with_parent: true,
-                                       use_header_bar: true,
-                                       default_width: 400,
-                                       default_height: 300,
+        this.parent({ transient_for: toplevel,
+                      modal: true,
+                      destroy_with_parent: true,
+                      use_header_bar: true,
+                      default_width: 400,
+                      default_height: 300,
         // Translators: "Collections" refers to documents in this context
-                                       title: C_("Dialog Title", "Collections") });
+                      title: C_("Dialog Title", "Collections") });
 
-        let closeButton = this.widget.add_button('gtk-close', Gtk.ResponseType.CLOSE);
-        this.widget.set_default_response(Gtk.ResponseType.CLOSE);
+        let closeButton = this.add_button('gtk-close', Gtk.ResponseType.CLOSE);
+        this.set_default_response(Gtk.ResponseType.CLOSE);
 
-        let contentArea = this.widget.get_content_area();
+        let contentArea = this.get_content_area();
         let collView = new OrganizeCollectionView();
         contentArea.add(collView.widget);
 
@@ -661,7 +664,7 @@ const OrganizeCollectionDialog = new Lang.Class({
                 return false;
             }));
 
-        this.widget.show_all();
+        this.show_all();
     }
 });
 
@@ -881,9 +884,9 @@ const SelectionToolbar = new Lang.Class({
 
         let dialog = new OrganizeCollectionDialog(toplevel);
 
-        dialog.widget.connect('response', Lang.bind(this,
+        dialog.connect('response', Lang.bind(this,
             function(widget, response) {
-                dialog.widget.destroy();
+                dialog.destroy();
                 Application.selectionController.setSelectionMode(false);
             }));
     },
