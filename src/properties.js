@@ -38,6 +38,7 @@ const _TITLE_ENTRY_TIMEOUT = 200;
 
 const PropertiesDialog = new Lang.Class({
     Name: 'PropertiesDialog',
+    Extends: Gtk.Dialog,
 
     _init: function(urn) {
         let doc = Application.documentManager.getItemById(urn);
@@ -52,14 +53,14 @@ const PropertiesDialog = new Lang.Class({
         }
 
         let toplevel = Application.application.get_windows()[0];
-        this.widget = new Gtk.Dialog ({ resizable: false,
-                                        transient_for: toplevel,
-                                        modal: true,
-                                        destroy_with_parent: true,
-                                        use_header_bar: true,
-                                        default_width: 400,
-                                        title: _("Properties"),
-                                        hexpand: true });
+        this.parent({ resizable: false,
+                      transient_for: toplevel,
+                      modal: true,
+                      destroy_with_parent: true,
+                      use_header_bar: true,
+                      default_width: 400,
+                      title: _("Properties"),
+                      hexpand: true });
 
         let grid = new Gtk.Grid ({ orientation: Gtk.Orientation.VERTICAL,
                                    row_homogeneous: true,
@@ -72,7 +73,7 @@ const PropertiesDialog = new Lang.Class({
                                    margin_end: 24,
                                    margin_bottom: 12 });
 
-        let contentArea = this.widget.get_content_area();
+        let contentArea = this.get_content_area();
         contentArea.pack_start(grid, true, true, 2);
 
         // Title item
@@ -213,6 +214,6 @@ const PropertiesDialog = new Lang.Class({
                                                  halign: Gtk.Align.START });
         grid.attach_next_to (this._documentTypeData, this._docType, Gtk.PositionType.RIGHT, 2, 1);
 
-        this.widget.show_all();
+        this.show_all();
     }
 });

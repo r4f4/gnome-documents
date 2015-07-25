@@ -271,7 +271,7 @@ const Application = new Lang.Class({
             return;
 
         let dialog = new Properties.PropertiesDialog(doc.id);
-        dialog.widget.connect('response', Lang.bind(this,
+        dialog.connect('response', Lang.bind(this,
             function(widget, response) {
                 widget.destroy();
             }));

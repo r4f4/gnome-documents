@@ -927,9 +927,9 @@ const SelectionToolbar = new Lang.Class({
         let selection = Application.selectionController.getSelection();
         let dialog = new Properties.PropertiesDialog(selection[0]);
 
-        dialog.widget.connect('response', Lang.bind(this,
+        dialog.connect('response', Lang.bind(this,
             function(widget, response) {
-                dialog.widget.destroy();
+                dialog.destroy();
                 Application.selectionController.setSelectionMode(false);
             }));
     },
