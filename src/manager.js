@@ -181,9 +181,10 @@ Signals.addSignalMethods(BaseManager.prototype);
 
 const BaseModel = new Lang.Class({
     Name: 'BaseModel',
+    Extends: Gio.Menu,
 
     _init: function(manager) {
-        this.model = new Gio.Menu();
+        this.parent();
         this._manager = manager;
         this._manager.connect('item-added', Lang.bind(this, this._refreshModel));
         this._manager.connect('item-removed', Lang.bind(this, this._refreshModel));
@@ -202,14 +203,14 @@ const BaseModel = new Lang.Class({
     },
 
     _refreshModel: function() {
-        this.model.remove_all();
+        this.remove_all();
 
         let menuItem;
         let title = this._manager.getTitle();
         let actionId = this._manager.getActionId();
 
         let section = new Gio.Menu();
-        this.model.append_section(title, section);
+        this.append_section(title, section);
 
         let items = this._manager.getItems();
         for (let idx in items) {
