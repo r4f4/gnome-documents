@@ -222,7 +222,7 @@ const PreviewView = new Lang.Class({
 
     _showPlaces: function() {
         let dialog = new Places.PlacesDialog(this._model, this._bookmarks);
-        dialog.widget.connect('response', Lang.bind(this,
+        dialog.connect('response', Lang.bind(this,
             function(widget, response) {
                 widget.destroy();
             }));
