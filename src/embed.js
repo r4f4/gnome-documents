@@ -47,22 +47,23 @@ const _PDF_LOADER_TIMEOUT = 400;
 
 const SpinnerBox = new Lang.Class({
     Name: 'SpinnerBox',
+    Extends: Gtk.Grid,
 
     _init: function() {
-        this.widget = new Gtk.Grid({ orientation: Gtk.Orientation.VERTICAL,
-                                     row_spacing: 24,
-                                     hexpand: true,
-                                     vexpand: true,
-                                     halign: Gtk.Align.CENTER,
-                                     valign: Gtk.Align.CENTER });
+        this.parent({ orientation: Gtk.Orientation.VERTICAL,
+                      row_spacing: 24,
+                      hexpand: true,
+                      vexpand: true,
+                      halign: Gtk.Align.CENTER,
+                      valign: Gtk.Align.CENTER });
 
         this._spinner = new Gtk.Spinner({ width_request: _ICON_SIZE,
                                           height_request: _ICON_SIZE,
                                           halign: Gtk.Align.CENTER,
                                           valign: Gtk.Align.CENTER });
-        this.widget.add(this._spinner);
+        this.add(this._spinner);
 
-        this.widget.show_all();
+        this.show_all();
     },
 
     start: function() {
@@ -76,14 +77,15 @@ const SpinnerBox = new Lang.Class({
 
 const Embed = new Lang.Class({
     Name: 'Embed',
+    Extends: Gtk.Box,
 
     _init: function() {
         this._noResultsChangeId = 0;
         this._loadShowId = 0;
         this._searchState = null;
 
-        this.widget = new Gtk.Box({ orientation: Gtk.Orientation.VERTICAL,
-                                    visible: true });
+        this.parent({ orientation: Gtk.Orientation.VERTICAL,
+                      visible: true });
 
         let toplevel = Application.application.get_windows()[0];
         this._titlebar = new Gtk.Grid({ visible: true });
@@ -91,10 +93,10 @@ const Embed = new Lang.Class({
 
         // create the toolbar for selected items, it's hidden by default
         this._selectionToolbar = new Selections.SelectionToolbar();
-        this.widget.pack_end(this._selectionToolbar.widget, false, false, 0);
+        this.pack_end(this._selectionToolbar.widget, false, false, 0);
 
         this._stackOverlay = new Gtk.Overlay({ visible: true });
-        this.widget.pack_end(this._stackOverlay, true, true, 0);
+        this.pack_end(this._stackOverlay, true, true, 0);
 
         this._stack = new Gtk.Stack({ visible: true,
                                       homogeneous: true,
@@ -121,7 +123,7 @@ const Embed = new Lang.Class({
         this._stack.add_named(this._edit.widget, 'edit');
 
         this._spinnerBox = new SpinnerBox();
-        this._stack.add_named(this._spinnerBox.widget, 'spinner');
+        this._stack.add_named(this._spinnerBox, 'spinner');
 
         this._stack.connect('notify::visible-child',
                             Lang.bind(this, this._onVisibleChildChanged));

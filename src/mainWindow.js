@@ -88,7 +88,7 @@ const MainWindow = new Lang.Class({
             Lang.bind(this, this._onFullscreenChanged));
 
         this._embed = new Embed.Embed();
-        this.window.add(this._embed.widget);
+        this.window.add(this._embed);
     },
 
     _saveWindowGeometry: function() {
