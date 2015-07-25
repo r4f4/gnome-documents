@@ -390,9 +390,9 @@ const Embed = new Lang.Class({
         this._spinnerBox.stop();
 
         let dialog = new Password.PasswordDialog(doc);
-        dialog.widget.connect('response', Lang.bind(this,
+        dialog.connect('response', Lang.bind(this,
             function(widget, response) {
-                dialog.widget.destroy();
+                dialog.destroy();
                 if (response == Gtk.ResponseType.CANCEL || response == Gtk.ResponseType.DELETE_EVENT)
                     Application.documentManager.setActiveItem(null);
             }));

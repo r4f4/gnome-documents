@@ -33,22 +33,23 @@ const Lang = imports.lang;
 
 const PasswordDialog = new Lang.Class({
     Name: 'PasswordDialog',
+    Extends: Gtk.Dialog,
 
     _init: function(doc) {
         let toplevel = Application.application.get_windows()[0];
-        this.widget = new Gtk.Dialog({ resizable: false,
-                                       transient_for: toplevel,
-                                       modal: true,
-                                       destroy_with_parent: true,
-                                       use_header_bar: true,
-                                       default_width: 400,
-                                       border_width: 6,
-                                       title: _("Password Required"),
-                                       hexpand: true });
-        this.widget.add_button('gtk-cancel', Gtk.ResponseType.CANCEL);
-        this.widget.add_button(_("_Unlock"), Gtk.ResponseType.OK);
-        this.widget.set_default_response(Gtk.ResponseType.OK);
-        this.widget.set_response_sensitive(Gtk.ResponseType.OK, false);
+        this.parent({ resizable: false,
+                      transient_for: toplevel,
+                      modal: true,
+                      destroy_with_parent: true,
+                      use_header_bar: true,
+                      default_width: 400,
+                      border_width: 6,
+                      title: _("Password Required"),
+                      hexpand: true });
+        this.add_button('gtk-cancel', Gtk.ResponseType.CANCEL);
+        this.add_button(_("_Unlock"), Gtk.ResponseType.OK);
+        this.set_default_response(Gtk.ResponseType.OK);
+        this.set_response_sensitive(Gtk.ResponseType.OK, false);
 
         let grid = new Gtk.Grid({ column_spacing: 12,
                                   row_spacing: 18,
@@ -57,7 +58,7 @@ const PasswordDialog = new Lang.Class({
                                   hexpand: true,
                                   vexpand: true });
 
-        let contentArea = this.widget.get_content_area();
+        let contentArea = this.get_content_area();
         contentArea.pack_start(grid, true, true, 2);
 
         let label;
@@ -90,10 +91,10 @@ const PasswordDialog = new Lang.Class({
         entry.connect('changed', Lang.bind(this,
             function() {
                 let length = entry.get_text_length();
-                this.widget.set_response_sensitive(Gtk.ResponseType.OK, (length != 0));
+                this.set_response_sensitive(Gtk.ResponseType.OK, (length != 0));
             }));
 
-        this.widget.connect('response', Lang.bind(this,
+        this.connect('response', Lang.bind(this,
             function(widget, response) {
                 if (response != Gtk.ResponseType.OK)
                     return;
@@ -101,6 +102,6 @@ const PasswordDialog = new Lang.Class({
                 Application.documentManager.reloadActiveItem(passwd);
             }));
 
-        this.widget.show_all();
+        this.show_all();
     }
 });
