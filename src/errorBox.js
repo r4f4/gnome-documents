@@ -28,28 +28,29 @@ const _ICON_SIZE = 128;
 
 const ErrorBox = new Lang.Class({
     Name: 'ErrorBox',
+    Extends: Gtk.Grid,
 
     _init: function(primary, secondary) {
-        this.widget = new Gtk.Grid({ orientation: Gtk.Orientation.VERTICAL,
-                                     row_spacing: 12,
-                                     hexpand: true,
-                                     vexpand: true,
-                                     halign: Gtk.Align.CENTER,
-                                     valign: Gtk.Align.CENTER });
+        this.parent({ orientation: Gtk.Orientation.VERTICAL,
+                      row_spacing: 12,
+                      hexpand: true,
+                      vexpand: true,
+                      halign: Gtk.Align.CENTER,
+                      valign: Gtk.Align.CENTER });
 
         this._image = new Gtk.Image({ pixel_size: _ICON_SIZE,
                                       icon_name: 'face-uncertain-symbolic',
                                       halign: Gtk.Align.CENTER,
                                       valign: Gtk.Align.CENTER });
 
-        this.widget.add(this._image);
+        this.add(this._image);
 
         this._primaryLabel =
             new Gtk.Label({ label: '',
                             use_markup: true,
                             halign: Gtk.Align.CENTER,
                             valign: Gtk.Align.CENTER });
-        this.widget.add(this._primaryLabel);
+        this.add(this._primaryLabel);
 
         this._secondaryLabel =
             new Gtk.Label({ label: '',
@@ -57,9 +58,9 @@ const ErrorBox = new Lang.Class({
                             wrap: true,
                             halign: Gtk.Align.CENTER,
                             valign: Gtk.Align.CENTER });
-        this.widget.add(this._secondaryLabel);
+        this.add(this._secondaryLabel);
 
-        this.widget.show_all();
+        this.show_all();
     },
 
     update: function(primary, secondary) {

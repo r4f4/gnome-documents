@@ -70,7 +70,7 @@ const PreviewView = new Lang.Class({
                                       transition_type: Gtk.StackTransitionType.CROSSFADE });
 
         this._errorBox = new ErrorBox.ErrorBox();
-        this.widget.add_named(this._errorBox.widget, 'error');
+        this.widget.add_named(this._errorBox, 'error');
 
         this._sw = new Gtk.ScrolledWindow({ hexpand: true,
                                             vexpand: true });

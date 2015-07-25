@@ -328,7 +328,7 @@ const ViewContainer = new Lang.Class({
         this.widget.add_named(this._noResults.widget, 'no-results');
 
         this._errorBox = new ErrorBox.ErrorBox();
-        this.widget.add_named(this._errorBox.widget, 'error');
+        this.widget.add_named(this._errorBox, 'error');
 
         this.view = new Gd.MainView({ shadow_type: Gtk.ShadowType.NONE });
         grid.add(this.view);
