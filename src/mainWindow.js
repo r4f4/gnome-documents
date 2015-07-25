@@ -41,15 +41,16 @@ const _WINDOW_MIN_HEIGHT = 500;
 
 const MainWindow = new Lang.Class({
     Name: 'MainWindow',
+    Extends: Gtk.ApplicationWindow,
 
     _init: function(app) {
         this._configureId = 0;
 
-        this.window = new Gtk.ApplicationWindow({ application: app,
-                                                  width_request: _WINDOW_MIN_WIDTH,
-                                                  height_request: _WINDOW_MIN_HEIGHT,
-						  window_position: Gtk.WindowPosition.CENTER,
-						  title: _("Documents") });
+        this.parent({ application: app,
+                      width_request: _WINDOW_MIN_WIDTH,
+                      height_request: _WINDOW_MIN_HEIGHT,
+                      window_position: Gtk.WindowPosition.CENTER,
+                      title: _("Documents") });
 
         // apply the last saved window size and position
         let size = Application.settings.get_value('window-size');
@@ -57,8 +58,7 @@ const MainWindow = new Lang.Class({
             let width = size.get_child_value(0);
             let height = size.get_child_value(1);
 
-            this.window.set_default_size(width.get_int32(),
-                                         height.get_int32());
+            this.set_default_size(width.get_int32(), height.get_int32());
         }
 
         let position = Application.settings.get_value('window-position');
@@ -66,44 +66,38 @@ const MainWindow = new Lang.Class({
             let x = position.get_child_value(0);
             let y = position.get_child_value(1);
 
-            this.window.move(x.get_int32(),
-                             y.get_int32());
+            this.move(x.get_int32(), y.get_int32());
         }
 
         if (Application.settings.get_boolean('window-maximized'))
-            this.window.maximize();
+            this.maximize();
 
-        this.window.connect('delete-event',
-                            Lang.bind(this, this._quit));
-        this.window.connect('button-press-event',
-                            Lang.bind(this, this._onButtonPressEvent));
-        this.window.connect('key-press-event',
-                            Lang.bind(this, this._onKeyPressEvent));
-        this.window.connect('configure-event',
-                            Lang.bind(this, this._onConfigureEvent));
-        this.window.connect('window-state-event',
-                            Lang.bind(this, this._onWindowStateEvent));
+        this.connect('delete-event', Lang.bind(this, this._quit));
+        this.connect('button-press-event', Lang.bind(this, this._onButtonPressEvent));
+        this.connect('key-press-event', Lang.bind(this, this._onKeyPressEvent));
+        this.connect('configure-event', Lang.bind(this, this._onConfigureEvent));
+        this.connect('window-state-event', Lang.bind(this, this._onWindowStateEvent));
 
         this._fsId = Application.modeController.connect('fullscreen-changed',
             Lang.bind(this, this._onFullscreenChanged));
 
         this._embed = new Embed.Embed();
-        this.window.add(this._embed);
+        this.add(this._embed);
     },
 
     _saveWindowGeometry: function() {
-        let window = this.window.get_window();
+        let window = this.get_window();
         let state = window.get_state();
 
         if (state & Gdk.WindowState.MAXIMIZED)
             return;
 
         // GLib.Variant.new() can handle arrays just fine
-        let size = this.window.get_size();
+        let size = this.get_size();
         let variant = GLib.Variant.new ('ai', size);
         Application.settings.set_value('window-size', variant);
 
-        let position = this.window.get_position();
+        let position = this.get_position();
         variant = GLib.Variant.new ('ai', position);
         Application.settings.set_value('window-position', variant);
     },
@@ -142,9 +136,9 @@ const MainWindow = new Lang.Class({
 
     _onFullscreenChanged: function(controller, fullscreen) {
         if (fullscreen)
-            this.window.fullscreen();
+            this.fullscreen();
         else
-            this.window.unfullscreen();
+            this.unfullscreen();
     },
 
     _goBack: function() {
@@ -217,7 +211,7 @@ const MainWindow = new Lang.Class({
     },
 
     _isBackKey: function(event) {
-        let direction = this.window.get_direction();
+        let direction = this.get_direction();
         let keyval = event.get_keyval()[1];
         let state = event.get_state()[1];
 
@@ -311,6 +305,6 @@ const MainWindow = new Lang.Class({
     },
 
     showAbout: function(isBooks) {
-        GdPrivate.show_about_dialog(this.window, isBooks);
+        GdPrivate.show_about_dialog(this, isBooks);
     }
 });

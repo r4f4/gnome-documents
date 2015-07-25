@@ -217,7 +217,7 @@ const Application = new Lang.Class({
     },
 
     _onActionQuit: function() {
-        this._mainWindow.window.destroy();
+        this._mainWindow.destroy();
     },
 
     _onActionAbout: function() {
@@ -226,7 +226,7 @@ const Application = new Lang.Class({
 
     _onActionHelp: function() {
         try {
-            Gtk.show_uri(this._mainWindow.window.get_screen(),
+            Gtk.show_uri(this._mainWindow.get_screen(),
                          'help:gnome-documents',
                          Gtk.get_current_event_time());
         } catch (e) {
@@ -251,13 +251,13 @@ const Application = new Lang.Class({
     _onActionOpenCurrent: function() {
         let doc = documentManager.getActiveItem();
         if (doc)
-            doc.open(this._mainWindow.window.get_screen(), Gtk.get_current_event_time());
+            doc.open(this._mainWindow.get_screen(), Gtk.get_current_event_time());
     },
 
     _onActionPrintCurrent: function() {
         let doc = documentManager.getActiveItem();
         if (doc)
-            doc.print(this._mainWindow.window);
+            doc.print(this._mainWindow);
     },
 
     _onActionToggle: function(action) {
@@ -653,7 +653,7 @@ const Application = new Lang.Class({
         notificationManager = new Notifications.NotificationManager();
         this._connectActionsToMode();
         this._mainWindow = new MainWindow.MainWindow(this);
-        this._mainWindow.window.connect('destroy', Lang.bind(this, this._onWindowDestroy));
+        this._mainWindow.connect('destroy', Lang.bind(this, this._onWindowDestroy));
 
         try {
             this._extractPriority = TrackerExtractPriority();
@@ -685,7 +685,7 @@ const Application = new Lang.Class({
             modeController.setWindowMode(WindowMode.WindowMode.DOCUMENTS);
         }
 
-        this._mainWindow.window.present_with_time(this._activationTimestamp);
+        this._mainWindow.present_with_time(this._activationTimestamp);
         this._activationTimestamp = Gdk.CURRENT_TIME;
     },
 
@@ -777,7 +777,7 @@ const Application = new Lang.Class({
     getScaleFactor: function() {
         let scaleFactor = 1;
         if (this._mainWindow)
-            scaleFactor = this._mainWindow.window.get_scale_factor();
+            scaleFactor = this._mainWindow.get_scale_factor();
 
         return scaleFactor;
     },
@@ -785,7 +785,7 @@ const Application = new Lang.Class({
     getGdkWindow: function() {
         let window = null;
         if (this._mainWindow)
-            window = this._mainWindow.window.get_window();
+            window = this._mainWindow.get_window();
 
         return window;
     }
