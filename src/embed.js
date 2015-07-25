@@ -117,7 +117,7 @@ const Embed = new Lang.Class({
         this._stack.add_named(this._search.widget, 'search');
 
         this._preview = new Preview.PreviewView(this._stackOverlay);
-        this._stack.add_named(this._preview.widget, 'preview');
+        this._stack.add_named(this._preview, 'preview');
 
         this._edit = new Edit.EditView(this._stackOverlay);
         this._stack.add_named(this._edit.widget, 'edit');
@@ -373,7 +373,7 @@ const Embed = new Lang.Class({
         docModel.set_page_layout(EvView.PageLayout.AUTOMATIC);
         this._toolbar.setModel(docModel);
         this._preview.setModel(docModel);
-        this._preview.widget.grab_focus();
+        this._preview.grab_focus();
 
         this._clearLoadTimer();
         this._spinnerBox.stop();

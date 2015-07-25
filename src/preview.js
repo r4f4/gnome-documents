@@ -48,6 +48,7 @@ const _FULLSCREEN_TOOLBAR_TIMEOUT = 2; // seconds
 
 const PreviewView = new Lang.Class({
     Name: 'PreviewView',
+    Extends: Gtk.Stack,
 
     _init: function(overlay) {
         this._model = null;
@@ -66,11 +67,11 @@ const PreviewView = new Lang.Class({
         Application.modeController.connect('window-mode-changed', Lang.bind(this,
             this._onWindowModeChanged));
 
-        this.widget = new Gtk.Stack({ homogeneous: true,
-                                      transition_type: Gtk.StackTransitionType.CROSSFADE });
+        this.parent({ homogeneous: true,
+                      transition_type: Gtk.StackTransitionType.CROSSFADE });
 
         this._errorBox = new ErrorBox.ErrorBox();
-        this.widget.add_named(this._errorBox, 'error');
+        this.add_named(this._errorBox, 'error');
 
         this._sw = new Gtk.ScrolledWindow({ hexpand: true,
                                             vexpand: true });
@@ -79,7 +80,7 @@ const PreviewView = new Lang.Class({
         this._sw.get_vscrollbar().connect('button-press-event', Lang.bind(this, this._onScrollbarClick));
         this._sw.get_hadjustment().connect('value-changed', Lang.bind(this, this._onAdjustmentChanged));
         this._sw.get_vadjustment().connect('value-changed', Lang.bind(this, this._onAdjustmentChanged));
-        this.widget.add_named(this._sw, 'view');
+        this.add_named(this._sw, 'view');
 
         this._createView();
 
@@ -88,7 +89,7 @@ const PreviewView = new Lang.Class({
         this._previewContextMenu = Gtk.Menu.new_from_model(model);
         this._previewContextMenu.attach_to_widget(this._sw, null);
 
-        this.widget.show_all();
+        this.show_all();
 
         this._bookmarkPage = Application.application.lookup_action('bookmark-page');
         this._bookmarkPage.enabled = false;
@@ -151,7 +152,7 @@ const PreviewView = new Lang.Class({
         Application.documentManager.connect('load-error',
                                             Lang.bind(this, this._onLoadError));
 
-        this.widget.connect('destroy', Lang.bind(this,
+        this.connect('destroy', Lang.bind(this,
             function() {
                 this._bookmarkPage.disconnect(bookmarkPageId);
                 this._zoomIn.disconnect(zoomInId);
@@ -217,7 +218,7 @@ const PreviewView = new Lang.Class({
 
     _setError: function(primary, secondary) {
         this._errorBox.update(primary, secondary);
-        this.widget.set_visible_child_name('error');
+        this.set_visible_child_name('error');
     },
 
     _showPlaces: function() {
@@ -361,7 +362,7 @@ const PreviewView = new Lang.Class({
             this._handleExternalLink));
 
         this._navControls = new PreviewNavControls(this, this._overlay);
-        this.widget.set_visible_child_full('view', Gtk.StackTransitionType.NONE);
+        this.set_visible_child_full('view', Gtk.StackTransitionType.NONE);
     },
 
     _getPreviewContextMenu: function() {
@@ -566,7 +567,7 @@ const PreviewView = new Lang.Class({
 
             this._updateNightMode();
 
-            this.widget.set_visible_child_full('view', Gtk.StackTransitionType.NONE);
+            this.set_visible_child_full('view', Gtk.StackTransitionType.NONE);
         }
     },
 
