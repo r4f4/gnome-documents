@@ -108,13 +108,13 @@ const Embed = new Lang.Class({
 
         // now create the actual content widgets
         this._documents = new View.ViewContainer(WindowMode.WindowMode.DOCUMENTS);
-        this._stack.add_titled(this._documents.widget, 'documents', _("Recent"));
+        this._stack.add_titled(this._documents, 'documents', _("Recent"));
 
         this._collections = new View.ViewContainer(WindowMode.WindowMode.COLLECTIONS);
-        this._stack.add_titled(this._collections.widget, 'collections', _("Collections"));
+        this._stack.add_titled(this._collections, 'collections', _("Collections"));
 
         this._search = new View.ViewContainer(WindowMode.WindowMode.SEARCH);
-        this._stack.add_named(this._search.widget, 'search');
+        this._stack.add_named(this._search, 'search');
 
         this._preview = new Preview.PreviewView(this._stackOverlay);
         this._stack.add_named(this._preview, 'preview');
@@ -272,9 +272,9 @@ const Embed = new Lang.Class({
         let visibleChild = this._stack.visible_child;
         let windowMode = WindowMode.WindowMode.NONE;
 
-        if (visibleChild == this._collections.widget)
+        if (visibleChild == this._collections)
             windowMode = WindowMode.WindowMode.COLLECTIONS;
-        else if (visibleChild == this._documents.widget)
+        else if (visibleChild == this._documents)
             windowMode = WindowMode.WindowMode.DOCUMENTS;
 
         if (windowMode == WindowMode.WindowMode.NONE)

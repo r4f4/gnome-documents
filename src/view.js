@@ -67,9 +67,11 @@ const _RESET_COUNT_TIMEOUT = 500; // msecs
 
 const ViewModel = new Lang.Class({
     Name: 'ViewModel',
+    Extends: Gtk.ListStore,
 
     _init: function(windowMode) {
-        this.model = Gtk.ListStore.new(
+        this.parent();
+        this.set_column_types(
             [ GObject.TYPE_STRING,
               GObject.TYPE_STRING,
               GObject.TYPE_STRING,
@@ -78,8 +80,8 @@ const ViewModel = new Lang.Class({
               GObject.TYPE_LONG,
               GObject.TYPE_BOOLEAN,
               GObject.TYPE_UINT ]);
-        this.model.set_sort_column_id(Gd.MainColumns.MTIME,
-                                      Gtk.SortType.DESCENDING);
+        this.set_sort_column_id(Gd.MainColumns.MTIME,
+                                Gtk.SortType.DESCENDING);
 
         this._resetCountId = 0;
 
@@ -113,7 +115,7 @@ const ViewModel = new Lang.Class({
             doc.rowRefs[this._rowRefKey] = null;
         }
 
-        this.model.clear();
+        this.clear();
     },
 
     _addItem: function(doc) {
@@ -122,14 +124,14 @@ const ViewModel = new Lang.Class({
         // Results" page will not work correctly.
         this._resetCount();
 
-        let iter = this.model.append();
-        this.model.set(iter,
+        let iter = this.append();
+        this.set(iter,
             [ 0, 1, 2, 3, 4, 5 ],
             [ doc.id, doc.uri, doc.name,
               doc.author, doc.surface, doc.mtime ]);
 
-        let treePath = this.model.get_path(iter);
-        let treeRowRef = Gtk.TreeRowReference.new(this.model, treePath);
+        let treePath = this.get_path(iter);
+        let treeRowRef = Gtk.TreeRowReference.new(this, treePath);
         doc.rowRefs[this._rowRefKey] = treeRowRef;
 
         doc.connect('info-updated', Lang.bind(this, this._onInfoUpdated));
@@ -141,12 +143,12 @@ const ViewModel = new Lang.Class({
         // Results" page will not work correctly.
         this._resetCount();
 
-        this.model.foreach(Lang.bind(this,
+        this.foreach(Lang.bind(this,
             function(model, path, iter) {
                 let id = model.get_value(iter, Gd.MainColumns.ID);
 
                 if (id == doc.id) {
-                    this.model.remove(iter);
+                    this.remove(iter);
                     return true;
                 }
 
@@ -180,9 +182,9 @@ const ViewModel = new Lang.Class({
             if (!objectPath)
                 return;
 
-            let objectIter = this.model.get_iter(objectPath)[1];
+            let objectIter = this.get_iter(objectPath)[1];
             if (objectIter)
-                this.model.set(objectIter,
+                this.set(objectIter,
                     [ 0, 1, 2, 3, 4, 5 ],
                     [ doc.id, doc.uri, doc.name,
                       doc.author, doc.surface, doc.mtime ]);
@@ -226,23 +228,24 @@ const ViewModel = new Lang.Class({
 
 const EmptyResultsBox = new Lang.Class({
     Name: 'EmptyResultsBox',
+    Extends: Gtk.Grid,
 
     _init: function() {
-        this.widget = new Gtk.Grid({ orientation: Gtk.Orientation.HORIZONTAL,
-                                     column_spacing: 12,
-                                     hexpand: true,
-                                     vexpand: true,
-                                     halign: Gtk.Align.CENTER,
-                                     valign: Gtk.Align.CENTER });
-        this.widget.get_style_context().add_class('dim-label');
+        this.parent({ orientation: Gtk.Orientation.HORIZONTAL,
+                      column_spacing: 12,
+                      hexpand: true,
+                      vexpand: true,
+                      halign: Gtk.Align.CENTER,
+                      valign: Gtk.Align.CENTER });
+        this.get_style_context().add_class('dim-label');
 
         this._image = new Gtk.Image({ pixel_size: 64,
                                       icon_name: 'emblem-documents-symbolic' });
-        this.widget.add(this._image);
+        this.add(this._image);
 
         this._labelsGrid = new Gtk.Grid({ orientation: Gtk.Orientation.VERTICAL,
                                           row_spacing: 12 });
-        this.widget.add(this._labelsGrid);
+        this.add(this._labelsGrid);
 
         let titleLabel = new Gtk.Label({ label: '<b><span size="large">' +
                                          (Application.application.isBooks ?
@@ -262,7 +265,7 @@ const EmptyResultsBox = new Lang.Class({
             this._addSystemSettingsLabel();
         }
 
-        this.widget.show_all();
+        this.show_all();
     },
 
     _addSystemSettingsLabel: function() {
@@ -292,7 +295,7 @@ const EmptyResultsBox = new Lang.Class({
                     let app = Gio.AppInfo.create_from_commandline(
                         'gnome-control-center online-accounts', null, 0);
 
-                    let screen = this.widget.get_screen();
+                    let screen = this.get_screen();
                     let display = screen ? screen.get_display() : Gdk.Display.get_default();
                     let ctx = display.get_app_launch_context();
 
@@ -311,6 +314,7 @@ const EmptyResultsBox = new Lang.Class({
 
 const ViewContainer = new Lang.Class({
     Name: 'ViewContainer',
+    Extends: Gtk.Stack,
 
     _init: function(windowMode) {
         this._edgeHitId = 0;
@@ -318,23 +322,23 @@ const ViewContainer = new Lang.Class({
 
         this._model = new ViewModel(this._mode);
 
-        this.widget = new Gtk.Stack({ homogeneous: true,
-                                      transition_type: Gtk.StackTransitionType.CROSSFADE });
+        this.parent({ homogeneous: true,
+                      transition_type: Gtk.StackTransitionType.CROSSFADE });
 
         let grid = new Gtk.Grid({ orientation: Gtk.Orientation.VERTICAL });
-        this.widget.add_named(grid, 'view');
+        this.add_named(grid, 'view');
 
         this._noResults = new EmptyResultsBox();
-        this.widget.add_named(this._noResults.widget, 'no-results');
+        this.add_named(this._noResults, 'no-results');
 
         this._errorBox = new ErrorBox.ErrorBox();
-        this.widget.add_named(this._errorBox, 'error');
+        this.add_named(this._errorBox, 'error');
 
         this.view = new Gd.MainView({ shadow_type: Gtk.ShadowType.NONE });
         grid.add(this.view);
 
-        this.widget.show_all();
-        this.widget.set_visible_child_full('view', Gtk.StackTransitionType.NONE);
+        this.show_all();
+        this.set_visible_child_full('view', Gtk.StackTransitionType.NONE);
 
         this.view.connect('item-activated',
                             Lang.bind(this, this._onItemActivated));
@@ -374,9 +378,9 @@ const ViewContainer = new Lang.Class({
         this._offsetController.connect('item-count-changed', Lang.bind(this,
             function(controller, count) {
                 if (count == 0)
-                    this.widget.set_visible_child_name('no-results');
+                    this.set_visible_child_name('no-results');
                 else
-                    this.widget.set_visible_child_name('view');
+                    this.set_visible_child_name('view');
             }));
 
         this._trackerController.connect('query-error',
@@ -389,7 +393,7 @@ const ViewContainer = new Lang.Class({
         // this will create the model if we're done querying
         this._onQueryStatusChanged();
 
-        this.widget.connect('destroy', Lang.bind(this,
+        this.connect('destroy', Lang.bind(this,
             function() {
                 Application.application.disconnect(viewSettingsId);
                 selectAll.disconnect(selectAllId);
@@ -414,9 +418,9 @@ const ViewContainer = new Lang.Class({
     _getFirstDocument: function() {
         let doc = null;
 
-        let iter = this._model.model.get_iter_first()[1];
+        let iter = this._model.get_iter_first()[1];
         if (iter) {
-            let id = this._model.model.get_value(iter, Gd.MainColumns.ID);
+            let id = this._model.get_value(iter, Gd.MainColumns.ID);
             doc = Application.documentManager.getItemById(id);
         }
 
@@ -511,7 +515,7 @@ const ViewContainer = new Lang.Class({
 
         if (!status) {
             // setup a model if we're not querying
-            this.view.set_model(this._model.model);
+            this.view.set_model(this._model);
 
             // unfreeze selection
             Application.selectionController.freezeSelection(false);
@@ -528,7 +532,7 @@ const ViewContainer = new Lang.Class({
 
     _setError: function(primary, secondary) {
         this._errorBox.update(primary, secondary);
-        this.widget.set_visible_child_name('error');
+        this.set_visible_child_name('error');
     },
 
     _updateSelection: function() {
@@ -540,13 +544,13 @@ const ViewContainer = new Lang.Class({
 
         let generic = this.view.get_generic_view();
         let first = true;
-        this._model.model.foreach(Lang.bind(this,
+        this._model.foreach(Lang.bind(this,
             function(model, path, iter) {
-                let id = this._model.model.get_value(iter, Gd.MainColumns.ID);
+                let id = this._model.get_value(iter, Gd.MainColumns.ID);
                 let idIndex = selected.indexOf(id);
 
                 if (idIndex != -1) {
-                    this._model.model.set_value(iter, Gd.MainColumns.SELECTED, true);
+                    this._model.set_value(iter, Gd.MainColumns.SELECTED, true);
                     newSelection.push(id);
 
                     if (first) {
@@ -572,7 +576,7 @@ const ViewContainer = new Lang.Class({
     _onViewSelectionChanged: function() {
         // update the selection on the controller when the view signals a change
         let selectedURNs = Utils.getURNsFromPaths(this.view.get_selection(),
-                                                  this._model.model);
+                                                  this._model);
         Application.selectionController.setSelection(selectedURNs);
     },
 
