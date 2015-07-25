@@ -937,9 +937,9 @@ const SelectionToolbar = new Lang.Class({
    _onToolbarShare: function(widget) {
        let dialog = new Sharing.SharingDialog();
 
-       dialog.widget.connect('response', Lang.bind(this,
+       dialog.connect('response', Lang.bind(this,
            function(widget, response) {
-               dialog.widget.destroy();
+               dialog.destroy();
                Application.selectionController.setSelectionMode(false);
            }));
     },

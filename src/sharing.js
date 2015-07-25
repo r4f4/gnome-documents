@@ -70,6 +70,7 @@ const DocumentUpdateType = {
 
 const SharingDialog = new Lang.Class({
     Name: 'SharingDialog',
+    Extends: Gtk.Dialog,
 
     _init: function() {
         let urn = Application.selectionController.getSelection();
@@ -97,25 +98,25 @@ const SharingDialog = new Lang.Class({
         this._changePermissionVisible = false;
 
         let toplevel = Application.application.get_windows()[0];
-        this.widget = new Gtk.Dialog({ resizable: false,
-                                       transient_for: toplevel,
-                                       modal: true,
-                                       destroy_with_parent: true,
-                                       use_header_bar: true,
-                                       width_request: 335,
-                                       margin_top: 5,
-                                       title: _("Sharing Settings"),
-                                       hexpand: true });
+        this.parent({ resizable: false,
+                      transient_for: toplevel,
+                      modal: true,
+                      destroy_with_parent: true,
+                      use_header_bar: true,
+                      width_request: 335,
+                      margin_top: 5,
+                      title: _("Sharing Settings"),
+                      hexpand: true });
 
         // Label for Done button in Sharing dialog
-        this.widget.add_button(_("Done"), Gtk.ResponseType.CLOSE);
+        this.add_button(_("Done"), Gtk.ResponseType.CLOSE);
 
         let mainGrid = new Gtk.Grid({ orientation: Gtk.Orientation.VERTICAL,
                                       column_spacing: 6,
                                       row_spacing: 6,
                                       margin_start: 12,
                                       margin_end: 12 });
-        let contentArea = this.widget.get_content_area();
+        let contentArea = this.get_content_area();
         contentArea.pack_start(mainGrid, true, true, 0);
 
         this._scrolledWin = new Gtk.ScrolledWindow({ shadow_type: Gtk.ShadowType.IN,
@@ -234,7 +235,7 @@ const SharingDialog = new Lang.Class({
         this._grid.add(this._noPermission);
         this._grid.child_set_property(this._noPermission, 'width', 3);
 
-        this.widget.show_all();
+        this.show_all();
         this._updatePermissionButtons();
     },
 
@@ -612,7 +613,7 @@ const SharingDialog = new Lang.Class({
     },
 
     _showErrorDialog: function(errorStr) {
-        let errorDialog = new Gtk.MessageDialog ({ transient_for: this.widget,
+        let errorDialog = new Gtk.MessageDialog ({ transient_for: this,
                                                    modal: true,
                                                    destroy_with_parent: true,
                                                    buttons: Gtk.ButtonsType.OK,
