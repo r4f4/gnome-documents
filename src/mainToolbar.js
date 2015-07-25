@@ -36,22 +36,23 @@ const Searchbar = imports.searchbar;
 
 const MainToolbar = new Lang.Class({
     Name: 'MainToolbar',
+    Extends: Gtk.Box,
 
     _init: function() {
         this._model = null;
         this._handleEvent = true;
 
-        this.widget = new Gtk.Box({ orientation: Gtk.Orientation.VERTICAL });
-        this.widget.show();
+        this.parent({ orientation: Gtk.Orientation.VERTICAL });
+        this.show();
 
         this.toolbar = new Gtk.HeaderBar({ hexpand: true });
         this.toolbar.get_style_context().add_class('titlebar');
-        this.widget.add(this.toolbar);
+        this.add(this.toolbar);
         this.toolbar.show();
 
         this.searchbar = this.createSearchbar();
         if (this.searchbar)
-            this.widget.add(this.searchbar.widget);
+            this.add(this.searchbar.widget);
 
         let loadStartedId = Application.documentManager.connect('load-started', Lang.bind(this,
             function() {
@@ -63,7 +64,7 @@ const MainToolbar = new Lang.Class({
         let passwordNeededId = Application.documentManager.connect('password-needed',
             Lang.bind(this, this._onLoadErrorOrPassword));
 
-        this.widget.connect('destroy', Lang.bind(this,
+        this.connect('destroy', Lang.bind(this,
             function() {
                 Application.documentManager.disconnect(loadStartedId);
                 Application.documentManager.disconnect(loadErrorId);
@@ -129,7 +130,7 @@ const OverviewToolbar = new Lang.Class({
             Lang.bind(this, this._resetToolbarMode));
         this._resetToolbarMode();
 
-        this.widget.connect('destroy', Lang.bind(this,
+        this.connect('destroy', Lang.bind(this,
             function() {
                 this._clearStateData();
                 Application.selectionController.disconnect(selectionModeId);

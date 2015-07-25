@@ -183,7 +183,7 @@ const EditToolbar = new Lang.Class({
         this.toolbar.pack_end(viewButton);
 
         this._setToolbarTitle();
-        this.widget.show_all();
+        this.show_all();
     },
 
     createSearchbar: function() {

@@ -233,8 +233,8 @@ const Embed = new Lang.Class({
     },
 
     _onFullscreenChanged: function(controller, fullscreen) {
-        this._toolbar.widget.visible = !fullscreen;
-        this._toolbar.widget.sensitive = !fullscreen;
+        this._toolbar.visible = !fullscreen;
+        this._toolbar.sensitive = !fullscreen;
     },
 
     _onSearchChanged: function() {
@@ -427,11 +427,11 @@ const Embed = new Lang.Class({
 
         if (createToolbar) {
             if (this._toolbar)
-                this._toolbar.widget.destroy();
+                this._toolbar.destroy();
 
             // pack the toolbar
             this._toolbar = new MainToolbar.OverviewToolbar(this._stackOverlay, this._stack);
-            this._titlebar.add(this._toolbar.widget);
+            this._titlebar.add(this._toolbar);
         }
 
         this._spinnerBox.stop();
@@ -442,11 +442,11 @@ const Embed = new Lang.Class({
         if (this._edit)
             this._edit.setUri(null);
         if (this._toolbar)
-            this._toolbar.widget.destroy();
+            this._toolbar.destroy();
 
         // pack the toolbar
         this._toolbar = new Preview.PreviewToolbar(this._preview);
-        this._titlebar.add(this._toolbar.widget);
+        this._titlebar.add(this._toolbar);
 
         this._stack.set_visible_child_name('preview');
     },
@@ -455,11 +455,11 @@ const Embed = new Lang.Class({
         if (this._preview)
             this._preview.setModel(null);
         if (this._toolbar)
-            this._toolbar.widget.destroy();
+            this._toolbar.destroy();
 
         // pack the toolbar
         this._toolbar = new Edit.EditToolbar(this._preview);
-        this._titlebar.add(this._toolbar.widget);
+        this._titlebar.add(this._toolbar);
 
         this._stack.set_visible_child_name('edit');
     },

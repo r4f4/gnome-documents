@@ -373,10 +373,10 @@ const PreviewView = new Lang.Class({
     _syncControlsVisible: function() {
         if (this._controlsVisible) {
             if (this._fsToolbar)
-                this._fsToolbar.show();
+                this._fsToolbar.reveal();
         } else {
             if (this._fsToolbar)
-                this._fsToolbar.hide();
+                this._fsToolbar.conceal();
         }
     },
 
@@ -396,14 +396,14 @@ const PreviewView = new Lang.Class({
             // create fullscreen toolbar (hidden by default)
             this._fsToolbar = new PreviewFullscreenToolbar(this);
             this._fsToolbar.setModel(this._model);
-            this._overlay.add_overlay(this._fsToolbar.revealer);
+            this._overlay.add_overlay(this._fsToolbar);
 
             this._fsToolbar.connect('show-controls', Lang.bind(this,
                 function() {
                     this.controlsVisible = true;
                 }));
         } else {
-            this._fsToolbar.revealer.destroy();
+            this._fsToolbar.destroy();
             this._fsToolbar = null;
         }
 
@@ -859,7 +859,7 @@ const PreviewToolbar = new Lang.Class({
         this._setToolbarTitle();
         this.toolbar.show_all();
 
-        this.widget.connect('destroy', Lang.bind(this,
+        this.connect('destroy', Lang.bind(this,
             function() {
                 this._searchAction.enabled = true;
             }));
@@ -1007,14 +1007,15 @@ const PreviewSearchbar = new Lang.Class({
 
 const PreviewFullscreenToolbar = new Lang.Class({
     Name: 'PreviewFullscreenToolbar',
-    Extends: PreviewToolbar,
+    Extends: Gtk.Revealer,
 
     _init: function(previewView) {
-        this.parent(previewView);
+        this.parent({ valign: Gtk.Align.START });
 
-        this.revealer = new Gtk.Revealer({ valign: Gtk.Align.START });
-        this.revealer.add(this.widget);
-        this.revealer.show();
+        this._toolbar = new PreviewToolbar(previewView);
+
+        this.add(this._toolbar);
+        this.show();
 
         // make controls show when a toolbar action is activated in fullscreen
         let actionNames = ['gear-menu', 'search'];
@@ -1033,7 +1034,7 @@ const PreviewFullscreenToolbar = new Lang.Class({
                 signalIds.push(signalId);
             }));
 
-        this.widget.connect('destroy', Lang.bind(this,
+        this._toolbar.connect('destroy', Lang.bind(this,
             function() {
                 signalIds.forEach(
                     function(signalId) {
@@ -1042,12 +1043,20 @@ const PreviewFullscreenToolbar = new Lang.Class({
             }));
     },
 
-    show: function() {
-        this.revealer.set_reveal_child(true);
+    handleEvent: function(event) {
+        this._toolbar.handleEvent(event);
     },
 
-    hide: function() {
-        this.revealer.set_reveal_child(false);
+    setModel: function(model) {
+        this._toolbar.setModel(model);
+    },
+
+    reveal: function() {
+        this.set_reveal_child(true);
+    },
+
+    conceal: function() {
+        this.set_reveal_child(false);
         Application.application.change_action_state('search', GLib.Variant.new('b', false));
     }
 });
