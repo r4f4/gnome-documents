@@ -306,8 +306,8 @@ const Embed = new Lang.Class({
         }
 
         if (this._toolbar.searchbar) {
-            this._toolbar.searchbar.connect('activate-result',
-                                            Lang.bind(this, this._onActivateResult));
+            this._toolbar.searchbar.connectJS('activate-result',
+                                               Lang.bind(this, this._onActivateResult));
         }
     },
 

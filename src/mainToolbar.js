@@ -52,7 +52,7 @@ const MainToolbar = new Lang.Class({
 
         this.searchbar = this.createSearchbar();
         if (this.searchbar)
-            this.add(this.searchbar.widget);
+            this.add(this.searchbar);
 
         let loadStartedId = Application.documentManager.connect('load-started', Lang.bind(this,
             function() {

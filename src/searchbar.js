@@ -37,18 +37,19 @@ const Utils = imports.utils;
 
 const Searchbar = new Lang.Class({
     Name: 'Searchbar',
+    Extends: Gtk.SearchBar,
 
     _init: function() {
         this.searchChangeBlocked = false;
 
-        this.widget = new Gtk.SearchBar();
+        this.parent();
 
         // subclasses will create this._searchEntry and this._searchContainer
         // GtkWidgets
         this.createSearchWidgets();
 
-        this.widget.add(this._searchContainer);
-        this.widget.connect_entry(this._searchEntry);
+        this.add(this._searchContainer);
+        this.connect_entry(this._searchEntry);
 
         this._searchEntry.connect('search-changed', Lang.bind(this,
             function() {
@@ -57,9 +58,9 @@ const Searchbar = new Lang.Class({
 
                 this.entryChanged();
             }));
-        this.widget.connect('notify::search-mode-enabled', Lang.bind(this,
+        this.connect('notify::search-mode-enabled', Lang.bind(this,
             function() {
-                let searchEnabled = this.widget.search_mode_enabled;
+                let searchEnabled = this.search_mode_enabled;
                 Application.application.change_action_state('search', GLib.Variant.new('b', searchEnabled));
             }));
 
@@ -68,20 +69,20 @@ const Searchbar = new Lang.Class({
             Lang.bind(this, this._onActionStateChanged));
         this._onActionStateChanged(Application.application, 'search', Application.application.get_action_state('search'));
 
-        this.widget.connect('destroy', Lang.bind(this,
+        this.connect('destroy', Lang.bind(this,
             function() {
                 Application.application.disconnect(searchStateId);
                 Application.application.change_action_state('search', GLib.Variant.new('b', false));
             }));
 
-        this.widget.show_all();
+        this.show_all();
     },
 
     _onActionStateChanged: function(source, actionName, state) {
         if (state.get_boolean())
-            this.show();
+            this.reveal();
         else
-            this.hide();
+            this.conceal();
     },
 
     createSearchWidgets: function() {
@@ -92,36 +93,32 @@ const Searchbar = new Lang.Class({
         log('Error: Searchbar implementations must override entryChanged');
     },
 
-    destroy: function() {
-        this.widget.destroy();
-    },
-
     handleEvent: function(event) {
         // Skip if the search bar is shown and the focus is elsewhere
-        if (this.widget.search_mode_enabled && !this._searchEntry.is_focus)
+        if (this.search_mode_enabled && !this._searchEntry.is_focus)
             return false;
 
         let keyval = event.get_keyval()[1];
-        if (this.widget.search_mode_enabled && keyval == Gdk.KEY_Return) {
-            this.emit('activate-result');
+        if (this.search_mode_enabled && keyval == Gdk.KEY_Return) {
+            this.emitJS('activate-result');
             return true;
         }
 
-        return this.widget.handle_event(event);
+        return this.handle_event(event);
     },
 
-    show: function() {
-        this.widget.search_mode_enabled = true;
+    reveal: function() {
+        this.search_mode_enabled = true;
     },
 
-    hide: function() {
-        this.widget.search_mode_enabled = false;
+    conceal: function() {
+        this.search_mode_enabled = false;
 
         // clear all the search properties when hiding the entry
         this._searchEntry.set_text('');
     }
 });
-Signals.addSignalMethods(Searchbar.prototype);
+Utils.addJSSignalMethods(Searchbar.prototype);
 
 const Dropdown = new Lang.Class({
     Name: 'Dropdown',
@@ -321,12 +318,12 @@ const OverviewSearchbar = new Lang.Class({
         this.parent();
     },
 
-    show: function() {
+    reveal: function() {
         this._selectAll.enabled = false;
         this.parent();
     },
 
-    hide: function() {
+    conceal: function() {
         this._dropdownButton.set_active(false);
         this._selectAll.enabled = true;
 

@@ -985,7 +985,7 @@ const PreviewSearchbar = new Lang.Class({
         this._previewView.startSearch(this._searchEntry.get_text());
     },
 
-    show: function() {
+    reveal: function() {
         this.parent();
 
         if (!this._searchEntry.get_text()) {
@@ -997,7 +997,7 @@ const PreviewSearchbar = new Lang.Class({
         this._previewView.startSearch(this._searchEntry.get_text());
     },
 
-    hide: function() {
+    conceal: function() {
         this._previewView.view.find_set_highlight_search(false);
 
         this.searchChangeBlocked = true;
