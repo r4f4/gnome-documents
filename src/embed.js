@@ -119,8 +119,8 @@ const Embed = new Lang.Class({
         this._preview = new Preview.PreviewView(this._stackOverlay);
         this._stack.add_named(this._preview, 'preview');
 
-        this._edit = new Edit.EditView(this._stackOverlay);
-        this._stack.add_named(this._edit.widget, 'edit');
+        this._edit = new Edit.EditView();
+        this._stack.add_named(this._edit, 'edit');
 
         this._spinnerBox = new SpinnerBox();
         this._stack.add_named(this._spinnerBox, 'spinner');

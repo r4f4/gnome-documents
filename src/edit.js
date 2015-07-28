@@ -43,12 +43,13 @@ const _BLANK_URI = "about:blank";
 
 const EditView = new Lang.Class({
     Name: 'EditView',
+    Extends: Gtk.Overlay,
 
     _init: function() {
         this._uri = null;
 
-        this.widget = new Gtk.Overlay();
-        this.widget.get_style_context().add_class('documents-scrolledwin');
+        this.parent();
+        this.get_style_context().add_class('documents-scrolledwin');
 
         let context = WebKit.WebContext.get_default();
 
@@ -62,11 +63,11 @@ const EditView = new Lang.Class({
         this._progressBar = new Gtk.ProgressBar({ halign: Gtk.Align.FILL,
                                                   valign: Gtk.Align.START });
         this._progressBar.get_style_context().add_class('osd');
-        this.widget.add_overlay(this._progressBar);
+        this.add_overlay(this._progressBar);
 
         this._createView();
 
-        this.widget.show_all();
+        this.show_all();
 
         this._editAction = Application.application.lookup_action('edit-current');
         this._editAction.enabled = false;
@@ -108,7 +109,7 @@ const EditView = new Lang.Class({
 
     _createView: function() {
         this.view = new WebKit.WebView();
-        this.widget.add(this.view);
+        this.add(this.view);
         this.view.show();
         this.view.connect('notify::estimated-load-progress', Lang.bind(this, this._onProgressChanged));
     },
