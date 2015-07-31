@@ -93,7 +93,7 @@ const Embed = new Lang.Class({
 
         // create the toolbar for selected items, it's hidden by default
         this._selectionToolbar = new Selections.SelectionToolbar();
-        this.pack_end(this._selectionToolbar.widget, false, false, 0);
+        this.pack_end(this._selectionToolbar, false, false, 0);
 
         this._stackOverlay = new Gtk.Overlay({ visible: true });
         this.pack_end(this._stackOverlay, true, true, 0);

@@ -425,17 +425,18 @@ const OrganizeCollectionModel = new Lang.Class({
 
 const OrganizeCollectionView = new Lang.Class({
     Name: 'OrganizeCollectionView',
+    Extends: Gtk.Overlay,
 
     _init: function() {
         this._choiceConfirmed = false;
 
-        this.widget = new Gtk.Overlay();
+        this.parent();
 
         this._sw = new Gtk.ScrolledWindow({ shadow_type: Gtk.ShadowType.IN,
                                             margin_start: 5,
                                             margin_end: 5,
                                             margin_bottom: 3 });
-        this.widget.add(this._sw);
+        this.add(this._sw);
 
         this._model = new OrganizeCollectionModel();
         this._view = new Gtk.TreeView({ headers_visible: false,
@@ -453,7 +454,7 @@ const OrganizeCollectionView = new Lang.Class({
                                        row_spacing: 12,
                                        halign: Gtk.Align.CENTER,
                                        margin_top: 64 });
-        this.widget.add_overlay(this._msgGrid);
+        this.add_overlay(this._msgGrid);
 
         this._icon = new Gtk.Image({ resource: '/org/gnome/documents/collections-placeholder.png' });
         this._msgGrid.add(this._icon);
@@ -647,7 +648,7 @@ const OrganizeCollectionDialog = new Lang.Class({
 
         let contentArea = this.get_content_area();
         let collView = new OrganizeCollectionView();
-        contentArea.add(collView.widget);
+        contentArea.add(collView);
 
         // HACK:
         // - We want clicking on "Close" to add the typed-in collection if we're
@@ -736,15 +737,16 @@ const _SELECTION_TOOLBAR_DEFAULT_WIDTH = 500;
 
 const SelectionToolbar = new Lang.Class({
     Name: 'SelectionToolbar',
+    Extends: Gtk.Revealer,
 
     _init: function() {
         this._itemListeners = {};
         this._insideRefresh = false;
 
-        this.widget = new Gtk.Revealer({ transition_type: Gtk.RevealerTransitionType.SLIDE_UP });
+        this.parent({ transition_type: Gtk.RevealerTransitionType.SLIDE_UP });
 
         let toolbar = new Gtk.ActionBar();
-        this.widget.add(toolbar);
+        this.add(toolbar);
 
         // open button
         this._toolbarOpen = new Gtk.Button({ label: _("Open") });
@@ -778,7 +780,7 @@ const SelectionToolbar = new Lang.Class({
         toolbar.pack_end(this._toolbarCollection);
         this._toolbarCollection.connect('clicked', Lang.bind(this, this._onToolbarCollection));
 
-        this.widget.show_all();
+        this.show_all();
 
         Application.selectionController.connect('selection-mode-changed',
             Lang.bind(this, this._onSelectionModeChanged));
@@ -790,7 +792,7 @@ const SelectionToolbar = new Lang.Class({
         if (mode)
             this._onSelectionChanged();
         else
-            this.widget.set_reveal_child(false);
+            this.set_reveal_child(false);
     },
 
     _onSelectionChanged: function() {
@@ -801,7 +803,7 @@ const SelectionToolbar = new Lang.Class({
         this._setItemListeners(selection);
 
         this._setItemVisibility();
-        this.widget.set_reveal_child(true);
+        this.set_reveal_child(true);
     },
 
     _setItemListeners: function(selection) {
@@ -878,7 +880,7 @@ const SelectionToolbar = new Lang.Class({
     },
 
     _onToolbarCollection: function() {
-        let toplevel = this.widget.get_toplevel();
+        let toplevel = this.get_toplevel();
         if (!toplevel.is_toplevel())
             return;
 
@@ -951,6 +953,6 @@ const SelectionToolbar = new Lang.Class({
             return;
 
         let doc = Application.documentManager.getItemById(selection[0]);
-        doc.print(this.widget.get_toplevel());
+        doc.print(this.get_toplevel());
     },
 });
