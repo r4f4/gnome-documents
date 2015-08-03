@@ -157,13 +157,13 @@ const OverviewSearchbar = new Lang.Class({
 
         this.parent();
 
-        this._sourcesId = Application.sourceManager.connect('active-changed',
+        let sourcesId = Application.sourceManager.connect('active-changed',
             Lang.bind(this, this._onActiveSourceChanged));
-        this._searchTypeId = Application.searchTypeManager.connect('active-changed',
+        let searchTypeId = Application.searchTypeManager.connect('active-changed',
             Lang.bind(this, this._onActiveTypeChanged));
-        this._searchMatchId = Application.searchMatchManager.connect('active-changed',
+        let searchMatchId = Application.searchMatchManager.connect('active-changed',
             Lang.bind(this, this._onActiveMatchChanged));
-        this._collectionId = Application.documentManager.connect('active-collection-changed',
+        let collectionId = Application.documentManager.connect('active-collection-changed',
             Lang.bind(this, this._onActiveCollectionChanged));
 
         this._onActiveSourceChanged();
@@ -171,6 +171,13 @@ const OverviewSearchbar = new Lang.Class({
         this._onActiveMatchChanged();
 
         this._searchEntry.set_text(Application.searchController.getString());
+        this.connect('destroy', Lang.bind(this,
+            function() {
+                Application.sourceManager.disconnect(sourcesId);
+                Application.searchTypeManager.disconnect(searchTypeId);
+                Application.searchMatchManager.disconnect(searchMatchId);
+                Application.documentManager.disconnect(collectionId);
+            }));
     },
 
     createSearchWidgets: function() {
@@ -292,30 +299,6 @@ const OverviewSearchbar = new Lang.Class({
 
     _onTagClicked: function() {
         this._dropdownButton.set_active(true);
-    },
-
-    destroy: function() {
-        if (this._sourcesId != 0) {
-            Application.sourceManager.disconnect(this._sourcesId);
-            this._sourcesId = 0;
-        }
-
-        if (this._searchTypeId != 0) {
-            Application.searchTypeManager.disconnect(this._searchTypeId);
-            this._searchTypeId = 0;
-        }
-
-        if (this._searchMatchId != 0) {
-            Application.searchMatchManager.disconnect(this._searchMatchId);
-            this._searchMatchId = 0;
-        }
-
-        if (this._collectionId != 0) {
-            Application.documentManager.disconnect(this._collectionId);
-            this._collectionId = 0;
-        }
-
-        this.parent();
     },
 
     reveal: function() {
