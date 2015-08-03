@@ -1,3 +1,11 @@
+3.16.3 - "Potpourri"
+====================
+
+- Collections are not displayed in the collections dialog (Alessandro Bono)
+- Fix the sharing dialog to work with the latest Google Drive changes
+- Unbreak activating documents from the search provider
+- Translation updates
+
 3.16.2 - "Adamov"
 =================
 
