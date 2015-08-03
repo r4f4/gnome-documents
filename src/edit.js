@@ -158,7 +158,6 @@ const EditView = new Lang.Class({
         return this._uri;
     },
 });
-Signals.addSignalMethods(EditView.prototype);
 
 const EditToolbar = new Lang.Class({
     Name: 'EditToolbar',

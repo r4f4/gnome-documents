@@ -80,7 +80,6 @@ const Embed = new Lang.Class({
     Extends: Gtk.Box,
 
     _init: function() {
-        this._noResultsChangeId = 0;
         this._loadShowId = 0;
         this._searchState = null;
 
