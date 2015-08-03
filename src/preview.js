@@ -251,7 +251,7 @@ const PreviewView = new Lang.Class({
             this._showPresentation();
         } else {
             let chooser = new Presentation.PresentationOutputChooser(outputs);
-            chooser.connect('output-activated', Lang.bind(this,
+            chooser.connectJS('output-activated', Lang.bind(this,
                 function(chooser, output) {
                     if (output) {
                         this._showPresentation(output);
@@ -399,7 +399,7 @@ const PreviewView = new Lang.Class({
             this._fsToolbar.setModel(this._model);
             this._overlay.add_overlay(this._fsToolbar);
 
-            this._fsToolbar.connect('show-controls', Lang.bind(this,
+            this._fsToolbar.connectJS('show-controls', Lang.bind(this,
                 function() {
                     this.controlsVisible = true;
                 }));
@@ -529,7 +529,7 @@ const PreviewView = new Lang.Class({
         // FIXME: ev_job_find_get_results() returns a GList **
         // and thus is not introspectable
         GdPrivate.ev_view_find_changed(this.view, job, page);
-        this.emit('search-changed', job.has_results());
+        this.emitJS('search-changed', job.has_results());
     },
 
     reset: function() {
@@ -590,7 +590,7 @@ const PreviewView = new Lang.Class({
         return this._lastSearch;
     }
 });
-Signals.addSignalMethods(PreviewView.prototype);
+Utils.addJSSignalMethods(PreviewView.prototype);
 
 const _PREVIEW_NAVBAR_MARGIN = 30;
 const _AUTO_HIDE_TIMEOUT = 2;
@@ -934,7 +934,7 @@ const PreviewSearchbar = new Lang.Class({
 
     _init: function(previewView) {
         this._previewView = previewView;
-        this._previewView.connect('search-changed', Lang.bind(this, this._onSearchChanged));
+        this._previewView.connectJS('search-changed', Lang.bind(this, this._onSearchChanged));
 
         this.parent();
     },
@@ -1029,7 +1029,7 @@ const PreviewFullscreenToolbar = new Lang.Class({
                     function(actionGroup, actionName, value) {
                         let state = value.get_boolean();
                         if (state)
-                            this.emit('show-controls');
+                            this.emitJS('show-controls');
                     }));
 
                 signalIds.push(signalId);
@@ -1061,4 +1061,4 @@ const PreviewFullscreenToolbar = new Lang.Class({
         Application.application.change_action_state('search', GLib.Variant.new('b', false));
     }
 });
-Signals.addSignalMethods(PreviewFullscreenToolbar.prototype);
+Utils.addJSSignalMethods(PreviewFullscreenToolbar.prototype);

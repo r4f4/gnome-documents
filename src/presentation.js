@@ -30,6 +30,7 @@ const _ = imports.gettext.gettext;
 const Lang = imports.lang;
 const Mainloop = imports.mainloop;
 const Signals = imports.signals;
+const Utils = imports.utils;
 
 const Application = imports.application;
 
@@ -189,7 +190,7 @@ const PresentationOutputChooser = new Lang.Class({
             return;
 
         this.output = output;
-        this.emit('output-activated', this.output);
+        this.emitJS('output-activated', this.output);
         this.close();
     },
 
@@ -200,7 +201,7 @@ const PresentationOutputChooser = new Lang.Class({
     _createWindow: function() {
         this.connect('response', Lang.bind(this,
             function(widget, response) {
-                this.emit('output-activated', null);
+                this.emitJS('output-activated', null);
             }));
 
         let frame = new Gtk.Frame({ shadow_type: Gtk.ShadowType.IN });
@@ -227,7 +228,7 @@ const PresentationOutputChooser = new Lang.Class({
         contentArea.pack_start(frame, true, false, 0);
     }
 });
-Signals.addSignalMethods(PresentationOutputChooser.prototype);
+Utils.addJSSignalMethods(PresentationOutputChooser.prototype);
 
 const PresentationOutputs = new Lang.Class({
     Name: 'PresentationOutputs',
