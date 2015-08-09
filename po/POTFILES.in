@@ -5,6 +5,10 @@ data/org.gnome.books.gschema.xml
 data/org.gnome.Documents.appdata.xml.in
 data/org.gnome.Documents.desktop.in
 data/org.gnome.documents.gschema.xml
+[type: gettext/glade]data/ui/app-menu.ui
+[type: gettext/glade]data/ui/preview-context-menu.ui
+[type: gettext/glade]data/ui/preview-menu.ui
+[type: gettext/glade]data/ui/selection-menu.ui
 src/application.js
 src/documents.js
 src/edit.js
@@ -22,10 +26,6 @@ src/places.js
 src/presentation.js
 src/preview.js
 src/properties.js
-[type: gettext/glade]src/resources/app-menu.ui
-[type: gettext/glade]src/resources/preview-context-menu.ui
-[type: gettext/glade]src/resources/preview-menu.ui
-[type: gettext/glade]src/resources/selection-menu.ui
 src/searchbar.js
 src/search.js
 src/selections.js

@@ -116,7 +116,7 @@ const OverviewToolbar = new Lang.Class({
         this.parent();
 
         let builder = new Gtk.Builder();
-        builder.add_from_resource('/org/gnome/documents/selection-menu.ui');
+        builder.add_from_resource('/org/gnome/Documents/ui/selection-menu.ui');
         let selectionMenu = builder.get_object('selection-menu');
         this._selectionMenu = new Gtk.MenuButton({ menu_model: selectionMenu });
         this._selectionMenu.get_style_context().add_class('selection-menu');

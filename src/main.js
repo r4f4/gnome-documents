@@ -19,13 +19,27 @@
  *
  */
 
+pkg.initGettext();
+pkg.initFormat();
+pkg.require({ 'EvinceDocument': '3.0',
+              'Gd': '1.0',
+              'GdPrivate': '1.0',
+              'Gio': '2.0',
+              'GLib': '2.0',
+              'Goa': '1.0',
+              'Gtk': '3.0',
+              'GObject': '2.0',
+              'Tracker': '1.0',
+              'TrackerControl': '1.0',
+              'WebKit2': '4.0' });
+
 const Application = imports.application;
 const GLib = imports.gi.GLib;
 const System = imports.system;
 
-function start() {
-    let application = new Application.Application(false);
+function main(args) {
+    let application = new Application.Application(pkg.name == 'org.gnome.Books');
     if (GLib.getenv('DOCUMENTS_PERSIST'))
         application.hold();
-    return application.run([System.programInvocationName].concat(ARGV));
+    return application.run(args);
 }

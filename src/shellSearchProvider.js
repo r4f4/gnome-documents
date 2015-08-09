@@ -32,7 +32,6 @@ const Tracker = imports.gi.Tracker;
 
 const Application = imports.application;
 const Format = imports.format;
-const Path = imports.path;
 const Query = imports.query;
 const Search = imports.search;
 const TrackerUtils = imports.trackerUtils;

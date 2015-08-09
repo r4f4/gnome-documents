@@ -1,36 +1,3 @@
-jsdir = $(pkgdatadir)/js/
-dist_js_DATA = \
-    application.js \
-    changeMonitor.js \
-    documents.js \
-    edit.js \
-    embed.js \
-    errorBox.js \
-    main.js \
-    mainBooks.js \
-    mainToolbar.js \
-    mainWindow.js \
-    manager.js \
-    miners.js \
-    notifications.js \
-    password.js \
-    places.js \
-    presentation.js \
-    preview.js \
-    properties.js\
-    query.js \
-    search.js \
-    searchbar.js \
-    selections.js \
-    sharing.js \
-    shellSearchProvider.js \
-    trackerController.js \
-    trackerUtils.js \
-    utils.js \
-    view.js \
-    windowMode.js \
-    path.js
-
 BUILT_SOURCES += \
     path.js \
     config.js
@@ -39,10 +6,6 @@ path.js: Makefile path.js.in
 	$(AM_V_GEN) $(do_subst) $(srcdir)/path.js.in > $@
 config.js: Makefile config.js.in
 	$(AM_V_GEN) $(do_subst) $(srcdir)/config.js.in > $@
-
-nodist_js_DATA = \
-    path.js \
-    config.js
 
 CLEANFILES += \
     $(BUILT_SOURCES)

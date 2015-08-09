@@ -39,7 +39,6 @@ const Application = imports.application;
 const ChangeMonitor = imports.changeMonitor;
 const Manager = imports.manager;
 const Notifications = imports.notifications;
-const Path = imports.path;
 const Query = imports.query;
 const Search = imports.search;
 const TrackerUtils = imports.trackerUtils;
@@ -563,7 +562,7 @@ const DocCommon = new Lang.Class({
         if (this._thumbPath) {
             let [ slice, border ] = Utils.getThumbnailFrameBorder();
             thumbnailedPixbuf = Gd.embed_image_in_frame(emblemedPixbuf,
-                'resource:///org/gnome/documents/thumbnail-frame.png',
+                'resource:///org/gnome/Documents/ui/thumbnail-frame.png',
                 slice, border);
         } else {
             thumbnailedPixbuf = emblemedPixbuf;

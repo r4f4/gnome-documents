@@ -1,5 +1,21 @@
 SUBDIRS = icons
 
+appdir = $(pkgdatadir)
+
+app_resource_files =							\
+	$(shell $(GLIB_COMPILE_RESOURCES)				\
+		--sourcedir=$(srcdir)					\
+		--generate-dependencies					\
+		$(srcdir)/org.gnome.Documents.data.gresource.xml	\
+	)
+org.gnome.Documents.data.gresource: org.gnome.Documents.data.gresource.xml $(app_resource_files)
+	$(AM_V_GEN) $(GLIB_COMPILE_RESOURCES)				\
+		--target=$@						\
+		--sourcedir=$(srcdir) $<
+
+resourcedir = $(pkgdatadir)
+resource_DATA = org.gnome.Documents.data.gresource
+
 appdatadir = $(datadir)/appdata
 appdata_DATA = $(appdata_in_files:.xml.in=.xml)
 appdata_in_files = \
@@ -32,12 +48,22 @@ gsettings_SCHEMAS = org.gnome.documents.gschema.xml org.gnome.books.gschema.xml
 
 EXTRA_DIST= \
     $(appdata_in_files) \
+    $(app_resource_files) \
     $(desktop_in_files) \
     $(searchprovider_DATA) \
-    $(gsettings_SCHEMAS)
+    $(gsettings_SCHEMAS) \
+    org.gnome.Documents.data.gresource.xml
 
 CLEANFILES = \
+    org.gnome.Documents.data.gresource \
     $(appdata_DATA) \
     $(desktop_DATA)
+
+install-exec-hook:
+	-rm -f $(appdir)/org.gnome.Books.data.gresource
+	$(LN_S) $(appdir)/org.gnome.Documents.data.gresource $(DESTDIR)$(appdir)/org.gnome.Books.data.gresource
+uninstall-hook:
+	-rm -f $(appdir)/org.gnome.Books.data.gresource
+
 
 -include $(top_srcdir)/git.mk

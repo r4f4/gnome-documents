@@ -367,7 +367,7 @@ const PreviewView = new Lang.Class({
 
     _getPreviewContextMenu: function() {
         let builder = new Gtk.Builder();
-        builder.add_from_resource('/org/gnome/documents/preview-context-menu.ui');
+        builder.add_from_resource('/org/gnome/Documents/ui/preview-context-menu.ui');
         return builder.get_object('preview-context-menu');
     },
 
@@ -890,7 +890,7 @@ const PreviewToolbar = new Lang.Class({
 
     _getPreviewMenu: function() {
         let builder = new Gtk.Builder();
-        builder.add_from_resource('/org/gnome/documents/preview-menu.ui');
+        builder.add_from_resource('/org/gnome/Documents/ui/preview-menu.ui');
         let menu = builder.get_object('preview-menu');
 
         let doc = Application.documentManager.getActiveItem();

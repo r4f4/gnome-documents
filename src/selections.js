@@ -456,7 +456,7 @@ const OrganizeCollectionView = new Lang.Class({
                                        margin_top: 64 });
         this.add_overlay(this._msgGrid);
 
-        this._icon = new Gtk.Image({ resource: '/org/gnome/documents/collections-placeholder.png' });
+        this._icon = new Gtk.Image({ resource: '/org/gnome/Documents/ui/collections-placeholder.png' });
         this._msgGrid.add(this._icon);
 
         this._label = new Gtk.Label({

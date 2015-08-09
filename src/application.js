@@ -22,17 +22,7 @@
 const Lang = imports.lang;
 const Mainloop = imports.mainloop;
 const Signals = imports.signals;
-const Gettext = imports.gettext;
 const _ = imports.gettext.gettext;
-
-// Import versions go here
-imports.gi.versions.GdPrivate = '1.0';
-imports.gi.versions.Gd = '1.0';
-imports.gi.versions.Tracker = '1.0';
-imports.gi.versions.TrackerControl = '1.0';
-imports.gi.versions.EvinceDocument = '3.0';
-imports.gi.versions.Goa = '1.0';
-imports.gi.versions.WebKit2 = '4.0';
 
 const EvDoc = imports.gi.EvinceDocument;
 const GdPrivate = imports.gi.GdPrivate;
@@ -53,7 +43,6 @@ const MainToolbar = imports.mainToolbar;
 const Manager = imports.manager;
 const Miners = imports.miners;
 const Notifications = imports.notifications;
-const Path = imports.path;
 const Properties = imports.properties;
 const Query = imports.query;
 const Search = imports.search;
@@ -120,15 +109,11 @@ const Application = new Lang.Class({
 
         this.isBooks = isBooks;
 
-        Gettext.bindtextdomain('gnome-documents', Path.LOCALE_DIR);
-        Gettext.textdomain('gnome-documents');
         let appid;
         if (!this.isBooks) {
-            GLib.set_prgname('gnome-documents');
             GLib.set_application_name(_("Documents"));
             appid = 'org.gnome.Documents';
         } else {
-            GLib.set_prgname('gnome-books');
             GLib.set_application_name(_("Books"));
             appid = 'org.gnome.Books';
         }
@@ -147,7 +132,7 @@ const Application = new Lang.Class({
         let languages = GLib.get_language_names();
         let files = languages.map(
             function(language) {
-                return Gio.File.new_for_path(Path.RESOURCE_DIR + '/getting-started/' + language +
+                return Gio.File.new_for_path(pkg.pkgdatadir + '/getting-started/' + language +
                     '/gnome-documents-getting-started.pdf');
             });
 
@@ -338,7 +323,7 @@ const Application = new Lang.Class({
 
     _initAppMenu: function() {
         let builder = new Gtk.Builder();
-        builder.add_from_resource('/org/gnome/documents/app-menu.ui');
+        builder.add_from_resource('/org/gnome/Documents/ui/app-menu.ui');
 
         let menu = builder.get_object('app-menu');
         this.set_app_menu(menu);
@@ -473,7 +458,7 @@ const Application = new Lang.Class({
         if (gtkSettings.gtk_theme_name == 'Adwaita') {
             if (cssProvider == null) {
                 cssProvider = new Gtk.CssProvider();
-                let file = Gio.File.new_for_uri("resource:///org/gnome/documents/Adwaita.css");
+                let file = Gio.File.new_for_uri("resource:///org/gnome/Documents/application.css");
                 cssProvider.load_from_file(file);
             }
 
@@ -490,9 +475,6 @@ const Application = new Lang.Class({
         String.prototype.format = Format.format;
 
         EvDoc.init();
-
-        let resource = Gio.Resource.load(Path.RESOURCE_DIR + '/gnome-documents.gresource');
-        resource._register();
 
         application = this;
         if (!application.isBooks)
