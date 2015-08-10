@@ -739,7 +739,7 @@ const LocalDocument = new Lang.Class({
     },
 
     canEdit: function() {
-        return false;
+        return this.collection;
     },
 
     canShare: function() {
