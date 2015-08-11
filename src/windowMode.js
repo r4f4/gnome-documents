@@ -30,9 +30,10 @@ const WindowMode = {
     NONE: 0,
     DOCUMENTS: 1,
     PREVIEW: 2,
-    EDIT: 3,
-    COLLECTIONS: 4,
-    SEARCH: 5
+    PREVIEW_LOK: 3,
+    EDIT: 4,
+    COLLECTIONS: 5,
+    SEARCH: 6
 };
 
 const ModeController = new Lang.Class({

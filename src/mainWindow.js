@@ -202,6 +202,7 @@ const MainWindow = new Lang.Class({
         case WindowMode.WindowMode.SEARCH:
             return this._handleKeyOverview(event);
         case WindowMode.WindowMode.EDIT:
+        case WindowMode.WindowMode.PREVIEW_LOK: //FIXME should be same as preview
             return false;
         default:
             throw(new Error('Not handled'));

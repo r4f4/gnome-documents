@@ -44,6 +44,29 @@ const Search = imports.search;
 const TrackerUtils = imports.trackerUtils;
 const Utils = imports.utils;
 
+const openDocumentFormats = ['application/vnd.oasis.opendocument.text',
+                             'application/vnd.oasis.opendocument.text-template',
+                             'application/vnd.oasis.opendocument.text-web',
+                             'application/vnd.oasis.opendocument.text-master',
+                             'application/vnd.oasis.opendocument.graphics',
+                             'application/vnd.oasis.opendocument.graphics-template',
+                             'application/vnd.oasis.opendocument.presentation',
+                             'application/vnd.oasis.opendocument.presentation-template',
+                             'application/vnd.oasis.opendocument.spreadsheet',
+                             'application/vnd.oasis.opendocument.spreadsheet-template',
+                             'application/vnd.oasis.opendocument.chart',
+                             'application/vnd.oasis.opendocument.formula',
+                             'application/vnd.oasis.opendocument.database',
+                             'application/vnd.oasis.opendocument.image',
+                             'application/vnd.openofficeorg.extension'];
+
+// These are the documents consisting of document parts.
+const openDocumentPartFormats = ['application/vnd.oasis.opendocument.presentation',
+                                 'application/vnd.oasis.opendocument.presentation-template',
+                                 'application/vnd.oasis.opendocument.spreadsheet',
+                                 'application/vnd.oasis.opendocument.spreadsheet-template',];
+
+
 const DeleteItemJob = new Lang.Class({
     Name: 'DeleteItemJob',
 // deletes the given resource
@@ -665,6 +688,18 @@ const DocCommon = new Lang.Class({
             retval = '{ ?urn nie:isPartOf <' + this.id + '> }';
 
         return retval;
+    },
+
+    isOpenDocumentPartDocument: function() {
+        if (openDocumentPartFormats.indexOf(this.mimeType) != -1)
+            return true;
+        return false;
+    },
+
+    isOpenDocumentFormat: function() {
+        if (openDocumentFormats.indexOf(this.mimeType) != -1)
+            return true;
+        return false;
     }
 });
 Signals.addSignalMethods(DocCommon.prototype);
@@ -738,6 +773,11 @@ const LocalDocument = new Lang.Class({
                                            Gio.IOErrorEnum.NOT_SUPPORTED,
                                            "Internal error: Ebooks preview isn't support yet");
             callback(this, null, exception);
+            return;
+        }
+
+        if (this.isOpenDocumentFormat()) {
+            callback (this, null, null);
             return;
         }
 
@@ -1348,7 +1388,8 @@ const DocumentManager = new Lang.Class({
 
         // save loaded model and signal
         this._activeDocModel = docModel;
-        this._activeDocModel.set_continuous(false);
+        if (this._activeModel)
+            this._activeDocModel.set_continuous(false);
 
         // load metadata
         this._connectMetadata(docModel);
@@ -1464,6 +1505,8 @@ const DocumentManager = new Lang.Class({
     },
 
     _connectMetadata: function(docModel) {
+        if (!docModel)
+            return;
         let evDoc = docModel.get_document();
         let file = Gio.File.new_for_uri(evDoc.get_uri());
         if (!GdPrivate.is_metadata_supported_for_file(file))

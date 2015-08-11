@@ -100,6 +100,8 @@ const PreviewView = new Lang.Class({
         this._zoomIn = Application.application.lookup_action('zoom-in');
         let zoomInId = this._zoomIn.connect('activate', Lang.bind(this,
             function() {
+                if (!this._model)
+                    return;
                 this._model.set_sizing_mode(EvView.SizingMode.FREE);
                 this.view.zoom_in();
             }));
@@ -107,6 +109,8 @@ const PreviewView = new Lang.Class({
         this._zoomOut = Application.application.lookup_action('zoom-out');
         let zoomOutId = this._zoomOut.connect('activate', Lang.bind(this,
             function() {
+                if (!this._model)
+                    return;
                 this._model.set_sizing_mode(EvView.SizingMode.FREE);
                 this.view.zoom_out();
             }));

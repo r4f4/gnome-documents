@@ -35,6 +35,7 @@ const WindowMode = imports.windowMode;
 const Documents = imports.documents;
 
 const EvView = imports.gi.EvinceView;
+const LOKView = imports.lokview;
 const Gd = imports.gi.Gd;
 const Gdk = imports.gi.Gdk;
 const Gio = imports.gi.Gio;
@@ -86,8 +87,11 @@ const Embed = new Lang.Class({
         this._search = new View.ViewContainer(WindowMode.WindowMode.SEARCH);
         this._stack.add_named(this._search, 'search');
 
-        this._preview = new Preview.PreviewView(this._stackOverlay);
-        this._stack.add_named(this._preview, 'preview');
+        this._previewEv = new Preview.PreviewView(this._stackOverlay);
+        this._stack.add_named(this._previewEv, 'preview-ev');
+
+        this._previewLok = new LOKView.LOKView(this._stackOverlay);
+        this._stack.add_named(this._previewLok, 'preview-lok');
 
         this._edit = new Edit.EditView();
         this._stack.add_named(this._edit, 'edit');
@@ -147,7 +151,7 @@ const Embed = new Lang.Class({
             view = this._documents;
             break;
         case WindowMode.WindowMode.PREVIEW:
-            view = this._preview;
+            view = this._previewEv;
             break;
         case WindowMode.WindowMode.SEARCH:
             view = this._search;
@@ -181,7 +185,7 @@ const Embed = new Lang.Class({
             page = 'documents';
             break;
         case WindowMode.WindowMode.PREVIEW:
-            page = 'preview';
+            page = 'preview-ev';
             break;
         case WindowMode.WindowMode.SEARCH:
             page = 'search';
@@ -269,6 +273,11 @@ const Embed = new Lang.Class({
                 Application.documentManager.reloadActiveItem();
             this._prepareForPreview();
             break;
+        case WindowMode.WindowMode.PREVIEW_LOK:
+            if (oldMode == WindowMode.WindowMode.EDIT)
+                Application.documentManager.reloadActiveItem();
+            this._prepareForLOKView();
+            break;
         case WindowMode.WindowMode.EDIT:
             this._prepareForEdit();
             break;
@@ -325,8 +334,11 @@ const Embed = new Lang.Class({
         }
     },
 
-    _onLoadStarted: function() {
-        Application.modeController.setWindowMode(WindowMode.WindowMode.PREVIEW);
+    _onLoadStarted: function(manager, doc) {
+        if (doc.isOpenDocumentFormat())
+            Application.modeController.setWindowMode(WindowMode.WindowMode.PREVIEW_LOK);
+        else
+            Application.modeController.setWindowMode(WindowMode.WindowMode.PREVIEW);
 
         this._clearLoadTimer();
         this._loadShowId = Mainloop.timeout_add(_PDF_LOADER_TIMEOUT, Lang.bind(this,
@@ -340,18 +352,23 @@ const Embed = new Lang.Class({
     },
 
     _onLoadFinished: function(manager, doc, docModel) {
-        if (Application.application.isBooks)
-            docModel.set_sizing_mode(EvView.SizingMode.FIT_PAGE);
-        else
-            docModel.set_sizing_mode(EvView.SizingMode.AUTOMATIC);
-        docModel.set_page_layout(EvView.PageLayout.AUTOMATIC);
-        this._toolbar.setModel(docModel);
-        this._preview.setModel(docModel);
-        this._preview.grab_focus();
+        if (doc && docModel) {
+            if (Application.application.isBooks)
+                docModel.set_sizing_mode(EvView.SizingMode.FIT_PAGE);
+            else
+                docModel.set_sizing_mode(EvView.SizingMode.AUTOMATIC);
+            docModel.set_page_layout(EvView.PageLayout.AUTOMATIC);
+            this._toolbar.setModel(docModel);
+            this._previewEv.setModel(docModel);
+            this._previewEv.grab_focus();
+        }
 
         this._clearLoadTimer();
         this._spinner.stop();
-        this._stack.set_visible_child_name('preview');
+        if (doc != null && docModel == null)
+            this._stack.set_visible_child_name('preview-lok');
+        else
+            this._stack.set_visible_child_name('preview-ev');
     },
 
     _onLoadError: function(manager, doc, message, exception) {
@@ -394,8 +411,10 @@ const Embed = new Lang.Class({
             break;
         }
 
-        if (this._preview)
-            this._preview.reset();
+        if (this._previewEv)
+            this._previewEv.reset();
+        if (this._previewLok)
+            this._previewLok.reset();
         if (this._edit)
             this._edit.setUri(null);
 
@@ -419,23 +438,38 @@ const Embed = new Lang.Class({
             this._toolbar.destroy();
 
         // pack the toolbar
-        this._toolbar = new Preview.PreviewToolbar(this._preview);
+        this._toolbar = new Preview.PreviewToolbar(this._previewEv);
         this._titlebar.add(this._toolbar);
 
-        this._stack.set_visible_child_name('preview');
+        this._stack.set_visible_child_name('preview-ev');
     },
 
     _prepareForEdit: function() {
-        if (this._preview)
-            this._preview.setModel(null);
+        if (this._previewEv)
+            this._previewEv.setModel(null);
         if (this._toolbar)
             this._toolbar.destroy();
 
         // pack the toolbar
-        this._toolbar = new Edit.EditToolbar(this._preview);
+        this._toolbar = new Edit.EditToolbar(this._previewEv);
         this._titlebar.add(this._toolbar);
 
         this._stack.set_visible_child_name('edit');
+    },
+
+    _prepareForLOKView: function() {
+        if (this._previewEv)
+            this._previewEv.setModel(null);
+        if (this._edit)
+            this._edit.setUri(null);
+        if (this._toolbar)
+            this._toolbar.destroy();
+
+        // pack the toolbar
+        this._toolbar = new LOKView.LOKViewToolbar(this._previewLok);
+        this._titlebar.add(this._toolbar);
+
+        this._stack.set_visible_child_name('preview-lok');
     },
 
     getMainToolbar: function() {
@@ -443,12 +477,12 @@ const Embed = new Lang.Class({
         let fullscreen = Application.modeController.getFullscreen();
 
         if (fullscreen && (windowMode == WindowMode.WindowMode.PREVIEW))
-            return this._preview.getFullscreenToolbar();
+            return this._previewEv.getFullscreenToolbar();
         else
             return this._toolbar;
     },
 
     getPreview: function() {
-        return this._preview;
+        return this._previewEv;
     }
 });
