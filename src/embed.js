@@ -33,6 +33,7 @@ const Selections = imports.selections;
 const View = imports.view;
 const WindowMode = imports.windowMode;
 const Documents = imports.documents;
+const LOKView = imports.lokview;
 
 const EvView = imports.gi.EvinceView;
 const Gd = imports.gi.Gd;
@@ -117,6 +118,9 @@ const Embed = new Lang.Class({
 
         this._preview = new Preview.PreviewView(this._stackOverlay);
         this._stack.add_named(this._preview, 'preview');
+
+        this._lokview = new LOKView.LOKView(this._stackOverlay);
+        this._stack.add_named(this._lokview, 'lokview');
 
         this._edit = new Edit.EditView();
         this._stack.add_named(this._edit, 'edit');
@@ -365,18 +369,23 @@ const Embed = new Lang.Class({
     },
 
     _onLoadFinished: function(manager, doc, docModel) {
-        if (!Application.application.isBooks)
-            docModel.set_sizing_mode(EvView.SizingMode.AUTOMATIC);
-        else
-            docModel.set_sizing_mode(EvView.SizingMode.FIT_PAGE);
-        docModel.set_page_layout(EvView.PageLayout.AUTOMATIC);
-        this._toolbar.setModel(docModel);
-        this._preview.setModel(docModel);
-        this._preview.grab_focus();
+        if (doc && docModel) {
+            if (!Application.application.isBooks)
+                docModel.set_sizing_mode(EvView.SizingMode.AUTOMATIC);
+            else
+                docModel.set_sizing_mode(EvView.SizingMode.FIT_PAGE);
+            docModel.set_page_layout(EvView.PageLayout.AUTOMATIC);
+            this._toolbar.setModel(docModel);
+            this._preview.setModel(docModel);
+            this._preview.grab_focus();
+        }
 
         this._clearLoadTimer();
         this._spinnerBox.stop();
-        this._stack.set_visible_child_name('preview');
+        if (doc != null && docModel == null)
+            this._stack.set_visible_child_name('lokview');
+        else
+            this._stack.set_visible_child_name('preview');
     },
 
     _onLoadError: function(manager, doc, message, exception) {
@@ -421,6 +430,8 @@ const Embed = new Lang.Class({
 
         if (this._preview)
             this._preview.reset();
+        if (this._lokview)
+            this._lokview.reset();
         if (this._edit)
             this._edit.setUri(null);
 
