@@ -108,3 +108,49 @@ const LOKView = new Lang.Class({
     },
 });
 Signals.addSignalMethods(LOKView.prototype);
+
+const LOKViewToolbar = new Lang.Class({
+    Name: 'LOKViewToolbar',
+    Extends: MainToolbar.MainToolbar,
+
+    _init: function(lokView) {
+        this._lokView = lokView;
+
+        this.parent();
+        this.toolbar.set_show_close_button(true);
+
+        // back button, on the left of the toolbar
+        let backButton = this.addBackButton();
+        backButton.connect('clicked', Lang.bind(this,
+            function() {
+                Application.documentManager.setActiveItem(null);
+                Application.modeController.goBack(2);
+            }));
+
+        let viewButton = new Gtk.Button({ label: _("View"),
+                                          action_name: 'app.view-current' });
+        viewButton.get_style_context().add_class('suggested-action');
+        this.toolbar.pack_end(viewButton);
+
+        this._setToolbarTitle();
+        this.widget.show_all();
+    },
+
+    createSearchbar: function() {
+    },
+
+    handleEvent: function(event) {
+        return false;
+    },
+
+    _setToolbarTitle: function() {
+        let primary = null;
+        let doc = Application.documentManager.getActiveItem();
+
+        if (doc)
+            primary = doc.name;
+
+        this.toolbar.set_title(primary);
+    }
+});
+
