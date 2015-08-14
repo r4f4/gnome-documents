@@ -668,6 +668,12 @@ const DocCommon = new Lang.Class({
             retval = '{ ?urn nie:isPartOf <' + this.id + '> }';
 
         return retval;
+    },
+
+    isOpenDocumentFormat: function() {
+        if (openDocumentFormats.indexOf(this.mimeType) != -1)
+            return true;
+        return false;
     }
 });
 Signals.addSignalMethods(DocCommon.prototype);
@@ -744,7 +750,7 @@ const LocalDocument = new Lang.Class({
             return;
         }
 
-        if (openDocumentFormats.indexOf(this.mimeType) != -1) {
+        if (this.isOpenDocumentFormat()) {
             callback (this, null, null);
             return;
         }
