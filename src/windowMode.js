@@ -32,7 +32,8 @@ const WindowMode = {
     PREVIEW: 2,
     EDIT: 3,
     COLLECTIONS: 4,
-    SEARCH: 5
+    SEARCH: 5,
+    LOKVIEW: 6
 };
 
 const ModeController = new Lang.Class({

@@ -124,16 +124,16 @@ const LOKViewToolbar = new Lang.Class({
         backButton.connect('clicked', Lang.bind(this,
             function() {
                 Application.documentManager.setActiveItem(null);
-                Application.modeController.goBack(2);
+                Application.modeController.goBack();
             }));
 
         let viewButton = new Gtk.Button({ label: _("View"),
                                           action_name: 'app.view-current' });
         viewButton.get_style_context().add_class('suggested-action');
-        this.toolbar.pack_end(viewButton);
+        //this.toolbar.pack_end(viewButton);
 
         this._setToolbarTitle();
-        this.widget.show_all();
+        this.toolbar.show_all();
     },
 
     createSearchbar: function() {

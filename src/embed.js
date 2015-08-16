@@ -298,6 +298,11 @@ const Embed = new Lang.Class({
                 Application.documentManager.reloadActiveItem();
             this._prepareForPreview();
             break;
+        case WindowMode.WindowMode.LOKVIEW:
+            if (oldMode == WindowMode.WindowMode.EDIT)
+                Application.documentManager.reloadActiveItem();
+            this._prepareForLOKView();
+            break;
         case WindowMode.WindowMode.EDIT:
             this._prepareForEdit();
             break;
@@ -354,8 +359,11 @@ const Embed = new Lang.Class({
         }
     },
 
-    _onLoadStarted: function() {
-        Application.modeController.setWindowMode(WindowMode.WindowMode.PREVIEW);
+    _onLoadStarted: function(manager, doc) {
+        if (doc.isOpenDocumentFormat())
+            Application.modeController.setWindowMode(WindowMode.WindowMode.LOKVIEW);
+        else
+            Application.modeController.setWindowMode(WindowMode.WindowMode.PREVIEW);
 
         this._clearLoadTimer();
         this._loadShowId = Mainloop.timeout_add(_PDF_LOADER_TIMEOUT, Lang.bind(this,
@@ -472,6 +480,19 @@ const Embed = new Lang.Class({
         this._titlebar.add(this._toolbar);
 
         this._stack.set_visible_child_name('edit');
+    },
+
+    _prepareForLOKView: function() {
+        if (this._preview)
+            this._preview.setModel(null);
+        if (this._toolbar)
+            this._toolbar.destroy();
+
+        // pack the toolbar
+        this._toolbar = new LOKView.LOKViewToolbar(this._lokview);
+        this._titlebar.add(this._toolbar);
+
+        this._stack.set_visible_child_name('lokview');
     },
 
     getMainToolbar: function() {

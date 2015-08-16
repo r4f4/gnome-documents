@@ -201,6 +201,7 @@ const MainWindow = new Lang.Class({
         case WindowMode.WindowMode.SEARCH:
             return this._handleKeyOverview(event);
         case WindowMode.WindowMode.EDIT:
+        case WindowMode.WindowMode.LOKVIEW:
             return false;
         default:
             throw(new Error('Not handled'));
