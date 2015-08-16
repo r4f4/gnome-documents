@@ -119,6 +119,9 @@ const LOKViewToolbar = new Lang.Class({
         this.parent();
         this.toolbar.set_show_close_button(true);
 
+        this._gearMenu = Application.application.lookup_action('gear-menu');
+        this._gearMenu.enabled = true;
+
         // back button, on the left of the toolbar
         let backButton = this.addBackButton();
         backButton.connect('clicked', Lang.bind(this,
@@ -127,16 +130,29 @@ const LOKViewToolbar = new Lang.Class({
                 Application.modeController.goBack();
             }));
 
-        let viewButton = new Gtk.Button({ label: _("View"),
-                                          action_name: 'app.view-current' });
-        viewButton.get_style_context().add_class('suggested-action');
-        //this.toolbar.pack_end(viewButton);
+        // menu button, on the right of the toolbar
+        let lokViewMenu = this._getLOKViewMenu();
+        let menuButton = new Gtk.MenuButton({ image: new Gtk.Image ({ icon_name: 'open-menu-symbolic' }),
+                                              menu_model: lokViewMenu,
+                                              action_name: 'app.gear-menu' });
+        this.toolbar.pack_end(menuButton);
+
+        // search button, on the right of the toolbar
+        this.addSearchButton();
 
         this._setToolbarTitle();
         this.toolbar.show_all();
     },
 
     createSearchbar: function() {
+    },
+
+    _getLOKViewMenu: function() {
+        let builder = new Gtk.Builder();
+        builder.add_from_resource('/org/gnome/Documents/ui/lokview-menu.ui');
+        let menu = builder.get_object('lokview-menu');
+
+        return menu;
     },
 
     handleEvent: function(event) {
@@ -153,4 +169,3 @@ const LOKViewToolbar = new Lang.Class({
         this.toolbar.set_title(primary);
     }
 });
-

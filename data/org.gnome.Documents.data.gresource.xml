@@ -5,6 +5,7 @@
     <file preprocess="xml-stripblanks">ui/app-menu.ui</file>
     <file preprocess="xml-stripblanks">ui/preview-context-menu.ui</file>
     <file preprocess="xml-stripblanks">ui/preview-menu.ui</file>
+    <file preprocess="xml-stripblanks">ui/lokview-menu.ui</file>
     <file preprocess="xml-stripblanks">ui/selection-menu.ui</file>
     <file alias="ui/collections-placeholder.png" preprocess="to-pixdata">media/collections-placeholder.png</file>
     <file alias="ui/dnd-counter.svg" preprocess="to-pixdata">media/dnd-counter.svg</file>
