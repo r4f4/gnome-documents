@@ -68,11 +68,30 @@ const LOKView = new Lang.Class({
 
         this.show_all();
 
+        this._zoomIn = Application.application.lookup_action('zoom-in');
+        let zoomInId = this._zoomIn.connect('activate', Lang.bind(this,
+            function() {
+                let zoomLevel = this.view.get_zoom();
+                this.view.set_zoom(zoomLevel * 2);
+            }));
+
+        this._zoomOut = Application.application.lookup_action('zoom-out');
+        let zoomOutId = this._zoomOut.connect('activate', Lang.bind(this,
+            function() {
+                let zoomLevel = this.view.get_zoom();
+                this.view.set_zoom(zoomLevel / 2);
+            }));
+
         Application.documentManager.connect('load-started',
                                             Lang.bind(this, this._onLoadStarted));
         Application.documentManager.connect('load-finished',
                                             Lang.bind(this, this._onLoadFinished));
 
+        this.connect('destroy', Lang.bind(this,
+           function() {
+               this._zoomIn.disconnect(zoomInId);
+               this._zoomOut.disconnect(zoomOutId);
+           }));
     },
 
     _onLoadStarted: function() {
@@ -121,6 +140,9 @@ const LOKViewToolbar = new Lang.Class({
 
         this._gearMenu = Application.application.lookup_action('gear-menu');
         this._gearMenu.enabled = true;
+
+        this._lokView._zoomIn.enabled = true;
+        this._lokView._zoomOut.enabled = true;
 
         // back button, on the left of the toolbar
         let backButton = this.addBackButton();
