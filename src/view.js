@@ -23,6 +23,7 @@ const Cairo = imports.gi.cairo;
 const Gd = imports.gi.Gd;
 const Gdk = imports.gi.Gdk;
 const Gettext = imports.gettext;
+const Gio = imports.gi.Gio;
 const GLib = imports.gi.GLib;
 const GObject = imports.gi.GObject;
 const Gtk = imports.gi.Gtk;
