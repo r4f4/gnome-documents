@@ -336,16 +336,17 @@ const IndexingNotification = new Lang.Class({
 
 const NotificationManager = new Lang.Class({
     Name: 'NotificationManager',
+    Extends: Gd.Notification,
 
     _init: function() {
-        this.widget = new Gd.Notification({ timeout: -1,
-                                            show_close_button: false,
-                                            halign: Gtk.Align.CENTER,
-                                            valign: Gtk.Align.START });
+        this.parent({ timeout: -1,
+                      show_close_button: false,
+                      halign: Gtk.Align.CENTER,
+                      valign: Gtk.Align.START });
         this._grid = new Gtk.Grid({ orientation: Gtk.Orientation.VERTICAL,
                                     row_spacing: 6 });
 
-        this.widget.add(this._grid);
+        this.add(this._grid);
 
         // add indexing monitor notification
         this._indexingNotification = new IndexingNotification();
@@ -355,14 +356,14 @@ const NotificationManager = new Lang.Class({
         this._grid.add(notification.widget);
         notification.widget.connect('destroy', Lang.bind(this, this._onWidgetDestroy));
 
-        this.widget.show_all();
+        this.show_all();
     },
 
     _onWidgetDestroy: function() {
         let children = this._grid.get_children();
 
         if (children.length == 0)
-            this.widget.hide();
+            this.hide();
     }
 });
 Signals.addSignalMethods(NotificationManager.prototype);

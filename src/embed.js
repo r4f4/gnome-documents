@@ -73,7 +73,7 @@ const Embed = new Lang.Class({
         this._stackOverlay.add(this._stack);
 
         // pack the OSD notification widget
-        this._stackOverlay.add_overlay(Application.notificationManager.widget);
+        this._stackOverlay.add_overlay(Application.notificationManager);
 
         // now create the actual content widgets
         this._documents = new View.ViewContainer(WindowMode.WindowMode.DOCUMENTS);
