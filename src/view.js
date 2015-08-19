@@ -84,6 +84,7 @@ const ViewModel = new Lang.Class({
         this.set_sort_column_id(Gd.MainColumns.MTIME,
                                 Gtk.SortType.DESCENDING);
 
+        this._infoUpdatedIds = {};
         this._resetCountId = 0;
 
         this._mode = windowMode;
@@ -194,23 +195,31 @@ const ViewModel = new Lang.Class({
         if (doc.rowRefs[this._rowRefKey])
             return;
 
+        let infoUpdatedId = this._infoUpdatedIds[doc.id];
+        if (infoUpdatedId) {
+            doc.disconnect(infoUpdatedId);
+            delete this._infoUpdatedIds[doc.id];
+        }
+
         let activeCollection = Application.documentManager.getActiveCollection();
         let windowMode = Application.modeController.getWindowMode();
 
         if (!activeCollection || this._mode != windowMode) {
             if (this._mode == WindowMode.WindowMode.COLLECTIONS && !doc.collection
                 || this._mode == WindowMode.WindowMode.DOCUMENTS && doc.collection) {
-                doc.connect('info-updated', Lang.bind(this, this._onInfoUpdated));
+                this._infoUpdatedIds[doc.id] = doc.connect('info-updated', Lang.bind(this, this._onInfoUpdated));
                 return;
             }
         }
 
         this._addItem(doc);
-        doc.connect('info-updated', Lang.bind(this, this._onInfoUpdated));
+        this._infoUpdatedIds[doc.id] = doc.connect('info-updated', Lang.bind(this, this._onInfoUpdated));
     },
 
     _onItemRemoved: function(source, doc) {
         this._removeItem(doc);
+        doc.disconnect(this._infoUpdatedIds[doc.id]);
+        delete this._infoUpdatedIds[doc.id];
     },
 
     _resetCount: function() {
