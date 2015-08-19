@@ -920,7 +920,7 @@ const GoogleDocument = new Lang.Class({
     },
 
     canEdit: function() {
-        return true;
+        return !this.collection;
     },
 
     canShare: function() {
