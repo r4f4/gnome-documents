@@ -136,8 +136,8 @@ const PreviewView = new Lang.Class({
             function() {
                 this._changeRotation(90);
             }));
-        let showPlaces = Application.application.lookup_action('places');
-        let showPlacesId = showPlaces.connect('activate', Lang.bind(this, this._showPlaces));
+        this._places = Application.application.lookup_action('places');
+        let placesId = this._places.connect('activate', Lang.bind(this, this._showPlaces));
 
         let nightModeId = Application.application.connect('action-state-changed::night-mode',
             Lang.bind(this, this._updateNightMode));
@@ -161,7 +161,7 @@ const PreviewView = new Lang.Class({
                 this._copy.disconnect(copyId);
                 rotLeft.disconnect(rotLeftId);
                 rotRight.disconnect(rotRightId);
-                showPlaces.disconnect(showPlacesId);
+                this._places.disconnect(placesId);
                 Application.application.disconnect(presentCurrentId);
                 Application.application.disconnect(nightModeId);
             }));
@@ -169,7 +169,7 @@ const PreviewView = new Lang.Class({
 
     _onLoadStarted: function() {
         this._bookmarkPage.enabled = false;
-        this._showPlaces.enabled = false;
+        this._places.enabled = false;
         this._copy.enabled = false;
     },
 
@@ -560,7 +560,7 @@ const PreviewView = new Lang.Class({
 
             let hasMultiplePages = (this._model.document.get_n_pages() > 1);
             this._bookmarkPage.enabled = hasMultiplePages && this._bookmarks;
-            this._showPlaces.enabled = hasMultiplePages;
+            this._places.enabled = hasMultiplePages;
 
             this._model.connect('page-changed', Lang.bind(this, this._onPageChanged));
 
