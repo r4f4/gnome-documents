@@ -21,6 +21,10 @@
 
 pkg.initGettext();
 pkg.initFormat();
+// for libgd
+pkg.initSubmodule('libgd');
+// for gdprivate
+pkg.initSubmodule('src');
 pkg.require({ 'EvinceDocument': '3.0',
               'Gd': '1.0',
               'GdPrivate': '1.0',
