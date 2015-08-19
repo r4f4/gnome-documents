@@ -33,6 +33,7 @@ const _ = imports.gettext.gettext;
 const Lang = imports.lang;
 const Mainloop = imports.mainloop;
 const Signals = imports.signals;
+const Tweener = imports.tweener.tweener;
 
 const Application = imports.application;
 const MainToolbar = imports.mainToolbar;
@@ -98,8 +99,15 @@ const LOKView = new Lang.Class({
 
     },
 
-    open_document_cb: function() {
+    open_document_cb: function(res, doc) {
         // TODO: Call _finish and check failure
+        if (this._doc.isOpenDocumentPartDocument()) {
+            this.hasParts = true;
+            this.totalParts = this.view.get_parts();
+            this.currentPart = this.view.get_part();
+        } else
+            this.hasParts = false;
+
         this._progressBar.hide();
         this.view.show();
     },
@@ -107,6 +115,7 @@ const LOKView = new Lang.Class({
     _onLoadFinished: function(manager, doc, docModel) {
         if (docModel == null && doc != null) {
             let location = doc.uri.replace ('file://', '');
+            this._doc = doc;
             this.view.open_document(location, null, Lang.bind(this, this.open_document_cb), null);
             this._progressBar.show();
         }
@@ -120,6 +129,8 @@ const LOKView = new Lang.Class({
         this.view = LOKDocView.View.new(LO_PATH, null, null);
         this._sw.add(this.view);
         this.view.connect('load-changed', Lang.bind(this, this._onProgressChanged));
+
+        this._navControls = new LOKViewNavControls(this, this);
     },
 
     _onProgressChanged: function() {
@@ -189,5 +200,173 @@ const LOKViewToolbar = new Lang.Class({
             primary = doc.name;
 
         this.toolbar.set_title(primary);
+    }
+});
+
+const _LOKVIEW_NAVBAR_MARGIN = 30;
+const _AUTO_HIDE_TIMEOUT = 2;
+
+const LOKViewNavControls = new Lang.Class({
+    Name: 'LOKViewNavControls',
+
+    _init: function(lokView, overlay) {
+        this._lokView = lokView;
+        this._overlay = overlay;
+
+        this._visible = false;
+        this._visibleInternal = false;
+        this._pageChangedId = 0;
+        this._autoHideId = 0;
+        this._motionId = 0;
+
+        this.prev_widget = new Gtk.Button({ image: new Gtk.Image ({ icon_name: 'go-previous-symbolic',
+                                                                    pixel_size: 16 }),
+                                            margin_start: _LOKVIEW_NAVBAR_MARGIN,
+                                            margin_end: _LOKVIEW_NAVBAR_MARGIN,
+                                            halign: Gtk.Align.START,
+                                            valign: Gtk.Align.CENTER });
+        this.prev_widget.get_style_context().add_class('osd');
+        this._overlay.add_overlay(this.prev_widget);
+        this.prev_widget.connect('clicked', Lang.bind(this, this._onPrevClicked));
+        this.prev_widget.connect('enter-notify-event', Lang.bind(this, this._onEnterNotify));
+        this.prev_widget.connect('leave-notify-event', Lang.bind(this, this._onLeaveNotify));
+
+        this.next_widget = new Gtk.Button({ image: new Gtk.Image ({ icon_name: 'go-next-symbolic',
+                                                                    pixel_size: 16 }),
+                                            margin_start: _LOKVIEW_NAVBAR_MARGIN,
+                                            margin_end: _LOKVIEW_NAVBAR_MARGIN,
+                                            halign: Gtk.Align.END,
+                                            valign: Gtk.Align.CENTER });
+        this.next_widget.get_style_context().add_class('osd');
+        this._overlay.add_overlay(this.next_widget);
+        this.next_widget.connect('clicked', Lang.bind(this, this._onNextClicked));
+        this.next_widget.connect('enter-notify-event', Lang.bind(this, this._onEnterNotify));
+        this.next_widget.connect('leave-notify-event', Lang.bind(this, this._onLeaveNotify));
+        this._overlay.connect('motion-notify-event', Lang.bind(this, this._onMotion));
+    },
+
+    _onEnterNotify: function() {
+        this._unqueueAutoHide();
+        return false;
+    },
+
+    _onLeaveNotify: function() {
+        this._queueAutoHide();
+        return false;
+    },
+
+    _motionTimeout: function() {
+        this._motionId = 0;
+        this._visibleInternal = true;
+        this._updateVisibility();
+        this._queueAutoHide();
+        return false;
+    },
+
+    _onMotion: function(widget, event) {
+        if (this._motionId != 0) {
+            return false;
+        }
+
+        let device = event.get_source_device();
+        if (device.input_source == Gdk.InputSource.TOUCHSCREEN) {
+            return false;
+        }
+
+        this._motionId = Mainloop.idle_add(Lang.bind(this, this._motionTimeout));
+        return false;
+    },
+
+    _onPrevClicked: function() {
+        let currentPart = this._lokView.view.get_part();
+        currentPart -= 1;
+        if (currentPart < 0)
+            return;
+        this._lokView.view.set_part(currentPart);
+        this._lokView.currentPart = currentPart;
+    },
+
+    _onNextClicked: function() {
+        let totalParts  = this._lokView.view.get_parts();
+        let currentPart = this._lokView.view.get_part();
+        currentPart += 1;
+        if (currentPart > totalParts)
+            return;
+        this._lokView.view.set_part(currentPart);
+        this._lokView.currentPart = currentPart;
+    },
+
+    _autoHide: function() {
+        this._autoHideId = 0;
+        this._visibleInternal = false;
+        this._updateVisibility();
+        return false;
+    },
+
+    _unqueueAutoHide: function() {
+        if (this._autoHideId == 0)
+            return;
+
+        Mainloop.source_remove(this._autoHideId);
+        this._autoHideId = 0;
+    },
+
+    _queueAutoHide: function() {
+        this._unqueueAutoHide();
+        //FIXME: disable this temporarily till motion-notify-event works
+        //this._autoHideId = Mainloop.timeout_add_seconds(_AUTO_HIDE_TIMEOUT, Lang.bind(this, this._autoHide));
+    },
+
+    _updateVisibility: function() {
+        if (!this._lokView.hasParts) {
+            this._fadeOutButton(this.prev_widget);
+            this._fadeOutButton(this.next_widget);
+            return;
+        }
+
+        if (this._lokView.currentPart > 0)
+            this._fadeInButton(this.prev_widget);
+        else
+            this._fadeOutButton(this.prev_widget);
+
+        if (this._lokView.currentPart < this._lokView.totalParts)
+            this._fadeInButton(this.next_widget);
+        else
+            this._fadeOutButton(this.next_widget);
+    },
+
+    _fadeInButton: function(widget) {
+        widget.show_all();
+        Tweener.addTween(widget, { opacity: 1,
+                                   time: 0.30,
+                                   transition: 'easeOutQuad' });
+    },
+
+    _fadeOutButton: function(widget) {
+        Tweener.addTween(widget, { opacity: 0,
+                                   time: 0.30,
+                                   transition: 'easeOutQuad',
+                                   onComplete: function() {
+                                       widget.hide();
+                                   },
+                                   onCompleteScope: this });
+    },
+
+    show: function() {
+        this._visible = true;
+        this._visibleInternal = true;
+        this._updateVisibility();
+        this._queueAutoHide();
+    },
+
+    hide: function() {
+        this._visible = false;
+        this._visibleInternal = false;
+        this._updateVisibility();
+    },
+
+    destroy: function() {
+        this.prev_widget.destroy();
+        this.next_widget.destroy();
     }
 });

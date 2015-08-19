@@ -60,6 +60,12 @@ const openDocumentFormats = ['application/vnd.oasis.opendocument.text',
                              'application/vnd.oasis.opendocument.image',
                              'application/vnd.openofficeorg.extension'];
 
+// These are the documents consisting of document parts.
+const openDocumentPartFormats = ['application/vnd.oasis.opendocument.presentation',
+                                 'application/vnd.oasis.opendocument.presentation-template',
+                                 'application/vnd.oasis.opendocument.spreadsheet',
+                                 'application/vnd.oasis.opendocument.spreadsheet-template',];
+
 
 const DeleteItemJob = new Lang.Class({
     Name: 'DeleteItemJob',
@@ -668,6 +674,12 @@ const DocCommon = new Lang.Class({
             retval = '{ ?urn nie:isPartOf <' + this.id + '> }';
 
         return retval;
+    },
+
+    isOpenDocumentPartDocument: function() {
+        if (openDocumentPartFormats.indexOf(this.mimeType) != -1)
+            return true;
+        return false;
     },
 
     isOpenDocumentFormat: function() {
