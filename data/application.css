@@ -100,3 +100,16 @@ GdMainIconView.content-view.cell:active {
     /* when there's no pixbuf yet */
     background-color: @osd_bg;
 }
+
+.collection-dialog .frame { border-style: solid none none none; }
+
+.collection-dialog .delete-row { background-color: @theme_bg_color }
+
+.collection-dialog .frame GtkEntry {
+  padding: 12px 8px 13px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
+  border-radius: 0px;
+}

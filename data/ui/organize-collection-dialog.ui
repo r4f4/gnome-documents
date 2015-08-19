@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk+" version="3.12"/>
+  <template class="Gjs_OrganizeCollectionDialog" parent="GtkWindow">
+    <property name="visible">True</property>
+    <property name="modal">True</property>
+    <property name="window_position">center-on-parent</property>
+    <property name="default_width">420</property>
+    <property name="default_height">500</property>
+    <property name="destroy_with_parent">True</property>
+    <property name="type_hint">dialog</property>
+    <child>
+      <object class="GtkStack" id="content">
+        <property name="visible">True</property>
+        <child>
+          <object class="GtkGrid" id="viewEmpty">
+            <property name="visible">True</property>
+            <property name="halign">center</property>
+            <property name="valign">center</property>
+            <property name="orientation">vertical</property>
+            <property name="row_spacing">6</property>
+            <child>
+              <object class="GtkImage" id="imageEmpty">
+                <property name="visible">True</property>
+                <property name="pixel_size">96</property>
+                <property name="icon_name">inode-directory-symbolic</property>
+                <property name="margin_bottom">18</property>
+                <style>
+                  <class name="dim-label"/>
+                </style>
+              </object>
+              <packing>
+                <property name="left_attach">0</property>
+                <property name="top_attach">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="labelEmpty">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Enter a name for your first collection</property>
+                <property name="margin_bottom">6</property>
+                <style>
+                  <class name="dim-label"/>
+                </style>
+              </object>
+              <packing>
+                <property name="left_attach">0</property>
+                <property name="top_attach">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEntry" id="addEntryEmpty">
+                <property name="visible">True</property>
+                <property name="has_focus">True</property>
+                <property name="activates_default">True</property>
+                <property name="placeholder_text" translatable="yes">New Collection…</property>
+                <property name="margin_bottom">6</property>
+              </object>
+              <packing>
+                <property name="left_attach">0</property>
+                <property name="top_attach">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="addButtonEmpty">
+                <property name="visible">True</property>
+                <property name="sensitive">False</property>
+                <property name="can_default">True</property>
+                <property name="has_default">True</property>
+                <property name="halign">center</property>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="label" translatable="yes">Add</property>
+                    <property name="visible">True</property>
+                    <property name="margin_start">36</property>
+                    <property name="margin_end">36</property>
+                  </object>
+                </child>
+                <style>
+                  <class name="suggested-action"/>
+                </style>
+              </object>
+              <packing>
+                <property name="left_attach">0</property>
+                <property name="top_attach">3</property>
+              </packing>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="GtkGrid" id="viewCollections">
+            <property name="visible">True</property>
+            <property name="orientation">vertical</property>
+            <child>
+              <object class="GtkGrid" id="addGridCollections">
+                <property name="visible">True</property>
+                <property name="hexpand">True</property>
+                <property name="margin">5</property>
+                <child>
+                  <object class="GtkEntry" id="addEntryCollections">
+                    <property name="visible">True</property>
+                    <property name="hexpand">True</property>
+                    <property name="activates_default">True</property>
+                    <property name="placeholder_text" translatable="yes">New Collection…</property>
+                  </object>
+                  <packing>
+                    <property name="left_attach">0</property>
+                    <property name="top_attach">0</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="addButtonCollections">
+                    <property name="label" translatable="yes">Add</property>
+                    <property name="visible">True</property>
+                    <property name="sensitive">False</property>
+                    <property name="can_default">True</property>
+                    <style>
+                      <class name="suggested-action"/>
+                    </style>
+                  </object>
+                  <packing>
+                    <property name="left_attach">1</property>
+                    <property name="top_attach">0</property>
+                  </packing>
+                </child>
+                <style>
+                  <class name="linked"/>
+                </style>
+              </object>
+              <packing>
+                <property name="left_attach">0</property>
+                <property name="top_attach">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkScrolledWindow" id="scrolledWindowCollections">
+                <property name="visible">True</property>
+                <property name="hexpand">True</property>
+                <property name="vexpand">True</property>
+                <property name="shadow_type">in</property>
+                <child>
+                  <placeholder/>
+                </child>
+              </object>
+              <packing>
+                <property name="left_attach">0</property>
+                <property name="top_attach">1</property>
+              </packing>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child type="titlebar">
+      <object class="GtkHeaderBar" id="headerBar">
+        <property name="visible">True</property>
+        <property name="title">Collections</property>
+        <property name="show_close_button">True</property>
+        <child>
+          <object class="GtkButton" id="cancelButton">
+            <property name="label" translatable="yes">Cancel</property>
+            <property name="no_show_all">True</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkButton" id="doneButton">
+            <property name="label" translatable="yes">Done</property>
+            <property name="can_default">True</property>
+            <property name="no_show_all">True</property>
+            <property name="sensitive">False</property>
+            <style>
+              <class name="suggested-action"/>
+            </style>
+          </object>
+          <packing>
+            <property name="pack_type">end</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+    <style>
+      <class name="collection-dialog"/>
+    </style>
+  </template>
+</interface>

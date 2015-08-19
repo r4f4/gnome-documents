@@ -1,4 +1,5 @@
 /*
+ * Copyright © 2015 Alessandro Bono
  * Copyright (c) 2011 Red Hat, Inc.
  *
  * Gnome Documents is free software; you can redistribute it and/or modify
@@ -22,6 +23,7 @@
 const EvView = imports.gi.EvinceView;
 const Gd = imports.gi.Gd;
 const Gdk = imports.gi.Gdk;
+const Gio = imports.gi.Gio;
 const GLib = imports.gi.GLib;
 const GObject = imports.gi.GObject;
 const Gtk = imports.gi.Gtk;
@@ -31,18 +33,18 @@ const C_ = imports.gettext.pgettext;
 
 const Application = imports.application;
 const Documents = imports.documents;
+const Mainloop = imports.mainloop;
 const Manager = imports.manager;
 const Notifications = imports.notifications;
 const Properties = imports.properties;
 const Query = imports.query;
 const Sharing = imports.sharing;
+const TrackerUtils = imports.trackerUtils;
 const Utils = imports.utils;
+const WindowMode = imports.windowMode;
 
 const Lang = imports.lang;
 const Signals = imports.signals;
-
-const _COLLECTION_PLACEHOLDER_ID = 'collection-placeholder';
-const _SEPARATOR_PLACEHOLDER_ID = 'separator-placeholder';
 
 // fetch all the collections a given item is part of
 const FetchCollectionsJob = new Lang.Class({
@@ -310,66 +312,248 @@ const CreateCollectionJob = new Lang.Class({
     }
 });
 
-const OrganizeModelColumns = {
-    ID: 0,
-    NAME: 1,
-    STATE: 2
+const CollectionRowViews = {
+    DEFAULT: 'default-view',
+    DELETE: 'delete-view',
+    RENAME: 'rename-view'
 };
 
-const OrganizeCollectionModel = new Lang.Class({
-    Name: 'OrganizeCollectionModel',
-    Extends: Gtk.ListStore,
+const CollectionRow = new Lang.Class({
+    Name: "CollectionRow",
+    Extends: Gtk.ListBoxRow,
+
+    _init: function(collection, collectionState) {
+        this.collection = collection;
+        this._collectionState = collectionState;
+        this._timeoutId = 0;
+        this.views = new Gtk.Stack();
+        this.parent();
+        this.add(this.views);
+        this.setDefaultView();
+    },
+
+    _initDefaultView: function() {
+        let isActive = (this._collectionState & OrganizeCollectionState.ACTIVE);
+        let isInconsistent = (this._collectionState & OrganizeCollectionState.INCONSISTENT);
+
+        let grid = new Gtk.Grid({ margin_top: 6,
+                                  margin_bottom: 6,
+                                  margin_start: 12,
+                                  margin_end: 12,
+                                  orientation: Gtk.Orientation.HORIZONTAL });
+        this.checkButton = new Gtk.CheckButton({ label: this.collection.name,
+                                                 expand: true,
+                                                 active: isActive,
+                                                 inconsistent: isInconsistent });
+        this.checkButton.get_child().set_ellipsize(Pango.EllipsizeMode.END);
+        this.checkButton.connect('toggled', Lang.bind(this,
+            function(checkButton) {
+                let collId = this.collection.id;
+                let state = checkButton.get_active();
+
+                let job = new SetCollectionForSelectionJob(collId, state);
+                job.run();
+            }));
+        let menu = new Gio.Menu();
+        if (this.collection.canEdit())
+            menu.append(_("Rename…"), 'dialog.rename-collection(\'' + this.collection.id + '\')');
+        else
+            menu.append(_("Rename…"), 'dialog.action-disabled');
+
+        if (this.collection.canTrash())
+            menu.append(_("Delete"), 'dialog.delete-collection(\'' + this.collection.id + '\')');
+        else
+            menu.append(_("Delete"), 'dialog.action-disabled');
+
+        let menuButton = new Gtk.MenuButton({ image: new Gtk.Image({ icon_name: 'open-menu-symbolic' }),
+                                              menu_model: menu,
+                                              relief: Gtk.ReliefStyle.NONE });
+
+        grid.add(this.checkButton);
+        grid.add(menuButton);
+        grid.show_all();
+        this.views.add_named(grid, CollectionRowViews.DEFAULT);
+    },
+
+    _initDeleteView: function() {
+        let grid = new Gtk.Grid({ margin: 6, orientation: Gtk.Orientation.HORIZONTAL });
+        let message = _("“%s” removed").format(this.collection.name);
+        let deleteLabel = new Gtk.Label({ label: message,
+                                          ellipsize: Pango.EllipsizeMode.MIDDLE,
+                                          expand: true,
+                                          halign: Gtk.Align.START });
+        let undoButton = new Gtk.Button({ label: _("Undo") });
+        undoButton.connect('clicked', Lang.bind(this,
+            function() {
+                this._resetTimeout()
+                this.views.set_transition_type(Gtk.StackTransitionType.SLIDE_RIGHT);
+                this.views.set_transition_duration(200);
+                this.setDefaultView();
+            }));
+        grid.add(deleteLabel);
+        grid.add(undoButton);
+
+        grid.show_all();
+        this.views.add_named(grid, CollectionRowViews.DELETE);
+    },
+
+    _initRenameView: function() {
+        this.renameEntry = new Gtk.Entry({ activates_default: true,
+                                           expand: true,
+                                           text: this.collection.name,
+                                           secondary_icon_name: 'edit-clear-symbolic'});
+        this.renameEntry.connect('icon-press', Lang.bind(this,
+            function(renameEntry, iconPos) {
+                if (iconPos == Gtk.EntryIconPosition.SECONDARY) {
+                    renameEntry.set_text("");
+                }
+            }));
+        this.renameEntry.connect('changed', Lang.bind(this,
+            function(renameEntry) {
+                if (renameEntry.get_text() != "")
+                    renameEntry.set_icon_from_icon_name(Gtk.EntryIconPosition.SECONDARY, 'edit-clear-symbolic');
+                else
+                    renameEntry.set_icon_from_icon_name(Gtk.EntryIconPosition.SECONDARY, null);
+            }));
+        this.renameEntry.show();
+        this.views.add_named(this.renameEntry, CollectionRowViews.RENAME);
+    },
+
+    _resetTimeout: function() {
+        if (this._timeoutId != 0) {
+            Mainloop.source_remove(this._timeoutId);
+            this._timeoutId = 0;
+        }
+    },
+
+    applyRename: function() {
+        let newName = this.renameEntry.get_text();
+        this.collection.name = newName;
+        TrackerUtils.setEditedName(newName, this.collection.id, null);
+        this.checkButton.set_label(newName);
+    },
+
+    conceal: function() {
+        let revealer = new Gtk.Revealer({ reveal_child: true, transition_duration: 500 });
+        revealer.show();
+        // inserting revealer between (this) and (this.views)
+        this.remove(this.views);
+        revealer.add(this.views);
+        this.add(revealer);
+
+        revealer.connect("notify::child-revealed", Lang.bind(this, this.deleteCollection));
+        revealer.reveal_child = false;
+    },
+
+    deleteCollection: function() {
+        this._resetTimeout();
+        Application.documentManager.removeItem(this.collection);
+        this.collection.trash();
+    },
+
+    setDefaultView: function() {
+        if (!this.views.get_child_by_name(CollectionRowViews.DEFAULT))
+            this._initDefaultView();
+
+        this.get_style_context().remove_class('delete-row');
+        this.views.set_visible_child_name(CollectionRowViews.DEFAULT);
+    },
+
+    setDeleteView: function() {
+        if (!this.views.get_child_by_name(CollectionRowViews.DELETE))
+            this._initDeleteView();
+
+        this._timeoutId = Mainloop.timeout_add_seconds(Notifications.DELETE_TIMEOUT, Lang.bind(this,
+            function() {
+                this._timeoutId = 0;
+                this.conceal();
+                return false;
+            }));
+        this.views.set_transition_type(Gtk.StackTransitionType.SLIDE_LEFT);
+        this.views.set_transition_duration(500);
+        this.get_style_context().add_class('delete-row');
+        this.views.set_visible_child_name(CollectionRowViews.DELETE);
+
+    },
+
+    setRenameView: function(onTextChanged) {
+        if (!this.views.get_child_by_name(CollectionRowViews.RENAME)) {
+            this._initRenameView();
+            this.renameEntry.connect('changed', onTextChanged);
+        }
+
+        this.views.set_transition_type(Gtk.StackTransitionType.CROSSFADE);
+        this.views.set_transition_duration(200);
+        this.renameEntry.set_text(this.collection.name);
+        this.views.set_visible_child_name(CollectionRowViews.RENAME);
+    },
+
+});
+
+const CollectionList = new Lang.Class({
+    Name: 'CollectionList',
+    Extends: Gtk.ListBox,
 
     _init: function() {
-        this.parent();
-        this.set_column_types(
-            [ GObject.TYPE_STRING,
-              GObject.TYPE_STRING,
-              GObject.TYPE_INT ]);
+        this.parent({ vexpand: false,
+                      margin: 0,
+                      selection_mode: Gtk.SelectionMode.NONE });
 
-        this._collAddedId = Application.documentManager.connect('item-added',
+        let collAddedId = Application.documentManager.connect('item-added',
             Lang.bind(this, this._onCollectionAdded));
-        this._collRemovedId = Application.documentManager.connect('item-removed',
+        let collRemovedId = Application.documentManager.connect('item-removed',
             Lang.bind(this, this._onCollectionRemoved));
 
-        let iter;
+        this.set_header_func(Lang.bind(this,
+            function(row, before) {
+                if (!before) {
+                    row.set_header(null);
+                    return;
+                }
+                let current = row.get_header();
+                if (!current) {
+                    current = new Gtk.Separator({ orientation: Gtk.Orientation.HORIZONTAL });
+                    row.set_header(current);
+                }
+            }));
 
-        // add the placeholder
-        iter = this.append();
-        this.set(iter,
-            [ 0, 1, 2 ],
-            [ _COLLECTION_PLACEHOLDER_ID, '', OrganizeCollectionState.ACTIVE ]);
+        this.set_sort_func(Lang.bind(this,
+            function(row1, row2) {
+                return row2.collection.mtime - row1.collection.mtime;
+            }));
 
-        // add the separator
-        iter = this.append();
-        this.set(iter,
-            [ 0, 1, 2 ],
-            [ _SEPARATOR_PLACEHOLDER_ID, '', OrganizeCollectionState.ACTIVE ]);
+        this.connect('destroy', Lang.bind(this,
+            function() {
+                let rows = this.get_children();
+		rows.forEach(function(row) {
+		    let currentView = row.views.get_visible_child_name();
+		    if (currentView == CollectionRowViews.DELETE) {
+		        row.deleteCollection();
+		    }
+                });
+		Application.documentManager.disconnect(collAddedId);
+		Application.documentManager.disconnect(collRemovedId);
+            }));
 
-        // populate the model
+        // populate the list
         let job = new FetchCollectionStateForSelectionJob();
         job.run(Lang.bind(this, this._onFetchCollectionStateForSelection));
     },
 
-    _findCollectionIter: function(item) {
-        let collPath = null;
+    _onCollectionAdded: function(manager, itemAdded) {
+        let collection =  new CollectionRow(itemAdded, OrganizeCollectionState.ACTIVE);
+        collection.show_all();
+        this.add(collection);
+    },
 
-        this.foreach(Lang.bind(this,
-            function(model, path, iter) {
-                let id = model.get_value(iter, OrganizeModelColumns.ID);
-
-                if (item.id == id) {
-                    collPath = path.copy();
-                    return true;
-                }
-
-                return false;
-            }));
-
-        if (collPath)
-            return this.get_iter(collPath)[1];
-
-        return null;
+    _onCollectionRemoved: function(manager, itemRemoved) {
+        let rows = this.get_children();
+        for (let i = 0; i < rows.length; i++) {
+            if (rows[i].collection.id == itemRemoved.id) {
+                this.remove(rows[i]);
+                return;
+            }
+        }
     },
 
     _onFetchCollectionStateForSelection: function(collectionState) {
@@ -379,293 +563,218 @@ const OrganizeCollectionModel = new Lang.Class({
             if ((collectionState[item.id] & OrganizeCollectionState.HIDDEN) != 0)
                 continue;
 
-            let iter = this._findCollectionIter(item);
+            let collection = new CollectionRow(item, collectionState[item.id]);
+            collection.show_all();
 
-            if (!iter)
-                iter = this.append();
-
-            this.set(iter,
-                [ 0, 1, 2 ],
-                [ item.id, item.name, collectionState[item.id] ]);
+            this.add(collection);
         }
     },
 
-    _refreshState: function() {
-        let job = new FetchCollectionStateForSelectionJob();
-        job.run(Lang.bind(this, this._onFetchCollectionStateForSelection));
+    isEmpty: function() {
+        let rows = this.get_children();
+        return (rows.length == 0);
     },
 
-    _onCollectionAdded: function(manager, itemAdded) {
-        this._refreshState();
-    },
+    isValidName: function(name) {
+        if (!name || name == '')
+            return false;
 
-    _onCollectionRemoved: function(manager, itemRemoved) {
-        let iter = this._findCollectionIter(itemRemoved);
-
-        if (iter)
-            this.remove(iter);
-    },
-
-    refreshCollectionState: function() {
-        this._refreshState();
-    },
-
-    destroy: function() {
-        if (this._collAddedId != 0) {
-            Application.documentManager.disconnect(this._collAddedId);
-            this._collAddedId = 0;
+        let rows = this.get_children();
+        for (let i = 0; i < rows.length; i++) {
+            if (rows[i].collection.name == name)
+                return false;
         }
 
-        if (this._collRemovedId != 0) {
-            Application.documentManager.disconnect(this._collRemovedId);
-            this._collRemovedId = 0;
-        }
+        return true;
     }
 });
 
-const OrganizeCollectionView = new Lang.Class({
-    Name: 'OrganizeCollectionView',
-    Extends: Gtk.Overlay,
+const OrganizeCollectionDialog = new Lang.Class({
+    Name: 'OrganizeCollectionDialog',
+    Extends: Gtk.Window,
+    Template: 'resource:///org/gnome/Documents/ui/organize-collection-dialog.ui',
+    InternalChildren: [ 'content',
+                        'viewEmpty',
+                        'addEntryEmpty',
+                        'addButtonEmpty',
+                        'viewCollections',
+                        'addGridCollections',
+                        'addEntryCollections',
+                        'addButtonCollections',
+                        'scrolledWindowCollections',
+                        'headerBar',
+                        'cancelButton',
+                        'doneButton' ],
 
-    _init: function() {
-        this._choiceConfirmed = false;
+    _init: function(toplevel) {
+        this.parent({ transient_for: toplevel });
 
-        this.parent();
+        this._renameMode = false;
 
-        this._sw = new Gtk.ScrolledWindow({ shadow_type: Gtk.ShadowType.IN,
-                                            margin_start: 5,
-                                            margin_end: 5,
-                                            margin_bottom: 3 });
-        this.add(this._sw);
+        this._keyPressEventId = this.connect('key-press-event', Lang.bind(this, this._onKeyPressed));
+        this._addButtonEmpty.connect('clicked', Lang.bind(this, this._onAddClicked));
+        this._addButtonCollections.connect('clicked', Lang.bind(this, this._onAddClicked));
+        this._addEntryEmpty.connect('changed', Lang.bind(this, this._onTextChanged));
+        this._addEntryCollections.connect('changed', Lang.bind(this, this._onTextChanged));
 
-        this._model = new OrganizeCollectionModel();
-        this._view = new Gtk.TreeView({ headers_visible: false,
-                                        vexpand: true,
-                                        hexpand: true });
-        this._view.set_model(this._model);
-        this._view.set_row_separator_func(Lang.bind(this,
-            function(model, iter) {
-                let id = model.get_value(iter, OrganizeModelColumns.ID);
-                return (id == _SEPARATOR_PLACEHOLDER_ID);
-            }));
-        this._sw.add(this._view);
+        let actionGroup = new Gio.SimpleActionGroup();
+        let deleteAction = new Gio.SimpleAction({ name: 'delete-collection',
+                                                  parameter_type: GLib.VariantType.new('s') });
+        let renameAction = new Gio.SimpleAction({ name: 'rename-collection',
+                                                  parameter_type: GLib.VariantType.new('s') });
+        actionGroup.add_action(deleteAction);
+        actionGroup.add_action(renameAction);
+        this.insert_action_group('dialog', actionGroup);
 
-        this._msgGrid = new Gtk.Grid({ orientation: Gtk.Orientation.VERTICAL,
-                                       row_spacing: 12,
-                                       halign: Gtk.Align.CENTER,
-                                       margin_top: 64 });
-        this.add_overlay(this._msgGrid);
+        renameAction.connect('activate', Lang.bind(this, this._renameModeStart));
+        deleteAction.connect('activate', Lang.bind(this,
+            function(action, parameter) {
+                let collId = parameter.get_string()[0];
+                let rows = this._collectionList.get_children();
+                rows.forEach(function(row) {
+                    if (row.collection.id != collId)
+                        return;
 
-        this._icon = new Gtk.Image({ resource: '/org/gnome/Documents/ui/collections-placeholder.png' });
-        this._msgGrid.add(this._icon);
-
-        this._label = new Gtk.Label({
-            justify: Gtk.Justification.CENTER,
-            label: _("You don't have any collections yet. Enter a new collection name above."),
-            max_width_chars: 32,
-            wrap: true });
-        this._label.get_style_context().add_class('dim-label');
-        this._msgGrid.add(this._label);
-
-        // show the overlay only if there aren't any collections in the model
-        this._msgGrid.visible = (this._model.iter_n_children(null) < 2);
-        this._model.connect('row-inserted', Lang.bind(this,
-            function() {
-                this._msgGrid.hide();
-            }));
-
-        // force the editable row to be unselected
-        this.selection = this._view.get_selection();
-        let selectionChangedId = this.selection.connect('changed', Lang.bind(this,
-            function() {
-                this.selection.unselect_all();
-                if (selectionChangedId != 0) {
-                    this.selection.disconnect(selectionChangedId);
-                    selectionChangedId = 0;
-                }
+                    row.setDeleteView();
+                });
             }));
 
-        this._view.connect('destroy', Lang.bind(this,
+        this._cancelButton.connect('clicked', Lang.bind(this, function() { this._renameModeStop(false); }));
+        this._doneButton.connect('clicked', Lang.bind(this, function() { this._renameModeStop(true); }));
+
+        this._collectionList = new CollectionList();
+        let addId = this._collectionList.connect('add', Lang.bind(this, this._onCollectionListChanged));
+        let removeId = this._collectionList.connect('remove', Lang.bind(this, this._onCollectionListChanged));
+        this._scrolledWindowCollections.add(this._collectionList);
+
+        this.show_all();
+
+        this.connect('destroy', Lang.bind(this,
             function() {
-                this._model.destroy();
+                this._collectionList.disconnect(addId);
+                this._collectionList.disconnect(removeId);
             }));
 
-        this._viewCol = new Gtk.TreeViewColumn();
-        this._view.append_column(this._viewCol);
-
-        // checkbox
-        this._rendererCheck = new Gtk.CellRendererToggle();
-        this._viewCol.pack_start(this._rendererCheck, false);
-        this._viewCol.set_cell_data_func(this._rendererCheck,
-                                         Lang.bind(this, this._checkCellFunc));
-        this._rendererCheck.connect('toggled', Lang.bind(this, this._onCheckToggled));
-
-        // icon
-        this._rendererIcon = new Gtk.CellRendererPixbuf();
-        this._viewCol.pack_start(this._rendererIcon, false);
-        this._viewCol.set_cell_data_func(this._rendererIcon,
-                                         Lang.bind(this, this._iconCellFunc));
-
-        // item name
-        this._rendererText = new Gtk.CellRendererText();
-        this._viewCol.pack_start(this._rendererText, true);
-        this._viewCol.set_cell_data_func(this._rendererText,
-                                         Lang.bind(this, this._textCellFunc));
-
-        this._rendererDetail = new Gd.StyledTextRenderer({ xpad: 16 });
-        this._rendererDetail.add_class('dim-label');
-        this._viewCol.pack_start(this._rendererDetail, false);
-        this._viewCol.set_cell_data_func(this._rendererDetail,
-                                         Lang.bind(this, this._detailCellFunc));
-
-        this._rendererText.connect('edited', Lang.bind(this, this._onTextEdited));
-        this._rendererText.connect('editing-canceled', Lang.bind(this, this._onTextEditCanceled));
-
-        this._view.show();
-    },
-
-    _onCheckToggled: function(renderer, pathStr) {
-        let path = Gtk.TreePath.new_from_string(pathStr);
-        let iter = this._model.get_iter(path)[1];
-
-        let collUrn = this._model.get_value(iter, OrganizeModelColumns.ID);
-        let state = this._rendererCheck.get_active();
-
-        let job = new SetCollectionForSelectionJob(collUrn, !state);
-        job.run(Lang.bind(this,
+        /* We want a CROSSFADE effect when switching from ViewEmpty to ViewCollections (and the other way around)
+         * but when we create the dialog we don't want to see the effect, so for the first second we don't use
+         * any effect and after that we use the CROSSFADE effect.
+         */
+        Mainloop.timeout_add_seconds(1, Lang.bind(this,
             function() {
-                this._model.refreshCollectionState();
+                this._content.set_transition_type(Gtk.StackTransitionType.CROSSFADE)
+                return false;
             }));
     },
 
-    _onTextEditedReal: function(cell, newText) {
-        //cell.editable = false;
-
-        if (!newText || newText == '') {
-            // don't insert collections with empty names
-            return;
-        }
-
-        // update the new name immediately
-        let iter = this._model.append();
-        this._model.set_value(iter, OrganizeModelColumns.NAME, newText);
-
-        // force the editable row to be unselected
-        this.selection.unselect_all();
-
-        // actually create the new collection
+    _onAddClicked: function() {
+        let addEntry = this._collectionList.isEmpty() ? this._addEntryEmpty : this._addEntryCollections;
+        let newText = addEntry.get_text();
         let job = new CreateCollectionJob(newText);
         job.run(Lang.bind(this,
             function(createdUrn) {
                 if (!createdUrn)
                     return;
 
-                this._model.set_value(iter, OrganizeModelColumns.ID, createdUrn);
-
+                addEntry.set_text('');
                 let job = new SetCollectionForSelectionJob(createdUrn, true);
                 job.run(null);
             }));
+        if (!this._collectionList.isEmpty())
+            this._scrolledWindowCollections.get_vadjustment().set_value(0);
     },
 
-    _onTextEdited: function(cell, pathStr, newText) {
-        this._onTextEditedReal(cell, newText);
-    },
-
-    _onTextEditCanceled: function(cell) {
-        if (this._choiceConfirmed) {
-            this._choiceConfirmed = false;
-
-            let entry = this._viewCol.cell_area.get_edit_widget();
-            if (entry)
-                this._onTextEditedReal(cell, entry.get_text());
+    _onTextChanged: function(entry) {
+        let sensitive = this._collectionList.isValidName(entry.get_text());
+        if (this._renameMode)
+            this._doneButton.set_sensitive(sensitive);
+        else {
+            let addButton = this._collectionList.isEmpty() ? this._addButtonEmpty : this._addButtonCollections;
+            addButton.set_sensitive(sensitive);
         }
     },
 
-    _checkCellFunc: function(col, cell, model, iter) {
-        let state = model.get_value(iter, OrganizeModelColumns.STATE);
-        let id = model.get_value(iter, OrganizeModelColumns.ID);
+    _onKeyPressed: function (window, event) {
+        let keyval = event.get_keyval()[1];
+        if (keyval == Gdk.KEY_Escape) {
+            if (this._renameMode)
+                this._renameModeStop(false);
+            else
+                this.destroy();
 
-        cell.active = (state & OrganizeCollectionState.ACTIVE);
-        cell.inconsistent = (state & OrganizeCollectionState.INCONSISTENT);
-        cell.visible = (id != _COLLECTION_PLACEHOLDER_ID);
-    },
-
-    _iconCellFunc: function(col, cell, model, iter) {
-        let id = model.get_value(iter, OrganizeModelColumns.ID);
-
-        cell.icon_name = "list-add";
-        cell.visible = (id == _COLLECTION_PLACEHOLDER_ID);
-    },
-
-    _textCellFunc: function(col, cell, model, iter) {
-        let id = model.get_value(iter, OrganizeModelColumns.ID);
-        let name = model.get_value(iter, OrganizeModelColumns.NAME);
-
-        if (id == _COLLECTION_PLACEHOLDER_ID) {
-            cell.editable = true;
-            cell.text = '';
-            cell.placeholder_text = _("Create new collection");
-        } else {
-            cell.editable = false;
-            cell.text = name;
+            return Gdk.EVENT_STOP;
         }
+        return Gdk.EVENT_PROPAGATE;
     },
 
-    _detailCellFunc: function(col, cell, model, iter) {
-        let id = model.get_value(iter, OrganizeModelColumns.ID);
-        let item = Application.documentManager.getItemById(id);
+    _renameModeStart: function(action, parameter) {
+        let collId = parameter.get_string()[0];
+        this._setRenameMode(true);
 
-        if (item && item.identifier.indexOf(Query.LOCAL_COLLECTIONS_IDENTIFIER) == -1) {
-            cell.text = Application.sourceManager.getItemById(item.resourceUrn).name;
-            cell.visible = true;
-        } else {
-            cell.text = '';
-            cell.visible = false;
-        }
-    },
+        let rows = this._collectionList.get_children();
+        rows.forEach(Lang.bind(this,
+            function(row) {
+                let currentView = row.views.get_visible_child_name();
+                if (currentView == CollectionRowViews.DELETE) {
+                    row.conceal();
+                    return;
+                }
 
-    confirmedChoice: function() {
-        this._choiceConfirmed = true;
-    }
-});
+                if (row.collection.id != collId) {
+                    row.set_sensitive(false);
+                    return;
+                }
 
-const OrganizeCollectionDialog = new Lang.Class({
-    Name: 'OrganizeCollectionDialog',
-    Extends: Gtk.Dialog,
-
-    _init: function(toplevel) {
-        this.parent({ transient_for: toplevel,
-                      modal: true,
-                      destroy_with_parent: true,
-                      use_header_bar: true,
-                      default_width: 400,
-                      default_height: 300,
-        // Translators: "Collections" refers to documents in this context
-                      title: C_("Dialog Title", "Collections") });
-
-        let closeButton = this.add_button('gtk-close', Gtk.ResponseType.CLOSE);
-        this.set_default_response(Gtk.ResponseType.CLOSE);
-
-        let contentArea = this.get_content_area();
-        let collView = new OrganizeCollectionView();
-        contentArea.add(collView);
-
-        // HACK:
-        // - We want clicking on "Close" to add the typed-in collection if we're
-        //   editing.
-        // - Unfortunately, since we focus out of the editable entry in order to
-        //   click the button, we'll get an editing-canceled signal on the renderer
-        //   from GTK. As this handler will run before focus-out, we here signal the
-        //   view to ignore the next editing-canceled signal and add the collection in
-        //   that case instead.
-        //
-        closeButton.connect('button-press-event', Lang.bind(this,
-            function() {
-                collView.confirmedChoice();
-                return false;
+                row.setRenameView(Lang.bind(this, this._onTextChanged));
             }));
+    },
 
-        this.show_all();
+    _renameModeStop: function(rename) {
+        this._setRenameMode(false);
+
+        let rows = this._collectionList.get_children();
+        rows.forEach(function(row) {
+            let currentView = row.views.get_visible_child_name();
+            if (currentView != CollectionRowViews.RENAME) {
+                row.set_sensitive(true);
+                return;
+            }
+
+            if (rename)
+                row.applyRename();
+
+            row.setDefaultView();
+        });
+    },
+
+    _onCollectionListChanged: function() {
+        if (this._collectionList.isEmpty()) {
+            this._content.set_visible_child(this._viewEmpty);
+            this._addEntryEmpty.grab_focus();
+            this._addButtonEmpty.grab_default();
+        } else {
+            this._content.set_visible_child(this._viewCollections);
+	    this._addEntryCollections.grab_focus();
+	    this._addButtonCollections.grab_default();
+	}
+    },
+
+    _setRenameMode: function(renameMode) {
+        this._renameMode = renameMode;
+        if (this._renameMode) {
+            this._headerBar.set_title(_("Rename"));
+            this._cancelButton.show();
+            this._doneButton.show();
+            this._doneButton.grab_default();
+        } else {
+            // Translators: "Collections" refers to documents in this context
+            this._headerBar.set_title(C_("Dialog Title", "Collections"));
+            this._cancelButton.hide();
+            this._doneButton.hide();
+            let addButton = this._collectionList.isEmpty() ? this._addButtonEmpty : this._addButtonCollections;
+            addButton.grab_default();
+        }
+        this._headerBar.set_show_close_button(!this._renameMode);
+        this._addGridCollections.set_sensitive(!this._renameMode);
     }
 });
 
@@ -689,7 +798,6 @@ const SelectionController = new Lang.Class({
 
                 return (item.id != value);
             }));
-
         if (changed) {
             this._selection = filtered;
             this.emit('selection-changed', this._selection);
@@ -775,8 +883,8 @@ const SelectionToolbar = new Lang.Class({
         toolbar.pack_end(this._toolbarProperties);
         this._toolbarProperties.connect('clicked', Lang.bind(this, this._onToolbarProperties));
 
-        // organize button
-        this._toolbarCollection = new Gtk.Button({ label: _("Add to Collection") });
+        // collections button
+        this._toolbarCollection = new Gtk.Button({ label: _("Collections") });
         toolbar.pack_end(this._toolbarCollection);
         this._toolbarCollection.connect('clicked', Lang.bind(this, this._onToolbarCollection));
 
@@ -885,10 +993,8 @@ const SelectionToolbar = new Lang.Class({
             return;
 
         let dialog = new OrganizeCollectionDialog(toplevel);
-
-        dialog.connect('response', Lang.bind(this,
-            function(widget, response) {
-                dialog.destroy();
+        dialog.connect('destroy', Lang.bind(this,
+            function() {
                 Application.selectionController.setSelectionMode(false);
             }));
     },

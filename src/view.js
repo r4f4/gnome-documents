@@ -582,6 +582,10 @@ const ViewContainer = new Lang.Class({
     },
 
     _onViewSelectionChanged: function() {
+        let mode = Application.modeController.getWindowMode();
+        if (this._mode != mode)
+            return;
+
         // update the selection on the controller when the view signals a change
         let selectedURNs = Utils.getURNsFromPaths(this.view.get_selection(),
                                                   this._model);
