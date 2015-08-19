@@ -134,8 +134,6 @@ const ViewModel = new Lang.Class({
         let treePath = this.get_path(iter);
         let treeRowRef = Gtk.TreeRowReference.new(this, treePath);
         doc.rowRefs[this._rowRefKey] = treeRowRef;
-
-        doc.connect('info-updated', Lang.bind(this, this._onInfoUpdated));
     },
 
     _removeItem: function(doc) {
