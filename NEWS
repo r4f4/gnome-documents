@@ -1,3 +1,13 @@
+3.17.90 - "Triple"
+==================
+
+- New collections dialog (Alessandro Bono)
+- Don't show the places dialog if there is only one page (Alessandro Bono)
+- Port to package.js (Alessandro Bono)
+- Unbreak activating documents from the search provider
+- Adapt the sharing dialog to work with latest Google Drive changes
+- Translation updates
+
 3.17.2 - "Blansko"
 ==================
 
