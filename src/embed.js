@@ -42,7 +42,7 @@ const GLib = imports.gi.GLib;
 const Gtk = imports.gi.Gtk;
 const _ = imports.gettext.gettext;
 
-const _ICON_SIZE = 128;
+const _ICON_SIZE = 32;
 const _PDF_LOADER_TIMEOUT = 400;
 
 const SpinnerBox = new Lang.Class({
