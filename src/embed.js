@@ -45,36 +45,6 @@ const _ = imports.gettext.gettext;
 const _ICON_SIZE = 32;
 const _PDF_LOADER_TIMEOUT = 400;
 
-const SpinnerBox = new Lang.Class({
-    Name: 'SpinnerBox',
-    Extends: Gtk.Grid,
-
-    _init: function() {
-        this.parent({ orientation: Gtk.Orientation.VERTICAL,
-                      row_spacing: 24,
-                      hexpand: true,
-                      vexpand: true,
-                      halign: Gtk.Align.CENTER,
-                      valign: Gtk.Align.CENTER });
-
-        this._spinner = new Gtk.Spinner({ width_request: _ICON_SIZE,
-                                          height_request: _ICON_SIZE,
-                                          halign: Gtk.Align.CENTER,
-                                          valign: Gtk.Align.CENTER });
-        this.add(this._spinner);
-
-        this.show_all();
-    },
-
-    start: function() {
-        this._spinner.start();
-    },
-
-    stop: function() {
-        this._spinner.stop();
-    }
-});
-
 const Embed = new Lang.Class({
     Name: 'Embed',
     Extends: Gtk.Box,
@@ -121,8 +91,12 @@ const Embed = new Lang.Class({
         this._edit = new Edit.EditView();
         this._stack.add_named(this._edit, 'edit');
 
-        this._spinnerBox = new SpinnerBox();
-        this._stack.add_named(this._spinnerBox, 'spinner');
+        this._spinner = new Gtk.Spinner({ width_request: _ICON_SIZE,
+                                          height_request: _ICON_SIZE,
+                                          halign: Gtk.Align.CENTER,
+                                          valign: Gtk.Align.CENTER });
+        this._spinner.show();
+        this._stack.add_named(this._spinner, 'spinner');
 
         this._stack.connect('notify::visible-child',
                             Lang.bind(this, this._onVisibleChildChanged));
@@ -223,10 +197,10 @@ const Embed = new Lang.Class({
         let queryStatus = Application.trackerDocumentsController.getQueryStatus();
 
         if (queryStatus) {
-            this._spinnerBox.start();
+            this._spinner.start();
             this._stack.set_visible_child_name('spinner');
         } else {
-            this._spinnerBox.stop();
+            this._spinner.stop();
             this._restoreLastPage();
         }
     },
@@ -359,7 +333,7 @@ const Embed = new Lang.Class({
                 this._loadShowId = 0;
 
                 this._stack.set_visible_child_name('spinner');
-                this._spinnerBox.start();
+                this._spinner.start();
                 return false;
             }));
     },
@@ -375,18 +349,18 @@ const Embed = new Lang.Class({
         this._preview.grab_focus();
 
         this._clearLoadTimer();
-        this._spinnerBox.stop();
+        this._spinner.stop();
         this._stack.set_visible_child_name('preview');
     },
 
     _onLoadError: function(manager, doc, message, exception) {
         this._clearLoadTimer();
-        this._spinnerBox.stop();
+        this._spinner.stop();
     },
 
     _onPasswordNeeded: function(manager, doc) {
         this._clearLoadTimer();
-        this._spinnerBox.stop();
+        this._spinner.stop();
 
         let dialog = new Password.PasswordDialog(doc);
         dialog.connect('response', Lang.bind(this,
@@ -433,7 +407,7 @@ const Embed = new Lang.Class({
             this._titlebar.add(this._toolbar);
         }
 
-        this._spinnerBox.stop();
+        this._spinner.stop();
         this._stack.set_visible_child_name(visibleChildName);
     },
 
