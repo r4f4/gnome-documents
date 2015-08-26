@@ -360,7 +360,8 @@ const CollectionRow = new Lang.Class({
         else
             menu.append(_("Rename…"), 'dialog.action-disabled');
 
-        if (this.collection.canTrash())
+        let activeCollection = Application.documentManager.getActiveCollection();
+        if (this.collection.canTrash() && this.collection != activeCollection)
             menu.append(_("Delete"), 'dialog.delete-collection(\'' + this.collection.id + '\')');
         else
             menu.append(_("Delete"), 'dialog.action-disabled');
@@ -887,6 +888,10 @@ const SelectionToolbar = new Lang.Class({
         this._toolbarCollection = new Gtk.Button({ label: _("Collections") });
         toolbar.pack_end(this._toolbarCollection);
         this._toolbarCollection.connect('clicked', Lang.bind(this, this._onToolbarCollection));
+        Application.modeController.connect('window-mode-changed',
+            Lang.bind(this, this._updateCollectionsButton));
+        Application.documentManager.connect('active-collection-changed',
+            Lang.bind(this, this._updateCollectionsButton));
 
         this.show_all();
 
@@ -894,6 +899,15 @@ const SelectionToolbar = new Lang.Class({
             Lang.bind(this, this._onSelectionModeChanged));
         Application.selectionController.connect('selection-changed',
             Lang.bind(this, this._onSelectionChanged));
+    },
+
+    _updateCollectionsButton: function() {
+        let windowMode = Application.modeController.getWindowMode();
+        let activeCollection = Application.documentManager.getActiveCollection();
+        if (windowMode == WindowMode.WindowMode.COLLECTIONS && !activeCollection)
+            this._toolbarCollection.hide();
+        else
+            this._toolbarCollection.show();
     },
 
     _onSelectionModeChanged: function(controller, mode) {
