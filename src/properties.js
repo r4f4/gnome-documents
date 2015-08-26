@@ -165,20 +165,23 @@ const PropertiesDialog = new Lang.Class({
 
         // Source value
         if (doc instanceof Documents.GoogleDocument) {
-            this._sourceData = new Gtk.LinkButton({ label: doc.sourceName,
-                                                    uri: 'http://docs.google.com/',
-                                                    halign: Gtk.Align.START });
+            let uri = 'http://docs.google.com/';
+            this._sourceData = new Gtk.Label({ label: '<a href=\"' + uri + '\">' + doc.sourceName + '</a>',
+                                               use_markup: true,
+                                               halign: Gtk.Align.START });
         } else if (doc instanceof Documents.OwncloudDocument) {
             let source = Application.sourceManager.getItemById(doc.resourceUrn);
             let account = source.object.get_account();
             let presentation_identity = account.presentation_identity;
-            this._sourceData = new Gtk.LinkButton({ label: presentation_identity,
-                                                    uri: 'https://' + presentation_identity + '/',
-                                                    halign: Gtk.Align.START });
+            let uri ='https://' + presentation_identity + '/';
+            this._sourceData = new Gtk.Label({ label: '<a href=\"' + uri + '\">' + presentation_identity + '</a>',
+                                               use_markup: true,
+                                               halign: Gtk.Align.START });
         } else if (doc instanceof Documents.SkydriveDocument) {
-            this._sourceData = new Gtk.LinkButton({ label: doc.sourceName,
-                                                    uri: 'https://onedrive.live.com',
-                                                    halign: Gtk.Align.START });
+            let uri = 'https://onedrive.live.com';
+            this._sourceData = new Gtk.Label({ label: '<a href=\"' + uri + '\">' + doc.sourceName + '</a>',
+                                               use_markup: true,
+                                               halign: Gtk.Align.START });
         } else { // local document
             if (doc.collection) {
                 this._sourceData = new Gtk.Label({ label: doc.sourceName,
@@ -187,11 +190,11 @@ const PropertiesDialog = new Lang.Class({
                 let sourceLink = Gio.file_new_for_uri(doc.uri).get_parent();
                 let sourcePath = sourceLink.get_path();
 
-                this._sourceData = new Gtk.LinkButton({ label: sourcePath,
-                                                        uri: sourceLink.get_uri(),
-                                                        halign: Gtk.Align.START });
-                let label = this._sourceData.get_child();
-                label.set_ellipsize(Pango.EllipsizeMode.END);
+                let uri = sourceLink.get_uri();
+                this._sourceData = new Gtk.Label({ label: '<a href=\"' + uri + '\">' + sourcePath + '</a>',
+                                                   use_markup: true,
+                                                   halign: Gtk.Align.START,
+                                                   ellipsize: Pango.EllipsizeMode.END });
             }
         }
 
