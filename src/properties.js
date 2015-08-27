@@ -164,38 +164,16 @@ const PropertiesDialog = new Lang.Class({
         }
 
         // Source value
-        if (doc instanceof Documents.GoogleDocument) {
-            let uri = 'http://docs.google.com/';
-            this._sourceData = new Gtk.Label({ label: '<a href=\"' + uri + '\">' + doc.sourceName + '</a>',
+        let [ uri, name ] = doc.getSourceLink();
+        if (uri) {
+            this._sourceData = new Gtk.Label({ label: '<a href=\"' + uri + '\">' + name + '</a>',
                                                use_markup: true,
+                                               halign: Gtk.Align.START,
+                                               ellipsize: Pango.EllipsizeMode.END });
+        } else {
+            // Collections don't have links
+            this._sourceData = new Gtk.Label({ label: name,
                                                halign: Gtk.Align.START });
-        } else if (doc instanceof Documents.OwncloudDocument) {
-            let source = Application.sourceManager.getItemById(doc.resourceUrn);
-            let account = source.object.get_account();
-            let presentation_identity = account.presentation_identity;
-            let uri ='https://' + presentation_identity + '/';
-            this._sourceData = new Gtk.Label({ label: '<a href=\"' + uri + '\">' + presentation_identity + '</a>',
-                                               use_markup: true,
-                                               halign: Gtk.Align.START });
-        } else if (doc instanceof Documents.SkydriveDocument) {
-            let uri = 'https://onedrive.live.com';
-            this._sourceData = new Gtk.Label({ label: '<a href=\"' + uri + '\">' + doc.sourceName + '</a>',
-                                               use_markup: true,
-                                               halign: Gtk.Align.START });
-        } else { // local document
-            if (doc.collection) {
-                this._sourceData = new Gtk.Label({ label: doc.sourceName,
-                                                   halign: Gtk.Align.START });
-            } else {
-                let sourceLink = Gio.file_new_for_uri(doc.uri).get_parent();
-                let sourcePath = sourceLink.get_path();
-
-                let uri = sourceLink.get_uri();
-                this._sourceData = new Gtk.Label({ label: '<a href=\"' + uri + '\">' + sourcePath + '</a>',
-                                                   use_markup: true,
-                                                   halign: Gtk.Align.START,
-                                                   ellipsize: Pango.EllipsizeMode.END });
-            }
         }
 
         grid.attach_next_to (this._sourceData, this._source, Gtk.PositionType.RIGHT, 2, 1);

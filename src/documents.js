@@ -644,6 +644,11 @@ const DocCommon = new Lang.Class({
             }));
     },
 
+    getSourceLink: function() {
+        // This should return an array of URI and source name
+        log('Error: DocCommon implementations must override getSourceLink');
+    },
+
     getWhere: function() {
         let retval = '';
 
@@ -763,6 +768,17 @@ const LocalDocument = new Lang.Class({
                     log('Unable to trash ' + this.uri + ': ' + e.message);
                 }
             }));
+    },
+
+    getSourceLink: function() {
+        if (this.collection)
+            return [ null, this.sourceName ];
+
+        let sourceLink = Gio.file_new_for_uri(this.uri).get_parent();
+        let sourcePath = sourceLink.get_path();
+
+        let uri = sourceLink.get_uri();
+        return [ uri, sourcePath ];
     }
 });
 
@@ -929,6 +945,11 @@ const GoogleDocument = new Lang.Class({
 
     canTrash: function() {
         return false;
+    },
+
+    getSourceLink: function() {
+        let uri = 'http://docs.google.com/';
+        return [ uri, this.sourceName ];
     }
 });
 
@@ -992,6 +1013,14 @@ const OwncloudDocument = new Lang.Class({
 
     canTrash: function() {
         return false;
+    },
+
+    getSourceLink: function() {
+        let source = Application.sourceManager.getItemById(this.resourceUrn);
+        let account = source.object.get_account();
+        let presentationIdentity = account.presentation_identity;
+        let uri ='https://' + presentationIdentity + '/';
+        return [ uri, presentationIdentity ];
     }
 });
 
@@ -1094,6 +1123,11 @@ const SkydriveDocument = new Lang.Class({
 
     canTrash: function() {
         return false;
+    },
+
+    getSourceLink: function() {
+        let uri = 'https://onedrive.live.com';
+        return [ uri, this.sourceName ];
     }
 });
 
