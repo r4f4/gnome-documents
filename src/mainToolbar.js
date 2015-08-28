@@ -112,6 +112,8 @@ const OverviewToolbar = new Lang.Class({
         this._viewGridButton = null;
         this._viewListButton = null;
         this._viewSettingsId = 0;
+        this._activeCollection = null;
+        this._infoUpdatedId = 0;
 
         this.parent();
 
@@ -130,8 +132,15 @@ const OverviewToolbar = new Lang.Class({
             Lang.bind(this, this._resetToolbarMode));
         this._resetToolbarMode();
 
+        this._activeCollection = Application.documentManager.getActiveCollection();
+        if (this._activeCollection)
+            this._activeCollection.connect('info-updated', Lang.bind(this, this._setToolbarTitle));
+
         this.connect('destroy', Lang.bind(this,
             function() {
+                if (this._infoUpdatedId != 0)
+                    this._activeCollection.disconnect(this._infoUpdatedId);
+
                 this._clearStateData();
                 Application.selectionController.disconnect(selectionModeId);
             }));
@@ -246,7 +255,16 @@ const OverviewToolbar = new Lang.Class({
         this.toolbar.set_custom_title(customTitle);
     },
 
-    _onActiveCollectionChanged: function() {
+    _onActiveCollectionChanged: function(manager, activeCollection) {
+        if (activeCollection) {
+            this._infoUpdatedId = activeCollection.connect('info-updated', Lang.bind(this, this._setToolbarTitle));
+        } else {
+            if (this._infoUpdatedId != 0) {
+                this._activeCollection.disconnect(this._infoUpdatedId);
+                this.__infoUpdatedId = 0;
+            }
+        }
+        this._activeCollection = activeCollection;
         this._checkCollectionWidgets();
         this._setToolbarTitle();
     },
