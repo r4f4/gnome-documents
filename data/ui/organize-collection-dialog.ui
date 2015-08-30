@@ -88,6 +88,15 @@
           </object>
         </child>
         <child>
+          <object class="GtkSpinner" id="viewSpinner">
+            <property name="visible">True</property>
+            <property name="halign">center</property>
+            <property name="valign">center</property>
+            <property name="width_request">32</property>
+            <property name="height_request">32</property>
+          </object>
+        </child>
+        <child>
           <object class="GtkGrid" id="viewCollections">
             <property name="visible">True</property>
             <property name="orientation">vertical</property>
