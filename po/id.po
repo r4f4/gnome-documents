@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: gnome-documents master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-09-02 06:51+0000\n"
-"PO-Revision-Date: 2014-09-03 09:59+0700\n"
+"POT-Creation-Date: 2015-08-29 19:12+0000\n"
+"PO-Revision-Date: 2015-08-30 12:36+0700\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian <gnome@i15n.org>\n"
 "Language: id\n"
@@ -18,11 +18,117 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 1.6.9\n"
+"X-Generator: Poedit 1.6.10\n"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:1
+#: ../data/org.gnome.Books.desktop.in.h:1 ../src/application.js:117
+#: ../src/lib/gd-utils.c:418
+msgid "Books"
+msgstr "Buku"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:2
+msgid "An e-book manager application for GNOME"
+msgstr "Aplikasi manajer e-book bagi GNOME"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:3
+msgid ""
+"A simple application to access and organize your e-books on GNOME. It is "
+"meant to be a simple and elegant replacement for using a file manager to "
+"deal with e-books."
+msgstr ""
+"Aplikasi sederhana untuk mengakses dan mengelola e-book Anda pada GNOME. Ini "
+"dimaksudkan sebagai pengganti yang sederhana dan elegan dari manajer berkas "
+"untuk berurusan dengan e-book."
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:4
+#: ../data/org.gnome.Documents.appdata.xml.in.h:4
+msgid "It lets you:"
+msgstr "Ini memungkinkan Anda:"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:5
+msgid "View recent e-books"
+msgstr "Tilik e-book baru-baru ini"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:6
+msgid "Search through e-books"
+msgstr "Cari di antara e-book"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:7
+msgid "View e-books fullscreen"
+msgstr "Lihat e-book dalam layar penuh"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:8
+msgid "Print e-books"
+msgstr "Cetak e-book"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:9
+#: ../data/org.gnome.Documents.appdata.xml.in.h:12
+msgid "Allow opening full featured editor for non-trivial changes"
+msgstr ""
+"Memungkinkan membuka penyunting berfitur lengkap untuk perubahan-perubahan "
+"tak trivial"
+
+#: ../data/org.gnome.Books.desktop.in.h:2
+msgid "Access, manage and share books"
+msgstr "Akses, kelola, dan berbagi buku"
+
+#: ../data/org.gnome.Books.desktop.in.h:3
+msgid "Books;Comics;ePub;PDF;"
+msgstr "Buku;Komik;ePub;PDF;"
+
+#: ../data/org.gnome.books.gschema.xml.h:1
+#: ../data/org.gnome.documents.gschema.xml.h:1
+msgid "View as"
+msgstr "Tilik sebagai"
+
+#: ../data/org.gnome.books.gschema.xml.h:2
+#: ../data/org.gnome.documents.gschema.xml.h:2
+msgid "View as type"
+msgstr "Tilik sebagai jenis"
+
+#: ../data/org.gnome.books.gschema.xml.h:3
+#: ../data/org.gnome.documents.gschema.xml.h:3
+msgid "Window size"
+msgstr "Ukuran jendela"
+
+#: ../data/org.gnome.books.gschema.xml.h:4
+#: ../data/org.gnome.documents.gschema.xml.h:4
+msgid "Window size (width and height)."
+msgstr "Ukuran jendela (lebar dan tinggi)."
+
+#: ../data/org.gnome.books.gschema.xml.h:5
+#: ../data/org.gnome.documents.gschema.xml.h:5
+msgid "Window position"
+msgstr "Posisi jendela"
+
+#: ../data/org.gnome.books.gschema.xml.h:6
+#: ../data/org.gnome.documents.gschema.xml.h:6
+msgid "Window position (x and y)."
+msgstr "Posisi jendela (x dan y)."
+
+#: ../data/org.gnome.books.gschema.xml.h:7
+#: ../data/org.gnome.documents.gschema.xml.h:7
+msgid "Window maximized"
+msgstr "Jendela dimaksimalkan"
+
+#: ../data/org.gnome.books.gschema.xml.h:8
+#: ../data/org.gnome.documents.gschema.xml.h:8
+msgid "Window maximized state"
+msgstr "Jendela dalam keadaan dimaksimalkan"
+
+#: ../data/org.gnome.books.gschema.xml.h:9
+#: ../data/org.gnome.documents.gschema.xml.h:9
+msgid "Night mode"
+msgstr "Mode malam"
+
+#: ../data/org.gnome.books.gschema.xml.h:10
+#: ../data/org.gnome.documents.gschema.xml.h:10
+msgid "Whether the application is in night mode."
+msgstr "Apakah aplikasi sedang dalam mode malam."
 
 #: ../data/org.gnome.Documents.appdata.xml.in.h:1
-#: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:121
-#: ../src/mainWindow.js:52 ../src/mainWindow.js:302
+#: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:114
+#: ../src/lib/gd-utils.c:411 ../src/mainWindow.js:53
 msgid "Documents"
 msgstr "Dokumen"
 
@@ -41,10 +147,6 @@ msgstr ""
 "GNOME. Ini dimaksudkan sebagai pengganti yang sederhana dan elegan dari "
 "manajer berkas untuk berurusan dengan dokumen. Integrasi dengan cloud yang "
 "mulus ditawarkan melalui Akun Daring GNOME."
-
-#: ../data/org.gnome.Documents.appdata.xml.in.h:4
-msgid "It lets you:"
-msgstr "Ini memungkinkan Anda:"
 
 #: ../data/org.gnome.Documents.appdata.xml.in.h:5
 msgid "View recent local and online documents"
@@ -74,12 +176,6 @@ msgstr "Cetak dokumen"
 msgid "Select favorites"
 msgstr "Pilih favorit"
 
-#: ../data/org.gnome.Documents.appdata.xml.in.h:12
-msgid "Allow opening full featured editor for non-trivial changes"
-msgstr ""
-"Memungkinkan membuka penyunting berfitur lengkap untuk perubahan-perubahan "
-"tak trivial"
-
 #: ../data/org.gnome.Documents.desktop.in.h:2
 msgid "Access, manage and share documents"
 msgstr "Akses, kelola, dan berbagi dokumen"
@@ -88,129 +184,194 @@ msgstr "Akses, kelola, dan berbagi dokumen"
 msgid "Docs;PDF;Document;"
 msgstr "Dok;PDF;Dokumen;"
 
-#: ../data/org.gnome.documents.gschema.xml.h:1
-msgid "View as"
-msgstr "Tilik sebagai"
+#: ../data/ui/app-menu.ui.h:1
+msgid "Fullscreen"
+msgstr "Layar penuh"
 
-#: ../data/org.gnome.documents.gschema.xml.h:2
-msgid "View as type"
-msgstr "Tilik sebagai jenis"
+#: ../data/ui/app-menu.ui.h:2
+msgid "Night Mode"
+msgstr "Mode Malam"
 
-#: ../data/org.gnome.documents.gschema.xml.h:3
-msgid "Window size"
-msgstr "Ukuran jendela"
+#: ../data/ui/app-menu.ui.h:3
+msgid "Help"
+msgstr "Bantuan"
 
-#: ../data/org.gnome.documents.gschema.xml.h:4
-msgid "Window size (width and height)."
-msgstr "Ukuran jendela (lebar dan tinggi)."
+#: ../data/ui/app-menu.ui.h:4
+msgid "About"
+msgstr "Tentang"
 
-#: ../data/org.gnome.documents.gschema.xml.h:5
-msgid "Window position"
-msgstr "Posisi jendela"
+#: ../data/ui/app-menu.ui.h:5
+msgid "Quit"
+msgstr "Keluar"
 
-#: ../data/org.gnome.documents.gschema.xml.h:6
-msgid "Window position (x and y)."
-msgstr "Posisi jendela (x dan y)."
+#: ../data/ui/organize-collection-dialog.ui.h:1
+msgid "Enter a name for your first collection"
+msgstr "Beri nama koleksi pertama Anda"
 
-#: ../data/org.gnome.documents.gschema.xml.h:7
-msgid "Window maximized"
-msgstr "Jendela dimaksimalkan"
+#: ../data/ui/organize-collection-dialog.ui.h:2
+msgid "New Collection…"
+msgstr "Koleksi Baru…"
 
-#: ../data/org.gnome.documents.gschema.xml.h:8
-msgid "Window maximized state"
-msgstr "Jendela dalam keadaan dimaksimalkan"
+#: ../data/ui/organize-collection-dialog.ui.h:3 ../src/sharing.js:226
+msgid "Add"
+msgstr "Tambah"
 
-#: ../src/documents.js:621
+#: ../data/ui/organize-collection-dialog.ui.h:4 ../src/mainToolbar.js:209
+msgid "Cancel"
+msgstr "Batal"
+
+#: ../data/ui/organize-collection-dialog.ui.h:5 ../src/sharing.js:112
+msgid "Done"
+msgstr "Selesai"
+
+#: ../data/ui/preview-context-menu.ui.h:1
+msgid "_Copy"
+msgstr "_Salin"
+
+#: ../data/ui/preview-menu.ui.h:1 ../src/selections.js:861
+#: ../src/selections.js:989
+msgid "Open"
+msgstr "Buka"
+
+#: ../data/ui/preview-menu.ui.h:2
+msgid "Edit"
+msgstr "Sunting"
+
+#: ../data/ui/preview-menu.ui.h:3
+msgid "Print…"
+msgstr "Cetak…"
+
+#: ../data/ui/preview-menu.ui.h:4
+msgid "Present"
+msgstr "Sajikan"
+
+#: ../data/ui/preview-menu.ui.h:5
+msgid "Zoom In"
+msgstr "Perbesar"
+
+#: ../data/ui/preview-menu.ui.h:6
+msgid "Zoom Out"
+msgstr "Perkecil"
+
+#: ../data/ui/preview-menu.ui.h:7
+msgid "Rotate ↶"
+msgstr "Putar ↶"
+
+#: ../data/ui/preview-menu.ui.h:8
+msgid "Rotate ↷"
+msgstr "Putar ↷"
+
+#: ../data/ui/preview-menu.ui.h:9 ../src/properties.js:62
+#: ../src/selections.js:883
+msgid "Properties"
+msgstr "Properti"
+
+#: ../data/ui/selection-menu.ui.h:1
+msgid "Select All"
+msgstr "Pilih Semua"
+
+#: ../data/ui/selection-menu.ui.h:2
+msgid "Select None"
+msgstr "Jangan Pilih"
+
+#: ../src/documents.js:630
 msgid "Failed to print document"
 msgstr "Gagal mencetak dokumen"
 
-#: ../src/documents.js:658 ../src/search.js:427
+#: ../src/documents.js:667 ../src/search.js:509
 msgid "Local"
 msgstr "Lokal"
 
-#: ../src/documents.js:679
+#: ../src/documents.js:694
 msgid "GNOME"
 msgstr "GNOME"
 
-#: ../src/documents.js:680
+#: ../src/documents.js:695
 msgid "Getting Started with Documents"
 msgstr "Mulai Memakai Dokumen"
 
-#: ../src/documents.js:696 ../src/documents.js:877 ../src/documents.js:939
-#: ../src/documents.js:1047
+#: ../src/documents.js:711 ../src/documents.js:903 ../src/documents.js:966
+#: ../src/documents.js:1074
 msgid "Collection"
 msgstr "Koleksi"
 
-#: ../src/documents.js:756
+#: ../src/documents.js:781
 msgid "Google Docs"
 msgstr "Google Docs"
 
-#: ../src/documents.js:757
+#: ../src/documents.js:782
 msgid "Google"
 msgstr "Google"
 
-#: ../src/documents.js:879 ../src/documents.js:1049
+#: ../src/documents.js:905 ../src/documents.js:1076
 msgid "Spreadsheet"
 msgstr "Spreadsheet"
 
-#: ../src/documents.js:881 ../src/documents.js:1051 ../src/presentation.js:47
+#: ../src/documents.js:907 ../src/documents.js:1078 ../src/presentation.js:49
 msgid "Presentation"
 msgstr "Presentasi"
 
-#: ../src/documents.js:883 ../src/documents.js:1053
+#: ../src/documents.js:909 ../src/documents.js:1080
+msgid "e-Book"
+msgstr "e-Book"
+
+#: ../src/documents.js:911 ../src/documents.js:1082
 msgid "Document"
 msgstr "Dokumen"
 
-#: ../src/documents.js:917
+#: ../src/documents.js:945
 msgid "ownCloud"
 msgstr "ownCloud"
 
-#: ../src/documents.js:981 ../src/documents.js:982
+#: ../src/documents.js:1008 ../src/documents.js:1009
 msgid "OneDrive"
 msgstr "OneDrive"
 
-#: ../src/documents.js:1181
+#: ../src/documents.js:1253
 msgid "Please check the network connection."
 msgstr "Harap periksa sambungan jaringan."
 
-#: ../src/documents.js:1184
+#: ../src/documents.js:1256
 msgid "Please check the network proxy settings."
 msgstr "Harap periksa pengaturan proksi jaringan."
 
-#: ../src/documents.js:1187
+#: ../src/documents.js:1259
 msgid "Unable to sign in to the document service."
 msgstr "Tak bisa masuk ke layanan dokumen."
 
-#: ../src/documents.js:1190
+#: ../src/documents.js:1262
 msgid "Unable to locate this document."
 msgstr "Tak bisa menemukan dokumen ini."
 
-#: ../src/documents.js:1193
+#: ../src/documents.js:1265
 #, javascript-format
 msgid "Hmm, something is fishy (%d)."
 msgstr "Hm, ada sesuatu yang mencurigakan (%d)."
 
-#: ../src/documents.js:1211
+#: ../src/documents.js:1272
+msgid ""
+"You are using a preview of Books. Full viewing capabilities are coming soon!"
+msgstr ""
+"Anda sedang memakai pratinjau dari Buku. Kapabilitas melihat secara penuh "
+"akan segera hadir!"
+
+#: ../src/documents.js:1293
 #, javascript-format
 msgid "Oops! Unable to load “%s”"
 msgstr "Ups! Tak bisa memuat \"%s\""
 
-#: ../src/edit.js:192
+#: ../src/edit.js:180
 msgid "View"
 msgstr "Tilik"
 
-#: ../src/embed.js:142
-msgid "No Documents Found"
-msgstr "Tidak Ada Dokumen"
+#: ../src/embed.js:80
+msgid "Recent"
+msgstr "Terkini"
 
-#: ../src/embed.js:163
-#, javascript-format
-msgid "You can add your online accounts in %s"
-msgstr "Anda dapat menambahkan Akun daring Anda dalam %s"
-
-#: ../src/embed.js:167
-msgid "Settings"
-msgstr "Pengaturan"
+#: ../src/embed.js:83 ../src/search.js:203 ../src/search.js:212
+#: ../src/selections.js:888
+msgid "Collections"
+msgstr "Koleksi"
 
 #: ../src/lib/gd-nav-bar.c:242
 #, c-format
@@ -228,21 +389,20 @@ msgstr "LibreOffice diperlukan untuk menilik dokumen ini"
 #. Translators: %s is the number of the page, already formatted
 #. * as a string, for example "Page 5".
 #.
-#: ../src/lib/gd-places-bookmarks.c:315
+#: ../src/lib/gd-places-bookmarks.c:321
 #, c-format
 msgid "Page %s"
 msgstr "Halaman %s"
 
-#: ../src/lib/gd-places-bookmarks.c:378
+#: ../src/lib/gd-places-bookmarks.c:384
 msgid "No bookmarks"
 msgstr "Tiada penanda taut"
 
-#: ../src/lib/gd-places-bookmarks.c:386 ../src/lib/gd-places-links.c:257
-#: ../src/view.js:71
+#: ../src/lib/gd-places-bookmarks.c:392 ../src/lib/gd-places-links.c:257
 msgid "Loading…"
 msgstr "Memuat…"
 
-#: ../src/lib/gd-places-bookmarks.c:651 ../src/preview.js:580
+#: ../src/lib/gd-places-bookmarks.c:656 ../src/preview.js:631
 msgid "Bookmarks"
 msgstr "Penanda taut"
 
@@ -250,426 +410,392 @@ msgstr "Penanda taut"
 msgid "No table of contents"
 msgstr "Tiada daftar isi"
 
-#: ../src/lib/gd-places-links.c:518
+#: ../src/lib/gd-places-links.c:514
 msgid "Contents"
 msgstr "Isi"
 
-#: ../src/mainToolbar.js:79
-msgid "Search"
-msgstr "Cari"
+#: ../src/lib/gd-utils.c:412
+msgid "A document manager application"
+msgstr "Aplikasi manajer dokumen"
 
-#: ../src/mainToolbar.js:87
-msgid "Back"
-msgstr "Mundur"
+#: ../src/lib/gd-utils.c:419
+msgid "An e-books manager application"
+msgstr "Aplikasi manajer e-book"
 
-#: ../src/mainToolbar.js:132
-msgid "View items as a list"
-msgstr "Tilik butir sebagai daftar"
-
-#: ../src/mainToolbar.js:138
-msgid "View items as a grid of icons"
-msgstr "Tilik butir sebagai kisi ikon"
-
-#: ../src/mainToolbar.js:168
-msgid "Click on items to select them"
-msgstr "Klik pada butir untuk memilihnya"
-
-#: ../src/mainToolbar.js:170
-#, javascript-format
-msgid "%d selected"
-msgid_plural "%d selected"
-msgstr[0] "%d dipilih"
-
-#: ../src/mainToolbar.js:200
-msgid "Cancel"
-msgstr "Batal"
-
-#: ../src/mainToolbar.js:242
-msgid "Select Items"
-msgstr "Pilih Item"
-
-#: ../src/mainWindow.js:301
+#: ../src/lib/gd-utils.c:427
 msgid "translator-credits"
 msgstr ""
 "Andika Triwidada <andika@gmail.com>, 2011, 2012, 2013, 2014.\n"
 "Dirgita <dirgitadevina@yahoo.co.id>, 2012."
 
-#: ../src/mainWindow.js:303
-msgid "A document manager application"
-msgstr "Aplikasi manajer dokumen"
+#: ../src/mainToolbar.js:89
+msgid "Search"
+msgstr "Cari"
 
-#: ../src/notifications.js:50
-msgid "Selected item has been deleted"
-msgid_plural "Selected items have been deleted"
-msgstr[0] "Butir-butir yang dipilih telah dihapus"
+#: ../src/mainToolbar.js:97
+msgid "Back"
+msgstr "Mundur"
 
-#: ../src/notifications.js:57
+#: ../src/mainToolbar.js:147
+msgid "View items as a list"
+msgstr "Tilik butir sebagai daftar"
+
+#: ../src/mainToolbar.js:153
+msgid "View items as a grid of icons"
+msgstr "Tilik butir sebagai kisi ikon"
+
+#: ../src/mainToolbar.js:183
+msgid "Click on items to select them"
+msgstr "Klik pada butir untuk memilihnya"
+
+#: ../src/mainToolbar.js:185
+#, javascript-format
+msgid "%d selected"
+msgid_plural "%d selected"
+msgstr[0] "%d dipilih"
+
+#: ../src/mainToolbar.js:260
+msgid "Select Items"
+msgstr "Pilih Item"
+
+#: ../src/notifications.js:54
+#, javascript-format
+msgid "“%s” deleted"
+msgstr "\"%s\" dihapus"
+
+#: ../src/notifications.js:58
+#, javascript-format
+msgid "%d item deleted"
+msgid_plural "%d items deleted"
+msgstr[0] "%d butir dihapus"
+
+#: ../src/notifications.js:67 ../src/selections.js:386
 msgid "Undo"
 msgstr "Tak Jadi"
 
-#: ../src/notifications.js:157
+#: ../src/notifications.js:167
 #, javascript-format
 msgid "Printing “%s”: %s"
 msgstr "Mencetak \"%s\": %s"
 
-#: ../src/notifications.js:213
+#: ../src/notifications.js:223
 msgid "Your documents are being indexed"
 msgstr "Dokumen milik Anda tengah diindeks"
 
-#: ../src/notifications.js:214
+#: ../src/notifications.js:224
 msgid "Some documents might not be available during this process"
 msgstr "Sejumlah dokumen mungkin tak tersedia selama proses ini berlangsung"
 
-#: ../src/notifications.js:236
+#: ../src/notifications.js:246
 #, javascript-format
 msgid "Fetching documents from %s"
 msgstr "Mengambil dokumen dari %s"
 
-#: ../src/notifications.js:238
+#: ../src/notifications.js:248
 msgid "Fetching documents from online accounts"
 msgstr "Mengambil dokumend dari akun daring"
 
-#: ../src/password.js:46
+#: ../src/password.js:47
 msgid "Password Required"
 msgstr "Perlu Sandi"
 
-#: ../src/password.js:49
+#: ../src/password.js:50
 msgid "_Unlock"
 msgstr "B_uka Kunci"
 
-#: ../src/password.js:65
+#: ../src/password.js:66
 #, javascript-format
 msgid "Document %s is locked and requires a password to be opened."
 msgstr "Dokumen %s terkunci dan memerlukan sandi agar terbuka."
 
-#: ../src/password.js:79
+#: ../src/password.js:80
 msgid "_Password"
 msgstr "_Sandi"
 
-#: ../src/presentation.js:104
+#: ../src/presentation.js:107
 msgid "Running in presentation mode"
 msgstr "Berjalan dalam mode presentasi"
 
-#: ../src/presentation.js:157
+#: ../src/presentation.js:130
 msgid "Present On"
 msgstr "Dipresentasi Pada"
 
-#: ../src/preview.js:588
+#: ../src/presentation.js:166
+msgid "Mirrored"
+msgstr "Tampilan Kembar"
+
+#: ../src/presentation.js:168
+msgid "Primary"
+msgstr "Primer"
+
+#: ../src/presentation.js:170
+msgid "Off"
+msgstr "Mati"
+
+#: ../src/presentation.js:172
+msgid "Secondary"
+msgstr "Sekunder"
+
+#: ../src/preview.js:639
 msgid "Bookmark this page"
 msgstr "Tanda tauti halaman ini"
 
-#: ../src/preview.js:823 ../src/selections.js:857
+#: ../src/preview.js:900 ../src/selections.js:986
 #, javascript-format
 msgid "Open with %s"
 msgstr "Buka dengan %s"
 
-#: ../src/preview.js:885
+#: ../src/preview.js:963
 msgid "Find Previous"
 msgstr "Cari Sebelumnya"
 
-#: ../src/preview.js:892
+#: ../src/preview.js:970
 msgid "Find Next"
 msgstr "Cari Selanjutnya"
 
-#: ../src/properties.js:61 ../src/resources/preview-menu.ui.h:9
-#: ../src/selections.js:767
-msgid "Properties"
-msgstr "Properti"
-
-#: ../src/properties.js:81
+#: ../src/properties.js:82
 msgctxt "Document Title"
 msgid "Title"
 msgstr "Judul"
 
-#: ../src/properties.js:90
+#: ../src/properties.js:91
 msgctxt "Document Author"
 msgid "Author"
 msgstr "Pengarang"
 
-#: ../src/properties.js:97
+#: ../src/properties.js:98
 msgid "Source"
 msgstr "Sumber"
 
-#: ../src/properties.js:103
+#: ../src/properties.js:104
 msgid "Date Modified"
 msgstr "Tanggal Diubah"
 
-#: ../src/properties.js:110
+#: ../src/properties.js:111
 msgid "Date Created"
 msgstr "Tanggal Dibuat"
 
-#: ../src/properties.js:119
+#: ../src/properties.js:120
 msgctxt "Document Type"
 msgid "Type"
 msgstr "Jenis"
 
-#: ../src/resources/app-menu.ui.h:1
-msgid "Fullscreen"
-msgstr "Layar penuh"
-
-#: ../src/resources/app-menu.ui.h:2
-msgid "Help"
-msgstr "Bantuan"
-
-#: ../src/resources/app-menu.ui.h:3
-msgid "About"
-msgstr "Tentang"
-
-#: ../src/resources/app-menu.ui.h:4
-msgid "Quit"
-msgstr "Keluar"
-
-#: ../src/resources/preview-context-menu.ui.h:1
-msgid "_Copy"
-msgstr "_Salin"
-
-#: ../src/resources/preview-menu.ui.h:1 ../src/selections.js:747
-#: ../src/selections.js:860
-msgid "Open"
-msgstr "Buka"
-
-#: ../src/resources/preview-menu.ui.h:2
-msgid "Edit"
-msgstr "Sunting"
-
-#: ../src/resources/preview-menu.ui.h:3
-msgid "Print…"
-msgstr "Cetak…"
-
-#: ../src/resources/preview-menu.ui.h:4
-msgid "Present"
-msgstr "Sajikan"
-
-#: ../src/resources/preview-menu.ui.h:5
-msgid "Zoom In"
-msgstr "Perbesar"
-
-#: ../src/resources/preview-menu.ui.h:6
-msgid "Zoom Out"
-msgstr "Perkecil"
-
-#: ../src/resources/preview-menu.ui.h:7
-msgid "Rotate ↶"
-msgstr "Putar ↶"
-
-#: ../src/resources/preview-menu.ui.h:8
-msgid "Rotate ↷"
-msgstr "Putar ↷"
-
-#: ../src/resources/selection-menu.ui.h:1
-msgid "Select All"
-msgstr "Pilih Semua"
-
-#: ../src/resources/selection-menu.ui.h:2
-msgid "Select None"
-msgstr "Jangan Pilih"
-
-#: ../src/search.js:114
+#: ../src/search.js:126
 msgid "Category"
 msgstr "Kategori"
 
-#: ../src/search.js:119 ../src/search.js:180 ../src/search.js:265
-#: ../src/search.js:421
+#: ../src/search.js:131 ../src/search.js:200 ../src/search.js:333
+#: ../src/search.js:503
 msgid "All"
 msgstr "Semua"
 
-#: ../src/search.js:125
+#: ../src/search.js:137
 msgid "Favorites"
 msgstr "Favorit"
 
-#: ../src/search.js:130
+#: ../src/search.js:142
 msgid "Shared with you"
 msgstr "Berbagi dengan Anda"
 
-#: ../src/search.js:177
+#: ../src/search.js:197
 msgctxt "Search Filter"
 msgid "Type"
 msgstr "Jenis"
 
-#: ../src/search.js:182
-msgid "Collections"
-msgstr "Koleksi"
-
-#: ../src/search.js:186
+#: ../src/search.js:207
 msgid "PDF Documents"
 msgstr "Dokumen PDF"
 
-#: ../src/search.js:190
+#: ../src/search.js:220
 msgid "Presentations"
 msgstr "Presentasi"
 
-#: ../src/search.js:193
+#: ../src/search.js:223
 msgid "Spreadsheets"
 msgstr "Spreadsheet"
 
-#: ../src/search.js:196
+#: ../src/search.js:226
 msgid "Text Documents"
 msgstr "Dokumen Teks"
 
-#: ../src/search.js:262
+#: ../src/search.js:231
+msgid "e-Books"
+msgstr "e-Book"
+
+#: ../src/search.js:235
+msgid "Comics"
+msgstr "Komik"
+
+#: ../src/search.js:330
 msgid "Match"
 msgstr "Cocok"
 
-#: ../src/search.js:268
+#: ../src/search.js:336
 msgctxt "Search Filter"
 msgid "Title"
 msgstr "Judul"
 
-#: ../src/search.js:271
+#: ../src/search.js:339
 msgctxt "Search Filter"
 msgid "Author"
 msgstr "Pengarang"
 
-#: ../src/search.js:417
+#: ../src/search.js:499
 msgid "Sources"
 msgstr "Sumber"
 
-#: ../src/selections.js:461
-msgid "You don't have any collections yet. Enter a new collection name above."
-msgstr "Anda belum punya koleksi apapun. Masukkan nama koleksi baru di atas."
+#: ../src/selections.js:359 ../src/selections.js:361
+msgid "Rename…"
+msgstr "Ganti Nama…"
 
-#: ../src/selections.js:604
-msgid "Create new collection"
-msgstr "Buat koleksi baru"
+#: ../src/selections.js:365 ../src/selections.js:367 ../src/selections.js:871
+msgid "Delete"
+msgstr "Hapus"
 
-#: ../src/selections.js:640
+#: ../src/selections.js:381
+#, javascript-format
+msgid "“%s” removed"
+msgstr "\"%s\" dihapus"
+
+#: ../src/selections.js:765
+msgid "Rename"
+msgstr "Ganti Nama"
+
+#: ../src/selections.js:771
 msgctxt "Dialog Title"
 msgid "Collections"
 msgstr "Koleksi"
 
-#: ../src/selections.js:752
+#: ../src/selections.js:866
 msgid "Print"
 msgstr "Cetak"
 
-#: ../src/selections.js:757
-msgid "Delete"
-msgstr "Hapus"
-
-#: ../src/selections.js:762
+#: ../src/selections.js:877
 msgid "Share"
 msgstr "Berbagi"
 
-#: ../src/selections.js:772
-msgid "Add to Collection"
-msgstr "Tambah ke Koleksi"
-
-#: ../src/sharing.js:98
+#: ../src/sharing.js:108
 msgid "Sharing Settings"
 msgstr "Pengaturan Berbagi"
 
-#: ../src/sharing.js:102
-msgid "Done"
-msgstr "Selesai"
-
-#: ../src/sharing.js:135
+#: ../src/sharing.js:145
 msgid "Document permissions"
 msgstr "Hak dokumen"
 
-#: ../src/sharing.js:142 ../src/sharing.js:320
+#: ../src/sharing.js:152 ../src/sharing.js:330
 msgid "Change"
 msgstr "Ubah"
 
-#: ../src/sharing.js:166 ../src/sharing.js:295
+#: ../src/sharing.js:176 ../src/sharing.js:305
 msgid "Private"
 msgstr "Pribadi"
 
-#: ../src/sharing.js:176 ../src/sharing.js:288
+#: ../src/sharing.js:186 ../src/sharing.js:298
 msgid "Public"
 msgstr "Umum"
 
-#: ../src/sharing.js:180 ../src/sharing.js:290
+#: ../src/sharing.js:190 ../src/sharing.js:300
 msgid "Everyone can edit"
 msgstr "Semua orang dapat menyunting"
 
-#: ../src/sharing.js:187
+#: ../src/sharing.js:197
 msgid "Add people"
 msgstr "Tambah orang"
 
-#: ../src/sharing.js:194
+#: ../src/sharing.js:204
 msgid "Enter an email address"
 msgstr "Masukkan alamat surel"
 
-#: ../src/sharing.js:209 ../src/sharing.js:376
+#: ../src/sharing.js:219 ../src/sharing.js:371
 msgid "Can edit"
 msgstr "Dapat menyunting"
 
-#: ../src/sharing.js:209 ../src/sharing.js:379
+#: ../src/sharing.js:219 ../src/sharing.js:374
 msgid "Can view"
 msgstr "Dapat menilik"
 
-#: ../src/sharing.js:216
-msgid "Add"
-msgstr "Tambah"
-
-#: ../src/sharing.js:292
+#: ../src/sharing.js:302
 msgid "Everyone can read"
 msgstr "Semua bisa membaca"
 
-#: ../src/sharing.js:307
+#: ../src/sharing.js:317
 msgid "Save"
 msgstr "Simpan"
 
-#: ../src/sharing.js:373
+#: ../src/sharing.js:368
 msgid "Owner"
 msgstr "Pemilik"
 
-#: ../src/sharing.js:442
+#: ../src/sharing.js:437
 #, javascript-format
 msgid "You can ask %s for access"
 msgstr "Anda dapat meminta akses ke %s"
 
-#: ../src/sharing.js:479 ../src/sharing.js:515 ../src/sharing.js:572
-#: ../src/sharing.js:589 ../src/sharing.js:608
+#: ../src/sharing.js:474 ../src/sharing.js:510 ../src/sharing.js:567
+#: ../src/sharing.js:584 ../src/sharing.js:603
 msgid "The document was not updated"
 msgstr "Dokumen tak dimutakhirkan"
 
-#: ../src/shellSearchProvider.js:294
+#: ../src/shellSearchProvider.js:292
 msgid "Untitled Document"
 msgstr "Dokumen Tanpa Judul"
 
-#: ../src/trackerController.js:170
+#: ../src/trackerController.js:172
 msgid "Unable to fetch the list of documents"
 msgstr "Tak bisa mengambil daftar dokumen"
 
-#: ../src/view.js:62 ../src/view.js:93
-msgid "Load More"
-msgstr "Muat Lebih Banyak"
+#: ../src/view.js:260
+msgid "No Books Found"
+msgstr "Tidak Ada Buku yang Ditemukan"
 
-#: ../src/view.js:307
+#: ../src/view.js:261
+msgid "No Documents Found"
+msgstr "Tidak Ada Dokumen"
+
+#: ../src/view.js:283
+#, javascript-format
+msgid "You can add your online accounts in %s"
+msgstr "Anda dapat menambahkan Akun daring Anda dalam %s"
+
+#: ../src/view.js:287
+msgid "Settings"
+msgstr "Pengaturan"
+
+#: ../src/view.js:482
 msgid "Yesterday"
 msgstr "Kemarin"
 
-#: ../src/view.js:309
+#: ../src/view.js:484
 #, javascript-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
 msgstr[0] "%d hari yang lalu"
 
-#: ../src/view.js:313
+#: ../src/view.js:488
 msgid "Last week"
 msgstr "Minggu lalu"
 
-#: ../src/view.js:315
+#: ../src/view.js:490
 #, javascript-format
 msgid "%d week ago"
 msgid_plural "%d weeks ago"
 msgstr[0] "%d minggu yang lalu"
 
-#: ../src/view.js:319
+#: ../src/view.js:494
 msgid "Last month"
 msgstr "Bulan lalu"
 
-#: ../src/view.js:321
+#: ../src/view.js:496
 #, javascript-format
 msgid "%d month ago"
 msgid_plural "%d months ago"
 msgstr[0] "%d bulan yang laly"
 
-#: ../src/view.js:325
+#: ../src/view.js:500
 msgid "Last year"
 msgstr "Tahun lalu"
 
-#: ../src/view.js:327
+#: ../src/view.js:502
 #, javascript-format
 msgid "%d year ago"
 msgid_plural "%d years ago"
