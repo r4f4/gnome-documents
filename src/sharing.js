@@ -343,9 +343,9 @@ const SharingDialog = new Lang.Class({
                 try {
                     this._feed = this._service.query_finish(result);
                     this._getScopeRulesEntry();
-	        } catch(e) {
+                } catch(e) {
                     log("Error getting ACL Feed " + e.message);
-	        }
+                }
             }));
     },
 
@@ -472,7 +472,7 @@ const SharingDialog = new Lang.Class({
                     } catch(e) {
                         log("Error inserting new ACL rule " + e.message);
                         this._showErrorDialog(_("The document was not updated"));
-		    }
+                    }
                 }));
     },
 

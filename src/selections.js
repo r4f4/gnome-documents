@@ -526,14 +526,14 @@ const CollectionList = new Lang.Class({
         this.connect('destroy', Lang.bind(this,
             function() {
                 let rows = this.get_children();
-		rows.forEach(function(row) {
-		    let currentView = row.views.get_visible_child_name();
-		    if (currentView == CollectionRowViews.DELETE) {
-		        row.deleteCollection();
-		    }
+                rows.forEach(function(row) {
+                    let currentView = row.views.get_visible_child_name();
+                    if (currentView == CollectionRowViews.DELETE) {
+                        row.deleteCollection();
+                    }
                 });
-		Application.documentManager.disconnect(collAddedId);
-		Application.documentManager.disconnect(collRemovedId);
+                Application.documentManager.disconnect(collAddedId);
+                Application.documentManager.disconnect(collRemovedId);
             }));
 
         // populate the list
@@ -754,9 +754,9 @@ const OrganizeCollectionDialog = new Lang.Class({
             this._addButtonEmpty.grab_default();
         } else {
             this._content.set_visible_child(this._viewCollections);
-	    this._addEntryCollections.grab_focus();
-	    this._addButtonCollections.grab_default();
-	}
+            this._addEntryCollections.grab_focus();
+            this._addButtonCollections.grab_default();
+        }
     },
 
     _setRenameMode: function(renameMode) {
