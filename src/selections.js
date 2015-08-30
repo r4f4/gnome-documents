@@ -598,6 +598,7 @@ const OrganizeCollectionDialog = new Lang.Class({
                         'viewEmpty',
                         'addEntryEmpty',
                         'addButtonEmpty',
+                        'viewSpinner',
                         'viewCollections',
                         'addGridCollections',
                         'addEntryCollections',
@@ -680,8 +681,12 @@ const OrganizeCollectionDialog = new Lang.Class({
                 let job = new SetCollectionForSelectionJob(createdUrn, true);
                 job.run(null);
             }));
-        if (!this._collectionList.isEmpty())
+        if (this._collectionList.isEmpty()) {
+            this._viewSpinner.start();
+            this._content.set_visible_child(this._viewSpinner);
+        } else {
             this._scrolledWindowCollections.get_vadjustment().set_value(0);
+        }
     },
 
     _onTextChanged: function(entry) {
@@ -749,10 +754,12 @@ const OrganizeCollectionDialog = new Lang.Class({
 
     _onCollectionListChanged: function() {
         if (this._collectionList.isEmpty()) {
+            this._viewSpinner.stop();
             this._content.set_visible_child(this._viewEmpty);
             this._addEntryEmpty.grab_focus();
             this._addButtonEmpty.grab_default();
         } else {
+            this._viewSpinner.stop();
             this._content.set_visible_child(this._viewCollections);
             this._addEntryCollections.grab_focus();
             this._addButtonCollections.grab_default();
