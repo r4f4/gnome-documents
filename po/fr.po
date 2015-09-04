@@ -16,19 +16,18 @@ msgstr ""
 "Project-Id-Version: gnome-documents master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-03-13 22:48+0000\n"
-"PO-Revision-Date: 2015-03-14 00:33+0100\n"
+"POT-Creation-Date: 2015-09-04 07:14+0000\n"
+"PO-Revision-Date: 2015-09-04 14:10+0200\n"
 "Last-Translator: Guillaume Bernard <translate@filorin.fr>\n"
-"Language-Team: français <gnomefr@traduc.org>\n"
+"Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 1.5.7\n"
 
 #: ../data/org.gnome.Books.appdata.xml.in.h:1
-#: ../data/org.gnome.Books.desktop.in.h:1 ../src/application.js:132
+#: ../data/org.gnome.Books.desktop.in.h:1 ../src/application.js:117
 #: ../src/lib/gd-utils.c:418
 msgid "Books"
 msgstr "Livres"
@@ -133,8 +132,8 @@ msgid "Whether the application is in night mode."
 msgstr "Indique si l'application est en mode nuit."
 
 #: ../data/org.gnome.Documents.appdata.xml.in.h:1
-#: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:128
-#: ../src/lib/gd-utils.c:411 ../src/mainWindow.js:52
+#: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:114
+#: ../src/lib/gd-utils.c:411 ../src/mainWindow.js:53
 msgid "Documents"
 msgstr "Documents"
 
@@ -190,101 +189,192 @@ msgstr "Accéder à, gérer et partager des documents"
 msgid "Docs;PDF;Document;"
 msgstr "Doc;Documents;PDF;"
 
-#: ../src/documents.js:631
+#: ../data/ui/app-menu.ui.h:1
+msgid "Fullscreen"
+msgstr "Plein écran"
+
+#: ../data/ui/app-menu.ui.h:2
+msgid "Night Mode"
+msgstr "Mode nuit"
+
+#: ../data/ui/app-menu.ui.h:3
+msgid "Help"
+msgstr "Aide"
+
+#: ../data/ui/app-menu.ui.h:4
+msgid "About"
+msgstr "À propos"
+
+#: ../data/ui/app-menu.ui.h:5
+msgid "Quit"
+msgstr "Quitter"
+
+#: ../data/ui/organize-collection-dialog.ui.h:1
+msgid "Enter a name for your first collection"
+msgstr "Saisissez un nom pour la première collection"
+
+#: ../data/ui/organize-collection-dialog.ui.h:2
+msgid "New Collection…"
+msgstr "Nouvelle collection…"
+
+#: ../data/ui/organize-collection-dialog.ui.h:3 ../src/sharing.js:226
+msgid "Add"
+msgstr "Ajouter"
+
+#: ../data/ui/organize-collection-dialog.ui.h:4 ../src/mainToolbar.js:218
+msgid "Cancel"
+msgstr "Annuler"
+
+#: ../data/ui/organize-collection-dialog.ui.h:5 ../src/sharing.js:112
+msgid "Done"
+msgstr "Terminé"
+
+#: ../data/ui/preview-context-menu.ui.h:1
+msgid "_Copy"
+msgstr "_Copier"
+
+#: ../data/ui/preview-menu.ui.h:1 ../src/selections.js:861
+#: ../src/selections.js:989
+msgid "Open"
+msgstr "Ouvrir"
+
+#: ../data/ui/preview-menu.ui.h:2
+msgid "Edit"
+msgstr "Édition"
+
+#: ../data/ui/preview-menu.ui.h:3
+msgid "Print…"
+msgstr "Impression…"
+
+#: ../data/ui/preview-menu.ui.h:4
+msgid "Present"
+msgstr "Présentation"
+
+#: ../data/ui/preview-menu.ui.h:5
+msgid "Zoom In"
+msgstr "Zoom avant"
+
+#: ../data/ui/preview-menu.ui.h:6
+msgid "Zoom Out"
+msgstr "Zoom arrière"
+
+#: ../data/ui/preview-menu.ui.h:7
+msgid "Rotate ↶"
+msgstr "Pivoter ↶"
+
+#: ../data/ui/preview-menu.ui.h:8
+msgid "Rotate ↷"
+msgstr "Pivoter ↷"
+
+#: ../data/ui/preview-menu.ui.h:9 ../src/properties.js:62
+#: ../src/selections.js:883
+msgid "Properties"
+msgstr "Propriétés"
+
+#: ../data/ui/selection-menu.ui.h:1
+msgid "Select All"
+msgstr "Tout sélectionner"
+
+#: ../data/ui/selection-menu.ui.h:2
+msgid "Select None"
+msgstr "Tout désélectionner"
+
+#: ../src/documents.js:630
 msgid "Failed to print document"
 msgstr "Impossible d'imprimer le document"
 
-#: ../src/documents.js:668 ../src/search.js:498
+#: ../src/documents.js:667 ../src/search.js:509
 msgid "Local"
 msgstr "Local"
 
-#: ../src/documents.js:695
+#: ../src/documents.js:694
 msgid "GNOME"
 msgstr "GNOME"
 
-#: ../src/documents.js:696
+#: ../src/documents.js:695
 msgid "Getting Started with Documents"
 msgstr "Premiers pas avec Documents"
 
-#: ../src/documents.js:712 ../src/documents.js:904 ../src/documents.js:967
-#: ../src/documents.js:1075
+#: ../src/documents.js:711 ../src/documents.js:903 ../src/documents.js:966
+#: ../src/documents.js:1074
 msgid "Collection"
 msgstr "Collection"
 
-#: ../src/documents.js:783
+#: ../src/documents.js:781
 msgid "Google Docs"
 msgstr "Documents Google"
 
-#: ../src/documents.js:784
+#: ../src/documents.js:782
 msgid "Google"
 msgstr "Google"
 
-#: ../src/documents.js:906 ../src/documents.js:1077
+#: ../src/documents.js:905 ../src/documents.js:1076
 msgid "Spreadsheet"
 msgstr "Tableur"
 
-#: ../src/documents.js:908 ../src/documents.js:1079 ../src/presentation.js:47
+#: ../src/documents.js:907 ../src/documents.js:1078 ../src/presentation.js:49
 msgid "Presentation"
 msgstr "Présentation"
 
-#: ../src/documents.js:910 ../src/documents.js:1081
+#: ../src/documents.js:909 ../src/documents.js:1080
 msgid "e-Book"
 msgstr "Livre numérique"
 
-#: ../src/documents.js:912 ../src/documents.js:1083
+#: ../src/documents.js:911 ../src/documents.js:1082
 msgid "Document"
 msgstr "Document"
 
-#: ../src/documents.js:946
+#: ../src/documents.js:945
 msgid "ownCloud"
 msgstr "ownCloud"
 
-#: ../src/documents.js:1009 ../src/documents.js:1010
+#: ../src/documents.js:1008 ../src/documents.js:1009
 msgid "OneDrive"
 msgstr "OneDrive"
 
-#: ../src/documents.js:1247
+#: ../src/documents.js:1253
 msgid "Please check the network connection."
 msgstr "Veuillez vérifier la connexion réseau."
 
-#: ../src/documents.js:1250
+#: ../src/documents.js:1256
 msgid "Please check the network proxy settings."
 msgstr "Veuillez vérifier les paramètres du serveur mandataire du réseau."
 
-#: ../src/documents.js:1253
+#: ../src/documents.js:1259
 msgid "Unable to sign in to the document service."
 msgstr "Impossible de s'inscrire au service de document."
 
-#: ../src/documents.js:1256
+#: ../src/documents.js:1262
 msgid "Unable to locate this document."
 msgstr "Impossible de trouver ce document."
 
-#: ../src/documents.js:1259
+#: ../src/documents.js:1265
 #, javascript-format
 msgid "Hmm, something is fishy (%d)."
 msgstr "Quelque chose ne va pas (%d)."
 
-#: ../src/documents.js:1266
+#: ../src/documents.js:1272
 msgid ""
 "You are using a preview of Books. Full viewing capabilities are coming soon!"
 msgstr ""
 "Vous utilisez une pré-version de Livres. L'ensemble des fonctionnalités de "
 "lecture arrive bientôt !"
 
-#: ../src/documents.js:1287
+#: ../src/documents.js:1293
 #, javascript-format
 msgid "Oops! Unable to load “%s”"
 msgstr "Oups ! Impossible de charger « %s »"
 
-#: ../src/edit.js:176
+#: ../src/edit.js:180
 msgid "View"
 msgstr "Affichage"
 
-#: ../src/embed.js:108
+#: ../src/embed.js:80
 msgid "Recent"
 msgstr "Récent"
 
-#: ../src/embed.js:111 ../src/search.js:192 ../src/search.js:201
+#: ../src/embed.js:83 ../src/search.js:203 ../src/search.js:212
+#: ../src/selections.js:888
 msgid "Collections"
 msgstr "Collections"
 
@@ -317,7 +407,7 @@ msgstr "Pas de signet"
 msgid "Loading…"
 msgstr "Chargement en cours…"
 
-#: ../src/lib/gd-places-bookmarks.c:656 ../src/preview.js:601
+#: ../src/lib/gd-places-bookmarks.c:656 ../src/preview.js:631
 msgid "Bookmarks"
 msgstr "Signets"
 
@@ -325,7 +415,7 @@ msgstr "Signets"
 msgid "No table of contents"
 msgstr "Pas de sommaire"
 
-#: ../src/lib/gd-places-links.c:518
+#: ../src/lib/gd-places-links.c:514
 msgid "Contents"
 msgstr "Sommaire"
 
@@ -348,38 +438,34 @@ msgstr ""
 "Alain Lojewski <allomervan@gmail.com>\n"
 "Guillaume Bernard <translate@filorin.fr>"
 
-#: ../src/mainToolbar.js:79
+#: ../src/mainToolbar.js:89
 msgid "Search"
 msgstr "Rechercher"
 
-#: ../src/mainToolbar.js:87
+#: ../src/mainToolbar.js:97
 msgid "Back"
 msgstr "Précédent"
 
-#: ../src/mainToolbar.js:141
+#: ../src/mainToolbar.js:156
 msgid "View items as a list"
 msgstr "Afficher les éléments en liste"
 
-#: ../src/mainToolbar.js:147
+#: ../src/mainToolbar.js:162
 msgid "View items as a grid of icons"
 msgstr "Afficher les éléments en grille d'icônes"
 
-#: ../src/mainToolbar.js:177
+#: ../src/mainToolbar.js:192
 msgid "Click on items to select them"
 msgstr "Cliquer sur les éléments pour les sélectionner"
 
-#: ../src/mainToolbar.js:179
+#: ../src/mainToolbar.js:194
 #, javascript-format
 msgid "%d selected"
 msgid_plural "%d selected"
 msgstr[0] "%d sélectionné"
 msgstr[1] "%d sélectionnés"
 
-#: ../src/mainToolbar.js:203
-msgid "Cancel"
-msgstr "Annuler"
-
-#: ../src/mainToolbar.js:246
+#: ../src/mainToolbar.js:278
 msgid "Select Items"
 msgstr "Sélectionner les éléments"
 
@@ -395,7 +481,7 @@ msgid_plural "%d items deleted"
 msgstr[0] "%d élément a été supprimé"
 msgstr[1] "%d éléments ont été supprimés"
 
-#: ../src/notifications.js:67
+#: ../src/notifications.js:67 ../src/selections.js:386
 msgid "Undo"
 msgstr "Annuler"
 
@@ -422,328 +508,249 @@ msgstr "Récupération des documents à partir de %s"
 msgid "Fetching documents from online accounts"
 msgstr "Récupération des documents à partir de comptes en ligne"
 
-#: ../src/password.js:46
+#: ../src/password.js:47
 msgid "Password Required"
 msgstr "Mot de passe requis"
 
-#: ../src/password.js:49
+#: ../src/password.js:50
 msgid "_Unlock"
 msgstr "_Déverrouiller"
 
-#: ../src/password.js:65
+#: ../src/password.js:66
 #, javascript-format
 msgid "Document %s is locked and requires a password to be opened."
 msgstr ""
 "Le document %s est verrouillé et nécessite un mot de passe pour être ouvert."
 
-#: ../src/password.js:79
+#: ../src/password.js:80
 msgid "_Password"
 msgstr "_Mot de passe"
 
-#: ../src/presentation.js:105
+#: ../src/presentation.js:107
 msgid "Running in presentation mode"
 msgstr "Actuellement en mode présentation"
 
-#: ../src/presentation.js:152
-msgid "Mirrored"
-msgstr "Mis en miroir"
-
-#: ../src/presentation.js:154
-msgid "Primary"
-msgstr "Principal"
-
-#: ../src/presentation.js:156
-msgid "Off"
-msgstr "Éteint"
-
-#: ../src/presentation.js:158
-msgid "Secondary"
-msgstr "Secondaire"
-
-#: ../src/presentation.js:194
+#: ../src/presentation.js:130
 msgid "Present On"
 msgstr "Présentation en cours"
 
-#: ../src/preview.js:609
+#: ../src/presentation.js:166
+msgid "Mirrored"
+msgstr "Mis en miroir"
+
+#: ../src/presentation.js:168
+msgid "Primary"
+msgstr "Principal"
+
+#: ../src/presentation.js:170
+msgid "Off"
+msgstr "Éteint"
+
+#: ../src/presentation.js:172
+msgid "Secondary"
+msgstr "Secondaire"
+
+#: ../src/preview.js:639
 msgid "Bookmark this page"
 msgstr "Marquer cette page d'un signet"
 
-#: ../src/preview.js:870 ../src/selections.js:859
+#: ../src/preview.js:900 ../src/selections.js:986
 #, javascript-format
 msgid "Open with %s"
 msgstr "Ouvrir avec %s"
 
-#: ../src/preview.js:933
+#: ../src/preview.js:963
 msgid "Find Previous"
 msgstr "Rechercher le précédent"
 
-#: ../src/preview.js:940
+#: ../src/preview.js:970
 msgid "Find Next"
 msgstr "Rechercher le suivant"
 
-#: ../src/properties.js:61 ../src/resources/preview-menu.ui.h:9
-#: ../src/selections.js:769
-msgid "Properties"
-msgstr "Propriétés"
-
-#: ../src/properties.js:81
+#: ../src/properties.js:82
 msgctxt "Document Title"
 msgid "Title"
 msgstr "Titre"
 
-#: ../src/properties.js:90
+#: ../src/properties.js:91
 msgctxt "Document Author"
 msgid "Author"
 msgstr "Auteur"
 
-#: ../src/properties.js:97
+#: ../src/properties.js:98
 msgid "Source"
 msgstr "Sources"
 
-#: ../src/properties.js:103
+#: ../src/properties.js:104
 msgid "Date Modified"
 msgstr "Date de modification"
 
-#: ../src/properties.js:110
+#: ../src/properties.js:111
 msgid "Date Created"
 msgstr "Date de création"
 
-#: ../src/properties.js:119
+#: ../src/properties.js:120
 msgctxt "Document Type"
 msgid "Type"
 msgstr "Type"
 
-#: ../src/resources/app-menu.ui.h:1
-msgid "Fullscreen"
-msgstr "Plein écran"
-
-#: ../src/resources/app-menu.ui.h:2
-msgid "Night Mode"
-msgstr "Mode nuit"
-
-#: ../src/resources/app-menu.ui.h:3
-msgid "Help"
-msgstr "Aide"
-
-#: ../src/resources/app-menu.ui.h:4
-msgid "About"
-msgstr "À propos"
-
-#: ../src/resources/app-menu.ui.h:5
-msgid "Quit"
-msgstr "Quitter"
-
-#: ../src/resources/preview-context-menu.ui.h:1
-msgid "_Copy"
-msgstr "_Copier"
-
-#: ../src/resources/preview-menu.ui.h:1 ../src/selections.js:747
-#: ../src/selections.js:862
-msgid "Open"
-msgstr "Ouvrir"
-
-#: ../src/resources/preview-menu.ui.h:2
-msgid "Edit"
-msgstr "Édition"
-
-#: ../src/resources/preview-menu.ui.h:3
-msgid "Print…"
-msgstr "Impression…"
-
-#: ../src/resources/preview-menu.ui.h:4
-msgid "Present"
-msgstr "Présentation"
-
-#: ../src/resources/preview-menu.ui.h:5
-msgid "Zoom In"
-msgstr "Zoom avant"
-
-#: ../src/resources/preview-menu.ui.h:6
-msgid "Zoom Out"
-msgstr "Zoom arrière"
-
-#: ../src/resources/preview-menu.ui.h:7
-msgid "Rotate ↶"
-msgstr "Pivoter ↶"
-
-#: ../src/resources/preview-menu.ui.h:8
-msgid "Rotate ↷"
-msgstr "Pivoter ↷"
-
-#: ../src/resources/selection-menu.ui.h:1
-msgid "Select All"
-msgstr "Tout sélectionner"
-
-#: ../src/resources/selection-menu.ui.h:2
-msgid "Select None"
-msgstr "Tout désélectionner"
-
-#: ../src/search.js:115
+#: ../src/search.js:126
 msgid "Category"
 msgstr "Catégorie"
 
-#: ../src/search.js:120 ../src/search.js:189 ../src/search.js:322
-#: ../src/search.js:492
+#: ../src/search.js:131 ../src/search.js:200 ../src/search.js:333
+#: ../src/search.js:503
 msgid "All"
 msgstr "Tous"
 
-#: ../src/search.js:126
+#: ../src/search.js:137
 msgid "Favorites"
 msgstr "Favoris"
 
-#: ../src/search.js:131
+#: ../src/search.js:142
 msgid "Shared with you"
 msgstr "Partagés avec vous"
 
-#: ../src/search.js:186
+#: ../src/search.js:197
 msgctxt "Search Filter"
 msgid "Type"
 msgstr "Type"
 
-#: ../src/search.js:196
+#: ../src/search.js:207
 msgid "PDF Documents"
 msgstr "Documents PDF"
 
-#: ../src/search.js:209
+#: ../src/search.js:220
 msgid "Presentations"
 msgstr "Présentations"
 
-#: ../src/search.js:212
+#: ../src/search.js:223
 msgid "Spreadsheets"
 msgstr "Tableurs"
 
-#: ../src/search.js:215
+#: ../src/search.js:226
 msgid "Text Documents"
 msgstr "Documents Texte"
 
-#: ../src/search.js:220
+#: ../src/search.js:231
 msgid "e-Books"
 msgstr "Livres numériques"
 
-#: ../src/search.js:224
+#: ../src/search.js:235
 msgid "Comics"
 msgstr "Bandes dessinées"
 
-#: ../src/search.js:319
+#: ../src/search.js:330
 msgid "Match"
 msgstr "Correspond à"
 
-#: ../src/search.js:325
+#: ../src/search.js:336
 msgctxt "Search Filter"
 msgid "Title"
 msgstr "Titre"
 
-#: ../src/search.js:328
+#: ../src/search.js:339
 msgctxt "Search Filter"
 msgid "Author"
 msgstr "Auteur"
 
-#: ../src/search.js:488
+#: ../src/search.js:499
 msgid "Sources"
 msgstr "Sources"
 
-#: ../src/selections.js:461
-msgid "You don't have any collections yet. Enter a new collection name above."
-msgstr ""
-"Vous n'avez pas encore de collection. Saisissez un nom ci-dessus pour la "
-"nouvelle collection."
+#: ../src/selections.js:359 ../src/selections.js:361
+msgid "Rename…"
+msgstr "Renommer…"
 
-#: ../src/selections.js:604
-msgid "Create new collection"
-msgstr "Créer une nouvelle collection"
+#: ../src/selections.js:365 ../src/selections.js:367 ../src/selections.js:871
+msgid "Delete"
+msgstr "Supprimer"
 
-#: ../src/selections.js:640
+#: ../src/selections.js:381
+#, javascript-format
+msgid "“%s” removed"
+msgstr "« %s » supprimé"
+
+#: ../src/selections.js:765
+msgid "Rename"
+msgstr "Renommer"
+
+#: ../src/selections.js:771
 msgctxt "Dialog Title"
 msgid "Collections"
 msgstr "Collections"
 
-#: ../src/selections.js:752
+#: ../src/selections.js:866
 msgid "Print"
 msgstr "Imprimer"
 
-#: ../src/selections.js:757
-msgid "Delete"
-msgstr "Supprimer"
-
-#: ../src/selections.js:763
+#: ../src/selections.js:877
 msgid "Share"
 msgstr "Partager"
 
-#: ../src/selections.js:774
-msgid "Add to Collection"
-msgstr "Ajouter à la collection"
-
-#: ../src/sharing.js:98
+#: ../src/sharing.js:108
 msgid "Sharing Settings"
 msgstr "Paramètres de partage"
 
-#: ../src/sharing.js:102
-msgid "Done"
-msgstr "Terminé"
-
-#: ../src/sharing.js:135
+#: ../src/sharing.js:145
 msgid "Document permissions"
 msgstr "Permissions du document"
 
-#: ../src/sharing.js:142 ../src/sharing.js:320
+#: ../src/sharing.js:152 ../src/sharing.js:330
 msgid "Change"
 msgstr "Modification"
 
-#: ../src/sharing.js:166 ../src/sharing.js:295
+#: ../src/sharing.js:176 ../src/sharing.js:305
 msgid "Private"
 msgstr "Privé"
 
-#: ../src/sharing.js:176 ../src/sharing.js:288
+#: ../src/sharing.js:186 ../src/sharing.js:298
 msgid "Public"
 msgstr "Public"
 
-#: ../src/sharing.js:180 ../src/sharing.js:290
+#: ../src/sharing.js:190 ../src/sharing.js:300
 msgid "Everyone can edit"
 msgstr "Tout le monde peut modifier"
 
-#: ../src/sharing.js:187
+#: ../src/sharing.js:197
 msgid "Add people"
 msgstr "Ajouter des personnes"
 
-#: ../src/sharing.js:194
+#: ../src/sharing.js:204
 msgid "Enter an email address"
 msgstr "Saisissez une adresse électronique"
 
-#: ../src/sharing.js:209 ../src/sharing.js:376
+#: ../src/sharing.js:219 ../src/sharing.js:371
 msgid "Can edit"
 msgstr "Peut modifier"
 
-#: ../src/sharing.js:209 ../src/sharing.js:379
+#: ../src/sharing.js:219 ../src/sharing.js:374
 msgid "Can view"
 msgstr "Peut lire"
 
-#: ../src/sharing.js:216
-msgid "Add"
-msgstr "Ajouter"
-
-#: ../src/sharing.js:292
+#: ../src/sharing.js:302
 msgid "Everyone can read"
 msgstr "Tout le monde peut lire"
 
-#: ../src/sharing.js:307
+#: ../src/sharing.js:317
 msgid "Save"
 msgstr "Enregistrer"
 
-#: ../src/sharing.js:373
+#: ../src/sharing.js:368
 msgid "Owner"
 msgstr "Propriétaire"
 
-#: ../src/sharing.js:442
+#: ../src/sharing.js:437
 #, javascript-format
 msgid "You can ask %s for access"
 msgstr "Vous pouvez demander à %s pour y accéder"
 
-#: ../src/sharing.js:479 ../src/sharing.js:515 ../src/sharing.js:572
-#: ../src/sharing.js:589 ../src/sharing.js:608
+#: ../src/sharing.js:474 ../src/sharing.js:510 ../src/sharing.js:567
+#: ../src/sharing.js:584 ../src/sharing.js:603
 msgid "The document was not updated"
 msgstr "Le document n'a pas été mis à jour"
 
-#: ../src/shellSearchProvider.js:293
+#: ../src/shellSearchProvider.js:292
 msgid "Untitled Document"
 msgstr "Document sans nom"
 
@@ -751,132 +758,63 @@ msgstr "Document sans nom"
 msgid "Unable to fetch the list of documents"
 msgstr "Impossible de récupérer la liste de documents"
 
-#: ../src/view.js:243
+#: ../src/view.js:260
 msgid "No Books Found"
 msgstr "Aucun livre trouvé"
 
-#: ../src/view.js:244
+#: ../src/view.js:261
 msgid "No Documents Found"
 msgstr "Aucun document trouvé"
 
-#: ../src/view.js:266
+#: ../src/view.js:283
 #, javascript-format
 msgid "You can add your online accounts in %s"
 msgstr "Vous pouvez ajouter vos comptes en ligne dans %s"
 
-#: ../src/view.js:270
+#: ../src/view.js:287
 msgid "Settings"
 msgstr "Paramètres"
 
-#: ../src/view.js:457
+#: ../src/view.js:482
 msgid "Yesterday"
 msgstr "Hier"
 
-#: ../src/view.js:459
+#: ../src/view.js:484
 #, javascript-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
 msgstr[0] "Il y a %d jour"
 msgstr[1] "Il y a %d jours"
 
-#: ../src/view.js:463
+#: ../src/view.js:488
 msgid "Last week"
 msgstr "La semaine dernière"
 
-#: ../src/view.js:465
+#: ../src/view.js:490
 #, javascript-format
 msgid "%d week ago"
 msgid_plural "%d weeks ago"
 msgstr[0] "Il y a %d semaine"
 msgstr[1] "Il y a %d semaines"
 
-#: ../src/view.js:469
+#: ../src/view.js:494
 msgid "Last month"
 msgstr "Le mois dernier"
 
-#: ../src/view.js:471
+#: ../src/view.js:496
 #, javascript-format
 msgid "%d month ago"
 msgid_plural "%d months ago"
 msgstr[0] "Il y a %d mois"
 msgstr[1] "Il y a %d mois"
 
-#: ../src/view.js:475
+#: ../src/view.js:500
 msgid "Last year"
 msgstr "L'année dernière"
 
-#: ../src/view.js:477
+#: ../src/view.js:502
 #, javascript-format
 msgid "%d year ago"
 msgid_plural "%d years ago"
 msgstr[0] "Il y a %d an"
 msgstr[1] "Il y a %d ans"
-
-#~ msgid "Load More"
-#~ msgstr "Charger plus"
-
-#~ msgid ""
-#~ "<li>View recent local and online documents</li> <li>Access your Google, "
-#~ "ownCloud or OneDrive content</li> <li>Search through documents</li> "
-#~ "<li>See new documents shared by friends</li> <li>View documents "
-#~ "fullscreen</li> <li>Print documents</li> <li>Select favorites</li> "
-#~ "<li>Allow opening full featured editor for non-trivial changes</li>"
-#~ msgstr ""
-#~ "<li>d'afficher les documents récents et en ligne</li> <li>d'accéder à vos "
-#~ "contenus Google, ownCloud ou OneDrive</li> <li>de rechercher dans vos "
-#~ "documents</li> <li>de consulter de nouveaux documents partagés par les "
-#~ "amis</li> <li>d'afficher les documents en plein écran</li> <li>d'imprimer "
-#~ "les documents</li> <li>de sélectionner les favoris</li> <li>d'autoriser "
-#~ "l'ouverture d'un éditeur pleinement fonctionnel pour des modifications "
-#~ "non triviales</li>"
-
-#~ msgid "Results for “%s”"
-#~ msgstr "Résultats pour « %s »"
-
-#~ msgid "Close"
-#~ msgstr "Fermer"
-
-#~ msgid "Skydrive"
-#~ msgstr "Skydrive"
-
-#~ msgid "Grid"
-#~ msgstr "Grille"
-
-#~ msgid "List"
-#~ msgstr "Liste"
-
-#~ msgid "About Documents"
-#~ msgstr "À propos de Documents"
-
-#~ msgctxt "Dialog Title"
-#~ msgid "Organize"
-#~ msgstr "Organisation"
-
-#~ msgctxt "Toolbar button tooltip"
-#~ msgid "Organize"
-#~ msgstr "Organiser"
-
-#~ msgid "Unable to load \"%s\" for preview"
-#~ msgstr "Impossible de charger « %s » pour l'aperçu"
-
-#~ msgid "Cannot find \"unoconv\", please check your LibreOffice installation"
-#~ msgstr ""
-#~ "Impossible de trouver « unoconv », vérifiez votre installation de "
-#~ "LibreOffice"
-
-#~ msgid "filtered by title"
-#~ msgstr "filtré par titre"
-
-#~ msgid "filtered by author"
-#~ msgstr "filtré par auteur"
-
-#~ msgid "Load %d more document"
-#~ msgid_plural "Load %d more documents"
-#~ msgstr[0] "Charger %d document supplémentaire"
-#~ msgstr[1] "Charger %d documents supplémentaires"
-
-#~ msgid "Print..."
-#~ msgstr "Imprimer..."
-
-#~ msgid "Rotate Right"
-#~ msgstr "Faire pivoter à droite"
