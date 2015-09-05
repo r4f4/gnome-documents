@@ -9,19 +9,19 @@ msgstr ""
 "Project-Id-Version: gnome-documents master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-03-16 07:44+0000\n"
-"PO-Revision-Date: 2015-03-16 17:14+0900\n"
-"Last-Translator: Seong-ho Cho <darkcircle.0426@gmail.com>\n"
+"POT-Creation-Date: 2015-09-04 12:11+0000\n"
+"PO-Revision-Date: 2015-09-04 22:38+0900\n"
+"Last-Translator: Seong-ho Cho <shcho@gnome.org>\n"
 "Language-Team: Korean <gnome-kr@googlegroups.com>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 1.6.9\n"
+"X-Generator: Poedit 1.5.5\n"
 
 #: ../data/org.gnome.Books.appdata.xml.in.h:1
-#: ../data/org.gnome.Books.desktop.in.h:1 ../src/application.js:132
+#: ../data/org.gnome.Books.desktop.in.h:1 ../src/application.js:117
 #: ../src/lib/gd-utils.c:418
 msgid "Books"
 msgstr "책"
@@ -124,8 +124,8 @@ msgid "Whether the application is in night mode."
 msgstr "프로그램을 야간 모드로 설정할지 여부입니다."
 
 #: ../data/org.gnome.Documents.appdata.xml.in.h:1
-#: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:128
-#: ../src/lib/gd-utils.c:411 ../src/mainWindow.js:52
+#: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:114
+#: ../src/lib/gd-utils.c:411 ../src/mainWindow.js:53
 msgid "Documents"
 msgstr "문서"
 
@@ -180,99 +180,190 @@ msgstr "문서를 접근, 관리하고 공유합니다"
 msgid "Docs;PDF;Document;"
 msgstr "Docs;PDF;Document;문서;"
 
-#: ../src/documents.js:631
+#: ../data/ui/app-menu.ui.h:1
+msgid "Fullscreen"
+msgstr "최대 화면"
+
+#: ../data/ui/app-menu.ui.h:2
+msgid "Night Mode"
+msgstr "야간 모드"
+
+#: ../data/ui/app-menu.ui.h:3
+msgid "Help"
+msgstr "도움말"
+
+#: ../data/ui/app-menu.ui.h:4
+msgid "About"
+msgstr "정보"
+
+#: ../data/ui/app-menu.ui.h:5
+msgid "Quit"
+msgstr "끝내기"
+
+#: ../data/ui/organize-collection-dialog.ui.h:1
+msgid "Enter a name for your first collection"
+msgstr "첫 문서 모음의 이름을 입력하십시오"
+
+#: ../data/ui/organize-collection-dialog.ui.h:2
+msgid "New Collection…"
+msgstr "새 모음…"
+
+#: ../data/ui/organize-collection-dialog.ui.h:3 ../src/sharing.js:226
+msgid "Add"
+msgstr "추가"
+
+#: ../data/ui/organize-collection-dialog.ui.h:4 ../src/mainToolbar.js:218
+msgid "Cancel"
+msgstr "취소"
+
+#: ../data/ui/organize-collection-dialog.ui.h:5 ../src/sharing.js:112
+msgid "Done"
+msgstr "완료"
+
+#: ../data/ui/preview-context-menu.ui.h:1
+msgid "_Copy"
+msgstr "복사(_C)"
+
+#: ../data/ui/preview-menu.ui.h:1 ../src/selections.js:861
+#: ../src/selections.js:989
+msgid "Open"
+msgstr "열기"
+
+#: ../data/ui/preview-menu.ui.h:2
+msgid "Edit"
+msgstr "편집"
+
+#: ../data/ui/preview-menu.ui.h:3
+msgid "Print…"
+msgstr "인쇄…"
+
+#: ../data/ui/preview-menu.ui.h:4
+msgid "Present"
+msgstr "프리젠테이션"
+
+#: ../data/ui/preview-menu.ui.h:5
+msgid "Zoom In"
+msgstr "확대"
+
+#: ../data/ui/preview-menu.ui.h:6
+msgid "Zoom Out"
+msgstr "축소"
+
+#: ../data/ui/preview-menu.ui.h:7
+msgid "Rotate ↶"
+msgstr "↶ 회전"
+
+#: ../data/ui/preview-menu.ui.h:8
+msgid "Rotate ↷"
+msgstr "↷ 회전"
+
+#: ../data/ui/preview-menu.ui.h:9 ../src/properties.js:62
+#: ../src/selections.js:883
+msgid "Properties"
+msgstr "속성"
+
+#: ../data/ui/selection-menu.ui.h:1
+msgid "Select All"
+msgstr "모두 선택"
+
+#: ../data/ui/selection-menu.ui.h:2
+msgid "Select None"
+msgstr "선택 안함"
+
+#: ../src/documents.js:630
 msgid "Failed to print document"
 msgstr "문서를 인쇄하는데 실패했습니다"
 
-#: ../src/documents.js:668 ../src/search.js:498
+#: ../src/documents.js:667 ../src/search.js:509
 msgid "Local"
 msgstr "지역"
 
-#: ../src/documents.js:695
+#: ../src/documents.js:694
 msgid "GNOME"
 msgstr "그놈"
 
-#: ../src/documents.js:696
+#: ../src/documents.js:695
 msgid "Getting Started with Documents"
 msgstr "문서로 시작하기"
 
-#: ../src/documents.js:712 ../src/documents.js:904 ../src/documents.js:967
-#: ../src/documents.js:1075
+#: ../src/documents.js:711 ../src/documents.js:903 ../src/documents.js:966
+#: ../src/documents.js:1074
 msgid "Collection"
 msgstr "모음"
 
-#: ../src/documents.js:783
+#: ../src/documents.js:781
 msgid "Google Docs"
 msgstr "구글 닥스"
 
-#: ../src/documents.js:784
+#: ../src/documents.js:782
 msgid "Google"
 msgstr "구글"
 
-#: ../src/documents.js:906 ../src/documents.js:1077
+#: ../src/documents.js:905 ../src/documents.js:1076
 msgid "Spreadsheet"
 msgstr "스프레드쉬트"
 
-#: ../src/documents.js:908 ../src/documents.js:1079 ../src/presentation.js:47
+#: ../src/documents.js:907 ../src/documents.js:1078 ../src/presentation.js:49
 msgid "Presentation"
 msgstr "프리젠테이션"
 
-#: ../src/documents.js:910 ../src/documents.js:1081
+#: ../src/documents.js:909 ../src/documents.js:1080
 msgid "e-Book"
 msgstr "전자책"
 
-#: ../src/documents.js:912 ../src/documents.js:1083
+#: ../src/documents.js:911 ../src/documents.js:1082
 msgid "Document"
 msgstr "문서"
 
-#: ../src/documents.js:946
+#: ../src/documents.js:945
 msgid "ownCloud"
 msgstr "ownCloud"
 
-#: ../src/documents.js:1009 ../src/documents.js:1010
+#: ../src/documents.js:1008 ../src/documents.js:1009
 msgid "OneDrive"
 msgstr "원드라이브"
 
-#: ../src/documents.js:1247
+#: ../src/documents.js:1253
 msgid "Please check the network connection."
 msgstr "네트워크 연결을 확인하십시오."
 
-#: ../src/documents.js:1250
+#: ../src/documents.js:1256
 msgid "Please check the network proxy settings."
 msgstr "네트워크 프록시 설정을 확인하십시오."
 
-#: ../src/documents.js:1253
+#: ../src/documents.js:1259
 msgid "Unable to sign in to the document service."
 msgstr "문서 서비스에 로그인할 수 없습니다."
 
-#: ../src/documents.js:1256
+#: ../src/documents.js:1262
 msgid "Unable to locate this document."
 msgstr "문서 위치를 찾을 수 없습니다."
 
-#: ../src/documents.js:1259
+#: ../src/documents.js:1265
 #, javascript-format
 msgid "Hmm, something is fishy (%d)."
 msgstr "무언가 알 수 없는 문제(%d)가 있습니다."
 
-#: ../src/documents.js:1266
+#: ../src/documents.js:1272
 msgid ""
 "You are using a preview of Books. Full viewing capabilities are coming soon!"
 msgstr "책의 시험 버전을 사용중입니다. 완전한 보기 기능은 곧 완성합니다!"
 
-#: ../src/documents.js:1287
+#: ../src/documents.js:1293
 #, javascript-format
 msgid "Oops! Unable to load “%s”"
 msgstr "앗! \"%s\" 문서를 읽어들일 수 없습니다"
 
-#: ../src/edit.js:176
+#: ../src/edit.js:180
 msgid "View"
 msgstr "보기"
 
-#: ../src/embed.js:108
+#: ../src/embed.js:80
 msgid "Recent"
 msgstr "최근"
 
-#: ../src/embed.js:111 ../src/search.js:192 ../src/search.js:201
+#: ../src/embed.js:83 ../src/search.js:203 ../src/search.js:212
+#: ../src/selections.js:888
 msgid "Collections"
 msgstr "모음"
 
@@ -305,7 +396,7 @@ msgstr "책갈피 없음"
 msgid "Loading…"
 msgstr "불러오는 중…"
 
-#: ../src/lib/gd-places-bookmarks.c:656 ../src/preview.js:601
+#: ../src/lib/gd-places-bookmarks.c:656 ../src/preview.js:631
 msgid "Bookmarks"
 msgstr "책갈피"
 
@@ -313,7 +404,7 @@ msgstr "책갈피"
 msgid "No table of contents"
 msgstr "차례 없음"
 
-#: ../src/lib/gd-places-links.c:518
+#: ../src/lib/gd-places-links.c:514
 msgid "Contents"
 msgstr "차례"
 
@@ -329,37 +420,33 @@ msgstr "전자책 관리자 프로그램"
 msgid "translator-credits"
 msgstr "조성호 <darkcircle.0426@gmail.com>"
 
-#: ../src/mainToolbar.js:79
+#: ../src/mainToolbar.js:89
 msgid "Search"
 msgstr "검색"
 
-#: ../src/mainToolbar.js:87
+#: ../src/mainToolbar.js:97
 msgid "Back"
 msgstr "뒤로"
 
-#: ../src/mainToolbar.js:141
+#: ../src/mainToolbar.js:156
 msgid "View items as a list"
 msgstr "목록 모양으로 항목 보기"
 
-#: ../src/mainToolbar.js:147
+#: ../src/mainToolbar.js:162
 msgid "View items as a grid of icons"
 msgstr "바둑판 배치 아이콘으로 항목 보기"
 
-#: ../src/mainToolbar.js:177
+#: ../src/mainToolbar.js:192
 msgid "Click on items to select them"
 msgstr "선택하려면 항목을 마우스로 누르십시오"
 
-#: ../src/mainToolbar.js:179
+#: ../src/mainToolbar.js:194
 #, javascript-format
 msgid "%d selected"
 msgid_plural "%d selected"
 msgstr[0] "%d개 선택함"
 
-#: ../src/mainToolbar.js:203
-msgid "Cancel"
-msgstr "취소"
-
-#: ../src/mainToolbar.js:246
+#: ../src/mainToolbar.js:278
 msgid "Select Items"
 msgstr "선택한 항목"
 
@@ -374,7 +461,7 @@ msgid "%d item deleted"
 msgid_plural "%d items deleted"
 msgstr[0] "항목 %d개를 삭제했습니다"
 
-#: ../src/notifications.js:67
+#: ../src/notifications.js:67 ../src/selections.js:386
 msgid "Undo"
 msgstr "실행 취소"
 
@@ -400,325 +487,248 @@ msgstr "%s에서 문서를 가져오는 중"
 msgid "Fetching documents from online accounts"
 msgstr "온라인 계정에서 문서를 가져오는 중"
 
-#: ../src/password.js:46
+#: ../src/password.js:47
 msgid "Password Required"
 msgstr "암호가 필요합니다"
 
-#: ../src/password.js:49
+#: ../src/password.js:50
 msgid "_Unlock"
 msgstr "잠금 해제(_U)"
 
-#: ../src/password.js:65
+#: ../src/password.js:66
 #, javascript-format
 msgid "Document %s is locked and requires a password to be opened."
 msgstr "%s 문서가 잠겨있으며 열려면 암호가 필요합니다."
 
-#: ../src/password.js:79
+#: ../src/password.js:80
 msgid "_Password"
 msgstr "암호(_P)"
 
-#: ../src/presentation.js:105
+#: ../src/presentation.js:107
 msgid "Running in presentation mode"
 msgstr "프리젠테이션 모드로 실행중"
 
-#: ../src/presentation.js:152
-msgid "Mirrored"
-msgstr "화면 복제함"
-
-#: ../src/presentation.js:154
-msgid "Primary"
-msgstr "주 화면"
-
-#: ../src/presentation.js:156
-msgid "Off"
-msgstr "끔"
-
-#: ../src/presentation.js:158
-msgid "Secondary"
-msgstr "부 화면"
-
-#: ../src/presentation.js:194
+#: ../src/presentation.js:130
 msgid "Present On"
 msgstr "프리젠테이션 위치"
 
-#: ../src/preview.js:609
+#: ../src/presentation.js:166
+msgid "Mirrored"
+msgstr "화면 복제함"
+
+#: ../src/presentation.js:168
+msgid "Primary"
+msgstr "주 화면"
+
+#: ../src/presentation.js:170
+msgid "Off"
+msgstr "끔"
+
+#: ../src/presentation.js:172
+msgid "Secondary"
+msgstr "부 화면"
+
+#: ../src/preview.js:639
 msgid "Bookmark this page"
 msgstr "이 페이지 책갈피에 추가"
 
-#: ../src/preview.js:870 ../src/selections.js:859
+#: ../src/preview.js:900 ../src/selections.js:986
 #, javascript-format
 msgid "Open with %s"
 msgstr "%s(으)로 열기"
 
-#: ../src/preview.js:933
+#: ../src/preview.js:963
 msgid "Find Previous"
 msgstr "이전 찾기"
 
-#: ../src/preview.js:940
+#: ../src/preview.js:970
 msgid "Find Next"
 msgstr "다음 찾기"
 
-#: ../src/properties.js:61 ../src/resources/preview-menu.ui.h:9
-#: ../src/selections.js:769
-msgid "Properties"
-msgstr "속성"
-
-#: ../src/properties.js:81
+#: ../src/properties.js:82
 msgctxt "Document Title"
 msgid "Title"
 msgstr "제목"
 
-#: ../src/properties.js:90
+#: ../src/properties.js:91
 msgctxt "Document Author"
 msgid "Author"
 msgstr "저자"
 
-#: ../src/properties.js:97
+#: ../src/properties.js:98
 msgid "Source"
 msgstr "원본"
 
-#: ../src/properties.js:103
+#: ../src/properties.js:104
 msgid "Date Modified"
 msgstr "수정한 날짜"
 
-#: ../src/properties.js:110
+#: ../src/properties.js:111
 msgid "Date Created"
 msgstr "만든 날짜"
 
-#: ../src/properties.js:119
+#: ../src/properties.js:120
 msgctxt "Document Type"
 msgid "Type"
 msgstr "형식"
 
-#: ../src/resources/app-menu.ui.h:1
-msgid "Fullscreen"
-msgstr "최대 화면"
-
-#: ../src/resources/app-menu.ui.h:2
-msgid "Night Mode"
-msgstr "야간 모드"
-
-#: ../src/resources/app-menu.ui.h:3
-msgid "Help"
-msgstr "도움말"
-
-#: ../src/resources/app-menu.ui.h:4
-msgid "About"
-msgstr "정보"
-
-#: ../src/resources/app-menu.ui.h:5
-msgid "Quit"
-msgstr "끝내기"
-
-#: ../src/resources/preview-context-menu.ui.h:1
-msgid "_Copy"
-msgstr "복사(_C)"
-
-#: ../src/resources/preview-menu.ui.h:1 ../src/selections.js:747
-#: ../src/selections.js:862
-msgid "Open"
-msgstr "열기"
-
-#: ../src/resources/preview-menu.ui.h:2
-msgid "Edit"
-msgstr "편집"
-
-#: ../src/resources/preview-menu.ui.h:3
-msgid "Print…"
-msgstr "인쇄…"
-
-#: ../src/resources/preview-menu.ui.h:4
-msgid "Present"
-msgstr "프리젠테이션"
-
-#: ../src/resources/preview-menu.ui.h:5
-msgid "Zoom In"
-msgstr "확대"
-
-#: ../src/resources/preview-menu.ui.h:6
-msgid "Zoom Out"
-msgstr "축소"
-
-#: ../src/resources/preview-menu.ui.h:7
-msgid "Rotate ↶"
-msgstr "↶ 회전"
-
-#: ../src/resources/preview-menu.ui.h:8
-msgid "Rotate ↷"
-msgstr "↷ 회전"
-
-#: ../src/resources/selection-menu.ui.h:1
-msgid "Select All"
-msgstr "모두 선택"
-
-#: ../src/resources/selection-menu.ui.h:2
-msgid "Select None"
-msgstr "선택 안함"
-
-#: ../src/search.js:115
+#: ../src/search.js:126
 msgid "Category"
 msgstr "분류"
 
-#: ../src/search.js:120 ../src/search.js:189 ../src/search.js:322
-#: ../src/search.js:492
+#: ../src/search.js:131 ../src/search.js:200 ../src/search.js:333
+#: ../src/search.js:503
 msgid "All"
 msgstr "모두"
 
-#: ../src/search.js:126
+#: ../src/search.js:137
 msgid "Favorites"
 msgstr "즐겨찾기"
 
-#: ../src/search.js:131
+#: ../src/search.js:142
 msgid "Shared with you"
 msgstr "공유됨"
 
-#: ../src/search.js:186
+#: ../src/search.js:197
 msgctxt "Search Filter"
 msgid "Type"
 msgstr "형식"
 
-#: ../src/search.js:196
+#: ../src/search.js:207
 msgid "PDF Documents"
 msgstr "PDF 문서"
 
-#: ../src/search.js:209
+#: ../src/search.js:220
 msgid "Presentations"
 msgstr "프리젠테이션"
 
-#: ../src/search.js:212
+#: ../src/search.js:223
 msgid "Spreadsheets"
 msgstr "스프레드쉬트"
 
-#: ../src/search.js:215
+#: ../src/search.js:226
 msgid "Text Documents"
 msgstr "텍스트 문서"
 
-#: ../src/search.js:220
+#: ../src/search.js:231
 msgid "e-Books"
 msgstr "전자책"
 
-#: ../src/search.js:224
+#: ../src/search.js:235
 msgid "Comics"
 msgstr "만화"
 
-#: ../src/search.js:319
+#: ../src/search.js:330
 msgid "Match"
 msgstr "일치"
 
-#: ../src/search.js:325
+#: ../src/search.js:336
 msgctxt "Search Filter"
 msgid "Title"
 msgstr "제목"
 
-#: ../src/search.js:328
+#: ../src/search.js:339
 msgctxt "Search Filter"
 msgid "Author"
 msgstr "저자"
 
-#: ../src/search.js:488
+#: ../src/search.js:499
 msgid "Sources"
 msgstr "원본"
 
-#: ../src/selections.js:461
-msgid "You don't have any collections yet. Enter a new collection name above."
-msgstr "모음이 아직 없습니다. 위에 새 모음 이름을 입력하십시오."
+#: ../src/selections.js:359 ../src/selections.js:361
+msgid "Rename…"
+msgstr "이름 바꾸기…"
 
-#: ../src/selections.js:604
-msgid "Create new collection"
-msgstr "새 모음 만들기"
+#: ../src/selections.js:365 ../src/selections.js:367 ../src/selections.js:871
+msgid "Delete"
+msgstr "삭제"
 
-#: ../src/selections.js:640
+#: ../src/selections.js:381
+#, javascript-format
+msgid "“%s” removed"
+msgstr "“%s” 항목을 제거했습니다"
+
+#: ../src/selections.js:765
+msgid "Rename"
+msgstr "이름 바꾸기"
+
+#: ../src/selections.js:771
 msgctxt "Dialog Title"
 msgid "Collections"
 msgstr "모음"
 
-#: ../src/selections.js:752
+#: ../src/selections.js:866
 msgid "Print"
 msgstr "인쇄"
 
-#: ../src/selections.js:757
-msgid "Delete"
-msgstr "삭제"
-
-#: ../src/selections.js:763
+#: ../src/selections.js:877
 msgid "Share"
 msgstr "공유"
 
-#: ../src/selections.js:774
-msgid "Add to Collection"
-msgstr "모음 추가"
-
-#: ../src/sharing.js:98
+#: ../src/sharing.js:108
 msgid "Sharing Settings"
 msgstr "공유 설정"
 
-#: ../src/sharing.js:102
-msgid "Done"
-msgstr "완료"
-
-#: ../src/sharing.js:135
+#: ../src/sharing.js:145
 msgid "Document permissions"
 msgstr "문서 권한"
 
-#: ../src/sharing.js:142 ../src/sharing.js:320
+#: ../src/sharing.js:152 ../src/sharing.js:330
 msgid "Change"
 msgstr "바꾸기"
 
-#: ../src/sharing.js:166 ../src/sharing.js:295
+#: ../src/sharing.js:176 ../src/sharing.js:305
 msgid "Private"
 msgstr "비밀"
 
-#: ../src/sharing.js:176 ../src/sharing.js:288
+#: ../src/sharing.js:186 ../src/sharing.js:298
 msgid "Public"
 msgstr "공개"
 
-#: ../src/sharing.js:180 ../src/sharing.js:290
+#: ../src/sharing.js:190 ../src/sharing.js:300
 msgid "Everyone can edit"
 msgstr "누구나 편집 가능"
 
-#: ../src/sharing.js:187
+#: ../src/sharing.js:197
 msgid "Add people"
 msgstr "사람 추가"
 
-#: ../src/sharing.js:194
+#: ../src/sharing.js:204
 msgid "Enter an email address"
 msgstr "전자메일 주소를 입력하십시오"
 
-#: ../src/sharing.js:209 ../src/sharing.js:376
+#: ../src/sharing.js:219 ../src/sharing.js:371
 msgid "Can edit"
 msgstr "편집 가능"
 
-#: ../src/sharing.js:209 ../src/sharing.js:379
+#: ../src/sharing.js:219 ../src/sharing.js:374
 msgid "Can view"
 msgstr "보기 가능"
 
-#: ../src/sharing.js:216
-msgid "Add"
-msgstr "추가"
-
-#: ../src/sharing.js:292
+#: ../src/sharing.js:302
 msgid "Everyone can read"
 msgstr "누구나 읽기 가능"
 
-#: ../src/sharing.js:307
+#: ../src/sharing.js:317
 msgid "Save"
 msgstr "저장"
 
-#: ../src/sharing.js:373
+#: ../src/sharing.js:368
 msgid "Owner"
 msgstr "소유"
 
-#: ../src/sharing.js:442
+#: ../src/sharing.js:437
 #, javascript-format
 msgid "You can ask %s for access"
 msgstr "접근하려면 %s에 요청하십시오"
 
-#: ../src/sharing.js:479 ../src/sharing.js:515 ../src/sharing.js:572
-#: ../src/sharing.js:589 ../src/sharing.js:608
+#: ../src/sharing.js:474 ../src/sharing.js:510 ../src/sharing.js:567
+#: ../src/sharing.js:584 ../src/sharing.js:603
 msgid "The document was not updated"
 msgstr "문서가 최신이 아닙니다"
 
-#: ../src/shellSearchProvider.js:293
+#: ../src/shellSearchProvider.js:292
 msgid "Untitled Document"
 msgstr "제목 없는 문서"
 
@@ -726,62 +736,72 @@ msgstr "제목 없는 문서"
 msgid "Unable to fetch the list of documents"
 msgstr "문서 목록을 가져올 수 없습니다"
 
-#: ../src/view.js:243
+#: ../src/view.js:260
 msgid "No Books Found"
 msgstr "책 없음"
 
-#: ../src/view.js:244
+#: ../src/view.js:261
 msgid "No Documents Found"
 msgstr "문서가 없음"
 
-#: ../src/view.js:266
+#: ../src/view.js:283
 #, javascript-format
 msgid "You can add your online accounts in %s"
 msgstr "%s에서 온라인 계정을 추가할 수 있습니다"
 
-#: ../src/view.js:270
+#: ../src/view.js:287
 msgid "Settings"
 msgstr "설정"
 
-#: ../src/view.js:457
+#: ../src/view.js:482
 msgid "Yesterday"
 msgstr "어제"
 
-#: ../src/view.js:459
+#: ../src/view.js:484
 #, javascript-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
 msgstr[0] "%d일 전"
 
-#: ../src/view.js:463
+#: ../src/view.js:488
 msgid "Last week"
 msgstr "지난 주"
 
-#: ../src/view.js:465
+#: ../src/view.js:490
 #, javascript-format
 msgid "%d week ago"
 msgid_plural "%d weeks ago"
 msgstr[0] "%d주 전"
 
-#: ../src/view.js:469
+#: ../src/view.js:494
 msgid "Last month"
 msgstr "지난 달"
 
-#: ../src/view.js:471
+#: ../src/view.js:496
 #, javascript-format
 msgid "%d month ago"
 msgid_plural "%d months ago"
 msgstr[0] "%d달 전"
 
-#: ../src/view.js:475
+#: ../src/view.js:500
 msgid "Last year"
 msgstr "작년"
 
-#: ../src/view.js:477
+#: ../src/view.js:502
 #, javascript-format
 msgid "%d year ago"
 msgid_plural "%d years ago"
 msgstr[0] "%d년 전"
+
+#~ msgid ""
+#~ "You don't have any collections yet. Enter a new collection name above."
+#~ msgstr "모음이 아직 없습니다. 위에 새 모음 이름을 입력하십시오."
+
+#~ msgid "Create new collection"
+#~ msgstr "새 모음 만들기"
+
+#~ msgid "Add to Collection"
+#~ msgstr "모음 추가"
 
 #~ msgid "Load More"
 #~ msgstr "더 알아보기"
