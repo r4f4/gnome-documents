@@ -1,3 +1,10 @@
+3.16.4 - "By the Forest"
+========================
+
+- Don't show the places dialog if there is only one page (Alessandro Bono)
+- Fix GdTaggedEntry theming
+- Add missing Gio import so that Settings can be started
+
 3.16.3 - "Potpourri"
 ====================
 
