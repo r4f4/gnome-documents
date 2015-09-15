@@ -11,19 +11,18 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-documents master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-04-22 16:44+0000\n"
-"PO-Revision-Date: 2015-03-25 15:37+0900\n"
-"Last-Translator: Hajime Taira <htaira@redhat.com>\n"
+"POT-Creation-Date: 2015-09-13 07:21+0000\n"
+"PO-Revision-Date: 2015-09-14 02:21+0900\n"
+"Last-Translator: Jiro Matsuzawa <jmatsuzawa@gnome.org>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-DamnedLies-Scope: partial\n"
 
 #: ../data/org.gnome.Books.appdata.xml.in.h:1
-#: ../data/org.gnome.Books.desktop.in.h:1 ../src/application.js:132
+#: ../data/org.gnome.Books.desktop.in.h:1 ../src/application.js:117
 #: ../src/lib/gd-utils.c:418
 msgid "Books"
 msgstr "ブック"
@@ -121,8 +120,8 @@ msgid "Whether the application is in night mode."
 msgstr "アプリケーションをナイトモードで利用するかどうか"
 
 #: ../data/org.gnome.Documents.appdata.xml.in.h:1
-#: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:128
-#: ../src/lib/gd-utils.c:411 ../src/mainWindow.js:52
+#: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:114
+#: ../src/lib/gd-utils.c:411 ../src/mainWindow.js:53
 msgid "Documents"
 msgstr "ドキュメント"
 
@@ -170,85 +169,175 @@ msgstr "ドキュメントを開く、管理する、そして共有する"
 msgid "Docs;PDF;Document;"
 msgstr "Docs;PDF;Document;文書;ドキュメント;"
 
-#: ../src/documents.js:631
+#: ../data/ui/app-menu.ui.h:1
+msgid "Fullscreen"
+msgstr "フルスクリーン"
+
+#: ../data/ui/app-menu.ui.h:2
+msgid "Night Mode"
+msgstr "ナイトモード"
+
+#: ../data/ui/app-menu.ui.h:3
+msgid "Help"
+msgstr "ヘルプ"
+
+#: ../data/ui/app-menu.ui.h:4
+msgid "About"
+msgstr "このアプリケーションについて"
+
+#: ../data/ui/app-menu.ui.h:5
+msgid "Quit"
+msgstr "終了"
+
+#: ../data/ui/organize-collection-dialog.ui.h:1
+msgid "Enter a name for your first collection"
+msgstr "コレクション名を入力してください"
+
+#: ../data/ui/organize-collection-dialog.ui.h:2
+msgid "New Collection…"
+msgstr "新しいコレクション…"
+
+#: ../data/ui/organize-collection-dialog.ui.h:3 ../src/sharing.js:226
+msgid "Add"
+msgstr "追加"
+
+#: ../data/ui/organize-collection-dialog.ui.h:4 ../src/mainToolbar.js:218
+msgid "Cancel"
+msgstr "キャンセル"
+
+#: ../data/ui/organize-collection-dialog.ui.h:5 ../src/sharing.js:112
+msgid "Done"
+msgstr "完了"
+
+#: ../data/ui/preview-context-menu.ui.h:1
+msgid "_Copy"
+msgstr "コピー(_C)"
+
+#: ../data/ui/preview-menu.ui.h:1 ../src/selections.js:861
+#: ../src/selections.js:989
+msgid "Open"
+msgstr "開く"
+
+#: ../data/ui/preview-menu.ui.h:2
+msgid "Edit"
+msgstr "編集"
+
+#: ../data/ui/preview-menu.ui.h:3
+msgid "Print…"
+msgstr "印刷…"
+
+#: ../data/ui/preview-menu.ui.h:4
+msgid "Present"
+msgstr "プレゼンテーション"
+
+#: ../data/ui/preview-menu.ui.h:5
+msgid "Zoom In"
+msgstr "拡大"
+
+#: ../data/ui/preview-menu.ui.h:6
+msgid "Zoom Out"
+msgstr "縮小"
+
+#: ../data/ui/preview-menu.ui.h:7
+msgid "Rotate ↶"
+msgstr "回転 ↶"
+
+#: ../data/ui/preview-menu.ui.h:8
+msgid "Rotate ↷"
+msgstr "回転 ↷"
+
+#: ../data/ui/preview-menu.ui.h:9 ../src/properties.js:62
+#: ../src/selections.js:883
+msgid "Properties"
+msgstr "プロパティ"
+
+#: ../data/ui/selection-menu.ui.h:1
+msgid "Select All"
+msgstr "すべて選択する"
+
+#: ../data/ui/selection-menu.ui.h:2
+msgid "Select None"
+msgstr "すべて解除する"
+
+#: ../src/documents.js:630
 msgid "Failed to print document"
 msgstr "ドキュメントの印刷に失敗しました"
 
-#: ../src/documents.js:668 ../src/search.js:509
+#: ../src/documents.js:667 ../src/search.js:509
 msgid "Local"
 msgstr "ローカル"
 
-#: ../src/documents.js:695
+#: ../src/documents.js:694
 msgid "GNOME"
 msgstr "GNOME"
 
-#: ../src/documents.js:696
+#: ../src/documents.js:695
 msgid "Getting Started with Documents"
 msgstr "Getting Started with Documents"
 
-#: ../src/documents.js:712 ../src/documents.js:904 ../src/documents.js:967
-#: ../src/documents.js:1075
+#: ../src/documents.js:711 ../src/documents.js:903 ../src/documents.js:966
+#: ../src/documents.js:1074
 msgid "Collection"
 msgstr "コレクション"
 
-#: ../src/documents.js:782
+#: ../src/documents.js:781
 msgid "Google Docs"
 msgstr "Google ドキュメント"
 
-#: ../src/documents.js:783
+#: ../src/documents.js:782
 msgid "Google"
 msgstr "Google"
 
-#: ../src/documents.js:906 ../src/documents.js:1077
+#: ../src/documents.js:905 ../src/documents.js:1076
 msgid "Spreadsheet"
 msgstr "スプレッドシート"
 
-#: ../src/documents.js:908 ../src/documents.js:1079 ../src/presentation.js:47
+#: ../src/documents.js:907 ../src/documents.js:1078 ../src/presentation.js:49
 msgid "Presentation"
 msgstr "プレゼンテーション"
 
-#: ../src/documents.js:910 ../src/documents.js:1081
+#: ../src/documents.js:909 ../src/documents.js:1080
 msgid "e-Book"
 msgstr "電子書籍"
 
-#: ../src/documents.js:912 ../src/documents.js:1083
+#: ../src/documents.js:911 ../src/documents.js:1082
 msgid "Document"
 msgstr "ドキュメント"
 
-#: ../src/documents.js:946
+#: ../src/documents.js:945
 msgid "ownCloud"
 msgstr "ownCloud"
 
-#: ../src/documents.js:1009 ../src/documents.js:1010
+#: ../src/documents.js:1008 ../src/documents.js:1009
 msgid "OneDrive"
 msgstr "OneDrive"
 
-#: ../src/documents.js:1254
+#: ../src/documents.js:1253
 msgid "Please check the network connection."
 msgstr "ネットワーク接続を確認してください。"
 
-#: ../src/documents.js:1257
+#: ../src/documents.js:1256
 msgid "Please check the network proxy settings."
 msgstr "ネットワークプロキシの設定を確認してください。"
 
-#: ../src/documents.js:1260
+#: ../src/documents.js:1259
 msgid "Unable to sign in to the document service."
 msgstr "ドキュメントサービスにサインインできません。"
 
-#: ../src/documents.js:1263
+#: ../src/documents.js:1262
 msgid "Unable to locate this document."
 msgstr "ドキュメントが見つかりません。"
 
-#: ../src/documents.js:1266
+#: ../src/documents.js:1265
 #, javascript-format
 msgid "Hmm, something is fishy (%d)."
 msgstr "何か問題があります (%d)。"
 
-#: ../src/documents.js:1273
+#: ../src/documents.js:1272
 msgid "You are using a preview of Books. Full viewing capabilities are coming soon!"
 msgstr "ブックのプレビュー版を使用しています。完全な表示機能は、もうすぐリリースされます。"
 
-#: ../src/documents.js:1294
+#: ../src/documents.js:1293
 #, javascript-format
 msgid "Oops! Unable to load “%s”"
 msgstr "“%s”を読み込めません"
@@ -257,11 +346,12 @@ msgstr "“%s”を読み込めません"
 msgid "View"
 msgstr "表示"
 
-#: ../src/embed.js:109
+#: ../src/embed.js:80
 msgid "Recent"
 msgstr "最近のもの"
 
-#: ../src/embed.js:112 ../src/search.js:203 ../src/search.js:212
+#: ../src/embed.js:83 ../src/search.js:203 ../src/search.js:212
+#: ../src/selections.js:888
 msgid "Collections"
 msgstr "コレクション"
 
@@ -294,7 +384,7 @@ msgstr "ブックマークなし"
 msgid "Loading…"
 msgstr "読み込み中…"
 
-#: ../src/lib/gd-places-bookmarks.c:656 ../src/preview.js:628
+#: ../src/lib/gd-places-bookmarks.c:656 ../src/preview.js:631
 msgid "Bookmarks"
 msgstr "ブックマーク"
 
@@ -321,37 +411,33 @@ msgstr ""
 "Hajime Taira <htaira@redhat.com>\n"
 "日本GNOMEユーザー会 <http://www.gnome.gr.jp/>"
 
-#: ../src/mainToolbar.js:88
+#: ../src/mainToolbar.js:89
 msgid "Search"
 msgstr "検索"
 
-#: ../src/mainToolbar.js:96
+#: ../src/mainToolbar.js:97
 msgid "Back"
 msgstr "戻る"
 
-#: ../src/mainToolbar.js:146
+#: ../src/mainToolbar.js:156
 msgid "View items as a list"
 msgstr "アイテムを一覧で表示します"
 
-#: ../src/mainToolbar.js:152
+#: ../src/mainToolbar.js:162
 msgid "View items as a grid of icons"
 msgstr "アイテムをアイコンで格子状に表示します"
 
-#: ../src/mainToolbar.js:182
+#: ../src/mainToolbar.js:192
 msgid "Click on items to select them"
 msgstr "選択するアイテムをクリックします"
 
-#: ../src/mainToolbar.js:184
+#: ../src/mainToolbar.js:194
 #, javascript-format
 msgid "%d selected"
 msgid_plural "%d selected"
 msgstr[0] "%d 件選択"
 
-#: ../src/mainToolbar.js:208
-msgid "Cancel"
-msgstr "キャンセル"
-
-#: ../src/mainToolbar.js:259
+#: ../src/mainToolbar.js:278
 msgid "Select Items"
 msgstr "アイテムを選択"
 
@@ -366,7 +452,7 @@ msgid "%d item deleted"
 msgid_plural "%d items deleted"
 msgstr[0] "%d 件のアイテムを削除しました"
 
-#: ../src/notifications.js:67
+#: ../src/notifications.js:67 ../src/selections.js:386
 msgid "Undo"
 msgstr "元に戻す"
 
@@ -392,160 +478,90 @@ msgstr "%s からドキュメントを取得中"
 msgid "Fetching documents from online accounts"
 msgstr "オンラインアカウントからドキュメントを取得中"
 
-#: ../src/password.js:46
+#: ../src/password.js:47
 msgid "Password Required"
 msgstr "パスワードが必要です"
 
-#: ../src/password.js:49
+#: ../src/password.js:50
 msgid "_Unlock"
 msgstr "ロック解除(_U)"
 
-#: ../src/password.js:65
+#: ../src/password.js:66
 #, javascript-format
 msgid "Document %s is locked and requires a password to be opened."
 msgstr "ドキュメント“%s”はロックされており、開くにはパスワードを入力する必要があります。"
 
-#: ../src/password.js:79
+#: ../src/password.js:80
 msgid "_Password"
 msgstr "パスワード(_P)"
 
-#: ../src/presentation.js:105
+#: ../src/presentation.js:107
 msgid "Running in presentation mode"
 msgstr "プレゼンテーションモードで実行中"
 
-#: ../src/presentation.js:152
-msgid "Mirrored"
-msgstr "ミラー"
-
-#: ../src/presentation.js:154
-msgid "Primary"
-msgstr "プライマリ"
-
-#: ../src/presentation.js:156
-msgid "Off"
-msgstr "オフ"
-
-#: ../src/presentation.js:158
-msgid "Secondary"
-msgstr "セカンダリ"
-
-#: ../src/presentation.js:194
+#: ../src/presentation.js:130
 msgid "Present On"
 msgstr "プレゼンテーション オン"
 
-#: ../src/preview.js:636
+#: ../src/presentation.js:166
+msgid "Mirrored"
+msgstr "ミラー"
+
+#: ../src/presentation.js:168
+msgid "Primary"
+msgstr "プライマリ"
+
+#: ../src/presentation.js:170
+msgid "Off"
+msgstr "オフ"
+
+#: ../src/presentation.js:172
+msgid "Secondary"
+msgstr "セカンダリ"
+
+#: ../src/preview.js:639
 msgid "Bookmark this page"
 msgstr "このページをブックマークに追加します"
 
-#: ../src/preview.js:897 ../src/selections.js:859
+#: ../src/preview.js:900 ../src/selections.js:986
 #, javascript-format
 msgid "Open with %s"
 msgstr "%s で開く"
 
-#: ../src/preview.js:960
+#: ../src/preview.js:963
 msgid "Find Previous"
 msgstr "前を検索します"
 
-#: ../src/preview.js:967
+#: ../src/preview.js:970
 msgid "Find Next"
 msgstr "次を検索します"
 
-#: ../src/properties.js:61 ../src/resources/preview-menu.ui.h:9
-#: ../src/selections.js:769
-msgid "Properties"
-msgstr "プロパティ"
-
-#: ../src/properties.js:81
+#: ../src/properties.js:82
 msgctxt "Document Title"
 msgid "Title"
 msgstr "タイトル"
 
-#: ../src/properties.js:90
+#: ../src/properties.js:91
 msgctxt "Document Author"
 msgid "Author"
 msgstr "作者"
 
-#: ../src/properties.js:97
+#: ../src/properties.js:98
 msgid "Source"
 msgstr "ソース"
 
-#: ../src/properties.js:103
+#: ../src/properties.js:104
 msgid "Date Modified"
 msgstr "更新日時"
 
-#: ../src/properties.js:110
+#: ../src/properties.js:111
 msgid "Date Created"
 msgstr "作成日時"
 
-#: ../src/properties.js:119
+#: ../src/properties.js:120
 msgctxt "Document Type"
 msgid "Type"
 msgstr "種類"
-
-#: ../src/resources/app-menu.ui.h:1
-msgid "Fullscreen"
-msgstr "フルスクリーン"
-
-#: ../src/resources/app-menu.ui.h:2
-msgid "Night Mode"
-msgstr "ナイトモード"
-
-#: ../src/resources/app-menu.ui.h:3
-msgid "Help"
-msgstr "ヘルプ"
-
-#: ../src/resources/app-menu.ui.h:4
-msgid "About"
-msgstr "このアプリケーションについて"
-
-#: ../src/resources/app-menu.ui.h:5
-msgid "Quit"
-msgstr "終了"
-
-#: ../src/resources/preview-context-menu.ui.h:1
-msgid "_Copy"
-msgstr "コピー(_C)"
-
-#: ../src/resources/preview-menu.ui.h:1 ../src/selections.js:747
-#: ../src/selections.js:862
-msgid "Open"
-msgstr "開く"
-
-#: ../src/resources/preview-menu.ui.h:2
-msgid "Edit"
-msgstr "編集"
-
-#: ../src/resources/preview-menu.ui.h:3
-msgid "Print…"
-msgstr "印刷…"
-
-#: ../src/resources/preview-menu.ui.h:4
-msgid "Present"
-msgstr "プレゼンテーション"
-
-#: ../src/resources/preview-menu.ui.h:5
-msgid "Zoom In"
-msgstr "拡大"
-
-#: ../src/resources/preview-menu.ui.h:6
-msgid "Zoom Out"
-msgstr "縮小"
-
-#: ../src/resources/preview-menu.ui.h:7
-msgid "Rotate ↶"
-msgstr "回転 ↶"
-
-#: ../src/resources/preview-menu.ui.h:8
-msgid "Rotate ↷"
-msgstr "回転 ↷"
-
-#: ../src/resources/selection-menu.ui.h:1
-msgid "Select All"
-msgstr "すべて選択する"
-
-#: ../src/resources/selection-menu.ui.h:2
-msgid "Select None"
-msgstr "すべて解除する"
 
 #: ../src/search.js:126
 msgid "Category"
@@ -611,106 +627,99 @@ msgstr "作者"
 msgid "Sources"
 msgstr "ソース"
 
-#: ../src/selections.js:461
-msgid "You don't have any collections yet. Enter a new collection name above."
-msgstr "コレクションがまだありません。新規に作成するコレクション名を上の欄に入力してください。"
+#: ../src/selections.js:359 ../src/selections.js:361
+msgid "Rename…"
+msgstr "名前を変更…"
 
-#: ../src/selections.js:604
-msgid "Create new collection"
-msgstr "コレクションを新規に作成する"
+#: ../src/selections.js:365 ../src/selections.js:367 ../src/selections.js:871
+msgid "Delete"
+msgstr "削除する"
 
-#: ../src/selections.js:640
+#: ../src/selections.js:381
+#, javascript-format
+msgid "“%s” removed"
+msgstr "“%s”を削除しました"
+
+#: ../src/selections.js:765
+msgid "Rename"
+msgstr "名前を変更"
+
+#: ../src/selections.js:771
 msgctxt "Dialog Title"
 msgid "Collections"
 msgstr "コレクション"
 
-#: ../src/selections.js:752
+#: ../src/selections.js:866
 msgid "Print"
 msgstr "印刷する"
 
-#: ../src/selections.js:757
-msgid "Delete"
-msgstr "削除する"
-
-#: ../src/selections.js:763
+#: ../src/selections.js:877
 msgid "Share"
 msgstr "共有する"
 
-#: ../src/selections.js:774
-msgid "Add to Collection"
-msgstr "コレクションに追加"
-
-#: ../src/sharing.js:98
+#: ../src/sharing.js:108
 msgid "Sharing Settings"
 msgstr "共有設定"
 
-#: ../src/sharing.js:102
-msgid "Done"
-msgstr "完了"
-
-#: ../src/sharing.js:135
+#: ../src/sharing.js:145
 msgid "Document permissions"
 msgstr "ドキュメントのアクセス権"
 
-#: ../src/sharing.js:142 ../src/sharing.js:320
+#: ../src/sharing.js:152 ../src/sharing.js:330
 msgid "Change"
 msgstr "変更"
 
-#: ../src/sharing.js:166 ../src/sharing.js:295
+#: ../src/sharing.js:176 ../src/sharing.js:305
 msgid "Private"
 msgstr "プライベート"
 
-#: ../src/sharing.js:176 ../src/sharing.js:288
+#: ../src/sharing.js:186 ../src/sharing.js:298
 msgid "Public"
 msgstr "公開"
 
-#: ../src/sharing.js:180 ../src/sharing.js:290
+#: ../src/sharing.js:190 ../src/sharing.js:300
 msgid "Everyone can edit"
 msgstr "誰でも編集可能"
 
-#: ../src/sharing.js:187
+#: ../src/sharing.js:197
 msgid "Add people"
 msgstr "共有する相手を追加"
 
-#: ../src/sharing.js:194
+#: ../src/sharing.js:204
 msgid "Enter an email address"
 msgstr "メールアドレスを入力"
 
-#: ../src/sharing.js:209 ../src/sharing.js:376
+#: ../src/sharing.js:219 ../src/sharing.js:371
 msgid "Can edit"
 msgstr "編集可能"
 
-#: ../src/sharing.js:209 ../src/sharing.js:379
+#: ../src/sharing.js:219 ../src/sharing.js:374
 msgid "Can view"
 msgstr "閲覧可能"
 
-#: ../src/sharing.js:216
-msgid "Add"
-msgstr "追加"
-
-#: ../src/sharing.js:292
+#: ../src/sharing.js:302
 msgid "Everyone can read"
 msgstr "誰でも閲覧可能"
 
-#: ../src/sharing.js:307
+#: ../src/sharing.js:317
 msgid "Save"
 msgstr "保存"
 
-#: ../src/sharing.js:373
+#: ../src/sharing.js:368
 msgid "Owner"
 msgstr "所有者"
 
-#: ../src/sharing.js:442
+#: ../src/sharing.js:437
 #, javascript-format
 msgid "You can ask %s for access"
 msgstr "アクセス許可を %s に求めることができます"
 
-#: ../src/sharing.js:479 ../src/sharing.js:515 ../src/sharing.js:572
-#: ../src/sharing.js:589 ../src/sharing.js:608
+#: ../src/sharing.js:474 ../src/sharing.js:510 ../src/sharing.js:567
+#: ../src/sharing.js:584 ../src/sharing.js:603
 msgid "The document was not updated"
 msgstr "ドキュメントは更新されませんでした"
 
-#: ../src/shellSearchProvider.js:293
+#: ../src/shellSearchProvider.js:292
 msgid "Untitled Document"
 msgstr "無題のドキュメント"
 
@@ -718,62 +727,71 @@ msgstr "無題のドキュメント"
 msgid "Unable to fetch the list of documents"
 msgstr "ドキュメントのリストを取得できませんでした"
 
-#: ../src/view.js:249
+#: ../src/view.js:260
 msgid "No Books Found"
 msgstr "書籍が見つかりません"
 
-#: ../src/view.js:250
+#: ../src/view.js:261
 msgid "No Documents Found"
 msgstr "ドキュメントが見つかりません"
 
-#: ../src/view.js:272
+#: ../src/view.js:283
 #, javascript-format
 msgid "You can add your online accounts in %s"
 msgstr "%sでオンラインアカウントを追加できます"
 
-#: ../src/view.js:276
+#: ../src/view.js:287
 msgid "Settings"
 msgstr "設定"
 
-#: ../src/view.js:470
+#: ../src/view.js:482
 msgid "Yesterday"
 msgstr "昨日"
 
-#: ../src/view.js:472
+#: ../src/view.js:484
 #, javascript-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
 msgstr[0] "%d 日前"
 
-#: ../src/view.js:476
+#: ../src/view.js:488
 msgid "Last week"
 msgstr "先週"
 
-#: ../src/view.js:478
+#: ../src/view.js:490
 #, javascript-format
 msgid "%d week ago"
 msgid_plural "%d weeks ago"
 msgstr[0] "%d 週間前"
 
-#: ../src/view.js:482
+#: ../src/view.js:494
 msgid "Last month"
 msgstr "先月"
 
-#: ../src/view.js:484
+#: ../src/view.js:496
 #, javascript-format
 msgid "%d month ago"
 msgid_plural "%d months ago"
 msgstr[0] "%d か月前"
 
-#: ../src/view.js:488
+#: ../src/view.js:500
 msgid "Last year"
 msgstr "昨年"
 
-#: ../src/view.js:490
+#: ../src/view.js:502
 #, javascript-format
 msgid "%d year ago"
 msgid_plural "%d years ago"
 msgstr[0] "%d 年前"
+
+#~ msgid "You don't have any collections yet. Enter a new collection name above."
+#~ msgstr "コレクションがまだありません。新規に作成するコレクション名を上の欄に入力してください。"
+
+#~ msgid "Create new collection"
+#~ msgstr "コレクションを新規に作成する"
+
+#~ msgid "Add to Collection"
+#~ msgstr "コレクションに追加"
 
 #~ msgid "Load More"
 #~ msgstr "さらに読み込む"
