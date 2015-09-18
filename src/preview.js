@@ -572,7 +572,7 @@ const PreviewView = new Lang.Class({
     },
 
     _updateNightMode: function() {
-        if (this._model) {
+        if (this._model && !Application.application.isBooks) {
             let nightMode = Application.settings.get_boolean('night-mode');
             this._model.set_inverted_colors(nightMode);
         }
