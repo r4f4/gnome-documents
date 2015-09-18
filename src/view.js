@@ -361,6 +361,7 @@ const ViewContainer = new Lang.Class({
         let selectAll = Application.application.lookup_action('select-all');
         let selectAllId = selectAll.connect('activate', Lang.bind(this,
             function() {
+                Application.selectionController.setSelectionMode(true);
                 this.view.select_all();
             }));
 
