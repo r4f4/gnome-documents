@@ -1,3 +1,12 @@
+3.18.0 - "No name"
+==================
+
+- Update title if active collection is renamed (Alessandro Bono)
+- Fix tagged entry theming (Debarshi Ray)
+- Prevent nested collections (Alessandro)
+- Align the source label (Alessandro)
+- Translation updates
+
 3.17.90 - "Triple"
 ==================
 
