@@ -182,7 +182,7 @@ msgstr "Upravljanje, dostop in souporaba dokumentov"
 
 #: ../data/org.gnome.Documents.desktop.in.h:3
 msgid "Docs;PDF;Document;"
-msgstr "Doc;PDF;Dokumenti;Word"
+msgstr "Doc;PDF;Dokumenti;Word;"
 
 #: ../data/ui/app-menu.ui.h:1
 msgid "Fullscreen"
