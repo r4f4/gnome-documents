@@ -687,7 +687,8 @@ const PreviewNavControls = new Lang.Class({
         this._motionId = 0;
         this._visibleInternal = true;
         this._updateVisibility();
-        this._queueAutoHide();
+        if (!this.bar_widget.hover)
+            this._queueAutoHide();
         return false;
     },
 
