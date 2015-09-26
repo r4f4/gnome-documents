@@ -261,7 +261,7 @@ const OverviewToolbar = new Lang.Class({
         } else {
             if (this._infoUpdatedId != 0) {
                 this._activeCollection.disconnect(this._infoUpdatedId);
-                this.__infoUpdatedId = 0;
+                this._infoUpdatedId = 0;
             }
         }
         this._activeCollection = activeCollection;
