@@ -331,17 +331,14 @@ const ViewContainer = new Lang.Class({
         this.parent({ homogeneous: true,
                       transition_type: Gtk.StackTransitionType.CROSSFADE });
 
-        let grid = new Gtk.Grid({ orientation: Gtk.Orientation.VERTICAL });
-        this.add_named(grid, 'view');
+        this.view = new Gd.MainView({ shadow_type: Gtk.ShadowType.NONE });
+        this.add_named(this.view, 'view');
 
         this._noResults = new EmptyResultsBox();
         this.add_named(this._noResults, 'no-results');
 
         this._errorBox = new ErrorBox.ErrorBox();
         this.add_named(this._errorBox, 'error');
-
-        this.view = new Gd.MainView({ shadow_type: Gtk.ShadowType.NONE });
-        grid.add(this.view);
 
         this.show_all();
         this.set_visible_child_full('view', Gtk.StackTransitionType.NONE);
