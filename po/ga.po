@@ -1,14 +1,14 @@
 # Irish translations for gnome-documents package.
 # Copyright (C) 2013 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-documents package.
-# Seán de Búrca <leftmostcat@gmail.com>, 2013.
+# Seán de Búrca <leftmostcat@gmail.com>, 2013, 2015.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-documents.master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-29 15:58-0600\n"
-"PO-Revision-Date: 2013-08-29 15:58-0600\n"
+"POT-Creation-Date: 2015-09-30 15:13-0600\n"
+"PO-Revision-Date: 2015-09-30 15:33-0600\n"
 "Last-Translator: Seán de Búrca <leftmostcat@gmail.com>\n"
 "Language-Team: Irish <gaeilge-gnulinux@lists.sourceforge.net>\n"
 "Language: ga\n"
@@ -17,147 +17,366 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=5; plural=n==1 ? 0 : n==2 ? 1 : n<7 ? 2 : n<11 ? 3 : "
 "4;\n"
+"X-Generator: Gtranslator 2.91.7\n"
 
-#: ../data/gnome-documents.desktop.in.in.h:1 ../src/application.js:103
-#: ../src/mainWindow.js:52 ../src/mainWindow.js:273
-msgid "Documents"
-msgstr "Cáipéisí"
+#: ../data/org.gnome.Books.appdata.xml.in.h:1
+#: ../data/org.gnome.Books.desktop.in.h:1 ../src/application.js:117
+#: ../src/lib/gd-utils.c:418
+msgid "Books"
+msgstr "Leabhair"
 
-#: ../data/gnome-documents.desktop.in.in.h:2
-msgid "Access, manage and share documents"
-msgstr "Déan rochtain ar, bainistigh agus comhroinn cáipéisí"
+#: ../data/org.gnome.Books.appdata.xml.in.h:2
+msgid "An e-book manager application for GNOME"
+msgstr "Feidhmchlár bhainisteoireacht r-leabhar do GNOME"
 
-#: ../data/gnome-documents.desktop.in.in.h:3
-msgid "Docs;PDF;Document;"
-msgstr "PDF;Cáipéis;"
+#: ../data/org.gnome.Books.appdata.xml.in.h:3
+msgid ""
+"A simple application to access and organize your e-books on GNOME. It is "
+"meant to be a simple and elegant replacement for using a file manager to "
+"deal with e-books."
+msgstr ""
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:1
-#: ../src/resources/app-menu.ui.h:1
+#: ../data/org.gnome.Books.appdata.xml.in.h:4
+#: ../data/org.gnome.Documents.appdata.xml.in.h:4
+msgid "It lets you:"
+msgstr "Ligeann sé duit:"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:5
+msgid "View recent e-books"
+msgstr "Amharc ar r-leabhair le déanaí"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:6
+msgid "Search through e-books"
+msgstr "Cuardaigh r-leabhair"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:7
+msgid "View e-books fullscreen"
+msgstr ""
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:8
+msgid "Print e-books"
+msgstr "Priontáil r-leabhair"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:9
+#: ../data/org.gnome.Documents.appdata.xml.in.h:12
+msgid "Allow opening full featured editor for non-trivial changes"
+msgstr ""
+
+#: ../data/org.gnome.Books.desktop.in.h:2
+msgid "Access, manage and share books"
+msgstr "Déan rochtain ar, bainistigh agus comhroinn leabhair"
+
+#: ../data/org.gnome.Books.desktop.in.h:3
+msgid "Books;Comics;ePub;PDF;"
+msgstr "Leabhair;Coimicí;ePub;PDF;"
+
+#: ../data/org.gnome.books.gschema.xml.h:1
+#: ../data/org.gnome.documents.gschema.xml.h:1
 msgid "View as"
 msgstr "Amharc Mar"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:2
+#: ../data/org.gnome.books.gschema.xml.h:2
+#: ../data/org.gnome.documents.gschema.xml.h:2
 msgid "View as type"
 msgstr "Amharc mar cineál"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:3
+#: ../data/org.gnome.books.gschema.xml.h:3
+#: ../data/org.gnome.documents.gschema.xml.h:3
 msgid "Window size"
 msgstr "Méid an fhuinneoige"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:4
+#: ../data/org.gnome.books.gschema.xml.h:4
+#: ../data/org.gnome.documents.gschema.xml.h:4
 msgid "Window size (width and height)."
 msgstr "Méid an fhuinneoige (leithead agus airde)."
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:5
+#: ../data/org.gnome.books.gschema.xml.h:5
+#: ../data/org.gnome.documents.gschema.xml.h:5
 msgid "Window position"
 msgstr "Ionad an fhuinneoige"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:6
+#: ../data/org.gnome.books.gschema.xml.h:6
+#: ../data/org.gnome.documents.gschema.xml.h:6
 msgid "Window position (x and y)."
 msgstr "Ionad an fhuinneoige (x agus y)."
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:7
+#: ../data/org.gnome.books.gschema.xml.h:7
+#: ../data/org.gnome.documents.gschema.xml.h:7
 msgid "Window maximized"
 msgstr "Uasmhéadú an fhuinneoige"
 
-#: ../data/org.gnome.documents.gschema.xml.in.h:8
+#: ../data/org.gnome.books.gschema.xml.h:8
+#: ../data/org.gnome.documents.gschema.xml.h:8
 msgid "Window maximized state"
 msgstr "Staid uasmhéadaithe an fhuinneoige"
 
-#: ../src/documents.js:599 ../src/search.js:417
+#: ../data/org.gnome.books.gschema.xml.h:9
+#: ../data/org.gnome.documents.gschema.xml.h:9
+msgid "Night mode"
+msgstr "Mód oíche"
+
+#: ../data/org.gnome.books.gschema.xml.h:10
+#: ../data/org.gnome.documents.gschema.xml.h:10
+msgid "Whether the application is in night mode."
+msgstr ""
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:1
+#: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:114
+#: ../src/lib/gd-utils.c:411 ../src/mainWindow.js:53
+msgid "Documents"
+msgstr "Cáipéisí"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:2
+msgid "A document manager application for GNOME"
+msgstr "Feidhmchlár bhainisteoireacht cháipéisí do GNOME"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:3
+msgid ""
+"A simple application to access, organize and share your documents on GNOME. "
+"It is meant to be a simple and elegant replacement for using a file manager "
+"to deal with documents. Seamless cloud integration is offered through GNOME "
+"Online Accounts."
+msgstr ""
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:5
+msgid "View recent local and online documents"
+msgstr ""
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:6
+msgid "Access your Google, ownCloud or OneDrive content"
+msgstr ""
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:7
+msgid "Search through documents"
+msgstr "Cuardaigh cáipéisí"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:8
+msgid "See new documents shared by friends"
+msgstr ""
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:9
+msgid "View documents fullscreen"
+msgstr ""
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:10
+msgid "Print documents"
+msgstr "Priontáil cáipéisí"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:11
+msgid "Select favorites"
+msgstr "Roghnaigh na ceanáin"
+
+#: ../data/org.gnome.Documents.desktop.in.h:2
+msgid "Access, manage and share documents"
+msgstr "Déan rochtain ar, bainistigh agus comhroinn cáipéisí"
+
+#: ../data/org.gnome.Documents.desktop.in.h:3
+msgid "Docs;PDF;Document;"
+msgstr "PDF;Cáipéis;"
+
+#: ../data/ui/app-menu.ui.h:1
+msgid "Fullscreen"
+msgstr "Lánscáileán"
+
+#: ../data/ui/app-menu.ui.h:2
+msgid "Night Mode"
+msgstr "Mód Oíche"
+
+#: ../data/ui/app-menu.ui.h:3
+msgid "Help"
+msgstr "Cabhair"
+
+#: ../data/ui/app-menu.ui.h:4
+msgid "About"
+msgstr "Maidir Leis Seo"
+
+#: ../data/ui/app-menu.ui.h:5
+msgid "Quit"
+msgstr "Scoir"
+
+#: ../data/ui/organize-collection-dialog.ui.h:1
+msgid "Enter a name for your first collection"
+msgstr "Iontráil ainm don chéad bhailiúchán"
+
+#: ../data/ui/organize-collection-dialog.ui.h:2
+msgid "New Collection…"
+msgstr "Bailíuchán Nua…"
+
+#: ../data/ui/organize-collection-dialog.ui.h:3 ../src/sharing.js:226
+msgid "Add"
+msgstr "Cuir Leis"
+
+#: ../data/ui/organize-collection-dialog.ui.h:4 ../src/mainToolbar.js:218
+msgid "Cancel"
+msgstr "Cealaigh"
+
+#. Label for Done button in Sharing dialog
+#: ../data/ui/organize-collection-dialog.ui.h:5 ../src/sharing.js:112
+msgid "Done"
+msgstr "Críochnaithe"
+
+#: ../data/ui/preview-context-menu.ui.h:1
+msgid "_Copy"
+msgstr "_Cóipeáil"
+
+#. open button
+#. Translators: this is the Open action in a context menu
+#: ../data/ui/preview-menu.ui.h:1 ../src/selections.js:861
+#: ../src/selections.js:989
+msgid "Open"
+msgstr "Oscail"
+
+#: ../data/ui/preview-menu.ui.h:2
+msgid "Edit"
+msgstr "Eagar"
+
+#: ../data/ui/preview-menu.ui.h:3
+msgid "Print…"
+msgstr "Priontáil…"
+
+#: ../data/ui/preview-menu.ui.h:4
+msgid "Present"
+msgstr "Cuir i Láthair"
+
+#: ../data/ui/preview-menu.ui.h:5
+msgid "Zoom In"
+msgstr "Súmáil Isteach"
+
+#: ../data/ui/preview-menu.ui.h:6
+msgid "Zoom Out"
+msgstr "Súmáil Amach"
+
+#: ../data/ui/preview-menu.ui.h:7
+msgid "Rotate ↶"
+msgstr "Rothlaigh ↶"
+
+#: ../data/ui/preview-menu.ui.h:8
+msgid "Rotate ↷"
+msgstr "Rothlaigh ↷"
+
+#. properties button
+#: ../data/ui/preview-menu.ui.h:9 ../src/properties.js:62
+#: ../src/selections.js:883
+msgid "Properties"
+msgstr "Airíonna"
+
+#: ../data/ui/selection-menu.ui.h:1
+msgid "Select All"
+msgstr "Roghnaigh Uile"
+
+#: ../data/ui/selection-menu.ui.h:2
+msgid "Select None"
+msgstr "Ná Roghnaigh"
+
+#: ../src/documents.js:630
+msgid "Failed to print document"
+msgstr "Theip ar phriontáil na cáipéise"
+
+#. Translators: this refers to local documents
+#: ../src/documents.js:672 ../src/search.js:509
 msgid "Local"
 msgstr "Logánta"
 
-#: ../src/documents.js:620
+#. Translators: Documents ships a "Getting Started with Documents"
+#. tutorial PDF. The "GNOME" string below is displayed as the author name
+#. of that document, and doesn't normally need to be translated.
+#: ../src/documents.js:699
 msgid "GNOME"
 msgstr "GNOME"
 
-#: ../src/documents.js:621
+#: ../src/documents.js:700
 msgid "Getting Started with Documents"
 msgstr "Cur Chun Siúil le Cáipéisí"
 
-#: ../src/documents.js:637 ../src/documents.js:800 ../src/documents.js:854
-#: ../src/documents.js:954
+#: ../src/documents.js:716 ../src/documents.js:919 ../src/documents.js:987
+#: ../src/documents.js:1103
 msgid "Collection"
 msgstr "Bailíuchán"
 
-#: ../src/documents.js:681
+#. overridden
+#: ../src/documents.js:797
 msgid "Google Docs"
 msgstr "Google Docs"
 
-#: ../src/documents.js:682
+#: ../src/documents.js:798
 msgid "Google"
 msgstr "Google"
 
-#: ../src/documents.js:802 ../src/documents.js:956
+#: ../src/documents.js:921 ../src/documents.js:1105
 msgid "Spreadsheet"
 msgstr "Scarbhileog"
 
-#: ../src/documents.js:804 ../src/documents.js:958 ../src/presentation.js:47
+#: ../src/documents.js:923 ../src/documents.js:1107 ../src/presentation.js:49
 msgid "Presentation"
 msgstr "Láithreoireacht"
 
-#: ../src/documents.js:806 ../src/documents.js:960
+#: ../src/documents.js:925 ../src/documents.js:1109
+msgid "e-Book"
+msgstr "r-Leabhar"
+
+#: ../src/documents.js:927 ../src/documents.js:1111
 msgid "Document"
 msgstr "Cáipéis"
 
-#: ../src/documents.js:832
+#. overridden
+#: ../src/documents.js:966
 msgid "ownCloud"
 msgstr "ownCloud"
 
-#: ../src/documents.js:888 ../src/documents.js:889
-msgid "Skydrive"
-msgstr "Skydrive"
+#. overridden
+#: ../src/documents.js:1037 ../src/documents.js:1038
+msgid "OneDrive"
+msgstr "OneDrive"
 
-#: ../src/documents.js:1080
+#: ../src/documents.js:1287
 msgid "Please check the network connection."
 msgstr "Seiceáil an ceangal líonra, le do thoil."
 
-#: ../src/documents.js:1083
+#: ../src/documents.js:1290
 msgid "Please check the network proxy settings."
 msgstr "Seiceáil socruithe do sheachfhreastalaí líonra, le do thoil."
 
-#: ../src/documents.js:1086
+#: ../src/documents.js:1293
 msgid "Unable to sign in to the document service."
 msgstr "Ní féidir síniú isteach sa tseirbhís cháipéise."
 
-#: ../src/documents.js:1089
+#: ../src/documents.js:1296
 msgid "Unable to locate this document."
 msgstr "Níorbh fhéidir an cháipéis seo a aimsiú."
 
-#: ../src/documents.js:1092
+#: ../src/documents.js:1299
 #, javascript-format
 msgid "Hmm, something is fishy (%d)."
 msgstr "Tá rud éigin mícheart (%d)."
 
-#: ../src/documents.js:1110
+#: ../src/documents.js:1306
+msgid ""
+"You are using a preview of Books. Full viewing capabilities are coming soon!"
+msgstr ""
+"Tá réamhamharc de Leabhair á úsáid agat. Beidh lánacmhainní amhairc ann go "
+"luath!"
+
+#. Translators: %s is the title of a document
+#: ../src/documents.js:1327
 #, javascript-format
 msgid "Oops! Unable to load “%s”"
 msgstr "Úps! Ní féidir “%s” a luchtú"
 
-#: ../src/edit.js:192
+#: ../src/edit.js:180
 msgid "View"
 msgstr "Amharc"
 
-#: ../src/embed.js:63 ../src/lib/gd-places-bookmarks.c:383
-#: ../src/lib/gd-places-links.c:257 ../src/view.js:71
-msgid "Loading…"
-msgstr "Á luchtú…"
+#: ../src/embed.js:80
+msgid "Recent"
+msgstr "Le Déanaí"
 
-#: ../src/embed.js:146
-msgid "No Documents Found"
-msgstr "Cáipéis gan Aimsiú"
+#. collections button
+#: ../src/embed.js:83 ../src/search.js:203 ../src/search.js:212
+#: ../src/selections.js:888
+msgid "Collections"
+msgstr "Bailiúcháin"
 
-#: ../src/embed.js:167
-#, javascript-format
-msgid "You can add your online accounts in %s"
-msgstr "Is féidir leat do chuid chuntas ar líne a chur leis i %s"
-
-#: ../src/embed.js:171
-msgid "System Settings"
-msgstr "Socruithe an Chórais"
-
-#: ../src/lib/gd-nav-bar.c:235
+#: ../src/lib/gd-nav-bar.c:242
 #, c-format
 msgid "Page %u of %u"
 msgstr "Leathanach %u as %u"
@@ -173,16 +392,20 @@ msgstr "Tá LibreOffice de dhíth chun amharc ar an gcáipéis seo"
 #. Translators: %s is the number of the page, already formatted
 #. * as a string, for example "Page 5".
 #.
-#: ../src/lib/gd-places-bookmarks.c:312
+#: ../src/lib/gd-places-bookmarks.c:321
 #, c-format
 msgid "Page %s"
 msgstr "Leathanach %s"
 
-#: ../src/lib/gd-places-bookmarks.c:375
+#: ../src/lib/gd-places-bookmarks.c:384
 msgid "No bookmarks"
 msgstr "Gan leabharmharcanna"
 
-#: ../src/lib/gd-places-bookmarks.c:648 ../src/preview.js:594
+#: ../src/lib/gd-places-bookmarks.c:392 ../src/lib/gd-places-links.c:257
+msgid "Loading…"
+msgstr "Á luchtú…"
+
+#: ../src/lib/gd-places-bookmarks.c:656 ../src/preview.js:631
 msgid "Bookmarks"
 msgstr "Leabharmharcanna"
 
@@ -190,28 +413,43 @@ msgstr "Leabharmharcanna"
 msgid "No table of contents"
 msgstr "Gan inneachar"
 
-#: ../src/lib/gd-places-links.c:518
+#: ../src/lib/gd-places-links.c:514
 msgid "Contents"
 msgstr "Inneachar"
 
-#: ../src/mainToolbar.js:78
+#: ../src/lib/gd-utils.c:412
+msgid "A document manager application"
+msgstr "Feidhmchlár bhainisteoireacht cháipéisí"
+
+#: ../src/lib/gd-utils.c:419
+msgid "An e-books manager application"
+msgstr "Feidhmchlár bhainisteoireacht r-leabhar"
+
+#: ../src/lib/gd-utils.c:427
+msgid "translator-credits"
+msgstr "Seán de Búrca <leftmostcat@gmail.com>"
+
+#: ../src/mainToolbar.js:89
 msgid "Search"
 msgstr "Cuardaigh"
 
-#: ../src/mainToolbar.js:89
+#: ../src/mainToolbar.js:97
 msgid "Back"
 msgstr "Siar"
 
-#: ../src/mainToolbar.js:169
-#, javascript-format
-msgid "Results for “%s”"
-msgstr "Torthaí do “%s”"
+#: ../src/mainToolbar.js:156
+msgid "View items as a list"
+msgstr "Amharc ar na míreanna mar liosta"
 
-#: ../src/mainToolbar.js:177
+#: ../src/mainToolbar.js:162
+msgid "View items as a grid of icons"
+msgstr "Amharc ar na míreanna mar ghreille dheilbhíní"
+
+#: ../src/mainToolbar.js:192
 msgid "Click on items to select them"
 msgstr "Cliceáil ar mhíreanna chun iad a roghnú"
 
-#: ../src/mainToolbar.js:179
+#: ../src/mainToolbar.js:194
 #, javascript-format
 msgid "%d selected"
 msgid_plural "%d selected"
@@ -221,114 +459,138 @@ msgstr[2] "%d roghnaithe"
 msgstr[3] "%d roghnaithe"
 msgstr[4] "%d roghnaithe"
 
-#: ../src/mainToolbar.js:208
-msgid "Cancel"
-msgstr "Cealaigh"
-
-#: ../src/mainToolbar.js:250
+#: ../src/mainToolbar.js:278
 msgid "Select Items"
 msgstr "Roghnaigh Míreanna"
 
-#: ../src/mainWindow.js:272
-msgid "translator-credits"
-msgstr "Seán de Búrca <leftmostcat@gmail.com>"
+#. Translators: only one item has been deleted and %s is its name
+#: ../src/notifications.js:54
+#, javascript-format
+msgid "“%s” deleted"
+msgstr "Scriosadh “%s”"
 
-#: ../src/mainWindow.js:274
-msgid "A document manager application"
-msgstr "Feidhmchlár bhainisteoireacht cháipéisí"
+#. Translators: one or more items might have been deleted, and %d
+#. is the count
+#: ../src/notifications.js:58
+#, javascript-format
+msgid "%d item deleted"
+msgid_plural "%d items deleted"
+msgstr[0] "Scriosadh %d mhír"
+msgstr[1] "Scriosadh %d mhír"
+msgstr[2] "Scriosadh %d mhír"
+msgstr[3] "Scriosadh %d mír"
+msgstr[4] "Scriosadh %d mír"
 
-#: ../src/notifications.js:87
+#: ../src/notifications.js:67 ../src/selections.js:386
+msgid "Undo"
+msgstr "Cealaigh"
+
+#: ../src/notifications.js:167
 #, javascript-format
 msgid "Printing “%s”: %s"
 msgstr "“%s” á phriontáil: %s"
 
-#: ../src/notifications.js:143
+#: ../src/notifications.js:223
 msgid "Your documents are being indexed"
 msgstr "Tá do chuid chaípéisí á n-innéacsú"
 
-#: ../src/notifications.js:144
+#: ../src/notifications.js:224
 msgid "Some documents might not be available during this process"
 msgstr "Is féidir nach mbeidh roinnt cháipéisí ar fáil agus é seo ar siúl"
 
-#: ../src/notifications.js:166
+#. Translators: %s refers to an online account provider, e.g.
+#. "Google", or "Windows Live".
+#: ../src/notifications.js:246
 #, javascript-format
 msgid "Fetching documents from %s"
 msgstr "Cáipéis á bhfáil ó %s"
 
-#: ../src/notifications.js:168
+#: ../src/notifications.js:248
 msgid "Fetching documents from online accounts"
 msgstr "Cáipéisí á bhfáil ó chuntais ar líne"
 
-#: ../src/password.js:45
+#: ../src/password.js:47
 msgid "Password Required"
 msgstr "Focal Faire de Dhíth"
 
-#: ../src/password.js:48
+#: ../src/password.js:50
 msgid "_Unlock"
 msgstr "_Díghlasáil"
 
-#: ../src/password.js:64
+#: ../src/password.js:66
 #, javascript-format
 msgid "Document %s is locked and requires a password to be opened."
 msgstr ""
 "Tá an cháipéis %s faoi ghlas agus tá focal faire de dhíth chun í a oscailt."
 
-#: ../src/password.js:78
+#: ../src/password.js:80
 msgid "_Password"
 msgstr "_Focal faire"
 
-#: ../src/places.js:59
-msgid "Close"
-msgstr "Dún"
-
-#: ../src/presentation.js:104
+#: ../src/presentation.js:107
 msgid "Running in presentation mode"
 msgstr "Á rith sa mhód láithreoireachta"
 
-#: ../src/presentation.js:157
+#: ../src/presentation.js:130
 msgid "Present On"
 msgstr "Cuir i Láthair Ar"
 
-#: ../src/preview.js:603
+#. Translators: "Mirrored" describes when both displays show the same view
+#: ../src/presentation.js:166
+msgid "Mirrored"
+msgstr "Scáthánaithe"
+
+#: ../src/presentation.js:168
+msgid "Primary"
+msgstr "Príomha"
+
+#: ../src/presentation.js:170
+msgid "Off"
+msgstr "Múchta"
+
+#: ../src/presentation.js:172
+msgid "Secondary"
+msgstr "Tánaisteach"
+
+#: ../src/preview.js:639
 msgid "Bookmark this page"
 msgstr "Cuir leabharmharc leis an leathanach seo"
 
-#: ../src/preview.js:892 ../src/selections.js:856
+#. Translators: this is the Open action in a context menu
+#: ../src/preview.js:901 ../src/selections.js:986
 #, javascript-format
 msgid "Open with %s"
 msgstr "Oscail le %s"
 
-#: ../src/preview.js:953
+#: ../src/preview.js:964
 msgid "Find Previous"
 msgstr "An Ceann Roimhe Seo"
 
-#: ../src/preview.js:960
+#: ../src/preview.js:971
 msgid "Find Next"
 msgstr "An Chéad Cheann Eile"
 
-#: ../src/properties.js:60 ../src/resources/preview-menu.ui.h:9
-#: ../src/selections.js:766
-msgid "Properties"
-msgstr "Airíonna"
-
-#: ../src/properties.js:62 ../src/sharing.js:101
-msgid "Done"
-msgstr "Críochnaithe"
-
+#. Title item
+#. Translators: "Title" is the label next to the document title
+#. in the properties dialog
 #: ../src/properties.js:82
 msgctxt "Document Title"
 msgid "Title"
 msgstr "Teideal"
 
+#. Translators: "Author" is the label next to the document author
+#. in the properties dialog
 #: ../src/properties.js:91
 msgctxt "Document Author"
 msgid "Author"
 msgstr "Údar"
 
+#. Source item
 #: ../src/properties.js:98
 msgid "Source"
 msgstr "Foinse"
 
+#. Date Modified item
 #: ../src/properties.js:104
 msgid "Date Modified"
 msgstr "Dáta Athraithe"
@@ -337,252 +599,223 @@ msgstr "Dáta Athraithe"
 msgid "Date Created"
 msgstr "Dátha Cruthaithe"
 
+#. Document type item
+#. Translators: "Type" is the label next to the document type
+#. (PDF, spreadsheet, ...) in the properties dialog
 #: ../src/properties.js:120
 msgctxt "Document Type"
 msgid "Type"
 msgstr "Cineál"
 
-#: ../src/resources/app-menu.ui.h:2
-msgid "Grid"
-msgstr "Greille"
-
-#: ../src/resources/app-menu.ui.h:3
-msgid "List"
-msgstr "Liosta"
-
-#: ../src/resources/app-menu.ui.h:4
-msgid "Fullscreen"
-msgstr "Lánscáileán"
-
-#: ../src/resources/app-menu.ui.h:5
-msgid "About Documents"
-msgstr "Maidir le Cáipéisí"
-
-#: ../src/resources/app-menu.ui.h:6
-msgid "Help"
-msgstr "Cabhair"
-
-#: ../src/resources/app-menu.ui.h:7
-msgid "Quit"
-msgstr "Scoir"
-
-#: ../src/resources/preview-context-menu.ui.h:1
-msgid "_Copy"
-msgstr "_Cóipeáil"
-
-#: ../src/resources/preview-menu.ui.h:1 ../src/selections.js:746
-#: ../src/selections.js:859
-msgid "Open"
-msgstr "Oscail"
-
-#: ../src/resources/preview-menu.ui.h:2
-msgid "Edit"
-msgstr "Eagar"
-
-#: ../src/resources/preview-menu.ui.h:3
-msgid "Print…"
-msgstr "Priontáil…"
-
-#: ../src/resources/preview-menu.ui.h:4
-msgid "Present"
-msgstr "Cuir i Láthair"
-
-#: ../src/resources/preview-menu.ui.h:5
-msgid "Zoom In"
-msgstr "Súmáil Isteach"
-
-#: ../src/resources/preview-menu.ui.h:6
-msgid "Zoom Out"
-msgstr "Súmáil Amach"
-
-#: ../src/resources/preview-menu.ui.h:7
-msgid "Rotate ↶"
-msgstr "Rothlaigh ↶"
-
-#: ../src/resources/preview-menu.ui.h:8
-msgid "Rotate ↷"
-msgstr "Rothlaigh ↷"
-
-#: ../src/resources/selection-menu.ui.h:1
-msgid "Select All"
-msgstr "Roghnaigh Uile"
-
-#: ../src/resources/selection-menu.ui.h:2
-msgid "Select None"
-msgstr "Ná Roghnaigh"
-
-#: ../src/search.js:113
+#: ../src/search.js:126
 msgid "Category"
 msgstr "Catagóir"
 
-#: ../src/search.js:118 ../src/search.js:170 ../src/search.js:255
-#: ../src/search.js:411
+#. Translators: this refers to new and recent documents
+#. Translators: this refers to documents
+#: ../src/search.js:131 ../src/search.js:200 ../src/search.js:333
+#: ../src/search.js:503
 msgid "All"
 msgstr "Gach rud"
 
-#: ../src/search.js:124
+#. Translators: this refers to favorite documents
+#: ../src/search.js:137
 msgid "Favorites"
 msgstr "Ceanáin"
 
-#: ../src/search.js:129
+#. Translators: this refers to shared documents
+#: ../src/search.js:142
 msgid "Shared with you"
 msgstr "Comhroinnte leat"
 
-#: ../src/search.js:167
+#. Translators: "Type" refers to a search filter on the document type
+#. (PDF, spreadsheet, ...)
+#: ../src/search.js:197
 msgctxt "Search Filter"
 msgid "Type"
 msgstr "Cineál"
 
-#: ../src/search.js:172
-msgid "Collections"
-msgstr "Bailiúcháin"
-
-#: ../src/search.js:176
+#: ../src/search.js:207
 msgid "PDF Documents"
 msgstr "Cáipéisí PDF"
 
-#: ../src/search.js:180
+#: ../src/search.js:220
 msgid "Presentations"
 msgstr "Láithreoireachtaí"
 
-#: ../src/search.js:183
+#: ../src/search.js:223
 msgid "Spreadsheets"
 msgstr "Scarbhileoga"
 
-#: ../src/search.js:186
+#: ../src/search.js:226
 msgid "Text Documents"
 msgstr "Cáipéisí Téacs"
 
-#: ../src/search.js:252
+#: ../src/search.js:231
+msgid "e-Books"
+msgstr "r-Leabhair"
+
+#: ../src/search.js:235
+msgid "Comics"
+msgstr "Coimicí"
+
+#. Translators: this is a verb that refers to "All", "Title" and "Author",
+#. as in "Match All", "Match Title" and "Match Author"
+#: ../src/search.js:330
 msgid "Match"
 msgstr "Comhoiriúnaigh"
 
-#: ../src/search.js:258
+#. Translators: "Title" refers to "Match Title" when searching
+#: ../src/search.js:336
 msgctxt "Search Filter"
 msgid "Title"
 msgstr "Teideal"
 
-#: ../src/search.js:261
+#. Translators: "Author" refers to "Match Author" when searching
+#: ../src/search.js:339
 msgctxt "Search Filter"
 msgid "Author"
 msgstr "Údar"
 
-#: ../src/search.js:407
+#: ../src/search.js:499
 msgid "Sources"
 msgstr "Foinsí"
 
-#: ../src/selections.js:461
-msgid "You don't have any collections yet. Enter a new collection name above."
-msgstr "Níl aon bhailiúchán agat fós. Iontráil ainm bailiúcháin thuas."
+#: ../src/selections.js:359 ../src/selections.js:361
+msgid "Rename…"
+msgstr "Athainmnigh…"
 
-#: ../src/selections.js:604
-msgid "Create new collection"
-msgstr "Cruthaigh bailiúchán nua"
+#. trash button
+#: ../src/selections.js:365 ../src/selections.js:367 ../src/selections.js:871
+msgid "Delete"
+msgstr "Scrios"
 
-#: ../src/selections.js:639
+#: ../src/selections.js:381
+#, javascript-format
+msgid "“%s” removed"
+msgstr "Baineadh “%s”"
+
+#: ../src/selections.js:765
+msgid "Rename"
+msgstr "Athainmnigh"
+
+#. Translators: "Collections" refers to documents in this context
+#: ../src/selections.js:771
 msgctxt "Dialog Title"
 msgid "Collections"
 msgstr "Bailiúcháin"
 
-#: ../src/selections.js:751
+#. print button
+#: ../src/selections.js:866
 msgid "Print"
 msgstr "Priontáil"
 
-#: ../src/selections.js:756
-msgid "Delete"
-msgstr "Scrios"
-
-#: ../src/selections.js:761
-msgid "Add to Collection"
-msgstr "Cuir le Bailíuchán"
-
-#: ../src/selections.js:771
+#: ../src/selections.js:877
 msgid "Share"
 msgstr "Comhroinn"
 
-#: ../src/sharing.js:97
+#: ../src/sharing.js:108
 msgid "Sharing Settings"
 msgstr "Socruithe Comhroinnte"
 
-#: ../src/sharing.js:134
+#. Label for widget group for changing document permissions
+#: ../src/sharing.js:145
 msgid "Document permissions"
 msgstr "Ceadanna cáipéise"
 
-#: ../src/sharing.js:141 ../src/sharing.js:319
+#. Label for permission change in Sharing dialog
+#: ../src/sharing.js:152 ../src/sharing.js:330
 msgid "Change"
 msgstr "Athraigh"
 
-#: ../src/sharing.js:165 ../src/sharing.js:294
+#. Label for radiobutton that sets doc permission to private
+#: ../src/sharing.js:176 ../src/sharing.js:305
 msgid "Private"
 msgstr "Príobháideach"
 
-#: ../src/sharing.js:175 ../src/sharing.js:287
+#: ../src/sharing.js:186 ../src/sharing.js:298
 msgid "Public"
 msgstr "Poiblí"
 
-#: ../src/sharing.js:179 ../src/sharing.js:289
+#. Label for checkbutton that sets doc permission to Can edit
+#: ../src/sharing.js:190 ../src/sharing.js:300
 msgid "Everyone can edit"
 msgstr "Is féidir le gach duine é a chur in eagar"
 
-#: ../src/sharing.js:186
+#. Label for widget group used for adding new contacts
+#: ../src/sharing.js:197
 msgid "Add people"
 msgstr "Cuir daoine leis"
 
-#: ../src/sharing.js:193
+#. Editable text in entry field
+#: ../src/sharing.js:204
 msgid "Enter an email address"
 msgstr "Iontráil seoladh ríomhphoist"
 
-#: ../src/sharing.js:208 ../src/sharing.js:375
+#: ../src/sharing.js:219 ../src/sharing.js:371
 msgid "Can edit"
 msgstr "Ineagarthóireachta"
 
-#: ../src/sharing.js:208 ../src/sharing.js:378
+#: ../src/sharing.js:219 ../src/sharing.js:374
 msgid "Can view"
 msgstr "Inamhairc"
 
-#: ../src/sharing.js:215
-msgid "Add"
-msgstr "Cuir Leis"
-
-#: ../src/sharing.js:291
+#: ../src/sharing.js:302
 msgid "Everyone can read"
 msgstr "Inléite do chách"
 
-#: ../src/sharing.js:306
+#: ../src/sharing.js:317
 msgid "Save"
 msgstr "Sábháil"
 
-#: ../src/sharing.js:372
+#: ../src/sharing.js:368
 msgid "Owner"
 msgstr "Úinéir"
 
-#: ../src/sharing.js:441
+#: ../src/sharing.js:437
 #, javascript-format
 msgid "You can ask %s for access"
 msgstr "Is féidir leat rochtain a iarraidh ar %s"
 
-#: ../src/sharing.js:478 ../src/sharing.js:514 ../src/sharing.js:571
-#: ../src/sharing.js:588 ../src/sharing.js:607
+#: ../src/sharing.js:474 ../src/sharing.js:510 ../src/sharing.js:567
+#: ../src/sharing.js:584 ../src/sharing.js:603
 msgid "The document was not updated"
 msgstr "Níor nuashonraíodh an cháipéis"
 
-#: ../src/shellSearchProvider.js:293
+#: ../src/shellSearchProvider.js:292
 msgid "Untitled Document"
 msgstr "Cáipéis gan Teideal"
 
-#: ../src/trackerController.js:170
+#: ../src/trackerController.js:172
 msgid "Unable to fetch the list of documents"
 msgstr "Níorbh fhéidir an liosta cáipéisí a fháil"
 
-#: ../src/view.js:62 ../src/view.js:93
-msgid "Load More"
-msgstr "Tuilleadh Cáipéisí"
+#: ../src/view.js:260
+msgid "No Books Found"
+msgstr "Leabhair Gan Aimsiú"
 
-#: ../src/view.js:295
+#: ../src/view.js:261
+msgid "No Documents Found"
+msgstr "Cáipéis Gan Aimsiú"
+
+#. Translators: %s here is "Settings", which is in a separate string due to
+#. markup, and should be translated only in the context of this sentence
+#: ../src/view.js:283
+#, javascript-format
+msgid "You can add your online accounts in %s"
+msgstr "Is féidir leat do chuid chuntas ar líne a chur leis i %s"
+
+#. Translators: this should be translated in the context of the
+#. "You can add your online accounts in Settings" sentence above
+#: ../src/view.js:287
+msgid "Settings"
+msgstr "Socruithe"
+
+#: ../src/view.js:483
 msgid "Yesterday"
 msgstr "Inné"
 
-#: ../src/view.js:297
+#: ../src/view.js:485
 #, javascript-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
@@ -592,11 +825,11 @@ msgstr[2] "%d lá ó shin"
 msgstr[3] "%d lá ó shin"
 msgstr[4] "%d lá ó shin"
 
-#: ../src/view.js:301
+#: ../src/view.js:489
 msgid "Last week"
 msgstr "An tseachtain seo chaite"
 
-#: ../src/view.js:303
+#: ../src/view.js:491
 #, javascript-format
 msgid "%d week ago"
 msgid_plural "%d weeks ago"
@@ -606,11 +839,11 @@ msgstr[2] "%d sheachtain ó shin"
 msgstr[3] "%d seachtain ó shin"
 msgstr[4] "%d seachtain ó shin"
 
-#: ../src/view.js:307
+#: ../src/view.js:495
 msgid "Last month"
 msgstr "An mhí seo chaite"
 
-#: ../src/view.js:309
+#: ../src/view.js:497
 #, javascript-format
 msgid "%d month ago"
 msgid_plural "%d months ago"
@@ -620,11 +853,11 @@ msgstr[2] "%d mhí ó shin"
 msgstr[3] "%d mí ó shin"
 msgstr[4] "%d mí ó shin"
 
-#: ../src/view.js:313
+#: ../src/view.js:501
 msgid "Last year"
 msgstr "An bhliain seo chaite"
 
-#: ../src/view.js:315
+#: ../src/view.js:503
 #, javascript-format
 msgid "%d year ago"
 msgid_plural "%d years ago"
@@ -633,3 +866,34 @@ msgstr[1] "%d bhliain ó shin"
 msgstr[2] "%d bhliana ó shin"
 msgstr[3] "%d mbliana ó shin"
 msgstr[4] "%d bliain ó shin"
+
+#~ msgid "Skydrive"
+#~ msgstr "Skydrive"
+
+#~ msgid "Results for “%s”"
+#~ msgstr "Torthaí do “%s”"
+
+#~ msgid "Close"
+#~ msgstr "Dún"
+
+#~ msgid "Grid"
+#~ msgstr "Greille"
+
+#~ msgid "List"
+#~ msgstr "Liosta"
+
+#~ msgid "About Documents"
+#~ msgstr "Maidir le Cáipéisí"
+
+#~ msgid ""
+#~ "You don't have any collections yet. Enter a new collection name above."
+#~ msgstr "Níl aon bhailiúchán agat fós. Iontráil ainm bailiúcháin thuas."
+
+#~ msgid "Create new collection"
+#~ msgstr "Cruthaigh bailiúchán nua"
+
+#~ msgid "Add to Collection"
+#~ msgstr "Cuir le Bailíuchán"
+
+#~ msgid "Load More"
+#~ msgstr "Tuilleadh Cáipéisí"
