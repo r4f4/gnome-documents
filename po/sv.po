@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: gnome-documents\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-08-30 07:14+0000\n"
-"PO-Revision-Date: 2015-09-15 20:28+0200\n"
+"POT-Creation-Date: 2015-09-30 19:43+0000\n"
+"PO-Revision-Date: 2015-10-01 00:48+0200\n"
 "Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
@@ -215,10 +215,11 @@ msgstr "Ny samling…"
 msgid "Add"
 msgstr "Lägg till"
 
-#: ../data/ui/organize-collection-dialog.ui.h:4 ../src/mainToolbar.js:209
+#: ../data/ui/organize-collection-dialog.ui.h:4 ../src/mainToolbar.js:218
 msgid "Cancel"
 msgstr "Avbryt"
 
+#. Label for Done button in Sharing dialog
 #: ../data/ui/organize-collection-dialog.ui.h:5 ../src/sharing.js:112
 msgid "Done"
 msgstr "Färdig"
@@ -227,6 +228,8 @@ msgstr "Färdig"
 msgid "_Copy"
 msgstr "_Kopiera"
 
+#. open button
+#. Translators: this is the Open action in a context menu
 #: ../data/ui/preview-menu.ui.h:1 ../src/selections.js:861
 #: ../src/selections.js:989
 msgid "Open"
@@ -260,6 +263,7 @@ msgstr "Rotera ↶"
 msgid "Rotate ↷"
 msgstr "Rotera ↷"
 
+#. properties button
 #: ../data/ui/preview-menu.ui.h:9 ../src/properties.js:62
 #: ../src/selections.js:883
 msgid "Properties"
@@ -277,84 +281,92 @@ msgstr "Markera inget"
 msgid "Failed to print document"
 msgstr "Misslyckades med att skriva ut dokument"
 
-#: ../src/documents.js:667 ../src/search.js:509
+#. Translators: this refers to local documents
+#: ../src/documents.js:672 ../src/search.js:509
 msgid "Local"
-msgstr "Lokal"
+msgstr "Lokala"
 
-#: ../src/documents.js:694
+#. Translators: Documents ships a "Getting Started with Documents"
+#. tutorial PDF. The "GNOME" string below is displayed as the author name
+#. of that document, and doesn't normally need to be translated.
+#: ../src/documents.js:699
 msgid "GNOME"
 msgstr "GNOME"
 
-#: ../src/documents.js:695
+#: ../src/documents.js:700
 msgid "Getting Started with Documents"
 msgstr "Kom igång med Dokument"
 
-#: ../src/documents.js:711 ../src/documents.js:903 ../src/documents.js:966
-#: ../src/documents.js:1074
+#: ../src/documents.js:716 ../src/documents.js:919 ../src/documents.js:987
+#: ../src/documents.js:1103
 msgid "Collection"
 msgstr "Samling"
 
-#: ../src/documents.js:781
+#. overridden
+#: ../src/documents.js:797
 msgid "Google Docs"
 msgstr "Google Docs"
 
-#: ../src/documents.js:782
+#: ../src/documents.js:798
 msgid "Google"
 msgstr "Google"
 
-#: ../src/documents.js:905 ../src/documents.js:1076
+#: ../src/documents.js:921 ../src/documents.js:1105
 msgid "Spreadsheet"
 msgstr "Kalkylark"
 
-#: ../src/documents.js:907 ../src/documents.js:1078 ../src/presentation.js:49
+#: ../src/documents.js:923 ../src/documents.js:1107 ../src/presentation.js:49
 msgid "Presentation"
 msgstr "Presentation"
 
-#: ../src/documents.js:909 ../src/documents.js:1080
+#: ../src/documents.js:925 ../src/documents.js:1109
 msgid "e-Book"
 msgstr "e-bok"
 
-#: ../src/documents.js:911 ../src/documents.js:1082
+#: ../src/documents.js:927 ../src/documents.js:1111
 msgid "Document"
 msgstr "Dokument"
 
-#: ../src/documents.js:945
+#. overridden
+#: ../src/documents.js:966
 msgid "ownCloud"
 msgstr "ownCloud"
 
-#: ../src/documents.js:1008 ../src/documents.js:1009
+#. overridden
+#: ../src/documents.js:1037 ../src/documents.js:1038
 msgid "OneDrive"
 msgstr "OneDrive"
 
-#: ../src/documents.js:1253
+#: ../src/documents.js:1287
 msgid "Please check the network connection."
 msgstr "Kontrollera din nätverksuppkoppling."
 
-#: ../src/documents.js:1256
+#: ../src/documents.js:1290
 msgid "Please check the network proxy settings."
 msgstr "Kontrollera nätverksproxy-inställningarna"
 
-#: ../src/documents.js:1259
+#: ../src/documents.js:1293
 msgid "Unable to sign in to the document service."
 msgstr "Kunde inte logga in på dokumenttjänsten."
 
-#: ../src/documents.js:1262
+#: ../src/documents.js:1296
 msgid "Unable to locate this document."
 msgstr "Kunde inte hitta detta dokument."
 
-#: ../src/documents.js:1265
+#: ../src/documents.js:1299
 #, javascript-format
 msgid "Hmm, something is fishy (%d)."
 msgstr "Hmm, något är konstigt (%d)."
 
-#: ../src/documents.js:1272
+#: ../src/documents.js:1306
 msgid ""
 "You are using a preview of Books. Full viewing capabilities are coming soon!"
 msgstr ""
 "Du använder en förhandsversion av Böcker. Fullständiga visningsfunktioner "
 "kommer snart!"
 
-#: ../src/documents.js:1293
+#. Translators: %s is the title of a document
+#: ../src/documents.js:1327
 #, javascript-format
 msgid "Oops! Unable to load “%s”"
 msgstr "Oj! Misslyckades att läsa in ”%s”"
@@ -367,6 +379,7 @@ msgstr "Visa"
 msgid "Recent"
 msgstr "Senaste"
 
+#. collections button
 #: ../src/embed.js:83 ../src/search.js:203 ../src/search.js:212
 #: ../src/selections.js:888
 msgid "Collections"
@@ -439,34 +452,37 @@ msgstr "Sök"
 msgid "Back"
 msgstr "Bakåt"
 
-#: ../src/mainToolbar.js:147
+#: ../src/mainToolbar.js:156
 msgid "View items as a list"
 msgstr "Visa objekt som en lista"
 
-#: ../src/mainToolbar.js:153
+#: ../src/mainToolbar.js:162
 msgid "View items as a grid of icons"
 msgstr "Visa objekt som ett rutnät av ikoner"
 
-#: ../src/mainToolbar.js:183
+#: ../src/mainToolbar.js:192
 msgid "Click on items to select them"
 msgstr "Klicka på objekten för att markera dem"
 
-#: ../src/mainToolbar.js:185
+#: ../src/mainToolbar.js:194
 #, javascript-format
 msgid "%d selected"
 msgid_plural "%d selected"
 msgstr[0] "%d markerat"
 msgstr[1] "%d markerade"
 
-#: ../src/mainToolbar.js:260
+#: ../src/mainToolbar.js:278
 msgid "Select Items"
 msgstr "Markera objekt"
 
+#. Translators: only one item has been deleted and %s is its name
 #: ../src/notifications.js:54
 #, javascript-format
 msgid "“%s” deleted"
 msgstr "”%s” borttagen"
 
+#. Translators: one or more items might have been deleted, and %d
+#. is the count
 #: ../src/notifications.js:58
 #, javascript-format
 msgid "%d item deleted"
@@ -491,6 +507,8 @@ msgstr "Dina dokument håller på att indexeras"
 msgid "Some documents might not be available during this process"
 msgstr "Vissa dokument kan komma att inte vara tillgängliga under denna process"
 
+#. Translators: %s refers to an online account provider, e.g.
+#. "Google", or "Windows Live".
 #: ../src/notifications.js:246
 #, javascript-format
 msgid "Fetching documents from %s"
@@ -525,6 +543,7 @@ msgstr "Kör i presentationsläge"
 msgid "Present On"
 msgstr "Presentera på"
 
+#. Translators: "Mirrored" describes when both displays show the same view
 #: ../src/presentation.js:166
 msgid "Mirrored"
 msgstr "Speglad"
@@ -545,33 +564,41 @@ msgstr "Sekundär"
 msgid "Bookmark this page"
 msgstr "Bokmärk denna sida"
 
-#: ../src/preview.js:900 ../src/selections.js:986
+#. Translators: this is the Open action in a context menu
+#: ../src/preview.js:901 ../src/selections.js:986
 #, javascript-format
 msgid "Open with %s"
 msgstr "Öppna med %s"
 
-#: ../src/preview.js:963
+#: ../src/preview.js:964
 msgid "Find Previous"
 msgstr "Hitta föregående"
 
-#: ../src/preview.js:970
+#: ../src/preview.js:971
 msgid "Find Next"
 msgstr "Hitta nästa"
 
+#. Title item
+#. Translators: "Title" is the label next to the document title
+#. in the properties dialog
 #: ../src/properties.js:82
 msgctxt "Document Title"
 msgid "Title"
 msgstr "Titel"
 
+#. Translators: "Author" is the label next to the document author
+#. in the properties dialog
 #: ../src/properties.js:91
 msgctxt "Document Author"
 msgid "Author"
 msgstr "Författare"
 
+#. Source item
 #: ../src/properties.js:98
 msgid "Source"
 msgstr "Källor"
 
+#. Date Modified item
 #: ../src/properties.js:104
 msgid "Date Modified"
 msgstr "Modifierad"
@@ -580,6 +607,9 @@ msgstr "Modifierad"
 msgid "Date Created"
 msgstr "Skapad"
 
+#. Document type item
+#. Translators: "Type" is the label next to the document type
+#. (PDF, spreadsheet, ...) in the properties dialog
 #: ../src/properties.js:120
 msgctxt "Document Type"
 msgid "Type"
@@ -589,19 +619,25 @@ msgstr "Typ"
 msgid "Category"
 msgstr "Kategori"
 
+#. Translators: this refers to new and recent documents
+#. Translators: this refers to documents
 #: ../src/search.js:131 ../src/search.js:200 ../src/search.js:333
 #: ../src/search.js:503
 msgid "All"
 msgstr "Alla"
 
+#. Translators: this refers to favorite documents
 #: ../src/search.js:137
 msgid "Favorites"
 msgstr "Favoriter"
 
+#. Translators: this refers to shared documents
 #: ../src/search.js:142
 msgid "Shared with you"
 msgstr "Delade med dig"
 
+#. Translators: "Type" refers to a search filter on the document type
+#. (PDF, spreadsheet, ...)
 #: ../src/search.js:197
 msgctxt "Search Filter"
 msgid "Type"
@@ -631,15 +667,19 @@ msgstr "e-böcker"
 msgid "Comics"
 msgstr "Serietidningar"
 
+#. Translators: this is a verb that refers to "All", "Title" and "Author",
+#. as in "Match All", "Match Title" and "Match Author"
 #: ../src/search.js:330
 msgid "Match"
 msgstr "Matcha"
 
+#. Translators: "Title" refers to "Match Title" when searching
 #: ../src/search.js:336
 msgctxt "Search Filter"
 msgid "Title"
 msgstr "Titel"
 
+#. Translators: "Author" refers to "Match Author" when searching
 #: ../src/search.js:339
 msgctxt "Search Filter"
 msgid "Author"
@@ -653,6 +693,7 @@ msgstr "Källor"
 msgid "Rename…"
 msgstr "Byt namn…"
 
+#. trash button
 #: ../src/selections.js:365 ../src/selections.js:367 ../src/selections.js:871
 msgid "Delete"
 msgstr "Ta bort"
@@ -666,11 +707,13 @@ msgstr "”%s” borttagen"
 msgid "Rename"
 msgstr "Byt namn"
 
+#. Translators: "Collections" refers to documents in this context
 #: ../src/selections.js:771
 msgctxt "Dialog Title"
 msgid "Collections"
 msgstr "Samlingar"
 
+#. print button
 #: ../src/selections.js:866
 msgid "Print"
 msgstr "Skriv ut"
@@ -683,14 +726,17 @@ msgstr "Dela"
 msgid "Sharing Settings"
 msgstr "Delningsinställningar"
 
+#. Label for widget group for changing document permissions
 #: ../src/sharing.js:145
 msgid "Document permissions"
 msgstr "Dokumentbehörigheter"
 
+#. Label for permission change in Sharing dialog
 #: ../src/sharing.js:152 ../src/sharing.js:330
 msgid "Change"
 msgstr "Ändra"
 
+#. Label for radiobutton that sets doc permission to private
 #: ../src/sharing.js:176 ../src/sharing.js:305
 msgid "Private"
 msgstr "Privat"
@@ -699,14 +745,17 @@ msgstr "Privat"
 msgid "Public"
 msgstr "Publikt"
 
+#. Label for checkbutton that sets doc permission to Can edit
 #: ../src/sharing.js:190 ../src/sharing.js:300
 msgid "Everyone can edit"
 msgstr "Alla kan redigera"
 
+#. Label for widget group used for adding new contacts
 #: ../src/sharing.js:197
 msgid "Add people"
 msgstr "Lägg till personer"
 
+#. Editable text in entry field
 #: ../src/sharing.js:204
 msgid "Enter an email address"
 msgstr "Skriv in en e-postadress"
@@ -757,53 +806,57 @@ msgstr "Inga böcker hittades"
 msgid "No Documents Found"
 msgstr "Inga dokument hittades"
 
+#. Translators: %s here is "Settings", which is in a separate string due to
+#. markup, and should be translated only in the context of this sentence
 #: ../src/view.js:283
 #, javascript-format
 msgid "You can add your online accounts in %s"
 msgstr "Du kan lägga till dina nätkonton i %s"
 
+#. Translators: this should be translated in the context of the
+#. "You can add your online accounts in Settings" sentence above
 #: ../src/view.js:287
 msgid "Settings"
 msgstr "Inställningar"
 
-#: ../src/view.js:482
+#: ../src/view.js:483
 msgid "Yesterday"
 msgstr "Igår"
 
-#: ../src/view.js:484
+#: ../src/view.js:485
 #, javascript-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
 msgstr[0] "%d dag sedan"
 msgstr[1] "%d dagar sedan"
 
-#: ../src/view.js:488
+#: ../src/view.js:489
 msgid "Last week"
 msgstr "Förra veckan"
 
-#: ../src/view.js:490
+#: ../src/view.js:491
 #, javascript-format
 msgid "%d week ago"
 msgid_plural "%d weeks ago"
 msgstr[0] "%d vecka sedan"
 msgstr[1] "%d veckor sedan"
 
-#: ../src/view.js:494
+#: ../src/view.js:495
 msgid "Last month"
 msgstr "Förra månaden"
 
-#: ../src/view.js:496
+#: ../src/view.js:497
 #, javascript-format
 msgid "%d month ago"
 msgid_plural "%d months ago"
 msgstr[0] "%d månad sedan"
 msgstr[1] "%d månader sedan"
 
-#: ../src/view.js:500
+#: ../src/view.js:501
 msgid "Last year"
 msgstr "Förra året"
 
-#: ../src/view.js:502
+#: ../src/view.js:503
 #, javascript-format
 msgid "%d year ago"
 msgid_plural "%d years ago"
