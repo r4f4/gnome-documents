@@ -1,7 +1,7 @@
 # Irish translations for gnome-documents package.
-# Copyright (C) 2013 Free Software Foundation, Inc.
+# Copyright (C) 2013-2015 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-documents package.
-# Seán de Búrca <leftmostcat@gmail.com>, 2013, 2015.
+# Seán de Búrca <leftmostcat@gmail.com>, 2013-2015.
 #
 msgid ""
 msgstr ""
@@ -17,7 +17,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=5; plural=n==1 ? 0 : n==2 ? 1 : n<7 ? 2 : n<11 ? 3 : "
 "4;\n"
-"X-Generator: Gtranslator 2.91.7\n"
 
 #: ../data/org.gnome.Books.appdata.xml.in.h:1
 #: ../data/org.gnome.Books.desktop.in.h:1 ../src/application.js:117
@@ -863,37 +862,6 @@ msgid "%d year ago"
 msgid_plural "%d years ago"
 msgstr[0] "%d bhliain ó shin"
 msgstr[1] "%d bhliain ó shin"
-msgstr[2] "%d bhliana ó shin"
+msgstr[2] "%d bliana ó shin"
 msgstr[3] "%d mbliana ó shin"
 msgstr[4] "%d bliain ó shin"
-
-#~ msgid "Skydrive"
-#~ msgstr "Skydrive"
-
-#~ msgid "Results for “%s”"
-#~ msgstr "Torthaí do “%s”"
-
-#~ msgid "Close"
-#~ msgstr "Dún"
-
-#~ msgid "Grid"
-#~ msgstr "Greille"
-
-#~ msgid "List"
-#~ msgstr "Liosta"
-
-#~ msgid "About Documents"
-#~ msgstr "Maidir le Cáipéisí"
-
-#~ msgid ""
-#~ "You don't have any collections yet. Enter a new collection name above."
-#~ msgstr "Níl aon bhailiúchán agat fós. Iontráil ainm bailiúcháin thuas."
-
-#~ msgid "Create new collection"
-#~ msgstr "Cruthaigh bailiúchán nua"
-
-#~ msgid "Add to Collection"
-#~ msgstr "Cuir le Bailíuchán"
-
-#~ msgid "Load More"
-#~ msgstr "Tuilleadh Cáipéisí"
