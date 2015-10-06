@@ -77,7 +77,8 @@ const Embed = new Lang.Class({
 
         // now create the actual content widgets
         this._documents = new View.ViewContainer(WindowMode.WindowMode.DOCUMENTS);
-        this._stack.add_titled(this._documents, 'documents', _("Recent"));
+        let label = !Application.application.isBooks ? _("Documents") : _('Books');
+        this._stack.add_titled(this._documents, 'documents', label);
 
         this._collections = new View.ViewContainer(WindowMode.WindowMode.COLLECTIONS);
         this._stack.add_titled(this._collections, 'collections', _("Collections"));
