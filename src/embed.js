@@ -77,7 +77,7 @@ const Embed = new Lang.Class({
 
         // now create the actual content widgets
         this._documents = new View.ViewContainer(WindowMode.WindowMode.DOCUMENTS);
-        let label = !Application.application.isBooks ? _("Documents") : _('Books');
+        let label = Application.application.isBooks ? _('Books') : _("Documents");
         this._stack.add_titled(this._documents, 'documents', label);
 
         this._collections = new View.ViewContainer(WindowMode.WindowMode.COLLECTIONS);
@@ -340,10 +340,10 @@ const Embed = new Lang.Class({
     },
 
     _onLoadFinished: function(manager, doc, docModel) {
-        if (!Application.application.isBooks)
-            docModel.set_sizing_mode(EvView.SizingMode.AUTOMATIC);
-        else
+        if (Application.application.isBooks)
             docModel.set_sizing_mode(EvView.SizingMode.FIT_PAGE);
+        else
+            docModel.set_sizing_mode(EvView.SizingMode.AUTOMATIC);
         docModel.set_page_layout(EvView.PageLayout.AUTOMATIC);
         this._toolbar.setModel(docModel);
         this._preview.setModel(docModel);

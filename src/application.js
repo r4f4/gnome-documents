@@ -110,12 +110,12 @@ const Application = new Lang.Class({
         this.isBooks = isBooks;
 
         let appid;
-        if (!this.isBooks) {
-            GLib.set_application_name(_("Documents"));
-            appid = 'org.gnome.Documents';
-        } else {
+        if (this.isBooks) {
             GLib.set_application_name(_("Books"));
             appid = 'org.gnome.Books';
+        } else {
+            GLib.set_application_name(_("Documents"));
+            appid = 'org.gnome.Documents';
         }
 
         this.parent({ application_id: appid,
@@ -477,10 +477,10 @@ const Application = new Lang.Class({
         EvDoc.init();
 
         application = this;
-        if (!application.isBooks)
-            settings = new Gio.Settings({ schema_id: 'org.gnome.documents' });
-        else
+        if (application.isBooks)
             settings = new Gio.Settings({ schema_id: 'org.gnome.books' });
+        else
+            settings = new Gio.Settings({ schema_id: 'org.gnome.documents' });
 
         let gtkSettings = Gtk.Settings.get_default();
         gtkSettings.connect('notify::gtk-theme-name', Lang.bind(this, this._themeChanged));
