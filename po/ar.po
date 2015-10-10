@@ -459,7 +459,6 @@ msgid "Click on items to select them"
 msgstr "انقر على عناصر لاختيارها"
 
 #: ../src/mainToolbar.js:194
-#, javascript-format
 msgid "%d selected"
 msgid_plural "%d selected"
 msgstr[0] "لا عناصر مُختارة"
@@ -482,7 +481,6 @@ msgstr "حُذِف ‏”%s“"
 #. Translators: one or more items might have been deleted, and %d
 #. is the count
 #: ../src/notifications.js:58
-#, javascript-format
 msgid "%d item deleted"
 msgid_plural "%d items deleted"
 msgstr[0] "لم تحذف أي عناصر"
@@ -826,7 +824,6 @@ msgid "Yesterday"
 msgstr "بالأمس"
 
 #: ../src/view.js:485
-#, javascript-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
 msgstr[0] "منذ أقل من يوم"
@@ -841,7 +838,6 @@ msgid "Last week"
 msgstr "الأسبوع الماضي"
 
 #: ../src/view.js:491
-#, javascript-format
 msgid "%d week ago"
 msgid_plural "%d weeks ago"
 msgstr[0] "منذ أقل من أسبوع"
@@ -856,7 +852,6 @@ msgid "Last month"
 msgstr "الشهر الماضي"
 
 #: ../src/view.js:497
-#, javascript-format
 msgid "%d month ago"
 msgid_plural "%d months ago"
 msgstr[0] "منذ أقل من شهر"
@@ -871,7 +866,6 @@ msgid "Last year"
 msgstr "السنة الماضية"
 
 #: ../src/view.js:503
-#, javascript-format
 msgid "%d year ago"
 msgid_plural "%d years ago"
 msgstr[0] "منذ أقل من سنة"
