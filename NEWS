@@ -1,6 +1,13 @@
-3.18.1 - ""
-===========
+3.18.1 - "Straw Man"
+====================
 
+- Change to selection mode when pressing ctrl+a (Alessandro Bono)
+- Don't hide navigation controls when hovering (Alessandro Bono)
+- Don't invert the content of Books in night-mode (Bastien Nocera)
+- Show a spinner while creating the first collection (Alessandro Bono)
+- Fix the background of tagged entries
+- Don't show an extra menu when the app menu is disabled
+- Translation updates
 
 3.18.0.1 - "Jadavpur"
 =====================
