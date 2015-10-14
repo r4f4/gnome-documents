@@ -158,6 +158,13 @@ const FetchCollectionStateForSelectionJob = new Lang.Class({
                     hidden = true;
             }
 
+            let application = Gio.Application.get_default();
+            let collectionsIdentifier;
+            if (application.isBooks)
+                collectionsIdentifier = Query.LOCAL_BOOKS_COLLECTIONS_IDENTIFIER;
+            else
+                collectionsIdentifier = Query.LOCAL_DOCUMENTS_COLLECTIONS_IDENTIFIER;
+
             for (let itemIdx in this._collectionsForItems) {
                 let item = Application.documentManager.getItemById(itemIdx);
                 let collectionsForItem = this._collectionsForItems[itemIdx];
@@ -169,7 +176,7 @@ const FetchCollectionStateForSelectionJob = new Lang.Class({
                     notFound = true;
 
                 if ((item.resourceUrn != collection.resourceUrn) &&
-                    (collection.identifier.indexOf(Query.LOCAL_COLLECTIONS_IDENTIFIER) == -1)) {
+                    (collection.identifier.indexOf(collectionsIdentifier) == -1)) {
                     hidden = true;
                 }
             }
