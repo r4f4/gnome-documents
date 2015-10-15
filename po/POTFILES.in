@@ -11,6 +11,7 @@ data/org.gnome.documents.gschema.xml
 [type: gettext/glade]data/ui/preview-context-menu.ui
 [type: gettext/glade]data/ui/preview-menu.ui
 [type: gettext/glade]data/ui/selection-menu.ui
+[type: gettext/glade]data/ui/view-menu.ui
 src/application.js
 src/documents.js
 src/edit.js

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <object class ="GtkPopoverMenu" id="viewMenu">
+    <child>
+      <object class="GtkBox">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="border_width">9</property>
+        <property name="orientation">vertical</property>
+        <property name="width_request">160</property>
+        <child>
+          <object class="GtkBox" id="viewsBox">
+            <property name="visible">True</property>
+            <property name="orientation">horizontal</property>
+            <property name="margin-bottom">6</property>
+            <style>
+                <class name="linked"/>
+            </style>
+            <child>
+              <object class="GtkModelButton">
+                <property name="visible">True</property>
+                <property name="text">Grid</property>
+                <property name="tooltip-text" translatable="yes">View items as a grid of icons</property>
+                <property name="action-name">app.view-as</property>
+                <property name="action-target">'icon'</property>
+                <property name="iconic">True</property>
+                <property name="centered">True</property>
+                <property name="icon">iconGrid</property>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkModelButton">
+                <property name="visible">True</property>
+                <property name="text">List</property>
+                <property name="tooltip-text" translatable="yes">View items as a list</property>
+                <property name="action-name">app.view-as</property>
+                <property name="action-target">'list'</property>
+                <property name="iconic">True</property>
+                <property name="centered">True</property>
+                <property name="icon">iconList</property>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GThemedIcon" id="iconGrid">
+    <property name="name">view-grid-symbolic</property>
+  </object>
+  <object class="GThemedIcon" id="iconList">
+    <property name="name">view-list-symbolic</property>
+  </object>
+</interface>
