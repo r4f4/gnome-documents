@@ -81,8 +81,6 @@ const ViewModel = new Lang.Class({
               GObject.TYPE_LONG,
               GObject.TYPE_BOOLEAN,
               GObject.TYPE_UINT ]);
-        this.set_sort_column_id(Gd.MainColumns.MTIME,
-                                Gtk.SortType.DESCENDING);
 
         this._infoUpdatedIds = {};
         this._resetCountId = 0;
@@ -360,6 +358,10 @@ const ViewContainer = new Lang.Class({
             Lang.bind(this, this._updateTypeForSettings));
         this._updateTypeForSettings();
 
+        this._sortSettingsId = Application.application.connect('action-state-changed::sort-by',
+            Lang.bind(this, this._updateSortForSettings));
+        this._updateSortForSettings();
+
         // setup selection controller => view
         Application.selectionController.connect('selection-mode-changed',
             Lang.bind(this, this._onSelectionModeChanged));
@@ -416,6 +418,28 @@ const ViewContainer = new Lang.Class({
 
         if (viewType == Gd.MainViewType.LIST)
             this._addListRenderers();
+    },
+
+    _updateSortForSettings: function() {
+        let sortBy = Application.settings.get_enum('sort-by');
+
+        switch (sortBy) {
+        case Gd.MainColumns.PRIMARY_TEXT:
+            sortType = Gtk.SortType.ASCENDING;
+            break;
+        case Gd.MainColumns.SECONDARY_TEXT:
+            sortType = Gtk.SortType.ASCENDING;
+            break;
+        case Gd.MainColumns.MTIME:
+            sortType = Gtk.SortType.DESCENDING;
+            break;
+        default:
+            sortBy = Gd.MainColumns.MTIME;
+            sortType = Gtk.SortType.DESCENDING;
+            break;
+        }
+
+        this._model.set_sort_column_id(sortBy, sortType);
     },
 
     activateResult: function() {
