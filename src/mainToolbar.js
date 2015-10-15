@@ -1,4 +1,5 @@
 /*
+ * Copyright (c) 2015 Alessandro Bono
  * Copyright (c) 2011, 2013, 2015 Red Hat, Inc.
  *
  * Gnome Documents is free software; you can redistribute it and/or modify
@@ -109,8 +110,7 @@ const OverviewToolbar = new Lang.Class({
         this._collBackButton = null;
         this._collectionId = 0;
         this._selectionChangedId = 0;
-        this._viewGridButton = null;
-        this._viewListButton = null;
+        this._viewMenuButton = null;
         this._viewSettingsId = 0;
         this._activeCollection = null;
         this._infoUpdatedId = 0;
@@ -146,34 +146,24 @@ const OverviewToolbar = new Lang.Class({
             }));
     },
 
-    _addViewAsButtons: function() {
-        let viewAsBox = new Gtk.Box({ orientation: Gtk.Orientation.HORIZONTAL,
-                                      spacing: 0 });
-        viewAsBox.get_style_context().add_class('linked');
-        this.toolbar.pack_end(viewAsBox);
+    _addViewMenuButton: function() {
+        let builder = new Gtk.Builder();
+        builder.add_from_resource('/org/gnome/Documents/ui/view-menu.ui');
+        let viewMenu = builder.get_object('viewMenu');
 
-        this._viewListButton = new Gtk.Button({ image: new Gtk.Image ({ icon_name: 'view-list-symbolic' }),
-                                                tooltip_text: _("View items as a list"),
-                                                no_show_all: true,
-                                                action_name: 'app.view-as',
-                                                action_target: GLib.Variant.new('s', 'list') });
-        viewAsBox.add(this._viewListButton);
-        this._viewGridButton = new Gtk.Button({ image: new Gtk.Image ({ icon_name: 'view-grid-symbolic' }),
-                                                tooltip_text: _("View items as a grid of icons"),
-                                                no_show_all: true,
-                                                action_name: 'app.view-as',
-                                                action_target: GLib.Variant.new('s', 'icon') });
-        viewAsBox.add(this._viewGridButton);
+        this._viewMenuButton = new Gtk.MenuButton({ tooltip_text: _("View items as a list or a grid"),
+                                                    popover: viewMenu });
+        this.toolbar.pack_end(this._viewMenuButton);
 
         this._viewSettingsId = Application.application.connect('action-state-changed::view-as',
-            Lang.bind(this, this._updateViewAsButtons));
-        this._updateViewAsButtons();
+            Lang.bind(this, this._updateViewMenuButton));
+        this._updateViewMenuButton();
     },
 
-    _updateViewAsButtons: function() {
+    _updateViewMenuButton: function() {
         let viewType = Application.settings.get_enum('view-as');
-        this._viewGridButton.visible = (viewType != Gd.MainViewType.ICON);
-        this._viewListButton.visible = (viewType != Gd.MainViewType.LIST);
+        let iconName = viewType == Gd.MainViewType.ICON ? 'view-grid-symbolic' : 'view-list-symbolic';
+        this._viewMenuButton.image = new Gtk.Image({ icon_name: iconName, pixel_size: 16 })
     },
 
     _setToolbarTitle: function() {
@@ -282,7 +272,7 @@ const OverviewToolbar = new Lang.Class({
                 Application.selectionController.setSelectionMode(true);
             }));
 
-        this._addViewAsButtons();
+        this._addViewMenuButton();
         this.addSearchButton();
 
         // connect to active collection changes while in this mode
@@ -293,8 +283,7 @@ const OverviewToolbar = new Lang.Class({
 
     _clearStateData: function() {
         this._collBackButton = null;
-        this._viewGridButton = null;
-        this._viewListButton = null;
+        this._viewMenuButton = null;
         this.toolbar.set_custom_title(null);
 
         if (this._collectionId != 0) {
