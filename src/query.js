@@ -19,6 +19,7 @@
  *
  */
 
+const Gd = imports.gi.Gd;
 const GdPrivate = imports.gi.GdPrivate;
 const Gio = imports.gi.Gio;
 const GLib = imports.gi.GLib;
@@ -124,11 +125,11 @@ const QueryBuilder = new Lang.Class({
         return whereSparql;
     },
 
-    _buildQueryInternal: function(global, flags, offsetController) {
+    _buildQueryInternal: function(global, flags, offsetController, sortBy) {
         let whereSparql = this._buildWhere(global, flags);
         let tailSparql = '';
 
-        // order results by mtime
+        // order results depending on sortBy
         if (global) {
             let offset = 0;
             let step = Search.OFFSET_STEP;
@@ -138,18 +139,31 @@ const QueryBuilder = new Lang.Class({
                 step = offsetController.getOffsetStep();
             }
 
-            tailSparql +=
-                'ORDER BY DESC (?mtime)' +
-                ('LIMIT %d OFFSET %d').format(step, offset);
+            switch (sortBy) {
+            case Gd.MainColumns.PRIMARY_TEXT:
+                tailSparql += 'ORDER BY ASC(?title) ASC(?filename)';
+                break;
+            case Gd.MainColumns.SECONDARY_TEXT:
+                tailSparql += 'ORDER BY ASC(?author)';
+                break;
+            case Gd.MainColumns.MTIME:
+                tailSparql += 'ORDER BY DESC(?mtime)';
+                break;
+            default:
+                tailSparql += 'ORDER BY DESC(?mtime)';
+                break;
+            }
+
+            tailSparql += ('LIMIT %d OFFSET %d').format(step, offset);
         }
 
         let sparql =
             'SELECT DISTINCT ?urn ' + // urn
             'nie:url(?urn) ' + // uri
-            'nfo:fileName(?urn)' + // filename
+            'nfo:fileName(?urn) AS ?filename ' + // filename
             'nie:mimeType(?urn)' + // mimetype
-            'nie:title(?urn) ' + // title
-            'tracker:coalesce(nco:fullname(?creator), nco:fullname(?publisher), \'\') ' + // author
+            'nie:title(?urn) AS ?title ' + // title
+            'tracker:coalesce(nco:fullname(?creator), nco:fullname(?publisher), \'\') AS ?author ' + // author
             'tracker:coalesce(nfo:fileLastModified(?urn), nie:contentLastModified(?urn)) AS ?mtime ' + // mtime
             'nao:identifier(?urn) ' + // identifier
             'rdf:type(?urn) ' + // type
@@ -168,8 +182,8 @@ const QueryBuilder = new Lang.Class({
         return this._createQuery(sparql);
     },
 
-    buildGlobalQuery: function(flags, offsetController) {
-        return this._createQuery(this._buildQueryInternal(true, flags, offsetController));
+    buildGlobalQuery: function(flags, offsetController, sortBy) {
+        return this._createQuery(this._buildQueryInternal(true, flags, offsetController, sortBy));
     },
 
     buildCountQuery: function(flags) {

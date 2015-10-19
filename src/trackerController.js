@@ -120,6 +120,7 @@ const TrackerController = new Lang.Class({
         this._querying = false;
         this._isStarted = false;
         this._refreshPending = false;
+        this._sortBy = null;
 
         // useful for debugging
         this._lastQueryTime = 0;
@@ -135,6 +136,10 @@ const TrackerController = new Lang.Class({
 
         this._offsetController = this.getOffsetController();
         this._offsetController.connect('offset-changed', Lang.bind(this, this._performCurrentQuery));
+
+        this._sortSettingsId = Application.application.connect('action-state-changed::sort-by',
+            Lang.bind(this, this._updateSortForSettings));
+        this._updateSortForSettings();
     },
 
     getOffsetController: function() {
@@ -272,6 +277,16 @@ const TrackerController = new Lang.Class({
             this._refreshPending = true;
     },
 
+    _updateSortForSettings: function() {
+        let sortBy = Application.settings.get_enum('sort-by');
+
+        if(this._sortBy == sortBy)
+            return;
+
+        this._sortBy = sortBy;
+        this._refreshInternal(RefreshFlags.RESET_OFFSET);
+    },
+
     start: function() {
         if (this._isStarted)
             return;
@@ -310,7 +325,8 @@ const TrackerCollectionsController = new Lang.Class({
             flags = Query.QueryFlags.COLLECTIONS;
 
         return Application.queryBuilder.buildGlobalQuery(flags,
-                                                         Application.offsetCollectionsController);
+                                                         Application.offsetCollectionsController,
+                                                         this._sortBy);
     },
 });
 
@@ -328,7 +344,8 @@ const TrackerDocumentsController = new Lang.Class({
 
     getQuery: function() {
         return Application.queryBuilder.buildGlobalQuery(Query.QueryFlags.DOCUMENTS,
-                                                         Application.offsetDocumentsController);
+                                                         Application.offsetDocumentsController,
+                                                         this._sortBy);
     },
 });
 
@@ -367,6 +384,7 @@ const TrackerSearchController = new Lang.Class({
 
     getQuery: function() {
         return Application.queryBuilder.buildGlobalQuery(Query.QueryFlags.SEARCH,
-                                                         Application.offsetSearchController);
+                                                         Application.offsetSearchController,
+                                                         this._sortBy);
     },
 });
