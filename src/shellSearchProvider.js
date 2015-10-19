@@ -315,7 +315,8 @@ const FetchIdsJob = new Lang.Class({
         this._cancellable = cancellable;
         searchController.setString(this._terms.join(' '));
 
-        let query = queryBuilder.buildGlobalQuery(Query.QueryFlags.SEARCH, null);
+        let sortBy = Application.settings.get_enum('sort-by');
+        let query = queryBuilder.buildGlobalQuery(Query.QueryFlags.SEARCH, null, sortBy);
         Application.connectionQueue.add(query.sparql, this._cancellable, Lang.bind(this,
             function(object, res) {
                 let cursor = null;
