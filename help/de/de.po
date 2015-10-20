@@ -10,21 +10,22 @@
 # Christian Kirbach <christian.kirbach@gmail.com>, 2011, 2012, 2013.
 # Benjamin Steinwender <b@stbe.at>, 2014.
 # Bernd Homuth <dev@hmt.im>, 2014.
+# Wolfgang Stöggl <c72578@yahoo.de>, 2015.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-docs master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-12-14 07:44+0000\n"
-"PO-Revision-Date: 2014-12-13 23:53+0100\n"
-"Last-Translator: Bernd Homuth <dev@hmt.im>\n"
+"POT-Creation-Date: 2015-10-15 19:35+0000\n"
+"PO-Revision-Date: 2015-10-18 07:56+0200\n"
+"Last-Translator: Wolfgang Stoeggl <c72578@yahoo.de>\n"
 "Language-Team: Deutsch <gnome-de@gnome.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
-"X-Generator: Gtranslator 2.91.6\n"
+"X-Generator: Poedit 1.8.5\n"
 
 #. (itstool) path: p/link
 #: C/legal.xml:3
@@ -42,7 +43,7 @@ msgid "translator-credits"
 msgstr ""
 "Hendrik Knackstedt <hendrik.knackstedt@t-online.de>, 2011.\n"
 "Gabor Karsay <gabor.karsay@gmx.at>, 2011, 2012.\n"
-"Christian Kirbach <christian.kirbach@gmail.com>, 2011-2014.\n"
+"Christian Kirbach <christian.kirbach@gmail.com>, 2011-2015.\n"
 "Mario Blättermann <mario.blaettermann@gmail.com>, 2011-2013.\n"
 "Benjamin Steinwender <b@stbe.at>, 2014."
 
@@ -73,7 +74,7 @@ msgstr "Michael Hill"
 #. (itstool) path: credit/name
 #: C/collections.page:22 C/filter.page:17 C/formats.page:17 C/index.page:24
 #: C/info.page:22 C/prob-no-show.page:22 C/prob-previews.page:22
-#: C/viewgrid.page:22 C/view.page:22 C/view-add.page:12
+#: C/viewgrid.page:22 C/view.page:22 C/view-add.page:13
 msgid "Ekaterina Gerasimova"
 msgstr "Ekaterina Gerasimova"
 
@@ -141,7 +142,7 @@ msgid ""
 "type a new collection name, or select an existing collection. The selected "
 "documents will be added to the collection."
 msgstr ""
-"Klicken Sie in der Liste der Sammlungen zwei mal auf <gui>Neue Sammlung "
+"Klicken Sie in der Liste der Sammlungen zweimal auf <gui>Neue Sammlung "
 "erstellen</gui> und geben Sie einen neuen Sammlungsnamen ein, oder wählen "
 "Sie eine vorhandene Sammlung. Die ausgewählten Dokumente werden zu dieser "
 "Sammlung hinzugefügt."
@@ -412,10 +413,10 @@ msgid ""
 "create the document (e.g. <app>LibreOffice</app> or <app>Adobe Acrobat</"
 "app>)."
 msgstr ""
-"<app>Documents</app> bietet derzeit keine Möglichkeit, die Privatsphäre "
-"eines Dokuments zu schützen. Sie können dies in der Anwendung tun, mit der "
-"Sie das Dokument erstellt haben (z.B. <app>LibreOffice</app> oder <app>Adobe "
-"Acrobat</app>)."
+"<app>Dokumentverwaltung</app> bietet derzeit keine Möglichkeit, die "
+"Privatsphäre eines Dokuments zu schützen. Sie können dies in der Anwendung "
+"tun, mit der Sie das Dokument erstellt haben (z.B. <app>LibreOffice</app> "
+"oder <app>Adobe Acrobat</app>)."
 
 #. (itstool) path: info/desc
 #: C/print.page:23
@@ -685,8 +686,13 @@ msgstr ""
 "Um das Dokument zu verlassen, klicken Sie auf den Knopf mit dem rückwärts "
 "weisenden Pfeil in der oberen linken Ecke des Fensters."
 
+#. (itstool) path: credit/years
+#: C/view-add.page:15
+msgid "2014–2015"
+msgstr "2014–2015"
+
 #. (itstool) path: info/desc
-#: C/view-add.page:18
+#: C/view-add.page:20
 msgid ""
 "Add extra directories to those which are already searched by <app>Documents</"
 "app>."
@@ -695,12 +701,12 @@ msgstr ""
 "<app>Dokumentverwaltung</app> durchsucht werden."
 
 #. (itstool) path: page/title
-#: C/view-add.page:23
+#: C/view-add.page:25
 msgid "Add custom directories"
 msgstr "Eine benutzerdefinierte Bibliothek hinzufügen"
 
 #. (itstool) path: page/p
-#: C/view-add.page:25
+#: C/view-add.page:27
 msgid ""
 "<app>Documents</app> normally shows only documents that are in standard "
 "folders such as <file>Documents</file> or <file>Downloads</file>. You can "
@@ -717,7 +723,7 @@ msgstr ""
 "in einem separaten Ordner auf Ihrem Rechner oder einer externen Festplatte."
 
 #. (itstool) path: item/p
-#: C/view-add.page:34
+#: C/view-add.page:36
 msgid ""
 "Open the <gui href=\"help:gnome-help/shell-terminology\">Activities</gui> "
 "overview and start typing <gui>Search</gui>."
@@ -727,29 +733,28 @@ msgstr ""
 "Systemeinstellung »Suchen«."
 
 #. (itstool) path: item/p
-#: C/view-add.page:39
+#: C/view-add.page:41
 msgid "Click on <gui>Search</gui> to open the panel."
 msgstr "Klicken Sie auf <gui>Suchen</gui>, um die Leiste zu öffnen."
 
 #. (itstool) path: item/p
-#: C/view-add.page:42
+#: C/view-add.page:44
 msgid ""
-"Press the button in the bottom-left of the window which will open "
+"Press the button in the bottom-right of the window which will open "
 "<gui>Search Locations</gui>."
 msgstr ""
-"Daraufhin öffnet sich ein Fenster <gui>Suchen</gui>. Klicken Sie auf das "
-"Zahnradsymbol unten rechts. Das Fenster <gui>Orte durchsuchen</gui> öffnet "
-"sich."
+"Klicken Sie auf den Knopf unten rechts im Fenster. Daraufhin öffnet sich das "
+"Fenster <gui>Suchorte</gui>."
 
 #. (itstool) path: item/p
-#: C/view-add.page:46
+#: C/view-add.page:48
 msgid "Press <gui style=\"button\">+</gui> to add a new search location."
 msgstr ""
 "Klicken Sie auf den Knopf <gui style=\"button\">+</gui>, um einen neuen "
 "Suchort hinzuzufügen."
 
 #. (itstool) path: item/p
-#: C/view-add.page:49
+#: C/view-add.page:51
 msgid ""
 "Select the folder that you want to add and press <gui style=\"button\">OK</"
 "gui> to add the folder."
@@ -758,7 +763,7 @@ msgstr ""
 "style=\"button\">OK</gui>."
 
 #. (itstool) path: page/p
-#: C/view-add.page:61
+#: C/view-add.page:63
 msgid ""
 "Adding a new folder to the search may let some of your other applications "
 "search that folder. Unfortunately, it is not possible to tell which "
