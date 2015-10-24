@@ -3,26 +3,27 @@
 # This file is distributed under the same license as the gnome-documents package.
 # Duarte Loreto <happyguy_pt@hotmail.com>, 2011, 2012, 2013, 2014.
 # Tiago S. <almosthumane@portugalmail.pt>, 2014.
+# Pedro Albuquerque <palbuquerque73@gmail.com>, 2015.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: 3.12\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-03-17 19:47+0000\n"
-"PO-Revision-Date: 2014-03-18 07:40+0100\n"
-"Last-Translator: Tiago S. <almosthumane@portugalmail.pt>\n"
-"Language-Team: Portuguese <gnome_pt@yahoogroups.com>\n"
+"POT-Creation-Date: 2015-10-24 07:58+0000\n"
+"PO-Revision-Date: 2015-10-24 09:30+0100\n"
+"Last-Translator: Pedro Albuquerque <palbuquerque73@gmail.com>\n"
+"Language-Team: Português <palbuquerque73@gmail.com>\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.5.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\\n\n"
+"X-Generator: Gtranslator 2.91.6\n"
 
 #: ../data/org.gnome.Documents.appdata.xml.in.h:1
-#: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:103
-#: ../src/mainWindow.js:52 ../src/mainWindow.js:274
+#: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:121
+#: ../src/mainWindow.js:52 ../src/mainWindow.js:302
 msgid "Documents"
 msgstr "Documentos"
 
@@ -40,26 +41,45 @@ msgstr ""
 "Uma aplicação simples para aceder, organizar e partilhar os seus documentos "
 "no GNOME. Tem por objetivo ser uma forma simples e elegante de substituir a "
 "utilização de um gestor de ficheiros para gerir documentos. A integração com "
-"a cloud é garantida através das Contas Online GNOME."
+"a nuvem é garantida através das Contas online do GNOME."
 
 #: ../data/org.gnome.Documents.appdata.xml.in.h:4
 msgid "It lets you:"
 msgstr "Permite-lhe:"
 
 #: ../data/org.gnome.Documents.appdata.xml.in.h:5
-msgid ""
-"<li>View recent local and online documents</li> <li>Access your Google, "
-"ownCloud or OneDrive content</li> <li>Search through documents</li> <li>See "
-"new documents shared by friends</li> <li>View documents fullscreen</li> "
-"<li>Print documents</li> <li>Select favorites</li> <li>Allow opening full "
-"featured editor for non-trivial changes</li>"
-msgstr ""
-"<li>Visualizar documentos recentes locais e online</li> <li>Aceder aos seus "
-"conteúdos Google, ownCloud ou OneDrive</li> <li>Procurar nos documentos</li> "
-"<li>Visualizar novos documentos partilhados por amigos</li> <li>Visualizar "
-"documentos em modo de ecrã completo</li> <li>Imprimir documentos</li> "
-"<li>Selecionar favoritos</li> <li>Permite abrir um editor completo para "
-"alterações que não sejam triviais</li>"
+msgid "View recent local and online documents"
+msgstr "Ver documentos recentes locais e online"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:6
+msgid "Access your Google, ownCloud or OneDrive content"
+msgstr "Aceda ao seu conteúdo Google, ownCloud e OneDrive"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:7
+msgid "Search through documents"
+msgstr "Procurar em documentos"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:8
+msgid "See new documents shared by friends"
+msgstr "Veja novos documentos partilhados por amigos"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:9
+msgid "View documents fullscreen"
+msgstr "Veja documentos em ecrã completo"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:10
+#| msgid "PDF Documents"
+msgid "Print documents"
+msgstr "Imprima documentos"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:11
+#| msgid "Select Items"
+msgid "Select favorites"
+msgstr "Selecionar favoritos"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:12
+msgid "Allow opening full featured editor for non-trivial changes"
+msgstr "Permitir abrir editor completo para alterações não triviais"
 
 #: ../data/org.gnome.Documents.desktop.in.h:2
 msgid "Access, manage and share documents"
@@ -101,80 +121,88 @@ msgstr "Janela maximizada"
 msgid "Window maximized state"
 msgstr "Estado de maximização da janela"
 
-#: ../src/documents.js:599
+#: ../src/documents.js:621
 msgid "Failed to print document"
 msgstr "Falha ao imprimir documento"
 
-#: ../src/documents.js:636 ../src/search.js:418
+#. Translators: this refers to local documents
+#: ../src/documents.js:658 ../src/search.js:427
 msgid "Local"
 msgstr "Local"
 
-#: ../src/documents.js:657
+#. Translators: Documents ships a "Getting Started with Documents"
+#. tutorial PDF. The "GNOME" string below is displayed as the author name
+#. of that document, and doesn't normally need to be translated.
+#: ../src/documents.js:679
 msgid "GNOME"
 msgstr "GNOME"
 
-#: ../src/documents.js:658
+#: ../src/documents.js:680
 msgid "Getting Started with Documents"
-msgstr "Primeiros Passos com o Documentos"
+msgstr "Primeiros passos com o Documentos"
 
-#: ../src/documents.js:674 ../src/documents.js:847 ../src/documents.js:909
-#: ../src/documents.js:1017
+#: ../src/documents.js:696 ../src/documents.js:877 ../src/documents.js:939
+#: ../src/documents.js:1047
 msgid "Collection"
 msgstr "Coleção"
 
-#: ../src/documents.js:726
+#. overridden
+#: ../src/documents.js:755
 msgid "Google Docs"
 msgstr "Google Docs"
 
-#: ../src/documents.js:727
+#: ../src/documents.js:756
 msgid "Google"
 msgstr "Google"
 
-#: ../src/documents.js:849 ../src/documents.js:1019
+#: ../src/documents.js:879 ../src/documents.js:1049
 msgid "Spreadsheet"
-msgstr "Folha de Cálculo"
+msgstr "Folha de cálculo"
 
-#: ../src/documents.js:851 ../src/documents.js:1021 ../src/presentation.js:47
+#: ../src/documents.js:881 ../src/documents.js:1051 ../src/presentation.js:47
 msgid "Presentation"
 msgstr "Apresentação"
 
-#: ../src/documents.js:853 ../src/documents.js:1023
+#: ../src/documents.js:883 ../src/documents.js:1053
 msgid "Document"
 msgstr "Documento"
 
-#: ../src/documents.js:887
+#. overridden
+#: ../src/documents.js:917
 msgid "ownCloud"
 msgstr "ownCloud"
 
-#: ../src/documents.js:951 ../src/documents.js:952
+#. overridden
+#: ../src/documents.js:981 ../src/documents.js:982
 msgid "OneDrive"
 msgstr "OneDrive"
 
-#: ../src/documents.js:1151
+#: ../src/documents.js:1181
 msgid "Please check the network connection."
-msgstr "Verifique a sua ligação à rede."
+msgstr "Por favor, verifique a sua ligação à rede."
 
-#: ../src/documents.js:1154
+#: ../src/documents.js:1184
 msgid "Please check the network proxy settings."
 msgstr "Verifique as definições de proxy de rede."
 
-#: ../src/documents.js:1157
+#: ../src/documents.js:1187
 msgid "Unable to sign in to the document service."
-msgstr "Incapaz de iniciar uma sessão no serviço de documentos."
+msgstr "Impossível iniciar uma sessão no serviço de documentos."
 
-#: ../src/documents.js:1160
+#: ../src/documents.js:1190
 msgid "Unable to locate this document."
-msgstr "Incapaz de localizar este documento."
+msgstr "Impossível localizar este documento."
 
-#: ../src/documents.js:1163
+#: ../src/documents.js:1193
 #, javascript-format
 msgid "Hmm, something is fishy (%d)."
-msgstr "Algo está errado (%d)."
+msgstr "Hmm, algo está errado (%d)."
 
-#: ../src/documents.js:1181
+#. Translators: %s is the title of a document
+#: ../src/documents.js:1211
 #, javascript-format
 msgid "Oops! Unable to load “%s”"
-msgstr "Incapaz de ler “%s”"
+msgstr "Oops! Impossível carregar “%s”"
 
 #: ../src/edit.js:192
 msgid "View"
@@ -182,48 +210,52 @@ msgstr "Ver"
 
 #: ../src/embed.js:142
 msgid "No Documents Found"
-msgstr "Nenhum Documento Encontrado"
+msgstr "Nenhum documento encontrado"
 
+#. Translators: %s here is "Settings", which is in a separate string due to
+#. markup, and should be translated only in the context of this sentence
 #: ../src/embed.js:163
 #, javascript-format
 msgid "You can add your online accounts in %s"
 msgstr "Pode adicionar as suas contas online em %s"
 
+#. Translators: this should be translated in the context of the
+#. "You can add your online accounts in Settings" sentence above
 #: ../src/embed.js:167
 msgid "Settings"
 msgstr "Definições"
 
-#: ../src/lib/gd-nav-bar.c:235
+#: ../src/lib/gd-nav-bar.c:242
 #, c-format
 msgid "Page %u of %u"
 msgstr "Página %u de %u"
 
 #: ../src/lib/gd-pdf-loader.c:247
 msgid "Unable to load the document"
-msgstr "Incapaz de ler o documento"
+msgstr "Impossível carregar o documento"
 
 #: ../src/lib/gd-pdf-loader.c:715
 msgid "LibreOffice is required to view this document"
-msgstr "É necessario o LibreOffice para visualizar este documento"
+msgstr "É necessário o LibreOffice para ver este documento"
 
 #. Translators: %s is the number of the page, already formatted
 #. * as a string, for example "Page 5".
 #.
-#: ../src/lib/gd-places-bookmarks.c:315
+#: ../src/lib/gd-places-bookmarks.c:321
 #, c-format
 msgid "Page %s"
 msgstr "Página %s"
 
-#: ../src/lib/gd-places-bookmarks.c:378
+#: ../src/lib/gd-places-bookmarks.c:384
 msgid "No bookmarks"
 msgstr "Nenhum marcador"
 
-#: ../src/lib/gd-places-bookmarks.c:386 ../src/lib/gd-places-links.c:257
+#: ../src/lib/gd-places-bookmarks.c:392 ../src/lib/gd-places-links.c:257
 #: ../src/view.js:71
 msgid "Loading…"
-msgstr "A Ler…"
+msgstr "A carregar…"
 
-#: ../src/lib/gd-places-bookmarks.c:651 ../src/preview.js:601
+#: ../src/lib/gd-places-bookmarks.c:657 ../src/preview.js:580
 msgid "Bookmarks"
 msgstr "Marcadores"
 
@@ -231,7 +263,7 @@ msgstr "Marcadores"
 msgid "No table of contents"
 msgstr "Nenhum índice"
 
-#: ../src/lib/gd-places-links.c:518
+#: ../src/lib/gd-places-links.c:514
 msgid "Contents"
 msgstr "Conteúdos"
 
@@ -239,92 +271,97 @@ msgstr "Conteúdos"
 msgid "Search"
 msgstr "Procurar"
 
-#: ../src/mainToolbar.js:90
+#: ../src/mainToolbar.js:87
 msgid "Back"
-msgstr "Retroceder"
+msgstr "Recuar"
 
-#: ../src/mainToolbar.js:163
+#: ../src/mainToolbar.js:132
 msgid "View items as a list"
 msgstr "Ver itens como uma lista"
 
-#: ../src/mainToolbar.js:169
+#: ../src/mainToolbar.js:138
 msgid "View items as a grid of icons"
-msgstr "Ver itens como uma grade de ícones"
+msgstr "Ver itens como uma grelha de ícones"
 
-#: ../src/mainToolbar.js:203
-#, javascript-format
-msgid "Results for “%s”"
-msgstr "Resultados para “%s”"
-
-#: ../src/mainToolbar.js:211
+#: ../src/mainToolbar.js:168
 msgid "Click on items to select them"
 msgstr "Clique nos itens para os selecionar"
 
-#: ../src/mainToolbar.js:213
+#: ../src/mainToolbar.js:170
 #, javascript-format
 msgid "%d selected"
 msgid_plural "%d selected"
 msgstr[0] "%d selecionado"
 msgstr[1] "%d selecionados"
 
-#: ../src/mainToolbar.js:240
+#: ../src/mainToolbar.js:200
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: ../src/mainToolbar.js:282
+#: ../src/mainToolbar.js:242
 msgid "Select Items"
-msgstr "Selecionar Itens"
+msgstr "Selecionar itens"
 
-#: ../src/mainWindow.js:273
+#: ../src/mainWindow.js:301
 msgid "translator-credits"
-msgstr "Duarte Loreto <happyguy_pt@hotmail.com>"
+msgstr ""
+"Duarte Loreto <happyguy_pt@hotmail.com>\n"
+"Pedro Albuquerque <palbuquerque73@gmail.com>"
 
-#: ../src/mainWindow.js:275
+#: ../src/mainWindow.js:303
 msgid "A document manager application"
 msgstr "Uma aplicação de gestão de documentos"
 
-#: ../src/notifications.js:86
+#: ../src/notifications.js:50
+msgid "Selected item has been deleted"
+msgid_plural "Selected items have been deleted"
+msgstr[0] "O item selecionado foi eliminado"
+msgstr[1] "Os itens selecionados foram eliminados"
+
+#: ../src/notifications.js:57
+msgid "Undo"
+msgstr "Desfazer"
+
+#: ../src/notifications.js:157
 #, javascript-format
 msgid "Printing “%s”: %s"
 msgstr "A imprimir “%s”: %s"
 
-#: ../src/notifications.js:142
+#: ../src/notifications.js:213
 msgid "Your documents are being indexed"
 msgstr "Os seus documentos estão a ser indexados"
 
-#: ../src/notifications.js:143
+#: ../src/notifications.js:214
 msgid "Some documents might not be available during this process"
 msgstr "Alguns documentos poderão não estar disponíveis durante este processo"
 
-#: ../src/notifications.js:165
+#. Translators: %s refers to an online account provider, e.g.
+#. "Google", or "Windows Live".
+#: ../src/notifications.js:236
 #, javascript-format
 msgid "Fetching documents from %s"
 msgstr "A obter os documentos de %s"
 
-#: ../src/notifications.js:167
+#: ../src/notifications.js:238
 msgid "Fetching documents from online accounts"
 msgstr "A obter os documentos de contas online"
 
 #: ../src/password.js:46
 msgid "Password Required"
-msgstr "Senha Necessária"
+msgstr "Senha necessária"
 
 #: ../src/password.js:49
 msgid "_Unlock"
-msgstr "_Destrancar"
+msgstr "_Desbloquear"
 
 #: ../src/password.js:65
 #, javascript-format
 msgid "Document %s is locked and requires a password to be opened."
-msgstr "O documento %s está trancado e é necessária uma senha para o abrir."
+msgstr "O documento %s está bloqueado e é necessária uma senha para o abrir."
 
 #: ../src/password.js:79
 msgid "_Password"
 msgstr "_Senha"
-
-#: ../src/places.js:56
-msgid "Close"
-msgstr "Fechar"
 
 #: ../src/presentation.js:104
 msgid "Running in presentation mode"
@@ -332,64 +369,72 @@ msgstr "A executar em modo de apresentação"
 
 #: ../src/presentation.js:157
 msgid "Present On"
-msgstr "Apresentação Ativa"
+msgstr "Apresentar em"
 
-#: ../src/preview.js:609
+#: ../src/preview.js:588
 msgid "Bookmark this page"
 msgstr "Marcar esta página"
 
-#: ../src/preview.js:853 ../src/selections.js:857
+#. Translators: this is the Open action in a context menu
+#: ../src/preview.js:823 ../src/selections.js:857
 #, javascript-format
 msgid "Open with %s"
 msgstr "Abrir com %s"
 
-#: ../src/preview.js:915
+#: ../src/preview.js:885
 msgid "Find Previous"
-msgstr "Encontrar Anterior"
+msgstr "Localizar anterior"
 
-#: ../src/preview.js:922
+#: ../src/preview.js:892
 msgid "Find Next"
-msgstr "Encontrar Posterior"
+msgstr "Localizar seguinte"
 
+#. properties button
 #: ../src/properties.js:61 ../src/resources/preview-menu.ui.h:9
 #: ../src/selections.js:767
 msgid "Properties"
 msgstr "Propriedades"
 
-#: ../src/properties.js:63 ../src/sharing.js:102
-msgid "Done"
-msgstr "Terminado"
-
-#: ../src/properties.js:83
+#. Title item
+#. Translators: "Title" is the label next to the document title
+#. in the properties dialog
+#: ../src/properties.js:81
 msgctxt "Document Title"
 msgid "Title"
 msgstr "Título"
 
-#: ../src/properties.js:92
+#. Translators: "Author" is the label next to the document author
+#. in the properties dialog
+#: ../src/properties.js:90
 msgctxt "Document Author"
 msgid "Author"
 msgstr "Autor"
 
-#: ../src/properties.js:99
+#. Source item
+#: ../src/properties.js:97
 msgid "Source"
 msgstr "Origem"
 
-#: ../src/properties.js:105
+#. Date Modified item
+#: ../src/properties.js:103
 msgid "Date Modified"
-msgstr "Data de Alteração"
+msgstr "Data de modificação"
 
-#: ../src/properties.js:112
+#: ../src/properties.js:110
 msgid "Date Created"
-msgstr "Data de Criação"
+msgstr "Data de criação"
 
-#: ../src/properties.js:121
+#. Document type item
+#. Translators: "Type" is the label next to the document type
+#. (PDF, spreadsheet, ...) in the properties dialog
+#: ../src/properties.js:119
 msgctxt "Document Type"
 msgid "Type"
 msgstr "Tipo"
 
 #: ../src/resources/app-menu.ui.h:1
 msgid "Fullscreen"
-msgstr "Ecrã Completo"
+msgstr "Ecrã completo"
 
 #: ../src/resources/app-menu.ui.h:2
 msgid "Help"
@@ -407,6 +452,8 @@ msgstr "Sair"
 msgid "_Copy"
 msgstr "_Copiar"
 
+#. open button
+#. Translators: this is the Open action in a context menu
 #: ../src/resources/preview-menu.ui.h:1 ../src/selections.js:747
 #: ../src/selections.js:860
 msgid "Open"
@@ -426,11 +473,11 @@ msgstr "Apresentar"
 
 #: ../src/resources/preview-menu.ui.h:5
 msgid "Zoom In"
-msgstr "Aumentar Zoom"
+msgstr "Ampliar"
 
 #: ../src/resources/preview-menu.ui.h:6
 msgid "Zoom Out"
-msgstr "Reduzir Zoom"
+msgstr "Reduzir"
 
 #: ../src/resources/preview-menu.ui.h:7
 msgid "Rotate ↶"
@@ -442,219 +489,266 @@ msgstr "Rodar ↷"
 
 #: ../src/resources/selection-menu.ui.h:1
 msgid "Select All"
-msgstr "Selecionar Tudo"
+msgstr "Selecionar tudo"
 
 #: ../src/resources/selection-menu.ui.h:2
 msgid "Select None"
-msgstr "Não Selecionar Nada"
+msgstr "Não selecionar nada"
 
 #: ../src/search.js:114
 msgid "Category"
 msgstr "Categoria"
 
-#: ../src/search.js:119 ../src/search.js:171 ../src/search.js:256
-#: ../src/search.js:412
+#. Translators: this refers to new and recent documents
+#. Translators: this refers to documents
+#: ../src/search.js:119 ../src/search.js:180 ../src/search.js:265
+#: ../src/search.js:421
 msgid "All"
 msgstr "Todas"
 
+#. Translators: this refers to favorite documents
 #: ../src/search.js:125
 msgid "Favorites"
 msgstr "Favoritos"
 
+#. Translators: this refers to shared documents
 #: ../src/search.js:130
 msgid "Shared with you"
 msgstr "Partilhados consigo"
 
-#: ../src/search.js:168
+#. Translators: "Type" refers to a search filter on the document type
+#. (PDF, spreadsheet, ...)
+#: ../src/search.js:177
 msgctxt "Search Filter"
 msgid "Type"
 msgstr "Tipo"
 
-#: ../src/search.js:173
+#: ../src/search.js:182
 msgid "Collections"
 msgstr "Coleções"
 
-#: ../src/search.js:177
+#: ../src/search.js:186
 msgid "PDF Documents"
 msgstr "Documentos PDF"
 
-#: ../src/search.js:181
+#: ../src/search.js:190
 msgid "Presentations"
 msgstr "Apresentações"
 
-#: ../src/search.js:184
+#: ../src/search.js:193
 msgid "Spreadsheets"
-msgstr "Folhas de Cálculo"
+msgstr "Folhas de cálculo"
 
-#: ../src/search.js:187
+#: ../src/search.js:196
 msgid "Text Documents"
-msgstr "Documentos de Texto"
+msgstr "Documentos de texto"
 
-#: ../src/search.js:253
+#. Translators: this is a verb that refers to "All", "Title" and "Author",
+#. as in "Match All", "Match Title" and "Match Author"
+#: ../src/search.js:262
 msgid "Match"
-msgstr "Coincidir"
+msgstr "Comparar"
 
-#: ../src/search.js:259
+#. Translators: "Title" refers to "Match Title" when searching
+#: ../src/search.js:268
 msgctxt "Search Filter"
 msgid "Title"
 msgstr "Título"
 
-#: ../src/search.js:262
+#. Translators: "Author" refers to "Match Author" when searching
+#: ../src/search.js:271
 msgctxt "Search Filter"
 msgid "Author"
 msgstr "Autor"
 
-#: ../src/search.js:408
+#: ../src/search.js:417
 msgid "Sources"
 msgstr "Origens"
 
 #: ../src/selections.js:461
 msgid "You don't have any collections yet. Enter a new collection name above."
-msgstr "Ainda não possui coleções. Introduza acima o nome de uma nova coleção."
+msgstr "Ainda não possui coleções. Insira acima o nome de uma nova coleção."
 
 #: ../src/selections.js:604
 msgid "Create new collection"
 msgstr "Criar uma nova coleção"
 
+#. Translators: "Collections" refers to documents in this context
 #: ../src/selections.js:640
 msgctxt "Dialog Title"
 msgid "Collections"
 msgstr "Coleções"
 
+#. print button
 #: ../src/selections.js:752
 msgid "Print"
 msgstr "Imprimir"
 
+#. trash button
 #: ../src/selections.js:757
 msgid "Delete"
-msgstr "Apagar"
+msgstr "Eliminar"
 
+#. share button
 #: ../src/selections.js:762
 msgid "Share"
 msgstr "Partilhar"
 
+#. organize button
 #: ../src/selections.js:772
 msgid "Add to Collection"
-msgstr "Adicionar à Coleção"
+msgstr "Adicionar à coleção"
 
-#: ../src/sharing.js:98
+#: ../src/sharing.js:107
 msgid "Sharing Settings"
-msgstr "Definições de Partilha"
+msgstr "Definições de partilha"
 
-#: ../src/sharing.js:135
+#. Label for Done button in Sharing dialog
+#: ../src/sharing.js:111
+msgid "Done"
+msgstr "Terminado"
+
+#. Label for widget group for changing document permissions
+#: ../src/sharing.js:144
 msgid "Document permissions"
 msgstr "Permissões do documento"
 
-#: ../src/sharing.js:142 ../src/sharing.js:320
+#. Label for permission change in Sharing dialog
+#: ../src/sharing.js:151 ../src/sharing.js:329
 msgid "Change"
 msgstr "Alterar"
 
-#: ../src/sharing.js:166 ../src/sharing.js:295
+#. Label for radiobutton that sets doc permission to private
+#: ../src/sharing.js:175 ../src/sharing.js:304
 msgid "Private"
 msgstr "Privado"
 
-#: ../src/sharing.js:176 ../src/sharing.js:288
+#: ../src/sharing.js:185 ../src/sharing.js:297
 msgid "Public"
 msgstr "Público"
 
-#: ../src/sharing.js:180 ../src/sharing.js:290
+#. Label for checkbutton that sets doc permission to Can edit
+#: ../src/sharing.js:189 ../src/sharing.js:299
 msgid "Everyone can edit"
 msgstr "Qualquer pessoa pode editar"
 
-#: ../src/sharing.js:187
+#. Label for widget group used for adding new contacts
+#: ../src/sharing.js:196
 msgid "Add people"
 msgstr "Adicionar pessoas"
 
-#: ../src/sharing.js:194
+#. Editable text in entry field
+#: ../src/sharing.js:203
 msgid "Enter an email address"
-msgstr "Introduza um endereço de email"
+msgstr "Insira um endereço de email"
 
-#: ../src/sharing.js:209 ../src/sharing.js:376
+#: ../src/sharing.js:218 ../src/sharing.js:370
 msgid "Can edit"
 msgstr "Pode editar"
 
-#: ../src/sharing.js:209 ../src/sharing.js:379
+#: ../src/sharing.js:218 ../src/sharing.js:373
 msgid "Can view"
-msgstr "Pode visualizar"
+msgstr "Pode ver"
 
-#: ../src/sharing.js:216
+#: ../src/sharing.js:225
 msgid "Add"
 msgstr "Adicionar"
 
-#: ../src/sharing.js:292
+#: ../src/sharing.js:301
 msgid "Everyone can read"
 msgstr "Qualquer pessoa pode ler"
 
-#: ../src/sharing.js:307
+#: ../src/sharing.js:316
 msgid "Save"
 msgstr "Gravar"
 
-#: ../src/sharing.js:373
+#: ../src/sharing.js:367
 msgid "Owner"
 msgstr "Dono"
 
-#: ../src/sharing.js:442
+#: ../src/sharing.js:436
 #, javascript-format
 msgid "You can ask %s for access"
 msgstr "Pode pedir acesso a %s"
 
-#: ../src/sharing.js:479 ../src/sharing.js:515 ../src/sharing.js:572
-#: ../src/sharing.js:589 ../src/sharing.js:608
+#: ../src/sharing.js:473 ../src/sharing.js:509 ../src/sharing.js:566
+#: ../src/sharing.js:583 ../src/sharing.js:602
 msgid "The document was not updated"
 msgstr "O documento não foi atualizado"
 
 #: ../src/shellSearchProvider.js:294
 msgid "Untitled Document"
-msgstr "Documento Sem Título"
+msgstr "Documento sem título"
 
 #: ../src/trackerController.js:170
 msgid "Unable to fetch the list of documents"
-msgstr "Incapaz de obter a lista de documentos"
+msgstr "Impossível obter a lista de documentos"
 
+#. Translators: "more" refers to documents in this context
 #: ../src/view.js:62 ../src/view.js:93
 msgid "Load More"
-msgstr "Ler Mais"
+msgstr "Ler mais"
 
-#: ../src/view.js:307
+#: ../src/view.js:308
 msgid "Yesterday"
 msgstr "Ontem"
 
-#: ../src/view.js:309
+#: ../src/view.js:310
 #, javascript-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
 msgstr[0] "%d dia atrás"
 msgstr[1] "%d dias atrás"
 
-#: ../src/view.js:313
+#: ../src/view.js:314
 msgid "Last week"
 msgstr "Semana passada"
 
-#: ../src/view.js:315
+#: ../src/view.js:316
 #, javascript-format
 msgid "%d week ago"
 msgid_plural "%d weeks ago"
 msgstr[0] "%d semana atrás"
 msgstr[1] "%d semanas atrás"
 
-#: ../src/view.js:319
+#: ../src/view.js:320
 msgid "Last month"
 msgstr "Mês passado"
 
-#: ../src/view.js:321
+#: ../src/view.js:322
 #, javascript-format
 msgid "%d month ago"
 msgid_plural "%d months ago"
 msgstr[0] "%d mês atrás"
 msgstr[1] "%d meses atrás"
 
-#: ../src/view.js:325
+#: ../src/view.js:326
 msgid "Last year"
 msgstr "Ano passado"
 
-#: ../src/view.js:327
+#: ../src/view.js:328
 #, javascript-format
 msgid "%d year ago"
 msgid_plural "%d years ago"
 msgstr[0] "%d ano atrás"
 msgstr[1] "%d anos atrás"
+
+#~ msgid ""
+#~ "<li>View recent local and online documents</li> <li>Access your Google, "
+#~ "ownCloud or OneDrive content</li> <li>Search through documents</li> "
+#~ "<li>See new documents shared by friends</li> <li>View documents "
+#~ "fullscreen</li> <li>Print documents</li> <li>Select favorites</li> "
+#~ "<li>Allow opening full featured editor for non-trivial changes</li>"
+#~ msgstr ""
+#~ "<li>Visualizar documentos recentes locais e online</li> <li>Aceder aos "
+#~ "seus conteúdos Google, ownCloud ou OneDrive</li> <li>Procurar nos "
+#~ "documentos</li> <li>Visualizar novos documentos partilhados por amigos</"
+#~ "li> <li>Visualizar documentos em modo de ecrã completo</li> <li>Imprimir "
+#~ "documentos</li> <li>Selecionar favoritos</li> <li>Permite abrir um editor "
+#~ "completo para alterações que não sejam triviais</li>"
+
+#~ msgid "Results for “%s”"
+#~ msgstr "Resultados para “%s”"
+
+#~ msgid "Close"
+#~ msgstr "Fechar"
