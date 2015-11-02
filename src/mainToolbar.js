@@ -165,7 +165,7 @@ const OverviewToolbar = new Lang.Class({
                                                 action_target: GLib.Variant.new('s', 'icon') });
         viewAsBox.add(this._viewGridButton);
 
-        this._viewSettingsId = Application.settings.connect('changed::view-as',
+        this._viewSettingsId = Application.application.connect('action-state-changed::view-as',
             Lang.bind(this, this._updateViewAsButtons));
         this._updateViewAsButtons();
     },
