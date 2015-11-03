@@ -6,6 +6,7 @@ data/org.gnome.Documents.appdata.xml.in
 data/org.gnome.Documents.desktop.in
 data/org.gnome.documents.gschema.xml
 [type: gettext/glade]data/ui/app-menu.ui
+[type: gettext/glade]data/ui/help-overlay.ui
 [type: gettext/glade]data/ui/organize-collection-dialog.ui
 [type: gettext/glade]data/ui/preview-context-menu.ui
 [type: gettext/glade]data/ui/preview-menu.ui

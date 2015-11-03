@@ -10,4 +10,7 @@
     <file alias="ui/dnd-counter.svg" preprocess="to-pixdata">media/dnd-counter.svg</file>
     <file alias="ui/thumbnail-frame.png" preprocess="to-pixdata">media/thumbnail-frame.png</file>
   </gresource>
+  <gresource prefix="/org/gnome/Documents/gtk">
+    <file alias="help-overlay.ui" preprocess="xml-stripblanks">ui/help-overlay.ui</file>
+  </gresource>
 </gresources>
