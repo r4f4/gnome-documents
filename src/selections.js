@@ -861,6 +861,13 @@ const _SELECTION_TOOLBAR_DEFAULT_WIDTH = 500;
 const SelectionToolbar = new Lang.Class({
     Name: 'SelectionToolbar',
     Extends: Gtk.ActionBar,
+    Template: 'resource:///org/gnome/Documents/ui/selection-toolbar.ui',
+    InternalChildren: [ 'toolbarOpen',
+                        'toolbarPrint',
+                        'toolbarTrash',
+                        'toolbarShare',
+                        'toolbarProperties',
+                        'toolbarCollection' ],
 
     _init: function() {
         this._itemListeners = {};
@@ -868,43 +875,18 @@ const SelectionToolbar = new Lang.Class({
 
         this.parent();
 
-        // open button
-        this._toolbarOpen = new Gtk.Button({ label: _("Open") });
-        this._toolbarOpen.show();
-        this.pack_start(this._toolbarOpen);
+
         this._toolbarOpen.connect('clicked', Lang.bind(this, this._onToolbarOpen));
-
-        // print button
-        this._toolbarPrint = new Gtk.Button({ label: _("Print") });
-        this._toolbarPrint.show();
-        this.pack_start(this._toolbarPrint);
         this._toolbarPrint.connect('clicked', Lang.bind(this, this._onToolbarPrint));
-
-        // trash button
-        this._toolbarTrash = new Gtk.Button({ label: _("Delete") });
-        this._toolbarTrash.show();
-        this.pack_start(this._toolbarTrash);
         this._toolbarTrash.connect('clicked', Lang.bind(this, this._onToolbarTrash));
 
-        // share button
         if (!Application.application.isBooks) {
-            this._toolbarShare = new Gtk.Button({ label: _("Share") });
-            this._toolbarShare.show();
-            this.pack_end(this._toolbarShare);
             this._toolbarShare.connect('clicked', Lang.bind(this, this._onToolbarShare));
+            this._toolbarShare.show();
         }
-
-        // properties button
-        this._toolbarProperties = new Gtk.Button({ label: _("Properties") });
-        this._toolbarProperties.show();
-        this.pack_end(this._toolbarProperties);
         this._toolbarProperties.connect('clicked', Lang.bind(this, this._onToolbarProperties));
-
-        // collections button
-        this._toolbarCollection = new Gtk.Button({ label: _("Collections") });
-        this._toolbarCollection.show();
-        this.pack_end(this._toolbarCollection);
         this._toolbarCollection.connect('clicked', Lang.bind(this, this._onToolbarCollection));
+
         Application.modeController.connect('window-mode-changed',
             Lang.bind(this, this._updateCollectionsButton));
         Application.documentManager.connect('active-collection-changed',
@@ -1009,7 +991,7 @@ const SelectionToolbar = new Lang.Class({
         this._toolbarProperties.set_sensitive(showProperties);
         this._toolbarTrash.set_sensitive(showTrash);
         this._toolbarOpen.set_sensitive(showOpen);
-        if (this._toolbarShare)
+        if (!Application.application.isBooks)
             this._toolbarShare.set_sensitive(showShare);
         this._toolbarCollection.set_sensitive(showCollection);
 

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <!-- interface-requires gtk+ 3.11 -->
+  <template class="Gjs_SelectionToolbar" parent="GtkActionBar">
+    <property name="visible">False</property>
+      <child>
+        <object class="GtkButton" id="toolbarOpen">
+          <property name="visible">True</property>
+	  <property name="label" translatable="yes">Open</property>
+        </object>
+        <packing>
+          <property name="pack_type">start</property>
+        </packing>
+      </child>
+      <child>
+        <object class="GtkButton" id="toolbarPrint">
+          <property name="visible">True</property>
+	  <property name="label" translatable="yes">Print</property>
+        </object>
+        <packing>
+          <property name="pack_type">start</property>
+        </packing>
+      </child>
+      <child>
+        <object class="GtkButton" id="toolbarTrash">
+          <property name="visible">True</property>
+	  <property name="label" translatable="yes">Delete</property>
+        </object>
+        <packing>
+          <property name="pack_type">start</property>
+        </packing>
+      </child>
+      <child>
+        <object class="GtkButton" id="toolbarShare">
+          <property name="visible">False</property>
+          <property name="no-show-all">True</property>
+	  <property name="label" translatable="yes">Share</property>
+        </object>
+        <packing>
+          <property name="pack_type">end</property>
+        </packing>
+      </child>
+      <child>
+        <object class="GtkButton" id="toolbarProperties">
+          <property name="visible">True</property>
+	  <property name="label" translatable="yes">Properties</property>
+        </object>
+        <packing>
+          <property name="pack_type">end</property>
+        </packing>
+      </child>
+      <child>
+        <object class="GtkButton" id="toolbarCollection">
+          <property name="visible">True</property>
+	  <property name="label" translatable="yes">Collections</property>
+        </object>
+        <packing>
+          <property name="pack_type">end</property>
+        </packing>
+      </child>
+  </template>
+</interface>
