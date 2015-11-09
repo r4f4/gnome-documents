@@ -860,54 +860,55 @@ const _SELECTION_TOOLBAR_DEFAULT_WIDTH = 500;
 
 const SelectionToolbar = new Lang.Class({
     Name: 'SelectionToolbar',
-    Extends: Gtk.Revealer,
+    Extends: Gtk.ActionBar,
 
     _init: function() {
         this._itemListeners = {};
         this._insideRefresh = false;
 
-        this.parent({ transition_type: Gtk.RevealerTransitionType.SLIDE_UP });
-
-        let toolbar = new Gtk.ActionBar();
-        this.add(toolbar);
+        this.parent();
 
         // open button
         this._toolbarOpen = new Gtk.Button({ label: _("Open") });
-        toolbar.pack_start(this._toolbarOpen);
+        this._toolbarOpen.show();
+        this.pack_start(this._toolbarOpen);
         this._toolbarOpen.connect('clicked', Lang.bind(this, this._onToolbarOpen));
 
         // print button
         this._toolbarPrint = new Gtk.Button({ label: _("Print") });
-        toolbar.pack_start(this._toolbarPrint);
+        this._toolbarPrint.show();
+        this.pack_start(this._toolbarPrint);
         this._toolbarPrint.connect('clicked', Lang.bind(this, this._onToolbarPrint));
 
         // trash button
         this._toolbarTrash = new Gtk.Button({ label: _("Delete") });
-        toolbar.pack_start(this._toolbarTrash);
+        this._toolbarTrash.show();
+        this.pack_start(this._toolbarTrash);
         this._toolbarTrash.connect('clicked', Lang.bind(this, this._onToolbarTrash));
 
         // share button
         if (!Application.application.isBooks) {
             this._toolbarShare = new Gtk.Button({ label: _("Share") });
-            toolbar.pack_end(this._toolbarShare);
+            this._toolbarShare.show();
+            this.pack_end(this._toolbarShare);
             this._toolbarShare.connect('clicked', Lang.bind(this, this._onToolbarShare));
         }
 
         // properties button
         this._toolbarProperties = new Gtk.Button({ label: _("Properties") });
-        toolbar.pack_end(this._toolbarProperties);
+        this._toolbarProperties.show();
+        this.pack_end(this._toolbarProperties);
         this._toolbarProperties.connect('clicked', Lang.bind(this, this._onToolbarProperties));
 
         // collections button
         this._toolbarCollection = new Gtk.Button({ label: _("Collections") });
-        toolbar.pack_end(this._toolbarCollection);
+        this._toolbarCollection.show();
+        this.pack_end(this._toolbarCollection);
         this._toolbarCollection.connect('clicked', Lang.bind(this, this._onToolbarCollection));
         Application.modeController.connect('window-mode-changed',
             Lang.bind(this, this._updateCollectionsButton));
         Application.documentManager.connect('active-collection-changed',
             Lang.bind(this, this._updateCollectionsButton));
-
-        this.show_all();
 
         Application.selectionController.connect('selection-mode-changed',
             Lang.bind(this, this._onSelectionModeChanged));
@@ -928,7 +929,7 @@ const SelectionToolbar = new Lang.Class({
         if (mode)
             this._onSelectionChanged();
         else
-            this.set_reveal_child(false);
+            this.hide();
     },
 
     _onSelectionChanged: function() {
@@ -939,7 +940,7 @@ const SelectionToolbar = new Lang.Class({
         this._setItemListeners(selection);
 
         this._setItemVisibility();
-        this.set_reveal_child(true);
+        this.show();
     },
 
     _setItemListeners: function(selection) {
