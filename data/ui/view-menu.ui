@@ -52,6 +52,60 @@
             </child>
           </object>
         </child>
+        <child>
+          <object class="GtkBox">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="orientation">vertical</property>
+            <child>
+              <object class="GtkSeparator">
+                <property name="visible">True</property>
+                <property name="orientation">horizontal</property>
+                <property name="margin-top">6</property>
+                <property name="margin-bottom">6</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="halign">start</property>
+                <property name="label" translatable="yes">Sort</property>
+                <property name="margin-start">12</property>
+                <style>
+                  <class name="separator"/>
+                </style>
+              </object>
+            </child>
+            <child>
+              <object class="GtkModelButton">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="text" translatable="yes">Author</property>
+                <property name="action-name">app.sort-by</property>
+                <property name="action-target">'secondary-text'</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkModelButton">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="text" translatable="yes">Date</property>
+                <property name="action-name">app.sort-by</property>
+                <property name="action-target">'mtime'</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkModelButton">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="text" translatable="yes">Name</property>
+                <property name="action-name">app.sort-by</property>
+                <property name="action-target">'primary-text'</property>
+              </object>
+            </child>
+          </object>
+        </child>
       </object>
     </child>
   </object>

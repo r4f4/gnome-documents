@@ -151,7 +151,7 @@ const OverviewToolbar = new Lang.Class({
         builder.add_from_resource('/org/gnome/Documents/ui/view-menu.ui');
         let viewMenu = builder.get_object('viewMenu');
 
-        this._viewMenuButton = new Gtk.MenuButton({ tooltip_text: _("View items as a list or a grid"),
+        this._viewMenuButton = new Gtk.MenuButton({ tooltip_text: _("View Menu"),
                                                     popover: viewMenu });
         this.toolbar.pack_end(this._viewMenuButton);
 
