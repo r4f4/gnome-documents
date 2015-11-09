@@ -308,7 +308,7 @@ const OverviewToolbar = new Lang.Class({
         }
 
         if (this._viewSettingsId != 0) {
-            Application.settings.disconnect(this._viewSettingsId);
+            Application.application.disconnect(this._viewSettingsId);
             this._viewSettingsId = 0;
         }
     },
