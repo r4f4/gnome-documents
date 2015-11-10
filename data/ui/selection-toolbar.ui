@@ -13,9 +13,41 @@
         </packing>
       </child>
       <child>
+        <object class="GtkSeparator">
+          <property name="visible">1</property>
+          <property name="orientation">vertical</property>
+        </object>
+      </child>
+      <child>
+        <object class="GtkButton" id="toolbarShare">
+          <property name="visible">0</property>
+          <property name="no-show-all">1</property>
+          <style>
+            <class name="image-button"/>
+          </style>
+          <child>
+            <object class="GtkImage">
+              <property name="visible">1</property>
+              <property name="icon_name">emblem-shared-symbolic</property>
+            </object>
+          </child>
+        </object>
+        <packing>
+          <property name="pack_type">start</property>
+        </packing>
+      </child>
+      <child>
         <object class="GtkButton" id="toolbarPrint">
           <property name="visible">1</property>
-	  <property name="label" translatable="yes">Print</property>
+          <style>
+            <class name="image-button"/>
+          </style>
+          <child>
+            <object class="GtkImage">
+              <property name="visible">1</property>
+              <property name="icon_name">document-print-symbolic</property>
+            </object>
+          </child>
         </object>
         <packing>
           <property name="pack_type">start</property>
@@ -24,20 +56,18 @@
       <child>
         <object class="GtkButton" id="toolbarTrash">
           <property name="visible">1</property>
-	  <property name="label" translatable="yes">Delete</property>
+          <style>
+            <class name="image-button"/>
+          </style>
+          <child>
+            <object class="GtkImage">
+              <property name="visible">1</property>
+              <property name="icon_name">user-trash-symbolic</property>
+            </object>
+          </child>
         </object>
         <packing>
           <property name="pack_type">start</property>
-        </packing>
-      </child>
-      <child>
-        <object class="GtkButton" id="toolbarShare">
-          <property name="visible">0</property>
-          <property name="no-show-all">1</property>
-	  <property name="label" translatable="yes">Share</property>
-        </object>
-        <packing>
-          <property name="pack_type">end</property>
         </packing>
       </child>
       <child>
