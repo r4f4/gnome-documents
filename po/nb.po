@@ -5,10 +5,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-documents 3.17.x\n"
+"Project-Id-Version: gnome-documents 3.19.x\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-07 20:11+0200\n"
-"PO-Revision-Date: 2015-09-07 20:12+0200\n"
+"POT-Creation-Date: 2015-11-14 16:18+0100\n"
+"PO-Revision-Date: 2015-11-14 16:19+0100\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian bokmål <i18n-nb@lister.ping.uio.no>\n"
 "Language: \n"
@@ -18,8 +18,8 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../data/org.gnome.Books.appdata.xml.in.h:1
-#: ../data/org.gnome.Books.desktop.in.h:1 ../src/application.js:117
-#: ../src/lib/gd-utils.c:418
+#: ../data/org.gnome.Books.desktop.in.h:1 ../src/application.js:114
+#: ../src/embed.js:80 ../src/lib/gd-utils.c:418
 msgid "Books"
 msgstr "Bøker"
 
@@ -82,48 +82,48 @@ msgid "View as type"
 msgstr "Vis som type"
 
 #: ../data/org.gnome.books.gschema.xml.h:3
-#: ../data/org.gnome.documents.gschema.xml.h:3
+#: ../data/org.gnome.documents.gschema.xml.h:5
 msgid "Window size"
 msgstr "Vindustørrelse"
 
 #: ../data/org.gnome.books.gschema.xml.h:4
-#: ../data/org.gnome.documents.gschema.xml.h:4
+#: ../data/org.gnome.documents.gschema.xml.h:6
 msgid "Window size (width and height)."
 msgstr "Vindustørrelse (bredde og høyde)."
 
 #: ../data/org.gnome.books.gschema.xml.h:5
-#: ../data/org.gnome.documents.gschema.xml.h:5
+#: ../data/org.gnome.documents.gschema.xml.h:7
 msgid "Window position"
 msgstr "Vinduposisjon"
 
 #: ../data/org.gnome.books.gschema.xml.h:6
-#: ../data/org.gnome.documents.gschema.xml.h:6
+#: ../data/org.gnome.documents.gschema.xml.h:8
 msgid "Window position (x and y)."
 msgstr "Vinduposisjon (x og y)."
 
 #: ../data/org.gnome.books.gschema.xml.h:7
-#: ../data/org.gnome.documents.gschema.xml.h:7
+#: ../data/org.gnome.documents.gschema.xml.h:9
 msgid "Window maximized"
 msgstr "Vindu maksimert"
 
 #: ../data/org.gnome.books.gschema.xml.h:8
-#: ../data/org.gnome.documents.gschema.xml.h:8
+#: ../data/org.gnome.documents.gschema.xml.h:10
 msgid "Window maximized state"
 msgstr "Om vinduet er maksimert eller ikke"
 
 #: ../data/org.gnome.books.gschema.xml.h:9
-#: ../data/org.gnome.documents.gschema.xml.h:9
+#: ../data/org.gnome.documents.gschema.xml.h:11
 msgid "Night mode"
 msgstr "Nattmodus"
 
 #: ../data/org.gnome.books.gschema.xml.h:10
-#: ../data/org.gnome.documents.gschema.xml.h:10
+#: ../data/org.gnome.documents.gschema.xml.h:12
 msgid "Whether the application is in night mode."
 msgstr "Hvorvidt programmet er i nattmodus."
 
 #: ../data/org.gnome.Documents.appdata.xml.in.h:1
-#: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:114
-#: ../src/lib/gd-utils.c:411 ../src/mainWindow.js:53
+#: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:117
+#: ../src/embed.js:80 ../src/lib/gd-utils.c:411 ../src/mainWindow.js:54
 msgid "Documents"
 msgstr "Dokumenter"
 
@@ -179,6 +179,14 @@ msgstr "Aksesser, håndter og del dokumenter"
 msgid "Docs;PDF;Document;"
 msgstr "Dokumentasjon;PDF;Dokument;"
 
+#: ../data/org.gnome.documents.gschema.xml.h:3
+msgid "Sort by"
+msgstr "Sorter etter"
+
+#: ../data/org.gnome.documents.gschema.xml.h:4
+msgid "Sort by type"
+msgstr "Sorter etter type"
+
 #: ../data/ui/app-menu.ui.h:1
 msgid "Fullscreen"
 msgstr "Fullskjerm"
@@ -226,8 +234,8 @@ msgstr "_Kopier"
 
 #. open button
 #. Translators: this is the Open action in a context menu
-#: ../data/ui/preview-menu.ui.h:1 ../src/selections.js:861
-#: ../src/selections.js:989
+#: ../data/ui/preview-menu.ui.h:1 ../src/selections.js:875
+#: ../src/selections.js:1003
 msgid "Open"
 msgstr "Åpne"
 
@@ -261,7 +269,7 @@ msgstr "Roter ↷"
 
 #. properties button
 #: ../data/ui/preview-menu.ui.h:9 ../src/properties.js:62
-#: ../src/selections.js:883
+#: ../src/selections.js:897
 msgid "Properties"
 msgstr "Egenskaper"
 
@@ -278,90 +286,90 @@ msgid "Failed to print document"
 msgstr "Klarte ikke å skrive ut dokumentet"
 
 #. Translators: this refers to local documents
-#: ../src/documents.js:667 ../src/search.js:509
+#: ../src/documents.js:672 ../src/search.js:510
 msgid "Local"
 msgstr "Lokalt"
 
 #. Translators: Documents ships a "Getting Started with Documents"
 #. tutorial PDF. The "GNOME" string below is displayed as the author name
 #. of that document, and doesn't normally need to be translated.
-#: ../src/documents.js:694
+#: ../src/documents.js:699
 msgid "GNOME"
 msgstr "GNOME"
 
-#: ../src/documents.js:695
+#: ../src/documents.js:700
 msgid "Getting Started with Documents"
 msgstr "Kom i gang med Dokumenter"
 
-#: ../src/documents.js:711 ../src/documents.js:903 ../src/documents.js:966
-#: ../src/documents.js:1074
+#: ../src/documents.js:716 ../src/documents.js:919 ../src/documents.js:987
+#: ../src/documents.js:1103
 msgid "Collection"
 msgstr "Samling"
 
 #. overridden
-#: ../src/documents.js:781
+#: ../src/documents.js:797
 msgid "Google Docs"
 msgstr "Google Docs"
 
-#: ../src/documents.js:782
+#: ../src/documents.js:798
 msgid "Google"
 msgstr "Google"
 
-#: ../src/documents.js:905 ../src/documents.js:1076
+#: ../src/documents.js:921 ../src/documents.js:1105
 msgid "Spreadsheet"
 msgstr "Regneark"
 
-#: ../src/documents.js:907 ../src/documents.js:1078 ../src/presentation.js:49
+#: ../src/documents.js:923 ../src/documents.js:1107 ../src/presentation.js:49
 msgid "Presentation"
 msgstr "Presentasjon"
 
-#: ../src/documents.js:909 ../src/documents.js:1080
+#: ../src/documents.js:925 ../src/documents.js:1109
 msgid "e-Book"
 msgstr "e-bok"
 
-#: ../src/documents.js:911 ../src/documents.js:1082
+#: ../src/documents.js:927 ../src/documents.js:1111
 msgid "Document"
 msgstr "Dokument"
 
 #. overridden
-#: ../src/documents.js:945
+#: ../src/documents.js:966
 msgid "ownCloud"
 msgstr "ownCloud"
 
 #. overridden
-#: ../src/documents.js:1008 ../src/documents.js:1009
+#: ../src/documents.js:1037 ../src/documents.js:1038
 msgid "OneDrive"
 msgstr "OneDrive"
 
-#: ../src/documents.js:1253
+#: ../src/documents.js:1287
 msgid "Please check the network connection."
 msgstr "Sjekk nettverkstilkoblingen."
 
-#: ../src/documents.js:1256
+#: ../src/documents.js:1290
 msgid "Please check the network proxy settings."
 msgstr "Sjekk proxyinnstillinger for nettverk."
 
-#: ../src/documents.js:1259
+#: ../src/documents.js:1293
 msgid "Unable to sign in to the document service."
 msgstr "Kan ikke logge inn på dokumenttjenesten."
 
-#: ../src/documents.js:1262
+#: ../src/documents.js:1296
 msgid "Unable to locate this document."
 msgstr "Kan ikke finne dette dokumentet."
 
-#: ../src/documents.js:1265
+#: ../src/documents.js:1299
 #, javascript-format
 msgid "Hmm, something is fishy (%d)."
 msgstr "Hmm, noe er galt (%d)."
 
-#: ../src/documents.js:1272
+#: ../src/documents.js:1306
 msgid ""
 "You are using a preview of Books. Full viewing capabilities are coming soon!"
 msgstr ""
 "Du bruker en forhåndsvisning av Bøker. Flere visningsfunksjoner kommer snart!"
 
 #. Translators: %s is the title of a document
-#: ../src/documents.js:1293
+#: ../src/documents.js:1327
 #, javascript-format
 msgid "Oops! Unable to load “%s”"
 msgstr "Opps! kan ikke laste «%s»"
@@ -370,13 +378,9 @@ msgstr "Opps! kan ikke laste «%s»"
 msgid "View"
 msgstr "Vis"
 
-#: ../src/embed.js:80
-msgid "Recent"
-msgstr "Nylig"
-
 #. collections button
-#: ../src/embed.js:83 ../src/search.js:203 ../src/search.js:212
-#: ../src/selections.js:888
+#: ../src/embed.js:84 ../src/search.js:203 ../src/search.js:209
+#: ../src/selections.js:902
 msgid "Collections"
 msgstr "Samlinger"
 
@@ -479,7 +483,7 @@ msgid_plural "%d items deleted"
 msgstr[0] "%d oppføring er slettet"
 msgstr[1] "%d oppføringer er slettet"
 
-#: ../src/notifications.js:67 ../src/selections.js:386
+#: ../src/notifications.js:67 ../src/selections.js:393
 msgid "Undo"
 msgstr "Angre"
 
@@ -555,16 +559,16 @@ msgid "Bookmark this page"
 msgstr "Lag bokmerke for denne siden"
 
 #. Translators: this is the Open action in a context menu
-#: ../src/preview.js:900 ../src/selections.js:986
+#: ../src/preview.js:901 ../src/selections.js:1000
 #, javascript-format
 msgid "Open with %s"
 msgstr "Åpne med %s"
 
-#: ../src/preview.js:963
+#: ../src/preview.js:964
 msgid "Find Previous"
 msgstr "Finn forrige"
 
-#: ../src/preview.js:970
+#: ../src/preview.js:971
 msgid "Find Next"
 msgstr "Finn neste"
 
@@ -612,7 +616,7 @@ msgstr "Kategori"
 #. Translators: this refers to new and recent documents
 #. Translators: this refers to documents
 #: ../src/search.js:131 ../src/search.js:200 ../src/search.js:333
-#: ../src/search.js:503
+#: ../src/search.js:504
 msgid "All"
 msgstr "Alle"
 
@@ -633,29 +637,29 @@ msgctxt "Search Filter"
 msgid "Type"
 msgstr "Type"
 
-#: ../src/search.js:207
+#: ../src/search.js:213
 msgid "PDF Documents"
 msgstr "PDF-dokumenter"
 
 #: ../src/search.js:220
-msgid "Presentations"
-msgstr "Presentasjoner"
-
-#: ../src/search.js:223
-msgid "Spreadsheets"
-msgstr "Regneark"
-
-#: ../src/search.js:226
-msgid "Text Documents"
-msgstr "Tekstdokumenter"
-
-#: ../src/search.js:231
 msgid "e-Books"
 msgstr "e-bøker"
 
-#: ../src/search.js:235
+#: ../src/search.js:224
 msgid "Comics"
 msgstr "Tegneserier"
+
+#: ../src/search.js:229
+msgid "Presentations"
+msgstr "Presentasjoner"
+
+#: ../src/search.js:232
+msgid "Spreadsheets"
+msgstr "Regneark"
+
+#: ../src/search.js:235
+msgid "Text Documents"
+msgstr "Tekstdokumenter"
 
 #. Translators: this is a verb that refers to "All", "Title" and "Author",
 #. as in "Match All", "Match Title" and "Match Author"
@@ -675,40 +679,40 @@ msgctxt "Search Filter"
 msgid "Author"
 msgstr "Forfatter"
 
-#: ../src/search.js:499
+#: ../src/search.js:500
 msgid "Sources"
 msgstr "Kilder"
 
-#: ../src/selections.js:359 ../src/selections.js:361
+#: ../src/selections.js:366 ../src/selections.js:368
 msgid "Rename…"
 msgstr "Endre navn …"
 
 #. trash button
-#: ../src/selections.js:365 ../src/selections.js:367 ../src/selections.js:871
+#: ../src/selections.js:372 ../src/selections.js:374 ../src/selections.js:885
 msgid "Delete"
 msgstr "Slett"
 
-#: ../src/selections.js:381
+#: ../src/selections.js:388
 #, javascript-format
 msgid "“%s” removed"
 msgstr "«%s» fjernet"
 
-#: ../src/selections.js:765
+#: ../src/selections.js:779
 msgid "Rename"
 msgstr "Endre navn"
 
 #. Translators: "Collections" refers to documents in this context
-#: ../src/selections.js:771
+#: ../src/selections.js:785
 msgctxt "Dialog Title"
 msgid "Collections"
 msgstr "Samlinger"
 
 #. print button
-#: ../src/selections.js:866
+#: ../src/selections.js:880
 msgid "Print"
 msgstr "Skriv ut"
 
-#: ../src/selections.js:877
+#: ../src/selections.js:891
 msgid "Share"
 msgstr "Del"
 
@@ -809,44 +813,44 @@ msgstr "Du kan legge til dine kontoer på nettet i %s"
 msgid "Settings"
 msgstr "Innstillinger"
 
-#: ../src/view.js:482
+#: ../src/view.js:483
 msgid "Yesterday"
 msgstr "I går"
 
-#: ../src/view.js:484
+#: ../src/view.js:485
 #, javascript-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
 msgstr[0] "%d dag siden"
 msgstr[1] "%d dager siden"
 
-#: ../src/view.js:488
+#: ../src/view.js:489
 msgid "Last week"
 msgstr "Siste uke"
 
-#: ../src/view.js:490
+#: ../src/view.js:491
 #, javascript-format
 msgid "%d week ago"
 msgid_plural "%d weeks ago"
 msgstr[0] "%d uke siden"
 msgstr[1] "%d uker siden"
 
-#: ../src/view.js:494
+#: ../src/view.js:495
 msgid "Last month"
 msgstr "Siste måned"
 
-#: ../src/view.js:496
+#: ../src/view.js:497
 #, javascript-format
 msgid "%d month ago"
 msgid_plural "%d months ago"
 msgstr[0] "%d måned siden"
 msgstr[1] "%d måneder siden"
 
-#: ../src/view.js:500
+#: ../src/view.js:501
 msgid "Last year"
 msgstr "Siste år"
 
-#: ../src/view.js:502
+#: ../src/view.js:503
 #, javascript-format
 msgid "%d year ago"
 msgid_plural "%d years ago"
