@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: gnome-documents master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-11-09 09:08+0000\n"
-"PO-Revision-Date: 2015-11-09 16:13+0100\n"
+"POT-Creation-Date: 2015-11-17 09:06+0000\n"
+"PO-Revision-Date: 2015-11-17 11:31+0100\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -192,7 +192,7 @@ msgstr "Řadit podle"
 msgid "Sort by type"
 msgstr "Řadit podle typu"
 
-#: ../data/ui/app-menu.ui.h:1
+#: ../data/ui/app-menu.ui.h:1 ../data/ui/help-overlay.ui.h:20
 msgid "Fullscreen"
 msgstr "Celá obrazovka"
 
@@ -208,9 +208,81 @@ msgstr "Nápověda"
 msgid "About"
 msgstr "O aplikaci"
 
-#: ../data/ui/app-menu.ui.h:5
+#: ../data/ui/app-menu.ui.h:5 ../data/ui/help-overlay.ui.h:3
 msgid "Quit"
 msgstr "Ukončit"
+
+#: ../data/ui/help-overlay.ui.h:1
+msgid "General"
+msgstr "Obecné"
+
+#: ../data/ui/help-overlay.ui.h:2
+msgid "Show help"
+msgstr "Zobrazit nápovědu"
+
+#: ../data/ui/help-overlay.ui.h:4 ../src/mainToolbar.js:89
+msgid "Search"
+msgstr "Hledat"
+
+#: ../data/ui/help-overlay.ui.h:5
+msgid "Print the current document"
+msgstr "Vytisknout aktuální dokument"
+
+#: ../data/ui/help-overlay.ui.h:6
+msgid "Navigation"
+msgstr "Ovládání"
+
+#: ../data/ui/help-overlay.ui.h:7
+msgid "Go back"
+msgstr "Jít zpět"
+
+#: ../data/ui/help-overlay.ui.h:8
+msgid "Preview"
+msgstr "Náhled"
+
+#: ../data/ui/help-overlay.ui.h:9
+msgid "Zoom in"
+msgstr "Přiblížit"
+
+#: ../data/ui/help-overlay.ui.h:10
+msgid "Zoom out"
+msgstr "Oddálit"
+
+#: ../data/ui/help-overlay.ui.h:11
+msgid "Bookmark the current page"
+msgstr "Aktuální stránku do záložek"
+
+#: ../data/ui/help-overlay.ui.h:12
+msgid "Open places and bookmarks dialog"
+msgstr "Otevřít dialogové okno s umístěními a záložkami"
+
+#: ../data/ui/help-overlay.ui.h:13
+msgid "Copy selected text to clipboard"
+msgstr "Kopírovat vybraný text do schránky"
+
+#: ../data/ui/help-overlay.ui.h:14
+msgid "Rotate anti-clockwise"
+msgstr "Otočit proti směru hodinových ručiček"
+
+#: ../data/ui/help-overlay.ui.h:15
+msgid "Rotate clockwise"
+msgstr "Otočit po směru hodinových ručiček"
+
+#: ../data/ui/help-overlay.ui.h:16
+msgid "Next occurrence of the search string"
+msgstr "Následující výskyt hledaného textu"
+
+#: ../data/ui/help-overlay.ui.h:17
+msgid "Previous occurrence of the search string"
+msgstr "Předchozí výskyt hledaného textu"
+
+#: ../data/ui/help-overlay.ui.h:18
+msgid "Presentation mode"
+msgstr "Režim prezentace"
+
+#: ../data/ui/help-overlay.ui.h:19
+msgid "Open action menu"
+msgstr "Otevřít nabídku činností"
 
 #: ../data/ui/organize-collection-dialog.ui.h:1
 msgid "Enter a name for your first collection"
@@ -441,10 +513,6 @@ msgid "translator-credits"
 msgstr ""
 "Marek Černocký <marek@manet.cz>\n"
 "Adam Matoušek <adamatousek@gmail.com>"
-
-#: ../src/mainToolbar.js:89
-msgid "Search"
-msgstr "Hledat"
 
 #: ../src/mainToolbar.js:97
 msgid "Back"
@@ -853,6 +921,3 @@ msgid_plural "%d years ago"
 msgstr[0] "Před %d rokem"
 msgstr[1] "Před %d roky"
 msgstr[2] "Před %d lety"
-
-#~ msgid "Recent"
-#~ msgstr "Nedávné"
