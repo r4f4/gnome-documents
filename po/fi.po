@@ -11,8 +11,8 @@ msgstr ""
 "Project-Id-Version: gnome-documents master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-11-03 09:08+0000\n"
-"PO-Revision-Date: 2015-11-03 15:12+0200\n"
+"POT-Creation-Date: 2015-11-18 09:08+0000\n"
+"PO-Revision-Date: 2015-11-18 17:01+0200\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos+l10n@iki.fi>\n"
 "Language-Team: suomi <gnome-fi-laatu@lists.sourceforge.net>\n"
 "Language: fi\n"
@@ -90,41 +90,51 @@ msgid "View as type"
 msgstr "Näkymän tyyppi"
 
 #: ../data/org.gnome.books.gschema.xml.h:3
+#: ../data/org.gnome.documents.gschema.xml.h:3
+msgid "Sort by"
+msgstr "Järjestä"
+
+#: ../data/org.gnome.books.gschema.xml.h:4
+#: ../data/org.gnome.documents.gschema.xml.h:4
+msgid "Sort by type"
+msgstr "Järjestä tyypin mukaan"
+
+#: ../data/org.gnome.books.gschema.xml.h:5
 #: ../data/org.gnome.documents.gschema.xml.h:5
 msgid "Window size"
 msgstr "Ikkunan koko"
 
-#: ../data/org.gnome.books.gschema.xml.h:4
+#: ../data/org.gnome.books.gschema.xml.h:6
 #: ../data/org.gnome.documents.gschema.xml.h:6
 msgid "Window size (width and height)."
 msgstr "Ikkunan koko (leveys ja korkeus)."
 
-#: ../data/org.gnome.books.gschema.xml.h:5
+#: ../data/org.gnome.books.gschema.xml.h:7
 #: ../data/org.gnome.documents.gschema.xml.h:7
 msgid "Window position"
 msgstr "Ikkunan sijainti"
 
-#: ../data/org.gnome.books.gschema.xml.h:6
+#: ../data/org.gnome.books.gschema.xml.h:8
 #: ../data/org.gnome.documents.gschema.xml.h:8
 msgid "Window position (x and y)."
 msgstr "Ikkunan sijainti (x ja y)."
 
-#: ../data/org.gnome.books.gschema.xml.h:7
+#: ../data/org.gnome.books.gschema.xml.h:9
 #: ../data/org.gnome.documents.gschema.xml.h:9
 msgid "Window maximized"
 msgstr "Ikkuna suurennettu"
 
-#: ../data/org.gnome.books.gschema.xml.h:8
+#: ../data/org.gnome.books.gschema.xml.h:10
 #: ../data/org.gnome.documents.gschema.xml.h:10
 msgid "Window maximized state"
 msgstr "Ikkunan suurennettu tila"
 
-#: ../data/org.gnome.books.gschema.xml.h:9
+#: ../data/org.gnome.books.gschema.xml.h:11
 #: ../data/org.gnome.documents.gschema.xml.h:11
 msgid "Night mode"
 msgstr "Yötila"
 
-#: ../data/org.gnome.books.gschema.xml.h:10
+#: ../data/org.gnome.books.gschema.xml.h:12
 #: ../data/org.gnome.documents.gschema.xml.h:12
 msgid "Whether the application is in night mode."
 msgstr "Toimiiko sovellus yötilassa."
@@ -187,15 +197,7 @@ msgstr "Käytä, hallitse ja jaa asiakirjoja"
 msgid "Docs;PDF;Document;"
 msgstr "Asiakirjat;PDF;asiakirja;dokumentti;dokumentit;Docs;Document;"
 
-#: ../data/org.gnome.documents.gschema.xml.h:3
-msgid "Sort by"
-msgstr "Järjestä"
-
-#: ../data/org.gnome.documents.gschema.xml.h:4
-msgid "Sort by type"
-msgstr "Järjestä tyypin mukaan"
-
-#: ../data/ui/app-menu.ui.h:1
+#: ../data/ui/app-menu.ui.h:1 ../data/ui/help-overlay.ui.h:20
 msgid "Fullscreen"
 msgstr "Koko näyttö"
 
@@ -211,9 +213,86 @@ msgstr "Ohje"
 msgid "About"
 msgstr "Tietoja"
 
-#: ../data/ui/app-menu.ui.h:5
+#: ../data/ui/app-menu.ui.h:5 ../data/ui/help-overlay.ui.h:3
 msgid "Quit"
 msgstr "Lopeta"
+
+#: ../data/ui/help-overlay.ui.h:1
+msgid "General"
+msgstr "Yleiset"
+
+#: ../data/ui/help-overlay.ui.h:2
+msgid "Show help"
+msgstr "Näytä ohje"
+
+#: ../data/ui/help-overlay.ui.h:4 ../src/mainToolbar.js:90
+msgid "Search"
+msgstr "Etsi"
+
+#: ../data/ui/help-overlay.ui.h:5
+#| msgid "Print documents"
+msgid "Print the current document"
+msgstr "Tulosta asiakirja"
+
+#: ../data/ui/help-overlay.ui.h:6
+msgid "Navigation"
+msgstr "Liikkuminen"
+
+#: ../data/ui/help-overlay.ui.h:7
+msgid "Go back"
+msgstr "Siirry takaisin"
+
+#: ../data/ui/help-overlay.ui.h:8
+msgid "Preview"
+msgstr "Esikatselu"
+
+#: ../data/ui/help-overlay.ui.h:9
+#| msgid "Zoom In"
+msgid "Zoom in"
+msgstr "Lähennä"
+
+#: ../data/ui/help-overlay.ui.h:10
+#| msgid "Zoom Out"
+msgid "Zoom out"
+msgstr "Loitonna"
+
+#: ../data/ui/help-overlay.ui.h:11
+#| msgid "Bookmark this page"
+msgid "Bookmark the current page"
+msgstr "Lisää sivu kirjanmerkkeihin"
+
+#: ../data/ui/help-overlay.ui.h:12
+msgid "Open places and bookmarks dialog"
+msgstr "Avaa sijainti- ja kirjanmerkki-ikkuna"
+
+#: ../data/ui/help-overlay.ui.h:13
+msgid "Copy selected text to clipboard"
+msgstr "Kopioi valittu teksti leikepöydälle"
+
+#: ../data/ui/help-overlay.ui.h:14
+msgid "Rotate anti-clockwise"
+msgstr "Kierrä vastapäivään"
+
+#: ../data/ui/help-overlay.ui.h:15
+msgid "Rotate clockwise"
+msgstr "Kierrä myötäpäivään"
+
+#: ../data/ui/help-overlay.ui.h:16
+msgid "Next occurrence of the search string"
+msgstr "Hakuehdon seuraava esiintymä"
+
+#: ../data/ui/help-overlay.ui.h:17
+msgid "Previous occurrence of the search string"
+msgstr "Hakuehdon edellinen esiintymä"
+
+#: ../data/ui/help-overlay.ui.h:18
+#| msgid "Presentation"
+msgid "Presentation mode"
+msgstr "Esitystila"
+
+#: ../data/ui/help-overlay.ui.h:19
+msgid "Open action menu"
+msgstr "Avaa toimintovalikko"
 
 #: ../data/ui/organize-collection-dialog.ui.h:1
 msgid "Enter a name for your first collection"
@@ -227,7 +306,7 @@ msgstr "Uusi kokoelma…"
 msgid "Add"
 msgstr "Lisää"
 
-#: ../data/ui/organize-collection-dialog.ui.h:4 ../src/mainToolbar.js:218
+#: ../data/ui/organize-collection-dialog.ui.h:4 ../src/mainToolbar.js:208
 msgid "Cancel"
 msgstr "Peru"
 
@@ -240,10 +319,9 @@ msgstr "Valmis"
 msgid "_Copy"
 msgstr "_Kopioi"
 
-#. open button
 #. Translators: this is the Open action in a context menu
-#: ../data/ui/preview-menu.ui.h:1 ../src/selections.js:875
-#: ../src/selections.js:1003
+#: ../data/ui/preview-menu.ui.h:1 ../data/ui/selection-toolbar.ui.h:1
+#: ../src/selections.js:986
 msgid "Open"
 msgstr "Avaa"
 
@@ -275,9 +353,8 @@ msgstr "Käännä ↶"
 msgid "Rotate ↷"
 msgstr "Käännä ↷"
 
-#. properties button
-#: ../data/ui/preview-menu.ui.h:9 ../src/properties.js:62
-#: ../src/selections.js:897
+#: ../data/ui/preview-menu.ui.h:9 ../data/ui/selection-toolbar.ui.h:5
+#: ../src/properties.js:62
 msgid "Properties"
 msgstr "Ominaisuudet"
 
@@ -288,6 +365,32 @@ msgstr "Valitse kaikki"
 #: ../data/ui/selection-menu.ui.h:2
 msgid "Select None"
 msgstr "Poista kaikki valinnat"
+
+#: ../data/ui/selection-toolbar.ui.h:2
+msgid "Print"
+msgstr "Tulosta"
+
+#: ../data/ui/selection-toolbar.ui.h:3 ../src/selections.js:372
+#: ../src/selections.js:374
+msgid "Delete"
+msgstr "Poista"
+
+#: ../data/ui/selection-toolbar.ui.h:4
+msgid "Share"
+msgstr "Jaa"
+
+#: ../data/ui/selection-toolbar.ui.h:6 ../src/embed.js:84 ../src/search.js:203
+#: ../src/search.js:209
+msgid "Collections"
+msgstr "Kokoelmat"
+
+#: ../data/ui/view-menu.ui.h:1
+msgid "View items as a grid of icons"
+msgstr "Näytä kohteet kuvakeruudukkona"
+
+#: ../data/ui/view-menu.ui.h:2
+msgid "View items as a list"
+msgstr "Näytä kohteet luettelona"
 
 #: ../src/documents.js:630
 msgid "Failed to print document"
@@ -387,12 +490,6 @@ msgstr "Hups! Kohteen \"%s\" lataus epäonnistui"
 msgid "View"
 msgstr "Näkymä"
 
-#. collections button
-#: ../src/embed.js:84 ../src/search.js:203 ../src/search.js:209
-#: ../src/selections.js:902
-msgid "Collections"
-msgstr "Kokoelmat"
-
 #: ../src/lib/gd-nav-bar.c:242
 #, c-format
 msgid "Page %u of %u"
@@ -446,34 +543,27 @@ msgstr "Kirjojen hallintasovellus"
 msgid "translator-credits"
 msgstr "Jiri Grönroos, 2012-2015"
 
-#: ../src/mainToolbar.js:89
-msgid "Search"
-msgstr "Etsi"
-
-#: ../src/mainToolbar.js:97
+#: ../src/mainToolbar.js:98
 msgid "Back"
 msgstr "Takaisin"
 
-#: ../src/mainToolbar.js:156
-msgid "View items as a list"
-msgstr "Näytä kohteet luettelona"
+#: ../src/mainToolbar.js:154
+#| msgid "View items as a list"
+msgid "View items as a list or a grid"
+msgstr "Näytä kohteet luettelona tai ruudukkona"
 
-#: ../src/mainToolbar.js:162
-msgid "View items as a grid of icons"
-msgstr "Näytä kohteet kuvakeruudukkona"
-
-#: ../src/mainToolbar.js:192
+#: ../src/mainToolbar.js:182
 msgid "Click on items to select them"
 msgstr "Napsauta kohteita valitaksesi ne"
 
-#: ../src/mainToolbar.js:194
+#: ../src/mainToolbar.js:184
 #, javascript-format
 msgid "%d selected"
 msgid_plural "%d selected"
 msgstr[0] "%d valittu"
 msgstr[1] "%d valittu"
 
-#: ../src/mainToolbar.js:278
+#: ../src/mainToolbar.js:268
 msgid "Select Items"
 msgstr "Valitse kohteet"
 
@@ -569,7 +659,7 @@ msgid "Bookmark this page"
 msgstr "Lisää sivu kirjanmerkkeihin"
 
 #. Translators: this is the Open action in a context menu
-#: ../src/preview.js:901 ../src/selections.js:1000
+#: ../src/preview.js:901 ../src/selections.js:983
 #, javascript-format
 msgid "Open with %s"
 msgstr "Avaa sovelluksella %s"
@@ -697,11 +787,6 @@ msgstr "Lähteet"
 msgid "Rename…"
 msgstr "Nimeä uudelleen…"
 
-#. trash button
-#: ../src/selections.js:372 ../src/selections.js:374 ../src/selections.js:885
-msgid "Delete"
-msgstr "Poista"
-
 #: ../src/selections.js:388
 #, javascript-format
 msgid "“%s” removed"
@@ -716,15 +801,6 @@ msgstr "Nimeä uudelleen"
 msgctxt "Dialog Title"
 msgid "Collections"
 msgstr "Kokoelmat"
-
-#. print button
-#: ../src/selections.js:880
-msgid "Print"
-msgstr "Tulosta"
-
-#: ../src/selections.js:891
-msgid "Share"
-msgstr "Jaa"
 
 #: ../src/sharing.js:108
 msgid "Sharing Settings"
