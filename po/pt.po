@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: 3.12\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-11-03 21:06+0000\n"
-"PO-Revision-Date: 2015-11-04 06:51+0000\n"
+"POT-Creation-Date: 2015-11-19 09:05+0000\n"
+"PO-Revision-Date: 2015-11-21 08:53+0000\n"
 "Last-Translator:  <>\n"
 "Language-Team: Português <palbuquerque73@gmail.com>\n"
 "Language: pt\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Gtranslator 2.91.6\n"
+"X-Generator: Poedit 1.5.4\n"
 
 #: ../data/org.gnome.Books.appdata.xml.in.h:1
 #: ../data/org.gnome.Books.desktop.in.h:1 ../src/application.js:114
@@ -86,41 +86,51 @@ msgid "View as type"
 msgstr "Ver como tipo"
 
 #: ../data/org.gnome.books.gschema.xml.h:3
+#: ../data/org.gnome.documents.gschema.xml.h:3
+msgid "Sort by"
+msgstr "Ordenar por"
+
+#: ../data/org.gnome.books.gschema.xml.h:4
+#: ../data/org.gnome.documents.gschema.xml.h:4
+msgid "Sort by type"
+msgstr "Ordenar por tipo"
+
+#: ../data/org.gnome.books.gschema.xml.h:5
 #: ../data/org.gnome.documents.gschema.xml.h:5
 msgid "Window size"
 msgstr "Tamanho da janela"
 
-#: ../data/org.gnome.books.gschema.xml.h:4
+#: ../data/org.gnome.books.gschema.xml.h:6
 #: ../data/org.gnome.documents.gschema.xml.h:6
 msgid "Window size (width and height)."
 msgstr "Tamanho da janela (largura e altura)."
 
-#: ../data/org.gnome.books.gschema.xml.h:5
+#: ../data/org.gnome.books.gschema.xml.h:7
 #: ../data/org.gnome.documents.gschema.xml.h:7
 msgid "Window position"
 msgstr "Posição da janela"
 
-#: ../data/org.gnome.books.gschema.xml.h:6
+#: ../data/org.gnome.books.gschema.xml.h:8
 #: ../data/org.gnome.documents.gschema.xml.h:8
 msgid "Window position (x and y)."
 msgstr "Posição da janela (x e y)."
 
-#: ../data/org.gnome.books.gschema.xml.h:7
+#: ../data/org.gnome.books.gschema.xml.h:9
 #: ../data/org.gnome.documents.gschema.xml.h:9
 msgid "Window maximized"
 msgstr "Janela maximizada"
 
-#: ../data/org.gnome.books.gschema.xml.h:8
+#: ../data/org.gnome.books.gschema.xml.h:10
 #: ../data/org.gnome.documents.gschema.xml.h:10
 msgid "Window maximized state"
 msgstr "Estado de maximização da janela"
 
-#: ../data/org.gnome.books.gschema.xml.h:9
+#: ../data/org.gnome.books.gschema.xml.h:11
 #: ../data/org.gnome.documents.gschema.xml.h:11
 msgid "Night mode"
 msgstr "Modo noturno"
 
-#: ../data/org.gnome.books.gschema.xml.h:10
+#: ../data/org.gnome.books.gschema.xml.h:12
 #: ../data/org.gnome.documents.gschema.xml.h:12
 msgid "Whether the application is in night mode."
 msgstr "Se a aplicação está ou não em modo noturno."
@@ -183,15 +193,7 @@ msgstr "Aceder, gerir e partilhar documentos"
 msgid "Docs;PDF;Document;"
 msgstr "Documento;PDF;Docs;"
 
-#: ../data/org.gnome.documents.gschema.xml.h:3
-msgid "Sort by"
-msgstr "Ordenar por"
-
-#: ../data/org.gnome.documents.gschema.xml.h:4
-msgid "Sort by type"
-msgstr "Ordenar por tipo"
-
-#: ../data/ui/app-menu.ui.h:1
+#: ../data/ui/app-menu.ui.h:1 ../data/ui/help-overlay.ui.h:20
 msgid "Fullscreen"
 msgstr "Ecrã completo"
 
@@ -207,9 +209,81 @@ msgstr "Ajuda"
 msgid "About"
 msgstr "Sobre"
 
-#: ../data/ui/app-menu.ui.h:5
+#: ../data/ui/app-menu.ui.h:5 ../data/ui/help-overlay.ui.h:3
 msgid "Quit"
 msgstr "Sair"
+
+#: ../data/ui/help-overlay.ui.h:1
+msgid "General"
+msgstr "Geral"
+
+#: ../data/ui/help-overlay.ui.h:2
+msgid "Show help"
+msgstr "Mostrar ajuda"
+
+#: ../data/ui/help-overlay.ui.h:4 ../src/mainToolbar.js:90
+msgid "Search"
+msgstr "Procurar"
+
+#: ../data/ui/help-overlay.ui.h:5
+msgid "Print the current document"
+msgstr "Imprimir documento atual"
+
+#: ../data/ui/help-overlay.ui.h:6
+msgid "Navigation"
+msgstr "Navegação"
+
+#: ../data/ui/help-overlay.ui.h:7
+msgid "Go back"
+msgstr "Recuar"
+
+#: ../data/ui/help-overlay.ui.h:8
+msgid "Preview"
+msgstr "Antevisão"
+
+#: ../data/ui/help-overlay.ui.h:9
+msgid "Zoom in"
+msgstr "Ampliar"
+
+#: ../data/ui/help-overlay.ui.h:10
+msgid "Zoom out"
+msgstr "Reduzir"
+
+#: ../data/ui/help-overlay.ui.h:11
+msgid "Bookmark the current page"
+msgstr "Marcar a página atual"
+
+#: ../data/ui/help-overlay.ui.h:12
+msgid "Open places and bookmarks dialog"
+msgstr "Abrir diálogo de lugares e favoritos"
+
+#: ../data/ui/help-overlay.ui.h:13
+msgid "Copy selected text to clipboard"
+msgstr "Copiar o texto selecionado para a área de transferência"
+
+#: ../data/ui/help-overlay.ui.h:14
+msgid "Rotate anti-clockwise"
+msgstr "Rodar à esquerda"
+
+#: ../data/ui/help-overlay.ui.h:15
+msgid "Rotate clockwise"
+msgstr "Rodar à direita"
+
+#: ../data/ui/help-overlay.ui.h:16
+msgid "Next occurrence of the search string"
+msgstr "Ocorrência seguinte da cadeia a procurar"
+
+#: ../data/ui/help-overlay.ui.h:17
+msgid "Previous occurrence of the search string"
+msgstr "Ocorrência anterior da cadeia a procurar"
+
+#: ../data/ui/help-overlay.ui.h:18
+msgid "Presentation mode"
+msgstr "Modo de apresentação"
+
+#: ../data/ui/help-overlay.ui.h:19
+msgid "Open action menu"
+msgstr "Abrir o menu Ação"
 
 #: ../data/ui/organize-collection-dialog.ui.h:1
 msgid "Enter a name for your first collection"
@@ -223,7 +297,7 @@ msgstr "Nova coleção…"
 msgid "Add"
 msgstr "Adicionar"
 
-#: ../data/ui/organize-collection-dialog.ui.h:4 ../src/mainToolbar.js:218
+#: ../data/ui/organize-collection-dialog.ui.h:4 ../src/mainToolbar.js:208
 msgid "Cancel"
 msgstr "Cancelar"
 
@@ -236,10 +310,9 @@ msgstr "Terminado"
 msgid "_Copy"
 msgstr "_Copiar"
 
-#. open button
 #. Translators: this is the Open action in a context menu
-#: ../data/ui/preview-menu.ui.h:1 ../src/selections.js:875
-#: ../src/selections.js:1003
+#: ../data/ui/preview-menu.ui.h:1 ../data/ui/selection-toolbar.ui.h:1
+#: ../src/selections.js:986
 msgid "Open"
 msgstr "Abrir"
 
@@ -271,9 +344,8 @@ msgstr "Rodar ↶"
 msgid "Rotate ↷"
 msgstr "Rodar ↷"
 
-#. properties button
-#: ../data/ui/preview-menu.ui.h:9 ../src/properties.js:62
-#: ../src/selections.js:897
+#: ../data/ui/preview-menu.ui.h:9 ../data/ui/selection-toolbar.ui.h:5
+#: ../src/properties.js:62
 msgid "Properties"
 msgstr "Propriedades"
 
@@ -284,6 +356,32 @@ msgstr "Selecionar tudo"
 #: ../data/ui/selection-menu.ui.h:2
 msgid "Select None"
 msgstr "Não selecionar nada"
+
+#: ../data/ui/selection-toolbar.ui.h:2
+msgid "Print"
+msgstr "Imprimir"
+
+#: ../data/ui/selection-toolbar.ui.h:3 ../src/selections.js:372
+#: ../src/selections.js:374
+msgid "Delete"
+msgstr "Eliminar"
+
+#: ../data/ui/selection-toolbar.ui.h:4
+msgid "Share"
+msgstr "Partilhar"
+
+#: ../data/ui/selection-toolbar.ui.h:6 ../src/embed.js:84 ../src/search.js:203
+#: ../src/search.js:209
+msgid "Collections"
+msgstr "Coleções"
+
+#: ../data/ui/view-menu.ui.h:1
+msgid "View items as a grid of icons"
+msgstr "Ver itens como uma grelha de ícones"
+
+#: ../data/ui/view-menu.ui.h:2
+msgid "View items as a list"
+msgstr "Ver itens como uma lista"
 
 #: ../src/documents.js:630
 msgid "Failed to print document"
@@ -382,12 +480,6 @@ msgstr "Oops! Impossível carregar “%s”"
 msgid "View"
 msgstr "Ver"
 
-#. collections button
-#: ../src/embed.js:84 ../src/search.js:203 ../src/search.js:209
-#: ../src/selections.js:902
-msgid "Collections"
-msgstr "Coleções"
-
 #: ../src/lib/gd-nav-bar.c:242
 #, c-format
 msgid "Page %u of %u"
@@ -443,34 +535,26 @@ msgstr ""
 "Duarte Loreto <happyguy_pt@hotmail.com>\n"
 "Pedro Albuquerque <palbuquerque73@gmail.com>"
 
-#: ../src/mainToolbar.js:89
-msgid "Search"
-msgstr "Procurar"
-
-#: ../src/mainToolbar.js:97
+#: ../src/mainToolbar.js:98
 msgid "Back"
 msgstr "Recuar"
 
-#: ../src/mainToolbar.js:156
-msgid "View items as a list"
-msgstr "Ver itens como uma lista"
+#: ../src/mainToolbar.js:154
+msgid "View items as a list or a grid"
+msgstr "Ver itens como lista ou como grelha"
 
-#: ../src/mainToolbar.js:162
-msgid "View items as a grid of icons"
-msgstr "Ver itens como uma grelha de ícones"
-
-#: ../src/mainToolbar.js:192
+#: ../src/mainToolbar.js:182
 msgid "Click on items to select them"
 msgstr "Clique nos itens para os selecionar"
 
-#: ../src/mainToolbar.js:194
+#: ../src/mainToolbar.js:184
 #, javascript-format
 msgid "%d selected"
 msgid_plural "%d selected"
 msgstr[0] "%d selecionado"
 msgstr[1] "%d selecionados"
 
-#: ../src/mainToolbar.js:278
+#: ../src/mainToolbar.js:268
 msgid "Select Items"
 msgstr "Selecionar itens"
 
@@ -564,7 +648,7 @@ msgid "Bookmark this page"
 msgstr "Marcar esta página"
 
 #. Translators: this is the Open action in a context menu
-#: ../src/preview.js:901 ../src/selections.js:1000
+#: ../src/preview.js:901 ../src/selections.js:983
 #, javascript-format
 msgid "Open with %s"
 msgstr "Abrir com %s"
@@ -692,11 +776,6 @@ msgstr "Origens"
 msgid "Rename…"
 msgstr "Renomear…"
 
-#. trash button
-#: ../src/selections.js:372 ../src/selections.js:374 ../src/selections.js:885
-msgid "Delete"
-msgstr "Eliminar"
-
 #: ../src/selections.js:388
 #, javascript-format
 msgid "“%s” removed"
@@ -711,15 +790,6 @@ msgstr "Renomear"
 msgctxt "Dialog Title"
 msgid "Collections"
 msgstr "Coleções"
-
-#. print button
-#: ../src/selections.js:880
-msgid "Print"
-msgstr "Imprimir"
-
-#: ../src/selections.js:891
-msgid "Share"
-msgstr "Partilhar"
 
 #: ../src/sharing.js:108
 msgid "Sharing Settings"
