@@ -331,8 +331,7 @@ const DocCommon = new Lang.Class({
         let iconInfo =
             Gtk.IconTheme.get_default().lookup_by_gicon_for_scale(icon, Utils.getIconSize(),
                                                                   Application.application.getScaleFactor(),
-                                                                  Gtk.IconLookupFlags.FORCE_SIZE |
-                                                                  Gtk.IconLookupFlags.GENERIC_FALLBACK);
+                                                                  Gtk.IconLookupFlags.FORCE_SIZE);
 
         let pixbuf = null;
         if (iconInfo != null) {
