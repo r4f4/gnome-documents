@@ -371,6 +371,13 @@ const DocCommon = new Lang.Class({
         log('Error: DocCommon implementations must override canTrash');
     },
 
+    canPrint: function(docModel) {
+        if (!docModel)
+            return false;
+
+        return EvView.PrintOperation.exists_for_document(docModel.get_document());
+    },
+
     trash: function() {
         if (!this.canTrash())
             return;
@@ -609,6 +616,9 @@ const DocCommon = new Lang.Class({
                     log('Unable to print document ' + this.uri + ': ' + error);
                     return;
                 }
+
+                if (!this.canPrint(docModel))
+                    return;
 
                 let printOp = EvView.PrintOperation.new(docModel.get_document());
 

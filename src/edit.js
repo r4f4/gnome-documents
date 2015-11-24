@@ -86,6 +86,9 @@ const EditView = new Lang.Class({
                 Application.modeController.goBack();
             }));
 
+        this._printAction = Application.application.lookup_action('print-current');
+        this._printAction.set_enabled(false);
+
         Application.documentManager.connect('load-started',
                                             Lang.bind(this, this._onLoadStarted));
         Application.documentManager.connect('load-finished',
@@ -96,6 +99,7 @@ const EditView = new Lang.Class({
     _onLoadStarted: function() {
         this._editAction.enabled = false;
         this._viewAction.enabled = false;
+        this._printAction.set_enabled(false);
     },
 
     _onLoadFinished: function(manager, doc, docModel) {
@@ -103,6 +107,8 @@ const EditView = new Lang.Class({
             if (doc.canEdit())
                 this._editAction.enabled = true;
             this._viewAction.enabled = true;
+            if (doc.canPrint(docModel))
+                this._printAction.set_enabled(true);
         }
     },
 
