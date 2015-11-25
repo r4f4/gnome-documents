@@ -158,9 +158,7 @@ const CreateCollectionIconJob = new Lang.Class({
 
         if (icon instanceof Gio.ThemedIcon) {
             let theme = Gtk.IconTheme.get_default();
-            let flags =
-                Gtk.IconLookupFlags.FORCE_SIZE |
-                Gtk.IconLookupFlags.GENERIC_FALLBACK;
+            let flags = Gtk.IconLookupFlags.FORCE_SIZE;
             let info =
                 theme.lookup_by_gicon(icon, _SHELL_SEARCH_ICON_SIZE,
                                       flags);
