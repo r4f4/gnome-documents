@@ -942,8 +942,8 @@ const PreviewSearchbar = new Lang.Class({
 
     createSearchWidgets: function() {
         this._searchContainer = new Gtk.Box({ orientation: Gtk.Orientation.HORIZONTAL,
-                                              spacing: 6,
                                               halign: Gtk.Align.CENTER});
+        this._searchContainer.get_style_context().add_class('linked');
 
         this._searchEntry = new Gtk.SearchEntry({ width_request: 500 });
         this._searchEntry.connect('activate', Lang.bind(this,
@@ -952,23 +952,17 @@ const PreviewSearchbar = new Lang.Class({
             }));
         this._searchContainer.add(this._searchEntry);
 
-        let controlsBox = new Gtk.Box({ orientation: Gtk.Orientation.HORIZONTAL });
-        controlsBox.get_style_context().add_class('linked');
-        this._searchContainer.add(controlsBox);
-
         this._prev = new Gtk.Button({ action_name: 'app.find-prev' });
         this._prev.set_image(new Gtk.Image({ icon_name: 'go-up-symbolic',
-                                             icon_size: Gtk.IconSize.MENU,
-                                             margin: 2 }));
+                                             icon_size: Gtk.IconSize.MENU }));
         this._prev.set_tooltip_text(_("Find Previous"));
-        controlsBox.add(this._prev);
+        this._searchContainer.add(this._prev);
 
         this._next = new Gtk.Button({ action_name: 'app.find-next' });
         this._next.set_image(new Gtk.Image({ icon_name: 'go-down-symbolic',
-                                             icon_size: Gtk.IconSize.MENU,
-                                             margin: 2 }));
+                                             icon_size: Gtk.IconSize.MENU }));
         this._next.set_tooltip_text(_("Find Next"));
-        controlsBox.add(this._next);
+        this._searchContainer.add(this._next);
 
         this._onSearchChanged(this._previewView, false);
     },
