@@ -6,7 +6,7 @@
       <child>
         <object class="GtkButton" id="toolbarOpen">
           <property name="visible">1</property>
-	  <property name="label" translatable="yes">Open</property>
+          <property name="label" translatable="yes">Open</property>
         </object>
         <packing>
           <property name="pack_type">start</property>
@@ -73,7 +73,7 @@
       <child>
         <object class="GtkButton" id="toolbarProperties">
           <property name="visible">1</property>
-	  <property name="label" translatable="yes">Properties</property>
+          <property name="label" translatable="yes">Properties</property>
         </object>
         <packing>
           <property name="pack_type">end</property>
@@ -82,7 +82,7 @@
       <child>
         <object class="GtkButton" id="toolbarCollection">
           <property name="visible">1</property>
-	  <property name="label" translatable="yes">Collections</property>
+          <property name="label" translatable="yes">Collections</property>
         </object>
         <packing>
           <property name="pack_type">end</property>
