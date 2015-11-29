@@ -17,6 +17,9 @@
           <property name="visible">1</property>
           <property name="orientation">vertical</property>
         </object>
+        <packing>
+          <property name="pack_type">start</property>
+        </packing>
       </child>
       <child>
         <object class="GtkButton" id="toolbarShare">
