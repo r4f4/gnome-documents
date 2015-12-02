@@ -31,6 +31,7 @@ const Gio = imports.gi.Gio;
 const Goa = imports.gi.Goa;
 const Gtk = imports.gi.Gtk;
 const GLib = imports.gi.GLib;
+const GObject = imports.gi.GObject;
 const Tracker = imports.gi.Tracker;
 const TrackerControl = imports.gi.TrackerControl;
 
@@ -117,6 +118,9 @@ const Application = new Lang.Class({
             GLib.set_application_name(_("Documents"));
             appid = 'org.gnome.Documents';
         }
+
+        // needed by data/ui/view-menu.ui
+        GObject.type_ensure(Gio.ThemedIcon);
 
         this.parent({ application_id: appid,
                       inactivity_timeout: 12000 });
