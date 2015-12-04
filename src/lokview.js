@@ -35,6 +35,7 @@ const Signals = imports.signals;
 const Tweener = imports.tweener.tweener;
 
 const Application = imports.application;
+const ErrorBox = imports.errorBox;
 const MainToolbar = imports.mainToolbar;
 const Searchbar = imports.searchbar;
 const Utils = imports.utils;
@@ -42,15 +43,23 @@ const View = imports.view;
 const WindowMode = imports.windowMode;
 const Documents = imports.documents;
 
+function isAvailable() {
+    return (LOKDocView != undefined);
+}
+
 const LOKView = new Lang.Class({
     Name: 'LOKView',
-    Extends: Gtk.Overlay,
+    Extends: Gtk.Stack,
 
-    _init: function() {
-        this._uri = null;
-
+    _init: function(overlay) {
         this.parent();
+
+        this._uri = null;
+        this._overlay = overlay;
         this.get_style_context().add_class('documents-scrolledwin');
+
+        this._errorBox = new ErrorBox.ErrorBox();
+        this.add_named(this._errorBox, 'error');
 
         this._sw = new Gtk.ScrolledWindow({hexpand: true,
                                            vexpand: true});
@@ -58,9 +67,9 @@ const LOKView = new Lang.Class({
         this._progressBar = new Gtk.ProgressBar({ halign: Gtk.Align.FILL,
                                                   valign: Gtk.Align.START });
         this._progressBar.get_style_context().add_class('osd');
-        this.add_overlay(this._progressBar);
+        this._overlay.add_overlay(this._progressBar);
 
-        this.add(this._sw);
+        this.add_named(this._sw, 'view');
         this._createView();
 
         this.show_all();
@@ -105,6 +114,7 @@ const LOKView = new Lang.Class({
             this.hasParts = false;
 
         this._progressBar.hide();
+        this.set_visible_child_full('view', Gtk.StackTransitionType.NONE);
         this.view.show();
         this.view.set_edit(false);
     },
@@ -127,7 +137,8 @@ const LOKView = new Lang.Class({
         this._sw.add(this.view);
         this.view.connect('load-changed', Lang.bind(this, this._onProgressChanged));
 
-        this._navControls = new LOKViewNavControls(this, this);
+        this._navControls = new LOKViewNavControls(this, this._overlay);
+        this.set_visible_child_full('view', Gtk.StackTransitionType.NONE);
     },
 
     _onProgressChanged: function() {
