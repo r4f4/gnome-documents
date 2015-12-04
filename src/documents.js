@@ -592,6 +592,40 @@ const DocCommon = new Lang.Class({
         Application.searchCategoryManager.disconnect(this._filterId);
     },
 
+    loadLocal: function(passwd, cancellable, callback) {
+        if (this.mimeType == 'application/epub+zip' ||
+            this.mimeType == 'application/x-mobipocket-ebook' ||
+            this.mimeType == 'application/x-fictionbook+xml' ||
+            this.mimeType == 'application/x-zip-compressed-fb2') {
+            let exception = new GLib.Error(Gio.IOErrorEnum,
+                                           Gio.IOErrorEnum.NOT_SUPPORTED,
+                                           "Internal error: Ebooks preview isn't support yet");
+            callback(this, null, exception);
+            return;
+        }
+
+        if (LOKView.isOpenDocumentFormat(this.mimeType) && !Application.application.isBooks) {
+            let exception = null;
+            if (!LOKView.isAvailable()) {
+                exception = new GLib.Error(Gio.IOErrorEnum,
+                                           Gio.IOErrorEnum.NOT_SUPPORTED,
+                                           "Internal error: LibreOffice isn't available");
+            }
+            callback (this, null, exception);
+            return;
+        }
+
+        GdPrivate.pdf_loader_load_uri_async(this.uri, passwd, cancellable, Lang.bind(this,
+            function(source, res) {
+                try {
+                    let docModel = GdPrivate.pdf_loader_load_uri_finish(res);
+                    callback(this, docModel, null);
+                } catch (e) {
+                    callback(this, null, e);
+                }
+            }));
+    },
+
     open: function(screen, timestamp) {
         if (!this.defaultAppName)
             return;
@@ -731,37 +765,7 @@ const LocalDocument = new Lang.Class({
     },
 
     load: function(passwd, cancellable, callback) {
-        if (this.mimeType == 'application/epub+zip' ||
-            this.mimeType == 'application/x-mobipocket-ebook' ||
-            this.mimeType == 'application/x-fictionbook+xml' ||
-            this.mimeType == 'application/x-zip-compressed-fb2') {
-            let exception = new GLib.Error(Gio.IOErrorEnum,
-                                           Gio.IOErrorEnum.NOT_SUPPORTED,
-                                           "Internal error: Ebooks preview isn't support yet");
-            callback(this, null, exception);
-            return;
-        }
-
-        if (LOKView.isOpenDocumentFormat(this.mimeType) && !Application.application.isBooks) {
-            let exception = null;
-            if (!LOKView.isAvailable()) {
-                exception = new GLib.Error(Gio.IOErrorEnum,
-                                           Gio.IOErrorEnum.NOT_SUPPORTED,
-                                           "Internal error: LibreOffice isn't available");
-            }
-            callback (this, null, exception);
-            return;
-        }
-
-        GdPrivate.pdf_loader_load_uri_async(this.uri, passwd, cancellable, Lang.bind(this,
-            function(source, res) {
-                try {
-                    let docModel = GdPrivate.pdf_loader_load_uri_finish(res);
-                    callback(this, docModel, null);
-                } catch (e) {
-                    callback(this, null, e);
-                }
-            }));
+        this.loadLocal(passwd, cancellable, callback);
     },
 
     canEdit: function() {
@@ -1013,15 +1017,7 @@ const OwncloudDocument = new Lang.Class({
     },
 
     load: function(passwd, cancellable, callback) {
-        GdPrivate.pdf_loader_load_uri_async(this.uri, passwd, cancellable, Lang.bind(this,
-            function(source, res) {
-                try {
-                    let docModel = GdPrivate.pdf_loader_load_uri_finish(res);
-                    callback(this, docModel, null);
-                } catch (e) {
-                    callback(this, null, e);
-                }
-            }));
+        this.loadLocal(passwd, cancellable, callback);
     },
 
     canEdit: function() {
