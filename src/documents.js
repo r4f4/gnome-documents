@@ -21,6 +21,7 @@
 
 const EvDocument = imports.gi.EvinceDocument;
 const EvView = imports.gi.EvinceView;
+const LOKView = imports.lokview;
 const GdkPixbuf = imports.gi.GdkPixbuf;
 const Gio = imports.gi.Gio;
 const Gd = imports.gi.Gd;
@@ -776,8 +777,14 @@ const LocalDocument = new Lang.Class({
             return;
         }
 
-        if (this.isOpenDocumentFormat()) {
-            callback (this, null, null);
+        if (this.isOpenDocumentFormat() && !Application.application.isBooks) {
+            let exception = null;
+            if (!LOKView.isAvailable()) {
+                exception = new GLib.Error(Gio.IOErrorEnum,
+                                           Gio.IOErrorEnum.NOT_SUPPORTED,
+                                           "Internal error: LibreOffice isn't available");
+            }
+            callback (this, null, exception);
             return;
         }
 
@@ -1353,6 +1360,8 @@ const DocumentManager = new Lang.Class({
             case Gio.IOErrorEnum.NOT_SUPPORTED:
                 if (Application.application.isBooks)
                     message = _("You are using a preview of Books. Full viewing capabilities are coming soon!");
+                else
+                    message = _("LibreOffice support is not available on your system. Please contact your system administrator.");
                 break;
             default:
                 break;

@@ -19,7 +19,13 @@
  *
  */
 
-const LOKDocView = imports.gi.LOKDocView;
+try {
+	const LOKDocView = imports.gi.LOKDocView;
+} catch(e) {
+	// LOKDocView will be undefined, and we'll
+	// use this to warn when LO files can't be opened
+}
+
 const Soup = imports.gi.Soup;
 const Gd = imports.gi.Gd;
 const GdPrivate = imports.gi.GdPrivate;
@@ -90,6 +96,8 @@ const LOKView = new Lang.Class({
 
         Application.documentManager.connect('load-started',
                                             Lang.bind(this, this._onLoadStarted));
+        Application.documentManager.connect('load-error',
+                                            Lang.bind(this, this._onLoadError));
         Application.documentManager.connect('load-finished',
                                             Lang.bind(this, this._onLoadFinished));
 
@@ -101,7 +109,11 @@ const LOKView = new Lang.Class({
     },
 
     _onLoadStarted: function() {
+    },
 
+    _onLoadError: function(manager, doc, message, exception) {
+        //FIXME we should hide controls
+        this._setError(message, exception.message);
     },
 
     open_document_cb: function(res, doc) {
@@ -129,13 +141,17 @@ const LOKView = new Lang.Class({
     },
 
     reset: function () {
+        if (!this.view)
+            return;
         this.view.hide()
     },
 
     _createView: function() {
-        this.view = LOKDocView.View.new(null, null, null);
-        this._sw.add(this.view);
-        this.view.connect('load-changed', Lang.bind(this, this._onProgressChanged));
+        if (isAvailable()) {
+            this.view = LOKDocView.View.new(null, null, null);
+            this._sw.add(this.view);
+            this.view.connect('load-changed', Lang.bind(this, this._onProgressChanged));
+        }
 
         this._navControls = new LOKViewNavControls(this, this._overlay);
         this.set_visible_child_full('view', Gtk.StackTransitionType.NONE);
@@ -143,6 +159,11 @@ const LOKView = new Lang.Class({
 
     _onProgressChanged: function() {
         this._progressBar.fraction = this.view.load_progress;
+    },
+
+    _setError: function(primary, secondary) {
+        this._errorBox.update(primary, secondary);
+        this.set_visible_child_name('error');
     },
 });
 Signals.addSignalMethods(LOKView.prototype);
