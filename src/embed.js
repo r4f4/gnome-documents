@@ -335,7 +335,7 @@ const Embed = new Lang.Class({
     },
 
     _onLoadStarted: function(manager, doc) {
-        if (doc.isOpenDocumentFormat())
+        if (LOKView.isOpenDocumentFormat(doc.mimeType))
             Application.modeController.setWindowMode(WindowMode.WindowMode.PREVIEW_LOK);
         else
             Application.modeController.setWindowMode(WindowMode.WindowMode.PREVIEW);

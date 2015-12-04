@@ -49,8 +49,42 @@ const View = imports.view;
 const WindowMode = imports.windowMode;
 const Documents = imports.documents;
 
+const openDocumentFormats = ['application/vnd.oasis.opendocument.text',
+                             'application/vnd.oasis.opendocument.text-template',
+                             'application/vnd.oasis.opendocument.text-web',
+                             'application/vnd.oasis.opendocument.text-master',
+                             'application/vnd.oasis.opendocument.graphics',
+                             'application/vnd.oasis.opendocument.graphics-template',
+                             'application/vnd.oasis.opendocument.presentation',
+                             'application/vnd.oasis.opendocument.presentation-template',
+                             'application/vnd.oasis.opendocument.spreadsheet',
+                             'application/vnd.oasis.opendocument.spreadsheet-template',
+                             'application/vnd.oasis.opendocument.chart',
+                             'application/vnd.oasis.opendocument.formula',
+                             'application/vnd.oasis.opendocument.database',
+                             'application/vnd.oasis.opendocument.image',
+                             'application/vnd.openofficeorg.extension'];
+
+// These are the documents consisting of document parts.
+const openDocumentPartFormats = ['application/vnd.oasis.opendocument.presentation',
+                                 'application/vnd.oasis.opendocument.presentation-template',
+                                 'application/vnd.oasis.opendocument.spreadsheet',
+                                 'application/vnd.oasis.opendocument.spreadsheet-template',];
+
 function isAvailable() {
     return (LOKDocView != undefined);
+}
+
+function isOpenDocumentPartDocument(mimeType) {
+     if (openDocumentPartFormats.indexOf(mimeType) != -1)
+         return true;
+     return false;
+}
+
+function isOpenDocumentFormat(mimeType) {
+    if (openDocumentFormats.indexOf(mimeType) != -1)
+        return true;
+    return false;
 }
 
 const LOKView = new Lang.Class({
@@ -118,7 +152,7 @@ const LOKView = new Lang.Class({
 
     open_document_cb: function(res, doc) {
         // TODO: Call _finish and check failure
-        if (this._doc.isOpenDocumentPartDocument()) {
+        if (isOpenDocumentPartDocument(this._doc.mimeType)) {
             this.hasParts = true;
             this.totalParts = this.view.get_parts();
             this.currentPart = this.view.get_part();

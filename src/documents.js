@@ -45,29 +45,6 @@ const Search = imports.search;
 const TrackerUtils = imports.trackerUtils;
 const Utils = imports.utils;
 
-const openDocumentFormats = ['application/vnd.oasis.opendocument.text',
-                             'application/vnd.oasis.opendocument.text-template',
-                             'application/vnd.oasis.opendocument.text-web',
-                             'application/vnd.oasis.opendocument.text-master',
-                             'application/vnd.oasis.opendocument.graphics',
-                             'application/vnd.oasis.opendocument.graphics-template',
-                             'application/vnd.oasis.opendocument.presentation',
-                             'application/vnd.oasis.opendocument.presentation-template',
-                             'application/vnd.oasis.opendocument.spreadsheet',
-                             'application/vnd.oasis.opendocument.spreadsheet-template',
-                             'application/vnd.oasis.opendocument.chart',
-                             'application/vnd.oasis.opendocument.formula',
-                             'application/vnd.oasis.opendocument.database',
-                             'application/vnd.oasis.opendocument.image',
-                             'application/vnd.openofficeorg.extension'];
-
-// These are the documents consisting of document parts.
-const openDocumentPartFormats = ['application/vnd.oasis.opendocument.presentation',
-                                 'application/vnd.oasis.opendocument.presentation-template',
-                                 'application/vnd.oasis.opendocument.spreadsheet',
-                                 'application/vnd.oasis.opendocument.spreadsheet-template',];
-
-
 const DeleteItemJob = new Lang.Class({
     Name: 'DeleteItemJob',
 // deletes the given resource
@@ -690,18 +667,6 @@ const DocCommon = new Lang.Class({
 
         return retval;
     },
-
-    isOpenDocumentPartDocument: function() {
-        if (openDocumentPartFormats.indexOf(this.mimeType) != -1)
-            return true;
-        return false;
-    },
-
-    isOpenDocumentFormat: function() {
-        if (openDocumentFormats.indexOf(this.mimeType) != -1)
-            return true;
-        return false;
-    }
 });
 Signals.addSignalMethods(DocCommon.prototype);
 
@@ -777,7 +742,7 @@ const LocalDocument = new Lang.Class({
             return;
         }
 
-        if (this.isOpenDocumentFormat() && !Application.application.isBooks) {
+        if (LOKView.isOpenDocumentFormat(this.mimeType) && !Application.application.isBooks) {
             let exception = null;
             if (!LOKView.isAvailable()) {
                 exception = new GLib.Error(Gio.IOErrorEnum,
