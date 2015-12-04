@@ -365,6 +365,8 @@ const Embed = new Lang.Class({
 
         this._clearLoadTimer();
         this._spinner.stop();
+
+        //FIXME we need to select the preview widget better
         if (doc != null && docModel == null)
             this._stack.set_visible_child_name('preview-lok');
         else
@@ -483,6 +485,8 @@ const Embed = new Lang.Class({
     },
 
     getPreview: function() {
+        //FIXME When we can pass clicks and key presses
+        //to the view, we'll need to grab the real current view
         return this._previewEv;
     }
 });
