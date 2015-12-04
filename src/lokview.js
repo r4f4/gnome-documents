@@ -179,8 +179,8 @@ const LOKViewToolbar = new Lang.Class({
 
     _getLOKViewMenu: function() {
         let builder = new Gtk.Builder();
-        builder.add_from_resource('/org/gnome/Documents/ui/lokview-menu.ui');
-        let menu = builder.get_object('lokview-menu');
+        builder.add_from_resource('/org/gnome/Documents/ui/preview-context-menu.ui');
+        let menu = builder.get_object('preview-context-menu');
 
         return menu;
     },
