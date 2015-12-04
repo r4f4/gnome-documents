@@ -113,7 +113,7 @@ const LOKView = new Lang.Class({
         if (docModel == null && doc != null) {
             let [ location, ] = GLib.filename_from_uri (doc.uri);
             this._doc = doc;
-            this.view.open_document(location, null, Lang.bind(this, this.open_document_cb), null);
+            this.view.open_document(location, "{}", null, Lang.bind(this, this.open_document_cb));
             this._progressBar.show();
         }
     },
