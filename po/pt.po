@@ -4,25 +4,26 @@
 # Duarte Loreto <happyguy_pt@hotmail.com>, 2011, 2012, 2013, 2014.
 # Tiago S. <almosthumane@portugalmail.pt>, 2014, 2015.
 # Pedro Albuquerque <palbuquerque73@gmail.com>, 2015.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: 3.12\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-11-27 21:02+0000\n"
-"PO-Revision-Date: 2015-11-28 08:50+0100\n"
+"POT-Creation-Date: 2015-12-04 21:07+0000\n"
+"PO-Revision-Date: 2015-12-05 07:24+0000\n"
 "Last-Translator: Pedro Albuquerque <palbuquerque73@gmail.com>\n"
-"Language-Team: Pedro Albuquerque\n"
+"Language-Team: Português <palbuquerque73@gmail.com>\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Virtaal 0.7.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\\n\n"
+"X-Generator: Gtranslator 2.91.6\n"
 "X-Project-Style: gnome\n"
 
 #: ../data/org.gnome.Books.appdata.xml.in.h:1
-#: ../data/org.gnome.Books.desktop.in.h:1 ../src/application.js:114
+#: ../data/org.gnome.Books.desktop.in.h:1 ../src/application.js:115
 #: ../src/embed.js:80 ../src/lib/gd-utils.c:418
 msgid "Books"
 msgstr "Livros"
@@ -136,7 +137,7 @@ msgid "Whether the application is in night mode."
 msgstr "Se a aplicação está ou não em modo noturno."
 
 #: ../data/org.gnome.Documents.appdata.xml.in.h:1
-#: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:117
+#: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:118
 #: ../src/embed.js:80 ../src/lib/gd-utils.c:411 ../src/mainWindow.js:54
 msgid "Documents"
 msgstr "Documentos"
@@ -374,6 +375,25 @@ msgstr "Ver itens como uma grelha de ícones"
 msgid "View items as a list"
 msgstr "Ver itens como uma lista"
 
+#: ../data/ui/view-menu.ui.h:3
+#| msgid "Sort by"
+msgid "Sort"
+msgstr "Ordenar"
+
+#: ../data/ui/view-menu.ui.h:4
+#| msgctxt "Document Author"
+#| msgid "Author"
+msgid "Author"
+msgstr "Autor"
+
+#: ../data/ui/view-menu.ui.h:5
+msgid "Date"
+msgstr "Data"
+
+#: ../data/ui/view-menu.ui.h:6
+msgid "Name"
+msgstr "Nome"
+
 #: ../src/documents.js:639
 msgid "Failed to print document"
 msgstr "Falha ao imprimir documento"
@@ -531,8 +551,9 @@ msgid "Back"
 msgstr "Recuar"
 
 #: ../src/mainToolbar.js:154
-msgid "View items as a list or a grid"
-msgstr "Ver itens como lista ou como grelha"
+#| msgid "View as"
+msgid "View Menu"
+msgstr "Ver menu"
 
 #: ../src/mainToolbar.js:182
 msgid "Click on items to select them"
@@ -858,7 +879,7 @@ msgstr "O documento não foi atualizado"
 msgid "Untitled Document"
 msgstr "Documento sem título"
 
-#: ../src/trackerController.js:172
+#: ../src/trackerController.js:177
 msgid "Unable to fetch the list of documents"
 msgstr "Impossível obter a lista de documentos"
 
@@ -926,6 +947,9 @@ msgid "%d year ago"
 msgid_plural "%d years ago"
 msgstr[0] "%d ano atrás"
 msgstr[1] "%d anos atrás"
+
+#~ msgid "View items as a list or a grid"
+#~ msgstr "Ver itens como lista ou como grelha"
 
 #~ msgid "Print"
 #~ msgstr "Imprimir"
