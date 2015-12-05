@@ -7,9 +7,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-documents\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-08-20 05:31+0000\n"
-"PO-Revision-Date: 2015-08-20 08:31+0200\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"documents&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2015-12-05 09:06+0000\n"
+"PO-Revision-Date: 2015-12-05 20:27+0100\n"
 "Last-Translator: Dušan Kazik <prescott66@gmail.com>\n"
 "Language-Team: Slovak <gnome-sk-list@gnome.org>\n"
 "Language: sk\n"
@@ -17,10 +18,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 1 : (n>=2 && n<=4) ? 2 : 0;\n"
-"X-Generator: Poedit 1.8.4\n"
+"X-Generator: Poedit 1.8.6\n"
 
-#: ../data/org.gnome.Books.appdata.xml.in.h:1 ../data/org.gnome.Books.desktop.in.h:1 ../src/application.js:117
-#: ../src/lib/gd-utils.c:418
+#: ../data/org.gnome.Books.appdata.xml.in.h:1
+#: ../data/org.gnome.Books.desktop.in.h:1 ../src/application.js:115
+#: ../src/embed.js:80 ../src/lib/gd-utils.c:418
 msgid "Books"
 msgstr "Knihy"
 
@@ -30,13 +32,16 @@ msgstr "Aplikácia na správu elektronických kníh pre GNOME"
 
 #: ../data/org.gnome.Books.appdata.xml.in.h:3
 msgid ""
-"A simple application to access and organize your e-books on GNOME. It is meant to be a simple and elegant replacement for using a "
-"file manager to deal with e-books."
+"A simple application to access and organize your e-books on GNOME. It is "
+"meant to be a simple and elegant replacement for using a file manager to "
+"deal with e-books."
 msgstr ""
-"Jednoduchá aplikácia prostredia GNOME na prístup k vašim elektronickým knihám a ich organizáciu. Cieľom tejto aplikácie je "
-"jednoducho a elegantne nahradiť správcu súborov ako prehliadač e-kníh."
+"Jednoduchá aplikácia prostredia GNOME na prístup k vašim elektronickým "
+"knihám a ich organizáciu. Cieľom tejto aplikácie je jednoducho a elegantne "
+"nahradiť správcu súborov ako prehliadač e-kníh."
 
-#: ../data/org.gnome.Books.appdata.xml.in.h:4 ../data/org.gnome.Documents.appdata.xml.in.h:4
+#: ../data/org.gnome.Books.appdata.xml.in.h:4
+#: ../data/org.gnome.Documents.appdata.xml.in.h:4
 msgid "It lets you:"
 msgstr "Umožňuje vám:"
 
@@ -56,7 +61,8 @@ msgstr "Prehliadať e-knihy v režime na celú obrazovku"
 msgid "Print e-books"
 msgstr "Tlačiť e-knihy"
 
-#: ../data/org.gnome.Books.appdata.xml.in.h:9 ../data/org.gnome.Documents.appdata.xml.in.h:12
+#: ../data/org.gnome.Books.appdata.xml.in.h:9
+#: ../data/org.gnome.Documents.appdata.xml.in.h:12
 msgid "Allow opening full featured editor for non-trivial changes"
 msgstr "Otvoriť plne funkčný editor pre zložitejšie úpravy"
 
@@ -70,56 +76,77 @@ msgid "Books;Comics;ePub;PDF;"
 msgstr "knihy;komiks;ePub;PDF;"
 
 # gsettings summary; menu item
-#: ../data/org.gnome.books.gschema.xml.h:1 ../data/org.gnome.documents.gschema.xml.h:1
+#: ../data/org.gnome.books.gschema.xml.h:1
+#: ../data/org.gnome.documents.gschema.xml.h:1
 msgid "View as"
 msgstr "Zobraziť ako"
 
 # gsettings description
-#: ../data/org.gnome.books.gschema.xml.h:2 ../data/org.gnome.documents.gschema.xml.h:2
+#: ../data/org.gnome.books.gschema.xml.h:2
+#: ../data/org.gnome.documents.gschema.xml.h:2
 msgid "View as type"
 msgstr "Typ zobrazenia"
 
+#: ../data/org.gnome.books.gschema.xml.h:3
+#: ../data/org.gnome.documents.gschema.xml.h:3
+msgid "Sort by"
+msgstr "Usporiadať podľa"
+
+#: ../data/org.gnome.books.gschema.xml.h:4
+#: ../data/org.gnome.documents.gschema.xml.h:4
+msgid "Sort by type"
+msgstr "Usporiada podľa typu"
+
 # gsettings summary
-#: ../data/org.gnome.books.gschema.xml.h:3 ../data/org.gnome.documents.gschema.xml.h:3
+#: ../data/org.gnome.books.gschema.xml.h:5
+#: ../data/org.gnome.documents.gschema.xml.h:5
 msgid "Window size"
 msgstr "Veľkosť okna"
 
 # gsettings description
-#: ../data/org.gnome.books.gschema.xml.h:4 ../data/org.gnome.documents.gschema.xml.h:4
+#: ../data/org.gnome.books.gschema.xml.h:6
+#: ../data/org.gnome.documents.gschema.xml.h:6
 msgid "Window size (width and height)."
 msgstr "Rozmery okna (šírka a výška)."
 
 # gsettings summary
-#: ../data/org.gnome.books.gschema.xml.h:5 ../data/org.gnome.documents.gschema.xml.h:5
+#: ../data/org.gnome.books.gschema.xml.h:7
+#: ../data/org.gnome.documents.gschema.xml.h:7
 msgid "Window position"
 msgstr "Poloha okna"
 
 # gsettings description
-#: ../data/org.gnome.books.gschema.xml.h:6 ../data/org.gnome.documents.gschema.xml.h:6
+#: ../data/org.gnome.books.gschema.xml.h:8
+#: ../data/org.gnome.documents.gschema.xml.h:8
 msgid "Window position (x and y)."
 msgstr "Súradnice polohy okna (x a y)."
 
 # gsettings summary
-#: ../data/org.gnome.books.gschema.xml.h:7 ../data/org.gnome.documents.gschema.xml.h:7
+#: ../data/org.gnome.books.gschema.xml.h:9
+#: ../data/org.gnome.documents.gschema.xml.h:9
 msgid "Window maximized"
 msgstr "Maximalizované okno"
 
 # gsettings description
-#: ../data/org.gnome.books.gschema.xml.h:8 ../data/org.gnome.documents.gschema.xml.h:8
+#: ../data/org.gnome.books.gschema.xml.h:10
+#: ../data/org.gnome.documents.gschema.xml.h:10
 msgid "Window maximized state"
 msgstr "Maximalizovaný stav okna"
 
-#: ../data/org.gnome.books.gschema.xml.h:9 ../data/org.gnome.documents.gschema.xml.h:9
+#: ../data/org.gnome.books.gschema.xml.h:11
+#: ../data/org.gnome.documents.gschema.xml.h:11
 msgid "Night mode"
 msgstr "Nočný režim"
 
-#: ../data/org.gnome.books.gschema.xml.h:10 ../data/org.gnome.documents.gschema.xml.h:10
+#: ../data/org.gnome.books.gschema.xml.h:12
+#: ../data/org.gnome.documents.gschema.xml.h:12
 msgid "Whether the application is in night mode."
 msgstr "Či je aplikácia v nočnom režime."
 
 # desktop entry name
-#: ../data/org.gnome.Documents.appdata.xml.in.h:1 ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:114
-#: ../src/lib/gd-utils.c:411 ../src/mainWindow.js:53
+#: ../data/org.gnome.Documents.appdata.xml.in.h:1
+#: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:118
+#: ../src/embed.js:80 ../src/lib/gd-utils.c:411 ../src/mainWindow.js:54
 msgid "Documents"
 msgstr "Dokumenty"
 
@@ -129,12 +156,15 @@ msgstr "Aplikácia prostredia GNOME na správu dokumentov"
 
 #: ../data/org.gnome.Documents.appdata.xml.in.h:3
 msgid ""
-"A simple application to access, organize and share your documents on GNOME. It is meant to be a simple and elegant replacement for "
-"using a file manager to deal with documents. Seamless cloud integration is offered through GNOME Online Accounts."
+"A simple application to access, organize and share your documents on GNOME. "
+"It is meant to be a simple and elegant replacement for using a file manager "
+"to deal with documents. Seamless cloud integration is offered through GNOME "
+"Online Accounts."
 msgstr ""
-"Jednoduchá aplikácia prostredia GNOME na prístup k vašim dokumentom, ich organizáciu a zdieľanie. Mala by byť jednoduchou a "
-"pohodlnou náhradou pôvodného prehliadania dokumentov za pomoci správcu súborov. Prepojenie s cloudom je zabezpečené pomocou Účtov "
-"služieb prostredia GNOME (GOA)."
+"Jednoduchá aplikácia prostredia GNOME na prístup k vašim dokumentom, ich "
+"organizáciu a zdieľanie. Mala by byť jednoduchou a pohodlnou náhradou "
+"pôvodného prehliadania dokumentov za pomoci správcu súborov. Prepojenie s "
+"cloudom je zabezpečené pomocou Účtov služieb prostredia GNOME (GOA)."
 
 #: ../data/org.gnome.Documents.appdata.xml.in.h:5
 msgid "View recent local and online documents"
@@ -176,7 +206,7 @@ msgstr "Pristupovať, spravovať a sprístupňovať dokumenty"
 msgid "Docs;PDF;Document;"
 msgstr "Dokumenty;PDF;Dokument;"
 
-#: ../data/ui/app-menu.ui.h:1
+#: ../data/ui/app-menu.ui.h:1 ../data/ui/help-overlay.ui.h:20
 msgid "Fullscreen"
 msgstr "Režim na celú obrazovku"
 
@@ -185,23 +215,100 @@ msgid "Night Mode"
 msgstr "Nočný režim"
 
 #: ../data/ui/app-menu.ui.h:3
+msgid "Keyboard Shortcuts"
+msgstr "Klávesové skratky"
+
+#: ../data/ui/app-menu.ui.h:4
 msgid "Help"
 msgstr "Pomocník"
 
-#: ../data/ui/app-menu.ui.h:4
+#: ../data/ui/app-menu.ui.h:5
 msgid "About"
 msgstr "O programe"
 
-#: ../data/ui/app-menu.ui.h:5
+#: ../data/ui/app-menu.ui.h:6 ../data/ui/help-overlay.ui.h:3
 msgid "Quit"
 msgstr "Ukončiť"
+
+#: ../data/ui/help-overlay.ui.h:1
+msgid "General"
+msgstr "Všeobecné"
+
+#: ../data/ui/help-overlay.ui.h:2
+msgid "Show help"
+msgstr "Zobrazenie pomocníka"
+
+# tooltip
+#: ../data/ui/help-overlay.ui.h:4 ../src/mainToolbar.js:90
+msgid "Search"
+msgstr "Vyhľadá"
+
+#: ../data/ui/help-overlay.ui.h:5
+msgid "Print the current document"
+msgstr "Tlač aktuálneho dokumentu"
+
+#: ../data/ui/help-overlay.ui.h:6
+msgid "Navigation"
+msgstr "Navigácia"
+
+#: ../data/ui/help-overlay.ui.h:7
+msgid "Go back"
+msgstr "Prejdenie späť"
+
+#: ../data/ui/help-overlay.ui.h:8
+msgid "Preview"
+msgstr "Náhľad"
+
+#: ../data/ui/help-overlay.ui.h:9
+msgid "Zoom in"
+msgstr "Zväčšenie"
+
+#: ../data/ui/help-overlay.ui.h:10
+msgid "Zoom out"
+msgstr "Zmenšenie"
+
+# toggleButton tooltip
+#: ../data/ui/help-overlay.ui.h:11
+msgid "Bookmark the current page"
+msgstr "Pridanie aktuálnej stránky do záložiek"
+
+#: ../data/ui/help-overlay.ui.h:12
+msgid "Open places and bookmarks dialog"
+msgstr "Otvorenie dialógového okna s miestami a záložkami"
+
+#: ../data/ui/help-overlay.ui.h:13
+msgid "Copy selected text to clipboard"
+msgstr "Skopírovanie vybratého textu do schránky"
+
+#: ../data/ui/help-overlay.ui.h:14
+msgid "Rotate anti-clockwise"
+msgstr "Otočenie doľava"
+
+#: ../data/ui/help-overlay.ui.h:15
+msgid "Rotate clockwise"
+msgstr "Otočenie doprava"
+
+#: ../data/ui/help-overlay.ui.h:16
+msgid "Next occurrence of the search string"
+msgstr "Nasledujúci výskyt hľadanej frázy"
+
+#: ../data/ui/help-overlay.ui.h:17
+msgid "Previous occurrence of the search string"
+msgstr "Predchádzajúci výskyt hľadanej frázy"
+
+#: ../data/ui/help-overlay.ui.h:18
+msgid "Presentation mode"
+msgstr "Režim prezentácie"
+
+#: ../data/ui/help-overlay.ui.h:19
+msgid "Open action menu"
+msgstr "Otvorenie ponuky akcií"
 
 #: ../data/ui/organize-collection-dialog.ui.h:1
 msgid "Enter a name for your first collection"
 msgstr "Zadajte názov vašej prvej zbierky"
 
 #: ../data/ui/organize-collection-dialog.ui.h:2
-#| msgid "Collection"
 msgid "New Collection…"
 msgstr "Nová zbierka…"
 
@@ -210,10 +317,11 @@ msgstr "Nová zbierka…"
 msgid "Add"
 msgstr "Pridať"
 
-#: ../data/ui/organize-collection-dialog.ui.h:4 ../src/mainToolbar.js:209
+#: ../data/ui/organize-collection-dialog.ui.h:4 ../src/mainToolbar.js:208
 msgid "Cancel"
 msgstr "Zrušiť"
 
+#. Label for Done button in Sharing dialog
 #: ../data/ui/organize-collection-dialog.ui.h:5 ../src/sharing.js:112
 msgid "Done"
 msgstr "Hotovo"
@@ -222,7 +330,9 @@ msgstr "Hotovo"
 msgid "_Copy"
 msgstr "_Kopírovať"
 
-#: ../data/ui/preview-menu.ui.h:1 ../src/selections.js:860 ../src/selections.js:975
+#. Translators: this is the Open action in a context menu
+#: ../data/ui/preview-menu.ui.h:1 ../data/ui/selection-toolbar.ui.h:1
+#: ../src/selections.js:986
 msgid "Open"
 msgstr "Otvoriť"
 
@@ -254,7 +364,8 @@ msgstr "Otočiť ↶"
 msgid "Rotate ↷"
 msgstr "Otočiť ↷"
 
-#: ../data/ui/preview-menu.ui.h:9 ../src/properties.js:62 ../src/selections.js:882
+#: ../data/ui/preview-menu.ui.h:9 ../data/ui/selection-toolbar.ui.h:2
+#: ../src/properties.js:62
 msgid "Properties"
 msgstr "Vlastnosti"
 
@@ -266,105 +377,139 @@ msgstr "Vybrať všetko"
 msgid "Select None"
 msgstr "Zrušiť výber"
 
-#: ../src/documents.js:630
+#: ../data/ui/selection-toolbar.ui.h:3 ../src/embed.js:84 ../src/search.js:203
+#: ../src/search.js:209
+msgid "Collections"
+msgstr "Zbierky"
+
+# tooltip
+#: ../data/ui/view-menu.ui.h:1
+msgid "View items as a grid of icons"
+msgstr "Zobrazí položky ako mriežku ikon"
+
+# tooltip
+#: ../data/ui/view-menu.ui.h:2
+msgid "View items as a list"
+msgstr "Zobrazí položky ako zoznam"
+
+#: ../data/ui/view-menu.ui.h:3
+msgid "Sort"
+msgstr "Usporiadať"
+
+#: ../data/ui/view-menu.ui.h:4
+msgid "Author"
+msgstr "Autor"
+
+#: ../data/ui/view-menu.ui.h:5
+msgid "Date"
+msgstr "Dátum"
+
+#: ../data/ui/view-menu.ui.h:6
+msgid "Name"
+msgstr "Názov"
+
+#: ../src/documents.js:639
 msgid "Failed to print document"
 msgstr "Zlyhala tlač dokumentu"
 
 # https://bugzilla.gnome.org/show_bug.cgi?id=696217
-#: ../src/documents.js:667 ../src/search.js:509
+#. Translators: this refers to local documents
+#: ../src/documents.js:681 ../src/search.js:510
 msgid "Local"
 msgstr "Lokálne"
 
 # https://bugzilla.gnome.org/show_bug.cgi?id=696217
 # DK:reprezentuje autora navodu pre Dokumenty.cize ostava tak ako je
-#: ../src/documents.js:694
+#. Translators: Documents ships a "Getting Started with Documents"
+#. tutorial PDF. The "GNOME" string below is displayed as the author name
+#. of that document, and doesn't normally need to be translated.
+#: ../src/documents.js:708
 msgid "GNOME"
 msgstr "GNOME"
 
-#: ../src/documents.js:695
+#: ../src/documents.js:709
 msgid "Getting Started with Documents"
 msgstr "Začíname s aplikáciou Dokumenty"
 
-#: ../src/documents.js:711 ../src/documents.js:903 ../src/documents.js:966 ../src/documents.js:1074
+#: ../src/documents.js:725 ../src/documents.js:928 ../src/documents.js:996
+#: ../src/documents.js:1112
 msgid "Collection"
 msgstr "Zbierka"
 
 # PM: toto je preklad služby na stránkach Google
-#: ../src/documents.js:781
+#. overridden
+#: ../src/documents.js:806
 msgid "Google Docs"
 msgstr "Dokumenty Google"
 
-#: ../src/documents.js:782
+#: ../src/documents.js:807
 msgid "Google"
 msgstr "Google"
 
-#: ../src/documents.js:905 ../src/documents.js:1076
+#: ../src/documents.js:930 ../src/documents.js:1114
 msgid "Spreadsheet"
 msgstr "Tabuľkový zošit"
 
-#: ../src/documents.js:907 ../src/documents.js:1078 ../src/presentation.js:49
+#: ../src/documents.js:932 ../src/documents.js:1116 ../src/presentation.js:49
 msgid "Presentation"
 msgstr "Prezentácia"
 
-#: ../src/documents.js:909 ../src/documents.js:1080
+#: ../src/documents.js:934 ../src/documents.js:1118
 msgid "e-Book"
 msgstr "E-kniha"
 
-#: ../src/documents.js:911 ../src/documents.js:1082
+#: ../src/documents.js:936 ../src/documents.js:1120
 msgid "Document"
 msgstr "Dokument"
 
 # MČ: ownCloud je názov služby (programu), pomocou ktorého si môžete urobiť vlastný mráčik
-#: ../src/documents.js:945
+#. overridden
+#: ../src/documents.js:975
 msgid "ownCloud"
 msgstr "ownCloud"
 
-#: ../src/documents.js:1008 ../src/documents.js:1009
+#. overridden
+#: ../src/documents.js:1046 ../src/documents.js:1047
 msgid "OneDrive"
 msgstr "OneDrive"
 
-#: ../src/documents.js:1253
+#: ../src/documents.js:1296
 msgid "Please check the network connection."
 msgstr "Skontrolujte, prosím, sieťové pripojenie."
 
-#: ../src/documents.js:1256
+#: ../src/documents.js:1299
 msgid "Please check the network proxy settings."
 msgstr "Skontrolujte prosím nastavenia sieťového sprostredkovateľa (proxy)."
 
-#: ../src/documents.js:1259
+#: ../src/documents.js:1302
 msgid "Unable to sign in to the document service."
 msgstr "Nepodarilo sa prihlásiť k službe dokumentov."
 
-#: ../src/documents.js:1262
+#: ../src/documents.js:1305
 msgid "Unable to locate this document."
 msgstr "Nepodarilo sa nájsť tento dokument."
 
-#: ../src/documents.js:1265
+#: ../src/documents.js:1308
 #, javascript-format
 msgid "Hmm, something is fishy (%d)."
 msgstr "Zdá sa, že niekde nastal problém (%d)."
 
-#: ../src/documents.js:1272
-msgid "You are using a preview of Books. Full viewing capabilities are coming soon!"
-msgstr "Používate ukážku aplikácie Knihy. Úplné schopnosti prezerania prídu čoskoro!"
+#: ../src/documents.js:1315
+msgid ""
+"You are using a preview of Books. Full viewing capabilities are coming soon!"
+msgstr ""
+"Používate ukážku aplikácie Knihy. Úplné schopnosti prezerania prídu čoskoro!"
 
-#: ../src/documents.js:1293
+#. Translators: %s is the title of a document
+#: ../src/documents.js:1336
 #, javascript-format
 msgid "Oops! Unable to load “%s”"
 msgstr "Ale nie! Nepodarilo sa načítať dokument „%s“"
 
 # button
-#: ../src/edit.js:180
+#: ../src/edit.js:186
 msgid "View"
 msgstr "Zobraziť"
-
-#: ../src/embed.js:110
-msgid "Recent"
-msgstr "Nedávne"
-
-#: ../src/embed.js:113 ../src/search.js:203 ../src/search.js:212 ../src/selections.js:887
-msgid "Collections"
-msgstr "Zbierky"
 
 #: ../src/lib/gd-nav-bar.c:242
 #, c-format
@@ -422,30 +567,20 @@ msgstr "Aplikácia na správu elektronických kníh"
 msgid "translator-credits"
 msgstr "Dušan Kazik <prescott66@gmail.com>"
 
-# tooltip
-#: ../src/mainToolbar.js:89
-msgid "Search"
-msgstr "Vyhľadá"
-
-#: ../src/mainToolbar.js:97
+#: ../src/mainToolbar.js:98
 msgid "Back"
 msgstr "Späť"
 
-# tooltip
-#: ../src/mainToolbar.js:147
-msgid "View items as a list"
-msgstr "Zobrazí položky ako zoznam"
+# gsettings summary; menu item
+#: ../src/mainToolbar.js:154
+msgid "View Menu"
+msgstr "Zobrazí ponuku"
 
-# tooltip
-#: ../src/mainToolbar.js:153
-msgid "View items as a grid of icons"
-msgstr "Zobrazí položky ako mriežku ikon"
-
-#: ../src/mainToolbar.js:183
+#: ../src/mainToolbar.js:182
 msgid "Click on items to select them"
 msgstr "Kliknutím na položky ich vyberiete"
 
-#: ../src/mainToolbar.js:185
+#: ../src/mainToolbar.js:184
 #, javascript-format
 msgid "%d selected"
 msgid_plural "%d selected"
@@ -454,15 +589,18 @@ msgstr[1] "%d vybraná"
 msgstr[2] "%d vybrané"
 
 # DK: je to tooltip.prelozene na 100% spravne-overene
-#: ../src/mainToolbar.js:260
+#: ../src/mainToolbar.js:268
 msgid "Select Items"
 msgstr "Umožní výber položiek"
 
+#. Translators: only one item has been deleted and %s is its name
 #: ../src/notifications.js:54
 #, javascript-format
 msgid "“%s” deleted"
 msgstr "Položka „%s“ odstránená"
 
+#. Translators: one or more items might have been deleted, and %d
+#. is the count
 #: ../src/notifications.js:58
 #, javascript-format
 msgid "%d item deleted"
@@ -471,7 +609,7 @@ msgstr[0] "%d položiek odstránených"
 msgstr[1] "%d položka odstránená"
 msgstr[2] "%d položky odstránené"
 
-#: ../src/notifications.js:67 ../src/selections.js:385
+#: ../src/notifications.js:67 ../src/selections.js:393
 msgid "Undo"
 msgstr "Vrátiť späť"
 
@@ -489,6 +627,8 @@ msgid "Some documents might not be available during this process"
 msgstr "Niektoré dokumenty nemusia byť počas tohto procesu dostupné"
 
 # DK:https://bugzilla.gnome.org/show_bug.cgi?id=695555
+#. Translators: %s refers to an online account provider, e.g.
+#. "Google", or "Windows Live".
 #: ../src/notifications.js:246
 #, javascript-format
 msgid "Fetching documents from %s"
@@ -527,6 +667,7 @@ msgstr "Spustené v režime prezentácie"
 msgid "Present On"
 msgstr "Prezentácia"
 
+#. Translators: "Mirrored" describes when both displays show the same view
 #: ../src/presentation.js:166
 msgid "Mirrored"
 msgstr "Zrkadlovo"
@@ -548,36 +689,44 @@ msgstr "Vedľajší"
 msgid "Bookmark this page"
 msgstr "Pridá túto stranu do záložiek"
 
-#: ../src/preview.js:900 ../src/selections.js:972
+#. Translators: this is the Open action in a context menu
+#: ../src/preview.js:901 ../src/selections.js:983
 #, javascript-format
 msgid "Open with %s"
 msgstr "Otvoriť pomocou %s"
 
 # MČ: ako som správne pochopil, tak sa jedná o „nájde predchádzajúcu aplikáciu“ je to tak? Len mi nie je jasné čo to má s dokumentami.
 # tooltip
-#: ../src/preview.js:963
+#: ../src/preview.js:964
 msgid "Find Previous"
 msgstr "Nájde predchádzajúcu"
 
 # tooltip
-#: ../src/preview.js:970
+#: ../src/preview.js:971
 msgid "Find Next"
 msgstr "Nájde ďalšiu"
 
+#. Title item
+#. Translators: "Title" is the label next to the document title
+#. in the properties dialog
 #: ../src/properties.js:82
 msgctxt "Document Title"
 msgid "Title"
 msgstr "Názov"
 
+#. Translators: "Author" is the label next to the document author
+#. in the properties dialog
 #: ../src/properties.js:91
 msgctxt "Document Author"
 msgid "Author"
 msgstr "Autor"
 
+#. Source item
 #: ../src/properties.js:98
 msgid "Source"
 msgstr "Zdroj"
 
+#. Date Modified item
 #: ../src/properties.js:104
 msgid "Date Modified"
 msgstr "Dátum zmeny"
@@ -586,6 +735,9 @@ msgstr "Dátum zmeny"
 msgid "Date Created"
 msgstr "Dátum vytvorenia"
 
+#. Document type item
+#. Translators: "Type" is the label next to the document type
+#. (PDF, spreadsheet, ...) in the properties dialog
 #: ../src/properties.js:120
 msgctxt "Document Type"
 msgid "Type"
@@ -596,113 +748,118 @@ msgid "Category"
 msgstr "Kategória"
 
 # https://bugzilla.gnome.org/show_bug.cgi?id=696217
-#: ../src/search.js:131 ../src/search.js:200 ../src/search.js:333 ../src/search.js:503
+#. Translators: this refers to new and recent documents
+#. Translators: this refers to documents
+#: ../src/search.js:131 ../src/search.js:200 ../src/search.js:333
+#: ../src/search.js:504
 msgid "All"
 msgstr "Všetky"
 
+#. Translators: this refers to favorite documents
 #: ../src/search.js:137
 msgid "Favorites"
 msgstr "Obľúbené"
 
+#. Translators: this refers to shared documents
 #: ../src/search.js:142
 msgid "Shared with you"
 msgstr "Vám sprístupnené"
 
+#. Translators: "Type" refers to a search filter on the document type
+#. (PDF, spreadsheet, ...)
 #: ../src/search.js:197
 msgctxt "Search Filter"
 msgid "Type"
 msgstr "Typ"
 
-#: ../src/search.js:207
+#: ../src/search.js:213
 msgid "PDF Documents"
 msgstr "Dokumenty PDF"
 
 #: ../src/search.js:220
-msgid "Presentations"
-msgstr "Prezentácie"
-
-#: ../src/search.js:223
-msgid "Spreadsheets"
-msgstr "Tabuľkové zošity"
-
-#: ../src/search.js:226
-msgid "Text Documents"
-msgstr "Textové dokumenty"
-
-#: ../src/search.js:231
 msgid "e-Books"
 msgstr "E-knihy"
 
-#: ../src/search.js:235
+#: ../src/search.js:224
 msgid "Comics"
 msgstr "Komiks"
 
+#: ../src/search.js:229
+msgid "Presentations"
+msgstr "Prezentácie"
+
+#: ../src/search.js:232
+msgid "Spreadsheets"
+msgstr "Tabuľkové zošity"
+
+#: ../src/search.js:235
+msgid "Text Documents"
+msgstr "Textové dokumenty"
+
+#. Translators: this is a verb that refers to "All", "Title" and "Author",
+#. as in "Match All", "Match Title" and "Match Author"
 #: ../src/search.js:330
 msgid "Match"
 msgstr "Hľadať podľa"
 
+#. Translators: "Title" refers to "Match Title" when searching
 #: ../src/search.js:336
 msgctxt "Search Filter"
 msgid "Title"
 msgstr "Názvu"
 
+#. Translators: "Author" refers to "Match Author" when searching
 #: ../src/search.js:339
 msgctxt "Search Filter"
 msgid "Author"
 msgstr "Autora"
 
-#: ../src/search.js:499
+#: ../src/search.js:500
 msgid "Sources"
 msgstr "Zdroje"
 
-#: ../src/selections.js:359 ../src/selections.js:361
+#: ../src/selections.js:366 ../src/selections.js:368
 msgid "Rename…"
 msgstr "Premenovať…"
 
 # button tooltip
-#: ../src/selections.js:364 ../src/selections.js:366 ../src/selections.js:870
+#: ../src/selections.js:372 ../src/selections.js:374
 msgid "Delete"
 msgstr "Odstrániť"
 
-#: ../src/selections.js:380
+#: ../src/selections.js:388
 #, javascript-format
 msgid "“%s” removed"
 msgstr "Položka „%s“ odstránená"
 
-#: ../src/selections.js:764
+#: ../src/selections.js:779
 msgid "Rename"
 msgstr "Premenovanie"
 
-#: ../src/selections.js:770
+#. Translators: "Collections" refers to documents in this context
+#: ../src/selections.js:785
 msgctxt "Dialog Title"
 msgid "Collections"
 msgstr "Zbierky"
-
-# button tooltip
-#: ../src/selections.js:865
-msgid "Print"
-msgstr "Tlač"
-
-# button tooltip
-#: ../src/selections.js:876
-msgid "Share"
-msgstr "Sprístupniť"
 
 # dialog title
 #: ../src/sharing.js:108
 msgid "Sharing Settings"
 msgstr "Nastavenia sprístupnenia"
 
+#. Label for widget group for changing document permissions
 #: ../src/sharing.js:145
 msgid "Document permissions"
 msgstr "Oprávnenia k dokumentu"
 
 # button label
+#. Label for permission change in Sharing dialog
 #: ../src/sharing.js:152 ../src/sharing.js:330
 msgid "Change"
 msgstr "Zmeniť"
 
 # RadioButton
+#. Label for radiobutton that sets doc permission to private
 #: ../src/sharing.js:176 ../src/sharing.js:305
 msgid "Private"
 msgstr "Súkromný"
@@ -712,14 +869,17 @@ msgstr "Súkromný"
 msgid "Public"
 msgstr "Verejný"
 
+#. Label for checkbutton that sets doc permission to Can edit
 #: ../src/sharing.js:190 ../src/sharing.js:300
 msgid "Everyone can edit"
 msgstr "Upravovať môže ktokoľvek"
 
+#. Label for widget group used for adding new contacts
 #: ../src/sharing.js:197
 msgid "Add people"
 msgstr "Pridajte ľudí"
 
+#. Editable text in entry field
 #: ../src/sharing.js:204
 msgid "Enter an email address"
 msgstr "Zadajte emailovú adresu"
@@ -754,41 +914,46 @@ msgstr "Vlastník"
 msgid "You can ask %s for access"
 msgstr "Prístup si môžete vyžiadať od používateľa %s"
 
-#: ../src/sharing.js:474 ../src/sharing.js:510 ../src/sharing.js:567 ../src/sharing.js:584 ../src/sharing.js:603
+#: ../src/sharing.js:474 ../src/sharing.js:510 ../src/sharing.js:567
+#: ../src/sharing.js:584 ../src/sharing.js:603
 msgid "The document was not updated"
 msgstr "Dokument nebol aktualizovaný"
 
-#: ../src/shellSearchProvider.js:292
+#: ../src/shellSearchProvider.js:290
 msgid "Untitled Document"
 msgstr "Nepomenovaný dokument"
 
-#: ../src/trackerController.js:172
+#: ../src/trackerController.js:177
 msgid "Unable to fetch the list of documents"
 msgstr "Nepodarilo sa získať zoznam dokumentov."
 
-#: ../src/view.js:260
+#: ../src/view.js:258
 msgid "No Books Found"
 msgstr "Neboli nájdené žiadne knihy"
 
-#: ../src/view.js:261
+#: ../src/view.js:259
 msgid "No Documents Found"
 msgstr "Neboli nájdené žiadne dokumenty"
 
-#: ../src/view.js:283
+#. Translators: %s here is "Settings", which is in a separate string due to
+#. markup, and should be translated only in the context of this sentence
+#: ../src/view.js:281
 #, javascript-format
 msgid "You can add your online accounts in %s"
 msgstr "Vaše účty služieb môžete pridať v %s"
 
 # gramaticky apeluje na predoslu frazu "Mozete pridat Vase online ucty v %s"
-#: ../src/view.js:287
+#. Translators: this should be translated in the context of the
+#. "You can add your online accounts in Settings" sentence above
+#: ../src/view.js:285
 msgid "Settings"
 msgstr "Nastaveniach"
 
-#: ../src/view.js:482
+#: ../src/view.js:508
 msgid "Yesterday"
 msgstr "Včera"
 
-#: ../src/view.js:484
+#: ../src/view.js:510
 #, javascript-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
@@ -796,11 +961,11 @@ msgstr[0] "Pred %d dňami"
 msgstr[1] "Pred %d dňom"
 msgstr[2] "Pred %d dňami"
 
-#: ../src/view.js:488
+#: ../src/view.js:514
 msgid "Last week"
 msgstr "Minulý týždeň"
 
-#: ../src/view.js:490
+#: ../src/view.js:516
 #, javascript-format
 msgid "%d week ago"
 msgid_plural "%d weeks ago"
@@ -808,11 +973,11 @@ msgstr[0] "Pred %d týždňami"
 msgstr[1] "Pred %d týždňom"
 msgstr[2] "Pred %d týždňami"
 
-#: ../src/view.js:494
+#: ../src/view.js:520
 msgid "Last month"
 msgstr "Minulý mesiac"
 
-#: ../src/view.js:496
+#: ../src/view.js:522
 #, javascript-format
 msgid "%d month ago"
 msgid_plural "%d months ago"
@@ -820,11 +985,11 @@ msgstr[0] "Pred %d mesiacmi"
 msgstr[1] "Pred %d mesiacom"
 msgstr[2] "Pred %d mesiacmi"
 
-#: ../src/view.js:500
+#: ../src/view.js:526
 msgid "Last year"
 msgstr "Minulý rok"
 
-#: ../src/view.js:502
+#: ../src/view.js:528
 #, javascript-format
 msgid "%d year ago"
 msgid_plural "%d years ago"
@@ -832,8 +997,21 @@ msgstr[0] "Pred %d rokmi"
 msgstr[1] "Pred %d rokom"
 msgstr[2] "Pred %d rokmi"
 
-#~ msgid "You don't have any collections yet. Enter a new collection name above."
-#~ msgstr "Zatiaľ nemáte žiadne zbierky. Vyššie zadajte názov pre novú zbierku."
+#~ msgid "Recent"
+#~ msgstr "Nedávne"
+
+# button tooltip
+#~ msgid "Print"
+#~ msgstr "Tlač"
+
+# button tooltip
+#~ msgid "Share"
+#~ msgstr "Sprístupniť"
+
+#~ msgid ""
+#~ "You don't have any collections yet. Enter a new collection name above."
+#~ msgstr ""
+#~ "Zatiaľ nemáte žiadne zbierky. Vyššie zadajte názov pre novú zbierku."
 
 #~ msgid "Create new collection"
 #~ msgstr "Vytvoriť novú zbierku"
@@ -845,11 +1023,15 @@ msgstr[2] "Pred %d rokmi"
 #~ msgstr "Načítať viac"
 
 #~ msgid ""
-#~ "<li>View recent local and online documents</li> <li>Access your Google, ownCloud or SkyDrive content</li> <li>Search through "
-#~ "documents</li> <li>See new documents shared by friends</li> <li>View documents fullscreen</li> <li>Print documents</li> "
-#~ "<li>Select favorites</li> <li>Allow opening full featured editor for non-trivial changes</li>"
+#~ "<li>View recent local and online documents</li> <li>Access your Google, "
+#~ "ownCloud or SkyDrive content</li> <li>Search through documents</li> "
+#~ "<li>See new documents shared by friends</li> <li>View documents "
+#~ "fullscreen</li> <li>Print documents</li> <li>Select favorites</li> "
+#~ "<li>Allow opening full featured editor for non-trivial changes</li>"
 #~ msgstr ""
-#~ "<li>Prezerať nedávne miestne a online dokumenty</li> <li>Prístup k vášmu obsahu na službách Google, ownCloud alebo SkyDrive</li> "
-#~ "<li>Vyhľadávať v dokumentoch</li> <li>Vidieť nové dokumenty zdieľané vašimi priateľmi</li> <li>Prezerať dokumenty na celú "
-#~ "obrazovku</li> <li>Tlačiť dokumenty</li> <li>Vybrať obľúbené dokumenty</li> <li>>Povoliť otvorenie vo vyspelom editore, ktorý "
-#~ "umožňuje pokročilejšie úpravy</li>"
+#~ "<li>Prezerať nedávne miestne a online dokumenty</li> <li>Prístup k vášmu "
+#~ "obsahu na službách Google, ownCloud alebo SkyDrive</li> <li>Vyhľadávať v "
+#~ "dokumentoch</li> <li>Vidieť nové dokumenty zdieľané vašimi priateľmi</li> "
+#~ "<li>Prezerať dokumenty na celú obrazovku</li> <li>Tlačiť dokumenty</li> "
+#~ "<li>Vybrať obľúbené dokumenty</li> <li>>Povoliť otvorenie vo vyspelom "
+#~ "editore, ktorý umožňuje pokročilejšie úpravy</li>"
