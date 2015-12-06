@@ -43,6 +43,7 @@ const Utils = imports.utils;
 const View = imports.view;
 const WindowMode = imports.windowMode;
 const Presentation = imports.presentation;
+const Documents = imports.documents;
 
 const _FULLSCREEN_TOOLBAR_TIMEOUT = 2; // seconds
 
@@ -172,13 +173,17 @@ const PreviewView = new Lang.Class({
             }));
     },
 
-    _onLoadStarted: function() {
+    _onLoadStarted: function(manager, doc) {
+        if (doc.viewType != Documents.ViewType.EV)
+            return;
         this._bookmarkPage.enabled = false;
         this._places.enabled = false;
         this._copy.enabled = false;
     },
 
     _onLoadError: function(manager, doc, message, exception) {
+        if (doc.viewType != Documents.ViewType.EV)
+            return;
         this._controlsVisible = true;
         this._syncControlsVisible();
         this._setError(message, exception.message);

@@ -133,8 +133,6 @@ const LOKView = new Lang.Class({
                                             Lang.bind(this, this._onLoadStarted));
         Application.documentManager.connect('load-error',
                                             Lang.bind(this, this._onLoadError));
-        Application.documentManager.connect('load-finished',
-                                            Lang.bind(this, this._onLoadFinished));
 
         this.connect('destroy', Lang.bind(this,
            function() {
@@ -144,6 +142,8 @@ const LOKView = new Lang.Class({
     },
 
     _onLoadStarted: function(manager, doc) {
+        if (doc.viewType != Documents.ViewType.LOK)
+            return;
         let file = Gio.File.new_for_uri (doc.uri);
         let location = file.get_path();
         this._doc = doc;
@@ -152,6 +152,8 @@ const LOKView = new Lang.Class({
     },
 
     _onLoadError: function(manager, doc, message, exception) {
+        if (doc.viewType != Documents.ViewType.LOK)
+            return;
         //FIXME we should hide controls
         this._setError(message, exception.message);
     },
@@ -169,9 +171,6 @@ const LOKView = new Lang.Class({
         this.set_visible_child_full('view', Gtk.StackTransitionType.NONE);
         this.view.show();
         this.view.set_edit(false);
-    },
-
-    _onLoadFinished: function(manager, doc, docModel) {
     },
 
     reset: function () {
