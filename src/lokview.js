@@ -143,7 +143,12 @@ const LOKView = new Lang.Class({
            }));
     },
 
-    _onLoadStarted: function() {
+    _onLoadStarted: function(manager, doc) {
+        let file = Gio.File.new_for_uri (doc.uri);
+        let location = file.get_path();
+        this._doc = doc;
+        this.view.open_document(location, "{}", null, Lang.bind(this, this.open_document_cb));
+        this._progressBar.show();
     },
 
     _onLoadError: function(manager, doc, message, exception) {
@@ -167,13 +172,6 @@ const LOKView = new Lang.Class({
     },
 
     _onLoadFinished: function(manager, doc, docModel) {
-        if (docModel == null && doc != null) {
-            let file = Gio.File.new_for_uri (doc.uri);
-            let location = file.get_path();
-            this._doc = doc;
-            this.view.open_document(location, "{}", null, Lang.bind(this, this.open_document_cb));
-            this._progressBar.show();
-        }
     },
 
     reset: function () {
