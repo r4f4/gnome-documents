@@ -92,7 +92,8 @@ const LOKView = new Lang.Class({
     Extends: Gtk.Stack,
 
     _init: function(overlay) {
-        this.parent();
+        this.parent({ homogeneous: true,
+                      transition_type: Gtk.StackTransitionType.CROSSFADE });
 
         this._uri = null;
         this._overlay = overlay;
