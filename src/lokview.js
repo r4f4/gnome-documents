@@ -144,6 +144,8 @@ const LOKView = new Lang.Class({
     _onLoadStarted: function(manager, doc) {
         if (doc.viewType != Documents.ViewType.LOK)
             return;
+        if (!isAvailable())
+            return;
         let file = Gio.File.new_for_uri (doc.uri);
         let location = file.get_path();
         this._doc = doc;
