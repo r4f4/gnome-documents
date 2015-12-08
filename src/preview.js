@@ -954,7 +954,6 @@ const PreviewSearchbar = new Lang.Class({
 
         let controlsBox = new Gtk.Box({ orientation: Gtk.Orientation.HORIZONTAL });
         controlsBox.get_style_context().add_class('linked');
-        controlsBox.get_style_context().add_class('raised');
         this._searchContainer.add(controlsBox);
 
         this._prev = new Gtk.Button({ action_name: 'app.find-prev' });
