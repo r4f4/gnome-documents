@@ -27,4 +27,15 @@
   </description>
   <url type="homepage">https://wiki.gnome.org/Apps/Documents</url>
   <updatecontact>debarshir_at_gnome.org</updatecontact>
+  <screenshots>
+    <screenshot type="default">
+      <image type="source">https://git.gnome.org/browse/gnome-documents/plain/data/screenshots/gnome-documents-1.png</image>
+    </screenshot>
+    <screenshot>
+      <image type="source">https://git.gnome.org/browse/gnome-documents/plain/data/screenshots/gnome-documents-2.png</image>
+    </screenshot>
+    <screenshot>
+      <image type="source">https://git.gnome.org/browse/gnome-documents/plain/data/screenshots/gnome-documents-3.png</image>
+    </screenshot>
+  </screenshots>
 </application>
