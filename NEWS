@@ -1,3 +1,12 @@
+3.16.5 - "Maniktala"
+====================
+
+- Restore separate collections for Books and Documents (Alessandro Bono)
+- Change to selection mode when pressing ctrl+a (Alessandro Bono)
+- Disable Print menu item when unsupported (Bastien Nocera)
+- Don't show an extra menu when the app menu is disabled
+- Translation updates
+
 3.16.4 - "By the Forest"
 ========================
 
