@@ -16,9 +16,8 @@
     <ul>
       <_li>View recent e-books</_li>
       <_li>Search through e-books</_li>
-      <_li>View e-books fullscreen</_li>
+      <_li>View e-books (PDF and comics) fullscreen</_li>
       <_li>Print e-books</_li>
-      <_li>Allow opening full featured editor for non-trivial changes</_li>
     </ul>
   </description>
   <screenshots>
