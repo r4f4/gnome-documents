@@ -27,15 +27,4 @@
   </screenshots>
   <url type="homepage">https://wiki.gnome.org/Apps/Books</url>
   <updatecontact>debarshir_at_gnome.org</updatecontact>
-  <screenshots>
-    <screenshot type="default">
-      <image type="source">https://git.gnome.org/browse/gnome-documents/plain/data/screenshots/gnome-books-1.png</image>
-    </screenshot>
-    <screenshot>
-      <image type="source">https://git.gnome.org/browse/gnome-documents/plain/data/screenshots/gnome-books-2.png</image>
-    </screenshot>
-    <screenshot>
-      <image type="source">https://git.gnome.org/browse/gnome-documents/plain/data/screenshots/gnome-books-3.png</image>
-    </screenshot>
-  </screenshots>
 </application>
