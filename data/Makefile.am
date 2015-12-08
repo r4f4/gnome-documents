@@ -13,8 +13,13 @@ org.gnome.Documents.data.gresource: org.gnome.Documents.data.gresource.xml $(app
 		--target=$@						\
 		--sourcedir=$(srcdir) $<
 
+org.gnome.Books.data.gresource: org.gnome.Books.data.gresource.xml $(app_resource_files)
+	$(AM_V_GEN) $(GLIB_COMPILE_RESOURCES)				\
+		--target=$@						\
+		--sourcedir=$(srcdir) $<
+
 resourcedir = $(pkgdatadir)
-resource_DATA = org.gnome.Documents.data.gresource
+resource_DATA = org.gnome.Documents.data.gresource org.gnome.Books.data.gresource
 
 appdatadir = $(datadir)/appdata
 appdata_DATA = $(appdata_in_files:.xml.in=.xml)
@@ -53,18 +58,13 @@ EXTRA_DIST= \
     $(desktop_in_files) \
     $(searchprovider_DATA) \
     $(gsettings_SCHEMAS) \
-    org.gnome.Documents.data.gresource.xml
+    org.gnome.Documents.data.gresource.xml \
+    org.gnome.Books.data.gresource.xml
 
 CLEANFILES = \
     org.gnome.Documents.data.gresource \
+    org.gnome.Books.data.gresource \
     $(appdata_DATA) \
     $(desktop_DATA)
-
-install-exec-hook:
-	-rm -f $(appdir)/org.gnome.Books.data.gresource
-	$(LN_S) $(appdir)/org.gnome.Documents.data.gresource $(DESTDIR)$(appdir)/org.gnome.Books.data.gresource
-uninstall-hook:
-	-rm -f $(appdir)/org.gnome.Books.data.gresource
-
 
 -include $(top_srcdir)/git.mk
