@@ -20,11 +20,6 @@
       <_li>Print e-books</_li>
     </ul>
   </description>
-  <screenshots>
-    <screenshot type="default">https://git.gnome.org/browse/gnome-documents/plain/data/screenshots/gnome-books-1.png</screenshot>
-    <screenshot>https://git.gnome.org/browse/gnome-documents/plain/data/screenshots/gnome-books-2.png</screenshot>
-    <screenshot>https://git.gnome.org/browse/gnome-documents/plain/data/screenshots/gnome-books-3.png</screenshot>
-  </screenshots>
   <url type="homepage">https://wiki.gnome.org/Apps/Books</url>
   <updatecontact>debarshir_at_gnome.org</updatecontact>
   <screenshots>
