@@ -104,7 +104,10 @@ const Searchbar = new Lang.Class({
             return true;
         }
 
-        return this.handle_event(event);
+        let retval = this.handle_event(event);
+        if (retval == Gdk.EVENT_STOP)
+            this._searchEntry.grab_focus();
+        return retval;
     },
 
     reveal: function() {
