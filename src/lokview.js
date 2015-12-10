@@ -129,6 +129,9 @@ const LOKView = new Lang.Class({
                 this.view.set_zoom(zoomLevel / 2);
             }));
 
+        this._copy = Application.application.lookup_action('copy');
+        let copyId = this._copy.connect('activate', Lang.bind(this, this._onCopyActivated));
+
         Application.documentManager.connect('load-started',
                                             Lang.bind(this, this._onLoadStarted));
         Application.documentManager.connect('load-error',
@@ -141,6 +144,14 @@ const LOKView = new Lang.Class({
            }));
     },
 
+    _onCopyActivated: function() {
+        let [selectedText, mimeType] = this.view.copy_selection('text/plain;charset=utf-8');
+        let display = Gdk.Display.get_default();
+        let clipboard = Gtk.Clipboard.get_default(display);
+
+        clipboard.set_text(selectedText, selectedText.length);
+    },
+
     _onLoadStarted: function(manager, doc) {
         if (doc.viewType != Documents.ViewType.LOK)
             return;
@@ -149,6 +160,7 @@ const LOKView = new Lang.Class({
         let file = Gio.File.new_for_uri (doc.uri);
         let location = file.get_path();
         this._doc = doc;
+        this._copy.enabled = false;
         this.view.open_document(location, "{}", null, Lang.bind(this, this.open_document_cb));
         this._progressBar.show();
     },
@@ -173,6 +185,8 @@ const LOKView = new Lang.Class({
         this.set_visible_child_full('view', Gtk.StackTransitionType.NONE);
         this.view.show();
         this.view.set_edit(false);
+        // FIXME https://bugs.documentfoundation.org/show_bug.cgi?id=96384
+        this._copy.enabled = true;
     },
 
     reset: function () {
