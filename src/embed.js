@@ -193,6 +193,9 @@ const Embed = new Lang.Class({
         case WindowMode.WindowMode.SEARCH:
             page = 'search';
             break;
+        case WindowMode.WindowMode.PREVIEW_LOK:
+            page = 'preview-lok';
+            break;
         default:
             throw(new Error('Not handled'));
             break;
