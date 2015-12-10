@@ -25,6 +25,13 @@
       <_li>Allow opening full featured editor for non-trivial changes</_li>
     </ul>
   </description>
+  <kudos>
+    <kudo>AppMenu</kudo>
+    <kudo>HiDpiIcon</kudo>
+    <kudo>ModernToolkit</kudo>
+    <kudo>SearchProvider</kudo>
+    <kudo>UserDocs</kudo>
+  </kudos>
   <url type="homepage">https://wiki.gnome.org/Apps/Documents</url>
   <updatecontact>debarshir_at_gnome.org</updatecontact>
   <screenshots>

@@ -20,6 +20,11 @@
       <_li>Print e-books</_li>
     </ul>
   </description>
+  <kudos>
+    <kudo>AppMenu</kudo>
+    <kudo>HiDpiIcon</kudo>
+    <kudo>ModernToolkit</kudo>
+  </kudos>
   <url type="homepage">https://wiki.gnome.org/Apps/Books</url>
   <updatecontact>debarshir_at_gnome.org</updatecontact>
   <screenshots>
