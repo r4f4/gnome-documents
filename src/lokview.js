@@ -182,8 +182,7 @@ const LOKView = new Lang.Class({
             this.hasParts = false;
 
         this._progressBar.hide();
-        this.set_visible_child_full('view', Gtk.StackTransitionType.NONE);
-        this.view.show();
+        this.set_visible_child_name('view');
         this.view.set_edit(false);
         // FIXME https://bugs.documentfoundation.org/show_bug.cgi?id=96384
         this._copy.enabled = true;
@@ -192,13 +191,15 @@ const LOKView = new Lang.Class({
     reset: function () {
         if (!this.view)
             return;
-        this.view.hide()
+        this.view.reset_view();
+        this.set_visible_child_full('view', Gtk.StackTransitionType.NONE);
     },
 
     _createView: function() {
         if (isAvailable()) {
             this.view = LOKDocView.View.new(null, null, null);
             this._sw.add(this.view);
+            this.view.show();
             this.view.connect('load-changed', Lang.bind(this, this._onProgressChanged));
         }
 
