@@ -10,9 +10,9 @@ msgstr ""
 "Project-Id-Version: 3.12\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-12-04 21:07+0000\n"
-"PO-Revision-Date: 2015-12-05 07:24+0000\n"
-"Last-Translator: Pedro Albuquerque <palbuquerque73@gmail.com>\n"
+"POT-Creation-Date: 2015-12-12 21:06+0000\n"
+"PO-Revision-Date: 2015-12-13 08:08+0000\n"
+"Last-Translator:  <>\n"
 "Language-Team: Português <palbuquerque73@gmail.com>\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
@@ -56,17 +56,13 @@ msgid "Search through e-books"
 msgstr "Procurar e-books"
 
 #: ../data/org.gnome.Books.appdata.xml.in.h:7
-msgid "View e-books fullscreen"
-msgstr "Ver e-books em ecrã completo"
+#| msgid "View e-books fullscreen"
+msgid "View e-books (PDF and comics) fullscreen"
+msgstr "Ver e-books (PDF e banda desenhada) em ecrã completo"
 
 #: ../data/org.gnome.Books.appdata.xml.in.h:8
 msgid "Print e-books"
 msgstr "Imprimir e-books"
-
-#: ../data/org.gnome.Books.appdata.xml.in.h:9
-#: ../data/org.gnome.Documents.appdata.xml.in.h:12
-msgid "Allow opening full featured editor for non-trivial changes"
-msgstr "Permitir abrir editor completo para alterações não triviais"
 
 #: ../data/org.gnome.Books.desktop.in.h:2
 msgid "Access, manage and share books"
@@ -185,6 +181,10 @@ msgstr "Imprima documentos"
 #: ../data/org.gnome.Documents.appdata.xml.in.h:11
 msgid "Select favorites"
 msgstr "Selecionar favoritos"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:12
+msgid "Allow opening full featured editor for non-trivial changes"
+msgstr "Permitir abrir editor completo para alterações não triviais"
 
 #: ../data/org.gnome.Documents.desktop.in.h:2
 msgid "Access, manage and share documents"
@@ -376,13 +376,10 @@ msgid "View items as a list"
 msgstr "Ver itens como uma lista"
 
 #: ../data/ui/view-menu.ui.h:3
-#| msgid "Sort by"
 msgid "Sort"
 msgstr "Ordenar"
 
 #: ../data/ui/view-menu.ui.h:4
-#| msgctxt "Document Author"
-#| msgid "Author"
 msgid "Author"
 msgstr "Autor"
 
@@ -520,7 +517,7 @@ msgstr "Nenhum marcador"
 msgid "Loading…"
 msgstr "A carregar…"
 
-#: ../src/lib/gd-places-bookmarks.c:656 ../src/preview.js:631
+#: ../src/lib/gd-places-bookmarks.c:656 ../src/preview.js:635
 msgid "Bookmarks"
 msgstr "Marcadores"
 
@@ -551,7 +548,6 @@ msgid "Back"
 msgstr "Recuar"
 
 #: ../src/mainToolbar.js:154
-#| msgid "View as"
 msgid "View Menu"
 msgstr "Ver menu"
 
@@ -655,21 +651,21 @@ msgstr "Desligado"
 msgid "Secondary"
 msgstr "Secundário"
 
-#: ../src/preview.js:639
+#: ../src/preview.js:643
 msgid "Bookmark this page"
 msgstr "Marcar esta página"
 
 #. Translators: this is the Open action in a context menu
-#: ../src/preview.js:901 ../src/selections.js:983
+#: ../src/preview.js:905 ../src/selections.js:983
 #, javascript-format
 msgid "Open with %s"
 msgstr "Abrir com %s"
 
-#: ../src/preview.js:964
+#: ../src/preview.js:962
 msgid "Find Previous"
 msgstr "Localizar anterior"
 
-#: ../src/preview.js:971
+#: ../src/preview.js:968
 msgid "Find Next"
 msgstr "Localizar seguinte"
 
@@ -904,44 +900,44 @@ msgstr "Pode adicionar as suas contas online em %s"
 msgid "Settings"
 msgstr "Definições"
 
-#: ../src/view.js:508
+#: ../src/view.js:505
 msgid "Yesterday"
 msgstr "Ontem"
 
-#: ../src/view.js:510
+#: ../src/view.js:507
 #, javascript-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
 msgstr[0] "%d dia atrás"
 msgstr[1] "%d dias atrás"
 
-#: ../src/view.js:514
+#: ../src/view.js:511
 msgid "Last week"
 msgstr "Semana passada"
 
-#: ../src/view.js:516
+#: ../src/view.js:513
 #, javascript-format
 msgid "%d week ago"
 msgid_plural "%d weeks ago"
 msgstr[0] "%d semana atrás"
 msgstr[1] "%d semanas atrás"
 
-#: ../src/view.js:520
+#: ../src/view.js:517
 msgid "Last month"
 msgstr "Mês passado"
 
-#: ../src/view.js:522
+#: ../src/view.js:519
 #, javascript-format
 msgid "%d month ago"
 msgid_plural "%d months ago"
 msgstr[0] "%d mês atrás"
 msgstr[1] "%d meses atrás"
 
-#: ../src/view.js:526
+#: ../src/view.js:523
 msgid "Last year"
 msgstr "Ano passado"
 
-#: ../src/view.js:528
+#: ../src/view.js:525
 #, javascript-format
 msgid "%d year ago"
 msgid_plural "%d years ago"
