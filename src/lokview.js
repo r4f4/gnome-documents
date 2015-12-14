@@ -184,8 +184,6 @@ const LOKView = new Lang.Class({
         this._progressBar.hide();
         this.set_visible_child_name('view');
         this.view.set_edit(false);
-        // FIXME https://bugs.documentfoundation.org/show_bug.cgi?id=96384
-        this._copy.enabled = true;
     },
 
     reset: function () {
@@ -193,6 +191,7 @@ const LOKView = new Lang.Class({
             return;
         this.view.reset_view();
         this.set_visible_child_full('view', Gtk.StackTransitionType.NONE);
+        this._copy.enabled = false;
     },
 
     _createView: function() {
@@ -201,6 +200,7 @@ const LOKView = new Lang.Class({
             this._sw.add(this.view);
             this.view.show();
             this.view.connect('load-changed', Lang.bind(this, this._onProgressChanged));
+            this.view.connect('text-selection', Lang.bind(this, this._onTextSelection));
         }
 
         this._navControls = new LOKViewNavControls(this, this._overlay);
@@ -209,6 +209,10 @@ const LOKView = new Lang.Class({
 
     _onProgressChanged: function() {
         this._progressBar.fraction = this.view.load_progress;
+    },
+
+    _onTextSelection: function(hasSelection) {
+        this._copy.enabled = hasSelection;
     },
 
     _setError: function(primary, secondary) {
