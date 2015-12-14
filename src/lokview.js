@@ -265,8 +265,27 @@ const LOKViewToolbar = new Lang.Class({
 
     _getLOKViewMenu: function() {
         let builder = new Gtk.Builder();
-        builder.add_from_resource('/org/gnome/Documents/ui/preview-context-menu.ui');
-        let menu = builder.get_object('preview-context-menu');
+        builder.add_from_resource('/org/gnome/Documents/ui/preview-menu.ui');
+        let menu = builder.get_object('preview-menu');
+        let section = builder.get_object('open-section');
+
+        let doc = Application.documentManager.getActiveItem();
+        if (doc && doc.defaultAppName) {
+            section.remove(0);
+            section.prepend(_("Open with %s").format(doc.defaultAppName), 'app.open-current');
+        }
+
+        // No edit support yet
+        section.remove(1);
+        // No print support yet
+        section.remove(1);
+        // No present support yet
+        section.remove(1);
+
+        // No rotate support
+        section = builder.get_object('rotate-section');
+        section.remove(0);
+        section.remove(0);
 
         return menu;
     },
