@@ -49,6 +49,11 @@ const View = imports.view;
 const WindowMode = imports.windowMode;
 const Documents = imports.documents;
 
+const MIN_SCALE = 0.2;
+const ZOOM_IN_FACTOR = 1.2;
+const ZOOM_OUT_FACTOR = (1.0/ZOOM_IN_FACTOR);
+const EPSILON = 0.00000001;
+
 const openDocumentFormats = ['application/vnd.oasis.opendocument.text',
                              'application/vnd.oasis.opendocument.text-template',
                              'application/vnd.oasis.opendocument.text-web',
@@ -115,18 +120,28 @@ const LOKView = new Lang.Class({
 
         this.show_all();
 
+        this.view.connect('notify::zoom-level', Lang.bind(this,
+            this._onZoomLevelChanged));
+
         this._zoomIn = Application.application.lookup_action('zoom-in');
+        this.view.connect('notify::can-zoom-in', Lang.bind(this,
+            this._onCanZoomInChanged));
         let zoomInId = this._zoomIn.connect('activate', Lang.bind(this,
             function() {
-                let zoomLevel = this.view.get_zoom();
-                this.view.set_zoom(zoomLevel * 2);
+                let zoomLevel = this.view.get_zoom() * ZOOM_IN_FACTOR;
+                this.view.set_zoom(zoomLevel);
+                this._onZoomLevelChanged(); // FIXME https://bugs.documentfoundation.org/show_bug.cgi?id=96514
             }));
 
         this._zoomOut = Application.application.lookup_action('zoom-out');
+        this.view.connect('notify::can-zoom-out', Lang.bind(this,
+            this._onCanZoomOutChanged));
         let zoomOutId = this._zoomOut.connect('activate', Lang.bind(this,
             function() {
                 let zoomLevel = this.view.get_zoom();
-                this.view.set_zoom(zoomLevel / 2);
+                zoomLevel = Math.max (zoomLevel * ZOOM_OUT_FACTOR, MIN_SCALE);
+                this.view.set_zoom(zoomLevel);
+                this._onZoomLevelChanged(); // FIXME https://bugs.documentfoundation.org/show_bug.cgi?id=96514
             }));
 
         this._copy = Application.application.lookup_action('copy');
@@ -142,6 +157,21 @@ const LOKView = new Lang.Class({
                this._zoomIn.disconnect(zoomInId);
                this._zoomOut.disconnect(zoomOutId);
            }));
+    },
+
+    _onCanZoomInChanged: function() {
+        this._zoomIn.enabled = true; //FIXME this.view.can_zoom_in;
+    },
+
+    _onCanZoomOutChanged: function() {
+        // FIXME this._zoomOut.enabled = this.view.can_zoom_out && Math.abs (this.view.get_zoom() - MIN_SCALE) > EPSILON;
+        // https://bugs.documentfoundation.org/show_bug.cgi?id=96513
+        this._zoomOut.enabled = Math.abs (this.view.get_zoom() - MIN_SCALE) > EPSILON;
+    },
+
+    _onZoomLevelChanged: function() {
+        this._onCanZoomInChanged();
+        this._onCanZoomOutChanged();
     },
 
     _onCopyActivated: function() {
