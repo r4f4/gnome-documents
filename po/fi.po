@@ -11,8 +11,8 @@ msgstr ""
 "Project-Id-Version: gnome-documents master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-11-18 09:08+0000\n"
-"PO-Revision-Date: 2015-11-18 17:01+0200\n"
+"POT-Creation-Date: 2015-12-20 09:09+0000\n"
+"PO-Revision-Date: 2015-12-20 21:14+0200\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos+l10n@iki.fi>\n"
 "Language-Team: suomi <gnome-fi-laatu@lists.sourceforge.net>\n"
 "Language: fi\n"
@@ -24,7 +24,7 @@ msgstr ""
 "X-POT-Import-Date: 2012-03-05 14:46:33+0000\n"
 
 #: ../data/org.gnome.Books.appdata.xml.in.h:1
-#: ../data/org.gnome.Books.desktop.in.h:1 ../src/application.js:114
+#: ../data/org.gnome.Books.desktop.in.h:1 ../src/application.js:115
 #: ../src/embed.js:80 ../src/lib/gd-utils.c:418
 msgid "Books"
 msgstr "Kirjat"
@@ -57,17 +57,13 @@ msgid "Search through e-books"
 msgstr "Etsiä kirjojen sisällöstä"
 
 #: ../data/org.gnome.Books.appdata.xml.in.h:7
-msgid "View e-books fullscreen"
-msgstr "Katsella kirjoja koko näytön tilassa"
+#| msgid "View e-books fullscreen"
+msgid "View e-books (PDF and comics) fullscreen"
+msgstr "Katsele sähköisiä kirjoja koko näytön tilassa"
 
 #: ../data/org.gnome.Books.appdata.xml.in.h:8
 msgid "Print e-books"
 msgstr "Tulostaa kirjoja"
-
-#: ../data/org.gnome.Books.appdata.xml.in.h:9
-#: ../data/org.gnome.Documents.appdata.xml.in.h:12
-msgid "Allow opening full featured editor for non-trivial changes"
-msgstr "Avata erillisen muokkaimen suuria muutoksia varten"
 
 #: ../data/org.gnome.Books.desktop.in.h:2
 msgid "Access, manage and share books"
@@ -140,7 +136,7 @@ msgid "Whether the application is in night mode."
 msgstr "Toimiiko sovellus yötilassa."
 
 #: ../data/org.gnome.Documents.appdata.xml.in.h:1
-#: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:117
+#: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:118
 #: ../src/embed.js:80 ../src/lib/gd-utils.c:411 ../src/mainWindow.js:54
 msgid "Documents"
 msgstr "Asiakirjat"
@@ -189,6 +185,10 @@ msgstr "Tulostaa asiakirjoja"
 msgid "Select favorites"
 msgstr "Valita suosikkeja"
 
+#: ../data/org.gnome.Documents.appdata.xml.in.h:12
+msgid "Allow opening full featured editor for non-trivial changes"
+msgstr "Avata erillisen muokkaimen suuria muutoksia varten"
+
 #: ../data/org.gnome.Documents.desktop.in.h:2
 msgid "Access, manage and share documents"
 msgstr "Käytä, hallitse ja jaa asiakirjoja"
@@ -206,14 +206,18 @@ msgid "Night Mode"
 msgstr "Yötila"
 
 #: ../data/ui/app-menu.ui.h:3
+msgid "Keyboard Shortcuts"
+msgstr "Pikanäppäimet"
+
+#: ../data/ui/app-menu.ui.h:4
 msgid "Help"
 msgstr "Ohje"
 
-#: ../data/ui/app-menu.ui.h:4
+#: ../data/ui/app-menu.ui.h:5
 msgid "About"
 msgstr "Tietoja"
 
-#: ../data/ui/app-menu.ui.h:5 ../data/ui/help-overlay.ui.h:3
+#: ../data/ui/app-menu.ui.h:6 ../data/ui/help-overlay.ui.h:3
 msgid "Quit"
 msgstr "Lopeta"
 
@@ -230,7 +234,6 @@ msgid "Search"
 msgstr "Etsi"
 
 #: ../data/ui/help-overlay.ui.h:5
-#| msgid "Print documents"
 msgid "Print the current document"
 msgstr "Tulosta asiakirja"
 
@@ -247,17 +250,14 @@ msgid "Preview"
 msgstr "Esikatselu"
 
 #: ../data/ui/help-overlay.ui.h:9
-#| msgid "Zoom In"
 msgid "Zoom in"
 msgstr "Lähennä"
 
 #: ../data/ui/help-overlay.ui.h:10
-#| msgid "Zoom Out"
 msgid "Zoom out"
 msgstr "Loitonna"
 
 #: ../data/ui/help-overlay.ui.h:11
-#| msgid "Bookmark this page"
 msgid "Bookmark the current page"
 msgstr "Lisää sivu kirjanmerkkeihin"
 
@@ -286,7 +286,6 @@ msgid "Previous occurrence of the search string"
 msgstr "Hakuehdon edellinen esiintymä"
 
 #: ../data/ui/help-overlay.ui.h:18
-#| msgid "Presentation"
 msgid "Presentation mode"
 msgstr "Esitystila"
 
@@ -353,7 +352,7 @@ msgstr "Käännä ↶"
 msgid "Rotate ↷"
 msgstr "Käännä ↷"
 
-#: ../data/ui/preview-menu.ui.h:9 ../data/ui/selection-toolbar.ui.h:5
+#: ../data/ui/preview-menu.ui.h:9 ../data/ui/selection-toolbar.ui.h:2
 #: ../src/properties.js:62
 msgid "Properties"
 msgstr "Ominaisuudet"
@@ -366,20 +365,7 @@ msgstr "Valitse kaikki"
 msgid "Select None"
 msgstr "Poista kaikki valinnat"
 
-#: ../data/ui/selection-toolbar.ui.h:2
-msgid "Print"
-msgstr "Tulosta"
-
-#: ../data/ui/selection-toolbar.ui.h:3 ../src/selections.js:372
-#: ../src/selections.js:374
-msgid "Delete"
-msgstr "Poista"
-
-#: ../data/ui/selection-toolbar.ui.h:4
-msgid "Share"
-msgstr "Jaa"
-
-#: ../data/ui/selection-toolbar.ui.h:6 ../src/embed.js:84 ../src/search.js:203
+#: ../data/ui/selection-toolbar.ui.h:3 ../src/embed.js:84 ../src/search.js:203
 #: ../src/search.js:209
 msgid "Collections"
 msgstr "Kokoelmat"
@@ -392,88 +378,107 @@ msgstr "Näytä kohteet kuvakeruudukkona"
 msgid "View items as a list"
 msgstr "Näytä kohteet luettelona"
 
-#: ../src/documents.js:630
+#: ../data/ui/view-menu.ui.h:3
+#| msgid "Sort by"
+msgid "Sort"
+msgstr "Järjestä"
+
+#: ../data/ui/view-menu.ui.h:4
+#| msgctxt "Document Author"
+#| msgid "Author"
+msgid "Author"
+msgstr "Tekijä"
+
+#: ../data/ui/view-menu.ui.h:5
+msgid "Date"
+msgstr "Päiväys"
+
+#: ../data/ui/view-menu.ui.h:6
+msgid "Name"
+msgstr "Nimi"
+
+#: ../src/documents.js:639
 msgid "Failed to print document"
 msgstr "Asiakirjan tulostaminen epäonnistui"
 
 #. Translators: this refers to local documents
-#: ../src/documents.js:672 ../src/search.js:510
+#: ../src/documents.js:681 ../src/search.js:510
 msgid "Local"
 msgstr "Paikallinen"
 
 #. Translators: Documents ships a "Getting Started with Documents"
 #. tutorial PDF. The "GNOME" string below is displayed as the author name
 #. of that document, and doesn't normally need to be translated.
-#: ../src/documents.js:699
+#: ../src/documents.js:708
 msgid "GNOME"
 msgstr "Gnome"
 
-#: ../src/documents.js:700
+#: ../src/documents.js:709
 msgid "Getting Started with Documents"
 msgstr "Asiakirjat ja käytön aloitus"
 
-#: ../src/documents.js:716 ../src/documents.js:919 ../src/documents.js:987
-#: ../src/documents.js:1103
+#: ../src/documents.js:725 ../src/documents.js:928 ../src/documents.js:996
+#: ../src/documents.js:1112
 msgid "Collection"
 msgstr "Kokoelma"
 
 #. overridden
-#: ../src/documents.js:797
+#: ../src/documents.js:806
 msgid "Google Docs"
 msgstr "Google Docs"
 
-#: ../src/documents.js:798
+#: ../src/documents.js:807
 msgid "Google"
 msgstr "Google"
 
-#: ../src/documents.js:921 ../src/documents.js:1105
+#: ../src/documents.js:930 ../src/documents.js:1114
 msgid "Spreadsheet"
 msgstr "Taulukko"
 
-#: ../src/documents.js:923 ../src/documents.js:1107 ../src/presentation.js:49
+#: ../src/documents.js:932 ../src/documents.js:1116 ../src/presentation.js:49
 msgid "Presentation"
 msgstr "Esitys"
 
-#: ../src/documents.js:925 ../src/documents.js:1109
+#: ../src/documents.js:934 ../src/documents.js:1118
 msgid "e-Book"
 msgstr "Kirja"
 
-#: ../src/documents.js:927 ../src/documents.js:1111
+#: ../src/documents.js:936 ../src/documents.js:1120
 msgid "Document"
 msgstr "Asiakirja"
 
 #. overridden
-#: ../src/documents.js:966
+#: ../src/documents.js:975
 msgid "ownCloud"
 msgstr "ownCloud"
 
 #. overridden
-#: ../src/documents.js:1037 ../src/documents.js:1038
+#: ../src/documents.js:1046 ../src/documents.js:1047
 msgid "OneDrive"
 msgstr "OneDrive"
 
-#: ../src/documents.js:1287
+#: ../src/documents.js:1296
 msgid "Please check the network connection."
 msgstr "Tarkista verkkoyhteys."
 
-#: ../src/documents.js:1290
+#: ../src/documents.js:1299
 msgid "Please check the network proxy settings."
 msgstr "Tarkista verkkoyhteyden välityspalvelimen asetukset."
 
-#: ../src/documents.js:1293
+#: ../src/documents.js:1302
 msgid "Unable to sign in to the document service."
 msgstr "Asiakirjapalveluun kirjautuminen epäonnistui."
 
-#: ../src/documents.js:1296
+#: ../src/documents.js:1305
 msgid "Unable to locate this document."
 msgstr "Tämän asiakirjan paikantaminen epäonnistui."
 
-#: ../src/documents.js:1299
+#: ../src/documents.js:1308
 #, javascript-format
 msgid "Hmm, something is fishy (%d)."
 msgstr "Hmm, jokin meni pieleen (%d)."
 
-#: ../src/documents.js:1306
+#: ../src/documents.js:1315
 msgid ""
 "You are using a preview of Books. Full viewing capabilities are coming soon!"
 msgstr ""
@@ -481,12 +486,12 @@ msgstr ""
 "tulevat pian!"
 
 #. Translators: %s is the title of a document
-#: ../src/documents.js:1327
+#: ../src/documents.js:1336
 #, javascript-format
 msgid "Oops! Unable to load “%s”"
 msgstr "Hups! Kohteen \"%s\" lataus epäonnistui"
 
-#: ../src/edit.js:180
+#: ../src/edit.js:186
 msgid "View"
 msgstr "Näkymä"
 
@@ -519,7 +524,7 @@ msgstr "Ei kirjanmerkkejä"
 msgid "Loading…"
 msgstr "Ladataan…"
 
-#: ../src/lib/gd-places-bookmarks.c:656 ../src/preview.js:631
+#: ../src/lib/gd-places-bookmarks.c:656 ../src/preview.js:635
 msgid "Bookmarks"
 msgstr "Kirjanmerkit"
 
@@ -548,9 +553,10 @@ msgid "Back"
 msgstr "Takaisin"
 
 #: ../src/mainToolbar.js:154
-#| msgid "View items as a list"
-msgid "View items as a list or a grid"
-msgstr "Näytä kohteet luettelona tai ruudukkona"
+#, fuzzy
+#| msgid "View as"
+msgid "View Menu"
+msgstr "Näkymä"
 
 #: ../src/mainToolbar.js:182
 msgid "Click on items to select them"
@@ -654,21 +660,21 @@ msgstr "Pois"
 msgid "Secondary"
 msgstr "Toissijainen"
 
-#: ../src/preview.js:639
+#: ../src/preview.js:643
 msgid "Bookmark this page"
 msgstr "Lisää sivu kirjanmerkkeihin"
 
 #. Translators: this is the Open action in a context menu
-#: ../src/preview.js:901 ../src/selections.js:983
+#: ../src/preview.js:905 ../src/selections.js:983
 #, javascript-format
 msgid "Open with %s"
 msgstr "Avaa sovelluksella %s"
 
-#: ../src/preview.js:964
+#: ../src/preview.js:962
 msgid "Find Previous"
 msgstr "Etsi edellinen"
 
-#: ../src/preview.js:971
+#: ../src/preview.js:968
 msgid "Find Next"
 msgstr "Etsi seuraava"
 
@@ -787,6 +793,10 @@ msgstr "Lähteet"
 msgid "Rename…"
 msgstr "Nimeä uudelleen…"
 
+#: ../src/selections.js:372 ../src/selections.js:374
+msgid "Delete"
+msgstr "Poista"
+
 #: ../src/selections.js:388
 #, javascript-format
 msgid "“%s” removed"
@@ -870,78 +880,88 @@ msgstr "Voit pyytää käyttöoikeutta henkilöltä %s"
 msgid "The document was not updated"
 msgstr "Asiakirjaa ei päivitetty"
 
-#: ../src/shellSearchProvider.js:292
+#: ../src/shellSearchProvider.js:290
 msgid "Untitled Document"
 msgstr "Nimetön asiakirja"
 
-#: ../src/trackerController.js:172
+#: ../src/trackerController.js:177
 msgid "Unable to fetch the list of documents"
 msgstr "Asiakirjalistauksen nouto epäonnistui"
 
-#: ../src/view.js:260
+#: ../src/view.js:258
 msgid "No Books Found"
 msgstr "Kirjoja ei löytynyt"
 
-#: ../src/view.js:261
+#: ../src/view.js:259
 msgid "No Documents Found"
 msgstr "Asiakirjoja ei löytynyt"
 
 #. Translators: %s here is "Settings", which is in a separate string due to
 #. markup, and should be translated only in the context of this sentence
-#: ../src/view.js:283
+#: ../src/view.js:281
 #, javascript-format
 msgid "You can add your online accounts in %s"
 msgstr "Voit lisätä verkkotilisi %s"
 
 #. Translators: this should be translated in the context of the
 #. "You can add your online accounts in Settings" sentence above
-#: ../src/view.js:287
+#: ../src/view.js:285
 msgid "Settings"
 msgstr "asetuksissa"
 
-#: ../src/view.js:483
+#: ../src/view.js:505
 msgid "Yesterday"
 msgstr "Eilen"
 
-#: ../src/view.js:485
+#: ../src/view.js:507
 #, javascript-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
 msgstr[0] "%d päivä sitten"
 msgstr[1] "%d päivää sitten"
 
-#: ../src/view.js:489
+#: ../src/view.js:511
 msgid "Last week"
 msgstr "Viime viikolla"
 
-#: ../src/view.js:491
+#: ../src/view.js:513
 #, javascript-format
 msgid "%d week ago"
 msgid_plural "%d weeks ago"
 msgstr[0] "%d viikko sitten"
 msgstr[1] "%d viikkoa sitten"
 
-#: ../src/view.js:495
+#: ../src/view.js:517
 msgid "Last month"
 msgstr "Viime kuussa"
 
-#: ../src/view.js:497
+#: ../src/view.js:519
 #, javascript-format
 msgid "%d month ago"
 msgid_plural "%d months ago"
 msgstr[0] "%d kuukausi sitten"
 msgstr[1] "%d kuukautta sitten"
 
-#: ../src/view.js:501
+#: ../src/view.js:523
 msgid "Last year"
 msgstr "Viime vuonna"
 
-#: ../src/view.js:503
+#: ../src/view.js:525
 #, javascript-format
 msgid "%d year ago"
 msgid_plural "%d years ago"
 msgstr[0] "%d vuosi sitten"
 msgstr[1] "%d vuotta sitten"
+
+#~ msgid "Print"
+#~ msgstr "Tulosta"
+
+#~ msgid "Share"
+#~ msgstr "Jaa"
+
+#~| msgid "View items as a list"
+#~ msgid "View items as a list or a grid"
+#~ msgstr "Näytä kohteet luettelona tai ruudukkona"
 
 #~ msgid "Recent"
 #~ msgstr "Viimeisimmät"
