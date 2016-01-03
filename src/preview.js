@@ -569,9 +569,11 @@ const PreviewView = new Lang.Class({
 
             this.set_visible_child_full('view', Gtk.StackTransitionType.NONE);
         } else {
-            if (!this._jobFind.is_finished())
-                this._jobFind.cancel();
-            this._jobFind = null;
+	    if (this._jobFind) {
+	        if (!this._jobFind.is_finished())
+	            this._jobFind.cancel();
+	        this._jobFind = null;
+	    }
         }
     },
 
