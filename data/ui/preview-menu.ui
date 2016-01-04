@@ -32,7 +32,7 @@
         <attribute name="accel">&lt;Primary&gt;minus</attribute>
       </item>
     </section>
-    <section>
+    <section id='rotate-section'>
       <item>
         <attribute name="action">app.rotate-left</attribute>
         <attribute name="label" translatable="yes">Rotate ↶</attribute>
