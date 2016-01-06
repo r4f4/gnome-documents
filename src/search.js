@@ -281,7 +281,8 @@ const SearchTypeManager = new Lang.Class({
 const SearchMatchStock = {
     ALL: 'all',
     TITLE: 'title',
-    AUTHOR: 'author'
+    AUTHOR: 'author',
+    CONTENT: 'content'
 };
 
 const SearchMatch = new Lang.Class({
@@ -316,6 +317,8 @@ const SearchMatch = new Lang.Class({
                     '(tracker:case-fold' +
                     '(tracker:coalesce(nco:fullname(?creator), nco:fullname(?publisher))), ' +
                     '"%s")').format(this._term, this._term);
+        if (this.id == SearchMatchStock.CONTENT)
+            return '(false)';
         return '';
     }
 });
@@ -325,8 +328,9 @@ const SearchMatchManager = new Lang.Class({
     Extends: Manager.BaseManager,
 
     _init: function(context) {
-        // Translators: this is a verb that refers to "All", "Title" and "Author",
-        // as in "Match All", "Match Title" and "Match Author"
+        // Translators: this is a verb that refers to "All", "Title", "Author",
+        // and "Content" as in "Match All", "Match Title", "Match Author", and
+        // "Match Content"
         this.parent(_("Match"), 'search-match', context);
 
         this.addItem(new SearchMatch({ id: SearchMatchStock.ALL,
@@ -337,8 +341,30 @@ const SearchMatchManager = new Lang.Class({
         this.addItem(new SearchMatch({ id: SearchMatchStock.AUTHOR,
         //Translators: "Author" refers to "Match Author" when searching
                                        name: C_("Search Filter", "Author") }));
+        this.addItem(new SearchMatch({ id: SearchMatchStock.CONTENT,
+        //Translators: "Content" refers to "Match Content" when searching
+                                       name: C_("Search Filter", "Content") }));
 
         this.setActiveItemById(SearchMatchStock.ALL);
+    },
+
+    getWhere: function() {
+        let item = this.getActiveItem();
+        if (item.id != SearchMatchStock.ALL &&
+            item.id != SearchMatchStock.CONTENT)
+            return '';
+
+        let terms = this.context.searchController.getTerms();
+        if (!terms.length)
+            return '';
+
+        let ftsterms = [];
+        for (let i = 0; i < terms.length; i++) {
+            if (terms[i].length > 0)
+                ftsterms.push(terms[i] + '*');
+        }
+        return '?urn fts:match \'%s\' . '.format(ftsterms.join(' '));
+
     },
 
     getFilter: function(flags) {
